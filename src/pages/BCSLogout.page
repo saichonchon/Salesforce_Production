@@ -1,0 +1,19 @@
+<apex:page showHeader="false" sidebar="false">
+ 
+<apex:iframe src="{!$Site.Prefix}/secur/logout.jsp" height="1" width="1" />
+ 
+<script>
+ 
+function redirectToLogin(){
+ 
+window.parent.location="http://support.bigcommerce.com/";
+ 
+}
+ 
+setTimeout("redirectToLogin()", 5000);
+ 
+</script>
+ 
+Logging out...
+ 
+</apex:page>

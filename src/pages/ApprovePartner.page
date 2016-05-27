@@ -1,0 +1,96 @@
+<apex:page standardController="Account" extensions="AccountApprovePartner" showHeader="false" sidebar="false" title="Approve Partner">
+
+	<!-- Get the fields we need -->
+	<apex:outputText value="{!Account.Partner_iDevID__c} {!Account.iDev_Partner_ID__c} {!Account.Name}" rendered="false"/>
+	
+	<script>
+		function closeWindow(refreshParent) {
+			window.close();
+			if (refreshParent) {
+				window.opener.doRefresh();
+			}
+		}
+	</script>
+	<style>
+		.bPageBlock .pbTitle {
+			width: auto;
+		}
+		.descriptionText {
+			font-style: italic;
+			padding: 10px 0;
+			color: #4A4A56;
+		}
+	</style>
+	
+	<!-- If we're not looking at a partner account -->
+	<apex:pageBlock title="Not a partner account" rendered="{isPartner == false}"> 
+    	<apex:pageMessages />
+	    <apex:outputText value="This is not a partner account" />
+	</apex:pageBlock>
+	
+	<!-- If the partner is already approved -->
+	<apex:form rendered="{!isPartner && partnerApproved}">
+		<apex:pageBlock title="Approved"> 
+	    	<apex:pageMessages />
+           	<apex:outputPanel layout="block" styleClass="descriptionText">
+           		{!Account.Name} has been approved
+           	</apex:outputPanel>
+           	<apex:panelGrid columns="2" id="theGrid">
+				<apex:outputText styleClass="labelCol" value="iDev Username" />
+				<apex:outputText value="{!Account.Partner_iDevID__c}" />
+				<apex:outputText styleClass="labelCol" value="iDev ID" />
+				<apex:outputText value="{!Account.iDev_Partner_ID__c}" />
+           	</apex:panelGrid>
+	        <apex:pageBlockButtons location="bottom">
+	            <apex:commandButton action="{!openApprovalWindow}" value="Done" onclick="closeWindow(true);"/>
+	        </apex:pageBlockButtons>
+		</apex:pageBlock>
+	</apex:form>
+		
+	<!-- If the partner not approved, step 2 -->
+	<apex:form rendered="{!isPartner && !partnerApproved}">
+		<apex:pageBlock title="Approve {!Account.Name}">
+           	<apex:outputPanel layout="block" styleClass="descriptionText">
+           		The following details will be sent to iDev Affiliate
+           	</apex:outputPanel>
+			<apex:panelGrid columns="2" id="theGrid" styleClass="detailList">
+				<apex:outputText styleClass="labelCol" value="Email" />
+				<apex:outputText value="{!partnerContact.Email}" />
+				<apex:outputText styleClass="labelCol" value="Company" />
+				<apex:outputText value="{!account.Name}" />
+				<apex:outputText styleClass="labelCol" value="First Name" />
+				<apex:outputText value="{!partnerContact.FirstName}" />
+				<apex:outputText styleClass="labelCol" value="Last Name" />
+				<apex:outputText value="{!partnerContact.LastName}" />
+				<apex:outputText styleClass="labelCol" value="Website" />
+				<apex:outputText value="{!account.Website}" />
+				<apex:outputText styleClass="labelCol" value="Phone" />
+				<apex:outputText value="{!account.Phone}" />
+				<apex:outputText styleClass="labelCol" value="Fax" />
+				<apex:outputText value="{!account.Fax}" />
+				<apex:outputText styleClass="labelCol" value="Address" />
+				<apex:outputText value="{!account.BillingStreet}" />
+				<apex:outputText styleClass="labelCol" value="City" />
+				<apex:outputText value="{!account.BillingCity}" />
+				<apex:outputText styleClass="labelCol" value="State" />
+				<apex:outputText value="{!account.BillingState}" />
+				<apex:outputText styleClass="labelCol" value="Post Code / Zip" />
+				<apex:outputText value="{!account.BillingPostalCode}" />
+				<apex:outputText styleClass="labelCol" value="Country" />
+				<apex:outputText value="{!account.BillingCountry}" />
+			</apex:panelGrid>
+		</apex:pageBlock> 
+		<apex:pageBlock > 
+            <apex:pageMessages />
+            <apex:pageBlockSection >
+                <apex:inputfield value="{!Account.OwnerId}"/><br/>
+                <apex:inputfield value="{!Account.Partner_iDevID__c}"/><br/>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton action="{!ApprovePartner}" value="Approve Partner"/>
+                <apex:commandLink action="{!openApprovalWindow}" value="Cancel" onclick="closeWindow(false);"/>
+            </apex:pageBlockButtons>
+	  	</apex:pageBlock>
+	</apex:form>
+
+</apex:page>

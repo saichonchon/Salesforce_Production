@@ -1,0 +1,14 @@
+<apex:page controller="ValidatePartnerController">
+
+<script type="text/javascript">
+	if (!{!IsPartnerValid})	
+	{
+		window.parent.parent.location = '/apex/termsconditions?id={!TCId}&partId={!AcctId}';
+	}
+	else
+	{
+		window.parent.parent.location = '/apex/partnerhome';
+	}
+</script>
+
+</apex:page>

@@ -1,0 +1,29 @@
+<apex:page controller="TermsConditionsController" sidebar="false">
+    <apex:form >
+        <apex:pageblock rendered="{!NOT(ValidIdsExist)}">
+            <apex:outputText value="Not a valid Bigcommerce Portal User....Please contact Bigcommerce partner support" style="color:red; font-weight:bold;" />
+        </apex:pageblock>
+        
+        <apex:pageblock rendered="{!ValidIdsExist}">
+            <table style="width:100%;">
+                <tr>
+                    <td> 
+                        <apex:outputText value="{!TC.T_C_Text__c}" escape="false" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <apex:commandbutton value="Agree" action="{!AgreeToTerms}" />
+                        &nbsp;&nbsp;&nbsp;
+                        <apex:commandbutton value="Cancel" action="{!Cancel}" />
+                    </td>
+                </tr>
+            </table>    
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

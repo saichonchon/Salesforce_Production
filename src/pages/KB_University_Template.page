@@ -1,0 +1,58 @@
+<apex:page docType="html-5.0" standardController="KnowledgeArticle" extensions="pkb_Controller" standardStylesheets="false" showHeader="false" applyBodyTag="false" applyHtmlTag="false" cache="true" showChat="false">
+<html>
+    <head>
+        <apex:insert name="title" />
+        <c:kb_resources />
+        <c:pkb_js pkbCon="{!pkbCon}" />
+    </head>
+    <body>
+    <!-- Template for Public University Articles -->
+    <c:kb_google_tag_manager />
+    <div id="page-wrapper">
+        <c:kb_header activePage="University" />
+        <c:pkb_search pkbCon="{!pkbCon}" />
+        <div class="container-fluid">
+            <div class="row categories-trigger text-center">Browse Videos</div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 side-categories" role="navigation">
+                    <ul class="categories university-categories" style="display:block">
+                        <li><a href="{!pkbCon.currentSiteUrl}/university#launch-store">Launch Store</a>
+                            <ul>
+                                <c:kb_University_Article_Nav_List datacategoryname="Launch_Store"/>
+                            </ul>
+                        </li>
+                        <li><a href="{!pkbCon.currentSiteUrl}/university#attract-shoppers">Manage Store</a>
+                            <ul>
+                                <c:kb_University_Article_Nav_List datacategoryname="Manage_Store"/>
+                            </ul>
+                        </li>
+                        <li><a href="{!pkbCon.currentSiteUrl}/university#create-buyers">Grow Store</a>
+                            <ul>
+                                <c:kb_University_Article_Nav_List datacategoryname="Grow_Store"/>
+                            </ul>
+                        </li>
+                    </ul>
+                    <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                        <apex:outputText rendered="{!key='Landing_Pages_Marketplace'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                    </apex:repeat>
+                    <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                        <apex:outputText rendered="{!key='Landing_Pages_App_Store'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                    </apex:repeat>
+                </div>
+                <div class="col-md-9 col-sm-12" role="main">
+                    <div id="article-content">
+                        <apex:insert name="body" />
+                    </div>
+                    <c:pkb_feedbackyesno pkbCon="{!pkbCon}" />
+                </div>
+            </div>
+        </div>
+        <c:kb_footer />
+    </div>
+    </body>
+<c:kb_live_chat_js />
+<c:kb_tracking_codes />
+</html>
+</apex:page>

@@ -1,0 +1,124 @@
+<apex:page id="communitiesSelfRegPage" showHeader="false" controller="CommunitiesSelfRegController" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" title="Bigcommerce Support Self Registration" standardStylesheets="false">
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>How can we help? | Bigcommerce Support</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <apex:includeScript value="{!URLFOR($Resource.support_assets, 'support_assets/javascripts/vendor/custom.modernizr.js')}"/>
+    <!--[if lt IE 9]>
+    <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <apex:stylesheet value="{!URLFOR($Resource.support_assets, 'support_assets/stylesheets/vendor/normalize.min.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.support_assets, 'support_assets/stylesheets/vendor/foundation.min-5-3.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.support_assets, 'support_assets/stylesheets/ticketstyles.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.support_assets, 'support_assets/stylesheets/community-styles.css')}" />
+    <apex:includeScript value="{!$Resource.jQuery}"/>
+  </head>
+<body>
+
+  <div class="row">
+
+    <div class="small-12 large-8 large-centered column content"> 
+
+      <header>
+        <h1><a href="http://support.bigcommerce.com/" id="link-home" title="support.bigcommerce.com"><apex:image value="{!URLFOR($Resource.support_assets, 'support_assets/images/logo.png')}" alt="Bigcommerce Logo" width="238" height="57" /></a></h1>
+      </header>
+
+      <apex:form id="theForm" forceSSL="true">
+        <apex:Messages id="error"/>
+        <apex:actionRegion >
+          <apex:outputPanel id="form-step-1" rendered="{!NOT(webFormOn)}"  layout="block">
+
+            <div class="row">
+              <div class="small-9 columns small-offset-3">
+                <h5>Create Your Account</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="small-3 columns">
+                <apex:outputLabel value="Store Url" for="surl" styleClass="right inline" />
+              </div>
+              <div class="small-9 columns">
+                <apex:inputText required="true" id="surl" value="{!formUrl}" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="small-3 columns">
+                <apex:outputLabel value="Support Pin" for="supportpin" styleClass="right inline" /> 
+              </div>
+              <div class="small-9 columns">
+                <apex:inputText required="true" id="supportpin" value="{!supportpin}" label="Support Pin"/>
+              </div>
+              <div class="small-9 columns small-small-3">
+                <a href="https://support.bigcommerce.com/questions/1207/" target="_blank" id="support-ticket-help" class="medium-text-left">How do I find my Support Pin?</a>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="small-9 columns small-offset-3">
+                <br />
+                <apex:commandButton styleclass="btn" id="control" action="{!authenticateUser}" value="{!$Label.site.submit}"  />
+                <apex:actionStatus startText="Creating user..." id="status1" />
+              </div>
+            </div>
+
+          </apex:outputPanel>
+
+          <apex:outputPanel id="form-step-2" rendered="{!webFormOn}">
+
+            <div class="row">
+              <div class="small-9 columns small-offset-3">
+                <h5>Create a Password</h5>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="small-3 columns">
+                <apex:outputLabel for="field-username" styleClass="right">UserName </apex:outputLabel>
+              </div>
+              <div class="small-9 columns">
+                <apex:outputText >{!email}</apex:outputText>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="small-3 columns">
+                <apex:outputLabel value="{!$Label.site.password}" for="password" styleClass="right inline"/>
+              </div>
+              <div class="small-9 columns">
+                <apex:inputSecret id="password" value="{!password}"/>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="small-3 columns">
+                <apex:outputLabel value="{!$Label.site.confirm_password}"  for="confirmPassword" styleClass="right inline"/>
+              </div>
+              <div class="small-9 columns">
+                <apex:inputSecret id="confirmPassword" value="{!confirmPassword}"/>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="small-9 columns small-offset-3">
+                <apex:commandButton styleclass="btn" id="control2" action="{!registerUser}" value="{!$Label.site.submit}"  />
+                <apex:actionStatus startText="Creating user..." id="status2" />
+              </div>
+            </div>
+            
+          </apex:outputPanel>      
+
+        </apex:actionRegion>
+
+      </apex:form>
+
+    </div><!-- /small-12 -->
+
+  </div><!-- /row -->
+
+</body>
+</html>
+</apex:page>

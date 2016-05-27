@@ -1,0 +1,90 @@
+<apex:page cache="true" expires="2400" docType="html-5.0" standardController="KnowledgeArticle" extensions="pkb_Controller" standardStylesheets="false" showHeader="false" applyBodyTag="false" applyHtmlTag="false">
+<html>
+    <head>
+        <title>BigCommerce Support</title>
+        <meta name="description" content="Videos, Guides, and Articles for using Bigcommerce to run your e-commerce store." />
+        <c:kb_resources />
+        <c:pkb_js pkbCon="{!pkbCon}" />
+        <link rel="canonical" href="https://support.bigcommerce.com/" />
+        <link rel="icon" type="image/x-icon" href="https://support.bigcommerce.com/favicon.ico" />
+    </head>
+
+    <body>
+        <c:kb_google_tag_manager />
+        <div id="page-wrapper">
+            <c:kb_header activePage="Home" />
+            <c:pkb_search pkbCon="{!pkbCon}" />
+            <div class="container portal-notice">
+              <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                <apex:outputText rendered="{!key='Portal_Notice'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+              </apex:repeat>
+            </div>
+            <apex:outputpanel rendered="{!searchExecuted}" styleClass="container" layout="block">
+              <h1 class="page-title">Results for <em id="previous-search-query">{!pkbCon.urlSearchQuery}</em></h1>
+              <div class="row">
+                <div class="col-sm-8">
+                    <c:pkb_results pkbCon="{!pkbCon}" showHeaderInfo="true" />
+                </div>
+                <div class="col-sm-4">
+                    <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                        <apex:outputText rendered="{!key='Landing_Pages_Community'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                    </apex:repeat>
+                    <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                        <apex:outputText rendered="{!key='Landing_Pages_Marketplace'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                    </apex:repeat>
+                    <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                        <apex:outputText rendered="{!key='Landing_Pages_App_Store'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                    </apex:repeat>
+                </div>
+              </div>
+            </apex:outputpanel>
+            
+            <apex:outputPanel rendered="{!NOT(searchExecuted)}" styleClass="container home" layout="block">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                            <apex:outputText rendered="{!key='Home_Community'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                        </apex:repeat>
+                    </div>
+                    <div class="col-sm-6">
+                        <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                            <apex:outputText rendered="{!key='Home_Articles'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                        </apex:repeat>
+                        <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                            <apex:outputText rendered="{!key='Home_University'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                        </apex:repeat>
+                        <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                            <apex:outputText rendered="{!key='Home_Guides'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                        </apex:repeat>
+                    </div>
+                </div><!-- Row -->
+                <h2 class="text-center">Additional Resources</h2>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                            <apex:outputText rendered="{!key='Home_Partner_Marketplace'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                        </apex:repeat>
+                    </div>
+                    <div class="col-sm-4">
+                        <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                            <apex:outputText rendered="{!key='Home_Developers'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                        </apex:repeat>
+                    </div>
+                    <div class="col-sm-4">
+                        <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                            <apex:outputText rendered="{!key='Home_App_Store'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                        </apex:repeat>
+                    </div>
+                </div>
+            </apex:outputPanel>
+
+            <c:kb_footer />
+        </div><!-- /.page-wrapper -->
+
+    </body>
+<c:kb_live_chat_js />
+<c:kb_tracking_codes />
+<site:googleAnalyticsTracking />
+</html>
+<site:previewAsAdmin />
+</apex:page>

@@ -1,0 +1,19 @@
+<apex:page title="{!$Label.site.authorization_required}" id="Unauthorized" showHeader="false" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false">
+  <apex:composition template="KB_Error_Template">
+    <apex:define name="title">
+      <title>Bigcommerce Support - 401 Unauthorized</title>
+    </apex:define>
+    <apex:define name="body">
+    <div class="site-error">
+      <div class="text-center">
+        <h1>401 - Unauthorized</h1>
+        <div class="text-center" style="max-width:700px;margin:0 auto;">
+          <p>We're sorry, but it looks like you've entered an incorrect URL, email address, or support PIN. Please use the email address used for billing and the <a href="https://support.bigcommerce.com/articles/Public/What-is-my-support-PIN-and-where-do-I-find-it/">support PIN for your account</a>.</p>
+          <p>See <a href="https://support.bigcommerce.com/articles/Public/Troubleshooting-Login-Issues/">Troubleshooting Login Issues</a> for more assistance.</p>
+        </div>
+      </div>
+    </div>
+    </apex:define>
+  </apex:composition>
+  <site:previewAsAdmin />
+</apex:page>

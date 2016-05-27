@@ -1,0 +1,32 @@
+<apex:component controller="pkb_Controller" layout="none">
+    <apex:attribute name="activePage" type="String" required="true" description="The name of the active page for navigation" />
+    <div class="container-fluid header">
+        <div class="container" role="banner">
+            <div class="row">
+                <div class="col-sm-3 col-xs-9 logo">
+                    <apex:outputLink value="{!pkbCon.currentSiteUrl}">
+                        <img src="{!URLFOR($Resource.knowledge_assets, 'images/bigcommerce-support-logo.png')}" alt="Bigcommerce Support" title="Bigcommerce Support - Home" height="40" />
+                    </apex:outputLink>
+                </div>
+                <div class="col-sm-9 col-xs-3 header-right">
+                    <span class="nav-toggle visible-xs"><i class="material-icons">menu</i></span>
+                    <ul class="list-inline text-right navigation">
+                        <li class="dropdown">
+                            <apex:outputLink styleClass="{!IF(activePage == 'Home','active','')}" value="{!pkbCon.currentSiteUrl}">Home</apex:outputLink>
+                            <ul>
+                                <li><apex:outputLink styleClass="{!IF(activePage == 'Home','active','')}" value="{!pkbCon.currentSiteUrl}">Support Home</apex:outputLink></li>
+                                <li><a href="https://www.bigcommerce.com">BigCommerce Home</a></li>
+                            </ul>
+                        </li>
+                        <li class="articles"><apex:outputLink styleClass="{!IF(activePage == 'Articles','active','')}" value="{!pkbCon.currentSiteUrl}/documentation">Documentation</apex:outputLink></li>
+                        <li class="university"><apex:outputLink styleClass="{!IF(activePage == 'University','active','')}" value="{!pkbCon.currentSiteUrl}/university">University</apex:outputLink></li>
+                        <li class="community"><apex:outputLink value="https://forum.bigcommerce.com/s/">Community</apex:outputLink></li>
+                        <li class="guides"><apex:outputLink styleClass="{!IF(activePage == 'Guides','active','')}" value="{!pkbCon.currentSiteUrl}/guides">Guides</apex:outputLink></li>
+                        <li class="contact"><apex:outputLink styleClass="{!IF(activePage == 'Contact','active','')}" value="{!pkbCon.currentSiteUrl}/contact?q={!$CurrentPage.parameters.q}">Contact</apex:outputLink></li>
+                        <li><apex:outputLink value="http://status.bigcommerce.com">Status</apex:outputLink></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</apex:component>

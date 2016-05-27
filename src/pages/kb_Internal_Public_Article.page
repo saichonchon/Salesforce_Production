@@ -1,0 +1,62 @@
+<apex:page standardController="Public__kav" showHeader="false" standardStylesheets="false" applyBodyTag="false" sidebar="false">
+    <apex:variable var="Title" value="{!Public__kav.Title}" />
+    <apex:variable var="InternalURL" value="https://na19.salesforce.com/articles/Public/{!Public__kav.UrlName}" />
+    <apex:variable var="ExternalURL" value="https://support.bigcommerce.com/articles/Public/{!Public__kav.UrlName}" />
+    <apex:composition template="kb_Internal">
+        <apex:define name="body">
+            <knowledge:articleRendererToolbar articleId="{!$CurrentPage.parameters.id}" showChatter="true" />
+            <!--<knowledge:articleCaseToolbar articleId="{!$CurrentPage.parameters.id}" caseId="{!$CurrentPage.parameters.caseId}" rendered="{!$CurrentPage.parameters.caseId != null}" includeCSS="false" />-->
+            <div id="internal-content">
+                <div id="article-content">
+                    <h1 class="page-header">{!Title}</h1>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="panel panel-default" id="details">
+                                <div class="panel-heading">
+                                    <h5>Details</h5>
+                                </div>
+                                <div class="panel-body">
+                                    <ul>
+                                        <li><strong>Internal URL</strong>: <a href="{!InternalURL}">{!InternalURL}</a></li>
+                                        <li><strong>External URL: </strong><a href="{!ExternalURL}" target="_blank">{!ExternalURL}</a></li>
+                                        <li><strong>Last modified: </strong><apex:outputText value="{!Public__kav.LastModifiedDate}" /></li>
+                                        <li><strong>Created: </strong><apex:outputText value="{!Public__kav.FirstPublishedDate}" /></li>
+                                        <apex:outputText rendered="{!Public__kav.Solves_For__c} != null" value="<li><strong>Solves For: </strong> {!Public__kav.Solves_For__c}</li>" />
+                                        <apex:outputText rendered="{!Public__kav.Third_Party__c} != null" value="<li><strong>Third Party: </strong> {!Public__kav.Third_Party__c}</li>" />
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel panel-default" id="article">
+                                <div class="panel-heading">
+                                    <h5>Article</h5>
+                                </div>
+                                <div class="panel-body">
+                                    <apex:outputText value="{!Public__kav.Article__c}" escape="false" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="panel panel-default" id="internal-article">
+                                <div class="panel-heading">
+                                    <h5>Internal</h5>
+                                </div>
+                                <div class="panel-body">
+                                    <p class="alert alert-danger"><strong>This section contains proprietary information.</strong> The information contained in this material along with any files attached may be privileged and confidential. Unless otherwise noted, it is intended only for the use of updating internal employees and is not to be shared with clients, competitors, or any other third parties.</p>
+                                    <apex:outputText value="{!Public__kav.Internal_Info__c}" escape="false" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </apex:define>
+    </apex:composition>
+    <apex:includeScript value="../../soap/ajax/36.0/connection.js"/>
+    <apex:includeScript value="/support/console/36.0/integration.js"/>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            sforce.console.setTabTitle("{!Title}");
+        });
+    </script>
+    <c:kb_internal_js />
+</apex:page>

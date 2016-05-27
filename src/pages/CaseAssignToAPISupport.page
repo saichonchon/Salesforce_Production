@@ -1,0 +1,8 @@
+<apex:page standardController="Case" extensions="CaseStopWorkingController" action="{!setCaseToAPI}">
+	<apex:form >
+		<apex:pageMessages />
+		
+			
+		
+	</apex:form>
+</apex:page>

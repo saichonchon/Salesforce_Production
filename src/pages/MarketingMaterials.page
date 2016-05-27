@@ -1,0 +1,265 @@
+<apex:page controller="MarketingMaterialsController">
+	<style>
+		.tableClass
+		{
+			background-color: #CACACA;
+			outline: 1px solid #CACACA;
+			width: 700px;
+		}
+		
+		.tableHeader
+		{
+			color: #FFFFFF;
+			background-color: #0C4B80;			
+			font-weight: bold;
+			font-size: 14px;
+		}
+		
+		.tableRow
+		{
+			background-color: #E6EDFD;
+			color: #777777;
+			font-size: 14px;
+			vertical-align: middle;
+		}
+		
+		.cellHeader
+		{
+			font-weight: bold;
+		}
+		
+		a, a:link, a:visited, a:active
+		{
+			color: #63799A;
+			text-decoration:none;
+		}	
+		
+		a:hover 
+		{
+			color: #000000;
+			text-decoration:none;
+		}
+	</style>
+	
+	<apex:form id="frmMain">
+		<table style="width:100%;" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td align="left" style="width:250px;">
+					<table cellspacing="0" cellpadding="8" style="width:95%;">
+						<tr>
+							<td align="left" style="font-weight:bold; font-size:18px; border-bottom:1px solid #CACACA;">
+								Marketing Materials
+								<br /><br />
+							</td>
+						</tr>
+						<tr>
+							<td align="left" style="padding-left:10px;">
+								<table cellspacing="0" cellpadding="8" style="width:100%;">
+									<apex:repeat value="{!stTypes}" var="MatType">
+									<tr>
+										<td align="left" style="border-bottom:1px solid #CACACA;">											
+											<apex:commandLink value="{!MatType}s" action="{!SelectMarketing}" rendered="{!NOT(MatType == 'Tell a Friend')}" rerender="frmMain" style="font-weight:bold; font-size:16px; color:#808080;">
+												<apex:param value="{!MatType}" name="mmType" />
+											</apex:commandLink>
+											<apex:commandLink value="{!MatType}" action="{!SelectMarketing}" rendered="{!(MatType == 'Tell a Friend')}" rerender="frmMain" style="font-weight:bold; font-size:16px; color:#808080;">
+												<apex:param value="{!MatType}" name="mmType" />
+											</apex:commandLink>
+										</td>
+									</tr>
+									</apex:repeat>
+								</table>
+							</td>										
+						</tr>
+					</table>
+				</td>
+				<td align="left" style="padding-left:20px;">
+					<apex:outputPanel id="pnlMaterials">
+						<apex:outputText style="font-weight:bold; font-size:20px;" value="{!MMType}s" rendered="{!NOT(MMType == 'Tell a Friend')}" />
+						<apex:outputText style="font-weight:bold; font-size:20px;" value="{!MMType}" rendered="{!(MMType == 'Tell a Friend')}" />
+						<br /><br />
+						<apex:repeat value="{!lstMaterials}" var="mm">
+							<apex:outputPanel rendered="{!mm.MaterialType == 'Logo'}" >
+								<table cellspacing="0" cellpadding="5" border="0" class="tableClass">
+									<tr>
+										<td class="tableHeader">
+											<span class="cellHeader">Marketing Group:</span>&nbsp;&nbsp;All Products
+										</td>
+									</tr> 
+									<tr><td class="tableRow">&nbsp;</td></tr>
+									<tr>
+										<td class="tableRow">
+											<span class="cellHeader">Logo Size:</span>&nbsp;&nbsp;{!mm.Size}
+										</td>
+									</tr>
+									<tr>
+										<td class="tableRow">
+											<span class="cellHeader">Logo Description:</span>&nbsp;&nbsp;{!mm.MaterialDesc}
+										</td>
+									</tr>
+									<tr>
+										<td class="tableRow">
+											<span class="cellHeader">Target URL:</span>&nbsp;&nbsp;<a target="_blank" href="{!mm.TargetURL}">{!mm.TargetURL}</a>
+										</td>
+									</tr>
+									<tr>
+										<td class="tableRow">
+											<br /><br />
+											<apex:image value="{!URLFOR($Action.Attachment.Download, mm.ImageId)}"/>
+											<br /><br />
+										</td>
+									</tr>
+									<tr>
+										<td class="tableRow">
+											Source Code - Copy/Paste into Your Website<br />
+											<apex:inputTextarea value="{!mm.SourceCode}" rows="4" style="width:450px;" />
+										</td>
+									</tr>
+									<tr><td class="tableRow">&nbsp;</td></tr>
+									<tr><td class="tableRow">&nbsp;</td></tr>
+									<tr><td>&nbsp;</td></tr>
+								</table>
+							</apex:outputPanel>
+							
+							<apex:outputPanel rendered="{!mm.MaterialType == 'Web Page'}" >
+								<table cellspacing="0" cellpadding="5" border="0" class="tableClass">
+									<tr>
+										<td class="tableHeader">
+											<span class="cellHeader">Marketing Group:</span>&nbsp;&nbsp;All Products
+										</td>
+									</tr> 
+									<tr><td class="tableRow">&nbsp;</td></tr>
+									<tr>
+										<td class="tableRow">
+											<span class="cellHeader">HTML Ad Name:</span>&nbsp;&nbsp;{!mm.MaterialName}
+										</td>
+									</tr>
+									<tr>
+										<td class="tableRow">
+											<span class="cellHeader">Target URL:</span>&nbsp;&nbsp;<a target="_blank" href="{!mm.TargetURL}">{!mm.TargetURL}</a>
+										</td>
+									</tr>
+									<tr><td class="tableRow">&nbsp;</td></tr>
+									<tr>
+										<td class="tableRow">
+											<a href="/apex/MarketingMaterialsPageViewer?id={!mm.RecordID}" target="_blank">View This HTML Ad</a>
+										</td>
+									</tr>
+									<tr>
+										<td class="tableRow">
+											Source Code - Copy/Paste into Your Website<br />
+											<apex:inputTextarea value="{!mm.SourceCode}" rows="5" style="width:450px;" />
+										</td>
+									</tr>
+									<tr><td class="tableRow">&nbsp;</td></tr>
+									<tr><td class="tableRow">&nbsp;</td></tr>
+									<tr><td>&nbsp;</td></tr>
+								</table>
+							</apex:outputPanel>
+							
+							<apex:outputPanel rendered="{!mm.MaterialType == 'Text Link'}" >
+								<table cellspacing="0" cellpadding="5" border="0" class="tableClass">
+									<tr>
+										<td class="tableHeader">
+											<span class="cellHeader">Marketing Group:</span>&nbsp;&nbsp;All Products
+										</td>
+									</tr> 
+									<tr><td class="tableRow">&nbsp;</td></tr>
+									<tr>
+										<td class="tableRow">
+											<span class="cellHeader">Link Name:</span>&nbsp;&nbsp;{!mm.MaterialName}
+										</td>
+									</tr>
+									<tr>
+										<td class="tableRow">
+											<span class="cellHeader">Target URL:</span>&nbsp;&nbsp;<a target="_blank" href="{!mm.TargetURL}">{!mm.TargetURL}</a>
+										</td>
+									</tr>
+									<tr><td class="tableRow">&nbsp;</td></tr>
+									<tr>
+										<td class="tableRow">
+											Source Code - Copy/Paste into Your Website<br />
+											<apex:inputTextarea value="{!mm.SourceCode}" rows="5" style="width:450px;" />
+										</td>
+									</tr>
+									<tr><td class="tableRow">&nbsp;</td></tr>
+									<tr><td class="tableRow">&nbsp;</td></tr>
+									<tr><td>&nbsp;</td></tr>
+								</table>
+							</apex:outputPanel>
+							
+							<apex:outputPanel rendered="{!mm.MaterialType == 'Email Link'}" >
+								<table cellspacing="0" cellpadding="5" border="0" class="tableClass">
+									<tr>
+										<td class="tableHeader">
+											<span class="cellHeader">Marketing Group:</span>&nbsp;&nbsp;All Products
+										</td>
+									</tr> 
+									<tr><td class="tableRow">&nbsp;</td></tr>
+									<tr>
+										<td class="tableRow">
+											<span class="cellHeader">ASCII/Text Version&nbsp;-&nbsp;</span>For use in Plain Text emails.<br />
+											<apex:inputTextarea value="{!mm.TextVersion}" rows="5" style="width:450px;" />
+										</td>
+									</tr>
+									<tr>
+										<td class="tableRow">
+											Source Code - Copy/Paste Into Your Email Message
+										</td>
+									</tr>
+									<tr><td class="tableRow">&nbsp;</td></tr>
+									<tr>
+										<td class="tableRow">
+											<span class="cellHeader">HTML Version&nbsp;-&nbsp;</span>For use in HTML Formatted emails.<br />
+											<apex:inputTextarea value="{!mm.SourceCode}" rows="5" style="width:450px;" />											
+										</td>
+									</tr>
+									<tr><td class="tableRow">&nbsp;</td></tr>
+									<tr>
+										<td class="tableRow">
+											<span class="cellHeader">Test Link:</span>&nbsp;&nbsp;<a target="_blank" href="{!mm.TextVersion}">BigCommerce</a><br />
+											This is where your customers will be sent into our website.
+										</td>
+									</tr>
+									<tr><td class="tableRow">&nbsp;</td></tr>
+									<tr><td>&nbsp;</td></tr>
+								</table>
+							</apex:outputPanel>
+							
+							<apex:outputPanel rendered="{!mm.MaterialType == 'Email Template'}" >
+								<table cellspacing="0" cellpadding="5" border="0" class="tableClass">
+									<tr>
+										<td class="tableHeader">
+											<span class="cellHeader">Marketing Group:</span>&nbsp;&nbsp;All Products
+										</td>
+									</tr> 
+									<tr><td class="tableRow">&nbsp;</td></tr>
+									<tr>
+										<td class="tableRow">
+											<span class="cellHeader">Template Name:</span>&nbsp;&nbsp;{!mm.MaterialName}
+										</td>
+									</tr>
+									<tr>
+										<td class="tableRow">
+											<span class="cellHeader">Target URL:</span>&nbsp;&nbsp;<a target="_blank" href="{!mm.TargetURL}">{!mm.TargetURL}</a>
+										</td>
+									</tr>
+									<tr><td class="tableRow">&nbsp;</td></tr>
+									<tr>
+										<td class="tableRow">
+											Source Code - Copy/Paste into Your Website<br />
+											<apex:inputTextarea value="{!mm.SourceCode}" rows="5" style="width:450px;" />
+										</td>
+									</tr>
+									<tr><td class="tableRow">&nbsp;</td></tr>
+									<tr><td class="tableRow">&nbsp;</td></tr>
+									<tr><td>&nbsp;</td></tr>
+								</table>
+							</apex:outputPanel>
+							<br /><br />
+						</apex:repeat>
+					</apex:outputPanel>
+				</td>
+			</tr>
+		</table>
+	</apex:form>
+</apex:page>

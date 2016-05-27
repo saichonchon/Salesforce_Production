@@ -1,0 +1,4 @@
+<apex:page Controller="InvokeRoundRobin" action="{!autoRun}">
+<apex:pageMessages />
+  
+</apex:page>

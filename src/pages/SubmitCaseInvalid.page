@@ -1,0 +1,41 @@
+<apex:page controller="SubmitCaseThanksController" showHeader="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" title="Bigcommerce Support" standardStylesheets="false">
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Error | Bigcommerce Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <apex:stylesheet value="{!URLFOR($Resource.case_assets, 'case_assets/styles/bootstrap/bootstrap.min.css')}" />
+  <apex:stylesheet value="{!URLFOR($Resource.case_assets, 'case_assets/styles/styles.css')}" />
+  <apex:includeScript value="{!$Resource.jQuery}"/>
+</head>
+<body>
+  <c:kb_google_tag_manager />
+  <div class="container">
+    <div class="row row-centered">
+      <div class="col-sm-12 col-md-6 content col-centered">
+        <header id="header">
+          <div class="row">
+            <div class="col-xs-12 text-center">
+              <a href="http://support.bigcommerce.com/" id="link-home" title="support.bigcommerce.com"><apex:image value="{!URLFOR($Resource.case_assets, 'case_assets/img/Bigcommerce-Logo-Notag-280.png')}" alt="Bigcommerce Logo; click to go to bigcommerce.com" width="280" height="68" /></a>
+            </div>
+          </div>
+          <h2 class="text-center">An error occured</h2>
+        </header>
+        <div class="text-center">
+          <p>Thanks for reaching out for help with the Bigcommerce API. Troubleshooting support for the API only comes standard with our Enterprise plans, but you can find some great, in-depth resources in our <a href="http://developer.bigcommerce.com/api/" >developer portal</a>.</p>
+          <p>If your support request is for help with one of the apps in our App Store, please contact the app developer directly. If the app developer believes the issue exists on our end, they can file a support ticket on your behalf and we'll take a look.</p>
+          <p>If you're still interested in receiving API support, you may consider upgrading your plan with us. To learn more, call our team at <a href="tel:18886998911">1-888-699-8911</a>.</p>
+          <br />
+          <div class="text-center">
+            <p>Return to <a href="https://support.bigcommerce.com/" class="btn btn-default btn-sm">Bigcommerce Support</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+</apex:page>

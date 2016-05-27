@@ -1,0 +1,56 @@
+<apex:page cache="false" standardStylesheets="false" showHeader="false" sidebar="false" standardController="KnowledgeArticle" extensions="pkb_Controller" language="{!pkbCon.selectedLanguage}" applyBodyTag="false" applyHtmlTag="false">
+<html>
+<head>
+  <title>Guides - BigCommerce Support</title>
+  <meta name="description" content="Our comprehensive guides will help you get started and fine-tune your business." />
+  <link rel="canonical" href="https://support.bigcommerce.com/guides" />
+  <c:kb_resources />
+</head>
+
+<body>
+<c:kb_google_tag_manager />
+<div id="page-wrapper">
+  <c:kb_header activePage="Guides" />
+  <c:pkb_search pkbCon="{!pkbCon}" />
+  
+  <div class="container portal-notice">
+    <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+      <apex:outputText rendered="{!key='Portal_Notice'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+    </apex:repeat>
+  </div>
+  
+    <div class="container guides">
+        <h1 class="page-title">Guides</h1>
+        <div class="row">
+            <div class="col-md-9 col-sm-8">
+                <div class="row">
+                    <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                        <apex:outputText rendered="{!key='Landing_Pages_Guides'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                    </apex:repeat>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4">
+                <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                    <apex:outputText rendered="{!key='Landing_Pages_Community'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                </apex:repeat>
+                <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                    <apex:outputText rendered="{!key='Landing_Pages_Marketplace'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                </apex:repeat>
+                <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                    <apex:outputText rendered="{!key='Landing_Pages_App_Store'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                </apex:repeat>
+            </div>
+        </div>
+    
+    </div>
+
+  <c:kb_footer />
+  
+</div><!-- /.page-wrapper -->
+
+</body>
+<site:googleAnalyticsTracking />
+<c:kb_tracking_codes />
+</html>
+<site:previewAsAdmin />
+</apex:page>

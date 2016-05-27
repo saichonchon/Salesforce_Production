@@ -1,0 +1,114 @@
+<apex:page controller="SalesLiveAgentPreChatController" showHeader="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" title="Bigcommerce Support" standardStylesheets="false">
+
+<html class="no-js">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>How can we help? | Bigcommerce Sales Team</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <apex:stylesheet value="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'dist/styles.min.css')}" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+       <!-- <apex:includeScript value="{!URLFOR($Resource.support_assets, 'support_assets/javascripts/vendor/custom.modernizr.js')}"/>        -->
+        
+      <!--  <apex:stylesheet value="{!URLFOR($Resource.support_assets, 'support_assets/stylesheets/vendor/normalize.min.css')}" /> 
+        <apex:stylesheet value="{!URLFOR($Resource.support_assets, 'support_assets/stylesheets/vendor/foundation.min.css')}" />
+        <apex:stylesheet value="{!URLFOR($Resource.support_assets, 'support_assets/stylesheets/ticketstyles.css')}" />
+        <apex:stylesheet value="{!URLFOR($Resource.support_assets, 'support_assets/stylesheets/chatverifystyles.css')}" />
+        <apex:includeScript value="{!$Resource.jQuery}"/>
+        <apex:includeScript value="{!URLFOR($Resource.support_assets, 'support_assets/javascripts/labels-as-placeholders.jquery.js')}"/> -->
+    </head>
+   
+    <script type="text/javascript">
+      
+        jQuery(function(){{!jsSubmitForm}});       
+    </script>   
+
+    <body>
+       
+               <div class="text-center live-chat-header"> 
+                    <h1>
+                        <apex:image value="{!URLFOR($Resource.support_assets, 'support_assets/images/logo.png')}" alt="Bigcommerce Logo; click to go to bigcommerce.com"  />
+                        
+                    </h1>
+                </div>
+        <!-- <header>
+                    <a href="http://support.bigcommerce.com/" id="link-home" title="support.bigcommerce.com"> 
+                        <apex:image value="{!URLFOR($Resource.support_assets, 'support_assets/images/logo.png')}" alt="Bigcommerce Logo; click to go to bigcommerce.com" width="238" height="57" /></a>
+                </header> -->
+                 <div class="container live-chat">
+            <div class="card">
+                <div class="card-body">
+                <apex:form id="prechatFormInput" styleclass="prechatFormInput">
+                    <apex:outputPanel styleclass="error-messages" rendered="{!formErrorsList.size != 0}" layout="block">                    
+                        <ul>
+                          <apex:repeat value="{!formErrorsList}" var="error" id="formErrors">                         
+                            <li><i class="icon icon-exclamation-sign"></i>{!error}</li>                            
+                          </apex:repeat>                                                  
+                        </ul>
+                    </apex:outputPanel>                                           
+                        
+                    <apex:actionRegion >
+                        <apex:outputPanel id="form-preChat" layout="block">
+                            <apex:outputPanel id="field-group-first-name" styleclass="{!IF(formFname.hasError,'has-error','')} form-group" layout="block">
+                                <i class="icon icon-user"></i>
+                                <apex:outputLabel for="field-first-name" value="Full Name*" styleClass="control-label sr-only"></apex:outputLabel>
+                                <apex:inputText id="field-first-name" value="{!formFname.value}" styleclass="field-store-url form-control" html-placeholder="First Name" required="true" />
+                            </apex:outputPanel>
+                            
+                            <!--<apex:outputPanel id="field-group-last-name" styleclass="{!IF(formLname.hasError,'error ','')}field-group field-group-has-label-placehoder" layout="block">
+                                <i class="icon icon-user"></i>
+                                <apex:outputLabel for="field-last-name" value="Last Name"></apex:outputLabel>
+                                <apex:inputText id="field-last-name" value="{!formLname.value}" styleclass="field-store-url" />
+                            </apex:outputPanel>-->
+                           
+                            <apex:outputPanel id="field-group-email" styleclass="{!IF(formEmail.hasError,'has-error','')} form-group" layout="block">
+                                <i class="icon icon-envelope-full"></i>
+                                <apex:outputLabel for="field-email" value="Email" styleClass="control-label sr-only"></apex:outputLabel>
+                                <apex:inputText id="field-email" value="{!formEmail.value}" styleclass="field-store-url form-control" html-placeholder="Email" required="true" />
+                                </apex:outputPanel>
+                            <apex:outputPanel >
+                                <apex:outputText id="plaintext" style="font-style:italic"  value=" * required " />
+                            </apex:outputPanel>                           
+
+                            <apex:outputPanel id="form-request-chat" styleclass="form-controls form-group" layout="block"><br/>
+                                   
+                                    <div class="form-submit-group" >
+                                        <apex:commandButton styleclass="btn btn-primary btn-lg" id="request-control" value="Request Chat" action="{!clickChat}"/>
+                                    </div>
+                            </apex:outputPanel>                                                                     
+                        </apex:outputPanel>
+                    </apex:actionRegion>                   
+                </apex:form>
+                <apex:outputPanel id="prechatFormPanel">
+                     <form method="post" id="preChatFormSubmit" action="{!endpoint}">                   
+
+                        <input type="hidden" name="liveagent.prechat:FullName" value="{!formFname.value}"/>
+                        <!--<input type="hidden" name="liveagent.prechat:Last Name" value="{!formLname.value}"/>-->
+                        <input type='hidden' name='liveagent.prechat:Email' value="{!formEmail.value}"/>                        
+                        <input type="hidden" name="liveagent.prechat.save:FullName" value="LastName__c" /> 
+                        <input type="hidden" name="liveagent.prechat.save:Email" value="eMail__c" />     
+                        <!-- Map the detail inputs to the Lead fields --> 
+                        <input type="hidden" name="liveagent.prechat.findorcreate.map:Lead" value="Email, Email;" />
+                        <input type="hidden" name="liveagent.prechat.findorcreate.map.doFind:Lead" value="Email,true;" />
+                        <input type="hidden" name="liveagent.prechat.findorcreate.map.isExactMatch:Lead" value="Email,true;" />
+                        <input type="hidden" name="liveagent.prechat.findorcreate.map:Contact" value="Email, Email;" />
+                        <input type="hidden" name="liveagent.prechat.findorcreate.map.doFind:Contact" value="Email,true;" />
+                        <input type="hidden" name="liveagent.prechat.findorcreate.map.isExactMatch:Contact" value="Email,true;" />
+                        <!-- Show the Contact when it is found or created 
+                        <input type="hidden" name="liveagent.prechat.findorcreate.showOnCreate:Lead" value="true" /> -->
+
+                        <input type="hidden" name="liveagent.prechat.findorcreate.saveToTranscript:Lead" value="LeadId" />
+                        <input type="hidden" name="liveagent.prechat.findorcreate.saveToTranscript:Contact" value="ContactId" />
+                                     
+                    </form> 
+                </apex:outputPanel>                    
+                </div></div></div>    </body>   
+</html>
+</apex:page> 
+
+<!-- <input type= "hidden" name= "liveagent.prechat.findorcreate.map:Contact" value="Contact.Email,Email;" />
+                        <input type= "hidden" name= "liveagent.prechat.findorcreate.map.doFind:Contact" value= "Contact.Email, true;" />
+                        <input type= "hidden" name= "liveagent.prechat.findorcreate.map.doCreate:Contact" value= "Email, false;" />
+                        <input type= "hidden" name= "liveagent.prechat.findorcreate.map.isExactMatch:Contact" value= "Email, true;" />
+                        <input type= "hidden" name= "liveagent.prechat.findorcreate.showOnCreate:Contact" value= "true;" />-->

@@ -1,0 +1,12 @@
+<apex:component >
+    <apex:includeScript value="{!$Resource.multiSelectButton_js}"/>
+    <apex:attribute name="buttonText" description="Text displayed." type="String" required="true"/>
+    <apex:attribute name="uniqueId" description="Unique Id for this componenet. Must be unique across all multiSelectButtons. This is not the component Id." type="String" required="true"/>
+ 
+    <div name="multiButton" id="button{!uniqueId}" class="menuButton" onclick="showOptions('{!uniqueId}');" >
+        <div id="CloneButton{!uniqueId}" class="menuButtonButton" onmouseover="divHover = 'CloneMenu{!uniqueId}';" onmouseout="divHover = '';">{!buttonText}</div>
+        <div name="multipButtonOpts" id="CloneMenu{!uniqueId}" class="menuButtonMenu">
+            <apex:componentBody />
+        </div>
+    </div>
+</apex:component>

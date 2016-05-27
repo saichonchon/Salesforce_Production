@@ -1,0 +1,46 @@
+<apex:component layout="none" allowDML="true">
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('.embed-responsive').each(function() {
+      $(this).wrap('<div class="embed-responsive-wrapper"></div>');
+      $(this).addClass('embed-responsive-16by9');
+      var src = $(this).text().trim();
+      $(this).text('');
+      $(this).html('<iframe src="' + src + '" class="embed-responsive-item" height="300" frameborder="0"></iframe>');
+    });
+    $('#article h3').each(function() {
+      var heading_id = $(this).attr('id');
+      var heading_text = $(this).text();
+      $('#article-subnav').append('<li><a href="#' + heading_id + '">' + heading_text + '</a></li>');
+    });
+    $('#internal-article h3').each(function() {
+      var heading_id = $(this).attr('id');
+      var heading_text = $(this).text();
+      $('#internal-article-subnav').append('<li><a href="#' + heading_id + '">' + heading_text + '</a></li>');
+    });
+    $('.article-nav-collapse').click(function() {
+      if($('#internal-content .article-nav-fixed').hasClass('docked')) {
+        $('#internal-content .article-nav-fixed').removeClass('docked');
+        $('#internal-content .article-nav-fixed').removeAttr('style');
+      } else {
+        var affix_width = $('#internal-content .article-nav-fixed').width() - 20;
+        $('#internal-content .article-nav-fixed').css('right',-affix_width);
+        $('#internal-content .article-nav-fixed').addClass('docked');
+      }
+    });
+    // Accordion functionality for articles
+    $('.accordion-header, .accordion-header h4 a').on('click', function (e) {
+        e.preventDefault();
+        accordionSection = $(this).closest('.accordion-section');
+        accordionBody = $(accordionSection).find('.accordion-body');
+        if($(accordionSection).hasClass('active')) {
+            $(accordionSection).removeClass('active');
+        } else {
+            $(accordionSection).addClass('active');
+        }
+        return false;
+    });
+  });
+  $('body').scrollspy({ target: '.article-nav-fixed' });
+  </script>
+</apex:component>

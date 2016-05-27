@@ -1,0 +1,7 @@
+<apex:page standardController="Case" extensions="CaseStopWorkingController" action="{!setCaseToCancel}">
+    <apex:form >
+        <apex:pageMessages />
+          
+        
+    </apex:form>
+</apex:page>

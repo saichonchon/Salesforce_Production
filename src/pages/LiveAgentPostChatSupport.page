@@ -1,0 +1,94 @@
+<apex:page showHeader="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" standardStylesheets="false">
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Live Chat | BigCommerce Support</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<apex:stylesheet value="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'dist/styles.min.css')}" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		<apex:includeScript value="/support/console/29.0/integration.js"/>
+	</head>
+		
+	<script type="text/javascript">
+	var chatkey = '{!$CurrentPage.parameters.chatKey}';
+	function redirecturl (surveyURL, status) {
+		if (status == '') {
+		setTimeout(function() {
+			document.location.href = surveyURL;
+		}, 7000);
+		}
+		// Redirect to create case if chat did not complete
+		else { window.location = "/apex/submitcase"; }
+	}
+	$(document).ready(function() {
+		var surveyURL = 'http://www.clicktools.com/survey?iv=3um22746o61ig&q1=' + chatkey;
+		$('#chat-survey-link').attr('href',surveyURL);
+        redirecturl(surveyURL, '{!$CurrentPage.parameters.error}');
+	});
+	</script>
+	<body>
+        <c:kb_google_tag_manager />
+		<div class="text-center live-chat-header">
+			<h1>
+				<a href="https://support.bigcommerce.com/" id="link-home">
+					<img src="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'images/bigcommerce-support-logo.png')}" alt="BigCommerce Community Logo" srcset="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'images/bigcommerce-support-logo.png')}, {!URLFOR($Resource.knowledge_assets_brand_relaunch, 'images/bigcommerce-support-logo.png')} 2x" height="40" />
+				</a>
+			</h1>
+		</div>
+		<div class="container live-chat">
+			<div class="card">
+				<div class="card-body">
+                    <h4 class="text-center">Chat Complete</h4>
+                    <h4 class="text-center">Redirecting...</h4>
+					<div class="text-center">
+						<p>Don’t worry... We’re emailing you a copy of the chat transcript now. Thanks again!</p>
+						<br />
+						<p>Redirecting to feedback form... If it takes longer than 5 seconds please <a href="#" id="chat-survey-link">click here</a>.</p>
+					</div>
+                    <br /><br />
+                    <div class="row">
+						<div class="col-xs-6">
+							<button id="save-chat" onclick="SfdcApp.LiveAgent.Chasitor.saveChat();" class="liveAgentSaveButton btn btn-default btn-lg">Save chat</button>
+						</div>
+						<div class="col-xs-6">
+							<button id="end-chat" onclick="SfdcApp.LiveAgent.Chasitor.endChat();" class="liveAgentEndButton btn btn-default btn-lg">End chat</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<!-- These variables are passed to the post-chat page and can be used to customize your post-chat experience
+Request Time: <apex:outputText value="{!$CurrentPage.parameters.requestTime}" /><br/>
+Start Time: <apex:outputText value="{!$CurrentPage.parameters.startTime}" /><br/>
+Button Id: <apex:outputText value="{!$CurrentPage.parameters.buttonId}" /><br/>
+Deployment Id: <apex:outputText value="{!$CurrentPage.parameters.deploymentId}" /><br/>
+Last Visited Page: <apex:outputText value="{!$CurrentPage.parameters.lastVisitedPage}" /><br/>
+Original Referer: <apex:outputText value="{!$CurrentPage.parameters.originalReferrer}" /><br/>
+Latitude: <apex:outputText value="{!$CurrentPage.parameters.latitude}" /><br/>
+Longitude: <apex:outputText value="{!$CurrentPage.parameters.longitude}" /><br/>
+City: <apex:outputText value="{!$CurrentPage.parameters.city}" /><br/>
+Region: <apex:outputText value="{!$CurrentPage.parameters.region}" /><br/>
+Country: <apex:outputText value="{!$CurrentPage.parameters.country}" /><br/>
+Organization: <apex:outputText value="{!$CurrentPage.parameters.organization}" /><br/>
+Transcript: <apex:outputText value="{!$CurrentPage.parameters.transcript}" /><br/>
+Disconnected By: <apex:outputText value="{!$CurrentPage.parameters.disconnectedBy}" /><br/>
+Chat Key: <apex:outputText value="{!$CurrentPage.parameters.chatKey}" /><br />
+Chat Details: <apex:outputText value="{!$CurrentPage.parameters.chatDetails}" /><br />
+Error: <apex:outputText value="{!$CurrentPage.parameters.error}" /><br />
+<apex:outputlink value="{!URLFOR($Page.aeskisenroll) + '?RecordTypeId=012Q00000004So4'}">Enrollment</apex:outputlink>
+<a href="https://www.clicktools.com/survey?iv=wx2nz8y2v09n" target="_blank" id="support-survey"> here </a>
+window.location.href = "https://www.clicktools.com/survey?iv=wx2nz8y2v09n?q1=" + chatkeyid;
+{window.location ="http://support.bigcommerce.com";	 }
+window.parent.location.href = "https://na6.salesforce.com/apex/NewFrontDesk–CardCode=" + chatkeyid;
+<body onload="redirecturl('{!$CurrentPage.parameters.chatKey}', '{!$CurrentPage.parameters.status}')">
+<body >
+/apex/VF_Pagename {!URLFOR($Page.VF_Pagename)}
+{window.location = "https://sbfull-bigcommerce.cs14.force.com/apex/submitcase";}
+Error: <apex:outputText value="{!$CurrentPage.parameters.error}" />
+-->
+<!-- Implement your post-chat message, form, or survey here -->
+</apex:page>

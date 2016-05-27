@@ -1,0 +1,142 @@
+<apex:page controller="SubmitCaseController" showHeader="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" title="Cancellation Request - Bigcommerce" standardStylesheets="false">
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Cancellation Request - Bigcommerce</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <apex:stylesheet value="{!URLFOR($Resource.case_assets, 'case_assets/styles/bootstrap/bootstrap.min.css')}" />
+  <apex:stylesheet value="{!URLFOR($Resource.case_assets, 'case_assets/styles/styles.css')}" />
+  <apex:includeScript value="{!$Resource.jQuery}"/>
+</head>
+<body>
+  <div class="container">
+    <div class="row row-centered">
+      <div class="col-sm-12 col-md-6 content col-centered">
+        <header id="header">
+          <div class="row">
+            <div class="col-xs-12 text-center">
+              <a href="http://support.bigcommerce.com/" id="link-home" title="support.bigcommerce.com"><apex:image value="{!URLFOR($Resource.case_assets, 'case_assets/img/Bigcommerce-Logo-Notag-280.png')}" alt="Bigcommerce Logo; click to go to bigcommerce.com" width="280" height="68" /></a>
+            </div>
+          </div>
+          <h2>Cancellation Request</h2>
+          <p>To cancel your Bigcommerce subscription, please complete the following form.</p>
+        </header>
+
+        <apex:form id="supportTicketForm" styleClass="form-horizontal case-form">
+
+          <apex:outputPanel styleclass="error-messages" rendered="{!formErrorsList.size != 0}" layout="block">
+            <apex:repeat value="{!formErrorsList}" var="error" id="formErrors">
+              <p class="alert alert-danger">{!error}</p>
+            </apex:repeat>
+          </apex:outputPanel>
+
+
+          <apex:actionRegion >
+
+            <!-- Step 1 / Authentication -->
+            <apex:outputPanel id="form-step-1" rendered="{!NOT(webFormOn)}" layout="block">
+
+              <apex:outputPanel id="field-group-store-url" styleclass="{!IF(formURL.hasError,'has-error','')} form-group" layout="block">
+                <apex:outputLabel for="field-store-url" value="Store URL" styleClass="col-sm-3 control-label hidden"></apex:outputLabel>
+                <apex:outputPanel styleClass="col-sm-7" layout="block">
+                  <apex:inputText id="field-store-url" value="{!formURL.value}" styleclass="field-store-url form-control" required="true" />
+                </apex:outputPanel>
+              </apex:outputPanel>
+
+              <apex:outputPanel id="field-group-support-pin" styleclass="{!IF(formPIN.hasError,'has-error','')} form-group" layout="block">
+                <apex:outputLabel for="field-support-pin" value="PIN" styleClass="col-sm-3 control-label hidden"></apex:outputLabel>
+                <apex:outputPanel styleClass="col-sm-3" layout="block">
+                  <apex:inputText id="field-support-pin" value="{!formPIN.value}" styleclass="field-support-pin form-control" required="true" />
+                  <span class="help-block"><a href="https://support.bigcommerce.com/articles/Public/What-is-my-support-PIN-and-where-do-I-find-it/" target="_blank" id="support-ticket-help">Forgot your PIN?</a></span>
+                </apex:outputPanel>
+              </apex:outputPanel>
+
+              <apex:outputPanel id="form-validatation-controls" styleclass="form-controls form-group" layout="block">
+                <div class="col-xs-12 form-submit-group">
+                  <apex:commandButton styleclass="btn btn-primary" id="control-validate" value="Login" action="{!validatePIN}" rendered="{!IF(webFormOn,false,true)}" />
+                  <apex:actionStatus startText="Validating PIN/URL..." id="status" />
+                </div>
+              </apex:outputPanel>
+
+            </apex:outputPanel>
+
+            <!-- Step 2 / Ticket Creation -->
+            <apex:outputPanel id="form-step-2" rendered="{!webFormOn}" layout="block">
+              <apex:outputPanel id="field-group-ticket-description" styleclass="{!IF(formDescription.hasError,'has-error','')} form-group" layout="block">
+                <div class="col-xs-12">
+                  <apex:outputLabel for="field-ticket-description">Reason for Termination for <strong>{!formURL.value}</strong></apex:outputLabel>
+                  <apex:inputTextArea rows="12" value="{!caseDescription}" id="field-ticket-description" styleclass="field-ticket-description form-control" required="true" html-placeholder="Briefly describe the reason you wish to terminate your subscription" />
+                </div>
+              </apex:outputPanel>
+
+              <div class="form-contact-info">
+
+                <apex:outputPanel id="field-group-email" styleclass="form-group" layout="block">
+                  <apex:outputPanel layout="block" styleclass="col-sm-12">
+                    <input type="email" id="field-email" class="field-email form-control" value="{!formEmail.value}" />
+                  </apex:outputPanel>
+                </apex:outputPanel>
+
+                <apex:outputPanel id="field-group-first-name" styleclass="{!IF(formFname.hasError,'has-error','')} form-group" layout="block">
+                  <apex:outputLabel value="First Name" for="field-first-name" styleClass="control-label col-sm-3 hidden" />
+                  <apex:outputPanel styleClass="col-sm-6" layout="block">
+                    <apex:inputText id="field-first-name" styleclass="field-first-name form-control" required="true" value="{!formFname.value}" />
+                  </apex:outputPanel>
+                </apex:outputPanel>
+
+                <apex:outputPanel id="field-group-last-name" styleclass="{!IF(formLname.hasError,'has-error','')} form-group" layout="block">
+                  <apex:outputLabel value="Last Name" for="field-last-name" styleClass="control-label col-sm-3 hidden" />
+                  <apex:outputPanel styleClass="col-sm-6" layout="block">
+                    <apex:inputText id="field-last-name" styleclass="field-last-name form-control" required="true" value="{!formLname.value}" />
+                  </apex:outputPanel>
+                </apex:outputPanel>
+
+                <apex:outputPanel id="field-group-phone" styleclass="{!IF(formPhone.hasError,'has-error','')} form-group" layout="block">
+                  <apex:outputLabel value="Phone Number" for="field-phone" styleClass="control-label col-sm-3 hidden" />
+                  <apex:outputPanel layout="block" styleclass="col-sm-5">
+                    <apex:inputText id="field-phone" styleclass="field-phone form-control" required="true" value="{!formPhone.value}" />
+                  </apex:outputPanel>
+                  <div class="col-xs-12">
+                    <span class="help-block">Please use a valid and current phone number as cancellation requests often require confirmation.</span>
+                  </div>
+                </apex:outputPanel>
+
+              </div>
+
+              <div class="form-group">
+                <apex:outputPanel id="form-create-ticket-controls" styleclass="col-xs-12 text-right" layout="block">
+                  <a class="btn btn-link" href="http://support.bigcommerce.com">Cancel</a>
+                  <apex:commandButton styleclass="btn btn-primary control-create-ticket case-submit" value="Submit Cancellation Request" action="{!submitCase}" />
+                </apex:outputPanel>
+              </div>
+
+              <p>By submitting this request, you agree to our <a href="https://bigcommerce.com/terms/" target="_blank" id="tos">Terms of Service</a></p>
+
+              <!-- <apex:outputLabel value="Subject of Problem:" for="Subj" />
+              <apex:inputText required="true" value="{!c.Subject}" id="Subj" />
+              <apex:outputLabel value="Problem Description:" for="Desc" />
+              <apex:inputTextArea required="true" rows="5" value="{!c.Description}" id="Desc"/> -->
+
+              <apex:inputHidden id="SupportSetting" value="{!csse}" />
+              <!-- Set the Name of the Case Submission Settings record to be queried by the Controller -->
+              <script>
+                  document.getElementById('{!$Component.supportTicketForm}').elements['{!$Component.SupportSetting}'].value = 'Web2Cancel';
+              </script>
+
+              <!-- <apex:outputLabel value="Your Email:" for="eMail" />
+              <apex:inputText id="eMail" value="{!formEmail}" /> -->
+            </apex:outputPanel>
+
+          </apex:actionRegion>
+        </apex:form>
+
+      </div><!-- /.content -->
+    </div><!-- /.row-centered -->
+  </div><!-- /.container -->
+</body>
+<apex:includeScript value="{!URLFOR($Resource.case_assets, 'case_assets/js/functions.js')}"/>
+</html>
+</apex:page>

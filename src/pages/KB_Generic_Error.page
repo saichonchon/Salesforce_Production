@@ -1,0 +1,16 @@
+<apex:page title="{!$Label.site.error2}" id="Unauthorized" showHeader="false" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false">
+  <apex:composition template="KB_Error_Template">
+    <apex:define name="title">
+      <title>BigCommerce Support - An Error Occured</title>
+    </apex:define>
+    <apex:define name="body">
+      <div class="site-error">
+        <div class="text-center">
+          <h1>Error</h1>
+          <p class="text-center">Looks like you encountered an error. If you need immediate assistance from Bigcommerce Support, you can call us at 888-699-8911(U.S.)</p>
+        </div>
+      </div>
+    </apex:define>
+  </apex:composition>
+  <site:previewAsAdmin />
+</apex:page>

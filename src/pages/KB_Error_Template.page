@@ -1,0 +1,27 @@
+<apex:page docType="html-5.0" standardController="KnowledgeArticle" extensions="pkb_Controller" standardStylesheets="false" showHeader="false" applyBodyTag="false" applyHtmlTag="false">
+<html>
+<head>
+  <apex:insert name="title" />
+  <c:kb_resources />
+  <c:pkb_js pkbCon="{!pkbCon}" />
+</head>
+<body>
+<c:kb_google_tag_manager />
+<div id="page-wrapper">
+
+  <c:kb_header activePage="none"  />
+  
+  <c:pkb_search pkbCon="{!pkbCon}" />
+  
+  <div class="container">
+    <apex:insert name="body" />
+  </div>
+  
+  <c:kb_footer />
+  
+</div>
+</body>
+<c:kb_tracking_codes />
+</html>
+<site:previewAsAdmin />
+</apex:page>

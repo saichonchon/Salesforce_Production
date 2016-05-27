@@ -1,0 +1,6 @@
+<apex:page standardController="Case" extensions="CaseStopWorkingController" action="{!setCaseToDesignApproved}">
+	<apex:form >
+		<apex:pageMessages />
+		 
+	</apex:form>
+</apex:page>

@@ -1,0 +1,114 @@
+<apex:page showHeader="false" controller="SalesLiveAgentChatController" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" title="Bigcommerce Sales" standardStylesheets="false">
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>How can we help? | Bigcommerce Sales Team</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <apex:includeScript value="{!URLFOR($Resource.support_assets, 'support_assets/javascripts/vendor/custom.modernizr.js')}"/> 
+  <apex:stylesheet value="{!URLFOR($Resource.support_assets, 'support_assets/stylesheets/vendor/normalize.min.css')}" />
+  <apex:stylesheet value="{!URLFOR($Resource.support_assets, 'support_assets/stylesheets/vendor/foundation.min.css')}" />
+  <apex:stylesheet value="{!URLFOR($Resource.support_assets, 'support_assets/stylesheets/chatstyles.css')}" />
+  <apex:includeScript value="{!$Resource.jQuery}"/>  
+
+  <script type='text/javascript'>
+
+    liveagent.addEventListener(liveagent.chasitor.Events.CHAT_REQUEST_SUCCESSFUL, chatRequest);
+    liveagent.addEventListener(liveagent.chasitor.Events.CHAT_ESTABLISHED, chatEstablished);
+    // liveagent.addEventListener(liveagent.chasitor.Events.AGENT_CHAT_TRANSFERRED, chatTransferred;);    
+    // liveagent.addEventListener(liveagent.chasitor.Events.CHAT_REQUEST_FAILED, chatFailed);
+
+    // function chatFailed(){
+
+    //   alert("You got it");
+    // }
+    function chatRequest() {
+      var predetails = liveagent.chasitor.getDetails();
+      $('#chatButtons').css('display','block');       
+
+      window.predetails = predetails;
+      var chatEmail = liveagent.chasitor.getDetails().prechatDetails[0].value;
+      window.chatEmail = chatEmail;       
+    }
+    function chatEstablished() {
+      var details = liveagent.chasitor.getDetails();      
+      getFullPhotoUrl();
+
+      $('#liveAgentChatInput').attr('placeholder','Enter your message here...');  
+      window.details = details;             
+    } 
+
+    function getFullPhotoUrl() {
+      var url = "";
+      var userId = liveagent.chasitor.getDetails().agent.userId;
+      SalesLiveAgentChatController.doGetFullPhotoUrl(userId,
+        function(result, event) {
+          if(event.type === 'exception') {
+            console.log("exception");
+            console.log(event);
+          } else if (event.status) {
+              url = result;
+              window.url = url;              
+              document.getElementById('smallUrlPhoto').src =  url.SmallPhotoUrl;              
+          } else {
+              console.log(event.message);
+          }
+        }
+      );
+    } 
+
+    // function createLead(){
+    //    alert("You got it");
+
+
+    // }
+  </script> 
+</head>
+
+<body>
+  <div class="row">
+    <div class="small-12 large-6 large-centered column content">
+      <liveAgent:clientchat >
+        <div id="prechatdata">
+        </div>
+        <div id="chatWindow">
+          <div id="logo">
+            <a href="http://support.bigcommerce.com/" id="link-home" title="support.bigcommerce.com"><apex:image value="{!URLFOR($Resource.support_assets, 'support_assets/images/logo.png')}" alt="Bigcommerce Logo; click to go to bigcommerce.com" width="238" height="57" /></a>
+          </div>
+          <div id="agentPhoto">
+            <img id="smallUrlPhoto" ></img>
+          </div>
+          <div id="chatButtons">
+            <liveAgent:clientChatSaveButton label="Save Chat"/>
+            <liveAgent:clientChatEndButton label="End Chat" /> 
+          </div>
+          <div id="alertMessage">
+            <liveAgent:clientChatAlertMessage />
+          </div> 
+          <!-- <div id="emailLead" class="form-submit-group" >
+            <input id="email" type="button" styleclass="button" value="I will like to learn more about Bigcommerce" onclick="createLead()" />
+            
+          </div>  -->   
+         
+
+
+          <liveAgent:clientChatStatusMessage />
+          <div id="waitingMessage">
+            <p>Thank you for contacting BigCommerce! Don’t look back while you wait for the next available Sales Representative!</p>            
+            <apex:image value="//5km.la2c2.salesforceliveagent.com/content/images/html_progress_bar.gif" alt="Progress Bar" />            
+          </div>
+          <div>
+            <liveAgent:clientChatLog />            
+          </div>
+          <div id="chatSend">            
+            <liveagent:clientChatInput />
+            <liveAgent:clientChatSendButton label="Send"/> 
+          </div>
+        </div><!--end chatwindow-->
+      </liveAgent:clientchat>
+    </div>
+  </div>
+</body>
+</html>
+</apex:page>

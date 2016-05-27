@@ -1,0 +1,105 @@
+<apex:page cache="false" standardStylesheets="false" showHeader="false" sidebar="false" standardController="KnowledgeArticle" extensions="pkb_Controller" language="{!pkbCon.selectedLanguage}" applyBodyTag="false" applyHtmlTag="false">
+<html>
+<head>
+  <title>Support Policy - Bigcommerce Support</title>
+  <link rel="canonical" href="https://support.bigcommerce.com/support_policy" />
+  <c:kb_resources />
+  <c:pkb_js pkbCon="{!pkbCon}" />
+</head>
+
+<body>
+<!--
+HELPFUL DEBUG DATA
+
+SITE ADMIN: {!pkbCon.siteAdmin.Email}, {!pkbCon.siteAdmin.Name}<br/>
+ALL PARAMS: {!allSearchParams}<br/>
+SITE/PAGE URL: {!pkbCon.currentSiteUrl}<br/>
+FEEDBACK? : {!displayFeedback}<br/>
+SESSION: {!$Api.Session_ID}<br/>
+RSS URL: {!$Page.pkb_RSS}<br/>
+CATEGORIES: {!selectedCategory}<br/>
+KNOWLEDGE ARTICLE ID: {!theKad.Id}<br/>
+KNOWLEDGE ARTICLE ID (FROM CONTROLLER): {!KnowledgeArticle.Id}<br/>
+Page Content: {!pkbCon.PKBContentByName[Topics].Content__c}    
+-->
+<!-- Contact Page -->
+<div id="page-wrapper">
+
+  <c:kb_header />
+
+  <c:pkb_search pkbCon="{!pkbCon}" />
+  
+  <div class="container">
+    <h1 class="page-header">Bigcommerce Support Policy</h1>
+    <h3>Introduction</h3>
+    <p>The Bigcommerce support policy was created to help our clients understand what we can and cannot support when it comes to their online store. Our team of technical support engineers are available by email, live chat and phone to assist where required, however we ask that you familiarize yourself with this support policy as soon as you become a client.</p>
+
+    <h3>Customizing Bigcommerce</h3>
+    <p>We provide a rich supply of themes and templates you can use to create a unique look to your store, with little to no knowledge of web development.  Bigcommerce is very flexible, allowing you to customize your templates or to develop your own.  The sky is the limit if you have a good understanding of web design and development. A strong knowledge of HTML and CSS is required to be able to implement custom design.</p>
+    <p>JavaScript can be implemented in the template design to add client-side functionality as well. If a customized design is what you desire, we have a great group of professional <a href="http://www.bigcommerce.com/experts/" target="_blank">Bigcommerce design partners</a> that would love to work with you.</p>
+    <p>Our support department provides a limited scope of support focused on the Bigcommerce platform and they do not provide any professional or value added services such as web design.  Any customizations to templates with HTML or CSS or any customizations using jQuery or JavaScript will require the knowledge of outside help. Please be advised, any template customizations will not be supported by the Bigcommerce support team.</p>
+    
+    <h3>Bigcommerce "How To" and Features</h3>
+    <p>Our support team is happy to assist you with any clarifications or questions regarding the functionality of the Bigcommerce platform, including questions on the user interface, settings, and common "how to" questions, as well as all advertised or documented features.</p>
+    
+    <h3>WebDAV, Email and API Support</h3>
+    <p>Our support team can assist you with issues related to connectivity for WebDAV, email accounts, and the Bigcommerce API as documented. We can also assist with connectivity issues related to integration with the different 3rd party services that Bigcommerce has integrated with.</p>
+    
+    <h3>SSL and Domain Registration</h3>
+    <p>Our support team can assist you with questions or issues related to the Bigcommerce domain registration and SSL products that we provide.</p>
+    
+    <h3>Bigcommerce Software Issues</h3>
+    <p>For any issues related to the functionality of Bigcommerce, especially issues that could be classified as a possible software issue, please contact us as soon as possible by submitting a ticket, starting a live chat, or calling us.</p>
+    
+    <h3>We're Here to Help</h3>
+    <p>We have a very talented team of e-commerce specialist and our desire is to make you successful. Our support team can answer or guide you to any common e-commerce questions you might have as they relate to your Bigcommerce account.  We have a rich content driven <a href="http://support.bigcommerce.com" target="_blank">knowledge base</a> that addresses common questions that we receive from our community.</p>
+    
+    <h3>Our Support Limitations</h3>
+    <p>Of course there are limits on what Bigcommerce can assist and support. These are described in detail below.</p>
+    
+    <h3>Unsupported Gateways and Third Party Software</h3>
+    <p>We are not able to support any third party gateways or third party software we do not integrate with.  We are unable to provide any "How to use", modify or extend the use of any third party software outside of any documentation we've provided.</p>
+
+    <h3>Data and Cart Migration</h3>
+    <p>We are not able provide any data migration services, including moving data from another shopping cart vendor to Bigcommerce, or any data cloning of one Bigcommerce store to another store. The built in import/export tool should allow you to move data from one store to the next, though CSV imports do require a strong knowledge of data migration.</p>
+    
+    <p>Consult these articles and videos for more information:</p>
+    <ul>
+        <li><a href="http://support.bigcommerce.com/questions/1062" target="_blank">How to import from a CSV file</a></li>
+        <li><a href="http://support.bigcommerce.com/questions/967" target="_blank">How to create a CSV file with Excel</a></li>
+        <li><a href="http://support.bigcommerce.com/questions/718" target="_blank">How to import images with products</a></li>
+    </ul>
+    
+    <h3>Limits of SaaS Hosting and Restrictions</h3>
+    <p>As a Software As A Service (SaaS) offering we are not able to provide certain services that would be normal for many web hosts due to security restrictions and PCI compliance. We do not allow PHP scripts to be installed on your Bigcommerce web server and we provide limited access to services such as WebDAV, DNS management, direct database access and web service security functionality.</p>
+
+    <h3>Usage of the Community Forum</h3>
+    <p>We provide our forum as a service to our active clients so they can exchange ideas and information about Bigcommerce.  The forum is also to share new ideas and suggestions for product features and functionality.  It's our desire that every client has a positive experience with the forum. We therefore ask that you follow some general guideline in its use.</p>
+    
+    <p>Please assure your postings are relevant, on topic, and productive.  That you show courtesy to other posters. Inflammatory or objectionable postings meant to harass or that are abusive to other posters will be removed and your account may be banned.  Please, no spam or postings that advertize products or services. We reserve the right to amend or remove postings that are deemed inappropriate.</p>
+
+    <h3>Helpful Additional Links</h3>
+    <ul>
+        <li><a href="http://support.bigcommerce.com/questions/1711/" target="_blank">Changing Font Size &amp; Color</a></li>
+        <li><a href="http://support.bigcommerce.com/questions/1712/" target="_blank">Changing Width, Height, and Margin</a></li>
+        <li><a href="http://support.bigcommerce.com/questions/1713/" target="_blank">Changing Background Color</a></li>
+        <li><a href="http://www.w3schools.com/css/" target="_blank" rel="nofollow">Learn CSS on w3schools.com</a></li>
+        <li><a href="http://www.w3schools.com/html/default.asp" target="_blank" rel="nofollow">Learn HTML on w3schools.com</a></li>
+        <li><a href="http://www.csszengarden.com/" target="_blank" rel="nofollow">Learn CSS on CSSZenGarden.com</a></li>
+    </ul>
+
+    <h3>The Bigcommerce Knowledge Base</h3>
+    <p>In addition to the links we've provided, there's also a very rich knowledge base filled with helpful video tutorials and articles. Content is updated frequently by our technical content specialists and support staff.  You can learn just about everything needed in our knowledge base to make your store a success.</p>
+    <p><a href="http://support.bigcommerce.com" target="_blank">Go to our knowledge base</a></p>
+  </div>
+
+  <c:kb_footer />
+  
+</div><!-- /.page-wrapper -->
+
+</body>
+<site:googleAnalyticsTracking />
+<c:kb_tracking_codes />
+</html>
+<site:previewAsAdmin />
+</apex:page>

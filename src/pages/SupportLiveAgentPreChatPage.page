@@ -1,0 +1,158 @@
+<apex:page controller="SupportLiveAgentPreChatController" showHeader="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" title="Bigcommerce Support" standardStylesheets="false">
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Live Chat | BigCommerce Support</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <apex:stylesheet value="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'dist/styles.min.css')}" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    	<script src="{!URLFOR($Resource.knowledge_assets, 'dist/all.min.js')}" type="text/javascript"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    </head>
+
+    <!-- This script takes the endpoint URL parameter passed from the deployment page and makes
+    it the action for the form -->
+    <script type="text/javascript">
+        var verified = checkVerifiedCookie();
+		$(document).ready(function() {
+            var verified = checkVerifiedCookie();
+            if(verified == false) {
+                document.location.assign("https://support.bigcommerce.com/contact");
+            }
+        });
+        jQuery(function(){{!jsSubmitForm}});
+        document.getElementById('{!$Component.prechatFormInput}').elements['{!$Component.SupportSetting}'].value = 'LiveAgent';
+        (function() {
+            function handlePageLoad() {
+                var endpointMatcher = new RegExp("[\\?\\&]endpoint=([^&#]*)");
+                document.getElementById('prechatForm').setAttribute('action', decodeURIComponent(endpointMatcher.exec(document.location.search)[1]));
+            } if (window.addEventListener) {
+                window.addEventListener('load', handlePageLoad, false);
+            } else {
+                window.attachEvent('onload', handlePageLoad, false); 
+            }
+        })();
+    </script>  
+    <body>
+        <c:kb_google_tag_manager />
+        <div class="text-center live-chat-header">
+            <h1>
+                <a href="https://support.bigcommerce.com/" id="link-home">
+                    <img src="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'images/bigcommerce-support-logo.png')}" alt="BigCommerce Community Logo" srcset="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'images/bigcommerce-support-logo.png')}, {!URLFOR($Resource.knowledge_assets_brand_relaunch, 'images/bigcommerce-support-logo.png')} 2x" height="40" />
+                </a>
+            </h1>
+        </div>
+        <div class="container live-chat">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="text-center">Live Chat</h4>
+                    <c:portalNotice topic_Name="Portal_Notice" />
+                    <apex:form id="prechatFormInput" styleclass="prechatFormInput chat-form">
+
+                        <apex:outputPanel styleclass="error-messages" rendered="{!formErrorsList.size != 0}" layout="block">
+                            <apex:repeat value="{!formErrorsList}" var="error" id="formErrors">
+                              <p class="alert alert-danger">{!error}</p>
+                            </apex:repeat>
+                        </apex:outputPanel>
+
+                        <input type="hidden" name="SupportSetting" value="{!csse}"/>
+                                    
+                        <apex:actionRegion >
+                            <apex:outputPanel id="form-preChat" layout="block">
+
+                                <apex:outputPanel id="field-group-first-name" styleclass="{!IF(formFname.hasError,'has-error','')} form-group" layout="block">
+                                    <apex:outputLabel for="field-first-name" value="First Name" styleClass="control-label sr-only"></apex:outputLabel>
+                                    <apex:inputText id="field-first-name" value="{!formFname.value}" styleclass="field-store-url form-control" html-placeholder="First Name" required="true" />
+                                </apex:outputPanel>
+
+                                <apex:outputPanel id="field-group-last-name" styleclass="{!IF(formLname.hasError,'has-error','')} form-group" layout="block">
+                                    <apex:outputLabel for="field-last-name" value="Last Name" styleClass="control-label sr-only"></apex:outputLabel>
+                                    <apex:inputText id="field-last-name" value="{!formLname.value}" styleclass="field-store-url form-control" html-placeholder="Last Name" required="true" />
+                                </apex:outputPanel>
+
+                                <apex:outputPanel id="field-group-email" styleclass="{!IF(formEmail.hasError,'has-error','')} form-group" layout="block">
+                                    <apex:outputLabel for="field-email" value="Email" styleClass="control-label sr-only"></apex:outputLabel>
+                                    <apex:inputText id="field-email" value="{!formEmail.value}" styleclass="field-store-url form-control" html-placeholder="Email" required="true" />
+                                </apex:outputPanel>
+
+                                <apex:outputPanel id="field-group-store-url" styleclass="{!IF(formURL.hasError,'has-error','')} form-group" layout="block">
+                                    <apex:outputLabel for="field-store-url" value="Your store URL" styleClass="control-label sr-only"></apex:outputLabel>
+                                    <apex:inputText id="field-store-url" value="{!formURL.value}" styleclass="field-store-url form-control" html-placeholder="Bigcommerce Store URL" required="true" />
+                                </apex:outputPanel>
+
+                                <apex:outputPanel id="field-group-support-pin" styleclass="{!IF(formPIN.hasError,'has-error','')} form-group" layout="block">
+                                    <apex:outputLabel for="field-support-pin" value="Support Pin" styleClass="control-label sr-only"></apex:outputLabel>
+                                    <apex:inputText id="field-support-pin" value="{!formPIN.value}" styleclass="field-support-pin form-control" html-placeholder="Support PIN" required="true" />
+                                    <span class="help-block"><a href="https://support.bigcommerce.com/articles/Public/What-is-my-support-PIN-and-where-do-I-find-it/" target="_blank" id="support-ticket-help text-right">Forgot your PIN?</a></span>
+                                </apex:outputPanel>
+                                
+                                <apex:outputPanel id="field-group-subject" styleclass="{!IF(formSubject.hasError,'has-error','')} form-group" layout="block">
+                                    <apex:outputLabel for="field-subject" value="What can we help you with today?" styleClass="control-label"></apex:outputLabel>
+                                    <apex:inputText id="field-subject" value="{!formSubject.value}" styleClass="field-subject form-control" html-placeholder="Subject" required="true" />
+                                    <span class="help-block">e.g. Shipping Setup, Tax Setup, Adding Banner, Carousel Images</span>
+                                </apex:outputPanel>
+
+                                <apex:outputPanel id="form-validatation-controls" styleclass="form-controls form-group" layout="block">
+                                    <div class="form-submit-group">
+                                        <apex:commandButton styleclass="btn btn-primary btn-lg" id="control-validate" value="Request Chat" action="{!validatePIN}" />
+                                        <apex:actionStatus startText="Validating PIN/URL..." id="status" />
+                                    </div>
+                                </apex:outputPanel>
+
+                            </apex:outputPanel>
+                        </apex:actionRegion>
+                    </apex:form>
+
+                    <apex:outputPanel id="prechatFormPanel">
+                        <form method="post" id="preChatFormSubmit" action="{!endpoint}">        
+                            <input type="hidden" name='liveagent.prechat:FirstName' value="{!formFname.value}"/>
+                            <input type="hidden" name='liveagent.prechat:LastName' value="{!formLname.value}"/>
+                            <input type="hidden" name='liveagent.prechat:Email' value="{!formEmail.value}"/>  
+                            <input type="hidden" name='liveagent.prechat:StoreURL' value="{!formURL.value}"/>
+                            <input type="hidden" name='liveagent.prechat:Support PIN' value="{!formPIN.value}"/>
+                            <input type="hidden" name='liveagent.prechat:caseSubject' value="{!formSubject.value}" />
+                            
+                            <input type="hidden" name='liveagent.prechat:SubID' value="{!subId}"/>
+                            <input type="hidden" name='liveagent.prechat:AcctID' value="{!AcctId}"/>
+                            <input type="hidden" name='liveagent.prechat:OppID' value="{!oppId}"/>
+                            <input type="hidden" name='liveagent.prechat:ContactID' value="{!conId}"/>
+                            <input type="hidden" name="liveagent.prechat.name" value="{!formFname.value}" id="prechat_field"/>
+                            
+                            <!-- Creates an auto-query for a matching Contact/Lead record?s Email field based on the
+                            value of the liveagent.prechat:Email field -->
+                            <input type="hidden" name="liveagent.prechat.query:Email" value="Lead,Lead.Email,Contact,Contact.Email" />
+                            <input type="hidden" name="liveagent.prechat.query:StoreURL" value="Opportunity.StoreURL__c" />
+                           
+                            
+                            <input type="hidden" name="liveagent.prechat.save:FirstName" value="FirstName__C" /> 
+                            <input type="hidden" name="liveagent.prechat.save:LastName" value="LastName__c" /> 
+                            <input type="hidden" name="liveagent.prechat.save:Email" value="eMail__c" />     
+                            <input type="hidden" name="liveagent.prechat.save:StoreURL" value="Store_URL__c" /> 
+                            <input type="hidden" name="liveagent.prechat.save:Support PIN" value="sPIN" /> 
+                            <input type="hidden" name="liveagent.prechat.save:SubID" value="SubscriptionID__c" />
+                            <input type="hidden" name="liveagent.prechat.save:AcctID" value="AccountID__c" />
+                            <input type="hidden" name="liveagent.prechat.save:ContactID" value="ContactId" />
+                            <input type="hidden" name="liveagent.prechat.save:OppID" value="Opportunity__c" />
+                            <input type="hidden" name="liveagent.prechat.save:caseSubject" value="Subject__c" />
+                           
+                            <!-- Create a Case every time -->
+                            <input type="hidden" name="liveagent.prechat:caseOrigin" value="Chat" />
+                            <input type="hidden" name="liveagent.prechat.findorcreate.map:Case" value="Origin,caseOrigin;AccountId,AcctID;Subscription__c,SubID;Opportunity__c, OppID;ContactId, ContactID; Subject,caseSubject;" />
+                            <input type="hidden" name="liveagent.prechat.findorcreate.map.doCreate:Case" value="Origin,true;AccountId,true;Subscription__c,true;Opportunity__c,true;ContactId,true;Subject,true;" />
+                            <input type="hidden" name="liveagent.prechat.findorcreate.saveToTranscript:Case" value="Case" />
+                            <input type="hidden" name="liveagent.prechat.findorcreate.showOnCreate:Case" value="true" />
+
+                            <!-- Link the Contact to the Case -->
+                            <input type= "hidden" name="liveagent.prechat.findorcreate.linkToEntity:Contact" value="Case,ContactId" />
+
+                        </form> 
+                    </apex:outputPanel>
+                </div><!-- /.card-body -->
+            </div><!-- /.card -->
+        </div>
+    </body>
+</html>
+</apex:page>

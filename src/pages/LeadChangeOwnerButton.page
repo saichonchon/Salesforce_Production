@@ -1,0 +1,10 @@
+<apex:page standardController="Lead" extensions="ChangeOwnerController" action="{!changeLeadOwner}">
+<apex:pageMessages />
+  <apex:form id="theForm" >        
+	<apex:pageBlock id="pgBlock" title="Message">	    
+		
+		<br /> Click to go back 
+		<apex:commandButton action="{!back}" value="Back" />
+	</apex:pageBlock>
+    </apex:form>
+</apex:page>

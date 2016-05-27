@@ -1,0 +1,6 @@
+<apex:component controller="GetAttachment" access="global">
+<apex:attribute name="sfDoc_ID" Description="reference to Parent" type="ID"  assignTo="{!Doc_ID}" />
+<apex:outputText value="{!Body}" escape="false">
+   </apex:outputText>
+
+</apex:component>

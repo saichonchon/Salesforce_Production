@@ -1,0 +1,14 @@
+<apex:component layout="none" allowDML="true">
+    <script type='text/javascript' src='https://c.la3-c1-chi.salesforceliveagent.com/content/g/js/36.0/deployment.js'></script>
+    <script type='text/javascript'>
+        liveagent.setChatWindowHeight(800);
+        liveagent.init('https://d.la3-c1-chi.salesforceliveagent.com/chat', '572a0000000H7DJ', '00D30000001FDCG');
+    </script>
+    <script type="text/javascript">
+        if(!window._laq){window._laq = [];}
+        window._laq.push(function() {
+            liveagent.showWhenOnline('573a00000008j2D',document.getElementById('live-chat-online'));
+            liveagent.showWhenOffline('573a00000008j2D',document.getElementById('live-chat-offline'));
+        });
+    </script>
+</apex:component>

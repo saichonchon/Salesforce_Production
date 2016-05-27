@@ -1,0 +1,19 @@
+<apex:component allowDML="true" layout="none" controller="SupportPageController">
+  <apex:attribute name="datacategoryname" type="String" assignTo="{!dcsname}"
+  						required="true" description="Data Category to pull article data from" />
+  <apex:repeat value="{!univArtListByName}" var="article">
+    <div class="col-md-4 col-sm-6 video-item">
+        <div class="card card-sm">
+            <a href="/articles/University/{!article.UrlName}">
+                <img class="img-responsive" src="{!article.Thumbnail_Image_URL__c}" alt="{!article.Short_Title__c} thumb" title="{!article.Short_Title__c}" />
+            </a>
+            <div class="card-body">
+                <h5><a href="/articles/University/{!article.UrlName}">{!article.Short_Title__c}</a></h5>
+                <p class="card-subheading">{!article.Video_Duration__c}</p>
+                <p class="card-description">{!article.Short_Description__c}</p>
+                <p class="card-actions"><a href="/articles/University/{!article.UrlName}">Watch Video</a></p>
+            </div>
+        </div>
+    </div>
+  </apex:repeat>
+</apex:component>

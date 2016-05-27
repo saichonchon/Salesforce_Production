@@ -1,0 +1,18 @@
+<apex:page title="{!$Label.site.file_not_found}" id="Unauthorized" showHeader="false" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false">
+  <apex:composition template="KB_Error_Template">
+    <apex:define name="title">
+      <title>BigCommerce Support - 404 Page Not Found</title>
+    </apex:define>
+    <apex:define name="body">
+    <div class="site-error">
+      <div class="text-center">
+        <h1>404 - Not Found</h1>
+        <!--<p>We've recently moved some of our content around, try using the search bar above to find what you're looking for!</p>-->
+        <p class="text-center">What you're looking for isn't here! Make sure you've spelled everything properly or use the search bar above to find what you're looking for.</p>
+        <!--<img src="{!URLFOR($Resource.knowledge_assets, 'knowledge_assets/images/404-cat-error.jpg')}" alt="404 Error" title="404 Error" class="img-responsive" style="margin:0 auto;" />-->
+      </div>
+    </div>
+    </apex:define>
+  </apex:composition>
+  <site:previewAsAdmin />
+</apex:page>

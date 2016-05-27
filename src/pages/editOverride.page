@@ -1,0 +1,2 @@
+<apex:page standardController="Case" extensions="editOverrideController" action="{!createLog}">
+</apex:page>

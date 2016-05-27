@@ -1,0 +1,104 @@
+<apex:page cache="false" standardStylesheets="false" showHeader="false" sidebar="false" standardController="KnowledgeArticle" extensions="pkb_Controller" language="{!pkbCon.selectedLanguage}" applyBodyTag="false" applyHtmlTag="false">
+<html>
+<head>
+    <title>BigCommerce Product Documentation</title>
+    <meta name="description" content="" />
+    <link rel="canonical" href="https://support.bigcommerce.com/articles" />
+    <c:kb_resources />
+</head>
+
+<body>
+<c:kb_google_tag_manager />
+<div id="page-wrapper">
+    <c:kb_header activePage="Articles" />
+    <c:pkb_search pkbCon="{!pkbCon}" />
+    
+    <div class="container portal-notice">
+        <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+          <apex:outputText rendered="{!key='Portal_Notice'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+        </apex:repeat>
+    </div>
+    
+    <div class="container articles">
+        <h1 class="page-title">Documentation</h1>
+        <div class="row">
+            <div class="col-md-9 col-sm-8">
+                <div class="card">
+                    <div class="accordion-group">
+                        <div class="accordion-section">
+                            <div class="accordion-header">
+                                <h4><a href="#">Configuring Your Store</a></h4>
+                            </div>
+                            <div class="accordion-body">
+                                <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                                    <apex:outputText rendered="{!key='Topics_Configuring'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                                </apex:repeat>
+                            </div>
+                        </div>
+                        <div class="accordion-section">
+                            <div class="accordion-header">
+                                <h4><a href="#">Running Your Store</a></h4>
+                            </div>
+                            <div class="accordion-body">
+                                <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                                    <apex:outputText rendered="{!key='Topics_Running'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                                </apex:repeat>
+                            </div>
+                        </div>
+                        <div class="accordion-section">
+                            <div class="accordion-header">
+                                <h4><a href="#">Store Design &amp; Content</a></h4>
+                            </div>
+                            <div class="accordion-body">
+                                <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                                    <apex:outputText rendered="{!key='Topics_Design'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                                </apex:repeat>
+                            </div>
+                        </div>
+                        <div class="accordion-section">
+                            <div class="accordion-header">
+                                <h4><a href="#">Marketing Your Store</a></h4>
+                            </div>
+                            <div class="accordion-body">
+                                <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                                    <apex:outputText rendered="{!key='Topics_Marketing'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                                </apex:repeat>
+                            </div>
+                        </div>
+                        <div class="accordion-section">
+                            <div class="accordion-header">
+                                <h4><a href="#">Billing &amp; Account</a></h4>
+                            </div>
+                            <div class="accordion-body">
+                                <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                                    <apex:outputText rendered="{!key='Topics_Billing'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                                </apex:repeat>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.card -->
+            </div> 
+            <div class="col-md-3 col-sm-4">
+                <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                    <apex:outputText rendered="{!key='Landing_Pages_Community'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                </apex:repeat>
+                <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                    <apex:outputText rendered="{!key='Landing_Pages_Marketplace'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                </apex:repeat>
+                <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                    <apex:outputText rendered="{!key='Landing_Pages_App_Store'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                </apex:repeat>
+            </div>
+        </div>
+    </div>
+    
+    <c:kb_footer />
+  
+</div><!-- /.page-wrapper -->
+
+</body>
+<site:googleAnalyticsTracking />
+<c:kb_tracking_codes />
+</html>
+<site:previewAsAdmin />
+</apex:page>

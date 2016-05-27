@@ -1,0 +1,123 @@
+<apex:page standardcontroller="Subscription__c" extensions="CreateNewTrialController" action="{!initTrialComplete}">
+
+<apex:form >		
+	<center>	
+		<div style="font: normal 28px Arial, Helvetica, sans-serif;">Partner Zone.</div>		
+		<div style="font: normal 14px Arial, Helvetica, sans-serif; color:#909090;">
+			<b>
+				<apex:outPutText value="New partner trial has been created.  See summary below." rendered="{!NOT(isError)}" />
+				<apex:outPutText value="Error occurred trying to create new Trial...See error messages below." rendered="{!isError}" />
+			</b>
+		</div>
+	</center>
+	<br /><br />
+	<apex:pageMessages />
+	<table width="100%" height="100%" bgcolor="#f8f8f8">
+		<tr>
+			<td colspan="2" heigth="20">&nbsp;</td>
+		</tr>		
+		
+		<tr>
+			<td align="right" width="200"><b>Client First Name</b></td>
+			<td><apex:outputText value="{!firstName}" style="width:80%; height: 20px" /></td>
+		</tr>
+		<tr>
+			<td colspan="2" heigth="20">&nbsp;</td>
+		</tr>
+		<tr>
+			<td align="right"><b>Client Last Name</b></td>
+			<td><apex:outputText value="{!lastName}" style="width:80%; height: 20px" /></td>
+		</tr>
+		<tr>
+			<td colspan="2" heigth="20">&nbsp;</td>
+		</tr>
+		<tr>
+			<td align="right"><b>Client Company Name</b></td>
+			<td><apex:outputText value="{!company}" style="width:80%; height: 20px" /></td>
+		</tr>
+		<tr>
+			<td colspan="2" heigth="20">&nbsp;</td>
+		</tr>
+		<tr>
+			<td align="right"><b>Client Phone</b></td>
+			<td><apex:outputText value="{!phone}" style="width:80%; height: 20px" /></td>
+		</tr>
+		<tr>
+			<td colspan="2" heigth="20">&nbsp;</td>
+		</tr>
+		<tr>
+			<td align="right"><b>Client Email Address</b></td>
+			<td><apex:outputText value="{!email}" style="width:80%; height: 20px" /></td>
+		</tr>
+		<tr>
+			<td colspan="2" heigth="20">&nbsp;</td>
+		</tr>
+		
+		<tr>
+			<td align="right"><b>Store Name</b></td>
+			<td><apex:outputText value="{!storeName}" id="storename" style="width:80%; height: 20px" /></td>
+		</tr>
+		<tr>
+			<td colspan="2" heigth="20">&nbsp;</td>
+		</tr>
+		<tr>
+			<td align="right"><b>Password</b></td>
+			<td><apex:outputText value="{!password}" style="width:80%; height: 20px" /></td>
+		</tr>
+		<tr>
+			<td colspan="2" heigth="20">&nbsp;</td>
+		</tr>
+		<tr>
+			<td align="right"><b>Where's customer store based?</b></td> 
+			<td><apex:outputText value="{!country}" style="width:80%; height: 20px" /></td>			
+		</tr>
+		<tr>
+			<td colspan="2" heigth="20">&nbsp;</td>
+		</tr>
+		<tr>
+			<td align="right"><b>What will customer sell?</b></td>
+			<td><apex:outputText value="{!industry}" style="width:80%; height: 20px" /></td>
+		</tr>
+		<tr>
+			<td colspan="2" heigth="20">&nbsp;<br /><br /></td>
+		</tr>
+		<tr>
+			<td align="center" colspan="2">
+				<apex:commandButton action="{!tryAgain}" value="Update & Try Again" rendered="{!isError}" />
+				&nbsp;&nbsp;&nbsp;
+				<apex:commandButton action="{!cancel}" value="Cancel" rendered="{!isError}" />
+				&nbsp;&nbsp;&nbsp;
+				<apex:commandButton action="{!doAgain}" value="Create Another Trial" />				
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" heigth="20">&nbsp;<br /><br /><br /></td>
+		</tr>
+	</table>
+	
+	<!-- 
+		<apex:pageBlockSection >		
+			<apex:pageBlockSectionItem >
+				<apex:outputLabel value="Select Account:" for="account__list"/>
+				<apex:selectList size="1" id="account_list" value="{!selectedAccountId}">
+					<apex:selectOptions value="{!accounts}" />
+		 		</apex:selectList>
+			</apex:pageBlockSectionItem>
+			<apex:pageBlockSectionItem >
+				&nbsp;
+			</apex:pageBlockSectionItem>
+			<apex:pageBlockSectionItem >
+				<apex:outputLabel value="Store Name:" for="storename" />
+				<apex:inputText value="{!storeName}" required="true" id="storename" />
+			</apex:pageBlockSectionItem>
+			<apex:pageBlockSectionItem >
+				<apex:outputLabel value="Subdomain:" for="subdomain" />
+				<apex:inputText value="{!subDomainName}" required="true" id="subdomain" />
+			</apex:pageBlockSectionItem>		
+		</apex:pageBlockSection>
+	</apex:pageBlock>
+	<apex:commandButton action="{!createNewTrial}" value="Create New Trial" />
+	-->
+</apex:form>
+
+</apex:page>

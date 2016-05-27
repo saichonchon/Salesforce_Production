@@ -1,0 +1,20 @@
+<apex:component layout="none">
+  <div class="container-fluid" id="footer" role="contentinfo">
+    <div class="container">
+        <div class="col-sm-6 footer-left">
+            <span class="copyright"><img src="{!URLFOR($Resource.knowledge_assets, 'images/BigCommerce-logo-white.svg')}" width="110" class="footer-logo" />&copy; Copyright 2003 - {!year(today())} BigCommerce Pty. Ltd. Shopping Cart Software</span>
+        </div>
+        <div class="col-sm-6 text-right">
+            <ul class="list-inline bigcommerce-social-links">
+                <li><a href="http://twitter.com/Bigcommerce" title="Twitter">Twitter</a></li>
+                <li><a href="http://www.facebook.com/Bigcommerce" title="Facebook">Facebook</a></li>
+                <li><a href="http://www.linkedin.com/company/bigcommerce" title="LinkedIn">LinkedIn</a></li>
+                <li><a href="http://www.youtube.com/BigcommerceDotCom" title="YouTube">YouTube</a></li>
+                <li><a href="http://pinterest.com/bigcommerce/" title="Pinterest">Pinterest</a></li>
+                <li><a href="https://plus.google.com/+bigcommerce" title="Google Plus">Google Plus</a></li>
+            </ul>
+        </div>
+    </div>
+  </div>
+  <script src="{!URLFOR($Resource.knowledge_assets, 'js/youtube-api.js')}" type="text/javascript"></script>
+</apex:component>

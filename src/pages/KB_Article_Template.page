@@ -1,0 +1,47 @@
+<apex:page docType="html-5.0" standardController="KnowledgeArticle" extensions="pkb_Controller" standardStylesheets="false" showHeader="false" applyBodyTag="false" applyHtmlTag="false" cache="true" showChat="false">
+<html>
+    <head>
+        <apex:insert name="title" />
+        <c:kb_resources />
+        <c:pkb_js pkbCon="{!pkbCon}" />
+    </head>
+    <body>
+    <apex:variable var="ActivePage" value="" />
+    <apex:insert name="ActivePage" />
+    <!-- Template for Public Articles -->
+    <c:kb_google_tag_manager />
+    <div id="page-wrapper">
+        <c:kb_header activePage="{!ActivePage}" />
+        <c:pkb_search pkbCon="{!pkbCon}" />
+        <div class="container-fluid">
+            <div class="row categories-trigger text-center">Browse by Topic</div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 side-categories" role="navigation">
+                    <span class="hidden" id="active-category">{!pkbCon.dcs}</span>
+                    <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                        <apex:outputText rendered="{!key='Categories'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                    </apex:repeat>
+                    <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                            <apex:outputText rendered="{!key='Landing_Pages_Marketplace'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                    </apex:repeat>
+                    <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                            <apex:outputText rendered="{!key='Landing_Pages_App_Store'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                    </apex:repeat>
+                </div>
+                <div class="col-md-9 col-sm-12" role="main">
+                    <div id="article-content">
+                        <apex:insert name="body" />
+                    </div>
+                    <c:pkb_feedbackyesno pkbCon="{!pkbCon}" />
+                </div>
+            </div>
+        </div>
+        <c:kb_footer />
+    </div>
+    </body>
+    <c:kb_live_chat_js />
+    <c:kb_tracking_codes />
+</html>
+</apex:page>

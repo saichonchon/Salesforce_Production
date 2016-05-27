@@ -1,0 +1,94 @@
+<apex:page showHeader="false" controller="LiveAgentChatController">
+    <!-- This script takes the endpoint URL parameter passed from the deployment page and makes
+    it the action for the form -->
+    <script type="text/javascript">
+    (function() {
+        function handlePageLoad() {
+        var endpointMatcher = new RegExp("[\\?\\&]endpoint=([^&#]*)");
+        document.getElementById('prechatForm').setAttribute('action',
+        decodeURIComponent(endpointMatcher.exec(document.location.search)[1]));
+        } if (window.addEventListener) {
+        window.addEventListener('load', handlePageLoad, false);
+        } else { window.attachEvent('onload', handlePageLoad, false);
+    }})();
+    </script>
+    <apex:includeScript value="{!URLFOR($Resource.jQuery)}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.ticketstyles_liveAgent)}" />
+
+    <apex:outputPanel id="prechatJS">
+      <script>
+        jQuery.noConflict();
+        jQuery(function(){
+            {!jsSubmitForm}           
+        });
+        </script>
+    </apex:outputPanel>
+     
+    
+    <apex:image value="{!$Resource.BCLogoTag350x85}"/>  
+    <div id="content">
+        <h1>Enter your details below:</h1><br /><br />
+        
+        <apex:form id="prechatFormInput">
+                <input type="hidden" name="SupportSetting" value="{!csse}"/>
+                <!-- Set the Name of the Case Submission Settings record to be queried by the Controller -->
+                <script>
+                    document.getElementById('{!$Component.prechatFormInput}').elements['{!$Component.SupportSetting}'].value = 'LiveAgent';
+                </script>
+        <apex:pageMessages escape="false" />
+          <apex:actionRegion >
+            <apex:panelGrid columns="2">
+
+                <apex:outputLabel value="First Name:" for="fName" />
+                <apex:inputText id="fName" value="{!formFname}" />
+                <apex:outputLabel value="Last Name:" for="lName" />
+                <apex:inputText required="True" id="lName" value="{!formLname}" />
+                <apex:outputLabel value="Email:" for="eMail" />
+                <apex:inputText required="True" id="eMail" value="{!formEmail}" />
+                <apex:outputLabel value="Store URL:" for="sURL" />
+                <apex:inputText id="sURL" value="{!formURL}" />
+                <apex:outputLabel value="Support PIN:" for="sPIN" />
+                <apex:inputText id="sPIN" value="{!formPIN}">
+                    <!-- <apex:actionSupport event="onchange" action="{!validatePIN}" status="status" /> -->
+                </apex:inputText>
+                
+
+<!--                <select name="liveagent.prechat.buttons"> -->
+                    <!-- Values are LiveChatButton IDs. -->
+<!--                    <option value="{!LEFT(liveChatBtnId, 15)}">Sales</option>
+                    <option value="{!LEFT(liveChatBtnId, 15)}">Technical Support</option>
+                    <option value="{!LEFT(liveChatBtnId, 15)}">Billing</option>
+                </select><br /> -->
+
+                <br /><apex:commandButton value="Request Chat" id="formSubmit" action="{!validatePIN}" />
+                <apex:actionStatus startText="Validating PIN/URL..." id="status" />
+                
+            </apex:panelGrid>
+        </apex:actionRegion>
+      </apex:form>
+        <apex:outputPanel id="prechatFormPanel">
+            <form method="post" id="preChatFormSubmit" action="{!endpoint}">        
+                <input type="hidden" name='liveagent.prechat:FirstName' value="{!formFname}"/>
+                <input type="hidden" name='liveagent.prechat:LastName' value="{!formLname}"/>
+                <input type="hidden" name='liveagent.prechat:Email' value="{!formEmail}"/>  
+                <input type="hidden" name='liveagent.prechat:Store URL' value="{!formURL}"/>
+                <input type="hidden" name='liveagent.prechat:Support PIN' value="{!formPIN}"/>
+                <input type="hidden" name='liveagent.prechat:SubID' value="{!subId}"/>
+                <input type="hidden" name="liveagent.prechat.name" value="{!formFname}" id="prechat_field"/>
+                
+                <!-- Creates an auto-query for a matching Contact record’s Email field based on the
+                value of the liveagent.prechat:Email field -->
+                <input type="hidden" name="liveagent.prechat.query:Email" value="Contact,Contact.Email" />
+                
+                <input type="hidden" name="liveagent.prechat.save:FirstName" value="fName" /> 
+                <input type="hidden" name="liveagent.prechat.save:LastName" value="lName" /> 
+                <input type="hidden" name="liveagent.prechat.save:Email" value="eMail" />     
+                <input type="hidden" name="liveagent.prechat.save:Store URL" value="sURL" /> 
+                <input type="hidden" name="liveagent.prechat.save:Support PIN" value="sPIN" /> 
+                <input type="hidden" name="liveagent.prechat.save:SubID" value="sID" />
+                
+
+            </form> 
+        </apex:outputPanel>
+    </div>
+</apex:page>

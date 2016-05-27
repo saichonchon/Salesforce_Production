@@ -1,0 +1,22 @@
+<apex:page title="{!$Label.site.in_maintenance}" id="Unauthorized" showHeader="false" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false">
+  <apex:composition template="KB_Error_Template">
+    <apex:define name="title">
+      <title>BigCommerce Support - Under Maintenance</title>
+    </apex:define>
+    <apex:define name="body">
+    <div class="site-error">
+      <div class="text-center">
+        <h1>Under Maintenence</h1>
+        <p class="text-center" style="font-size:120px">
+          <i class="sl sl-open-setting-wrenches"></i>
+        </p>
+        <p class="text-center">We're currently changing the oil on this site, but we'll be back up and running just as soon as we're finished. Please check back shortly!</p>
+      </div>
+    </div>
+    <style type="text/css">
+      #search-form {display:none}
+    </style>
+    </apex:define>
+  </apex:composition>
+  <site:previewAsAdmin />
+</apex:page>

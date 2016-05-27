@@ -1,0 +1,135 @@
+<apex:page standardController="Case"  showheader="false" standardStylesheets="false" extensions="RG_BCSViewcaseDetailsController" doctype="html-5.0" applyHtmlTag="false" applyBodyTag="false">
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>My Cases | BigCommerce Support</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <apex:stylesheet value="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'dist/styles.min.css')}" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'dist/all.min.js')}"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <apex:includeScript value="/support/console/29.0/integration.js"/>
+        <script>
+            function uploadthefileJs(f) {
+                if(f != '' && f !=null) {
+                    blockUINew1();
+                    UploadtheFile();
+                }
+            }
+            function blockUINew1() {
+                parentWindow = window.parent;
+            }
+            function blockUINew() {
+                $.blockUI({
+                    message:'Please wait..', css: { 
+                        border: 'none', 
+                        padding: '15px', 
+                        backgroundColor: '#000', 
+                        '-webkit-border-radius': '10px', 
+                        '-moz-border-radius': '10px', 
+                        opacity: .5, 
+                        color: '#fff' 
+                    }
+                }); 
+            }
+        </script>
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container view-cases-header">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/Client/BCSViewCases"><img src="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'images/bigcommerce-support-logo.png')}" alt="BigCommerce Community Logo" srcset="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'images/bigcommerce-support-logo.png')}, {!URLFOR($Resource.knowledge_assets_brand_relaunch, 'images/bigcommerce-support-logo.png')} 2x" height="30" /></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{!$User.FirstName} {!$User.lastName} <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{!$Site.Prefix}/apex/BCSLogout">Log out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container view-cases">
+            <div class="card">
+                <div class="card-body">
+                    <apex:form id="frm">
+                        <Apex:outputPanel >
+                            <apex:pageblock id="pbId">  
+                                <apex:pageblocksection columns="2" id="pbsIs">  
+                                    <apex:repeat value="{!$ObjectType.Case.FieldSets.Community_User}" var="f">  
+                                        <apex:outputfield value="{!Case[f]}"></apex:outputfield>
+                                    </apex:repeat>  
+                                </apex:pageblocksection>  
+                            </apex:pageblock> 
+                        </Apex:outputPanel>
+
+                        <div id="add-comment">
+                            <apex:outputPanel id="commentblock">
+                                <h4>Add a Comment</h4>
+                                <div class="row">
+                                    <div class="col-sm-6" id="commentbody">
+                                        <h5>Message</h5>
+                                        <apex:inputTextArea rows="4" value="{!casecomment.CommentBody}" styleClass="form-control" />
+                                        <br />
+                                        <div class="page-messages">
+                                            <apex:messages styleClass="alert alert-danger" />
+                                        </div>
+                                        <br />
+                                        <a class="btn btn-default" href="#" onclick="attachment()" id="addattbutton">Add Attachment</a>
+                                        <div id="fileuploadblock" style="display:none">
+                                            <br />
+                                            <apex:inputFile id="field-ticket-attachment" styleclass="fileUploadButton" value="{!CaseFileContent}" filename="{!CasefileName}" onchange="uploadthefileJs(this.value)"/>
+                                            <small>Click the "Browse" button to locate your documents on your computer. Accepted formats include: .DOC, .DOCX, .XLS, .XLSX, .PNG, .JPG, .PDF. (5MB Limit)</small>
+                                            <apex:actionFunction action="{!AttachFileToCase}" name="UploadtheFile" />
+                                        </div><!-- /#fileuploadblock -->
+                                    </div><!-- /.col-sm-6 -->
+                                </div><!-- /.row -->
+                                <br />
+                                <Apex:commandButton styleclass="btn btn-primary btn-lg" id="submitbutton" value="Submit" action="{!submitcomment}" />
+                            </apex:outputPanel>
+                        </div>
+                        <apex:outputPanel rendered="{!nopreviouscomments}" styleClass="alert-box info">
+                            No Comments History Found
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!!nopreviouscomments}">
+                            <h4>Comments History</h4>
+                            <apex:dataTable value="{!previouscomments}" var="pc" styleClass="table table-striped table-bordered table-hover">
+                                <Apex:column >
+                                    <apex:facet name="header">Comments</apex:facet>
+                                    {!pc.commentbody}
+                                </Apex:column>
+                                <Apex:column value="{!pc.createddate}">
+                                    <apex:facet name="header">Created Date</apex:facet>
+                                </Apex:column>
+                            </apex:dataTable>
+                        </apex:outputPanel>
+
+                        <script>
+                            $('#addattbutton').click(function() {
+                                $(this).hide();
+                                $('#fileuploadblock').show();
+                            });
+                            $(document).ready(function() {
+                                var currentStatus = $('th:contains("Status")').next().text();
+                                if(currentStatus === "Closed") {
+                                    $('#add-comment').remove();
+                                }
+                            });
+                        </script>
+                    </apex:form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+</apex:page>

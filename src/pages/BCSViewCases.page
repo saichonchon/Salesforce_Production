@@ -1,0 +1,101 @@
+<apex:page controller="BCSCasesController" action="{!redirect}" applyHtmlTag="false" applyBodyTag="false" showHeader="false" standardStylesheets="false" doctype="html-5.0">
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>My Cases | BigCommerce Support</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <apex:stylesheet value="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'dist/styles.min.css')}" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'dist/all.min.js')}"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <apex:includeScript value="/support/console/29.0/integration.js"/>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container view-cases-header">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/Client/BCSViewCases"><img src="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'images/bigcommerce-support-logo.png')}" alt="BigCommerce Community Logo" srcset="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'images/bigcommerce-support-logo.png')}, {!URLFOR($Resource.knowledge_assets_brand_relaunch, 'images/bigcommerce-support-logo.png')} 2x" height="30" /></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{!$User.FirstName} {!$User.lastName} <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{!$Site.Prefix}/apex/BCSLogout">Log out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container view-cases">
+            <div class="card">
+                <div class="card-body">
+                    <apex:form id="frm">
+
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#open-cases" aria-controls="open-cases" role="tab" data-toggle="tab">My Open Cases</a></li>
+                            <li role="presentation"><a href="#closed-cases" aria-controls="closed-cases" role="tab" data-toggle="tab">My Closed Cases</a></li>
+                        </ul>
+
+                        <div class="tab-content"> 
+                            <div role="tabpanel" class="tab-pane active table-responsive" id="open-cases">
+                                <h4>Open Support Cases</h4>
+                                <p><small>Billing, Legal, Migration, and Partner Cases not shown</small></p>
+                                <apex:dataTable value="{!myOpenCases}" var="row" styleClass="table table-striped table-bordered table-hover" id="cpCases1"> 
+                                    <apex:column >
+                                        <apex:facet name="header">Case Number</apex:facet>   
+                                        <apex:outputLink target="_blank" value="/BCSViewCaseDetails?id={!row.Id}">{!row.CaseNumber}</apex:outputLink>
+                                    </apex:column>
+                                    <apex:column >
+                                        <apex:facet name="header">Subject</apex:facet>
+                                        <apex:outputField value="{!row.Subject}"></apex:outputField>
+                                    </apex:column>
+                                    <apex:column >
+                                        <apex:facet name="header">Status</apex:facet>
+                                        <apex:outputField value="{!row.Status}"/>
+                                    </apex:column>
+                                    <apex:column >
+                                        <apex:facet name="header">Created Date</apex:facet>
+                                        <apex:outputText value="{0,date,MM/dd/yyyy}">
+                                            <apex:param value="{!row.CreatedDate}" />
+                                        </apex:outputText>
+                                    </apex:column>
+                                </apex:dataTable>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="closed-cases">
+                                <h4>Closed Support Cases</h4>
+                                <p><small>Billing, Legal, Migration, and Partner Cases not shown</small></p>
+                                <apex:dataTable value="{!myClosedCases}" var="row" id="cpCases2" styleClass="table table-striped table-bordered table-hover"> 
+
+                                    <apex:column >
+                                            <apex:facet name="header">Case Number</apex:facet>   
+                                            <apex:outputLink target="_blank" value="/BCSViewCaseDetails?id={!row.Id}">{!row.CaseNumber}</apex:outputLink>
+                                    </apex:column>
+                                    <apex:column >
+                                            <apex:facet name="header">Subject</apex:facet>
+                                            <apex:outputfield value="{!row.Subject}" />
+                                    </apex:column>
+                                    <apex:column > 
+                                            <apex:facet name="header">Status</apex:facet>
+                                            <apex:outputField value="{!row.Status}"/>
+                                    </apex:column>
+
+                                </apex:dataTable>
+                            </div>
+                        </div><!-- /.tab-content -->
+                    </apex:form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+</apex:page>

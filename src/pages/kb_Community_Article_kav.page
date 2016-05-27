@@ -1,0 +1,57 @@
+<apex:page standardController="Community_Article__kav" showHeader="false" standardStylesheets="false" applyBodyTag="false" sidebar="false">
+<apex:variable var="Title" value="{!Community_Article__kav.Title}" />
+<apex:variable var="InternalURL" value="https://na19.salesforce.com/articles/Community_Article/{!Community_Article__kav.UrlName}" />
+<apex:variable var="ExternalURL" value="https://support.bigcommerce.com/articles/Community_Article/{!Community_Article__kav.UrlName}" />
+  <apex:composition template="kb_Internal">
+    <apex:define name="body">
+    <div id="internal-content" data-spy="scroll" data-target=".article-nav-fixed">
+      <div id="article-content">
+        <h1 class="page-header">{!Title}</h1>
+        <div data-spy="affix" data-offset-top="20" class="article-nav-fixed">
+          <ul class="nav article-nav">
+            <div class="article-nav-arrow">&nbsp;</div>
+            <div class="article-nav-collapse"><div class="arrow"></div></div>
+            <li><a href="#details">Details</a></li>
+            <li>
+              <a href="#article">Article</a>
+              <ul id="article-subnav" class="article-subnav">
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="#top"><small>Back to top</small></a></li>
+          </ul>
+        </div>
+        <div class="panel panel-default" id="details">
+          <div class="panel-heading">
+            <h5>Details</h5>
+          </div>
+          <div class="panel-body">
+            <ul>
+              <li><strong>Internal URL</strong>: <a href="{!InternalURL}">{!InternalURL}</a></li>
+              <li><strong>External URL: </strong><a href="{!ExternalURL}" target="_blank">{!ExternalURL}</a></li>
+              <li><strong>Last modified: </strong><apex:outputText value="{!Community_Article__kav.LastModifiedDate}" /></li>
+              <li><strong>Created: </strong><apex:outputText value="{!Community_Article__kav.FirstPublishedDate}" /></li>
+            </ul>
+          </div>
+        </div>
+        <div class="panel panel-default" id="article">
+          <div class="panel-heading">
+            <h5>Article</h5>
+          </div>
+          <div class="panel-body">
+            <apex:outputText value="{!Community_Article__kav.Article__c}" escape="false" />
+          </div>
+        </div>
+      </div>
+    </div>
+    </apex:define>
+  </apex:composition>
+<apex:includeScript value="../../soap/ajax/32.0/connection.js"/>
+<apex:includeScript value="/support/console/25.0/integration.js"/>
+<script type="text/javascript">
+$(document).ready(function() {
+  sforce.console.setTabTitle("{!Title}");
+});
+</script>
+<c:kb_internal_js />
+</apex:page>

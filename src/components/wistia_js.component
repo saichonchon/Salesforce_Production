@@ -1,0 +1,10 @@
+<apex:component layout="none" allowDML="true">
+  <script type="text/javascript">
+    if(jQuery('wistia_embed').length > 0) {
+      wistiaEmbed = jQuery(".wistia_embed")[0].wistiaApi;
+      wistiaEmbed.bind("end", function() {
+        console.log('it played');
+      });
+    }
+  </script>
+</apex:component>

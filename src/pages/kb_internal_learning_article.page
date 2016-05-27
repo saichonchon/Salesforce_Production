@@ -1,0 +1,60 @@
+<apex:page standardController="Learning__kav" showHeader="false" standardStylesheets="false" applyBodyTag="false" sidebar="false">
+    <apex:variable var="Title" value="{!Learning__kav.Title}" />
+    <apex:variable var="InternalURL" value="https://na19.salesforce.com/articles/Learning/{!Learning__kav.UrlName}" />
+    <apex:variable var="ExternalURL" value="https://support.bigcommerce.com/articles/Learning/{!Learning__kav.UrlName}" />
+    <apex:composition template="kb_Internal">
+        <apex:define name="body">
+            <knowledge:articleRendererToolbar articleId="{!$CurrentPage.parameters.id}" showChatter="true" />
+            <!--<knowledge:articleCaseToolbar articleId="{!$CurrentPage.parameters.id}" caseId="{!$CurrentPage.parameters.caseId}" rendered="{!$CurrentPage.parameters.caseId != null}" includeCSS="false" />-->
+            <div id="internal-content" data-spy="scroll" data-target=".article-nav-fixed">
+                <div id="article-content">
+                    <h1>{!Learning__kav.Nav_Title__c} <small>{!Learning__kav.Chapter__c}</small></h1>
+                    <h2 class="page-header">{!Title}</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="panel panel-default" id="details">
+                                <div class="panel-heading">
+                                    <h5>Details</h5>
+                                </div>
+                                <div class="panel-body">
+                                    <ul>
+                                        <li><strong>Internal URL</strong>: <a href="{!InternalURL}">{!InternalURL}</a></li>
+                                        <li><strong>External URL</strong>: <a href="{!ExternalURL}">{!ExternalURL}</a></li>
+                                        <li><strong>Last modified</strong>: {!Learning__kav.LastModifiedDate}</li>
+                                        <li><strong>Created</strong>: {!Learning__kav.FirstPublishedDate}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel panel-default" id="article">
+                                <div class="panel-heading">
+                                    <h5>Guide</h5>
+                                </div>
+                                <div class="panel-body">
+                                    <apex:outputText value="{!Learning__kav.Article__c}" escape="false" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="panel panel-default" id="chapters">
+                                <div class="panel-heading">
+                                    <h5>Chapter Index</h5>
+                                </div>
+                                <div class="panel-body">
+                                    <apex:outputText value="{!Learning__kav.Chapter_List__c}" escape="false" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </apex:define>
+    </apex:composition>
+    <apex:includeScript value="../../soap/ajax/36.0/connection.js"/>
+    <apex:includeScript value="/support/console/36.0/integration.js"/>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            sforce.console.setTabTitle("{!Title}");
+        });
+    </script>
+    <c:kb_internal_js />
+</apex:page>

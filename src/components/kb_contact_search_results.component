@@ -1,0 +1,139 @@
+<apex:component controller="ArticlePageController">
+    <apex:attribute name="searchQuery" type="String" required="true" description="Query" />
+    <apex:attribute name="currentSiteUrl" type="String" required="true" description="!pkbCon.currentSiteUrl" />
+    <apex:actionFunction name="getArticleData" action="{!getKArticle}" oncomplete="articleLoadComplete()" reRender="article-modal">
+        <apex:param name="aid" assignTo="{!karticleId}" value="" />
+        <apex:param name="atype" assignTo="{!karticleType}" value="" />
+    </apex:actionFunction>
+    <knowledge:articleList articleVar="article"  articleTypes="Public__kav, Learning__kav, University__kav" Keyword="{!searchQuery}" hasMoreVar="false" pageSize="6" rendered="{!searchQuery != ''}">
+        <apex:variable var="articleTypeIcon" value="format_list_numbered" rendered="{!IF(article.articleTypeLabel == 'Public', 'true', 'false')}" />
+        <apex:variable var="articleTypeIcon" value="ondemand_video" rendered="{!IF(article.articleTypeLabel == 'University', 'true', 'false')}" />
+        <apex:variable var="articleTypeIcon" value="library_books" rendered="{!IF(article.articleTypeLabel == 'Learning', 'true', 'false')}" />
+        <li class="article">
+            <p>
+                <i class="material-icons">{!articleTypeIcon}</i>
+                <a href="#" onclick="getArticle('{!article.id}','{!article.ArticleTypeName}');" class="title">{!article.title}</a>
+            </p>
+            <div class="description">{!article.abstract}</div>
+        </li>
+    </knowledge:articleList>
+    
+    <div id="article-modal" class="modal fade" tabindex="-1" data-role="dialog" data-aria-labelledby="article-title">
+        <div class="modal-dialog modal-lg" role="document">
+            <apex:outputPanel layout="block" id="article-modal" styleClass="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close material-icons back-to-results" data-dismiss="modal" aria-label="Close">close</button>
+                    <h4 class="modal-title" id="article-title">{!kar.Title}</h4>
+                    <apex:variable var="articleTypeUrlBase" value="/articles/Public/" rendered="{!IF(kar.ArticleTypeName == 'Public__kav', 'true', 'false')}" />
+                    <apex:variable var="articleTypeUrlBase" value="/articles/University/" rendered="{!IF(kar.ArticleTypeName == 'University__kav', 'true', 'false')}" />
+                    <apex:variable var="articleTypeUrlBase" value="/articles/Learning/" rendered="{!IF(kar.ArticleTypeName == 'Learning__kav', 'true', 'false')}" />
+                    <a href="{!articleTypeUrlBase}{!kar.urlName}" target="_blank">Open in new tab</a>
+                </div>
+                <div class="modal-body content">
+                    <div class="text-center wave hidden">
+                        <div class="loader">
+                            <div class="line-1"></div>
+                            <div class="line-2"></div>
+                            <div class="line-3"></div>
+                            <div class="line-4"></div>
+                            <div class="line-5"></div>
+                        </div>
+                    </div>
+
+                    <apex:outputPanel layout="none" rendered="{!if(kar.ArticleTypeName == 'Public__kav', 'true', 'false')}">
+                        <apex:outputText value="{!kar.article_kar}" escape="false" />
+                    </apex:outputPanel>
+    
+                    <apex:outputPanel rendered="{!if(kar.ArticleTypeName == 'University__kav', 'true', 'false')}" layout="none">
+                        <div id="bcu-video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/{!kar.Video_URL}?theme=light&rel=0&showinfo=0&enablejsapi=1&origin=https%3A%2F%2Fsupport.bigcommerce.com" id="BCUVideo" />
+                        </div>
+                        <h2>Video Summary</h2>
+                        <apex:outputText value="{!kar.Description} " escape="false" />
+    
+                        <apex:outputPanel styleClass="row next-prev-video">
+                            <apex:outputPanel rendered="{!IF(ISNULL(kar.Prev_Video_URL) , false , true)}" styleClass="col-xs-6 col-sm-5">
+                                <p class="video-nav-text"><a href="{!kar.Prev_Video_URL}"><i class=""></i>Previous</a></p>
+                                <div><a href="{!kar.Prev_Video_URL}"><apex:image value="{!kar.Prev_Video_Thumbnail}" alt="{!kar.Prev_Video_Link_Text}" title="{!kar.Prev_Video_Link_Text}" /></a></div>
+                                <p><a href="{!kar.Prev_Video_URL}">{!kar.Prev_Video_Link_Text}</a></p>
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!IF(ISNULL(kar.Next_Video_URL) , false , true)}" styleClass="col-xs-6 col-sm-5 pull-right">
+                                <p class="video-nav-text text-right"><a href="{!kar.Next_Video_URL}">Up Next<i class=""></i></a></p>
+                                <div><a href="{!kar.Next_Video_URL}"><apex:image url="{!kar.Next_Video_Thumbnail}" alt="{!kar.Next_Video_Link_Text}" title="{!kar.Next_Video_Link_Text}" /></a></div>
+                                <p><a href="{!kar.Next_Video_URL}">{!kar.Next_Video_Link_Text}</a></p>
+                            </apex:outputPanel>
+                        </apex:outputPanel>
+                        <h2>Additional Resources</h2>
+                        <apex:outputText value="{!kar.Additional_Resources}" escape="false" />
+                    </apex:outputPanel>
+    
+                    <apex:outputPanel rendered="{!if(kar.ArticleTypeName == 'Learning__kav', 'true', 'false')}" layout="none">
+    
+                        <div class="guide-title">
+                            <h2 id="menu-title">{!kar.Nav_Title}</h2>
+                        </div>
+                        <apex:variable var="ChaptersRendered" value="{!NOT(ISBLANK(kar.ChapterList))}" />
+                        <apex:outputPanel rendered="{!ChaptersRendered}" layout="none">
+                            <div class="chapter">
+                                <div class="accordion-group">
+                                    <div class="accordion-section">
+                                        <div class="accordion-header">
+                                            <h4>
+                                                <a href="#" title="View All Chapters">{!kar.Chapter}</a>
+                                                <span class="chapter-label">(View all Chapters)</span>
+                                            </h4>
+                                        </div>
+                                        <div class="accordion-body">
+                                            <div class="chapter-navigation-index">
+                                                <apex:outputText value="{!kar.ChapterList}" escape="false" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </apex:outputPanel>
+
+                        <div class="learning-guide-content">
+                            <apex:outputText value="{!kar.article_kar}" escape="false" />
+                        </div>
+    
+                        <div class="chapter-navigation">
+                            <apex:variable var="NextButton" value="{!kar.NextButtonUrl}" />
+                            <apex:variable var="BackButton" value="{!kar.BackButtonUrl}" />
+                            <div class="chapter-navigation-buttons">
+    
+                                <apex:outputText rendered="{!IF(BackButton != null, true, false)}">
+                                <a href="{!kar.BackButtonUrl}" class="btn btn-primary previous-chapter"><i class="sl sl-arrow-67">&nbsp;</i></a>
+                                </apex:outputText>
+    
+                                <apex:outputText rendered="{!IF(BackButton = null, true, false)}">
+                                <a href="#" class="btn btn-primary disabled"><i class="sl sl-arrow-67">&nbsp;</i></a>
+                                </apex:outputText>
+    
+    
+                                <apex:outputText rendered="{!IF(NextButton != null, true, false)}">
+                                <a href="{!NextButton}" class="btn btn-primary next-chapter"><strong>Next Chapter:</strong> {!kar.NextButtonText}</a>
+                                </apex:outputText>
+    
+                                <apex:outputText rendered="{!IF(NextButton = null, true, false)}">
+                                <a href="#" class="btn btn-primary disabled"><i class="sl sl-arrow-68">&nbsp;</i></a>
+                                </apex:outputText>
+    
+                            </div>
+    
+                            <div class="chapter-navigation-index chapter-navigation-index-bottom">
+                                <h4>All Chapters</h4>
+                                <apex:outputText value="{!kar.ChapterList}" escape="false" />
+                            </div>
+                        </div>
+    
+                    </apex:outputPanel>
+                </div>
+                <div class="modal-footer">
+                    <a href="{!currentSiteUrl}/contact?solved=true" class="btn btn-default btn-lg issue-resolved">My Issue is Resolved</a>
+                    <button type="button" class="btn btn-default btn-lg back-to-results" data-dismiss="modal">Back to Results</button>
+                </div>
+            </apex:outputPanel>
+        </div>
+    </div>
+</apex:component>

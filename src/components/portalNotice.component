@@ -1,0 +1,6 @@
+<apex:component controller="PortalNoticeGenerator" >
+    <apex:attribute name="topic_Name" Description="reference to Topic" type="String" assignTo="{!topic}" />
+    <apex:attribute name="showNotice" Description="render Topic" type="Boolean" assignTo="{!noNotice}" />
+ 
+    <apex:outputText value="{!getContentByName.Content__c}"  rendered="{!noNotice =false}" escape="false" />
+</apex:component>

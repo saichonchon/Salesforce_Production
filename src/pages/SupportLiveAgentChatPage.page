@@ -1,0 +1,95 @@
+<apex:page showHeader="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" standardStylesheets="false">
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Live Chat | Bigcommerce Support</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <apex:stylesheet value="{!URLFOR($Resource.knowledge_assets, 'dist/styles.min.css')}" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <script type='text/javascript'>
+            liveagent.addEventListener(liveagent.chasitor.Events.CHAT_REQUEST_SUCCESSFUL, chattingCallback);
+            liveagent.addEventListener(liveagent.chasitor.Events.CHAT_ESTABLISHED, newagent);
+            liveagent.addEventListener(liveagent.chasitor.Events.AGENT_CHAT_TRANSFERRED, newagent);
+
+            function chattingCallback() {
+                var details = liveagent.chasitor.getDetails();
+                $('#end-chat').show();
+            }
+            function newagent() {
+                var details = liveagent.chasitor.getDetails();
+                $('#waiting-message').css('display','none');
+                $('#liveAgentChatInput').attr('placeholder','Send a message...').addClass('form-control');
+                $('#liveAgentChatInput').attr('autocomplete','off');
+            }
+            SfdcApp.LiveAgent.Chasitor.setForceDispQueuePosition(true);
+            SfdcApp.LiveAgent.Chasitor.addQueueComponent("queue-position");
+        </script>
+    </head>
+
+    <body>
+        <c:kb_google_tag_manager />
+        <div class="text-center live-chat-header">
+            <h1>
+                <a href="https://support.bigcommerce.com/" id="link-home">
+                    <img src="{!URLFOR($Resource.knowledge_assets, 'images/bigcommerce-support-logo.png')}" alt="BigCommerce Community Logo" srcset="{!URLFOR($Resource.knowledge_assets, 'images/bigcommerce-support-logo.png')}, {!URLFOR($Resource.knowledge_assets, 'images/bigcommerce-support-logo.png')} 2x" height="40" />
+                </a>
+            </h1>
+        </div>
+        <liveAgent:clientchat >
+            <div class="container live-chat">
+                <div class="card">
+                    <div class="card-body">
+
+                        <div id="waiting-message" class="text-center">
+                            <p>Thanks for contacting Bigcommerce Support, we’ll be right with you.</p>
+                            <h3>You are <strong>#<span id="queue-position"></span></strong> in the queue</h3>
+                            <div class="text-center wave">
+                                <div class="loader">
+                                    <div class="line-1"></div>
+                                    <div class="line-2"></div>
+                                    <div class="line-3"></div>
+                                    <div class="line-4"></div>
+                                    <div class="line-5"></div>
+                                </div>
+                            </div>
+                            <ul class="text-left">
+                                <li>Did you know...? We automatically send you a log of your transcript at the end of your session.</li>
+                                <li>We appreciate your feedback. Let our managers know about your experience via our feedback form after your chat.</li>
+                            </ul>
+                        </div>
+
+                        <div id="chatWindow">
+                            
+                            <liveAgent:clientChatAlertMessage />
+                            <liveAgent:clientChatStatusMessage />
+                            
+                            <div class="form-group">
+                                <liveAgent:clientChatLog />
+                            </div>
+                            <div id="chatSend">
+                                <div class="form-group">
+                                    <liveagent:clientChatInput />
+                                </div>
+                                <button class="liveAgentChatElement liveAgentSendButton btn btn-primary btn-lg btn" onclick="SfdcApp.LiveAgent.Chasitor.sendMessage();" title="Send">Send</button>
+                            </div>
+
+                        </div><!--/#chatwindow-->
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <button id="save-chat" onclick="SfdcApp.LiveAgent.Chasitor.saveChat();" class="liveAgentSaveButton btn btn-default btn-lg">Save chat</button>
+                    </div>
+                    <div class="col-xs-6">
+                        <button id="end-chat" onclick="SfdcApp.LiveAgent.Chasitor.endChat();" class="liveAgentEndButton btn btn-default btn-lg">End chat</button>
+                    </div>
+                </div>
+            </div>
+        </liveAgent:clientchat>
+    </body>
+</html>
+</apex:page>

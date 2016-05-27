@@ -1,0 +1,31 @@
+<apex:page showHeader="false">
+ <style>
+      .activeTab {background-color: #236FBD; color:white; background-image:none}
+      .inactiveTab { background-color: lightgrey; color:black; background-image:none}
+   </style>
+ <apex:pageBlock title="Viewing Staging Objects">
+   <apex:tabPanel switchType="client" id="tabpanel">
+   <apex:tab label="MBA Staging Account" id="object1">
+   <apex:ListViews type="MBA_Staging_Account__c"/>
+    <apex:panelGrid columns="2">
+    
+    </apex:panelGrid>
+   </apex:tab>    
+ 
+    <apex:tab label="MBA Staging Contact" id="object2">
+            <apex:listViews type="MBA_Staging_Contact__c"/>
+             <apex:panelGrid columns="2">
+    
+    </apex:panelGrid>
+    </apex:tab> 
+   
+    <apex:tab label="MBA Staging Subscription" id="object3">
+            <apex:listViews type="MBA_Staging_Subscription__c"/>
+       <apex:panelGrid columns="2">
+    
+    </apex:panelGrid>      
+    </apex:tab> 
+    </apex:tabPanel>
+     </apex:pageBlock>
+     
+</apex:page>

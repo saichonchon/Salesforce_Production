@@ -1,0 +1,13 @@
+<apex:page standardController="case" showHeader="false">
+<apex:includeScript value="/support/console/25.0/integration.js"/>
+    <script>
+        
+        sforce.console.getFocusedSubtabId(function(result) {
+            m = result.id + '_/apex/BCNewComment2?id={!Case.Id}';
+            sforce.console.fireEvent('vfTabLoad', m, function () {
+                location.href = "/apex/e2cp__New_Comment?id={!Case.Id}&showheader=false&isdtp=vw";
+            });
+        });
+        
+    </script>
+</apex:page>

@@ -1,0 +1,3 @@
+<apex:page standardController="Lead" extensions="BigCommerceTrialInfo">
+   <apex:outputText value="{!output}" escape="false" />
+</apex:page>

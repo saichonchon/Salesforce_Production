@@ -1,0 +1,96 @@
+<apex:page cache="false" standardStylesheets="false" showHeader="false" sidebar="false" standardController="KnowledgeArticle" extensions="pkb_Controller" language="{!pkbCon.selectedLanguage}" applyBodyTag="false" applyHtmlTag="false">
+<html>
+<head>
+  <title>Community - Bigcommerce Support</title>
+  <link rel="canonical" href="https://support.bigcommerce.com/community" />
+  <c:kb_resources />
+  <c:pkb_js pkbCon="{!pkbCon}" />
+</head>
+
+<body>
+<!-- Community Page -->
+<c:kb_google_tag_manager />
+<div id="page-wrapper">
+  <c:kb_header />
+  <c:pkb_search pkbCon="{!pkbCon}" />
+  
+  <div class="container portal-notice">
+    <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+      <apex:outputText rendered="{!key='Portal_Notice'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+    </apex:repeat>
+  </div>
+  
+  <div class="container" id="community">
+    <div class="row">
+      <div class="col-lg-9 col-md-9 col-sm-12 community-left">
+
+        <h1>Bigcommerce Community</h1>
+
+        <div class="row community-spotlights">
+
+          <div class="col-sm-4">
+            <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+              <apex:outputText rendered="{!key='Community_Top_Left'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+            </apex:repeat>
+          </div>
+
+          <div class="col-sm-4">
+            <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+              <apex:outputText rendered="{!key='Community_Top_Center'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+            </apex:repeat>
+          </div>
+
+          <div class="col-sm-4">
+            <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+              <apex:outputText rendered="{!key='Community_Events'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+            </apex:repeat>
+          </div>
+
+        </div><!-- /.row -->
+
+        <div class="community-videos-wrapper video-section-wrapper hidden-xs">
+          <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+            <apex:outputText rendered="{!key='Community_Videos'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+          </apex:repeat>
+        </div><!-- /.community-videos -->
+
+      </div><!-- /.community-left -->
+
+      <div class="col-lg-3 col-md-3 col-sm-12 community-right">
+        <div class="row">
+            <div class="col-md-12 col-sm-6">
+                <div class="panel panel-default community-member">
+                  <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                    <apex:outputText rendered="{!key='Community_Member_Spotlight'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                  </apex:repeat>
+                </div><!-- /.panel -->
+            </div>
+
+            <div class="col-md-12 col-sm-6">
+                <div class="panel panel-default">
+                  <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                    <apex:outputText rendered="{!key='Community_Staff_Pick'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                  </apex:repeat>
+                </div><!-- /.panel -->
+            </div>
+        </div>
+      </div><!-- /.community-right -->
+    </div>
+  </div>
+
+  <apex:outputPanel rendered="{!NOT(searchExecuted)}" styleClass="container-fluid developer" layout="block">
+    <div class="container">
+      <apex:outputText value="{!pkbCon.mapPKBContent['Home_Bottom'].Content__c}" escape="false" />
+    </div>
+  </apex:outputPanel><!-- /.developer -->
+
+  <c:kb_footer />
+  
+</div><!-- /.page-wrapper -->
+
+</body>
+<site:googleAnalyticsTracking />
+<c:kb_tracking_codes />
+</html>
+<site:previewAsAdmin />
+</apex:page>

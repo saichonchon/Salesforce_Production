@@ -1,0 +1,150 @@
+<apex:page controller="OppForConsoleController" showChat="false" showheader="false" sidebar="false" tabStyle="Opportunity" action="{!LoadOpportunities}">    
+    <apex:includeScript value="/support/console/28.0/integration.js" />
+    <apex:includeScript value="/support/console/29.0/integration.js"/>
+     <apex:includeScript value="/support/console/34.0/integration.js"/>
+   
+    <script type="text/javascript">
+        var caseRecordTypeId;
+        var selectedOppId;
+        var selectedOppName;
+        var selectedSubId;
+        var selectedSubName;
+        var tabId;
+        var chatKey;
+        var contactId = '{!contactId}';
+        var objectType = '{!objectType}';
+        var newcaseId;
+                
+        var getPrimaryTabId = function getPrimaryTabId(result)
+        {
+            // Grab the primary tab Id
+            tabId = result.id;          
+            //loadSubs();
+                        
+            //alert('Tab Id: ' + tabId);
+            
+            sforce.console.chat.getDetailsByPrimaryTabId(tabId, getChatDetailsResult);
+        }        
+        
+        function getChatDetailsResult(result) 
+        {
+            //Report whether accepting the chat was succesful
+            if (result.success == true) 
+            {
+                console.log(result);
+                chatKey = result.details.chatKey;
+                
+                for (var x = 0; x < result.details.customDetails.length; x++)
+                {
+                    if (result.details.customDetails[x].label == 'OppID')
+                    {
+                        selectedOppId = result.details.customDetails[x].value   
+                    }
+                }
+                //alert('The chatKey for this chat is: ' + chatKey);
+                //alert('The Opp Id is: ' + selectedOppId);
+                
+                OppPassedIn(selectedOppId);                
+            }
+        }
+        
+        function GoCase(caseId) 
+        {      
+            
+            // Make sure a Opp is selected   
+            if (caseId != null && caseId != '')
+            {
+              newCaseId = caseId;   
+ //             alert('Case Clicked : '+caseId);              
+                {
+
+                 var strURL = '/'+ caseId ; 
+ //                alert('Tab Id: ' + tabId + '; Case URL: ' + strURL);
+                    
+                    sforce.console.openSubtab(tabId, strURL, true, '', null);
+                    
+ //                   window.location.reload();
+                }        
+            }
+  //          else
+   //         {
+  //            alert('No Opportunity selected');
+ //             window.location.reload();
+  //          }
+        }
+        
+        var getContactInfo = function getContactInfo(result)
+        {
+            contactId = '';
+            //alert('Contact Id Result: ' + result.id);
+            
+            if (result.id != null && result.id != 'null' && result.id != '')
+            {
+                // Make sure the subtab is actually a contact subtab
+                if (result.id.substr(0,3) == '{!contactPrefix}')
+                {
+                    contactId = result.id;
+                }
+            }
+            
+            // Open the New Case Page
+            openCase();
+        }    
+
+        // Called from CreateCase() to open a new subtab
+        function openCase()
+        {           
+            alert('Case Clicked : '+newcaseId);
+            // open new case with record type in a new subtab
+              var strURL = newcaseId;
+           alert('Tab Id: ' + tabId + '; Case URL: ' + strURL);
+            
+            sforce.console.openSubtab(tabId, strURL, true, '', null);
+            sforce.console.cti.fireOnCallLogSaved(strURL);
+            window.location.reload();
+        }
+    </script>
+    
+    <apex:form id="frmMain">
+        <apex:actionFunction action="{!LoadOpportunities}" name="loadOpps" id="loadOpps" rerender="pblkMain" />
+        
+        <apex:actionFunction action="{!CaptureOpp}" name="OppPassedIn" id="OppPassedIn" rerender="pblkMain">
+            <apex:param name="firstParam" assignTo="{!passedInOppId}" value="" />
+        </apex:actionFunction>
+         
+        <apex:pageBlock id="pblkMain" title="Opps" mode="detail">
+            <apex:pageBlockButtons location="top" rendered="{!Opps.size > 0}">
+                 <apex:commandButton value="Create Case"  action="{!CreateCase}" rerender="pblkMain"
+                   oncomplete="javascript:return GoCase('{!newCaseId}');" />
+             
+                  
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockTable value="{!Opps}" var="s" rendered="{!Opps.size > 0}">
+                <apex:column headerValue="CrCase" style="width:10px;">
+                    <apex:inputCheckbox value="{!s.isSelected}">
+                        <apex:actionSupport event="onclick" action="{!SelectOpp}" rerender="pblkMain">
+                            <apex:param name="selId" value="{!s.objOpp.Id}" />
+                        </apex:actionSupport>
+                    </apex:inputCheckbox>
+                </apex:column>
+                <apex:column value="{!s.objOpp.StoreURL__c}" />
+                <apex:column value="{!s.objOpp.New_Product_Plan__c}" />
+                <apex:column value="{!s.objOpp.Status__c}" />
+            </apex:pageBlockTable>
+            
+            <apex:outputPanel rendered="{!Opps.size == 0}">
+                <br /><br />
+                <apex:outputText value="No Opportunity Exists for This {!objectType}" style="font-weight:bold; font-size:1.2em;" />
+            </apex:outputPanel>  
+            <apex:outputPanel >
+                <br /><br />
+                <apex:outputText value="{!errorMsg}" style="font-weight:bold; font-size:1.2em;" />
+            </apex:outputPanel>
+          </apex:pageBlock>
+        
+        <script type="text/javascript">             
+            sforce.console.getEnclosingPrimaryTabId(getPrimaryTabId);            
+        </script> 
+    </apex:form>
+</apex:page>

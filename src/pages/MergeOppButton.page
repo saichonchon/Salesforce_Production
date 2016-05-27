@@ -1,0 +1,19 @@
+<apex:page standardController="Opportunity" extensions="MergeOppController" tabStyle="Opportunity">
+   <apex:form >
+ <apex:sectionHeader title="Merge Opportunity Records"></apex:sectionHeader>    
+<apex:pageBlock title="Hello {!$User.FirstName}!">
+       
+        Original Opportunity : <b> {!Opportunity.name}. </b> <p/>
+        
+        <b> Please enter the name of the Opportunity to merge with. </b> <p/>
+        
+        Store Purchase Opportunity :
+        
+        <apex:inputText size="100" value="{!dupOppName}"/> <p/>
+
+        <apex:commandButton action="{!mergeOpp}" value="Merge"/>   
+        
+        
+    </apex:pageBlock>
+</apex:form>
+</apex:page>

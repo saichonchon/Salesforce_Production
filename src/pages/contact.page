@@ -1,0 +1,158 @@
+<apex:page cache="false" standardStylesheets="false" showHeader="false" sidebar="false" standardController="KnowledgeArticle" extensions="pkb_Controller" applyBodyTag="false" applyHtmlTag="false">
+    <html>
+        <head>
+            <title>Contact - Bigcommerce Support</title>
+            <link rel="canonical" href="https://support.bigcommerce.com/contact" />
+            <c:kb_resources />
+        </head>
+
+        <body>
+        <c:kb_google_tag_manager />
+        <!-- Contact Page -->
+
+            <div id="page-wrapper">
+                <c:kb_header activePage="Contact" />
+                <c:pkb_search pkbCon="{!pkbCon}" />
+
+                <div class="container portal-notice">
+                  <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                    <apex:outputText rendered="{!key='Portal_Notice'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                  </apex:repeat>
+                </div>
+
+                <div class="container contact-page">
+                    <h1 class="page-title">Contact</h1>
+                    <apex:outputPanel styleClass="row" layout="block">
+                        <div class="col-sm-8">
+                            <apex:outputPanel styleClass="alert alert-success issue-resolved-alert" rendered="{!if($CurrentPage.parameters.solved == 'true', 'true', 'false')}">
+                                We're glad we could answer your question! If you still require help, please continue below.
+                            </apex:outputPanel>
+                            <ul class="list-unstyled list-inline contact-steps">
+                                <li data-step="1" class="active">
+                                    <span class="step-number">1</span>
+                                    <span class="step-name">Enter Question</span>
+                                </li><li data-step="2">
+                                    <span class="step-number">2</span>
+                                    <span class="step-name">Review Solutions</span>
+                                </li><li data-step="3">
+                                    <span class="step-number">3</span>
+                                    <span class="step-name">Complete Request</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card">
+                                <div class="card-body">
+                                    <apex:form styleClass="contact-search-form">
+
+                                        <!-- STEP 1 -->
+                                        <div class="form-horizontal contact-step-data" data-step="1">
+                                            <div class="form-group">
+                                                <div class="col-md-9">
+                                                    <label class="control-label">What are you contacting us about today?</label>
+                                                    <apex:inputText id="theSearchstring" value="{!feedbackSource}" styleClass="form-control contact-search-field" html-placeholder="e.g. How do I import products?" html-data-query="{!$CurrentPage.parameters.q}" />
+                                                </div>
+                                                <div class="col-md-3 text-right">
+                                                    <label class="control-label hidden-xs hidden-sm">&nbsp;</label><br />
+                                                    <apex:commandButton value="Continue" reRender="searchResults" styleClass="btn btn-default btn-lg contact-search-btn continue-btn" oncomplete="hideLoader('.contact-search-form');" />
+                                                    <apex:outputPanel layout="none" rendered="{!$CurrentPage.parameters.q != null}">
+                                                        <p class="help-block text-center"><a href="#" class="skip-deflection-steps">Skip this step</a></p>
+                                                    </apex:outputPanel>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END STEP 1 -->
+
+                                        <!-- STEP 2 -->
+                                        <div class="contact-step-data hidden" data-step="2">
+                                            <apex:outputPanel layout="none" id="searchResults" html-data-step="2" >
+                                                <div class="text-center wave hidden">
+                                                    <div class="loader">
+                                                        <div class="line-1"></div>
+                                                        <div class="line-2"></div>
+                                                        <div class="line-3"></div>
+                                                        <div class="line-4"></div>
+                                                        <div class="line-5"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="primary-deflection">
+                                                </div>
+                                                <ul class="list-unstyled results">
+                                                    <c:kb_contact_search_results searchQuery="{!feedbackSource}" currentSiteUrl="{!pkbCon.currentSiteUrl}" />
+                                                </ul>
+                                            </apex:outputPanel>
+                                            <div class="text-right contact-footer-buttons">
+                                                <a class="btn btn-default btn-lg issue-resolved" href="{!pkbCon.currentSiteUrl}/contact?solved=true">My Issue is Resolved</a>
+                                                <a class="btn btn-default btn-lg continue-to-contact" href="#">Continue to Contact</a>
+                                            </div>
+                                        </div>
+                                        <!-- END STEP 2 -->
+
+                                    </apex:form>
+
+                                    <!-- STEP 3 -->
+                                    <div data-step="3" class="contact-methods contact-step-data hidden">
+                                        <div class="row">
+                                            <div class="col-sm-4 text-center chat">
+                                                <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                                                    <apex:outputText rendered="{!key='Contact_Chat'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                                                </apex:repeat>
+                                            </div>
+                                            <div class="col-sm-4 text-center phone">
+                                                <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                                                    <apex:outputText rendered="{!key='Contact_Phones'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                                                </apex:repeat>
+                                            </div>
+                                            <div class="col-sm-4 text-center case">
+                                                <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                                                    <apex:outputText rendered="{!key='Contact_Case'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                                                </apex:repeat>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END STEP 3 -->
+
+                                </div>
+                            </div>
+                            <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                                <apex:outputText rendered="{!key='Contact_Featured_Articles'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                            </apex:repeat>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card text-center status card-cta">
+                                <a class="card-body" href="http://status.bigcommerce.com">
+                                    <h2>System Status</h2>
+                                    <p class="status-indicator">Loading...</p>
+                                </a>
+                            </div>
+                            <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                                <apex:outputText rendered="{!key='Contact_View_Case'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                            </apex:repeat>
+                            <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                                <apex:outputText rendered="{!key='Home_Partner_Marketplace'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                            </apex:repeat>
+                        </div>
+                    </apex:outputPanel>
+                </div>
+
+                <c:kb_footer />
+              
+            </div><!-- /.page-wrapper -->
+
+        </body>
+        <c:kb_live_chat_js />
+        <c:kb_tracking_codes />
+        <site:googleAnalyticsTracking />
+        <script type="text/javascript" src="https://cdn.statuspage.io/se-v2.js"></script>
+        <script>
+          var sp = new StatusPage.page({ page : 'qbn4dyd29jby' });
+          sp.status({
+            success : function(data) {
+                jQuery('.status .status-indicator').text(data.status.description);
+                jQuery('.status .status-indicator').addClass(data.status.indicator);
+            }
+          });
+        </script>
+    </html>
+    <site:previewAsAdmin />
+</apex:page>

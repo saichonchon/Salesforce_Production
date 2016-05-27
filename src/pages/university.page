@@ -1,0 +1,81 @@
+<apex:page cache="false" standardStylesheets="false" showHeader="false" sidebar="false" standardController="KnowledgeArticle" extensions="pkb_Controller" language="{!pkbCon.selectedLanguage}" applyBodyTag="false" applyHtmlTag="false">
+<html>
+<head>
+    <title>BigCommerce University</title>
+    <meta name="description" content="Watch our three part video series to learn how to build, manage, and grow a successful online business with BigCommerce." />
+    <link rel="canonical" href="https://support.bigcommerce.com/university" />
+    <c:kb_resources />
+</head>
+
+<body>
+<c:kb_google_tag_manager />
+<div id="page-wrapper">
+    <c:kb_header activePage="University" />
+    <c:pkb_search pkbCon="{!pkbCon}" />
+    
+    <div class="container portal-notice">
+        <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+            <apex:outputText rendered="{!key='Portal_Notice'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+        </apex:repeat>
+    </div>
+    
+        <div class="container university">
+            <h1 class="page-title">BigCommerce University</h1>
+            <div class="row">
+                <div class="col-md-9 col-sm-8">
+                    <p>This three part video series will walk you through building, managing, and growing a successful online business.</p>
+                    <ul class="nav nav-tabs" role="tablist" id="category-tabs">
+                        <li class="active"><a href="#launch-store" role="tab" data-toggle="tab" data-target="#launch-store">Launch Store</a></li>
+                        <li><a href="#manage-store" role="tab" data-toggle="tab" data-target="#manage-store">Manage Store</a></li>
+                        <li><a href="#grow-store" role="tab" data-toggle="tab" data-target="#grow-store">Grow Store</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="launch-store" class="tab-pane active">
+                                <div class="row">
+                                <c:kb_University_Article_List datacategoryname="Launch_Store"/>
+                        </div>
+                        </div><!-- /#build-your-store -->
+                        <div id="manage-store" class="tab-pane">
+                                <div class="row">
+                                        <c:kb_University_Article_List datacategoryname="Manage_Store"/>
+                                </div>
+                        </div><!-- /#build-your-store -->
+                        <div id="grow-store" class="tab-pane">
+                                <div class="row">  
+                                        <c:kb_University_Article_List datacategoryname="Grow_Store"/>
+                                </div>
+                        </div><!-- /#create-buyers -->
+                    </div><!-- /.tab-content -->
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                        <apex:outputText rendered="{!key='Landing_Pages_Community'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                    </apex:repeat>
+                    <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                        <apex:outputText rendered="{!key='Landing_Pages_Marketplace'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                    </apex:repeat>
+                    <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+                        <apex:outputText rendered="{!key='Landing_Pages_App_Store'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+                    </apex:repeat>
+                </div>
+            </div>
+        </div>
+
+    <c:kb_footer />
+    <script type='text/javascript'>
+        var hash = window.location.hash;
+        $('#category-tabs').find("[data-target='" + hash + "']").tab('show');
+        $(window).load(function() {
+            $('.university .video-item .card h5').setHeights();
+            $('.university .video-item .card .card-description').setHeights();
+            $('.university .video-item .card').setHeights();
+        });
+    </script>
+</div><!-- /.page-wrapper -->
+
+</body>
+<site:googleAnalyticsTracking />
+<c:kb_tracking_codes />
+</html>
+<site:previewAsAdmin />
+</apex:page>

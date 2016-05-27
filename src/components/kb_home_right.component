@@ -1,0 +1,32 @@
+<apex:component controller="pkb_Controller" allowDML="true" layout="none">
+  <apex:attribute name="pkbCon" type="pkb_Controller" required="true" description="handle to the pkb controller" />
+  <div class="col-lg-3 col-md-12">
+    <div class="row">
+
+      <div class="col-sm-6 col-md-4 col-lg-12">
+        <div class="panel panel-default">
+          <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+            <apex:outputText rendered="{!key='Home_University'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+          </apex:repeat>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-12">
+        <div class="panel panel-default">
+          <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+            <apex:outputText rendered="{!key='Home_Forum'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+          </apex:repeat>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-4 col-lg-12">
+        <div class="panel panel-default contact">
+          <apex:repeat value="{!pkbCon.PKBContentByName}" var="key">
+            <apex:outputText rendered="{!key='Home_Contact'}" value="{!pkbCon.PKBContentByName[key].Content__c}" escape="false" />
+          </apex:repeat>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</apex:component>

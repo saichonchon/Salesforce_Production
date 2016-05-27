@@ -1,0 +1,49 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" controller="BCSLoginController" applyHtmlTag="false" applyBodyTag="false">
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Login | BigCommerce</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <apex:stylesheet value="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'dist/styles.min.css')}" />
+        <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" />
+        <apex:includeScript value="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'js/community-login-registration.js')}" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    </head>     
+    <body>
+        <div class="text-center login-registration-header">
+            <h1>
+                <a href="https://forum.bigcommerce.com/" id="link-home">
+                    <img src="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'images/BigCommerce-Community-Logo-1x.png')}" alt="BigCommerce Community Logo" srcset="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'images/BigCommerce-Community-Logo-1x.png')}, {!URLFOR($Resource.knowledge_assets_brand_relaunch, 'images/BigCommerce-Community-Logo-2x.png')} 2x" height="40" />
+                </a>
+            </h1>
+        </div>
+        <div class="container community-login">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="text-center">Welcome back!</h4>
+                    <apex:form id="loginForm" forceSSL="true">
+                        <apex:Messages id="error" styleClass="alert alert-danger" />
+                        <div class="form-group">
+                            <apex:outputLabel value="Email" for="username" styleClass="sr-only" />
+                            <apex:inputText id="username" value="{!username}" html-placeholder="Username (Email)" styleClass="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <apex:outputLabel value="Password" for="password" styleClass="sr-only" />
+                            <apex:inputSecret id="password" value="{!password}" styleClass="form-control" html-placeholder="Password" />
+                            <p class="help-block text-right"><apex:outputLink value="{!$Site.Prefix}/BCSForgotPassword">Forgot your password?</apex:outputLink></p>
+                        </div>
+                        <apex:commandButton styleClass="btn btn-primary btn-lg" action="{!login}" value="Sign In" id="loginButton" />
+                        <p class="or text-center">or</p>
+                        <apex:outputLink value="{!$Site.Prefix}/CommunitiesSelfReg" styleClass="btn btn-link btn-lg">Create an Account</apex:outputLink>
+                    </apex:form>
+                </div>
+            </div>
+            <div class="text-center">
+                <p><small><apex:outputLink value="https://na19.salesforce.com/servlet/networks/session/create?site={!$Site.SiteId}&url={!Urlencode($CurrentPage.parameters.startUrl)}">Staff Login</apex:outputLink></small></p>
+            </div>
+        </div>
+    </body>
+</html>
+</apex:page>

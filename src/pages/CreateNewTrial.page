@@ -1,0 +1,151 @@
+<apex:page standardcontroller="Subscription__c" extensions="CreateNewTrialController">
+
+<apex:form >	
+	
+	<center>	
+		<div style="font: normal 28px Arial, Helvetica, sans-serif;">Partner Zone.</div>		
+		<div style="font: normal 14px Arial, Helvetica, sans-serif; color:#909090;"><b>Create a new partner trial by filling out the form below.</b></div>
+	</center>
+	<apex:pageMessages />
+	<br /><br />
+	<table width="100%" height="100%" bgcolor="#f8f8f8">
+		<tr>
+			<td colspan="2" heigth="20">&nbsp;</td>
+		</tr>
+		
+		<tr>
+			<td width="250" align="right">Select Existing Customer or Create New</td>
+			<td>
+				<apex:selectList size="1" id="account_list" value="{!selectedAccountId}" style="width:80%; height: 20px">
+					<apex:selectOptions value="{!accounts}" />
+					<apex:actionSupport event="onchange" action="{!changeAccount}" />
+		 		</apex:selectList>		
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" heigth="20">&nbsp;</td>
+		</tr>
+		<tr>
+			<td align="right">Store Name</td>
+			<td><apex:inputText value="{!storeName}" id="storename" style="width:80%; height: 20px" /></td>
+		</tr>
+		<tr>
+			<td colspan="2" heigth="20">&nbsp;</td>
+		</tr>
+		<!--  NEW ACCOUNT INFO -->
+		<apex:outputPanel rendered="{!createNewAccount}">
+		<tr>
+			<td align="right">Client First Name</td>
+			<td><apex:inputText value="{!firstName}" style="width:80%; height: 20px" /></td>
+		</tr>
+		<tr>
+			<td colspan="2" heigth="20">&nbsp;</td>
+		</tr>
+		<tr>
+			<td align="right">Client Last Name</td>
+			<td><apex:inputText value="{!lastName}" style="width:80%; height: 20px" /></td>
+		</tr>
+		<tr>
+			<td colspan="2" heigth="20">&nbsp;</td>
+		</tr>
+		<tr>
+			<td align="right">Client Company Name</td>
+			<td><apex:inputText value="{!company}" style="width:80%; height: 20px" /></td>
+		</tr>
+		<tr>
+			<td colspan="2" heigth="20">&nbsp;</td>
+		</tr>
+		<tr>
+			<td align="right">Client Phone</td>
+			<td><apex:inputText value="{!phone}" style="width:80%; height: 20px" /></td>
+		</tr>
+		<tr>
+			<td colspan="2" heigth="20">&nbsp;</td>
+		</tr>
+		<tr>
+			<td align="right">Client Email Address</td>
+			<td><apex:inputText value="{!email}" style="width:80%; height: 20px" /></td>
+		</tr>
+		<tr>
+			<td colspan="2" heigth="20">&nbsp;</td>
+		</tr>
+		</apex:outputPanel>
+		<!-- END NEW ACCOUNT INFO -->		
+		<apex:outputPanel rendered="{!NOT(createNewAccount)}">
+		<tr>
+			<td align="right">Select Email</td>
+			<td>
+				<apex:selectList size="1" id="email_list" value="{!email}" style="width:80%; height: 20px">
+					<apex:selectOptions value="{!emails}" />					
+		 		</apex:selectList>	
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" heigth="20">&nbsp;</td>
+		</tr>
+		</apex:outputPanel>
+		<tr>
+			<td align="right">Password</td>
+			<td><apex:inputText value="{!password}" style="width:80%; height: 20px" /></td>
+		</tr>
+		<tr>
+			<td colspan="2" heigth="20">&nbsp;</td>
+		</tr>
+		<tr>
+			<td align="right">Where's customer store based?</td> 
+			<td>
+				<apex:selectList size="1" value="{!country}" style="width:80%; height: 20px">
+					<apex:selectOptions value="{!countries}" />
+		 		</apex:selectList>		
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" heigth="20">&nbsp;</td>
+		</tr>
+		<tr>
+			<td align="right">What will customer sell?</td>
+			<td>
+				<apex:selectList size="1" value="{!industry}" style="width:80%; height: 20px">
+					<apex:selectOptions value="{!industries}"  />
+		 		</apex:selectList>		
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" heigth="20">&nbsp;<br /><br /></td>
+		</tr>
+		<tr>
+			<td align="center" colspan="2">
+				<apex:commandButton action="{!createNewTrial}" value="Start Free Trial Today!" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" heigth="20">&nbsp;<br /><br /><br /></td>
+		</tr>
+	</table>
+	
+	<!-- 
+		<apex:pageBlockSection >		
+			<apex:pageBlockSectionItem >
+				<apex:outputLabel value="Select Account:" for="account__list"/>
+				<apex:selectList size="1" id="account_list" value="{!selectedAccountId}">
+					<apex:selectOptions value="{!accounts}" />
+		 		</apex:selectList>
+			</apex:pageBlockSectionItem>
+			<apex:pageBlockSectionItem >
+				&nbsp;
+			</apex:pageBlockSectionItem>
+			<apex:pageBlockSectionItem >
+				<apex:outputLabel value="Store Name:" for="storename" />
+				<apex:inputText value="{!storeName}" required="true" id="storename" />
+			</apex:pageBlockSectionItem>
+			<apex:pageBlockSectionItem >
+				<apex:outputLabel value="Subdomain:" for="subdomain" />
+				<apex:inputText value="{!subDomainName}" required="true" id="subdomain" />
+			</apex:pageBlockSectionItem>		
+		</apex:pageBlockSection>
+	</apex:pageBlock>
+	<apex:commandButton action="{!createNewTrial}" value="Create New Trial" />
+	-->
+</apex:form>
+
+</apex:page>

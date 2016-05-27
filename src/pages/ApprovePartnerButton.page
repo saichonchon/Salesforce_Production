@@ -1,0 +1,39 @@
+<apex:page standardController="Account" extensions="AccountApprovePartner" name="Partner Approval" label="Partner Approval" title="Partner Approval" showHeader="false" sidebar="false">
+    <script>
+        function launchWindow() {
+            window.open("/apex/ApprovePartner?id={!id}", '_blank', 'height=600,width=450,status=no,scrollbars=yes,resizable=yes,toolbar=no,menubar=no,location=no');
+        }
+        
+        function doRefresh() {
+            parent.location.href="/{!id}";
+        }
+    </script>
+  	<style>
+		.italic {
+			font-style: italic;
+		}
+	</style>
+    
+    
+    <!-- Get the fields we need -->
+    <apex:outputText value="{!Account.Partner_iDevID__c} {!Account.iDev_Partner_ID__c} {!Account.Name}" rendered="false"/>
+
+    <!-- If we're not looking at a partner account -->
+    <apex:outputText rendered="{!isPartner != true}" value="Not a partner account" />
+
+    <!-- If the partner has no contact -->
+    <apex:outputText rendered="{!isPartner && !partnerApproved && !hasContact}" value="This partner can not be approved because there is no contact associated with the account." />
+
+    <!-- If the partner is already approved -->
+	<apex:panelGrid rendered="{!isPartner && partnerApproved}" columns="2" id="theGrid">
+		<apex:outputText value="Username:" />
+		<apex:outputText styleClass="italic" value="{!Account.Partner_iDevID__c}" />
+		<apex:outputText value="ID:" />
+		<apex:outputText styleClass="italic" value="{!Account.iDev_Partner_ID__c}" />
+	</apex:panelGrid>
+
+    <!-- If the partner not approved, step 1 -->
+    <apex:form rendered="{!isPartner && !partnerApproved && hasContact}">
+        <apex:commandButton value="Approve Partner" onClick="launchWindow();" />
+    </apex:form>
+</apex:page>

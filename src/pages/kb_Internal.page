@@ -1,0 +1,17 @@
+<apex:page cache="false" standardStylesheets="false" showHeader="true" sidebar="false" standardController="KnowledgeArticle" extensions="pkb_Controller" language="{!pkbCon.selectedLanguage}" applyBodyTag="false">
+
+    <div id="page-wrapper">
+        <div class="container-fluid" id="internal">
+            <apex:insert name="body" />
+        </div>
+    </div>
+    
+    <apex:stylesheet value="{!URLFOR($Resource.knowledge_assets, 'styles/bootstrap-sf-override.min.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.knowledge_assets, 'styles/styles.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.knowledge_assets, 'styles/colorbox.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.knowledge_assets, 'styles/internal-styles.css')}" />  
+    <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" />
+    <apex:includeScript value="{!URLFOR($Resource.knowledge_assets, 'js/bootstrap.min.js')}" />
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,400italic,600,700' rel='stylesheet' type='text/css' />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</apex:page>

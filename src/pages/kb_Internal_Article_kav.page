@@ -1,0 +1,60 @@
+<apex:page standardController="Internal_Article__kav" showHeader="false" standardStylesheets="false" applyBodyTag="false" sidebar="false">
+    <apex:variable var="Title" value="{!Internal_Article__kav.Title}" />
+    <apex:variable var="InternalURL" value="https://na19.salesforce.com/articles/Internal_Article/{!Internal_Article__kav.UrlName}" />
+    <apex:composition template="kb_Internal">
+        <apex:define name="body">
+            <knowledge:articleRendererToolbar articleId="{!$CurrentPage.parameters.id}" showChatter="true" />
+            <!--<knowledge:articleCaseToolbar articleId="{!$CurrentPage.parameters.id}" caseId="{!$CurrentPage.parameters.caseId}" rendered="{!$CurrentPage.parameters.caseId != null}" includeCSS="false" />-->
+            <div id="internal-content" data-spy="scroll" data-target=".article-nav-fixed">
+                <div id="article-content">
+                    <h1 class="page-header">{!Title}</h1>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="panel panel-default" id="details">
+                                <div class="panel-heading">
+                                    <h5>Details</h5>
+                                </div>
+                                <div class="panel-body">
+                                    <ul>
+                                        <li><strong>Internal URL</strong>: <a href="{!InternalURL}">{!InternalURL}</a></li>
+                                        <li><strong>Last modified</strong>: {!Internal_Article__kav.LastModifiedDate}</li>
+                                        <li><strong>Created</strong>: {!Internal_Article__kav.FirstPublishedDate}</li>
+                                        <apex:outputText rendered="{!Internal_Article__kav.Third_Party__c} != null" value="<li><strong>Third Party: </strong> {!Internal_Article__kav.Third_Party__c}</li>" />
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel panel-default" id="article">
+                                <div class="panel-heading">
+                                    <h5>Article</h5>
+                                </div>
+                                <div class="panel-body">
+                                    <apex:outputText value="{!Internal_Article__kav.Article__c}" escape="false" />
+                                </div>
+                            </div>
+                            <div class="panel panel-default" id="attachments">
+                                <div class="panel-heading">
+                                    <h5>Attachments</h5>
+                                </div>
+                                <div class="panel-body">
+                                    <p><apex:outputLink value="{!URLFOR($Action.Internal_Article__kav.FileFieldDownload, Internal_Article__kav.id, ['field'=$ObjectType.Internal_Article__kav.fields.Attachment__Body__s.name])}">{!Internal_Article__kav.Attachment__Name__s}</apex:outputLink></p>
+                                    <p><apex:outputLink value="{!URLFOR($Action.Internal_Article__kav.FileFieldDownload, Internal_Article__kav.id, ['field'=$ObjectType.Internal_Article__kav.fields.Attachment_2__Body__s.name])}">{!Internal_Article__kav.Attachment_2__Name__s}</apex:outputLink></p>
+                                    <p><apex:outputLink value="{!URLFOR($Action.Internal_Article__kav.FileFieldDownload, Internal_Article__kav.id, ['field'=$ObjectType.Internal_Article__kav.fields.Attachment_3__Body__s.name])}">{!Internal_Article__kav.Attachment_3__Name__s}</apex:outputLink></p>
+                                    <p><apex:outputLink value="{!URLFOR($Action.Internal_Article__kav.FileFieldDownload, Internal_Article__kav.id, ['field'=$ObjectType.Internal_Article__kav.fields.Attachment_4__Body__s.name])}">{!Internal_Article__kav.Attachment_4__Name__s}</apex:outputLink></p>
+                                    <p><apex:outputLink value="{!URLFOR($Action.Internal_Article__kav.FileFieldDownload, Internal_Article__kav.id, ['field'=$ObjectType.Internal_Article__kav.fields.Attachment_5__Body__s.name])}">{!Internal_Article__kav.Attachment_5__Name__s}</apex:outputLink></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </apex:define>
+    </apex:composition>
+    <apex:includeScript value="../../soap/ajax/36.0/connection.js"/>
+    <apex:includeScript value="/support/console/36.0/integration.js"/>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            sforce.console.setTabTitle("{!Title}");
+        });
+    </script>
+    <c:kb_internal_js />
+</apex:page>

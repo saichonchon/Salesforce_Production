@@ -1,0 +1,34 @@
+<apex:page controller="SubmitCaseThanksController" showHeader="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" title="Bigcommerce Support" standardStylesheets="false">
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Case Submitted | BigCommerce Support</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <apex:stylesheet value="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'dist/styles.min.css')}" />
+    </head>
+    <body>
+        <c:kb_google_tag_manager />
+        <div class="text-center create-case-header">
+            <h1>
+                <a href="https://support.bigcommerce.com/" id="link-home">
+                    <img src="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'images/bigcommerce-support-logo.png')}" alt="BigCommerce Community Logo" srcset="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'images/bigcommerce-support-logo.png')}, {!URLFOR($Resource.knowledge_assets_brand_relaunch, 'images/bigcommerce-support-logo.png')} 2x" height="40" />
+                </a>
+            </h1>
+        </div>
+        <div class="container create-case-completed">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h4>Case Submitted</h4>
+                    <p>Case <strong>{!caseNum}</strong> has been received.</p>
+                    <br />
+                    <p>We will be in contact with you as soon as possible at <span class="user-email">{!contactEmail}</span></p>
+                    <br />
+                    <p><a href="https://support.bigcommerce.com/">Return to BigCommerce Support</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+</apex:page>

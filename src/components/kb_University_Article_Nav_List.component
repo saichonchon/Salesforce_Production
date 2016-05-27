@@ -1,0 +1,8 @@
+<apex:component allowDML="true" layout="none" controller="SupportPageController">
+  <apex:attribute name="datacategoryname" type="String" assignTo="{!dcsname}" required="true" description="Data Category to pull article data from" />
+  <apex:repeat value="{!univArtListByName}" var="article">
+    <li>
+      <a href="/articles/University/{!article.UrlName}">{!article.Short_Title__c}</a>
+    </li>
+  </apex:repeat>
+</apex:component>

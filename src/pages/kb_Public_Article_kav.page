@@ -1,0 +1,25 @@
+<apex:page standardController="Public__kav" extensions="pkb_Controller" showHeader="false" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false">
+    <apex:composition template="KB_Article_Template">
+        <apex:define name="title">
+            <title>{!Public__kav.Title} - BigCommerce Support</title>
+            <meta name="description" content="{!Public__kav.Summary}" />
+            <link rel="canonical" href="https://support.bigcommerce.com/articles/Public/{!pkbCon.theKad.urlName}" />
+        </apex:define>
+        <apex:define name="ActivePage">
+                <apex:variable var="ActivePage" value="Articles" />
+        </apex:define>
+        <apex:define name="body">
+            <ol class="breadcrumb">
+                <li><a href="{!pkbCon.currentSiteUrl}">BigCommerce Support</a></li>
+                <li><a href="{!pkbCon.currentSiteUrl}/documentation">Documentation</a></li>
+                <li class="active article-label"></li>
+            </ol>
+            <span class="hidden" id="menu-title">{!Public__kav.Nav_Title__c}</span>
+            <span class="hidden" id="feedback-visible">{!Public__kav.Feedback_Visible__c}</span>
+            <div class="content">
+                <h1><apex:outputText value="{!Public__kav.Title}" /></h1>
+                <apex:outputText value="{!Public__kav.Article__c}" escape="false" />
+            </div>
+        </apex:define>
+    </apex:composition>
+</apex:page>

@@ -1,0 +1,262 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Goog",
+				"Google_Analytics_Property_Id__c"
+			],
+			[
+				"create",
+				"GLOBAL createTestMBAStagingSubscriptionsAccountsContacts(Integer numberOfRecords) 	LIST"
+			],
+			[
+				"MBA",
+				"MBA_Staging_Subscription__c"
+			],
+			[
+				"mbaAccoun",
+				"MBAAccounts"
+			],
+			[
+				"createMBA",
+				"GLOBAL createTestMBAStagingContacts(LIST mbaAccounts) 	LIST"
+			],
+			[
+				"MBA_Stag",
+				"MBA_Staging_Contact__c"
+			],
+			[
+				"accounts",
+				"GLOBAL createTestMBAStagingAccounts(Integer numberOfRecords) 	LIST"
+			],
+			[
+				"MBA_",
+				"MBA_Staging_Account__c"
+			],
+			[
+				"createTestMBA",
+				"PRIVATE createTestMBAStagingSubscriptions(LIST MBAAccounts) 	LIST"
+			],
+			[
+				"MBA_Sta",
+				"MBA_Staging_Subscription__c"
+			],
+			[
+				"recordTy",
+				"recordTypeId"
+			],
+			[
+				"CreateTest",
+				"createTestLead"
+			],
+			[
+				"Rand",
+				"GLOBAL RandomInteger(Integer floor, Integer ceiling) 	Integer"
+			],
+			[
+				"ran",
+				"Random_Sample_0_100__c"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 151.0,
+		"last_filter": "Package Control: install",
+		"selected_items":
+		[
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 720.0
+	},
+	"console":
+	{
+		"height": 162.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"Package Control: Install Package"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/c/mavensmate/workspaces/Salesforce_Production"
+	],
+	"file_history":
+	[
+		"/c/mavensmate/workspaces/Production/Production.sublime-project",
+		"/c/mavensmate/workspaces/GADev/src/classes/TestDataGenerator.cls",
+		"/C/Users/stephen.oneal/AppData/Roaming/Sublime Text 3/Packages/User/Base File.sublime-settings",
+		"/C/Users/stephen.oneal/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Program Files/Sublime Text 3/Packages/User/Default (Windows).sublime-mousemap",
+		"/C/Users/stephen.oneal/AppData/Roaming/Sublime Text 3/Packages/User/mavensmate.sublime-settings"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 138.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"body",
+			"MBAAccountID__c",
+			"APISettings.",
+			"recordtype.",
+			"MBAAccountID__c",
+			"objMBAContact",
+			"MBA_Staging_Account__c()",
+			"/**\n",
+			"IsConverted",
+			"lost",
+			"label",
+			"label.",
+			".isbefore",
+			"ApplicationException",
+			"throw new appl",
+			"subscription_termination",
+			"TestOpportunityTrigger",
+			"handleOppprodHist",
+			"Opportunity_Product__c()",
+			"Opportunity_Product()",
+			"Opportunity_Product",
+			"opportunity_product",
+			"won",
+			"/**\n",
+			"/*\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 43.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Salesforce_Production.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 378.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,11 @@
+<apex:page standardController="Account" 
+extensions="AccountButtonController" 
+action="{!createOpp}" >
+
+ <apex:sectionHeader title="Creating Opportunity"/>
+  <apex:outputPanel >
+      You tried calling Apex Code from a button.  If you see this page, something went wrong.  
+      You should have been redirected back to the record you clicked the button from.
+      Please contact the Salesforce Administrator.
+  </apex:outputPanel>
+</apex:page>

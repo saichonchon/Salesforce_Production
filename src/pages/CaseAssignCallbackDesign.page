@@ -1,0 +1,10 @@
+<apex:page standardController="Case" extensions="CaseStopWorkingController" action="{!setCaseToCallbackDesign}">
+	<apex:form >
+		<apex:pageMessages />
+		
+		<apex:pageBlock id="pblkError" mode="edit" rendered="{!showError}">
+			<apex:commandButton value="Go Back" action="{!Cancel}" />
+		</apex:pageBlock>	
+		
+	</apex:form>
+</apex:page>

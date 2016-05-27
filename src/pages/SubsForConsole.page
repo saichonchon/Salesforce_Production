@@ -1,0 +1,141 @@
+<apex:page controller="SubsForConsole_Controller" showChat="false" showheader="false" sidebar="false" tabStyle="Subscription__c" action="{!LoadSubscriptions}">    
+    <apex:includeScript value="/support/console/28.0/integration.js" />
+    <apex:includeScript value="/support/console/29.0/integration.js"/>
+    
+    <script type="text/javascript">
+        var caseRecordTypeId;
+        var selectedSubId;
+        var selectedSubName;
+        var tabId;
+        var chatKey;
+        var contactId = '{!contactId}';
+        var objectType = '{!objectType}';
+                
+        var getPrimaryTabId = function getPrimaryTabId(result)
+        {
+            // Grab the primary tab Id
+            tabId = result.id;          
+            //loadSubs();
+                        
+            //alert('Tab Id: ' + tabId);
+            
+            sforce.console.chat.getDetailsByPrimaryTabId(tabId, getChatDetailsResult);
+        }        
+        
+        function getChatDetailsResult(result) 
+        {
+            //Report whether accepting the chat was succesful
+            if (result.success == true) 
+            {
+                console.log(result);
+                chatKey = result.details.chatKey;
+                
+                for (var x = 0; x < result.details.customDetails.length; x++)
+                {
+                    if (result.details.customDetails[x].label == 'SubID')
+                    {
+                        selectedSubId = result.details.customDetails[x].value   
+                    }
+                }
+                //alert('The chatKey for this chat is: ' + chatKey);
+                //alert('The sub Id is: ' + selectedSubId);
+                
+                SubPassedIn(selectedSubId);                
+            }
+        }
+        
+        function CreateCase(csRTypeId, selSubId, selSubName) 
+        {      
+            //alert('Case Clicked for Account: {!acctId}');
+            
+            // Make sure a subscription is selected      
+            if (selSubName != null && selSubName != 'null' && selSubName != '')
+            {
+                caseRecordTypeId = csRTypeId;
+                selectedSubId = selSubId;
+                selectedSubName = selSubName;
+                
+                // Try to get the Contact ID if needed
+                if (objectType != 'Lead' && contactId == '')
+                {
+                    sforce.console.getFocusedSubtabObjectId(getContactInfo);
+                }
+                else
+                {
+                    openCase();
+                }        
+            }
+        }
+        
+        var getContactInfo = function getContactInfo(result)
+        {
+            contactId = '';
+            //alert('Contact Id Result: ' + result.id);
+            
+            if (result.id != null && result.id != 'null' && result.id != '')
+            {
+                // Make sure the subtab is actually a contact subtab
+                if (result.id.substr(0,3) == '{!contactPrefix}')
+                {
+                    contactId = result.id;
+                }
+            }
+            
+            // Open the New Case Page
+            openCase();
+        }    
+
+        // Called from CreateCase() to open a new subtab
+        function openCase()
+        {           
+            // open new case with record type in a new subtab
+            var strURL = '{!caseCreateURLPrefix}&RecordType=' + caseRecordTypeId + '&def_account_id={!acctId}' + '&CF00Na0000009s3xl_lkid={!leadId}&CF00Na0000009s3xl={!leadName}' + '&CF00Na0000009s4GJ_lkid=' + selectedSubId + '&CF00Na0000009s4GJ=' + selectedSubName + '&def_contact_id=' + contactId + '&00Na000000B31FD=' + chatKey;
+            
+            //alert('Tab Id: ' + tabId + '; Case URL: ' + strURL);
+            
+            sforce.console.openSubtab(tabId, strURL, true, '', null);
+            
+            window.location.reload();
+        }
+    </script>
+    
+    <apex:form id="frmMain">
+        <apex:actionFunction action="{!LoadSubscriptions}" name="loadSubs" id="loadSubs" rerender="pblkMain" />
+        
+        <apex:actionFunction action="{!CaptureSub}" name="SubPassedIn" id="SubPassedIn" rerender="pblkMain">
+            <apex:param name="firstParam" assignTo="{!passedInSubId}" value="" />
+        </apex:actionFunction>
+        
+        <apex:pageBlock id="pblkMain" title="Subs" mode="detail">
+            <apex:pageBlockButtons location="top" rendered="{!Subs.size > 0}">
+                <c:multiSelectButton uniqueId="btnCreateCase" buttonText="Create Case Type (for selected):">                        
+                    <apex:repeat value="{!lstCaseRTWraps}" var="rt">
+                        <apex:commandLink value="{!rt.RTName}" onclick="javascript:return CreateCase('{!rt.RTID}', '{!selectedSubId}', '{!selectedSubName}');" />
+                    </apex:repeat>
+                </c:multiSelectButton>
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockTable value="{!Subs}" var="s" rendered="{!Subs.size > 0}">
+                <apex:column headerValue="CrCase" style="width:10px;">
+                    <apex:inputCheckbox value="{!s.isSelected}">
+                        <apex:actionSupport event="onclick" action="{!SelectSub}" rerender="pblkMain">
+                            <apex:param name="selId" value="{!s.objSub.Id}" />
+                        </apex:actionSupport>
+                    </apex:inputCheckbox>
+                </apex:column>
+                <apex:column value="{!s.objSub.Product__c}" />
+                <apex:column value="{!s.objSub.StoreURL__c}" />
+                <apex:column value="{!s.objSub.Status__c}" />
+            </apex:pageBlockTable>
+            
+            <apex:outputPanel rendered="{!Subs.size == 0}">
+                <br /><br />
+                <apex:outputText value="No Subscription Exist for This {!objectType}" style="font-weight:bold; font-size:1.2em;" />
+            </apex:outputPanel>  
+        </apex:pageBlock>
+        
+        <script type="text/javascript">             
+            sforce.console.getEnclosingPrimaryTabId(getPrimaryTabId);            
+        </script> 
+    </apex:form>
+</apex:page>

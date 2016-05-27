@@ -1,0 +1,120 @@
+<apex:page controller="PricePlanController" docType="html-5.0" title="Pricing Calculator">
+
+  <link href="{!URLFOR($Resource.PricingPlan, 'styles/styles.min.css')}" type="text/css" rel="stylesheet" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="{!URLFOR($Resource.PricingPlan, 'js/main.min.js')}" type="text/javascript"></script>
+  <script>
+    function confirmCancel() {
+      var isCancel = confirm("Are you sure you want to cancel?");
+      if (isCancel) return true;
+      return false; 
+    }
+  </script>
+  <html>
+  <apex:sectionHeader title="New Client Price Plan" />
+    <apex:form >
+    
+    <apex:Messages styleClass="alert-list" />
+    
+    <apex:outputPanel rendered="{!samReqd}" layout="block" styleClass="alert alert-error">
+      <apex:outputText value="Strategic account management is only available on plans with a monthly fee (before annual discounts) of $2,500 or above." />
+    </apex:outputPanel>
+    
+     <div class="input-fields">
+        <div class="input-group">
+          <div class="checkbox">
+            <label class="form-label">
+              <apex:inputCheckbox id="forceEnt" value="{!forceEntPlan}" />
+              Force Enterprise Plan?
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="input-fields">
+        <div class="input-group">
+          <div class="checkbox">
+            <label class="form-label">
+              <apex:inputCheckbox id="SAM" value="{!samReqd}" />
+              Require Strategic Account Manager?
+            </label>
+          </div>
+        </div>
+      </div>
+      <br/>
+      <div class="input-fields">
+        <div class="input-group">
+          <apex:outputLabel value="Annual GMV" styleClass="form-label" />
+          <apex:input type="number" id="AnnualGMV" value="{!annualGMV}" styleClass="form-control" html-step="any"  />
+        </div>
+        <div class="input-group">
+          <apex:outputLabel value="Annual Order Count" styleClass="form-label" />
+          <apex:input type="number" id="AnnualOrderCount" value="{!annualOrderCount}" styleClass="form-control" html-step="any"  />
+        </div>
+        <div class="input-group">
+          <apex:outputLabel value="Average Order Value" styleClass="form-label" />
+          <apex:input type="number" id="aov" value="{!aov}" styleClass="form-control" html-step="any" />
+        </div>
+
+        <div class="input-group">
+          <apex:commandButton action="{!getPricePlan}" value="Get Price Plan" styleClass="btn btn-primary" />
+          <apex:commandButton action="{!cancel}" value="Clear"  styleClass="btn btn-default" />
+        </div>
+      </div>
+
+      <apex:outputPanel rendered="{!pplan.Plan_Type__c != null}" layout="block" styleClass="details">
+        <h4>Plan Details</h4>
+        <div class="detail-item">
+          <div class="detail-content">
+            <span class="label">Annual GMV</span> 
+            <span class="detail-value">${!annualGMV}</span>
+          </div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-content">
+            <span class="label">Plan Type</span> 
+            <span class="detail-value">{!pplan.Plan_Type__c} <apex:outputText value=" {!pplan.Tier__c}" /></span>
+          </div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-content">
+            <span class="label">Target Price</span> 
+            <span class="detail-value">${!pplan.Target_Price__c}</span>
+          </div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-content">
+            <span class="label">Min. Price</span> 
+            <span class="detail-value">${!pplan.Minimum_Price__c}</span>
+          </div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-content">
+            <span class="label">Order Count</span> 
+            <span class="detail-value"><apex:outputText rendered="{!pplan.Plan_Type__c <> 'Plus' && pplan.Plan_Type__c <> 'Standard'}" value="{!pplan.Order_Max__c}"/>
+            <apex:outputText rendered="{!pplan.Plan_Type__c == 'Plus'  || pplan.Plan_Type__c == 'Standard'  }" value="N/A"/>
+            </span>
+          </div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-content">
+            <span class="label">Price Per Order</span> 
+            <span class="detail-value">${!minPricePerOrder} - ${!maxPricePerOrder}</span>
+          </div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-content">
+            <span class="label">Growth Adjustment Count</span> 
+            <span class="detail-value">{!pplan.Order_Increment__c}</span>
+          </div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-content">
+            <span class="label">Growth Adjustment Amount</span> 
+            <span class="detail-value">${!pplan.Incr_Fee__c}</span>
+          </div>
+        </div>
+      </apex:outputPanel>
+      
+    </apex:form>
+  </html>
+</apex:page>

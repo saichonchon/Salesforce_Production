@@ -1,0 +1,80 @@
+<apex:page id="communitiesSelfRegPage" showHeader="false" controller="CommunitiesSelfRegController" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" title="Bigcommerce Support Self Registration" standardStylesheets="false">
+<html class="no-js">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Create Account | BigCommerce</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <apex:stylesheet value="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'dist/styles.min.css')}" />
+        <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" />
+        <apex:includeScript value="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'js/community-login-registration.js')}" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="text-center login-registration-header">
+            <h1>
+                <a href="https://support.bigcommerce.com/" id="link-home">
+                    <img src="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'images/BigCommerce-Community-Logo-1x.png')}" alt="BigCommerce Community Logo" srcset="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'images/BigCommerce-Community-Logo-1x.png')}, {!URLFOR($Resource.knowledge_assets_brand_relaunch, 'images/BigCommerce-Community-Logo-2x.png')} 2x" height="40" />
+                </a>
+            </h1>
+        </div>
+        <div class="container community-registration">
+            <div class="card">
+                <div class="card-body">
+                    <apex:form id="theForm" forceSSL="true">
+                        <apex:Messages id="error" styleClass="alert alert-danger"/>
+                        <apex:actionRegion >
+                            <apex:outputPanel id="form-step-1" rendered="{!NOT(webFormOn)}"  layout="block">
+                                <h4 class="text-center">Create Your Account</h4>
+                                <div class="form-group">
+                                    <apex:outputLabel value="Store Url" for="surl" styleClass="sr-only" />
+                                    <apex:inputText required="true" id="surl" value="{!formUrl}" styleClass="form-control" html-placeholder="Store Url" />
+                                </div>
+                                <div class="form-group">
+                                    <apex:outputLabel value="Support PIN" for="supportpin" styleClass="sr-only" /> 
+                                    <apex:inputText required="true" id="supportpin" value="{!supportpin}" label="Support Pin" styleClass="form-control" html-placeholder="Support PIN"  />
+                                    <p class="help-block text-right"><a href="https://support.bigcommerce.com/articles/Public/What-is-my-support-PIN-and-where-do-I-find-it" target="_blank" id="support-ticket-help" class="medium-text-left">How do I find my Support PIN?</a></p>
+                                </div>
+                                <div class="text-right">
+                                    <apex:commandButton styleclass="btn btn-primary btn-lg" id="control" action="{!authenticateUser}" value="Next"  />
+                                </div>
+                            <apex:actionStatus startText="Creating user..." id="status1" />
+                        </apex:outputPanel>
+                        <apex:outputPanel id="form-step-2" rendered="{!webFormOn}">
+                            <h4 class="text-center">Set Your Password</h4>
+                            <div class="form-group">
+                                <apex:outputLabel for="field-username" styleClass="right">Username (Email)</apex:outputLabel>
+                                <input type="text" class="form-control disabled" disabled="disabled" value="{!email}" />
+                                <p class="help-block">Your Username cannot be changed.</p>
+                            </div>
+                            <div class="form-group registration-password">
+                                <apex:outputLabel value="{!$Label.site.password}" for="password" styleClass="sr-only" />
+                                <apex:inputSecret id="password" value="{!password}" styleClass="form-control registration-password-input" html-placeholder="Password" />
+                                <p class="help-block">Password Requirements</p> 
+                                <ul class="password-req-checker">
+                                    <li class="length">8 characters long</li>
+                                    <li class="lowercase">Contain at least one letter</li>
+                                    <li class="numbers">Contain at least one number</li>
+                                    <li>Cannot contain the word <em>password</em></li>
+                                </ul>
+                            </div>
+                            <div class="form-group registration-password-confirm">
+                                <apex:outputLabel value="{!$Label.site.confirm_password}" for="confirmPassword" styleClass="sr-only" />
+                                <apex:inputSecret id="confirmPassword" value="{!confirmPassword}" styleClass="form-control registration-password-confirm-input" html-placeholder="Confirm Password" />
+                                <p class="help-block match-error hidden">Passwords do not match</p>
+                                <p class="help-block match-success hidden">Passwords match</p>
+                            </div>
+                            <div class="text-right">
+                                <apex:commandButton styleclass="btn btn-primary btn-lg create-account" id="control2" action="{!registerUser}" value="Create Account"  />
+                            </div>
+                            <apex:actionStatus startText="Creating user..." id="status2" />
+                        </apex:outputPanel>
+                        </apex:actionRegion>
+                    </apex:form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+</apex:page>

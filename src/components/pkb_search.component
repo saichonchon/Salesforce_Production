@@ -1,0 +1,31 @@
+<apex:component allowDML="true" layout="none">
+<apex:variable var="SearchPlaceHolder" value="Search our support articles here" />
+    <div class="container-fluid search-container">
+        <div class="container">
+            <apex:attribute name="pkbCon" type="pkb_Controller" required="true" description="handle to the pkb controller" />
+            <apex:attribute name="showBackLinks" type="Boolean" required="false" description="flag to indicate if 'back to...' buttons should be shown" />
+
+            <apex:variable var="pageNum" value="{!pkbCon.pageNumParam}={!pkbCon.currPage}" />
+            <div class="search-input-container">
+                <form class="form" id="search-form" method="get" action="{!pkbCon.currentSiteUrl}">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <select class="form-control search-select">
+                                <option value="support" selected="selected">Resources</option>
+                                <option value="community">Community</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-8 col-xs-12">
+                            <div id="search-input-container">
+                                <input placeholder="Search our support resources" tabindex="1" type="text" name="q" class="{!IF(pkbCon.enteredSearchQuery == pkbCon.searchPrompt, 'default', '')}" id="search-input" />
+                            </div>
+                        </div>
+                        <div class="col-sm-2 hidden-xs">
+                            <a href="#" id="search-button" tabindex="2" class="action btn btn-search">Search</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div><!-- /.search-container -->
+</apex:component>

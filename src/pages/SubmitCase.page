@@ -1,0 +1,143 @@
+<apex:page controller="SubmitCaseController" showHeader="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" standardStylesheets="false">
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Create a Case | BigCommerce Support</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <apex:stylesheet value="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'dist/styles.min.css')}" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    </head>
+    <body>
+        <c:kb_google_tag_manager />
+        <div class="text-center create-case-header">
+            <h1>
+                <a href="https://support.bigcommerce.com/" id="link-home">
+                    <img src="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'images/bigcommerce-support-logo.png')}" alt="BigCommerce Community Logo" srcset="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'images/bigcommerce-support-logo.png')}, {!URLFOR($Resource.knowledge_assets_brand_relaunch, 'images/bigcommerce-support-logo.png')} 2x" height="40" />
+                </a>
+            </h1>
+        </div>
+        <apex:outputPanel styleClass="{!IF(!NOT(webFormOn), 'container create-case', 'container create-case-login')}" layout="block">
+            <div class="card">
+                <div class="card-body">
+                    <apex:form id="supportTicketForm">
+                        <apex:outputPanel styleclass="error-messages" rendered="{!formErrorsList.size != 0}" layout="block">
+                            <apex:repeat value="{!formErrorsList}" var="error" id="formErrors">
+                                <p class="alert alert-danger">{!error}</p>
+                            </apex:repeat>
+                        </apex:outputPanel>
+
+                        <apex:actionRegion >
+
+                            <!-- Step 1 / Authentication -->
+                            <apex:outputPanel id="form-step-1" rendered="{!NOT(webFormOn)}" layout="block">
+
+                                <h4 class="text-center">Log in</h4>
+
+                                <apex:outputPanel id="field-group-store-url" styleclass="form-group" layout="block">
+                                    <apex:outputLabel for="field-store-url" value="Store URL" styleClass="control-label sr-only" />
+                                    <apex:inputText id="field-store-url" value="{!formURL.value}" styleclass="field-store-url form-control" required="true" html-placeholder="Store URL" />
+                                </apex:outputPanel>
+
+                                <apex:outputPanel id="field-group-support-pin" styleclass="form-group" layout="block">
+                                    <apex:outputLabel for="field-support-pin" value="PIN" styleClass="control-label sr-only" />
+                                    <apex:inputText id="field-support-pin" value="{!formPIN.value}" styleclass="field-support-pin form-control" required="true"  html-placeholder="Support PIN" />
+                                    <p class="help-block text-right"><a href="https://support.bigcommerce.com/articles/Public/What-is-my-support-PIN-and-where-do-I-find-it/" target="_blank" id="support-ticket-help" >Forgot your PIN?</a></p>
+                                </apex:outputPanel>
+
+                                <apex:outputPanel id="form-validatation-controls" styleclass="form-controls form-group" layout="block">
+                                    <apex:commandButton styleclass="btn btn-primary btn-lg" id="control-validate" value="Continue" action="{!validatePIN}" rendered="{!IF(webFormOn,false,true)}" />
+                                    <apex:actionStatus startText="Validating PIN/URL..." id="status" />
+                                </apex:outputPanel>
+
+                            </apex:outputPanel>
+
+                            <!-- Step 2 / Ticket Creation -->
+                            <apex:outputPanel id="form-step-2" rendered="{!webFormOn}" layout="block">
+                                <apex:outputPanel id="field-group-ticket-subject" styleclass="{!IF(formSubject.hasError,'has-error','')} form-group" layout="block">
+                                    <apex:outputLabel for="field-ticket-Subject" styleclass="control-label sr-only" value="Subject" />
+                                    <apex:inputText value="{!caseSubject}" id="field-ticket-subject"  styleclass="field-ticket-subject form-control" html-placeholder="Subject" required="true" maxlength="80" />
+                                    <p class="help-block">Topic (e.g. Shipping Setup, Product Options, CSV Won't Import, PayPal Error)</p>
+                                </apex:outputPanel>
+
+                                <apex:outputPanel id="field-group-ticket-description" styleclass="{!IF(formDescription.hasError,'has-error','')} form-group" layout="block">
+                                    <apex:outputLabel for="field-ticket-description" styleclass="control-label">Description</apex:outputLabel>
+                                    <apex:inputTextArea rows="5" value="{!caseDescription}" id="field-ticket-description"  styleclass="field-ticket-description required form-control" html-placeholder="Tell us about your question or issue in more detail. Examples and steps you have already taken are helpful to our Ninjas" required="true" />
+                                    <p class="help-block">Helpful information to include: Steps to replicate your issue, support articles you have used</p>
+                                </apex:outputPanel>
+
+                                <div class="row">
+
+                                    <!-- Left Column -->
+                                    <div class="col-xs-12 col-sm-6">
+                                        <apex:outputPanel id="field-group-issue-type" styleclass="{!IF(formDeptId.hasError,'has-error','')} form-group" layout="block">
+                                            <apex:outputLabel value="Issue type" for="field-issue-type" styleClass="control-label" />
+                                            <apex:selectList size="1" id="field-issue-type" styleclass="field-issue-type form-control" value="{!formDeptId.value}" >
+                                                <apex:selectOptions value="{!Depts}" />
+                                            </apex:selectList>
+                                        </apex:outputPanel>
+                                    </div>
+
+                                    <!-- Right Column -->
+                                    <div class="col-xs-12 col-sm-6">
+                                        <apex:outputPanel id="field-group-ticket-attachment" styleclass="{!IF(fileUploadValidation,'has-error','')} form-group" layout="block">
+                                            <label for="field-ticket-attachment" class="control-label field-attachment">Attachment</label>
+                                            <apex:inputFile accept="{!allowedFileUploadTypesList}" fileName="{!fileName}" fileSize="{!fileSize}" value="{!fileAtt}"  id="field-ticket-attachment" styleclass="field-ticket-attachment form-control" />
+                                            <p class="help-block">(5MB Limit)</p>
+                                        </apex:outputPanel>
+                                    </div>
+
+                                </div>
+
+                                <h4 class="text-center">Contact information</h4>
+
+                                <div class="row form-contact-info">
+
+                                    <div class="col-sm-6">
+                                        <apex:outputPanel id="field-group-first-name" styleclass="{!IF(formFname.hasError,'has-error','')} form-group" layout="block">
+                                            <apex:outputLabel value="First Name" for="field-first-name" styleClass="control-label sr-only" />
+                                            <apex:inputText id="field-first-name" styleclass="field-first-name form-control" value="{!formFname.value}" html-placeholder="First Name" required="true" />
+                                        </apex:outputPanel>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <apex:outputPanel id="field-group-last-name" styleclass="{!IF(formLname.hasError,'has-error','')} form-group" layout="block">
+                                            <apex:outputLabel value="Last Name" for="field-last-name" styleClass="control-label sr-only" />
+                                            <apex:inputText id="field-last-name" styleclass="field-last-name form-control" value="{!formLname.value}" html-placeholder="Last Name" required="true" />
+                                        </apex:outputPanel>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <apex:outputPanel id="field-group-email" styleclass="form-group" layout="block">
+                                            <input type="email" id="field-email" class="field-email form-control" value="{!formEmail.value}" />
+                                            <p class="help-block">We will reply to you at this address.</p>
+                                        </apex:outputPanel>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <apex:outputPanel id="field-group-phone" styleclass="{!IF(formPhone.hasError,'has-error','')} form-group" layout="block">
+                                            <apex:outputLabel value="Phone Number" for="field-phone" styleClass="control-label sr-only" />
+                                            <apex:input id="field-phone" styleclass="field-phone form-control" value="{!formPhone.value}" html-placeholder="Phone Number" required="true" />
+                                        </apex:outputPanel>
+                                    </div>
+
+                                </div><!-- /.form-contact-info -->
+
+                                <apex:commandButton styleclass="btn btn-primary btn-lg control-create-ticket" value="Create Case" action="{!submitCase}" />
+                            </apex:outputPanel><!-- /#form-step-2 -->
+                            <p class="help-block">By submitting this request, you agree to our <a href="https://bigcommerce.com/terms/" target="_blank" id="tos">Terms of Service</a></p>
+                            <apex:inputHidden id="SupportSetting" value="{!csse}" />
+                            <!-- Set the Name of the Case Submission Settings record to be queried by the Controller -->
+                            <script>
+                                document.getElementById('{!$Component.supportTicketForm}').elements['{!$Component.SupportSetting}'].value = 'Web2Case';
+                            </script>
+
+                        </apex:actionRegion>
+                    </apex:form>
+                </div>
+            </div>
+        </apex:outputPanel>
+    </body>
+</html>
+</apex:page>

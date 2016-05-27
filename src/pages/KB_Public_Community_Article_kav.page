@@ -1,0 +1,15 @@
+<apex:page standardController="Community_Article__kav" extensions="pkb_Controller" showHeader="false" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false">
+  <apex:composition template="KB_Article_Template">
+    <apex:define name="title">
+      <title>{!Community_Article__kav.Title} - Bigcommerce Support</title>
+      <meta name="description" content="{!Community_Article__kav.Summary}" />
+      <link rel="canonical" href="https://support.bigcommerce.com/articles/Community_Article/{!pkbCon.theKad.urlName}" />
+    </apex:define>
+    <apex:define name="body">
+      <div class="content">
+        <h1 id="article-title"><apex:outputText value="{!Community_Article__kav.Title}" /></h1>
+        <apex:outputText value="{!Community_Article__kav.Article__c}" escape="false" />
+      </div>
+    </apex:define>
+  </apex:composition>
+</apex:page>

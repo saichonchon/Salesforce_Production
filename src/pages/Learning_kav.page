@@ -1,0 +1,80 @@
+<apex:page standardController="Learning__kav" extensions="pkb_Controller" showHeader="false" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false">
+  <apex:composition template="KB_Article_Template">
+    <apex:define name="title">
+      <title>{!Learning__kav.Title} - Bigcommerce Support</title>
+      <meta name="description" content="{!Learning__kav.Summary}" />
+      <link rel="canonical" href="https://support.bigcommerce.com/articles/Learning/{!pkbCon.theKad.urlName}" />
+    </apex:define>
+    <apex:define name="ActivePage">
+        <apex:variable var="ActivePage" value="Guides" />
+    </apex:define>
+    <apex:define name="body">
+      <span class="hidden" id="article-type">{!Learning__kav.ArticleType}</span>
+      <ol class="breadcrumb">
+         <li><a href="{!pkbCon.currentSiteUrl}">BigCommerce Support</a></li>
+         <li><a href="{!pkbCon.currentSiteUrl}/guides">Guides</a></li>
+         <li class="active active-label">{!Learning__kav.Nav_Title__c}</li>
+         <li class="active article-label"></li>
+      </ol>
+      <div class="content">
+        <div class="guide-title">
+          <h2 id="menu-title">{!Learning__kav.Nav_Title__c}</h2>
+        </div>
+        <apex:variable var="ChaptersRendered" value="{!NOT(ISBLANK(Learning__kav.Chapter_List__c))}" />
+        <!-- Are there multiple chapters? We should only render accordion if there are -->
+        <apex:outputPanel rendered="{!ChaptersRendered}" layout="none">
+          <div class="chapter">
+            <div class="accordion-group">
+              <div class="accordion-section">
+                <div class="accordion-header">
+                    <h4>
+                      <a href="#" title="View All Chapters">{!Learning__kav.Chapter__c}</a>
+                      <span class="chapter-label">(View all Chapters)</span>
+                    </h4>
+                </div>
+                <div class="accordion-body">
+                  <div class="chapter-navigation-index">
+                    <apex:outputText value="{!Learning__kav.Chapter_List__c}" escape="false" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </apex:outputPanel>
+        <div class="learning-guide-content">
+          <h1><apex:outputText value="{!Learning__kav.Title}" /></h1>
+          <apex:outputText value="{!Learning__kav.Article__c}" escape="false" />
+        </div>
+      </div>
+      <div class="chapter-navigation">
+      <apex:variable var="NextButton" value="{!Learning__kav.Next_Button_URL__c}" />
+      <apex:variable var="BackButton" value="{!Learning__kav.Back_Button_URL__c}" />
+        <div class="chapter-navigation-buttons">
+
+          <!-- Ouput back button if URL exists -->
+          <apex:outputText rendered="{!IF(BackButton != null, true, false)}">
+            <a href="{!Learning__kav.Back_Button_URL__c}" class="btn btn-primary previous-chapter"><i class="sl sl-arrow-67">&nbsp;</i></a>
+          </apex:outputText>
+          <!-- Output disabled next button if URL is null -->
+          <apex:outputText rendered="{!IF(BackButton = null, true, false)}">
+            <a href="#" class="btn btn-primary disabled"><i class="sl sl-arrow-67">&nbsp;</i></a>
+          </apex:outputText>
+          
+          <!-- Output next button if URL exists -->
+          <apex:outputText rendered="{!IF(NextButton != null, true, false)}">
+            <a href="{!NextButton}" class="btn btn-primary next-chapter"><strong>Next Chapter:</strong> {!Learning__kav.Next_Button_Text__c}</a>
+          </apex:outputText>
+          <!-- Output disabled next button if URL is null -->
+          <apex:outputText rendered="{!IF(NextButton = null, true, false)}">
+            <a href="#" class="btn btn-primary disabled"><i class="sl sl-arrow-68">&nbsp;</i></a>
+          </apex:outputText>
+
+        </div>
+        <div class="chapter-navigation-index chapter-navigation-index-bottom">
+          <h4>All Chapters</h4>
+          <apex:outputText value="{!Learning__kav.Chapter_List__c}" escape="false" />
+        </div>
+      </div>
+    </apex:define>
+  </apex:composition>
+</apex:page>

@@ -1,0 +1,556 @@
+<apex:page controller="PartnerHome" title="Bigcommerce Partner Home" action="{!PartnerStart}">
+	<style>
+		.graphicHeader
+		{
+			color: #FFFFFF;
+			background-color: #00A9C7;			
+			font-weight: bold;
+			font-size: 1.3em;
+		}
+		
+		.oddRow
+		{
+			background-color: #FFFFFF;
+			color: #77778C;
+			height: 25px;			
+			vertical-align: middle;
+			border: 1px solid #00A9C7;
+		}
+		
+		.evenRow
+		{
+			background-color: #E6EDFD;
+			color: #77778C;
+			height: 25px;
+			vertical-align: middle;
+			border: 1px solid #00A9C7;
+		}
+		
+		.oddRow:hover
+		{			
+			color: #FFFFFF;
+			background-color: #00A9C7;
+		}
+		
+		.evenRow:hover
+		{
+			color: #FFFFFF;
+			background-color: #00A9C7;
+		}
+		
+		.header
+		{
+			background-color: #E6EDFD;
+			color: #000000;
+			border: 1px solid #00A9C7;
+			height: 35px;
+			font-weight: bold;
+			text-align: center;
+			vertical-align: middle;
+		}
+		
+		.ColumnHeaderLink
+		{
+			text-decoration: none;
+			height: 35px;
+			font-weight: bold;
+			text-align: center;
+			vertical-align: middle;
+		}
+		
+		.PageLink
+		{			
+			font-size: .8em;
+			vertical-align: middle;
+			text-decoration: none;
+		}
+		
+		.DisabledLink
+		{
+			font-size: .8em;
+			color:#B1B1B1;
+			vertical-align: middle;
+		}
+		
+		.tableClass
+		{
+			background-color: #00A9C7;
+			border: 1px solid #00A9C7;
+			width: 100%;
+		}
+		
+		.columnStyle
+		{
+			padding-left:5px;
+			padding-right:3px;
+			padding-top: 4px;
+			padding-bottom: 4px;
+			border: 1px solid #00A9C7;	
+		}
+		
+		.loading
+		{
+			top:0px;
+			left:0px;
+			width:90%; 
+			height:100%; 
+			text-align:center; 
+			background-color: #0C4B80; 
+			color: #FFFFFF; 
+			opacity:0.5;
+			filter: Alpha(opacity=50);
+			font-weight:bold; 
+			font-size:1.5em;			
+		}
+	</style> 
+
+    <apex:form >
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	    <script type="text/javascript">
+			google.load("visualization", "1", {packages:["corechart"]});
+			google.load('visualization', '1', {packages:['table']});	
+			google.setOnLoadCallback(drawCharts);
+	      
+	      	function drawCharts()
+	      	{
+	      		drawPurchasedStorePieChart();
+	      		drawSubsLast6Bar();   		
+	      	}
+	      	
+	      	function drawPurchasedStorePieChart() 
+			{	           			
+				var data = google.visualization.arrayToDataTable([
+					['Product', 'Purchased'],
+					<apex:repeat value="{!PurchasedStoresByProduct}" var="s">
+						['{!s.ProdName}', {!s.Count_Store}],
+	           		</apex:repeat>
+				]);
+				
+				var options = {
+					pieSliceText: 'value'
+				};
+				
+				var chart = new google.visualization.PieChart(document.getElementById('divPurchasedStoresPie'));
+				chart.draw(data, options);
+			}
+	      	
+			function drawSubsLast6Bar() 
+			{
+	        	var data = google.visualization.arrayToDataTable([
+	            	['Type','Trials','Stores'],
+	           		<apex:repeat value="{!SubsByMonth}" var="s">
+						['{!s.MonthName}',{!s.Count_Trial},{!s.Count_Store}],
+	           		</apex:repeat>
+	        	]);
+	
+				var options = 
+				{
+					hAxis: {title: '', titleTextStyle: {color: 'red'}},
+					vAxis: {title: '', titleTextStyle: {color: 'green'}}
+				};
+	
+	        	var chart = new google.visualization.ColumnChart(document.getElementById('divSubsLast6Bar'));
+	        	chart.draw(data, options);
+			}
+			
+			function goToStore(storeURL)
+			{
+				if (storeURL != null && storeURL != '')
+				{
+					window.parent.parent.location = storeURL;
+				}
+			}
+	    </script>
+	    
+	    <apex:pageblock rendered="{!InvalidUser}">
+	    	<apex:outputText value="Not a valid Bigcommerce Portal User....Please contact Bigcommerce partner support" style="color:red; font-weight:bold;" />
+	    </apex:pageblock>
+	    
+	    <apex:pageblock rendered="{!NOT(InvalidUser)}">
+	    	<center>
+		    	<table style="width:1200px;" cellpadding="0" cellspacing="5" border="0">
+		    		<tr>
+			    		<td align="center" style="width:550px; height:400px;">
+   							<table style="width:100%; height:400px; background-color:#FFFFFF; border-left:1px solid #00A9C7; border-right:1px solid #00A9C7; border-bottom:1px solid #00A9C7; border-top:1px solid #00A9C7;">
+	   							<tr>
+			    					<td align="left" colspan="2" class="graphicHeader" style="width:100%; vertical-align:middle; color:#FFFFFF; font-size:1.3em; font-weight:bold;">
+			    						&nbsp;Active Stores by Plan
+			    					</td>
+			    				</tr>
+			    				<tr>
+			    					<td align="center" colspan="2">
+			    						<div id="divPurchasedStoresPie" style="width: 550px; height: 325px;"></div>
+			    					</td>
+								</tr>
+			    				<tr>
+			    					<td align="right" style="font-weight:bold; width:50%;">Total Stores:&nbsp;</td>
+			    					<td align="left" style="width:50%;">
+			    						&nbsp;
+			    						<apex:outputText value="{0, number, #,###}">
+			    							<apex:param value="{!PurchasedStoresCount_Total}" />
+			    						</apex:outputText>
+			    					</td>
+			    				</tr>
+			    				<tr>
+			    					<td align="right" style="font-weight:bold; width:50%;">Monthly Billing Total:&nbsp;</td>
+			    					<td align="left" style="width:50%;">
+			    						&nbsp;
+			    						<apex:outputText value="{0, number, $#,##0.00}">
+			    							<apex:param value="{!PurchasedStoresMRR_Total}" />
+			    						</apex:outputText>
+			    					</td>
+			    				</tr>
+			    				<tr>
+			    					<td align="right" style="font-weight:bold; width:50%;">Average Plan Value:&nbsp;</td>
+			    					<td align="left" style="width:50%;">
+			    						&nbsp;
+			    						<apex:outputText value="{0, number, $#,##0.00}">
+			    							<apex:param value="{!PurchasedStoresMRR_Avg}" />
+			    						</apex:outputText>
+			    					</td>
+			    				</tr>
+			    				<tr>
+			    					<td colspan="2">
+			    						&nbsp;
+			    					</td>			    					
+			    				</tr>
+			    			</table>
+			    		</td>
+			    		<td align="center" style="width:550px; height:400px;">
+			    			<table style="width:100%; background-color:#FFFFFF; border-left:1px solid #00A9C7; border-right:1px solid #00A9C7; border-bottom:1px solid #00A9C7; border-top:1px solid #00A9C7;">
+	   							<tr>
+			    					<td align="left" class="graphicHeader" style="vertical-align:middle; color:#FFFFFF; font-size:1.3em; font-weight:bold; width:100%;">
+			    						&nbsp;Trials &amp; Stores Over the Last 6 Months
+			    					</td>
+			    				</tr>
+			    				<tr>
+			    					<td align="center" style="width:100%;">
+			    						<div id="divSubsLast6Bar" style="width: 550px; height: 400px;"></div>
+			    					</td>
+			    				</tr>
+			    			</table>			    			
+			    		</td>
+			    	</tr>
+			    	<tr>
+			    		<td colspan="2">&nbsp;</td>
+			    	</tr>
+			    	<tr>
+			    		<td align="center" style="width:550px;">
+			    			<apex:actionRegion id="rgnClientStores">
+				    			<apex:actionStatus for="rgnClientStores" layout="block" startStyleClass="loading" startText="Processing...." >
+						    		<apex:facet name="stop">
+						    			<apex:outputPanel id="pnlClientStores">
+						    				<table style="width:100%; background-color:#FFFFFF; border-left:1px solid #00A9C7; border-right:1px solid #00A9C7; border-bottom:1px solid #00A9C7; border-top:1px solid #00A9C7;">
+						    					<tr>
+							    					<td align="center" class="graphicHeader" style="width:100%;">
+							    						<table border="0" style="width:100%;">
+							    							<tr>
+							    								<td align="left" style="vertical-align:middle; color:#FFFFFF;">							    						
+										    						&nbsp;Store List&nbsp;
+										    						<apex:outputText style="font-size:.8em; font-weight:normal;" value="({0, number, #,##0} stores)">
+																		<apex:param value="{!ClientStores_TotalRecords}" />
+																	</apex:outputText>
+							    								</td>
+							    								<td align="right" style="vertical-align:middle; color:#FFFFFF; font-size:.9em; font-weight:normal;">
+								    								<apex:outputLabel value="Page Size " />
+								    								<apex:selectList value="{!ClientStores_PageSize}" multiselect="false" size="1">
+										    							<apex:selectOption itemValue="10" itemLabel="10" />
+										    							<apex:selectOption itemValue="25" itemLabel="25" />
+										    							<apex:selectOption itemValue="50" itemLabel="50" />
+										    							<apex:selectOption itemValue="100" itemLabel="100" />
+										    							<apex:selectOption itemValue="500" itemLabel="500" />
+										    							<apex:actionSupport event="onchange" rerender="pnlClientStores" />
+										    						</apex:selectList>
+										    						&nbsp;
+										    					</td>
+								    						</tr>
+								    					</table>
+					    							</td>
+							    				</tr>
+							    				<tr>
+							    					<td align="center" colspan="2" style="font-weight:bold; vertical-align: middle;">
+							    						<apex:commandLink value="<< First" action="{!ClientStores_First}" styleClass="PageLink" rendered="{!ClientStores_HasPrevious}" rerender="pnlClientStores" />
+							    						<apex:outputText value="<< First" rendered="{!NOT(ClientStores_HasPrevious)}" styleClass="DisabledLink" />
+							    						&nbsp;&nbsp;&nbsp;
+							    						<apex:commandLink value="< Prev" action="{!ClientStores_Previous}" styleClass="PageLink" rendered="{!ClientStores_HasPrevious}" rerender="pnlClientStores" />
+							    						<apex:outputText value="< Prev" rendered="{!NOT(ClientStores_HasPrevious)}" styleClass="DisabledLink" />
+							    						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							    						<apex:selectList value="{!ClientStores_PageNumber_Cur}" multiselect="false" size="1">
+							    							<apex:selectOptions value="{!ClientStores_PageNumber_All}" />
+							    							<apex:actionSupport event="onchange" rerender="pnlClientStores" />
+							    						</apex:selectList>
+					    								<apex:outputText value=" of {0, number, #,##0} page(s)">
+								    						<apex:param value="{!ClientStores_PageNumber_Total}" />
+								    					</apex:outputText>						    				
+									    				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						    							<apex:commandLink value="Next >" action="{!ClientStores_Next}" styleClass="PageLink" rendered="{!ClientStores_HasNext}" rerender="pnlClientStores" />
+						    							<apex:outputText value="Next >" rendered="{!NOT(ClientStores_HasNext)}" styleClass="DisabledLink" />
+						    							&nbsp;&nbsp;&nbsp;
+						    							<apex:commandLink value="Last >>" action="{!ClientStores_Last}" styleClass="PageLink" rendered="{!ClientStores_HasNext}" rerender="pnlClientStores" />
+						    							<apex:outputText value="Last >>" rendered="{!NOT(ClientStores_HasNext)}" styleClass="DisabledLink" />
+					    							</td>
+					    						</tr>
+												<tr>
+													<td align="center" style="width:100%;" colspan="2">
+										    			<apex:dataTable value="{!ClientStores}" var="s" id="tblStores" rules="all" style="width:100%;" styleClass="tableClass" headerClass="header" columnClasses="columnStyle" rowClasses="oddRow,evenRow">				    				
+										    				<apex:facet name="footer">&nbsp;</apex:facet>
+										    				<apex:column value="{!s.Account__r.Name}" style="vertical-align:middle;">
+										    					<apex:facet name="header">
+										    						<apex:commandLink action="{!ClientStores_Sort}" styleClass="ColumnHeaderLink" rerender="pnlClientStores">
+										    							&nbsp;Account Name&nbsp;
+										    							<apex:image url="{!$Resource.imgSortArrowASC}" rendered="{!(ClientStores_SortedBy == 'AccountName' && ClientStores_SortDir == 'ASC')}" />
+										    							<apex:image url="{!$Resource.imgSortArrowDESC}" rendered="{!(ClientStores_SortedBy == 'AccountName' && ClientStores_SortDir == 'DESC')}" />
+										    							<apex:param name="CSsrtBy" value="AccountName" />
+										    						</apex:commandLink>				    						
+										    					</apex:facet>
+										    				</apex:column>
+										    				<apex:column style="vertical-align:middle;">
+										    					<apex:facet name="header">
+										    						<apex:commandLink action="{!ClientStores_Sort}" styleClass="ColumnHeaderLink" rerender="pnlClientStores">
+										    							&nbsp;URL&nbsp;
+										    							<apex:image url="{!$Resource.imgSortArrowASC}" rendered="{!(ClientStores_SortedBy == 'URL' && ClientStores_SortDir == 'ASC')}" />
+										    							<apex:image url="{!$Resource.imgSortArrowDESC}" rendered="{!(ClientStores_SortedBy == 'URL' && ClientStores_SortDir == 'DESC')}" />
+										    							<apex:param name="CSsrtBy" value="URL" />
+										    						</apex:commandLink>
+										    					</apex:facet>
+										    					<apex:outputLink value="http://www.{!s.StoreURL__c}" target="_blank">{!s.StoreURL__c}</apex:outputLink>
+										    				</apex:column>
+										    				<apex:column style="min-width:40px; vertical-align:middle;" value="{!s.Status__c}">
+										    					<apex:facet name="header">
+										    						<apex:commandLink action="{!ClientStores_Sort}" styleClass="ColumnHeaderLink" rerender="pnlClientStores">
+										    							&nbsp;Status&nbsp;
+										    							<apex:image url="{!$Resource.imgSortArrowASC}" rendered="{!(ClientStores_SortedBy == 'Status' && ClientStores_SortDir == 'ASC')}" />
+										    							<apex:image url="{!$Resource.imgSortArrowDESC}" rendered="{!(ClientStores_SortedBy == 'Status' && ClientStores_SortDir == 'DESC')}" />
+										    							<apex:param name="CSsrtBy" value="Status" />
+										    						</apex:commandLink>	
+										    					</apex:facet>
+										    				</apex:column>
+										    				<apex:column value="{!s.Product__c}" style="vertical-align:middle;">
+										    					<apex:facet name="header">
+										    						<apex:commandLink action="{!ClientStores_Sort}" styleClass="ColumnHeaderLink" rerender="pnlClientStores">
+										    							&nbsp;Plan&nbsp;
+										    							<apex:image url="{!$Resource.imgSortArrowASC}" rendered="{!(ClientStores_SortedBy == 'Plan' && ClientStores_SortDir == 'ASC')}" />
+										    							<apex:image url="{!$Resource.imgSortArrowDESC}" rendered="{!(ClientStores_SortedBy == 'Plan' && ClientStores_SortDir == 'DESC')}" />
+										    							<apex:param name="CSsrtBy" value="Plan" />
+										    						</apex:commandLink>
+									    						</apex:facet>
+										    				</apex:column>
+										    				<apex:column style="text-align:right; min-width:40px; vertical-align: middle;">
+										    					<apex:facet name="header">
+										    						<apex:commandLink action="{!ClientStores_Sort}" styleClass="ColumnHeaderLink" rerender="pnlClientStores">
+										    							&nbsp;Bill Amt&nbsp;
+										    							<apex:image url="{!$Resource.imgSortArrowASC}" rendered="{!(ClientStores_SortedBy == 'Bill' && ClientStores_SortDir == 'ASC')}" />
+										    							<apex:image url="{!$Resource.imgSortArrowDESC}" rendered="{!(ClientStores_SortedBy == 'Bill' && ClientStores_SortDir == 'DESC')}" />
+										    							<apex:param name="CSsrtBy" value="Bill" />
+										    						</apex:commandLink>
+										    					</apex:facet>
+										    					<apex:outputText value="{0, number, $#,##0.00}">
+									    							<apex:param value="{!s.MonthlyRecurringRevenue__c}" />
+									    						</apex:outputText>
+										    				</apex:column>
+										    				<apex:column style="text-align:center; vertical-align: middle;">
+										    					<apex:facet name="header">
+										    						<apex:commandLink action="{!ClientStores_Sort}" styleClass="ColumnHeaderLink" rerender="pnlClientStores">
+										    							&nbsp;Purchased&nbsp;
+										    							<apex:image url="{!$Resource.imgSortArrowASC}" rendered="{!(ClientStores_SortedBy == 'PurchaseDate' && ClientStores_SortDir == 'ASC')}" />
+										    							<apex:image url="{!$Resource.imgSortArrowDESC}" rendered="{!(ClientStores_SortedBy == 'PurchaseDate' && ClientStores_SortDir == 'DESC')}" />
+										    							<apex:param name="CSsrtBy" value="PurchaseDate" />
+										    						</apex:commandLink>
+									    						</apex:facet>
+										    					<apex:outputText value="{0, Date, MM/dd/yyyy}">
+										    						<apex:param value="{!s.PurchaseDate__c}" />
+										    					</apex:outputText>
+										    				</apex:column>
+										    			</apex:dataTable>
+										    		</td>
+										    	</tr>
+							    				<tr>
+							    					<td align="center" colspan="2" style="font-weight:bold; vertical-align: middle;">
+							    						<apex:commandLink value="<< First" action="{!ClientStores_First}" styleClass="PageLink" rendered="{!ClientStores_HasPrevious}" rerender="pnlClientStores" />
+							    						<apex:outputText value="<< First" rendered="{!NOT(ClientStores_HasPrevious)}" styleClass="DisabledLink" />
+							    						&nbsp;&nbsp;&nbsp;
+							    						<apex:commandLink value="< Prev" action="{!ClientStores_Previous}" styleClass="PageLink" rendered="{!ClientStores_HasPrevious}" rerender="pnlClientStores" />
+							    						<apex:outputText value="< Prev" rendered="{!NOT(ClientStores_HasPrevious)}" styleClass="DisabledLink" />
+							    						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							    						<apex:outputText value="{0} of {1, number, #,##0} page(s)">
+								    						<apex:param value="{!ClientStores_PageNumber_Cur}" />
+								    						<apex:param value="{!ClientStores_PageNumber_Total}" />
+								    					</apex:outputText>					    				
+									    				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						    							<apex:commandLink value="Next >" action="{!ClientStores_Next}" styleClass="PageLink" rendered="{!ClientStores_HasNext}" rerender="pnlClientStores" />
+						    							<apex:outputText value="Next >" rendered="{!NOT(ClientStores_HasNext)}" styleClass="DisabledLink" />
+						    							&nbsp;&nbsp;&nbsp;
+						    							<apex:commandLink value="Last >>" action="{!ClientStores_Last}" styleClass="PageLink" rendered="{!ClientStores_HasNext}" rerender="pnlClientStores" />
+						    							<apex:outputText value="Last >>" rendered="{!NOT(ClientStores_HasNext)}" styleClass="DisabledLink" />
+					    							</td>
+					    						</tr>
+					    					</table>
+							    		</apex:outputPanel>
+					    			</apex:facet>
+					    		</apex:actionStatus>
+				    		</apex:actionRegion>				    		
+			    		</td>
+			    		<td align="center" style="width:550px;">
+			    			<apex:actionRegion id="rgnActiveTrials">
+				    			<apex:actionStatus for="rgnActiveTrials" layout="block" startStyleClass="loading" startText="Processing...." >
+						    		<apex:facet name="stop">
+						    			<apex:outputPanel id="pnlActiveTrials">
+						    				<table style="width:100%; background-color:#FFFFFF; border-left:1px solid #00A9C7; border-right:1px solid #00A9C7; border-bottom:1px solid #00A9C7; border-top:1px solid #00A9C7;">
+						    					<tr>
+							    					<td align="center" class="graphicHeader" style="width:100%;">
+							    						<table border="0" style="width:100%;">
+							    							<tr>
+							    								<td align="left" style="vertical-align:middle; color:#FFFFFF;">							    						
+										    						&nbsp;Active Trials&nbsp;
+										    						<apex:outputText style="font-size:.8em; font-weight:normal;" value="({0, number, #,##0} trials)">
+					    												<apex:param value="{!ActiveTrials_TotalRecords}" />
+					    											</apex:outputText>
+							    								</td>
+							    								<td align="right" style="vertical-align:middle; color:#FFFFFF; font-size:.9em; font-weight:normal;">
+								    								<apex:outputLabel value="Page Size " />
+								    								<apex:selectList value="{!ActiveTrials_PageSize}" multiselect="false" size="1">
+										    							<apex:selectOption itemValue="10" itemLabel="10" />
+										    							<apex:selectOption itemValue="25" itemLabel="25" />
+										    							<apex:selectOption itemValue="50" itemLabel="50" />
+										    							<apex:selectOption itemValue="100" itemLabel="100" />
+										    							<apex:selectOption itemValue="500" itemLabel="500" />
+										    							<apex:actionSupport event="onchange" rerender="pnlActiveTrials" />
+										    						</apex:selectList>
+										    						&nbsp;
+										    					</td>
+								    						</tr>
+								    					</table>
+					    							</td>
+							    				</tr>
+							    				<tr>
+							    					<td align="center" colspan="2" style="font-weight:bold; vertical-align: middle;">
+							    						<apex:commandLink value="<< First" action="{!ActiveTrials_First}" styleClass="PageLink" rendered="{!ActiveTrials_HasPrevious}" rerender="pnlActiveTrials" />
+							    						<apex:outputText value="<< First" rendered="{!NOT(ActiveTrials_HasPrevious)}" styleClass="DisabledLink" />
+							    						&nbsp;&nbsp;&nbsp;
+							    						<apex:commandLink value="< Prev" action="{!ActiveTrials_Previous}" styleClass="PageLink" rendered="{!ActiveTrials_HasPrevious}" rerender="pnlActiveTrials" />
+							    						<apex:outputText value="< Prev" rendered="{!NOT(ActiveTrials_HasPrevious)}" styleClass="DisabledLink" />
+							    						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							    						<apex:selectList value="{!ActiveTrials_PageNumber_Cur}" multiselect="false" size="1">
+							    							<apex:selectOptions value="{!ActiveTrials_PageNumber_All}" />
+							    							<apex:actionSupport event="onchange" rerender="pnlActiveTrials" />
+							    						</apex:selectList>
+					    								<apex:outputText value=" of {0, number, #,##0} page(s)">
+								    						<apex:param value="{!ActiveTrials_PageNumber_Total}" />
+								    					</apex:outputText>						    				
+									    				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						    							<apex:commandLink value="Next >" action="{!ActiveTrials_Next}" styleClass="PageLink" rendered="{!ActiveTrials_HasNext}" rerender="pnlActiveTrials" />
+						    							<apex:outputText value="Next >" rendered="{!NOT(ActiveTrials_HasNext)}" styleClass="DisabledLink" />
+						    							&nbsp;&nbsp;&nbsp;
+						    							<apex:commandLink value="Last >>" action="{!ActiveTrials_Last}" styleClass="PageLink" rendered="{!ActiveTrials_HasNext}" rerender="pnlActiveTrials" />
+						    							<apex:outputText value="Last >>" rendered="{!NOT(ActiveTrials_HasNext)}" styleClass="DisabledLink" />
+					    							</td>
+					    						</tr>
+												<tr>
+													<td align="center" style="width:100%;" colspan="2">
+										    			<apex:dataTable value="{!ActiveTrials}" var="s" id="tblTrials" rules="all" style="width:100%;" styleClass="tableClass" headerClass="header" columnClasses="columnStyle" rowClasses="oddRow,evenRow">				    				
+										    				<apex:facet name="footer">&nbsp;</apex:facet>
+										    				<apex:column style="vertical-align:middle;">
+										    					<apex:facet name="header">
+										    						<apex:commandLink action="{!ActiveTrials_Sort}" styleClass="ColumnHeaderLink" rerender="pnlActiveTrials" style="vertical-align:middle;">
+										    							&nbsp;Name&nbsp;
+										    							<apex:image url="{!$Resource.imgSortArrowASC}" rendered="{!(ActiveTrials_SortedBy == 'Name' && ActiveTrials_SortDir == 'ASC')}" />
+										    							<apex:image url="{!$Resource.imgSortArrowDESC}" rendered="{!(ActiveTrials_SortedBy == 'Name' && ActiveTrials_SortDir == 'DESC')}" />
+										    							<apex:param name="ATsrtBy" value="Name" />
+										    						</apex:commandLink>				    						
+										    					</apex:facet>
+										    					<apex:outputText value="{!s.Account_Name__c}" />
+										    				</apex:column>										    				
+										    				<apex:column style="vertical-align:middle;">
+										    					<apex:facet name="header">
+										    						<apex:commandLink action="{!ActiveTrials_Sort}" styleClass="ColumnHeaderLink" rerender="pnlActiveTrials" style="vertical-align:middle;">
+										    							&nbsp;Phone&nbsp;
+										    							<apex:image url="{!$Resource.imgSortArrowASC}" rendered="{!(ActiveTrials_SortedBy == 'Phone' && ActiveTrials_SortDir == 'ASC')}" />
+										    							<apex:image url="{!$Resource.imgSortArrowDESC}" rendered="{!(ActiveTrials_SortedBy == 'Phone' && ActiveTrials_SortDir == 'DESC')}" />
+										    							<apex:param name="ATsrtBy" value="Phone" />
+										    						</apex:commandLink>	
+										    					</apex:facet>
+										    					<apex:outputText value="{!s.Phone__c}" />
+										    				</apex:column>
+										    				<apex:column style="min-width:40px; vertical-align:middle;">
+										    					<apex:facet name="header">
+										    						<apex:commandLink action="{!ActiveTrials_Sort}" styleClass="ColumnHeaderLink" rerender="pnlActiveTrials" style="vertical-align:middle;">
+										    							&nbsp;Email&nbsp;
+										    							<apex:image url="{!$Resource.imgSortArrowASC}" rendered="{!(ActiveTrials_SortedBy == 'Email' && ActiveTrials_SortDir == 'ASC')}" />
+										    							<apex:image url="{!$Resource.imgSortArrowDESC}" rendered="{!(ActiveTrials_SortedBy == 'Email' && ActiveTrials_SortDir == 'DESC')}" />
+										    							<apex:param name="ATsrtBy" value="Email" />
+										    						</apex:commandLink>	
+										    					</apex:facet>
+										    					<apex:outputText value="{!s.Email__c}" />
+										    				</apex:column>
+										    				<apex:column style="text-align:center; vertical-align:middle;">
+									    						<apex:facet name="header">
+										    						<apex:commandLink action="{!ActiveTrials_Sort}" styleClass="ColumnHeaderLink" rerender="pnlActiveTrials" style="vertical-align:middle;">
+										    							&nbsp;Day of Trial&nbsp;
+										    							<apex:image url="{!$Resource.imgSortArrowASC}" rendered="{!(ActiveTrials_SortedBy == 'DayofTrial' && ActiveTrials_SortDir == 'ASC')}" />
+										    							<apex:image url="{!$Resource.imgSortArrowDESC}" rendered="{!(ActiveTrials_SortedBy == 'DayofTrial' && ActiveTrials_SortDir == 'DESC')}" />
+										    							<apex:param name="ATsrtBy" value="DayofTrial" />
+										    						</apex:commandLink>
+										    					</apex:facet>
+										    					<apex:outputText value="{0, number, #,##0}">
+									    							<apex:param value="{!s.Day_of_Trial__c}" />
+									    						</apex:outputText>
+										    				</apex:column>
+															<apex:column style="vertical-align:middle;">
+										    					<apex:facet name="header">
+										    						<apex:commandLink action="{!ActiveTrials_Sort}" styleClass="ColumnHeaderLink" rerender="pnlActiveTrials">
+										    							&nbsp;URL&nbsp;
+										    							<apex:image url="{!$Resource.imgSortArrowASC}" rendered="{!(ActiveTrials_SortedBy == 'URL' && ActiveTrials_SortDir == 'ASC')}" />
+										    							<apex:image url="{!$Resource.imgSortArrowDESC}" rendered="{!(ActiveTrials_SortedBy == 'URL' && ActiveTrials_SortDir == 'DESC')}" />
+										    							<apex:param name="CSsrtBy" value="URL" />
+										    						</apex:commandLink>
+										    					</apex:facet>
+										    					<apex:outputLink value="http://www.{!s.StoreURL__c}" target="_blank">{!s.StoreURL__c}</apex:outputLink>
+										    				</apex:column>
+										    				<apex:column style="text-align:center; vertical-align:middle;">
+										    					<apex:facet name="header">
+										    						<apex:commandLink action="{!ActiveTrials_Sort}" styleClass="ColumnHeaderLink" rerender="pnlActiveTrials" style="vertical-align:middle;">
+										    							&nbsp;Exp Date&nbsp;
+										    							<apex:image url="{!$Resource.imgSortArrowASC}" rendered="{!(ActiveTrials_SortedBy == 'Expiration' && ActiveTrials_SortDir == 'ASC')}" />
+										    							<apex:image url="{!$Resource.imgSortArrowDESC}" rendered="{!(ActiveTrials_SortedBy == 'Expiration' && ActiveTrials_SortDir == 'DESC')}" />
+										    							<apex:param name="ATsrtBy" value="Expiration" />
+										    						</apex:commandLink>
+										    					</apex:facet>
+										    					<apex:outputText value="{0, Date, MM/dd/yyyy}">
+										    						<apex:param value="{!s.ExpirationDate__c}" />
+										    					</apex:outputText>
+										    				</apex:column>	    				
+										    			</apex:dataTable>
+										    		</td>
+										    	</tr>
+							    				<tr>
+							    					<td align="center" colspan="2" style="font-weight:bold; vertical-align: middle;">
+							    						<apex:commandLink value="<< First" action="{!ActiveTrials_First}" styleClass="PageLink" rendered="{!ActiveTrials_HasPrevious}" rerender="pnlActiveTrials" />
+							    						<apex:outputText value="<< First" rendered="{!NOT(ActiveTrials_HasPrevious)}" styleClass="DisabledLink" />
+							    						&nbsp;&nbsp;&nbsp;
+							    						<apex:commandLink value="< Prev" action="{!ActiveTrials_Previous}" styleClass="PageLink" rendered="{!ActiveTrials_HasPrevious}" rerender="pnlActiveTrials" />
+							    						<apex:outputText value="< Prev" rendered="{!NOT(ActiveTrials_HasPrevious)}" styleClass="DisabledLink" />
+							    						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					    								<apex:outputText value="{0} of {1, number, #,##0} page(s)">
+								    						<apex:param value="{!ActiveTrials_PageNumber_Cur}" />
+								    						<apex:param value="{!ActiveTrials_PageNumber_Total}" />
+								    					</apex:outputText>						    				
+									    				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						    							<apex:commandLink value="Next >" action="{!ActiveTrials_Next}" styleClass="PageLink" rendered="{!ActiveTrials_HasNext}" rerender="pnlActiveTrials" />
+						    							<apex:outputText value="Next >" rendered="{!NOT(ActiveTrials_HasNext)}" styleClass="DisabledLink" />
+						    							&nbsp;&nbsp;&nbsp;
+						    							<apex:commandLink value="Last >>" action="{!ActiveTrials_Last}" styleClass="PageLink" rendered="{!ActiveTrials_HasNext}" rerender="pnlActiveTrials" />
+						    							<apex:outputText value="Last >>" rendered="{!NOT(ActiveTrials_HasNext)}" styleClass="DisabledLink" />
+					    							</td>
+					    						</tr>
+					    					</table>
+						    			</apex:outputPanel>
+						    		</apex:facet>
+						    	</apex:actionStatus>
+				    		</apex:actionRegion>
+			    		</td>
+			    	</tr>
+		    	</table>    		    	
+		    </center>
+	    </apex:pageblock>​
+    </apex:form>
+</apex:page>

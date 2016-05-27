@@ -1,0 +1,80 @@
+<apex:page standardController="University__kav" showHeader="false" standardStylesheets="false" applyBodyTag="false" sidebar="false">
+<apex:variable var="Title" value="{!University__kav.Title}" />
+<apex:variable var="InternalURL" value="https://na19.salesforce.com/articles/University/{!University__kav.UrlName}" />
+<apex:variable var="ExternalURL" value="https://support.bigcommerce.com/articles/University/{!University__kav.UrlName}" />
+  <apex:composition template="kb_Internal">
+    <apex:define name="body">
+    <div id="internal-content" data-spy="scroll" data-target=".article-nav-fixed">
+      <div id="article-content">
+        <h1 class="page-header">{!Title}</h1>
+        <div data-spy="affix" data-offset-top="20" class="article-nav-fixed">
+          <ul class="nav article-nav">
+            <div class="article-nav-arrow">&nbsp;</div>
+            <div class="article-nav-collapse"><div class="arrow"></div></div>
+            <li><a href="#details">Details</a></li>
+            <li>
+              <a href="#video">Video</a><!-- 
+              <ul id="article-subnav" class="article-subnav">
+              </ul> -->
+            </li>
+            <li><a href="#summary">Summary</a></li>
+            <li><a href="#additional">Additional Resources</a></li>
+            <li class="divider"></li>
+            <li><a href="#top"><small>Back to top</small></a></li>
+          </ul>
+        </div>
+        <div class="panel panel-default" id="details">
+          <div class="panel-heading">
+            <h5>Details</h5>
+          </div>
+          <div class="panel-body">
+            <ul>
+              <li><strong>Internal URL</strong>: <a href="{!InternalURL}">{!InternalURL}</a></li>
+              <li><strong>External URL: </strong><a href="{!ExternalURL}" target="_blank">{!ExternalURL}</a></li>
+              <li><strong>Last modified</strong>: {!University__kav.LastModifiedDate}</li>
+              <li><strong>Created</strong>: {!University__kav.FirstPublishedDate}</li>
+              <!-- <li><strong>Forum Link</strong>: <apex:outputText value="{!University__kav.Forum_Link__c}" /></li> -->
+              <li><strong>Previous Video</strong>: <a href="{!University__kav.Prev_Video_URL__c}">{!University__kav.Prev_Video_Link_Text__c}</a></li>
+              <li><strong>Next Video</strong>: <a href="{!University__kav.Next_Video_URL__c}">{!University__kav.Next_Video_Link_Text__c}</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="panel panel-default" id="video">
+          <div class="panel-heading">
+            <h5>Video</h5>
+          </div>
+          <div class="panel-body">
+            <div class="embed-responsive">
+              https://www.youtube.com/embed/{!University__kav.Video_URL__c}
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default" id="summary">
+          <div class="panel-heading">
+            <h5>Summary</h5>
+          </div>
+          <div class="panel-body">
+            <apex:outputText escape="false" value="{!University__kav.Description__c}" />
+          </div>
+        </div>
+        <div class="panel panel-default" id="additional">
+          <div class="panel-heading">
+            <h5>Additional Resources</h5>
+          </div>
+          <div class="panel-body">
+            <apex:outputText escape="false" value="{!University__kav.Additional_Resources__c}" />
+          </div>
+        </div>
+      </div>
+    </div>
+    </apex:define>
+  </apex:composition>
+<apex:includeScript value="../../soap/ajax/32.0/connection.js"/>
+<apex:includeScript value="/support/console/25.0/integration.js"/>
+<script type="text/javascript">
+$(document).ready(function() {
+  sforce.console.setTabTitle("{!Title}");
+});
+</script>
+<c:kb_internal_js />
+</apex:page>

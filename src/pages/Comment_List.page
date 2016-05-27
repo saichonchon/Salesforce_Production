@@ -1,0 +1,186 @@
+<apex:page standardController="Case" extensions="CommentList" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/JavaScript" />
+    <apex:includeScript value="/support/console/28.0/integration.js"/>
+    <script type="text/javascript">
+        jQuery.noConflict();
+        var j$ = jQuery.noConflict();
+
+        function testIsInConsole() {
+            if (sforce.console.isInConsole()) {
+                return true;
+               } else {
+                return false;
+            }
+        }
+        function OpenSubPublicCommentTab() {
+            sforce.console.getEnclosingPrimaryTabId(openSubPublicTab);
+        }
+        function OpenSubPrivateCommentTab() {
+            sforce.console.getEnclosingPrimaryTabId(openSubPrivateTab);
+        }
+        function OpenSubListCommentTab() {
+            sforce.console.getEnclosingPrimaryTabId(openSubListTab);
+        }
+        
+        function OpenStartWorkingTab(){
+            sforce.console.getEnclosingPrimaryTabId(openStartWorking);
+        }
+        
+        
+        var openSubPublicTab = function openSubtab(result) {
+            //Now that we ve got the primary tab ID, we can open a new subtab in it
+            var primaryTabId = result.id;
+            sforce.console.openSubtab(primaryTabId , "/apex/E2CP__New_Comment?id={!case.id}", true, 'Public Comment', null, null, 'salesforceSubtab');
+        };
+        var openSubPrivateTab = function openSubtab(result) {
+            //Now that weve got the primary tab ID, we can open a new subtab in it
+            var primaryTabId = result.id;
+            sforce.console.openSubtab(primaryTabId , '/00a/e?inline=0&parent_id={!case.id}', true, 'Private Comment', null, null, 'salesforceSubtab');
+        };
+        var openSubListTab = function openSubtab(result) {
+            //Now that weve got the primary tab ID, we can open a new subtab in it
+            var primaryTabId = result.id;
+            sforce.console.openSubtab(primaryTabId , "/apex/comment_list?id={!case.id}&showFullList=true", true, 'Public Comment', null, null, 'salesforceSubtab');
+        };
+        
+        var openStartWorking = function openSubtab(result) {
+            var primaryTabId = result.id;
+            sforce.console.openPrimaryTab(primaryTabId , "/apex/CaseStartWorking?id={!case.id}", true);
+        };
+        
+    </script>
+
+<style type="text/css">
+    .tha{ width: 20px;}
+    .thb{ width: 40px;}
+    .thc{ width: 150px;}
+    .thd{ width: 200px;}
+    .noBottomBorder { border-bottom: 0px solid #000 ! important }
+</style>
+
+<script> 
+function showHtmlEmail(cmtid) { 
+    w =window.open('', 'preview', 'width=800,height=600,scrollbars=yes,resizable=yes');
+    d=w.document;
+    d.open('text/html');
+    d.write(unescapeHTML(document.getElementById(cmtid).innerHTML));
+    d.close();
+    return false;
+}
+</script>
+
+
+<apex:form target="_parent" id="allCommentsF">
+    <apex:actionFunction action="{!refreshPage}" name="refreshPage" reRender="listTable"/>
+    <!-- ALL COMMENTS -->
+    <apex:pageBlock id="allCommentsPB">
+        <apex:pageblockButtons >
+            <apex:commandButton id="SCCPrivate" onClick="OpenSubPrivateCommentTab(); return false;" Value="Private Comment" />
+            <apex:commandButton id="SCCPublic" onClick="OpenSubPublicCommentTab(); return false;" Value="Public Comment" />
+            <apex:commandButton id="NoSCCPrivate" oncomplete="window.parent.location='{!newPrivateComment}';" Value="Private Comment" />
+            <apex:commandButton id="NoSCCPublic" oncomplete="window.parent.location='{!newPublicCommentURL}';" Value="Public Comment" />
+            <apex:commandButton id="SCCStartWorking" onclick="OpenStartWorkingTab(); return false;" value="Start Working" />
+            <apex:commandButton id="NoSCCStartWorking" oncomplete="window.parent.location='{!StartWorkingURL}'" value="Start Working"  />
+            <apex:commandButton oncomplete="window.open('{!listURL}','_blank')" rendered="{!NOT(showFullList)}" Value="Open List" />
+        </apex:pageblockButtons>
+        <apex:pageBlockSection columns="1" id="allCommentsPBS">
+            <apex:outputPanel onclick="refreshPage();" >
+                <apex:inputCheckbox id="pubFltr" value="{!publicFilter}"/> 
+                <apex:outputLabel for="pubFltr">Public Comments</apex:outputLabel>
+                <apex:inputCheckbox style="margin-left:20px;" id="priFltr" value="{!privateFilter}"/> 
+                <apex:outputLabel for="priFltr">Private Comments</apex:outputLabel>
+                <apex:inputCheckbox style="margin-left:20px;" id="statFltr" value="{!statusFilter}"/> 
+                <apex:outputLabel for="statFltr">Status Updates</apex:outputLabel>
+            </apex:outputPanel>
+            <!--<apex:outputPanel style="overflow-y: scroll; display: block; ">-->
+            <apex:pageBlockTable id="listTable" value="{!filteredCommentItems}" style="table-layout:fixed;" styleClass="list" rowClasses="noBottomBorder" var="comment">   
+                <apex:column headerClass="tha" style="vertical-align: top; border-top: 1px solid {!comment.color}; border-bottom: 0px;">
+                    <apex:image value="{!URLFOR($Resource.commentListIcons, 'comment_list_icons/img/email-in.png')}" height="16" rendered="{!AND(NOT(ISNULL(comment.em)),comment.em.Incoming)}"/>
+                    <apex:image value="{!URLFOR($Resource.commentListIcons, 'comment_list_icons/img/email-out.png')}" height="16" rendered="{!AND(NOT(ISNULL(comment.em)),NOT(comment.em.Incoming))}"/>
+                    <apex:image value="{!URLFOR($Resource.commentListIcons, 'comment_list_icons/img/comment-public.png')}" height="16" rendered="{!AND(NOT(ISNULL(comment.cmt)),comment.cmt.IsPublished,ISNULL(comment.em))}"/>
+                    <apex:image value="{!URLFOR($Resource.commentListIcons, 'comment_list_icons/img/alarm.png')}" height="16" rendered="{!ISNULL(comment.cmt)}"/>
+                    <apex:image value="{!URLFOR($Resource.commentListIcons, 'comment_list_icons/img/comment-private.png')}" height="16" rendered="{!AND(ISNULL(comment.em),NOT(OR(ISNULL(comment.cmt),comment.cmt.IsPublished)))}"/> 
+                </apex:column>
+                <apex:column headerClass="tha" style="vertical-align: top; border-top: 1px solid {!comment.color}; border-bottom: 0px;">
+                    <a name="{!NULLVALUE(comment.cmt.id,comment.hstry.id)}"/><apex:outputLink target="_parent" value="/apex/comment_list?id={!CaseId}#{!NULLVALUE(comment.cmt.id,comment.hstry.id)}">{!comment.ord}</apex:outputLink>
+                 </apex:column>  
+                <apex:column headerClass="thc" style="vertical-align: top; white-space:nowrap; border-top: 1px solid {!comment.color}; border-bottom: 0px;" styleClass="actionColumn" headerValue="Action">
+                    <apex:outputText rendered="{!AND(updateable, NOT(ISNULL(comment.cmt)))}"><apex:outputLink value="/{!comment.cmt.id}/e?parent_id={!Case.id}&retURL=%2F{!Case.id}" target="_parent" styleClass="actionLink">Edit</apex:outputLink> |&nbsp;</apex:outputText>
+                    <apex:commandLink action="{!comment.togglePublic}" rendered="{!NOT(ISNULL(comment.cmt))}" value="{!IF(comment.cmt.IsPublished,'Make Private','Make Public')}" rerender="allCommentsPBS" styleClass="actionLink"/><apex:outputPanel rendered="{!NOT(ISNULL(comment.cmt))}"> |&nbsp;</apex:outputPanel>
+                    <apex:commandLink action="{!comment.deleteComment}" rendered="{!NOT(ISNULL(comment.cmt))}" value="Delete" styleClass="actionLink" rerender="allCommentsPBS">
+                    </apex:commandLink>
+                </apex:column> 
+                <apex:column headerClass="thb" style="vertical-align: top; border-top: 1px solid {!comment.color}; border-bottom: 0px;" headerValue="Public">
+                    <apex:outputField rendered="{!NOT(ISNULL(comment.cmt))}" value="{!comment.cmt.IsPublished}" />
+                </apex:column>
+                
+                
+               <apex:column headerValue="Comment" style="border-top: 1px solid {!comment.color}; border-bottom: 0px; word-wrap:break-word;">
+                    <apex:outputPanel rendered="{!NOT(ISNULL(comment.cmt))}" style="word-wrap:break-word;">
+                        <b><apex:outputText value="Created by: "/><apex:outputField value="{!comment.cmt.CreatedById}"/>
+                        (<apex:outputField value="{!comment.cmt.CreatedDate}"/>)</b>
+                        <br/><span style="color: #000; word-wrap:break-word;"><apex:outputField value="{!comment.cmt.CommentBody}"/></span>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!ISNULL(comment.cmt)}">
+                        <strong><apex:outputField value="{!comment.hstry.Field}"/></strong> changed from&nbsp;<apex:outputField value="{!comment.hstry.OldValue}"/> to&nbsp;<strong><apex:outputField value="{!comment.hstry.NewValue}"/></strong>
+                        by&nbsp;<apex:outputField value="{!comment.hstry.CreatedById}"/>
+                        on&nbsp;<apex:outputField value="{!comment.hstry.CreatedDate}"/>.
+                   </apex:outputPanel>
+                </apex:column>
+                <apex:column headerClass="thd" style="vertical-align: top; border-top: 1px solid {!comment.color}; border-bottom: 0px;" >
+                    <!-- <table border="0" >
+                        <tr>
+                            <td class="noBottomBorder">
+                                <apex:image value="{!URLFOR($Resource.commentListIcons, 'comment_list_icons/img/email-in.png')}" height="16" rendered="{!AND(NOT(ISNULL(comment.em)),comment.em.Incoming)}"/>
+                                <apex:image value="{!URLFOR($Resource.commentListIcons, 'comment_list_icons/img/email-out.png')}" height="16" rendered="{!AND(NOT(ISNULL(comment.em)),NOT(comment.em.Incoming))}"/> 
+                             </td>
+                             <td class="noBottomBorder">
+                                <apex:outputLink value="/{!comment.em}" target="_BLANK" rendered="{!NOT(ISNULL(comment.em))}">Email</apex:outputLink><br/>
+                            </td>
+                        </tr>
+                    </table> -->
+                    <apex:outputLink value="/{!comment.em}" target="_BLANK" rendered="{!NOT(ISNULL(comment.em))}">Email</apex:outputLink><br/>
+                    <apex:outputLink onclick="showHtmlEmail('{!comment.em.id}');return false;" rendered="{!NOT(ISNULL(comment.em.htmlbody))}">HTML Email</apex:outputLink><br/>
+                    
+                    <div style="display:none;" id="{!comment.em.id}"> {!comment.em.HtmlBody} </div>
+                    
+                    <apex:repeat value="{!comment.attch}" var="attch">
+                        Attachment: &lt;<apex:outputLink target="_BLANK" value="/servlet/servlet.FileDownload?file={!attch.id}">{!attch.name}</apex:outputLink>&gt;<br/>
+                    </apex:repeat>
+                </apex:column>
+            </apex:pageBlockTable>
+            <!--</apex:outputPanel>-->
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:form>
+<script>
+function resizeIF(){
+    ifrm = window.parent.document.getElementById('066f00000000FLV');
+    ifrmBody = ifrm.contentWindow.document.body;
+    ifrm.scrolling = 'no';
+    ifrm.height = ifrmBody.offsetHeight;
+    if(navigator.userAgent.indexOf('Firefox/5') != -1) ifrm.height = parseInt(ifrm.height) + 26;
+    if(navigator.userAgent.indexOf('Firefox/6') != -1) ifrm.height = parseInt(ifrm.height) + 26;
+    if(navigator.userAgent.indexOf('Firefox/7') != -1) ifrm.height = parseInt(ifrm.height) + 26;
+    if(navigator.userAgent.indexOf('Firefox/8') != -1) ifrm.height = parseInt(ifrm.height) + 26;
+    if(navigator.userAgent.indexOf('Firefox/9') != -1) ifrm.height = parseInt(ifrm.height) + 26;
+    //ifrm.setAttribute('style', 'overflow: hidden;');
+    ifrmBody.setAttribute('style', 'overflow: hidden;');
+}
+resizeIF();
+</script>
+
+<script>   
+     if(testIsInConsole()){
+         
+        j$("input[id$=':NoSCCPrivate']").hide();
+        j$("input[id$=':NoSCCPublic']").hide();
+        j$("input[id$=':NoSCCStartWorking']").hide();
+    }
+    else{
+        j$("input[id$=':SCCPrivate']").hide();
+        j$("input[id$=':SCCPublic']").hide();
+        j$("input[id$=':SCCStartWorking']").hide();
+    }
+</script>
+</apex:page>

@@ -1,0 +1,34 @@
+<apex:page standardController="Case" extensions="CaseStopWorkingController" action="{!setCaseToSupport}">
+    <apex:form >
+        <apex:pageMessages />
+   <!--     
+        <apex:pageBlock id="pblkError" mode="edit" rendered="{!NOT(showQueueSelection) && showError}">
+            <apex:commandButton value="Go Back" action="{!Cancel}" />
+        </apex:pageBlock>
+        
+        <apex:pageBlock id="pblkMain" mode="edit" rendered="{!showQueueSelection && NOT(showError)}">
+            <table style="width:75%">
+                <tr>
+                    <td align="center">
+                        <apex:outputText style="font-weight:bold; font-size:1.3em;" value="Choose a Queue to send Case back to:" />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <apex:selectList value="{!selectedQueue}" multiSelect="false" size="1">
+                            <apex:selectOptions value="{!lstCaseQueues}" />
+                        </apex:selectList>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">     
+                        <apex:commandButton value="Save" action="{!setCaseToQueue}" />
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <apex:commandButton value="Cancel" action="{!Cancel}" />
+                    </td>
+                </tr>
+            </table>
+        </apex:pageBlock>
+        -->
+    </apex:form>
+</apex:page>

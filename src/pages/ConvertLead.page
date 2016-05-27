@@ -1,0 +1,23 @@
+<apex:page Controller="ConvertLeadClass" tabstyle="Account" showheader="False" sidebar="False">
+	<apex:form id="form1">  
+		<apex:pageBlock id="PB1">           
+		   	<apex:pageBlockButtons location="Both" >
+	      		<apex:commandButton action="{!convert}" value="Convert"/>
+	      		<apex:commandButton action="{!back}" value="Back"/>
+		    </apex:pageBlockButtons>
+      		<apex:pageBlockSection id="PBS1" title="Plan">
+		    	<b>                                    Product Plan</b>
+   				<apex:selectList size="1" value="{!productName}">
+   					<apex:selectOptions value="{!ProductList}"/>
+   				</apex:selectList>
+	          	</apex:pageBlockSection>
+	      		<apex:pageBlockSection id="PBS2" title="Task Information">
+		       		<apex:inputfield value="{!newTask.OwnerId}" id="Owner"/><br/>
+		           	<apex:inputfield value="{!newTask.Subject}" id="TaskName"/><br/>
+		           	<apex:inputfield value="{!newTask.ActivityDate}" id="Date"/><br/>
+		           	<apex:inputfield value="{!newTask.Status}" id="Status"/><br/>
+		           	<apex:inputfield value="{!newTask.Description}" id="Description"/><br/>
+	      		</apex:pageBlockSection>
+		   </apex:pageBlock>
+	</apex:form>  
+</apex:page>

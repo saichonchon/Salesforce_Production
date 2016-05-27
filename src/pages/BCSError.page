@@ -1,0 +1,32 @@
+<apex:page id="forgotPassword" showHeader="false" standardStylesheets="false" controller="BCSForgotPasswordController" title="{!$Label.site.forgot_password}">
+ <html class="no-js">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Reset Password | BigCommerce</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <apex:stylesheet value="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'dist/styles.min.css')}" />
+        <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" />
+        <apex:includeScript value="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'js/community-login-registration.js')}" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="text-center login-registration-header">
+            <h1>
+                <a href="https://forum.bigcommerce.com/" id="link-home">
+                    <img src="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'images/BigCommerce-Community-Logo-1x.png')}" alt="BigCommerce Community Logo" srcset="{!URLFOR($Resource.knowledge_assets_brand_relaunch, 'images/BigCommerce-Community-Logo-1x.png')}, {!URLFOR($Resource.knowledge_assets_brand_relaunch, 'images/BigCommerce-Community-Logo-2x.png')} 2x" height="40" />
+                </a>
+            </h1>
+        </div>
+        <div class="container community-login">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="text-center">Something went wrong</h4>
+                    <p class="text-center">Please try again later or <a href="https://support.bigcommerce.com/contact">contact our support team</a> for further help.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+</apex:page>

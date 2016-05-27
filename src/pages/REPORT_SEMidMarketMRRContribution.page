@@ -1,0 +1,71 @@
+<apex:page > 
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>   
+  <script> 
+
+    google.load("visualization", "1", {packages:["corechart"]});
+    google.setOnLoadCallback(drawChart);    
+  
+    function drawChart() {
+      var column = column || 0;
+      
+      // Fetch the JSON for SE Revenue This Month
+      var SERevMTDjsonData = JSON.parse($.ajax({
+          beforeSend: function(xhr) {
+            xhr.setRequestHeader('Authorization', 'Bearer {!$Api.Session_ID}');
+          },
+          url: "/services/data/v29.0/analytics/reports/00O13000008Y7bQ",
+          dataType:"json",
+          async: false
+          }).responseText);
+
+      // Fetch the JSON for Mid-Market Sales MTD
+      var MMSalesMTDjsonData = JSON.parse($.ajax({
+          beforeSend: function(xhr) {
+            xhr.setRequestHeader('Authorization', 'Bearer {!$Api.Session_ID}');
+          },
+          url: "/services/data/v29.0/analytics/reports/00O13000008YyWd",
+          dataType:"json",
+          async: false
+          }).responseText);
+          
+      // Metadata for the aggregate column
+      var SERevMTDValue = SERevMTDjsonData.reportExtendedMetadata.aggregateColumnInfo[SERevMTDjsonData.reportMetadata.aggregates[column]];
+      var SERevMTDLabel = SERevMTDjsonData.reportExtendedMetadata.groupingColumnInfo[SERevMTDjsonData.reportMetadata.groupingsDown[column].name];
+
+      // Legends (not shown on pie chart)
+      var dataArray = [[
+          SERevMTDLabel.label,
+          SERevMTDValue.label
+      ]];
+
+      // Iterate through SE Revenue This Month summary data
+      $.each(SERevMTDjsonData.groupingsDown.groupings, function(index, grouping) {
+
+          dataArray.push([grouping.label, SERevMTDjsonData.factMap[index.toString()+"!T"].aggregates[3].value]);
+      });
+
+      // Add Subtotal from Mid-Market Sales MTD
+      var totalSEMRR = SERevMTDjsonData.factMap["T!T"].aggregates[1].value;
+      var totalMMMRR = MMSalesMTDjsonData.factMap["T!T"].aggregates[3].value;
+      var totalMRR = totalMMMRR - totalSEMRR;
+      
+      dataArray.push(["TOTAL", totalMRR]);
+      
+      // Store data array in google visualization table
+      var data = google.visualization.arrayToDataTable(dataArray);
+
+      var options = {
+          title: "SE Revenue % of Total",
+          is3D: true,
+      };      
+
+      // Create and draw the chart
+      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+      chart.draw(data, options);          
+    };
+
+  </script>
+
+  <div id="piechart" style="width: 450px; height: 250px;"></div>
+</apex:page>
