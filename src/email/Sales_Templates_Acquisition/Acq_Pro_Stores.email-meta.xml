@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Acq Pro Stores</name>
+    <style>none</style>
+    <subject>RE: Your ProStore Account With eBay</subject>
+    <textOnly>Hi {!Lead.FirstName}
+
+I would love an opportunity to meet with you regarding your ProStore account. After researching your online store, I am confident that you could dramatically improve your business by moving to BigCommerce. With NO TRANSACTION FEES, Over 200 ProStore owners, like you, have already made the switch and are now selling more and keeping more of their hard earned dollars.
+
+To name just a few things we can offer:
+
+Over 100 modern templates to update your look and feel
+Advanced marketing tools to reach new customers
+mobile-optimized stores to capture people on smartphones and tablets
+Certified eCommerce Consultants to help you launch your new store
+
+In fact, we are so confident we can help your business grow, we are offering to move your entire store to BigCommerce FREE!
+
+I’d love to set up a free consultation to go over exactly what we do - What is a good time, this week, for us to meet?
+
+I look forward to hearing from you!
+
+Sincerely,
+
+Lizette Flores
+
+eCommerce Business Consultant
+
+
+P 512-629-4518
+M 312-933-1479
+E Lizette.Flores@bigcommerce.com
+11305 Four Points Drive | Building II, Third Floor | Austin, TX 78726
+
+http://info.bigcommerce.com/switch-yahoo-to-bigcommerce
+
+Sign up for a free trial at: http://www.bigcommerce.com/p/12876.html</textOnly>
+    <type>custom</type>
+</EmailTemplate>

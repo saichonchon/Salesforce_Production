@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Public/External Article</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Public/External Articles</value>
+    </caseValues>
+    <fields>
+        <label><!-- Article --></label>
+        <name>Article__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attachment --></label>
+        <name>Attachment__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the person who originally supplied the content before it was revised by an Editor. --></help>
+        <label><!-- Author --></label>
+        <name>Author__c</name>
+        <relationshipLabel><!-- Public/External Articles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- IKM ID --></label>
+        <name>IKM_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Info --></label>
+        <name>Internal_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nav Title --></label>
+        <name>Nav_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Version --></label>
+        <name>Product_Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- Public Link --></label>
+        <name>Public_Link__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify which third party this article is about if applicable. --></help>
+        <label><!-- Third Party --></label>
+        <name>Third_Party__c</name>
+    </fields>
+    <layouts>
+        <layout>Public Facing Article Layout</layout>
+        <sections>
+            <label><!-- Article Content --></label>
+            <section>Article Content</section>
+        </sections>
+        <sections>
+            <label><!-- Internal Information --></label>
+            <section>Internal Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Removed Start Screen</description>
+    <label>Add Partner Onboarding to Opportunity Team</label>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>Create_Opportunity_Member</name>
+        <label>Create Opportunity Member</label>
+        <locationX>187</locationX>
+        <locationY>270</locationY>
+        <assignRecordIdToReference>ID</assignRecordIdToReference>
+        <faultConnector>
+            <targetReference>Fault_Screen</targetReference>
+        </faultConnector>
+        <inputAssignments>
+            <field>OpportunityId</field>
+            <value>
+                <elementReference>PassOppID</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>TeamMemberRole</field>
+            <value>
+                <stringValue>Partner Onboarding Rep</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>UserId</field>
+            <value>
+                <elementReference>PassUserID</elementReference>
+            </value>
+        </inputAssignments>
+        <object>OpportunityTeamMember</object>
+    </recordCreates>
+    <screens>
+        <name>Fault_Screen</name>
+        <label>Fault Screen</label>
+        <locationX>448</locationX>
+        <locationY>278</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <fields>
+            <name>Faultmessage</name>
+            <fieldText>Sorry an error occured in the flow.
+
+Provide your admin with the following information: {!$Flow.FaultMessage}</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+    </screens>
+    <startElementReference>Create_Opportunity_Member</startElementReference>
+    <variables>
+        <name>ID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>OppID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <elementReference>PassOppID</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <name>PassOppID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <elementReference>PassOppID</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <name>PassUserID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>UserID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

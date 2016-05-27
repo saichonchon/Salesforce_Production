@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_86495068</developerName>
+        <masterLabel>Account Manager Group</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Opportunity$Enterprise_Account_Manager__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Albert Singh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Alexis Varela</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Candice Talley</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chris Ellison</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cristy Carpenter</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Desiree Martinez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jeremy Gryder</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kathleen Long-Ferenzi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Steve Kirklin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Victor Soares</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Steven Bennett</sourceValue>
+            </sourceValues>
+            <value>Legacy (Pro Serv)</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Chris Hall</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Corey Nihlean</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dani Feibleman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Gardner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ian Irvin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Karl Avard</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Liam Garcia-Flores</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Patrick Yang</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Phivu Nguyen</sourceValue>
+            </sourceValues>
+            <value>Current</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>JoAnna Moon</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kevin Klausman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mike Blakely</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ryan Roch</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Wendy Young</sourceValue>
+            </sourceValues>
+            <value>Recent Departs</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_84627003</developerName>
+        <masterLabel>MRR</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Opportunity$MonthlyRecurringRevenue__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>0</to>
+            </sourceValues>
+            <value>$0</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>0</from>
+                <to>999</to>
+            </sourceValues>
+            <value>&lt;$1K</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>999</from>
+                <to>2,499</to>
+            </sourceValues>
+            <value>&lt;$2.5K</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>2,499</from>
+            </sourceValues>
+            <value>$2.5K+</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Opportunity$Account</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Enterprise_Account_Manager__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Onboarding_Specialist__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$MonthlyRecurringRevenue__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Opportunity$PurchaseDate__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account.MaxSub_Store_URL__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$StoreURL__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Launch_Date__c</field>
+    </columns>
+    <description>A high level view of all active enterprise accounts cross sectioned by account manager groups and MRR tiers</description>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity$Product__c</column>
+            <operator>contains</operator>
+            <value>Enterprise</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Owner_Team__c</column>
+            <operator>notEqual</operator>
+            <value>SBD,Strategic</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Status__c</column>
+            <operator>equals</operator>
+            <value>Active</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$RecordType</column>
+            <operator>equals</operator>
+            <value>Opportunity.Store_Purchase</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Product__c</column>
+            <operator>notEqual</operator>
+            <value>Bigcommerce Enterprise Plan Subsidiary,Enterprise Plan Subsidiary,Enterprise Test Plan,Test Free Store (Enterprise Plan)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$StoreURL__c</column>
+            <operator>notContain</operator>
+            <value>sandbox</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Product__c</column>
+            <operator>notContain</operator>
+            <value>DEMO</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_84627003</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_86495068</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Enterprise Account Distribution</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunities_with_lookup_data__c</reportType>
+    <roleHierarchyFilter>SystemAdministrator</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

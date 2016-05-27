@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>BIG-15547 Closure Notification</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>BIG-15547 Email</name>
+    <style>freeForm</style>
+    <subject>Case Number: {!Case.CaseNumber} Subject: {!Case.Subject}</subject>
+    <textOnly>*******************************************************************
+Case Number: {!Case.CaseNumber}
+Issue Reported: {!Case.Description}
+
+Hello,
+
+Your  patience has been truly appreciated. Recently there was an issue that prevented PayPal from being configured resulting in a blank white page. This issue has been resolved and PayPal can now be configured normally.
+
+Please don&apos;t hesitate to contact us if you have further questions. Technical support is available 24/7:
+
+BigCommerce Support
+http://support.bigcommerce.com
+
+You can reply to this email or to view your case&apos;s status you can go here.
+
+Please do not remove: {!Case.E2CP__Case_Thread_Id__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

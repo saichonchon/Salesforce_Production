@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Post Paid.Email 10- Subscribe to Blog</name>
+    <style>none</style>
+    <subject>Stay informed on ecommerce news, trends and success stories</subject>
+    <textOnly>Read the latest ecommerce news, trends, analysis and success strategies
+
+
+
+
+
+
+
+Ecommerce news delivered right to your inbox
+
+
+
+
+
+
+
+
+Subscribe to our blog &lt;[[http://grow.bigcommerce.com/subscribe-to-bigcommerce-blog.html]]&gt;
+Read the latest ecommerce news, trends, analysis and success strategies
+We publish articles highlighting success stories and best practices from customers such as Solange Knowles. We also keep our customers up to date on the newest products and partnerships, like those with eBay or Amazon.
+Subscribe to receive daily or weekly updates and get the information you need to grow your business.
+Subscribe Now
+Hop on over to read the blog or subscribe right now to begin receiving daily or weekly updates. Your choice!</textOnly>
+    <type>custom</type>
+</EmailTemplate>

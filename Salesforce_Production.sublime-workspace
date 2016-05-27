@@ -63,6 +63,26 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/C/MavensMate/workspaces/Salesforce_Production/.gitignore",
+			"settings":
+			{
+				"buffer_size": 63,
+				"line_ending": "Windows",
+				"name": "*.sublime-project*.sublime-settings*.sublime-works"
+			}
+		},
+		{
+			"contents": "# Salesforce_Production\nProduction backup of SFDC code\n\nAdding all meta data available through the metadata api\n",
+			"file": "README.md",
+			"file_size": 57,
+			"file_write_time": 131088340423619742,
+			"settings":
+			{
+				"buffer_size": 112,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -72,9 +92,13 @@
 	"command_palette":
 	{
 		"height": 151.0,
-		"last_filter": "Package Control: install",
+		"last_filter": "Package Control: instal",
 		"selected_items":
 		[
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
 			[
 				"Package Control: install",
 				"Package Control: Install Package"
@@ -172,8 +196,66 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/C/MavensMate/workspaces/Salesforce_Production/.gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 63,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								63,
+								63
+							]
+						],
+						"settings":
+						{
+							"auto_name": "*.sublime-project*.sublime-settings*.sublime-works",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 112,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								111,
+								111
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -208,6 +290,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.MavensMate-OutputPanel":
+	{
+		"height": 0.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0

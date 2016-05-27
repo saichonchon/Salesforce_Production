@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Current Trial: January 2016.Day 12 Not Engaged</name>
+    <style>none</style>
+    <subject>Set up your Bigcommerce store before your trial ends</subject>
+    <textOnly>You still have three days in your free trial
+You still have three days in your free trial
+We noticed you haven&apos;t set up your online store yet. You can set it up in just a few easy steps by logging in now.
+
+Or, pick a plan that&apos;s right for you and get the time you need to build your store.
+Pick a plan &lt;[[https://login.bigcommerce.com/login]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

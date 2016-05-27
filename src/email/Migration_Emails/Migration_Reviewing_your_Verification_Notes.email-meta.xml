@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Migration: Confirmation that we are Reviewing Verification Survey results</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>Migration: Reviewing your Verification Notes</name>
+    <style>formalLetter</style>
+    <subject>Your BigCommerce Catalog Transfer: We&apos;re reviewing your feedback</subject>
+    <textOnly>Hi {!Case.Contact_First_Name__c},
+
+Thanks for completing your Migration Verification Checklist. We have received your feedback and our data migration team is reviewing your feedback and will contact you when we&apos;re ready for you to review the migration details again. Please hold off on making changes to your products and categories until we have had addressed your feedback.
+
+Remember, we’re here to help. If you have any additional questions, please don’t hesitate to reach out to migrations@bigcommerce.com. We’re looking forward to working with you!
+
+Thanks,
+
+The BigCommerce Team</textOnly>
+    <type>html</type>
+</EmailTemplate>

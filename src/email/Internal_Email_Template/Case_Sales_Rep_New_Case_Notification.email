@@ -1,0 +1,7 @@
+Account Name : {!Case.Account}
+Lead : {!Case.Lead__c}
+Subscription URL : {!Case.Bigcommerce_Store_URL__c}
+Case Number : {!Case.CaseNumber}
+Case Subject : {!Case.Subject}
+
+Link to Case : {!Case.Link}

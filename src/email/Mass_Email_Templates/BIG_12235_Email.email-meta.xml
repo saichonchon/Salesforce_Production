@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>BIG-12235 Closure Notification</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>BIG-12235 Email</name>
+    <style>freeForm</style>
+    <subject>Case Number: {!Case.CaseNumber} Subject: {!Case.Subject}</subject>
+    <textOnly>******************************************************************
+Case Number: {!Case.CaseNumber}
+Issue Reported: {!Case.Description}
+
+Hello,
+
+After extensive testing, we&apos;ve determined this to be a browser issue with older versions of Chrome and the Android browser.
+
+Chrome 35 (OS X) is broken, Chrome 36+ works. This is occurring specifically for .uk domains which we&apos;ve confirmed via testing on a .uk test store. It seems Chrome refuses to set a cookie on a .uk domain.
+
+Chrome auto-updates itself for most people, so the problem will correct itself for Chrome. With the Android browser (which has much of the same codebase) we&apos;re not so lucky - some people maybe have to wait for an upgrade to their Android OS if they strictly use the built-in browser. Chrome for Android works fine.
+
+I hope I&apos;ve given you some visibility into our efforts to correct this issue - but ultimately it seems the issue exists outside BigCommerce. I&apos;ll keep an ear to the ground for any workarounds that may appear, but it seems your best recourse for the time being is to recommend customers upgrade their browser and/or use Chrome when on Android.
+
+I sincerely apologize for the inconvenience . Let us know if you have further questions.
+
+Please don&apos;t hesitate to contact us if you have further questions. Technical support is available 24/7:
+
+BigCommerce Support
+http://support.bigcommerce.com
+
+You can reply to this email or to view your case&apos;s status you can go here.
+
+Please do not remove: {!Case.E2CP__Case_Thread_Id__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

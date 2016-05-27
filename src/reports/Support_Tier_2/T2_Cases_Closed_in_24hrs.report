@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_30775879</developerName>
+        <masterLabel>Age in Days</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>AGE</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>1</to>
+            </sourceValues>
+            <value>&lt;= 1 Day</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>1</from>
+                <to>2</to>
+            </sourceValues>
+            <value>2 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>2</from>
+                <to>3</to>
+            </sourceValues>
+            <value>3 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>3</from>
+                <to>7</to>
+            </sourceValues>
+            <value>4-7 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>7</from>
+            </sourceValues>
+            <value>&gt; 7 Days</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>Case.Tier_2_Request_Date__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATE</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND (4 OR 5)</booleanFilter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Case.Client_Success</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Tier_2_Requested_By__c</column>
+            <operator>greaterThan</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <operator>equals</operator>
+            <value>Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <operator>contains</operator>
+            <value>Design Support,Tier 2</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <operator>equals</operator>
+            <value>Christopher Partanen,Cortni Jamerson,Derek Donovan,Jose Flores,Nikita Puzanenko,Timothy Azark,Warren Kleinman</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <name>T2 - Cases Closed in 24hrs</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Case.Tier_2_Request_Date__c</dateColumn>
+        <endDate>2016-05-07</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-05-01</startDate>
+    </timeFrameFilter>
+</Report>

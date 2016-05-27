@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html><head>
+<title></title>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
+<style type="text/css">
+            *{font-family: 'Source Sans Pro', sans-serif;}
+            body {
+                margin:0;
+                padding:0;
+                background: #ffffff;
+            }
+            table {
+                border-collapse: collapse; }
+                p {
+               font-size:16px; 
+            }
+            li{font-size:16px; line-height:1.7; padding-bottom:10px;}
+            
+            h3{font-size:22px;}
+            .msgicon{position:relative;top:8px;}
+            .applelinksheader a {
+                text-decoration: none; 
+                color: #363636 !important;
+            }
+            
+            p {
+                margin-bottom: 5px;
+            }
+            
+
+            .applelinks a {
+                text-decoration: none; 
+                color: #777777 !important;
+            }
+            
+
+                @media (max-width : 480px) {
+                /*@media only screen and (max-device-width: 480px) {*/
+                
+                    .bodyWidth, #TopContainer, #LogoContainer {
+                        width: 100% !important;
+                  
+                    }
+                    
+
+                    /* Media query for mobile*/
+
+        @media only screen and (max-width: 480px)  {
+                        
+                        td{padding:0px !important;}
+                        div{padding: 0px 30px !important;}
+                        
+                        .body{padding: 0px 20px!important;}
+                        .button{margin:auto !important;}
+                        .msgicon{display:block;margin:auto;}
+                        .textcenter{text-align:center;}
+                        .mobile-block{display:block;padding:0px !important;}
+                        .no-padding{padding:0px !important;}
+                        .hidemobile {display: none;}                       
+                        .header{height:350px !important;}
+                         .bodyWidth{max-width:480px;padding:0px !important;}
+                        .center-image{display: block !important; padding-left: 0px !important} 
+                        .mobile-padding{padding-left: 30px; padding-right: 30px; text-align: left !important;}
+                        .hide-mobile{display: none !important}
+                        
+                    
+
+
+                    #Logo {
+                     padding-left:30px !important;padding-top:30px !important; padding-bottom: 30px !important
+                    }
+                        .bottom-logo{padding-top:40px;padding-left:30px;float:left;}
+                        .footer-social {width:250px !important;padding-top:15px;margin-right:60px}
+                        .applelinksheader a {
+                        text-decoration: none; 
+                        color: #363636 !important;
+                    }
+                    
+                    .applelinks a {
+                        text-decoration: none; 
+                        color: #828189 !important;
+                    }
+
+                }
+</style>
+</head>
+<body style="margin:auto; display:block; background-color:#ffffff; -webkit-text-size-adjust:none; font-family:Helvetica, Arial, sans-serif; " bgcolor="#FFFFFF" ><!-- Outlook Font Fix -->
+<!--[if mso]>
+    <style type="text/css">
+    body, table, td {font-family: Helvetica, Arial, sans-serif !important;}
+    </style>
+    <![endif]-->
+<!-- Preview text (text which appears right after subject) -->
+<div style="display:none; color:#ffffff; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden;">Thanks for your interest in our ebook!</div>
+<table align="center" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="margin:auto; background:#ffffff; border:none; " ><tr ><td ><!-- Logo Block -->
+<table width="800" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" style="background:#ffffff">
+<tr>
+<td valign="top" id="TopContainer" style="padding:32px 0px 0px 0px;">
+<table border="0" cellspacing="0" cellpadding="0" align="center" width="800" id="LogoContainer">
+<tr>
+<td valign="top" align="left" id="Logo" style="padding-left:100px;"><a href="http://www.bigcommerce.com"><img src="http://grow.bigcommerce.com/rs/695-JJT-333/images/BigCommerce_logo_dark.png" alt="BigCommerce" width="160" height="40" border="0"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End Logo Block -->
+<!-- Body -->
+<table align="center" style="margin-bottom:30px !important; " width="800" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" ><tr ><td class="body" width="100%" valign="top" align="center" style="padding-top:40px; padding-bottom:50px; " ><table width="580" cellspacing="0" cellpadding="0" border="0" align="center" style="table-layout:fixed; border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; " class="bodyWidth" ><tr ><td style="font-size:16px; color:#34313f; text-align:left; font-family:'Source Sans Pro', Helvetica, Arial, sans-serif; line-height:30px; vertical-align:top; padding:0px 8px 0px 8px; " bgcolor="#FFFFFF" ><div class="mktEditable" id="Salutation" ><p><strong><span style="color: #44494c; line-height: 45px;">Hi {{lead.First Name:default=there}},</span></strong></p></div>
+<!--[if mso]>
+    <div style="height:10px">&nbsp;</div>
+    <![endif]--></td>
+</tr>
+<tr ><td style="font-size:16px; color:#34313f; text-align:left; font-family:'Source Sans Pro', Helvetica, Arial, sans-serif; line-height:30px; vertical-align:top; padding:0px 8px 0px 8px; " bgcolor="#FFFFFF" ><div class="mktEditable" id="Segmentation-1" ><p>Thanks for downloading <a href="http://grow.bigcommerce.com/rs/695-JJT-333/images/Payment-Processing.pdf" style="text-decoration: none; color: #4b70fc;">Ecommerce payment processing</a>. Please save this email so you can access it at any time. If you're looking to grow your business using what you've learned, you'll need a reliable online store and modern ecommerce tools. BigCommerce offers both, plus much more.</p></div>
+<div class="mktEditable" id="Segmentation-2" ><p>Our <strong>rock-solid platform</strong> has a <strong>99.99% average uptime</strong>, and includes all the <strong>marketing and conversion tools</strong> you need to drive more traffic and win more sales.</p>
+<p style="padding-bottom: 15px;">If you want to increase your revenue, please request a demo&nbsp;so we can see if BigCommerce is right for you.</p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; display: inline-block;">
+<tbody>
+<tr>
+<td valign="middle" align="center" height="40" width="206" style="text-decoration: none; font-size: 14px; color: #ffffff; background: #4b70fc; border-radius: 25px; text-transform: uppercase;">
+<p style="margin: 0 0; color: #ffffff;"><a href="http://grow.bigcommerce.com/email-demo-request.html?utm_campaign=Prospects.EmailCampaigns.2015Q4.&amp;utm_source=content-autoresponder&amp;utm_medium=email&amp;utm_term=demo&amp;utm_content=request-demo" style="color: #ffffff; text-decoration: none; display: block; font-size: 14px;" target="_blank">Request&nbsp;a&nbsp;demo</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>In the meantime, you can read about how we helped <a href="http://grow.bigcommerce.com/rs/695-JJT-333/images/CaseStudy-PinkLilyBoutique.pdf" style="text-decoration: none; color: #4b70fc;">Pink Lily Boutique</a><strong> increase sales by 40%</strong> in just one month.</p></div>
+<!--[if mso]>
+                                        <div style="height:10px">&nbsp;</div>
+                                        <![endif]--></td>
+</tr>
+<tr ><td style="font-size:16px; color:#34313f; text-align:left; font-family:'Source Sans Pro', Helvetica, Arial, sans-serif; line-height:30px; vertical-align:top; padding:0px 8px 10px 8px; " bgcolor="#FFFFFF" ><div class="mktEditable" id="Closing" ><p>Best,</p>
+<p>Paul Robinson<br />Director of Sales<br /><a href="tel:+18558846605" style="color: #4b70fc; text-decoration: none;" target="_blank" class="mktNoTrack">855-884-6605</a></p></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- Footer -->
+<table width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="margin: 0 auto; background: #ffffff; border:none">
+<tr>
+<td>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" align="center" style="background-color:#2b2936;clear:both;">
+<tr>
+<td width="100%" valign="top" align="center" bgcolor="#2B2936" style="padding-top:32px">
+<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="bodyWidth" style="table-layout:fixed;">
+<tr>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" align="left" class="bodyWidth">
+<tr>
+<td valign="top" style="background-color: #2b2936; text-align: center; font-family: 'Open Sans', Helvetica, sans-serif; font-size: 11px; line-height: 28px; color: #828189;" align="center" class="center"></td>
+</tr>
+<tr>
+<td valign="top" style="background-color: #2b2936; padding-bottom: 32px; text-align: left; font-family: 'Open Sans', Helvetica, sans-serif; font-size: 11px; line-height: 28px;color:#ffffff;" align="left">
+<div style="padding-left:40px; padding-top:25px;">
+<p><a href="http://www.bigcommerce.com"><img align="middle" class="center-image" border="0" style="top:15px; padding-bottom: 20px !important; border-style: none;" src="http://grow.bigcommerce.com/rs/695-JJT-333/images/Bigcommerce_icon_white-sized.png" alt="BigCommerce"></a> <span class="hide-mobile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href="https://twitter.com/Bigcommerce" 
+style="color:#ffffff; font-size: 14px; display:inline-block; text-decoration:none;">Twitter</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.facebook.com/BigCommerce" style="color:#ffffff; font-size: 14px; display:inline-block; text-decoration:none;">Facebook</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.linkedin.com/company/bigcommerce" style="color:#ffffff; font-size: 14px; 
+display:inline-block; text-decoration:none;">LinkedIn</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.youtube.com/user/bigcommercedotcom" style="color:#ffffff; font-size: 14px; display:inline-block; text-decoration:none;">YouTube</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.bigcommerce.com/pinterest/" style="color:#ffffff; font-size: 14px; display:inline-block; 
+text-decoration:none;">Pinterest</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://plus.google.com/+bigcommerce" style="color:#ffffff; font-size: 14px; display:inline-block; text-decoration:none;">Google+</a></p>
+<p style="color:#828189; text-align:left; font-size:12px;">&#169; 2016 BigCommerce <span class="applelinks">11305 Four Points Dr., Building 2, Floor 3, Austin TX 78726</span><br>
+You received this email because you are subscribed to emails from BigCommerce.<br>
+<span style="color:#828189;text-align:left;font-size:12px"><a style="color:#828189;padding-right:5px;" href="http://grow.bigcommerce.com/subscribe-to-bigcommerce-blog.html">Subscribe to our Blog</a> | <a style="color:#828189;padding-left:5px;padding-right:5px;" href="http://grow.bigcommerce.com/manage-your-email-preferences.html">Update your email preferences</a> | <a 
+style="color:#828189;padding-left:5px;" href="{{system.viewAsWebpageLink}}">View as webpage</a></span></p>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End Footer --></body>
+</html>

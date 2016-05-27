@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Facebook Demo Request.FB Lead Nurture Email 1 RB (Intro to BC)</name>
+    <style>none</style>
+    <subject>Grow your brand with BigCommerce</subject>
+    <textOnly>Start a trial today and see how easy it is to build a store on BigCommerce.
+
+Start a trial today
+
+
+See how easy it is to build a store on BigCommerce
+
+Get started &lt;[[https://www.bigcommerce.com/dm/start-a-free-trial/?utm_medium=social&amp;utm_source=facebook&amp;utm_campaign=form-2016]]&gt;
+
+
+Merchants on BigCommerce grow nearly twice as fast as the industry average
+
+Thank you for your interest in Bigcommerce. Our platform gives you access to the best features and benefits available, including:
+- Beautiful, customizeable design themes
+ - Advanced marketing and conversion tools
+ - Industry-leading SEO
+ - World-class site performance and uptime
+
+Want to speak with an ecommerce expert?
+Please request a demo if you&apos;d like to speak with an ecommerce expert and learn more about the world&apos;s best ecommerce platform.
+
+Request a Demo &lt;[[https://www.bigcommerce.com/dm/request-a-demo/?utm_medium=social&amp;utm_source=facebook&amp;utm_campaign=form-2016]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

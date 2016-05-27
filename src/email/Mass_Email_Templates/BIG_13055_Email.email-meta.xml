@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>BIG-13055 Closure Notification</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>BIG-13055 Email</name>
+    <style>freeForm</style>
+    <subject>Case Number: {!Case.CaseNumber} Subject: {!Case.Subject}</subject>
+    <textOnly>*******************************************************************
+Case Number: {!Case.CaseNumber}
+Issue Reported: {!Case.Description}
+
+Hello,
+
+Your patience has truly been appreciated. A known issue was preventing you from being able to switch back to your store&apos;s old analytics. We are happy to report the issue has been resolved. You should now see the following link in the top-right of your analytics section:
+
+&quot;To view historical data prior to new analytics, switch to old analytics&quot;
+
+Please don&apos;t hesitate to contact us if you any further questions. Technical support is available 24/7:
+
+https://support.bigcommerce.com/contact.php
+
+BigCommerce Support
+http://support.bigcommerce.com
+
+You can reply to this email or to view your case&apos;s status you can go to https://bigcommerce-community.force.com/Client/bcslogin .
+
+Please do not remove: {!Case.E2CP__Case_Thread_Id__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

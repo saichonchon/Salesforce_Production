@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Internal notification of a new professional services oppty</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Oppty:  New Professional Services Added</name>
+    <style>none</style>
+    <subject>New professional services added to account:  {!Account.Name}</subject>
+    <type>text</type>
+</EmailTemplate>

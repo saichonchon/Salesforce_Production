@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>KnowledgeKeywordSearchHistory$Channel</field>
+    </columns>
+    <columns>
+        <field>KnowledgeKeywordSearchHistory$Count</field>
+    </columns>
+    <columns>
+        <field>KnowledgeKeywordSearchHistory$AsOfDate</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>KnowledgeKeywordSearchHistory$Channel</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>KnowledgeKeywordSearchHistory$Success</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <aggregateType>RowCount</aggregateType>
+        <dateGranularity>Day</dateGranularity>
+        <field>KnowledgeKeywordSearchHistory$Keyword</field>
+        <sortByName>RowCount</sortByName>
+        <sortOrder>Desc</sortOrder>
+        <sortType>Aggregate</sortType>
+    </groupingsDown>
+    <name>Support Site Queries</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SK__Knowledge_Keyword_Search__c</reportType>
+    <scope>durationDay</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>KnowledgeKeywordSearchHistory$AsOfDate</dateColumn>
+        <interval>INTERVAL_LAST30</interval>
+    </timeFrameFilter>
+</Report>

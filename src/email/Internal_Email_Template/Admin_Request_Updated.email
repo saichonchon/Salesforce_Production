@@ -1,0 +1,7 @@
+Request {!Admin_Request__c.Name} has been updated.
+
+Status: {!Admin_Request__c.Status__c} 
+Completion Date: {!Admin_Request__c.Completion_Date__c}
+Link to Request: {!Admin_Request__c.Link}
+
+Notes: {!Admin_Request__c.Sales_Ops_Notes__c}

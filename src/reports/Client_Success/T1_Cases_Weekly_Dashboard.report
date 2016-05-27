@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <description>Dashboard report for the current week of cases closed.</description>
+    <filter>
+        <booleanFilter>(1 AND (2 or 3 or 4)) AND 5</booleanFilter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <operator>equals</operator>
+            <value>support</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CASE_COMMENT_UPDATED_BY</column>
+            <operator>equals</operator>
+            <value>Nestor Islas,Dmitrii Khrunov,Jake Smith,Fred Dobson,Ariana Lloyd,Brian Miller,Brianna Lewis,Dan Rathke,Eric Roiz,Gregory Bahl,Lucian Villasenor,Jacob Scott,Jimmiek Rankin,Jose Flores,Joseph Alcorn,Josh Popperwell,Kade Reed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CASE_COMMENT_UPDATED_BY</column>
+            <operator>equals</operator>
+            <value>Matthew Leach,Sean Mercer,Sasha Akridge,Michael Sparks,Mary Stanish,Rory Regnell,Laurie Zapinski,Timothy Azark,Derek Donovan,Phillip Estrada,Corey Nihlean,Ian Irvin,Brian Jones</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CASE_COMMENT_UPDATED_BY</column>
+            <operator>equals</operator>
+            <value>Robert Baker,Seth Bergman,Tanner Johnson,Todd Wallace,Willie Kinsey,Joshua Seals,Jeff Nihlean,Pepe Pulido,Jeff Borchman,Ted York,Kaitlyn McCormick,Eric Her,Ray Vaccaro</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LAST_UPDATE_BY</column>
+            <operator>notEqual</operator>
+            <value>API user</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>LAST_UPDATE_BY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>T1 - Cases Weekly - Dashboard</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_THISWEEK</interval>
+    </timeFrameFilter>
+</Report>

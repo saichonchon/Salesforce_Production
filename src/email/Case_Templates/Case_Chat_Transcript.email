@@ -1,0 +1,31 @@
+<messaging:emailTemplate subject="BigCommerce Chat Transcript" recipientType="Contact" relatedToType="Case">
+
+<messaging:htmlEmailBody >
+<html>
+<body>
+Dear {!recipient.FirstName} {!recipient.LastName}, 
+
+<p> For your review, I have attached the chat transcript from our recent conversation </p>
+ 
+<c:pdfattachment sfDoc_ID="{!relatedTo.Id}" rendered="true"> </c:pdfattachment> 
+
+
+
+<p>Your Friendly Support Rep </p>
+
+
+
+
+<p> BigCommerce Technical Support </p>
+
+<p> http://support.bigcommerce.com </p>
+
+
+</body> </html>
+</messaging:htmlEmailBody>
+
+<messaging:attachment filename="ChatTranscript.pdf" renderAs="pdf"  >
+   <c:pdfattachment sfDoc_ID="{!relatedTo.Id}" rendered="true"> </c:pdfattachment> 
+</messaging:attachment>
+
+</messaging:emailTemplate>

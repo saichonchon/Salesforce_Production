@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>BGIntegration__BomgarSession__c.BGIntegration__Primary_Customer__c</field>
+    </columns>
+    <columns>
+        <field>BGIntegration__BomgarSession__c.BGIntegration__Primary_Team__c</field>
+    </columns>
+    <columns>
+        <field>BGIntegration__BomgarSession__c.BGIntegration__Primary_Representative__c</field>
+    </columns>
+    <columns>
+        <field>CUST_ID</field>
+    </columns>
+    <columns>
+        <field>BGIntegration__BomgarSession__c.BGIntegration__Session_Type__c</field>
+    </columns>
+    <columns>
+        <field>BGIntegration__BomgarSession__c.BGIntegration__Public_Site_ID__c</field>
+    </columns>
+    <columns>
+        <field>BGIntegration__BomgarSession__c.BGIntegration__Recording_Download_URL__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>All Bomgar Sessions</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$BGIntegration__BomgarSession__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>BGIntegration__BomgarSession__c.BGIntegration__Start_Time__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

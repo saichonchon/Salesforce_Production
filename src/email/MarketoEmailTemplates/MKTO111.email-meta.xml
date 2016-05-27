@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Marty/Owen PCF.Email 4 - Conf Proven Strategies</name>
+    <style>none</style>
+    <subject>Thanks! Here&apos;s your white paper</subject>
+    <textOnly>Thank you for downloading 3 Proven Strategies to Drive Ecommerce Growth
+Thanks for downloading our free guide: 3 Proven Strategies to Drive Ecommerce Growth &lt;[[http://grow.bigcommerce.com/rs/695-JJT-333/images/proven-strategies-pcf.pdf]]&gt;.
+
+With this guide, you&apos;ll learn how to improve your ecommerce backend and create a more convenient shopping experience for consumers by optimizing your site for mobile traffic. You&apos;ll also find tips and tactics inside for creating convenient site infrastructure and search capability that converts.
+
+Call us &lt;[[tel:+18446328911]]&gt;if you want to find out how easy optimizing your ecommerce site can be.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

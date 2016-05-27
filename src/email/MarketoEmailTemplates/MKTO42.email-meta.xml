@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Marty/Owen PCF.Email 2 Followup</name>
+    <style>none</style>
+    <subject>Fwd: See how one top merchant increased sales by 64%</subject>
+    <textOnly>Hi {{lead.First Name:default=there}}, 
+
+Not sure if you saw this email. One of the best parts about working at Bigcommerce is hearing our merchants&apos; success stories, so I didn&apos;t want you to miss this case study about TwirlyGirl &lt;[[http://grow.bigcommerce.com/twirlygirl-case-study-pcf.html]]&gt;, who significantly increased their sales and revenue after moving to our platform. 
+
+&quot;Year over year, our sales are up 64%. It&apos;s an amazing rate of growth, and we hope to continue that trend into the coming year. This growth would not have been possible on our old platform.&quot; — Cynthia Jamin, CDO 
+
+Please call us &lt;[[tel:+18446328911]]&gt; if you have any questions about Bigcommerce.
+
+Thanks, 
+
+Garrett Ozar
+ Ecommerce Business Consultant
+
+
+
+
+---------- Forwarded message ----------
+
+From: Bigcommerce
+Subject: See how one merchant increased sales by 64%
+To: {{lead.Email Address}}
+
+
+
+
+Case study: TwirlyGirl
+See how merchants like you have increased sales with Bigcommerce
+Thousands of businesses around the world have become more successful by switching to Bigcommerce. Since Cynthia and Michael Jamin of TwirlyGirl &lt;[[http://grow.bigcommerce.com/twirlygirl-case-study-pcf.html]]&gt; moved their children&apos;s clothing store, they&apos;ve seen: 
+
+- A 64% increase in sales
+- A 51% increase in monthly revenue
+- A 43% increase in monthly transactions
+
+Our free case study has all the details on how TwirlyGirl has grown with Bigcommerce.
+
+Download the case study &lt;[[http://grow.bigcommerce.com/twirlygirl-case-study-pcf.html]]&gt;
+
+Please give us a call &lt;[[tel:18446328911]]&gt; if you&apos;d like to learn more about Bigcommerce.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Generic Case Autoresponse - we&apos;ve received your message</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Big</letterhead>
+    <name>Generic Case Autoresponse</name>
+    <style>freeForm</style>
+    <subject>We&apos;ve received your email</subject>
+    <textOnly>Thanks for writing. This email to confirm that we&apos;ve received your message. A copy of your message is included below:
+
+{!Case.CaseNumber}
+
+{!Case.Description}</textOnly>
+    <type>html</type>
+</EmailTemplate>

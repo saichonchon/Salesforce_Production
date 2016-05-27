@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <description>monthly case completed for T1 dashboard.</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND (3 or 4 or 5)</booleanFilter>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <operator>equals</operator>
+            <value>Email,Phone,Chat,Web</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Case.Client_Success</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CASE_COMMENT_UPDATED_BY</column>
+            <operator>equals</operator>
+            <value>Nestor Islas,Dmitrii Khrunov,Jake Smith,Fred Dobson,Ariana Lloyd,Brian Miller,Brianna Lewis,Dan Rathke,Eric Roiz,Gregory Bahl,Lucian Villasenor,Jacob Scott,Jimmiek Rankin,Jose Flores,Joseph Alcorn,Josh Popperwell,Kade Reed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CASE_COMMENT_UPDATED_BY</column>
+            <operator>equals</operator>
+            <value>Matthew Leach,Sean Mercer,Sasha Akridge,Michael Sparks,Suzanne Ashcraft,Mary Stanish,Rory Regnell,Laurie Zapinski,Timothy Azark,Derek Donovan,Phillip Estrada,Corey Nihlean,Ian Irvin,Brian Jones,Chas Wilson,Christie Florence</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CASE_COMMENT_UPDATED_BY</column>
+            <operator>equals</operator>
+            <value>Robert Baker,Seth Bergman,Tanner Johnson,Todd Wallace,Willie Kinsey,Joshua Seals,Jeff Nihlean,Pepe Pulido,Jeff Borchman,Ted York,Kaitlyn McCormick,Eric Her,Ray Vaccaro</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>LAST_UPDATEONLY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CASE_COMMENT_UPDATED_BY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ORIGIN</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>T1 - Case month - Dashboard</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

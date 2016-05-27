@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Coming Soon.Email 2: Recap LaQuan Event</name>
+    <style>none</style>
+    <subject>The Aesthetics of Excellence: LaQuan Smith’s New Bigcommerce Site is Live</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+If you watched LaQuan’s NYFW show and line launch with us on Periscope on Sunday, you saw history in the making. For the first time ever, a designer launched a collection offline — with it immediately available for purchase on their online store &lt;[[http://www.bigcommerce.com/blog/laquan-smith]]&gt;.
+
+Today, you can check out LaQuan’s brand new website, built using Bigcommerce’s new themes. LaQuan was an early-access beta tester to our new themes — which will be available for all merchants in the coming weeks. Stay tuned!
+
+
+Read more  &lt;[[www.bigcommerce.com/blog/LaQuan-smith]]&gt;
+
+
+
+Kind regards,
+
+The Bigcommerce Team
+{{my.LitmusToken}}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

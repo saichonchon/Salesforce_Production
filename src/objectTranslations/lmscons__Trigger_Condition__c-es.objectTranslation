@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Condición de activación</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Condiciones de disparo</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Etiqueta de campo</nameFieldLabel>
+</CustomObjectTranslation>

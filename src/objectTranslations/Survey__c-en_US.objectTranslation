@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Survey</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Surveys</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Surveys --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Agent --></label>
+        <name>Agent__c</name>
+        <relationshipLabel><!-- Surveys --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Surveys --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Chat Key --></label>
+        <name>Chat_Key__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select all that apply --></help>
+        <label><!-- Compared to Competitors? --></label>
+        <name>Compared_to_Competitors__c</name>
+        <picklistValues>
+            <masterLabel>Amazon Webstore</masterLabel>
+            <translation><!-- Amazon Webstore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Magento</masterLabel>
+            <translation><!-- Magento --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prostores</masterLabel>
+            <translation><!-- Prostores --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shopify</masterLabel>
+            <translation><!-- Shopify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volusion</masterLabel>
+            <translation><!-- Volusion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yahoo</masterLabel>
+            <translation><!-- Yahoo --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Expected Plan Type --></label>
+        <name>Expected_Plan_Type__c</name>
+        <picklistValues>
+            <masterLabel>Builder</masterLabel>
+            <translation><!-- Builder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise</masterLabel>
+            <translation><!-- Enterprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Gold</masterLabel>
+            <translation><!-- New Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Platinum</masterLabel>
+            <translation><!-- New Platinum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Silver</masterLabel>
+            <translation><!-- New Silver --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Feedback --></label>
+        <name>Feedback__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue Resolved ? --></label>
+        <name>Issue_Resolved__c</name>
+        <picklistValues>
+            <masterLabel>1 - Yes</masterLabel>
+            <translation><!-- 1 - Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 -No</masterLabel>
+            <translation><!-- 2 -No --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- What were the key selling points during this conversation? --></help>
+        <label><!-- Key Selling Points --></label>
+        <name>Key_Selling_Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Knowledgeable --></label>
+        <name>Knowledgeable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>Lead__c</name>
+        <relationshipLabel><!-- Surveys --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Live Chat Transcript --></label>
+        <name>Live_Chat_Transcript__c</name>
+        <relationshipLabel><!-- Surveys --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Based on the plan they selected please give additional feedback.
+This could be about your conversation, their opinion of the plan, or any feedback you received overall --></help>
+        <label><!-- Plan Feedback --></label>
+        <name>Plan_Feedback__c</name>
+    </fields>
+    <fields>
+        <label><!-- Professionalism --></label>
+        <name>Professionalism__c</name>
+    </fields>
+    <fields>
+        <help><!-- What do you (as the rep) like or not like about the pricing? 
+What worked for you? What didn&apos;t work for you? --></help>
+        <label><!-- Rep Feedback --></label>
+        <name>Rep_Feedback__c</name>
+    </fields>
+    <fields>
+        <help><!-- Did the new pricing change the speed of your sales cycle? --></help>
+        <label><!-- Sales Cycle Speed --></label>
+        <name>Sales_Cycle_Speed__c</name>
+        <picklistValues>
+            <masterLabel>No or Not Noticeably</masterLabel>
+            <translation><!-- No or Not Noticeably --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Helped me close faster</masterLabel>
+            <translation><!-- Yes - Helped me close faster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Slowed me down</masterLabel>
+            <translation><!-- Yes - Slowed me down --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Satisfaction --></label>
+        <name>Satisfaction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Completion Date --></label>
+        <name>Survey_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Name --></label>
+        <name>Survey_Name__c</name>
+        <picklistValues>
+            <masterLabel>Feedback | Pricing test (Direct reps)</masterLabel>
+            <translation><!-- Feedback | Pricing test (Direct reps) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Basic CSAT</masterLabel>
+            <translation><!-- Support Basic CSAT --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Survey Sent Date --></label>
+        <name>Survey_Sent_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- What did the client stumble on while you were explaining the pricing? What worked? What didn&apos;t? --></help>
+        <label><!-- What worked/didn&apos;t? --></label>
+        <name>What_worked_didn_t__c</name>
+    </fields>
+    <layouts>
+        <layout>Survey Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Feedback | Pricing test (Direct reps) --></label>
+            <section>Feedback | Pricing test (Direct reps)</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

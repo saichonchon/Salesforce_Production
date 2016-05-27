@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_21337925</developerName>
+        <masterLabel>Lead Qualifier Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Account.Qualifier__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Sam Spetalnick</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lauryn Spence</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cade Jackson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jeremy Peabody</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nicole Stanfill</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bob Farrell</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Farah Tary</sourceValue>
+            </sourceValues>
+            <value>SDR</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Chad Kallina</sourceValue>
+            </sourceValues>
+            <value>MDR</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Leonard Dingle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Joe Maragoni</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Baldemar Zamora</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Scott Richards</sourceValue>
+            </sourceValues>
+            <value>Inbound</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBarGrouped</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_21337925</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <secondaryGroupingColumn>USERS.NAME</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Account.Qualifier__c</field>
+    </columns>
+    <columns>
+        <field>ROLLUP_DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>Account.Owner_Team__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Projected_Annual_Revenue__c</field>
+    </columns>
+    <columns>
+        <field>Account.Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Sales_Decision_Date__c</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>Account.Qualified_Date__c</field>
+    </columns>
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Qualifier__c</column>
+            <operator>equals</operator>
+            <value>Baldemar Zamora,Leonard Dingle,Scott Richards,Joe Maragoni,Chad Kallina,Farah Tary,Nicole Stanfill,Lauryn Spence,Cade Jackson,Bob Farrell,Sam Spetalnick,Jeremy Peabody</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_21337925</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>USERS.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>SQLs Delivered This Month</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account.Qualified_Date__c</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

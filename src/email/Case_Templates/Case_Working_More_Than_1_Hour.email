@@ -1,0 +1,3 @@
+{!Case.Link}
+Start Time: {!Case_Time_Worked__c.Start_Time__c}
+Rep: {!Case_Time_Worked__c.Owner_to_Name__c}

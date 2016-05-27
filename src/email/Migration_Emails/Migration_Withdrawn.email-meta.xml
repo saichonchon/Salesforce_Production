@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Migration: Withdrawn</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>Migration: Withdrawn</name>
+    <style>formalLetter</style>
+    <subject>Your BigCommerce Catalog Transfer: Your request has been withdrawn</subject>
+    <textOnly>Hi {!Case.Contact_First_Name__c},
+
+
+We’ve been attempting to get in touch with you via email and over the phone.
+
+We still haven’t received your current store’s credentials from you.
+
+Unfortunately, we’re cancelling your data migration request so we can help other clients in our queue. If you paid a fee for this service, then expect a refund of your money into your account within 3-5 business days.
+
+
+We’re so sorry it didn’t work out this time. If you’re still interested in having your store migrated to BigCommerce, please contact your sales agent and have them set up a new migration request.
+
+
+Thanks,
+
+
+The BigCommerce Team
+
+
+Case # {!Case.CaseNumber}</textOnly>
+    <type>html</type>
+</EmailTemplate>

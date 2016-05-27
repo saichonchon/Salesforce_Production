@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Support Survey</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Support Surveys</value>
+    </caseValues>
+    <fields>
+        <label><!-- Agent Name --></label>
+        <name>Agent_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Session ID --></label>
+        <name>Call_Session_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Cancellation Reason text reply --></help>
+        <label><!-- Cancel Reason - Other --></label>
+        <name>Cancel_Reason_Other__c</name>
+    </fields>
+    <fields>
+        <help><!-- Cancellation Survey: Why did you discontinue your service with Bigcommerce? --></help>
+        <label><!-- Cancel Reason --></label>
+        <name>Cancel_Reason__c</name>
+    </fields>
+    <fields>
+        <help><!-- Cancel: Product or service that could have retained? --></help>
+        <label><!-- Cancellation Feedback --></label>
+        <name>Cancellation_Feedback__c</name>
+    </fields>
+    <fields>
+        <help><!-- Cancellation survey: What platform will you be using? --></help>
+        <label><!-- Cancellation Platform --></label>
+        <name>Cancellation_Platform__c</name>
+        <picklistValues>
+            <masterLabel>Lemonstand</masterLabel>
+            <translation><!-- Lemonstand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Magento</masterLabel>
+            <translation><!-- Magento --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shopify</masterLabel>
+            <translation><!-- Shopify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Squarespace</masterLabel>
+            <translation><!-- Squarespace --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volusion</masterLabel>
+            <translation><!-- Volusion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wix</masterLabel>
+            <translation><!-- Wix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Woocommerce</masterLabel>
+            <translation><!-- Woocommerce --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- CaseSurveys --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Category Name Text --></label>
+        <name>Category_Name_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category name transfer successful? --></label>
+        <name>Category_Name_transfer_successful__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Category Structure Text --></label>
+        <name>Category_Structure_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category structure transfer successful? --></label>
+        <name>Category_Structure_transfer_successful__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Chat Key --></label>
+        <name>Chat_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Content text --></label>
+        <name>Content_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Content pages transfer successful? --></label>
+        <name>Content_transfer_successful__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Info Text --></label>
+        <name>Customer_Info_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer info transfer successful? --></label>
+        <name>Customer_Info_transfer_successful__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Visual elements transfer successful? --></label>
+        <name>Design_transfer_successful__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Detractor --></label>
+        <name>Detractor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback --></label>
+        <name>Feedback__c</name>
+    </fields>
+    <fields>
+        <label><!-- Five9 ANI --></label>
+        <name>Five9_ANI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue Resolved ? --></label>
+        <name>Issue_Resolved__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Knowledgeable --></label>
+        <name>Knowledgeable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Live Chat Transcript --></label>
+        <name>Live_Chat_Transcript__c</name>
+        <relationshipLabel><!-- CaseSurveys --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Cancellation:  What features do you feel are missing? --></help>
+        <label><!-- Missing Features --></label>
+        <name>Missing_Features__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Responses --></label>
+        <name>Number_of_Responses__c</name>
+    </fields>
+    <fields>
+        <help><!-- Related Opportunity --></help>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Support Surveys --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Cancellation - What platform are you going to --></help>
+        <label><!-- Cancellation Platform - Other --></label>
+        <name>Platform_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Details --></label>
+        <name>Product_Details_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Images Text --></label>
+        <name>Product_Images_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Options Text --></label>
+        <name>Product_Options_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Options transfer successful? --></label>
+        <name>Product_Options_transfer_successful__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product details transfer successful? --></label>
+        <name>Product_details_transfer_successful__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product image transfer successful? --></label>
+        <name>Product_image_transfer_successful__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Professionalism --></label>
+        <name>Professionalism__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promoter --></label>
+        <name>Promoter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recommend ? --></label>
+        <name>Recommend__c</name>
+    </fields>
+    <fields>
+        <label><!-- 301 text --></label>
+        <name>Redirect_301_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- 301 redirect transfer successful? --></label>
+        <name>Redirect_301_transfer_successful__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Satisfaction Detractor --></label>
+        <name>Satisfaction_Detractor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Satisfaction Promoter --></label>
+        <name>Satisfaction_Promoter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Satisfaction --></label>
+        <name>Satisfaction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Completion Date --></label>
+        <name>Survey_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Id --></label>
+        <name>Survey_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Name --></label>
+        <name>Survey_Name__c</name>
+        <picklistValues>
+            <masterLabel>Cancellation Survey</masterLabel>
+            <translation><!-- Cancellation Survey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Migration CSAT Survey</masterLabel>
+            <translation><!-- Migration CSAT Survey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Migration Verification Checklist</masterLabel>
+            <translation><!-- Migration Verification Checklist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support - Post-Chat Popup Survey</masterLabel>
+            <translation><!-- Support - Post-Chat Popup Survey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Basic CSAT</masterLabel>
+            <translation><!-- Support Basic CSAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support NPS Next - Chat</masterLabel>
+            <translation><!-- Support NPS Next - Chat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support NPS Phone Survey</masterLabel>
+            <translation><!-- Support NPS Phone Survey --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Survey Satisfaction --></label>
+        <name>Survey_Satisfaction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Sent Date --></label>
+        <name>Survey_Sent_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Chat</masterLabel>
+            <translation><!-- Chat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Visual text --></label>
+        <name>Visual_Text__c</name>
+    </fields>
+    <layouts>
+        <layout>Migration Layout</layout>
+        <sections>
+            <label><!-- CSAT Survey Details --></label>
+            <section>CSAT Survey Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Verification Survey Details --></label>
+            <section>Verification Survey Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Support Survey Layout</layout>
+        <sections>
+            <label><!-- Cancellation Survey Details --></label>
+            <section>Cancellation Survey Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Migration Survey Details --></label>
+            <section>Migration Survey Details</section>
+        </sections>
+        <sections>
+            <label><!-- Support CSAT Survey Details --></label>
+            <section>Support CSAT Survey Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

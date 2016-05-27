@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>WorkPerformanceCycle$Id</field>
+    </columns>
+    <columns>
+        <field>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests$Id</field>
+    </columns>
+    <columns>
+        <field>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests.Feedbacks$Id</field>
+    </columns>
+    <columns>
+        <field>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests$Subject.Id</field>
+    </columns>
+    <columns>
+        <field>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests$Subject.FirstName</field>
+    </columns>
+    <columns>
+        <field>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests$Subject.LastName</field>
+    </columns>
+    <columns>
+        <field>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests$Subject.Title</field>
+    </columns>
+    <columns>
+        <field>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests$Subject.Manager.Name</field>
+    </columns>
+    <columns>
+        <field>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests$FeedbackRequestState</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>WorkPerformanceCycle$Name</column>
+            <operator>equals</operator>
+            <value>&lt;Your Performance Summary Name here&gt;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests$Subject.Department</column>
+            <operator>equals</operator>
+            <value>&lt;Your Department Name here&gt;</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests.Feedbacks$Question.Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests.Feedbacks$Feedback</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Sample Calibration Report - Department</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Calibration__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>WorkPerformanceCycle$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

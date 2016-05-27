@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Campaign$Name</field>
+    </columns>
+    <columns>
+        <field>Campaign.ContactCampaignMembers$Name</field>
+    </columns>
+    <columns>
+        <field>Campaign.ContactCampaignMembers.OpportunityContactRoles$Name</field>
+    </columns>
+    <columns>
+        <field>Campaign.ContactCampaignMembers.OpportunityContactRoles*Opportunity$New_Product_Plan__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Campaign$Parent</column>
+            <operator>equals</operator>
+            <value>Clients.GMV Ranges.2015Q4.</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Campaign.ContactCampaignMembers.OpportunityContactRoles$RecordType</column>
+            <operator>equals</operator>
+            <value>Opportunity.Store_Purchase</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Opps by Average Monthly GMV Range</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Campaigns_With_Contacts_With_Opportunities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Campaign$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

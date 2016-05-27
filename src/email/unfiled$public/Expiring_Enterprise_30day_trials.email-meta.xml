@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email alert for expiring Enterprise 30day trials for opportunity</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>Expiring Enterprise 30day trials for opportunity</name>
+    <style>freeForm</style>
+    <subject>Enterprise trial ending soon - {!Opportunity.Name}</subject>
+    <textOnly>Hi {!Opportunity.Name}
+
+The 30-day Enterprise trial for {!Opportunity.Name} is expiring on {!Opportunity.CreatedDate}+ 30. Contact the client and/or extend the trial in BMP.
+
+{!Opportunity.Link}</textOnly>
+    <type>html</type>
+</EmailTemplate>

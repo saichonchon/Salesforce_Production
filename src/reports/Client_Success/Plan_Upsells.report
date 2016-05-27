@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>AMOUNT:SUM * 15/100</calculatedFormula>
+        <datatype>currency</datatype>
+        <description>Commission for Upsells</description>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>CREATED</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Commission Amount</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>LEAD_SOURCE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>AMOUNT</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>FISCAL_QUARTER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND (2 OR 4) AND 3</booleanFilter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Opportunity.Upgrade_Store</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CREATED</column>
+            <operator>equals</operator>
+            <value>Scott Smithwick,Fritz Stegmann,Evan Peterson,Scott Orosz,John Hebron,Garrett Cluff,Adam Bilsing,Larry Choate,Isaac Boyles,Steven Bennett,Karen Friedman,Thomas Ekstrand,AB Martinez,Josh Burney,James Esposito,Kathleen Ferenzi,Escalations,Jason Zamora,Steven Bownds,Brian Silvey,Patrick Puente,Cristy Carpenter,Julio Sevilla,Chris Hall,Quoc Dang,Abbey Parker,Foy Howard,Lauren Gettler,Chris Beal,Katherine Kemp,Danielle Canterberry,David Gardner,Kit Gulick,Warren Kleinman,Christopher Partanen,Cortni Keaveney,Tyler Pouchot,David Enriquez,Nikita Puzanenko,Brian Davenport,Dustin Shipley,Brittani Scott,Blake Boykin,Matthew Leach,Sean Mercer,Sasha Akridge,Michael Sparks,Suzanne Ashcraft,Mary Stanish,Rory Regnell,Laurie Zapinski,Timothy Azark,Derek Donovan,Phillip Estrada II,Corey Nihlean,Ian Irvin,Brian Jones,Chas Wilson,Christie Florence,Jeff Nihlean,Pepe Pulido,Jeff Borchman,Ted York,Nestor Islas,Dmitrii Khrunov,Jake Smith,Fred Dobson</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <operator>equals</operator>
+            <value>Closed Won,Purchased</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CREATED</column>
+            <operator>equals</operator>
+            <value>Ariana Lloyd,Brian Miller,Brianna Lewis,Dan Rathke,Eric Roiz,Gregory Bahl,Lucian Villasenor,Jacob Scott,Jimmiek Rankin,Jose Flores,Joseph Alcorn,Josh Popperwell,Kade Reed,Kaitlyn McCormick,Eric Her,Ray Vaccaro,Robert Baker,Seth Bergman,Tanner Johnson,Todd Wallace,Willie Kinsey,Joshua Seals,Guillermo Velez,Brad Mitchell</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CREATED</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER_DEPARTMENT</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Plan Upsells</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

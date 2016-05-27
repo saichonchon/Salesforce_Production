@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact.Opportunities__r$Campaign</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunities__r$MarketingCampaign__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunities__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunities__r$Product__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunities__r$MonthlyRecurringRevenue__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Opportunities__r$Primary_Campaign_Name__c</column>
+            <operator>contains</operator>
+            <value>Prospects.CPC Ads.2015Q4.</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Test</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_with_Opportunities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Contact.Opportunities__r$MarketingCampaign__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Contact.Opportunities__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

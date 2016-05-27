@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>LiveChatTranscript$Name</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$Time_to_Abandon__c</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$Speed_of_Answer__c</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$RequestTime</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$Owner</field>
+    </columns>
+    <description>See when a client abandons and then reconnects immediately</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <aggregateType>RowCount</aggregateType>
+        <dateGranularity>Day</dateGranularity>
+        <field>LiveChatTranscript$LiveChatVisitor</field>
+        <sortByName>RowCount</sortByName>
+        <sortOrder>Desc</sortOrder>
+        <sortType>Aggregate</sortType>
+    </groupingsDown>
+    <name>Chat Abandons by Client</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Live_Chat_Transcripts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>LiveChatTranscript$RequestTime</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>LiveChatTranscript$CreatedDate</dateColumn>
+        <interval>INTERVAL_LASTWEEK</interval>
+    </timeFrameFilter>
+</Report>

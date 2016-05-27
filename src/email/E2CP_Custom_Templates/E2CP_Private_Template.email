@@ -1,0 +1,16 @@
+{!Case.E2CP__Most_Recent_Private_Comment__c} 
+
+Please click here to go directly to the case: 
+{!Case.Link} 
+
+Thank you, 
+{!User.FirstName}
+
+*************************** 
+Case: {!Case.CaseNumber} 
+Subject: {!Case.Subject} 
+Description: 
+{!Case.Description} 
+
+
+Please do not remove: {!Case.E2CP__Case_Thread_Id__c}

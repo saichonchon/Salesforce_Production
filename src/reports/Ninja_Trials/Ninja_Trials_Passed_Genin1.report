@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>lmscons__Transcript_Line__c$lmscons__Training_User_License__c.lmscons__User__c</field>
+    </columns>
+    <columns>
+        <field>lmscons__Transcript_Line__c$lmscons__Quiz__c</field>
+    </columns>
+    <columns>
+        <field>lmscons__Transcript_Line__c$lmscons__Score__c</field>
+    </columns>
+    <columns>
+        <field>lmscons__Transcript_Line__c$lmscons__Status__c</field>
+    </columns>
+    <description>Learners with passing scores on Genin exams. Note: Genin is composed of 5 quizzes.</description>
+    <filter>
+        <criteriaItems>
+            <column>lmscons__Transcript_Line__c$lmscons__Quiz__c</column>
+            <operator>startsWith</operator>
+            <value>CS - Ninja Trials: Genin</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>lmscons__Transcript_Line__c$lmscons__Score_int__c</column>
+            <operator>greaterOrEqual</operator>
+            <value>85</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Ninja Trials - Passed Genin</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Assignments_w_Lookup_Data_CUSTOM__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>lmscons__Transcript_Line__c$lmscons__Score__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>lmscons__Transcript_Line__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

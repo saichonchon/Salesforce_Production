@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_82652830</developerName>
+        <masterLabel>SL</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Case.SL_Flag__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>_IM1_/resource/1379452927000/CS_Flag_Green_IM2_Within SLA_IM3__20_IM4_20_IM5_</sourceValue>
+            </sourceValues>
+            <value>Within SLA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>_IM1_/resource/1379452927000/CS_Flag_Red_IM2_MISSED - SLA_IM3__20_IM4_20_IM5_</sourceValue>
+            </sourceValues>
+            <value>Missed SLA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>_IM1_/resource/1379452927000/CS_Flag_Yellow_IM2_Pending - SLA_IM3__20_IM4_20_IM5_</sourceValue>
+            </sourceValues>
+            <value>Pending</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>_IM1_/resource/1405031526000/Blackflag_IM2_Within SLA_IM3__20_IM4_20_IM5_</sourceValue>
+            </sourceValues>
+            <value>First Response Missing</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>Pie</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_82652830</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>true</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Small</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>Case.First_Response_Date_Time__c</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>Case.Primary_Case_Rep__c</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>Case.SL_Flag__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <operator>equals</operator>
+            <value>Web</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Case.Client_Success</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BucketField_82652830</column>
+            <operator>notEqual</operator>
+            <value>Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <operator>notEqual</operator>
+            <value>Andrew King,Brianna Lewis,Chris Hall,API User,Default Admin User,Adam Ferenzi,Thomas Blahnik,Greg Ellis,John O&apos;Brien,Lauren Clevenger,Fritz Stegmann,Evan Peterson,John Hebron,Brian Silvey,Garrett Cluff,Jason Zamora,Steve Bownds,Patrick Puente,Cristy Carpenter,Chas Wilson,Julio Sevilla,Quoc Dang,Rory Regnell,Abbey Parker,Foy Howard,Lauren Gettler,Chris Beal,David Gardner,Kit Gulick,Danielle Canterberry,Warren Kleinman,Christopher Partanen,Cortni Keaveney,Tyler Pouchot,David Enriquez,Nikita Puzanenko,Brian Davenport,Dustin Shipley,Brittani Scott,Blake Boykin,Eric Roiz,Sasha Akridge,Brian Jones,Matthew Leach,Matt Houck,Mary Stanish,Jeff Borchman,Laurie Zapinski,Timothy Azark,Pepe Pulido,Derek Donovan,Sean Mercer,Phillip Estrada II,Jeff Nihlean,Ian Irvin,Ted York,Nestor Islas,Dmitrii Khrunov,Fred Dobson,Ray Vaccaro,Ariana Lloyd,Brian Miller,Gregory Bahl,Lucian Villasenor,Jacob Scott,Joseph Alcorn,Tanner Johnson,Joshua Seals,Jimmiek Rankin,Willie Kinsey,Eric Her,Jose Flores</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <operator>notEqual</operator>
+            <value>Bungay Beau,Support - API,Support - Escalated Level 1,Cancellation Queue,Billing Queue,Christie Draper,Christopher Beal,Corey Nihlean,Maggie Frederick,Kaitlyn McCormick,Robert Baker,Josh Popperwell,Kade Reed,Dan Rathke,Todd Wallace,Michael Sparks,Jake Smith,Kelly Lena,Dante Munoz,Guillermo Velez,Brad Mitchell</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_82652830</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>SL per Case Comment</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LASTWEEK</interval>
+    </timeFrameFilter>
+</Report>

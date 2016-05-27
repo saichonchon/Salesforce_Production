@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>App Opp Approved</name>
+    <style>formalLetter</style>
+    <subject>Your App Has Been Approved</subject>
+    <textOnly>Hi {!Opportunity.Contact__c},
+
+Congratulations! We’re happy to inform you that your app is approved and already available in the Single Click App Store in the BigCommerce control panel.
+
+You can find a link to promote your app in the My Apps section of our Developer Portal.
+
+
+Just one last step — please email us with your current support contact information in case our staff or clients need any help with your app. Once we have this, we’ll create your listing on bigcommerce.com/apps/.
+
+
+If possible, we’d also love to get a short video for internal training that highlights your app and its value. It should be no longer than five minutes. Having a video is a huge help in getting our teams up-to-speed on your integration so they can recommend it to our clients.
+
+
+Congrats, and happy selling!
+
+
+The App Store Team</textOnly>
+    <type>html</type>
+</EmailTemplate>

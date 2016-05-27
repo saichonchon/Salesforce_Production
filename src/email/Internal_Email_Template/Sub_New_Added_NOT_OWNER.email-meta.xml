@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Internal notification to Subscription owner if Lead owner is different</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Sub:  New Added and NOT OWNED by same rep</name>
+    <style>none</style>
+    <subject>New Sub assigned to you on a Lead/Account that YOU DO NOT OWN!!!</subject>
+    <type>text</type>
+</EmailTemplate>

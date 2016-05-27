@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>Case.Satisfaction__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Case.Survey_Sent__c</field>
+    </columns>
+    <description>Web team&apos;s # of cases closed compared to surveys sent/taken with NPS SAT average score</description>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Case.Client_Success</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Primary_Case_Rep__c</column>
+            <operator>equals</operator>
+            <value>Adrian Estopace,Alvin DeLeon,Aries Leyte,Faith Esguerra,Harold De Asas,Jan Saria,Jeffrey Gregorio,John San Diego,John Ferrer,Jovic Leovis,Jude Abrigo,Jun Tupas,Kenneth Cabaobao,Kim Radaza,Luigi Modesto,Marielle Morre,Marjorie Tamayo,Mark Hernandez,Mary Quilaga,Mireille Ferol,Racel Arce,Regie Matibag,Regine SanJuan,Ryan Juarez,Shirley Detera,Juan Calanoc,Rianne Insigne,Jonathan Castro,Amanda Aguirre,Patricia Santos,Roger Dayap,Jonalyn Fresnido,Raymond Macatangay,Josiephene Caceres,Marfee DelaCruz,Christie Rodriguez,Jerome Cadangyao,Roshaolin Nuqui,Kristel Pura,Jenelyn Pawhay,John Ordonez</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <operator>equals</operator>
+            <value>Web</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Week</dateGranularity>
+        <field>CLOSED_DATEONLY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Survey_Taken__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>BPO Team - Cases Closed w Survey Returns</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <endDate>2016-05-07</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-02-07</startDate>
+    </timeFrameFilter>
+</Report>

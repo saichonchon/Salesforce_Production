@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Design Awards.Autoresponder Email.Whole Emails</name>
+    <style>none</style>
+    <subject>Thanks for your submission!</subject>
+    <textOnly>Preview text
+Hi {{lead.First Name:default=there}},
+Thanks for submitting your store for BigCommerce’s inaugural design awards! Once submissions are closed, we’ll open voting to the public –– so be sure to have your friends, family, coworkers and employees vote for your brand.
+
+In the meantime, you can stay up to date with the latest design awards activities:
+
+Read More &lt;[[http://www.bigcommerce.com/blog/design-awards]]&gt;
+
+We look forward to speaking soon and good luck! 
+
+
+Best, 
+
+
+The BigCommerce Team
+Sara Smith
+
+BigCommerce Sales Associate
+
+sara.smith@bigcommerce.com &lt;[[mailto:sara.smith@bigcommerce.com]]&gt;   /   1-888-699-8911 &lt;[[tel:+18886998911]]&gt; ext 313
+
+bigcommerce.com &lt;[[http://www.bigcommerce.com]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

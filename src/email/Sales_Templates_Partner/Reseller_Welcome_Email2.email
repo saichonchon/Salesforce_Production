@@ -1,0 +1,19 @@
+Hi {!Contact.FirstName},<br />
+<br />
+Welcome to the BigCommerce Partner Program! We’re happy to add an experienced web pro like you to our family. Attached you’ll find your welcome kit, which includes a BigCommerce Reseller logo you can feature on your site, blog post and social media messaging to publicize our partnership. <br />
+<br />
+I’m available to answer any questions you might have as you’re getting started. Another great resource is your Partner Portal, where you can review your terms and conditions and check on your commissions. You’ll also find some great tools to help you promote our new partnership to your clients, including a pre-written, coded webpage and email templates that tell them all about BigCommerce. You should have already received your login details for that in another email. If you need help logging in, please let me know.<br />
+<br />
+If you need anything, please don't hesitate to contact me.<br />
+<br /><br />
+{!User.FirstName} {!User.LastName}<br />
+<span style='color: rgb(119,119,119);text-decoration: none;'>
+Partner Sales Executive<br /><br />
+<img src="http://s8.postimage.org/v0cl79at1/bc_logo_email_sig.png" alt="BigCommerce" /><br /><br />
+P {!User.Phone} | 1-888-699-8911 (Toll Free)<br />
+E  {!User.Email}<br />
+A  11305 Four Points Drive, Building 2 Floor 3 | Austin, Texas 78726<br />
+<br />
+Visit us at <a style='color: rgb(18,121,154);text-decoration: none;' href='http://www.bigcommerce.com'>bigcommerce.com</a><br />
+Follow us <a href='' style='color: rgb(18,121,154);text-decoration: none;'>News</a> | <a href='' style='color: rgb(18,121,154);text-decoration: none;'>Facebook</a> | <a href='' style='color: rgb(18,121,154);text-decoration: none;'>Twitter</a> 
+</span>

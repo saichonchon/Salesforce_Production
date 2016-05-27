@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>BIG-11960 Closure Notification</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>BIG-11960 Email</name>
+    <style>freeForm</style>
+    <subject>Case Number: {!Case.CaseNumber} Subject: {!Case.Subject}</subject>
+    <textOnly>*******************************************************************
+Case Number: {!Case.CaseNumber} 
+Issue Reported: {!Case.Description}
+Hello,
+
+Thank you for your patience while we worked to resolve the issue causing incorrect pagination on web pages created by the use of blog tags. Previously pagination links on pages created for blog tags would redirect to the next page of all blog posts instead of just the next page of blog posts that use that tag. This has been corrected and pagination for blog tag pages now navigates between pages of posts using that tag normally.
+Please don&apos;t hesitate to contact us 24hrs a day if you have any other questions or concerns: https://support.bigcommerce.com/contact.php
+
+BigCommerce Support
+http://support.bigcommerce.com
+
+You can reply to this email or to view your case&apos;s status you can go here.
+
+Please do not remove: {!Case.E2CP__Case_Thread_Id__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

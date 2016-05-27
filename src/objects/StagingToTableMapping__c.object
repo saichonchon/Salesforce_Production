@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <customSettingsVisibility>Protected</customSettingsVisibility>
+    <description>Custom setting used to Map fields from the MBA Staging tables to the main tables.</description>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Used to determine if this record is currently active for mapping</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to determine if this record is currently active for mapping</inlineHelpText>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Object_Field_Name_API__c</fullName>
+        <description>The API Name of the field for the object to map the staging object field to</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The API Name of the field for the object to map the staging object field to</inlineHelpText>
+        <label>Object Field Name (API)</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Object_Name_API__c</fullName>
+        <description>The API Name of the object to map the staging object to</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The API Name of the object to map the staging object to</inlineHelpText>
+        <label>Object Name (API)</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Staging_Object_Field_Name_API__c</fullName>
+        <description>The API name of the field from the staging object</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The API name of the field from the staging object</inlineHelpText>
+        <label>Staging Object Field Name (API)</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Staging_Object_Name_API__c</fullName>
+        <description>The API name of the staging object holding the field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The API name of the staging object holding the field</inlineHelpText>
+        <label>Staging Object Name (API)</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>StagingToTableMapping</label>
+</CustomObject>

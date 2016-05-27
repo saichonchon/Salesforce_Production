@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Portal xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <defaultLanguage>en_US</defaultLanguage>
+    <description>Logo 2</description>
+    <emailSenderAddress>mitch@bigcommerce.com</emailSenderAddress>
+    <emailSenderName>mitch@bigcommerce.com</emailSenderName>
+    <enableSelfCloseCase>false</enableSelfCloseCase>
+    <forgotPassTemplate>PRM_Templates/PRM_Reset_Password</forgotPassTemplate>
+    <isSelfRegistrationActivated>false</isSelfRegistrationActivated>
+    <newPassTemplate>PRM_Templates/PRM_Reset_Password</newPassTemplate>
+    <newUserTemplate>PRM_Templates/NewUserEmail</newUserTemplate>
+    <showActionConfirmation>false</showActionConfirmation>
+    <type>Partner</type>
+</Portal>

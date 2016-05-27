@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Carrello</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Carrelli</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Carrello ID</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Follow up email with resource links to send to customers</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>Ninja Follow Up Email</name>
+    <style>freeForm</style>
+    <subject>Following up on your BigCommerce store</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+As promised, I wanted to follow up with you after our conversation about your BigCommerce store. First, thanks or calling! I&apos;ve included a list of resources below based on what we covered. For more help, please call back anytime at 1-844-632-8914.
+
+RESOURCES BASED ON OUR DISCUSSION:
+
+Products
+
+Products Overview - A summary of resources regarding products, product options and categories.
+Guide to Products - Coming soon.
+Guide to Import/Export - Importing and exporting products so you can manage your catalog in bulk.
+Product Sourcing Apps - Dropshippers can help you source products to sell or add to your inventory.
+BigCommerce Blog - Subscribing to our blog will help you stay on top of ecommerce trends and learn best practices. Here are some specific posts regarding products:
+
+9 ways to generate a viable product or service idea
+Factors to consider when sourcing your products
+9 essential tips to evaluate product market viability
+8 ways to conduct market research
+
+
+Categories
+
+Managing Product Categories - The essentials of category creation and management.
+
+Product Options
+
+Adding Product Options - How product options work (with examples), adding options and rules, tracking inventory by SKU.
+Product Options: Rules - Creating rules, behaviors rule types, conditional options and rule management.
+Product SKUs - Assigning SKUs to base products or variants, and tracking inventory.
+
+Domain &amp; DNS
+
+Domain &amp; DNS Overview - Summary of resources about domains &amp; DNS.
+Guide to Domains &amp; DNS - In-depth guide with advice on selecting a domain, how DNS works, propagation and SEO best practices.
+
+SSL + Trust Seal
+
+SSL Overview - Summary of resources on SSLs.
+GeoTrust SSL Seal - Add a GeoTrust seal to the footer of your store.
+
+Shipping
+
+Shipping Overview - Summary of shipping resources.
+Guide to Shipping - In-depth guide covering shipping essentials, building a profitable shipping strategy, using shipping as a marketing tool, customer examples and more.
+
+Payment Gateway
+
+Payments Overview - Summary of payment resources.
+Available Payment Gateways - What we offer, our recommendations, high-risk options, gateways that support refunds and more.
+
+Taxes
+
+Tax Overview - Summary of tax resources.
+Avalara Premium Account Creation &amp; Pricing - More information about getting started with Avalara Premium.
+Connecting Avalara Premium - More details on connecting an Avalara Premium account and using it with BigCommerce.
+Avalara&apos;s Free Resources - Tax rates, calculators, downloadable tables and more.
+
+Blogging
+
+Blog Overview - Summary of blogging resources.
+
+Store Profile
+
+Store Profile Settings - More details about your store profile.
+
+Design Theme
+
+Themes &amp; Design Overview - Summary of design themes and resources.
+Theme Store - See which theme will best showcase your products and convert shoppers to buyers.
+Partners - Leverage our design partners to customize your storefront for your target audience.
+
+Launch Your Store
+
+Launching Your Store - How to officially open your BigCommerce store.
+
+In-App Help
+
+Support Portal
+
+Learning Guides - Check out our guides, which provide tips and industry best practices to help you determine which features can help you grow, learn from other store owners, and more.
+Support Articles - Short how-to tutorials and troubleshooting.
+BigCommerce University - Watch our video series to learn how to launch and grow your business.
+Community - Get advice about your business from our expert clients, staff and partners.
+
+App Store - Add functionality and customize your business to your target audience.
+BigCommerce Partners - Get help designing, programming or marketing your online store from our list of certified experts.
+BigCommerce Blog - Subscribe and receive information on industry trends and ecommerce best practices.
+
+
+ADDITIONAL RESOURCES TO HELP YOU SELL MORE:
+
+Store Settings
+
+Store Settings Overview - A summary of all settings in this section of your control panel.
+
+SEO
+
+SEO Overview - Summary of resources regarding SEO.
+Guide to SEO - In-depth guide on search engine optimization. Chapter 6: BigCommerce SEO Success Essentials can help you get started, and we&apos;ve included advanced tips and resources to keep you going.
+Guide to Keyword Research - In-depth guide on conducting keyword research and measuring success.
+
+Promotional Tools
+
+Promotions Overview - Summary of resources on coupons, discounts and running sales.
+Customer Management Overview - Segmenting customers into groups, promoting account creation, managing customers, customizing communications and how to target promotional offers.
+
+Email Marketing
+
+Email Marketing Overview - Summary of email marketing resources.
+Guide to Abandoned Cart Saver - In-depth guide that includes feature benefits, a recovery calculator, customer testimonials, best practices and how to measure success.
+
+Social Media
+
+Social Media Overview - Summary of social media resources.
+
+Multi-Channel
+
+Multi-Channel Marketing Overview - Summary of multi-channel marketing resources.
+
+Analytics
+
+Analytics Overview - Summary of analytics resources.
+Guide to BigCommerce Analytics - In-depth guide on the benefits of BigCommerce Analytics, including reports, how to put data into action and analytics terms.
+
+Order Management
+
+Order Management Overview - Summary of order management resources.
+Guide to Order Management - In-depth guide on how to develop an order management strategy and leverage BigCommerce functionality.
+
+Customer Management
+
+Customer Management Overview - Summary of customer management resources.
+
+Inventory Management
+
+Guide to Inventory Management - In-depth on how to develop an inventory management strategy and leverage BigCommerce functionality.
+
+Store Maintenance
+
+Backups Overview - Summary of resources on data backups.
+Store Logs - System and staff action logs.
+
+
+Happy selling,
+
+{!User.Name}
+{!User.Title}
+BigCommerce Technical Support
+http://support.bigcommerce.com</textOnly>
+    <type>html</type>
+</EmailTemplate>

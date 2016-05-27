@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>RollupConfigs</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>RollupConfigs</value>
+    </caseValues>
+    <fields>
+        <help><!-- Stores the API name of the child object which contains fields to be rolled up by the Parent --></help>
+        <label><!-- Child Object Name --></label>
+        <name>Child_Object_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Criteria --></label>
+        <name>Criteria__c</name>
+    </fields>
+    <fields>
+        <help><!-- Stores the API name of the Parent object which will display the roll-up summaries of lookup fields --></help>
+        <label><!-- Parent Object --></label>
+        <name>Parent_Object__c</name>
+    </fields>
+    <fields>
+        <help><!-- Holds the API name of the field on the Parent object which will display the rolled-up summary of fields on the Child. Example: total_hours_spent__c --></help>
+        <label><!-- parentQueryField1 --></label>
+        <name>parentQueryField1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Holds the API name of the field on the Parent object which will display the rolled-up summary of fields on the Child. Example: total_hours_spent__c --></help>
+        <label><!-- parentQueryField2 --></label>
+        <name>parentQueryField2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Holds the API name of the field on the Child object which will be rolled up by the Parent. Example: hours_spent__c --></help>
+        <label><!-- parentQueryField3 --></label>
+        <name>parentQueryField3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Holds the API name of the field on the Parent object which will display the rolled-up summary of fields on the Child. Example: total_hours_spent__c --></help>
+        <label><!-- parentQueryField4 --></label>
+        <name>parentQueryField4__c</name>
+    </fields>
+    <fields>
+        <help><!-- Holds the API name of the field on the Parent object which will display the rolled-up summary of fields on the Child. Example: total_hours_spent__c --></help>
+        <label><!-- parentQueryField5 --></label>
+        <name>parentQueryField5__c</name>
+    </fields>
+    <fields>
+        <help><!-- Holds the API name of the field on the Parent object which will display the rolled-up summary of fields on the Child. Example: total_hours_spent__c --></help>
+        <label><!-- parentQueryField6 --></label>
+        <name>parentQueryField6__c</name>
+    </fields>
+    <fields>
+        <help><!-- Holds the API name of the field on the parent which stores the aggregated number of child rows (e.g., if there are 15 children for a parent, value will be &quot;15&quot;) --></help>
+        <label><!-- parentRowCount --></label>
+        <name>parentRowCount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Holds the API name of the field on the Child object which will be rolled up by the Parent. Example: hours_spent__c --></help>
+        <label><!-- queryField1 --></label>
+        <name>queryField1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Holds the API name of the field on the Child object which will be rolled up by the Parent. Example: hours_spent__c --></help>
+        <label><!-- queryField2 --></label>
+        <name>queryField2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Holds the API name of the field on the Child object which will be rolled up by the Parent. Example: hours_spent__c --></help>
+        <label><!-- queryField3 --></label>
+        <name>queryField3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Holds the API name of the field on the Child object which will be rolled up by the Parent. Example: hours_spent__c --></help>
+        <label><!-- queryField4 --></label>
+        <name>queryField4__c</name>
+    </fields>
+    <fields>
+        <help><!-- Holds the API name of the field on the Child object which will be rolled up by the Parent. Example: hours_spent__c --></help>
+        <label><!-- queryField5 --></label>
+        <name>queryField5__c</name>
+    </fields>
+    <fields>
+        <help><!-- Holds the API name of the field on the Child object which will be rolled up by the Parent. Example: hours_spent__c --></help>
+        <label><!-- queryField6 --></label>
+        <name>queryField6__c</name>
+    </fields>
+    <fields>
+        <help><!-- Holds the API name of the field on the Child that is the Lookup relationship to the parent. Example: parent_account__c --></help>
+        <label><!-- queryField_parentRelationshipName --></label>
+        <name>queryField_parentRelationshipName__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

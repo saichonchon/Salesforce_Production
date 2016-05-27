@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LiveChatAgentConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <users>
+            <user>brian.silvey@bigcommerce.com</user>
+            <user>christopher.partanen@bigcommerce.com</user>
+            <user>cortni.jamerson@bigcommerce.com</user>
+            <user>derek.donovan@bigcommerce.com</user>
+            <user>dustin.shipley@bigcommerce.com</user>
+            <user>guillermo.velez@bigcommerce.com</user>
+            <user>isaac.boyles@bigcommerce.com</user>
+            <user>john.hebron@bigcommerce.com</user>
+            <user>jose.flores@bigcommerce.com</user>
+            <user>nikita.puzanenko@bigcommerce.com</user>
+            <user>thomas.blahnik@bigcommerce.com</user>
+            <user>timothy.azark@bigcommerce.com</user>
+            <user>warren.kleinman@bigcommerce.com</user>
+        </users>
+    </assignments>
+    <capacity>3</capacity>
+    <criticalWaitTime>120</criticalWaitTime>
+    <enableAgentFileTransfer>true</enableAgentFileTransfer>
+    <enableAgentSneakPeek>true</enableAgentSneakPeek>
+    <enableAutoAwayOnDecline>true</enableAutoAwayOnDecline>
+    <enableChatMonitoring>true</enableChatMonitoring>
+    <enableChatTransfer>true</enableChatTransfer>
+    <enableLogoutSound>false</enableLogoutSound>
+    <enableNotifications>true</enableNotifications>
+    <enableRequestSound>true</enableRequestSound>
+    <enableSneakPeek>true</enableSneakPeek>
+    <enableWhisperMessage>true</enableWhisperMessage>
+    <label>Tier 2 Support Configuration</label>
+    <supervisorDefaultButtonFilter>Tier_2_Support</supervisorDefaultButtonFilter>
+    <supervisorDefaultSkillFilter>Tier_2_Support</supervisorDefaultSkillFilter>
+    <supervisorSkills>
+        <skill>Support_Skill</skill>
+        <skill>Tier_2_Support</skill>
+    </supervisorSkills>
+    <transferableSkills>
+        <skill>Tier_2_Support</skill>
+    </transferableSkills>
+</LiveChatAgentConfig>

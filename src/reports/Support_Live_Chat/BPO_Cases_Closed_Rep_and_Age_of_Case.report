@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_30775879</developerName>
+        <masterLabel>Age in Days</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Case.Case_Age_in_Days__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>1</to>
+            </sourceValues>
+            <value>&lt;= 1 Day</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>1</from>
+                <to>2</to>
+            </sourceValues>
+            <value>2 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>2</from>
+                <to>3</to>
+            </sourceValues>
+            <value>3 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>3</from>
+                <to>7</to>
+            </sourceValues>
+            <value>4-7 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>7</from>
+            </sourceValues>
+            <value>&gt; 7 Days</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_9370094</developerName>
+        <masterLabel>Age of case (hours)</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>AGE</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>24</to>
+            </sourceValues>
+            <value>1 day</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>24</from>
+                <to>48</to>
+            </sourceValues>
+            <value>2 days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>48</from>
+                <to>72</to>
+            </sourceValues>
+            <value>3 days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>72</from>
+                <to>96</to>
+            </sourceValues>
+            <value>4 days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>96</from>
+                <to>120</to>
+            </sourceValues>
+            <value>5 days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>120</from>
+                <to>168</to>
+            </sourceValues>
+            <value>6-7 days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>168</from>
+            </sourceValues>
+            <value>&gt;7 days</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_9370094</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Small</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Case.Case_Closed_By__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATE</field>
+    </columns>
+    <columns>
+        <field>Case.Case_Age_in_Days__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Case.Client_Success</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Case_Closed_By__c</column>
+            <operator>equals</operator>
+            <value>Adrian Estopace,Faith Esguerra,Gian deJesus,John Ferrer,Jun Tupas,Mark Hernandez,Mary Hazel Quilaga,Nicollo Nalus,Patricia Cacho,Regine SanJuan,Renz Santos,Richard Nambatac,Shirley Detera</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <operator>equals</operator>
+            <value>Web</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>STATUS</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_9370094</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>BPO - Cases Closed/Rep and Age of Case</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <endDate>2016-05-18</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-05-01</startDate>
+    </timeFrameFilter>
+</Report>

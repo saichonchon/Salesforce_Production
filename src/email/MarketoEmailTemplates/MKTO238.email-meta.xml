@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Demo Request Attribution.Autoresponder</name>
+    <style>none</style>
+    <subject>Your BigCommerce Demo Request</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+
+Thank you for your interest in BigCommerce. We have received your request and will be in touch shortly.
+
+Kind regards,
+Jeremy Peabody
+Ecommerce Business Consultant
+ jeremy.peabody@bigcommerce.com &lt;mailto:jeremy.peabody@bigcommerce.com&gt;   /   1-844-632-8912 &lt;tel:+18446328912&gt;
+ bigcommerce.com &lt;[[http://www.bigcommerce.com]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

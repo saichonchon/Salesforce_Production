@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CallCenter xmlns="http://soap.sforce.com/2006/04/metadata">
+    <adapterUrl>https://localhost:11001</adapterUrl>
+    <displayName>4.0 Connector with CTI 4.0</displayName>
+    <displayNameLabel>Display Name</displayNameLabel>
+    <internalNameLabel>Internal Name</internalNameLabel>
+    <sections>
+        <items>
+            <label>Description</label>
+            <name>reqDescription</name>
+            <value>Integrates Interactive Intelligence CIC with Salesforce.com</value>
+        </items>
+        <items>
+            <label>CTI Connector ProgId</label>
+            <name>reqProgId</name>
+            <value>ININSalesforceConnector.ININAdapterBa40.1</value>
+        </items>
+        <items>
+            <label>Version</label>
+            <name>reqVersion</name>
+            <value>4.0</value>
+        </items>
+        <items>
+            <label>CTI Adapter URL</label>
+            <name>reqAdapterUrl</name>
+            <value>https://localhost:11001</value>
+        </items>
+        <label>General Information</label>
+        <name>reqGeneralInfo</name>
+    </sections>
+    <sections>
+        <items>
+            <label>CTI Configuration Name</label>
+            <name>CtiConfigurationName</name>
+            <value>ININSalesforceConnector40CTI40</value>
+        </items>
+        <label>Configuration Options</label>
+        <name>reqConfiguration</name>
+    </sections>
+    <version>4</version>
+</CallCenter>

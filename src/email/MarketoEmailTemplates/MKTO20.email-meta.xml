@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Current Trial: January 2016.Day 06</name>
+    <style>none</style>
+    <subject>Need some help? Check out Bigcommerce University!</subject>
+    <textOnly>Watch our quick videos hosted by ecommerce consultants to become an online selling expert
+Become an online selling expert at Bigcommerce University
+Each of our quick videos is hosted by ecommerce experts Katey and James, and covers need-to-know topics like how to launch your store, attract shoppers, improve website conversion and build customer loyalty. Start with &quot;A Quick Tour of Your Bigcommerce Control Panel.&quot;
+Watch our short videos &lt;[[https://support.bigcommerce.com/articles/University/Quick-Tour-of-Bigcommerce-Video]]&gt;
+Speak with one of our ecommerce experts today at 1-866-949-5336 &lt;[[tel:+18669495336]]&gt;.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Square Export GA.Email 1</name>
+    <style>none</style>
+    <subject>Now Available — Inventory syncing with Square</subject>
+    <textOnly>We’re excited to announce our improved integration with Square that syncs inventory between your online and offline stores.
+Sync your online and in-store inventory
+See how easy Square makes inventory syncing
+Learn more &lt;[[https://www.bigcommerce.com/blog/bigcommerce-and-square-launch-inventory-sync/]]&gt;
+Inventory syncing with Square is now available
+We’re excited to announce our improved integration with Square that syncs inventory between your online and offline stores.
+Connect BigCommerce and Square to:
+
+
+ - Launch quickly — save hundreds of hours by automatically pushing your BigCommerce product catalog into Square Dashboard
+ - Manually adjust stock levels — all changes are automatically reflected in your online store and Square Dashboard
+ - Avoid overselling — inventory instantly syncs across all channels when orders are placed
+Setting up Square is easy:
+
+
+
+ - Visit Settings &gt; Point of Sale 
+
+
+ - Click “Connect” and log in or create an account 
+
+
+ - Click Import/Export to start automatically syncing your BigCommerce products with Square
+
+
+
+ &lt;[[https://www.youtube.com/watch?v=pOaLt4_kPTA]]&gt;
+Set up Square &lt;[[https://login.bigcommerce.com/login]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

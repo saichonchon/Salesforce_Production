@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Portal xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <admin>maria.huemmer@bigcommerce.com</admin>
+    <defaultLanguage>en_US</defaultLanguage>
+    <description>Partner Portal</description>
+    <emailSenderAddress>no_reply@bigcommerce.com</emailSenderAddress>
+    <emailSenderName>BigCommerce</emailSenderName>
+    <enableSelfCloseCase>false</enableSelfCloseCase>
+    <forgotPassTemplate>PRM_Templates/PRM_Reset_Password</forgotPassTemplate>
+    <isSelfRegistrationActivated>false</isSelfRegistrationActivated>
+    <logoDocument>BigCommerce_Logos/BC_Letterhead_TOp.png</logoDocument>
+    <logoutUrl>http://www.bigcommerce.com/</logoutUrl>
+    <newPassTemplate>PRM_Templates/PRM_Reset_Password</newPassTemplate>
+    <newUserTemplate>PRM_Templates/NewUserEmail</newUserTemplate>
+    <showActionConfirmation>false</showActionConfirmation>
+    <type>Partner</type>
+</Portal>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>IRCE Ecommerce Workshop.Save the Date Email 2</name>
+    <style>none</style>
+    <subject>Complimentary Workshop Pass — Best Practices in Ecommerce</subject>
+    <textOnly>Join us for the Best Practices in Ecommerce workshop hosted by BigCommerce.
+Hi {{lead.First Name:default=there}},
+Planning to be in the Chicago area on June 7th?
+Join us for the Best Practices in Ecommerce Workshop &lt;[[http://grow.bigcommerce.com/BigCommerce-IRCE16-Ecommerce-Workshop.html]]&gt; hosted by BigCommerce. This free event offers a unique opportunity for online merchants to connect and network with industry leaders to discover the latest ecommerce trends, all while learning best practices in store design, conversion, and omnichannel.
+What: Best Practices in Ecommerce Workshop, lunch will be provided
+When: Tuesday, June 7th from 11:00 AM - 4:00 PM
+Where: Hyatt Regency 151 E Upper Wacker Dr, Chicago, IL 60601
+
+
+
+
+Register to attend &lt;[[http://grow.bigcommerce.com/BigCommerce-IRCE16-Ecommerce-Workshop.html]]&gt;
+Hope to see you there,
+The BigCommerce Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

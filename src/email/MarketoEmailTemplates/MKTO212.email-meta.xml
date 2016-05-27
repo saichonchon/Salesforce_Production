@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Customer Retention Pilot.Email 1</name>
+    <style>none</style>
+    <subject>Hi {{lead.First Name:default=there}}, want 1:1 assistance with your BigCommerce store?</subject>
+    <textOnly>Our team is standing by to help you sell more.
+Hi {{lead.First Name:default=there}},
+We’ve recently reviewed your store’s performance, and would like to offer the opportunity to speak with our BigCommerce experts. On average, merchants who have launched their store with the help of our Client Success team have improved search traffic by 32% and increased revenue by 47%.
+
+To take advantage of this free service, call 844-632-8914 &lt;[[tel:+18446328914]]&gt;.
+
+You can also review our Store Launch Guide &lt;[[https://support.bigcommerce.com/articles/Learning/Store-Launch-Guide?utm_campaign=SS:%20Onboarding%20Retention%20Invite&amp;utm_source=retention%20pilot&amp;utm_medium=email%20&amp;utm_content=Store%20Launch%20Guide]]&gt; to learn the essentials for opening your store, plus get resources that can drive high-converting traffic.
+We look forward to working with you, 
+The BigCommerce Client Success Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <aggregates>
+        <calculatedFormula>RowCount</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel># Requests</masterLabel>
+        <reportType>CustomEntity$Admin_Request__c</reportType>
+        <scale>2</scale>
+    </aggregates>
+    <block>
+        <blockInfo>
+            <blockId>B1</blockId>
+            <joinTable>u</joinTable>
+        </blockInfo>
+        <columns>
+            <field>Admin_Request__c.Number__c</field>
+        </columns>
+        <columns>
+            <field>Admin_Request__c.Requesting_Department__c</field>
+        </columns>
+        <columns>
+            <field>CUST_NAME</field>
+        </columns>
+        <columns>
+            <field>Admin_Request__c.Status__c</field>
+        </columns>
+        <columns>
+            <field>Admin_Request__c.CreatedDate__c</field>
+        </columns>
+        <columns>
+            <field>Admin_Request__c.Sales_Ops_Level__c</field>
+        </columns>
+        <columns>
+            <field>Admin_Request__c.Est_Completed_Date__c</field>
+        </columns>
+        <filter>
+            <criteriaItems>
+                <column>CUST_RECORDTYPE</column>
+                <operator>equals</operator>
+                <value>Admin_Request__c.Admin_Request</value>
+            </criteriaItems>
+            <criteriaItems>
+                <column>Admin_Request__c.Requesting_Department__c</column>
+                <operator>equals</operator>
+                <value>Migration,Retention,Sales - Acquisition,Sales - Partner,Sales - SBD</value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>SMLT Biz Apps Requests</name>
+        <params>
+            <name>co</name>
+            <value>0</value>
+        </params>
+        <reportType>CustomEntity$Admin_Request__c</reportType>
+        <scope>organization</scope>
+        <sortColumn>Admin_Request__c.Requesting_Department__c</sortColumn>
+        <sortOrder>Desc</sortOrder>
+        <timeFrameFilter>
+            <dateColumn>CUST_LAST_UPDATE</dateColumn>
+            <interval>INTERVAL_LAST30</interval>
+        </timeFrameFilter>
+    </block>
+    <block>
+        <blockInfo>
+            <blockId>B0</blockId>
+            <joinTable>u</joinTable>
+        </blockInfo>
+        <columns>
+            <field>Milestone1_Project__c.Department__c</field>
+        </columns>
+        <columns>
+            <field>CUST_NAME</field>
+        </columns>
+        <columns>
+            <field>Milestone1_Project__c.Business_Owner__c</field>
+        </columns>
+        <columns>
+            <field>Milestone1_Project__c.Status__c</field>
+        </columns>
+        <filter>
+            <criteriaItems>
+                <column>Milestone1_Project__c.Department__c</column>
+                <operator>equals</operator>
+                <value>Biz Apps,Marketing,Migration,Retention,Sales - Acquisition,Sales - Partner,Sales - SBD</value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>Client Success Projects</name>
+        <params>
+            <name>co</name>
+            <value>0</value>
+        </params>
+        <reportType>CustomEntity$Milestone1_Project__c</reportType>
+        <scope>organization</scope>
+        <timeFrameFilter>
+            <dateColumn>CUST_LAST_UPDATE</dateColumn>
+            <interval>INTERVAL_LAST30</interval>
+        </timeFrameFilter>
+    </block>
+    <blockInfo>
+        <blockId xsi:nil="true"/>
+        <joinTable>u</joinTable>
+    </blockInfo>
+    <description>All SMLT Projects and Requests modified in last 30 days.</description>
+    <format>MultiBlock</format>
+    <name>SMLT Projects and Requests</name>
+    <reportType>CustomEntity$Admin_Request__c</reportType>
+    <showDetails>true</showDetails>
+</Report>

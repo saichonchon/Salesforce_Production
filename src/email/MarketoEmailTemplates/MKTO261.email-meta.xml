@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Design Awards - GTM 1058.Last Chance Email - GTM 1056</name>
+    <style>none</style>
+    <subject>Don&apos;t forget to submit your store for the BigCommerce Design Awards</subject>
+    <textOnly>Preview text
+Hi {{lead.First Name:default=there}},
+With two of the busiest shopping days of the year behind us and Christmas around the corner, you may be looking for ways to maximize your time with family and friends while still keeping an eye on your store.
+
+To help you #SellSmart this holiday season I thought I’d share our recent blog post: Holiday Hacks: 5 vetted tips for on-the-go store management &lt;[[http://www.bigcommerce.com]]&gt; — full of ideas that will maximize your ability to work on the go.
+
+Kind regards,
+Sara Smith
+
+BigCommerce Sales Associate
+
+sara.smith@bigcommerce.com &lt;[[mailto:sara.smith@bigcommerce.com]]&gt;   /   1-888-699-8911 &lt;[[tel:+18886998911]]&gt; ext 313
+
+bigcommerce.com &lt;[[http://www.bigcommerce.com]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

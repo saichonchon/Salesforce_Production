@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OPP.RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>OPP.NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.MaxSub_MonthlyRecurringRevenue__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OPP.AMOUNT</field>
+    </columns>
+    <columns>
+        <field>Opportunity.PurchaseDate__c</field>
+    </columns>
+    <columns>
+        <field>OPP.CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>PRIMARY</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CAMPAIGN.NAME</column>
+            <operator>equals</operator>
+            <value>CS: Enterprise Upsell - Support</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>CS: Enterprise Upsell</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignInfluence</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>OPP.AMOUNT</sortColumn>
+    <sortOrder>Desc</sortOrder>
+</Report>

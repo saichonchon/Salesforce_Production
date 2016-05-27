@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CaseOwnerQueue</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CaseOwnerQueues</value>
+    </caseValues>
+    <fields>
+        <label><!-- ChangeOwner Value --></label>
+        <name>ChangeOwner_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Queue Name --></label>
+        <name>Queue_Name__c</name>
+    </fields>
+    <layouts>
+        <layout>CaseOwnerQueue Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

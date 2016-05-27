@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CREATED</column>
+            <operator>equals</operator>
+            <value>Alyss Noland,Ariana Lloyd,Blake Boykin,Brad Mitchell,Brandy Simek,Brian Davenport,Brian Jones,Brian Miller,Brittani Scott,Chas Wilson,Chris Hall,Christie Florence,Jacob Scott,Cortni Keaveney,Dani Feibleman,Danielle Canterberry,Darcy Durham,David Enriquez,David Gardner,Derek Donovan,Dustin Shipley,Eric Olivarez,Gregory Bahl,Isaac Boyles,Jay Mendoza,Jeff Borchman,Jeff Nihlean,Joanna Moon,Jose Pulido,Joseph Alcorn,Kit Gulick,Laurie Zapinski,Lucian Villasenor,Marco Garcia,Matt McDonald,Matthew Leach,Nikita Puzanenko,Phillip Estrada,Phivu Nguyen,Robert Mullins,Rory Regnell,Sean Mercer,Seth Bergman,Tanner Johnson,Timothy Azark,Tyler Pouchot</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CREATED</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Case Creation Phone Ninjas</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LASTWEEK</interval>
+    </timeFrameFilter>
+</Report>

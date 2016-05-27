@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Marty/Owen PCF.Email 2 - Conf Case Study</name>
+    <style>none</style>
+    <subject>Thanks! Here&apos;s your case study</subject>
+    <textOnly>Thanks for downloading the TwirlyGirl Case Study from Bigcommerce
+Thanks for downloading the Bigcommerce case study &lt;[[http://grow.bigcommerce.com/rs/695-JJT-333/images/twirlygirl-casestudy-pcf.pdf]]&gt; from TwirlyGirl. 
+
+Give us a call &lt;[[tel:+18446328911]]&gt; if you&apos;d like to learn how you can increase sales by switching to Bigcommerce.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

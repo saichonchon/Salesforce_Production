@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>BIG-18364 Closure Notification</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>BIG-18364 Email</name>
+    <style>freeForm</style>
+    <subject>Case Number: {!Case.CaseNumber} Subject: {!Case.Subject}</subject>
+    <textOnly>******************************************************************
+Case Number: {!Case.CaseNumber}
+Issue Reported: {!Case.Description}
+
+Hello,
+
+We wanted to send an update on the issue that you had reported to us.  Stores are now able display more than 30 values using our faceted search feature.
+
+NOTE:  If you have customized templates or are using a non-compatible theme, you will need to take additional steps to accommodate this new feature.  For more information on enabling expanded facets display see this support article:
+
+https://developer.bigcommerce.com/themes/product-filtering-toolkit
+
+Please don&apos;t hesitate to contact us if you have further questions. Technical support is available 24/7:
+
+BigCommerce Support
+http://support.bigcommerce.com
+
+You can reply to this email or to view your case&apos;s status you can go here.
+
+Please do not remove: {!Case.E2CP__Case_Thread_Id__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

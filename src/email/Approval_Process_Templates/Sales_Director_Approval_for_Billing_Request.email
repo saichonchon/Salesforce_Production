@@ -1,0 +1,17 @@
+Your approval is required for the credit or refund requested for account {!Case.Account}.
+
+Requestor: {!Case.CreatedBy}
+Refund/Credit Amount: {!Case.Refund_Credit_Amount__c}
+Case Reason: {!Case.Reason}
+Reason Code: {!Case.Reason_Code__c}
+Store URL: {!Case.Bigcommerce_Store_URL__c}
+Store Plan: {!Case.Bigcommerce_Plan__c}
+
+Subject: {!Case.Subject}
+Description:
+{!Case.Description}
+
+Additional Notes:
+{!Case.Success_Squad_Notes__c}
+
+Case link: {!Case.Link}

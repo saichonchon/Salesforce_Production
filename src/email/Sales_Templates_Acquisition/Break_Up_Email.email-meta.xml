@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Break Up Email</name>
+    <style>none</style>
+    <subject>RE: If we cannot connect, check out our FREE WEBINARS!</subject>
+    <textOnly>Hello {!Lead.FirstName}
+
+Sorry we haven&apos;t been able to connect-
+
+I am sure you are busy and now may not be the right time for you to take your online store to the next level. Whenever you’re ready, I’d still love to help you evaluate whether BigCommerce’s advanced marketing features and modern platform can help grow your sales by as much or more than 30%, just like the hundreds of former Yahoo! clients who have made the switch!
+
+If you are too busy to meet, how about trying one of our FREE WEBINARS that will give you a guided tour of BigCommerce - Each week, we offer a tour of our platform for business owners, like you, to see what we can do for your business. There is no obligation and you can make your own decision!
+
+And, if you have no interest in hearing from us again, please respond: No Further Contact
+
+Wishing you success online,
+
+Lizette Flores
+
+eCommerce Business Consultant
+
+
+P 512-629-4518
+M 312-933-1479
+E Lizette.Flores@bigcommerce.com
+11305 Four Points Drive | Building II, Third Floor | Austin, TX 78726
+
+http://info.bigcommerce.com/switch-yahoo-to-bigcommerce
+
+Sign up for a free trial at: http://www.bigcommerce.com/p/12876.html</textOnly>
+    <type>custom</type>
+</EmailTemplate>

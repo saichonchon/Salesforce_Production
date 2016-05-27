@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Demo Request Attribution.Autoresponder</name>
+    <style>none</style>
+    <subject>Your Bigcommerce Demo Request</subject>
+    <textOnly>Hi there,
+
+With two of the busiest shopping days of the year behind us and Christmas around the corner, you may be looking for ways to maximize your time with family and friends while still keeping an eye on your store.
+
+To help you #SellSmart this holiday season I thought I’d share our recent blog post: Holiday Hacks: 5 vetted tips for on-the-go store management &lt;[[#]]&gt; — full of ideas that will maximize your ability to work on the go.
+
+Kind regards,
+
+Ramon Gonzalez
+
+Ecommerce Business Consultant
+
+P 1-866-581-3551
+
+E ramon.gonzales@bigcommerce.com</textOnly>
+    <type>custom</type>
+</EmailTemplate>

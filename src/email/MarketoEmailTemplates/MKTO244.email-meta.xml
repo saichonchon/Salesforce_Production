@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Square Checkout Change.Email 1</name>
+    <style>none</style>
+    <subject>Possible changes to your checkout</subject>
+    <textOnly>We wanted to remind you about some changes Square requested to their checkout experience that may impact your store. The updates are now live.
+Hi {{lead.First Name:default=there}},
+We wanted to remind you about some changes Square requested to their checkout experience that may impact your store. The updates are now live.
+
+What changed? 
+
+
+Square requested some minor updates to the user experience of their checkout. They have no impact on your store’s checkout functionality, but the look of the payments section may have changed slightly.
+
+Why is Square making the changes? 
+
+
+The changes reflect recent PCI requirement updates, and will help better protect merchants and consumers. One benefit to you is that Square won’t need to require you to fill out additional PCI questionnaires in the future.
+
+What do I need to do? 
+
+
+Please review the payment form in your checkout, as the look and feel may have changed slightly. If it has, read our detailed instructions on how to fix it &lt;[[https://support.bigcommerce.com/articles/Public/Square-Payments-Checkout-Customizations]]&gt;.
+
+If you have any questions, please contact Square &lt;[[https://squareup.com/square-support]]&gt; or visit our Knowledge Base &lt;[[https://support.bigcommerce.com/articles/Public/Square-Payments-Checkout-Customizations]]&gt;.
+Thanks, 
+The BigCommerce Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send the Grow Bundle Plus Plan Email</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>Paypal Braintree Grow Bundle Store Setup</name>
+    <style>freeForm</style>
+    <subject>Ready for your store setup/SEO coaching and premium template?</subject>
+    <textOnly>Hi {!Opportunity.Contact_First_Name__c},
+
+Thanks again for choosing to grow your business with BigCommerce! Here are the next steps for taking advantage of your special offers from our Grow Bundle with PayPal.
+
+1. Pick out your premium template
+
+Please take a look at our premium templates to find one you like. They’re all mobile friendly and have SEO built right in to help your search rankings. A BigCommerce store setup expert will help apply your choice.
+
+Health &amp; Beauty https://www.bigcommerce.com/theme/health-and-beauty/
+
+Bright &amp; Bold https://www.bigcommerce.com/theme/bright-bold/
+
+Sugar &amp; Mint https://www.bigcommerce.com/theme/sugar-mint/
+
+Dusk &amp; Dawn https://www.bigcommerce.com/theme/dusk-dawn/
+
+Cookies &amp; Cream https://www.bigcommerce.com/theme/cookies-cream/
+
+California https://www.bigcommerce.com/theme/california/
+
+Ohio https://www.bigcommerce.com/theme/ohio/
+
+Hawaii https://www.bigcommerce.com/theme/hawaii/
+
+Connecticut https://www.bigcommerce.com/theme/connecticut/
+
+Alaska https://www.bigcommerce.com/theme/alaska/
+
+Indiana https://www.bigcommerce.com/theme/indiana/
+
+
+2. Call us at 866-949-5339 to begin your store setup consultation
+
+Our experts are ready to help you with:
+
+Applying your premium template
+
+Setting up PayPal for your payments and adjusting your checkout settings
+
+Configuring shipping, taxes, SSL, domain and other settings
+
+Stocking your products (options, SKUs, rules, categories)
+
+
+Just call 866-949-5339 to get started.
+
+If you’re currently migrating your online store to BigCommerce, we can still work on some setup items now and then finish up when your migration is complete. Please email migrations@bigcommerce.com with any questions you have about your migration.
+
+
+
+3. Get one-on-one SEO coaching
+
+Once you’re ready, please call our dedicated line at 866-949-5339 so our SEO coaches can walk you through how to:
+
+Identify and choose keywords for optimal performance
+
+Optimize your page titles and links
+
+Harness the power of metadata to improve your click­through rate from search results
+
+Drive traffic with quality content and images
+
+
+
+4. Grow like crazy
+
+After that, you’ll be all set to grow your business and turn online shoppers into loyal customers.
+
+
+We’re looking forward to helping you get started on BigCommerce,
+
+
+The BigCommerce Team
+
+866-949-5339</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>RowCount</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Calls</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>RowCount/Campaign.NumberOfLeads:MAX</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Call/Lead Rate</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_19960933</developerName>
+        <masterLabel>Grouped Campaign Name</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Campaign$Name</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>ACQ: Interspire Campaign</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Interspire POODLE Existing Members</sourceValue>
+            </sourceValues>
+            <value>ACQ: Interspire</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>ACQ: MagentoGo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Magento Enterprise</sourceValue>
+            </sourceValues>
+            <value>ACQ: Magento</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>ACQ: Orion &lt;$5k</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Orion service outreach pilot V2</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Orion service outreach pilot</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Orion $0</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Orion Import 11.13.14</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Orion Medium Suzys</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Orion Stage New</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Orion $5k-10k</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Orion $25k-100k</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Orion - Existing Leads 8-2014</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Orion $10k-25k</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Orion &gt;$100k</sourceValue>
+            </sourceValues>
+            <value>ACQ: Orion</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>ACQ: OS Commerce</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: osCommerce</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: OSCommerce Oct Dialer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: OSCommerce Oct</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: OsCommerce (Datanyze)</sourceValue>
+            </sourceValues>
+            <value>ACQ: OsCommerce</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>ACQ: SEMA 2014</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ Dialer: SEMA 2014 Dialer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: SEMA 2014 Warm Vendors</sourceValue>
+            </sourceValues>
+            <value>ACQ: SEMA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>ACQ: Shopify Leads</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Shopify Plus Leads</sourceValue>
+            </sourceValues>
+            <value>ACQ: Shopify</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>ACQ: Webinar</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Webinar-Visitors to Buyers</sourceValue>
+            </sourceValues>
+            <value>ACQ: Webinar</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>ACQ: 3dcart</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: 3D Cart</sourceValue>
+            </sourceValues>
+            <value>ACQ: 3DCart</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>ACQ: ProStores-Designers</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: ProStores Campaign</sourceValue>
+            </sourceValues>
+            <value>ACQ: ProStores</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA1</column>
+        </chartSummaries>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>Campaign.LeadCampaignMembers.Activities$Correct_Contact_Call__c</column>
+        </chartSummaries>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA2</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_19960933</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Tiny</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Campaign.LeadCampaignMembers$Name</field>
+    </columns>
+    <columns>
+        <field>Campaign.LeadCampaignMembers.Activities$Subject</field>
+    </columns>
+    <columns>
+        <field>Campaign.LeadCampaignMembers.Activities$isdc_dialer_call_type__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Campaign.LeadCampaignMembers.Activities$Correct_Contact_Call__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Maximum</aggregateTypes>
+        <field>Campaign$NumberOfLeads</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3) AND 4 AND 5 AND 6</booleanFilter>
+        <criteriaItems>
+            <column>Campaign$Name</column>
+            <operator>startsWith</operator>
+            <value>ACQ</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Campaign$Name</column>
+            <operator>contains</operator>
+            <value>Consolidated (Dialer)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Campaign$Name</column>
+            <operator>notContain</operator>
+            <value>CSCart,NSCommerce,Volusion,Yahoo</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Campaign.LeadCampaignMembers.Activities$isdc_dialer_call_type__c</column>
+            <operator>contains</operator>
+            <value>seek,click</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Campaign.LeadCampaignMembers$IsConverted</column>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Campaign.LeadCampaignMembers*Lead$Is_Duplicate__c</column>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_19960933</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Campaign$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>ACQ Campaign Call Stats</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Campaigns_With_Leads_With_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Campaign.LeadCampaignMembers.Activities$ActivityDate</dateColumn>
+        <interval>INTERVAL_CURPREV1</interval>
+    </timeFrameFilter>
+</Report>

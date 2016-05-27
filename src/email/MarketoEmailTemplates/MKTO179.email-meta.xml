@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Partner Locator.Email 4 - Feb2016</name>
+    <style>none</style>
+    <subject>Last chance to join the Bigcommerce Partner Marketplace</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+Don’t be left out! Join the Bigcommerce Partner Marketplace and help grow your business. This new faceted search partner finder helps connect merchants with the right design and solution partner. Be sure you are listed by updating your Partner Marketplace Profile on the Partner Portal by March 15th.
+
+For more information, refer to the partnersupport@bigcommerce.com &lt;http://partners.bigcommerce.com/English/Solutions/resources/marketplace_guide.aspx&quot;&gt;Partner Marketplace Guide on the Partner Portal, or contact &lt;a href=&gt;.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

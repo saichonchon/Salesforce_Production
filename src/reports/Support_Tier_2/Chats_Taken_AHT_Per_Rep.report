@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>LiveChatTranscript$Name</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$EndTime</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$EndedBy</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$Contact</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$UserAgent</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>LiveChatTranscript$Chat_Duration_Minutes__c</field>
+    </columns>
+    <description>Show how many chats each rep took and the AHT for all chats combined</description>
+    <filter>
+        <criteriaItems>
+            <column>LiveChatTranscript$Status</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LiveChatTranscript$CreatedBy</column>
+            <operator>equals</operator>
+            <value>Christopher Partanen,Cortni Jamerson,Derek Donovan,Jose Flores,Nikita Puzanenko,Timothy Azark,Warren Kleinman</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>LiveChatTranscript$CreatedBy</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Chats Taken/AHT Per Rep</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Live_Chat_Transcripts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LiveChatTranscript$RequestTime</dateColumn>
+        <interval>INTERVAL_YESTERDAY</interval>
+    </timeFrameFilter>
+</Report>

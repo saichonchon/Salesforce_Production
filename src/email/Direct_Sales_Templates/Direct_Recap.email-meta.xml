@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Recap bullets to send a client based on phone call</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>Direct  : Recap</name>
+    <style>freeForm</style>
+    <subject>{!Lead.FirstName}, you are on your way to sell more!</subject>
+    <textOnly>Hi {!Lead.FirstName},
+
+I enjoyed our conversation today and look forward to helping you realize your goals.
+
+To recap our discussion, we defined the following priorities:
+
+Detail 1
+Detail 2
+Detail 3
+Etc.
+
+During our next meeting on INSERT DATE at INSERT TIME, I will review a solution to meet all of the goals we discussed.
+
+If you have any questions, call me on my direct line: {!Lead.OwnerPhone}
+
+{!Lead.OwnerFullName}
+{!Lead.OwnerTitle}
+
+
+
+O  +1 {!Lead.OwnerPhone}
+E {!Lead.OwnerEmail}
+A 11305 Four Points Drive | Bldg II Suite 300 | Austin, TX 78726
+
+Visit us at bigcommerce.com
+
+Visit us at bigcommerce.com
+Follow us News | Facebook | Twitter</textOnly>
+    <type>html</type>
+</EmailTemplate>

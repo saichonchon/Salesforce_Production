@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Survey to Stencil.Take our survey</name>
+    <style>none</style>
+    <subject>We want your feedback on our new themes</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+We hope you’ve been enjoying your experience with Bigcommerce. As we work on new features, we like to reach out to customers to get their thoughts.
+
+Today, we would love to hear what you think about our new themes. Can you please take 5 minutes to give us some feedback?
+
+Take our survey &lt;[[https://www.surveymonkey.com/r/ZYZGSHF]]&gt;
+
+
+We’d greatly appreciate hearing from you. 
+
+Thanks again for your business, and for helping to shape the future of Bigcommerce themes.
+
+The Bigcommerce Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

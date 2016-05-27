@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Case Submission Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Case Submission Settings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Case Origin --></label>
+        <name>Case_Origin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Insert the Case RecordType ID in this field --></help>
+        <label><!-- Case Record Type --></label>
+        <name>Case_Record_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- The default Record Type for Contacts created in the external web submission process --></help>
+        <label><!-- Contact Record Type --></label>
+        <name>Contact_Record_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Default Account ID used for initially orphaned Contacts created from the Live Agent pre-Chat form --></help>
+        <label><!-- Default Support Account ID --></label>
+        <name>Default_Support_Account_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Default User ID for Contacts created in the Live Agent pre-Chat form --></help>
+        <label><!-- Default Support Owner ID --></label>
+        <name>Default_Support_Owner_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invalid API Request URL --></label>
+        <name>Invalid_API_Request_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Developer name of the LiveAgent Button used in this Case Submission Setting entry --></help>
+        <label><!-- LiveAgent Button Name --></label>
+        <name>LiveAgent_Button_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use the relative path of a Sites VF page with a preceeding slash &quot;/&quot; --></help>
+        <label><!-- Redirect URL --></label>
+        <name>Redirect_URL__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

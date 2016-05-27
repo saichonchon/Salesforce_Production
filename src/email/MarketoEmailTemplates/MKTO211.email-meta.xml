@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>New Community Launch (SF Case History Users).Email 1</name>
+    <style>none</style>
+    <subject>Launching today — a brand new BigCommerce Community</subject>
+    <textOnly>With recent updates to our community, we made it easier for you to find the answers, resources, and connections you need to help your business grow.
+Explore our newly redesigned Community
+See how easy it is to get answers and find resources
+Start exploring &lt;[[http://forum.bigcommerce.com/]]&gt;
+Experience our newly redesigned Community
+With recent updates to our community, we made it easier for you to find the answers, resources, and connections you need to help your business grow. We know that running a business can be hard — we don’t want it to be hard to get the support you need to be successful.
+Join us and discover new features like:
+
+
+	- Answers: Your place to ask specific questions about the BigCommerce platform, and receive the “best answers” from expert store owners and our partners. Answers is an invaluable tool for receiving quick, straightforward solutions.
+	- Discussions: Discussion groups are dedicated areas to connect with your peers about the topics that are important to you. In Groups, you’ll have candid, real-time discussions, receive advice including best practices, share success stories, and grow — together.
+	- Ideas: Ideas is your place to be heard. Whether you have an idea for product enhancements, improving our support offerings, or items you would just like to see more of, BigCommerce Ideas will empower you to suggest new product enhancements, vote, comment and interact directly with BigCommerce staff.
+	- And more!
+Here is how to get started:
+
+
+ - Log-in to join the Community with the same log-in credentials that you’ve already established for viewing Support case status and history online. Simply enter your email address and password to log-in and get started.
+
+ - Complete your profile and set your notification preferences.
+
+
+ - Review our Guide to Communities &lt;[[https://forum.bigcommerce.com/s/article/BigCommerce-Community-Guide]]&gt; to learn more about our Community and how to make the most out of experience.
+
+
+ - Participate — browse answers, ask a question, join a discussion, submit an idea, and more. Don’t be shy, introduce yourself and ask a question today.
+Log in to get Started &lt;[[http://forum.bigcommerce.com/]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

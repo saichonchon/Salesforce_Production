@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$CancellationRequestDate__c</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$CancellationDate__c</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$PurchaseDate__c</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$Product__c</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$CancellationRequestCode__c</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$SSC__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Cancellation Requests from Yesterday</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Subscriptions__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account.Subscriptions__r$CancellationRequestDate__c</dateColumn>
+        <interval>INTERVAL_YESTERDAY</interval>
+    </timeFrameFilter>
+</Report>

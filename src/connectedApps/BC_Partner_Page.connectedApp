@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>saurabh.gupta@bigcommerce.com</contactEmail>
+    <description>API call from the partner page for dev portal</description>
+    <label>BC Partner Page</label>
+    <oauthConfig>
+        <callbackUrl>https://login.salesforce.com/services/oauth2/callback</callbackUrl>
+        <consumerKey>3MVG99OxTyEMCQ3gGZa2p6S2Xw9EWXDmcyMgAD3o9nhxazzQ20bl4qnmCeLmk_dNZ_AiNbmKs64Vv2OURhJgS</consumerKey>
+        <scopes>Api</scopes>
+    </oauthConfig>
+</ConnectedApp>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVAccount__c.First_Rev_Date__c</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVAccount__c.Total_Active_MRR__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>rvpe__RVAccount__c.IDev_ID__c</column>
+            <operator>lessOrEqual</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>rvpe__RVAccount__c.Total_Active_MRR__c</column>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>rvpe__RVAccount__c.First_Rev_Date__c</column>
+            <operator>lessThan</operator>
+            <value>9/30/2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_CREATED_DATE</column>
+            <operator>greaterThan</operator>
+            <value>7/1/2015 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>rvpe__RVAccount__c.First_Rev_Date__c</column>
+            <operator>greaterThan</operator>
+            <value>7/1/2015</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>RV-only partners w/ MRR</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$rvpe__RVAccount__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>rvpe__RVAccount__c.Approved_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

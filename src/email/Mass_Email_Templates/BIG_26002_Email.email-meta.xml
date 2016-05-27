@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>BIG-26002 Closure Notification</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>BIG-26002 Email</name>
+    <style>freeForm</style>
+    <subject>Case Number: {!Case.CaseNumber} Subject: {!Case.Subject}</subject>
+    <textOnly>******************************************************************
+Case Number: {!Case.CaseNumber}
+Issue Reported: {!Case.Description}
+
+Hello,
+
+We wanted to update you on the issues that you experienced while attempting to assign a custom domain to your store.
+
+There was a issue created when we did some internal migrations --- which you experienced first hand when attempting to assign a custom domain to your store.  Our Technical Operations team has resolved the issue, so you should now be able to successfully assign a custom domain to your store.
+
+Here is an article from our knowledge base if you need more information on how to assign it:
+
+https://support.bigcommerce.com/articles/Public/Changing-Your-Store-s-Domain/?q=domain&amp;l=en_US&amp;fs=Search&amp;pn=1
+
+If you need assistance in getting it setup, please feel free to reach out to our support team 24 x 7 via phone or chat.
+
+We apologize for the inconvenience and appreciate your business!
+
+BigCommerce Support
+http://support.bigcommerce.com
+
+You can reply to this email or to view your case&apos;s status you can go here.
+
+Please do not remove: {!Case.E2CP__Case_Thread_Id__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

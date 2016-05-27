@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User$Name</field>
+    </columns>
+    <columns>
+        <field>User$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>User$Contact</field>
+    </columns>
+    <columns>
+        <field>User$Contact.Account.Source__c</field>
+    </columns>
+    <columns>
+        <field>User$Contact.Type__c</field>
+    </columns>
+    <columns>
+        <field>User$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>User$Contact.Id</field>
+    </columns>
+    <columns>
+        <field>User$Profile</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>User$Profile</column>
+            <operator>equals</operator>
+            <value>Community Client User</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$CreatedBy</column>
+            <operator>notEqual</operator>
+            <value>Maria Huemmer</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Client community user contacts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Users_Custom__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>User$CreatedDate</dateColumn>
+        <interval>INTERVAL_LAST30</interval>
+    </timeFrameFilter>
+</Report>

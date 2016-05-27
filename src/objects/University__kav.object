@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <articleTypeChannelDisplay>
+        <articleTypeTemplates>
+            <channel>App</channel>
+            <page>kb_University_Internal_kav</page>
+            <template>Page</template>
+        </articleTypeTemplates>
+        <articleTypeTemplates>
+            <channel>Prm</channel>
+            <template>Tab</template>
+        </articleTypeTemplates>
+        <articleTypeTemplates>
+            <channel>Csp</channel>
+            <template>Tab</template>
+        </articleTypeTemplates>
+        <articleTypeTemplates>
+            <channel>Pkb</channel>
+            <page>kb_University_kav</page>
+            <template>Page</template>
+        </articleTypeTemplates>
+    </articleTypeChannelDisplay>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <fields>
+        <fullName>Additional_Resources__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Resources</label>
+        <length>32768</length>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>32768</length>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Forum_Link__c</fullName>
+        <externalId>false</externalId>
+        <label>Forum Link</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Nav_Title__c</fullName>
+        <externalId>false</externalId>
+        <label>Nav Title</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Next_Video_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Next Video Description</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Next_Video_Link_Text__c</fullName>
+        <externalId>false</externalId>
+        <label>Next Video Link Text</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Next_Video_Thumbnail__c</fullName>
+        <externalId>false</externalId>
+        <label>Next Video Thumbnail</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Next_Video_URL__c</fullName>
+        <externalId>false</externalId>
+        <label>Next Video URL</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Prev_Video_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Prev Video Description</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Prev_Video_Link_Text__c</fullName>
+        <externalId>false</externalId>
+        <label>Prev Video Link Text</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Prev_Video_Thumbnail__c</fullName>
+        <externalId>false</externalId>
+        <label>Prev Video Thumbnail</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Prev_Video_URL__c</fullName>
+        <externalId>false</externalId>
+        <label>Prev Video URL</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Short_Description__c</fullName>
+        <description>The short description which will appear on the BCU landing page</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The short description which will appear on the BCU landing page</inlineHelpText>
+        <label>Short Description</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Short_Title__c</fullName>
+        <description>The title which appears on the BCU Landing Page</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The title which appears on the BCU Landing Page</inlineHelpText>
+        <label>Short Title</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sort_Order__c</fullName>
+        <description>Controls the placement of this video in the order of videos on the BCU landing page</description>
+        <externalId>false</externalId>
+        <inlineHelpText>1 will be first</inlineHelpText>
+        <label>Sort Order</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Thumbnail_Image_URL__c</fullName>
+        <description>The URL for the thumbnail image of this video</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Upload the file to documents, then copy the src URL</inlineHelpText>
+        <label>Thumbnail Image URL</label>
+        <length>150</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transcript_Attachment__c</fullName>
+        <externalId>false</externalId>
+        <label>Transcript Attachment</label>
+        <required>false</required>
+        <type>File</type>
+    </fields>
+    <fields>
+        <fullName>Transcript__c</fullName>
+        <externalId>false</externalId>
+        <label>Transcript</label>
+        <length>32768</length>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Video_Duration__c</fullName>
+        <description>The video length in minutes and second</description>
+        <externalId>false</externalId>
+        <inlineHelpText>e.g. 3 min 23 sec</inlineHelpText>
+        <label>Video Duration</label>
+        <length>20</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Video_URL__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Must be the video ID in the address bar Ex: /watch?v=[id]</inlineHelpText>
+        <label>Video ID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>University</label>
+    <pluralLabel>University</pluralLabel>
+</CustomObject>

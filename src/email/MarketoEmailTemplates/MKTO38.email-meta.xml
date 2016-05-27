@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>February 2016.Email 1</name>
+    <style>none</style>
+    <subject>Join us for the February Town Hall</subject>
+    <textOnly>Hi there,
+Bigcommerce Town Hall &lt;[[#]]&gt;
+
+When: December 17, 2015 from 3–4pm ET
+
+What: An in-depth look at the latest improvements including Stencil, Square, social integrations (Facebook, Pinterest, and Twitter), 2016 product roadmap, and time for Q&amp;A
+
+Presenters: CEO Brent Bellm and CPO Tim Schulz
+
+Where: If applicable
+Reserve your spot &lt;[[#]]&gt;
+We’ll hold a live Q&amp;A session during the Town Hall, but you can also submit questions in advance by commenting in our community forum &lt;[[#]]&gt;.
+
+If you’re unable to join us, don’t worry — we’ll record each Town Hall and post the video in the forum
+Hope to see you there,
+
+The Bigcommerce Team
+{{my.LitmusToken}}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

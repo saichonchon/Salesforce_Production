@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <filter>
+        <criteriaItems>
+            <column>CASE_COMMENT_CREATED_BY</column>
+            <operator>equals</operator>
+            <value>Adrian Estopace,Alvin DeLeon,Aries Leyte,Faith Esguerra,Jan Saria,Jeffrey Gregorio,John San Diego,John Ferrer,Jovic Leovis,Jude Abrigo,Jun Tupas,Kenneth Cabaobao,Kim Radaza,Luigi Modesto,Marielle Morre,Marjorie Tamayo,Mark Hernandez,Mary Hazel Quilaga,Mireille Ferol,Racel Arce,Regie Matibag,Regine SanJuan,Ryan Juarez,Shirley Detera,Juan Calanoc,Rianne Insigne,Jonathan Castro,Amanda Aguirre,Patricia Santos,Roger Dayap,Jonalyn Fresnido,Raymond Macatangay,Josiephene Caceres,Marfee DelaCruz,Christie Rodriguez,Jerome Cadangyao,Roshaolin Nuqui,Kristel Pura,Jenelyn Pawhay,John Ordonez</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <operator>notEqual</operator>
+            <value>Support - Trash</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>COMMENT_PUBLISHED</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>COMMENT_CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CASE_COMMENT_CREATED_BY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Email Transaction Count</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>COMMENT_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_THISWEEK</interval>
+    </timeFrameFilter>
+</Report>

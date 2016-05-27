@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Lead Update Owners</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Lead Update Owners</value>
+    </caseValues>
+    <fields>
+        <label><!-- Queue/Owner --></label>
+        <name>Queue_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA --></label>
+        <name>SLA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update? --></label>
+        <name>Update__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

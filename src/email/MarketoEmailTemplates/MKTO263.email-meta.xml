@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Unpaid Invoices - GTM 1141.Unpaid Invoice Notification</name>
+    <style>none</style>
+    <subject>Recent BigCommerce Unpaid Invoice Notification</subject>
+    <textOnly>Preview text
+{{my.DigestoEmailContent:default=edit me}}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

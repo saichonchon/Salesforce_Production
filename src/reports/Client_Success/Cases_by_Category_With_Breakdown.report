@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <acrossGroupingContext>Case.Category__c</acrossGroupingContext>
+        <calculatedFormula>RowCount/PARENTGROUPVAL(RowCount, ORIGIN, COLUMN_GRAND_SUMMARY)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>ORIGIN</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% of Total Contacts by Category</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <acrossGroupingContext>Case.Category__c</acrossGroupingContext>
+        <calculatedFormula>Case.Minutes_Open__c:SUM/PARENTGROUPVAL(Case.Minutes_Open__c:SUM, ORIGIN, COLUMN_GRAND_SUMMARY)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA3</developerName>
+        <downGroupingContext>ORIGIN</downGroupingContext>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% of Time Open</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <acrossGroupingContext>Case.Category__c</acrossGroupingContext>
+        <calculatedFormula>Case.Total_Call_CTI_Time__c:SUM/PARENTGROUPVAL(Case.Total_Call_CTI_Time__c:SUM, ORIGIN, COLUMN_GRAND_SUMMARY)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA5</developerName>
+        <downGroupingContext>ORIGIN</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% CTI Time</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Case_Time_Worked__c.Time_Worked_in_Minutes__c:SUM/60</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA6</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Case Time Worked (hrs)</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_48782147</developerName>
+        <masterLabel>Category Breakdown</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Case.Category__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>DNS &amp; Domain Names</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Design - Supported</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Design - Out of Scope</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Payment Gateway</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shipping</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Product Options/SKUs/Rules</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>SSL</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Store Settings (other)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email Setup</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Import/Export</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Products</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Taxes</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Order Management</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>eBay</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Discount Rules</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Google Shopping</sourceValue>
+            </sourceValues>
+            <value>Top Categories</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Store Down/Performance</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>JIRA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>PCI &amp; Security</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Feature Request</sourceValue>
+            </sourceValues>
+            <value>Bug, Security, Performance, &amp; Features</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Account &amp; Billing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cancellation/Retention</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Login Issues</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Legal</sourceValue>
+            </sourceValues>
+            <value>Account, Login &amp; Legal</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>301 Redirects</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Analytics and Conversion (3rd Party)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Analytics Tab (in app)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>API</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Apps</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Blog</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Coupons &amp; Gift Certificates</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Categories &amp; Brands</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email Marketing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Migration</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mobile</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>SEO, Keywords, Metadata</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shopping Feeds (non-Google)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Store Settings - Misc Tab</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Theme Store</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Users &amp; Permissions</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Web Content</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>WebDAV</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>No Support Provided</sourceValue>
+            </sourceValues>
+            <value>Other Categories</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>Case.Total_Call_CTI_Time__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Case.Client_Success</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>REASON</column>
+            <operator>notEqual</operator>
+            <value>,Trash/Spam,support@bigcommerce.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <operator>equals</operator>
+            <value>Chat,Phone,Web</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Category__c</column>
+            <operator>equals</operator>
+            <value>301 Redirects,Account &amp; Billing,Analytics and Conversion (3rd Party),Analytics Tab (in app),API,Apps,Blog,Cancellation/Retention,Categories &amp; Brands,Coupons &amp; Gift Certificates,Customers and Customer Groups,Design - Out of Scope,Design - Supported,Discount Rules,eBay,Email Marketing,Email Setup,Facebook Shop,Feature Request,Google Shopping,Import/Export,Login Issues,Migration,Mobile,Order Management,Payment Gateway,PCI &amp; Security,Product Options/SKUs/Rules,Products,&quot;SEO, Keywords, Metadata&quot;,Shipping,Shopping Feeds (non-Google),SSL,Store Settings (other),Store Settings - Display Tab,Store Settings - Misc Tab,Taxes,Theme Store,Users &amp; Permissions,Web Content,WebDAV,Legal,Store Down/Performance,JIRA,No Support Provided</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_48782147</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Category__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ORIGIN</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Cases by Category - With Breakdown</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseCustomEntity$Case_Time_Worked__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LASTWEEK</interval>
+    </timeFrameFilter>
+</Report>

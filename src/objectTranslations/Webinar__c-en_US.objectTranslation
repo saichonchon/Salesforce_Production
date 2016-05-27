@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Webinar</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Webinars</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Purchase After Webinar --></label>
+        <name>Account_Purchase_After_Webinar__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Webinars --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Attendance Count --></label>
+        <name>Attendance_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- CSAT Score --></label>
+        <name>CSAT_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- CSAT --></label>
+        <name>CSAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Citrix Source --></label>
+        <name>Citrix_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Webinars --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact or Lead --></label>
+        <name>Contact_or_Lead__c</name>
+    </fields>
+    <fields>
+        <label><!-- Converted Lead --></label>
+        <name>Converted_Lead__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date1__c</name>
+    </fields>
+    <fields>
+        <label><!-- GoToWebinar ID --></label>
+        <name>GoToWebinar_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>Lead__c</name>
+        <relationshipLabel><!-- Webinars --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lead or Contact Owner --></label>
+        <name>Lead_or_Contact_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead or Contact Team --></label>
+        <name>Lead_or_Contact_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- New to Paid Conversion --></label>
+        <name>New_to_Paid_Conversion__c</name>
+    </fields>
+    <fields>
+        <label><!-- New to Trial Conversion --></label>
+        <name>New_to_Trial_Conversion__c</name>
+    </fields>
+    <fields>
+        <label><!-- Registrant Email --></label>
+        <name>Registrant_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Registration Count --></label>
+        <name>Registration_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- What topic covered in this workshop would you like to have more information about? --></help>
+        <label><!-- Survey Comments --></label>
+        <name>Survey_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Completion Date --></label>
+        <name>Survey_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- What area of conversion optimization would you have liked to spend more time on? --></help>
+        <label><!-- Survey Conversion Optimization --></label>
+        <name>Survey_Conversion_Optimization__c</name>
+    </fields>
+    <fields>
+        <help><!-- What topic covered in this workshop would you like to have more information about? --></help>
+        <label><!-- Survey Information Requested --></label>
+        <name>Survey_Information_Requested__c</name>
+    </fields>
+    <fields>
+        <help><!-- How likely are you to suggest this workshop to another eCommerce business? --></help>
+        <label><!-- Survey Likely to Suggest --></label>
+        <name>Survey_Likely_to_Suggest__c</name>
+        <picklistValues>
+            <masterLabel>Likely</masterLabel>
+            <translation><!-- Likely --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neutral</masterLabel>
+            <translation><!-- Neutral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Likely</masterLabel>
+            <translation><!-- Not Likely --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat Likely</masterLabel>
+            <translation><!-- Somewhat Likely --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat Not Likely</masterLabel>
+            <translation><!-- Somewhat Not Likely --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Survey Name --></label>
+        <name>Survey_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- How likely are you to utilize Bigcommerce’s educational and support resources provided? --></help>
+        <label><!-- Survey Resource Utilization --></label>
+        <name>Survey_Resource_Utilization__c</name>
+        <picklistValues>
+            <masterLabel>Likely</masterLabel>
+            <translation><!-- Likely --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neutral</masterLabel>
+            <translation><!-- Neutral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Likely</masterLabel>
+            <translation><!-- Not Likely --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat Likely</masterLabel>
+            <translation><!-- Somewhat Likely --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat Not Likely</masterLabel>
+            <translation><!-- Somewhat Not Likely --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Checked if the survey request email was sent to this registrant --></help>
+        <label><!-- Survey Sent --></label>
+        <name>Survey_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Suggestion Score --></label>
+        <name>Survey_Suggestion_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Taken --></label>
+        <name>Survey_Taken__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Resource Score --></label>
+        <name>Survey__c</name>
+    </fields>
+    <fields>
+        <label><!-- TempAccountId --></label>
+        <name>TempAccountId__c</name>
+    </fields>
+    <fields>
+        <label><!-- TempContactId --></label>
+        <name>TempContactId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time in Webinar --></label>
+        <name>Time_in_Webinar__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- How satisfied were you with the content from this workshop? --></help>
+        <label><!-- Webinar CSAT --></label>
+        <name>Webinar_CSAT__c</name>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neutral</masterLabel>
+            <translation><!-- Neutral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat Dissatisfied</masterLabel>
+            <translation><!-- Somewhat Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat Satisfied</masterLabel>
+            <translation><!-- Somewhat Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Webinar Unique ID --></label>
+        <name>Webinar_Unique_ID__c</name>
+    </fields>
+    <layouts>
+        <layout>Webinar Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Survey Comments --></label>
+            <section>Survey Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Survey Results --></label>
+            <section>Survey Results</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>PKB Article Deflection</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>PKB Article Deflection</value>
+    </caseValues>
+    <fields>
+        <label><!-- ArticleCreatedby --></label>
+        <name>ArticleCreatedBy__c</name>
+        <relationshipLabel><!-- PKB Article Deflection (ArticleCreatedby) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Article Last Modified By --></label>
+        <name>ArticleLastModifiedBy__c</name>
+        <relationshipLabel><!-- PKB Article Deflection (Article Last Modified By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Article ID --></label>
+        <name>Article_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Article Number --></label>
+        <name>Article_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Article Title --></label>
+        <name>Article_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Association Count --></label>
+        <name>Case_Association_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- Channel on which the record has been created. --></help>
+        <label><!-- Channel --></label>
+        <name>Channel__c</name>
+        <picklistValues>
+            <masterLabel>mobile</masterLabel>
+            <translation><!-- mobile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>web</masterLabel>
+            <translation><!-- web --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- PKB Article Deflection --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Deflection --></label>
+        <name>Deflection__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback Addressed --></label>
+        <name>Feedback_Addressed__c</name>
+        <picklistValues>
+            <masterLabel>Addressed</masterLabel>
+            <translation><!-- Addressed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not About Article</masterLabel>
+            <translation><!-- Not About Article --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Will Address</masterLabel>
+            <translation><!-- Will Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wont Address</masterLabel>
+            <translation><!-- Wont Address --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Feedback Source --></label>
+        <name>Feedback_Source__c</name>
+        <picklistValues>
+            <masterLabel>ContactUs</masterLabel>
+            <translation><!-- ContactUs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RelatedArticle</masterLabel>
+            <translation><!-- RelatedArticle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Search</masterLabel>
+            <translation><!-- Search --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Keyword searched, if any, prior to the user entering this feedback or deflection. --></help>
+        <label><!-- Keyword Searched --></label>
+        <name>Keyword_Searched__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Published Date --></label>
+        <name>Last_Published_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session ID --></label>
+        <name>Session_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visible in Internal App --></label>
+        <name>VisibleInInternalApp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visible in Public Knowledgebase --></label>
+        <name>VisibleInPublicKnowledgebase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Why Not Helpful --></label>
+        <name>Why_Not_Helpful__c</name>
+        <picklistValues>
+            <masterLabel>Content seems outdated or incorrect</masterLabel>
+            <translation><!-- Content seems outdated or incorrect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did not help, I&apos;m looking for help with a known issue</masterLabel>
+            <translation><!-- Did not help, I&apos;m looking for help with a known issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Followed the instructions carefully, but didn&apos;t get expected outcome</masterLabel>
+            <translation><!-- Followed the instructions carefully, but didn&apos;t get expected outcome --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I don&apos;t like this feature</masterLabel>
+            <translation><!-- I don&apos;t like this feature --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I have feedback about Bigcommerce</masterLabel>
+            <translation><!-- I have feedback about Bigcommerce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not enough context provided or missing info</masterLabel>
+            <translation><!-- Not enough context provided or missing info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Original question was not answered</masterLabel>
+            <translation><!-- Original question was not answered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other (please specify)</masterLabel>
+            <translation><!-- Other (please specify) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Was not able to follow instructions</masterLabel>
+            <translation><!-- Was not able to follow instructions --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>PKB Article Deflection Layout</layout>
+        <sections>
+            <label><!-- Addition Information --></label>
+            <section>Addition Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Deflection Information --></label>
+            <section>Deflection Information</section>
+        </sections>
+        <sections>
+            <label><!-- Knowledge Version Details --></label>
+            <section>Knowledge Version Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

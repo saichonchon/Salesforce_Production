@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Coming Soon.Email 3: Full Availability of Theme Marketplace</name>
+    <style>none</style>
+    <subject>The Next Generation of Bigcommerce Sites is Here</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+Our new theme marketplace  &lt;[[http://www.bigcommerce.com/theme-store]]&gt;created in collaboration with the industry-leading design experts over at Pixel Union, and developed on our new Stencil framework, is now available for all merchants wanting to opt-in to the experience.
+
+What comes with our new themes? Glad you asked! This first batch includes of 17 new themes featuring 67 variants. All themes are responsive and provide the most cutting-edge look and feel for modern retailers today, including LaQuan Smith &lt;[[http://shoplaquansmith.com/]]&gt;, GolfEtail &lt;[[http://www.golfetail.com/]]&gt; and more.
+
+Amplify your 2016 sales and create a holistic shopping experience for your consumers no matter through which channel they find you. Begin today!
+
+
+Choose a theme &lt;[[www.bigcommerce.com/theme-store]]&gt;
+
+
+Kind regards,
+
+The Bigcommerce Team
+{{my.LitmusToken}}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

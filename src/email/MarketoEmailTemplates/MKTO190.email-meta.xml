@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Introducing Stencil.Email 1</name>
+    <style>none</style>
+    <subject>Introducing NEW ecommerce themes — beautiful stores + amazing results</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+We just launched our newest set of fully responsive ecommerce themes that will help you engage shoppers and encourage checkouts on any device.
+
+Choose from over 60 modern, beautiful designs to build a clean and intuitive store that engages and converts shoppers.
+
+
+
+Our themes, such as Flagship shown above, feature:
+
+
+
+ - Fully responsive designs that will look and perform beautifully whether viewed on desktops, laptops, or mobile devices
+
+
+ - The ability to insert your logo, featured and top selling products, social media icons, and modify your site’s font and colors
+
+ - Powerful built in capabilities to increase sales, such as product filtering and single page checkout
+
+
+
+
+
+
+Learn more  &lt;[[https://www.bigcommerce.com/new-themes]]&gt;
+
+
+
+
+
+Fully express the power of your brand today with one of our free or premium themes. 
+
+Best,
+The Bigcommerce Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

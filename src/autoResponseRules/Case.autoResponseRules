@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Client Case Autoresponse</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Premium Services Email</value>
+            </criteriaItems>
+            <replyToEmail>premiumservices@bigcommerce.com</replyToEmail>
+            <senderEmail>premiumservices@bigcommerce.com</senderEmail>
+            <senderName>Premium Account Services</senderName>
+            <template>Case_Autoresponse/BC_Consulting_Autoresponse</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Channel Partner</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>partners@bigcommerce.com</value>
+            </criteriaItems>
+            <replyToEmail>partners@bigcommerce.com</replyToEmail>
+            <senderEmail>no-reply@bigcommerce.com</senderEmail>
+            <senderName>Bigcommerce Partner Team</senderName>
+            <template>Sales_Templates_Partner/Partner_Case_Autoresponse</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Cancellations</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>EIG Billing</value>
+            </criteriaItems>
+            <replyToEmail>no-reply@bigcommerce.com</replyToEmail>
+            <senderEmail>no-reply@bigcommerce.com</senderEmail>
+            <senderName>Bigcommerce</senderName>
+            <template>Case_Autoresponse/Generic_Case_Autoresponse</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Default Email to Case</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>team@bigcommerce.com</value>
+            </criteriaItems>
+            <replyToEmail>no-reply@bigcommerce.com</replyToEmail>
+            <senderEmail>no-reply@bigcommerce.com</senderEmail>
+            <senderName>Bigcommerce</senderName>
+            <template>Direct_Sales_Templates/Direct_New_Case_Autoresponse</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>SBD - Escalations</value>
+            </criteriaItems>
+            <replyToEmail>sbdsupport@bigcommerce.com</replyToEmail>
+            <senderEmail>no-reply@bigcommerce.com</senderEmail>
+            <senderName>Bigcommerce</senderName>
+            <template>Case_Templates/CS_SBD_Escalations_Autoresponse</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

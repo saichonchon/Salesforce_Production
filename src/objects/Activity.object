@@ -1,0 +1,1473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ComposeGmail</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LogCall</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MailMerge</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SendEmail</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewAll</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Acquisition_Campaign__c</fullName>
+        <description>Used as a vertical tracking for Acquisition sales</description>
+        <externalId>false</externalId>
+        <label>zAcquisition Campaign</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Interspire</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ProStores</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>YahooStores</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Go Daddy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MagentoGo</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1ShoppingCart</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>X-Cart</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Webinar - Visitors into Buyers</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Webinar 2.5.13</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Upgrade</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>None</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Miva Merchant</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CS Cart</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pinnacle Cart</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Zen Cart</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Texas Fashion</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>OS Commerce</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>YahooStores2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Amazon Webstore</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Volusion</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3D Cart</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Activity_Count__c</fullName>
+        <description>For reporting purposes only; not on layouts</description>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <label>Activity Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Activity_Object__c</fullName>
+        <description>Identifies which object type the activity is related to</description>
+        <externalId>false</externalId>
+        <formula>IF(LEFT(WhatId,3) = &quot;001&quot;,&quot;Account&quot;,
+IF(LEFT(WhatId,3) = &quot;006&quot;,&quot;Opportunity&quot;,
+IF(LEFT(WhatId,3) = &quot;500&quot;,&quot;Case&quot;,
+IF(LEFT(WhoId,3)= &quot;00Q&quot;,&quot;Lead&quot;,
+IF(LEFT(WhoId,3)=&quot;003&quot;,&quot;Contact&quot;,
+NULL)))))</formula>
+        <label>REPORT: Activity Object</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Business_Days_in_Month__c</fullName>
+        <description>reporting/dashboards only</description>
+        <externalId>false</externalId>
+        <formula>CASE(MOD( First_of_Month__c - DATE(1985,6,24),7), 
+  0 , CASE( MOD( Last_of_Month__c - First_of_Month__c ,7),1,2,2,3,3,4,4,5,5,5,6,5,1), 
+  1 , CASE( MOD( Last_of_Month__c - First_of_Month__c ,7),1,2,2,3,3,4,4,4,5,4,6,5,1), 
+  2 , CASE( MOD( Last_of_Month__c - First_of_Month__c ,7),1,2,2,3,3,3,4,3,5,4,6,5,1), 
+  3 , CASE( MOD( Last_of_Month__c - First_of_Month__c ,7),1,2,2,2,3,2,4,3,5,4,6,5,1), 
+  4 , CASE( MOD( Last_of_Month__c - First_of_Month__c ,7),1,1,2,1,3,2,4,3,5,4,6,5,1), 
+  5 , CASE( MOD( Last_of_Month__c - First_of_Month__c ,7),1,0,2,1,3,2,4,3,5,4,6,5,0), 
+  6 , CASE( MOD( Last_of_Month__c - First_of_Month__c ,7),1,1,2,2,3,3,4,4,5,5,6,5,0), 
+  999) 
+  + 
+  (FLOOR(( Last_of_Month__c - First_of_Month__c )/7)*5)</formula>
+        <label>REPORT: Business Days in Month</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Call_Count_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Call Count Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Call_Count__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Task_Type__c = &quot;Call&quot;,1,NULL)</formula>
+        <label>Call Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Call_Disposition__c</fullName>
+        <description>I3 Call Disposition</description>
+        <externalId>false</externalId>
+        <inlineHelpText>I3 Call Disposition</inlineHelpText>
+        <label>Call Disposition</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Call_Duration_Minutes__c</fullName>
+        <externalId>false</externalId>
+        <formula>CallDurationInSeconds / 60</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Call Duration (Minutes)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Call_Outcome__c</fullName>
+        <description>SSquad field - may be able to be removed but check with Steven Bennett</description>
+        <externalId>false</externalId>
+        <label>Call Outcome</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Follow Up to Twitter Webinar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Registered for Webinar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Planning Session</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consultation Booked</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consultation Held</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consultation Cancelled</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consultation Rescheduled</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No Contact/No Voicemail</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Voicemail</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wrong Person</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Check-in</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Upsell</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Call_Result_Manual__c</fullName>
+        <description>Include the Call Result here if you are logging the call outside of Inside Sales</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Include the Call Result here if you are logging the call outside of Inside Sales</inlineHelpText>
+        <label>Call Result (Manual)</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Busy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Left Voicemail</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Left Live Message</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bad Number</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wrong Number</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No Answer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Contact</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Correct Contact</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Set Callback</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transfer.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Call_Topics__c</fullName>
+        <description>Success Squad field</description>
+        <externalId>false</externalId>
+        <label>Call Topics</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Additional Consultation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Additional Web Pages</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Apps</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Conversion Tools</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Display Advertising</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Domain</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Marketing Strategy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Paid Search</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Payment Gateway</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PPC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Products</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Return Policy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SEO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shipping Method</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shipping Zones</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SSL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Store Launched</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Taxes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>MultiselectPicklist</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Comments_short__c</fullName>
+        <description>populated by WFR to capture comments left in the phone system standard Comment field - needed because you can&apos;t pull the standard field in a page layout related list</description>
+        <externalId>false</externalId>
+        <label>Comments (short)</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Correct_Contact_Call__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(CallDisposition = &quot;Correct Contact&quot;,1,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Correct Contact Call</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DaScoopComposer__Is_Created_By_Groove__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates whether this activity was automatically created by Groove. This can be used as signal for workflows to trigger (field updates, email alerts, etc.).</inlineHelpText>
+        <label>Is Created By Groove</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DaScoopComposer__LastModifiedDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>is the most recent date/time on which Groove updated the event record or the date/time a logged email was sent by the sender.</inlineHelpText>
+        <label>Timestamp</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>DaScoopComposer__Mirror_in_Owner_s_Calendar__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>controls whether or not this event will be mirrored in the corporate calendar of the user who is the owner of this event. This field is part of the Groove calendar integration.</inlineHelpText>
+        <label>Mirror in Owner&apos;s Calendar</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DaScoopComposer__Replied__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>indicates whether Groove detected at least one reply to this Email (Task). This only works if the respective email was logged (e.g. via Groove Email Sync or Groove for Gmail).</description>
+        <externalId>false</externalId>
+        <label>Replied</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DaScoopComposer__Times_Opened__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>if a task reflects a tracked email, this field indicates how many times the email was opened by any of the recipients.</inlineHelpText>
+        <label>Times Opened</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DaScoopComposer__vCal_IID__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>is the instance ID of a recurring calendar event or the id of a referenced email. This field is part of Groove integration.</inlineHelpText>
+        <label>IID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DaScoopComposer__vCal_UID__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>is the unique ID of an activity such as the calendar event UID or the email message ID. This field is part of the Groove calendar integration.</inlineHelpText>
+        <label>UID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Day_of_the_Month__c</fullName>
+        <description>for reporting and dashboard formulas; not on any layouts</description>
+        <externalId>false</externalId>
+        <formula>DAY(TODAY())</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>REPORT: Day of the Month</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Demo_Held__c</fullName>
+        <description>Date that a demo was help by a sales rep</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date that a demo was held by a sales rep</inlineHelpText>
+        <label>Demo Held Date</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Demo_Set_Date__c</fullName>
+        <description>Date that the Sales rep scheduled a demo for the prospect</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When did you set the date for your demo?</inlineHelpText>
+        <label>Demo Set Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Dialer_Campaign__c</fullName>
+        <description>I3 Dialer Campaign name</description>
+        <externalId>false</externalId>
+        <inlineHelpText>I3 Dialer Campaign name</inlineHelpText>
+        <label>Dialer Campaign</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_Count__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Task_Type__c = &quot;Email&quot;,1,NULL)</formula>
+        <label>Email Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Estimated_Hours__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>A rough estimate of effort. Travel time not included.</inlineHelpText>
+        <label>Estimated Hours</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>First_of_Month_Formula__c</fullName>
+        <description>for reporting/dashboards</description>
+        <externalId>false</externalId>
+        <formula>Date(Year(  TODAY()  ),Month( TODAY() ),1)</formula>
+        <label>REPORT: First of Month Formula</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>First_of_Month__c</fullName>
+        <description>reports only</description>
+        <externalId>false</externalId>
+        <label>REPORT: First of Month</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Inbound_Test__c</fullName>
+        <externalId>false</externalId>
+        <label>Inbound Disposition</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Sales Active Trial</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sales Active Client</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sales Pretrial</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sales Partner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SSQ/Migrations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tech Support</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cancellations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other (Solicitor, HR, Wrong Number)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>MultiselectPicklist</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Last_Campaign__c</fullName>
+        <description>Used for reporting on campaign dialed on in I3</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used for reporting on campaign dialed on in I3</inlineHelpText>
+        <label>Last Campaign</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_of_Month_Formula__c</fullName>
+        <description>reporting/dashboard only</description>
+        <externalId>false</externalId>
+        <formula>Date(Year( TODAY() ),Month( TODAY() ), IF(Month( TODAY() )=12, 31,DAY(DATE(YEAR(  TODAY()),MONTH( TODAY() )+1,1) - 1)))</formula>
+        <label>REPORT: Last of Month Formula</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Last_of_Month__c</fullName>
+        <description>reports only</description>
+        <externalId>false</externalId>
+        <label>REPORT: Last of Month</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Manager_ID_formula__c</fullName>
+        <description>Formula field that stores activity Manager ID for use in process builder</description>
+        <externalId>false</externalId>
+        <formula>Owner:User.ManagerId</formula>
+        <inlineHelpText>Formula field that stores activity Manager ID for use in process builder</inlineHelpText>
+        <label>Manager ID</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Meeting_Count__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Populated via workflow to designate if the Type is meeting rather than just a call.</inlineHelpText>
+        <label>Meeting Count</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Menu_Option__c</fullName>
+        <description>I3 Phone Menu option selected</description>
+        <externalId>false</externalId>
+        <inlineHelpText>I3 Phone Menu option selected</inlineHelpText>
+        <label>Menu Option</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Owning_Team__c</fullName>
+        <defaultValue>$User.Department</defaultValue>
+        <externalId>false</externalId>
+        <label>Owning Team</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pin_Verified__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Was the Pin verified on this call? Sent from I3</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Was the Pin verified on this call? Sent from I3</inlineHelpText>
+        <label>Pin Verified</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Project_Link__c</fullName>
+        <description>Link to Enterprise Account Manager project page</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide a link to your project smartsheet</inlineHelpText>
+        <label>Project Link</label>
+        <required>false</required>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>REPORT_Business_Days_to_Date__c</fullName>
+        <description>Calculates the number of working days in a month based on the day of the month you are at</description>
+        <externalId>false</externalId>
+        <formula>CASE(MOD(  First_of_Month__c  - DATE(1985,6,24),7), 
+  0 , CASE( MOD(  REPORT_Today_s_Date__c  - First_of_Month__c ,7),1,2,2,3,3,4,4,5,5,5,6,5,1), 
+  1 , CASE( MOD( REPORT_Today_s_Date__c  - First_of_Month__c ,7),1,2,2,3,3,4,4,4,5,4,6,5,1), 
+  2 , CASE( MOD( REPORT_Today_s_Date__c  - First_of_Month__c ,7),1,2,2,3,3,3,4,3,5,4,6,5,1), 
+  3 , CASE( MOD( REPORT_Today_s_Date__c  - First_of_Month__c ,7),1,2,2,2,3,2,4,3,5,4,6,5,1), 
+  4 , CASE( MOD( REPORT_Today_s_Date__c  - First_of_Month__c ,7),1,1,2,1,3,2,4,3,5,4,6,5,1), 
+  5 , CASE( MOD( REPORT_Today_s_Date__c  - First_of_Month__c ,7),1,0,2,1,3,2,4,3,5,4,6,5,0), 
+  6 , CASE( MOD( REPORT_Today_s_Date__c  - First_of_Month__c ,7),1,1,2,2,3,3,4,4,5,5,6,5,0), 
+  999) 
+  + 
+  (FLOOR(( REPORT_Today_s_Date__c  - First_of_Month__c)/7)*5)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>REPORT: Business Days to Date</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>REPORT_Cancellation__c</fullName>
+        <description>success squad reporting</description>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL( Call_Outcome__c ,&quot;Appointment Cancelled&quot;),1,0)</formula>
+        <label>REPORT: Cancellation</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>REPORT_Consultation__c</fullName>
+        <description>success squad reporting</description>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL( Call_Outcome__c, &quot;Consultation : Other&quot;) || ISPICKVAL( Call_Outcome__c, &quot;Consultation : Store Launched&quot;),1,0)</formula>
+        <label>REPORT: Consultation</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>REPORT_Today_s_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>TODAY()</formula>
+        <label>REPORT: Today&apos;s Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Recording_Link__c</fullName>
+        <description>I3 Call Recording Link</description>
+        <externalId>false</externalId>
+        <inlineHelpText>I3 Call Recording Link - I3 can&apos;t send so remove</inlineHelpText>
+        <label>zRecording Link</label>
+        <required>false</required>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Success_Squad_Call_Disposition__c</fullName>
+        <description>Call disposition for PS team</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Call disposition for PS team</inlineHelpText>
+        <label>PS Call Disposition</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Intro Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Call Attempt</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unable to reach client</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Escalated Migration</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Store Launched</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consultation Complete</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Working with 3rd Party</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Self Launch</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Webinar Launch</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Client has no products</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cancel request</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Refund Request</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manager Callback</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Task_Type__c</fullName>
+        <description>used to capture the standard Type field value so we can use it in reports.  The standard field isn&apos;t available due to weird SF constraints</description>
+        <externalId>false</externalId>
+        <label>Task Type</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_Spent__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Total time spent working task (in hours). Specific to Enterprise Account Manager task layout</description>
+        <externalId>false</externalId>
+        <inlineHelpText>How much time have you spent on this task? (in hours - round to the nearest quarter hour)</inlineHelpText>
+        <label>Time Spent (hours)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_Test__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( VALUE(MID(TEXT( qbdialer__Call_Date_Time__c ),12,2)) , 
+0, 19,
+1, 20,
+2, 21,
+3, 22,
+4, 23,
+5, 0,
+6, 1,
+7, 2,
+8, 3,
+9,  4,
+10,  5,
+11,  6,
+12,  7,
+13,  8,
+14,  9,
+15,  10,
+16,  11,
+17,  12,
+18,  13,
+19,  14,
+20,  15,
+21,  16,
+22,  17,
+23,  18,
+0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Time Test</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ToutApp__Tout_Actions_Taken__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Actions taken by the recipient of an email (Sign Up, Enter Credit Card, Hits a button, Visits a particular page, etc).</description>
+        <externalId>false</externalId>
+        <label>Tout Actions Taken</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>ToutApp__Tout_Clicked__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the recipient of the email has clicked on links inside the email.</description>
+        <externalId>false</externalId>
+        <label>Tout Clicked</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ToutApp__Tout_Details__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A link to more details around the Touted email.</description>
+        <externalId>false</externalId>
+        <label>Tout Details</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ToutApp__Tout_Events_Tracked__c</fullName>
+        <deprecated>false</deprecated>
+        <description># of Tout Engagement Events tracked around this email.</description>
+        <externalId>false</externalId>
+        <label>Tout Events Tracked</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ToutApp__Tout_Last_Event_At__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The last time someone viewed, clicked or engaged in any other way with this email.</description>
+        <externalId>false</externalId>
+        <label>Tout Last Event At</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>ToutApp__Tout_Presentation_Viewed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether a presentation included in this email was viewed.</description>
+        <externalId>false</externalId>
+        <label>Tout Presentation Viewed</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ToutApp__Tout_Replied_At__c</fullName>
+        <deprecated>false</deprecated>
+        <description>THe timestamp of when someone last replied to this email.</description>
+        <externalId>false</externalId>
+        <label>Tout Replied At</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>ToutApp__Tout_Replied__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether Tout detected a response to this email.</description>
+        <externalId>false</externalId>
+        <label>Tout Replied</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ToutApp__Tout_Sent_By__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Tout Sent By</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ToutApp__Tout_Template_Details__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A link to details around the Tout template.</description>
+        <externalId>false</externalId>
+        <label>Tout Template Details</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ToutApp__Tout_Template__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of the Tout template used in this email.</description>
+        <externalId>false</externalId>
+        <label>Tout Template</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ToutApp__Tout_Viewed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the recipient of the email viewed it.</description>
+        <externalId>false</externalId>
+        <label>Tout Viewed</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WFR_Trigger__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>WFR Trigger</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>X48_hour_notice__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>48 hour notice</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>isdc_day_of_week__c</fullName>
+        <externalId>false</externalId>
+        <label>Day of the Week</label>
+        <length>18</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>isdc_dialed_phone_number__c</fullName>
+        <description>inside sales app field</description>
+        <externalId>false</externalId>
+        <label>Phone Dialed</label>
+        <required>false</required>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>isdc_dialer_call_type__c</fullName>
+        <description>inside sales app field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>How was this call initiated within the InsideSales application?</inlineHelpText>
+        <label>Dialer Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Click-to-Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Seek List</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Domino List</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>isdc_dialer_list_name__c</fullName>
+        <description>inside sales app field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Seek List used for this call</inlineHelpText>
+        <label>List Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>isdc_dialer_query_name__c</fullName>
+        <description>inside sales app field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Query used to initiate this call</inlineHelpText>
+        <label>Query Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>isdc_inbound_call_answered__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>inside sales app field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>inside sales app field</inlineHelpText>
+        <label>Call Answered</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>isdc_inbound_call_failover__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>inside sales app field</description>
+        <externalId>false</externalId>
+        <label>Call Failover</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>isdc_inbound_callerid__c</fullName>
+        <description>inside sales app field</description>
+        <externalId>false</externalId>
+        <label>Inbound Caller-ID</label>
+        <required>false</required>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>isdc_inbound_failover_number__c</fullName>
+        <description>inside sales app field</description>
+        <externalId>false</externalId>
+        <label>Failover Number</label>
+        <required>false</required>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>isdc_inbound_number_dialed__c</fullName>
+        <description>inside sales app field</description>
+        <externalId>false</externalId>
+        <label>Inbound Number Dialed</label>
+        <required>false</required>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>isdc_inbound_routed_to_last_caller__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>inside sales app field</description>
+        <externalId>false</externalId>
+        <label>Route to Last Caller</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>isdc_inbound_routed_to_owner__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>inside sales app field</description>
+        <externalId>false</externalId>
+        <label>Route to Owner</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>isdc_inbound_wait_time__c</fullName>
+        <description>inside sales app field</description>
+        <externalId>false</externalId>
+        <label>Wait Time</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>isdc_local_presence_call__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>inside sales app field</description>
+        <externalId>false</externalId>
+        <label>LocalPresence</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>qbdialer__CallRecordingURL__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Link to the call recording</description>
+        <externalId>false</externalId>
+        <label>Call Recording</label>
+        <required>false</required>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>qbdialer__Call_Date_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Call Date/Time</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>qbdialer__Call_Dial_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total number of dials on the record being called</description>
+        <externalId>false</externalId>
+        <label>Call Dial Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>qbdialer__Call_Hour__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Hour in which the call was placed from the record&apos;s perspective</description>
+        <externalId>false</externalId>
+        <label>Call Hour</label>
+        <length>8</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>qbdialer__Call_Lead_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Lead Status of the record called</description>
+        <externalId>false</externalId>
+        <label>Call Lead Status</label>
+        <length>40</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>qbdialer__Call_Ring_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Ring Time of the phone call</description>
+        <externalId>false</externalId>
+        <label>Call Ring Time</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>qbdialer__Call_Time_Zone__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Time zone of the number being called</description>
+        <externalId>false</externalId>
+        <label>Call Time Zone</label>
+        <length>20</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>qbdialer__Callback_Date_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Callback Date/Time</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>qbdialer__ImpressionId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>Impression ID</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>qbdialer__SMSReminder__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Text message reminders will be sent to all attendees at the set reminder time.</inlineHelpText>
+        <label>Send text msg reminder to all attendees</label>
+        <type>Checkbox</type>
+    </fields>
+    <listViews>
+        <fullName>Account_Activities</fullName>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.PRIORITY</columns>
+        <columns>Acquisition_Campaign__c</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>TASK.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>Business_Days_in_Month__c</columns>
+        <columns>Day_of_the_Month__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Activity_Object__c</field>
+            <operation>equals</operation>
+            <value>Account</value>
+        </filters>
+        <label>Account Activities</label>
+        <sharedTo/>
+    </listViews>
+    <listViews>
+        <fullName>Lead_Activities</fullName>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.PRIORITY</columns>
+        <columns>Acquisition_Campaign__c</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>TASK.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Activity_Object__c</field>
+            <operation>equals</operation>
+            <value>Lead</value>
+        </filters>
+        <label>Lead Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>MyActivities</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>MyDelegatedActivities</fullName>
+        <filterScope>Delegated</filterScope>
+        <label>My Delegated Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>MyTeamsActivities</fullName>
+        <filterScope>Team</filterScope>
+        <label>My Team&apos;s Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Open_Tasks</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>TASK.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Open Tasks</label>
+    </listViews>
+    <listViews>
+        <fullName>Opportunity_Activities</fullName>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.PRIORITY</columns>
+        <columns>Acquisition_Campaign__c</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>TASK.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Activity_Object__c</field>
+            <operation>equals</operation>
+            <value>Opportunity</value>
+        </filters>
+        <label>Opportunity Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>TodaysTasks</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>TASK.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>lessThan</operation>
+            <value>TOMORROW</value>
+        </filters>
+        <label>Today&apos;s Tasks</label>
+    </listViews>
+    <listViews>
+        <fullName>UpcomingEvents</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>greaterThan</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <label>Upcoming Events</label>
+    </listViews>
+    <searchLayouts>
+        <searchResultsAdditionalFields>TASK.SUBJECT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHO_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHAT_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.DUE_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <webLinks>
+        <fullName>ToutApp__Email_with_Tout</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Email with Tout</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>var u = &quot;https://www.toutapp.com/pitches/new?name={!Contact.Name}&amp;email={!Contact.Email}&amp;salesforce_contact_id={!Contact.Id}}&amp;force_bookmarklet=true&amp;style=salesforce&quot;; var w = window; w.open(u,&apos;Tout&apos;,&apos;scrollbars=1,status=1,width=762,height=&apos; + ( w.screen.height &lt; 970 ? w.screen.height : 970))</url>
+    </webLinks>
+    <webLinks>
+        <fullName>qbdialer__Launch_Click_to_Call</fullName>
+        <availability>online</availability>
+        <description>For Beta</description>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Launch Click-to-Call</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>var th = window.top.document.body;
+			var s = window.top.document.createElement(&apos;script&apos;);
+			s.setAttribute(&apos;type&apos;,&apos;text/javascript&apos;);
+			s.setAttribute(&apos;src&apos;,&quot;/resource/qbdialer__c2c_resources/2015111801357/c2c_console.js&quot;);
+			th.appendChild(s);</url>
+    </webLinks>
+</CustomObject>

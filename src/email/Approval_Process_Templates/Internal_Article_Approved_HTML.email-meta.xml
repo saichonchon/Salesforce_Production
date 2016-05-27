@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email is sent to Author letting them know article is approved and ready to be published.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>Internal Article Approved HTML</name>
+    <style>freeForm</style>
+    <subject>Internal Article Approved! - {!Internal_Article__kav.Title}</subject>
+    <textOnly>Your article has been approved and is ready to be published.
+
+Title: {!Internal_Article__kav.Title}
+
+Summary: {!Internal_Article__kav.Summary}
+
+Link: {!Internal_Article__kav.Link}
+
+Reviewed By: {!User.Name}</textOnly>
+    <type>html</type>
+</EmailTemplate>

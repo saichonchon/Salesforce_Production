@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>Migration Emails</name>
+    <publicFolderAccess>ReadWrite</publicFolderAccess>
+    <sharedTo>
+        <group>Migration_Specialists</group>
+        <group>Migration_Team</group>
+        <group>Migrations_Escalations</group>
+        <role>Migration</role>
+    </sharedTo>
+</EmailFolder>

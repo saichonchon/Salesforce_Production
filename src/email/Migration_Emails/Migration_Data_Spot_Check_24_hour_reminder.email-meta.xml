@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Migration: Data Spot Check 24 hour Reminder - Canned Comment 42</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>Migration: Data Spot Check Reminder</name>
+    <style>formalLetter</style>
+    <subject>Your BigCommerce Catalog Transfer: Your data check is due</subject>
+    <textOnly>Hi {!Case.Contact_First_Name__c},
+
+
+We haven’t heard back about your migration. Please review your store and complete our spot­ check survey.
+
+
+Previous Store URL: {!Case.Current_Store_URL__c}
+
+BigCommerce Migrated Store URL: {!Case.Temporary_Store_URL__c}
+
+
+Indicate any areas that may need to be revisited:
+
+- Categories
+
+- Product images
+
+- Product options (if needed)
+
+- Product descriptions
+
+- Customers
+
+- Product/category 301 redirects
+
+
+We’re excited to finish your data migration so you can start selling more as soon as possible! If you don’t have the time to spot check your data in the next 24 hours, we’ll go ahead and move you on to the store setup phase.
+
+
+Thanks,
+
+
+The BigCommerce Team
+
+
+Case # {!Case.CaseNumber}</textOnly>
+    <type>html</type>
+</EmailTemplate>

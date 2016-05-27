@@ -1,0 +1,19 @@
+Hi {!Contact.FirstName},<br />
+<br />
+I’m {!User.FirstName}, your new dedicated partner manager here at BigCommerce. Unfortunately I have not been able to get a hold of you, so I just wanted to reach out via email and introduce myself for now. I’ll try and get in contact with you again shortly to make sure you have everything you need. I’d also love to talk to you about our <a href="http://www.bigcommerce.com/ecommerce-blog/new-design-now-live/">new control panel UI and templates</a>, including our awesome carousel builder. <br />
+<br />
+Please keep an eye out for my emails: I'll let you know when new leads come in and if any trials under your account are near expiration.<br />
+<br />
+If you need anything in the meantime, don't hesitate to reach out — I’m always here to help.<br />
+<br /><br />
+{!User.FirstName} {!User.LastName}<br />
+<span style='color: rgb(119,119,119);text-decoration: none;'>
+Partner Development Executive<br /><br />
+<img src="http://s8.postimage.org/v0cl79at1/bc_logo_email_sig.png" alt="BigCommerce" /><br /><br />
+P {!User.Phone} | 1-888-699-8911 (Toll Free)<br />
+E  {!User.Email}<br />
+A  2711 W. Anderson Ln Suite 200 | Austin, TX 78757<br />
+<br />
+Visit us at <a style='color: rgb(18,121,154);text-decoration: none;' href='http://www.bigcommerce.com'>bigcommerce.com</a><br />
+Follow us <a href='' style='color: rgb(18,121,154);text-decoration: none;'>News</a> | <a href='' style='color: rgb(18,121,154);text-decoration: none;'>Facebook</a> | <a href='' style='color: rgb(18,121,154);text-decoration: none;'>Twitter</a> 
+</span>

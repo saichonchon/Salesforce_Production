@@ -1,0 +1,7 @@
+The following Enterprise client has submitted a cancellation case:
+
+Account Name:  {!Case.Account}
+
+Plan: {!Case.Bigcommerce_Plan__c}
+
+Link to Case: https://na19.salesforce.com/{!Case.Id}

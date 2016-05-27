@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>AccountMaxSubRollup</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>AccountMaxSubRollup</value>
+    </caseValues>
+    <fields>
+        <label><!-- FieldList1 --></label>
+        <name>FieldList1__c</name>
+    </fields>
+    <fields>
+        <label><!-- FieldList2 --></label>
+        <name>FieldList2__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

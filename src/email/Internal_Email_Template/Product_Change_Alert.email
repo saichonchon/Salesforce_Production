@@ -1,0 +1,24 @@
+Purchase Date:
+{!Subscription__c.PurchaseDate__c}
+Product Change Date:
+{!Subscription__c.Plan_Change_Date__c}
+Product:
+{!Subscription__c.Product__c}
+MRR:
+{!Subscription__c.MonthlyRecurringRevenue__c}
+Billing Cycle:
+{!Subscription__c.BillingCycle__c}
+Product Status:
+{!Subscription__c.Status__c}
+Link to Store:
+{!Subscription__c.Link}
+
+
+Purchase Date:  {!Opportunity.PurchaseDate__c}
+Product Change Date: {!Opportunity.LastModifiedDate}
+Product: {!Opportunity.Product__c}
+MRR: {!Opportunity.MonthlyRecurringRevenue__c}
+Billing Cycle: {!Opportunity.BillingCycle__c}
+Product Status: {!Opportunity.Status__c}
+
+Link to Store: {!Opportunity.Link}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Alerts account owner if new trial opp is not owned by him/her</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>New Trial Opp not owned by Account Owner</name>
+    <style>freeForm</style>
+    <subject>New Store on {!Account.Name} that YOU DO NOT OWN!!</subject>
+    <textOnly>Hey - {!Account.Name} has a new store and you don&apos;t own it....
+
+
+Account Name: {!Account.Name}
+Account Owner: {!Account.OwnerFullName}
+
+Opportunity Name: {!Opportunity.Name}
+Opportunity Owner: {!Opportunity.OwnerFullName}
+Opportunity Owner Team: {!Opportunity.Owner_Team__c}
+Channel Partner (if applicable): {!Opportunity.Channel_Partner__c}
+Stage: {!Opportunity.StageName}
+
+Click here to view the Opportunity record: {!Opportunity.Link}
+
+Click here to view the Account recrd: {!Account.Link}</textOnly>
+    <type>html</type>
+</EmailTemplate>

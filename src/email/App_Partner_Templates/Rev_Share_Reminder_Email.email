@@ -1,0 +1,77 @@
+<messaging:emailTemplate subject="Revenue Share Payment Reminder" recipientType="Contact" relatedToType="Account" replyTo="appstore@bigcommerce.com">
+<messaging:htmlEmailBody >
+        <html>
+            <body>
+            <STYLE type="text/css">
+               TH {font-size: 12px; font-face: arial; background: #cccccc; border-width: 1;  text-align: center; } 
+               TD  {font-size: 12px; font-face: verdana;  } 
+               TABLE {border: solid #CCCCCC; border-width: 1}
+               TR {border: solid #CCCCCC; border-width: 1}
+               
+                
+           </STYLE>
+     <font face="arial" size="2" >
+<apex:image id="Logo" value="https://c.cs42.content.force.com/servlet/servlet.FileDownload?file=015a00000036KGN" />
+
+
+            <p>Dear {!relatedTo.Primary_Contact_First_Name__c},</p>
+            <p>Please submit your monthly revenue payment for the app(s) listed below for last month from your My Apps dashboard on the BigCommerce Developer Portal for your app by clicking <a href = "https://developer.bigcommerce.com/my/apps"> here</a>.</p>
+
+           <p> <c:AppOpptyList AcctId="{!relatedTo.Id}" /></p>
+                     
+             <p>Please also complete and submit the BigCommerce Revenue Sharing form located <a href = "https://docs.google.com/a/bigcommerce.com/forms/d/1wacnrrbJpzdt-QQU1xJStEuDAG3kVZvnLXeOFYFDe7g/viewform">here</a>.</p>
+
+<p>Payment and reporting should be submitted by the 10th of this month. Thank you if you have already submitted your monthly revenue share payment and your report. </p> 
+
+<p>To make a payment, follow these simple instructions:</p>
+
+<p>1. <a href = "https://developer.bigcommerce.com"> Visit the BigCommerce Developer Portal</a>.</p>
+<p>2. Log in with the credentials used for managing your app.</p>
+<p>3. Select the payment option.</p>
+<p>4. Fill in the payment details and submit.</p>
+
+<p>If you have any questions please reach out to  <a href="mailto:AppStore@bigcommerce.com" target="_top"> AppStore@bigcommerce.com</a>.</p>
+
+
+<p>Thank you again, </p>
+
+<p>The BigCommerce App Store Team</p>
+
+            <apex:image id="Footer" value="https://c.cs42.content.force.com/servlet/servlet.FileDownload?file=015560000000ZbS" />
+               </font>
+            </body>
+        </html>
+    </messaging:htmlEmailBody>
+
+
+
+
+<messaging:plainTextEmailBody >
+
+Dear {!relatedTo.Primary_Contact_First_Name__c},
+
+Please submit your monthly revenue payment for your published app(s) for last month from your My Apps dashboard on the BigCommerce Developer Portal for your app by clicking here: https://developer.bigcommerce.com/my/apps
+               
+Please also complete and submit the BigCommerce Revenue Sharing form located here: https://docs.google.com/a/bigcommerce.com/forms/d/1wacnrrbJpzdt-QQU1xJStEuDAG3kVZvnLXeOFYFDe7g/viewform 
+
+Payment and reporting should be submitted by the 10th of this month. Thank you if you have already submitted your monthly revenue share payment and your report. 
+
+To make a payment, follow these simple instructions:
+
+1. Visit the BigCommerce Developer Portal - https://developer.bigcommerce.com
+2. Log in with the credentials used for managing your app.
+3. Select the payment option.
+4. Fill in the payment details and submit.
+
+
+If you have any questions please reach out to AppStore@bigcommerce.com.
+
+Thank you again, 
+
+The BigCommerce App Store Team
+
+
+
+
+</messaging:plainTextEmailBody>
+</messaging:emailTemplate>

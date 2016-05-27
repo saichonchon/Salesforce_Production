@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Intro FB Shop &amp; Square Inventory Sync.Email 1</name>
+    <style>none</style>
+    <subject>New features to sell more online and off</subject>
+    <textOnly>We’ve just introduced two new ways to help you expand your reach across multiple sales channels.
+Hi {{lead.First Name:default=there}},
+We’ve just introduced two new ways to help you expand your reach across multiple sales channels.
+
+Add a Shop section to Facebook
+
+
+
+BigCommerce integrates with the new Facebook Shop section to let you showcase your products to billions of users. Easily send your products to Facebook right from the BigCommerce control panel. Shoppers can browse the mobile-friendly storefront on your Facebook page, then click through to your site for checkout. Learn more about Facebook Shop &lt;[[https://www.bigcommerce.com/facebook-shop]]&gt;.
+
+Sync your inventory with Square
+
+
+
+Now you can sync your BigCommerce inventory with the Square POS. Save time and eliminate overselling by having your inventory automatically updated whenever you make a sale, online or offline. Learn more about our Square integration &lt;[[https://www.bigcommerce.com/square]]&gt;.
+Enjoy the new features, 
+The BigCommerce Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

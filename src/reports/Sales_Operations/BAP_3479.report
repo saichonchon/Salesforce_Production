@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Opportunity$RecordType</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Product__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Owner</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Channel_Partner__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account</field>
+    </columns>
+    <columns>
+        <field>Opportunity$rvpe__RVAccount__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account.iDev_Partner_ID__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account.Active_MRR_Value_Opp__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account.Active_Stores_Opp__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account.Active_Trials_Opp__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>((1 AND 2) OR (3 AND 4)) AND 5</booleanFilter>
+        <criteriaItems>
+            <column>Opportunity$Owner</column>
+            <operator>equals</operator>
+            <value>john nichols</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Account.Owner</column>
+            <operator>notEqual</operator>
+            <value>john nichols</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Owner</column>
+            <operator>equals</operator>
+            <value>albert singh</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Account.Owner</column>
+            <operator>notEqual</operator>
+            <value>albert singh</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$RecordType</column>
+            <operator>notEqual</operator>
+            <value>Opportunity.App,Opportunity.Professional_Services,Opportunity.Theme</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity$Account.Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>BAP 3479</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunities_with_lookup_data__c</reportType>
+    <roleHierarchyFilter>SystemAdministrator</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Opportunity$CreatedDate</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

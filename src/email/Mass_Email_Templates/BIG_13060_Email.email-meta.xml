@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>BIG-13060 Closure Notification</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>BIG-13060 Email</name>
+    <style>freeForm</style>
+    <subject>Case Number: {!Case.CaseNumber} Subject: {!Case.Subject}</subject>
+    <textOnly>*******************************************************************
+Case Number: {!Case.CaseNumber}
+Issue Reported: {!Case.Description}
+
+Hello,
+
+Your patience has been truly appreciated. Recently, you were affected by a known issue with our Canada Post integration. If a customer had 2 or more unique items in a cart with a weight less than 30kg, the following error appeared:
+
+&quot;Canada Post does not support shipping items heavier than 30 kilograms&quot;
+
+We are happy to inform you the issue has been resolved. Your customers should no longer see this error message if the cart has multiple unique items and the weight is less than 30kg.
+
+Please don&apos;t hesitate to contact us if you have further questions. Technical support is available 24/7:
+
+https://support.bigcommerce.com/contact.php
+
+BigCommerce Support
+http://support.bigcommerce.com
+
+You can reply to this email or to view your case&apos;s status you can go to https://bigcommerce-community.force.com/Client/bcslogin .
+
+Please do not remove: {!Case.E2CP__Case_Thread_Id__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

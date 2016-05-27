@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>PHONE</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>LC_OWNER</field>
+    </columns>
+    <columns>
+        <field>MEMBER_CREATED_DATE</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Lauryn&apos;s Demo Calldown List</name>
+    <params>
+        <name>scopeid</name>
+        <value>70113000000v9V7</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignWithCampaignMembers</reportType>
+    <scope>one</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>MEMBER_CREATED_DATE</sortColumn>
+    <sortOrder>Desc</sortOrder>
+</Report>

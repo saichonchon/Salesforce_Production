@@ -1,0 +1,8 @@
+The {!Subscription__c.Name} subscription has just downgraded.  Additional details are below.
+
+Account: {!Subscription__c.Account_Name__c}
+Contact:  {!Subscription__c.Contact__c}
+New Product:  {!Subscription__c.New_Product_Plan__c}
+
+Please click the link below to access the Subscription.
+{!Subscription__c.Link}

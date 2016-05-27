@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>BI Data</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>BI Data</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Mismatch --></label>
+        <name>Account_Mismatch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- BI Data --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Is the store using this SBD Partner? --></help>
+        <label><!-- Amber POS --></label>
+        <name>AmberPOS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the store using this SBD Partner? --></help>
+        <label><!-- Avalara --></label>
+        <name>Avalara__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Lifetime GMV/number of months since provisioned or Jan 1 2013. --></help>
+        <label><!-- Average Monthly GMV --></label>
+        <name>Average_Monthly_GMV__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date last payment was invoiced - this information is added from our data warehourse --></help>
+        <label><!-- Last Invoice Date --></label>
+        <name>BI_Date_Paid__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is the status of the invoice?  Data comes from BI. --></help>
+        <label><!-- BI Invoice Status --></label>
+        <name>BI_Invoice_Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Challenged</masterLabel>
+            <translation><!-- Challenged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incomplete</masterLabel>
+            <translation><!-- Incomplete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid</masterLabel>
+            <translation><!-- Paid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refunded</masterLabel>
+            <translation><!-- Refunded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unpaid</masterLabel>
+            <translation><!-- Unpaid --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- How much money we received from the client -  this information is added from our data warehourse --></help>
+        <label><!-- BI Payment Amount --></label>
+        <name>BI_Payment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Blueprint Template --></label>
+        <name>BlueprintTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Daily GMV --></label>
+        <name>Daily_GMV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Daily Orders --></label>
+        <name>Daily_Orders__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Domain_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fraud</masterLabel>
+            <translation><!-- Fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspended</masterLabel>
+            <translation><!-- Suspended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminated</masterLabel>
+            <translation><!-- Terminated --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Is the store using this SBD Partner? --></help>
+        <label><!-- Dyda Comp --></label>
+        <name>DydaComp__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the store using this SBD Partner? --></help>
+        <label><!-- EIG Homestead --></label>
+        <name>EIGHomestead__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the store using this SBD Partner? --></help>
+        <label><!-- Endicia --></label>
+        <name>Endicia__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the store using this SBD Partner? --></help>
+        <label><!-- First Data --></label>
+        <name>First_Data__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the store using this SBD Partner? --></help>
+        <label><!-- Global Payments --></label>
+        <name>Global_Payments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the store using this SBD Partner? --></help>
+        <label><!-- Heartland --></label>
+        <name>Heartland__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the store using this SBD Partner? --></help>
+        <label><!-- Intuit QBMS --></label>
+        <name>Intuit_QBMS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the store using this SBD Partner? --></help>
+        <label><!-- Intuit QBO --></label>
+        <name>Intuit_QBO__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the store using this SBD Partner? --></help>
+        <label><!-- Jirafe --></label>
+        <name>Jirafe__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 12 month&apos;s GMV --></label>
+        <name>Last_12_months_GMV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 12 month&apos;s Orders --></label>
+        <name>Last_12_months_Orders__c</name>
+    </fields>
+    <fields>
+        <help><!-- Month when last activity was recorded --></help>
+        <label><!-- Last Activity Date --></label>
+        <name>Last_Activity_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Last month&apos;s GMV. --></help>
+        <label><!-- Last Month GMV --></label>
+        <name>Last_Month_GMV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Payment Amount --></label>
+        <name>Last_Payment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Payment Date --></label>
+        <name>Last_Payment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latest Partner Name --></label>
+        <name>Latest_Partner_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latest Theme Purchased --></label>
+        <name>Latest_Theme_Purchased__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lifetime GMV since 1/1/13 or Store provision date if provisioned after. --></help>
+        <label><!-- Lifetime GMV --></label>
+        <name>Lifetime_GMV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lifetime Orders --></label>
+        <name>Lifetime_Orders__c</name>
+    </fields>
+    <fields>
+        <label><!-- MBA Account ID --></label>
+        <name>MBA_Account_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MBA Subscription ID --></label>
+        <name>MBA_Subscription_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the store using this SBD Partner? --></help>
+        <label><!-- Mastercard Simplify --></label>
+        <name>MasterCard_Simplify__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the store using this SBD Partner? --></help>
+        <label><!-- Merchant Warehouse --></label>
+        <name>Merchant_Warehouse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month To Date Orders --></label>
+        <name>Month_To_Date_Orders__c</name>
+    </fields>
+    <fields>
+        <help><!-- For active clients it is the current month GMV. For former clients it is the last month to date GMV. --></help>
+        <label><!-- Month To Date GMV --></label>
+        <name>Month_to_date_GMV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Order Date --></label>
+        <name>Most_Recent_Order_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- What the heck does verifiable mean? https://goo.gl/ouc0pn --></help>
+        <label><!-- Non-Verifiable GMV --></label>
+        <name>Non_Verifiable_GMV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- BI Data --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Partner Account --></label>
+        <name>Partner_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Term --></label>
+        <name>Payment_Term__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the store using this SBD Partner? --></help>
+        <label><!-- Paypal Braintree --></label>
+        <name>Paypal_Braintree__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the date for which the previous month GMV was obtained. --></help>
+        <label><!-- Previous Month GMV Date --></label>
+        <name>Previous_Month_GMV_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous month&apos;s Orders --></label>
+        <name>Previous_month_Orders__c</name>
+    </fields>
+    <fields>
+        <help><!-- GMV corresponding to previous month of activity (not necessarily calendar last month). --></help>
+        <label><!-- Previous month&apos;s GMV --></label>
+        <name>Previous_months_GMV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing Eligible GMV --></label>
+        <name>Pricing_Eligible_GMV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing Eligible Orders --></label>
+        <name>Pricing_Eligible_Orders__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revshare Partner Name --></label>
+        <name>Revshare_Partner_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revshare partner Type --></label>
+        <name>Revshare_partner_Type__c</name>
+        <picklistValues>
+            <masterLabel>apps - shipping</masterLabel>
+            <translation><!-- apps - shipping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>apps - taxes</masterLabel>
+            <translation><!-- apps - taxes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>email marketing</masterLabel>
+            <translation><!-- email marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>payment gateway</masterLabel>
+            <translation><!-- payment gateway --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>service partner</masterLabel>
+            <translation><!-- service partner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SFDC Test --></label>
+        <name>SFDC_Test__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the store using this SBD Partner? --></help>
+        <label><!-- SKU Vault --></label>
+        <name>SKUVault__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample_1000 --></label>
+        <name>Sample_1000__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample_100 --></label>
+        <name>Sample_100__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample_10 --></label>
+        <name>Sample_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample_2 --></label>
+        <name>Sample_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the store using this SBD Partner? --></help>
+        <label><!-- Seller Express --></label>
+        <name>SellerExpress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stencil Theme Variation Name --></label>
+        <name>StencilThemeVariationName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stencil Theme Version Name --></label>
+        <name>StencilThemeVersionName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Monthly Storage Used --></help>
+        <label><!-- Storage Used (Mb) --></label>
+        <name>Storage_Used__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the store using this SBD Partner? --></help>
+        <label><!-- Stripe --></label>
+        <name>Stripe__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription --></label>
+        <name>Subscription__c</name>
+        <relationshipLabel><!-- BI Data --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Is the store using this SBD Partner? --></help>
+        <label><!-- Subuno --></label>
+        <name>Subuno__c</name>
+    </fields>
+    <fields>
+        <label><!-- Theme Framework --></label>
+        <name>ThemeFramework__c</name>
+    </fields>
+    <fields>
+        <label><!-- Theme --></label>
+        <name>Theme__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Spent on Themes --></label>
+        <name>Total_Spent_on_Themes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Themes Purchased --></label>
+        <name>Total_Themes_Purchased__c</name>
+    </fields>
+    <fields>
+        <help><!-- What the heck does verifiable mean? https://goo.gl/ouc0pn --></help>
+        <label><!-- Verifiable GMV --></label>
+        <name>Verifiable_GMV__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the store using this SBD Partner? --></help>
+        <label><!-- Wiser --></label>
+        <name>Wiser__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the store using this SBD Partner? --></help>
+        <label><!-- 2Checkout --></label>
+        <name>X2Checkout__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the store using this SBD Partner? --></help>
+        <label><!-- Zing Checkout --></label>
+        <name>Zing_Checkout__c</name>
+    </fields>
+    <layouts>
+        <layout>BI Data Layout</layout>
+        <sections>
+            <label><!-- Client Details --></label>
+            <section>Client Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- GMV --></label>
+            <section>GMV</section>
+        </sections>
+        <sections>
+            <label><!-- SBD Influence --></label>
+            <section>SBD Influence</section>
+        </sections>
+        <sections>
+            <label><!-- Themes and Apps --></label>
+            <section>Themes and Apps</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

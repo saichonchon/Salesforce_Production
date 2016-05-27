@@ -1,0 +1,14 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[<p class="c3"><font face="arial">Hi {!Case.Contact_First_Name__c},<br><br></font></p><p class="c3"><span style="font-size: 12pt;">Thanks for completing your Catalog Transfer Verification Checklist. We have received your feedback and our catalog transfer services team is reviewing your feedback and will contact you when we're ready for you to review the catalog transfer details again.<br></span><span style="font-size: 12pt;"><br>Please hold off on making changes to your products and categories until we have had addressed your feedback.<br><br></span></p><p class="c3"><span style="font-size: 12pt;">Remember, we’re here to help. If you have any additional questions, please don’t hesitate to reach out to migrations@bigcommerce.com. We’re looking forward to working with you!&nbsp;<br><br></span></p><p class="c3"><span style="font-size: 12pt;">Thanks,<br><br></span></p><p class="c3"><span style="font-size: 12pt;">The BigCommerce Team<br><br></span></p><p class="c3"><i style="font-size: 12pt;"><font style="font-size: 12pt;" face="arial">Case #&nbsp;</font><font style="font-size: medium;" face="arial">{!Case.CaseNumber}</font></i></p>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[]]></td>
+</tr>
+</table>

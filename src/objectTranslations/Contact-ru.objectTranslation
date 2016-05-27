@@ -1,0 +1,1225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Ownership Match --></label>
+        <name>Account_Ownership_Match__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Contact&apos;s Account Partner --></help>
+        <label><!-- zPAR Account Partner --></label>
+        <name>Account_Partner_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- zAutoResponder Testing --></label>
+        <name>AutoResponder_Testing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bad MBA Phone 1 --></label>
+        <name>Bad_MBA_Phone_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bad MBA Phone 2 --></label>
+        <name>Bad_MBA_Phone_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bad MBA Phone 3 --></label>
+        <name>Bad_MBA_Phone_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bad MBA Phone 4 --></label>
+        <name>Bad_MBA_Phone_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bad Phone Number --></label>
+        <name>Bad_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- zChannel Partner Campaign --></label>
+        <name>Channel_Partner_Campaign__c</name>
+        <picklistValues>
+            <masterLabel>Business Catalyst</masterLabel>
+            <translation><!-- Business Catalyst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EIG Re-engagement</masterLabel>
+            <translation><!-- EIG Re-engagement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Service Agency July2014</masterLabel>
+            <translation><!-- Full Service Agency July2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upsell: Old Bronze Old Silver Temp Batch 2</masterLabel>
+            <translation><!-- Upsell: Old Bronze Old Silver Temp Batch 2 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Stores a value of 1 so we can report on number of contacts. --></help>
+        <label><!-- REPORT Contact Count --></label>
+        <name>Contact_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Case Safe ID --></label>
+        <name>Contact_Unique_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Domain --></label>
+        <name>DaScoopComposer__Domain__c</name>
+    </fields>
+    <fields>
+        <help><!-- is the secondary email address of this contact --></help>
+        <label><!-- Email 2 --></label>
+        <name>DaScoopComposer__Email_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- is an inferred hash key to improve performance. This field was deprecated. --></help>
+        <label><!-- Email Domain and Contact Hash --></label>
+        <name>DaScoopComposer__Email_Domain__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the URL of a &quot;Create Opportunity&quot; screen. It allows the user to create an opportunity with a contact role. This can be added to a Groove View and can be rendered as an action button in your email client. --></help>
+        <label><!-- Create Opportunity --></label>
+        <name>DaScoopComposer__Groove_Create_Opportunity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the URL of a &quot;LinkedIn&quot; lookup screen. This can be added to a Groove View and can be rendered as an action button in your email client. --></help>
+        <label><!-- LinkedIn --></label>
+        <name>DaScoopComposer__Groove_LinkedIn__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the URL of a &quot;Log a Call&quot; screen. This can be added to a Groove View and can be rendered as an action button in your email client. --></help>
+        <label><!-- Log a Call --></label>
+        <name>DaScoopComposer__Groove_Log_a_Call__c</name>
+    </fields>
+    <fields>
+        <help><!-- For BMP Only - if the contact was deleted, date time that the contact was deleted --></help>
+        <label><!-- Deleted At --></label>
+        <name>DeletedAt__c</name>
+    </fields>
+    <fields>
+        <help><!-- For BMP only - was the contact deleted in BMP --></help>
+        <label><!-- Deleted --></label>
+        <name>Deleted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is this a duplicate of another contact in Salesforce? --></help>
+        <label><!-- Duplicate? --></label>
+        <name>Duplicate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Created for Mike Smith prior to the Hubspot integration to SF. Manually populated by dataloader so he knew which contacts not to pull for email campaigns. Can probably be deletd --></help>
+        <label><!-- zMKT Email Bounce in Hubspot --></label>
+        <name>Email_Bounce_in_Hubspot__c</name>
+    </fields>
+    <fields>
+        <label><!-- zMKT Enroll in Hubspot Workflow --></label>
+        <name>Enroll_in_Hubspot_Workflow__c</name>
+        <picklistValues>
+            <masterLabel>Call #  Email (Left Voicemail)</masterLabel>
+            <translation><!-- Call #  Email (Left Voicemail) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call #1 Email (Bad Number)</masterLabel>
+            <translation><!-- Call #1 Email (Bad Number) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call #1 Email (Contacted)</masterLabel>
+            <translation><!-- Call #1 Email (Contacted) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call #3 Email (Add product)</masterLabel>
+            <translation><!-- Call #3 Email (Add product) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEST UPS Object Storage Workflow Silver Next to Gold Over Limit (cloned)</masterLabel>
+            <translation><!-- TEST UPS Object Storage Workflow Silver Next to Gold Over Limit (cloned) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- zFollowed Up to Twitter Webinar --></label>
+        <name>Followed_Up_to_Twitter_Webinar__c</name>
+    </fields>
+    <fields>
+        <label><!-- zMKT Hubspot Score Difference --></label>
+        <name>Hubspot_Score_Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- zMKT Hubspot Score --></label>
+        <name>Hubspot_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- zMKT Hubspot Score at Conversion --></label>
+        <name>Hubspot_Score_at_Conversion__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tier Number sent to I3 phone system for routing --></help>
+        <label><!-- zI3 Tier Number --></label>
+        <name>I3_Tier_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- zMKT Initial Hubspot Score --></label>
+        <name>Initial_Hubspot_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is this person&apos;s job function? Mapped from lead. --></help>
+        <label><!-- zJob Function --></label>
+        <name>Job_Function__c</name>
+        <picklistValues>
+            <masterLabel>Executive</masterLabel>
+            <translation><!-- Executive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT</masterLabel>
+            <translation><!-- IT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing,</masterLabel>
+            <translation><!-- Marketing, --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>LeadSource</name>
+        <picklistValues>
+            <masterLabel>ACQ Demand Gen</masterLabel>
+            <translation><!-- ACQ Demand Gen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACQ Hubspot Content</masterLabel>
+            <translation><!-- ACQ Hubspot Content --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACQ Hubspot Demo Request</masterLabel>
+            <translation><!-- ACQ Hubspot Demo Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACQ List Upload</masterLabel>
+            <translation><!-- ACQ List Upload --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AYRM</masterLabel>
+            <translation><!-- AYRM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Affiliate</masterLabel>
+            <translation><!-- Affiliate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Campaign Import</masterLabel>
+            <translation><!-- Campaign Import --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chat</masterLabel>
+            <translation><!-- Chat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Datanyze</masterLabel>
+            <translation><!-- Datanyze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Datanyze Import</masterLabel>
+            <translation><!-- Datanyze Import --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deal Registration</masterLabel>
+            <translation><!-- Deal Registration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Display</masterLabel>
+            <translation><!-- Display --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EBQ DM</masterLabel>
+            <translation><!-- EBQ DM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EBQ DM2</masterLabel>
+            <translation><!-- EBQ DM2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EBQ DM3</masterLabel>
+            <translation><!-- EBQ DM3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email / Ticket</masterLabel>
+            <translation><!-- Email / Ticket --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Advertising</masterLabel>
+            <translation><!-- Email Advertising --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise Partner Lead</masterLabel>
+            <translation><!-- Enterprise Partner Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event</masterLabel>
+            <translation><!-- Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Events</masterLabel>
+            <translation><!-- Events --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G2Crowd</masterLabel>
+            <translation><!-- G2Crowd --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GPN Campaign Import</masterLabel>
+            <translation><!-- GPN Campaign Import --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hubspot</masterLabel>
+            <translation><!-- Hubspot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IR Special Report 2014</masterLabel>
+            <translation><!-- IR Special Report 2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inbound</masterLabel>
+            <translation><!-- Inbound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internet Retailer</masterLabel>
+            <translation><!-- Internet Retailer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Netline</masterLabel>
+            <translation><!-- Netline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organic Search</masterLabel>
+            <translation><!-- Organic Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organic Social</masterLabel>
+            <translation><!-- Organic Social --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orion</masterLabel>
+            <translation><!-- Orion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRE Demand Gen</masterLabel>
+            <translation><!-- PRE Demand Gen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRE Hubspot Content</masterLabel>
+            <translation><!-- PRE Hubspot Content --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRE Hubspot Demo Request</masterLabel>
+            <translation><!-- PRE Hubspot Demo Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone / Queue</masterLabel>
+            <translation><!-- Phone / Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Print Ads</masterLabel>
+            <translation><!-- Print Ads --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBD</masterLabel>
+            <translation><!-- SBD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBD Acquisition</masterLabel>
+            <translation><!-- SBD Acquisition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEM</masterLabel>
+            <translation><!-- SEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Ads</masterLabel>
+            <translation><!-- Social Ads --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web Form</masterLabel>
+            <translation><!-- Web Form --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web Trial</masterLabel>
+            <translation><!-- Web Trial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WebToLead</masterLabel>
+            <translation><!-- WebToLead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webinar</masterLabel>
+            <translation><!-- Webinar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webinar List</masterLabel>
+            <translation><!-- Webinar List --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MBA Account ID --></label>
+        <name>MBAAccountID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MBA Client ID --></label>
+        <name>MBAClientID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MBA Phone 1 --></label>
+        <name>MBA_Phone_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- MBA Phone 2 --></label>
+        <name>MBA_Phone_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- MBA Phone 3 --></label>
+        <name>MBA_Phone_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- MBA Phone 4 --></label>
+        <name>MBA_Phone_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- MBA Referral ID --></label>
+        <name>MBA_Referral_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Source --></label>
+        <name>Marketing_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- No longer with the company --></label>
+        <name>No_longer_with_the_company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non English Speaking --></label>
+        <name>Non_English_Speaking__c</name>
+    </fields>
+    <fields>
+        <label><!-- zOpened Pricing PDF --></label>
+        <name>Opened_Pricing_PDF__c</name>
+    </fields>
+    <fields>
+        <label><!-- zOpenend Product Tour Recording --></label>
+        <name>Openend_Product_Tour_Recording__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Email --></label>
+        <name>Other_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- zMKT Owner Phone --></label>
+        <name>Owner_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- zPinterest eBook Date --></label>
+        <name>Pinterest_eBook_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- zPinterest eBook --></label>
+        <name>Pinterest_eBook__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contact with an email match to the MBA Account admin email address --></help>
+        <label><!-- Primary MBA Contact --></label>
+        <name>Primary_MBA_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- zRV Account Name --></label>
+        <name>RVAccountName__c</name>
+    </fields>
+    <fields>
+        <label><!-- RV Member Id --></label>
+        <name>RVMemberId__c</name>
+    </fields>
+    <fields>
+        <label><!-- RV Account --></label>
+        <name>RV_Account__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- RV Member --></label>
+        <name>RV_Member__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- zRecorded Product Tour Date --></label>
+        <name>Recorded_Product_Tour_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field to store a preferred phone number for this contact. --></help>
+        <label><!-- Sales Phone --></label>
+        <name>Sales_Phone__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether the account exists in MBA or BMP --></help>
+        <label><!-- Provisioning System --></label>
+        <name>Source__c</name>
+        <picklistValues>
+            <masterLabel>BMP</masterLabel>
+            <translation><!-- BMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MBA</masterLabel>
+            <translation><!-- MBA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- zStage --></label>
+        <name>Stage__c</name>
+        <picklistValues>
+            <masterLabel>Closed Lost</masterLabel>
+            <translation><!-- Closed Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed Won</masterLabel>
+            <translation><!-- Closed Won --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- zSuccess Squad Consultant --></label>
+        <name>Success_Squad_Consultant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Support PIN --></label>
+        <name>Support_PIN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sync with Marketo --></label>
+        <name>Sync_with_Marketo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Zone --></label>
+        <name>Time_Zone__c</name>
+    </fields>
+    <fields>
+        <label><!-- zTotal Active Account Value --></label>
+        <name>Total_Active_Account_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Billing</masterLabel>
+            <translation><!-- Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing Contact</masterLabel>
+            <translation><!-- Billing Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner RV Member</masterLabel>
+            <translation><!-- Partner RV Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary Contact</masterLabel>
+            <translation><!-- Primary Contact --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- US Time Zone --></label>
+        <name>US_Time_Zone__c</name>
+        <picklistValues>
+            <masterLabel>Alaskan</masterLabel>
+            <translation><!-- Alaskan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central</masterLabel>
+            <translation><!-- Central --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eastern</masterLabel>
+            <translation><!-- Eastern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hawaiian</masterLabel>
+            <translation><!-- Hawaiian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mountain</masterLabel>
+            <translation><!-- Mountain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pacific</masterLabel>
+            <translation><!-- Pacific --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- zViewed Recorded Tour before Conversion --></label>
+        <name>Viewed_Recorded_Tour_before_Conversion__c</name>
+    </fields>
+    <fields>
+        <label><!-- zWebinar Date --></label>
+        <name>Webinar_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- zWebinar Name --></label>
+        <name>Webinar_Name__c</name>
+        <picklistValues>
+            <masterLabel>5 Things to Boost Sales in 2013</masterLabel>
+            <translation><!-- 5 Things to Boost Sales in 2013 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bigcommerce Partner Program and You</masterLabel>
+            <translation><!-- Bigcommerce Partner Program and You --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success Squad - Store Launch</masterLabel>
+            <translation><!-- Success Squad - Store Launch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The 3 Keys to Next-Level Conversion</masterLabel>
+            <translation><!-- The 3 Keys to Next-Level Conversion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Using Content to grow eCommerce Sales</masterLabel>
+            <translation><!-- Using Content to grow eCommerce Sales --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- zWebinar Questions --></label>
+        <name>Webinar_Questions__c</name>
+    </fields>
+    <fields>
+        <label><!-- zWebinar Status --></label>
+        <name>Webinar_Status__c</name>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Registered</masterLabel>
+            <translation><!-- Registered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Watched Recording</masterLabel>
+            <translation><!-- Watched Recording --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- GA Client ID --></label>
+        <name>gaClientID__c</name>
+    </fields>
+    <fields>
+        <label><!-- GA FirstTouch Campaign --></label>
+        <name>gafirstTouchCampaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- GA FirstTouch Channel --></label>
+        <name>gafirstTouchChannel__c</name>
+    </fields>
+    <fields>
+        <label><!-- GA First Touch Date --></label>
+        <name>gafirstTouchDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- GA FirstTouch Keyword --></label>
+        <name>gafirstTouchKeyword__c</name>
+    </fields>
+    <fields>
+        <label><!-- GA FirstTouch Medium --></label>
+        <name>gafirstTouchMedium__c</name>
+    </fields>
+    <fields>
+        <label><!-- GA FirstTouch Source --></label>
+        <name>gafirstTouchSource__c</name>
+    </fields>
+    <fields>
+        <label><!-- GA LastTouch Campaign --></label>
+        <name>galastTouchCampaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- GA LastTouch Channel --></label>
+        <name>galastTouchChannel__c</name>
+    </fields>
+    <fields>
+        <label><!-- GA Last Touch Date --></label>
+        <name>galastTouchDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- GA LastTouch Keyword --></label>
+        <name>galastTouchKeyword__c</name>
+    </fields>
+    <fields>
+        <label><!-- GA LastTouch Medium --></label>
+        <name>galastTouchMedium__c</name>
+    </fields>
+    <fields>
+        <label><!-- GA LastTouch Source --></label>
+        <name>galastTouchSource__c</name>
+    </fields>
+    <fields>
+        <label><!-- GA TotalTouch Count --></label>
+        <name>gatotalTouchCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Languages --></label>
+        <name>lmsilt__Languages__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level --></label>
+        <name>lmsilt__Level__c</name>
+        <picklistValues>
+            <masterLabel>Primary</masterLabel>
+            <translation>первичный</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secondary</masterLabel>
+            <translation>вторичный</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tertiary</masterLabel>
+            <translation>третичный</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Acquisition Date --></label>
+        <name>mkto2__Acquisition_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Acquisition Program Id --></label>
+        <name>mkto2__Acquisition_Program_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Acquisition Program --></label>
+        <name>mkto2__Acquisition_Program__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inferred City --></label>
+        <name>mkto2__Inferred_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inferred Company --></label>
+        <name>mkto2__Inferred_Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inferred Country --></label>
+        <name>mkto2__Inferred_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inferred Metropolitan Area --></label>
+        <name>mkto2__Inferred_Metropolitan_Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inferred Phone Area Code --></label>
+        <name>mkto2__Inferred_Phone_Area_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inferred Postal Code --></label>
+        <name>mkto2__Inferred_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inferred State Region --></label>
+        <name>mkto2__Inferred_State_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Score --></label>
+        <name>mkto2__Lead_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Referrer --></label>
+        <name>mkto2__Original_Referrer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Search Engine --></label>
+        <name>mkto2__Original_Search_Engine__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Search Phrase --></label>
+        <name>mkto2__Original_Search_Phrase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Source Info --></label>
+        <name>mkto2__Original_Source_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Source Type --></label>
+        <name>mkto2__Original_Source_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Add to Marketo Campaign --></label>
+        <name>mkto_si__Add_to_Marketo_Campaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hide Date --></label>
+        <name>mkto_si__HideDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Interesting Moment Date --></label>
+        <name>mkto_si__Last_Interesting_Moment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Interesting Moment Desc --></label>
+        <name>mkto_si__Last_Interesting_Moment_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Interesting Moment Source --></label>
+        <name>mkto_si__Last_Interesting_Moment_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Interesting Moment Type --></label>
+        <name>mkto_si__Last_Interesting_Moment_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Interesting Moment --></label>
+        <name>mkto_si__Last_Interesting_Moment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engagement --></label>
+        <name>mkto_si__Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relative Score Value --></label>
+        <name>mkto_si__Relative_Score_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relative Score --></label>
+        <name>mkto_si__Relative_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Insight --></label>
+        <name>mkto_si__Sales_Insight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Urgency Value --></label>
+        <name>mkto_si__Urgency_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Urgency --></label>
+        <name>mkto_si__Urgency__c</name>
+    </fields>
+    <fields>
+        <label><!-- View in Marketo --></label>
+        <name>mkto_si__View_in_Marketo__c</name>
+    </fields>
+    <fields>
+        <label><!-- NeuralView: Close Score Last Updated --></label>
+        <name>qbdialer__CloseDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- NeuralView: Close Score --></label>
+        <name>qbdialer__CloseScore__c</name>
+    </fields>
+    <fields>
+        <label><!-- NeuralView: Contactability Last Updated --></label>
+        <name>qbdialer__ContactDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- NeuralView: Hourly Contactability ID --></label>
+        <name>qbdialer__ContactScoreId__c</name>
+        <relationshipLabel><!-- Contact Score Items_C --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- NeuralView: Contactability Score --></label>
+        <name>qbdialer__ContactScore__c</name>
+    </fields>
+    <fields>
+        <help><!-- QBDialer managed package field. --></help>
+        <label><!-- Dials --></label>
+        <name>qbdialer__Dials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Call Time --></label>
+        <name>qbdialer__LastCallTime__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field will store the number of seconds between record creation time and first call time (via the PowerDialer). --></help>
+        <label><!-- Response Time --></label>
+        <name>qbdialer__ResponseTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- TimeZone Sid Key --></label>
+        <name>qbdialer__TimeZoneSidKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency Test --></label>
+        <name>rh2__Currency_Test__c</name>
+    </fields>
+    <fields>
+        <label><!-- Describe --></label>
+        <name>rh2__Describe__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Formula Test --></label>
+        <name>rh2__Formula_Test__c</name>
+    </fields>
+    <fields>
+        <label><!-- Integer Test --></label>
+        <name>rh2__Integer_Test__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotangoFirstActivity --></label>
+        <name>totango__TotangoFirstActivity__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotangoLastActivity --></label>
+        <name>totango__TotangoLastActivity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Totango Insights --></label>
+        <name>totango__Totango_Insights__c</name>
+    </fields>
+    <fields>
+        <label><!-- Totango Last Update --></label>
+        <name>totango__Totango_Last_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Totango Online Status Icon --></label>
+        <name>totango__Totango_Online_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Totango URL --></label>
+        <name>totango__Totango_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Totango Online Status --></label>
+        <name>totango__Totango_isOnline__c</name>
+    </fields>
+    <fields>
+        <label><!-- County --></label>
+        <name>zqu__County__c</name>
+    </fields>
+    <layouts>
+        <layout>Default</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Email Information --></label>
+            <section>Email Information</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label><!-- MBA Information --></label>
+            <section>MBA Information</section>
+        </sections>
+        <sections>
+            <label><!-- Marketo --></label>
+            <section>Marketo</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Information --></label>
+            <section>Partner Information</section>
+        </sections>
+        <sections>
+            <label><!-- Phone Numbers --></label>
+            <section>Phone Numbers</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>I3 Client Success Layout</layout>
+        <sections>
+            <label><!-- Marketing --></label>
+            <section>Marketing</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Information --></label>
+            <section>Partner Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>zContact without ToutApp Layout</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Email Information --></label>
+            <section>Email Information</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label><!-- Hubspot --></label>
+            <section>Hubspot</section>
+        </sections>
+        <sections>
+            <label><!-- MBA Information --></label>
+            <section>MBA Information</section>
+        </sections>
+        <sections>
+            <label><!-- Phone Numbers --></label>
+            <section>Phone Numbers</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>zDefault Contact Layout</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Email Information --></label>
+            <section>Email Information</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label><!-- Hubspot --></label>
+            <section>Hubspot</section>
+        </sections>
+        <sections>
+            <label><!-- MBA Information --></label>
+            <section>MBA Information</section>
+        </sections>
+        <sections>
+            <label><!-- Phone Numbers --></label>
+            <section>Phone Numbers</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Toutapp --></label>
+            <section>Toutapp</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>zDialer Contact Layout</layout>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Phone Numbers --></label>
+            <section>Phone Numbers</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>zToutApp Contact Layout</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Email Information --></label>
+            <section>Email Information</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label><!-- Hubspot --></label>
+            <section>Hubspot</section>
+        </sections>
+        <sections>
+            <label><!-- MBA Information --></label>
+            <section>MBA Information</section>
+        </sections>
+        <sections>
+            <label><!-- Phone Numbers --></label>
+            <section>Phone Numbers</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Toutapp --></label>
+            <section>Toutapp</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>zZuora Dialer Contact Layout</layout>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Email Information --></label>
+            <section>Email Information</section>
+        </sections>
+        <sections>
+            <label><!-- Phone Numbers --></label>
+            <section>Phone Numbers</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Professional_Services_Contact --></label>
+        <name>Professional_Services_Contact</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Survey --></label>
+        <name>Send_Survey</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Email_with_Tout --></label>
+        <name>ToutApp__Email_with_Tout</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Push_to_Tout --></label>
+        <name>ToutApp__Push_to_Tout</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooWeather --></label>
+        <name>YahooWeather</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_to_Marketo_Campaign --></label>
+        <name>mkto_si__Add_to_Marketo_Campaign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_to_Watch_List --></label>
+        <name>mkto_si__Add_to_Watch_List</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Marketo_Email --></label>
+        <name>mkto_si__Send_Marketo_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_List --></label>
+        <name>qbdialer__Create_List</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Launch_Click_to_Call --></label>
+        <name>qbdialer__Launch_Click_to_Call</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Manage_Lists --></label>
+        <name>qbdialer__Manage_Lists</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_Existing_Document --></label>
+        <name>tinderbox__Add_Existing_Document</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_TinderBox_Document --></label>
+        <name>tinderbox__New_TinderBox_Document</name>
+    </webLinks>
+    <workflowTasks>
+        <name>App_Approved_Contact_Email_Sent</name>
+        <subject><!-- App Approved Contact Email Sent --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Send_App_Partner_App_Decline_Email_CONTACT</name>
+        <subject><!-- Send App Partner App Decline Email CONTACT --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Sent_App_Partner_App_Received_Email</name>
+        <subject><!-- Sent App Partner App Received Email --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

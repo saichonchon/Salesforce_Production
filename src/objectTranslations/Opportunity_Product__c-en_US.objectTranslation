@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Opportunity Product History</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Opportunity Product History</value>
+    </caseValues>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiration Date --></label>
+        <name>ExpirationDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Version --></label>
+        <name>LastVersion__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Recurring Revenue --></label>
+        <name>MonthlyRecurringRevenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>OpportunityID__c</name>
+        <relationshipLabel><!-- Opportunity Product History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Plan Changed --></label>
+        <name>Plan_Changed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price Change Reason --></label>
+        <name>Price_Change_Reason__c</name>
+        <picklistValues>
+            <masterLabel>BC Pricing Change</masterLabel>
+            <translation><!-- BC Pricing Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricing Change</masterLabel>
+            <translation><!-- Pricing Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rep Assisted Pricing Change</masterLabel>
+            <translation><!-- Rep Assisted Pricing Change --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pricing Group --></label>
+        <name>PricingGroup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product ID --></label>
+        <name>ProductID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase --></label>
+        <name>Purchase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue Change --></label>
+        <name>RevenueChange__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue Rep --></label>
+        <name>Revenue_Rep__c</name>
+        <relationshipLabel><!-- Opportunity Product History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Revenue Team --></label>
+        <name>Revenue_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Same Month Downgrade --></label>
+        <name>Same_Month_Downgrade__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if Opportunity Record History record originates from a migration from a sub. Should be used to exclude record from reporting as Created Date is not representative of when revenue was received. --></help>
+        <label><!-- Sub Migration --></label>
+        <name>Sub_Migration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zuora Version --></label>
+        <name>Zuora_Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- isTrial --></label>
+        <name>isTrial__c</name>
+    </fields>
+    <layouts>
+        <layout>Biz Apps Opportunity Product History Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Product History Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sales Opportunity Product History Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

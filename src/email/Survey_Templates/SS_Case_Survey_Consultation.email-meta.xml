@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>SS Case Survey : Consultation</name>
+    <style>freeForm</style>
+    <subject>How was your Consultation?  Let us Know</subject>
+    <textOnly>It was a pleasure speaking with you today. As part of our ongoing effort to provide better service and to ensure the success of clients like you, we would greatly appreciate your feedback through this very short one minute survey.
+
+
+
+Click here to take the survey 
+http://www.clicktools.com/survey?iv=3lupy3jes59bf&amp;q1={!Case.Id} 
+
+
+Thank you for your time, and thanks for choosing BigCommerce!
+
+BigCommerce Success Squad
+
+
+
+
+P +1 888.699.8911 (Toll Free)
+A 11305 Four Points Drive | Bldg II Suite 300 | Austin, TX 78726
+Visit us at bigcommerce.com
+Follow us News | Facebook | Twitter</textOnly>
+    <type>html</type>
+</EmailTemplate>

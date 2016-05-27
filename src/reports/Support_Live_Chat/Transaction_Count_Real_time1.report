@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <filter>
+        <criteriaItems>
+            <column>CASE_COMMENT_CREATED_BY</column>
+            <operator>equals</operator>
+            <value>kim radaza,jollyann gudoy,Aravindhan Venkatraman,madhumitha ravi,naresh potlapudi,Karthikeyan Palanisamy,Verti Sugir,Carlos Venua,John Ubaldo,Mithun Benjamin,Prasanth Thamotharan,Thirumalai Subramanian,Donny Cotejo,Criza Vilo,Saleem Faiyazkhan,Thulasiramki Purushothaman,Syamraj Korappath,Erick Ablaza,Glenn Saturno,Kenneth Cabaobao,Neil Martinez,Ryan Juarez,Ravishankar gnanaprakasam,Shanmuga pandian,Clarissa Packing,Jovic Leovis,Aries Leyte,Venkat Sai,Paulo Mojica,Rajthilak Dhanabalan,Jasm Padilla,Ruth Relingado,Marjorie Tamayo,Marielle Morre,Luigi Modesto,Rob San Diego,Paul Castro,Gian Dejesus,Jan Saria,Marco Legaspi,Regie Matibag,Maikko Aguilar,Mireille Ferol,Patricia Cacho,Elijah Ignacio,Racel Arce,Jeffrey Gregorio,Chris Tan,Richard Nambatac,Alvin Deleon,Maria Gino,Mark Hernandez,Nicollo Nalus,Harold De Asas,Adrian Estopace,John Ferrer,Jude Abrigo,Ron Ramos,Cesa Inciong,Mary Hazel Quilaga,Mariechu Balerite,Faith Esguerra,Shirley Detera,Jun Tupas,Renz Santos,Regine SanJuan</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <operator>notEqual</operator>
+            <value>Support - Trash</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>COMMENT_PUBLISHED</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>COMMENT_CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CASE_COMMENT_CREATED_BY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Transaction Count - Real time</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>COMMENT_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_THISWEEK</interval>
+    </timeFrameFilter>
+</Report>

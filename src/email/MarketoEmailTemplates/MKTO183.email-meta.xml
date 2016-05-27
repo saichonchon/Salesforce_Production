@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>SF Open House.Registered Email</name>
+    <style>none</style>
+    <subject>See you Monday at our Open House and Happy Hour!</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+The Bigcommerce team is looking forward to seeing you Monday at our San Francisco Office &lt;[[https://www.google.com/maps/place/685+Market+St,+San+Francisco,+CA+94105/@37.7877948,-122.4050943,17z/data=!3m1!4b1!4m2!3m1!1s0x808580886ac3768f:0xc10ad136f515378d]]&gt; Happy Hour and Open House! Feel free to bring friends and stop by between 4:00 - 7:00pm PT.
+See you soon!
+
+
+Kind regards,
+The Bigcommerce Partner Team
+
+
+Remember: Our office is located at 685 Market Street, 3rd Floor San Francisco, CA 94105.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

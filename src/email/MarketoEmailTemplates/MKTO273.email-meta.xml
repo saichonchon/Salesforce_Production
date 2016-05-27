@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Marty/Owen PCF.Acc Email 1 - Conf Comparison</name>
+    <style>none</style>
+    <subject>Thanks! Here&apos;s your white paper</subject>
+    <textOnly>Thanks for downloading our free ebook: Comparison Guide: The Top 4 Ecommerce Platforms &lt;[[http://grow.bigcommerce.com/rs/695-JJT-333/images/comparison-guide-pcf.pdf]]&gt;.
+
+At BigCommerce, we pride ourselves on enterprise-grade features, infrastructure, and expertise. We want our clients to have bigger results with less hassle, so we have built in a number of tools to help clients manage and scale their business easily. 
+
+Call us &lt;[[tel:+18446328911]]&gt; if you have any questions about BigCommerce and whether it&apos;s the right fit for your ecommerce business.
+Click here to download the Comparison Guide: The Top 4 Ecommerce Platforms from BigCommerce.
+
+Thanks for downloading
+Comparison Guide: The Top 4 Ecommerce Platforms</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Direct New Case Autoresponse</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Email_to_Case_Letterhead</letterhead>
+    <name>Direct New Case Autoresponse</name>
+    <style>freeForm</style>
+    <subject>Thanks for reaching out</subject>
+    <textOnly>Hi,
+
+Thank you for contacting BigCommerce — we love email! We’ll get back to you as soon as possible. If you need immediate assistance during normal business hours, Monday-Friday 8:30am-5:30pm Central, please call us at 1-888-699-8911.
+
+Thanks,
+
+The BigCommerce Team</textOnly>
+    <type>html</type>
+</EmailTemplate>

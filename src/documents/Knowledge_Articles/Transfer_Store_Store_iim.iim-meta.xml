@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This macro will create a copy of the Bulk Edit template, remove &quot;ID&quot; fields from the export, change the Product Image URLs to be called &quot;Product File&quot; and save.</description>
+    <internalUseOnly>true</internalUseOnly>
+    <name>Transfer Store-Store.iim</name>
+    <public>false</public>
+</Document>

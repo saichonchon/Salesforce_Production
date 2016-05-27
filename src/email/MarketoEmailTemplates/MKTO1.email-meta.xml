@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>this is a test</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Diana&apos;s Test Program.Diana&apos;s test autoresponder</name>
+    <style>none</style>
+    <subject>this is a test</subject>
+    <textOnly>Fresh MQL Alert: {{company.Company Name}}
+
+
+
+{{lead.Full Name}}
+
+
+
+
+
+Dear {{lead.Lead Owner First Name:default=Lead Owner}},
+
+
+
+The hard working people in Marketing have created a fresh Marketing Qualified Lead especially for you.
+
+
+
+Please follow-up before it becomes stale, and don&apos;t forget to update the Lead Status!
+
+
+
+Love,
+
+
+
+Marketing
+
+
+
+
+
+Lead Details
+
+
+
+{{SP_Send_Alert_Info:default=details not available}}
+Mktoweb, Inc. 100 Webster Street, Suite 404, City of Commerce, CA 99999
+
+Contact Us &lt;#&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

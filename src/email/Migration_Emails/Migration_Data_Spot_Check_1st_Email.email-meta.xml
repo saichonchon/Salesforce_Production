@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Migration: Data Spot Check 1st Email - Canned Comment 39</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>Migration: Data Spot Check 1st  Email</name>
+    <style>formalLetter</style>
+    <subject>Your BigCommerce Catalog Transfer: 72 hour data spot check</subject>
+    <textOnly>Hi {!Case.Contact_First_Name__c},
+
+
+Great news: we’ve completed your data migration! You now have 72 hours to spot check your data. Please complete our spot­ check survey to let us know if everything looks good.
+
+
+Previous Store URL: {!Case.Current_Store_URL__c}
+
+BigCommerce Migrated Store URL: {!Case.Temporary_Store_URL__c}
+
+
+This is a recommendation, not a requirement — we just want to make sure you feel comfortable every step of the way. If you don’t have the time to spot check your data in the next 72 hours, we’ll go ahead and move you on to the store setup phase.
+
+
+Please check the following areas of your store and indicate any that may need to be revisited:
+
+
+- Categories
+
+- Product images
+
+- Product options (if needed)
+
+- Product descriptions
+
+- Customers
+
+- Product/category 301 redirects
+
+
+We&apos;re excited to move you on to the next step of the process — store setup.
+
+
+We’re so close!
+
+
+Thanks,
+
+
+The BigCommerce Team
+
+
+Case # {!Case.CaseNumber}</textOnly>
+    <type>html</type>
+</EmailTemplate>

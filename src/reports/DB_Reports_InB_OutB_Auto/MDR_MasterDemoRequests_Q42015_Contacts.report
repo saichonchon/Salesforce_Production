@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CAMPAIGN_NAME</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>CONTACT_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_TYPE</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <operator>contains</operator>
+            <value>Prospects.CPC Ads.2015Q4.,Prospects.Affiliate Activity.2015Q4.,Prospects.Social Ads.2015Q4.,Prospects.DisplayAds.2015Q4.,Prospects.Email Campaigns.2015Q4.,Prospects.Content Campaigns.2015Q4.,Prospects.Marketing Events.2015Q4.,Prospects.Organic Social.2015Q4.,Prospects.General Activities.2015Q4.,PRE:Enterprise Profiling Demo Request,PRE: Product Filtering Demo Request,ACQ: Demo Request - 2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>EMAIL</column>
+            <operator>notContain</operator>
+            <value>bigcommerce</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>MDR.MasterDemoRequests.Q42015.Contacts</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignContact</reportType>
+    <scope>orgAll</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>ACCOUNT_TYPE</sortColumn>
+    <sortOrder>Asc</sortOrder>
+</Report>

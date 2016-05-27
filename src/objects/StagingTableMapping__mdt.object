@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Object_Field_Name_API__c</fullName>
+        <externalId>false</externalId>
+        <label>Object Field Name (API)</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Object_Name_API__c</fullName>
+        <externalId>false</externalId>
+        <label>Object Name (API)</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Staging_Object_Field_Name_API__c</fullName>
+        <externalId>false</externalId>
+        <label>Staging Object Field Name (API)</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Staging_Object_Name_API__c</fullName>
+        <externalId>false</externalId>
+        <label>Staging Object Name (API)</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>StagingTableMapping</label>
+    <pluralLabel>StagingTableMapping</pluralLabel>
+</CustomObject>

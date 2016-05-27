@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocumentFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>Knowledge Articles</name>
+    <publicFolderAccess>ReadWrite</publicFolderAccess>
+    <sharedTo>
+        <allCustomerPortalUsers></allCustomerPortalUsers>
+        <allInternalUsers></allInternalUsers>
+        <allPartnerUsers></allPartnerUsers>
+        <group>Billing</group>
+        <group>JIRA_Email</group>
+        <group>Managers</group>
+        <group>Migration_Team</group>
+        <group>Migrations_Escalations</group>
+        <group>Premium_Case_Notifications</group>
+        <group>Public_Knowledge_User</group>
+    </sharedTo>
+</DocumentFolder>

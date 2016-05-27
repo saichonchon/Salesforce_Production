@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Attend our free Success Workshop to get your store launched quickly</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>Direct : Success Workshop Bronze/Silver</name>
+    <style>freeForm</style>
+    <subject>Attend our free Success Workshop to get your store launched quickly</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+
+Now that you’re officially a BigCommerce client, you can attend our 60-minute Success Workshop. An expert from our Success Squad will teach you about everything you need to build a fully functional store, including taxes, shipping, payments, products, a domain name and more.
+
+
+You’ll also have a chance to ask questions via Twitter during the workshop and see questions from new BigCommerce merchants just like you by using the hashtag #BCSellMore. I’ve attached an agenda so you can see exactly what will be covered.
+
+
+We hold workshops every Tuesday at 12pm, Wednesday at 5pm and Thursday at 8:30am, all U.S. Central Time. Just let me know when you’d like to attend and I’ll sign you up.
+
+
+Welcome to BigCommerce!
+
+{!Contact.OwnerFullName}
+{!Contact.OwnerTitle}
+
+
+
+O  +1 {!Contact.OwnerPhone}
+E  {!Contact.OwnerEmail}
+A 11305 Four Points Drive | Bldg II Suite 300 | Austin, TX 78726
+
+Visit us at bigcommerce.com
+Follow us News | Facebook | Twitter</textOnly>
+    <type>html</type>
+</EmailTemplate>

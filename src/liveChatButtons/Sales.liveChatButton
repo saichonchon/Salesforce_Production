@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LiveChatButton xmlns="http://soap.sforce.com/2006/04/metadata">
+    <animation>Appear</animation>
+    <autoGreeting>Welcome to BigCommerce Sales Chat. My name is {!User_FirstName}.  What are you looking to sell online today?</autoGreeting>
+    <chatPage>SalesLiveAgentChatPage</chatPage>
+    <deployments>
+        <deployment>Sales</deployment>
+    </deployments>
+    <enableQueue>true</enableQueue>
+    <inviteEndPosition>BottomRight</inviteEndPosition>
+    <inviteImage>SalesChatImage</inviteImage>
+    <isActive>true</isActive>
+    <label>Sales</label>
+    <optionsCustomRoutingIsEnabled>false</optionsCustomRoutingIsEnabled>
+    <optionsHasInviteAfterAccept>false</optionsHasInviteAfterAccept>
+    <optionsHasInviteAfterReject>true</optionsHasInviteAfterReject>
+    <optionsHasRerouteDeclinedRequest>false</optionsHasRerouteDeclinedRequest>
+    <optionsIsAutoAccept>false</optionsIsAutoAccept>
+    <optionsIsInviteAutoRemove>false</optionsIsInviteAutoRemove>
+    <perAgentQueueLength>1</perAgentQueueLength>
+    <preChatFormPage>SalesLiveAgentPreChatPage</preChatFormPage>
+    <pushTimeOut>60</pushTimeOut>
+    <routingType>MostAvailable</routingType>
+    <site>public</site>
+    <skills>
+        <skill>Sales_Skill</skill>
+    </skills>
+    <type>Invite</type>
+    <windowLanguage>en_US</windowLanguage>
+</LiveChatButton>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Integration Application</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Integration Applications</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Integration Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Amount Funded to Date --></label>
+        <name>Amount_Funded_to_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- App Store Launch Date --></label>
+        <name>App_Store_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- App Store URL --></label>
+        <name>App_Store_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Timestamp --></label>
+        <name>Application_Timestamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Date --></label>
+        <name>Approval_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved Funding Amount --></label>
+        <name>Approved_Funding_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Big Name Player --></label>
+        <name>Big_Name_Player__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a number 1-10 --></help>
+        <label><!-- Bigcommerce API Supports Integration --></label>
+        <name>Bigcommerce_API_Supports_Integration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a number 1-10 --></help>
+        <label><!-- Brand Association / Co-Marketing Opp --></label>
+        <name>Brand_Association_Co_Marketing_Opp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Build Cost Estimate --></label>
+        <name>Build_Cost_Estimate__c</name>
+    </fields>
+    <fields>
+        <help><!-- How much will it cost to build? --></help>
+        <label><!-- Build Cost --></label>
+        <name>Build_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>Accounting</masterLabel>
+            <translation><!-- Accounting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analytics</masterLabel>
+            <translation><!-- Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Feedback</masterLabel>
+            <translation><!-- Customer Feedback --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Marketing</masterLabel>
+            <translation><!-- Email Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live Chat</masterLabel>
+            <translation><!-- Live Chat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Management</masterLabel>
+            <translation><!-- Order Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Reviews</masterLabel>
+            <translation><!-- Product Reviews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping</masterLabel>
+            <translation><!-- Shipping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shopping Comparison</masterLabel>
+            <translation><!-- Shopping Comparison --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media</masterLabel>
+            <translation><!-- Social Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Split Testing</masterLabel>
+            <translation><!-- Split Testing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Integration Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Describe your integration --></help>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a number 1-10 --></help>
+        <label><!-- Drives New Clients --></label>
+        <name>Drives_New_Clients__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Completion Date --></label>
+        <name>Estimated_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a number 1-10 with 1 = high threat, 10 = low threat --></help>
+        <label><!-- Frenemy Threat --></label>
+        <name>Frenemy_Threat__c</name>
+    </fields>
+    <fields>
+        <help><!-- Have you used our API before? --></help>
+        <label><!-- New Integrator --></label>
+        <name>New_Integrator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Steps --></label>
+        <name>Next_Steps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recommendation --></label>
+        <name>Recommendation__c</name>
+        <picklistValues>
+            <masterLabel>Add to Directory</masterLabel>
+            <translation><!-- Add to Directory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denied</masterLabel>
+            <translation><!-- Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Funding Approved</masterLabel>
+            <translation><!-- Funding Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>More Details Needed</masterLabel>
+            <translation><!-- More Details Needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Application</masterLabel>
+            <translation><!-- New Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending API Update</masterLabel>
+            <translation><!-- Pending API Update --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter a number 1-10 --></help>
+        <label><!-- Reduces Churn --></label>
+        <name>Reduces_Churn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score Average --></label>
+        <name>Score_Average__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a number 1-10 --></help>
+        <label><!-- Solves Pain Points --></label>
+        <name>Solves_Pain_Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Awaiting Final Approval</masterLabel>
+            <translation><!-- Awaiting Final Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contacted</masterLabel>
+            <translation><!-- Contacted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined Offer</masterLabel>
+            <translation><!-- Declined Offer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Collateral</masterLabel>
+            <translation><!-- Waiting for Collateral --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- How long will it take to build? --></help>
+        <label><!-- Time Frame --></label>
+        <name>Timephrame__c</name>
+        <picklistValues>
+            <masterLabel>A few days</masterLabel>
+            <translation><!-- A few days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A few hours</masterLabel>
+            <translation><!-- A few hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A few months</masterLabel>
+            <translation><!-- A few months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A few weeks</masterLabel>
+            <translation><!-- A few weeks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Longer</masterLabel>
+            <translation><!-- Longer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter a number 1-10 --></help>
+        <label><!-- Top Tier App Supported by Competitors --></label>
+        <name>Top_Tier_App_Supported_by_Competitors__c</name>
+    </fields>
+    <fields>
+        <help><!-- Which best describes you?
+I want to build an integration for my company&apos;s software/service
+I want to build an integration for another company&apos;s software/service --></help>
+        <label><!-- Usage Type --></label>
+        <name>Usage_Type__c</name>
+        <picklistValues>
+            <masterLabel>Another Company&apos;s Software</masterLabel>
+            <translation><!-- Another Company&apos;s Software --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>My Company&apos;s Software</masterLabel>
+            <translation><!-- My Company&apos;s Software --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Address of website that will promote and support the integration --></help>
+        <label><!-- Website --></label>
+        <name>Website__c</name>
+    </fields>
+    <layouts>
+        <layout>Integration Application Layout</layout>
+        <sections>
+            <label><!-- Application Score --></label>
+            <section>Application Score</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

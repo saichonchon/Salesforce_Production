@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+
+<style type="text/css">
+                    .ReadMsgBody {width: 100%; background-color: #ffffff;}
+                        .ExternalClass {width: 100%; background-color: #ffffff;}
+                        body     {width: 100%; background-color: #ffffff; margin:0; padding:0; -webkit-font-smoothing: antialiased;font-family: Helvetica, Arial, sans-serif;}
+                        table {border-collapse: collapse;}
+                        a {color: #02B4CF; text-decoration:none;}
+                        
+                @media only screen and (max-width: 640px)  {
+                    body[yahoo] .deviceWidth {width:440px!important; padding:0;}    
+                    body[yahoo] .center {text-align: center!important;}    
+                    div, p, a, li, td { -webkit-text-size-adjust:none; } 
+                }
+                            
+                @media only screen and (max-width: 479px) {
+                        body[yahoo] .deviceWidth {width:350px!important; padding:0;}    
+                        body[yahoo] .center {text-align: center!important;}     
+                        div, p, a, li, td { -webkit-text-size-adjust:none; } 
+                }
+                @media only screen and (max-width: 375px) {
+                        body[yahoo] .deviceWidth {width:350px!important; padding:0;}    
+                        body[yahoo] .center {text-align: center!important;}     
+                        div, p, a, li, td { -webkit-text-size-adjust:none; } 
+                }
+                @media only screen and (max-width: 320px) {
+                        body[yahoo] .deviceWidth {width:280px!important; padding:0;}    
+                        body[yahoo] .center {text-align: center!important;}     
+                        div, p, a, li, td { -webkit-text-size-adjust:none; } 
+                }
+</style>
+</head>
+<body margin-left="0" topmargin="0" marginwidth="0" marginheight="0" yahoo="fix" style="font-family:Helvetica, Arial, sans-serif; " ><!-- Preview text (text which appears right after subject) -->
+<div class="mktEditable" id="Preview-text" style="display:none; color:#E2E7E7; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; " ><p>We are excited to announce that the new partner portal has arrived!</p></div>
+<!-- Wrapper -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" ><tr ><td width="100%" valign="top" bgcolor="#FFFFFF" style="padding-top:20px; " ><!-- Start Header-->
+<table width="580" border="0" cellpadding="0" cellspacing="0" align="center" class="deviceWidth">
+<tr>
+<td width="100%" bgcolor="#FFFFFF"><!-- Logo -->
+<table border="0" cellpadding="0" cellspacing="0" align="center" class="deviceWidth">
+<tr>
+<td style="padding:10px 20px" class="center"><a href="http://www.bigcommerce.com"><img src="http://grow.bigcommerce.com/rs/695-JJT-333/images/BIG-3001R-Templates_GeneralLP_logo.png" alt="Bigcommerce" border="0" style="max-width:160px;"></a></td>
+</tr>
+</table>
+<!-- End Logo --></td>
+</tr>
+</table>
+<!-- End Header -->
+<!-- Spacer -->
+<div style="height:25px">&nbsp;</div>
+<!-- Spacer -->
+<!-- One Column -->
+<table width="580" class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" ><tr ><td style="font-size:16px; color:#89949B; font-weight:normal; text-align:left; font-family:Helvetica, Arial, sans-serif; line-height:30px; vertical-align:top; padding:10px 8px 10px 8px; " bgcolor="#FFFFFF" ><div class="mktEditable" id="body_text" ><p dir="ltr"><strong><span style="color: #44494c; line-height: 45px;">Hi {{lead.First Name:default=there}},</span></strong></p>
+<p dir="ltr"><span style="color: #89949b;">Thank you for registering to be a Bigcommerce partner! To ensure you&rsquo;re taking advantages of all the benefits of your partnership, we want to <a href="http://grow.bigcommerce.com/Portal-Webinar-Register.html" style="text-decoration: none;"><span style="color: #00abc9;">invite you to a 30-minute webinar</span></a></span> on making the most of your Bigcommerce partner portal.</p>
+<p dir="ltr"><span style="color: #89949b;">In this webinar, we&rsquo;ll cover:</span></p>
+<ul>
+<li dir="ltr"><span style="color: #89949b;">What&rsquo;s in the Bigcommerce partner&nbsp;portal</span></li>
+<li dir="ltr"><span style="color: #89949b;">How to log your deals in the our&nbsp;system</span></li>
+<li dir="ltr"><span style="color: #89949b;">How to sell more through our partner program</span></li>
+</ul>
+<p dir="ltr"><span style="color: #89949b;">To make it convenient, you can select from several days and times.&nbsp;</span></p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; display: inline-block;">
+<tbody>
+<tr>
+<td valign="middle" align="center" height="40" width="170" style="background: #00abc9; font-family: Helvetica,Arial,sans-serif; font-size: 16px; padding: 0 10px 0 10px; border-radius: 4px;">
+<p style="margin: 0 0; color: #ffffff;"><a href="http://grow.bigcommerce.com/Portal-Webinar-Register.html" style="color: #ffffff; text-decoration: none; display: block;">Attend&nbsp;a webinar</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p dir="ltr"><span style="color: #89949b;">Enjoy your new Partner Portal!</span></p>
+<p dir="ltr"><span style="color: #44494c; line-height: 45px;">The Bigcommerce Partner Team<br /></span><span style="color: #89949b;"><a href="mailto:partnersupport@bigcommerce.com" style="text-decoration: none;" target="_blank" class="mktNoTrack"><span style="color: #00abc9;">partnersupport@bigcommerce.com</span></a></span></p></div>
+</td>
+</tr>
+</table>
+<!-- End One Column -->
+<!-- Spacer -->
+<div style="height:35px">&nbsp;</div>
+<!-- Spacer -->
+<!-- Begin Footer -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="table-layout: fixed;background-color:#F8F9FB;" bgcolor="#F8F9FB">
+<tr>
+<td width="100%" valign="top" align="center" bgcolor="#F8F9FB" style="padding-top:20px">
+<table width="580" border="0" cellpadding="0" cellspacing="0" align="center" class="deviceWidth" style="table-layout:fixed;">
+<tr>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="deviceWidth">
+<tr>
+<td valign="top" style="font-size: 11px; color: #f1f1f1; font-weight: normal; font-family: Helvetica, Arial, sans-serif; line-height: 26px; vertical-align: top; text-align:center" class="center"><a href="https://twitter.com/Bigcommerce" target="_blank"><img 
+src="http://grow.bigcommerce.com/rs/695-JJT-333/images/ico-twitter-32.png" width="32" height="32" alt="Twitter" title="Twitter" border="0" style="max-width:100%;"></a> <a href="https://www.facebook.com/BigCommerce" target="_blank"><img 
+src="http://grow.bigcommerce.com/rs/695-JJT-333/images/ico-fb-32.png" width="32" height="32" alt="Facebook" title="Facebook" border="0" style="max-width:100%;"></a> <a href="https://www.linkedin.com/company/bigcommerce" target="_blank"><img 
+src="http://grow.bigcommerce.com/rs/695-JJT-333/images/ico-li-32.png" width="32" height="32" alt="LinkedIn" title="LinkedIn" border="0" style="max-width:100%;"></a> <a href="https://www.youtube.com/user/bigcommercedotcom" target="_blank"><img 
+src="http://grow.bigcommerce.com/rs/695-JJT-333/images/ico-youtube-32.png" width="32" height="32" alt="YouTube" title="YouTube" border="0" style="max-width:100%;"></a> <a href="https://www.pinterest.com/bigcommerce/" target="_blank"><img 
+src="http://grow.bigcommerce.com/rs/695-JJT-333/images/ico-pinterest-32.png" width="32" height="32" alt="Pinterest" title="Pinterest" border="0" style="max-width:100%;"></a> <a href="https://plus.google.com/+bigcommerce" target="_blank"><img 
+src="http://grow.bigcommerce.com/rs/695-JJT-333/images/ico-google-32.png" width="32" height="32" alt="GooglePlus" title="GooglePlus" border="0" style="max-width:100%;"></a><br></td>
+</tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" align="left" class="deviceWidth">
+<tr>
+<td valign="top" style="background-color: #F8F9FB; padding-bottom: 20px; text-align: center; font-family:Arial, Helvetica, sans-serif; font-weight: 300;font-size: 11px; line-height: 28px; color: #89949B;" align="center" class="center"><strong>&copy; 2015 Bigcommerce</strong> <span 
+class="applelinks">11305 Four Points Dr., Building 2, Floor 3, Austin, TX 78726</span></td>
+</tr>
+<tr>
+<td valign="top" style="background-color: #F8F9FB; padding-bottom: 20px; text-align: center; font-family:Arial, Helvetica, sans-serif;font-weight: 300; font-size: 11px; line-height: 28px; color: #89949B;" align="center" class="center">You received this email because you are subscribed to emails 
+from Bigcommerce.<br>
+<a href="http://grow.bigcommerce.com/subscribe-to-bigcommerce-blog.html" style="text-decoration: underline; whitespace: nowrap; color: #02B4CF;">Subscribe to our Blog</a> &nbsp;| &nbsp;<a href="http://grow.bigcommerce.com/manage-your-email-preferences.html" style="text-decoration: underline; 
+whitespace: nowrap; color: #02B4CF;">Update your email preferences</a> &nbsp;| &nbsp;<a href="{{system.viewAsWebpageLink}}" style="text-decoration: underline; whitespace: nowrap; color: #02B4CF;">View as webpage</a> <!--[if !mso]><!--><!--<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<div class="mktEditable" id="Email-Token" style="display:none; color:#ffffff; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; " >{{my.LitmusToken}}</div>
+<!-- End Footer --></td>
+</tr>
+</table>
+<!-- End Wrapper --></body>
+</html>

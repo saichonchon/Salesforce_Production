@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_30775879</developerName>
+        <masterLabel>Age in Days</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>AGE</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>1</to>
+            </sourceValues>
+            <value>&lt;= 1 Day</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>1</from>
+                <to>2</to>
+            </sourceValues>
+            <value>2 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>2</from>
+                <to>3</to>
+            </sourceValues>
+            <value>3 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>3</from>
+                <to>7</to>
+            </sourceValues>
+            <value>4-7 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>7</from>
+            </sourceValues>
+            <value>&gt; 7 Days</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Case.Client_Success</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>COMMENT_PUBLISHED</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CASE_COMMENT_CREATED_BY</column>
+            <operator>equals</operator>
+            <value>Aravindhan Venkatraman,Archana Surendran,Arputharaj Dhanaraj,Bhavani Pathipati,Deepika Bhaskar,Gowtham Murugan,Karthikeyan Palanisamy,Madhumitha Ravi,Mithun Benjamin,Mohammed Siddequq,Naresh Potlapudi,Naresh Ramesh,Parthiban Rajendran,Prasanth Thamotharan,Rajesh Pandian,Rizwana Rezvana,Saranya Kalimuthu,Saravanan Renganathan,Thirumalai Subramanian,Verti Sugir,Thulsiramki Purushothaman sabrudeen hajimoham,dillip srinivasan,Dillip Srinivasan,Sabrudeen Hajimohammed,Seeni Sakthikumar,Saleem Faiyazkhan,Parameswaran Sankaran,Siva Senthilnathan,Sorin Poenar,simona cimpean,juan anolles,Donna Enriquez</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>COMMENT_CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CASE_COMMENT_CREATED_BY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>public comments sent by ninja</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>COMMENT_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_LAST7</interval>
+    </timeFrameFilter>
+</Report>

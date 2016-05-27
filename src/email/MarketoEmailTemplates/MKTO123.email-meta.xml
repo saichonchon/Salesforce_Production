@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Current Trial: January 2016.Day 08 Engaged</name>
+    <style>none</style>
+    <subject>You have 1 week left - Get your store up and running</subject>
+    <textOnly>You have 1 week left in your free trial. Log in today to finish building your store.l
+You have 1 week left in your trial
+You’ve made great progress on your store! Now you have 7 days left in your free trial to take the final steps and open for business. Need some pointers? Bigcommerce University &lt;[[https://support.bigcommerce.com/university]]&gt; has dozens of videos that will show you how to build, launch and grow your store. Or you can speak with one of our ecommerce experts at 1-866-949-5336 &lt;[[tel+18669495336]]&gt;.
+Get ready to open your store for business
+Log in &lt;[[https://login.bigcommerce.com/login]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

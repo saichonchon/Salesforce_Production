@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Current Trial: January 2016.Day 12 Engaged</name>
+    <style>none</style>
+    <subject>{{company.Company Name:default=Your store}} is almost ready to open</subject>
+    <textOnly>You&apos;re so close — quickly launch your online store. Pick a plan that&apos;s right for you.
+You&apos;re so close — quickly launch your online store
+The countdown is on! You&apos;re almost there, but you only have three days left in your free trial. Pick a plan that&apos;s right for you and get the time you need to launch your store.
+
+Ready?
+Pick a plan &lt;[[https://login.bigcommerce.com/login]]&gt;
+{{my.LitmusToken}}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

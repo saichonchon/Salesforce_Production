@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_45487820</developerName>
+        <masterLabel>Time Since Open</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Case.Time_Opened_Hour__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>1</to>
+            </sourceValues>
+            <value>0-1</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>1</from>
+                <to>6</to>
+            </sourceValues>
+            <value>1-6</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>6</from>
+                <to>12</to>
+            </sourceValues>
+            <value>6-12</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>12</from>
+                <to>24</to>
+            </sourceValues>
+            <value>12-24</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>24</from>
+                <to>48</to>
+            </sourceValues>
+            <value>1-2 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>48</from>
+                <to>168</to>
+            </sourceValues>
+            <value>2 Days - 1 Week</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>168</from>
+                <to>336</to>
+            </sourceValues>
+            <value>1-2 Weeks</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>336</from>
+            </sourceValues>
+            <value>2+ Weeks</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_46128576</developerName>
+        <masterLabel>Time Since Opened</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>AGE</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>1</to>
+            </sourceValues>
+            <value>1 Hour</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>1</from>
+                <to>2</to>
+            </sourceValues>
+            <value>1-2 Hours</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>2</from>
+                <to>6</to>
+            </sourceValues>
+            <value>2-6 Hours</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>6</from>
+                <to>12</to>
+            </sourceValues>
+            <value>6-12 Hours</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>12</from>
+                <to>24</to>
+            </sourceValues>
+            <value>12-24 Hours</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>24</from>
+                <to>48</to>
+            </sourceValues>
+            <value>1-2 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>48</from>
+                <to>168</to>
+            </sourceValues>
+            <value>2 Days - 1 Week</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>168</from>
+                <to>336</to>
+            </sourceValues>
+            <value>1-2 Weeks</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>336</from>
+            </sourceValues>
+            <value>2+ Weeks</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <filter>
+        <booleanFilter>(((((1 AND 2 AND 3) OR (2 AND 3 AND 4 AND 5))) AND 6) AND 7) AND 8</booleanFilter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <operator>equals</operator>
+            <value>Support</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Case.Client_Success</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <operator>equals</operator>
+            <value>New,Working,Open Unsolved,Active,Reopened</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <operator>notContain</operator>
+            <value>trash,api,legal,escalated,callback</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LAST_UPDATEONLY</column>
+            <operator>notEqual</operator>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <operator>notEqual</operator>
+            <value>Billing Queue,Design Support,Direct Sales,Tier 2 Support Queue</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <operator>equals</operator>
+            <value>Bungay Beau</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ORIGIN</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_46128576</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Bungay Beau - Cases left in name</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

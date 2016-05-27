@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Partner Locator.Email 2 - Feb2016</name>
+    <style>none</style>
+    <subject>Don’t forget to join the new Partner Marketplace</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+We are 3 weeks away from launching Partner Marketplace -- will your company be visible? To ensure merchants can find you, be sure your company is listed by updating your Partner Marketplace profile information within your Account Profile on the Bigcommerce Partner Portal before March 15th.
+
+For more information, refer to the partnersupport@bigcommerce.com &lt;http://partners.bigcommerce.com/English/Solutions/resources/marketplace_guide.aspx&quot; style=&quot;text-decoration: none; color: #00abc9;&quot;&gt;Partner Marketplace Guide on the Partner Portal, or contact partnersupport@bigcommerce.com.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

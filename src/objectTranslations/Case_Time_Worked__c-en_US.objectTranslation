@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Case Time Worked</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Case Times Worked</value>
+    </caseValues>
+    <fields>
+        <label><!-- Case Category --></label>
+        <name>Case_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Department --></label>
+        <name>Case_Department__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Origin --></label>
+        <name>Case_Origin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Reason --></label>
+        <name>Case_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Status --></label>
+        <name>Case_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Case Times Worked --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Owner Role --></label>
+        <name>Owner_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner from ID --></label>
+        <name>Owner_from_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner from Name --></label>
+        <name>Owner_from_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner to ID --></label>
+        <name>Owner_to_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner to Name --></label>
+        <name>Owner_to_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Time --></label>
+        <name>Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stop Time --></label>
+        <name>Stop_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Worked (in Minutes) --></label>
+        <name>Time_Worked_in_Minutes__c</name>
+    </fields>
+    <layouts>
+        <layout>Case Handle Time Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

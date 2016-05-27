@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Client Reference Nomination Submitted</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>Client Reference Nomination Submitted</name>
+    <style>freeForm</style>
+    <subject>New Client Reference Nomination: {!Opportunity.Name}</subject>
+    <textOnly>{!Approval_Requesting_User.Name} has nominated {!Opportunity.Name} for the Client Reference program.
+
+Nomination Reason:
+
+{!Opportunity.Client_Reference_Nomination_Reason__c}
+
+Plan: {!Opportunity.Product__c}
+
+Enterprise Account Manager: {!Opportunity.Enterprise_Account_Manager__c}
+
+Opp Owner: {!Opportunity.OwnerFullName}
+
+View Opportunity - https://na19.salesforce.com/{!Opportunity.Id}</textOnly>
+    <type>html</type>
+</EmailTemplate>

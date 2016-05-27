@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_97652721</developerName>
+        <masterLabel>Owner Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Opportunity$Owner_Team__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Biz Apps</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Client Experience</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Executive</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shared Services</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Automated Sales User</sourceValue>
+            </sourceValues>
+            <value>Automated Sales User</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$StartDate__c</field>
+    </columns>
+    <crossFilters>
+        <criteriaItems>
+            <column>Name</column>
+            <operator>contains</operator>
+            <value>trial</value>
+        </criteriaItems>
+        <operation>with</operation>
+        <primaryTableColumn>Opportunity$Id</primaryTableColumn>
+        <relatedTable>Opportunity_Product__c</relatedTable>
+        <relatedTableJoinColumn>OpportunityID__c</relatedTableJoinColumn>
+    </crossFilters>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_97652721</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Trial Count by Team (Opp)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunities_with_lookup_data__c</reportType>
+    <roleHierarchyFilter>SystemAdministrator</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$StartDate__c</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

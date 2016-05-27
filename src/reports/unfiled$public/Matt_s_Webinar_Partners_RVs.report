@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <block>
+        <blockInfo>
+            <blockId>B1</blockId>
+            <joinTable>x</joinTable>
+        </blockInfo>
+        <columns>
+            <field>CUST_NAME</field>
+        </columns>
+        <columns>
+            <field>rvpe__RVAccount__c.Time_to_First_Revenue__c</field>
+        </columns>
+        <columns>
+            <field>rvpe__RVAccount__c.Total_Active_MRR__c</field>
+        </columns>
+        <columns>
+            <field>rvpe__RVAccount__c.Active_Store_Count__c</field>
+        </columns>
+        <filter>
+            <criteriaItems>
+                <column>CUST_NAME</column>
+                <operator>contains</operator>
+                <value>5A,Multimedia,Adpearance,AngSuarez Creative,Ask Us Computer Services of NE Georgia,Autumn Web Design,BJ Internet Marketing,BLB Holdings,Catchlight Design Limited,Central Valley Media Group,Contentdia,Creative K. T. M. Dot Com,Customers Who Stick,Digilite Web Solutions,Do It Marketing Online Store,Elevation Firm,Ezdia,Flower Pot Media,Gently Used File Cabniets,Hatties U Design It,Help Your Business,Hollingsworth Logistics Group,KYLP Australia,Merchant Bottom Line,MSS Works,My Business Integrated,Onestop Webshop,Salik Group Services,TEI Web Solutions,Visible Markets,We Got That,What It Is,WSI Best eBusiness,Web SEO and Design Tower Online Solutions,Donal Keegan,Micro Direct Distributors,WSI Expert Solutions,Epic Flowers,Affordable Websites,Georgia Gibbs Design,WSI Web Mark,Think WSI,KJ Advertising,Add Shoppers,J Lindstorm Marketing,V.SOP Design,Red Headed Labs,Splatrix,GHI Internet Services,Urbema,Web Site Advantage,Trepoly,Dax White,DPI Studios,Logikos Marketing,Vision Course,Atmosol</value>
+            </criteriaItems>
+            <criteriaItems>
+                <column>rvpe__RVAccount__c.IDev_ID__c</column>
+                <operator>greaterThan</operator>
+                <value>1</value>
+            </criteriaItems>
+        </filter>
+        <format>Tabular</format>
+        <name>Legacy Partners</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>CustomEntity$rvpe__RVAccount__c@rvpe__RVAccount__c.rvpe__RVPrimaryMember__c</reportType>
+        <scope>organization</scope>
+        <sortColumn>rvpe__RVAccount__c.Time_to_First_Revenue__c</sortColumn>
+        <sortOrder>Desc</sortOrder>
+        <timeFrameFilter>
+            <dateColumn>rvpe__RVAccount__c.Approved_Date__c</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <block>
+        <blockInfo>
+            <blockId>B0</blockId>
+            <joinTable>rvpe__RVAccount__c</joinTable>
+        </blockInfo>
+        <columns>
+            <field>rvpe__RVAccount__c$Name</field>
+        </columns>
+        <columns>
+            <field>rvpe__RVAccount__c$Time_to_First_Revenue__c</field>
+        </columns>
+        <columns>
+            <field>rvpe__RVAccount__c$Total_Active_MRR__c</field>
+        </columns>
+        <columns>
+            <field>rvpe__RVAccount__c$Active_Store_Count__c</field>
+        </columns>
+        <filter>
+            <criteriaItems>
+                <column>rvpe__RVAccount__c$Name</column>
+                <operator>contains</operator>
+                <value>5A,Multimedia,Adpearance,AngSuarez Creative,Ask Us Computer Services of NE Georgia,Autumn Web Design,BJ Internet Marketing,BLB Holdings,Catchlight Design Limited,Central Valley Media Group,Contentdia,Creative K. T. M. Dot Com,Customers Who Stick,Digilite Web Solutions,Do It Marketing Online Store,Elevation Firm,Ezdia,Flower Pot Media,Gently Used File Cabniets,Hatties U Design It,Help Your Business,Hollingsworth Logistics Group,KYLP Australia,Merchant Bottom Line,MSS Works,My Business Integrated,Onestop Webshop,Salik Group Services,TEI Web Solutions,Visible Markets,We Got That,What It Is,WSI Best eBusiness,Web SEO and Design Tower Online Solutions,Donal Keegan,Micro Direct Distributors,WSI Expert Solutions,Epic Flowers,Affordable Websites,Georgia Gibbs Design,WSI Web Mark,Think WSI,KJ Advertising,Add Shoppers,J Lindstorm Marketing,V.SOP Design,Red Headed Labs,Splatrix,GHI Internet Services,Urbema,Web Site Advantage,Trepoly,Dax White,DPI Studios,Logikos Marketing,Vision Course,Atmosol</value>
+            </criteriaItems>
+            <criteriaItems>
+                <column>rvpe__RVAccount__c$IDev_ID__c</column>
+                <operator>equals</operator>
+                <value></value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>Net New Partners</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>RV_Accounts_with_RV_Members_CUSTOM__c</reportType>
+        <scope>organization</scope>
+        <timeFrameFilter>
+            <dateColumn>rvpe__RVAccount__c$Approved_Date__c</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <blockInfo>
+        <blockId xsi:nil="true"/>
+        <joinTable>x</joinTable>
+    </blockInfo>
+    <description>Joined report showing legacy and net new partners vs time to first revenue</description>
+    <format>MultiBlock</format>
+    <name>Matt&apos;s Webinar Partners (RVs)</name>
+    <reportType>CustomEntity$rvpe__RVAccount__c@rvpe__RVAccount__c.rvpe__RVPrimaryMember__c</reportType>
+    <showDetails>true</showDetails>
+</Report>

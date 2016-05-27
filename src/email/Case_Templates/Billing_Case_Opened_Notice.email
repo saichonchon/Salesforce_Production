@@ -1,0 +1,15 @@
+Thanks for reaching out to the BigCommerce Client Services Team!  
+
+We are researching your request and will get back to you as soon as possible with a solution to your problem or some followup questions. 
+
+Ticket Number : {!Case.CaseNumber}
+Case Subject: {!Case.Subject}
+Description: {!Case.Description}
+
+
+The BigCommerce Client Services Team
+
+
+{!EmailMessage.ReplyToEmailMessageId}
+{!EmailMessage.Id}
+{!Case.Thread_Id}

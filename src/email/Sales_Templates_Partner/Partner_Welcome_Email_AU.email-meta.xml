@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <attachedDocuments>Email_Template_Attachments/PARTNER_WELCOME_KIT_zip.zip</attachedDocuments>
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Partner Welcome Email : AU</name>
+    <style>none</style>
+    <subject>Welcome to the BigCommerce Partner Program</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+Over the last couple of months, we’ve worked hard to put together a new Partner Program that benefits both our design/development partners and their clients, so we can continue to work with some of the best web professionals in the world.
+
+I’m very happy to welcome you to the program as a BigCommerce Partner.
+
+Being a BigCommerce Partner gives you great benefits like:
+
+Co-marketing materials, including a BigCommerce Partner logo you can use on your site (attached to this email)
+An assigned Partner Development Executive
+New commission options
+Social media materials
+Potential placement in our online Partners Directory — please ask how you can be featured
+
+Don&apos;t forget to log in to your Partner Portal for updated marketing materials like web content and emails. If you need help logging in, please call 1-888-699-8911, option 4.
+
+We look forward to continuing our relationship together as we both grow in 2013 and beyond.
+
+Thank you and congratulations!
+
+{!User.FirstName} {!User.LastName}
+Partner Development Executive
+
+P {!User.Phone}
+E  {!User.Email}
+A  Level 6, 1-3 Smail Street | Ultimo NSW 2007
+
+Visit us at bigcommerce.com
+Follow us News | Facebook | Twitter</textOnly>
+    <type>custom</type>
+</EmailTemplate>

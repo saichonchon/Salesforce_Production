@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>rvpe__RVAccount__c.rvpe__Opportunities__r$Name</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVAccount__c.rvpe__Opportunities__r$StageName</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVAccount__c.rvpe__Opportunities__r$PurchaseDate__c</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVAccount__c.rvpe__Opportunities__r$Amount</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVAccount__c$PayPal_Account_ID__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <criteriaItems>
+            <column>rvpe__RVAccount__c$rvpe__RVPrimaryMember__c.rvpe__DateAgreedToTerms__c</column>
+            <operator>greaterThan</operator>
+            <value>7/1/2015 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>rvpe__RVAccount__c$Agreement__c</column>
+            <operator>equals</operator>
+            <value>Bypass Agreement</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>rvpe__RVAccount__c$IDev_ID__c</column>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>rvpe__RVAccount__c$Approved_Date__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Net New Active Partners</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>RV_Accounts_with_Lookup_CUSTOM2__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>rvpe__RVAccount__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

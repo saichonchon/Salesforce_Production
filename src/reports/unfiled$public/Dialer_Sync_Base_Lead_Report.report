@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>TITLE</field>
+    </columns>
+    <columns>
+        <field>COMPANY</field>
+    </columns>
+    <columns>
+        <field>LEAD_SOURCE</field>
+    </columns>
+    <columns>
+        <field>STREET</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>Lead.LDR_Rating__c</field>
+    </columns>
+    <columns>
+        <field>Lead.Stage__c</field>
+    </columns>
+    <columns>
+        <field>PHONE</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND NOT (4 AND 5) AND 6 AND NOT 7 AND 8 AND 9 AND 10</booleanFilter>
+        <criteriaItems>
+            <column>PHONE</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <operator>contains</operator>
+            <value>queue</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <operator>notEqual</operator>
+            <value>Bad Contact Info Lead Queue</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead.Stage__c</column>
+            <operator>equals</operator>
+            <value>Closed Lost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead.Closed_Lost_Reason__c</column>
+            <operator>equals</operator>
+            <value>No longer in business</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead.LDR_Rating__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead.LDR_Rating__c</column>
+            <operator>startsWith</operator>
+            <value>0 -,1 -,2 -,3 -,4 -,5 -,6 -,86 -</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>DO_NOT_CALL</column>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONVERTED</column>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>COUNTRY</column>
+            <operator>equals</operator>
+            <value>,US,United States,Canada,CA</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Dialer Sync Base Lead Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>LeadList</reportType>
+    <scope>org</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Lead.Stage__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

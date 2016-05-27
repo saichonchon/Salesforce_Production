@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <description>SF report to aid in finding and closing re-opened cases not requiring action.</description>
+    <filter>
+        <criteriaItems>
+            <column>LAST_UPDATE_BY</column>
+            <operator>equals</operator>
+            <value>API User</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <operator>equals</operator>
+            <value>Support</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.E2CP__Most_Recent_Public_Comment__c</column>
+            <operator>contains</operator>
+            <value>This message was created automatically by the mail system.</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <operator>notEqual</operator>
+            <value>Closed,Working,Pending Acceptance,Waiting on Client</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Invalid Email Re-opened Cases</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CURPREVQ</interval>
+    </timeFrameFilter>
+</Report>

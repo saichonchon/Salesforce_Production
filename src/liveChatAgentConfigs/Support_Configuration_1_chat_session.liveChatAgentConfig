@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LiveChatAgentConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <profiles>
+            <profile>Client Success Rep %28Remote%29 1 Chat</profile>
+        </profiles>
+        <users>
+            <user>princess.inciong@bigcommerce.com</user>
+            <user>chas.wilson@bigcommerce.com</user>
+            <user>jake.smith@bigcommerce.com</user>
+            <user>laurie.zapinski@bigcommerce.com</user>
+            <user>mike.ong@bigcommerce.com</user>
+        </users>
+    </assignments>
+    <autoGreeting>Thank you for contacting Bigcommerce. My name is {!User_FirstName}, how may I help you?</autoGreeting>
+    <capacity>1</capacity>
+    <criticalWaitTime>120</criticalWaitTime>
+    <enableAgentFileTransfer>false</enableAgentFileTransfer>
+    <enableAgentSneakPeek>true</enableAgentSneakPeek>
+    <enableAutoAwayOnDecline>false</enableAutoAwayOnDecline>
+    <enableChatMonitoring>true</enableChatMonitoring>
+    <enableChatTransfer>true</enableChatTransfer>
+    <enableLogoutSound>false</enableLogoutSound>
+    <enableNotifications>true</enableNotifications>
+    <enableRequestSound>true</enableRequestSound>
+    <enableSneakPeek>true</enableSneakPeek>
+    <enableWhisperMessage>true</enableWhisperMessage>
+    <label>Tier 1 - Assign Remote 1 profile to 1 chat capacity</label>
+    <supervisorSkills>
+        <skill>Support_Skill</skill>
+    </supervisorSkills>
+</LiveChatAgentConfig>

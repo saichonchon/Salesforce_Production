@@ -1,0 +1,110 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<font size="2">Hi {!Lead.FirstName},<br>
+<font size="2"><br>
+</font>I enjoyed our conversation today and look forward to helping you realize your goals.<br>
+<br>
+To recap our discussion, we defined the following priorities:<br>
+</font><ul><li><font size="2">Detail 1
+</font></li><li><font size="2">Detail 2
+</font></li><li><font size="2">Detail 3
+</font></li><li><font size="2">Etc.<br></font>
+</li></ul><font size="2">
+
+During our next meeting on INSERT DATE at INSERT TIME, I will review a solution to meet all of the
+goals we discussed.<br>
+<br>If you have any questions, call me on my direct line: {!Lead.OwnerPhone}</font><font size="3"><span style="background-color: rgb(255, 255, 255);"><br><span style="font-family: Arial; font-weight: normal; font-style: normal; font-variant: normal; text-decoration: underline; vertical-align: baseline;"></span></span></font><br><font size="3"><font size="2">{!Lead.OwnerFullName}</font><span style="font-size:13.5pt;font-family:&quot;Times&quot;,&quot;serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"><br>
+</span><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;color:#777777;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">{!Lead.OwnerTitle} <br><br></span><span style="font-size:13.5pt;font-family:&quot;Times&quot;,&quot;serif&quot;;mso-fareast-font-family:
+Calibri;mso-fareast-theme-font:minor-latin;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA">
+<img id="_x0000_i1025" src="https://lh3.googleusercontent.com/vJronCTEz1u0foGaKa6ZgVoXbT1_Uv-wU4XdK53Hm4yISnhtKPv51CHPLMjy2v2wgu29VraQYRDvMFA1UaMNIXgfeoCK8JXBq2MywVy1ImLbfJFslr4"><br>
+<br>
+</span><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;color:#777777;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"></span></b></font><font size="3"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;color:#777777;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"><font size="3"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;color:#777777;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"><b>O</b>&nbsp;<font size="2">
+</font></span><font size="2"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(119, 119, 119);">+1 {!Lead.OwnerPhone}</span></font><span style="font-size:13.5pt;font-family:&quot;Times&quot;,&quot;serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"><br>
+</span><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;color:#777777;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"></span></font></span></font><font size="3"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;color:#777777;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"><font size="3"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;color:#777777;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"><font><font size="2"><span style="color: rgb(0, 0, 0); font-family: arial;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(119, 119, 119);"><b>E</b>&nbsp; </span></span><span style="color: rgb(0, 0, 0); font-family: arial;"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(119, 119, 119);">{!Lead.OwnerEmail}</span></span></font></font></span><span style="font-size:13.5pt;font-family:&quot;Times&quot;,&quot;serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"><font size="2"><a href="mailto:eddie@bigcommerce.com" target="_blank"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(18, 121, 154); text-decoration: none;"></span></a></font><br></span><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;color:#777777;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"><b>A</b>&nbsp; </span><font size="2"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: rgb(119, 119, 119);">11305 Four Points Drive | Bldg II Suite 300 | Austin, TX 78726</span></font></font></span><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;color:#777777;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"><font size="3"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Calibri;mso-fareast-theme-font:minor-latin;color:#777777;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"></span><span style="font-size:13.5pt;font-family:&quot;Times&quot;,&quot;serif&quot;;mso-fareast-font-family:
+Calibri;mso-fareast-theme-font:minor-latin;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA"><br>
+</span></font><font size="3"><span style="font-size:13.5pt;font-family:&quot;Times&quot;,&quot;serif&quot;;mso-fareast-font-family:
+Calibri;mso-fareast-theme-font:minor-latin;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA"><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:minor-bidi;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;
+mso-no-proof:yes"><br style="mso-special-character:line-break">
+</span>
+</span><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;color:#777777;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">Visit
+us at </span><span style="font-size:13.5pt;font-family:&quot;Times&quot;,&quot;serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"><a href="http://www.bigcommerce.com/" target="_blank"><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#12799A">bigcommerce.com</span></a></span></font></span></b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;color:#777777;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"></span><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Calibri;mso-fareast-theme-font:minor-latin;color:#777777;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"></span><span style="font-size:13.5pt;font-family:&quot;Times&quot;,&quot;serif&quot;;mso-fareast-font-family:
+Calibri;mso-fareast-theme-font:minor-latin;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA"><br>
+</span></font><font size="3"><span style="font-size:13.5pt;font-family:&quot;Times&quot;,&quot;serif&quot;;mso-fareast-font-family:
+Calibri;mso-fareast-theme-font:minor-latin;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA"><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:minor-bidi;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA;
+mso-no-proof:yes"><br style="mso-special-character:line-break">
+</span>
+</span><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;color:#777777;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">Visit
+us at </span><span style="font-size:13.5pt;font-family:&quot;Times&quot;,&quot;serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"><a href="http://www.bigcommerce.com/" target="_blank"><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#12799A">bigcommerce.com</span></a><br>
+</span><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;color:#777777;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">Follow
+us </span><span style="font-size:13.5pt;font-family:&quot;Times&quot;,&quot;serif&quot;;mso-fareast-font-family:
+Calibri;mso-fareast-theme-font:minor-latin;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA"><a href="http://www.bigcommerce.com/in-the-news.php" target="_blank"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#12799A;
+text-decoration:none;text-underline:none">News</span></a></span><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Calibri;mso-fareast-theme-font:minor-latin;color:#CCCCCC;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"> | </span><span style="font-size:13.5pt;font-family:&quot;Times&quot;,&quot;serif&quot;;mso-fareast-font-family:
+Calibri;mso-fareast-theme-font:minor-latin;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA"><a href="http://www.facebook.com/bigcommerce" target="_blank"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#12799A;text-decoration:none;text-underline:none">Facebook</span></a></span><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Calibri;mso-fareast-theme-font:minor-latin;color:#CCCCCC;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"> | </span><span style="font-size:13.5pt;font-family:&quot;Times&quot;,&quot;serif&quot;;mso-fareast-font-family:
+Calibri;mso-fareast-theme-font:minor-latin;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA"><a href="http://twitter.com/bigcommerce" target="_blank"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#12799A;text-decoration:none;text-underline:none">Twitter</span></a></span><span style="font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: normal; font-style: normal; font-variant: normal; text-decoration: underline; vertical-align: baseline;"></span><br></font>]]></td>
+</tr>
+</table>

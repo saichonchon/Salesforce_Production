@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Post Paid.Email 3- Products</name>
+    <style>none</style>
+    <subject>Add your products</subject>
+    <textOnly>You can use our powerful product management system to quickly add products individually or import in bulk.
+Add your products
+
+
+
+
+
+
+
+Get started now &lt;[[{{company.Most Recent Store URL:default=http://www.bigcommerce.com}}/admin]]&gt;
+
+Start adding products
+You can use our powerful product management system to quickly add products individually or import in bulk, add and manage product categories, and create product options like size, color, style, etc.
+For more on managing your products and inventory, read the Bigcommerce Products Overview &lt;[[https://support.bigcommerce.com/articles/Public/Products-Overview]]&gt;.
+
+Increase conversions with the use of product photography
+Whether you take your product images in direct sunlight or in a studio, the process by which you size, position, and display images of your product can have a profound affect on the look, feel and perception of your product. The following article provides tips for creating great product photography to help increase your bottom line: Your Guide to Increasing Conversions and Average Order Value via Product Photography &lt;[[http://blog.bigcommerce.com/guide-to-product-photography/]]&gt;.
+Add products now &lt;[[{{company.Most Recent Store URL:default=http://www.bigcommerce.com}}/admin]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

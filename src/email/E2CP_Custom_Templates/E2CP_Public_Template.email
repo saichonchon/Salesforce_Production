@@ -1,0 +1,14 @@
+{!Case.E2CP__Most_Recent_Public_Comment__c}
+
+*******************************************************************
+Case Number: {!Case.CaseNumber} 
+Issue Reported: {!Case.Description}
+
+{!User.FirstName}
+{!$User.Title} 
+BigCommerce Technical Support 
+http://support.bigcommerce.com
+
+You can reply to this email or to view your case's status you can go here.
+
+Please do not remove: {!Case.E2CP__Case_Thread_Id__c}

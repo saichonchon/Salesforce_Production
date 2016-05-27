@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>lmscons__Training_Content__c.lmscons__Publisher__c</field>
+    </columns>
+    <columns>
+        <field>lmscons__Training_Content__c.lmsilt__ILT_Title__c</field>
+    </columns>
+    <columns>
+        <field>lmscons__Training_Content__c.lmscons__Description__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>lmscons__Training_Content__c.lmscons__Publisher__c</column>
+            <operator>contains</operator>
+            <value>Hebron</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>CFS Modules</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$lmscons__Training_Content__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

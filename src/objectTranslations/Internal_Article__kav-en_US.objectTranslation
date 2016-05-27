@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Internal Article</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Internal Articles</value>
+    </caseValues>
+    <fields>
+        <label><!-- Article --></label>
+        <name>Article__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attachment --></label>
+        <name>Attachment_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attachment --></label>
+        <name>Attachment_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attachment --></label>
+        <name>Attachment_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attachment --></label>
+        <name>Attachment_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attachment --></label>
+        <name>Attachment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Author --></label>
+        <name>Author__c</name>
+        <relationshipLabel><!-- Internal Articles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Feed Priority --></label>
+        <name>Feed_Priority__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IKM ID --></label>
+        <name>IKM_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Version --></label>
+        <name>Product_Version__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will add this article in the tool belt --></help>
+        <label><!-- Show in Feed --></label>
+        <name>Show_in_Feed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Notes --></label>
+        <name>Status_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete Rework</masterLabel>
+            <translation><!-- Complete Rework --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delete Article</masterLabel>
+            <translation><!-- Delete Article --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Move Content</masterLabel>
+            <translation><!-- Move Content --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs Work Major</masterLabel>
+            <translation><!-- Needs Work Major --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs Work Minor</masterLabel>
+            <translation><!-- Needs Work Minor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If applicable, specify the third party that this article is about. --></help>
+        <label><!-- Third Party --></label>
+        <name>Third_Party__c</name>
+    </fields>
+    <layouts>
+        <layout>Internal Article Layout</layout>
+        <sections>
+            <label><!-- Article --></label>
+            <section>Article</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

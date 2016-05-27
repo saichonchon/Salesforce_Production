@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Intuit Promo Email Standard - BAP 1582</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>Intuit Promo Standard</name>
+    <style>freeForm</style>
+    <subject>Ready for your store setup help and premium template?</subject>
+    <textOnly>Hi  {!Opportunity.Contact_First_Name__c},
+
+
+Congratulations! You have just made the choice to focus on selling more with BigCommerce! We’re excited to power your online store which will get you online faster and better than your competition. There are just a few more steps before you can take advantage of the special offers from our Starter Kit with Intuit QuickBooks.
+
+
+1. Pick out your FREE premium template
+
+Review the premium templates and pick one you like. They’re all mobile friendly and have SEO built right in to help your search rankings. A BigCommerce expert will help you apply one of the following templates:
+
+
+Health &amp; Beauty https://www.bigcommerce.com/theme/health-and-beauty/
+
+Bright &amp; Bold https://www.bigcommerce.com/theme/bright-bold/
+
+Sugar &amp; Mint https://www.bigcommerce.com/theme/sugar-mint/
+
+Dusk &amp; Dawn https://www.bigcommerce.com/theme/dusk-dawn/
+
+Cookies &amp; Cream https://www.bigcommerce.com/theme/cookies-cream/
+
+California https://www.bigcommerce.com/theme/california/
+
+Ohio https://www.bigcommerce.com/theme/ohio/
+
+Hawaii https://www.bigcommerce.com/theme/hawaii/
+
+Connecticut https://www.bigcommerce.com/theme/connecticut/
+
+Alaska https://www.bigcommerce.com/theme/alaska/
+
+Indiana https://www.bigcommerce.com/theme/indiana/
+
+
+2. Call us at 844-632-8914 to get assistance with setting up your store
+
+Don’t worry it only takes a few minutes and it’s the best time you will spend so we can ensure your site looks and works right - the first time!
+
+
+Our experts are ready to help walk you through the following:
+
+Applying your premium template
+
+Setting up QuickBooks for your payments and help you find the QuickBooks Online  Integration App
+
+Configuring shipping, taxes, SSL, domain and other settings
+
+Stocking your products (options, SKUs, rules, categories)
+
+
+Just call 844-632-8914 to get started.
+
+
+3. Start Selling More!
+
+After that, you’ll be all set to sell your products online and grow your business.  With BigCommerce and Intuit QuickBooks, you will be able to focus on turning online shoppers into loyal customers.
+
+
+We’re looking forward to helping you get started,
+
+
+The BigCommerce Team
+
+844-632-8914</textOnly>
+    <type>html</type>
+</EmailTemplate>

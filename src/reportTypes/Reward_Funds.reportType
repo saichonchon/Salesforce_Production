@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>WorkRewardFund</baseObject>
+    <category>wdc</category>
+    <deployed>true</deployed>
+    <description>Work.com: Reward Fund statistics such as remaining rewards and fund values</description>
+    <join>
+        <outerJoin>false</outerJoin>
+        <relationship>Rewards</relationship>
+    </join>
+    <label>Reward Funds Statistics</label>
+    <sections>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Name</field>
+            <table>WorkRewardFund</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund Created By</displayNameOverride>
+            <field>CreatedBy</field>
+            <table>WorkRewardFund</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund Created Date</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>WorkRewardFund</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Last Modified By</displayNameOverride>
+            <field>LastModifiedBy</field>
+            <table>WorkRewardFund</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund: Last Modified Date</displayNameOverride>
+            <field>LastModifiedDate</field>
+            <table>WorkRewardFund</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fund Owner Name</displayNameOverride>
+            <field>Owner</field>
+            <table>WorkRewardFund</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Reward_Value__c</field>
+            <table>WorkRewardFund.Rewards</table>
+        </columns>
+        <masterLabel>Reward Funds</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Recipient</field>
+            <table>WorkRewardFund.Rewards</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Recipient: Company Name</displayNameOverride>
+            <field>Recipient.CompanyName</field>
+            <table>WorkRewardFund.Rewards</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Recipient: Country</displayNameOverride>
+            <field>Recipient.Country</field>
+            <table>WorkRewardFund.Rewards</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Recipient: Department</displayNameOverride>
+            <field>Recipient.Department</field>
+            <table>WorkRewardFund.Rewards</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Recipient: Division</displayNameOverride>
+            <field>Recipient.Division</field>
+            <table>WorkRewardFund.Rewards</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Recipient: Employee Number</displayNameOverride>
+            <field>Recipient.EmployeeNumber</field>
+            <table>WorkRewardFund.Rewards</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Recipient: Role</displayNameOverride>
+            <field>Recipient.UserRole</field>
+            <table>WorkRewardFund.Rewards</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Recipient: Profile</displayNameOverride>
+            <field>Recipient.Profile</field>
+            <table>WorkRewardFund.Rewards</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedDate</field>
+            <table>WorkRewardFund.Rewards</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedBy</field>
+            <table>WorkRewardFund.Rewards</table>
+        </columns>
+        <masterLabel>Reward Recipients</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Recipient.LastModifiedDate</field>
+            <table>WorkRewardFund.Rewards</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Recipient.LastModifiedBy</field>
+            <table>WorkRewardFund.Rewards</table>
+        </columns>
+        <masterLabel>Rewards</masterLabel>
+    </sections>
+</ReportType>

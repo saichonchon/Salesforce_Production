@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <acrossGroupingContext>GRAND_SUMMARY</acrossGroupingContext>
+        <calculatedFormula>RowCount/PARENTGROUPVAL(RowCount, ROW_GRAND_SUMMARY, COLUMN_GRAND_SUMMARY)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA3</developerName>
+        <downGroupingContext>BucketField_45459959</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Support by Sales Channel</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <acrossGroupingContext>GRAND_SUMMARY</acrossGroupingContext>
+        <calculatedFormula>Case.Supported_as_Trial__c:SUM/PARENTGROUPVAL(RowCount, ROW_GRAND_SUMMARY, COLUMN_GRAND_SUMMARY)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA4</developerName>
+        <downGroupingContext>BucketField_45459959</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Trials Supported by Sales Channel</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <acrossGroupingContext>Case.Supported_as_Trial__c</acrossGroupingContext>
+        <calculatedFormula>RowCount/PARENTGROUPVAL(RowCount, ROW_GRAND_SUMMARY, COLUMN_GRAND_SUMMARY)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA5</developerName>
+        <downGroupingContext>GRAND_SUMMARY</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Trial Percentage</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_14973191</developerName>
+        <masterLabel>Plan Type</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>FK_$Subscription__c.Product__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>15 Day Free Trial</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>15 Day Trial</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>30 Day Free Trial</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Trial</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>60 Day Free Trial</sourceValue>
+            </sourceValues>
+            <value>1 - Trial Stores</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Enterprise Plan Subsidiary</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bigcommerce Enterprise Plan</sourceValue>
+            </sourceValues>
+            <value>7 - Enterprise Plan</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Silver Plan</sourceValue>
+            </sourceValues>
+            <value>3 - Silver Plan</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Bronze Plan</sourceValue>
+            </sourceValues>
+            <value>2 - Bronze Plan</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Gold Plan</sourceValue>
+            </sourceValues>
+            <value>4 - Gold Plan</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Platinum Plan</sourceValue>
+            </sourceValues>
+            <value>5 - Platinum Plan</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Diamond Plan</sourceValue>
+            </sourceValues>
+            <value>6 - Diamond Plan</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Professional Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Plan</sourceValue>
+            </sourceValues>
+            <value>8 - EIG/Homestead</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_45459959</developerName>
+        <masterLabel>Sales Channel</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Case.Subscription_Purchase_Team__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Affiliate Partner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Channel Parnter Sales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Channel Partner Sales</sourceValue>
+            </sourceValues>
+            <value>Channel Partner Sales</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Business Applications</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Business Development</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales Operations</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Contractor</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Training</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Testing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marketing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Success Squad</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales Direct Online</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales Channel</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Product</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Client Success</sourceValue>
+            </sourceValues>
+            <value>Other</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Partner Sales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Partner Sales-AU/NZ</sourceValue>
+            </sourceValues>
+            <value>Partner Sales</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$Subscription__c.Parent_Owner_Team__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Case.Client_Success,Case.Billing</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>REASON</column>
+            <operator>notEqual</operator>
+            <value>Trash/Spam,support@bigcommerce.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BucketField_14973191</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BucketField_45459959</column>
+            <operator>notEqual</operator>
+            <value>,Other</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$Subscription__c.Product__c</column>
+            <operator>notEqual</operator>
+            <value>Enterprise Plan,Professional Plan</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <operator>equals</operator>
+            <value>Web</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Supported_as_Trial__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_45459959</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Cases Created by Trial Stores - Web</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList@Case.Subscription__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_23364465</developerName>
+        <masterLabel>Teams</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Case.Escalated_By__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Brian Davenport</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dustin Shipley</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cortni Keaveney</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christopher Partanen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nikita Puzanenko</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tyler Pouchot</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brittani Scott</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Blake Boykin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Warren Kleinman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Enriquez</sourceValue>
+            </sourceValues>
+            <value>1 T2</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Case.Escalated_By__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_23364465</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Escalated_By__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Tickets sent to escalations</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LAST30</interval>
+    </timeFrameFilter>
+</Report>

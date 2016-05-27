@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>New Partner Onboarding.Email 1</name>
+    <style>none</style>
+    <subject>You&apos;re invited to our partner webinar!</subject>
+    <textOnly>We are excited to announce that the new partner portal has arrived!
+Hi {{lead.First Name:default=there}},
+Thank you for registering to be a Bigcommerce partner! To ensure you’re taking advantages of all the benefits of your partnership, we want to invite you to a 30-minute webinar &lt;[[http://grow.bigcommerce.com/Portal-Webinar-Register.html]]&gt; on making the most of your Bigcommerce partner portal.
+In this webinar, we’ll cover:
+
+
+ - What’s in the Bigcommerce partner portal
+ - How to log your deals in the our system
+ - How to sell more through our partner program
+
+
+To make it convenient, you can select from several days and times. 
+
+
+
+
+Attend a webinar &lt;[[http://grow.bigcommerce.com/Portal-Webinar-Register.html]]&gt;
+
+
+
+
+Enjoy your new Partner Portal!
+The Bigcommerce Partner Team
+partnersupport@bigcommerce.com &lt;[[mailto:partnersupport@bigcommerce.com]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

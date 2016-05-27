@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>BIG-7949 Closure Notification</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>BIG-7949 Email</name>
+    <style>freeForm</style>
+    <subject>Case Number: {!Case.CaseNumber} Subject: {!Case.Subject}</subject>
+    <textOnly>*******************************************************************
+Case Number: {!Case.CaseNumber}
+Issue Reported: {!Case.Description}
+
+Hello,
+
+In the past, you have tried to import product options with a value of &quot;0&quot; or &quot;00&quot; via a CSV file. For example, a piece of clothing with a size of &quot;0&quot; or &quot;00&quot;. Unfortunately, at that time, you received a &quot;bad data&quot; message from the control panel. Instead, you had to create and update these values manually. 
+
+We are please to inform you that you are able to import product options with &quot;0&quot; values using a CSV file now. This will make it easier for you to update inventory for existing &quot;0&quot; sizes. You will also be able to create &quot;0&quot; size product options from a CSV.
+
+Please don&apos;t hesitate to contact us if you have further questions. Technical support is available 24/7: 
+
+https://support.bigcommerce.com/contact.php
+
+BigCommerce Support
+http://support.bigcommerce.com
+
+You can reply to this email or to view your case&apos;s status you can go to https://bigcommerce-community.force.com/Client/bcslogin .
+
+Please do not remove: {!Case.E2CP__Case_Thread_Id__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

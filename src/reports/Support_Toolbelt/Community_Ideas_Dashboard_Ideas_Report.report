@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Idea.Votes$CreatedBy.Username</field>
+    </columns>
+    <columns>
+        <field>Idea.Votes$CreatedBy.Account</field>
+    </columns>
+    <columns>
+        <field>Idea.Votes$CreatedBy.Contact</field>
+    </columns>
+    <columns>
+        <field>Idea.Votes$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Idea$Title</field>
+    </columns>
+    <columns>
+        <field>Idea$NumComments</field>
+    </columns>
+    <columns>
+        <field>Idea$Categories</field>
+    </columns>
+    <columns>
+        <field>Idea$Status</field>
+    </columns>
+    <columns>
+        <field>Idea$InternalScore</field>
+    </columns>
+    <columns>
+        <field>Idea$WeightedSum</field>
+    </columns>
+    <description>Report for the Ideas portion of the Ideas dashboard component</description>
+    <filter>
+        <criteriaItems>
+            <column>Idea$Community</column>
+            <operator>equals</operator>
+            <value>BigCommerce Community</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Community Ideas Dashboard Ideas Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Insights_for_Ideas__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Idea$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

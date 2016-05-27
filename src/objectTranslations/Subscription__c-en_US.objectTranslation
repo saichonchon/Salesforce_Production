@@ -1,0 +1,2081 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Subscription</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Subscriptions</value>
+    </caseValues>
+    <fields>
+        <help><!-- Formula pulling the field value of Active Stores from the associated account record --></help>
+        <label><!-- Active Stores on Account --></label>
+        <name>Account_Active_Store_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- Salesforce Account ID --></help>
+        <label><!-- Account Salesforce ID --></label>
+        <name>Account_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Last Activity Date --></label>
+        <name>Account_Last_Activity_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Mismatch --></label>
+        <name>Account_Mismatch__c</name>
+    </fields>
+    <fields>
+        <label><!-- zAccount Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Owner --></label>
+        <name>Account_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- zAccount SS Rep --></label>
+        <name>Account_SS_Rep__c</name>
+    </fields>
+    <fields>
+        <help><!-- Account associated with the subscription --></help>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- REPORT Acquisition Campaign --></label>
+        <name>Acquisition_Campaign__c</name>
+    </fields>
+    <fields>
+        <help><!-- Marketing field populated through the URL parameter pass to SF from MBA --></help>
+        <label><!-- MKT MBA Ad Group --></label>
+        <name>AdGroup__c</name>
+    </fields>
+    <fields>
+        <help><!-- Marketing field populated through the URL parameter pass to SF from MBA --></help>
+        <label><!-- MKT MBA Ad Keywords --></label>
+        <name>AdKeywords__c</name>
+    </fields>
+    <fields>
+        <label><!-- zAffiliate --></label>
+        <name>Affiliate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Age --></label>
+        <name>Age__c</name>
+    </fields>
+    <fields>
+        <help><!-- SBD source for this store. aka Franchise in WHMCS --></help>
+        <label><!-- SBD Agency --></label>
+        <name>Agency__c</name>
+    </fields>
+    <fields>
+        <label><!-- zAppointment Source --></label>
+        <name>Appointment_Source__c</name>
+        <picklistValues>
+            <masterLabel>Acquisition</masterLabel>
+            <translation><!-- Acquisition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Success</masterLabel>
+            <translation><!-- Client Success --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct</masterLabel>
+            <translation><!-- Direct --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outbound Retention</masterLabel>
+            <translation><!-- Outbound Retention --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Manager</masterLabel>
+            <translation><!-- Partner Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saved</masterLabel>
+            <translation><!-- Saved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success Squad</masterLabel>
+            <translation><!-- Success Squad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website</masterLabel>
+            <translation><!-- Website --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BA April Revenue --></label>
+        <name>April_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- BA August Revenue --></label>
+        <name>August_Revenue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date paid was received  - this information is added from our data warehourse --></help>
+        <label><!-- zBI Date Paid --></label>
+        <name>BI_Date_Paid__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is the status of the invoice?  Data comes from BI. --></help>
+        <label><!-- zBI Invoice Status --></label>
+        <name>BI_Invoice_Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Challenged</masterLabel>
+            <translation><!-- Challenged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incomplete</masterLabel>
+            <translation><!-- Incomplete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid</masterLabel>
+            <translation><!-- Paid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refunded</masterLabel>
+            <translation><!-- Refunded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unpaid</masterLabel>
+            <translation><!-- Unpaid --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- How much money we received from the client -  this information is added from our data warehourse --></help>
+        <label><!-- zBI Payment Amount --></label>
+        <name>BI_Payment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- zBI This Month&apos;s Revenue --></label>
+        <name>BI_This_Month_s_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bad Phone Number --></label>
+        <name>Bad_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount charged per billing cycle.  Populated by MBA --></help>
+        <label><!-- MBA Billing Amount --></label>
+        <name>BillingAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Designates whether the store is billed monthly or annually.  Populated by MBA --></help>
+        <label><!-- MBA Billing Cycle --></label>
+        <name>BillingCycle__c</name>
+        <picklistValues>
+            <masterLabel>3 Yearly</masterLabel>
+            <translation><!-- 3 Yearly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 Yearly</masterLabel>
+            <translation><!-- 5 Yearly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biennially</masterLabel>
+            <translation><!-- Biennially --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Free Trial/Account</masterLabel>
+            <translation><!-- Free Trial/Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One-Time</masterLabel>
+            <translation><!-- One-Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semi-Annually</masterLabel>
+            <translation><!-- Semi-Annually --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- zCalc Prior Month Revenue --></label>
+        <name>Calc_Prior_Month_Revenue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populated by MBA when the sub&apos;s status value is moved to Cancelled or Terminated.  Not always sent from MBA as some manual processes cause MBA to fire differently than when the system makes the change --></help>
+        <label><!-- MBA Cancellation Date --></label>
+        <name>CancellationDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sent by MBA when the Billing team processes a cancellation request --></help>
+        <label><!-- MBA Cancellation Request Code --></label>
+        <name>CancellationRequestCode__c</name>
+        <picklistValues>
+            <masterLabel>Consolidating Stores</masterLabel>
+            <translation><!-- Consolidating Stores --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deleted Store Information</masterLabel>
+            <translation><!-- Deleted Store Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lack of Features</masterLabel>
+            <translation><!-- Lack of Features --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Migration Issues</masterLabel>
+            <translation><!-- Migration Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Misled by Sales</masterLabel>
+            <translation><!-- Misled by Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Need More Customization</masterLabel>
+            <translation><!-- Need More Customization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never Took it Seriously</masterLabel>
+            <translation><!-- Never Took it Seriously --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Time</masterLabel>
+            <translation><!-- No Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No/Low Sales</masterLabel>
+            <translation><!-- No/Low Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No/Low Traffic</masterLabel>
+            <translation><!-- No/Low Traffic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out of Business</masterLabel>
+            <translation><!-- Out of Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Too Difficult</masterLabel>
+            <translation><!-- Product Too Difficult --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refused to Disclose</masterLabel>
+            <translation><!-- Refused to Disclose --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seasonal User</masterLabel>
+            <translation><!-- Seasonal User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Server Issues</masterLabel>
+            <translation><!-- Server Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too Expensive</masterLabel>
+            <translation><!-- Too Expensive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unresolved Bugs</masterLabel>
+            <translation><!-- Unresolved Bugs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsatisfactory Customer Service Experience</masterLabel>
+            <translation><!-- Unsatisfactory Customer Service Experience --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Sent by MBA when the Billing team processes a cancellation request --></help>
+        <label><!-- MBA Cancellation Request Date --></label>
+        <name>CancellationRequestDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- zChannel Partner Engagement Preference --></label>
+        <name>Channel_Partner_Engagement_Preference__c</name>
+    </fields>
+    <fields>
+        <label><!-- zPAR Channel Partner ID --></label>
+        <name>Channel_Partner_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula pulling account owner of the related channel partner --></help>
+        <label><!-- zPAR Channel Partner Rep --></label>
+        <name>Channel_Partner_Rep__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula pulling account start date of the related channel partner --></help>
+        <label><!-- zPAR Channel Partner Start Date --></label>
+        <name>Channel_Partner_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula pulling account type of the related channel partner --></help>
+        <label><!-- z PAR Channel Partner Type --></label>
+        <name>Channel_Partner_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Partner Account (only matched is MBA Partner ID is populated and a corresponding iDev Parter ID exists on a partner account) --></help>
+        <label><!-- PAR Channel Partner --></label>
+        <name>Channel_Partner__c</name>
+        <relationshipLabel><!-- Client Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Marketing field populated through the URL parameter pass to SF from MBA --></help>
+        <label><!-- MKT Channel --></label>
+        <name>Channel__c</name>
+    </fields>
+    <fields>
+        <help><!-- CAN PROBABLY BE DELETED but check with Dan --></help>
+        <label><!-- zChurn Date --></label>
+        <name>Churn_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- zChurn Type --></label>
+        <name>Churn_Type__c</name>
+        <picklistValues>
+            <masterLabel>Admin Terminate</masterLabel>
+            <translation><!-- Admin Terminate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Correction</masterLabel>
+            <translation><!-- Correction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Fraud</masterLabel>
+            <translation><!-- Order Fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requested</masterLabel>
+            <translation><!-- Requested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unpaid</masterLabel>
+            <translation><!-- Unpaid --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- zClient Revenue Update Date --></label>
+        <name>Client_Revenue_Update_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- zClient Revenue --></label>
+        <name>Client_Revenue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date the incoming trial is expected to convert to a paid store --></help>
+        <label><!-- zClose Date --></label>
+        <name>Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- zConsultation Completion Date --></label>
+        <name>Consultation_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- zConsultation Notes --></label>
+        <name>Consultation_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- zConsultation Stage --></label>
+        <name>Consultation_Stage__c</name>
+        <picklistValues>
+            <masterLabel>1st Contact</masterLabel>
+            <translation><!-- 1st Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2nd Contact</masterLabel>
+            <translation><!-- 2nd Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appointment Held : Not Launched</masterLabel>
+            <translation><!-- Appointment Held : Not Launched --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assigned</masterLabel>
+            <translation><!-- Assigned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Booked</masterLabel>
+            <translation><!-- Booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultations Complete</masterLabel>
+            <translation><!-- Consultations Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intro Call Held</masterLabel>
+            <translation><!-- Intro Call Held --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Launched</masterLabel>
+            <translation><!-- Launched --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Show</masterLabel>
+            <translation><!-- No Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation><!-- Not Applicable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Interested</masterLabel>
+            <translation><!-- Not Interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting on Client</masterLabel>
+            <translation><!-- Waiting on Client --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Contact associated with the subscription --></help>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Country Code for the Subscription --></help>
+        <label><!-- Country Code --></label>
+        <name>Country_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sent from MBA --></help>
+        <label><!-- MBA Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- zCoupon Code --></label>
+        <name>CouponCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula needed to show specific time the sub was created to troubleshoot MBA syncing issues --></help>
+        <label><!-- BA Created Date Time --></label>
+        <name>Created_Date_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula calculating the amount of days between the trial&apos;s start date &amp; today --></help>
+        <label><!-- Day of Trial --></label>
+        <name>Day_of_Trial__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of days between the start date and purchase date. --></help>
+        <label><!-- REPORT Days to Close --></label>
+        <name>Days_to_Close__c</name>
+    </fields>
+    <fields>
+        <label><!-- REPORT Days to Conversion --></label>
+        <name>Days_to_Conversion__c</name>
+    </fields>
+    <fields>
+        <label><!-- zDays to Launch --></label>
+        <name>Days_to_Launch__c</name>
+    </fields>
+    <fields>
+        <label><!-- BA December Revenue --></label>
+        <name>December_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- zDesign Partner --></label>
+        <name>Design_Partner__c</name>
+        <relationshipLabel><!-- Design Client Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Populated by a workflow but may not be great data since the sub has to be created in the proper order for it to fire. Was the only way we could flag stores purchased directly vs trial upgrades, but hopefully the value can be pushed from MBA at some poin --></help>
+        <label><!-- Direct Purchase --></label>
+        <name>Direct_Purchase__c</name>
+    </fields>
+    <fields>
+        <help><!-- Marketing field populated through the URL parameter pass to SF from MBA --></help>
+        <label><!-- MKT Display Ad --></label>
+        <name>DisplayAd__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allows you to open the record in edit view in a new tab straight from the report page! --></help>
+        <label><!-- Edit --></label>
+        <name>Edit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populated by a workflow capturing the associated contact or lead email address each time the contact name is changed. Also used in case workflows to send email notifications if no lead or contact is called out on the case --></help>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Plan --></label>
+        <name>Expected_Plan__c</name>
+        <picklistValues>
+            <masterLabel>Bronze</masterLabel>
+            <translation><!-- Bronze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diamond</masterLabel>
+            <translation><!-- Diamond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold</masterLabel>
+            <translation><!-- Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum</masterLabel>
+            <translation><!-- Platinum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver</masterLabel>
+            <translation><!-- Silver --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Experience --></label>
+        <name>Experience__c</name>
+        <picklistValues>
+            <masterLabel>A Web Designer/Developer</masterLabel>
+            <translation><!-- A Web Designer/Developer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add an online store to my brick-and-mortar business</masterLabel>
+            <translation><!-- Add an online store to my brick-and-mortar business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Experienced with eCommerce</masterLabel>
+            <translation><!-- Experienced with eCommerce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I&apos;m creating a store for a client</masterLabel>
+            <translation><!-- I&apos;m creating a store for a client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I&apos;m doing research as a student, app developer or job applicant</masterLabel>
+            <translation><!-- I&apos;m doing research as a student, app developer or job applicant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I&apos;m setting up a store for a client</masterLabel>
+            <translation><!-- I&apos;m setting up a store for a client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loyal Bigcommerce client adding another store</masterLabel>
+            <translation><!-- Loyal Bigcommerce client adding another store --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New to eCommerce</masterLabel>
+            <translation><!-- New to eCommerce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Set up a new online business</masterLabel>
+            <translation><!-- Set up a new online business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Set up a store for a client</masterLabel>
+            <translation><!-- Set up a store for a client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Switch from a difference ecommerce platform</masterLabel>
+            <translation><!-- Switch from a difference ecommerce platform --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Switching from a Competitor</masterLabel>
+            <translation><!-- Switching from a Competitor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Marketing field populated through the URL parameter pass to SF from MBA. Using to track notes from Staging to actual sub for MBA invoice paids. --></help>
+        <label><!-- BA Experiment --></label>
+        <name>Experiment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populated by MBA.  Date the trial expires --></help>
+        <label><!-- MBA Expiration Date --></label>
+        <name>ExpirationDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- BA Feb Revenue --></label>
+        <name>Feb_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- zFree Gold Promo --></label>
+        <name>Free_Gold_Promo__c</name>
+    </fields>
+    <fields>
+        <label><!-- zGMV --></label>
+        <name>GMV__c</name>
+    </fields>
+    <fields>
+        <label><!-- zHas Partner ID --></label>
+        <name>Has_Partner_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MKT Hubspot Score --></label>
+        <name>Hubspot_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- Workflow populates what the parent record&apos;s HS score was when the sub went from trial to paid --></help>
+        <label><!-- MKT Hubspot Score at Conversion --></label>
+        <name>Hubspot_Score_at_Conversion__c</name>
+    </fields>
+    <fields>
+        <help><!-- Workflow populates what the parent record HS score was when the trial expired --></help>
+        <label><!-- MKT Hubspot Score at Trial Expiration --></label>
+        <name>Hubspot_Score_at_Trial_Expiration__c</name>
+    </fields>
+    <fields>
+        <label><!-- MBA Industry --></label>
+        <name>Industry__c</name>
+        <picklistValues>
+            <masterLabel>Ad Agency</masterLabel>
+            <translation><!-- Ad Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Animals &amp; Pets</masterLabel>
+            <translation><!-- Animals &amp; Pets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Antiques and Collectibles</masterLabel>
+            <translation><!-- Antiques and Collectibles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Apparel &amp; Clothing</masterLabel>
+            <translation><!-- Apparel &amp; Clothing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Art &amp; Crafts</masterLabel>
+            <translation><!-- Art &amp; Crafts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Associations</masterLabel>
+            <translation><!-- Associations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Automotive &amp; Motorcross</masterLabel>
+            <translation><!-- Automotive &amp; Motorcross --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banking &amp; Financial</masterLabel>
+            <translation><!-- Banking &amp; Financial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business</masterLabel>
+            <translation><!-- Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Computer &amp; Software</masterLabel>
+            <translation><!-- Computer &amp; Software --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Domain Hosting</masterLabel>
+            <translation><!-- Domain Hosting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Domain Registrar</masterLabel>
+            <translation><!-- Domain Registrar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food &amp; Beverage</masterLabel>
+            <translation><!-- Food &amp; Beverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Furniture</masterLabel>
+            <translation><!-- Furniture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gifts &amp; Specialty</masterLabel>
+            <translation><!-- Gifts &amp; Specialty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government</masterLabel>
+            <translation><!-- Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health &amp; Beauty</masterLabel>
+            <translation><!-- Health &amp; Beauty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthcare</masterLabel>
+            <translation><!-- Healthcare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home &amp; Garden</masterLabel>
+            <translation><!-- Home &amp; Garden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitality</masterLabel>
+            <translation><!-- Hospitality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Industrial Equipment</masterLabel>
+            <translation><!-- Industrial Equipment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information</masterLabel>
+            <translation><!-- Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jewelry &amp; Accessories</masterLabel>
+            <translation><!-- Jewelry &amp; Accessories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation><!-- Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logistics</masterLabel>
+            <translation><!-- Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Machinery</masterLabel>
+            <translation><!-- Machinery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing</masterLabel>
+            <translation><!-- Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media</masterLabel>
+            <translation><!-- Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mergers &amp; Acquisition</masterLabel>
+            <translation><!-- Mergers &amp; Acquisition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Music, Books &amp; DVDs</masterLabel>
+            <translation><!-- Music, Books &amp; DVDs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Profit</masterLabel>
+            <translation><!-- Non-Profit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not For Profit</masterLabel>
+            <translation><!-- Not For Profit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office &amp; Stationary</masterLabel>
+            <translation><!-- Office &amp; Stationary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POS</masterLabel>
+            <translation><!-- POS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Gateway/Merchant Accounts</masterLabel>
+            <translation><!-- Payment Gateway/Merchant Accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payroll</masterLabel>
+            <translation><!-- Payroll --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property</masterLabel>
+            <translation><!-- Property --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recreation</masterLabel>
+            <translation><!-- Recreation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping</masterLabel>
+            <translation><!-- Shipping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sports and Recreation</masterLabel>
+            <translation><!-- Sports and Recreation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax &amp; Accounting</masterLabel>
+            <translation><!-- Tax &amp; Accounting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology</masterLabel>
+            <translation><!-- Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telecommunications</masterLabel>
+            <translation><!-- Telecommunications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Toys and Games</masterLabel>
+            <translation><!-- Toys and Games --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel</masterLabel>
+            <translation><!-- Travel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website Design</masterLabel>
+            <translation><!-- Website Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wedding &amp; Bridal</masterLabel>
+            <translation><!-- Wedding &amp; Bridal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesale</masterLabel>
+            <translation><!-- Wholesale --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- zOld Initial Hubspot Score --></label>
+        <name>Initial_Hubspot_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- zInitial Totango Score --></label>
+        <name>Initial_Totango_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- Value pushed from MBA and is used in a trigger to convert leads when it&apos;s unchecked. Can also be used to force the account rollups to recalculate --></help>
+        <label><!-- MBA Is Trial --></label>
+        <name>IsTrial__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the sub status active? --></help>
+        <label><!-- Is Active --></label>
+        <name>Is_Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the sub status cancelled, terminated, incomplete, fraud, pending, or suspended? --></help>
+        <label><!-- Is Cancelled --></label>
+        <name>Is_Cancelled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicator that this is the accounts max subscription. Used for Hubspot, can be deprecated when deals integration is complete. --></help>
+        <label><!-- MKT Is MaxSub --></label>
+        <name>Is_MaxSub__c</name>
+    </fields>
+    <fields>
+        <label><!-- BA Jan Revenue --></label>
+        <name>Jan_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- BA July Revenue --></label>
+        <name>July_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- BA June revenue --></label>
+        <name>June_revenue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Marketing field populated through the URL parameter pass to SF from MBA --></help>
+        <label><!-- MKT Landing Page --></label>
+        <name>LandingPage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Calculates the date in the last month, used for reporting. --></help>
+        <label><!-- REPORT Last Month&apos;s Date --></label>
+        <name>Last_Month_s_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- zLast Month&apos;s Revenue --></label>
+        <name>Last_Month_s_Revenue__c</name>
+    </fields>
+    <fields>
+        <help><!-- The last date a subscription had a plan dollar amount change. 
+
+Note that this is not a field to report on historical events as it only contains the Last Plan Change date for a subscription and not a list of all previous plan change dates (i.e. if plan --></help>
+        <label><!-- REPORT: Last Plan Change Date --></label>
+        <name>Last_Plan_Change_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- REPORT: Last Plan Change Name --></label>
+        <name>Last_Plan_Change_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- REPORT: Last Plan Downgrade --></label>
+        <name>Last_Plan_Downgrade__c</name>
+    </fields>
+    <fields>
+        <label><!-- REPORT: Last Plan Upgrade --></label>
+        <name>Last_Plan_Upgrade__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date the store was fully launched by the Success Squad --></help>
+        <label><!-- zLaunch Date --></label>
+        <name>Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- zLaunch Team Commando OLD --></label>
+        <name>Launch_Team_Commando_OLD__c</name>
+        <relationshipLabel><!-- Subscriptions (zLaunch Team Commando OLD) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- zLaunch Team Commando --></label>
+        <name>Launch_Team_Commando__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pulls value of the lead field for list views --></help>
+        <label><!-- REPORT Lead Active Trial Count --></label>
+        <name>Lead_Active_Trial_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula to show which subs are associated to a converted lead --></help>
+        <label><!-- REPORT Lead Converted --></label>
+        <name>Lead_Converted__c</name>
+    </fields>
+    <fields>
+        <label><!-- zLead Hubspot Score Difference --></label>
+        <name>Lead_Hubspot_Score_Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- zLead Hubspot Score --></label>
+        <name>Lead_Hubspot_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- Salesorce Lead ID --></help>
+        <label><!-- zLead Salesforce ID --></label>
+        <name>Lead_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- zLead Initial Hubspot Score --></label>
+        <name>Lead_Initial_Hubspot_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- zLead Last Activity --></label>
+        <name>Lead_Last_Activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Owner --></label>
+        <name>Lead_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- zLead Stage --></label>
+        <name>Lead_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>Lead__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Lifetime GMV, rolled up from the BI Data object --></help>
+        <label><!-- Lifetime GMV --></label>
+        <name>Lifetime_GMV__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unique identifier from MBA of account/user.  ID of the account which owns this subscription --></help>
+        <label><!-- MBA Account ID --></label>
+        <name>MBAAccountID__c</name>
+    </fields>
+    <fields>
+        <label><!-- zMBA Client ID --></label>
+        <name>MBAClientID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MBA Partner ID --></label>
+        <name>MBAPartnerID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MBA Subscription ID --></label>
+        <name>MBASubscriptionID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MBA Channel Partner --></label>
+        <name>MBA_Channel_Partner__c</name>
+    </fields>
+    <fields>
+        <label><!-- MBA Partner ID Reconciliation --></label>
+        <name>MBA_Partner_ID_Reconciliation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check when client received a free theme. --></help>
+        <label><!-- zMKT PROMO-Free Theme --></label>
+        <name>MKT_PROMO_Free_Theme__c</name>
+    </fields>
+    <fields>
+        <label><!-- BA March Revenue --></label>
+        <name>March_Revenue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Marketing field populated through the URL parameter pass to SF from MBA --></help>
+        <label><!-- MKT MBA Marketing Campaign --></label>
+        <name>MarketingCampaign__c</name>
+    </fields>
+    <fields>
+        <help><!-- Marketing field populated through the URL parameter pass to SF from MBA --></help>
+        <label><!-- MKT MBA Marketing Source --></label>
+        <name>MarketingSource__c</name>
+    </fields>
+    <fields>
+        <help><!-- Marketing test group field --></help>
+        <label><!-- MKT Marketing Test Group --></label>
+        <name>Marketing_Test_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- BA May revenue --></label>
+        <name>May_revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- zMigration Case Created --></label>
+        <name>Migration_Case_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Migration Request Date --></label>
+        <name>Migration_Request_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- zMigration Verified --></label>
+        <name>Migration_Verified__c</name>
+    </fields>
+    <fields>
+        <help><!-- Was this store ever a Migration product? --></help>
+        <label><!-- zMigration --></label>
+        <name>Migration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Did the cancellation happen in this month? --></help>
+        <label><!-- BA Month-to-Date Cancellation --></label>
+        <name>Month_to_Date_Cancellation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Did the purchase happen this month? --></help>
+        <label><!-- BA Month-to-Date Purchases --></label>
+        <name>Month_to_Date_Purchases__c</name>
+    </fields>
+    <fields>
+        <help><!-- Did the trial start this month? --></help>
+        <label><!-- BA Month-to-Date Trial Sign Up --></label>
+        <name>Month_to_Date_Trial_Sign_Up__c</name>
+    </fields>
+    <fields>
+        <help><!-- Monthly value of plan regardless of billing cycle and amount --></help>
+        <label><!-- Monthly Recurring Revenue --></label>
+        <name>MonthlyRecurringRevenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Product Plan --></label>
+        <name>New_Product_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- zNext Steps --></label>
+        <name>Next_Steps__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Longer with Company --></label>
+        <name>No_Longer_with_Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- zNon English Speaking --></label>
+        <name>Non_English_Speaking__c</name>
+    </fields>
+    <fields>
+        <label><!-- BA November Revenue --></label>
+        <name>November_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- zNumber of Orders --></label>
+        <name>Number_of_Orders__c</name>
+    </fields>
+    <fields>
+        <label><!-- BA October Revenue --></label>
+        <name>October_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offered Time - By Hour --></label>
+        <name>Offered_Time_By_Hour__c</name>
+    </fields>
+    <fields>
+        <label><!-- zOpportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- zOps Notes --></label>
+        <name>Ops_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Plan Purchased --></label>
+        <name>Original_Plan_Purchased__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Plan Value --></label>
+        <name>Original_Plan_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- MKT PTP Pricing Test Group --></label>
+        <name>Original_Pricing_Test_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Owner Team --></label>
+        <name>Parent_Owner_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Owner --></label>
+        <name>Parent_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- zInitial Store Password --></label>
+        <name>Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- zPayment Status --></label>
+        <name>PaymentStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- zPhone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- REPORT Plan Change Date --></label>
+        <name>Plan_Change_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- REPORT Plan Change Value --></label>
+        <name>Plan_Change_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prev Month&apos;s Revenue --></label>
+        <name>Prev_Month_s_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Product Name --></label>
+        <name>Previous_Product_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Product Value --></label>
+        <name>Previous_Product_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Upgrade Amount --></label>
+        <name>Previous_Upgrade_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Upgrade Date --></label>
+        <name>Previous_Upgrade_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Which pricing page the client is cookied to based on when they started their trial / purchased their store --></help>
+        <label><!-- zMKT MBA Pricing Test Group --></label>
+        <name>PricingTestGroup__c</name>
+    </fields>
+    <fields>
+        <help><!-- ID specific to the plan name since plans can have different ID iterations yet maintain the same name in MBA --></help>
+        <label><!-- MBA Product ID --></label>
+        <name>ProductID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type of product (store, SSL, domain, etc) --></help>
+        <label><!-- MBA Product Type --></label>
+        <name>ProductType__c</name>
+        <picklistValues>
+            <masterLabel>Domain Name</masterLabel>
+            <translation><!-- Domain Name --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSL Certificate</masterLabel>
+            <translation><!-- SSL Certificate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store</masterLabel>
+            <translation><!-- Store --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- From MBA saying which plan/trial the store is on --></help>
+        <label><!-- MBA Product --></label>
+        <name>Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Plan --></label>
+        <name>Projected_Plan__c</name>
+        <picklistValues>
+            <masterLabel>Bronze</masterLabel>
+            <translation><!-- Bronze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diamond</masterLabel>
+            <translation><!-- Diamond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold</masterLabel>
+            <translation><!-- Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum</masterLabel>
+            <translation><!-- Platinum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver</masterLabel>
+            <translation><!-- Silver --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- zProjected Value --></label>
+        <name>Projected_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Marketing field populated through the URL parameter pass to SF from MBA --></help>
+        <label><!-- MKT MBA Promotion --></label>
+        <name>Promotion__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this if the store did not provision properly and the URL returns an error --></help>
+        <label><!-- zProvisioning Error --></label>
+        <name>Provisioning_Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Date --></label>
+        <name>PurchaseDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Date Month --></label>
+        <name>Purchase_Date_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Rep Lookup --></label>
+        <name>Purchase_Rep_Lookup__c</name>
+        <relationshipLabel><!-- Subscriptions (Purchase Rep Lookup) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Subscription owner at the time of purchase --></help>
+        <label><!-- Purchase Rep --></label>
+        <name>Purchase_Rep__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Team --></label>
+        <name>Purchase_Team__c</name>
+    </fields>
+    <fields>
+        <help><!-- SBD partner unique ID populated from MBA --></help>
+        <label><!-- SBD MBA Referral ID --></label>
+        <name>Referral_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- For Orion. Indicates the Date/Time for which the client indicated whether they would like a migration or not. --></help>
+        <label><!-- SBD Requested Migration At --></label>
+        <name>Requested_Migration_At__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used for Orion. Indicates whether the client requested a migration. --></help>
+        <label><!-- SBD Requested Migration --></label>
+        <name>Requested_Migration__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Revenue Date --></label>
+        <name>Revenue_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue Owner --></label>
+        <name>Revenue_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue Rep All-in Quota --></label>
+        <name>Revenue_Rep_All_in_Quota__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue Rep Quota --></label>
+        <name>Revenue_Rep_Quota__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue Rep --></label>
+        <name>Revenue_Rep__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue Team --></label>
+        <name>Revenue_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp-Active MRR --></label>
+        <name>RollUp_Active_MRR__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp-Active Store --></label>
+        <name>RollUp_Active_Store__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp-Active Trial --></label>
+        <name>RollUp_Active_Trial__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp-Non Trial Sub --></label>
+        <name>RollUp_Non_Trial_Sub__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp-Trial Sub --></label>
+        <name>RollUp_Trial_Sub__c</name>
+    </fields>
+    <fields>
+        <help><!-- Store the ChannelUnity Coupon code offer for Orion clients --></help>
+        <label><!-- SBD ChannelUnity Coupon Code --></label>
+        <name>SBD_ChannelUnity_Coupon_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- SBD Domain Name --></label>
+        <name>SBD_Domain_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Represents the Franchise External ID --></help>
+        <label><!-- SBD Store ID --></label>
+        <name>SBD_Store_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- SBD Value --></label>
+        <name>SBD_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Salesforce Account ID --></help>
+        <label><!-- Salesforce Account ID --></label>
+        <name>SF_Account_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- zSales Campaign --></label>
+        <name>Sales_Campaign__c</name>
+        <picklistValues>
+            <masterLabel>Acquisition : Interspire</masterLabel>
+            <translation><!-- Acquisition : Interspire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Acquisition : MagentoGo</masterLabel>
+            <translation><!-- Acquisition : MagentoGo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Acquisition : ProStores</masterLabel>
+            <translation><!-- Acquisition : ProStores --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Acquisition : Yahoo</masterLabel>
+            <translation><!-- Acquisition : Yahoo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Channel : ProStores</masterLabel>
+            <translation><!-- Channel : ProStores --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- zSales Stage --></label>
+        <name>Sales_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Agreement</masterLabel>
+            <translation><!-- Agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed Lost</masterLabel>
+            <translation><!-- Closed Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed Won</masterLabel>
+            <translation><!-- Closed Won --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closing</masterLabel>
+            <translation><!-- Closing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engaged</masterLabel>
+            <translation><!-- Engaged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engagement</masterLabel>
+            <translation><!-- Engagement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Existing: New Trial</masterLabel>
+            <translation><!-- Existing: New Trial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Un-Engaged</masterLabel>
+            <translation><!-- Un-Engaged --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Same Month Cancellation --></label>
+        <name>Same_Month_Cancellation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is this a sandbox store? --></help>
+        <label><!-- Sandbox? --></label>
+        <name>Sandbox__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used by Client Services to track which clients called in to cancel but were retained by CS --></help>
+        <label><!-- Saved from Cancellation --></label>
+        <name>Saved_from_Cancellation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Marketing field populated through the URL parameter pass to SF from MBA --></help>
+        <label><!-- MKT MBA Search Terms --></label>
+        <name>SearchTerms__c</name>
+    </fields>
+    <fields>
+        <help><!-- Marketing field populated through the URL parameter pass to SF from MBA --></help>
+        <label><!-- MKT MBA Segment --></label>
+        <name>Segment__c</name>
+    </fields>
+    <fields>
+        <label><!-- BA September Revenue --></label>
+        <name>September_Revenue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Server that the client&apos;s store is on. Populated from MBA. --></help>
+        <label><!-- MBA Store Server --></label>
+        <name>Server__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used in the partner portal apex code to designate when a sub was created via the portal rather than by MBA --></help>
+        <label><!-- UNDER REVIEW Source --></label>
+        <name>Source__c</name>
+        <picklistValues>
+            <masterLabel>Acquisition</masterLabel>
+            <translation><!-- Acquisition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Purchase</masterLabel>
+            <translation><!-- Direct Purchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Trial</masterLabel>
+            <translation><!-- Direct Trial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRM Portal</masterLabel>
+            <translation><!-- PRM Portal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Link</masterLabel>
+            <translation><!-- Partner Link --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Rep</masterLabel>
+            <translation><!-- Sales Rep --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>StartDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Does the store start date = subscription created date? --></help>
+        <label><!-- BA Start Date equals Create date --></label>
+        <name>Start_Create__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field is entered via Work Flow and is used to show the Calendar Month name of the Start Date --></help>
+        <label><!-- Start Month --></label>
+        <name>Start_Month__c</name>
+    </fields>
+    <fields>
+        <help><!-- Captures the Year &amp; Month for the start date of the subscription. Field is maintained by a trigger. --></help>
+        <label><!-- Start Year Month --></label>
+        <name>Start_Year_Month__c</name>
+    </fields>
+    <fields>
+        <help><!-- Status. Populated from MBA. --></help>
+        <label><!-- MBA Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation><!-- Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fraud</masterLabel>
+            <translation><!-- Fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incomplete</masterLabel>
+            <translation><!-- Incomplete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Cancellation</masterLabel>
+            <translation><!-- Pending Cancellation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Transfer</masterLabel>
+            <translation><!-- Pending Transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspended</masterLabel>
+            <translation><!-- Suspended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminated</masterLabel>
+            <translation><!-- Terminated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting on Client</masterLabel>
+            <translation><!-- Waiting on Client --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- zStore Name --></label>
+        <name>StoreName__c</name>
+    </fields>
+    <fields>
+        <help><!-- URL of the BC trial or store populated by MBA --></help>
+        <label><!-- MBA Store URL --></label>
+        <name>StoreURL__c</name>
+    </fields>
+    <fields>
+        <help><!-- How long this store has been paid. Delta between Purchase Date and Today&apos;s date --></help>
+        <label><!-- Client Age --></label>
+        <name>Store_Age__c</name>
+    </fields>
+    <fields>
+        <help><!-- To be completed by Client Services --></help>
+        <label><!-- zStore Launched --></label>
+        <name>Store_Launched__c</name>
+    </fields>
+    <fields>
+        <label><!-- zStore URL TEXT --></label>
+        <name>Store_URL_TEXT__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula pulling the Type value from the associated strategic partner account.  Used in dashboard reports and the SBD value field --></help>
+        <label><!-- SBD Strategic Partner Type --></label>
+        <name>Strategic_Partner_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lookup field used to associate subs to SBD accounts for reporting. Populated manually or through Salesforce code. --></help>
+        <label><!-- SBD Strategic Partner --></label>
+        <name>Strategic_Partner__c</name>
+        <relationshipLabel><!-- Strategic Client Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Subcription - Day of week --></label>
+        <name>Subcription_Day_of_week__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription Count --></label>
+        <name>Subscription_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription Hour --></label>
+        <name>Subscription_Hour__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription Unique ID --></label>
+        <name>Subscription_Unique_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- zSuccess Squad Consultant OLD --></label>
+        <name>Success_Squad_Consultant_OLD__c</name>
+        <relationshipLabel><!-- Subscriptions (zSuccess Squad Consultant OLD) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- zSuccess Squad Consultant --></label>
+        <name>Success_Squad_Consultant__c</name>
+    </fields>
+    <fields>
+        <label><!-- zSum of Revenue --></label>
+        <name>Sum_of_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Support Pin --></label>
+        <name>Support_PIN__c</name>
+    </fields>
+    <fields>
+        <help><!-- Non-resolvable provisioning issue --></help>
+        <label><!-- Sync Issue --></label>
+        <name>Sync_Issue__c</name>
+    </fields>
+    <fields>
+        <label><!-- zTEMP: MBA Partner Sync --></label>
+        <name>TEMP_MBA_Partner_Sync__c</name>
+    </fields>
+    <fields>
+        <label><!-- zTEMP: Most Recent Purchase Date --></label>
+        <name>TEMP_Most_Recent_Purchase_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- TEXT: This Months Rev --></label>
+        <name>TEXT_This_Months_Rev__c</name>
+    </fields>
+    <fields>
+        <help><!-- Original URL given to a store that never changes even if the live store URL does.  Pushed from MBA --></help>
+        <label><!-- MBA Temp URL --></label>
+        <name>TemporaryStoreURL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is this a test store? MANUALLY populated! Do not assume stores that are &quot;false&quot; are not test stores... --></help>
+        <label><!-- BA Test Store --></label>
+        <name>Test_Store__c</name>
+    </fields>
+    <fields>
+        <label><!-- This Month&apos;s Lost Revenue --></label>
+        <name>This_Month_s_Lost_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- This Month&apos;s Revenue --></label>
+        <name>This_Month_s_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Totango Count --></label>
+        <name>Totango_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Totango Insights --></label>
+        <name>Totango_Insights__c</name>
+    </fields>
+    <fields>
+        <label><!-- Totango Last Update --></label>
+        <name>Totango_Last_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Totango Score --></label>
+        <name>Totango_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Totango Score at Conversion --></label>
+        <name>Totango_Score_at_Conversion__c</name>
+    </fields>
+    <fields>
+        <label><!-- Totango Score at Expiration --></label>
+        <name>Totango_Score_at_Expiration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Totango URL --></label>
+        <name>Totango_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trial Extended --></label>
+        <name>TrialExtended__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trial Form Page --></label>
+        <name>TrialFormPage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trial Days Remaining --></label>
+        <name>Trial_Days_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- MBA Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Duplicate</masterLabel>
+            <translation><!-- Duplicate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International</masterLabel>
+            <translation><!-- International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Store</masterLabel>
+            <translation><!-- New Store --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Prospect</masterLabel>
+            <translation><!-- Partner Prospect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan Upgrade</masterLabel>
+            <translation><!-- Plan Upgrade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Testing</masterLabel>
+            <translation><!-- Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trial</masterLabel>
+            <translation><!-- Trial --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unique Owner ID --></label>
+        <name>Unique_Owner_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- zUnpacked --></label>
+        <name>Unpacked__c</name>
+    </fields>
+    <fields>
+        <label><!-- zUnpacking Assigned --></label>
+        <name>Unpacking_Assigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- zUnpacking Not Ready --></label>
+        <name>Unpacking_Not_Ready__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upgrade Rep ID --></label>
+        <name>Upgrade_Rep_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upgrade Rep --></label>
+        <name>Upgrade_Rep__c</name>
+        <relationshipLabel><!-- Subscriptions (Upgrade Rep) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Upgrade Stage --></label>
+        <name>Upgrade_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Closed Lost</masterLabel>
+            <translation><!-- Closed Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed Won</masterLabel>
+            <translation><!-- Closed Won --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pipeline</masterLabel>
+            <translation><!-- Pipeline --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- zUpsell Team to Call --></label>
+        <name>Upsell_Team_to_Call__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checkbox used to force an edit/save of records when we need workflows to fire --></help>
+        <label><!-- WFR Trigger --></label>
+        <name>WFR_Trigger__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populated by workflow for any sub that was a trial at any time so we can report between those that upgraded vs purchased directly --></help>
+        <label><!-- Was Trial --></label>
+        <name>Was_Trial__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula calculating the worth of the initial upgrade. Based on workflows capturing when a product name changes and what the MRR delta is --></help>
+        <label><!-- First Upgrade Amount --></label>
+        <name>X1st_Upgrade_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populated by WFR https://na13.salesforce.com/01Qa0000000Vnaj to capture when a store upgrades --></help>
+        <label><!-- First Upgrade Date --></label>
+        <name>X1st_Upgrade_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populated by WFR https://na13.salesforce.com/01Qa0000000Vnaj to capture when a store upgrades --></help>
+        <label><!-- First Upgrade Product Name --></label>
+        <name>X1st_Upgrade_Product_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populated by WFR https://na13.salesforce.com/01Qa0000000Vnaj to capture when a store upgrades --></help>
+        <label><!-- First Upgrade Product Value --></label>
+        <name>X1st_Upgrade_Product_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- ziDev Commission Amount --></label>
+        <name>iDev_Commission_Amount__c</name>
+    </fields>
+    <layouts>
+        <layout>Biz Apps Layout</layout>
+        <sections>
+            <label><!-- Billing and Revenue Information --></label>
+            <section>Billing and Revenue Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label><!-- MBA and Salesforce Information --></label>
+            <section>MBA and Salesforce Information</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing Information --></label>
+            <section>Marketing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Misc. Fields --></label>
+            <section>Misc. Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Monthly Revenue Calculations --></label>
+            <section>Monthly Revenue Calculations</section>
+        </sections>
+        <sections>
+            <label><!-- SBD Details --></label>
+            <section>SBD Details</section>
+        </sections>
+        <sections>
+            <label><!-- Store Information --></label>
+            <section>Store Information</section>
+        </sections>
+        <sections>
+            <label><!-- Upgrade Information --></label>
+            <section>Upgrade Information</section>
+        </sections>
+        <sections>
+            <label><!-- Web Service Description --></label>
+            <section>Web Service Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Client Success Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Success Squad Information --></label>
+            <section>Success Squad Information</section>
+        </sections>
+        <sections>
+            <label><!-- Web Service Description --></label>
+            <section>Web Service Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Default Subscription Layout</layout>
+        <sections>
+            <label><!-- Billing and Revenue Information --></label>
+            <section>Billing and Revenue Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Hubspot &amp; Contact Information --></label>
+            <section>Hubspot &amp; Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- MBA and Salesforce Information --></label>
+            <section>MBA and Salesforce Information</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing Information --></label>
+            <section>Marketing Information</section>
+        </sections>
+        <sections>
+            <label><!-- SBD Information --></label>
+            <section>SBD Information</section>
+        </sections>
+        <sections>
+            <label><!-- Store Information --></label>
+            <section>Store Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Migration Team Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Success Squad Information --></label>
+            <section>Success Squad Information</section>
+        </sections>
+        <sections>
+            <label><!-- Web Service Description --></label>
+            <section>Web Service Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Prof Services Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- MBA Information --></label>
+            <section>MBA Information</section>
+        </sections>
+        <sections>
+            <label><!-- Web Service Description --></label>
+            <section>Web Service Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SBD Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Web Service Description --></label>
+            <section>Web Service Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>zBiz Apps Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- MBA Information --></label>
+            <section>MBA Information</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing Information --></label>
+            <section>Marketing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Misc. Fields --></label>
+            <section>Misc. Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Monthly Revenue Calculations --></label>
+            <section>Monthly Revenue Calculations</section>
+        </sections>
+        <sections>
+            <label><!-- SBD Details --></label>
+            <section>SBD Details</section>
+        </sections>
+        <sections>
+            <label><!-- Success Squad Information --></label>
+            <section>Success Squad Information</section>
+        </sections>
+        <sections>
+            <label><!-- Upgrade Information --></label>
+            <section>Upgrade Information</section>
+        </sections>
+        <sections>
+            <label><!-- Web Service Description --></label>
+            <section>Web Service Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>zForecast Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Forecast Details --></label>
+            <section>Forecast Details</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>zSales Leader MBA Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Hubspot &amp; Contact Information --></label>
+            <section>Hubspot &amp; Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- MBA Information --></label>
+            <section>MBA Information</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing Information --></label>
+            <section>Marketing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Success Squad Information --></label>
+            <section>Success Squad Information</section>
+        </sections>
+        <sections>
+            <label><!-- Web Service Description --></label>
+            <section>Web Service Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>zSuccess Squad Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- MBA Information --></label>
+            <section>MBA Information</section>
+        </sections>
+        <sections>
+            <label><!-- Web Service Description --></label>
+            <section>Web Service Description</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Forecast Subscription --></label>
+        <name>Forecast_Subscription</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MBA Subscription --></label>
+        <name>MBA_Subscription</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Create_Opportunity --></label>
+        <name>Create_Opportunity</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_SSC --></label>
+        <name>New_SSC</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Staging_Subscription_Details --></label>
+        <name>Staging_Subscription_Details</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_in_MyBigAccount --></label>
+        <name>View_in_MyBigAccount</name>
+    </webLinks>
+</CustomObjectTranslation>

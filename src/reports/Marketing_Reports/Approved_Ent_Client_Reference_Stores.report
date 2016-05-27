@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_17821073</developerName>
+        <masterLabel>Product (Ent Bucketed)</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Opportunity.Product__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Enterprise</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise 3</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Plan Subsidiary</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Tier 1</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Tier 1 Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Tier 2 Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Tier 3 Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Tier 4 Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise tier 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bigcommerce Enterprise Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bigcommerce Enterprise Plan Plus SLA</sourceValue>
+            </sourceValues>
+            <value>Enterprise Plan</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumnStackedTo100</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Opportunity.Client_Reference_Status__c</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <secondaryGroupingColumn>BucketField_17821073</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <title>Approved Ent Client Reference Stores</title>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_CITY</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_STATE</field>
+    </columns>
+    <columns>
+        <field>Account.Zuora__UpsellOpportunity__c</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Contact__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Contact_First_Name__c</field>
+    </columns>
+    <columns>
+        <field>CON.EMAIL</field>
+    </columns>
+    <columns>
+        <field>Opportunity.StoreURL__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Status__c</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.PurchaseDate__c</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Enterprise_Account_Manager__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.totango__TotangoInsights__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Client_Reference_Notes__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity.Client_Reference_Status__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Product__c</column>
+            <operator>contains</operator>
+            <value>Enterprise</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Client_Reference_Status__c</column>
+            <operator>equals</operator>
+            <value>Approved</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Opportunity.Store_Purchase</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>RECORDTYPE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.Client_Reference_Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_17821073</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Approved Ent Client Reference Stores</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

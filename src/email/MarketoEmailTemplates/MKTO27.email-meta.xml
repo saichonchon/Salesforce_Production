@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>TEST- Marty/Owen PCF.Email 3 - Performance</name>
+    <style>none</style>
+    <subject>What should you expect from your ecommerce platform?</subject>
+    <textOnly>Free guide: Ecommerce site stability, speed and performance
+Find out what really matters when choosing an ecommerce platform
+If you&apos;re thinking about moving to a new ecommerce platform, there are a lot of factors to consider. Our free guide can help. We&apos;ve identified three key elements that matter most to your business, and offer specific benchmarks and considerations to look at for each.
+
+Download the guide &lt;[[http://grow.bigcommerce.com/ecommerce-site-stability-speed-and-performance-guide-pcf.html]]&gt; today to learn what you should expect from your ecommerce platform.
+
+Please call us &lt;[[tel:+18446328911]]&gt; if you have any questions about Bigcommerce.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

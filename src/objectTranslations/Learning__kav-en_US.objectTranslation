@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Learning</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Learning</value>
+    </caseValues>
+    <fields>
+        <label><!-- Article --></label>
+        <name>Article__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the URL for the previous chapter in this learning guide --></help>
+        <label><!-- Back Button URL --></label>
+        <name>Back_Button_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ordered list of chapters with titles, links, and active class set on current chapter --></help>
+        <label><!-- Chapter List --></label>
+        <name>Chapter_List__c</name>
+    </fields>
+    <fields>
+        <help><!-- e.g. Chapter 1, Chapter 2, or Chapter 5 --></help>
+        <label><!-- Chapter --></label>
+        <name>Chapter__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the navigation title from the left menu that should be active --></help>
+        <label><!-- Nav Title --></label>
+        <name>Nav_Title__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the title of the next chapter in this guide --></help>
+        <label><!-- Next Button Text --></label>
+        <name>Next_Button_Text__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the URL for the next chapter in this learning guide --></help>
+        <label><!-- Next Button URL --></label>
+        <name>Next_Button_URL__c</name>
+    </fields>
+    <layouts>
+        <layout>Learning Layout</layout>
+        <sections>
+            <label><!-- Article --></label>
+            <section>Article</section>
+        </sections>
+        <sections>
+            <label><!-- Navigation --></label>
+            <section>Navigation</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

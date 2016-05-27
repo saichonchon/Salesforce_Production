@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Lead.Lead_Count__c:SUM * 2</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Cost @ 2</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_33902124</developerName>
+        <masterLabel>Grouped Campaign Names</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Lead.CampaignMembers$Name</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>ACQ: Interspire Campaign</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Interspire POODLE Existing Members</sourceValue>
+            </sourceValues>
+            <value>ACQ: Interspire</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>ACQ: Magento Enterprise</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: MagentoGo</sourceValue>
+            </sourceValues>
+            <value>ACQ: Magento</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>ACQ: Orion - Existing Leads 8-2014</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Orion $0</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Orion $10k-25k</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Orion $25k-100k</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Orion $5k-10k</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Orion &lt;$5k</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Orion &gt;$100k</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Orion Import 11.13.14</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Orion Medium Suzys</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Orion service outreach pilot</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Orion service outreach pilot V2</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Orion Stage New</sourceValue>
+            </sourceValues>
+            <value>ACQ: Orion</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>ACQ: OS Commerce</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: OSCommerce Oct</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: OSCommerce Oct Dialer</sourceValue>
+            </sourceValues>
+            <value>ACQ: OSCommerce</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>ACQ Dialer: SEMA 2014 Dialer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: SEMA 2014</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: SEMA 2014 Warm Vendors</sourceValue>
+            </sourceValues>
+            <value>ACQ: SEMA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>ACQ: Shopify Leads</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Shopify Plus Leads</sourceValue>
+            </sourceValues>
+            <value>ACQ: Shopify</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>ACQ: Webinar</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ACQ: Webinar-Visitors to Buyers</sourceValue>
+            </sourceValues>
+            <value>ACQ: Webinar</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>Lead$Lead_Count__c</column>
+        </chartSummaries>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA1</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_33902124</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Lead$Name</field>
+    </columns>
+    <columns>
+        <field>Lead$Owner</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Lead$Lead_Count__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 AND (2 OR 3) AND 4 AND (5 OR 6) AND 7) AND 8</booleanFilter>
+        <criteriaItems>
+            <column>Lead.CampaignMembers$Name</column>
+            <operator>startsWith</operator>
+            <value>ACQ</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead.CampaignMembers$Name</column>
+            <operator>contains</operator>
+            <value>Consolidated (Dialer)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead.CampaignMembers$Name</column>
+            <operator>notContain</operator>
+            <value>CSCart,NSCommerce,Volusion,Yahoo</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead$IsConverted</column>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead$Owner</column>
+            <operator>equals</operator>
+            <value>Acquisition Queue</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead$Owner.UserRole</column>
+            <operator>contains</operator>
+            <value>Acquisition</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead$Is_Duplicate__c</column>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BucketField_33902124</column>
+            <operator>contains</operator>
+            <value>ACQ: Volusion Leads Consolidated (Dialer),ACQ: Content Nurture (Q1FY15)</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_33902124</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <aggregateType>Sum</aggregateType>
+        <dateGranularity>Day</dateGranularity>
+        <field>Lead.CampaignMembers$Name</field>
+        <sortByName>Lead$Lead_Count__c</sortByName>
+        <sortOrder>Desc</sortOrder>
+        <sortType>Aggregate</sortType>
+    </groupingsDown>
+    <name>ACQ Campaign Existing Leads</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Leads_with_Campaign_History__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Lead$Closed_Lost_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

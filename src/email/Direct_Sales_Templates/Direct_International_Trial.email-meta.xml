@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Intro Template for International Teams</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>Direct : 	International Trial</name>
+    <style>freeForm</style>
+    <subject>I’m here to help with your BigCommerce account</subject>
+    <textOnly>Hi {!Lead.FirstName},
+
+I’m {!Lead.OwnerFullName}, the dedicated BigCommerce consultant in your time zone. I’m available to discuss your store during business hours, both via phone and Skype.
+
+I’m here to:
+
+Help establish your goals
+Share tips on how to create your site
+Discuss some of the awesome integrations we have with services like eBay, Facebook and Google
+Get you selling as soon as possible
+
+
+Please don’t hesitate to contact me if you need anything. I look forward to speaking with you!
+
+{!Lead.OwnerFullName}
+eCommerce Business Consultant
+
+
+
+O  +1 {!Lead.OwnerPhone} | 1-888-699-8911 (Toll Free)
+E {!Lead.OwnerEmail}
+A 11305 Four Points Drive | Bldg II Suite 300 | Austin, TX 78726
+
+Visit us at bigcommerce.com
+Follow us News | Facebook | Twitter</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CAMPAIGN_STARTDATE</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_SOURCE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>AMOUNT</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_STAGE_CHANGE_DATE</field>
+    </columns>
+    <filter>
+        <booleanFilter>(((((1 or 2 or 3 or 4 or 5 or 6 or 9)) AND 7) AND 8)) AND 10</booleanFilter>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <operator>equals</operator>
+            <value>Prospects:2015.09.Datanyze A&apos;s,Prospects:2015.09.Datanyze B&apos;s,Prospects:2015.09.Datanyze C&apos;s,Prospects:2015.09.Datanyze D&apos;s,Prospects:2015.09.Datanyze F&apos;s</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <operator>equals</operator>
+            <value>Prospects.Datanyze + Hubspot Scored Leads.Q32015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <operator>equals</operator>
+            <value>2015.10:Prospects.Magento Datanyze List Upload (email only,good Alexa) (E1),Prospects.2015.10 Magento Datanyze leads w/Phone,Rev and Emp (&gt;+1M Alexa) D2,Prospects.Datanyze Provided.2015.09 ABC List w/phone #s,Prospects:2015.09 Magento List of Leads From BC-US/CAN (S1),Prospects:2015.09 Magento List of Leads From BC-EUR/S.AFR (Z1),Prospects:2015.09 Magento List of Leads From BC-APAC (Z2)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <operator>equals</operator>
+            <value>Prospects:2015.09 Amazon Platform BC Leads in SFDC,Prospects:2015.09 Amazon Webinar List</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <operator>equals</operator>
+            <value>Prospects.Magento Datanyze Phone Good Alexa (filtered SFDC),Prospects:2015.09 Magento List of Leads From BC-US/CAN,Prospects:2015.09 Magento List of Leads From BC-APAC,Prospects:2015.09 Magento List of Leads From BC-EUR/S.AFR,Prospects.2015.10 Magento Datanyze leads w/Phone,Rev and Emp (&gt;+1M Alexa)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <operator>equals</operator>
+            <value>Prospects.2015.09 Magento Datanyze Phone Good Alexa (filtered SFDC) (D1),Prospects.2015.10 MIVA SFDC leads Good Alexa,Phone-S1,Prospects.2015.10 MIVA Datanyze leads Good Alexa,Phone-D1,Prospects.2015.10 MIVA SFDC leads Poor Alexa,Phone-S2,Prospects.2015.10 MIVA Datanyze leads,Phone,Poor Alexa,Good Rev-D2,phone,poor Alexa,&lt;$1M rev-E3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_DEPARTMENT</column>
+            <operator>notContain</operator>
+            <value>partner,automated,sales development</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <operator>notContain</operator>
+            <value>juan,gensler,deshayes,talotta</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <operator>contains</operator>
+            <value>Prospects.2015,Prospects:2015</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Primary_Campaign_Name__c</column>
+            <operator>notContain</operator>
+            <value>mkt,hubspot,shop.org,q,acq,shoporg</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER_DEPARTMENT</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CAMPAIGN_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>STAGE_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Campaign Performance Analysis - Mike Ver</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityCampaign</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CAMPAIGN_STARTDATE</dateColumn>
+        <endDate>2015-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2015-09-01</startDate>
+    </timeFrameFilter>
+</Report>

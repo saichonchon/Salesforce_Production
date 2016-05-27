@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <aggregates>
+        <calculatedFormula>B0#RowCount - B1#RowCount</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>true</isCrossBlock>
+        <masterLabel>Created By</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <block>
+        <blockInfo>
+            <blockId>B1</blockId>
+            <joinTable>s</joinTable>
+        </blockInfo>
+        <columns>
+            <field>OWNER</field>
+        </columns>
+        <columns>
+            <field>SUBJECT</field>
+        </columns>
+        <columns>
+            <field>CREATED_DATE</field>
+        </columns>
+        <columns>
+            <field>AGE</field>
+        </columns>
+        <columns>
+            <field>OPEN</field>
+        </columns>
+        <columns>
+            <field>CLOSED</field>
+        </columns>
+        <columns>
+            <field>ACCOUNT.NAME</field>
+        </columns>
+        <filter>
+            <criteriaItems>
+                <column>OWNER</column>
+                <operator>equals</operator>
+                <value>Support - Manager Callback</value>
+            </criteriaItems>
+            <criteriaItems>
+                <column>CREATED</column>
+                <operator>notEqual</operator>
+                <value>API User,David Gardner,Danielle Canterberry,Kit Gulick</value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>Cases block 1</name>
+        <params>
+            <name>units</name>
+            <value>h</value>
+        </params>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>CaseList</reportType>
+        <scope>organization</scope>
+        <timeFrameFilter>
+            <dateColumn>CREATED_DATEONLY</dateColumn>
+            <interval>INTERVAL_LAST30</interval>
+        </timeFrameFilter>
+    </block>
+    <block>
+        <blockInfo>
+            <aggregateReferences>
+                <aggregate>FORMULA1</aggregate>
+            </aggregateReferences>
+            <blockId>B0</blockId>
+            <joinTable>s</joinTable>
+        </blockInfo>
+        <columns>
+            <field>OWNER</field>
+        </columns>
+        <columns>
+            <field>SUBJECT</field>
+        </columns>
+        <columns>
+            <field>CREATED_DATE</field>
+        </columns>
+        <columns>
+            <field>AGE</field>
+        </columns>
+        <columns>
+            <field>OPEN</field>
+        </columns>
+        <columns>
+            <field>CLOSED</field>
+        </columns>
+        <columns>
+            <field>ACCOUNT.NAME</field>
+        </columns>
+        <columns>
+            <field>FK_NAME</field>
+        </columns>
+        <filter>
+            <criteriaItems>
+                <column>OWNER</column>
+                <operator>equals</operator>
+                <value>Support - Manager Callback</value>
+            </criteriaItems>
+            <criteriaItems>
+                <column>OWNER</column>
+                <operator>notEqual</operator>
+                <value>API User,David Gardner,Kit Gulick,Danielle Canterberry</value>
+            </criteriaItems>
+            <criteriaItems>
+                <column>CREATED_DATEONLY</column>
+                <operator>notEqual</operator>
+                <value>LAST_N_DAYS:30</value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>Cases and Subscription block 2</name>
+        <params>
+            <name>units</name>
+            <value>h</value>
+        </params>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>CaseList@Case.Subscription__c</reportType>
+        <scope>organization</scope>
+        <timeFrameFilter>
+            <dateColumn>CREATED_DATEONLY</dateColumn>
+            <interval>INTERVAL_LAST60</interval>
+        </timeFrameFilter>
+    </block>
+    <blockInfo>
+        <blockId xsi:nil="true"/>
+        <joinTable>s</joinTable>
+    </blockInfo>
+    <format>MultiBlock</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CREATED</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>TL-DG-Db- Manager Contact 60 days</name>
+    <reportType>CaseList</reportType>
+    <showDetails>false</showDetails>
+</Report>

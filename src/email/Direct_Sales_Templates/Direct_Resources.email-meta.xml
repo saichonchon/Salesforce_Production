@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Links to send a client based on phone call requests</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>Direct  : Resources</name>
+    <style>freeForm</style>
+    <subject>{!Lead.FirstName}, Here are the resources you requested from BigCommerce</subject>
+    <textOnly>Hi {!Lead.FirstName},
+
+Here are the resources we talked about during our call today:
+
+Resource 1: Link
+Resource 2: Link
+Resource 3: Link
+
+I look forward to seeing your progress as you build out your store. If you have any questions call me on my direct line: {!Lead.OwnerPhone}.
+
+{!Lead.OwnerFullName}
+{!Lead.OwnerTitle}
+
+
+
+O +1 {!Lead.OwnerPhone}
+E {!Lead.OwnerEmail}
+A 11305 Four Points Drive | Bldg II Suite 300 | Austin, TX 78726
+
+Visit us at bigcommerce.com
+
+Visit us at bigcommerce.com
+Follow us News | Facebook | Twitter</textOnly>
+    <type>html</type>
+</EmailTemplate>

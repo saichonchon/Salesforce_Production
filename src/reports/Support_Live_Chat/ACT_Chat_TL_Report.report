@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>LiveChatTranscript$Name</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$Case</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$LastModifiedBy</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$RequestTime</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$StartTime</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$EndedBy</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$Chat_Duration_Minutes__c</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$Chat_Duration_Seconds__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>LiveChatTranscript$Status</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LiveChatTranscript$CreatedBy</column>
+            <operator>equals</operator>
+            <value>kim radaza,jollyann gudoy,Aravindhan Venkatraman,madhumitha ravi,naresh potlapudi,Karthikeyan Palanisamy,Verti Sugir,Carlos Venua,John Ubaldo,Mithun Benjamin,Prasanth Thamotharan,Thirumalai Subramanian,Donny Cotejo,Criza Vilo,Saleem Faiyazkhan,Thulasiramki Purushothaman,Syamraj Korappath,Erick Ablaza,Glenn Saturno,Kenneth Cabaobao,Neil Martinez,Ryan Juarez,Ravishankar gnanaprakasam,Shanmuga pandian,Clarissa Packing,Jovic Leovis,Aries Leyte,Venkat Sai,Paulo Mojica,Rajthilak Dhanabalan,Jasm Padilla,Ruth Relingado,Marjorie Tamayo,Marielle Morre,Luigi Modesto,Rob San Diego,Paul Castro,Gian Dejesus,Jan Saria,Marco Legaspi,Regie Matibag,Maikko Aguilar,Mireille Ferol,Patricia Cacho,Elijah Ignacio,Racel Arce,Jeff Gregorio,Chris Tan,Richard Nambatac,Alvin Deleon,Maria Gino,Mark Hernandez,Nicollo Nalus,Harold De Asas,Adrian Estopace,John Ferrer,Jude Abrigo,Ron Ramos,Cesa Inciong,Mary Hazel Quilaga,Mariechu Balerite,Faith Esguerra,Shirley Detera,Jun Tupas,Renz Santos,Regine SanJuan</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>ACT Chat - TL Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Live_Chat_Transcripts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LiveChatTranscript$CreatedDate</dateColumn>
+        <endDate>2015-08-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2015-08-31</startDate>
+    </timeFrameFilter>
+</Report>

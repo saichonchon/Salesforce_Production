@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>BI_Data__c$Name</field>
+    </columns>
+    <columns>
+        <field>BI_Data__c$Subscription__c.Status__c</field>
+    </columns>
+    <columns>
+        <field>BI_Data__c$MBA_Subscription_ID__c</field>
+    </columns>
+    <columns>
+        <field>BI_Data__c$Opportunity__c.totango__TotangoInsights__c</field>
+    </columns>
+    <columns>
+        <field>BI_Data__c$Opportunity__c.TemporaryStoreURL__c</field>
+    </columns>
+    <columns>
+        <field>BI_Data__c$Opportunity__c.Contact_Phone__c</field>
+    </columns>
+    <columns>
+        <field>BI_Data__c$Opportunity__c.MonthlyRecurringRevenue__c</field>
+    </columns>
+    <columns>
+        <field>BI_Data__c$Opportunity__c.PurchaseDate__c</field>
+    </columns>
+    <columns>
+        <field>BI_Data__c$Opportunity__c.New_Product_Plan__c</field>
+    </columns>
+    <columns>
+        <field>BI_Data__c$Lifetime_GMV__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>((1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7) AND 8) AND 9</booleanFilter>
+        <criteriaItems>
+            <column>BI_Data__c$Opportunity__c.Account</column>
+            <operator>equals</operator>
+            <value>Home Health Depot,HAUS ALKIRE,MY CITY BOUTIQUE,Chachimommas,TGM Skateboards,Aran Sweater Market,Glenhuntly Baby Carriages,VHC Boutique,KidsDynasty,Maman Gateau,Sabrina&apos;s Suite Boutique,The Baby Shed,SCRUBS MASTER,AngeLine,borneo eco care,Château De Chaldees,Get A Life Gaming,davesdeals,joebutton,TL Webb International Inc,thedesignerclothing.com.au,1da12,Golden Pottery,Brisbane Motor Imports,lavender fabrics,inkyworks.com,lyall&amp;amp;#039;s store,CBD Oil Store,The Fashion Closet,Built Assets Management Services Pte Ltd,ubsharing@hotmail.com,LargeDogDeals,Chris Sheiban,Crystal House,classicallyamerican,Wagonga Coffee,Lithgow Arms,Marissa Quijano,FansLot,Snare Trap Survive,American Antiques,durtygurl.net,Sakura Tactical,cvwicker,Satcom Direct,Bacpaq,FairyJanes High Heels Ankle Straps Platforms Wedges,jodisgiftsstore,Cycra Racing,Decobreeze,THE SCHOOL SPIRIT STORE,LLC,palspares,LUXURY-DESIGNERS.COM,sue by the sea,Poulton Web Design,Refinery,The Gift Of Handmade,BulkBooks,geekerymade</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BI_Data__c$Opportunity__c.Account</column>
+            <operator>equals</operator>
+            <value>InfidealsRetro,Gorilla Scientific,vipluxuryhair,The Glam Command,Vapor Wiz,High Brow Shirts,Unique&amp;amp;amp;amp;Lovely,posterazzi,Living Personal,dragonfoot,Cultured Pearl Boutique,PowerTech Diesel,silvercity925.com,Open Door Distribution,Lily Box,3blindmice,RegalitiesBC,Haircake.com,Luv Bridal,mediaheadquarters,Keith Cavallotti&apos;s Store,Direct Furniture Center,Ancient Faith Publishing,Shoes2Go,Happy Mango Beads,Ashleigh Petet&apos;s Store,Style Sanctuary,ACE Cricket,Amir&amp;amp;#039;s Store,opulentoutdoors,Albes,Farid Premani,MODE Rx,Ooofball,Bella Latina Jeans,U.S. Battery POP Material,Loading Zone Corp,UBC Group,True Form Concrete,Pethick Orchards,Elif&apos;s Diamond View,Brainbox Candy Ltd,Fake Bake United Ltd,Fuzzy Logic USA,Simon Dack&apos;s Store,Vanessa Garcia&apos;s Store,Blank Canvas Cosmetics,MELONELO,CrushBalboa,Inspire Candle Collection,Ethereal Flow,Indigo &amp;amp;amp;amp; Rain,Sonia Hanaish&apos;s Store,HintsDowntown,Sculpt Performance,lingerie-deal,Intimate Beauty Boutique,cottonfilledjewelryboxes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BI_Data__c$Opportunity__c.Account</column>
+            <operator>equals</operator>
+            <value>Cummings&amp;amp;#039; Creations &amp;amp;amp;amp; More,IVY Swimwear,cafefrenchpress.com (Nablus LLC),ringeto,fuckinggood,Ten Digit Creations,zeppastudios.com,sales@dgagdet.co.uk,jabscorulepumps.com,Roberts Vintage Wear,Positive Impressions,athletepseu,Tiege Hanley LLC,technologylounge,Decorate 24/7,Clipper Mill,Inc,myextensionz.ng,Total Equipment and Service,zebratoysdigital,plastic and glass empire,esmokershub,PRETTI COUTURE,Grab,Silk-pin,Kathys Creations25,Relish Tamborine,Option Gray,AMS Designer,Gravity Trading,Au Automobile Parts,All Oceans Surf,Indian Silver Mart,Gobrazilianhair,Xpressions on Things,Novakemist,DDG,Surf Parts,Cosmic Cowboy Hat Company,Gold Coast Candles,eThought.com,Raw Fashion And Craft,Wise Rags Clothing Company,The Creative Home Company,Active Heroes,Inc.,Bonka Bird Toys,Carey&apos;s Boutique,Stover&amp;amp;#039;s Liquidation,Connection Cards,TaxifyDemo,Dixon Products LLC,CoinBeyond,angels and much more,Creative Embroidery,BB Inc.,Younique Culture,fredericgallery</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BI_Data__c$Opportunity__c.Account</column>
+            <operator>equals</operator>
+            <value>fastcanopies.com,ItsAllFood,Karma Cafe,Hobbymasters,globalroaming,EyeBeholder,Inc.,switchled,Tgarments,Andihooks,Icon Golf,becksbaskets,Love Starr Boutique,jewelsbyshaila,Roy Benson USA,bluesky,World Buying Group,Kickspatrolinc,wmglen.com,Mama Tried Too,FHFModern,MyDIYHifi,lapolla,Cherished Gifts &amp;amp; Favors,Galesburg Electric/Industrial Supply,Anuj Mathur,Techland Pro,Computer Training Source,Eliza Rose,Sofitys.multitechproducts,Supreme Audio,strongparts,MusicFinale,peachesbeachwear,Slaviani,PSF DEMO,ionshoes.com,CaseBarn,paneraibands,Seaborne Marine,Bundle City,Donna Donaldson Home and Interiors,www.adamgardenofeden.com,Wahoo Deals,m-market,thejeffstore,AtomicMods,Alaffia,Americas Tarp Company,Dean Stair Treads,Sensible Supply,Nitterhouse Masonry Products,LLC,Crystal River Gems,Kelaty,YOURLITTLEBLACKBOX.COM,Anatomical Concepts (UK) Ltd,Olympic Pool &amp;amp;amp;amp; Spa,flipwal.com,Picture This...Framed,beauticians supply co.,SWAD Corp,419smokeshop,Raptere</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BI_Data__c$Opportunity__c.Account</column>
+            <operator>equals</operator>
+            <value>The Halloween Freak,pettesting,WAREHOUSE MOWERS,sassysiren,Elevated Performance Nutrition,Synergy Sport,Nerd Fit Clothing,Hali&amp;amp;#039;s Essentials,The Painted Shelf,Dynatech,Melboards.com.au,faithandbegorra-vcm,SUZUMAXX Suzuki Car Parts,Kigurumi Shop,NaturalWeightLoss,Goumikids,Stylicious LLC,Hop Skip Jump,gunbarrelvitaminstore,Spin Interiors,Legacy Connectivity Solutions,Rainbowholic,Marine Deals Direct,Go Fish Resources,Artazia,Simply Silken,Campus23,Happy Wag,Weave Got Maille,Las Vegas Rhinestones,ABH,rupalee,Marlborough Rug Company,boticario-english,MTSK Fashion Boutique,ile,todayzhome.com,dcttest1,Skeie&amp;amp;#039;s Jewelers,hookahandglass,Robert Ingram,ZORBX,sewtinagivens,Lucy Kemp Jewellery,Gadgets and Gear En,Daughter and Dinosaur,Rustik7,jtejerin,Reflections of Revelation,Bulldog Muscle,Thomas Scott,Let&apos;s Go Aero,Van Air Systems,KidSport,barstools,Country Living Primitives,mendes,Roy,macandsonsjewelry.com,clear,russg1,miamidirect2,Unique Expressions Fashion Jewelry</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BI_Data__c$Opportunity__c.Account</column>
+            <operator>equals</operator>
+            <value>raiselower,WazooSurvivalGear,Boom Comics,19Charlie Tactical,The Natural Way,TerraVapes,Calvin Fabrics,Roubogi Jewellery,Smart Ties,Black Ball Corp.,loadola,m6footwear,GenerationStore.com,BES Depot LLC,Indigo Legend,A Perfumery,Sortino Furniture,DMM.make USA,Inc,firesupplies,kraftmaid,your dog store,Baby K&apos;Tan,Peaceful-Planet,fenceguru,Factory Direct Sales,Ken Olcher,beercartel,Mark Bucknall,Lectorum,myplasticheart,inejewelry,Allplastics Engineering Pty Ltd,Brightfield Management,General Vitamins,ScottsdalePen,Medkit,Colorado Custom Metal,JM Powell Custom Engraving,Body Language by Connie,LLC,Pack Express Inc,Scuba Gear Canada,Small Treasures LP,Caroline Esin,Journey Road Arts,The Garden Store,Desireddiva.com,sandifordoffroad,Coblentz Chocolates,British Food Depot,catalog.theflyshop.com,transxa,Enerspect Medical Solutions,Tip Top Tires,The Skybox Store,organomarket.com,office@tennisotennis.com,Heth Computer Repair,Kayboom,promptertest,Ben Stoeger Pro Shop,pacifichealthretailer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BI_Data__c$Opportunity__c.Account</column>
+            <operator>equals</operator>
+            <value>Fizzy Pops,Rachele Charles Inc.,Wilburn Medical USA,BellaMuse,musclewave,Sole Child,Groomers Pro,The Cop Stuff Co LLP,MyLuxuryMaternity,theyarnlady,Swoon Jewelry Studio</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BI_Data__c$Subscription__c.Status__c</column>
+            <operator>equals</operator>
+            <value>Active,Suspended</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BI_Data__c$Opportunity__c.totango__TotangoInsights__c</column>
+            <operator>contains</operator>
+            <value>Launch</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BI_Data__c$Opportunity__c.Account.Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Active but unlaunch test group Totango</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>BI_Data__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>BI_Data__c$Opportunity__c.PurchaseDate__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>BI_Data__c$Opportunity__c.PurchaseDate__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

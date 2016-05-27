@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>BIG-12465 Closure Notification</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>BIG-12946 Email</name>
+    <style>freeForm</style>
+    <subject>Case Number: {!Case.CaseNumber} Subject: {!Case.Subject}</subject>
+    <textOnly>*******************************************************************
+
+Case Number: {!Case.CaseNumber}
+
+Issue Reported: {!Case.Description}
+
+Hello,
+
+
+Thank you for your patience while we investigated an issue preventing checkout as well as the use of a number of other JQuery dependent features. It was found that stores affected by this issue were using the Yotpo social reviews app. Yotpo has found an issue with a recent production release that caused errors when used with certain versions of JQuery. They announced the release of a fix a bit earlier today on Twitter: https://twitter.com/Yotpo/status/532632477999718400 . Stores that were previously affected by this issue now appear to be functioning normally. If you continue to have issues checking out, please let us know so that we may further troubleshoot.
+
+
+Please don&apos;t hesitate to contact us 24hrs a day if you have any other questions or concerns: https://support.bigcommerce.com/contact.php
+
+
+BigCommerce Support
+
+http://support.bigcommerce.com
+
+
+You can reply to this email or to view your case&apos;s status you can go to https://bigcommerce-community.force.com/Client/bcslogin
+
+
+Please do not remove: {!Case.E2CP__Case_Thread_Id__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

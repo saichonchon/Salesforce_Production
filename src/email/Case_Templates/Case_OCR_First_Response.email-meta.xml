@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>Case: OCR First Response</name>
+    <style>freeForm</style>
+    <subject>Update on your BigCommerce Support Case #{!Case.CaseNumber}</subject>
+    <textOnly>Dear {!Contact.FirstName}{!Case.Lead_First_Name__c},
+
+Thank you for contacting BigCommerce Support! Please find the proposed solution on your case #{!Case.CaseNumber} below.
+
+Subject: {!Case.Subject}
+
+Case Description:
+{!Case.Description}
+
+Proposed Solution:
+
+
+Does this resolve your case? (Click the appropriate link) 
+
+Yes: http://www.clicktools.com/survey?iv=3kq2qjbhsnpv9&amp;q1={!Case.Id}&amp;q2=1 
+
+No: http://www.clicktools.com/survey?iv=3kq2qjbhsnpv9&amp;q1={!Case.Id}&amp;q2=2 
+
+Thank You,
+{!$User.FirstName}
+BigCommerce Technical Support
+http://support.bigcommerce.com
+
+{!Case.E2CP__Case_Thread_Id__c}
+OCR Closure</textOnly>
+    <type>html</type>
+</EmailTemplate>

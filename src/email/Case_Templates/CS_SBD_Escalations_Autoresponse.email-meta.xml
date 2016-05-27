@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Autoresponse to new SBD Escalations cases</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>CS: SBD Escalations Autoresponse</name>
+    <style>freeForm</style>
+    <subject>We’ve opened a new support case for you: Case #{!Case.CaseNumber}</subject>
+    <textOnly>Thank you for contacting BigCommerce strategic business support.
+
+We&apos;ve opened case #{!Case.CaseNumber} to track this issue - please reference this number when reaching out to support or management regarding this matter.
+
+Thank you!
+
+BigCommerce Support Team
+
+
+{!Case.E2CP__Case_Thread_Id__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

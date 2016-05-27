@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>Miderprise Intro Email</name>
+    <style>freeForm</style>
+    <subject>Grow with BigCommerce Enterprise</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+I work with large volume e-commerce clients at BigCommerce and we have found that many business owners are in need of a more scalable and robust ecommerce platform. These business owners have come to us because our platform offers the functionality and features ideal for high-growth business with annual revenue between $500,000 and $30,000,000.
+
+Our Enterprise Plan offers unlimited bandwidth and API calls, a dedicated account management team, priority support and includes a fully customizable, responsive design. Additionally, clients are enjoying a significant cost savings by moving to BigCommerce with many paying 30-50% less versus their existing e-commerce solution.
+
+When would be a good time for us to schedule a call and discuss whether or not we would be a fit for your enterprise?
+
+Best regards,</textOnly>
+    <type>html</type>
+</EmailTemplate>

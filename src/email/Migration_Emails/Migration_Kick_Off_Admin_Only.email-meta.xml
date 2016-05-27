@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Migration: Kick Off Admin Only - Canned Comment 37</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>Migration: Kick-Off Admin Only</name>
+    <style>formalLetter</style>
+    <subject>Your BigCommerce Catalog Transfer: We need your current store’s credentials to start</subject>
+    <textOnly>HI there,
+
+Welcome to BigCommerce! We’re delighted you’ve chosen us to host your online store. You’re in good hands — we’ve successfully moved data for thousands of stores. With your help, the process can be quick and relatively painless. 
+
+Here’s what we need from you to get started: 
+
+Providing your current store’s credentials is essential to kick off the data migration process. You can find your credential request form below. It’s simple, but we can’t begin your data migration without it! 
+
+http://www.clicktools.com/survey?iv=1smxszkb8tpwy&amp;q1={Id} 
+
+Remember, we’re here to help. If you have any additional questions, please don’t hesitate to reach out to migrations@bigcommerce.com. We’re looking forward to working with you! 
+
+Thanks,
+
+The BigCommerce Team</textOnly>
+    <type>html</type>
+</EmailTemplate>

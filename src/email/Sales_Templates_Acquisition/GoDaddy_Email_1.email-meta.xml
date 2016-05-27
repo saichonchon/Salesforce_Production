@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>GoDaddy Email 1</name>
+    <style>none</style>
+    <subject>RE: Your GoDaddy Shopping Cart</subject>
+    <textOnly>Hi {!Lead.FirstName},
+
+After researching your online store, I think you have an opportunity to increase sales by moving to BigCommerce. Unlike GoDaddy, eCommerce is all we do, and we have already helped over 38,000 small business owners, like you, grow their sales online.
+
+Dozens of GoDaddy store owners have already made the switch and are utilizing our advanced marketing tools, mobile-optimized stores to sell on tablets and smartphones, and our in-house eCommerce consultants to reach more customer and improve results. In fact, we are so confident we can help your business, we are offering to move your entire store to BigCommerce at no charge!
+
+I’d love to set up a free consultation to go over exactly what we do and how BigCommerce can help you sell more. When would be a good time to meet this week?
+
+I look forward to hearing from you!
+
+Best,
+
+Lizette Flores
+
+eCommerce Business Consultant
+
+
+P 512-629-4518
+M 312-933-1479
+E Lizette.Flores@bigcommerce.com
+11305 Four Points Drive | Building II, Third Floor | Austin, TX 78726
+
+http://info.bigcommerce.com/switch-yahoo-to-bigcommerce
+
+Sign up for a free trial at: http://www.bigcommerce.com/p/12876.html</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>BIG-12496 Closure Notification</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>BIG-12496 Email</name>
+    <style>freeForm</style>
+    <subject>Case Number: {!Case.CaseNumber} Subject: {!Case.Subject}</subject>
+    <textOnly>*******************************************************************
+Case Number: {!Case.CaseNumber}
+Issue Reported: {!Case.Description}
+
+Hello,
+
+Your patience has been truly appreciated. Recently, you were affected by an issue with our PayPal Express Checkout integration. If a customer selected &quot;PayPal&quot; during checkout and clicked &quot;Proceed to Payment&quot;, he or she was directed back to the cart page instead of to PayPal.
+
+We are happy to report this issue has been resolved. Your customers should now be directed to PayPal to finish payment. We understand a functioning payment gateway is an integral part of your business and strive to fix issues of this nature as quickly as possible. We sincerely apologize for any inconvenience caused to you and your customers.
+
+Please don&apos;t hesitate to contact us if you have any further questions. Technical support is available 24/7:
+
+https://support.bigcommerce.com/contact.php
+
+BigCommerce Support
+http://support.bigcommerce.com
+
+You can reply to this email or to view your case&apos;s status you can go to https://bigcommerce-community.force.com/Client/bcslogin .
+
+Please do not remove: {!Case.E2CP__Case_Thread_Id__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

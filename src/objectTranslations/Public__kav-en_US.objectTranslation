@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Public</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Public</value>
+    </caseValues>
+    <fields>
+        <label><!-- Article --></label>
+        <name>Article__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attachment --></label>
+        <name>Attachment_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attachment --></label>
+        <name>Attachment_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attachment --></label>
+        <name>Attachment_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attachment --></label>
+        <name>Attachment_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attachment --></label>
+        <name>Attachment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Author --></label>
+        <name>Author__c</name>
+        <relationshipLabel><!-- Public --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case Support --></label>
+        <name>Case_Support__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Chat Support --></label>
+        <name>Chat_Support__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Feedback Visible --></label>
+        <name>Feedback_Visible__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Forum Support --></label>
+        <name>Forum_Support__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IKM ID --></label>
+        <name>IKM_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Info --></label>
+        <name>Internal_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nav Title --></label>
+        <name>Nav_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Article --></label>
+        <name>Next_Article__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose the position for this contact method. 1 being first in the list 4 being last, 0 is not visible. --></help>
+        <label><!-- Phone Support --></label>
+        <name>Phone_Support__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Previous Article --></label>
+        <name>Previous_Article__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pro Services CTA --></label>
+        <name>Pro_Services_CTA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Public Link --></label>
+        <name>Public_Link__c</name>
+    </fields>
+    <fields>
+        <help><!-- Add additional keywords or terms not found in text here. --></help>
+        <label><!-- Search Terms --></label>
+        <name>Search_Terms__c</name>
+    </fields>
+    <fields>
+        <help><!-- If a product guide article or an article with a general title what would the title be in the form of a question. --></help>
+        <label><!-- Solves For --></label>
+        <name>Solves_For__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Notes --></label>
+        <name>Status_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete Rework</masterLabel>
+            <translation><!-- Complete Rework --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delete Article</masterLabel>
+            <translation><!-- Delete Article --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Move Content</masterLabel>
+            <translation><!-- Move Content --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs Work Major</masterLabel>
+            <translation><!-- Needs Work Major --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs Work Minor</masterLabel>
+            <translation><!-- Needs Work Minor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Third Party --></label>
+        <name>Third_Party__c</name>
+    </fields>
+    <layouts>
+        <layout>Public Layout</layout>
+        <sections>
+            <label><!-- Article Content --></label>
+            <section>Article Content</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Exposure --></label>
+            <section>Contact Exposure</section>
+        </sections>
+        <sections>
+            <label><!-- Internal Information --></label>
+            <section>Internal Information</section>
+        </sections>
+        <sections>
+            <label><!-- Next &amp; Prev Articles --></label>
+            <section>Next &amp; Prev Articles</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

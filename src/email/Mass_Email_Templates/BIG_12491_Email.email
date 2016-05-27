@@ -1,0 +1,40 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<p style="margin:0in;font-family:arial;font-size:12.0pt;color:black"><span style="background:white">*******************************************************************</span></p>
+
+<p style="margin:0in;font-family:arial;font-size:12.0pt;color:black"><span style="background:white">Case Number: {!Case.CaseNumber}&nbsp;</span></p>
+
+<p style="margin:0in;font-family:arial;font-size:12.0pt;color:black"><span style="background:white">Issue Reported: {!Case.Description}</span></p>
+
+<p style="margin:0in;font-family:arial;font-size:12.0pt;color:black">Hello,</p>
+
+<p style="margin:0in;font-family:Calibri;font-size:11.0pt">&nbsp;</p>
+
+<p style="margin:0in;font-family:arial;font-size:12.0pt;color:black">Your
+patience has truly been appreciated. A known issue was preventing out of stock messaging from being displayed in the cart. This issue has been resolved and out of stock messaging should now be displaying normally on the cart.<br></p>
+
+<p style="margin:0in;font-family:Calibri;font-size:11.0pt">&nbsp;</p>
+
+<p style="margin:0in;font-family:arial;font-size:12.0pt;color:black">Please
+don't hesitate to contact us 24hrs a day if you have any other questions or
+concerns:&nbsp;<a href="https://support.bigcommerce.com/contact.php">https://support.bigcommerce.com/contact.php</a></p>
+
+<p style="margin:0in;font-family:Calibri;font-size:11.0pt">&nbsp;</p>
+
+<p style="margin:0in;font-family:arial;font-size:12.0pt;color:black">BigCommerce
+Support</p>
+
+<p style="margin:0in"><a href="http://support.bigcommerce.com/"><span style="font-family:arial;font-size:12.0pt">http://support.bigcommerce.com</span></a></p>
+
+<p style="margin:0in;font-family:Calibri;font-size:11.0pt">&nbsp;</p>
+
+<p style="margin:0in;font-family:arial;font-size:12.0pt"><span style="color:black">You can reply to this email or to view your case's status
+you can&nbsp;</span><a href="https://bigcommerce-community.force.com/Client/bcslogin">go here</a><span style="color:black">.</span></p>
+
+<p style="margin:0in;font-family:Calibri;font-size:11.0pt">&nbsp;</p>
+
+<p style="margin:0in;font-family:arial;font-size:7.5pt;color:black">Please do
+not remove: {!Case.E2CP__Case_Thread_Id__c}</p>]]></td>
+</tr>
+</table>

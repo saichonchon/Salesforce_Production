@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Follow up to a voicemail message</name>
+    <style>none</style>
+    <subject>Did you get my call?</subject>
+    <textOnly>Hello {!Lead.FirstName}
+
+I hope this finds you well. I called and was unsuccessful getting through.  I&apos;m with BigCommerce. I&apos;ve been working exclusively with Yahoo! Store owners and while most of them have made money with Yahoo, they are realizing that they could be selling even more with new marketing tools, a more modern looking website and more traffic.  In addition, they are really concerned about missing mobile traffic.  Do you have 5-10 minutes for a phone conference call today? If not, when would be the best time to contact you?
+
+Please advise.
+
+Lizette Flores
+
+eCommerce Business Consultant
+
+
+P 512-629-4518
+M 312-933-1479
+E Lizette.Flores@bigcommerce.com
+11305 Four Points Drive | Building II, Third Floor | Austin, TX 78726
+
+http://info.bigcommerce.com/switch-yahoo-to-bigcommerce
+
+Sign up for a free trial at: http://www.bigcommerce.com/p/12876.html</textOnly>
+    <type>custom</type>
+</EmailTemplate>

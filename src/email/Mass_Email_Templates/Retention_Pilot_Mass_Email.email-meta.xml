@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Mass Email for Client Success Retention Pilot</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>Retention Pilot Mass Email</name>
+    <style>formalLetter</style>
+    <subject>{!Contact.FirstName}, want 1:1 assistance with your BigCommerce store?</subject>
+    <textOnly>Our team is standing by to provide you personalized advice.
+
+Hello {!Contact.FirstName},
+
+We’ve recently reviewed your store’s performance, and would like to offer you a free consultation with our experts. On average, store owners who have received assistance from our team have increased store search traffic by 32% and revenue by 47%.
+
+To take advantage of this free service, call 1-844-632-8914.
+
+You can also review our Store Launch Guide to learn the essentials for opening your store, plus get resources that can drive high-converting traffic.
+
+We look forward to working with you,
+
+The BigCommerce Client Success Team</textOnly>
+    <type>html</type>
+</EmailTemplate>

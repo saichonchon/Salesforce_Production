@@ -1,0 +1,20 @@
+Hi {!Contact.FirstName}{!Case.Lead_First_Name__c},
+
+A few days ago, you asked us for a little help with your online store. We followed up with some questions, but haven’t heard from you yet. 
+
+Last communication reminder:
+{!Case.E2CP__Most_Recent_Public_Comment__c}
+
+Case #: {!Case.CaseNumber}
+Store URL: {!Case.Bigcommerce_Store_URL__c}
+Subject: {!Case.Subject}
+
+Please get back to us as soon as possible so we can help you with your store. Your ticket will automatically close if we don’t hear from you in the next 24 hours. 
+
+If your issue has already been resolved, just let us know and we’ll close the ticket for you. If you don’t have time to respond now, we totally get it — you can open a new ticket when you are ready.
+
+Thanks,
+
+The BigCommerce Support Team
+
+{!Case.E2CP__Case_Thread_Id__c}

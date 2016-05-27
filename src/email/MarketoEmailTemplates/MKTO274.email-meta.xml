@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>02-2016 Town Hall.Email 1</name>
+    <style>none</style>
+    <subject>Join us for the February Town Hall</subject>
+    <textOnly>Hi there,
+Bigcommerce Town Hall &lt;[[https://attendee.gotowebinar.com/register/5863786043245097730]]&gt;
+ 
+When: Tuesday February 23, 2016 from 2–3 PM CT
+ 
+What: A discussion of Bigcommerce news and a look at upcoming product enhancements, followed by live Q&amp;A 
+ 
+Presenters: CEO Brent Bellm and CPO Tim Schulz
+
+Reserve your spot &lt;[[https://attendee.gotowebinar.com/register/5863786043245097730]]&gt;
+
+
+We’ll hold a live Q&amp;A session during the Town Hall, but you can also submit questions in advance by commenting in our community forum &lt;[[http://forum.bigcommerce.com/f67/february-town-hall-coming-soon--27865/]]&gt;.
+
+If you’re unable to join us, don’t worry — we’ll record each Town Hall and post the video in the forum
+
+Hope to see you there,
+
+The Bigcommerce Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

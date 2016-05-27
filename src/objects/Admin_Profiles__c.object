@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <customSettingsVisibility>Public</customSettingsVisibility>
+    <description>False for admins, true for other profiles</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Run_Validation_Rules__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>True means run the validation rule</description>
+        <externalId>false</externalId>
+        <inlineHelpText>True means run the validation rule</inlineHelpText>
+        <label>Run Validation Rules</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Run Validation Rules</label>
+</CustomObject>

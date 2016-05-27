@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>zBiz Apps Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Biz Apps Requests</value>
+    </caseValues>
+    <fields>
+        <label><!-- Admin Request Count --></label>
+        <name>Admin_Request_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- Who is approving building of this request and responsible for final approval before release? --></help>
+        <label><!-- Approver --></label>
+        <name>Approver__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned To --></label>
+        <name>Assigned_To__c</name>
+        <relationshipLabel><!-- Biz Apps Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Plan for reversing the release --></help>
+        <label><!-- Backout Plan --></label>
+        <name>Backout_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- IMPORTANT MESSAGE --></label>
+        <name>Biz_Apps_Change_Message__c</name>
+    </fields>
+    <fields>
+        <help><!-- Has business owner testing been conducted? --></help>
+        <label><!-- Business Owner Testing --></label>
+        <name>Business_Owner_Testing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completion Date --></label>
+        <name>Completion_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Link to Confluence page for related topic --></help>
+        <label><!-- Confluence Record --></label>
+        <name>Confluence_Record__c</name>
+    </fields>
+    <fields>
+        <help><!-- What outsource company is completing this request? --></help>
+        <label><!-- Contractor Company --></label>
+        <name>Contractor_Company__c</name>
+        <picklistValues>
+            <masterLabel>Applikontech</masterLabel>
+            <translation><!-- Applikontech --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Admin Services</masterLabel>
+            <translation><!-- Salesforce Admin Services --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Date that the contractor portion of the request is completed --></help>
+        <label><!-- Contractor Completed Date --></label>
+        <name>Contractor_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Was the request completed? --></help>
+        <label><!-- Contractor Completed --></label>
+        <name>Contractor_Completed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- What level is the contractor who is working this request? --></help>
+        <label><!-- Contractor Level --></label>
+        <name>Contractor_Level__c</name>
+        <picklistValues>
+            <masterLabel>Admin</masterLabel>
+            <translation><!-- Admin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Developer</masterLabel>
+            <translation><!-- Developer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reporting</masterLabel>
+            <translation><!-- Reporting --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did this request get completed on or before its deadline? --></help>
+        <label><!-- Contractor Meets Deadline? --></label>
+        <name>Contractor_Meets_Deadline__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- What is the contractor&apos;s name? --></help>
+        <label><!-- Contractor Name --></label>
+        <name>Contractor_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Details on the quality and rating of this work --></help>
+        <label><!-- Contractor Feedback --></label>
+        <name>Contractor_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- What was the quality of delivery on this request? --></help>
+        <label><!-- Contractor Quality --></label>
+        <name>Contractor_Quality__c</name>
+        <picklistValues>
+            <masterLabel>Below Expectation</masterLabel>
+            <translation><!-- Below Expectation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exceeds Expectation</masterLabel>
+            <translation><!-- Exceeds Expectation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meets Expectation</masterLabel>
+            <translation><!-- Meets Expectation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Contractor questions to Biz Apps team on implementing request --></help>
+        <label><!-- Contractor Questions --></label>
+        <name>Contractor_Questions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contractor work rating --></help>
+        <label><!-- Contractor Rating --></label>
+        <name>Contractor_Rating__c</name>
+        <picklistValues>
+            <masterLabel>Bad</masterLabel>
+            <translation><!-- Bad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation><!-- Excellent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fair</masterLabel>
+            <translation><!-- Fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- What is the contractor status of the request? --></help>
+        <label><!-- Contractor Status --></label>
+        <name>Contractor__c</name>
+        <picklistValues>
+            <masterLabel>Blocked</masterLabel>
+            <translation><!-- Blocked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ongoing</masterLabel>
+            <translation><!-- Ongoing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Testing</masterLabel>
+            <translation><!-- Testing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- How many hours did it take this contractor to complete this request? --></help>
+        <label><!-- Contractor Estimated Hours --></label>
+        <name>Contractor_estimated_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Date --></label>
+        <name>CreatedDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- When was this release approved by the approver for final release? --></help>
+        <label><!-- Date Approved for Release --></label>
+        <name>Date_Approved_for_Release__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days to Complete --></label>
+        <name>Days_to_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Est. Completed Date --></label>
+        <name>Est_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours Spent --></label>
+        <name>Hours_Spent__c</name>
+    </fields>
+    <fields>
+        <help><!-- How was the request made to Ops? --></help>
+        <label><!-- How Made --></label>
+        <name>How_Made__c</name>
+        <picklistValues>
+            <masterLabel>Admin Request form</masterLabel>
+            <translation><!-- Admin Request form --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chatter</masterLabel>
+            <translation><!-- Chatter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walk Up</masterLabel>
+            <translation><!-- Walk Up --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Biz Apps Internal Notes --></label>
+        <name>Internal_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- JIRA Ticket --></label>
+        <name>JIRA_Ticket__c</name>
+    </fields>
+    <fields>
+        <label><!-- Link to Report/Dashboard/Record --></label>
+        <name>Link_to_Report_Dashboard_Record__c</name>
+    </fields>
+    <fields>
+        <label><!-- Link to object that needs to be included --></label>
+        <name>Link_to_object_that_needs_to_be_included__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number --></label>
+        <name>Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority_Rank__c</name>
+        <picklistValues>
+            <masterLabel>Backlog</masterLabel>
+            <translation><!-- Backlog --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blocker</masterLabel>
+            <translation><!-- Blocker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Critical</masterLabel>
+            <translation><!-- Critical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major</masterLabel>
+            <translation><!-- Major --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor</masterLabel>
+            <translation><!-- Minor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trivial</masterLabel>
+            <translation><!-- Trivial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urgent</masterLabel>
+            <translation><!-- Urgent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project Page --></label>
+        <name>Project_Page__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project? --></label>
+        <name>Project__c</name>
+    </fields>
+    <fields>
+        <help><!-- Detailed Description of changes involved in implementing this release --></help>
+        <label><!-- Release Changelog --></label>
+        <name>Release_Changelog__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specific details on what will be added/changed when the release is deployed --></help>
+        <label><!-- Release Detail --></label>
+        <name>Release_Detail__c</name>
+    </fields>
+    <fields>
+        <help><!-- Who/what is impacted by the release and how --></help>
+        <label><!-- Release Impact --></label>
+        <name>Release_Impact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Priority --></label>
+        <name>Request_Priority__c</name>
+        <picklistValues>
+            <masterLabel>Legal Implication</masterLabel>
+            <translation><!-- Legal Implication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Request</masterLabel>
+            <translation><!-- New Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System Down (Can&apos;t work at all or can&apos;t work at full capacity)</masterLabel>
+            <translation><!-- System Down (Can&apos;t work at all or can&apos;t work at full capacity) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Requested Completion Date --></label>
+        <name>Requested_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is your department? --></help>
+        <label><!-- Requesting Department --></label>
+        <name>Requesting_Department__c</name>
+        <picklistValues>
+            <masterLabel>Alexandra Shapiro</masterLabel>
+            <translation><!-- Alexandra Shapiro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Intelligence</masterLabel>
+            <translation><!-- Business Intelligence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Success</masterLabel>
+            <translation><!-- Client Success --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering</masterLabel>
+            <translation><!-- Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT</masterLabel>
+            <translation><!-- IT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Melanie Kalemba</masterLabel>
+            <translation><!-- Melanie Kalemba --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Migration</masterLabel>
+            <translation><!-- Migration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paul Vaillancourt</masterLabel>
+            <translation><!-- Paul Vaillancourt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>People People</masterLabel>
+            <translation><!-- People People --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Management</masterLabel>
+            <translation><!-- Product Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional Services</masterLabel>
+            <translation><!-- Professional Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Management</masterLabel>
+            <translation><!-- Project Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retention</masterLabel>
+            <translation><!-- Retention --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Robert Alvarez</masterLabel>
+            <translation><!-- Robert Alvarez --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ron Pragides</masterLabel>
+            <translation><!-- Ron Pragides --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales - Acquisition</masterLabel>
+            <translation><!-- Sales - Acquisition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales - Inbound</masterLabel>
+            <translation><!-- Sales - Inbound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales - Outbound</masterLabel>
+            <translation><!-- Sales - Outbound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales - Overall</masterLabel>
+            <translation><!-- Sales - Overall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales - Partner</masterLabel>
+            <translation><!-- Sales - Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales - Premium</masterLabel>
+            <translation><!-- Sales - Premium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales - SBD</masterLabel>
+            <translation><!-- Sales - SBD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tim Schulz</masterLabel>
+            <translation><!-- Tim Schulz --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Resolution Notes --></label>
+        <name>Resolution_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Biz Apps Level --></label>
+        <name>Sales_Ops_Level__c</name>
+        <picklistValues>
+            <masterLabel>Admin</masterLabel>
+            <translation><!-- Admin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analyst</masterLabel>
+            <translation><!-- Analyst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Center</masterLabel>
+            <translation><!-- Contact Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contractor</masterLabel>
+            <translation><!-- Contractor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coordinator</masterLabel>
+            <translation><!-- Coordinator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Developer</masterLabel>
+            <translation><!-- Developer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending - Contractor</masterLabel>
+            <translation><!-- Pending - Contractor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Ops</masterLabel>
+            <translation><!-- Sales Ops --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Send Comment to Biz Apps Owner --></label>
+        <name>Sales_Ops_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Has sandbox testing been conducted? If not, why --></help>
+        <label><!-- Sandbox Testing? --></label>
+        <name>Sandbox_Testing__c</name>
+    </fields>
+    <fields>
+        <help><!-- When are the changes for this Biz Apps request scheduled to be deployed? --></help>
+        <label><!-- Scheduled Release Date --></label>
+        <name>Scheduled_Release_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Assigned to Contractor</masterLabel>
+            <translation><!-- Assigned to Contractor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Backlog</masterLabel>
+            <translation><!-- Backlog --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biz Apps Standup</masterLabel>
+            <translation><!-- Biz Apps Standup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blocked</masterLabel>
+            <translation><!-- Blocked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Duplicate</masterLabel>
+            <translation><!-- Closed - Duplicate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Moved to Project</masterLabel>
+            <translation><!-- Closed - Moved to Project --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - No response</masterLabel>
+            <translation><!-- Closed - No response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contractor - Ongoing</masterLabel>
+            <translation><!-- Contractor - Ongoing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In QA</masterLabel>
+            <translation><!-- In QA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Scheduled</masterLabel>
+            <translation><!-- Meeting Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Release Date Set</masterLabel>
+            <translation><!-- Pending Release Date Set --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Release Date Scheduled</masterLabel>
+            <translation><!-- Release Date Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requirement Clarification</masterLabel>
+            <translation><!-- Requirement Clarification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scoping</masterLabel>
+            <translation><!-- Scoping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Triage</masterLabel>
+            <translation><!-- Triage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UAT</masterLabel>
+            <translation><!-- UAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor Case Submitted</masterLabel>
+            <translation><!-- Vendor Case Submitted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting on Information</masterLabel>
+            <translation><!-- Waiting on Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting on Internal Resource</masterLabel>
+            <translation><!-- Waiting on Internal Resource --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Time Estimate --></label>
+        <name>Time_Estimate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Should training be provided in anticipation of this release? --></help>
+        <label><!-- Training Needed? --></label>
+        <name>Training_Needed__c</name>
+    </fields>
+    <fields>
+        <help><!-- What training was provided on this request? --></help>
+        <label><!-- Training Provided --></label>
+        <name>Training_Provided__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify request type --></help>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Access / Permissions</masterLabel>
+            <translation><!-- Access / Permissions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Analysis</masterLabel>
+            <translation><!-- Data Analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Import</masterLabel>
+            <translation><!-- Data Import --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dialer</masterLabel>
+            <translation><!-- Dialer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Templates</masterLabel>
+            <translation><!-- Email Templates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Field Change</masterLabel>
+            <translation><!-- Field Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly Dashboard Finance Reporting</masterLabel>
+            <translation><!-- Monthly Dashboard Finance Reporting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Process</masterLabel>
+            <translation><!-- New Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ownership Change</masterLabel>
+            <translation><!-- Ownership Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Process Automation</masterLabel>
+            <translation><!-- Process Automation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Process Enhancement</masterLabel>
+            <translation><!-- Process Enhancement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reporting or Dashboards</masterLabel>
+            <translation><!-- Reporting or Dashboards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store Migration</masterLabel>
+            <translation><!-- Store Migration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training Request</masterLabel>
+            <translation><!-- Training Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Troubleshooting</masterLabel>
+            <translation><!-- Troubleshooting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Update to Existing Process</masterLabel>
+            <translation><!-- Update to Existing Process --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- What&apos;s the problem we&apos;re solving? --></label>
+        <name>What_s_the_problem_we_re_solving__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the general category of your request. --></help>
+        <label><!-- Category --></label>
+        <name>category_bizapps__c</name>
+        <picklistValues>
+            <masterLabel>Bug</masterLabel>
+            <translation><!-- Bug --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal/Security Issue - Legal or Security impact related to this request</masterLabel>
+            <translation><!-- Legal/Security Issue - Legal or Security impact related to this request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project</masterLabel>
+            <translation><!-- Project --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Task</masterLabel>
+            <translation><!-- Task --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>BAR User  Layout</layout>
+        <sections>
+            <label><!-- Admin Section --></label>
+            <section>Admin Section</section>
+        </sections>
+        <sections>
+            <label><!-- Biz Apps Detail --></label>
+            <section>Biz Apps Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- NOTE: New Biz Apps Request Process Coming Soon --></label>
+            <section>NOTE: New Biz Apps Request Process Coming Soon</section>
+        </sections>
+        <sections>
+            <label><!-- Release Details --></label>
+            <section>Release Details</section>
+        </sections>
+        <sections>
+            <label><!-- Request Detail --></label>
+            <section>Request Detail</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Biz Apps Team BAR Layout</layout>
+        <sections>
+            <label><!-- Biz Apps Notes --></label>
+            <section>Biz Apps Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Contractor Details --></label>
+            <section>Contractor Details</section>
+        </sections>
+        <sections>
+            <label><!-- Contractor Scorecard --></label>
+            <section>Contractor Scorecard</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- IMPORTANT- Biz Apps Requests Moving to JIRA --></label>
+            <section>IMPORTANT- Biz Apps Requests Moving to JIRA</section>
+        </sections>
+        <sections>
+            <label><!-- Release Details --></label>
+            <section>Release Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contractor</layout>
+        <sections>
+            <label><!-- Contractor Details --></label>
+            <section>Contractor Details</section>
+        </sections>
+        <sections>
+            <label><!-- Contractor Scorecard --></label>
+            <section>Contractor Scorecard</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Retention Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Request Name</nameFieldLabel>
+    <recordTypes>
+        <label><!-- Biz Apps Request --></label>
+        <name>Admin_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Retention Request --></label>
+        <name>Retention_Request</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

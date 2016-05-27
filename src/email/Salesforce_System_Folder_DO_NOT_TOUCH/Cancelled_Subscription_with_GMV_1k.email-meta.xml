@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Template used for notification when a sub cancels that has GMV &gt; 1000</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Cancelled Subscription with GMV &gt; 1k</name>
+    <style>none</style>
+    <subject>Store Cancellation Alert - {!Subscription__c.Name}</subject>
+    <type>text</type>
+</EmailTemplate>

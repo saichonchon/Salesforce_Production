@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_54220586</developerName>
+        <masterLabel>Qualifier Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>CREATED</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Joe Maragoni</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Baldemar Zamora</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Scott Richards</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Farah Tary</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bob Farrell</sourceValue>
+            </sourceValues>
+            <value>IB</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Nicole Stanfill</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Leonard Dingle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brian Miller</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Aubrie O&apos;Connor</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Derek Pendrey</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pierce Matthews</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Elisabeth Ahlburg</sourceValue>
+            </sourceValues>
+            <value>SDR</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Jeremy Peabody</sourceValue>
+            </sourceValues>
+            <value>MDR</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Elsa Carreker</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Derek Rosenzweig</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jason Horek</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>John Llana</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>John Witson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jennifer Schultz</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Griffin Leen-Sohl</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Evan Smith</sourceValue>
+            </sourceValues>
+            <value>Partner</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>API User</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Juan Jacinto</sourceValue>
+            </sourceValues>
+            <value>Trial</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBarStacked</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>FULL_NAME</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <secondaryGroupingColumn>BucketField_54220586</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>CREATED</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>LEAD_SOURCE</field>
+    </columns>
+    <columns>
+        <field>Account.Projected_Annual_Revenue__c</field>
+    </columns>
+    <columns>
+        <field>AMOUNT</field>
+    </columns>
+    <columns>
+        <field>EXP_AMOUNT</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>PROBABILITY</field>
+    </columns>
+    <columns>
+        <field>FISCAL_QUARTER</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>ROLLUP_DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <crossFilters>
+        <criteriaItems>
+            <column>TeamMemberRole</column>
+            <operator>contains</operator>
+            <value>qualifier</value>
+        </criteriaItems>
+        <operation>with</operation>
+        <primaryTableColumn>OPPORTUNITY_ID</primaryTableColumn>
+        <relatedTable>OpportunityTeamMember-User</relatedTable>
+        <relatedTableJoinColumn>Opportunity</relatedTableJoinColumn>
+    </crossFilters>
+    <filter>
+        <criteriaItems>
+            <column>ROLLUP_DESCRIPTION</column>
+            <operator>equals</operator>
+            <value>Enterprise Sales</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FULL_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_54220586</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>SQLs delivered to MM this Month</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notify of Enterprise Store with Unpaid Invoice</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Big</letterhead>
+    <name>Sub: Enterprise Unpaid Invoice</name>
+    <style>freeForm</style>
+    <subject>Enterprise Store with Unpaid Invoice</subject>
+    <textOnly>The following Enterprise Plan has an unpaid invoice:
+
+Store Name: {!Subscription__c.Name}
+Account: {!Subscription__c.Account_Name__c}
+Contact:  {!Subscription__c.Contact__c}
+New Product:  {!Subscription__c.New_Product_Plan__c}
+
+Original Purchase date: {!Subscription__c.PurchaseDate__c}
+Upgrade date (if available): {!Subscription__c.Plan_Change_Date__c}
+
+Please click the link below to view the store in Salesforce:
+{!Subscription__c.Link}</textOnly>
+    <type>html</type>
+</EmailTemplate>

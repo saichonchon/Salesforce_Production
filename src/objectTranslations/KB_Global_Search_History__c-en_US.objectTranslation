@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>KB Global Search History</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>KB Global Search History</value>
+    </caseValues>
+    <fields>
+        <label><!-- Apex Batch Id --></label>
+        <name>Apex_BatchId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Apex Replacement Batch Id --></label>
+        <name>Apex_Replacement_BatchId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Article Type --></label>
+        <name>Article_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Articles Searched --></label>
+        <name>Articles_Searched__c</name>
+    </fields>
+    <fields>
+        <label><!-- Articles Selected --></label>
+        <name>Articles_Selected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Articles Updated --></label>
+        <name>Articles_Updated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Names --></label>
+        <name>Field_Names__c</name>
+    </fields>
+    <fields>
+        <label><!-- Language --></label>
+        <name>Language__c</name>
+    </fields>
+    <fields>
+        <label><!-- PublishNewVersion --></label>
+        <name>PublishNewVersion__c</name>
+    </fields>
+    <fields>
+        <label><!-- PublishStatus --></label>
+        <name>PublishStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Replacement String --></label>
+        <name>Replacement_String__c</name>
+    </fields>
+    <fields>
+        <label><!-- Search String --></label>
+        <name>Search_String__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

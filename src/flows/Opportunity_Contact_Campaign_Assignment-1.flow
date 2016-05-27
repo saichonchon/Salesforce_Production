@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <decisions>
+        <description>If campaignmember exists for &quot;Move Along Add Product&quot;, do nothing, else create it</description>
+        <name>CampaignMember_found_for_Move_Along_Add_Product</name>
+        <label>CampaignMember found for &quot;Move Along Add Product&quot;</label>
+        <locationX>35</locationX>
+        <locationY>430</locationY>
+        <defaultConnector>
+            <targetReference>Add_campaignmemeber_for_Move_Along_added_product</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>If CampaignMember not found for &quot;Move Along Add Product&quot;</defaultConnectorLabel>
+        <rules>
+            <name>If_CampaignMemebr_found_for_Move_Along_Add_Product</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CampaignMemberFound</leftValueReference>
+                <operator>NotEqualTo</operator>
+            </conditions>
+            <connector>
+                <targetReference>If_tatango_inside_contains_CustomzedTheme1_add_it_toMoveAlongCustomzedTheme</targetReference>
+            </connector>
+            <label>If CampaignMemebr found for &quot;Move Along Add Product&quot;</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>If campaignmember exists for &quot;Move Along Customized theme&quot;, do nothing, else create it</description>
+        <name>CampaignMember_found_for_Move_Along_CustomzedTheme</name>
+        <label>CampaignMember found for &quot;Move Along CustomzedTheme&quot;</label>
+        <locationX>252</locationX>
+        <locationY>527</locationY>
+        <defaultConnector>
+            <targetReference>Add_campaignmemeber_for_Move_Along_Customized_Theme</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>If CampaignMember not found for &quot;Move Along Customzed Theme&quot;</defaultConnectorLabel>
+        <rules>
+            <name>If_CampaignMemebr_found_for_Move_Along_CustomizedTheme</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CampaignMemberFound</leftValueReference>
+                <operator>NotEqualTo</operator>
+            </conditions>
+            <connector>
+                <targetReference>If_tatango_inside_contains_Enabled_Payment_add_it_to_Set_up_Payment_campaign</targetReference>
+            </connector>
+            <label>If CampaignMemebr found for &quot;Move Along Customized Theme&quot;</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>If campaignmember exists for &quot;Move Along Launch Store&quot;, do nothing, else create it</description>
+        <name>CampaignMember_found_for_Move_Along_Launch_Store</name>
+        <label>CampaignMember found for &quot;Move Along Launch Store&quot;</label>
+        <locationX>1577</locationX>
+        <locationY>605</locationY>
+        <defaultConnector>
+            <targetReference>Add_campaignmemeber_for_Move_Along_Launch_Store</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>If CampaignMember not found for &quot;Move Along Launch Store&quot;</defaultConnectorLabel>
+        <rules>
+            <name>If_CampaignMemebr_found_for_Move_Along_Launch_Store</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CampaignMemberFound</leftValueReference>
+                <operator>NotEqualTo</operator>
+            </conditions>
+            <connector>
+                <targetReference>If_tatango_inside_contains_LogInOnceEver_add_it_to_One_Week_Left_Base_campaign</targetReference>
+            </connector>
+            <label>If CampaignMemebr found for &quot;Move Along Launch Store&quot;</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>If campaignmember exists for &quot;Move Along Set up Payment&quot;, do nothing, else create it</description>
+        <name>CampaignMember_found_for_Move_Along_Set_up_Payment</name>
+        <label>CampaignMember found for &quot;Move Along Set up Payment&quot;</label>
+        <locationX>526</locationX>
+        <locationY>569</locationY>
+        <defaultConnector>
+            <targetReference>Add_campaignmemeber_for_Move_Along_Set_up_Payment</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>If CampaignMember not found for &quot;Move Along Set up Payment&quot;</defaultConnectorLabel>
+        <rules>
+            <name>If_CampaignMemebr_found_for_Move_Along_Set_up_Payment</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CampaignMemberFound</leftValueReference>
+                <operator>NotEqualTo</operator>
+            </conditions>
+            <connector>
+                <targetReference>If_tatango_inside_contains_Shipping1_add_it_to_Set_up_Shipping_campaign</targetReference>
+            </connector>
+            <label>If CampaignMemebr found for &quot;Move Along Set up Payment&quot;</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>If campaignmember exists for &quot;Move Along Set up Shipping&quot;, do nothing, else create it</description>
+        <name>CampaignMember_found_for_Move_Along_Set_up_Shipping</name>
+        <label>CampaignMember found for &quot;Move Along Set up Shipping&quot;</label>
+        <locationX>927</locationX>
+        <locationY>560</locationY>
+        <defaultConnector>
+            <targetReference>Add_campaignmemeber_for_Move_Along_Set_up_Shipping</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>If CampaignMember not found for &quot;Move Along Set up Shipping&quot;</defaultConnectorLabel>
+        <rules>
+            <name>If_CampaignMemebr_found_for_Move_Along_Set_up_Shipping</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CampaignMemberFound</leftValueReference>
+                <operator>NotEqualTo</operator>
+            </conditions>
+            <connector>
+                <targetReference>If_tatango_inside_contains_EnabledTaxSettings_add_it_to_Move_Along_Tax_campaign</targetReference>
+            </connector>
+            <label>If CampaignMemebr found for &quot;Move Along Set up Shipping&quot;</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>If campaignmember exists for &quot;Move Along Tax&quot;, do nothing, else create it</description>
+        <name>CampaignMember_found_for_Move_Along_Tax</name>
+        <label>CampaignMember found for &quot;Move Along Tax&quot;</label>
+        <locationX>1216</locationX>
+        <locationY>485</locationY>
+        <defaultConnector>
+            <targetReference>Add_campaignmemeber_for_Move_Along_Tax</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>If CampaignMember not found for &quot;Move Along Tax&quot;</defaultConnectorLabel>
+        <rules>
+            <name>If_CampaignMemebr_found_for_Move_Along_Tax</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CampaignMemberFound</leftValueReference>
+                <operator>NotEqualTo</operator>
+            </conditions>
+            <connector>
+                <targetReference>If_tatango_inside_contains_OnboardLaunch_add_it_to_Launch_Store_campaign</targetReference>
+            </connector>
+            <label>If CampaignMemebr found for &quot;Move Along Tax&quot;</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>If campaignmember exists for &quot;One Week Left Base&quot;, do nothing, else create it</description>
+        <name>CampaignMember_found_for_One_Week_Left_Base</name>
+        <label>CampaignMember found for &quot;One Week Left Base&quot;</label>
+        <locationX>1946</locationX>
+        <locationY>492</locationY>
+        <defaultConnector>
+            <targetReference>Add_campaignmemeber_for_One_Week_Left_Base</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>If CampaignMember not found for &quot;One Week Left Base&quot;</defaultConnectorLabel>
+        <rules>
+            <name>If_CampaignMemebr_found_for_One_Week_Left_Base</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CampaignMemberFound</leftValueReference>
+                <operator>NotEqualTo</operator>
+            </conditions>
+            <connector>
+                <targetReference>If_user_Logged_in_between_4_7_days_ago_tatangoinsight_LoginBetween4_7days</targetReference>
+            </connector>
+            <label>If CampaignMemebr found for &quot;One Week Left Base&quot;</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Campaign_Member_exists_for_campaign_Success_Squad_Email_Segment_2</name>
+        <label>If Campaign Member exists for campaign &quot;Success Squad Email - Segment 2&quot;</label>
+        <locationX>2597</locationX>
+        <locationY>647</locationY>
+        <defaultConnector>
+            <targetReference>Create_CampaignMember_for_Success_Squad_Email_Segment_2</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>CampaignMember doesnt exists for &quot;Success Squad Email - Segment 2&quot;</defaultConnectorLabel>
+        <rules>
+            <name>CampaignMember_exists_for_Success_Squad_Email_Segment_2</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CampaignMemberFound</leftValueReference>
+                <operator>NotEqualTo</operator>
+            </conditions>
+            <label>CampaignMember exists for &quot;Success Squad Email - Segment 2&quot;</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_campaignmember_found_delete_it</name>
+        <label>If campaignmember found, delete it</label>
+        <locationX>2322</locationX>
+        <locationY>599</locationY>
+        <defaultConnectorLabel>campaignMember not found</defaultConnectorLabel>
+        <rules>
+            <name>If_campaign_member_found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CampaignMemberFound</leftValueReference>
+                <operator>NotEqualTo</operator>
+            </conditions>
+            <connector>
+                <targetReference>Delete_Campaign_Member</targetReference>
+            </connector>
+            <label>If campaign member found</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_tatango_inside_contains_AddedProduct1_add_it_toAdd_Product_campaign</name>
+        <label>If tatango inside contains &quot;AddedProduct1&quot;, add it to &quot;Move Along Add Product&quot; campaign</label>
+        <locationX>29</locationX>
+        <locationY>40</locationY>
+        <defaultConnector>
+            <targetReference>If_tatango_inside_contains_CustomzedTheme1_add_it_toMoveAlongCustomzedTheme</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>If tatango inside doesnt contains &quot;AddedProduct1&quot;</defaultConnectorLabel>
+        <rules>
+            <name>If_tatango_inside_contains_AddedProduct1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>tatangoInsight</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>AddedProduct1</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>If_campaignMember_already_exists_for_Move_Along_Add_Product</targetReference>
+            </connector>
+            <label>If tatango inside contains &quot;AddedProduct1&quot;</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_tatango_inside_contains_CustomzedTheme1_add_it_toMoveAlongCustomzedTheme</name>
+        <label>If tatango inside contains &quot;CustomzedTheme1&quot;, add it to &quot;Move Along Customzed Theme&quot; campaign</label>
+        <locationX>262</locationX>
+        <locationY>117</locationY>
+        <defaultConnector>
+            <targetReference>If_tatango_inside_contains_Enabled_Payment_add_it_to_Set_up_Payment_campaign</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>If tatango inside doesnt contains &quot;CustomzedTheme1&quot;</defaultConnectorLabel>
+        <rules>
+            <name>If_tatango_inside_contains_CustomzedTheme1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>tatangoInsight</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>CustomzedTheme1</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>If_campaignMember_already_exists_for_CustomzedTheme1</targetReference>
+            </connector>
+            <label>If tatango inside contains &quot;CustomzedTheme1&quot;</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_tatango_inside_contains_Enabled_Payment_add_it_to_Set_up_Payment_campaign</name>
+        <label>If tatango inside contains &quot;Enabled Payment&quot;, add it to &quot;Move Along Set up Payment&quot; campaign</label>
+        <locationX>517</locationX>
+        <locationY>9</locationY>
+        <defaultConnector>
+            <targetReference>If_tatango_inside_contains_Shipping1_add_it_to_Set_up_Shipping_campaign</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>If tatango inside doesnt contains &quot;Enabled Payment&quot;</defaultConnectorLabel>
+        <rules>
+            <name>If_tatango_inside_contains_Enabled_Payment</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>tatangoInsight</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Enabled Payment</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>If_campaignMember_already_exists_for_EnabledPayment</targetReference>
+            </connector>
+            <label>If tatango inside contains &quot;Enabled Payment&quot;</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_tatango_inside_contains_EnabledTaxSettings_add_it_to_Move_Along_Tax_campaign</name>
+        <label>If tatango inside contains &quot;EnabledTaxSettings&quot;, add it to &quot;Move Along Tax&quot; campaign</label>
+        <locationX>1217</locationX>
+        <locationY>55</locationY>
+        <defaultConnector>
+            <targetReference>If_tatango_inside_contains_OnboardLaunch_add_it_to_Launch_Store_campaign</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>If tatango inside doesnt contains &quot;EnabledTaxSettings&quot;</defaultConnectorLabel>
+        <rules>
+            <name>If_tatango_inside_contains_EnabledTaxSettings</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>tatangoInsight</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>EnabledTaxSettings</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>If_campaignMember_already_exists_for_EnabledTaxSettings</targetReference>
+            </connector>
+            <label>If tatango inside contains &quot;EnabledTaxSettings&quot;</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_tatango_inside_contains_LogInOnceEver_add_it_to_One_Week_Left_Base_campaign</name>
+        <label>If tatango inside contains &quot;LogInOnce Ever&quot;, add it to &quot;One Week Left Base&quot; campaign</label>
+        <locationX>1942</locationX>
+        <locationY>47</locationY>
+        <defaultConnector>
+            <targetReference>If_user_Logged_in_between_4_7_days_ago_tatangoinsight_LoginBetween4_7days</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>If tatango inside doesnt contains &quot;LogInOnce Ever&quot;</defaultConnectorLabel>
+        <rules>
+            <name>If_tatango_inside_contains_LogInOnceEver</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>tatangoInsight</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>LogInOnce Ever</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>If_campaignMember_already_exists_for_LogInOnce_Ever</targetReference>
+            </connector>
+            <label>If tatango inside contains &quot;LogInOnce Ever&quot;</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_tatango_inside_contains_OnboardLaunch_add_it_to_Launch_Store_campaign</name>
+        <label>If tatango inside contains &quot;OnboardLaunch&quot;, add it to &quot;Move Along Launch Store&quot; campaign</label>
+        <locationX>1580</locationX>
+        <locationY>157</locationY>
+        <defaultConnector>
+            <targetReference>If_tatango_inside_contains_LogInOnceEver_add_it_to_One_Week_Left_Base_campaign</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>If tatango inside doesnt contains &quot;OnboardLaunch&quot;</defaultConnectorLabel>
+        <rules>
+            <name>If_tatango_inside_contains_OnboardLaunch</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>tatangoInsight</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>OnboardLaunch</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>If_campaignMember_already_exists_for_OnboardLaunch</targetReference>
+            </connector>
+            <label>If tatango inside contains &quot;OnboardLaunch&quot;</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_tatango_inside_contains_Shipping1_add_it_to_Set_up_Shipping_campaign</name>
+        <label>If tatango inside contains &quot;Shipping1 &quot;, add it to &quot;Move Along Set up Shipping&quot; campaign</label>
+        <locationX>909</locationX>
+        <locationY>128</locationY>
+        <defaultConnector>
+            <targetReference>If_tatango_inside_contains_EnabledTaxSettings_add_it_to_Move_Along_Tax_campaign</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>If tatango inside doesnt contains &quot;Shipping1 &quot;</defaultConnectorLabel>
+        <rules>
+            <name>If_tatango_inside_contains_Shipping1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>tatangoInsight</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Shipping1</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>If_campaignMember_already_exists_for_Shipping1</targetReference>
+            </connector>
+            <label>If tatango inside contains &quot;Shipping1 &quot;</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>If the user has logged in between 4-7 days, means tatango insight field contains LoginBetween4-7days</description>
+        <name>If_user_Logged_in_between_4_7_days_ago_tatangoinsight_LoginBetween4_7days</name>
+        <label>If user Logged in between 4-7 days ago (tatangoinsight = LoginBetween4-7days )</label>
+        <locationX>2501</locationX>
+        <locationY>50</locationY>
+        <defaultConnector>
+            <targetReference>Search_for_campaignmember_for_Success_Squad_Email_Segment_2</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>tatango insight field doesn&apos;t contains LoginBetween4-7days</defaultConnectorLabel>
+        <rules>
+            <name>tatango_insight_field_contains_LoginBetween4_7days</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>tatangoInsight</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>LoginBetween4-7days</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Search_for_existing_CampaignMember</targetReference>
+            </connector>
+            <label>tatango insight field contains LoginBetween4-7days</label>
+        </rules>
+    </decisions>
+    <description>This flow handles the campaign assignment for opportunity Contact based on tatango insight value</description>
+    <label>Opportunity Contact Campaign Assignment</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Add_campaignmemeber_for_Move_Along_added_product</name>
+        <label>Add campaignmemeber for &quot;Move Along added product&quot;</label>
+        <locationX>36</locationX>
+        <locationY>580</locationY>
+        <connector>
+            <targetReference>If_tatango_inside_contains_CustomzedTheme1_add_it_toMoveAlongCustomzedTheme</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>CampaignId</field>
+            <value>
+                <stringValue>70119000000591R</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ContactId</field>
+            <value>
+                <elementReference>OpportunityContactId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>CampaignMember</object>
+    </recordCreates>
+    <recordCreates>
+        <name>Add_campaignmemeber_for_Move_Along_Customized_Theme</name>
+        <label>Add campaignmemeber for &quot;Move Along Customized Theme&quot;</label>
+        <locationX>242</locationX>
+        <locationY>832</locationY>
+        <connector>
+            <targetReference>If_tatango_inside_contains_Enabled_Payment_add_it_to_Set_up_Payment_campaign</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>CampaignId</field>
+            <value>
+                <stringValue>70119000000591W</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ContactId</field>
+            <value>
+                <elementReference>OpportunityContactId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>CampaignMember</object>
+    </recordCreates>
+    <recordCreates>
+        <name>Add_campaignmemeber_for_Move_Along_Launch_Store</name>
+        <label>Add campaignmemeber for &quot;Move Along Launch Store&quot;</label>
+        <locationX>1580</locationX>
+        <locationY>878</locationY>
+        <connector>
+            <targetReference>If_tatango_inside_contains_LogInOnceEver_add_it_to_One_Week_Left_Base_campaign</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>CampaignId</field>
+            <value>
+                <stringValue>70119000000591v</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ContactId</field>
+            <value>
+                <elementReference>OpportunityContactId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>CampaignMember</object>
+    </recordCreates>
+    <recordCreates>
+        <name>Add_campaignmemeber_for_Move_Along_Set_up_Payment</name>
+        <label>Add campaignmemeber for &quot;Move Along Set up Payment&quot;</label>
+        <locationX>522</locationX>
+        <locationY>833</locationY>
+        <connector>
+            <targetReference>If_tatango_inside_contains_Shipping1_add_it_to_Set_up_Shipping_campaign</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>CampaignId</field>
+            <value>
+                <stringValue>70119000000591g</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ContactId</field>
+            <value>
+                <elementReference>OpportunityContactId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>CampaignMember</object>
+    </recordCreates>
+    <recordCreates>
+        <name>Add_campaignmemeber_for_Move_Along_Set_up_Shipping</name>
+        <label>Add campaignmemeber for &quot;Move Along Set up Shipping&quot;</label>
+        <locationX>925</locationX>
+        <locationY>732</locationY>
+        <connector>
+            <targetReference>If_tatango_inside_contains_EnabledTaxSettings_add_it_to_Move_Along_Tax_campaign</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>CampaignId</field>
+            <value>
+                <stringValue>70119000000591l</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ContactId</field>
+            <value>
+                <elementReference>OpportunityContactId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>CampaignMember</object>
+    </recordCreates>
+    <recordCreates>
+        <name>Add_campaignmemeber_for_Move_Along_Tax</name>
+        <label>Add campaignmemeber for &quot;Move Along Tax&quot;</label>
+        <locationX>1215</locationX>
+        <locationY>730</locationY>
+        <connector>
+            <targetReference>If_tatango_inside_contains_OnboardLaunch_add_it_to_Launch_Store_campaign</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>CampaignId</field>
+            <value>
+                <stringValue>70119000000591q</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ContactId</field>
+            <value>
+                <elementReference>OpportunityContactId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>CampaignMember</object>
+    </recordCreates>
+    <recordCreates>
+        <name>Add_campaignmemeber_for_One_Week_Left_Base</name>
+        <label>Add campaignmemeber for &quot;One Week Left Base&quot;</label>
+        <locationX>1949</locationX>
+        <locationY>727</locationY>
+        <connector>
+            <targetReference>If_user_Logged_in_between_4_7_days_ago_tatangoinsight_LoginBetween4_7days</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>CampaignId</field>
+            <value>
+                <stringValue>701190000005920</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ContactId</field>
+            <value>
+                <elementReference>OpportunityContactId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>CampaignMember</object>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_CampaignMember_for_Success_Squad_Email_Segment_2</name>
+        <label>Create CampaignMember for &quot;Success Squad Email - Segment 2&quot;</label>
+        <locationX>2596</locationX>
+        <locationY>756</locationY>
+        <inputAssignments>
+            <field>CampaignId</field>
+            <value>
+                <stringValue>701190000005917</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ContactId</field>
+            <value>
+                <elementReference>OpportunityContactId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>CampaignMember</object>
+    </recordCreates>
+    <recordDeletes>
+        <name>Delete_Campaign_Member</name>
+        <label>Delete Campaign Member</label>
+        <locationX>2322</locationX>
+        <locationY>694</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>CampaignMemberFound</elementReference>
+            </value>
+        </filters>
+        <object>CampaignMember</object>
+    </recordDeletes>
+    <recordLookups>
+        <description>If campaignMember already exists for &quot;CustomzedTheme1&quot;, do nothing, else create it</description>
+        <name>If_campaignMember_already_exists_for_CustomzedTheme1</name>
+        <label>If campaignMember already exists for &quot;CustomzedTheme1&quot;</label>
+        <locationX>250</locationX>
+        <locationY>357</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>CampaignMember_found_for_Move_Along_CustomzedTheme</targetReference>
+        </connector>
+        <filters>
+            <field>CampaignId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>70119000000591W</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ContactId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>OpportunityContactId</elementReference>
+            </value>
+        </filters>
+        <object>CampaignMember</object>
+        <outputAssignments>
+            <assignToReference>CampaignMemberFound</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>If campaignMember already exists for &quot;Enabled Payment&quot;, do nothing, else create it</description>
+        <name>If_campaignMember_already_exists_for_EnabledPayment</name>
+        <label>If campaignMember already exists for &quot;Enabled Payment&quot;</label>
+        <locationX>526</locationX>
+        <locationY>389</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>CampaignMember_found_for_Move_Along_Set_up_Payment</targetReference>
+        </connector>
+        <filters>
+            <field>CampaignId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>70119000000591g</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ContactId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>OpportunityContactId</elementReference>
+            </value>
+        </filters>
+        <object>CampaignMember</object>
+        <outputAssignments>
+            <assignToReference>CampaignMemberFound</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>If campaignMember already exists for &quot;EnabledTaxSettings&quot;, do nothing, else create it</description>
+        <name>If_campaignMember_already_exists_for_EnabledTaxSettings</name>
+        <label>If campaignMember already exists for &quot;EnabledTaxSettings&quot;</label>
+        <locationX>1219</locationX>
+        <locationY>254</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>CampaignMember_found_for_Move_Along_Tax</targetReference>
+        </connector>
+        <filters>
+            <field>CampaignId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>70119000000591q</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ContactId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>OpportunityContactId</elementReference>
+            </value>
+        </filters>
+        <object>CampaignMember</object>
+        <outputAssignments>
+            <assignToReference>CampaignMemberFound</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>If campaignMember already exists for &quot;LogInOnce Ever&quot;, do nothing, else create it</description>
+        <name>If_campaignMember_already_exists_for_LogInOnce_Ever</name>
+        <label>If campaignMember already exists for &quot;LogInOnce Ever&quot;</label>
+        <locationX>1939</locationX>
+        <locationY>264</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>CampaignMember_found_for_One_Week_Left_Base</targetReference>
+        </connector>
+        <filters>
+            <field>CampaignId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>701190000005920</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ContactId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>OpportunityContactId</elementReference>
+            </value>
+        </filters>
+        <object>CampaignMember</object>
+        <outputAssignments>
+            <assignToReference>CampaignMemberFound</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>If campaignMember already exists for &quot;Move Along Add Product&quot;, do nothing, else create it</description>
+        <name>If_campaignMember_already_exists_for_Move_Along_Add_Product</name>
+        <label>If campaignMember already exists for &quot;Move Along Add Product&quot;</label>
+        <locationX>34</locationX>
+        <locationY>195</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>CampaignMember_found_for_Move_Along_Add_Product</targetReference>
+        </connector>
+        <filters>
+            <field>CampaignId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>70119000000591R</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ContactId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>OpportunityContactId</elementReference>
+            </value>
+        </filters>
+        <object>CampaignMember</object>
+        <outputAssignments>
+            <assignToReference>CampaignMemberFound</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>If campaignMember already exists for &quot;OnboardLaunch&quot;, do nothing, else create it</description>
+        <name>If_campaignMember_already_exists_for_OnboardLaunch</name>
+        <label>If campaignMember already exists for &quot;OnboardLaunch&quot;</label>
+        <locationX>1573</locationX>
+        <locationY>393</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>CampaignMember_found_for_Move_Along_Launch_Store</targetReference>
+        </connector>
+        <filters>
+            <field>CampaignId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>70119000000591v</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ContactId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>OpportunityContactId</elementReference>
+            </value>
+        </filters>
+        <object>CampaignMember</object>
+        <outputAssignments>
+            <assignToReference>CampaignMemberFound</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>If campaignMember already exists for &quot;Shipping1 &quot;, do nothing, else create it</description>
+        <name>If_campaignMember_already_exists_for_Shipping1</name>
+        <label>If campaignMember already exists for &quot;Shipping1 &quot;</label>
+        <locationX>922</locationX>
+        <locationY>327</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>CampaignMember_found_for_Move_Along_Set_up_Shipping</targetReference>
+        </connector>
+        <filters>
+            <field>CampaignId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>70119000000591l</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ContactId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>OpportunityContactId</elementReference>
+            </value>
+        </filters>
+        <object>CampaignMember</object>
+        <outputAssignments>
+            <assignToReference>CampaignMemberFound</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>Search for campaign member for &quot;Success Squad Email - Segment 2&quot;.</description>
+        <name>Search_for_campaignmember_for_Success_Squad_Email_Segment_2</name>
+        <label>Search for campaignmember for Success Squad Email - Segment 2</label>
+        <locationX>2321</locationX>
+        <locationY>485</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>If_campaignmember_found_delete_it</targetReference>
+        </connector>
+        <filters>
+            <field>CampaignId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>701190000005917</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ContactId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>OpportunityContactId</elementReference>
+            </value>
+        </filters>
+        <object>CampaignMember</object>
+        <outputAssignments>
+            <assignToReference>CampaignMemberFound</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>Search if existing campaign member exists, if not, create it</description>
+        <name>Search_for_existing_CampaignMember</name>
+        <label>Search for existing CampaignMember</label>
+        <locationX>2595</locationX>
+        <locationY>523</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>If_Campaign_Member_exists_for_campaign_Success_Squad_Email_Segment_2</targetReference>
+        </connector>
+        <filters>
+            <field>CampaignId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>701190000005917</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ContactId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>OpportunityContactId</elementReference>
+            </value>
+        </filters>
+        <object>CampaignMember</object>
+        <outputAssignments>
+            <assignToReference>CampaignMemberFound</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <startElementReference>If_tatango_inside_contains_AddedProduct1_add_it_toAdd_Product_campaign</startElementReference>
+    <variables>
+        <description>If this campaign member found</description>
+        <name>CampaignMemberFound</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Opportunity Contact ID</description>
+        <name>OpportunityContactId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>tatangoInsight</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_88679573</developerName>
+        <masterLabel>Qualifying Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Account.Qualifier__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Chad Kallina</sourceValue>
+            </sourceValues>
+            <value>MDR</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Bob Farrell</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Farah Tary</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jeremy Peabody</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lauryn Spence</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nicole Stanfill</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sam Spetalnick</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Garrett Ozar</sourceValue>
+            </sourceValues>
+            <value>SDR</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Joe Maragoni</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Leonard Dingle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Baldemar Zamora</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Scott Richards</sourceValue>
+            </sourceValues>
+            <value>IB</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Elsa Carreker</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Griffin Leen-Sohl</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jason Horek</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>John Llana</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>John Witson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Justin Platt</sourceValue>
+            </sourceValues>
+            <value>Partner</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Eric Gensler</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Juan Jacinto</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matt McDonald</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Robby King</sourceValue>
+            </sourceValues>
+            <value>SB</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Qualifier__c</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>LEAD_SOURCE</field>
+    </columns>
+    <columns>
+        <field>AMOUNT</field>
+    </columns>
+    <columns>
+        <field>EXP_AMOUNT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>PROBABILITY</field>
+    </columns>
+    <columns>
+        <field>FISCAL_QUARTER</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Original_Plan_Purchased__c</field>
+    </columns>
+    <columns>
+        <field>ROLLUP_DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>AGE</column>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>AMOUNT</column>
+            <operator>notEqual</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Original_Plan_Purchased__c</column>
+            <operator>contains</operator>
+            <value>Enterprise</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Revenue_Team__c</column>
+            <operator>contains</operator>
+            <value>midmarket,enterprise,premium,acquisition</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ROLLUP_DESCRIPTION</column>
+            <operator>notContain</operator>
+            <value>inactive</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>CLOSE_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_88679573</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Average Sales Cycle</name>
+    <params>
+        <name>open</name>
+        <value>closedwon</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CURPREV1</interval>
+    </timeFrameFilter>
+</Report>

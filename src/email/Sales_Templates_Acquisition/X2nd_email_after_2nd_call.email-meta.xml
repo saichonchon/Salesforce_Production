@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2nd email after 2nd call</name>
+    <style>none</style>
+    <subject>Follow-Up From Lizette Flores at BigCommerce</subject>
+    <type>text</type>
+</EmailTemplate>

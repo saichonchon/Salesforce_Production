@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LiveChatAgentConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <profiles>
+            <profile>Client Success Manager w%2Fo SSO</profile>
+            <profile>Client Success Rep %28Remote%29</profile>
+        </profiles>
+        <users>
+            <user>glen.saturno@bigcommerce.com</user>
+            <user>jude.abrigo@bigcommerce.com</user>
+            <user>kit.gulick@bigcommerce.com</user>
+            <user>marielle.morre@bigcommerce.com</user>
+            <user>marjorie.tamayo@bigcommerce.com</user>
+            <user>ryan.juarez@bigcommerce.com</user>
+        </users>
+    </assignments>
+    <autoGreeting>Thank you for contacting Bigcommerce. My name is {!User_FirstName}, how may I help you?</autoGreeting>
+    <capacity>2</capacity>
+    <criticalWaitTime>120</criticalWaitTime>
+    <enableAgentFileTransfer>false</enableAgentFileTransfer>
+    <enableAgentSneakPeek>true</enableAgentSneakPeek>
+    <enableAutoAwayOnDecline>false</enableAutoAwayOnDecline>
+    <enableChatMonitoring>true</enableChatMonitoring>
+    <enableChatTransfer>true</enableChatTransfer>
+    <enableLogoutSound>false</enableLogoutSound>
+    <enableNotifications>true</enableNotifications>
+    <enableRequestSound>true</enableRequestSound>
+    <enableSneakPeek>true</enableSneakPeek>
+    <enableWhisperMessage>true</enableWhisperMessage>
+    <label>Tier 1 - 2 chat capacity configuration Support Configuration 2 chat Default</label>
+    <supervisorSkills>
+        <skill>Support_Skill</skill>
+    </supervisorSkills>
+</LiveChatAgentConfig>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>History Tracking</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>History Tracking</value>
+    </caseValues>
+    <fields>
+        <help><!-- Marks the current field history tracking record as actively tracked or not.  If not active the field will not be tracked in history --></help>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- The API name of the Field for the associated object to track --></help>
+        <label><!-- Field Name (API) --></label>
+        <name>Field_Name_API__c</name>
+    </fields>
+    <fields>
+        <help><!-- The API name of the Object for the associated field to track --></help>
+        <label><!-- Object Name (API) --></label>
+        <name>Object_Name_API__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

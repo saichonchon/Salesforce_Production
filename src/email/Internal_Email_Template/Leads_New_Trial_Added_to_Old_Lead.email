@@ -1,0 +1,7 @@
+*** NEW TRIAL ADDED TO EXISTING LEAD ***  
+
+A new trial has been added to this lead:  {!Lead.Link}
+
+Company:  {!Lead.Company} 
+Lead Name:  {!Lead.Name}  
+Active Trial Count: {!Lead.Active_Trials__c}

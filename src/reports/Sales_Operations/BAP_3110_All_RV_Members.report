@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>rvpe__RVMember__c.rvpe__FirstName__c</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVMember__c.rvpe__LastName__c</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVMember__c.rvpe__Email__c</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVMember__c.rvpe__SFContact__c</field>
+    </columns>
+    <columns>
+        <field>CUST_ID</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>rvpe__RVMember__c.rvpe__SFContact__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>BAP 3110 All RV Members</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$rvpe__RVMember__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>rvpe__RVMember__c.rvpe__DateAgreedToTerms__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

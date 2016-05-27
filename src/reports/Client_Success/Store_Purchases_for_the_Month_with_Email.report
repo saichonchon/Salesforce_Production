@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Subscription__c$PurchaseDate__c</field>
+    </columns>
+    <columns>
+        <field>Subscription__c$Product__c</field>
+    </columns>
+    <columns>
+        <field>Subscription__c$MonthlyRecurringRevenue__c</field>
+    </columns>
+    <columns>
+        <field>Subscription__c$Status__c</field>
+    </columns>
+    <columns>
+        <field>Subscription__c$Contact__c</field>
+    </columns>
+    <columns>
+        <field>Subscription__c$Email__c</field>
+    </columns>
+    <columns>
+        <field>Subscription__c$Account__c</field>
+    </columns>
+    <description>for social / twitter campaign</description>
+    <filter>
+        <criteriaItems>
+            <column>Subscription__c$RecordType</column>
+            <operator>equals</operator>
+            <value>Subscription__c.MBA_Subscription</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Subscription__c$ProductType__c</column>
+            <operator>notEqual</operator>
+            <value>Domain Name,SSL Certificate</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Subscription__c$MonthlyRecurringRevenue__c</column>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Subscription__c$Status__c</column>
+            <operator>equals</operator>
+            <value>Active</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>Store Purchases for the Month with Email</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Subscriptions_with_Lookup_Data__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Subscription__c$PurchaseDate__c</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

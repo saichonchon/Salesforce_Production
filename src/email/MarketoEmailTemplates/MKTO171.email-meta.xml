@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Partner Locator.Email 1 - Feb2016</name>
+    <style>none</style>
+    <subject>New Partner Locator makes it easier for merchants to find you</subject>
+    <textOnly>Hi there,
+
+Bigcommerce just made it easier than ever for merchants to find the right design and solution partner.
+
+Announcing the Bigcommerce Partner Marketplace: a client-facing, faceted search tool that includes your business overview, competency and specialization, and contact information. It&apos;s a great opportunity for you to promote your services to new clients.
+
+The new Partner Locator (which replaces the current Bigcommerce.com/experts page) will go live March 22. To ensure you are listed, you must first complete your profile prior to the 22nd. 
+
+Access your Partner Marketplace profile via your Account Profile in the Bigcommerce Partner Portal &lt;[[http://partners.bigcommerce.com/English/Solutions/resources/marketplace_guide.aspx]]&gt; under “Edit Partner Marketplace.”
+
+Helpful tips for completing your profile:
+
+ - We ask that you provide at least one portfolio image. This will help the client see a sample of your previous work. The first portfolio image listed will be used as your profile image on the filterable listing page. The recommended size of portfolio images is 128x128 px.
+ - You have two fields for Company Description. The 25 word description will be displayed along with your name and profile image on the filterable listing page. The longer 120 word description will display within your detailed portfolio page.
+ - To ensure a cohesive look and feel on the listing page, individual partner logos will only be we displayed on the partner profile page.
+
+
+Note: Some information for your Partner Marketplace profile will be pulled from your Account Profile. This information will drive search. Please review this information to ensure accuracy:
+
+ - Company Address Information
+ - Primary Business Type (Expertise)
+ - Services you offer
+ - Specializations (Industry, vertical or segment)
+ - Size of project/budget range
+
+For more information, refer to the Partner Marketplace Guide &lt;[[http://partners.bigcommerce.com/English/Solutions/resources/marketplace_guide.aspx]]&gt; on the Partner Portal or contact partnersupport@bigcommerce.com.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>LiveChatTranscript$Name</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$EndTime</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$EndedBy</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$Contact</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$UserAgent</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>LiveChatTranscript$Chat_Duration_Minutes__c</field>
+    </columns>
+    <description>Used for T2 metrics Report</description>
+    <filter>
+        <criteriaItems>
+            <column>LiveChatTranscript$Status</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LiveChatTranscript$CreatedBy</column>
+            <operator>equals</operator>
+            <value>Christopher Partanen,Cortni Jamerson,Derek Donovan,Jose Flores,Nikita Puzanenko,Timothy Azark,Warren Kleinman</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>LiveChatTranscript$CreatedBy</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Week</dateGranularity>
+        <field>LiveChatTranscript$CreatedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Total chats and min per week</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Live_Chat_Transcripts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LiveChatTranscript$CreatedDate</dateColumn>
+        <endDate>2016-04-23</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-02-21</startDate>
+    </timeFrameFilter>
+</Report>

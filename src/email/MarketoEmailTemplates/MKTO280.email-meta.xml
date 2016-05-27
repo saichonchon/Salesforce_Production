@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Partner Reactivation.Email 1</name>
+    <style>none</style>
+    <subject>Important information about your BigCommerce account</subject>
+    <textOnly>We’d love to work with you once again to grow your merchant business.
+
+
+
+Important Information Regarding Your BigCommerce Account
+
+
+
+Hi {{lead.First Name:default=there}},
+
+
+
+It’s been awhile since we’ve worked with you, so we wanted to reach out and see if we could win you back to the BigCommerce Partner Program. We’d love to work with you once again to grow your merchant business. And with new features, payment structures, and more partner support resources than ever before, there’s no better platform to help you grow your ecommerce design business:
+
+
+
+
+ - Better profitability due to lower cost of ownership 
+
+
+ - Unparalleled time to market 
+
+
+ - Robust enterprise offering that’s secure, reliable, open and scalable 
+
+
+ - More marketing tools than any other platform and best-in-class SEO integration 
+
+
+ - Seamless API integrations with hundreds of industry-leading business applications 
+
+
+ - Comprehensive Partner Program benefits, including generous commissions and access to marketing resources, lead distribution, account management and more
+
+
+
+Our records show that you still have BigCommerce stores that could be earning commissions for you. If you re-apply for our program by June 15, 2016, you’ll still be eligible to apply for these commissions. Eligibility expires after June 15, 2016.
+
+
+
+Contact our Partner Support Team &lt;[[mailto:partnersupport@bigcommerce.com]]&gt; before this time to reactivate your account, apply for backpay that’s accrued since you left, and grow your business with BigCommerce.
+
+
+
+Sincerely,
+
+
+
+The BigCommerce Partner Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

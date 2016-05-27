@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <attachedDocuments>Email_Template_Attachments/RESELLER_WELCOME_KIT_zip.zip</attachedDocuments>
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Reseller Welcome Email : AU</name>
+    <style>none</style>
+    <subject>Welcome to the BigCommerce Partner Program</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+Welcome to the BigCommerce Partner Program! We’re happy to add an experienced web pro like you to our family. Attached you’ll find your welcome kit, which includes a BigCommerce Reseller logo you can feature on your site, blog post and social media messaging to publicize our partnership.
+
+I’m available to answer any questions you might have as you’re getting started. Another great resource is your Partner Portal, where you can review your terms and conditions and check on your commissions. You’ll also find some great tools to help you promote our new partnership to your clients, including a pre-written, coded webpage and email templates that tell them all about BigCommerce. You should have already received your login details for that in another email. If you need help logging in, please let me know.
+
+If you need anything, please don&apos;t hesitate to contact me.
+
+{!User.FirstName} {!User.LastName}
+Partner Sales Executive
+
+P {!User.Phone}
+E  {!User.Email}
+A  Level 6, 1-3 Smail Street | Ultimo NSW 2007
+
+Visit us at bigcommerce.com
+Follow us News | Facebook | Twitter</textOnly>
+    <type>custom</type>
+</EmailTemplate>

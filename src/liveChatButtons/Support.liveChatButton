@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LiveChatButton xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoGreeting>Immediately following this chat session you will have an opportunity to complete a brief survey.  
+
+Thank you for contacting Bigcommerce.   My name is {!User_FirstName}, how may I help you?</autoGreeting>
+    <chatPage>SupportLiveAgentChatPage</chatPage>
+    <deployments/>
+    <enableQueue>true</enableQueue>
+    <isActive>true</isActive>
+    <label>Support</label>
+    <offlineImage>ChatImageOfflineSupport</offlineImage>
+    <onlineImage>ChatImageOnlineSupport</onlineImage>
+    <optionsCustomRoutingIsEnabled>false</optionsCustomRoutingIsEnabled>
+    <optionsHasInviteAfterAccept>false</optionsHasInviteAfterAccept>
+    <optionsHasInviteAfterReject>false</optionsHasInviteAfterReject>
+    <optionsHasRerouteDeclinedRequest>false</optionsHasRerouteDeclinedRequest>
+    <optionsIsAutoAccept>true</optionsIsAutoAccept>
+    <optionsIsInviteAutoRemove>false</optionsIsInviteAutoRemove>
+    <perAgentQueueLength>1</perAgentQueueLength>
+    <postChatPage>LiveAgentPostChatSupport</postChatPage>
+    <preChatFormPage>SupportLiveAgentPreChatPage</preChatFormPage>
+    <pushTimeOut>20</pushTimeOut>
+    <routingType>LeastActive</routingType>
+    <site>support_portal</site>
+    <skills>
+        <skill>Support_Skill</skill>
+    </skills>
+    <type>Standard</type>
+    <windowLanguage>en_US</windowLanguage>
+</LiveChatButton>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skill xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <profiles>
+            <profile>Admin</profile>
+            <profile>Client Success Manager</profile>
+            <profile>Client Success Rep %28Remote%29</profile>
+            <profile>Client Success Rep %28Remote%29 1 Chat</profile>
+        </profiles>
+        <users>
+            <user>brian.silvey@bigcommerce.com</user>
+            <user>garrett.cluff@bigcommerce.com</user>
+            <user>glen.saturno@bigcommerce.com</user>
+            <user>jake.smith@bigcommerce.com</user>
+            <user>jason.zamora@bigcommerce.com</user>
+            <user>john.hebron@bigcommerce.com</user>
+            <user>laurie.zapinski@bigcommerce.com</user>
+            <user>maria.huemmer@bigcommerce.com</user>
+        </users>
+    </assignments>
+    <label>Support Skill</label>
+</Skill>

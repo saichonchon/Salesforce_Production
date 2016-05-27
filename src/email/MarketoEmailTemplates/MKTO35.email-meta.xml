@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Marty/Owen PCF.Email 3 - Conf Performance</name>
+    <style>none</style>
+    <subject>Thanks! Here&apos;s your whitepaper</subject>
+    <textOnly>Thanks for downloading the Stability, Speed and Performance Guide from Bigcommerce
+Thanks for downloading our free guide, Stability, Speed and Performance &lt;[[http://grow.bigcommerce.com/rs/695-JJT-333/images/stability-speed-performance-pcf.pdf]]&gt;.
+
+With great uptime, ample redundancy, and a solid team to support you, Bigcommerce provides the stability ecommerce sites need. And did you know we have a blazing-fast 145ms response time to keep Google rankings and conversion high to maximize sales? We deliver quick response times, accelerated by a powerful content delivery network, with real time metrics. 
+
+Call us &lt;[[tel:+18446328911]]&gt; if you have any questions about scaling your business.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

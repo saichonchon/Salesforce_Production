@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>IG Nurture Program.Nurture Email 1 - IG</name>
+    <style>none</style>
+    <subject>Great to have you onboard!</subject>
+    <textOnly>Title of Nurture Email 1
+ 
+ Hello {{lead.First Name:default=Sir/Madam}},
+ 
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet urna velit. Donec luctus malesuada diam, vitae condimentum metus pretium id. Vestibulum molestie, turpis facilisis scelerisque molestie, lorem nibh porttitor purus, sollicitudin rutrum sem lectus id ligula. Maecenas sapien diam, faucibus viverra condimentum id, viverra sit amet metus. Sed viverra tellus volutpat sapien faucibus lobortis. Donec ligula tellus, lacinia at malesuada nec, pulvinar ut elit.
+ 
+Phasellus sed lacinia nunc. Aliquam neque augue, mollis sit amet molestie quis, ullamcorper id nibh. Curabitur at volutpat erat. Nam in nisi eu augue varius lacinia sed varius ipsum. Morbi pretium est ut est rutrum eu tincidunt nisl congue. Fusce elementum dignissim mi, nec pulvinar libero faucibus ut. Praesent ac suscipit mi. Nam euismod libero in lectus venenatis ac sollicitudin dolor lacinia. Fusce quis commodo augue. Nam vitae est quis mauris blandit iaculis sit amet non sem. Morbi interdum pellentesque elit in tincidunt. Quisque condimentum porttitor mattis.
+Column Title
+SubTitle Goes here.
+ 
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet urna velit. Donec luctus malesuada diam, vitae condimentum metus pretium id. Vestibulum molestie, turpis facilisis scelerisque molestie, lorem nibh porttitor purus, sollicitudin rutrum sem lectus id ligula. Maecenas sapien diam, faucibus viverra condimentum id, viverra sit amet metus. Sed viverra tellus volutpat sapien faucibus lobortis. Donec ligula tellus, lacinia at malesuada nec, pulvinar ut elit. Duis velit justo, feugiat sed mollis a, tristique id felis.
+Mktoweb, Inc. 100 Webster Street, Suite 404, City of Commerce, CA 99999
+
+Contact Us &lt;[[#]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

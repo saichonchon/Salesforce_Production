@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <customSettingsVisibility>Protected</customSettingsVisibility>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Credentials__c</fullName>
+        <externalId>false</externalId>
+        <label>Credentials</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Issue_Type__c</fullName>
+        <description>standard JIRA issue type values range from &apos;1&apos; to &apos;4&apos; . &apos;1&apos; is for Bug and so on</description>
+        <externalId>false</externalId>
+        <label>Issue Type</label>
+        <length>5</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>JIRA_URL__c</fullName>
+        <externalId>false</externalId>
+        <label>JIRA URL</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Project_Key__c</fullName>
+        <description>Jira Project Key Under which JIRA Project you want to create the issue.</description>
+        <externalId>false</externalId>
+        <label>Project Key</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>System_Id__c</fullName>
+        <description>Your system Id in Connection. You should check this in JIRA under Connections</description>
+        <externalId>false</externalId>
+        <label>System Id</label>
+        <length>2</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UserName__c</fullName>
+        <description>User Name in the Jira instance</description>
+        <externalId>false</externalId>
+        <label>UserName</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Jira Settings</label>
+</CustomObject>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpportunitySettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoActivateNewReminders>true</autoActivateNewReminders>
+    <enableFindSimilarOpportunities>true</enableFindSimilarOpportunities>
+    <enableOpportunityTeam>true</enableOpportunityTeam>
+    <enableUpdateReminders>true</enableUpdateReminders>
+    <findSimilarOppFilter>
+        <similarOpportunitiesDisplayColumns>OPPORTUNITY.NAME</similarOpportunitiesDisplayColumns>
+        <similarOpportunitiesDisplayColumns>ACCOUNT.NAME</similarOpportunitiesDisplayColumns>
+        <similarOpportunitiesDisplayColumns>OPPORTUNITY.RECORDTYPE</similarOpportunitiesDisplayColumns>
+        <similarOpportunitiesDisplayColumns>OPPORTUNITY.STAGE_NAME</similarOpportunitiesDisplayColumns>
+        <similarOpportunitiesDisplayColumns>Current_Store_URL__c</similarOpportunitiesDisplayColumns>
+        <similarOpportunitiesDisplayColumns>Sales_Notes__c</similarOpportunitiesDisplayColumns>
+        <similarOpportunitiesDisplayColumns>CORE.USERS.FULL_NAME</similarOpportunitiesDisplayColumns>
+        <similarOpportunitiesDisplayColumns>MBASubscriptionID__c</similarOpportunitiesDisplayColumns>
+        <similarOpportunitiesDisplayColumns>Subscription__c</similarOpportunitiesDisplayColumns>
+        <similarOpportunitiesMatchFields>OPPORTUNITY.ACCOUNT</similarOpportunitiesMatchFields>
+        <similarOpportunitiesMatchFields>MBASubscriptionID__c</similarOpportunitiesMatchFields>
+        <similarOpportunitiesMatchFields>Current_Store_URL__c</similarOpportunitiesMatchFields>
+        <similarOpportunitiesMatchFields>StoreURL__c</similarOpportunitiesMatchFields>
+    </findSimilarOppFilter>
+    <promptToAddProducts>false</promptToAddProducts>
+</OpportunitySettings>

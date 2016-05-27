@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Post Paid.Email 2- Theme</name>
+    <style>none</style>
+    <subject>Build your store</subject>
+    <textOnly>We’ve chosen a design theme for your store to get you started, but you can easily change your design by picking a new theme.
+Build a Beautiful Store
+
+Browse themes &lt;[[https://www.bigcommerce.com/theme-store/]]&gt;
+
+Choose a Theme
+We’ve chosen a design theme for your store to get you started, but you can easily change your design by picking a new theme. We have dozens of options available, and all of them are modern, mobile-friendly and include best practices to maximize your conversion.
+Need help? Read our Theme &amp; Design Overview &lt;[[https://support.bigcommerce.com/articles/Public/Themes-Design-Overview]]&gt;.
+Spotlight your best products and improve conversion with a premium theme
+All of our premium themes have a modern design and powerful features, like:
+
+ - Fully responsive design to ensure your site looks great on all types of devices
+
+
+ - Style Editor to design just the store you want
+
+
+ - Promotion carousel with intelligent scaling to highlight your best products
+
+
+ - Category listings across pages help shoppers find products
+
+
+You can instantly preview any of our themes before upgrading.
+Browse Themes &lt;[[https://www.bigcommerce.com/theme-store/]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

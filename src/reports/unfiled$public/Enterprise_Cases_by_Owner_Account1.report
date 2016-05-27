@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Account$SSC__c</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <title>Open Cases</title>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Account.Cases$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Status</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Bigcommerce_Plan__c</field>
+    </columns>
+    <crossFilters>
+        <criteriaItems>
+            <column>TeamMemberRole</column>
+            <operator>equals</operator>
+            <value>Enterprise Manager,Onboarding Specialist</value>
+        </criteriaItems>
+        <operation>with</operation>
+        <primaryTableColumn>Account$Id</primaryTableColumn>
+        <relatedTable>AccountTeamMember-User</relatedTable>
+        <relatedTableJoinColumn>Account</relatedTableJoinColumn>
+    </crossFilters>
+    <description>EM Cases</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Cases$RecordType</column>
+            <operator>equals</operator>
+            <value>zEnterprise Account Services,Case.Billing</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases$Bigcommerce_Plan__c</column>
+            <operator>equals</operator>
+            <value>Hibernation,Enterprise Tier 3 Plan,Enterprise Tier 4 Plan,Bigcommerce Enterprise Plan,Bigcommerce Enterprise Plan Plus SLA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases$Status</column>
+            <operator>equals</operator>
+            <value>New,In Progress,Pending Acceptance,Waiting on Client,Working</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$SSC__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Enterprise Cases by Owner &amp; Account</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$Client_Start_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

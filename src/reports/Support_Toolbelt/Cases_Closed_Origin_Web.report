@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_30775879</developerName>
+        <masterLabel>Age in Days</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>AGE</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>1</to>
+            </sourceValues>
+            <value>&lt;= 1 Day</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>1</from>
+                <to>2</to>
+            </sourceValues>
+            <value>2 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>2</from>
+                <to>3</to>
+            </sourceValues>
+            <value>3 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>3</from>
+                <to>7</to>
+            </sourceValues>
+            <value>4-7 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>7</from>
+            </sourceValues>
+            <value>&gt; 7 Days</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CREATED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>REASON</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Case.Client_Success</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Case_Closed_By__c</column>
+            <operator>notEqual</operator>
+            <value>,Adam Ferenzi,Thomas Blahnik,Greg Ellis,John O&apos;Brien,Lauren Clevenger,Fritz Stegmann,Evan Peterson,John Hebron,Brian Silvey,Garrett Cluff,Jason Zamora,Steve Bownds,Patrick Puente,Cristy Carpenter,Chas Wilson,Julio Sevilla,Quoc Dang,Rory Regnell,Abbey Parker,Foy Howard,Lauren Gettler,Chris Beal,David Gardner,Kit Gulick,Danielle Canterberry,Warren Kleinman,Christopher Partanen,Cortni Keaveney,Tyler Pouchot,David Enriquez,Nikita Puzanenko,Brian Davenport,Dustin Shipley,Brittani Scott,Blake Boykin,Eric Roiz,Sasha Akridge,Brian Jones,Matthew Leach,Matt Houck,Mary Stanish,Jeff Borchman,Laurie Zapinski,Timothy Azark,Pepe Pulido,Derek Donovan,Sean Mercer,Phillip Estrada II,Jeff Nihlean,Ian Irvin,Ted York,Nestor Islas,Dmitrii Khrunov,Fred Dobson,Ray Vaccaro,Ariana Lloyd,Brian Miller,Gregory Bahl,Lucian Villasenor,Jacob Scott,Joseph Alcorn,Tanner Johnson,Joshua Seals,Jimmiek Rankin,Willie Kinsey,Eric Her,Jose Flores</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Case_Closed_By__c</column>
+            <operator>notEqual</operator>
+            <value>Kaitlyn McCormick,Robert Baker,Josh Popperwell,Kade Reed,Dan Rathke,Todd Wallace,Michael Sparks,Jake Smith,Kelly Lena,Dante Munoz,Guillermo Velez,Brad Mitchell</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <operator>equals</operator>
+            <value>Email,Web</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_30775879</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Case_Closed_By__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Cases Closed - Origin Web</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
+    </timeFrameFilter>
+</Report>

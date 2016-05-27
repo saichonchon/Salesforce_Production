@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.rvpe__RVAccount__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SupportPin__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.StoreURL__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity.Has_RV_Account__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.rvpe__RVAccount__c</column>
+            <operator>contains</operator>
+            <value>gray loon</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Gray Loon Support Pins</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity@Opportunity.Subscription__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

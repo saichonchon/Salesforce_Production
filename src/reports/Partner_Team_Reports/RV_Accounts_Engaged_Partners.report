@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$rvpe__RVAccount__c.Agreement__c</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVMember__c.rvpe__DateAgreedToTerms__c</field>
+    </columns>
+    <columns>
+        <field>FK_$rvpe__RVAccount__c.rvpe__WebSite__c</field>
+    </columns>
+    <columns>
+        <field>FK_$rvpe__RVAccount__c.Partner_Tier__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <description>Partners who have re-engaged with new Portal</description>
+    <format>Tabular</format>
+    <name>RV Accounts - Engaged Partners</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$rvpe__RVMember__c@rvpe__RVMember__c.rvpe__RVAccount__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>rvpe__RVMember__c.rvpe__DateAgreedToTerms__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>rvpe__RVMember__c.rvpe__DateAgreedToTerms__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

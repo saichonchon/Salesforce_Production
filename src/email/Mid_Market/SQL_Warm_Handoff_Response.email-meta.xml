@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>SQL Warm Handoff Response</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Email_to_Case_Letterhead</letterhead>
+    <name>SQL Warm Handoff Response</name>
+    <style>freeForm</style>
+    <subject>BigCommerce Call</subject>
+    <textOnly>Thanks for the introduction, {SDR name}. {Prospect name}, great to meet you! {SDR name} and I caught up and I am looking forward to our call. 
+
+I like to use this first conversation to:
+learn a bit about your business
+gain an understanding of your goals for the next 6 to 12 months
+hear why you&apos;re taking the time to talk with us
+By the end of the call, we’ll both be able to make an informed decision about next steps. As {SDR name} mentioned, if there is anything specific you&apos;d like to cover, just let me know.
+
+Talk to you {Day of week}!</textOnly>
+    <type>html</type>
+</EmailTemplate>

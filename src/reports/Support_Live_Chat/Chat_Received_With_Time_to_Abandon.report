@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>LiveChatTranscript$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$Chat_Duration_Minutes__c</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$StartTime</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$EndTime</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$Name</field>
+    </columns>
+    <columns>
+        <field>LiveChatTranscript$Time_to_Abandon__c</field>
+    </columns>
+    <description>Chats Abandoned</description>
+    <filter>
+        <criteriaItems>
+            <column>LiveChatTranscript$Skill.MasterLabel</column>
+            <operator>contains</operator>
+            <value>Support</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LiveChatTranscript$StartTime</column>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Chat Received With Time to Abandon</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Live_Chat_Transcripts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LiveChatTranscript$RequestTime</dateColumn>
+        <endDate>2015-05-02</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2015-03-29</startDate>
+    </timeFrameFilter>
+</Report>

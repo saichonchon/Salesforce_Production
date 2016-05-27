@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Campaign.CampaignMembers$Name</field>
+    </columns>
+    <columns>
+        <field>Campaign.CampaignMembers$Id</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Campaign$Name</column>
+            <operator>contains</operator>
+            <value>Demo Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Campaign.CampaignMembers$Id</column>
+            <operator>startsWith</operator>
+            <value>00Q</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <aggregateType>RowCount</aggregateType>
+        <dateGranularity>Day</dateGranularity>
+        <field>Campaign$Name</field>
+        <sortByName>RowCount</sortByName>
+        <sortOrder>Desc</sortOrder>
+        <sortType>Aggregate</sortType>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>Campaign.CampaignMembers$MemberCreatedDate</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>Demo Campaigns with Leads</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Campaigns_with_Campaign_Members_Grandparents__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Campaign$X1st_Sync_to_Dialer__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

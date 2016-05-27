@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CAMPAIGN_NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.mkto2__Lead_Score__c</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>PHONE1</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_COUNTRY</field>
+    </columns>
+    <columns>
+        <field>CONTACT_LAST_ACTIVITY</field>
+    </columns>
+    <columns>
+        <field>Account.Active_Trials_Opp__c</field>
+    </columns>
+    <columns>
+        <field>Account.Active_Stores_Opp__c</field>
+    </columns>
+    <description>Visited Launch Store during trial but did not convert</description>
+    <format>Tabular</format>
+    <name>Trial to Paid Hot Leads</name>
+    <params>
+        <name>scopeid</name>
+        <value>70113000002VN2p</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignContact</reportType>
+    <scope>one</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Contact.mkto2__Lead_Score__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+</Report>

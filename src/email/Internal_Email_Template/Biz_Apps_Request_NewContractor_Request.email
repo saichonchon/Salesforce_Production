@@ -1,0 +1,18 @@
+A Biz Apps Request has been moved to "pending-contractor". Please review and update to "contractor" or to remove the status.
+
+
+Requestor: {!Admin_Request__c.CreatedBy}
+Department: {!Admin_Request__c.Requesting_Department__c}
+Category: {!Admin_Request__c.category_bizapps__c}
+
+Request Name: {!Admin_Request__c.Name}
+Number: {!Admin_Request__c.Number__c}
+Priority: {!Admin_Request__c.Priority_Rank__c}
+Type: {!Admin_Request__c.Type__c}
+
+What is the problem we're trying to solve?
+{!Admin_Request__c.What_s_the_problem_we_re_solving__c}
+
+Description: {!Admin_Request__c.Description__c}
+
+Link: {!Admin_Request__c.Link}

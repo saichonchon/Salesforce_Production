@@ -1,0 +1,8 @@
+*** NEW SUBSCRIPTION ADDED TO EXISTING ACCOUNT ***  
+
+A new Subscription has been added to this Account: {!Account.Link}
+
+Account:  {!Account.Name}
+Active Store Count: {!Account.Active_Stores__c}
+Active Trial Count: {!Account.Active_Trials__c}
+Active MRR: {!Account.Active_MRR_Value__c}

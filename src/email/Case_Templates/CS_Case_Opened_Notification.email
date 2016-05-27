@@ -1,0 +1,20 @@
+Dear {!Contact.FirstName}{!Case.Lead_First_Name__c},
+
+Thanks for reaching out to the BigCommerce Support Team! We know you need your online store working perfectly in order to make sales, so we’ll get back to you as soon as possible with a solution to your problem or some followup questions. 
+
+In case you need to talk to anyone about this issue, your Ticket Number is {!Case.CaseNumber}.
+Store URL: {!Case.Bigcommerce_Store_URL__c}
+Case Subject: {!Case.Subject}
+
+Description: 
+{!Case.Description}
+
+
+Your Friendly Support Rep 
+
+{!$User.FirstName} {!$User.LastName}
+{!$User.Title}
+BigCommerce Technical Support 
+http://support.bigcommerce.com
+
+{!Case.E2CP__Case_Thread_Id__c}

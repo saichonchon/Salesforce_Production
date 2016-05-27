@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CFS Quiz Data</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CFS Quiz Data</value>
+    </caseValues>
+    <fields>
+        <label><!-- Correct Answers --></label>
+        <name>Correct_Answers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration --></label>
+        <name>Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incorrect Answers --></label>
+        <name>Incorrect_Answers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Attempts --></label>
+        <name>Max_Attempts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Passing Score --></label>
+        <name>Passing_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question --></label>
+        <name>Question__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quiz Name --></label>
+        <name>Quiz_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show score --></label>
+        <name>Show_score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+    </fields>
+    <layouts>
+        <layout>CFS Quiz Data Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

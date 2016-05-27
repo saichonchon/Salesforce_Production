@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>StagingToTableMapping</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>StagingToTableMapping</value>
+    </caseValues>
+    <fields>
+        <help><!-- Used to determine if this record is currently active for mapping --></help>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- The API Name of the field for the object to map the staging object field to --></help>
+        <label><!-- Object Field Name (API) --></label>
+        <name>Object_Field_Name_API__c</name>
+    </fields>
+    <fields>
+        <help><!-- The API Name of the object to map the staging object to --></help>
+        <label><!-- Object Name (API) --></label>
+        <name>Object_Name_API__c</name>
+    </fields>
+    <fields>
+        <help><!-- The API name of the field from the staging object --></help>
+        <label><!-- Staging Object Field Name (API) --></label>
+        <name>Staging_Object_Field_Name_API__c</name>
+    </fields>
+    <fields>
+        <help><!-- The API name of the staging object holding the field --></help>
+        <label><!-- Staging Object Name (API) --></label>
+        <name>Staging_Object_Name_API__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

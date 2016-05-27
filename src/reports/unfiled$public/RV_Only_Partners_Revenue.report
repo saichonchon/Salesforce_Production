@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$rvpe__RVMember__c.rvpe__Email__c</field>
+    </columns>
+    <columns>
+        <field>FK_$rvpe__RVMember__c.rvpe__Phone__c</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVAccount__c.IDev_ID__c</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVAccount__c.Total_Active_MRR__c</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVAccount__c.Partner_Commission__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>rvpe__RVAccount__c.IDev_ID__c</column>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>rvpe__RVAccount__c.Total_Active_MRR__c</column>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_NAME</column>
+            <operator>notEqual</operator>
+            <value>Channel Advisor,Legends</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>RV Only Partners/ Revenue</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$rvpe__RVAccount__c@rvpe__RVAccount__c.rvpe__RVPrimaryMember__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>rvpe__RVAccount__c.Total_Active_MRR__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>FK_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

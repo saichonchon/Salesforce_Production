@@ -1,0 +1,6 @@
+Your request for credit or refund has been APPROVED for account {!Case.Account}.
+
+{!ApprovalRequest.Comments}
+
+Store URL: {!Case.Bigcommerce_Store_URL__c}
+Case link: {!Case.Link}

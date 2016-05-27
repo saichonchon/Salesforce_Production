@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html><head>
+<title></title>
+
+<style type="text/css">
+            body {
+                margin:0;
+                padding:0;
+                background: #ffffff;
+
+            }
+            table {
+                border-collapse: collapse;
+            }
+            p {
+                margin: 0 0 10px 0;
+            }
+            .msgicon{position:relative;top:8px;}
+            .applelinksheader a {
+                text-decoration: none; 
+                color: #363636 !important;
+            }
+
+            .applelinks a {
+                text-decoration: none; 
+                color: #777777 !important;
+            }
+
+                @media (max-width : 480px) {
+                /*@media only screen and (max-device-width: 480px) {*/
+                
+                    .bodyWidth, #TopContainer, #LogoContainer {
+                        width: 100% !important;
+                    }
+
+                    /* Media query for mobile*/
+
+                    @media only screen and (max-width: 480px)  {
+                        
+                        h2,h3,h4 {text-align:center;}
+                        .button{margin:auto !important;}
+                        .msgicon{display:block;margin:auto;padding-bottom: 10px}
+                        .textcenter{text-align:center;}
+                        .mobile-block{display:block; padding:15px !important; text-align: center !important}
+                        .mobile-padding{padding: 25px 25px !important}
+                        .no-padding{padding:0px !important;}
+                        .hidemobile {
+                            display: none;
+                        }
+                     .bodyWidth{max-width:320px;padding:0px !important;}
+                      .MiddleContainer{width:320px;padding:0px;margin:0px;}
+                    }
+
+
+                    #Logo {
+                        text-align: center !important;
+                    }
+
+                    .applelinksheader a {
+                        text-decoration: none; 
+                        color: #363636 !important;
+                    }
+                    
+                    .applelinks a {
+                        text-decoration: none; 
+                        color: #777777 !important;
+                    }
+
+                }
+</style>
+</head>
+<body style="padding-top:20px; margin:0 0 0 0; display:block; background-color:#ffffff; -webkit-text-size-adjust:none; font-family:Helvetica, Arial, sans-serif; " bgcolor="#FFFFFF" class="removepaddingcta3" ><!-- Preview text (text which appears right after subject) -->
+<div class="mktEditable" id="Preview-text" style="display:none; color:#ffffff; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; " ><p>We miss you! You have 1 week left in your free trial. Log in today to get your store open for business.</p></div>
+<table align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="margin:0 auto; background:#ffffff; " ><tr ><td ><!-- Logo Block -->
+<table width="600" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" style="background:#ffffff">
+<tr>
+<td valign="top" id="TopContainer" style="padding:25px 25px 25px 0px;">
+<table border="0" cellspacing="0" cellpadding="0" align="left" width="270" id="LogoContainer">
+<tr>
+<td valign="top" align="left" id="Logo"><a href="http://www.bigcommerce.com"><img src="http://grow.bigcommerce.com/rs/695-JJT-333/images/BIG-3001R-Templates_GeneralLP_logo.png" alt="Bigcommerce" width="185" height="45" border="0"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- Main Section -->
+<table width="600" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" style="background:#ffffff; " ><tr ><td class="mobile-block" width="300" valign="top" align="left" style="padding:25px 25px 25px 0px; " ><div class="mktEditable" id="intro" ><h4 style="font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #00abc9; font-size: 16px;">We miss you.<br /></h4></div>
+<div class="mktEditable" id="header" ><h2 style="font-weight: 300; font-family: 'Open Sans Light', Helvetica, Arial, sans-serif; font-size: 25px; color: #424d55;">You have 1 week left <br />in your trial</h2></div>
+<div class="mktEditable" id="subheader" ><h3 style="font-weight: 400; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 18px; color: #424d55;">There's still time to set up your store.</h3></div>
+<div class="mktEditable" id="cta" ><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; display: inline-block;">
+<tbody>
+<tr>
+<td valign="middle" align="center" height="40" width="186" style="background: #00abc9; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; padding: 0 10px 0 10px; border-radius: 4px;">
+<p style="margin: 0 0; color: #ffffff;"><a href="https://login.bigcommerce.com/login" style="color: #ffffff; text-decoration: none; display: block;" target="_blank">Visit your store today</a></p>
+</td>
+</tr>
+</tbody>
+</table></div>
+</td>
+<td class="mobile-block" width="top" valign="middle" align="right" ><div class="mktEditable" id="image" ><p><img src="http://grow.bigcommerce.com/rs/695-JJT-333/images/calendar-8-days.jpg" width="200" alt="You have 1 week left on your free trial" /></p></div>
+</td>
+</tr>
+</table>
+<!-- Bottom Copy -->
+<table width="600" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" style="background:#ffffff; " bgcolor="#FFFFFF" ><tr ><td valign="top" align="left" class="mobile-padding" style="padding:25px 0px 40px 0px; font-family:'Open Sans Light', Helvetica, Arial, sans-serif; font-size:15px; color:#424d55; " ><div class="mktEditable" id="body" ><p>We haven't seen you in a few days, but don't worry, you still have a week left in your free trial to build and launch your online store.</p>
+<p>We make it easy to do &mdash; just&nbsp;<a style="text-decoration: none;" href="https://login.bigcommerce.com/login" target="_blank"><span style="color: #00abc9;">log in today</span></a>&nbsp;to get started.</p></div>
+</td>
+</tr>
+</table>
+<!-- Help Section -->
+<table width="600" border="0" cellspacing="0" cellpadding="0" class="bodyWidth help-section" style="background:#ffffff" bgcolor="#FFFFFF">
+<tr>
+<td class="no-padding" valign="top" align="left">
+<table border="0" cellspacing="0" cellpadding="0" width="600" class="MiddleContainer" bgcolor="#FFFFFF" style="background: #ffffff">
+<tr>
+<td valign="top" style="padding:20px; background:#e2e7e7">
+<p style="text-align:center; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size:15px; color: #424d55;"><img class="msgicon" src="http://grow.bigcommerce.com/rs/695-JJT-333/images/icon-help.png"> <strong>We're here to help.</strong> Visit <a href="https://support.bigcommerce.com/articles/University/Welcome-to-Bigcommerce-University-Video/" style="text-decoration: none"><span style="color: #00abc9;">Bigcommerce University</span></a> or call <a href="tel:+18446328912" style="text-decoration: none;"><span style="color: #00abc9;">1-844-632-8912</span></a>.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- Footer -->
+<table width="600" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" style="background:#ffffff" bgcolor="#FFFFFF">
+<tr>
+<td valign="top" align="left" style="padding:25px 25px; font-family: 'Open Sans Light', Helvetica, Arial, sans-serif; font-size: 12px; color: #777777">
+<p style="text-align:center; font-family: 'Open Sans Light', Helvetica, Arial, sans-serif; font-size: 12px; color: #777777">&#169; Copyright 2003 - 2015 Bigcommerce Pty. Ltd. Shopping Cart software<br>
+<span class="applelinks">11305 Four Points Dr., Building 2, Floor 3 Austin TX 78726</span><br>
+<a href="http://grow.bigcommerce.com/manage-your-email-preferences.html" style="text-decoration: none;"><span style="color:#00abc9">Click here</span></a> to update your email preferences</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

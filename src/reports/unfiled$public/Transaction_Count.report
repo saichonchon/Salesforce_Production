@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <filter>
+        <criteriaItems>
+            <column>CASE_COMMENT_CREATED_BY</column>
+            <operator>equals</operator>
+            <value>kim radaza,Glenn Saturno,Kenneth Cabaobao,Ryan Juarez,Jovic Leovis,Aries Leyte,Paulo Mojica,Marjorie Tamayo,Marielle Morre,Luigi Modesto,Rob San Diego,Jan Saria,Regie Matibag,Mireille Ferol,Racel Arce,Jeffrey Gregorio,Alvin Deleon,Mark Hernandez,Adrian Estopace,John Ferrer,Jude Abrigo,Cesa Inciong,Mary Hazel Quilaga,Faith Esguerra,Shirley Detera,Jun Tupas,Regine SanJuan,Jerome Cadangyao,Kristel Pura,Jenelyn Pawhay,Roshaolin Nuqui,Patricia Santos,Josiephene Caceres</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <operator>notEqual</operator>
+            <value>Support - Trash</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>COMMENT_PUBLISHED</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>COMMENT_CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CASE_COMMENT_CREATED_BY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Transaction Count</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>COMMENT_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_THISWEEK</interval>
+    </timeFrameFilter>
+</Report>

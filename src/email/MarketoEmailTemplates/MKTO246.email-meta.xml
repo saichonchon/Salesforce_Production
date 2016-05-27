@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>04/16 Partner Newsletter.Email 1</name>
+    <style>none</style>
+    <subject>Partner Newsletter — Design Awards, BigCommerce Marketplace, and more</subject>
+    <textOnly>Will your design be named 2016’s Best Design? Introducing the BigCommerce Design Awards!
+April 2016  Newsletter
+Will your design be named 2016’s Best Design? Introducing the BigCommerce Design Awards!
+We’re constantly adding new themes and options to make it even easier for partners and mid-market merchants to create beautiful, modern sites. To showcase the results of your boundless creativity and expertise, we’re launching the first ever BigCommerce Ecommerce Design Awards and inviting you to nominate your clients’ sites (merchants can also submit their own sites for consideration). In case the bragging rights for winning aren’t enough, we’re offering up to $25,000 in prizes, including co-branded media placement promoting the merchant to a national audience. The submission period is from April 15 to May 6, 2016, so submit your best work today!
+Learn more &lt;[[http://grow.bigcommerce.com/DesignAwards.html]]&gt;
+BigCommerce Partners with Solange Knowles to relaunch Saint Heron
+In partnership with Groove, we are excited to announce the relaunch of Saint Heron, a unique collection of products hand-curated by celebrity songwriter, musician and creative director Solange Knowles. Learn more about the partnership, as well as our SXSW store launch event, on the BigCommerce blog.
+Read More &lt;[[https://www.bigcommerce.com/blog/solange-knowles/]]&gt;
+New Square inventory sync simplifies inventory management
+We are now the only full-featured ecommerce platform that offers your clients full, automated inventory synchronization with Square. This dual syncing capability makes life easier for your clients by eliminating the hassle of manually entering products, which helps them reduce the complexity of inventory management and avoid overselling when orders are placed.
+Learn More &lt;[[https://www.bigcommerce.com/blog/bigcommerce-and-square-launch-inventory-sync/]]&gt;
+New competitive review — Magento Ecommerce v. BigCommerce
+Learn why mid-market retailers are making the on-premise to SaaS switch — and how you can help them to make the right decision for their growing business.
+Read Now &lt;[[http://grow.bigcommerce.com/magento-ecommerce.html]]&gt;
+Save the date — Best Practices in Ecommerce Workshop in Chicago, IL
+June 7, 2016, 11 a.m - 4 p.m. CT, Chicago, IL
+BigCommerce is hosting a half-day, merchant-focused workshop designed to provide valuable best practices from leading ecommerce experts. Spread the word to your merchants and encourage them to register today!
+Register Now &lt;[[http://grow.bigcommerce.com/BigCommerce-IRCE16-Ecommerce-Workshop.html]]&gt;
+Reminder — Register to promote your services for free on the BigCommerce Marketplace
+What’s better than free publicity? Free publicity that reaches a highly targeted, captive audience! Complete your free registration on the BigCommerce Partner Marketplace to reach thousands of qualified ecommerce merchants that are looking for a design and solutions provider like you.
+Learn How to Register &lt;[[https://partners.bigcommerce.com/English/?ReturnUrl=%2fEnglish%2fSolutions%2fresources%2fmarketplace_guide.aspx%3fmkt_tok%3d3RkMMJWWfF9wsRokua7JZKXonjHpfsX%252F6OwkXKWg38431UFwdcjKPmjr1YIGTMF0aPyQAgobGp5I5FEOQ7XYVqp0t6YOWA%253D%253D&amp;mkt_tok=3RkMMJWWfF9wsRokua7JZKXonjHpfsX%2F6OwkXKWg38431UFwdcjKPmjr1YIGTMF0aPyQAgobGp5I5FEOQ7XYVqp0t6YOWA%3D%3D]]&gt;
+Product Updates, Offers and Promotions
+
+
+
+
+Faceted search limits expanded to 500 values
+
+We’re pleased to announce an update to BigCommerce’s faceted search feature (also known as product filtering), which raises the former limit of 30 values per facet to 500 values, that helps  your merchants offer more detailed search options than ever before. To gain access to this feature, you or your clients will need to update the theme files as follows, depending on the theme being used:
+
+
+
+ - Compatible Blueprint themes &lt;[[https://support.bigcommerce.com/articles/Public/Product-Filtering-Settings#themes]]&gt; - Visit the Design section in the control panel, where you will see that an update is available. 
+
+
+ - Custom Blueprint themes - Visit the Product Filtering Toolkit &lt;[[https://support.bigcommerce.com/articles/Public/Product-Filtering-Settings#themes]]&gt; on our Dev Portal to see how you can add this feature to custom themes. 
+
+
+ - Stencil themes - Currently this feature is not available in Stencil themes, but it is coming soon.
+
+
+
+Learn More  &lt;[[https://support.bigcommerce.com/articles/Public/Product-Filtering-Settings]]&gt;
+Product SKUs updated to enable direct editing of more properties
+We’re excited to announce an update to product SKUs that enables direct editing of the following properties, eliminating the need to create a product rule to edit each one:
+
+
+
+ - Price 
+
+
+ - Weight 
+
+
+ - Image 
+
+
+ - Enabled 
+
+
+ - Purchasing Disabled Message
+
+
+
+This means one less step for your clients as they manage their online stores, and it brings BigCommerce’s SKU editing capabilities in line with other platforms like Shopify and Square. 
+
+The release affects SKU-only rule creation, the SKU list, the SKU create / edit modal and the API. It’s backwards compatible, so existing customer data and API integrations can continue to operate without needing a migration. However, rules applying to SKUs only can no longer be created or edited in the control panel as those properties should now be edited on the SKU directly. When using the API you can still manage rules applying to SKUs only, but plan on migrating your code to use the SKU properties as we are deprecating and eventually removing the ability to do so (date TBD).
+Learn More  &lt;[[https://support.bigcommerce.com/articles/Public/Product-SKUs/#individual]]&gt;
+New with Stencil
+Want to stay informed of the latest updates to our new theming engine?
+See Release Notes &lt;[[https://stencil.bigcommerce.com/docs/release-notes]]&gt;
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+Upcoming Events
+
+
+
+
+Webinar: Getting started with the BigCommerce Partner Portal 
+Thursday, May 12, 2016, 11 a.m. CT &amp; Tuesday, June 14, 2016, 6 a.m. CT
+Join us for a tour of your Partner Portal! Learn about the onboarding, training, sales and marketing tools available to help you grow your business with BigCommerce.
+Register Now &lt;[[http://grow.bigcommerce.com/Portal-Webinar-Register.html]]&gt;
+Save the date — Webinar: New Trends in Consumers’ Online Shopping Habits
+Thursday, May 5, 2016
+Join BigCommerce and Kelton as we share new research into the evolving online marketplace and consumers’ online shopping habits. Discover the motivating factors that drive how and why online buyers choose which sites to shop on. Hosted by Internet Retailer.
+Register Now &lt;[[https://www.internetretailer.com/webinars/new-trends-consumers-online-shopping-habits/?source=bigcommercenewsletter]]&gt;
+Save the date — BigCommerce CEO Speaking at IRCE 
+Wednesday, June 8, 2016, 3:45 - 4:15 p.m. CT
+Attending the Internet Retailer Conference and Exhibition in Chicago this summer? Don’t miss our CEO Brent Bellm’s panel: Curation + Comedy + Connection = Word of Mouth That Moves the Needle.
+Learn More &lt;[[http://www.irce.com/]]&gt;
+Tweetworthy:
+
+
+
+ - Congrats @BigCommerce @SolangeKnowles on SaintHeron.com! One of the 1st on new themes: https://www.bigcommerce.com/blog/solange-knowles/ &lt;[[https://www.bigcommerce.com/blog/solange-knowles/]]&gt; #SolangexBigCommerce 
+
+
+ - How automated abandoned cart emails can transform your ROI http://bit.ly/1obLfKg &lt;[[http://bit.ly/1obLfKg]]&gt; #ecommerce via @bigcommerce 
+
+
+ - Huge news for our clients: BigCommerce announces automated inventory sync with Square. http://bit.ly/1RUH0xo &lt;[[http://bit.ly/1RUH0xo]]&gt; #ecommerce via @bigcommerce
+
+
+ - Ecommerce Analytics: 4 Metrics that Aren’t What They Seem + Steps to Increase Your Bottom Line http://ow.ly/ZdLhv &lt;[[http://ow.ly/ZdLhv]]&gt; via @bigcommerce</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Email</name>
+        <label>Email</label>
+        <locationX>301</locationX>
+        <locationY>364</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Post_to_Chatter</targetReference>
+        </connector>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>NewAccountManagerTextNotification</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>SubjectLine</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>OwnerEmailAddress</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Post_to_Chatter</name>
+        <label>Post to Chatter</label>
+        <locationX>302</locationX>
+        <locationY>495</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>AccountID</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <elementReference>NewAccountManagerTextNotification</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <choices>
+        <name>Enterprise_Manager</name>
+        <choiceText>Enterprise Manager</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Enterprise Manager</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Onboarding_Specialist</name>
+        <choiceText>Onboarding Specialist</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Onboarding Specialist</stringValue>
+        </value>
+    </choices>
+    <description>Adds the user as the account manager on the store.</description>
+    <label>Add Account Manager V5</label>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>Create_Account_Team_Member</name>
+        <label>Add Account Manager Member</label>
+        <locationX>302</locationX>
+        <locationY>284</locationY>
+        <connector>
+            <targetReference>Email</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Fault</targetReference>
+        </faultConnector>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <elementReference>AccountID</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>TeamMemberRole</field>
+            <value>
+                <elementReference>Role</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>UserId</field>
+            <value>
+                <elementReference>UserID</elementReference>
+            </value>
+        </inputAssignments>
+        <object>AccountTeamMember</object>
+    </recordCreates>
+    <recordLookups>
+        <name>Lookup_User</name>
+        <label>Lookup User</label>
+        <locationX>308</locationX>
+        <locationY>132</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Create_Account_Team_Member</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Fault</targetReference>
+        </faultConnector>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>UserName</elementReference>
+            </value>
+        </filters>
+        <object>User</object>
+        <outputAssignments>
+            <assignToReference>UserID</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>UserName</assignToReference>
+            <field>Name</field>
+        </outputAssignments>
+    </recordLookups>
+    <screens>
+        <name>Ask_about_Role_and_Name</name>
+        <label>Ask about Role and Name</label>
+        <locationX>302</locationX>
+        <locationY>42</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <connector>
+            <targetReference>Lookup_User</targetReference>
+        </connector>
+        <fields>
+            <name>WhatRole</name>
+            <fieldText>Please specify the user and the role that you&apos;d like to add for the new account team member.</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Role</name>
+            <choiceReferences>Enterprise_Manager</choiceReferences>
+            <choiceReferences>Onboarding_Specialist</choiceReferences>
+            <dataType>String</dataType>
+            <defaultSelectedChoiceReference>Enterprise_Manager</defaultSelectedChoiceReference>
+            <fieldText>Role</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Who</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <stringValue>Please enter reps first and last name</stringValue>
+            </defaultValue>
+            <fieldText>Who?</fieldText>
+            <fieldType>InputField</fieldType>
+            <helpText>Please enter the rep&apos;s first and last name</helpText>
+            <isRequired>true</isRequired>
+        </fields>
+    </screens>
+    <screens>
+        <name>Fault</name>
+        <label>Fault</label>
+        <locationX>571</locationX>
+        <locationY>141</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <fields>
+            <name>FaultMessage</name>
+            <fieldText>{!$Flow.CurrentDate}
+{!$Flow.FaultMessage}
+
+Role: {!WhatRole}
+
+{!Create_Account_Team_Member}</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+    </screens>
+    <startElementReference>Ask_about_Role_and_Name</startElementReference>
+    <textTemplates>
+        <description>Notification that an Account Manager has been added to the email list</description>
+        <name>NewAccountManagerTextNotification</name>
+        <text>Heads-up! 
+
+{!UserName} has been added as a {!Role} on the {!AccountName} account.
+
+Carry on!</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Notification Subject Line</description>
+        <name>SubjectLine</name>
+        <text>{!UserName} has been added as an {!Role} on the {!AccountName} account</text>
+    </textTemplates>
+    <variables>
+        <name>AccountID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>AccountName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Account Owner&apos;s email address</description>
+        <name>OwnerEmailAddress</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>UserID of user using the flow</description>
+        <name>UserID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>UserName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <elementReference>Who</elementReference>
+        </value>
+    </variables>
+</Flow>

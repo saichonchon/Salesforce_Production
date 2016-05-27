@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <operator>equals</operator>
+            <value>PRE: 2015 - Practical eCommerce Webinar 7.28.15,PRE: 2015 - Internet Retailer,PRE: 2015 - Website Magazine,PRE: 2015 - Ecommerce Times,PRE: 2015 - Selling Simplified,PRE: 2015 - Netline,PRE: Q2FY15 Enterprise Launch (3rd Party),PRE: Q2FY15 Enterprise Launch,PRE: Internet Retailer Webinar 5.21.15,PRE: Practical eCommerce Webinar 4.21.15,PRE: Virtual LDR Q2 2015,PRE: Internet Retailer Webinar 3.12.15,PRE: 2015 - Campaign Demo Requests,PRE: 2015 - Housefile,PRE: 2015 - Q1 Internet Retailer Special Report,PRE: Content Nurture Q1 2015 - General,PRE: 2015 - Practical eCommerce</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MEMBER_STATUS</column>
+            <operator>equals</operator>
+            <value>Attended,Registered,Demo Requested,Responded,Visited</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MEMBER_ID</column>
+            <operator>notEqual</operator>
+            <value>00Q1300001L9ZuQ,00Q1300001KYwFK,00Q1300001L9aIN,00Q1300001KYHLC,00Q1300001L9aG2,00Q1300001KYkwc,00Q1300001L8jSi,00Q1300001L98XG,00Q1300001LA1qF,00Q1300001L98FH,00Q1300001L9Zom,00Q1300001LA0tf</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>EMAIL</column>
+            <operator>notContain</operator>
+            <value>redirect.netline.com,jennatkins,simoneharless,heidipoulin,@bigcommerce.com,@hoot-marketing.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MEMBER_FIRST_RESPONDED_DATE</column>
+            <operator>greaterThan</operator>
+            <value>7/31/2015</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>MEMBER_STATUS</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>MEMBER_FIRST_RESPONDED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CAMPAIGN_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>PRE 2015 ENT Campaign Results-Cts-x</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignContact</reportType>
+    <scope>orgAll</scope>
+    <showDetails>false</showDetails>
+</Report>

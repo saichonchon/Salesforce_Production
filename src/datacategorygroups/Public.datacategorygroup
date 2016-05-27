@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Shipping</label>
+                <name>Shipping</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Payments</label>
+                <name>Payments</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Tax</label>
+                <name>Tax</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Checkout</label>
+                <name>Checkout</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Store Profile</label>
+                <name>Store_Profile</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Store Settings</label>
+                <name>Store_Settings</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Domains &amp; DNS</label>
+                <name>Domains_DNS</name>
+            </dataCategory>
+            <dataCategory>
+                <label>SSL</label>
+                <name>SSL</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Live Chat</label>
+                    <name>Live_Chat</name>
+                </dataCategory>
+                <label>Apps &amp; Integrations</label>
+                <name>Apps_Integrations</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Users</label>
+                <name>Users</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Email Accounts</label>
+                <name>Email_Accounts</name>
+            </dataCategory>
+            <label>Configure Your Store</label>
+            <name>Configure_Your_Store</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Products</label>
+                <name>Products</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Orders</label>
+                <name>Orders</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Customers</label>
+                <name>Customers</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Reports &amp; Analytics</label>
+                <name>Reports_Analytics</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Import / Export</label>
+                <name>Import_Export</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Backup</label>
+                <name>Backup</name>
+            </dataCategory>
+            <label>Running Your Store</label>
+            <name>Running_Your_Store</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Themes &amp; Design</label>
+                <name>Themes_Design</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Web Pages</label>
+                <name>Web_Pages</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Blog</label>
+                <name>Blog</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Image Manager</label>
+                <name>Image_Manager</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Template Files</label>
+                <name>Template_Files</name>
+            </dataCategory>
+            <dataCategory>
+                <label>WebDAV</label>
+                <name>WebDAV</name>
+            </dataCategory>
+            <label>Store Design &amp; Content</label>
+            <name>Store_Design_Content</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Search Engine Optimization</label>
+                <name>Search_Engine_Optimization</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Promotions</label>
+                <name>Promotions</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Social Media</label>
+                <name>Social_Media</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Email Marketing</label>
+                <name>Email_Marketing</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Multi-Channel Marketing</label>
+                <name>Multi_Channel_Marketing</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Google Trusted Stores</label>
+                <name>Google_Trusted_Stores</name>
+            </dataCategory>
+            <label>Marketing Your Store</label>
+            <name>Marketing_Your_Store</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Billing &amp; Account</label>
+            <name>Billing_Account</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Community</label>
+            <name>Community</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Launch Store</label>
+                <name>Launch_Store</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Manage Store</label>
+                <name>Manage_Store</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Grow Store</label>
+                <name>Grow_Store</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Build Loyalty</label>
+                <name>Build_Loyalty</name>
+            </dataCategory>
+            <label>BCU</label>
+            <name>BCU</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>Public</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

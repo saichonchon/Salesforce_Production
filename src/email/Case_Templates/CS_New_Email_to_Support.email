@@ -1,0 +1,19 @@
+Hello {!Contact.FirstName}{!Case.Lead_First_Name__c},
+
+In order to improve our overall responsiveness and increase Support efficiency, BigCommerce Support is streamlining its case submission process. As of October 13th 2013, we no longer accept direct support requests sent to: support@bigcommerce.com . 
+ 
+To log a case:
+1)    Visit http://support.bigcommerce.com and click the link Submit a Ticket
+2)    Fill in a valid store BigCommerce URL and Support Pin (What is my Support Pin and Where do I find it?)
+3)    Complete required information and click Submit Case
+
+Or you can use our Live Chat option also located on http://support.bigcommerce.com
+
+By using this channel, you ensure the case will be properly tied to your store and account, allowing us to respond more efficiently and resolve your issue more quickly.   We are making this change because email case submissions typically lack the detailed information we need to troubleshoot the issue or associate it with the proper store, which causes resolution delays.
+ 
+If you're emailing about an existing case, please reply to one of our original notifications.
+
+Thanks,
+Your Friendly Support Team
+
+{!Case.E2CP__Case_Thread_Id__c}

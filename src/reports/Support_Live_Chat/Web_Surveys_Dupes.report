@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>RowCount * 5</calculatedFormula>
+        <datatype>number</datatype>
+        <description>x5</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Weighted Total</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_30775879</developerName>
+        <masterLabel>Age in Days</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>AGE</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>1</to>
+            </sourceValues>
+            <value>&lt;= 1 Day</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>1</from>
+                <to>2</to>
+            </sourceValues>
+            <value>2 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>2</from>
+                <to>3</to>
+            </sourceValues>
+            <value>3 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>3</from>
+                <to>7</to>
+            </sourceValues>
+            <value>4-7 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>7</from>
+            </sourceValues>
+            <value>&gt; 7 Days</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>Donut</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>false</expandOthers>
+        <groupingColumn>STATUS</groupingColumn>
+        <legendPosition>Bottom</legendPosition>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>true</showTotal>
+        <showValues>true</showValues>
+        <size>Small</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Case.Survey_Sent__c</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>ORIGIN</field>
+    </columns>
+    <columns>
+        <field>Case.Bigcommerce_Plan__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATE</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Case.Client_Success</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LAST_UPDATE_BY</column>
+            <operator>notEqual</operator>
+            <value>Andrew King,Brianna Lewis,Chris Hall,API User,Default Admin User,Adam Ferenzi,Thomas Blahnik,Greg Ellis,John O&apos;Brien,Lauren Clevenger,Fritz Stegmann,Evan Peterson,John Hebron,Brian Silvey,Garrett Cluff,Jason Zamora,Steve Bownds,Patrick Puente,Cristy Carpenter,Chas Wilson,Julio Sevilla,Quoc Dang,Rory Regnell,Abbey Parker,Foy Howard,Lauren Gettler,Chris Beal,David Gardner,Kit Gulick,Danielle Canterberry,Warren Kleinman,Christopher Partanen,Cortni Keaveney,Tyler Pouchot,David Enriquez,Nikita Puzanenko,Brian Davenport,Dustin Shipley,Brittani Scott,Blake Boykin,Eric Roiz,Sasha Akridge,Brian Jones,Matthew Leach,Matt Houck,Mary Stanish,Jeff Borchman,Laurie Zapinski,Timothy Azark,Pepe Pulido,Derek Donovan,Sean Mercer,Phillip Estrada II,Jeff Nihlean,Ian Irvin,Ted York,Nestor Islas,Dmitrii Khrunov,Fred Dobson,Ray Vaccaro,Ariana Lloyd,Brian Miller,Gregory Bahl,Lucian Villasenor,Jacob Scott,Joseph Alcorn,Tanner Johnson,Joshua Seals,Jimmiek Rankin,Willie Kinsey,Eric Her,Jose Flores</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <operator>equals</operator>
+            <value>Pending Acceptance,Closed,Waiting on Client</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <operator>equals</operator>
+            <value>Web</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LAST_UPDATE_BY</column>
+            <operator>notEqual</operator>
+            <value>Christie Draper,Christopher Beal,Corey Nihlean,Maggie Frederick,Kaitlyn McCormick,Robert Baker,Josh Popperwell,Kade Reed,Dan Rathke,Todd Wallace,Michael Sparks,Jake Smith,Kelly Lena,Dante Munoz,Guillermo Velez,Brad Mitchell</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>LAST_UPDATE_BY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>STATUS</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Web Cases Worked and Survey Attachment</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_UPDATEONLY</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
+    </timeFrameFilter>
+</Report>

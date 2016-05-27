@@ -1,0 +1,3081 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>API_Plan_Ids</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>API Plan Ids</shortDescription>
+        <value>&apos;65&apos;, &apos;66&apos;, &apos;90&apos;</value>
+    </labels>
+    <labels>
+        <fullName>API_User_Profile</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>API User Profile</shortDescription>
+        <value>00e30000001UsAzAAK</value>
+    </labels>
+    <labels>
+        <fullName>Account_Default_Owner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account Default Owner</shortDescription>
+        <value>005a000000AsxToAAJ</value>
+    </labels>
+    <labels>
+        <fullName>Account_Type_Client</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account Type Client</shortDescription>
+        <value>Client</value>
+    </labels>
+    <labels>
+        <fullName>Account_Type_Prospect</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account Type Prospect</shortDescription>
+        <value>Prospect</value>
+    </labels>
+    <labels>
+        <fullName>Acquisition_Sales</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Acquisition Sales</shortDescription>
+        <value>Acquisition Sales</value>
+    </labels>
+    <labels>
+        <fullName>Admin_Profiles</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Admin Profile Ids</shortDescription>
+        <value>00e30000001UsAz /*API User */ || 
+00e30000001hS8e /*Sys Admin */ || 
+00e13000000jUkm /* Default Admin Profile */ ||
+00e13000000jUUU /* Sys Admin Contractor */</value>
+    </labels>
+    <labels>
+        <fullName>BCT_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BigCommerceTeam Id</shortDescription>
+        <value>005a000000AsxToAAJ</value>
+    </labels>
+    <labels>
+        <fullName>Bad_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bad Email</shortDescription>
+        <value>&apos;no@no.com&apos;,&apos;n@n.com&apos;,&apos;fake@fake.com&apos;, &apos;email@email.com&apos;, &apos;b@b.com&apos;, &apos;bad@bad.com&apos;</value>
+    </labels>
+    <labels>
+        <fullName>Batch_Lead_Convert_Query</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Batch Lead Convert Query</shortDescription>
+        <value>IsTrial__c = true AND MBAPartnerID__c != &apos;&apos; AND Account__c = null AND Status__c = &apos;Active&apos; and Owner.Name = &apos;Evan Smith&apos;  limit 1</value>
+    </labels>
+    <labels>
+        <fullName>BeSureToExploreTheSampleProject</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Be sure to explore the sample project, &quot;HOWTO: Get Started with Milestones PM&quot;.</shortDescription>
+        <value>Be sure to explore the sample project, &quot;HOWTO: Get Started with Milestones PM&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>BigCommerce_PriceBook</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BigCommerce PriceBook</shortDescription>
+        <value>01sa0000000VkAJ</value>
+    </labels>
+    <labels>
+        <fullName>CS_Record_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Record Type</shortDescription>
+        <value>012a0000001NXkL</value>
+    </labels>
+    <labels>
+        <fullName>Campaign_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Campaign Name</shortDescription>
+        <value>Yahoo 4/30/14</value>
+    </labels>
+    <labels>
+        <fullName>ClickHere</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Click Here</shortDescription>
+        <value>Click Here</value>
+    </labels>
+    <labels>
+        <fullName>ClickHereToInitializeThisApp</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Click here to initialize this app</shortDescription>
+        <value>Click here to initialize this app</value>
+    </labels>
+    <labels>
+        <fullName>Client_Success_Rep</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Client Success Rep</shortDescription>
+        <value>Client Success Rep</value>
+    </labels>
+    <labels>
+        <fullName>Commissions_Month</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Commissions Month</shortDescription>
+        <value>Current</value>
+    </labels>
+    <labels>
+        <fullName>Community</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community</shortDescription>
+        <value>BigCommerce Community</value>
+    </labels>
+    <labels>
+        <fullName>Community_Chatter_Groups</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community Chatter Groups</shortDescription>
+        <value>0F913000000HLTBCA4;0F913000000HLT1CAO</value>
+    </labels>
+    <labels>
+        <fullName>Community_Guest_Profile</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community Guest Profile</shortDescription>
+        <value>00e13000000jTqO</value>
+    </labels>
+    <labels>
+        <fullName>Community_User_Profile</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community User Profile</shortDescription>
+        <value>00e13000000jTqO</value>
+    </labels>
+    <labels>
+        <fullName>Contact_Role</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contact Role</shortDescription>
+        <value>Primary MBA Contact</value>
+    </labels>
+    <labels>
+        <fullName>Custom_Edit_Cases_Profiles</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom Edit Cases Profiles</shortDescription>
+        <value>Client Success Rep, Client Success Rep (Remote), Client Success Rep (Remote) 1 Chat, Client Success Rep No SSO, Client Success Manager no Single Sign on, Client Success Manager, Client Success Rep TEST</value>
+    </labels>
+    <labels>
+        <fullName>Email_Strip_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email Strip Text</shortDescription>
+        <value>*******************************************************************</value>
+    </labels>
+    <labels>
+        <fullName>Email_Strip_Text_2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email Strip Text 2</shortDescription>
+        <value>### Please include your reply above this line ###</value>
+    </labels>
+    <labels>
+        <fullName>English_Countries</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>English Countries</shortDescription>
+        <value>&apos;US&apos; , &apos;USA&apos;, United States&apos;, &apos;CA&apos;, &apos;CAN&apos;, &apos;Canada&apos;, &apos;AU&apos;, &apos;Australia&apos;, &apos;NZ&apos;, &apos;New Zealand&apos;, &apos;GBR&apos;, &apos;United Kingdom&apos;, &apos;ZAF&apos;</value>
+    </labels>
+    <labels>
+        <fullName>ForCommunityAssistance</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>For community assistance with Milestones PM, please visit &lt;a href=&quot;http://succes</shortDescription>
+        <value>For community assistance with Milestones PM, please visit &lt;a href=&quot;http://success.salesforce.com/answers&quot;&gt;Salesforce Answers&lt;/a&gt;.</value>
+    </labels>
+    <labels>
+        <fullName>GA_Client_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GA Client ID</shortDescription>
+        <value>UA-55705032-15</value>
+    </labels>
+    <labels>
+        <fullName>GettingHelp</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Getting Help</shortDescription>
+        <value>Getting Help</value>
+    </labels>
+    <labels>
+        <fullName>Hubspot_API_Key</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Hubspot API Key</shortDescription>
+        <value>ee2e1256-f594-43af-b402-905bc56e9e40</value>
+    </labels>
+    <labels>
+        <fullName>Idea_Community_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Idea Community Id</shortDescription>
+        <value>09a13000000DPEYAA4</value>
+    </labels>
+    <labels>
+        <fullName>ImportantUpper</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>IMPORTANT</shortDescription>
+        <value>IMPORTANT</value>
+    </labels>
+    <labels>
+        <fullName>Inbound_Sales</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Inbound Sales</shortDescription>
+        <value>Sales Development - Inbound SDR</value>
+    </labels>
+    <labels>
+        <fullName>InitializationComplete</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Initialization Complete!</shortDescription>
+        <value>Initialization Complete!</value>
+    </labels>
+    <labels>
+        <fullName>InitializeYourConfiguration</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Initialize your configuration using the button below.</shortDescription>
+        <value>Initialize your configuration using the button below.</value>
+    </labels>
+    <labels>
+        <fullName>Jira_Agent_Profile</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Jira Agent Profile</shortDescription>
+        <value>API User</value>
+    </labels>
+    <labels>
+        <fullName>Lead_Acq_Owner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Lead Acq Owner</shortDescription>
+        <value>00Ga00000039qG7</value>
+    </labels>
+    <labels>
+        <fullName>Lead_Default_Owner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Lead Default Owner</shortDescription>
+        <value>005a000000AsxToAAJ</value>
+    </labels>
+    <labels>
+        <fullName>Lead_PRM_Owner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Lead PRM Owner</shortDescription>
+        <value>0051300000BVk5s</value>
+    </labels>
+    <labels>
+        <fullName>LearnMore</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>&lt;a href=&quot;http://blogs.developerforce.com/labs/2011/08/howto-contribute-to-milest</shortDescription>
+        <value>&lt;a href=&quot;http://blogs.developerforce.com/labs/2011/08/howto-contribute-to-milestones-pm-code-not-required-opensource.html&quot;&gt;Learn more&lt;/a&gt;.</value>
+    </labels>
+    <labels>
+        <fullName>Marketing_Test_Group</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Marketing Test Group</shortDescription>
+        <value>Marketing Test Group</value>
+    </labels>
+    <labels>
+        <fullName>Marketing_Test_Number</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Marketing Test Number</shortDescription>
+        <value>999</value>
+    </labels>
+    <labels>
+        <fullName>Marketing_Test_Queue</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Marketing Team User</shortDescription>
+        <value>0051300000BTCykAAH</value>
+    </labels>
+    <labels>
+        <fullName>Migration_Case_Queue</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Migration Case Queue</shortDescription>
+        <value>00Ga000000454Nw</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ALiasNotFound</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ALiasNotFound</shortDescription>
+        <value>The alias provided in subject line did not match a milestone alias in Salesforce.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_AllItems</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AllItems</shortDescription>
+        <value>All Items</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_AllOpenTasks</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AllOpenTasks</shortDescription>
+        <value>All Open Tasks</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_AnErrorHasOcurred</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AnErrorHasOcurred</shortDescription>
+        <value>An error has ocurred:</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Back</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Back</shortDescription>
+        <value>Back</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_BlockedTasks</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Blocked Tasks</shortDescription>
+        <value>Blocked Tasks</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Blocked_Tasks</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Blocked_Tasks</shortDescription>
+        <value>Blocked Tasks</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Calendar</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Calendar</shortDescription>
+        <value>Calendar</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_CalendarLegend</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CalendarLegend</shortDescription>
+        <value>Calendar Legend</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Cancel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_CheckActive</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Check &quot;Active&quot;</shortDescription>
+        <value>Check &quot;Active&quot;</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ClickNewEmailService</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Click &quot;New Email Service&quot;.</shortDescription>
+        <value>Click &quot;New Email Service&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ClickSaveAndNewEmailAddress</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Click &quot;Save and New Email Address&quot;.</shortDescription>
+        <value>Click &quot;Save and New Email Address&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ContentIsNotAllowedInProlog</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Content is not allowed in prolog.</shortDescription>
+        <value>Content is not allowed in prolog.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_CurrentExport</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CurrentExport</shortDescription>
+        <value>. Current export would be $1 characters long. Please edit your project and try again</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_DidNotMatch</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DidNotMatch</shortDescription>
+        <value>) did not match any milestone.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_EnterAcommand</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>EnterAcommand</shortDescription>
+        <value>Enter a command in the form &apos;alias --- description&apos;</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Expenses</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Expenses</shortDescription>
+        <value>Expenses</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Filter</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Filter</shortDescription>
+        <value>Filter</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_FilterCalendarBy</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FilterCalendarBy</shortDescription>
+        <value>Filter Calendar By</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_FilterProjectBy</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Milestone1_FilterProjectBy</shortDescription>
+        <value>Filter Project By</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Friday</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Friday</shortDescription>
+        <value>Friday</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_FromUsersNotFound</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FromUsersNotFound</shortDescription>
+        <value>The email sender did not match a user in Salesforce.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_FullMonth</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Full Month</shortDescription>
+        <value>Full Month</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_FullView</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FullView</shortDescription>
+        <value>[Full View]</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_GettingStarted</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Getting Started</shortDescription>
+        <value>Getting Started</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_GiveEmailServiceName</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Give a Email Service Name &quot;Email To Milestone Task&quot;.</shortDescription>
+        <value>Give a Email Service Name &quot;Email To Milestone Task&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_GoToSetupDevelopEmailServices</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Go to Setup -&gt; Develop -&gt; Email Services</shortDescription>
+        <value>Go to Setup -&gt; Develop -&gt; Email Services</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Import</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Import</shortDescription>
+        <value>Import</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ImportFailed</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Import Failed -- Milestone was unable to import your file.</shortDescription>
+        <value>Import Failed -- Milestone was unable to import your file.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ImportLocalTemplateXML</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ImportLocalTemplateXML</shortDescription>
+        <value>Import Local Template XML</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ImportTemplate</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Import Template</shortDescription>
+        <value>Import Template</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ImportTemplateXML</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ImportTemplateXML</shortDescription>
+        <value>Import Template XML from My Personal Documents</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_InactiveUsersError</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Milestone1_InactiveUsersError</shortDescription>
+        <value>Clone was not successful because one or more records belong to inactive users.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_IncompleteTasksByPriority</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Incomplete Tasks By Priority</shortDescription>
+        <value>Incomplete Tasks By Priority</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_IncompleteTasksByProjects</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Incomplete Tasks By Projects</shortDescription>
+        <value>Incomplete Tasks By Projects</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_InsufficientPrivileges</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Insufficient privileges to access project.</shortDescription>
+        <value>Insufficient privileges to access project.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_InsufficientPrivilegesToAccessParentMilestone</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Insufficient privileges to access parent milestone.</shortDescription>
+        <value>Insufficient privileges to access parent milestone.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_InvalidName</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>InvalidName</shortDescription>
+        <value>&apos;Invalid name (length cannot be zero)&apos;</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_InvalidVersion</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>InvalidVersion</shortDescription>
+        <value>Invalid Version. This project was exported from a different version(</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_LateTasks</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Late Tasks</shortDescription>
+        <value>Late Tasks</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Loading</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Loading</shortDescription>
+        <value>Loading, please wait...</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Logs</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Logs</shortDescription>
+        <value>Logs</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MainMenu</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MainMenu</shortDescription>
+        <value>Milestones PM - Main Menu</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MaximumPer</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MaximumPer</shortDescription>
+        <value>Maximum per user chatter subscription limit has been exceeded</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MilestoneApplicationPostInstallation</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Milestone Application Post Installation Instructions</shortDescription>
+        <value>Milestone Application Post Installation Instructions</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MilestoneClone</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MilestoneClone</shortDescription>
+        <value>Milestone Clone</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MilestoneIsComplete</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Milestone is Complete, the Task can not be moved</shortDescription>
+        <value>Milestone is Complete, the Task can not be moved</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MilestoneRecordsToMove</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MilestoneRecordsToMove</shortDescription>
+        <value>Please return to the previous screen and select one or more Milestone records to move.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MilestoneYouAreAttempting</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>A milestone you are attempting to move is already assigned to this project. Plea</shortDescription>
+        <value>A milestone you are attempting to move is already assigned to this project. Please review your selection and try again.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Milestones</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Milestones</shortDescription>
+        <value>Milestones</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MilestonesCalendar</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MilestonesCalendar</shortDescription>
+        <value>Milestones</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MilestonesOpenTasks</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MilestonesOpenTasks</shortDescription>
+        <value>Milestones &amp; Open Tasks</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MilestonesShouldNotBeMoved</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Milestones should not be moved to different Projects, except through the &quot;Move t</shortDescription>
+        <value>Milestones should not be moved to different Projects, except through the &quot;Move to New Project&quot; button in Milestone list view.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Monday</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Monday</shortDescription>
+        <value>Monday</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveMilestoneCancel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveMilestoneCancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveMilestoneRecordsToMove</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveMilestoneRecordsToMove</shortDescription>
+        <value>Please return to the previous screen and select one or more Milestone records to move.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveMilestoneS</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveMilestoneS</shortDescription>
+        <value>Move Milestone(s)</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveMilestoneSave</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveMilestoneSave</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveMilestone_Cancel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveMilestone_Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveMilestone_Save</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveMilestone_Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveMilestone_s</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveMilestone_s</shortDescription>
+        <value>Move Milestone(s)</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveTaskCancel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveTaskCancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveTaskDetailAttachmentsRecords</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveTaskDetailAttachmentsRecords</shortDescription>
+        <value>One or more of the selected Task records cannot be moved because it has related Time, Expense, or Notes &amp; Attachments records.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveTaskDetailCancel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveTaskDetailCancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveTaskDetailS</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveTaskDetailS</shortDescription>
+        <value>Move Task(s)</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveTaskDetailSave</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveTaskDetailSave</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveTaskDetailTaskRecordsToMove</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveTaskDetailTaskRecordsToMove</shortDescription>
+        <value>Please return to the previous screen and select one or more Task records to move.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveTaskRecordsToMove</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveTaskRecordsToMove</shortDescription>
+        <value>Please return to the previous screen and select one or more Task records to move.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveTaskS</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveTaskS</shortDescription>
+        <value>Move Task(s)</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveTaskSave</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveTaskSave</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MyIncompleteTasks</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>My Incomplete Tasks</shortDescription>
+        <value>My Incomplete Tasks</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MyMilestonesOnly</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MyMilestonesOnly</shortDescription>
+        <value>My Milestones Only</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MyProjectsAndSubProjectItems</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MyProjectsAndSubProjectItems</shortDescription>
+        <value>My Projects And Sub-Project Items</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MyTasks</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MyTasks</shortDescription>
+        <value>My Tasks</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MyTasksOnly</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MyTasksOnly</shortDescription>
+        <value>My Tasks Only</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_NewFieldToReplaceInactiveUsers</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Milestone1_NewFieldToReplaceInactiveUsers</shortDescription>
+        <value>Replace All Inactive Users With</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_NewMilestoneName</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewMilestoneName</shortDescription>
+        <value>New Milestone Name</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_NewProjectName</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewProjectName</shortDescription>
+        <value>New Project Name</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_NoImportXMLFilesSelected</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No import XML files selected. Please select an XML file to import.</shortDescription>
+        <value>No import XML files selected. Please select an XML file to import.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_NoProjects</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No projects!</shortDescription>
+        <value>No projects!</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_OrganizationsVersion</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>OrganizationsVersion</shortDescription>
+        <value>) than this organizations version(</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_OverdueTasks</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>OverdueTasks</shortDescription>
+        <value>Overdue Tasks</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_PleaseUseFormat</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PleaseUseFormat</shortDescription>
+        <value>The line command was incorrect. Please use format &lt;Alias&gt; --- &lt;DESCRIPTION&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ProjectCannotBeNull</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ProjectCannotBeNull</shortDescription>
+        <value>The Project cannot be null. This is a critical error during import of XML. Please try exporting and re-importing.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ProjectClone</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ProjectClone</shortDescription>
+        <value>Project Clone</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ProjectDetail</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ProjectDetail</shortDescription>
+        <value>Project Detail</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ProjectIsTooLarge</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ProjectIsTooLarge</shortDescription>
+        <value>Project is too large to export. Total characters must be less than</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ProjectXML</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ProjectXML</shortDescription>
+        <value>Project XML Export Process</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ProjectXMLImport</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ProjectXMLImport</shortDescription>
+        <value>Project XML Import Process</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Projects</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Projects</shortDescription>
+        <value>Projects</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ProjectsCalendar</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ProjectsCalendar</shortDescription>
+        <value>Projects</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ProjectsMustBeExported</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ProjectsMustBeExported</shortDescription>
+        <value>). Projects must be exported and imported in same version.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_QuickSearch</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>QuickSearch</shortDescription>
+        <value>Quick Search - Project Components</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_RegexFwdRe</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RegexFwdRe</shortDescription>
+        <value>^[ ]*((([Ff][Ww][Dd])|([Rr][Ee]))[ ]*:[ ]*)*</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_SalesforceDMLError</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SalesforceDMLError</shortDescription>
+        <value>There was a Salesforce DML Error:</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Saturday</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Saturday</shortDescription>
+        <value>Saturday</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Save</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_SelectTheApexClass</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select the Apex Class &quot;Milestone1_Email_Handler&quot;.</shortDescription>
+        <value>Select the Apex Class &quot;Milestone1_Email_Handler&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_SetAcceptAttachmentsToAll</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Set &quot;Accept Attachments&quot; to &quot;All&quot;.</shortDescription>
+        <value>Set &quot;Accept Attachments&quot; to &quot;All&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_SetAcceptEmailFromToAllEmail</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Set &quot;Accept Email From&quot; to &quot;All Email Addresses&quot;.</shortDescription>
+        <value>Set &quot;Accept Email From&quot; to &quot;All Email Addresses&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_SetAllFailureResponseOptions</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Set All Failure Response options to &apos;Bounce Message&apos;.</shortDescription>
+        <value>Set All Failure Response options to &apos;Bounce Message&apos;.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_SettingsAlreadyExistNoChanges</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Settings already exist.  No changes made.</shortDescription>
+        <value>Settings already exist.  No changes made.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_SetupNewEmailAddress</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Setup A New Email Address.</shortDescription>
+        <value>Setup A New Email Address.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_SubMilestonesCanOnlyGoOneLevelDeep</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Sub-milestones can only go one level deep. Please select a top-level milestone a</shortDescription>
+        <value>Sub-milestones can only go one level deep. Please select a top-level milestone as this record\&apos;s parent milestone.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_SubjectMissing</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SubjectMissing</shortDescription>
+        <value>The subject line did is empty.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_SubjectMissingAlias</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SubjectMissingAlias</shortDescription>
+        <value>The subject line did not contain a milestone alias.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_SubjectMissingTask</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SubjectMissingTask</shortDescription>
+        <value>The subject line did not contain a task.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Submit</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Submit</shortDescription>
+        <value>Submit</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Summary</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Summary</shortDescription>
+        <value>Summary</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_SummarySearch</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SummarySearch</shortDescription>
+        <value>Search</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Sunday</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Sunday</shortDescription>
+        <value>Sunday</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_TaskNotFound</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TaskNotFound</shortDescription>
+        <value>A matching task was not found for this Email thread in Salesforce. Salesforce was unable to attach this email to the notes for a task.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_TaskYouAreAttempting</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>A task you are attempting to move is already assigned to this milestone. Please</shortDescription>
+        <value>A task you are attempting to move is already assigned to this milestone. Please review your selection and try again.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Tasks</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Tasks</shortDescription>
+        <value>Tasks</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_TasksCalendar</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TasksCalendar</shortDescription>
+        <value>Tasks</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_TheProjectCannotBeNull</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>The Project cannot be null. This is a critical error during import of XML. Pleas</shortDescription>
+        <value>The Project cannot be null. This is a critical error during import of XML. Please try exporting and re-importing.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_TheXMLFileForYourProjectHasBeenSuccessfully</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>The XML file for your project has been successfully created, and can be found in</shortDescription>
+        <value>The XML file for your project has been successfully created, and can be found in the My Personal Documents folder.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_TheXMLFileIsTooLarge</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>The XML file is too large.</shortDescription>
+        <value>The XML file is too large.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Thealias</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Thealias</shortDescription>
+        <value>The alias(</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Thursday</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Thursday</shortDescription>
+        <value>Thursday</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Times</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Times</shortDescription>
+        <value>Times</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ToConfigureTheEmail</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>To configure the Email To Task Service</shortDescription>
+        <value>To configure the Email To Task Service</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ToUsersNotFound</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ToUsersNotFound</shortDescription>
+        <value>The list of recipients did not have any matches to a user in Salesforce.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ToViewXML_FirstHalf</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Click here</shortDescription>
+        <value>Click here</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ToViewXML_SecondHalf</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>to view the XML file in the My Personal Documents folder.</shortDescription>
+        <value>to view the XML file in the My Personal Documents folder.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ToYourProject_FirstHalf</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Click here</shortDescription>
+        <value>Click here</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ToYourProject_SecondHalf</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>to return to your project.</shortDescription>
+        <value>to return to your project.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_TopLevelMilestoneHasPredecessor</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Top Level Milestone has predecessor and cannot be moved.  Remove that predecesso</shortDescription>
+        <value>Top Level Milestone has predecessor and cannot be moved.  Remove that predecessor and try again.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_TopLevelMilestoneHasSuccessors</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Top Level Milestone has successors and cannot be moved.  Redirect those successo</shortDescription>
+        <value>Top Level Milestone has successors and cannot be moved.  Redirect those successors and try again.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Tuesday</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Tuesday</shortDescription>
+        <value>Tuesday</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_UsersNotFound</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UsersNotFound</shortDescription>
+        <value>The User seaches for Assignment (To Address) and/or Ownership (From Address) did not find matches to users in Salesforce.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Wednesday</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Wednesday</shortDescription>
+        <value>Wednesday</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_YourProjectCouldNotSuccessfully</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Your project could not successfully be exported to an XML document.</shortDescription>
+        <value>Your project could not successfully be exported to an XML document.</value>
+    </labels>
+    <labels>
+        <fullName>MilestonesPMISOpenSource</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Milestones PM is Open Source software.</shortDescription>
+        <value>Milestones PM is Open Source software.</value>
+    </labels>
+    <labels>
+        <fullName>MilestonesPMIsUnsupported</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Milestones PM is unsupported.</shortDescription>
+        <value>Milestones PM is unsupported.</value>
+    </labels>
+    <labels>
+        <fullName>Network_Scope</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Network Scope</shortDescription>
+        <value>0DB13000000Gmw5GAC</value>
+    </labels>
+    <labels>
+        <fullName>NextSteps</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Next Steps</shortDescription>
+        <value>Next Steps</value>
+    </labels>
+    <labels>
+        <fullName>Opp_RecordType_Store_Purchase_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opp RecordType Store Purchase ID</shortDescription>
+        <value>01213000000AUtx</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_ClosedLost</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity ClosedLost</shortDescription>
+        <value>Auto Closed Lost</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_ContactRole_Primary_MBA_Contact</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity ContactRole Primary MBA Contact</shortDescription>
+        <value>Primary MBA Contact</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Owner_Query</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Owner Query</shortDescription>
+        <value>AND RecordTypeId = &apos;01213000000AUtxAAG&apos; 
+and CreatedDate &lt; LAST_N_DAYS:180
+and Owner_Team__c = &apos;Outbound Sales&apos; AND Status__c = &apos;Active&apos;</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_RecordType_Trial</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity RecordType Trial</shortDescription>
+        <value>Trial</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Recordtype_App</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Recordtype App</shortDescription>
+        <value>App</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Recordtype_OneTimeProduct</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Recordtype OneTimeProduct</shortDescription>
+        <value>One-Time Product</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Recordtype_StorePurchase</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Recordtype Store Purchase</shortDescription>
+        <value>Store Purchase</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Recordtype_Upgrade</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Recordtype Upgrade</shortDescription>
+        <value>Upgrade Store</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Stage_Cancelled</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Stage Cancelled</shortDescription>
+        <value>Cancelled</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Stage_ClosedWon</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Stage ClosedWon</shortDescription>
+        <value>Closed Won</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Stage_Expired</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity_Stage_Expired</shortDescription>
+        <value>Expired</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Stage_Paid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Stage Paid</shortDescription>
+        <value>Paid</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Stage_Pending</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Stage Pending</shortDescription>
+        <value>Pending</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Stage_Purchased</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity_Stage_Purchased</shortDescription>
+        <value>Purchased</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Stage_Suspended</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Stage Suspended</shortDescription>
+        <value>Suspended</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Stage_Terminated</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Stage Terminated</shortDescription>
+        <value>Terminated</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Stage_Trial</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Stage Trial</shortDescription>
+        <value>Trial</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Stage_TrialExpired</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity_Stage_TrialExpired</shortDescription>
+        <value>Trial Expired</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Status_Active</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Status Active</shortDescription>
+        <value>Active</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Status_Cancelled</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Status Cancelled</shortDescription>
+        <value>Cancelled</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Status_Expired</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Status Expired</shortDescription>
+        <value>Expired</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Status_Pending</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Status Pending</shortDescription>
+        <value>Pending</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Status_Suspended</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Status Suspended</shortDescription>
+        <value>Suspended</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Trial_FirstStage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Trial FirstStage</shortDescription>
+        <value>Qualify</value>
+    </labels>
+    <labels>
+        <fullName>Outbound_Sales</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Outbound Sales</shortDescription>
+        <value>Sales Development - Outbound SDR</value>
+    </labels>
+    <labels>
+        <fullName>Outbound_Sales_I</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Outbound Sales I</shortDescription>
+        <value>Outbound Direct Sales</value>
+    </labels>
+    <labels>
+        <fullName>Outbound_Sales_II</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Outbound Sales II</shortDescription>
+        <value>Outbound Direct Sales</value>
+    </labels>
+    <labels>
+        <fullName>PKB2M_aTypeConfig</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Article Type configuration</shortDescription>
+        <value>Article Type configuration</value>
+    </labels>
+    <labels>
+        <fullName>PKB2M_about_you</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please fill out these fields:</shortDescription>
+        <value>Please fill out these fields:</value>
+    </labels>
+    <labels>
+        <fullName>PKB2M_alreadyExist</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Knowledge Article type selected already exist.</shortDescription>
+        <value>Knowledge Article type selected already exist.</value>
+    </labels>
+    <labels>
+        <fullName>PKB2M_availableKas</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Available KAs</shortDescription>
+        <value>Available KAs</value>
+    </labels>
+    <labels>
+        <fullName>PKB2M_clickToAddMoreItems</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Click &quot;Add Knowledge Article&quot; to add items.</shortDescription>
+        <value>Click &quot;Add Knowledge Article&quot; to add items.</value>
+    </labels>
+    <labels>
+        <fullName>PKB2M_config_add_kav</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2M: Add Knowledge Article</shortDescription>
+        <value>Add Knowledge Article</value>
+    </labels>
+    <labels>
+        <fullName>PKB2M_config_critical_error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Critical error</shortDescription>
+        <value>Critical error found in custom settings.</value>
+    </labels>
+    <labels>
+        <fullName>PKB2M_config_cti_pause</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2M: cti pause</shortDescription>
+        <value>Pause</value>
+    </labels>
+    <labels>
+        <fullName>PKB2M_config_cti_wait</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2M: cti wait</shortDescription>
+        <value>Wait</value>
+    </labels>
+    <labels>
+        <fullName>PKB2M_config_current_kav</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2M: Current Knowledge Article</shortDescription>
+        <value>Current Knowledge Articles</value>
+    </labels>
+    <labels>
+        <fullName>PKB2M_config_data_categories</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2M: Data Categories</shortDescription>
+        <value>Data Categories</value>
+    </labels>
+    <labels>
+        <fullName>PKB2M_config_general_setup</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2M: general setup</shortDescription>
+        <value>General Setup</value>
+    </labels>
+    <labels>
+        <fullName>PKB2M_config_live_agent</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2M : live agent</shortDescription>
+        <value>Live Agent</value>
+    </labels>
+    <labels>
+        <fullName>PKB2M_config_phone_call</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2M: phone calls</shortDescription>
+        <value>Phone calls</value>
+    </labels>
+    <labels>
+        <fullName>PKB2M_fileUploadProgress</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Uploading the selected file</shortDescription>
+        <value>Uploading the selected file.</value>
+    </labels>
+    <labels>
+        <fullName>PKB2M_i_am</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>I am</shortDescription>
+        <value>I am</value>
+    </labels>
+    <labels>
+        <fullName>PKB2M_out_of_business_hours</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2 outside business hours</shortDescription>
+        <value>Unfortunately you are outside business hours but your request has been submitted.</value>
+    </labels>
+    <labels>
+        <fullName>PKB2M_selectAtLeastOneField</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>You must select at least one field.</shortDescription>
+        <value>You must select at least one field.</value>
+    </labels>
+    <labels>
+        <fullName>PKB2M_selectedFields</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Selected fields</shortDescription>
+        <value>Selected fields</value>
+    </labels>
+    <labels>
+        <fullName>PKB2M_selectedKaFields</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Selected KA fields</shortDescription>
+        <value>Selected KA fields</value>
+    </labels>
+    <labels>
+        <fullName>PKB2M_toManyValues</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>You have selected to many values, please remove some of them.</shortDescription>
+        <value>You have selected to many values, please remove some of them.</value>
+    </labels>
+    <labels>
+        <fullName>PKB2M_uSure</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Are you sure?</shortDescription>
+        <value>Are you sure?</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_All_Fields_Required</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: All Fields Required</shortDescription>
+        <value>All fields are required.</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Answers_Might_Help</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Answers Might Help</shortDescription>
+        <value>These answers might help immediately</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Ask_Button</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Ask Button</shortDescription>
+        <value>Ask</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Back_To_Results</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Back To Results</shortDescription>
+        <value>Back to search results</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Back_To_Search_Page</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Back To Search Page</shortDescription>
+        <value>Back to search page</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_CallNow</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Call Now</shortDescription>
+        <value>Call Now</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Call_Button</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Call</shortDescription>
+        <value>Call</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Cancel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Case_Error_Admin_Notification</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Case Error Admin Notification</shortDescription>
+        <value>The Public Knowledge Base 2 (PKB2) package that is installed in your org has encountered an issue. A Case record recently submitted by a customer was unable to be saved to the org&apos;s database. This can happen when a validation rule or some other constraint is introduced on the Case object.
+
+The creation of Case records is a core part of the PKB2 functionality, so this may be an indication of an ongoing problem.
+
+For troubleshooting purposes, below is the debug information from the Apex code that encountered the error.</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Case_Submit_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Case Submit Error</shortDescription>
+        <value>There was a problem submitting your request. Please try again later.</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Category_Group_Label_1</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: Category Group Label 1</shortDescription>
+        <value>&lt;Group 1 Label&gt;</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Category_Group_Label_2</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: Category Group Label 2</shortDescription>
+        <value>&lt;Group 2 Label&gt;</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Category_Group_Label_3</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: Category Group Label 3</shortDescription>
+        <value>&lt;Group 3 Label&gt;</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Category_MGroup_Label_1</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: Category Group Label 1</shortDescription>
+        <value>&lt;Group 1 Label&gt;</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Category_MGroup_Label_2</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: Category Group Label 2</shortDescription>
+        <value>&lt;Group 2 Label&gt;</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Category_MGroup_Label_3</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: Category Group Label 3</shortDescription>
+        <value>&lt;Group 3 Label&gt;</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_ChatNow</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Chat Now</shortDescription>
+        <value>Chat Now</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_ChatOff</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Offline</shortDescription>
+        <value>Offline</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Chat_Button</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Chat</shortDescription>
+        <value>Chat</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Chat_Online</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pkb2 : Chat online</shortDescription>
+        <value>Chat Online</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Close</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2 Close</shortDescription>
+        <value>Close</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Close_Window</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2 Close Window</shortDescription>
+        <value>close window</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Complete_Request</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Complete Request</shortDescription>
+        <value>To complete your request, please fill out these fields.</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Contact_Us</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Contact Us</shortDescription>
+        <value>Contact Us</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Contact_Us_Link_Prompt</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Contact Us Link Prompt</shortDescription>
+        <value>Can&apos;t find what you need?</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Contact_Us_Prompt</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Contact Us Prompt</shortDescription>
+        <value>Type your message here.</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Create_Settings</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Create Settings</shortDescription>
+        <value>Create New PKB Settings</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Done</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: Done</shortDescription>
+        <value>Done</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Email</shortDescription>
+        <value>Email</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Email_Article</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Email Article</shortDescription>
+        <value>Email a link to this article</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Email_Invalid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Email Invalid</shortDescription>
+        <value>The email address you entered is invalid.</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Error_Admin_Notification_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Error Admin Notification Email</shortDescription>
+        <value>The Public Knowledge Base 2 (PKB2) package that is installed in your org has encountered an issue. The package was set to create an Account and Contact when a customer submits a question, but one of those transactions recently failed. This can happen when a validation rule or some other constraint is introduced on those objects.
+
+For troubleshooting purposes, below is the debug information from the Apex code that encountered the error.
+
+Also, the package has changed the setting to prevent the creation of Contacts and Accounts. When the issue is resolved, the setting can be changed back.</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Featured_Articles</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Featured Articles</shortDescription>
+        <value>Featured Articles</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Feedback</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Feedback</shortDescription>
+        <value>Feedback</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Feedback_Appreciated</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Feedback Appreciated</shortDescription>
+        <value>Feedback</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Feedback_Characters_Remaining</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Feedback Characters Remaining</shortDescription>
+        <value>Characters Remaining</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Filter_Options</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: Filter Options</shortDescription>
+        <value>Filter Options</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Filters</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Filters</shortDescription>
+        <value>Filters</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_First_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: First Name</shortDescription>
+        <value>First Name</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Get_Back_Soon</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: We will get back at you soon</shortDescription>
+        <value>We will get back at you soon.</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_HelpUs_HelpYou</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Help us, help you.</shortDescription>
+        <value>Help us, help you.</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Languages</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: Languages</shortDescription>
+        <value>Languages</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Last_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Last Name</shortDescription>
+        <value>Last Name</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_More_Useful</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: More Useful</shortDescription>
+        <value>Please tell us how we can make this article more useful.</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2:  Name</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Narrow_Search</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Narrow Search</shortDescription>
+        <value>Narrow Search</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Next_Link</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Next Link</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_No</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: No</shortDescription>
+        <value>No</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_No_Filter</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: No Filter</shortDescription>
+        <value>No Filter</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_No_Found_Answer</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: No Found Answer</shortDescription>
+        <value>No, I found the answer</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_No_Results</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: No Results</shortDescription>
+        <value>No luck, your search returned no results.</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_No_Settings_Yet</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: No Settings Yet</shortDescription>
+        <value>It appears that no PKB custom settings have been created yet.</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_None</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: None</shortDescription>
+        <value>None</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Popular_Articles</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Popular Articles</shortDescription>
+        <value>Popular Articles</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Previous_Link</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Previous Link</shortDescription>
+        <value>Previous</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Printable_View</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Printable View</shortDescription>
+        <value>Printable View (New Window)</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Recommended</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Recommended</shortDescription>
+        <value>Recommended</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Related_Articles</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Related Articles</shortDescription>
+        <value>Related Articles</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Request_Submitted</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Request Submitted</shortDescription>
+        <value>Your request has been submitted.</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Request_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Request Type</shortDescription>
+        <value>Request Type</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Reset_Search</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Reset Search</shortDescription>
+        <value>Reset Search</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Search_Button</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Search Button</shortDescription>
+        <value>Search</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Search_Invalid_Characters</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Search Invalid Characters</shortDescription>
+        <value>Your search contains invalid characters.</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Search_Prompt</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Search Prompt</shortDescription>
+        <value>What would you like to know?</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Search_Results</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Search Results</shortDescription>
+        <value>Search Results</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Select_Settings</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Select Settings</shortDescription>
+        <value>Select Settings to Edit</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Send_Button</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Send Button</shortDescription>
+        <value>Send</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Still_Have_Question</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Still Have Question</shortDescription>
+        <value>Still have a question?</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Submit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Submit</shortDescription>
+        <value>Submit</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Subscribe_Article_Feed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Subscribe Article Feed</shortDescription>
+        <value>Subscribe to the RSS feed for this article</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Subscribe_Feed_Results</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Subscribe Feed Results</shortDescription>
+        <value>Subscribe to a feed of the results of your search</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Thanks_For_Feedback</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Thanks For Feedback</shortDescription>
+        <value>Thanks for your feedback!</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Topic</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2:Contact Us  Topic</shortDescription>
+        <value>Request Type</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Tweet_This</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Tweet This</shortDescription>
+        <value>Tweet this!</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Value_Must_Match_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Value Must Match Name</shortDescription>
+        <value>The value of Name must match exactly the API name of the Site you are configuring the settings for.</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Was_Helpful</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Was Helpful</shortDescription>
+        <value>Was this article helpful?</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Within_Category</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Within Category</shortDescription>
+        <value>Within the category or categories</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Yes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Yes</shortDescription>
+        <value>Yes</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_Yes_Submit_Question</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: Yes Submit Question</shortDescription>
+        <value>Yes, submit my question</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_You_Searched_For</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: You Searched For</shortDescription>
+        <value>You searched for</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_find_Helpful_and_you</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2: find Helpful and you</shortDescription>
+        <value>There are NNN people that found this helpful. Do you?</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_help_please</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: Contact Us Help Please</shortDescription>
+        <value>Help Please</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_help_please_call</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Call Us</shortDescription>
+        <value>Call Us</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_help_please_liveAgent</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Chat</shortDescription>
+        <value>Chat</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_how_can_we_help</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: Contact Us placeholder</shortDescription>
+        <value>Please let us know how we can help you</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_js_cannot_read_file</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: JS cannot read File</shortDescription>
+        <value>Could not read file</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_js_error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: JS error</shortDescription>
+        <value>Error</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_js_error_access_denied</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: JS error access denied</shortDescription>
+        <value>Access is denied!</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_js_error_position_unavailable</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: JS error position unavailable</shortDescription>
+        <value>Position is unavailable!</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_js_error_question_empty</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: JS error question empty</shortDescription>
+        <value>Question string can not be empty</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_js_error_question_length</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: JS error question length</shortDescription>
+        <value>Question string must be at most NNN characters long</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_js_geolocation_not_supported</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: JS geolocation not supported</shortDescription>
+        <value>Geolocation is not supported by this browser.</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_js_issues_uploading_file</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: JS issues uploading  File</shortDescription>
+        <value>There had been some issues uploading the file, please try again later.</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_js_only_n_files_supported</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: JS only NNN  files</shortDescription>
+        <value>Only NNN will be uploaded</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_js_search_string_empty</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: JS search string empty</shortDescription>
+        <value>Search string can not be empty</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_js_search_string_length</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: JS search string length</shortDescription>
+        <value>Search string must be at least NNN characters long</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_js_select_file</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: JS select File</shortDescription>
+        <value>Please select a file!</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_js_topic_empty</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: JS topic empty</shortDescription>
+        <value>Topic cannot be empty</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_month_april</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: Month April</shortDescription>
+        <value>Apr</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_month_august</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: Month August</shortDescription>
+        <value>Aug</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_month_december</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: Month December</shortDescription>
+        <value>Dec</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_month_february</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: Month February</shortDescription>
+        <value>Feb</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_month_january</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: Month January</shortDescription>
+        <value>Jan</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_month_july</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: Month July</shortDescription>
+        <value>Jul</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_month_june</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: Month June</shortDescription>
+        <value>Jun</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_month_march</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: Month March</shortDescription>
+        <value>Mar</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_month_may</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: Month May</shortDescription>
+        <value>May</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_month_november</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: Month November</shortDescription>
+        <value>Nov</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_month_october</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: Month October</shortDescription>
+        <value>Oct</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_month_september</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: Month September</shortDescription>
+        <value>Sep</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_no_availanble_liveAgent</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2 : no live agents available</shortDescription>
+        <value>There are no agents available, we will get back at you soon.&lt;br/&gt;click here to close</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_search_to_long</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2_search_to_long</shortDescription>
+        <value>Search string is too long.</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_send_mail</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: Contact Us Send Email</shortDescription>
+        <value>Send Email</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_sugFour</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2_sugFour</shortDescription>
+        <value>Try fewer keywords</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_sugOne</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2_sugOne</shortDescription>
+        <value>Make sure that your filter are set correctly</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_sugThree</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2_sugThree</shortDescription>
+        <value>Try more general keywords</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_sugTwo</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2_sugTwo</shortDescription>
+        <value>Try different Keywords</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_suggestions</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PKB2_suggestions</shortDescription>
+        <value>Suggestions:</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_tellitlikeitis</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Tell it like it is.</shortDescription>
+        <value>Tell it like it is.</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_today</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: Today</shortDescription>
+        <value>today</value>
+    </labels>
+    <labels>
+        <fullName>PKB2_yesterday</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PKB2: Yesterday</shortDescription>
+        <value>yesterday</value>
+    </labels>
+    <labels>
+        <fullName>PS_Queue</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PS Queue</shortDescription>
+        <value>00G13000001gGE5</value>
+    </labels>
+    <labels>
+        <fullName>Partner_Default_Owner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Partner Default Owner</shortDescription>
+        <value>00530000004WaX7</value>
+    </labels>
+    <labels>
+        <fullName>Premium_Sales</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Premium Sales</shortDescription>
+        <value>Enterprise Sales</value>
+    </labels>
+    <labels>
+        <fullName>ProjectSummary_FirstHalf</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Project Summary Page</shortDescription>
+        <value>Project Summary Page</value>
+    </labels>
+    <labels>
+        <fullName>ProjectSummary_SecondHalf</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>to start using Milestones PM.</shortDescription>
+        <value>to start using Milestones PM.</value>
+    </labels>
+    <labels>
+        <fullName>Query_Criteria</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Query Criteria</shortDescription>
+        <value>Limit 10</value>
+    </labels>
+    <labels>
+        <fullName>ROE_AccountActivity_Query</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ROE AccountActivity Query</shortDescription>
+        <value>Order by LastModifiedDate desc</value>
+    </labels>
+    <labels>
+        <fullName>ROE_Lead_Criteria</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ROE Lead Criteria</shortDescription>
+        <value>And (Owner_Team__c = &apos;Small Business Sales Team&apos; or Owner_Team__c = &apos;Sales Development - Inbound SDR&apos; or Owner_Team__c =&apos;Sales Development - Outbound SDR&apos;  or Owner_Team__c = &apos;Midmarket Enterprise Sales&apos;)</value>
+    </labels>
+    <labels>
+        <fullName>ROE_Purchase_Query</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ROE Purchase Query</shortDescription>
+        <value>AND PurchaseDate__c &lt; LAST_N_DAYS:90
+AND Status__c = &apos;Active&apos;
+ANd (Owner_Team__c = &apos;Small Business Sales Team&apos; or Owner_Team__c = &apos;Sales Development - Inbound SDR&apos; or Owner_Team__c =&apos;Sales Development - Outbound SDR&apos; )</value>
+    </labels>
+    <labels>
+        <fullName>ROE_Team_1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ROE Team 1</shortDescription>
+        <value>Small Business Sales Team</value>
+    </labels>
+    <labels>
+        <fullName>ROE_Team_2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ROE Team 2</shortDescription>
+        <value>Sales Development - Inbound SDR</value>
+    </labels>
+    <labels>
+        <fullName>ROE_Team_3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ROE Team 3</shortDescription>
+        <value>Sales Development - Outbound SDR</value>
+    </labels>
+    <labels>
+        <fullName>ROE_Team_4</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ROE Team 4</shortDescription>
+        <value>Midmarket Enterprise Sales</value>
+    </labels>
+    <labels>
+        <fullName>ROE_Trial_Query</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ROE Trial Query</shortDescription>
+        <value>AND CreatedDate &lt; LAST_N_DAYS:90 
+AND Status__c = &apos;Active&apos;
+ANd (Owner_Team__c = &apos;Small Business Sales Team&apos; or Owner_Team__c = &apos;Sales Development - Inbound SDR&apos; or Owner_Team__c =&apos;Sales Development - Outbound SDR&apos;  or Owner_Team__c = &apos;Midmarket Enterprise Sales&apos;)</value>
+    </labels>
+    <labels>
+        <fullName>ROE_Upsell_Query</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ROE Upsell Query</shortDescription>
+        <value>AND CreatedDate &lt; LAST_N_DAYS:90 
+AND stageName &lt;&gt; &apos;Closed Won&apos;
+ AND (Owner_Team__c = &apos;Small Business Sales Team&apos; or Owner_Team__c = &apos;Sales Development - Inbound SDR&apos; or Owner_Team__c =&apos;Sales Development - Outbound SDR&apos; )</value>
+    </labels>
+    <labels>
+        <fullName>RV_Account_Owner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RV Account Owner</shortDescription>
+        <value>The Bigcommerce Partner Team</value>
+    </labels>
+    <labels>
+        <fullName>RV_Partner_Account</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RV Partner Account</shortDescription>
+        <value>0011300001k9W6bAAE</value>
+    </labels>
+    <labels>
+        <fullName>SFDC_Errors_ChatGroup</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SFDC Errors ChatGroup</shortDescription>
+        <value>0F9130000008wxn</value>
+    </labels>
+    <labels>
+        <fullName>Sales_Leader_Profile</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sales Leader Profile</shortDescription>
+        <value>00e130000024OSXAA2</value>
+    </labels>
+    <labels>
+        <fullName>Sales_Pricebook</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sales Pricebook</shortDescription>
+        <value>01s13000000Agto</value>
+    </labels>
+    <labels>
+        <fullName>Sales_Rep_Profile</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sales Rep Profile</shortDescription>
+        <value>00e130000024OScAAM</value>
+    </labels>
+    <labels>
+        <fullName>Skip_users</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Skip users</shortDescription>
+        <value>Totango</value>
+    </labels>
+    <labels>
+        <fullName>StartCreatingYourFirstProject</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Start creating your first project.</shortDescription>
+        <value>Start creating your first project.</value>
+    </labels>
+    <labels>
+        <fullName>Support_Escalation_Profiles</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Support Escalation Profiles</shortDescription>
+        <value>Client Success Manager,Client Success Escalation Rep,Sales Leader</value>
+    </labels>
+    <labels>
+        <fullName>System_Admin_Profile</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>System Admin Profile</shortDescription>
+        <value>00e30000001hS8eAAE</value>
+    </labels>
+    <labels>
+        <fullName>TaskLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Task Label</shortDescription>
+        <value>00T1300003RU1bG</value>
+    </labels>
+    <labels>
+        <fullName>The_Bigcommerce_Team</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The Bigcommerce Team ID</shortDescription>
+        <value>005a000000AsxTo</value>
+    </labels>
+    <labels>
+        <fullName>ThisSampleProjectIncludes</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>This sample project includes the remaining configuration steps as well as ideas</shortDescription>
+        <value>This sample project includes the remaining configuration steps as well as ideas on how you can get the most out of Milestones PM.</value>
+    </labels>
+    <labels>
+        <fullName>ToSubmitIdeasOrIssues</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>To submit ideas or issues, please visit &lt;a href=&quot;https://github.com/ForceDotComL</shortDescription>
+        <value>To submit ideas or issues, please visit &lt;a href=&quot;https://github.com/ForceDotComLabs/Milestones-PM&quot;&gt;Milestones PM on Github&lt;/a&gt;.</value>
+    </labels>
+    <labels>
+        <fullName>University_Article_Category_1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>University Article Category 1</shortDescription>
+        <value>Launch_Store</value>
+    </labels>
+    <labels>
+        <fullName>University_Article_Category_2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>University Article Category 2</shortDescription>
+        <value>Manage_Store</value>
+    </labels>
+    <labels>
+        <fullName>University_Article_Category_3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>University Article Category 3</shortDescription>
+        <value>Grow_Store</value>
+    </labels>
+    <labels>
+        <fullName>University_Article_Category_4</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>University Article Category 4</shortDescription>
+        <value>Create_Buyers</value>
+    </labels>
+    <labels>
+        <fullName>UpgradePricebook</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Upgrade Pricebook</shortDescription>
+        <value>01s13000000Ahb1</value>
+    </labels>
+    <labels>
+        <fullName>UpgradeProduct</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Upgrade Product Code</shortDescription>
+        <value>Upgrade</value>
+    </labels>
+    <labels>
+        <fullName>ViewTheGettingStartedProject</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>View the &quot;Getting Started&quot; project created as part of your initial configuration</shortDescription>
+        <value>View the &quot;Getting Started&quot; project created as part of your initial configuration.</value>
+    </labels>
+    <labels>
+        <fullName>WeWelcomeYourIssueReports</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>We welcome your issue reports, ideas, documentation, code tweaks and all other p</shortDescription>
+        <value>We welcome your issue reports, ideas, documentation, code tweaks and all other participation.</value>
+    </labels>
+    <labels>
+        <fullName>WelcomeToMilestonesPM</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Welcome to Milestones PM - Project Management</shortDescription>
+        <value>Welcome to Milestones PM - Project Management</value>
+    </labels>
+    <labels>
+        <fullName>YouCanNowGoTo</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>You can now go to your project summary page to see the sample project we install</shortDescription>
+        <value>You can now go to your project summary page to see the sample project we installed.</value>
+    </labels>
+    <labels>
+        <fullName>YourNextFewSteps</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Your next few steps are easy.</shortDescription>
+        <value>Your next few steps are easy.</value>
+    </labels>
+    <labels>
+        <fullName>Zuora_Base_Products_Pricebook</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Zuora Base Products Pricebook</shortDescription>
+        <value>01s13000000AjiO</value>
+    </labels>
+    <labels>
+        <fullName>Zuora_PS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Zuora PS Pricebook</shortDescription>
+        <value>01sa0000000VkAJ</value>
+    </labels>
+    <labels>
+        <fullName>iDev_Parameter</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iDev Parameter</shortDescription>
+        <value>1038457324</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_bs</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Bosnian</shortDescription>
+        <value>босански</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_cy</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Welsh</shortDescription>
+        <value>Cymraeg</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_da</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Danish</shortDescription>
+        <value>Dansk</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_de</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>German</shortDescription>
+        <value>Deutsch</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_en_US</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>English</shortDescription>
+        <value>English</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_es</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Español</shortDescription>
+        <value>Español</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_et</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Estonian</shortDescription>
+        <value>Eesti Keel</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_eu</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Basque</shortDescription>
+        <value>Euskara</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_fi</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Finnish</shortDescription>
+        <value>Suomalainen</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_fr</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Francais</shortDescription>
+        <value>Francais</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_ga</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Irish (Gaelic)</shortDescription>
+        <value>Gaeilge</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_hi</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Hindi</shortDescription>
+        <value>हिन्दी</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_hr</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Croatian</shortDescription>
+        <value>Hrvatski</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_hy</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Armenian</shortDescription>
+        <value>Հայերէն</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_is</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Icelandic</shortDescription>
+        <value>Íslenska</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_it</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Italian</shortDescription>
+        <value>Italiano</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_ja</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Japanese</shortDescription>
+        <value>日本の</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_ka</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Georgian</shortDescription>
+        <value>ქართული</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_ko</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Korean</shortDescription>
+        <value>한국의</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_lb</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Luxembourgish</shortDescription>
+        <value>Lëtzebuergesch</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_lt</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Lithuanian</shortDescription>
+        <value>Lietuvių Kalba</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_lv</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Latvian</shortDescription>
+        <value>Latviešu Valoda</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_mk</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Macedonian</shortDescription>
+        <value>македонски</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_mt</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Maltese</shortDescription>
+        <value>Malti</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_nl_NL</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Dutch</shortDescription>
+        <value>Nederlands</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_pt_BR</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Portuguese (Brazilian)</shortDescription>
+        <value>Português</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_pt_PT</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Portuguese</shortDescription>
+        <value>Português</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_ro_MD</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Moldovan</shortDescription>
+        <value>лимба молдовеняскэ</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_ru</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Russian</shortDescription>
+        <value>русский</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_sh</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Serbian latin</shortDescription>
+        <value>Srpski</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_sk</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Slovak</shortDescription>
+        <value>Slovenčina</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_sl</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Slovenian</shortDescription>
+        <value>Slovenščina</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_sq</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Albanian</shortDescription>
+        <value>Shqiptar</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_sr</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Serbian Cyrillic</shortDescription>
+        <value>српски</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_sv</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Swedish</shortDescription>
+        <value>Svenska</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_th</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Thai</shortDescription>
+        <value>ภาษาไทย</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_tl</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Tagalog</shortDescription>
+        <value>Tagalog</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_ur</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Urdu</shortDescription>
+        <value>اردو</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_zh_CN</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Chinese (Simplified)</shortDescription>
+        <value>中国的</value>
+    </labels>
+    <labels>
+        <fullName>pkb2_lang_zh_TW</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Chinese (Traditional)</shortDescription>
+        <value>中國的</value>
+    </labels>
+</CustomLabels>

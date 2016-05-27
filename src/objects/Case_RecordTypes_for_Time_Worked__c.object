@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <customSettingsVisibility>Public</customSettingsVisibility>
+    <description>The name of the Case record type to include in Case Time Worked logic</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Case RecordTypes for Time Worked</label>
+</CustomObject>

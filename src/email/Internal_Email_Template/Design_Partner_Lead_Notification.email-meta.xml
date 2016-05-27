@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sends an email to the Design Partner if referred on a lead by sales rep</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Design Partner Lead Notification</name>
+    <style>none</style>
+    <subject>BigCommerce Lead Submission : {!Lead.Company}</subject>
+    <type>text</type>
+</EmailTemplate>

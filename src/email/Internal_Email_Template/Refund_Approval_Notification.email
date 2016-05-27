@@ -1,0 +1,7 @@
+Hello {!Case.Refund_Credit_Approver__c},
+
+I have listed you as the approver for a refund of {!Case.Refund_Credit_Amount__c} in Case #{!Case.CaseNumber}. If you did not approve this request, please reach out to the billing team leadership as soon as possible to prevent processing in our system.
+
+Thank you,
+
+{!User.Name}

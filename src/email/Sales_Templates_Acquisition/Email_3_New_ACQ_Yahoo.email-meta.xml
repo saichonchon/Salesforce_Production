@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Email 3 New ACQ Yahoo</name>
+    <style>none</style>
+    <subject>RE: Look at what you are missing by not moving to BigCommerce!</subject>
+    <textOnly>Hello {!Lead.FirstName}
+
+Sorry we haven&apos;t been able to connect. Over the last few weeks, dozens of Yahoo! stores have moved to BigCommerce and I want to help you do the same.  Let&apos;s meet this week, so I can show you how our platform can help you increase sales by as much as 40%!
+
+Think of all the things you could have by working with BigCommerce for one simple price (and no transaction fees!):
+
+Migrate your existing Yahoo! store - Free!
+Mobile Version Of Your Store to capture sales on phones and tablets - Free!
+Abandoned Shopping Cart to help you capture as much as 80% of lost sales - Free!
+Dedicated Support from our Success Squad of eCommerce Consultants - Free!
+100+ SEO Friendly Templates and tools to get you more traffic from Google - Free!
+Improved Shipping Features to help you serve your customers better - Free!
+
+
+To see the full list of tools and services BigCommerce offers, visit our Pricing Page and remember I am a call or email away. Every day you do not act is a day you could be losing important sales!
+
+Wishing you success online,
+
+Thank you,
+
+Lizette Flores
+
+eCommerce Business Consultant
+
+
+P 512-629-4518
+M 312-933-1479
+E Lizette.Flores@bigcommerce.com
+11305 Four Points Drive | Building II, Third Floor | Austin, TX 78726
+
+http://info.bigcommerce.com/switch-yahoo-to-bigcommerce
+
+Sign up for a free trial at: http://www.bigcommerce.com/p/12876.html</textOnly>
+    <type>custom</type>
+</EmailTemplate>

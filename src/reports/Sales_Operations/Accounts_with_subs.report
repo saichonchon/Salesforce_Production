@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account$Account_Count__c</field>
+    </columns>
+    <crossFilters>
+        <criteriaItems>
+            <column>Created_Date_Time__c</column>
+            <operator>greaterOrEqual</operator>
+            <value>5/1/2014 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>New_Product_Plan__c</column>
+            <operator>contains</operator>
+            <value>trial</value>
+        </criteriaItems>
+        <operation>with</operation>
+        <primaryTableColumn>Account$Id</primaryTableColumn>
+        <relatedTable>Subscription__c</relatedTable>
+        <relatedTableJoinColumn>Account__c</relatedTableJoinColumn>
+    </crossFilters>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>Account.Subscriptions__r$Created_Date_Time__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Accounts with subs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Subscriptions__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account.Subscriptions__r$Created_Date_Time__c</dateColumn>
+        <endDate>2015-02-28</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2014-05-01</startDate>
+    </timeFrameFilter>
+</Report>

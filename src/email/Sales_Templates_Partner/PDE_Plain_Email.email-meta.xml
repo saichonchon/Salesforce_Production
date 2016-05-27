@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>PDE Plain Email</name>
+    <style>none</style>
+    <subject>I’m here to help with your BigCommerce account</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+I’m {!User.FirstName}, your new dedicated partner manager here at BigCommerce. Unfortunately I have not been able to get a hold of you, so I just wanted to reach out via email and introduce myself for now. I’ll try and get in contact with you again shortly to make sure you have everything you need. I’d also love to talk to you about our new control panel UI and templates, including our awesome carousel builder.
+
+Please keep an eye out for my emails: I&apos;ll let you know when new leads come in and if any trials under your account are near expiration.
+
+If you need anything in the meantime, don&apos;t hesitate to reach out — I’m always here to help.
+
+
+
+{!User.FirstName} {!User.LastName}
+Partner Development Executive
+
+P {!User.Phone} | 1-888-699-8911 (Toll Free)
+E  {!User.Email}
+A  2711 W. Anderson Ln Suite 200 | Austin, TX 78757
+
+Visit us at bigcommerce.com
+Follow us News | Facebook | Twitter</textOnly>
+    <type>custom</type>
+</EmailTemplate>

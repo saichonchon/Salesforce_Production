@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Book your free appointment with our Success Squad</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>Direct  : Success Squad Gold+</name>
+    <style>freeForm</style>
+    <subject>Book your free appointment with our Success Squad</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+Now that you’re officially a BigCommerce client, you get a 30-minute appointment with our awesome Success Squad. They’re e-commerce experts who will teach you how to add products, set up taxes, set up a payment gateway and a lot of other info that will help launch your store.
+
+
+If you already have all the basics down, your meeting can cover topics like marketing and SEO.
+
+
+You can book an appointment online by clicking the link below.
+
+
+Book a Success Squad appointment
+
+
+Welcome to BigCommerce, and enjoy your appointment!
+
+{!Contact.OwnerFullName}
+{!Contact.OwnerTitle}
+
+
+
+O  +1 {!Contact.OwnerPhone}
+E  {!Contact.OwnerEmail}
+A 11305 Four Points Drive | Bldg II Suite 300 | Austin, TX 78726
+
+Visit us at bigcommerce.com
+
+Visit us at bigcommerce.com
+Follow us News | Facebook | Twitter</textOnly>
+    <type>html</type>
+</EmailTemplate>

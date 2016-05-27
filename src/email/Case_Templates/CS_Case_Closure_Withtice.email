@@ -1,0 +1,21 @@
+Dear {!Contact.FirstName}{!Case.Lead_First_Name__c},
+
+Thank you for contacting BigCommerce Support! We’d love it if you would take a few seconds to rate your recent support experience on
+Case #{!Case.CaseNumber}. Please click the link below so we can use your feedback to improve our support and our platform.
+ 
+http://www.clicktools.com/survey?iv=1pyuy8v5feuja&q1={!Case.Id}
+
+We appreciate your business — please let us know if there’s anything else we can help with!
+
+Subject: {!Case.Subject}
+
+Case Description: 
+{!Case.Description}
+
+Thank You,
+
+{!$User.FirstName} {!$User.LastName}
+BigCommerce Technical Support 
+http://support.bigcommerce.com
+
+{!Case.E2CP__Case_Thread_Id__c}

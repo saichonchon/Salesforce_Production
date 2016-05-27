@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Lizette - Closed Lost - Switching to Competitor ( after a 1st voicemail left )</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Email_to_Case_Letterhead</letterhead>
+    <name>Lizette - Closed Lost - Switching to Competitor</name>
+    <style>freeForm</style>
+    <subject>Following up with you</subject>
+    <textOnly>Hello {!Lead.FirstName},
+
+My name is Lizette, and I’m on the Client Development Team at Bigcommerce. We work with online merchants to help them get started on Bigcommerce and make sure they’re ready for success. Looks like you signed up for a trial with us a few months ago, but decided not to move forward. We’ve recently released a ton of new features that I think will help you increase sales, including new themes, mobile optimization, blogging, easy payments integration and a lot more.
+
+I also noticed that you were looking to switch from your current platform — we’ve started a program to migrate clients from other solutions at no cost if there’s a mutual fit. When would be a good time for a 5-minute call to go over your goals or feedback about Bigcommerce? You can reply to let me know, or call me directly at +1-512-865-4504.
+
+If you’d like to sign up for another free trial to check out the new features, you can do that here - http://www.bigcommerce.com/p/12876.html
+
+Here’s what a couple of merchants who have switched to Bigcommerce have to say:
+
+“In 4 months on Bigcommerce, we surpassed revenue for all of 2012 on our previous platform.” — Kenny Kane, stupidcancer.org
+
+“We got our first sale the same day we switched from another platform and now our numbers are up over 15%.” — Pat Hardy, hipfit.com
+
+Thanks in advance for your time!
+
+Sincerely, Lizette Flores
+Client Development Consultant
+ Sign up and get up to $300 or 6 free months — ask me how! 
++1-512-865-4504 
+Lizette.Flores@bigcommerce.com  
+
+http://www.bigcommerce.com/next 
+http://www.bigcommerce.com/learning</textOnly>
+    <type>html</type>
+</EmailTemplate>

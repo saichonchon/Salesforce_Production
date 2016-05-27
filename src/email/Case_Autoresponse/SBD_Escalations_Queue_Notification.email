@@ -1,0 +1,14 @@
+<table height="400" width="600" cellpadding="5" border="0" cellspacing="5" >
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<font face="arial">A new SBD case has been submitted</font>]]></td>
+</tr>
+<tr height="300" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r2" locked="0" aEditID="c1r2" >
+<![CDATA[<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><div><font face="arial"><b>Case {!Case.CaseNumber}</b></font></div><div><font face="arial"><br></font></div><div><font face="arial"><b>Subject:</b></font></div><div><font face="arial">{!Case.Subject}</font></div><div><font face="arial"><br></font></div><div><font face="arial"><b>Description:</b></font></div><div><font face="arial">{!Case.Description}</font></div><div><font face="arial"><br></font></div><div><font face="arial"><b><a href="{!Case.Link}">Case Link</a>&nbsp;</b></font></div></div>]]></td>
+</tr>
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r3" locked="0" aEditID="c1r3" >
+<![CDATA[]]></td>
+</tr>
+</table>

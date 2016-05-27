@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_81217838</developerName>
+        <masterLabel>Lead Qualifier Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Activity$Owner.Department</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Sales Development - Outbound MDR</sourceValue>
+            </sourceValues>
+            <value>MDR</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Sales Development - Outbound SDR</sourceValue>
+            </sourceValues>
+            <value>SDR</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Sales Development - Inbound SDR</sourceValue>
+            </sourceValues>
+            <value>Inbound</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Activity$Activity_Count__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Activity$Owner.Department</column>
+            <operator>startsWith</operator>
+            <value>Sales Development -</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$CallType</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_81217838</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>IB/OB Call Activity</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activities_with_Lookup_Data__c</reportType>
+    <roleHierarchyFilter>SystemAdministrator</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Activity$ActivityDate</dateColumn>
+        <interval>INTERVAL_YESTERDAY</interval>
+    </timeFrameFilter>
+</Report>

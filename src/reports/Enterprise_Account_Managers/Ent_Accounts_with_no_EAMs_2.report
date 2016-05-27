@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Type</field>
+    </columns>
+    <columns>
+        <field>Account.AccountTeamMembers$Name</field>
+    </columns>
+    <columns>
+        <field>Account.AccountTeamMembers$TeamMemberRole</field>
+    </columns>
+    <columns>
+        <field>Account$Active_MRR_Value_Opp__c</field>
+    </columns>
+    <crossFilters>
+        <criteriaItems>
+            <column>Product__c</column>
+            <operator>contains</operator>
+            <value>bigcommerce enterprise plan,bigcommerce enterprise plan subsidiary,Bigcommerce Enterprise Plan Plus SLA,enterprise plan</value>
+        </criteriaItems>
+        <operation>with</operation>
+        <primaryTableColumn>Account$Id</primaryTableColumn>
+        <relatedTable>Opportunity</relatedTable>
+        <relatedTableJoinColumn>Account</relatedTableJoinColumn>
+    </crossFilters>
+    <filter>
+        <criteriaItems>
+            <column>Account.AccountTeamMembers$TeamMemberRole</column>
+            <operator>notContain</operator>
+            <value>Enterprise Manager,Onboarding Specialist,Enterprise Onboarding Consultant</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Owner_Team__c</column>
+            <operator>notContain</operator>
+            <value>SBD</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Ent Accounts with no EAMs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Account_Team__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$Client_Start_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

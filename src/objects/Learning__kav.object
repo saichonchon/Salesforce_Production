@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <articleTypeChannelDisplay>
+        <articleTypeTemplates>
+            <channel>App</channel>
+            <page>kb_internal_learning_article</page>
+            <template>Page</template>
+        </articleTypeTemplates>
+        <articleTypeTemplates>
+            <channel>Prm</channel>
+            <template>Toc</template>
+        </articleTypeTemplates>
+        <articleTypeTemplates>
+            <channel>Csp</channel>
+            <template>Toc</template>
+        </articleTypeTemplates>
+        <articleTypeTemplates>
+            <channel>Pkb</channel>
+            <page>Learning_kav</page>
+            <template>Page</template>
+        </articleTypeTemplates>
+    </articleTypeChannelDisplay>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This article type contains the learning guides for the support site.</description>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <fields>
+        <fullName>Article__c</fullName>
+        <externalId>false</externalId>
+        <label>Article</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Back_Button_URL__c</fullName>
+        <description>This is the URL for the previous chapter in the current learning guide</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the URL for the previous chapter in this learning guide</inlineHelpText>
+        <label>Back Button URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Chapter_List__c</fullName>
+        <description>This field should contain an ordered list with a link to each chapter in the guide. Active class should be on the current chapter</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Ordered list of chapters with titles, links, and active class set on current chapter</inlineHelpText>
+        <label>Chapter List</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>30</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Chapter__c</fullName>
+        <defaultValue>&quot;Chapter &quot;</defaultValue>
+        <description>This field should contain the word &apos;Chapter&apos; followed by the chapter number.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>e.g. Chapter 1, Chapter 2, or Chapter 5</inlineHelpText>
+        <label>Chapter</label>
+        <length>10</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Nav_Title__c</fullName>
+        <description>This field should contain the title used in the left navigation to be set as active</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the navigation title from the left menu that should be active</inlineHelpText>
+        <label>Nav Title</label>
+        <length>40</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Next_Button_Text__c</fullName>
+        <description>The title of the next chapter(article) in the guide</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the title of the next chapter in this guide</inlineHelpText>
+        <label>Next Button Text</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Next_Button_URL__c</fullName>
+        <description>The URL for the next chapter(article) in this learning guide</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the URL for the next chapter in this learning guide</inlineHelpText>
+        <label>Next Button URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <label>Learning</label>
+    <pluralLabel>Learning</pluralLabel>
+</CustomObject>

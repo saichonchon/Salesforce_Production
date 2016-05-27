@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>SF Open House.Email 1</name>
+    <style>none</style>
+    <subject>You’re invited! Join us for our Open House and Happy Hour!</subject>
+    <textOnly>If you happen to be in the Bay area on March 21, be sure to stop by the Bigcommerce office and meet our product and engineering teams.
+Hi {{lead.First Name:default=there}},
+
+If you happen to be in the Bay area on March 21, be sure to stop by the Bigcommerce office and meet Tim Schulz, Bigcommerce Chief Technology Officer, and the rest of the engineering team.
+
+There will be food, drinks and the opportunity to mingle and network with your peers during our open house and happy hour on Monday, March 21 from 4:00 to 7:00pm PT.
+
+
+
+Bigcommerce Open House &amp; Happy Hour &lt;[[http://grow.bigcommerce.com/SF-Open-House-Registration.html]]&gt;
+When: March 21, 2016 from 4:00 - 7:00pm PT
+Where: 685 Market Street, 3rd Floor San Francisco, CA 94105
+Hosts: Bigcommerce product and engineering teams
+
+
+
+
+
+
+Save your spot now  &lt;[[http://grow.bigcommerce.com/SF-Open-House-Registration.html]]&gt;
+
+
+
+
+
+
+
+
+Want to Invite a friend? Simply forward this email to a friend and encourage them to register.
+
+Kind regards,
+The Bigcommerce Partner Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <acrossGroupingContext>GRAND_SUMMARY</acrossGroupingContext>
+        <calculatedFormula>RowCount</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>GRAND_SUMMARY</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Grand Totals</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_39481749</developerName>
+        <masterLabel>Account Age</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Account$Account_Age__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>1</to>
+            </sourceValues>
+            <value>30 Day or Less</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>1</from>
+                <to>3</to>
+            </sourceValues>
+            <value>1-3 Months</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>3</from>
+                <to>6</to>
+            </sourceValues>
+            <value>3-6 Months</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>6</from>
+                <to>9</to>
+            </sourceValues>
+            <value>6-9 Months</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>9</from>
+                <to>12</to>
+            </sourceValues>
+            <value>9-12 Months</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>12</from>
+                <to>18</to>
+            </sourceValues>
+            <value>1 - 1 1/2 years</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>18</from>
+                <to>24</to>
+            </sourceValues>
+            <value>1 1/2 - 2 Years</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>24</from>
+                <to>36</to>
+            </sourceValues>
+            <value>2-3 Years</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>36</from>
+            </sourceValues>
+            <value>3 or More years</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_32371302</developerName>
+        <masterLabel>Case Origin Buckets</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Account.Cases$Origin</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Phone</sourceValue>
+            </sourceValues>
+            <value>Phone</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Chat</sourceValue>
+            </sourceValues>
+            <value>Chat</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Email</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ticket</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Web</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>abuse@bigcommerce.com</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>apisupport@bigcommerce.com</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>billing@bigcommerce.com</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>cancellations@bigcommerce.com</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>eigsupport@bigcommerce.com</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>heartlandsupport@bigcommerce.com</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>legal@bigcommerce.com</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>supportcasecreation@bigcommerce.com</sourceValue>
+            </sourceValues>
+            <value>Web</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Social</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Internal Request</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Client Request</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>partners@bigcommerce.com</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>sales@bigcommerce.com</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>partnerevents@bigcommerce.com</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>partnerwithus@bigcommerce.com</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>team@bigcommerce.com</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>sellmore@bigcommerce.com</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bigcommerce Migration Team</sourceValue>
+            </sourceValues>
+            <value>Other</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_44945196</developerName>
+        <masterLabel>Plan Types</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Account.Cases$Bigcommerce_Plan__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Bronze Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bronze Plan - Unlimited Storage</sourceValue>
+            </sourceValues>
+            <value>01 - Bronze</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Silver NEXT</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Silver NEXT v2 (29.95)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Silver Plan</sourceValue>
+            </sourceValues>
+            <value>02 - Silver</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Gold NEXT</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gold Plan</sourceValue>
+            </sourceValues>
+            <value>03 - Gold</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Platinum NEXT</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Platinum Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Platinum Plus</sourceValue>
+            </sourceValues>
+            <value>04 - Platinum</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Diamond Plan</sourceValue>
+            </sourceValues>
+            <value>05 - Diamond</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Partner Sandbox</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Professional Application Developer Store</sourceValue>
+            </sourceValues>
+            <value>06 - Partner</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Bigcommerce Enterprise Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bigcommerce Enterprise Plan Plus SLA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bigcommerce Enterprise Plan Subsidiary</sourceValue>
+            </sourceValues>
+            <value>07 - Enterprise</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Enterprise Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Plan Subsidiary</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Go Bronze</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Go Gold</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Go Platinum</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Go Silver</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pro Bronze</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pro Gold</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pro Platinum</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pro Silver</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Professional Plan</sourceValue>
+            </sourceValues>
+            <value>08 - SBD</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Trial</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Free Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>15 Day Free Trial</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>15 Day Trial</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>30 Day Free Trial</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>60 Day Free Trial</sourceValue>
+            </sourceValues>
+            <value>09 - Trial</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_13547328</developerName>
+        <masterLabel>Store Age</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Account$Account_Age__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>1</to>
+            </sourceValues>
+            <value>30 Days or Less</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>1</from>
+                <to>3</to>
+            </sourceValues>
+            <value>1-3 Months</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>3</from>
+                <to>6</to>
+            </sourceValues>
+            <value>3-6 Months</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>6</from>
+                <to>9</to>
+            </sourceValues>
+            <value>6-9 Months</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>9</from>
+                <to>12</to>
+            </sourceValues>
+            <value>9-12 Months</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>12</from>
+                <to>18</to>
+            </sourceValues>
+            <value>1-1 1/2 Years</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>18</from>
+                <to>24</to>
+            </sourceValues>
+            <value>1 1/2 - 2 Years</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>24</from>
+                <to>36</to>
+            </sourceValues>
+            <value>2-3 years</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>36</from>
+            </sourceValues>
+            <value>3 or More Years</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Client_Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Subscription__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$ClosedDate</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Cases$RecordType</column>
+            <operator>equals</operator>
+            <value>Case.Client_Success,Case.Billing</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases$Bigcommerce_Plan__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases$Bigcommerce_Plan__c</column>
+            <operator>notEqual</operator>
+            <value>test,employee</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases$Origin</column>
+            <operator>notEqual</operator>
+            <value>support@bigcommerce.com (closed)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases$Status</column>
+            <operator>equals</operator>
+            <value>New,On Hold,Open Unsolved,Pending Acceptance,Waiting on Client,Working,Closed,Reopened</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_32371302</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_44945196</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Cases$Bigcommerce_Store_URL__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Contacts by Account and Plan + StartDate</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account.Cases$CreatedDate</dateColumn>
+        <interval>INTERVAL_YESTERDAY</interval>
+    </timeFrameFilter>
+</Report>

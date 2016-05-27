@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_82652830</developerName>
+        <masterLabel>SL</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Case.SL_Flag__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>_IM1_/resource/1379452927000/CS_Flag_Green_IM2_Within SLA_IM3__20_IM4_20_IM5_</sourceValue>
+            </sourceValues>
+            <value>Within SLA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>_IM1_/resource/1379452927000/CS_Flag_Red_IM2_MISSED - SLA_IM3__20_IM4_20_IM5_</sourceValue>
+            </sourceValues>
+            <value>Missed SLA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>_IM1_/resource/1379452927000/CS_Flag_Yellow_IM2_Pending - SLA_IM3__20_IM4_20_IM5_</sourceValue>
+            </sourceValues>
+            <value>Pending</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>_IM1_/resource/1405031526000/Blackflag_IM2_Within SLA_IM3__20_IM4_20_IM5_</sourceValue>
+            </sourceValues>
+            <value>First Response Missing</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Case.Manager_Callback_Date__c</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Case.Client_Success</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Manager_Callback_Requestor__c</column>
+            <operator>greaterThan</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Manager_Callback_Requestor__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>MGRCB - Cases Created by Rep</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Case.Manager_Callback_Date__c</dateColumn>
+        <interval>INTERVAL_LASTWEEK</interval>
+    </timeFrameFilter>
+</Report>

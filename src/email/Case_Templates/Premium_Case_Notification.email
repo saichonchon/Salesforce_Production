@@ -1,0 +1,6 @@
+Client Name: {!Contact.Name}
+Account Name: {!Account.Name}
+Issue Description: {!Case.Description}
+Owner: {!Case.OwnerFullName}
+Case Origin: {!Case.Origin}
+Link to Case: {!Case.Link}

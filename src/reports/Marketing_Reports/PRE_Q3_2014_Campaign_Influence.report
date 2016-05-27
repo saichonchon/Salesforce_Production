@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CAMPAIGN.NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Primary_Campaign_Name__c</field>
+    </columns>
+    <columns>
+        <field>PRIMARY</field>
+    </columns>
+    <columns>
+        <field>OPP.NAME</field>
+    </columns>
+    <columns>
+        <field>CM.RESPONDED</field>
+    </columns>
+    <columns>
+        <field>OPP.STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>OPP.CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>OPP.CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OPP.AMOUNT</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CAMPAIGN.NAME</column>
+            <operator>equals</operator>
+            <value>PRE: Internet Retailer Webinar 3.12.15,PRE: Content Nurture Q1 2015 - Internet Retailer,PRE: Content Nurture Q1 2015 - Demo Requests,PRE: Content Nurture Q1 2015 - Housefile,PRE: Internet Retailer Special Report Q1 2015,PRE: Content Nurture Q1 2015 - General,PRE: Content Nurture Q1 2015 - Practical eCommerce</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>PRE Q3 2014 Campaign Influence</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignInfluence</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>OPP.NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+</Report>

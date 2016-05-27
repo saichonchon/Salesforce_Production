@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>WorkPerformanceCycle</baseObject>
+    <category>calibration</category>
+    <deployed>true</deployed>
+    <description>Work.com: Calibration Report Type</description>
+    <join>
+        <join>
+            <join>
+                <outerJoin>true</outerJoin>
+                <relationship>Feedbacks</relationship>
+            </join>
+            <outerJoin>false</outerJoin>
+            <relationship>FeedbackRequests</relationship>
+        </join>
+        <outerJoin>false</outerJoin>
+        <relationship>FeedbackQuestionSets</relationship>
+    </join>
+    <label>Calibration</label>
+    <sections>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>WorkPerformanceCycle.Id</displayNameOverride>
+            <field>Id</field>
+            <table>WorkPerformanceCycle</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cycle Name</displayNameOverride>
+            <field>Name</field>
+            <table>WorkPerformanceCycle</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity From</displayNameOverride>
+            <field>ActivityFrom</field>
+            <table>WorkPerformanceCycle</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity To</displayNameOverride>
+            <field>ActivityTo</field>
+            <table>WorkPerformanceCycle</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cycle State</displayNameOverride>
+            <field>State</field>
+            <table>WorkPerformanceCycle</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cycle Created By</displayNameOverride>
+            <field>CreatedBy</field>
+            <table>WorkPerformanceCycle</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cycle Created Date</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>WorkPerformanceCycle</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cycle Last Modified By</displayNameOverride>
+            <field>LastModifiedBy</field>
+            <table>WorkPerformanceCycle</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cycle Last Modified Date</displayNameOverride>
+            <field>LastModifiedDate</field>
+            <table>WorkPerformanceCycle</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cycle Owner Name</displayNameOverride>
+            <field>Owner</field>
+            <table>WorkPerformanceCycle</table>
+        </columns>
+        <masterLabel>Performance Cycles</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Question Set Id</displayNameOverride>
+            <field>Id</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Question Set Name</displayNameOverride>
+            <field>Name</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Due Date</displayNameOverride>
+            <field>DueDate</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Question Set Type</displayNameOverride>
+            <field>FeedbackType</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets</table>
+        </columns>
+        <masterLabel>Feedback Question Sets</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Question Id</displayNameOverride>
+            <field>Question.Id</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests.Feedbacks</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Question Name</displayNameOverride>
+            <field>Question.Name</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests.Feedbacks</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Question Text</displayNameOverride>
+            <field>Question.Text</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests.Feedbacks</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Question Type</displayNameOverride>
+            <field>Question.Type</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests.Feedbacks</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Question Choices</displayNameOverride>
+            <field>Question.Choices</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests.Feedbacks</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Question Is Confidential</displayNameOverride>
+            <field>Question.IsConfidentialAnswer</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests.Feedbacks</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Question Is Optional</displayNameOverride>
+            <field>Question.IsOptional</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests.Feedbacks</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Question Detail</displayNameOverride>
+            <field>Question.Detail</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests.Feedbacks</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Question Number</displayNameOverride>
+            <field>Question.Number</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests.Feedbacks</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Question: Last Modified By</displayNameOverride>
+            <field>Question.LastModifiedBy</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests.Feedbacks</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Question: Last Modified Date</displayNameOverride>
+            <field>Question.LastModifiedDate</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests.Feedbacks</table>
+        </columns>
+        <masterLabel>Questions</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>WorkFeedbackRequest.Id</displayNameOverride>
+            <field>Id</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Request Name</displayNameOverride>
+            <field>Name</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Request State</displayNameOverride>
+            <field>FeedbackRequestState</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Recipient</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Submit Feedback To</displayNameOverride>
+            <field>SubmitFeedbackTo</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Reminded Date</displayNameOverride>
+            <field>LastRemindDate</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Shared Date</displayNameOverride>
+            <field>LastSharedDate</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Submission Date</displayNameOverride>
+            <field>SubmittedDate</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Is Unread</displayNameOverride>
+            <field>IsUnreadByOwner</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Request Created By</displayNameOverride>
+            <field>CreatedBy</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Request Created Date</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Request Last Modified By</displayNameOverride>
+            <field>LastModifiedBy</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Request Last Modified Date</displayNameOverride>
+            <field>LastModifiedDate</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Request Owner Name</displayNameOverride>
+            <field>Owner</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <masterLabel>Feedback Requests</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>WorkFeedback.Id</displayNameOverride>
+            <field>Id</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests.Feedbacks</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Feedback</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests.Feedbacks</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Feedback Created By</displayNameOverride>
+            <field>CreatedBy</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests.Feedbacks</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Feedback Created Date</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests.Feedbacks</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Feedback Last Modified By</displayNameOverride>
+            <field>LastModifiedBy</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests.Feedbacks</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Feedback Last Modified Date</displayNameOverride>
+            <field>LastModifiedDate</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests.Feedbacks</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Feedback Owner Name</displayNameOverride>
+            <field>Owner</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests.Feedbacks</table>
+        </columns>
+        <masterLabel>Feedback</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>WorkFeedbackRequest.Subject.Id</displayNameOverride>
+            <field>Subject.Id</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>First Name</displayNameOverride>
+            <field>Subject.FirstName</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Last Name</displayNameOverride>
+            <field>Subject.LastName</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Name</displayNameOverride>
+            <field>Subject.Name</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Is Active</displayNameOverride>
+            <field>Subject.IsActive</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Company</displayNameOverride>
+            <field>Subject.CompanyName</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Title</displayNameOverride>
+            <field>Subject.Title</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Department</displayNameOverride>
+            <field>Subject.Department</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Division</displayNameOverride>
+            <field>Subject.Division</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Employee Number</displayNameOverride>
+            <field>Subject.EmployeeNumber</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Role</displayNameOverride>
+            <field>Subject.UserRole</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>State</displayNameOverride>
+            <field>Subject.State</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Country</displayNameOverride>
+            <field>Subject.Country</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <masterLabel>Subjects</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Manager Id</displayNameOverride>
+            <field>Subject.Manager.Id</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Manager First Name</displayNameOverride>
+            <field>Subject.Manager.FirstName</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Manager Last Name</displayNameOverride>
+            <field>Subject.Manager.LastName</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Manager Name</displayNameOverride>
+            <field>Subject.Manager.Name</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Manager Is Active</displayNameOverride>
+            <field>Subject.Manager.IsActive</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Manager Company</displayNameOverride>
+            <field>Subject.Manager.CompanyName</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Manager Title</displayNameOverride>
+            <field>Subject.Manager.Title</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Manager Department</displayNameOverride>
+            <field>Subject.Manager.Department</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Manager Division</displayNameOverride>
+            <field>Subject.Manager.Division</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Manager Employee Number</displayNameOverride>
+            <field>Subject.Manager.EmployeeNumber</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Manager Role</displayNameOverride>
+            <field>Subject.Manager.UserRole</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Manager State</displayNameOverride>
+            <field>Subject.Manager.State</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Manager Country</displayNameOverride>
+            <field>Subject.Manager.Country</field>
+            <table>WorkPerformanceCycle.FeedbackQuestionSets.FeedbackRequests</table>
+        </columns>
+        <masterLabel>Managers</masterLabel>
+    </sections>
+</ReportType>

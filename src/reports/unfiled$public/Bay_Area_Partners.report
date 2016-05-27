@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVAccount__c.rvpe__RVPrimaryMember__c</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVAccount__c.Account_Owner__c</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVAccount__c.Total_Active_MRR__c</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVAccount__c.rvpe__City__c</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVAccount__c.rvpe__StateProvince__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>rvpe__RVAccount__c.rvpe__City__c</column>
+            <operator>equals</operator>
+            <value>san francisco,oakland,palo alto,san jose,napa,santa rosa,fairfield,alameda,albany,american canyon,antioch,atherton,belmont,belvedere,benicia,berkeley,brentwood,brisbane,burlingame,calistoga,campbell,clayton,cloverdale,colma,concord,corte,madera,cotati,cupertino,daly city,danville,dixon,dublin,el cerrito,emeryville,fairfax,foster city,fremont,gilroy,half moon bay,hayward,healdsburg,hercules,hissborough,lafayette,larkspur,livermore,los altos,los altos hills,los gatos,martinez,menlo park,mill valley,millbrae,milpitas,monte sereno,moraga,morgan hill,mountain view,newark,novato,oakley,orinda,pacifica,petaluma,piedmont,pinole,pittsburg,pleasant hill,pleasanton,portola valley,redwood city,richmond,rio vista,rohnert park,ross,st. helena,san anselmo,san bruno,san carlos,san leandro,san mateo,san pablo,san rafael,san ramon,santa clara,saratoga,sausalito,sebastopol,sonoma,suisun city,sunnyvale</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>rvpe__RVAccount__c.rvpe__StateProvince__c</column>
+            <operator>equals</operator>
+            <value>california</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_OWNER_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Bay Area Partners</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$rvpe__RVAccount__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>rvpe__RVAccount__c.Account_Owner__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

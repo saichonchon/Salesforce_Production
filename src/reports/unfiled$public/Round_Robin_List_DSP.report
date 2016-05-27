@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Assign_To_Team__c</field>
+    </columns>
+    <columns>
+        <field>Account.Qualifier__c</field>
+    </columns>
+    <columns>
+        <field>Account.Qualified_Date__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Qualifier__c</column>
+            <operator>equals</operator>
+            <value>john llana,john witson,griffin leen-sohl,elsa carreker,jennifer schultz,derek rosenzweig,jason horek,evan smith,justin platt,russell griffin</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Round Robin List (DSP)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Account.Assign_To_Team__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

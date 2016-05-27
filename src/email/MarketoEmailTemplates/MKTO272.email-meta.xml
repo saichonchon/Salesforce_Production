@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>QBO Survey 05/16.Email 1</name>
+    <style>none</style>
+    <subject>We want your feedback on the QuickBooks Online Application</subject>
+    <textOnly>We hope you are enjoying the our free QuickBooks Online Application integrating your BigCommerce Store with your accounting solution!
+Hi {{lead.First Name:default=there}},
+We hope you are enjoying the our free QuickBooks Online Application integrating your BigCommerce Store with your accounting solution!
+We are committed to making continuous improvements to the app. You might have already noticed that, we recently updated the app’s user experience and made it simpler to install, setup and use. The app’s response time has also has been improved. We’d like to ensure that these changes have improved your experiences as well. We request fill out this quick survey to share your experiences.
+
+
+
+
+Start the survey &lt;[[https://www.surveymonkey.com/r/BV3WK7M]]&gt;
+
+
+
+
+
+Additionally, we’d love for you to review our app &lt;[[https://appcenter.intuit.com/app-b7qudtgceg?locale=en-US]]&gt;.
+
+
+Thank you so much for your feedback and happy selling!
+Best Regards, 
+The BigCommerce Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

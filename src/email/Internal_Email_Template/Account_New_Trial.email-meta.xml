@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Alerts owner if new trial comes in on account</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>Account: New Trial</name>
+    <style>freeForm</style>
+    <subject>New Trial added to Account: {!Account.Name}</subject>
+    <textOnly>Woohoo, a new trial has been added to the {!Account.Name} account!
+
+
+Account Name: {!Account.Name}
+Active Trial Count: {!Account.Active_Trials_Opp__c}
+Active Store Count: {!Account.Active_Stores_Opp__c}
+Total Active MRR: {!Account.Active_MRR_Value_Opp__c}
+
+Click here to view the account record: {!Account.Link}</textOnly>
+    <type>html</type>
+</EmailTemplate>

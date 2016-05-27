@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Just Called</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Just Called Magento</name>
+    <style>none</style>
+    <subject>Just Called</subject>
+    <textOnly>Hey there {!Lead.FirstName},
+
+I just tried to give you a call but it looks like I missed you. 
+
+It&apos;s my understanding that you are the person to talk to when it comes to the Magento platform for the website.
+
+Is email best to reach you or should I call at a different time?
+
+
+Thanks,</textOnly>
+    <type>custom</type>
+</EmailTemplate>

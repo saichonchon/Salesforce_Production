@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Pre-call Woocommerce email to kick off 3/23 list acquisition campaign.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>WooCommerce Pre-call Email</name>
+    <style>none</style>
+    <subject>Easily Connect Apps, Increase Conversion</subject>
+    <type>text</type>
+</EmailTemplate>

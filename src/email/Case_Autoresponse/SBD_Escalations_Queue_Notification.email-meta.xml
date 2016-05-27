@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notifies SBD Escalation queue when a new case is created</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>SBD Escalations Queue Notification</name>
+    <style>formalLetter</style>
+    <subject>A new SBD Escalations Case has been submitted</subject>
+    <textOnly>A new SBD case has been submitted to the queue
+
+Case Details:
+
+Case {!Case.CaseNumber}
+
+Subject:
+{!Case.Subject}
+
+Description:
+{!Case.Description}
+
+Case Link</textOnly>
+    <type>html</type>
+</EmailTemplate>

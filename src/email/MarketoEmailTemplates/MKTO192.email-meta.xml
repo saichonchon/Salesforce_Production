@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Brand Annoucement.Email 1</name>
+    <style>none</style>
+    <subject>Meet the new BigCommerce!</subject>
+    <textOnly>Meet the new BigCommerce — a new brand identity that reflects our long-term commitment to powering growth, removing complexity and supporting businesses around the world.
+
+Hi {{lead.First Name:default=there}},
+
+
+We’ve hinted that big changes are coming soon and are now excited to finally share them with you! Meet the new BigCommerce — a new brand identity that reflects our long-term commitment to powering growth, removing complexity and supporting businesses around the world.
+
+What’s Changed? 
+
+
+Of course, a brand is more than just a logo and color palette. So we’re also introducing an entirely new look and feel to everything BigCommerce, including our website, control panel, educational content and more. This new brand helps better convey our midmarket story and the story of our merchants. Just as with the businesses that rely on our platform, design plays a vital role in how customers interact with and experience our brand. The changes to our website and control panel were informed directly by our customers and partners, and are designed to make interacting with and discovering information easier and more efficient.
+
+What should you do? 
+
+
+Start using the new brand immediately! And promote your Partner status with the new BigCommerce Partner Badge! Familiarize yourself with the BigCommerce logo usage guidelines. Logos and guidelines can be downloaded from the Partner Portal &lt;[[http://partners.bigcommerce.com/English/Solutions/resources/marketing_with_bigcommerce.aspx]]&gt;. Take advantage of the new brand launch to reach out to your clients and prospects and share the BigCommerce story and mission. Let your merchants know that this new branding is a direct reflection of our vision for the company, our commitment to our customers and partners, and our role in the ever-burgeoning commerce industry.
+
+Please let us know if you have any questions about the new brand.
+
+Regards,
+Your BigCommerce Partner Marketing Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

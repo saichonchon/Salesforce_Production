@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Opportunity_Product__c.RevenueChange__c:SUM/Opportunity.Opportunity_Count__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA10</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>ARPU</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>IF( Opportunity.rvpe__RVAccount__c.Owner_Quota__c:MAX = 0,0, (Opportunity_Product__c.RevenueChange__c:SUM/Opportunity.rvpe__RVAccount__c.Owner_Quota__c:MAX))</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA11</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% to Region Target</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Opportunity_Product__c.RevenueChange__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA8</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>MRR</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_61417092</developerName>
+        <masterLabel>Region</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Opportunity$rvpe__RVAccount__c.Owner</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Jason Horek</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Evan Smith</sourceValue>
+            </sourceValues>
+            <value>West</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>John Witson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Griffin Leen-Sohl</sourceValue>
+            </sourceValues>
+            <value>Central</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Elsa Carreker</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>John Llana</sourceValue>
+            </sourceValues>
+            <value>East</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Derek Rosenzweig</sourceValue>
+            </sourceValues>
+            <value>APAC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Treehouse Integration User</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bigcommerce Partner Program</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>The Bigcommerce Partner Program</sourceValue>
+            </sourceValues>
+            <value>Programmatic</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Jennifer Schultz</sourceValue>
+            </sourceValues>
+            <value>Member</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Opportunity$rvpe__RVAccount__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Channel_Partner__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Oppotunity_Products__r$Revenue_Rep__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Oppotunity_Products__r$Revenue_Team__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Oppotunity_Products__r$Product__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.Oppotunity_Products__r$RevenueChange__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Oppotunity_Products__r$StartDate__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Product__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Contact_Email__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Status__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity.Oppotunity_Products__r$RevenueChange__c</column>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Status__c</column>
+            <operator>equals</operator>
+            <value>Active,Pending</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>Today&apos;s Revenue - BC</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opp_with_Prod_Hist_and_Lookup_Data__c</reportType>
+    <roleHierarchyFilter>SystemAdministrator</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Opportunity$rvpe__RVAccount__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Opportunity.Oppotunity_Products__r$StartDate__c</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
+    </timeFrameFilter>
+</Report>

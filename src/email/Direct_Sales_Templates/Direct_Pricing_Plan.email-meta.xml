@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>New pricing plan notification.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>Direct : Pricing Plan</name>
+    <style>freeForm</style>
+    <subject>New BigCommerce Pricing; Let’s Get You the Best Plan ASAP</subject>
+    <textOnly>Hi {!Lead.FirstName},
+
+Your trial is about to expire, and I wanted to give you a heads-up that BigCommerce recently changed our prices, but I can still honor our old pricing because you started a trial before the change went into effect on May 1.
+
+Monday, May 19 is the last day I’m able to offer the old pricing, so now is your chance to get the plan you’ve been evaluating with the original features and price.
+
+After May 20, we’ll only honor the plans currently on bigcommerce.com/pricing. We can’t wait to help you grow your online business — please let me know when we can connect!
+
+{!Lead.OwnerFullName}
+eCommerce Business Consultant
+
+P  +1 {!Lead.OwnerPhone} | 1-888-699-8911 (Toll Free)
+E {!Lead.OwnerEmail}
+A 11305 Four Points Drive | Bldg II Suite 300 | Austin, TX 78726
+
+Visit us at bigcommerce.com
+Follow us News | Facebook | Twitter</textOnly>
+    <type>html</type>
+</EmailTemplate>

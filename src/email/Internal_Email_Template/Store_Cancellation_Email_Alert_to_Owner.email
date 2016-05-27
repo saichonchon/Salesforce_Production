@@ -1,0 +1,9 @@
+Store URL: {!Subscription__c.StoreURL__c}
+Purchase Date: {!Subscription__c.PurchaseDate__c}
+Cancellation Date: {!Subscription__c.CancellationDate__c}
+Product: {!Subscription__c.Product__c}
+MRR: {!Subscription__c.MonthlyRecurringRevenue__c}
+Billing Cycle: {!Subscription__c.BillingCycle__c}
+Product Status: {!Subscription__c.Status__c}
+
+Link to Store: {!Subscription__c.Link}

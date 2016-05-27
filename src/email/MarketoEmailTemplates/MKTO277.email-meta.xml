@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>02-2016 Town Hall.Email 2</name>
+    <style>none</style>
+    <subject>Reminder: Join us for the February Town Hall</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+Not sure if you saw this email, but we have a few slots still open for this month&apos;s Town Hall &lt;[[https://attendee.gotowebinar.com/register/5863786043245097730]]&gt;. I hope you can attend to learn about product enhancements and participate in a Q&amp;A session I&apos;m hosting with our CEO, Brent Bellm.
+
+Don&apos;t forget to register &lt;[[https://attendee.gotowebinar.com/register/5863786043245097730]]&gt; and save your spot.
+
+Kind regards,
+
+Tim Schulz
+Chief Product Officer
+
+
+---------- Forwarded message ----------
+
+From: The Bigcommerce Team
+ Subject: Join us for the February Town Hall
+ To: {{lead.Email Address}}
+
+
+
+Hi {{lead.First Name:default=there}},
+
+
+We’re excited to invite you to our next Bigcommerce Town Hall &lt;[[http://www.bigcommerce.com” style=]]&gt;. During this monthly conversation, our Bigcommerce Chief Executive Officer Brent Bellm and Chief Product Officer Tim Schulz will give you a detailed look at recent platform enhancements and what&apos;s up next.
+
+Bigcommerce Town Hall &lt;[[http://www.bigcommerce.com” style=]]&gt;
+
+When: December 17, 2015 from 3–4pm ET
+
+What: An in-depth look at the latest improvements including Stencil, Square, social integrations (Facebook, Pinterest, and Twitter), 2016 product roadmap, and time for Q&amp;A
+
+Presenters: CEO Brent Bellm and CPO Tim Schulz
+
+Where: If applicable
+
+Reserve your spot &lt;[[https://attendee.gotowebinar.com/register/5863786043245097730]]&gt;
+
+
+We’ll hold a live Q&amp;A session during the Town Hall, but you can also submit questions in advance by commenting in our community forum &lt;[[http://www.bigcommerce.com” style=]]&gt;.
+
+If you’re unable to join us, don’t worry — we’ll record each Town Hall and post the video in the forum
+
+Hope to see you there,
+
+The Bigcommerce Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

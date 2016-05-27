@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$DoNotCall</field>
+    </columns>
+    <columns>
+        <field>Contact$MailingCountry</field>
+    </columns>
+    <columns>
+        <field>Contact$Owner</field>
+    </columns>
+    <columns>
+        <field>Contact$Owner.UserRole</field>
+    </columns>
+    <crossFilters>
+        <criteriaItems>
+            <column>Parent</column>
+            <operator>equals</operator>
+            <value>PRE: Upsell Test Q2 2015</value>
+        </criteriaItems>
+        <operation>with</operation>
+        <primaryTableColumn>Contact$Id</primaryTableColumn>
+        <relatedTable>CampaignMember-Campaign</relatedTable>
+        <relatedTableJoinColumn>Contact</relatedTableJoinColumn>
+    </crossFilters>
+    <filter>
+        <criteriaItems>
+            <column>Contact$MailingCountry</column>
+            <operator>equals</operator>
+            <value>US,USA,United States</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$DoNotCall</column>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Owner.UserRole</column>
+            <operator>notContain</operator>
+            <value>Enterprise</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>PRE Upsell Test - Q2 2015-NoDialLogged</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contact_with_Lookup_Fields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Contact$Owner</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Contact$Birthdate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

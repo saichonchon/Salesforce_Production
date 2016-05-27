@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Facebook Ad Form - Demo Request and Content Nuture.SMB Email - Start a trial</name>
+    <style>none</style>
+    <subject>Grow your brand with BigCommerce</subject>
+    <textOnly>Start a trial today and see how easy it is to build a store on BigCommerce.
+It&apos;s easy to make your dream a reality
+Create an ecommerce store in minutes
+
+Get started &lt;[[https://www.bigcommerce.com/dm/start-a-free-trial/?utm_medium=social&amp;utm_source=facebook&amp;utm_campaign=form-2016]]&gt;
+
+
+Merchants on BigCommerce grow nearly twice as fast as the industry average
+Thank you for your interest in Bigcommerce. Our platform gives you access to the best features and benefits that help attract customers and sell more.  Some include:
+- 60+ Beautiful, customizable design themes
+ - Integration with Facebook Google, Square, eBay to sell to billions of users
+- Best in class SEO to increase search rankings
+- Easy &amp; intuitive control panel
+- NO coding required
+Start a trial &lt;[[https://www.bigcommerce.com/dm/start-a-free-trial/?utm_medium=social&amp;utm_source=facebook&amp;utm_campaign=form-2016]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

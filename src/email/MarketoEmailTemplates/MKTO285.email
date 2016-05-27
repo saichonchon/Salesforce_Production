@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1.0">
+<style type="text/css">
+/* Put desktop styles here */
+body { width: 100%; background-color: #ffffff; margin:0; padding:0; -webkit-font-smoothing: antialiased; }
+table { border-collapse: collapse; }
+* {-webkit-text-size-adjust: none}
+
+@media only screen and (max-width: 479px) {
+        body[yahoo] { margin-top: 0px !important; padding:0px !important;} 
+        body[yahoo] .deviceWidth { width:98%!important; }       
+        body[yahoo] .tdWidth { width:15px !important; }
+        body[yahoo] .block_td {display: block !important;}      
+        body[yahoo] .ltBlock {width:100% !important; margin-bottom: 15px !important;}
+        body[yahoo] .rtBlock {width:100% !important;}
+        body[yahoo] .content img { width:80% !important; display:block !important; margin:0 auto !important;}
+        body[yahoo] .center { text-align: center!important; }   
+        body[yahoo] .title { font-size:20px !important; }       
+        body[yahoo] .bodyText { font-size:15px !important; line-height:28px !important; }       
+        body[yahoo] .companyName { text-align: center!important; display:block !important; }
+    body[yahoo] .percent_td {width: 98% !important;} 
+}
+</style>
+<title></title>
+</head>
+<body bgcolor="#F2F2F2" yahoo="fix" ><table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#F2F2F2" style="table-layout:fixed; " ><tr ><td ><table class="deviceWidth" width="590" border="0" cellspacing="0" cellpadding="0" align="center" ><tr ><td ><table class="deviceWidth" width="100%" border="0" cellspacing="0" cellpadding="0" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#000000; text-align:center;">
+<tr>
+<td height="40" valign="bottom"><img class="deviceWidth" src="http://na-ab15.marketo.com/rs/bigcommerce/images/curv-top-sdw.png" alt="curved top shadow" title="curved top shadow" style="display:block" width="589" height="18" border="0"></td>
+</tr>
+</table>
+<table class="deviceWidth" width="100%" bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="0" style="background-color:#ffffff; border-bottom:3px solid #777777; " ><tr>
+<td height="10" colspan="3" style="font-size:1px; border-collapse:collapse; margin:0; padding:0;">&nbsp;</td>
+</tr>
+<tr ><td width="25" style="font-size:1px; border-collapse:collapse; margin:0; padding:0;">&nbsp;</td>
+<td height="72" ><div class="mktEditable" id="headerBP" ><img src="http://grow.bigcommerce.com/rs/695-JJT-333/images/BigCommerce_full-logo_sized.png" alt="BigCommerce_full-logo_sized.png" height="39" width="175" /></div>
+</td>
+<td width="25" style="font-size:1px; border-collapse:collapse; margin:0; padding:0;">&nbsp;</td>
+</tr>
+<tr>
+<td height="10" colspan="3" style="font-size:1px; border-collapse:collapse; margin:0; padding:0;">&nbsp;</td>
+</tr>
+</table>
+<table class="deviceWidth" width="100%" bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="0" style="background-color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#5e5d5d; " ><tr>
+<td height="10" colspan="5" style="font-size:1px; border-collapse:collapse; margin:0; padding:0;">&nbsp;</td>
+</tr>
+<tr ><td width="15" style="font-size:1px; border-collapse:collapse; margin:0; padding:0;">&nbsp;</td>
+<td class="ltBlock block_td" width="57%" valign="top" align="left" style="padding-right:20px; " ><table class="deviceWidth" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#5e5d5d; " ><tr ><td valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#5e5d5d; line-height:18px; padding-right:15px; " ><div class="mktEditable bodyText content" id="content" ><span style="font-weight: bold; font-size: 24px; color: #5e5d5d;">Title of Nurture Email 1</span><br /> <br /> Hello {{lead.First Name:default=Sir/Madam}},<br /> <br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Pellentesque sit amet urna velit.
+ Donec luctus malesuada diam, vitae condimentum metus pretium id.
+ Vestibulum molestie, turpis facilisis scelerisque molestie, lorem nibh porttitor purus, sollicitudin rutrum sem lectus id ligula.
+ Maecenas sapien diam, faucibus viverra condimentum id, viverra sit amet metus.
+ Sed viverra tellus volutpat sapien faucibus lobortis.
+ Donec ligula tellus, lacinia at malesuada nec, pulvinar ut elit.<br /> <br />Phasellus sed lacinia nunc.
+ Aliquam neque augue, mollis sit amet molestie quis, ullamcorper id nibh.
+ Curabitur at volutpat erat.
+ Nam in nisi eu augue varius lacinia sed varius ipsum.
+ Morbi pretium est ut est rutrum eu tincidunt nisl congue.
+ Fusce elementum dignissim mi, nec pulvinar libero faucibus ut.
+ Praesent ac suscipit mi.&nbsp;Nam euismod libero in lectus venenatis ac sollicitudin dolor lacinia.
+ Fusce quis commodo augue.
+ Nam vitae est quis mauris blandit iaculis sit amet non sem.
+ Morbi interdum pellentesque elit in tincidunt.
+ Quisque condimentum porttitor mattis.
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td class="block_td percent_td" width="30%" valign="top" align="left" ><table class="deviceWidth percent_td" width="100%" border="0" cellspacing="0" cellpadding="0" style="border-bottom:2px solid #e0e0e0; background-color:#777777; " ><tr>
+<td height="10" colspan="3" style="font-size:1px; border-collapse:collapse; margin:0; padding:0;">&nbsp;</td>
+</tr>
+<tr ><td width="10" style="font-size:1px; border-collapse:collapse; margin:0; padding:0;">&nbsp;</td>
+<td height="20" valign="middle" style="background-color:#777777; font-family:Arial, Helvetica, sans-serif; " ><div class="mktEditable" id="col-title" ><span style="color:#ffffff; font-size:20px; font-weight:bold; font-family:Arial, Helvetica, sans-serif;">Column Title</span></div>
+</td>
+<td width="10" style="font-size:1px; border-collapse:collapse; margin:0; padding:0;">&nbsp;</td>
+</tr>
+<tr>
+<td height="10" colspan="3" style="font-size:1px; border-collapse:collapse; margin:0; padding:0;">&nbsp;</td>
+</tr>
+</table>
+<table class="deviceWidth" width="100%" bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="0" style="border:1px solid #e0e0e0; background-color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#5e5d5d; " ><tr>
+<td height="10" colspan="3" style="font-size:1px; border-collapse:collapse; margin:0; padding:0;">&nbsp;</td>
+</tr>
+<tr ><td width="10" style="font-size:1px; border-collapse:collapse; margin:0; padding:0;">&nbsp;</td>
+<td valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#5e5d5d; line-height:18px; " ><div class="mktEditable bodyText" id="col-content" ><span style="font-weight: bold; color: #5e5d5d;">SubTitle Goes here.</span><br /> <br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet urna velit. Donec luctus malesuada diam, vitae condimentum metus pretium id. Vestibulum molestie, turpis facilisis scelerisque molestie, lorem nibh porttitor purus, sollicitudin rutrum sem lectus id ligula. Maecenas sapien diam, faucibus viverra condimentum id, viverra sit amet metus. Sed viverra tellus volutpat sapien faucibus lobortis. Donec ligula tellus, lacinia at malesuada nec, pulvinar ut elit. Duis velit justo, feugiat sed mollis a, tristique id felis.</div>
+</td>
+<td width="10" style="font-size:1px; border-collapse:collapse; margin:0; padding:0;">&nbsp;</td>
+</tr>
+<tr>
+<td height="30" colspan="3" style="font-size:1px; border-collapse:collapse; margin:0; padding:0;">&nbsp;</td>
+</tr>
+</table>
+<table class="deviceWidth" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="40" valign="top"><img class="deviceWidth" src="http://na-ab15.marketo.com/rs/bigcommerce/images/curv-bottom-sdw.png" alt="curved bottom shadow" title="curved bottom shadow" width="200" height="21" style="display:block" border="0"></td>
+</tr>
+</table>
+</td>
+<td width="15" style="font-size:1px; border-collapse:collapse; margin:0; padding:0;">&nbsp;</td>
+</tr>
+<tr>
+<td height="20" colspan="5" style="font-size:1px; border-collapse:collapse; margin:0; padding:0;">&nbsp;</td>
+</tr>
+</table>
+<table class="deviceWidth" width="100%" border="0" cellspacing="0" cellpadding="0" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#000000; text-align:center; " ><tr>
+<td height="40" valign="top"><img class="deviceWidth" src="http://na-ab15.marketo.com/rs/bigcommerce/images/curv-bottom-sdw.png" alt="curve bottom shadow" title="curve bottom shadow" width="589" height="34" style="display:block" border="0"></td>
+</tr>
+<tr ><td style="color:#5e5d5d; " ><div class="mktEditable" id="footerBP" ><span class="companyName" style="font-weight:bold;">Mktoweb, Inc.</span> 100 Webster Street, Suite 404, City of Commerce, CA 99999<br>
+<a style="color:#5e5d5d; text-decoration:none;" href="#">Contact Us</a></div>
+</td>
+</tr>
+<tr>
+<td height="30" style="font-size:1px; border-collapse:collapse; margin:0; padding:0;">&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

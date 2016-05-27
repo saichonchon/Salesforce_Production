@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>New Partner Onboarding.Email 2</name>
+    <style>none</style>
+    <subject>Getting started with your portal</subject>
+    <textOnly>We hope by now you’ve had a chance to browse your partner portal and see the exciting new resources at your disposal.
+
+Hi {{lead.First Name:default=there}},
+
+
+We hope by now you’ve had a chance to browse your partner portal and see the exciting new resources at your disposal.
+
+Make sure to check out the Getting Started page &lt;[[http://partners.bigcommerce.com/English/]]&gt;, which has quick links to all of your portal activities:
+
+ - Have a client interested in BigCommerce? Let us know about the opportunity so you get paid.
+ - Need to get trained? Learn more about the BigCommerce platform.
+ - Want to celebrate your partnership? Tell the world that you&apos;re a BigCommerce Partner.
+ - Looking for marketing resources? Use out tools to help you sell more.
+ - Want to see your account? See the details of your partnership.
+
+Get started now &lt;[[https://login.bigcommerce.com/login]]&gt;
+
+Need assistance? Register for an onboarding webinar &lt;[[https://partners.bigcommerce.com/English/]]&gt;.
+
+Thank you,
+
+
+The BigCommerce Partner Team
+partnersupport@bigcommerce.com</textOnly>
+    <type>custom</type>
+</EmailTemplate>

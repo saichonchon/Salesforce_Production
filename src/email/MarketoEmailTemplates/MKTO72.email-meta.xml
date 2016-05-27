@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>New Partner Onboarding.Email 3</name>
+    <style>none</style>
+    <subject>Registering your Bigcommerce deals</subject>
+    <textOnly>We hope by now you’ve had a chance to browse your partner portal and see the exciting new resources at your disposal.
+Hi {{lead.First Name:default=there}},
+Looking to register a new deal? Simply log into your partner portal and click the “Register a Deal” button at the top right of your screen, or use the quick link on the left side of the screen or on the Getting Started page. 
+
+
+
+
+Register a deal now &lt;[[http://partners.bigcommerce.com/English/]]&gt;
+
+
+
+
+Questions about deal registration? Sign up for an onboarding webinar &lt;[[http://grow.bigcommerce.com/Portal-Webinar-Register.html]]&gt;.
+Thank you,
+The Bigcommerce Partner Team
+partnersupport@bigcommerce.com &lt;[[mailto:partnersupport@bigcommerce.com]]&gt;
+{{my.LitmusToken}}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

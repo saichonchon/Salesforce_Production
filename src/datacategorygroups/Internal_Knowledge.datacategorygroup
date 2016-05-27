@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>News</label>
+                <name>News</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Current Support Issues</label>
+                <name>Current_Support_Issues</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Training</label>
+                <name>Training</name>
+            </dataCategory>
+            <dataCategory>
+                <label>References</label>
+                <name>References</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <label>Ninja Workflow</label>
+                    <name>Ninja_Workflow</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Contact Type</label>
+                    <name>Contact_Type</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Requests &amp; Transfers</label>
+                    <name>Requests_Transfers</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Escalating a Case</label>
+                    <name>Escalating_a_Case</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Processes &amp; Etiquette</label>
+                    <name>Processes_Etiquette</name>
+                </dataCategory>
+                <label>Policies &amp; Procedures</label>
+                <name>Policies_Procedures</name>
+            </dataCategory>
+            <dataCategory>
+                <dataCategory>
+                    <dataCategory>
+                        <label>Salesforce</label>
+                        <name>Salesforce</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>I3 Phone System</label>
+                        <name>I3_Phone_System</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>VCC Five9 Agent</label>
+                        <name>VCC_Five9_Agent</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>MBA</label>
+                        <name>MBA</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Forum</label>
+                        <name>Forum</name>
+                    </dataCategory>
+                    <label>External Communications</label>
+                    <name>External_Communications</name>
+                </dataCategory>
+                <dataCategory>
+                    <label>Internal Communications</label>
+                    <name>Internal_Communications</name>
+                </dataCategory>
+                <dataCategory>
+                    <dataCategory>
+                        <label>Software</label>
+                        <name>Software</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Browsers</label>
+                        <name>Browsers</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Control Panel</label>
+                        <name>Control_Panel</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Test Files</label>
+                        <name>Test_Files</name>
+                    </dataCategory>
+                    <dataCategory>
+                        <label>Online Tools</label>
+                        <name>Online_Tools</name>
+                    </dataCategory>
+                    <label>Resources</label>
+                    <name>Resources</name>
+                </dataCategory>
+                <label>Tools</label>
+                <name>Tools</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Design Customizations</label>
+                <name>Design_Customizations</name>
+            </dataCategory>
+            <label>Support / Dojo</label>
+            <name>Support_Dojo</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Sales Tools</label>
+                <name>Sales_Tools</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Office of Paranoia</label>
+                <name>Office_of_Paranoia</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Sales Collateral</label>
+                <name>Sales_Collateral</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Sales Briefs</label>
+                <name>Sales_Briefs</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Sales Enablement</label>
+                <name>Sales_Enablement</name>
+            </dataCategory>
+            <label>Sales</label>
+            <name>Sales</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>Internal Knowledge</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

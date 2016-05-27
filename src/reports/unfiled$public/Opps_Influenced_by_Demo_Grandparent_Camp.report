@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CM.RESPONDED</field>
+    </columns>
+    <columns>
+        <field>PRIMARY</field>
+    </columns>
+    <columns>
+        <field>CONTACT.FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>OCR.ROLE</field>
+    </columns>
+    <columns>
+        <field>OPP.NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OPP.AMOUNT</field>
+    </columns>
+    <columns>
+        <field>OPP.CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>OPP.STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CAMPAIGN.PARENT.NAME</column>
+            <operator>equals</operator>
+            <value>SBDPartner.Lead Referral,Prospects.Social Ads.2015Q4.,Prospects.Print Ads.2016Q1.,Prospects.Partner Activity.2015Q4.,Prospects.Organic Social.2015Q4.,Prospects.Marketing Events.2015Q4.,Prospects.General Activities.2015Q4.,Prospects.Email Campaigns.2015Q4.,Prospects.Email Ads.2016Q1.,Prospects.Display Ads.2015Q4.,Prospects.CPC Ads.2015Q4.,Prospects.Content Campaigns.2015Q4.,Demo Requests - Parent Legacy,Prospects.Affiliate Activity.2015Q4.</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CAMPAIGN.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Opps Influenced by Demo Grandparent Camp</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignInfluence</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+</Report>

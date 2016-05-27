@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$New_Product_Plan__c</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$PurchaseDate__c</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$Status__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Subscriptions__r$New_Product_Plan__c</column>
+            <operator>equals</operator>
+            <value>Gold next</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Gold Next May 1st - July 10th</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Subscriptions__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account.Subscriptions__r$PurchaseDate__c</dateColumn>
+        <endDate>2014-07-10</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2014-05-01</startDate>
+    </timeFrameFilter>
+</Report>

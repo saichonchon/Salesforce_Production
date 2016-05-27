@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Terms &amp; Conditions</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Terms &amp; Conditions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active Date --></label>
+        <name>Active_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiration Date --></label>
+        <name>Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- T&amp;C Text --></label>
+        <name>T_C_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Partner Portal</masterLabel>
+            <translation><!-- Partner Portal --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Terms &amp; Conditions Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Terms &amp; Conditions Text --></label>
+            <section>Terms &amp; Conditions Text</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The Expiration Date must be greater than or equal to the Active Date --></errorMessage>
+        <name>TC_Expiration_Later_Than_Active</name>
+    </validationRules>
+</CustomObjectTranslation>

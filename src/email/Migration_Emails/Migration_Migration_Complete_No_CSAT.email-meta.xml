@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Migration: Migration Complete - No CSAT</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>Migration: Migration Complete - No CSAT</name>
+    <style>formalLetter</style>
+    <subject>Your BigCommerce Catalog Transfer: Congrats, it’s time to set up your store</subject>
+    <textOnly>It’s official: we’ve completed the data migration from your store to BigCommerce. Welcome to the family!
+
+The data migration is the first step in successfully re-launching your online business with BigCommerce. Now it’s time to get your business ready to sell! Here are a few things to finalize before you launch:
+
+- Organize your categories
+
+- Add homepage text
+
+- Add category descriptions/images (if needed)
+
+- Set up store settings
+
+- Set up shipping, taxes and payment gateways
+
+- Place a test order
+
+- Move over your domain
+
+- Install an SSL certificate (optional)
+
+If this feels overwhelming, don&apos;t fret. We have a team of Client Success Coaches who can help guide you in setting up your store. To utilize this free service simply call 866-949-5336.
+
+It has been great working with you. Good luck and happy selling!
+
+Thanks,
+
+The BigCommerce Team</textOnly>
+    <type>html</type>
+</EmailTemplate>

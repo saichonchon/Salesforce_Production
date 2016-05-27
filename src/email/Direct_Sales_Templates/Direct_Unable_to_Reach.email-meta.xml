@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send to trial clients when no response has been received</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>Direct : 	Unable to Reach</name>
+    <style>freeForm</style>
+    <subject>I’m here to help with your BigCommerce account</subject>
+    <textOnly>Hi {!Lead.FirstName},
+
+I‘ve tried to contact you a few times but haven’t been able to get a hold of you. I was hoping to talk a little about your business and get you ready to sell.
+
+I’d also like to discuss some of BigCommerce’s coolest features, like the built-in abandoned cart saver that can help you recover up to 15% of lost sales. It’s available on all Gold-level plans and above.
+
+I’m here to help with whatever you need, so please feel free to shoot me an email or call me at {!Lead.OwnerPhone}.
+
+{!Lead.OwnerFullName}
+eCommerce Business Consultant
+
+
+
+O  +1 {!Lead.OwnerPhone} | 1-888-699-8911 (Toll Free)
+E {!Lead.OwnerEmail}
+A 11305 Four Points Drive | Bldg II Suite 300 | Austin, TX 78726
+
+Visit us at bigcommerce.com
+Follow us News | Facebook | Twitter</textOnly>
+    <type>html</type>
+</EmailTemplate>

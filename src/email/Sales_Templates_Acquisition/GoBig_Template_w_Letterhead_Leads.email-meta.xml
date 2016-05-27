@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>GoBig Promotional Template for Free Theme and 2nd Month Free Offer</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>GoBig Template w/ Letterhead (Leads)</name>
+    <style>freeForm</style>
+    <subject>Special Offer from BigCommerce</subject>
+    <textOnly>Hi {!Lead.FirstName},
+
+It&apos;s been a while since we last spoke. I wanted to let you know about a limited-time special offer that I thought would interest you.
+
+If you sign up for a BigCommerce Enterprise plan from now until May 30, you’ll get a free premium theme AND your second month on us!
+
+You can choose from any of the themes below, which are fully responsive and built using the latest best practices to increase conversion. These themes usually sell for $140, but we’ll add one to your account for free within 48 hours after you upgrade.
+
+Indiana
+
+Alaska
+
+California
+
+Connecticut
+
+Hawaii
+
+
+Ohio
+
+Dusk &amp; Dawn
+
+Cookies &amp; Cream
+
+Sugar &amp; Mint
+
+Bright &amp; Bold
+
+
+
+In addition to your free theme, you’ll get your second month of BigCommerce Enterprise free!
+
+Please make sure to upgrade by May 30 for this special offer.
+
+If you have any questions or if you’d like to upgrade now, please don’t hesitate to email or call me at {!User.Phone}.
+
+Kind regards,
+
+{!User.Name} 
+Ecommerce Business Consultant
+{!User.Phone}</textOnly>
+    <type>html</type>
+</EmailTemplate>

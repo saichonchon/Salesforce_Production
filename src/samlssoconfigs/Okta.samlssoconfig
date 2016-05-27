@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>Username</identityMapping>
+    <issuer>k2go0f1tDUMOBDTKAUKQ</issuer>
+    <loginUrl>https://bigcommerce.okta.com/app/salesforce/k2go0f1tDUMOBDTKAUKQ/sso/saml</loginUrl>
+    <logoutUrl>https://bigcommerce.okta.com</logoutUrl>
+    <name>Okta</name>
+    <oauthTokenEndpoint>https://login.salesforce.com/services/oauth2/token?so=00D30000001FDCG</oauthTokenEndpoint>
+    <redirectBinding>false</redirectBinding>
+    <salesforceLoginUrl>https://login.salesforce.com?so=00D30000001FDCG</salesforceLoginUrl>
+    <samlEntityId>https://saml.salesforce.com</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIICoTCCAgqgAwIBAgIGATzMLDdVMA0GCSqGSIb3DQEBBQUAMIGTMQswCQYDVQQGEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwET2t0YTEUMBIGA1UECwwLU1NPUHJvdmlkZXIxFDASBgNVBAMMC2JpZ2NvbW1lcmNlMRwwGgYJKoZIhvcNAQkBFg1pbmZvQG9rdGEuY29tMB4XDTEzMDIxMjAyMTA1NVoXDTQzMDIxMjAyMTE1NVowgZMxCzAJBgNVBAYTAlVTMRMwEQYDVQQIDApDYWxpZm9ybmlhMRYwFAYDVQQHDA1TYW4gRnJhbmNpc2NvMQ0wCwYDVQQKDARPa3RhMRQwEgYDVQQLDAtTU09Qcm92aWRlcjEUMBIGA1UEAwwLYmlnY29tbWVyY2UxHDAaBgkqhkiG9w0BCQEWDWluZm9Ab2t0YS5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKP/BkSk3Fzw2QEcrYXF0B1xMIQvA1HzQkWqZhSOqYK1nycjA/7LMbDn7OSMW7NMcMpMj13RLb8ke5AFfi69d9sSV+OgqWh7KcalhDi6ajVrLRRiXuS+dgI6+jTmKIIUr6vDW2NH69HX1skw0BjQwdwNIUmLfO2ogWI2uynlsbFxAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAQ2vTRuVUGMmwQ2NmJwUCT3HjnlORtEL55NN1hiM6KgyYOJNGZYba2SAvxsu4L1csJ0kKhUr5xPRG3FfbY8fZvCstkZdwFkSr5aHax+Z1zk1AASSbQyscd5qL+yS2X4tb/6tTAPZN4lJ25fR7nA5XPPqOCkQ1iQ/TdX7FQqYsZBw=</validationCert>
+</SamlSsoConfig>

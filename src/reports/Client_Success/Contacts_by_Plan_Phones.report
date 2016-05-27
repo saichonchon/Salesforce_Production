@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_61890718</developerName>
+        <masterLabel>Plan Types</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Case.Bigcommerce_Plan__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Bronze Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bronze Plan - Unlimited Storage</sourceValue>
+            </sourceValues>
+            <value>01 - Bronze</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Gold NEXT</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gold Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Plus Plan</sourceValue>
+            </sourceValues>
+            <value>03 - Gold/Plus</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Platinum NEXT</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Platinum Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Platinum Plus</sourceValue>
+            </sourceValues>
+            <value>04 - Platinum</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Diamond Plan</sourceValue>
+            </sourceValues>
+            <value>05 - Diamond</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Partner Sandbox</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Professional Application Developer Store</sourceValue>
+            </sourceValues>
+            <value>08 - Partner</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Bigcommerce Enterprise Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bigcommerce Enterprise Plan Subsidiary</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bigcommerce Enterprise Plan Plus SLA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Tier 1 Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Tier 2 Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Tier 3 Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Tier 4 Plan</sourceValue>
+            </sourceValues>
+            <value>06 - Enterprise</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Pro Gold</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pro Bronze</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pro Platinum</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pro Silver</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Go Silver</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Go Platinum</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Go Gold</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Go Bronze</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Professional</sourceValue>
+            </sourceValues>
+            <value>07 - SBD</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>15 Day Free Trial</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>30 Day Free Trial</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>45 Day Free Trial</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Trial</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>15 Day Trial</sourceValue>
+            </sourceValues>
+            <value>00 - Trial</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Silver Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Silver NEXT v2 (29.95)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Silver NEXT</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Standard Plan</sourceValue>
+            </sourceValues>
+            <value>02 - Silver/Standard</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>Case.Total_Call_CTI_Time__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>STATUS</column>
+            <operator>equals</operator>
+            <value>New,On Hold,Open Unsolved,Pending Acceptance,Waiting on Client,Closed,Reopened</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT.ACCOUNT</column>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <operator>equals</operator>
+            <value>Phone,Web,Chat</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Case.Client_Success</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Bigcommerce_Plan__c</column>
+            <operator>notContain</operator>
+            <value>domain,ssl,test,employee</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>ORIGIN</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_61890718</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Bigcommerce_Plan__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Contacts by Plan - Phones</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList@Case.Subscription__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LAST30</interval>
+    </timeFrameFilter>
+</Report>

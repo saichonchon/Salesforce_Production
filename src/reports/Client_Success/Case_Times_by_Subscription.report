@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Case$MBA_Subscription_ID__c</field>
+    </columns>
+    <columns>
+        <field>Case$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Case$ClosedDate</field>
+    </columns>
+    <columns>
+        <field>Case.WorkIt2__Timings__r$WorkIt2__Time_In_Minutes__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Case$RecordType</column>
+            <operator>equals</operator>
+            <value>Case.Client_Success,Case.Billing,Case.Cancellations</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Owner</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.WorkIt2__Timings__r$Owner</column>
+            <operator>notEqual</operator>
+            <value>Erick Ablaza,Garrett Cluff,John Hebron,Thomas Blahnik,Maggie Frederick,Maria Huemmer,Aravindhan Venkatraman,Syamraj Korappath,Thulasiramki Purushothaman,Guillermo Velez,Abbey Parker,Foy Howard,Lauren Gettler,Chris Beal,Danielle Canterberry,David Gardner,Kit Gulick</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Origin</column>
+            <operator>notEqual</operator>
+            <value>Kayako,Social,Ticket,Sales Rep,Internal Request,Client Request,abuse@bigcommerce.com,apisupport@bigcommerce.com,billing@bigcommerce.com,cancellations@bigcommerce.com,eigsupport@bigcommerce.com,heartlandsupport@bigcommerce.com,legal@bigcommerce.com,partners@bigcommerce.com,sales@bigcommerce.com,supportcasecreation@bigcommerce.com,Chatter Answers,partnerevents@bigcommerce.com,partnerwithus@bigcommerce.com,team@bigcommerce.com,sellmore@bigcommerce.com,EIG Billing,Bigcommerce Migration Team,Orion Request,App Store Email,Coaches,Insight Billing,marketing@bigcommerce.com,accountservices@bigcommerce.com,Partner Application,Partner Deal Registration,Partner Support,Partner Deal Failed,Partner Marketing</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Web Case Times by Subscription</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cases_with_Time_CRT__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Case.WorkIt2__Timings__r$WorkIt2__Time_In_Minutes__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Case$ClosedDate</dateColumn>
+        <endDate>2015-05-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2015-05-01</startDate>
+    </timeFrameFilter>
+</Report>

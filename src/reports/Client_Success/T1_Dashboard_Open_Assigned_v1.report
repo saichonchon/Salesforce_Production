@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>Case.Bigcommerce_Store_URL__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Case.Case_Time_Worked_Records__c</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <description>Tickets left in ninjas names</description>
+    <filter>
+        <criteriaItems>
+            <column>STATUS</column>
+            <operator>notEqual</operator>
+            <value>On Hold,Pending Acceptance,Waiting on Client,Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Case.Client_Success</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <operator>notContain</operator>
+            <value>migration,sales,partner,cancel,billing,support,trash,api,legal,escalated,callback</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <operator>notEqual</operator>
+            <value>,Criza Vilo,Crystalline Reyes,Donna Enriquez,Donny Cotejo,Edgar Dagohoy,Fred Dawson,Glenn Saturno,Jeff Cadampog,Jhaycob Emberga,John Ubaldo,Jollyann Gudoy,Karthikeyan Palanisamy,Kenneth Jay Cabaobao,Kim Radaza,Madhumitha Ravi</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <operator>notEqual</operator>
+            <value>,Marinelle Reyes,Marvin Carino,Marydianne Patrice Pimping,Mithun Benjamin,Mylen Mahinay,Naresh Potlapudi,Neil Martinez,Nomer Ramos,Paulo Mojica,Prasanth Thamotharan</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <operator>notEqual</operator>
+            <value>,Saleem Fajyazkhan,Saranya Kalimithu,Simona Cimpean,Sorin Poenar,Thirumalai Subramanian,Venizybelle Escoses,Verti Sugir,Alvin Boregas,Alvin Balena,Bhavani Pathipati,Carlos Venua</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LAST_UPDATEONLY</column>
+            <operator>notEqual</operator>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <operator>notEqual</operator>
+            <value>Jessica Malnik,Maria Huemmer,Karen Friedman,Ab Martinez,Ryan Juarez,Abbey Parker,Lauren Gettler,Josh Burney,Kenneth Cabaobao</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>T1 Dashboard - Open Assigned v1</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_PREVCURFY</interval>
+    </timeFrameFilter>
+</Report>

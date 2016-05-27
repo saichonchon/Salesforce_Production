@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notifies Executive Sponsor of Opp requesting their attention.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>Executive Sponsorship Notification</name>
+    <style>freeForm</style>
+    <subject>This Opportunity Needs Your Executive Sponsorship!</subject>
+    <textOnly>Executive Sponsor Requested
+
+Executive Sponsor: {!Opportunity.Executive_Sponsorship__c}
+Sponsorship Notes: {!Opportunity.Executive_Sponsorship_Notes__c}
+
+Opportunity Information
+Account Name: {!Account.Name}
+Opportunity Name: {!Opportunity.Name}
+Stage: {!Opportunity.StageName}
+Amount: {!Opportunity.Amount}
+Expected Close Date: {!Opportunity.CloseDate}
+Opportunity: {!Opportunity.Link}
+
+Primary Contact
+Name: {!Opportunity.Contact__c}
+Email: {!Opportunity.Contact_Email__c}
+
+Thank you for your assistance in closing this deal!
+
+{!User.Name}</textOnly>
+    <type>html</type>
+</EmailTemplate>

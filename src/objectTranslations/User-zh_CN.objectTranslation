@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Use this area to describe something about you or your business --></help>
+        <label><!-- About Me --></label>
+        <name>About_Me_Custom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account ID --></label>
+        <name>Account_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- All in Quota --></label>
+        <name>All_in_Quota__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Safe ID --></label>
+        <name>Case_Safe_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Count Beginning of Last Month --></label>
+        <name>Client_Count_Beginning_of_Last_Month__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used in Dashboard reporting to get monthly churn rates --></help>
+        <label><!-- Client Count Beginning of Month --></label>
+        <name>Client_Count_Beginning_of_Month__c</name>
+    </fields>
+    <fields>
+        <help><!-- allows you to specify an alternative email address of the user. Besides the primary email address alias will also be used in order to identify who the owner, organizer or invitees are of tasks/events created by Groove. --></help>
+        <label><!-- Email Alias 1 --></label>
+        <name>DaScoopComposer__Email_Alias_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- allows you to specify an alternative email address of the user. Besides the primary email address alias will also be used in order to identify who the owner, organizer or invitees are of tasks/events created by Groove. --></help>
+        <label><!-- Email Alias 2 --></label>
+        <name>DaScoopComposer__Email_Alias_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- is the G+ ID of the user. This is populated via the Groove Auth Provider Handler at the first time a user logs in via this Auth Provider. --></help>
+        <label><!-- G+ ID --></label>
+        <name>DaScoopComposer__Google_Plus_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Controls whether or not this user can be authorized by other users to managed their unresolved items.
+
+WARNING: enabling this option for a user might expose the content of other users&apos; emails to this user. --></help>
+        <label><!-- Is Unresolved Items Agent --></label>
+        <name>DaScoopComposer__Is_Unresolved_Items_Agent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Controls who you authorize too handle your Groove Unresolved Items (i.e. deleting or assigning synced emails to related records).
+
+WARNING: This will expose some of your emails to the Unresolved Items Agent. --></help>
+        <label><!-- My Unresolved Items Agent --></label>
+        <name>DaScoopComposer__My_Unresolved_Items_Agent__c</name>
+        <relationshipLabel><!-- Users (My Unresolved Items Agent) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Days Passed in the Month --></label>
+        <name>Days_Passed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Passed in the Quarter --></label>
+        <name>Days_Passed_in_the_Quarter__c</name>
+    </fields>
+    <fields>
+        <help><!-- DAY(DATE(YEAR(TODAY()),MONTH(TODAY())+1,1)-1) --></help>
+        <label><!-- Days in the Month --></label>
+        <name>Days_in_the_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days in the Quarter --></label>
+        <name>Days_in_the_Quarter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Passed in the Week --></label>
+        <name>Days_passed_in_the_week__c</name>
+    </fields>
+    <fields>
+        <help><!-- Link to go to user&apos;s edit detail page --></help>
+        <label><!-- Edit User --></label>
+        <name>Edit_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full Name --></label>
+        <name>Full_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours Passed --></label>
+        <name>Hours_Passed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours Passed in the Quarter --></label>
+        <name>Hours_Passed_in_the_Quarter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours Passed in the Week --></label>
+        <name>Hours_Passed_in_the_Week__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours in the Month --></label>
+        <name>Hours_in_the_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours in the Quarter --></label>
+        <name>Hours_in_the_Quarter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours in the Week --></label>
+        <name>Hours_in_the_Week__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please note that only &quot;Bigcommerce Sales Rep&quot; users can receive leads through the Round Robin, regardless of this setting. --></help>
+        <label><!-- Included in Round Robin --></label>
+        <name>Included_in_Round_Robin__c</name>
+        <picklistValues>
+            <masterLabel>Included</masterLabel>
+            <translation><!-- Included --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Included</masterLabel>
+            <translation><!-- Not Included --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Operations Approver --></label>
+        <name>Operations_Approver__c</name>
+        <relationshipLabel><!-- Users (Operations Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pro-Rate Percent of Month Lapsed --></label>
+        <name>Pro_Rate_Percent_of_Month_Lapsed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quota --></label>
+        <name>Quota__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ramp Level --></label>
+        <name>Ramp_Level__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used in international email templates --></help>
+        <label><!-- Skype Name --></label>
+        <name>Skype_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store Quota --></label>
+        <name>Store_Quota__c</name>
+    </fields>
+    <fields>
+        <help><!-- success squad survey --></help>
+        <label><!-- Survey Link - Acquisition --></label>
+        <name>Survey_Link_Acquisition__c</name>
+    </fields>
+    <fields>
+        <help><!-- For client success survey personalization to be used in email templates --></help>
+        <label><!-- Survey Link --></label>
+        <name>Survey_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tenured Months in Role --></label>
+        <name>Tenured_Months__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Count --></label>
+        <name>User_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Detail --></label>
+        <name>User_Detail__c</name>
+    </fields>
+    <fields>
+        <help><!-- Link to the user&apos;s photo to be used in email templates --></help>
+        <label><!-- User Image --></label>
+        <name>User_Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weekly All In Quota --></label>
+        <name>Weekly_All_In_Quota__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weekly Quota --></label>
+        <name>Weekly_Quota__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weeks in the Month --></label>
+        <name>Weeks_in_the_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSProSFMembershipStatus --></label>
+        <name>dsfs__DSProSFMembershipStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSProSFPassword --></label>
+        <name>dsfs__DSProSFPassword__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSProSFUsername --></label>
+        <name>dsfs__DSProSFUsername__c</name>
+    </fields>
+    <fields>
+        <label><!-- CFS Status --></label>
+        <name>lmscons__CFS_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation>活动的</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deactivated</masterLabel>
+            <translation>已停用</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not CFS user</masterLabel>
+            <translation>无 CFS 用户</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cornerstone Group Admin --></label>
+        <name>lmscons__Cornerstone_Group_Admin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cornerstone ID --></label>
+        <name>lmscons__Cornerstone_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsCachingAnonWebActivityList --></label>
+        <name>mkto_si__IsCachingAnonWebActivityList__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsCachingBestBets --></label>
+        <name>mkto_si__IsCachingBestBets__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsCachingEmailActivityList --></label>
+        <name>mkto_si__IsCachingEmailActivityList__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsCachingGroupedWebActivityList --></label>
+        <name>mkto_si__IsCachingGroupedWebActivityList__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsCachingInterestingMomentsList --></label>
+        <name>mkto_si__IsCachingInterestingMomentsList__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsCachingScoringList --></label>
+        <name>mkto_si__IsCachingScoringList__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsCachingStreamList --></label>
+        <name>mkto_si__IsCachingStreamList__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsCachingWatchList --></label>
+        <name>mkto_si__IsCachingWatchList__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsCachingWebActivityList --></label>
+        <name>mkto_si__IsCachingWebActivityList__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketo Sales Insight Welcome Counter --></label>
+        <name>mkto_si__Sales_Insight_Counter__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, user has logged and is not available to receive distributions from the Distribution Engine --></help>
+        <label><!-- Is logged out --></label>
+        <name>n2de__Is_logged_out__c</name>
+    </fields>
+    <fields>
+        <label><!-- InsideSales Admin --></label>
+        <name>qbdialer__InsideSales_Admin__c</name>
+    </fields>
+    <fields>
+        <label><!-- InsideSales Subdomain --></label>
+        <name>qbdialer__is_subdomain__c</name>
+    </fields>
+    <fields>
+        <label><!-- InsideSales Authorization Token --></label>
+        <name>qbdialer__is_token__c</name>
+    </fields>
+    <fields>
+        <label><!-- InsideSales Password --></label>
+        <name>qbdialer__password__c</name>
+    </fields>
+    <fields>
+        <label><!-- InsideSales Permissions --></label>
+        <name>qbdialer__permissions__c</name>
+    </fields>
+    <fields>
+        <label><!-- InsideSales Username --></label>
+        <name>qbdialer__username__c</name>
+    </fields>
+    <layouts>
+        <layout>Bigcommerce User Layout</layout>
+        <sections>
+            <label><!-- Cornerstone Details --></label>
+            <section>Cornerstone Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- InsideSales Information --></label>
+            <section>InsideSales Information</section>
+        </sections>
+        <sections>
+            <label><!-- Reporting Metrics --></label>
+            <section>Reporting Metrics</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Community User</layout>
+        <layoutType>UserAlt</layoutType>
+        <sections>
+            <label><!-- About --></label>
+            <section>About</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Guest - Unauthenticated</layout>
+        <layoutType>UserAlt</layoutType>
+        <sections>
+            <label><!-- About --></label>
+            <section>About</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- The Department field cannot be edited.  Please contact your Salesforce Admin if you need the value changed --></errorMessage>
+        <name>Users_Cannot_CHange_Department_Field</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Clone --></label>
+        <name>ctu__Clone</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send to trial clients when trial is about to expires</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>Direct : Store Expiring - Abandoned Cart Saver text</name>
+    <style>freeForm</style>
+    <subject>I’m here to help with your BigCommerce account</subject>
+    <textOnly>Hi {!Lead.FirstName},
+
+Looks like your trial is almost over, which means your store and all its data will be deleted on {!Lead.Trial_Expiration_Date__c}. Please let me know ASAP if you’d like to continue with BigCommerce so I can make sure your store is saved.
+
+If you’d like to keep your BigCommerce store, we have some awesome built-in features you might be interested in, including our abandoned cart saver. It can help you recover up to 15% of lost sales, and is included on Gold-level plans and above.
+
+Please don’t hesitate to reach out to me if you need anything, either via email or at {!Lead.OwnerPhone}.
+
+{!Lead.OwnerFullName}
+eCommerce Business Consultant
+
+
+
+O  +1 {!Lead.OwnerPhone} | 1-888-699-8911 (Toll Free)
+E {!Lead.OwnerEmail}
+A 11305 Four Points Drive | Bldg II Suite 300 | Austin, TX 78726
+
+Visit us at bigcommerce.com
+Follow us News | Facebook | Twitter</textOnly>
+    <type>html</type>
+</EmailTemplate>

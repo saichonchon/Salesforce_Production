@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_21551427</developerName>
+        <masterLabel>Active Stores</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Lead$ConvertedAccount.Active_Stores__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>0</to>
+            </sourceValues>
+            <value>None</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>0</from>
+                <to>1</to>
+            </sourceValues>
+            <value>1</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>1</from>
+            </sourceValues>
+            <value>2+</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_23311844</developerName>
+        <masterLabel>Last Purchase Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Lead$ConvertedAccount.MaxSub_Purchase_Team__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Acquisition Sales</sourceValue>
+            </sourceValues>
+            <value>Acquisition</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Automated Sales User</sourceValue>
+            </sourceValues>
+            <value>Automated</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Enterprise Sales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Premium</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Premium Sales</sourceValue>
+            </sourceValues>
+            <value>Enterprise</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Inbound</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Inbound Sales</sourceValue>
+            </sourceValues>
+            <value>Inbound</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Outbound</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Outbound Sales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Outbound Sales I</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Outbound Sales II</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Outbound Sales II-AU/NZ</sourceValue>
+            </sourceValues>
+            <value>Outbound</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Channel Partner Sales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Partner Sales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Partner Sales-AU/NZ</sourceValue>
+            </sourceValues>
+            <value>Partner</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>SBD</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Strategic Business Development</sourceValue>
+            </sourceValues>
+            <value>SBD</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Training</sourceValue>
+            </sourceValues>
+            <value>Training</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Direct Sales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales Direct Online</sourceValue>
+            </sourceValues>
+            <value>Direct</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_63105094</developerName>
+        <masterLabel>Lead Owner Role</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Lead$Owner.UserRole</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Acquisition LDR</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Acquisition Leader</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Acquisition Sales</sourceValue>
+            </sourceValues>
+            <value>Acquisition</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Enterprise LDR</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Leader</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Partner Leader</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Sales</sourceValue>
+            </sourceValues>
+            <value>Enterprise</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Inbound Leader</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Inbound Sales</sourceValue>
+            </sourceValues>
+            <value>Inbound</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Outbound II Leader</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Outbound I Leader</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Outbound Sales I</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Outbound Sales II</sourceValue>
+            </sourceValues>
+            <value>Outbound</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Bigcommerce Internal Account Partner User</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Partner Leader</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Partner Sales</sourceValue>
+            </sourceValues>
+            <value>Partner</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Lead Qualifier</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Strategic Business Development</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VP of SBD</sourceValue>
+            </sourceValues>
+            <value>SBD</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Upsell Rep</sourceValue>
+            </sourceValues>
+            <value>Upsell</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Automated Sales User</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Inactive Users</sourceValue>
+            </sourceValues>
+            <value>BC Team</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumnStacked</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Lead$CreatedDate</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <secondaryGroupingColumn>BucketField_21551427</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Large</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Lead$ConvertedAccount.Active_Stores__c</field>
+    </columns>
+    <columns>
+        <field>Lead$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Lead$Owner</column>
+            <operator>notContain</operator>
+            <value>queue</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead$RecordType</column>
+            <operator>notEqual</operator>
+            <value>Lead.Partner_Prospect,zStrategic Partner Prospect</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead$Experience__c</column>
+            <operator>notEqual</operator>
+            <value>A Web Designer/Developer,I&apos;m setting up a store for a client,designer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead$Stage__c</column>
+            <operator>notEqual</operator>
+            <value>Closed Lost</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_21551427</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_63105094</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>Lead$CreatedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>DB: Lead Convert by Role - Open</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Leads_Custom_Report__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Lead$ConvertedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

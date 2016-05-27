@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>TEST - Current Trial V2.test Day 03</name>
+    <style>none</style>
+    <subject>Make the most of your trial</subject>
+    <textOnly>You have 11 days remaining on your free trial. Open your store by following these easy steps!
+It&apos;s time to add your first product
+It’s quick and easy to add products to your Bigcommerce store. Don’t have products yet? We’ll help you find some via our dropshipping &lt;[[https://www.bigcommerce.com/apps/dropshipping/]]&gt; apps or our partnership with Alibaba.com &lt;[[https://www.bigcommerce.com/apps/alibabacom-wholesale/]]&gt;.
+Add a product &lt;[[https://login.bigcommerce.com/login]]&gt;
+Get ready to open your store for business
+{{my.LitmusToken}}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

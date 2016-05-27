@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Subscription__c.StoreURL__c</field>
+    </columns>
+    <columns>
+        <field>Subscription__c.Contact__c</field>
+    </columns>
+    <columns>
+        <field>Subscription__c.ExpirationDate__c</field>
+    </columns>
+    <columns>
+        <field>Subscription__c.Email__c</field>
+    </columns>
+    <columns>
+        <field>Subscription__c.Channel_Partner__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Subscription__c.MBA_Subscription</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Subscription__c.Was_Trial__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_OWNER_ROLE</column>
+            <operator>contains</operator>
+            <value>partner</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Subscription__c.Test_Store__c</column>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_OWNER_NAME</column>
+            <operator>equals</operator>
+            <value>jennifer schultz</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Subscription__c.Channel_Partner__c</column>
+            <operator>equals</operator>
+            <value>Intuit Solutions</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Subscription__c.Channel_Partner__c</column>
+            <operator>equals</operator>
+            <value>intuit solutions</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_OWNER_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Intuit Solutions Weekly Lead Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Subscription__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Subscription__c.StartDate__c</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$rvpe__RVMember__c.rvpe__Email__c</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVAccount__c.rvpe__Phone1__c</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVAccount__c.rvpe__Phone2__c</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVAccount__c.rvpe__WebSite__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>All RV Accounts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$rvpe__RVAccount__c@rvpe__RVAccount__c.rvpe__RVPrimaryMember__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>rvpe__RVAccount__c.Approved_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

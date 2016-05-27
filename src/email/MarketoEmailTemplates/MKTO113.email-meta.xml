@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Hubspot sent Email 1</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Google Shopping Promo Code.Email 2</name>
+    <style>none</style>
+    <subject>Reach millions of new customers with Google Shopping</subject>
+    <textOnly>Visit Bigcommerce.com to request a demo
+Get started
+Place products directly in front of potential customers
+With our Google Shopping partnership you can generate traffic for your store and put your products front and center of shoppers searching for items on Google.
+
+Traditionally, the hardest part of using Google Shopping was adding all your products. Now you can automatically import product data from your Bigcommerce store to:
+
+ - Save time and effort  by not having to submit separate files to Google
+ - Improve accuracy  by automatically syncing your latest product data
+ - Make advertising easier by having new products automatically sent to Google Shopping
+
+
+To help you get started, we&apos;ll give you $100 in AdWords credits when you spend $25 on Google Shopping campaigns. See terms and conditions as well as how to redeem this offer below.
+
+Here is your exclusive promo code:{{lead.Promotional Code:default=contact us for your promo code}}
+Get started &lt;[[https://login.bigcommerce.com/login]]&gt;
+Sincerely,
+The Bigcommerce Team
+
+
+
+Terms and conditions for this offer:
+
+ - Offer available to customers with a billing address in the United States only. One promotional code per advertiser.
+ - To activate this offer: Enter the promotional code &lt;[[http:// https://support.google.com/adwords/answer/1703648]]&gt; in your account before 12/31/2016.
+ - To earn the credit: After entering the code, your advertising campaigns must accrue costs of at least $25, excluding any taxes, within 30 days. Making a payment of $25 is not sufficient. The tracking of advertising costs towards $25 begins after you&apos;ve entered the code.
+ - Once 2 &amp; 3 are completed, the credit will typically be applied within 5 days to the Billing Summary of your account.
+- Credits apply to future advertising costs only. Credits cannot be applied to costs accrued before the code was entered.
+- You will not receive a notification once your credit is used up and any additional advertising costs will be charged to your form of payment. If you don&apos;t want to continue advertising, you can pause or delete your campaigns at any time.
+- Your account must be successfully billed by AdWords and remain in good standing in order to qualify for the promotional credit.
+- Full terms and conditions can be found here: http://www.google.com/adwords/coupons/terms.html &lt;[[http://www.google.com/adwords/coupons/terms.html]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

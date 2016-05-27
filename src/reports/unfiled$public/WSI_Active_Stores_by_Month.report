@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Opportunity.Amount:SUM * (20/100)</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Commission to IC</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Opportunity.Amount:SUM * (10/100)</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Commission to Coorporate</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>rvpe__RVAccount__c.rvpe__Opportunities__r$Amount</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVAccount__c.rvpe__Opportunities__r$StoreURL__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>rvpe__RVAccount__c.rvpe__Opportunities__r$rvpe__RVAccount__c</column>
+            <operator>contains</operator>
+            <value>WSI</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>rvpe__RVAccount__c.rvpe__Opportunities__r$Status__c</column>
+            <operator>equals</operator>
+            <value>Active</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>rvpe__RVAccount__c.rvpe__Opportunities__r$Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>rvpe__RVAccount__c.rvpe__Opportunities__r$CloseDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>rvpe__RVAccount__c.rvpe__Opportunities__r$rvpe__RVAccount__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>WSI Active Stores by Month</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>RV_Accounts_with_Lookup_CUSTOM2__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>rvpe__RVAccount__c.rvpe__Opportunities__r$PurchaseDate__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

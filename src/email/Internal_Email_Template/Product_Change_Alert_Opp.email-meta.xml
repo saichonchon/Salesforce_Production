@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notification to Opp Owner that Opp product has changed</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>Opp Product Change Alert - Opp</name>
+    <style>freeForm</style>
+    <subject>Store Plan Change Notice: {!Opportunity.Account}</subject>
+    <textOnly>The following store has changed plans:
+
+Opp Name: {!Opportunity.Name}
+URL: {!Opportunity.StoreURL__c}
+
+Product: {!Opportunity.New_Product_Plan__c}
+Purchase Date: {!Opportunity.PurchaseDate__c}
+MRR: {!Opportunity.MonthlyRecurringRevenue__c}
+Billing Cycle: {!Opportunity.BillingCycle__c}
+Provisioning System: {!Opportunity.Source__c}
+
+Status: {!Opportunity.Status__c}
+Stage: {!Opportunity.StageName}
+
+Account Name: {!Opportunity.Account}
+Contact Name: {!Opportunity.Contact__c}
+View this store in Salesforce</textOnly>
+    <type>html</type>
+</EmailTemplate>

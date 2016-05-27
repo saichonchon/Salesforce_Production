@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>University</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>University</value>
+    </caseValues>
+    <fields>
+        <label><!-- Additional Resources --></label>
+        <name>Additional_Resources__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forum Link --></label>
+        <name>Forum_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nav Title --></label>
+        <name>Nav_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Video Description --></label>
+        <name>Next_Video_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Video Link Text --></label>
+        <name>Next_Video_Link_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Video Thumbnail --></label>
+        <name>Next_Video_Thumbnail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Video URL --></label>
+        <name>Next_Video_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prev Video Description --></label>
+        <name>Prev_Video_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prev Video Link Text --></label>
+        <name>Prev_Video_Link_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prev Video Thumbnail --></label>
+        <name>Prev_Video_Thumbnail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prev Video URL --></label>
+        <name>Prev_Video_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- The short description which will appear on the BCU landing page --></help>
+        <label><!-- Short Description --></label>
+        <name>Short_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- The title which appears on the BCU Landing Page --></help>
+        <label><!-- Short Title --></label>
+        <name>Short_Title__c</name>
+    </fields>
+    <fields>
+        <help><!-- 1 will be first --></help>
+        <label><!-- Sort Order --></label>
+        <name>Sort_Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- Upload the file to documents, then copy the src URL --></help>
+        <label><!-- Thumbnail Image URL --></label>
+        <name>Thumbnail_Image_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transcript Attachment --></label>
+        <name>Transcript_Attachment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transcript --></label>
+        <name>Transcript__c</name>
+    </fields>
+    <fields>
+        <help><!-- e.g. 3 min 23 sec --></help>
+        <label><!-- Video Duration --></label>
+        <name>Video_Duration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Must be the video ID in the address bar Ex: /watch?v=[id] --></help>
+        <label><!-- Video ID --></label>
+        <name>Video_URL__c</name>
+    </fields>
+    <layouts>
+        <layout>Public BCU Layout</layout>
+        <sections>
+            <label><!-- Landing Page Data --></label>
+            <section>Landing Page Data</section>
+        </sections>
+        <sections>
+            <label><!-- Next and Prev Buttons --></label>
+            <section>Next and Prev Buttons</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

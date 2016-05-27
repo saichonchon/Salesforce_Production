@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Used to log sales reps in and out of office for lead round robin</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Department__c</fullName>
+        <externalId>false</externalId>
+        <label>Department</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Acquisition</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Conversion</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Professional Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Technical Support</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Owner_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.Id</formula>
+        <label>Owner ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Round_Robin_Number_Num__c</fullName>
+        <externalId>false</externalId>
+        <formula>VALUE(Round_Robin_Number__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Round Robin Number_Num</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Round_Robin_Number__c</fullName>
+        <displayFormat>{0}</displayFormat>
+        <externalId>false</externalId>
+        <label>Round Robin Number</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Round_Robin_Queue__c</fullName>
+        <description>The queue user belongs to for Round Robin assignment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The queue user belongs to for Round Robin assignment</inlineHelpText>
+        <label>Round Robin Queue</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Acq Lead Distro Queue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Acquisition Accounts Queue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>APAC Direct Accounts Queue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>APAC Enterprise Accounts Queue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Designer AU Queue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Designer Queue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Direct AU Queue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Direct Sales Accounts Queue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Direct Sales Queue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Enterprise Accounts Queue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partner Requests Queue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SalesRep__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Sales Rep</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>User_Status</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Out of Office</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In the Office</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>User Status</label>
+    <listViews>
+        <fullName>Accounts_Queues</fullName>
+        <columns>NAME</columns>
+        <columns>SalesRep__c</columns>
+        <columns>Round_Robin_Queue__c</columns>
+        <columns>Status__c</columns>
+        <columns>Round_Robin_Number_Num__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Round_Robin_Queue__c</field>
+            <operation>contains</operation>
+            <value>Account</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>In the Office</value>
+        </filters>
+        <label>Accounts Queues</label>
+    </listViews>
+    <listViews>
+        <fullName>Acquisition_Accounts_Queue</fullName>
+        <columns>NAME</columns>
+        <columns>SalesRep__c</columns>
+        <columns>Status__c</columns>
+        <columns>Round_Robin_Number__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Round_Robin_Queue__c</field>
+            <operation>equals</operation>
+            <value>Acquisition Accounts Queue</value>
+        </filters>
+        <label>Acquisition Accounts Queue</label>
+    </listViews>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>SalesRep__c</columns>
+        <columns>Round_Robin_Queue__c</columns>
+        <columns>Round_Robin_Number__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Designer_AU_Queue</fullName>
+        <columns>NAME</columns>
+        <columns>OWNER.FIRST_NAME</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <columns>Round_Robin_Queue__c</columns>
+        <columns>Round_Robin_Number__c</columns>
+        <columns>Status__c</columns>
+        <columns>Owner_ID__c</columns>
+        <columns>Department__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>In the Office</value>
+        </filters>
+        <filters>
+            <field>Round_Robin_Queue__c</field>
+            <operation>equals</operation>
+            <value>Designer AU Queue</value>
+        </filters>
+        <label>Designer AU Queue</label>
+        <sharedTo/>
+    </listViews>
+    <listViews>
+        <fullName>Designer_Queue</fullName>
+        <columns>NAME</columns>
+        <columns>OWNER.FIRST_NAME</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <columns>Round_Robin_Queue__c</columns>
+        <columns>Round_Robin_Number__c</columns>
+        <columns>Status__c</columns>
+        <columns>Owner_ID__c</columns>
+        <columns>Department__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>In the Office</value>
+        </filters>
+        <filters>
+            <field>Round_Robin_Queue__c</field>
+            <operation>equals</operation>
+            <value>Designer Queue</value>
+        </filters>
+        <label>Designer Queue</label>
+        <sharedTo/>
+    </listViews>
+    <listViews>
+        <fullName>Direct_AU_Queue</fullName>
+        <columns>NAME</columns>
+        <columns>OWNER.FIRST_NAME</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <columns>Round_Robin_Queue__c</columns>
+        <columns>Round_Robin_Number__c</columns>
+        <columns>Status__c</columns>
+        <columns>Owner_ID__c</columns>
+        <columns>Department__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>In the Office</value>
+        </filters>
+        <filters>
+            <field>Round_Robin_Queue__c</field>
+            <operation>equals</operation>
+            <value>Direct AU Queue</value>
+        </filters>
+        <label>Direct AU Queue</label>
+        <sharedTo/>
+    </listViews>
+    <listViews>
+        <fullName>Direct_Sales_Accounts</fullName>
+        <columns>NAME</columns>
+        <columns>SalesRep__c</columns>
+        <columns>Status__c</columns>
+        <columns>Round_Robin_Number__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Round_Robin_Queue__c</field>
+            <operation>equals</operation>
+            <value>Direct Sales Accounts Queue</value>
+        </filters>
+        <label>Direct Sales Accounts Queue</label>
+    </listViews>
+    <listViews>
+        <fullName>Enterprise_Accounts_Queue</fullName>
+        <columns>NAME</columns>
+        <columns>SalesRep__c</columns>
+        <columns>Status__c</columns>
+        <columns>Round_Robin_Number__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Round_Robin_Queue__c</field>
+            <operation>equals</operation>
+            <value>Enterprise Accounts Queue</value>
+        </filters>
+        <label>Enterprise Accounts Queue</label>
+    </listViews>
+    <nameField>
+        <displayFormat>US-{0000}</displayFormat>
+        <label>User Status Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>User Status</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>SalesRep__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Round_Robin_Queue__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+</CustomObject>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>Success Squad Survey Acq</name>
+    <style>freeForm</style>
+    <subject>How was your Consultation?  Let us Know</subject>
+    <textOnly>Dear {!Account.OLD_Survey_Contact_Name__c},
+
+It was a pleasure speaking with you today. As part of our ongoing effort to provide better service and to ensure the success of clients like you, we would greatly appreciate your feedback through this very short one minute survey.
+
+To take the survey, please click here: {!Account.OLD_Survey_Link_Success_Squad_Acq__c}
+
+Thank you for your time, and thanks for choosing BigCommerce!
+
+BigCommerce Success Squad
+
+P +1 888.699.8911 (Toll Free)
+A 11305 Four Points Drive | Bldg II Suite 300 | Austin, TX 78726
+Visit us at bigcommerce.com
+Follow us News | Facebook | Twitter</textOnly>
+    <type>html</type>
+</EmailTemplate>

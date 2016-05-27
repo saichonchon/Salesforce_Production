@@ -1,0 +1,6 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[*******************************************************************<br>Case Number: {!Case.CaseNumber}<br>Issue Reported: {!Case.Description}<br><br>Hello,<br><br>Your patience has been truly appreciated. Recently you encountered an issue that prevented the Sort By box on category pages from properly sorting products. This issue has been resolved.<br><br>Please don't hesitate to contact us if you have further questions. Technical support is available 24/7:<br><br>BigCommerce Support<br>http://support.bigcommerce.com<br><br>You can reply to this email or to view your case's status you can go here.<br><br>Please do not remove: {!Case.E2CP__Case_Thread_Id__c}<br><br>]]></td>
+</tr>
+</table>

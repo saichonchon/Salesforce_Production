@@ -1,0 +1,12 @@
+Hi {!Contact.FirstName}, 
+
+Thanks for emailing in about this. 
+
+When the billing date of a store does not exist in a given month (ex: there is no 30th date in February), our system changes the billing date of the store to the 1st of the following month (i.e. March 1st). This also happens when the processing time pushes the 'date paid' data to a day that does not exist in a given month (ex. invoice date of Feb. 27th, the processing time pushed the "date paid" to what would have been Feb 30). The result is that your commission report for February may not accurately represent what was accrued. 
+
+This is a known issue with all partners. From what I can see in your accruals on my end, you have not missed any commissions (even though February's report looks funky). That being said, we are running an audit of all February commission payments to make sure all partners accrued commission properly. If we find that you were negatively impacted and missed a month of commissions, we will be in touch within the next month.
+
+Best,
+Partner Support
+
+{!Case.Description}

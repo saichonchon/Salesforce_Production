@@ -1,0 +1,11 @@
+A BigCommerce lead has been referred to {!Lead.Design_Account__c}
+
+Contact Name: {!Lead.Full_Name__c}
+Company Name: {!Lead.Company}
+Email: {!Lead.Email}
+Phone: {!Lead.Phone}
+Budget: {!Lead.zClient_s_Design_Budget__c}
+Comments: {!Lead.Referral_Notes__c}
+
+Thank you!
+BigCommerce Partner Team

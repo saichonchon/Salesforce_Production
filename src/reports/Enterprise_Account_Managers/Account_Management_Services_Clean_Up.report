@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_89920383</developerName>
+        <masterLabel>Active MRR</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Account.Active_MRR_Value_Opp__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>0</to>
+            </sourceValues>
+            <value>$0</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>0</from>
+                <to>999</to>
+            </sourceValues>
+            <value>&lt;$1K</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>999</from>
+                <to>2,499</to>
+            </sourceValues>
+            <value>&lt;$2.5K</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>2,499</from>
+            </sourceValues>
+            <value>$2.5K+</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_83302369</developerName>
+        <masterLabel>EAM Assigned</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Opportunity.Enterprise_Account_Manager__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Chris Hall</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Corey Nihlean</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dani Feibleman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Gardner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ian Irvin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Karl Avard</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Liam Garcia-Flores</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Patrick Yang</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Phivu Nguyen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Margaret Penn</sourceValue>
+            </sourceValues>
+            <value>Existing EAM</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>JoAnna Moon</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kevin Klausman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Wendy Young</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ryan Roch</sourceValue>
+            </sourceValues>
+            <value>Recent EAM</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Albert Singh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Alexis Varela</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Candice Talley</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chris Ellison</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cristy Carpenter</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Desiree Martinez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jeremy Gryder</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kathleen Long-Ferenzi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mike Blakely</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Steve Kirklin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Steven Bennett</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Victor Soares</sourceValue>
+            </sourceValues>
+            <value>Pro Services Employees</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Active_MRR_Value_Opp__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Launch_Status__c</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 AND (2 OR 3 OR 4 OR 5)) AND 6</booleanFilter>
+        <criteriaItems>
+            <column>Opportunity.Account_Management_Services__c</column>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <operator>equals</operator>
+            <value>Badass Beard Care,GolfEtail,42 Draft Designs,ARIS-Industrial,EyeSave,Marys Tack and Feed,HD Buttercup,The Natori Company,Rayland Supply,Rocktape,S&amp;R Sport - Windward School,&quot;Nextivity,Inc.&quot;,HealthyHomeCompany,&quot;Hyphen Sleep,LLC&quot;,Karma Sleep,Pace Shave,Andrew Greenblatt,The Tanning Store,Stockwell Greetings,Pro Stock Hockey LLC,The Exit Store,The Mountain Corp,Wildlife Wonders,GloveNation LLC,Pro Tool Warehouse LLC,Capital X-Ray,&quot;Paragon Solution Network,Inc.&quot;,Man Crates,Mt Baker Vapor,American Rec,Dottie Couture,Eciggity,&quot;Trex Company,Inc.&quot;,&quot;Enjuku Racing Parts,LLC&quot;,LaQuan Smith,&quot;Botach,Inc&quot;,DealBeds.com,Be Inspired Boutique,ReadyGolf,Firefly Buys,Mead Johnson Nutrition,ShopTerraLUX.com,ShopBubba.com,Icing On The Ring,ezpz,Chapstick,NRG,Di Bruno Bros.,Red Raider Outfitter,Rug Fashion Store,Egyptian Linens,Beatrix New York,Riffraff Diesel,&quot;Decorative Ceiling Tiles,Inc.&quot;,CetaphilStore,A Little Something,&quot;Zogics,LLC&quot;,BunkhouseWestern,Free Time Hobbies,ARY INC,Dawson Precision</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <operator>equals</operator>
+            <value>RelChron Limited,Land Run Brands,liasophiaOutletUS,Eniva Build,Sportsworldchicago,Retro Styler,hotdogcollars.com,QVC Inc,&quot;Capella Flavors,Inc.&quot;,ROGUE AMERICAN,Alexander Dick,VAPRO Supply,DKOldies,Saddleback,Atlanta Light Bulbs,Northern Reflections,Drew Steimel,bedsonlinefinal,&quot;Ohio sleep awareness,llc&quot;,Dare Gallery,Cuban Crafters,teegolfclub,watertech,Camera Ready Cosmetics,Live you Sport,jeni&apos;s,Living Edge,Scooter Hut PTY LTD,boticario-english,Duck Commander,Love That Pet Group,Gear for Girls Ltd,bikesomewhere,Hydro Empire,San Lorenzo Hawaii,DriveTrain America,Busy Bee,Yala,bohemiantraders,Berlitz,Cornell Paper,&quot;Washington Music Sales Center,Inc.&quot;,pacerteststore,Gooddrop,Simplicity Hair Oil,TV Store Online,Wilson Language Training Corp,fairwheelbikes,The Bulk Book Store,Modern Vintage Boutique,Chic Couture Online,Bentgate,ARK,Nick Jordan,Native Union,CanningValeAU,Dinovite Tests,ecommerce ventures,1111 EC Services Ltd,Health and Wealth Raffle,Raney&apos;s,Bulk Nutrients,Micks Bike Parts</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <operator>equals</operator>
+            <value>The Maca Team,Porter Internet Sales LLC,Moonlight Feather,Etail Medical,Campus Colors,Josie Maran Cosmetics,Riverview Land Company LLC,Good Guy Tattoo Supply,Esslinger.com,Gotham Machine Made Cigars,MP Export,&quot;Giftnix,LLC.&quot;,Speedy Appliance Parts,Thrifty Appliance Part,PSNCardDelivery,Monitors in Motion,Kardiel,LDC Books,&quot;TextureMedia,Inc&quot;,Appliance Zone,Specialty Bottle,SpellBinders,Protect Your Bubble,MPWR Skincare,The Brandit Agency,Browning Ammunition,Game Card Delivery,Buy the Piece,Menachem Gansbourg,Jigsaw Health,gemstoneking,Dreisilker Electric Motors,AvidMax,thecobblerskitchen,az,Cherrybrook,Assurant,VizardsGunsAndAmmo.com,Snapbac,Marucci Sports,Durawear,Cloudy Collaborations,SMART Technologies ULC,Vogue Fabrics,www.apollo-ecigs.com,Healthy &amp; Active,Solutions Stores,NewBoden Brands,ShoeStores.com,iTunes Card Delivery,Just Natural Products,PureWRX-Sandbox,MooreParts,TheMuses,Zeeberry,ShieldsofStrength,Gazelle,Harbor Mill,nmc,Giant Vapes,uspatriottactical</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <operator>equals</operator>
+            <value>Alan Shugarman,GreatArrivals.com,ViperFitnessEquipment,BigPlush.com,Flash Tattoos,Perfectly Priscilla,TrainingMask,Grace &amp;amp; Lace,limecrime,Legends,VapeWild,Pink Lily Boutique,Gary Pellegrino,Discount Electronics,One Source Industries,Legends Locker,poshpuppyboutique,Mahones,Austin Bazaar Inc,3 Wishes,Rock Bottom Golf,DLT Trading,Moon Shine LP,Tucker Blair,Body Oil,Made4Fighters,Sport Bike Track Gear,CameraKing,diecastmodelswholesale,Silk Worldwide LLC,kagedmuscle,Whataburger Restaurants LLC,Matheson Gas,MMA Overload LLC,Organic Infusions Inc.,&quot;Mehron,Inc.&quot;,Straightdown,&quot;Walls 360,Inc.&quot;,&quot;PC Sports Group.,Inc.&quot;,kohler1,National Sales LTD,Bohn Distributing,Austin Bazaar,Golf Wang,Nine Line Apparel,Pevonia,Hook and Albert,The Makarios Group,PSI Online Store,Family Footwear Center,HDAccessory,Land Big Fish,cleaning-stuff,CableJive,LightMyHouse,ThisWear,Bottle Breacher,&quot;Scott&apos;s Liquid Gold,Inc&quot;,Prepare Wise,Shabby Apple,Educational Outfitters</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Opportunity.Store_Purchase</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_89920383</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_83302369</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Account Management Services Clean Up</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

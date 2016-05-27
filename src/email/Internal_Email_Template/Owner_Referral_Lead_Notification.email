@@ -1,0 +1,16 @@
+You have referred the following lead to {!Lead.Design_Account__c}
+
+NOTE: If the designer needs to be notified via their web form, this step still needs to be done.
+
+Contact Name: {!Lead.Full_Name__c}
+Company Name: {!Lead.Company}
+Email: {!Lead.Email}
+Phone: {!Lead.Phone}
+Budget: {!Lead.zClient_s_Design_Budget__c}
+Comments: {!Lead.Referral_Notes__c}
+
+Partner details:
+Name: {!Lead.Design_Account__c}
+Submission Type: {!Lead.Referral_Submission_Type__c}
+Form URL: {!Lead.Referral_Form_URL__c}
+Email: {!Lead.Referral_Email__c}

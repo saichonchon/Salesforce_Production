@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Marty/Owen PCF.Acc Email 1 - Comparison</name>
+    <style>none</style>
+    <subject>Compare the top ecommerce platforms</subject>
+    <textOnly>Download the Comparison Guide from Bigcommerce to get a side-by-side comparison of the top 4 ecommerce solutions
+
+Free guide: The top 4 ecommerce platforms
+Compare ecommerce solutions based on what matters most to your business
+Download now: &lt;[[http://grow.bigcommerce.com/guide-to-top-four-ecommerce-platforms-pcf.html]]&gt;
+
+The right ecommerce platform can make or break your business. But how do you separate true performance from mere marketing? This free guide offers a side-by-side comparison of the top ecommerce solutions, including a breakdown of SaaS versus on-premise benefits. 
+
+Download today &lt;[[http://grow.bigcommerce.com/guide-to-top-four-ecommerce-platforms-pcf.html]]&gt; to find the best option for your business.
+
+Please give us a call &lt;[[tel:+18446328911]]&gt; if you&apos;d like to learn more about Bigcommerce.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

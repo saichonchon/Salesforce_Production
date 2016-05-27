@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_40168853</developerName>
+        <masterLabel>Region</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Opportunity$rvpe__RVAccount__c.Owner</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Jason Horek</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Evan Smith</sourceValue>
+            </sourceValues>
+            <value>West</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>John Witson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Griffin Leen-Sohl</sourceValue>
+            </sourceValues>
+            <value>Central</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Elsa Carreker</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>John Llana</sourceValue>
+            </sourceValues>
+            <value>East</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Derek Rosenzweig</sourceValue>
+            </sourceValues>
+            <value>APAC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Treehouse Integration User</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bigcommerce Partner Program</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>The Bigcommerce Partner Program</sourceValue>
+            </sourceValues>
+            <value>Programmatic</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Jennifer Schultz</sourceValue>
+            </sourceValues>
+            <value>Member</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_56748510</developerName>
+        <masterLabel>Revenue Source</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Opportunity$Owner.Department</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Design &amp; Solutions Partner,Channel Partner Sales</sourceValue>
+            </sourceValues>
+            <value>Direct</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Opportunity$rvpe__RVAccount__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account</field>
+    </columns>
+    <columns>
+        <field>Opportunity$StageName</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity$Amount</field>
+    </columns>
+    <columns>
+        <field>Opportunity$CloseDate</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Owner</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Owner_Team__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Day_of_Trial__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$MBASubscriptionID__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 AND 2 AND 3 AND (4 OR 5 OR 6) AND 7) AND 8</booleanFilter>
+        <criteriaItems>
+            <column>Opportunity$rvpe__RVAccount__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$IsClosed</column>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Status__c</column>
+            <operator>notEqual</operator>
+            <value>Expired,Cancelled,Fraud,Suspended,Terminated</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Day_of_Trial__c</column>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Day_of_Trial__c</column>
+            <operator>lessThan</operator>
+            <value>45</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$StageName</column>
+            <operator>equals</operator>
+            <value>Discover,Build Value,Validate,Agree</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$rvpe__PartnerOpportunityAcceptance__c</column>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$MBASubscriptionID__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_40168853</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity$rvpe__RVAccount__c.Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_56748510</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Trials Expiring This Month</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunities_with_lookup_data__c</reportType>
+    <roleHierarchyFilter>SystemAdministrator</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$ExpirationDate__c</dateColumn>
+        <endDate>2015-11-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2015-11-16</startDate>
+    </timeFrameFilter>
+</Report>

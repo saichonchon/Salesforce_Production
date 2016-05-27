@@ -1,0 +1,14 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[<font face="Arial, sans-serif"><font>Hi&nbsp;</font><font>{!Case.Contact_First_Name__c},</font></font><br><p class="c3"><font face="Arial, sans-serif"><font><br></font></font></p><p class="c3"><span style="font-family: Arial, sans-serif; font-size: 12pt;">Welcome to BigCommerce! We’re delighted you’ve chosen us to host your online store. You’re in good hands — we’ve successfully moved data for thousands of stores. With your help, the process can be quick and relatively painless.&nbsp;<br><br></span></p><p class="c3"><span style="font-family: Arial, sans-serif; font-size: 12pt;">Here’s what we need from you to get started:&nbsp;<br><br></span></p><p class="c3"><span style="font-family: Arial, sans-serif; font-size: 12pt;">Providing your current store’s credentials and FTP access credentials are essential to kick off the catalog transfer process. Please make sure this FTP user has access to the root directory of your store. You can find your credential request form </span><font face="Arial, sans-serif"><span style="font-size: 12pt;"><a href="http://www.clicktools.com/survey?iv=v8ptl3x0itqd&amp;q1={!Case.Id}">here</a></span></font><span style="font-family: Arial, sans-serif; font-size: 12pt;">. It’s simple, but <u>we can’t begin your catalog transfer without it</u>!&nbsp;<br><br></span></p><p class="c3"><span style="font-family: Arial, sans-serif; font-size: 12pt;">Remember, we’re here to help. If you have any additional questions, please don’t hesitate to reach out to migrations@bigcommerce.com. We’re looking forward to working with you!&nbsp;<br><br></span></p><p class="c3"><span style="font-family: Arial, sans-serif; font-size: 12pt;">Thanks,</span></p><p class="c3"><span style="font-family: Arial, sans-serif; font-size: 12pt;"><br>The BigCommerce Team</span></p><p class="c3"><i style="font-size: 12pt;"><font face="Arial, sans-serif">Case #&nbsp;{!Case.CaseNumber}</font></i></p>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[]]></td>
+</tr>
+</table>

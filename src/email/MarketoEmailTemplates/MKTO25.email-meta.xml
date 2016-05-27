@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>TEST- Marty/Owen PCF.Email 1 - Ecommerce Trends</name>
+    <style>none</style>
+    <subject>Learn how the latest trends grow your sales</subject>
+    <textOnly>Hi {{lead.First Name:default=there}}, 
+
+ One of the hardest parts of being an online merchant is keeping up with the latest trends in marketing, SEO and shopping experiences. You can spend a lot of time and money chasing fads, without knowing exactly what will pay off.
+ 
+ That&apos;s why we put together this free guide: Ecommerce Trends That Will Make or Break Your Business &lt;[[http://grow.bigcommerce.com/ecommerce-marketing-trends-guide-pcf.html]]&gt;. It highlights the trends that will actually improve your bottom line.
+
+
+Get your free guide &lt;[[http://grow.bigcommerce.com/ecommerce-marketing-trends-guide-pcf.html]]&gt;
+
+Enjoy the read, no registration is required. Please feel free to call us &lt;[[tel:+18446328911]]&gt; if you have any questions.
+
+Garrett Ozar
+Ecommerce Business Consultant</textOnly>
+    <type>custom</type>
+</EmailTemplate>

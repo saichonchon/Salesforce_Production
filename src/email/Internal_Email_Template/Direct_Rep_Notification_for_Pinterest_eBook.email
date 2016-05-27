@@ -1,0 +1,12 @@
+{!Lead.OwnerFirstName},
+
+One of your leads has downloaded the Pinterest eBook . A task has been created for you to follow up within 24hrs.  
+
+PLEASE MAKE SURE TO DEDUPE, THEY WERE ONLY DEDUPED BY EMAIL ADDRESS UPON CREATION BY HUBSPOT. Mark them as CLOSED LOST with a the closed lost reason of DUPLICATE if they are dupes. 
+
+ A link to the lead is below.
+
+{!Lead.Link}
+
+Thanks,
+Sales Ops

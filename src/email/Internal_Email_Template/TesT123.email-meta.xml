@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notified EBQ team if their lead converts to a trial while stlil in their name</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>EBQ Lead Convert Notification</name>
+    <style>none</style>
+    <subject>Notification: Lead Converted to Trial</subject>
+    <type>text</type>
+</EmailTemplate>

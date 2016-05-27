@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email is sent Knowledge Editors letting them know submissions is in the queue.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Internal Article Approval Submission</name>
+    <style>none</style>
+    <subject>New Internal Article for Review</subject>
+    <type>text</type>
+</EmailTemplate>

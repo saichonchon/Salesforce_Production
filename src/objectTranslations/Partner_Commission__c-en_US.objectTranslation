@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Partner Commission</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Partner Commissions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Annual Billing --></label>
+        <name>Annual_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- BI Data --></label>
+        <name>BIData__c</name>
+        <relationshipLabel><!-- Partner Commissions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Batch Date --></label>
+        <name>Batch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commission Amount --></label>
+        <name>Commission_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commission Percent --></label>
+        <name>Commission_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count of Records --></label>
+        <name>Count_of_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Month --></label>
+        <name>Current_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include in Current Month --></label>
+        <name>IncludeInCurrentMonth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Client Payment --></label>
+        <name>Monthly_Client_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Partner Commissions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Payment Month --></label>
+        <name>PaymentMonth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Year --></label>
+        <name>PaymentYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Date --></label>
+        <name>Payment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Terms --></label>
+        <name>Payment_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment --></label>
+        <name>Payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processed --></label>
+        <name>Processed__c</name>
+    </fields>
+    <fields>
+        <label><!-- RV Account --></label>
+        <name>RVAccount__c</name>
+        <relationshipLabel><!-- Partner Commissions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rollup Commission --></label>
+        <name>Rollup_Commission__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store Plan --></label>
+        <name>Store_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary YearMonth --></label>
+        <name>Summary_YearMonth__c</name>
+    </fields>
+    <layouts>
+        <layout>Partner Commission Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Summary --></label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Detail --></label>
+        <name>Detail</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Summary --></label>
+        <name>Summary</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,7 @@
+A new Subscription has been assigned to you, but the lead or account is owned by someone else.  Please work with the owner Sales Ops to verify ownership.
+
+Subscription Link: {!Subscription__c.Link}
+Lead: {!Subscription__c.Lead__c}
+Lead Owner: {!Subscription__c.Lead_Owner__c}
+Account: {!Subscription__c.Account__c}
+Account Owner: {!Subscription__c.Account_Owner__c}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CallCenter xmlns="http://soap.sforce.com/2006/04/metadata">
+    <adapterUrl>https://cl-017-den.us.caas.hosted-inin.com/bigcommerce/salesforceclient.aspx</adapterUrl>
+    <customSettings>{&quot;reqSoftphoneHeight&quot;:&quot;650&quot;,&quot;reqUseApi&quot;:&quot;true&quot;,&quot;reqSoftphoneWidth&quot;:&quot;850&quot;}</customSettings>
+    <displayName>Den Open CTI Interactive Intelligence Web Client Connector, CIC 4.0</displayName>
+    <displayNameLabel>Display Name</displayNameLabel>
+    <internalNameLabel>InternalName</internalNameLabel>
+    <sections>
+        <items>
+            <label>CTI Adapter URL</label>
+            <name>reqAdapterUrl</name>
+            <value>https://cl-017-den.us.caas.hosted-inin.com/bigcommerce/salesforceclient.aspx</value>
+        </items>
+        <items>
+            <label>Use CTI API</label>
+            <name>reqUseApi</name>
+            <value>true</value>
+        </items>
+        <items>
+            <label>Softphone Height</label>
+            <name>reqSoftphoneHeight</name>
+            <value>650</value>
+        </items>
+        <items>
+            <label>Softphone Width</label>
+            <name>reqSoftphoneWidth</name>
+            <value>850</value>
+        </items>
+        <label>General Information</label>
+        <name>reqGeneralInfo</name>
+    </sections>
+    <sections>
+        <items>
+            <label>CTI Configuration Name</label>
+            <name>CtiConfigurationName</name>
+            <value>ININWebConnector40</value>
+        </items>
+        <label>Configuration Options</label>
+        <name>reqConfiguration</name>
+    </sections>
+</CallCenter>

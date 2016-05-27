@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <decisions>
+        <name>If_campaignMember_Exists_Delete_it</name>
+        <label>If campaignMember Exists, Delete it</label>
+        <locationX>1132</locationX>
+        <locationY>517</locationY>
+        <defaultConnectorLabel>CampaignMember doesnt exists</defaultConnectorLabel>
+        <rules>
+            <name>CampaignMember_exists_0_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CampaignMemberFoundId</leftValueReference>
+                <operator>NotEqualTo</operator>
+            </conditions>
+            <connector>
+                <targetReference>Delete_CampaignMember_0</targetReference>
+            </connector>
+            <label>CampaignMember exists</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_campaignMember_Exists_do_nothing</name>
+        <label>If campaignMember Exists, do nothing</label>
+        <locationX>158</locationX>
+        <locationY>409</locationY>
+        <defaultConnector>
+            <targetReference>Create_a_new_CampaignMember</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>CampaignMember doesnt exists</defaultConnectorLabel>
+        <rules>
+            <name>CampaignMember_exists</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CampaignMemberFoundId</leftValueReference>
+                <operator>NotEqualTo</operator>
+            </conditions>
+            <connector>
+                <targetReference>If_Record_Type_is_Store_Purchase_and_status_is_active</targetReference>
+            </connector>
+            <label>CampaignMember exists</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_campaignMember_Exists_do_nothing_0</name>
+        <label>If campaignMember Exists, do nothing</label>
+        <locationX>756</locationX>
+        <locationY>491</locationY>
+        <defaultConnectorLabel>CampaignMember exists</defaultConnectorLabel>
+        <rules>
+            <name>CampaignMember_doesnt_exists</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CampaignMemberFoundId</leftValueReference>
+                <operator>EqualTo</operator>
+            </conditions>
+            <connector>
+                <targetReference>Create_a_new_CampaignMember_0</targetReference>
+            </connector>
+            <label>CampaignMember doesnt exists</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_CampaignMember_found_to_delete</name>
+        <label>If CampaignMember found to delete</label>
+        <locationX>426</locationX>
+        <locationY>406</locationY>
+        <defaultConnector>
+            <targetReference>If_Record_Type_is_Store_Purchase_and_status_is_active</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>CampaignMember to delete not found</defaultConnectorLabel>
+        <rules>
+            <name>CampaignMemebr_found_for_deletion</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CampaignMemberFoundId</leftValueReference>
+                <operator>NotEqualTo</operator>
+            </conditions>
+            <connector>
+                <targetReference>Delete_CampaignMember</targetReference>
+            </connector>
+            <label>CampaignMemebr found for deletion</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Record_Type_is_Store_Purchase_and_status_is_active</name>
+        <label>If Record Type is Store Purchase and status is active</label>
+        <locationX>757</locationX>
+        <locationY>232</locationY>
+        <defaultConnector>
+            <targetReference>Search_for_existing_campaign_member_for_campaign_Active_Store_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>RecordType is Not = Store Purchase and status is not =active</defaultConnectorLabel>
+        <rules>
+            <name>RecordType_is_Store_Purchase_and_status_is_active</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordTypeID</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>01213000000AUtx</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>OpportunityStatus</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Active</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Search_for_existing_campaign_member_for_campaign_Active_Store</targetReference>
+            </connector>
+            <label>RecordType is Store Purchase and status is active</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>If record type is Trial and status is active, create campaign member, else delete it</description>
+        <name>If_record_type_is_Trial_and_status_is_active</name>
+        <label>If record type is Trial and status is active</label>
+        <locationX>296</locationX>
+        <locationY>90</locationY>
+        <defaultConnector>
+            <targetReference>Find_CampaignMember_to_delete</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>If record type is not Trial or status is not active</defaultConnectorLabel>
+        <rules>
+            <name>Record_type_is_Trial_and_status_is_active</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordTypeID</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>01213000000AUty</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>OpportunityStatus</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Active</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Find_campaignMember</targetReference>
+            </connector>
+            <label>Record type is Trial and status is active</label>
+        </rules>
+    </decisions>
+    <description>This flow checks the record type and status of the opportunity and creates/Deletes Campaign members accordingly. Used for enrollment in campaigns based on Totango data.</description>
+    <label>Flow for Trial Record Type Opportunity</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>Create a new campaignMember, if it dosnt exists</description>
+        <name>Create_a_new_CampaignMember</name>
+        <label>Create a new CampaignMember</label>
+        <locationX>159</locationX>
+        <locationY>553</locationY>
+        <connector>
+            <targetReference>If_Record_Type_is_Store_Purchase_and_status_is_active</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>CampaignId</field>
+            <value>
+                <elementReference>ActiveTrialCampId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ContactId</field>
+            <value>
+                <elementReference>OpportunityContactID</elementReference>
+            </value>
+        </inputAssignments>
+        <object>CampaignMember</object>
+    </recordCreates>
+    <recordCreates>
+        <description>Create a new campaignMember, if it dosnt exists</description>
+        <name>Create_a_new_CampaignMember_0</name>
+        <label>Create a new CampaignMember</label>
+        <locationX>756</locationX>
+        <locationY>637</locationY>
+        <inputAssignments>
+            <field>CampaignId</field>
+            <value>
+                <elementReference>ActiveStoreCampId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ContactId</field>
+            <value>
+                <elementReference>OpportunityContactID</elementReference>
+            </value>
+        </inputAssignments>
+        <object>CampaignMember</object>
+    </recordCreates>
+    <recordDeletes>
+        <name>Delete_CampaignMember</name>
+        <label>Delete CampaignMember</label>
+        <locationX>415</locationX>
+        <locationY>545</locationY>
+        <connector>
+            <targetReference>If_Record_Type_is_Store_Purchase_and_status_is_active</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>CampaignMemberFoundId</elementReference>
+            </value>
+        </filters>
+        <object>CampaignMember</object>
+    </recordDeletes>
+    <recordDeletes>
+        <name>Delete_CampaignMember_0</name>
+        <label>Delete CampaignMember</label>
+        <locationX>1144</locationX>
+        <locationY>640</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>CampaignMemberFoundId</elementReference>
+            </value>
+        </filters>
+        <object>CampaignMember</object>
+    </recordDeletes>
+    <recordLookups>
+        <description>Find campaign member, if it exists, do nothign, else create it</description>
+        <name>Find_campaignMember</name>
+        <label>Find campaignMember</label>
+        <locationX>164</locationX>
+        <locationY>291</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>If_campaignMember_Exists_do_nothing</targetReference>
+        </connector>
+        <filters>
+            <field>CampaignId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ActiveTrialCampId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>ContactId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>OpportunityContactID</elementReference>
+            </value>
+        </filters>
+        <object>CampaignMember</object>
+        <outputAssignments>
+            <assignToReference>CampaignMemberFoundId</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>Find campaign member and delete it</description>
+        <name>Find_CampaignMember_to_delete</name>
+        <label>Find CampaignMember to delete</label>
+        <locationX>418</locationX>
+        <locationY>251</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>If_CampaignMember_found_to_delete</targetReference>
+        </connector>
+        <filters>
+            <field>CampaignId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ActiveTrialCampId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>ContactId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>OpportunityContactID</elementReference>
+            </value>
+        </filters>
+        <object>CampaignMember</object>
+        <outputAssignments>
+            <assignToReference>CampaignMemberFoundId</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>Search for existing campaign member for campaign &quot;Active Store&quot;, if found, do nothing else create one</description>
+        <name>Search_for_existing_campaign_member_for_campaign_Active_Store</name>
+        <label>Search for existing campaign member for campaign &quot;Active Store&quot;</label>
+        <locationX>758</locationX>
+        <locationY>377</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>If_campaignMember_Exists_do_nothing_0</targetReference>
+        </connector>
+        <filters>
+            <field>CampaignId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ActiveStoreCampId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>ContactId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>OpportunityContactID</elementReference>
+            </value>
+        </filters>
+        <object>CampaignMember</object>
+        <outputAssignments>
+            <assignToReference>CampaignMemberFoundId</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>Search for existing campaign member for campaign &quot;Active Store&quot;, if found, delete else do nothing</description>
+        <name>Search_for_existing_campaign_member_for_campaign_Active_Store_0</name>
+        <label>Search for existing campaign member for campaign &quot;Active Store&quot;</label>
+        <locationX>1133</locationX>
+        <locationY>420</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>If_campaignMember_Exists_Delete_it</targetReference>
+        </connector>
+        <filters>
+            <field>CampaignId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ActiveStoreCampId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>ContactId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>OpportunityContactID</elementReference>
+            </value>
+        </filters>
+        <object>CampaignMember</object>
+        <outputAssignments>
+            <assignToReference>CampaignMemberFoundId</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <startElementReference>If_record_type_is_Trial_and_status_is_active</startElementReference>
+    <variables>
+        <name>ActiveStoreCampId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>701190000005925</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>ActiveTrialCampId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>70119000000591C</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Id of the found campaignMember</description>
+        <name>CampaignMemberFoundId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Contact id of opportunity</description>
+        <name>OpportunityContactID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Status of the opportunity</description>
+        <name>OpportunityStatus</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Record type id of opportunity</description>
+        <name>recordTypeID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_89920383</developerName>
+        <masterLabel>Active MRR</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Account.Active_MRR_Value_Opp__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>0</to>
+            </sourceValues>
+            <value>$0</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>0</from>
+                <to>999</to>
+            </sourceValues>
+            <value>&lt;$1K</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>999</from>
+                <to>2,499</to>
+            </sourceValues>
+            <value>&lt;$2.5K</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>2,499</from>
+            </sourceValues>
+            <value>$2.5K+</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_83302369</developerName>
+        <masterLabel>EAM Assigned</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Opportunity.Enterprise_Account_Manager__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Chris Hall</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Corey Nihlean</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dani Feibleman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Gardner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ian Irvin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Karl Avard</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Liam Garcia-Flores</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Patrick Yang</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Phivu Nguyen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Margaret Penn</sourceValue>
+            </sourceValues>
+            <value>Existing EAM</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>JoAnna Moon</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kevin Klausman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Wendy Young</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ryan Roch</sourceValue>
+            </sourceValues>
+            <value>Recent EAM</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Albert Singh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Alexis Varela</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Candice Talley</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chris Ellison</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cristy Carpenter</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Desiree Martinez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jeremy Gryder</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kathleen Long-Ferenzi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mike Blakely</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Steve Kirklin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Steven Bennett</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Victor Soares</sourceValue>
+            </sourceValues>
+            <value>Pro Services Employees</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Active_MRR_Value_Opp__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Launch_Status__c</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <filter>
+        <booleanFilter>((((1 OR 2 OR 3)) AND 4) AND 5) AND 6</booleanFilter>
+        <criteriaItems>
+            <column>Opportunity.Account_Management_Services__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.ENT_Support__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Premium_Services__c</column>
+            <operator>notEqual</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <operator>equals</operator>
+            <value>Purchased</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Account_Management_Services__c</column>
+            <operator>equals</operator>
+            <value>Enterprise Account Management</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BucketField_83302369</column>
+            <operator>notEqual</operator>
+            <value>Existing EAM,Recent EAM,Pro Services Employees</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.Account_Management_Services__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.Onboarding_Specialist__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_89920383</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>UnAssigned EAM Accounts</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

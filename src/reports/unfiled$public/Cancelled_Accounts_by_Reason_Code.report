@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <acrossGroupingContext>Case.Reason_Code__c</acrossGroupingContext>
+        <calculatedFormula>RowCount/PARENTGROUPVAL(RowCount, ROW_GRAND_SUMMARY, COLUMN_GRAND_SUMMARY)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>GRAND_SUMMARY</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Percent Churn Total</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_74107932</developerName>
+        <masterLabel>Enterprise vs Non-Enterprise</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Case.Bigcommerce_Plan__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Bigcommerce Enterprise Plan Demo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bigcommerce Enterprise Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bigcommerce Enterprise Plan Plus SLA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bigcommerce Enterprise Plan Subsidiary</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise 3</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Plan Subsidiary</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Tier 1 Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Tier 2 Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Tier 3 Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Tier 4 Plan</sourceValue>
+            </sourceValues>
+            <value>Enterprise</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Bronze Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Diamond Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Go Bronze</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Go Gold</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Go Silver</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gold NEXT</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gold Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Platinum NEXT</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Platinum Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Platinum Plus</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pro Bronze</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pro Gold</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pro Platinum</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pro Silver</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Silver NEXT</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Silver Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Plus Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Standard Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Silver NEXT v2 (29.95)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Go Platinum</sourceValue>
+            </sourceValues>
+            <value>Non-Enterprise</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>FK_$Subscription__c.Status__c</column>
+            <operator>equals</operator>
+            <value>Cancelled,Terminated</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Bigcommerce_Plan__c</column>
+            <operator>notContain</operator>
+            <value>trial,ssl,domain</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BucketField_74107932</column>
+            <operator>notEqual</operator>
+            <value>Other</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Reason_Code__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_74107932</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Cancelled Accounts by Reason Code</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList@Case.Subscription__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

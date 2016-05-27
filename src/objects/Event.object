@@ -1,0 +1,1089 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Decline</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteSeries</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewEvent</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <fields>
+        <fullName>ActivityDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>ActivityDateTime</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>DurationInMinutes</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+    </fields>
+    <fields>
+        <fullName>EndDateTime</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>EventSubtype</fullName>
+    </fields>
+    <fields>
+        <fullName>IsAllDayEvent</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>IsPrivate</fullName>
+    </fields>
+    <fields>
+        <fullName>IsVisibleInSelfService</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Location</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+    </fields>
+    <fields>
+        <fullName>ShowAs</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>StartDateTime</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Subject</fullName>
+        <inlineHelpText>Required field by Salesforce; use for description of call, email or other task type</inlineHelpText>
+        <picklist>
+            <picklistValues>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Send Letter/Quote</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Demo</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Migration Call: Trial Store</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Migration Call: Paid Store</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Appointment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Follow Up</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Qualifier Follow Up</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>WhatId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>WhoId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypes>
+        <fullName>Callback</fullName>
+        <active>true</active>
+        <description>Used for Sales when setting callbacks</description>
+        <label>Callback</label>
+        <picklistValues>
+            <picklist>Acquisition_Campaign__c</picklist>
+            <values>
+                <fullName>1ShoppingCart</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3D Cart</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amazon Webstore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CS Cart</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Go Daddy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Interspire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MagentoGo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miva Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OS Commerce</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pinnacle Cart</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ProStores</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Texas Fashion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Upgrade</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Volusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar - Visitors into Buyers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar 2%2E5%2E13</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>X-Cart</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>YahooStores</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>YahooStores2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Zen Cart</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Call_Outcome__c</picklist>
+            <values>
+                <fullName>Check-in</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consultation Booked</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consultation Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consultation Held</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consultation Rescheduled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up to Twitter Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Contact%2FNo Voicemail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planning Session</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registered for Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Upsell</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Voicemail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Person</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Call_Result_Manual__c</picklist>
+            <values>
+                <fullName>Bad Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Busy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Correct Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left Live Message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left Voicemail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Answer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Set Callback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfer%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Number</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Call_Topics__c</picklist>
+            <values>
+                <fullName>Additional Consultation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Additional Web Pages</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Apps</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conversion Tools</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Display Advertising</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Domain</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Strategy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PPC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paid Search</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment Gateway</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Return Policy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SSL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping Method</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping Zones</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Store Launched</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Taxes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Inbound_Test__c</picklist>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancellations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Solicitor%2C HR%2C Wrong Number%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SSQ%2FMigrations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Active Client</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Active Trial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Pretrial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tech Support</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter%2FQuote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Success_Squad_Call_Disposition__c</picklist>
+            <values>
+                <fullName>Call Attempt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancel request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client has no products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consultation Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Escalated Migration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intro Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Callback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self Launch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Store Launched</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unable to reach client</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar Launch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Working with 3rd Party</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Appointment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qualifier Follow Up</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>isdc_dialer_call_type__c</picklist>
+            <values>
+                <fullName>Click-to-Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Domino List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seek List</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Default_Event</fullName>
+        <active>true</active>
+        <description>Default Event</description>
+        <label>Default Event</label>
+        <picklistValues>
+            <picklist>Acquisition_Campaign__c</picklist>
+            <values>
+                <fullName>1ShoppingCart</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3D Cart</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amazon Webstore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CS Cart</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Go Daddy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Interspire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MagentoGo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miva Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OS Commerce</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pinnacle Cart</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ProStores</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Texas Fashion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Upgrade</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Volusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar - Visitors into Buyers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar 2%2E5%2E13</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>X-Cart</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>YahooStores</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>YahooStores2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Zen Cart</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Call_Outcome__c</picklist>
+            <values>
+                <fullName>Check-in</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consultation Booked</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consultation Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consultation Held</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consultation Rescheduled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up to Twitter Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Contact%2FNo Voicemail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planning Session</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registered for Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Upsell</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Voicemail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Person</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Call_Result_Manual__c</picklist>
+            <values>
+                <fullName>Bad Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Busy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Correct Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left Live Message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left Voicemail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Answer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Set Callback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfer%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Number</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Call_Topics__c</picklist>
+            <values>
+                <fullName>Additional Consultation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Additional Web Pages</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Apps</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conversion Tools</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Display Advertising</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Domain</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Strategy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PPC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paid Search</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment Gateway</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Return Policy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SSL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping Method</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping Zones</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Store Launched</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Taxes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Inbound_Test__c</picklist>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancellations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Solicitor%2C HR%2C Wrong Number%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SSQ%2FMigrations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Active Client</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Active Trial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Pretrial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tech Support</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter%2FQuote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Success_Squad_Call_Disposition__c</picklist>
+            <values>
+                <fullName>Call Attempt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancel request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client has no products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consultation Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Escalated Migration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intro Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Callback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self Launch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Store Launched</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unable to reach client</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar Launch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Working with 3rd Party</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Appointment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Migration Call%3A Paid Store</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Migration Call%3A Trial Store</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>isdc_dialer_call_type__c</picklist>
+            <values>
+                <fullName>Click-to-Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Domino List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seek List</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

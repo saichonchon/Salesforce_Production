@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CreatePdf</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailQuote</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewQuote</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SyncQuote</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <fields>
+        <fullName>AccountId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AdditionalName</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>BillingName</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Name_Formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity.Contact__r.FirstName + &quot; &quot; + Opportunity.Contact__r.LastName</formula>
+        <label>Contact Name Formula</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ContractId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Discount</fullName>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>ExpirationDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>GrandTotal</fullName>
+    </fields>
+    <fields>
+        <fullName>IsSyncing</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>LineItemCount</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>One_Time__c</fullName>
+        <description>Total one time charges associated with the quote, populated via roll up</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total one time charges associated with the quote, populated via roll up</inlineHelpText>
+        <label>Total One Time</label>
+        <summarizedField>QuoteLineItem.One_Time_Charge__c</summarizedField>
+        <summaryForeignKey>QuoteLineItem.QuoteId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>MasterDetail</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity.Id</formula>
+        <label>Opportunity ID</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>QuoteToName</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>ShippingHandling</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>ShippingName</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Draft</fullName>
+                <allowEmail>true</allowEmail>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Needs Review</fullName>
+                <allowEmail>true</allowEmail>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Review</fullName>
+                <allowEmail>true</allowEmail>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved</fullName>
+                <allowEmail>true</allowEmail>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected</fullName>
+                <allowEmail>true</allowEmail>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Presented</fullName>
+                <allowEmail>true</allowEmail>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Accepted</fullName>
+                <allowEmail>true</allowEmail>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Denied</fullName>
+                <allowEmail>true</allowEmail>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subtotal</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Tax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>TotalPrice</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Total_MRR__c</fullName>
+        <description>Total MRR - rollup of MRR custom field on the quote line item</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total MRR - rollup of MRR custom field on the quote line item</inlineHelpText>
+        <label>Total Recurring</label>
+        <summarizedField>QuoteLineItem.Recurring_charge__c</summarizedField>
+        <summaryForeignKey>QuoteLineItem.QuoteId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>QUOTE.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>OPPORTUNITY.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Discount</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>GrandTotal</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>QUOTE.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>OPPORTUNITY.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Discount</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>GrandTotal</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>QUOTE.PHONE</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>QUOTE.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Discount</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>GrandTotal</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Prevent_Any_Edits_on_Quote</fullName>
+        <active>true</active>
+        <description>Can&apos;t edit quote if status isn&apos;t draft</description>
+        <errorConditionFormula>Not( ISPICKVAL(Status, &apos;draft&apos;)) &amp;&amp;   
+ $Setup.Admin_Profiles__c.Run_Validation_Rules__c</errorConditionFormula>
+        <errorMessage>Hey - you can&apos;t edit a quote once it&apos;s out of &quot;Draft&quot; status. Please contact your manager for assistance.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Docusign_Testing</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Docusign Testing</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/apex/dsfs__DocuSign_JavaScript&quot;)} 
+var sourceId=DSGetPageIDFromHref(); 
+var RQD=DSGetPageIDFromHref(); 
+
+
+
+var CCRM= &apos;R1~Client;R2~Enterprise Team;R3~Bigcommerce&apos;; 
+var CCTM=&apos;R2~Carbon Copy&apos;;
+
+CRL=&apos;Email~{!Quote.Email};LastName~{!Quote.Contact_Name_Formula__c};Role~R1;RoutingOrder~1,Email~maria.huemmer@bigcommerce.com;LastName~Enterprise Team;Role~R2;RoutingOrder~1,Email~maria.huemmer@@bigcommerce.com;LastName~Maria Huemmer;Role~R3;RoutingOrder~2&apos;;
+
+var DST=&apos;2FE4F4EB-2CA8-44A7-9162-7E9235F75364,C238F61F-485E-4D91-B931-949177D6E912&apos;; 
+
+window.location.href=&quot;/apex/dsfs__DocuSign_CreateEnvelope?DSEID=0&amp;SourceID=&quot;+sourceId+&quot;&amp;DST=&quot;+DST+&quot;&amp;CCRM=&quot;+CCRM+&quot;&amp;CCTM=&quot;+CCTM+&quot;&amp;CRL=&quot;+CRL+&quot;&amp;RQD=&quot;+RQD;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Send_with_Docusign</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Send with Docusign</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/apex/dsfs__DocuSign_JavaScript&quot;)} 
+var sourceId=DSGetPageIDFromHref(); 
+var RQD=DSGetPageIDFromHref(); 
+var CCRM= &apos;R1~Client;R2~Enterprise Team;R3~Bigcommerce;R4~Contract Complete&apos;; 
+var CCTM=&apos;R2~Carbon Copy;R4~Carbon Copy&apos;; 
+
+CRL=&apos;Email~{!Quote.Email};LastName~{!Quote.Contact_Name_Formula__c};Role~R1;RoutingOrder~1,Email~enterprisecontracts@bigcommerce.com;LastName~Enterprise Team;Role~R2;RoutingOrder~1,Email~robert.alvarez@bigcommerce.com;LastName~Second Signer;Role~R3;RoutingOrder~2,Email~contractcomplete@bigcommerce.com;LastName~Contract Complete;Role~R4;RoutingOrder~3&apos;; 
+
+var DST=&apos;2FE4F4EB-2CA8-44A7-9162-7E9235F75364,C238F61F-485E-4D91-B931-949177D6E912&apos;; 
+
+window.location.href=&quot;/apex/dsfs__DocuSign_CreateEnvelope?DSEID=0&amp;SourceID=&quot;+sourceId+&quot;&amp;DST=&quot;+DST+&quot;&amp;CCRM=&quot;+CCRM+&quot;&amp;CCTM=&quot;+CCTM+&quot;&amp;CRL=&quot;+CRL+&quot;&amp;RQD=&quot;+RQD;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Send_with_Docusign_All_Three_Forms</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>TESTING Send with Docusign</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/apex/dsfs__DocuSign_JavaScript&quot;)} 
+var sourceId=DSGetPageIDFromHref(); 
+var RQD=DSGetPageIDFromHref(); 
+
+
+
+var CCRM= &apos;R1~Client;R2~Enterprise Team;R3~Bigcommerce;R4~Contract Complete&apos;; 
+var CCTM=&apos;R2~Carbon Copy;R4~Carbon Copy&apos;;
+
+CRL=&apos;Email~{!Quote.Email};LastName~{!Quote.Contact_Name_Formula__c};Role~R1;RoutingOrder~1,Email~maria.huemmer@bigcommerce.com;LastName~Enterprise Team;Role~R2;RoutingOrder~1,Email~maria.huemmer@bigcommerce.com;LastName~Second Signer;Role~R3;RoutingOrder~2,Email~contractcomplete@bigcommerce.com;LastName~Contract Complete;Role~R4;RoutingOrder~3&apos;; 
+
+var DST=&apos;2FE4F4EB-2CA8-44A7-9162-7E9235F75364,C238F61F-485E-4D91-B931-949177D6E912&apos;; 
+
+window.location.href=&quot;/apex/dsfs__DocuSign_CreateEnvelope?DSEID=0&amp;SourceID=&quot;+sourceId+&quot;&amp;DST=&quot;+DST+&quot;&amp;CCRM=&quot;+CCRM+&quot;&amp;CCTM=&quot;+CCTM+&quot;&amp;CRL=&quot;+CRL+&quot;&amp;RQD=&quot;+RQD;</url>
+    </webLinks>
+</CustomObject>

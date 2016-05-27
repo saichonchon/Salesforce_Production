@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Internal notification to account owner when new trial is added to existing account</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Account:  New Subscription Added</name>
+    <style>none</style>
+    <subject>New sub added to account:  {!Account.Name}</subject>
+    <type>text</type>
+</EmailTemplate>

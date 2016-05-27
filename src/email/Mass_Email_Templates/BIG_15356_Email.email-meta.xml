@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>BIG-15356 Closure Notification</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Big</letterhead>
+    <name>BIG-15356 Email</name>
+    <style>freeForm</style>
+    <subject>Case Number: {!Case.CaseNumber} Subject: {!Case.Subject}</subject>
+    <textOnly>*******************************************************************
+Case Number: {!Case.CaseNumber}
+Issue Reported: {!Case.Description}
+
+Hello,
+
+Your patience has been truly appreciated. There was an issue with recent changes to our legacy USPS integration that caused quotes to behave in unexpected ways. This issue has now been resolved.
+
+If you see library mail or media mail services being offered, you may need to disable the package type for these services within your USPS settings. The settings can by disabled in Setup and Tools &gt; Shipping &gt; Edit a Shipping Zone &gt; Edit the USPS Shipping Method &gt; on the settings tab, set &quot;Library: Package Size&quot; and &quot;Media: Package Size&quot; to &quot;Choose one...&quot; and save.
+
+Please don&apos;t hesitate to contact us if you have further questions. Technical support is available 24/7:
+
+BigCommerce Support
+http://support.bigcommerce.com
+
+You can reply to this email or to view your case&apos;s status you can go here.
+
+Please do not remove: {!Case.E2CP__Case_Thread_Id__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

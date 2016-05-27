@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Partner Locator.Email 3 - Feb2016</name>
+    <style>none</style>
+    <subject>Reminder — Join the Bigcommerce Partner Marketplace</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+Did you forget something? Bigcommerce wants to connect you with new clients and merchants through a new and improved partner marketplace feature on Bigcommerce.com. Join the Partner Marketplace by updating your profile on the Partner Portal by March 15th.
+
+For more information, refer to the partnersupport@bigcommerce.com &lt;http://partners.bigcommerce.com/English/Solutions/resources/marketplace_guide.aspx&quot;&gt;Partner Marketplace Guide on the Partner Portal, or contact partnersupport@bigcommerce.com.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Case$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Case.Activities$Subject</field>
+    </columns>
+    <columns>
+        <field>Case$Success_Squad_Notes__c</field>
+    </columns>
+    <columns>
+        <field>Case$CreatedDate</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <criteriaItems>
+            <column>Case$Origin</column>
+            <operator>contains</operator>
+            <value>partners@bigcommerce.com,partnerevents@bigcommerce.com,partnerwithus@bigcommerce.com,Partner Application,Partner Deal Registration,Partner Support,Partner Deal Failed,Partner Marketing</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Owner.Name</column>
+            <operator>contains</operator>
+            <value>partner</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Reason</column>
+            <operator>contains</operator>
+            <value>Replied to General Inquiry,Tech Support,Replied to Prospect</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Week</dateGranularity>
+        <field>Case$ClosedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Partner Support Cases Worked (true)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cases_with_or_without_activity__c</reportType>
+    <scope>queue</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Case$ClosedDate</dateColumn>
+        <interval>INTERVAL_LAST7</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$StageName</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$Amount</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$Owner</field>
+    </columns>
+    <crossFilters>
+        <criteriaItems>
+            <column>Task_Type__c</column>
+            <operator>equals</operator>
+            <value>Call</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Owner</column>
+            <operator>equals</operator>
+            <value>Victor Soares,Jeremy Gryder</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ActivityDate</column>
+            <operator>greaterOrEqual</operator>
+            <value>10/26/2015 12:00 AM</value>
+        </criteriaItems>
+        <operation>with</operation>
+        <primaryTableColumn>Account$Id</primaryTableColumn>
+        <relatedTable>Activity</relatedTable>
+        <relatedTableJoinColumn>Account</relatedTableJoinColumn>
+    </crossFilters>
+    <filter>
+        <criteriaItems>
+            <column>Account.Opportunities$Primary_Campaign_Name__c</column>
+            <operator>equals</operator>
+            <value>Move to New Pricing - Clean Contacts to Call</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Pricing Upgrade Opps Called</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_With_Opportunities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Account$Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account$App_Send_Rev_Share_Email__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

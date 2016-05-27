@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>04-2016 Town Hall.Email 1</name>
+    <style>none</style>
+    <subject>Join us for the April Town Hall</subject>
+    <textOnly>We’re excited to invite you to our April BigCommerce Town Hall.
+Hi {{lead.First Name:default=there}},
+We’re excited to invite you to our April BigCommerce Town Hall. During this monthly conversation, BigCommerce CEO Brent Bellm and the Product Team will give you a detailed look at recent platform enhancements and what’s coming up next.
+BigCommerce Town Hall &lt;[[https://attendee.gotowebinar.com/register/1056162656249718786]]&gt; 
+ When: April 28, 2015 from 2-3pm CT
+ What: A discussion of BigCommerce news and a look at upcoming product enhancements, followed by live Q&amp;A with CEO Brent Bellm and the Product Team. 
+ Presenters: CEO Brent Bellm and the Product Team
+
+
+
+
+
+Reserve your spot &lt;[[https://attendee.gotowebinar.com/register/1056162656249718786]]&gt;
+We’ll hold a live Q&amp;A session during the Town Hall, but you can also submit questions in advance by commenting in our community discussion &lt;[[https://forum.bigcommerce.com/s/group/0F913000000HLTBCA4?t=1461271876897]]&gt;.
+
+If you’re unable to join us, don’t worry — we’ll record each Town Hall and post the video in the  Community &lt;[[https://forum.bigcommerce.com/s/article/BigCommerce-Town-Halls?t=1461271876897]]&gt; and Partner Portal.
+Hope to see you there, 
+The BigCommerce Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

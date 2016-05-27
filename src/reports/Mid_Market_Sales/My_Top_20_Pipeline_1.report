@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_76395889</developerName>
+        <masterLabel>Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FULL_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Annette Caputo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hassan Johnson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bill Paul</sourceValue>
+            </sourceValues>
+            <value>Sr. MM</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>James Hodgkins</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nicholas Amelio</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ryan Hamer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Andrew King</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michael Putnam</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Justin Hospie</sourceValue>
+            </sourceValues>
+            <value>Jr. MM</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>A.J. Ulloa</sourceValue>
+            </sourceValues>
+            <value>AUS</value>
+        </values>
+    </buckets>
+    <chart>
+        <chartSummaries>
+            <column>AMOUNT</column>
+        </chartSummaries>
+        <chartType>None</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>false</expandOthers>
+        <groupingColumn>OPPORTUNITY_NAME</groupingColumn>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+    </chart>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>BucketField_76395889</field>
+    </columns>
+    <columns>
+        <field>INDUSTRY</field>
+    </columns>
+    <columns>
+        <field>Account.Projected_Annual_Revenue__c</field>
+    </columns>
+    <columns>
+        <field>AMOUNT</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Migration_Fee__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.MonthlyRecurringRevenue__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Big_Brand__c</field>
+    </columns>
+    <columns>
+        <field>CONTACT</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Executive_Sponsorship__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Executive_Sponsorship_Notes__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <operator>notContain</operator>
+            <value>suspended</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ROLLUP_DESCRIPTION</column>
+            <operator>equals</operator>
+            <value>enterprise sales</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>AMOUNT</column>
+            <operator>greaterThan</operator>
+            <value>1000</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Status__c</column>
+            <operator>equals</operator>
+            <value>Active</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>My Top 20 Pipeline</name>
+    <params>
+        <name>open</name>
+        <value>open</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <rowLimit>20</rowLimit>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>AMOUNT</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

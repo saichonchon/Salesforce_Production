@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Revenue Share History</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Revenue Share Histories</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Revenue Share Histories --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Actual revenue due for the specified date (invoice amount, not paid) --></help>
+        <label><!-- Actual Amount --></label>
+        <name>Actual_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Due Date --></label>
+        <name>Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fee Type --></label>
+        <name>Fee_Type__c</name>
+        <picklistValues>
+            <masterLabel>Annual Renewal Fee</masterLabel>
+            <translation><!-- Annual Renewal Fee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preferred Partner Fee</masterLabel>
+            <translation><!-- Preferred Partner Fee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revenue Share</masterLabel>
+            <translation><!-- Revenue Share --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revenue Share Immaterial</masterLabel>
+            <translation><!-- Revenue Share Immaterial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upfront Fee</masterLabel>
+            <translation><!-- Upfront Fee --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- SBD&apos;s forecasted revenue for the specified date --></help>
+        <label><!-- Forecast Amount --></label>
+        <name>Forecast_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- GL Code --></label>
+        <name>GL_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Paid amount - Actual revenue received (only entered by Accounting) --></help>
+        <label><!-- Paid Amount --></label>
+        <name>Paid_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Type --></label>
+        <name>Partner_Type__c</name>
+        <picklistValues>
+            <masterLabel>Design Partner</masterLabel>
+            <translation><!-- Design Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Gateway</masterLabel>
+            <translation><!-- Payment Gateway --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strategic Partner</masterLabel>
+            <translation><!-- Strategic Partner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payment Date --></label>
+        <name>Payment_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Accounting&apos;s forecasted revenue for the specified date --></help>
+        <label><!-- Plan Amount --></label>
+        <name>Plan_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Segment --></label>
+        <name>Segment__c</name>
+        <picklistValues>
+            <masterLabel>BigCommerce</masterLabel>
+            <translation><!-- BigCommerce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation><!-- Both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interspire</masterLabel>
+            <translation><!-- Interspire --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Revenue Share History Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Marketing Material</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Marketing Materials</value>
+    </caseValues>
+    <fields>
+        <help><!-- Flag to determine if the record should show up in the Portal --></help>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Mainly used for Logos, what is the size of the image --></help>
+        <label><!-- Size --></label>
+        <name>Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- The actual HTML or other code you are providing to the user --></help>
+        <label><!-- Source Code --></label>
+        <name>Source_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target URL --></label>
+        <name>Target_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Any ASCII/Text version of the Source Code if needed --></help>
+        <label><!-- Text Version --></label>
+        <name>Text_Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Email Link</masterLabel>
+            <translation><!-- Email Link --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Template</masterLabel>
+            <translation><!-- Email Template --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logo</masterLabel>
+            <translation><!-- Logo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tell a Friend</masterLabel>
+            <translation><!-- Tell a Friend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text Ad</masterLabel>
+            <translation><!-- Text Ad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text Link</masterLabel>
+            <translation><!-- Text Link --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web Page</masterLabel>
+            <translation><!-- Web Page --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If you want this record to show at the top or bottom or in a specific order add a number here --></help>
+        <label><!-- View Order --></label>
+        <name>View_Order__c</name>
+    </fields>
+    <layouts>
+        <layout>Marketing Material Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

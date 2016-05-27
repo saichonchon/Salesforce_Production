@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>User Status</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>User Status</value>
+    </caseValues>
+    <fields>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+        <picklistValues>
+            <masterLabel>Acquisition</masterLabel>
+            <translation><!-- Acquisition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conversion</masterLabel>
+            <translation><!-- Conversion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional Services</masterLabel>
+            <translation><!-- Professional Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical Support</masterLabel>
+            <translation><!-- Technical Support --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Owner ID --></label>
+        <name>Owner_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Round Robin Number_Num --></label>
+        <name>Round_Robin_Number_Num__c</name>
+    </fields>
+    <fields>
+        <label><!-- Round Robin Number --></label>
+        <name>Round_Robin_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- The queue user belongs to for Round Robin assignment --></help>
+        <label><!-- Round Robin Queue --></label>
+        <name>Round_Robin_Queue__c</name>
+        <picklistValues>
+            <masterLabel>APAC Direct Accounts Queue</masterLabel>
+            <translation><!-- APAC Direct Accounts Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APAC Enterprise Accounts Queue</masterLabel>
+            <translation><!-- APAC Enterprise Accounts Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Acq Lead Distro Queue</masterLabel>
+            <translation><!-- Acq Lead Distro Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Acquisition Accounts Queue</masterLabel>
+            <translation><!-- Acquisition Accounts Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Designer AU Queue</masterLabel>
+            <translation><!-- Designer AU Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Designer Queue</masterLabel>
+            <translation><!-- Designer Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct AU Queue</masterLabel>
+            <translation><!-- Direct AU Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Sales Accounts Queue</masterLabel>
+            <translation><!-- Direct Sales Accounts Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Sales Queue</masterLabel>
+            <translation><!-- Direct Sales Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise Accounts Queue</masterLabel>
+            <translation><!-- Enterprise Accounts Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Requests Queue</masterLabel>
+            <translation><!-- Partner Requests Queue --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Rep --></label>
+        <name>SalesRep__c</name>
+        <relationshipLabel><!-- User Status --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>In the Office</masterLabel>
+            <translation><!-- In the Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out of Office</masterLabel>
+            <translation><!-- Out of Office --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Read Only Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>User Status Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

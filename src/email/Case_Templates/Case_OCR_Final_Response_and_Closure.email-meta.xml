@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>Case: OCR Final Response and Closure</name>
+    <style>freeForm</style>
+    <subject>Re: Update on your BigCommerce Support Case #{!Case.CaseNumber}</subject>
+    <textOnly>Dear {!Contact.FirstName}{!Case.Lead_First_Name__c},
+
+Thanks again for contacting BigCommerce Support! We just wanted to remind you about an email we sent 48 hrs ago with a proposed solution, and our follow-up email 24 hrs ago for your case #{!Case.CaseNumber}. We understand that you are busy and may not have had a chance to look at or respond to those emails. Please find the proposed solution below for your convenience.
+
+Subject: {!Case.Subject}
+
+Case Description:
+{!Case.Description}
+
+Proposed Solution: {!Case.OCR_Resolution__c}
+
+
+Does this resolve your case? (Click the appropriate link) 
+
+Yes: http://www.clicktools.com/survey?iv=3kq2qjbhsnpv9&amp;q1={!Case.Id}&amp;q2=1 
+
+No: http://www.clicktools.com/survey?iv=3kq2qjbhsnpv9&amp;q1={!Case.Id}&amp;q2=2 
+
+Since we haven’t heard from you yet, we&apos;re closing the case for now. If you need any further assistance regarding this issue, you may reply here, or create a new case and we&apos;ll be happy to assist you further.
+
+
+Thank You,
+{!$User.FirstName}
+BigCommerce Technical Support
+http://support.bigcommerce.com
+
+{!Case.E2CP__Case_Thread_Id__c}
+OCR Closure</textOnly>
+    <type>html</type>
+</EmailTemplate>

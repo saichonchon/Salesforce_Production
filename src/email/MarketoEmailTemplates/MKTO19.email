@@ -1,0 +1,326 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<title></title>
+
+<style type="text/css">
+            body {
+                margin:0;
+                padding:0;
+                background: #e2e7e7;
+            }
+            table {
+                border-collapse: collapse;
+            }
+            p {
+                margin: 0 0 10px 0;
+            }
+
+            .applelinksheader a {
+                text-decoration: none; 
+                color: #363636 !important;
+            }
+
+            .applelinks a {
+                text-decoration: none; 
+                color: #777777 !important;
+            }
+
+                @media (max-width : 480px) {
+                /*@media only screen and (max-device-width: 480px) {*/
+                
+                    .bodyWidth, #TopContainer, #LogoContainer, #EyebrowContainer, #HeaderContainer, #Eyebrow, .BodyContainer, .MiddleContainer, #SidebarContainer, #FooterContainer {
+                        width: 100% !important;
+                    }
+
+                                        /* Media query for mobile*/
+
+                    @media only screen and (max-width: 480px)  {
+
+                        .headlineheight {
+                            padding-top: 5px !important;
+                          }
+
+                        .removepadding {
+                            padding: 0px 20px 0px 20px !important;
+                        }
+
+                        .hidemobile {
+                            display: none;
+                        }
+
+                    }
+
+
+                    #TopMargin {
+                        margin:0 !important;
+                    }
+
+                    #Logo {
+                        text-align: center !important;
+                    }
+
+                    #Eyebrow {
+                        text-align: center !important;
+                    }
+
+                    #TopContainer {
+                        padding-left: 0px !important;
+                        padding-right: 0px !important;
+                    }
+
+                    #HeaderContainer {
+                        float: none !important;
+                        padding: 0 0 0 0 !important;
+                    }
+
+                    #HeaderPadding {
+                        padding: 30px 15px !important;
+                    }
+
+                    #BodyPadding {
+                        padding: 30px 20px 0px 20px !important;
+                    }
+
+                    .BodyPadding2 {
+                        padding: 0px 20px 0px 20px !important;
+                    }
+
+                    #GraphicContainer {
+                        float: none !important;
+                    }
+
+                    #Graphic img {
+                        width: 100% !important;
+                        max-width: initial !important;
+                    }
+
+                    #Headline {
+                        font-size: 26px !important;
+                        line-height: 30px !important;
+                    }
+
+                    #FooterContainer {
+                        float: none !important;
+                    }
+
+                    #FooterPadding {
+                        padding: 20px 20px 20px 20px !important;
+                    }
+
+                    #FooterLogoPadding {
+                        padding: 0 20px 20px 20px !important;
+                    }
+
+                    #ButtonContainer {
+                        padding-bottom: 32px !important;
+                    }
+
+                    #button1text {
+                        font-size: 14px;
+                    }
+
+                    .SpeakerTable {
+                        width: 220px !important;
+                    }
+
+                    .clearFloat {
+                        float:none !important;
+                        width: 100% !important;
+                    }
+
+                    .center_mobile {
+                        text-align: center !important;
+                    }
+
+                    .hide_mobile {
+                        display: none !important;
+                    }
+
+                    .applelinksheader a {
+                        text-decoration: none; 
+                        color: #363636 !important;
+                    }
+                    
+                    .applelinks a {
+                        text-decoration: none; 
+                        color: #777777 !important;
+                    }
+
+                    .removepaddingcta {
+                        padding-left: 0px !important;
+                    }
+
+                    .removepaddingcta2 {
+                        padding-top: 15px !important;
+                    }
+
+                    .removepaddingcta3 {
+                        padding-top: 0px !important;
+                    }
+
+                }
+</style>
+</head>
+<body style="padding-top:20px; margin:0 0 0 0; display:block; background-color:#e2e7e7; -webkit-text-size-adjust:none; " bgcolor="#E2E7E7" class="removepaddingcta3" ><!-- Preview text (text which appears right after subject) -->
+<div class="mktEditable" id="preview_text" style="display:none; color:#ffffff; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; " ><p>Read our Guide to Running Your Store and learn how to use the features of our platform to grow your business.</p></div>
+<table align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="margin:0 auto; background:#ffffff; " ><tr ><td ><!-- Logo Block -->
+<table width="600" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" style="background:#ffffff">
+<tr>
+<td valign="top" id="TopContainer" style="padding:25px 25px;">
+<table border="0" cellspacing="0" cellpadding="0" align="left" width="270" id="LogoContainer">
+<tr>
+<td valign="top" align="left" id="Logo"><a href="http://www.bigcommerce.com"><img src="http://grow.bigcommerce.com/rs/695-JJT-333/images/BIG-3001R-Templates_GeneralLP_logo.png" alt="Bigcommerce" width="185" height="45" border="0"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End Logo Block -->
+<!-- Header Banner-->
+<table border="0" cellspacing="0" cellpadding="0" ><tr ><td valign="middle" align="left" id="HeaderContainer" style="background:#434d55; padding:0 0 0 0; " ><div class="mktEditable" id="Banner" style="mso-table-lspace:0; mso-table-rspace:0; " ><!-- for Yahoo -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody>
+<tr>
+<td background="http://grow.bigcommerce.com/rs/695-JJT-333/images/ent-operations 2.jpg" bgcolor="#434D55" width="600" valign="top"><!-- [if gte mso 9]>
+                                            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;">
+                                            <v:fill type="tile" src="http://grow.bigcommerce.com/rs/695-JJT-333/images/BIG-3001R-Templates_GeneralLP_banner.jpg" color="#434D55" />
+                                            <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+                                            <![endif]-->
+<div>
+<table border="0" cellspacing="0" cellpadding="0" width="325" style="border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0;" align="center" class="clearFloat">
+<tbody>
+<tr>
+<td valign="middle" align="center" style="padding: 40px 0 40px 0px;" id="HeaderPadding">
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top" align="center" style="font-family: Helvetica,Arial,sans-serif; color: #ffffff; font-size: 26px; line-height: 30px; padding-bottom: 15px;">Guide to running your store</td>
+</tr>
+<tr>
+<td align="center">
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; display: inline-block;">
+<tbody>
+<tr>
+<td valign="middle" align="center" height="40" width="163" style="background: #00abc9; font-family: Helvetica,Arial,sans-serif; font-size: 16px; padding: 0 10px 0 10px; border-radius: 4px;">
+<p style="margin: 0 0; color: #ffffff;"><a href="https://support.bigcommerce.com/articles/Learning/Guide-to-Running-Your-Store?utm_campaign=SS:%202016%20Post%20Pdaid%20Email%20Nurture&amp;utm_source=Email&amp;utm_medium=email%20&amp;utm_content=Guide%20to%20Running%20Store" style="color: #ffffff; text-decoration: none; display: block;">Read the guide</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- [if gte mso 9]>
+                                            </v:textbox>
+                                            </v:rect>
+                                            <![endif]--></td>
+</tr>
+</tbody>
+</table></div>
+</td>
+</tr>
+</table>
+<!-- End Header Banner -->
+<!-- Body -->
+<table width="600" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" style="background:#ffffff; " ><tr ><td valign="top" align="left" ><table border="0" cellspacing="0" cellpadding="0" width="600" class="MiddleContainer" ><tr ><td valign="top" ><table border="0" cellspacing="0" cellpadding="0" width="550" class="BodyContainer" align="left" ><tr ><td valign="top" align="left" id="BodyPadding" style="padding:35px 0 0 32px; " ><div style="mso-table-lspace:0; mso-table-rspace:0; " ><table border="0" cellspacing="0" cellpadding="0" ><tr ><td style="padding:0 0 15px 0; font-family:Helvetica,Arial,sans-serif; color:#222222; font-size:20px; line-height:24px; " ><div class="mktEditable" id="Intro-Header" ><p>How to manage and grow your business</p></div>
+</td>
+</tr>
+<tr ><td align="left" valign="top" style="font-family:Helvetica,Arial,sans-serif; color:#777777; font-size:14px; line-height:20px; " ><div class="mktEditable" id="Intro-Body" ><p style="margin-top: 0;">The Bigcommerce platform is a powerful tool for managing your day-to-day operations and growing your business.</p></div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End Body -->
+<!-- CTA -->
+<table width="600" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" style="background:#ffffff; " ><tr ><td valign="top" align="left" ><table border="0" cellspacing="0" cellpadding="0" width="600" class="MiddleContainer" ><tr ><td valign="top" ><table border="0" cellspacing="0" cellpadding="0" width="550" class="BodyContainer" align="left" ><tr ><td valign="top" align="left" class="BodyPadding2" style="padding:0 0 0 32px; " ><div style="mso-table-lspace:0; mso-table-rspace:0; " ><table border="0" cellspacing="0" cellpadding="0" ><tr ><td align="left" valign="top" style="font-family:Helvetica,Arial,sans-serif; color:#777777; font-size:14px; line-height:20px; padding-bottom:35px; " class="removepaddingcta3" ><div class="mktEditable" id="Body" ><p><strong>Read our <a href="https://support.bigcommerce.com/articles/Learning/Guide-to-Running-Your-Store?utm_campaign=SS:%202016%20Post%20Pdaid%20Email%20Nurture&amp;utm_source=Email&amp;utm_medium=email%20&amp;utm_content=Guide%20to%20Running%20Store" style="text-decoration: none;"><span style="color: #00abc9;">Guide to Running Your Store</span></a> and learn how to use our:</strong></p>
+<ul>
+<li>SEO and blogging features</li>
+<li>Customer, inventory, and order management systems</li>
+<li>Promotional tools</li>
+<li>Email and social media marketing integrations</li>
+<li>Multi-channel&nbsp;selling</li>
+<li>And more<br /></li>
+</ul></div>
+<br>
+<div class="mktEditable" id="CTA" ><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; display: inline-block;">
+<tbody>
+<tr>
+<td valign="middle" align="center" height="40" width="130" style="background: #00abc9; font-family: Helvetica,Arial,sans-serif; font-size: 16px; padding: 0 10px 0 10px; border-radius: 4px;">
+<p style="margin: 0 0; color: #ffffff;"><a href="https://support.bigcommerce.com/articles/Learning/Guide-to-Running-Your-Store?utm_campaign=SS:%202016%20Post%20Pdaid%20Email%20Nurture&amp;utm_source=Email&amp;utm_medium=email%20&amp;utm_content=Guide%20to%20Running%20Store" style="color: #ffffff; text-decoration: none; display: block;">Read&nbsp;the&nbsp;guide</a></p>
+</td>
+</tr>
+</tbody>
+</table></div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End CTA -->
+<!-- Post script -->
+<table width="600" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" style="background:#ffffff; " ><tr ><td valign="top" align="left" ><table border="0" cellspacing="0" cellpadding="0" width="600" class="MiddleContainer" ><tr ><td valign="top" ><table border="0" cellspacing="0" cellpadding="0" width="550" class="BodyContainer" align="left" ><tr ><td valign="top" align="left" class="BodyPadding2" style="padding:0 0 0 32px; " ><div style="mso-table-lspace:0; mso-table-rspace:0; " ><table border="0" cellspacing="0" cellpadding="0" ><tr ><td align="left" valign="top" style="font-family:Helvetica,Arial,sans-serif; color:#777777; font-size:14px; line-height:20px; padding-bottom:35px; " class="removepaddingcta3" ><div class="mktEditable" id="Post-script" ><p><span style="font-weight: bold; color: #363636;">Remember:</span> Bookmark this guide to easily access useful tips in the future.</p></div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End Post script -->
+<!-- Footer -->
+<table width="600" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" style="background:#434d55;">
+<tr>
+<td valign="top" align="left">
+<table align="left" border="0" cellspacing="0" cellpadding="0" id="FooterContainer">
+<tr>
+<td valign="top" align="left" id="FooterPadding" style="padding:18px 0 25px 32px; font-family:Helvetica,Arial,sans-serif; color:#b2b2b2; font-size:11px; line-height:15px;"><a href="https://www.facebook.com/Bigcommerce"><img src="http://grow.bigcommerce.com/rs/695-JJT-333/images/facebook-social-icon.png" alt="Facebook" border="0" style="padding-bottom: 5px; padding-right: 10px;"></a> <a href="https://twitter.com/Bigcommerce"><img src="http://grow.bigcommerce.com/rs/695-JJT-333/images/twitter-social-icon.png" alt="Twitter" border="0" style="padding-bottom: 5px; padding-right: 10px;"></a> <a href="https://plus.google.com/+bigcommerce/posts"><img src="http://grow.bigcommerce.com/rs/695-JJT-333/images/googleplus-social-icon.png" alt="Google Plus" border="0" style="padding-bottom: 5px; padding-right: 10px;"></a><br>
+<a href="http://grow.bigcommerce.com/subscribe-to-bigcommerce-blog.html" style="text-decoration: none; color: #00abc9">Subscribe to the Bigcommerce Blog</a><br>
+&copy; Copyright 2003 - 2015 Bigcommerce Pty. Ltd. Shopping Cart Software</td>
+</tr>
+</table>
+<table align="right" border="0" cellspacing="0" cellpadding="0" class="clearFloat">
+<tr>
+<td valign="top" style="padding:18px 32px 0 0;" id="FooterLogoPadding"><a href="http://www.bigcommerce.com"><img src="http://grow.bigcommerce.com/rs/695-JJT-333/images/BIG-3001R-Templates_Email_logo-footer%5B1%5D.png" alt="Bigcommerce" border="0"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p id="footer" align="center" style="font-family:Helvetica,Arial,sans-serif; color:#777777; font-size:11px; line-height:15px;">Bigcommerce&nbsp; <span class="applelinks">11305 Four Points Dr., Building 2, Floor 3&nbsp;</span> <span class="applelinks">Austin&nbsp;</span> <span class="applelinks">TX&nbsp;</span> <span class="applelinks">78726&nbsp;</span><br>
+You received this because you are subscribed to emails from <a href="https://www.bigcommerce.com/">Bigcommerce</a>.<br>
+Update your <a href="http://grow.bigcommerce.com/manage-your-email-preferences.html">email preferences</a> to choose the types of emails you receive.</p>
+</body>
+</html>

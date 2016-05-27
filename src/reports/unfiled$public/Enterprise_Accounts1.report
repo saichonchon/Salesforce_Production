@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Account.Active_MRR_Value__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Total Active Enterprise MRR</description>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>Account.Subscriptions__r$Product__c</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Active MRR</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Account.Lifetime_MRR_Total__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Enterprise Lifetime MRR</description>
+        <developerName>FORMULA2</developerName>
+        <downGroupingContext>Account.Subscriptions__r$Product__c</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Lifetime MRR</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Owner</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$Contact__c</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$Phone__c</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$StoreURL__c</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$Upgrade_Rep__c</field>
+    </columns>
+    <columns>
+        <field>Account$Active_MRR_Value__c</field>
+    </columns>
+    <description>Account Manager View</description>
+    <filter>
+        <booleanFilter>(1 AND 2 AND 3)</booleanFilter>
+        <criteriaItems>
+            <column>Account.Subscriptions__r$Product__c</column>
+            <operator>equals</operator>
+            <value>Bigcommerce Enterprise Plan</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Subscriptions__r$Status__c</column>
+            <operator>equals</operator>
+            <value>Active</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Active_MRR_Value__c</column>
+            <operator>notEqual</operator>
+            <value>0</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Subscriptions__r$Product__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Enterprise Accounts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Subscriptions__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account.Subscriptions__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>
