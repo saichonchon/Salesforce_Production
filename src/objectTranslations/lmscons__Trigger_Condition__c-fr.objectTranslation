@@ -2,13 +2,13 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value>Condition de Gâchette</value>
+        <value>Condition du déclencheur</value>
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value>Conditions de Gâchette</value>
+        <value>Conditions du déclencheur</value>
     </caseValues>
-    <gender>Masculine</gender>
+    <gender>Feminine</gender>
     <nameFieldLabel>Étiquette de champ</nameFieldLabel>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

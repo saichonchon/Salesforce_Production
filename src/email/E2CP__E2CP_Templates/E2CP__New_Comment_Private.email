@@ -1,0 +1,14 @@
+[A new *private* comment has been added to this case. Use caution when replying to this email because a *public* comment may be added depending on your organization's configuration.]
+
+{!Case.E2CP__Most_Recent_Private_Comment__c}
+
+
+{!Case.E2CP__HistoryText__c}
+
+***************************
+Case: {!Case.CaseNumber}
+Status: {!Case.Status}
+Priority Level: {!Case.Priority}
+
+
+{!Case.E2CP__Case_Thread_Id__c}

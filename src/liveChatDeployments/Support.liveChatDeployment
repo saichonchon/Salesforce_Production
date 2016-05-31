@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LiveChatDeployment xmlns="http://soap.sforce.com/2006/04/metadata">
     <brandingImage>BCLogoTag247x60</brandingImage>
+    <displayQueuePosition>false</displayQueuePosition>
     <enablePrechatApi>false</enablePrechatApi>
     <enableTranscriptSave>true</enableTranscriptSave>
     <label>Support</label>

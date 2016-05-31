@@ -2,12 +2,12 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value><!-- Trigger Assign Status --></value>
+        <value>Estatus de asignación de activador</value>
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value><!-- Trigger Assign Status --></value>
+        <value>Estatus de asignación de activador</value>
     </caseValues>
-    <gender><!-- Masculine --></gender>
-    <nameFieldLabel><!-- Trigger Assign Status Name --></nameFieldLabel>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nombre del estátus de asignación de acti</nameFieldLabel>
 </CustomObjectTranslation>

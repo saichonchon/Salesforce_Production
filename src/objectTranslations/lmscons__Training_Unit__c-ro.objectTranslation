@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Unitatea de training</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value> O unitate de training</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Unitate de training</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Unitate de training</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Niște unități de trainig</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Unități de training</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Unității de training</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Unei unității de training</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Unității de training</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Unităților de training</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Unor unități de training</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Unităților de training</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nume unitate de training</nameFieldLabel>
+</CustomObjectTranslation>

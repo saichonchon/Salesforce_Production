@@ -3,63 +3,63 @@
     <caseValues>
         <caseType>Nominative</caseType>
         <plural>false</plural>
-        <value>Объект</value>
+        <value>Содержание</value>
     </caseValues>
     <caseValues>
         <caseType>Nominative</caseType>
         <plural>true</plural>
-        <value>Объекты</value>
+        <value>Содержание</value>
     </caseValues>
     <caseValues>
         <caseType>Accusative</caseType>
         <plural>false</plural>
-        <value>Объект</value>
+        <value>Содержание</value>
     </caseValues>
     <caseValues>
         <caseType>Accusative</caseType>
         <plural>true</plural>
-        <value>Объекты</value>
+        <value>Содержание</value>
     </caseValues>
     <caseValues>
         <caseType>Genitive</caseType>
         <plural>false</plural>
-        <value>Объекта</value>
+        <value>Содержания</value>
     </caseValues>
     <caseValues>
         <caseType>Genitive</caseType>
         <plural>true</plural>
-        <value>Объектов</value>
+        <value>Содержания</value>
     </caseValues>
     <caseValues>
         <caseType>Dative</caseType>
         <plural>false</plural>
-        <value>Объекту</value>
+        <value>Содержанию</value>
     </caseValues>
     <caseValues>
         <caseType>Dative</caseType>
         <plural>true</plural>
-        <value>Объектам</value>
+        <value>Содержанию</value>
     </caseValues>
     <caseValues>
         <caseType>Instrumental</caseType>
         <plural>false</plural>
-        <value>Объектом</value>
+        <value>Содержанием</value>
     </caseValues>
     <caseValues>
         <caseType>Instrumental</caseType>
         <plural>true</plural>
-        <value>Объектами</value>
+        <value>Содержанием</value>
     </caseValues>
     <caseValues>
         <caseType>Prepositional</caseType>
         <plural>false</plural>
-        <value>Объекте</value>
+        <value>Содержании</value>
     </caseValues>
     <caseValues>
         <caseType>Prepositional</caseType>
         <plural>true</plural>
-        <value>Объектах</value>
+        <value>Содержании</value>
     </caseValues>
-    <gender>Masculine</gender>
-    <nameFieldLabel>ID объекта</nameFieldLabel>
+    <gender>Neuter</gender>
+    <nameFieldLabel>ИД содержания</nameFieldLabel>
 </CustomObjectTranslation>

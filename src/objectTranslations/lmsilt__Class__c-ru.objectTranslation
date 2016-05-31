@@ -3,63 +3,63 @@
     <caseValues>
         <caseType>Nominative</caseType>
         <plural>false</plural>
-        <value>Класс</value>
+        <value>Классификация</value>
     </caseValues>
     <caseValues>
         <caseType>Nominative</caseType>
         <plural>true</plural>
-        <value>Классы</value>
+        <value>Классификация</value>
     </caseValues>
     <caseValues>
         <caseType>Accusative</caseType>
         <plural>false</plural>
-        <value>Класс</value>
+        <value>Классификация</value>
     </caseValues>
     <caseValues>
         <caseType>Accusative</caseType>
         <plural>true</plural>
-        <value>Классы</value>
+        <value>Классификация</value>
     </caseValues>
     <caseValues>
         <caseType>Genitive</caseType>
         <plural>false</plural>
-        <value>Класса</value>
+        <value>Классификации</value>
     </caseValues>
     <caseValues>
         <caseType>Genitive</caseType>
         <plural>true</plural>
-        <value>Классов</value>
+        <value>Классификации</value>
     </caseValues>
     <caseValues>
         <caseType>Dative</caseType>
         <plural>false</plural>
-        <value>Классу</value>
+        <value>Классификации</value>
     </caseValues>
     <caseValues>
         <caseType>Dative</caseType>
         <plural>true</plural>
-        <value>Классам</value>
+        <value>Классификации</value>
     </caseValues>
     <caseValues>
         <caseType>Instrumental</caseType>
         <plural>false</plural>
-        <value>Классом</value>
+        <value>Классификацией</value>
     </caseValues>
     <caseValues>
         <caseType>Instrumental</caseType>
         <plural>true</plural>
-        <value>Классами</value>
+        <value>Классификацией</value>
     </caseValues>
     <caseValues>
         <caseType>Prepositional</caseType>
         <plural>false</plural>
-        <value>Классе</value>
+        <value>о классификации</value>
     </caseValues>
     <caseValues>
         <caseType>Prepositional</caseType>
         <plural>true</plural>
-        <value>Классах</value>
+        <value>о классификации</value>
     </caseValues>
     <gender>Neuter</gender>
-    <nameFieldLabel>Имя класса</nameFieldLabel>
+    <nameFieldLabel>название классификации</nameFieldLabel>
 </CustomObjectTranslation>

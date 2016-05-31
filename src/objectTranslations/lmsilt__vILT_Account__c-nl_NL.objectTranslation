@@ -2,12 +2,12 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value><!-- vILT Account --></value>
+        <value>vILT account</value>
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value><!-- vILT Account --></value>
+        <value>vILT accounts</value>
     </caseValues>
-    <gender><!-- Neuter --></gender>
-    <nameFieldLabel><!-- vILT Account Name --></nameFieldLabel>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Naam van vILT account</nameFieldLabel>
 </CustomObjectTranslation>

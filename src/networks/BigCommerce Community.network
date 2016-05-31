@@ -38,46 +38,79 @@
     <picassoSite>BigCommerce_Community_C</picassoSite>
     <reputationLevels>
         <level>
+            <branding>
+                <smallImage>Communities_Shared_Document_Folder/X1_Newcomer_png.png</smallImage>
+            </branding>
             <label>Newcomer</label>
             <lowerThreshold>0.0</lowerThreshold>
         </level>
         <level>
+            <branding>
+                <smallImage>Communities_Shared_Document_Folder/X2_Observer_png.png</smallImage>
+            </branding>
             <label>Observer</label>
             <lowerThreshold>51.0</lowerThreshold>
         </level>
         <level>
+            <branding>
+                <smallImage>Communities_Shared_Document_Folder/X3_Explorer_png.png</smallImage>
+            </branding>
             <label>Explorer</label>
             <lowerThreshold>151.0</lowerThreshold>
         </level>
         <level>
+            <branding>
+                <smallImage>Communities_Shared_Document_Folder/X4_Participant_png.png</smallImage>
+            </branding>
             <label>Participant</label>
             <lowerThreshold>401.0</lowerThreshold>
         </level>
         <level>
+            <branding>
+                <smallImage>Communities_Shared_Document_Folder/X5_Contributor_png.png</smallImage>
+            </branding>
             <label>Contributor</label>
             <lowerThreshold>801.0</lowerThreshold>
         </level>
         <level>
+            <branding>
+                <smallImage>Communities_Shared_Document_Folder/X6_Specialist_png.png</smallImage>
+            </branding>
             <label>Specialist</label>
             <lowerThreshold>1501.0</lowerThreshold>
         </level>
         <level>
+            <branding>
+                <smallImage>Communities_Shared_Document_Folder/X7_Collaborator_png.png</smallImage>
+            </branding>
             <label>Collaborator</label>
             <lowerThreshold>2501.0</lowerThreshold>
         </level>
         <level>
+            <branding>
+                <smallImage>Communities_Shared_Document_Folder/X8_Mentor_png.png</smallImage>
+            </branding>
             <label>Mentor</label>
             <lowerThreshold>4001.0</lowerThreshold>
         </level>
         <level>
+            <branding>
+                <smallImage>Communities_Shared_Document_Folder/X9_Authority_png.png</smallImage>
+            </branding>
             <label>Authority</label>
             <lowerThreshold>6001.0</lowerThreshold>
         </level>
         <level>
+            <branding>
+                <smallImage>Communities_Shared_Document_Folder/X10_ThoughtLeader_png.png</smallImage>
+            </branding>
             <label>Thought Leader</label>
             <lowerThreshold>10001.0</lowerThreshold>
         </level>
         <level>
+            <branding>
+                <smallImage>Communities_Shared_Document_Folder/X11_Legend_png.png</smallImage>
+            </branding>
             <label>Legend</label>
             <lowerThreshold>20001.0</lowerThreshold>
         </level>

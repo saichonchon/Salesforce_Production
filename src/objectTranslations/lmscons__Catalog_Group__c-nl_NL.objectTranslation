@@ -2,12 +2,12 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value>Winkel Group</value>
+        <value>Catalogiseren groep</value>
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value>Catalogus Groepen</value>
+        <value>Catalogiseren groepen</value>
     </caseValues>
-    <gender>Neuter</gender>
-    <nameFieldLabel>Catalogus Groeps Naam</nameFieldLabel>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Catalogiseren van groepsnaam</nameFieldLabel>
 </CustomObjectTranslation>

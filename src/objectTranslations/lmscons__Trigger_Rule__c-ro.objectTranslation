@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Declanșatorul pentru învățare</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Un declanșator pentru învățare</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Declanșator pentru învățare</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Declanșatoarele pentru învățare</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Niște declanșatoare pentru învățare</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Declanșatoare pentru învățare</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Declanșatorului pentru învățare</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Unui declanșator pentru învățare</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Declanșatorului pentru învățare</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Declanșatoarelor pentru învățare</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Unor declanșatoare pentru învățare</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Declanșatoarelor pentru învățare</value>
+    </caseValues>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Nume regulă</nameFieldLabel>
+</CustomObjectTranslation>

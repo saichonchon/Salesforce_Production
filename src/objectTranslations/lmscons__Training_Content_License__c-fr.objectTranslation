@@ -2,13 +2,13 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value>Licence de Module</value>
+        <value>Licence de module</value>
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value>Licences de Module</value>
+        <value>Licences de module</value>
     </caseValues>
-    <gender>Masculine</gender>
-    <nameFieldLabel>Licence ID</nameFieldLabel>
+    <gender>Feminine</gender>
+    <nameFieldLabel>ID de la licence</nameFieldLabel>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

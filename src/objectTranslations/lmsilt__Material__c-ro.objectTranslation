@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Materialul</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Un material</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Material</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Materialele</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Nişte materiale</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Materiale</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Materialului</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Unui material</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Materialului</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Materialelor</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Unor materiale</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Materialelor</value>
+    </caseValues>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Titlu material</nameFieldLabel>
+</CustomObjectTranslation>

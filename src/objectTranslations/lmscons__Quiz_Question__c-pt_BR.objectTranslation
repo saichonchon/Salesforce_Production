@@ -2,12 +2,12 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value>Teste Pergunta</value>
+        <value>Pergunta de teste</value>
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value>Quiz de Perguntas</value>
+        <value>Perguntas de testes</value>
     </caseValues>
     <gender>Feminine</gender>
-    <nameFieldLabel>Nome quiz Pergunta</nameFieldLabel>
+    <nameFieldLabel>Nome da Pergunta do teste</nameFieldLabel>
 </CustomObjectTranslation>

@@ -15,6 +15,7 @@
     <inMaintenancePage>InMaintenance</inMaintenancePage>
     <indexPage>AnswersHome</indexPage>
     <masterLabel>Survey Page</masterLabel>
+    <requireHttps>false</requireHttps>
     <requireInsecurePortalAccess>false</requireInsecurePortalAccess>
     <siteAdmin>bigcommerce@salesoptimizer.com</siteAdmin>
     <siteType>Visualforce</siteType>

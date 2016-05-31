@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>CFS Lenkeaktiviteten</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>En CFS Lenkeaktivitet</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>CFS Lenkeaktivitet</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>CFS Lenkeaktivitetene</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>CFS Lenkeaktiviteter</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>CFS Lenkeaktiviteter</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>CFS Lenkeaktivitet Nummer</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Şedinţa</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>O şedinţă</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Şedinţă</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Şedinţele</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Nişte şedinţe</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Şedinţe</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Şedinţei</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Unei şedinţe </value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Şedinţei</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Şedinţelor</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Unor şedinţe</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Şedinţelor</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nume şedinţă</nameFieldLabel>
+</CustomObjectTranslation>

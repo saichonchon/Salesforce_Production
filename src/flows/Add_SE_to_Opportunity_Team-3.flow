@@ -39,6 +39,7 @@
         <locationY>278</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
         <fields>
             <name>Faultmessage</name>
             <fieldText>Sorry an error occured in the flow.

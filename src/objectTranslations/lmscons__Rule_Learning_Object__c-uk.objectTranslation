@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Об’єкт вивчення правил</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Об’єкти вивчення правил</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Об’єкт вивчення правил</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Об’єкти вивчення правил</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Об’єкта вивчення правил</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Об’єктів вивчення правил</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Об’єкту вивчення правил</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Об’єктам вивчення правил</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Об’єктом вивчення правил</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Об’єктами вивчення правил</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Об’єкті вивчення правил</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Об’єктах вивчення правил</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Об’єкте вивчення правил</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Об’єкти вивчення правил</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Назва</nameFieldLabel>
+</CustomObjectTranslation>

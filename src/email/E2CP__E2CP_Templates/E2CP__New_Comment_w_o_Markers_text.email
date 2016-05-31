@@ -1,0 +1,15 @@
+To update this case via email, please reply to this message.
+
+{!Case.E2CP__HistoryText__c}
+
+***************************
+Case: {!Case.CaseNumber}
+Status: {!Case.Status}
+Priority Level: {!Case.Priority}
+Subject: {!Case.Subject}
+Description:
+{!Case.Description}
+
+
+
+{!Case.E2CP__Case_Thread_Id__c}

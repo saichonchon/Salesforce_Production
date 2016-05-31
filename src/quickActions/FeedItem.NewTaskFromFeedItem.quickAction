@@ -4,6 +4,7 @@
         <field>Description</field>
         <formula>FeedItem.Body</formula>
     </fieldOverrides>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
     <quickActionLayout>
         <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
         <quickActionLayoutColumns>

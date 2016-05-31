@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>n2de__User_activity_log__c.n2de__Action_date__c</field>
+    </columns>
+    <columns>
+        <field>n2de__User_activity_log__c.n2de__Action__c</field>
+    </columns>
+    <columns>
+        <field>n2de__User_activity_log__c.n2de__Reason__c</field>
+    </columns>
+    <description>Shows users&apos; log in/log out times</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>n2de__User_activity_log__c.n2de__User__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>User Activity History</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$n2de__User_activity_log__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>n2de__User_activity_log__c.n2de__Action_date__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>n2de__User_activity_log__c.n2de__Action_date__c</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
+    </timeFrameFilter>
+</Report>

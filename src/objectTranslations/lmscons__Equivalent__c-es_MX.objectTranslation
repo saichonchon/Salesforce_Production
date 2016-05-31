@@ -2,12 +2,12 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value><!-- Equivalency --></value>
+        <value>Equivalencia</value>
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value><!-- Equivalency --></value>
+        <value>Equivalencias</value>
     </caseValues>
-    <gender><!-- Masculine --></gender>
-    <nameFieldLabel><!-- equivalent Name --></nameFieldLabel>
+    <gender>Feminine</gender>
+    <nameFieldLabel>nombre equivalente</nameFieldLabel>
 </CustomObjectTranslation>

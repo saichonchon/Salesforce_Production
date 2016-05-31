@@ -3,12 +3,12 @@
     <caseValues>
         <article>Definite</article>
         <plural>false</plural>
-        <value>vILT Konto</value>
+        <value>vILT Kontoen</value>
     </caseValues>
     <caseValues>
         <article>Indefinite</article>
         <plural>false</plural>
-        <value>vILT Konto</value>
+        <value>En vILT Konto</value>
     </caseValues>
     <caseValues>
         <article>None</article>
@@ -18,7 +18,7 @@
     <caseValues>
         <article>Definite</article>
         <plural>true</plural>
-        <value>vILT Konti</value>
+        <value>vILT Kontiene</value>
     </caseValues>
     <caseValues>
         <article>Indefinite</article>
@@ -30,6 +30,6 @@
         <plural>true</plural>
         <value>vILT Konti</value>
     </caseValues>
-    <gender>Neuter</gender>
+    <gender>Feminine</gender>
     <nameFieldLabel>vILT Konto Navn</nameFieldLabel>
 </CustomObjectTranslation>

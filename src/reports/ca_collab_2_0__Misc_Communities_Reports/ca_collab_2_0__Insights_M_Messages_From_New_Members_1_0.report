@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Network.ChatterMessageAndConvId$Sender</field>
+    </columns>
+    <columns>
+        <field>Network.ChatterMessageAndConvId$Sender.CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Network.ChatterMessageAndConvId$Body</field>
+    </columns>
+    <columns>
+        <field>Network.ChatterMessageAndConvId$SentDate</field>
+    </columns>
+    <description>Private messages sent by external users in the last 7 days. This report only includes messages sent by external users who registered in the last 7 days.</description>
+    <filter>
+        <criteriaItems>
+            <column>Network.ChatterMessageAndConvId$Sender.CreatedDate</column>
+            <operator>equals</operator>
+            <value>LAST_N_DAYS:7</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Network.ChatterMessageAndConvId$Sender.UserType</column>
+            <operator>equals</operator>
+            <value>P,C,c,b</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Messages From New Members</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ca_collab_2_0__Network_Private_Messages_30__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Network.ChatterMessageAndConvId$SentDate</dateColumn>
+        <interval>INTERVAL_LAST7</interval>
+    </timeFrameFilter>
+</Report>

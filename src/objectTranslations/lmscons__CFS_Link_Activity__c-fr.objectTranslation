@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Activité de lien CFS</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Activités de lien CFS</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Numéro d&apos;activité du lien CFS</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

@@ -2,13 +2,13 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value>Liste</value>
+        <value>Liste d&apos;inscrits</value>
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value>Liste</value>
+        <value>Listes d&apos;inscrits</value>
     </caseValues>
-    <gender>Masculine</gender>
-    <nameFieldLabel>Liste Id</nameFieldLabel>
+    <gender>Feminine</gender>
+    <nameFieldLabel>ID de la liste</nameFieldLabel>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

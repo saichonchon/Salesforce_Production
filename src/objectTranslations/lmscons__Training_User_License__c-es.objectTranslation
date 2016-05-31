@@ -2,12 +2,12 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value>Licencia de capacitación de usuarios</value>
+        <value>Licencia de usuario de formación</value>
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value>Licencias Formación de usuarios</value>
+        <value>Licencias de usuario de formación</value>
     </caseValues>
-    <gender>Feminine</gender>
-    <nameFieldLabel>Licencia para el Usuario ID</nameFieldLabel>
+    <gender>Masculine</gender>
+    <nameFieldLabel>ID de licencia de usuario</nameFieldLabel>
 </CustomObjectTranslation>

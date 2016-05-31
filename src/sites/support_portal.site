@@ -22,6 +22,7 @@
     <inactiveIndexPage>KB_Maintenence</inactiveIndexPage>
     <indexPage>pkb_Home</indexPage>
     <masterLabel>support-portal</masterLabel>
+    <requireHttps>true</requireHttps>
     <requireInsecurePortalAccess>false</requireInsecurePortalAccess>
     <robotsTxtPage>support_portal_robotstxt</robotsTxtPage>
     <serverIsDown>knowledge_service_unavailable</serverIsDown>

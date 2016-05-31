@@ -2,12 +2,12 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value>Kar</value>
+        <value>Winkelwagentje</value>
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value>Karren</value>
+        <value>Winkelwagentje</value>
     </caseValues>
-    <gender>Neuter</gender>
-    <nameFieldLabel>Kar ID</nameFieldLabel>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Winkelwagentje identificatie</nameFieldLabel>
 </CustomObjectTranslation>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User$Name</field>
+    </columns>
+    <columns>
+        <field>User$Email</field>
+    </columns>
+    <columns>
+        <field>User$Username</field>
+    </columns>
+    <columns>
+        <field>User$LastLoginDate</field>
+    </columns>
+    <columns>
+        <field>User$Contact.Id</field>
+    </columns>
+    <columns>
+        <field>User$Account.Id</field>
+    </columns>
+    <columns>
+        <field>User$Profile</field>
+    </columns>
+    <columns>
+        <field>User$Id</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>User$Profile.UserLicense.Name</column>
+            <operator>equals</operator>
+            <value>Customer Community Login</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User$IsActive</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>BAP 3214-Post Mortem</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Users_Custom__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>User$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

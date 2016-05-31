@@ -132,6 +132,27 @@
             </sourceValues>
             <value>Rock Bottom Golf</value>
         </values>
+        <values>
+            <sourceValues>
+                <sourceValue>American Rec</sourceValue>
+            </sourceValues>
+            <value>American Rec</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>AZ</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Appliance Zone</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Speedy Appliance Parts</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Thrifty Appliance Part</sourceValue>
+            </sourceValues>
+            <value>Appliance Zone</value>
+        </values>
     </buckets>
     <buckets>
         <bucketType>number</bucketType>
@@ -167,6 +188,30 @@
             <value>$2.5K+</value>
         </values>
     </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Opportunity.Account_Management_Services__c</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
     <columns>
         <field>ACCOUNT_NAME</field>
     </columns>

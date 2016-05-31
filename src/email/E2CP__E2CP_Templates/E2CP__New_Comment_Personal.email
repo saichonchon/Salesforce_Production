@@ -1,0 +1,17 @@
+<messaging:emailTemplate subject="{!relatedTo.Subject} {!relatedTo.E2CP__Case_Thread_Id__c}" recipientType="Contact" relatedToType="Case">
+<messaging:plainTextEmailBody >{!relatedTo.E2CP__Most_Recent_Public_Comment__c}
+
+{!$User.FirstName} {!$User.LastName}
+
+
+{!relatedTo.E2CP__HistoryText__c}
+
+***************************
+Case: {!relatedTo.CaseNumber}
+Status: {!relatedTo.Status}
+Priority Level: {!relatedTo.Priority}
+
+
+{!relatedTo.E2CP__Case_Thread_Id__c}
+</messaging:plainTextEmailBody>
+</messaging:emailTemplate>

@@ -5,6 +5,7 @@
     <backgroundStartColor>#FFFFFF</backgroundStartColor>
     <dashboardType>SpecifiedUser</dashboardType>
     <description>Design queue dashboard</description>
+    <isGridLayout>false</isGridLayout>
     <leftSection>
         <columnSize>Medium</columnSize>
         <components>

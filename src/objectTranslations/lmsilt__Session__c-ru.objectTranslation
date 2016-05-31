@@ -3,63 +3,63 @@
     <caseValues>
         <caseType>Nominative</caseType>
         <plural>false</plural>
-        <value>Сессия</value>
+        <value>Занятие</value>
     </caseValues>
     <caseValues>
         <caseType>Nominative</caseType>
         <plural>true</plural>
-        <value>Сессии</value>
+        <value>Занятия</value>
     </caseValues>
     <caseValues>
         <caseType>Accusative</caseType>
         <plural>false</plural>
-        <value>Сессию</value>
+        <value>Занятие</value>
     </caseValues>
     <caseValues>
         <caseType>Accusative</caseType>
         <plural>true</plural>
-        <value>Сессии</value>
+        <value>Занятия</value>
     </caseValues>
     <caseValues>
         <caseType>Genitive</caseType>
         <plural>false</plural>
-        <value>Сессии</value>
+        <value>Занятия</value>
     </caseValues>
     <caseValues>
         <caseType>Genitive</caseType>
         <plural>true</plural>
-        <value>Сессий</value>
+        <value>Занятий</value>
     </caseValues>
     <caseValues>
         <caseType>Dative</caseType>
         <plural>false</plural>
-        <value>Сессии</value>
+        <value>Занятию</value>
     </caseValues>
     <caseValues>
         <caseType>Dative</caseType>
         <plural>true</plural>
-        <value>Сессиям</value>
+        <value>Занятиям</value>
     </caseValues>
     <caseValues>
         <caseType>Instrumental</caseType>
         <plural>false</plural>
-        <value>Сессией</value>
+        <value>Занятием</value>
     </caseValues>
     <caseValues>
         <caseType>Instrumental</caseType>
         <plural>true</plural>
-        <value>Сессиями</value>
+        <value>Занятиями</value>
     </caseValues>
     <caseValues>
         <caseType>Prepositional</caseType>
         <plural>false</plural>
-        <value>Сессии</value>
+        <value>Занятии</value>
     </caseValues>
     <caseValues>
         <caseType>Prepositional</caseType>
         <plural>true</plural>
-        <value>Сессиях</value>
+        <value>Занятиях</value>
     </caseValues>
     <gender>Neuter</gender>
-    <nameFieldLabel>Имя сессии</nameFieldLabel>
+    <nameFieldLabel>Название занятия</nameFieldLabel>
 </CustomObjectTranslation>

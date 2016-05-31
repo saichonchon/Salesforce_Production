@@ -29,6 +29,12 @@
         </values>
     </buckets>
     <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Case.Case_Age_in_Days__c</field>
+    </columns>
+    <columns>
         <field>CASE_NUMBER</field>
     </columns>
     <columns>

@@ -1,0 +1,6 @@
+<messaging:emailTemplate subject=" Waitlisted for {!relatedTo.lmsilt__Event__c} Event" recipientType="User" relatedToType="lmsilt__Roster__c">
+<messaging:plainTextEmailBody >
+Hello {!relatedTo.Student__r.Name},
+You have been waitlisted for {!relatedTo.Event__c}
+</messaging:plainTextEmailBody>
+</messaging:emailTemplate>

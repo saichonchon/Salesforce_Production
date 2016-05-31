@@ -1,0 +1,15 @@
+The following case has been opened for you. One of our staff members will be reviewing it shortly.
+
+To update this case via email, please reply to this message.
+
+***************************
+Case: {!Case.CaseNumber}
+Status: {!Case.Status}
+Priority Level: {!Case.Priority}
+Subject: {!Case.Subject}
+Description:
+{!Case.Description}
+
+
+
+[{!Case.Thread_Id}]

@@ -2,13 +2,13 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value>Curriculum affectation</value>
+        <value>Attribution de curriculum</value>
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value>Affectations des programmes d&apos;études</value>
+        <value>Attributions de curriculum</value>
     </caseValues>
-    <gender>Masculine</gender>
-    <nameFieldLabel>Curriculum Affectation Nom</nameFieldLabel>
-    <startsWith>Consonant</startsWith>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nom de l&apos;attribution de curriculum</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
 </CustomObjectTranslation>

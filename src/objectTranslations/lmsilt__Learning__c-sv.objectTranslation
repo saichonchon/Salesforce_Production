@@ -3,22 +3,22 @@
     <caseValues>
         <article>Definite</article>
         <plural>false</plural>
-        <value>Lärande</value>
+        <value>Lärdomen</value>
     </caseValues>
     <caseValues>
         <article>Indefinite</article>
         <plural>false</plural>
-        <value>Lärande</value>
+        <value>Lärdom</value>
     </caseValues>
     <caseValues>
         <article>None</article>
         <plural>false</plural>
-        <value>Lärande</value>
+        <value>Lärdom</value>
     </caseValues>
     <caseValues>
         <article>Definite</article>
         <plural>true</plural>
-        <value>Lärdomar</value>
+        <value>Lärdomarna</value>
     </caseValues>
     <caseValues>
         <article>Indefinite</article>
@@ -31,5 +31,5 @@
         <value>Lärdomar</value>
     </caseValues>
     <gender>Neuter</gender>
-    <nameFieldLabel>Lärande Id</nameFieldLabel>
+    <nameFieldLabel>Lärdom Id</nameFieldLabel>
 </CustomObjectTranslation>

@@ -3,7 +3,7 @@
     <caseValues>
         <article>Definite</article>
         <plural>false</plural>
-        <value>Avskrift</value>
+        <value>Avskriften</value>
     </caseValues>
     <caseValues>
         <article>Indefinite</article>
@@ -18,7 +18,7 @@
     <caseValues>
         <article>Definite</article>
         <plural>true</plural>
-        <value>Avskrifter</value>
+        <value>Avskrifterna</value>
     </caseValues>
     <caseValues>
         <article>Indefinite</article>
@@ -31,5 +31,5 @@
         <value>Avskrifter</value>
     </caseValues>
     <gender>Neuter</gender>
-    <nameFieldLabel>Transkription Nummer.</nameFieldLabel>
+    <nameFieldLabel>Avskrift Nummer.</nameFieldLabel>
 </CustomObjectTranslation>

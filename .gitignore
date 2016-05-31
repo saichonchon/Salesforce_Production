@@ -1,1 +1,10 @@
-*.sublime-project*.sublime-settings*.sublime-workspaceconfig/.*
+*.sublime-project
+*.sublime-settings
+*.sublime-workspace
+apex-scripts/log*
+tmp/*
+config/.*
+lib/*
+mm.log
+package.xml
+build.*

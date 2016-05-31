@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumnGrouped</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>CUST_CREATED_DATE</groupingColumn>
+        <legendPosition>Bottom</legendPosition>
+        <location>CHART_TOP</location>
+        <secondaryGroupingColumn>PKB_Article_Feedback_Deflection__c.Why_Not_Helpful__c</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <title>Why was this article not helpful?</title>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>PKB_Article_Feedback_Deflection__c.Comments__c</field>
+    </columns>
+    <description>Break down of why the article was not helpful.</description>
+    <filter>
+        <criteriaItems>
+            <column>CUST_CREATED_DATE</column>
+            <operator>greaterThan</operator>
+            <value>11/20/2014 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PKB_Article_Feedback_Deflection__c.Why_Not_Helpful__c</column>
+            <operator>equals</operator>
+            <value>Was not able to follow instructions,&quot;Followed the instructions carefully, but didn&apos;t get expected outcome&quot;,Not enough context provided or missing info,Content seems outdated or incorrect,Original question was not answered,&quot;Did not help, I&apos;m looking for help with a known issue&quot;,Other (please specify),I don&apos;t like this feature,I have feedback about Bigcommerce</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Week</dateGranularity>
+        <field>CUST_CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>PKB_Article_Feedback_Deflection__c.Why_Not_Helpful__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>PKB_Article_Feedback_Deflection__c.Article_Title__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Public Aritcle Why Not Helpful</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$PKB_Article_Feedback_Deflection__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_LAST90</interval>
+    </timeFrameFilter>
+</Report>

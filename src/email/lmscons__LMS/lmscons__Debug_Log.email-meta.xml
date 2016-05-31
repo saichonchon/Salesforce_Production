@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Debug Log</name>
+    <style>none</style>
+    <subject>LMS Learning Debug Log: {!lmscons__DebugLog__c.lmscons__Level__c} - {!Organization.Id}</subject>
+    <textOnly>Organization Name: {!Organization.Name}
+OrgId: {!Organization.Id}
+---
+Message Level: {!lmscons__DebugLog__c.lmscons__Level__c}
+Action: {!lmscons__DebugLog__c.lmscons__Action__c}
+Note: {!lmscons__DebugLog__c.lmscons__Note__c}
+Activity Time:{!Now()}
+User: {!lmscons__DebugLog__c.CreatedBy}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

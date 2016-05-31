@@ -5,6 +5,7 @@
     <backgroundStartColor>#FFFFFF</backgroundStartColor>
     <dashboardType>SpecifiedUser</dashboardType>
     <description>Recognition Dashboard outlining recognition received &amp; given, most popular badges, and rewards usage.</description>
+    <isGridLayout>false</isGridLayout>
     <leftSection>
         <columnSize>Medium</columnSize>
         <components>

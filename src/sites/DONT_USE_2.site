@@ -15,7 +15,9 @@
     <inactiveIndexPage>CommunitiesLogin</inactiveIndexPage>
     <indexPage>CommunitiesLanding</indexPage>
     <masterLabel>DONT USE 2</masterLabel>
+    <requireHttps>true</requireHttps>
     <requireInsecurePortalAccess>false</requireInsecurePortalAccess>
+    <selfRegPage>CommunitiesSelfReg</selfRegPage>
     <siteAdmin>maria.huemmer@bigcommerce.com</siteAdmin>
     <siteType>ChatterNetwork</siteType>
     <subdomain>bigcommerce-community</subdomain>

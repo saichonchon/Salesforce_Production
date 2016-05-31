@@ -2,12 +2,12 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value><!-- Learning Trigger --></value>
+        <value>Activador de aprendizaje</value>
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value><!-- Learning Trigger --></value>
+        <value>Activadores de aprendizaje</value>
     </caseValues>
-    <gender><!-- Masculine --></gender>
-    <nameFieldLabel><!-- Rule Name --></nameFieldLabel>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nombre de la regla</nameFieldLabel>
 </CustomObjectTranslation>

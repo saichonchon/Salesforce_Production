@@ -157,6 +157,12 @@
         </values>
     </buckets>
     <columns>
+        <field>Opportunity.CancellationRequestDate__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.CancellationDate__c</field>
+    </columns>
+    <columns>
         <field>ACCOUNT_NAME</field>
     </columns>
     <columns>
@@ -210,7 +216,7 @@
         <field>Opportunity.Product__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Suspended -  Account Audit</name>
+    <name>Enterprise Suspended - Account Audit</name>
     <params>
         <name>open</name>
         <value>all</value>
@@ -225,7 +231,7 @@
     </params>
     <reportType>Opportunity</reportType>
     <scope>organization</scope>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>Opportunity.PurchaseDate__c</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

@@ -11,6 +11,7 @@ Thank you for contacting Bigcommerce.   My name is {!User_FirstName}, how may I 
     <offlineImage>ChatImageOfflineSupport</offlineImage>
     <onlineImage>ChatImageOnlineSupport</onlineImage>
     <optionsCustomRoutingIsEnabled>false</optionsCustomRoutingIsEnabled>
+    <optionsHasChasitorIdleTimeout>false</optionsHasChasitorIdleTimeout>
     <optionsHasInviteAfterAccept>false</optionsHasInviteAfterAccept>
     <optionsHasInviteAfterReject>false</optionsHasInviteAfterReject>
     <optionsHasRerouteDeclinedRequest>false</optionsHasRerouteDeclinedRequest>

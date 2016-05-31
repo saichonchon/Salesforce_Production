@@ -3,33 +3,33 @@
     <caseValues>
         <article>Definite</article>
         <plural>false</plural>
-        <value>Dienstrooster</value>
+        <value>Listen</value>
     </caseValues>
     <caseValues>
         <article>Indefinite</article>
         <plural>false</plural>
-        <value>Dienstrooster</value>
+        <value>En liste</value>
     </caseValues>
     <caseValues>
         <article>None</article>
         <plural>false</plural>
-        <value>Dienstrooster</value>
+        <value>Liste</value>
     </caseValues>
     <caseValues>
         <article>Definite</article>
         <plural>true</plural>
-        <value>Dienstrooster</value>
+        <value>Listene</value>
     </caseValues>
     <caseValues>
         <article>Indefinite</article>
         <plural>true</plural>
-        <value>Dienstrooster</value>
+        <value>Lister</value>
     </caseValues>
     <caseValues>
         <article>None</article>
         <plural>true</plural>
-        <value>Dienstrooster</value>
+        <value>Lister</value>
     </caseValues>
-    <gender>Neuter</gender>
-    <nameFieldLabel>Dienstrooster ID</nameFieldLabel>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Liste ID</nameFieldLabel>
 </CustomObjectTranslation>

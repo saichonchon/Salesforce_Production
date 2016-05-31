@@ -5,6 +5,7 @@
         <field>Change_Owner__c</field>
         <literalValue>Support Queue</literalValue>
     </fieldOverrides>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
     <quickActionLayout>
         <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
         <quickActionLayoutColumns>

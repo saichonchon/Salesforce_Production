@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Case.Client_Success</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Category__c</column>
+            <operator>notEqual</operator>
+            <value>3rd Party Integration Setup,Accounting,Account Ownership,Analytics and Conversion,Apps Management,Billing and Invoices,Brands,Call Transfer,Cancelations,Cancellation,Categories,CNAME Record,Coupon Codes,Coupons and Discounts,Credit Card Information,Credits of Refunds,Custom Content,Customers,Design Mode,DNS,Domain Name,Email Accounts,Email Issues,E-mails,Escalated Case,Feature Request,Gift Certificates,Google Product Search,Heartland,HTML/CSS Fixes,HTML/CSS How-to&apos;s,Import/Export Customers,Import/Export Products,JavaScript (Conflicts),Known Bug,Legal - Account Dispute,Legal - Copyright,Legal - DMCA/Trademark Notice,Legal - DMCA Notice,Legal - Subpoena,Legal - Trademark Notice,Manager Callback,News Items,None Required,Orders,Other - BigCommerce Issue,Other - Fraud Claim,Other - PCI Compliance Issue,Other - Phishing Report,Other - Request for Information,Other - Resources Issue,Other - SPAM Issues,Payment Gateway Management</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <operator>equals</operator>
+            <value>Phone,Email,Chat,Web</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Category__c</column>
+            <operator>notEqual</operator>
+            <value>,Payment Gateway Setup,PCI Compliance,Plan Downgrade,Security,Shipping and Fulfillment,Shopping Feeds,Spam,Speed and Performance,SSL Installation,SSL Install or Purchase,Statistics,Storage overages,Store Settings,Suspension,TOS - Disallowed Products/Content,TOS - Mass Email,TOS - SPAM Email,Unpaid Invoice,Upgrading Issues,User Accounts,Web Pages,WYSIWYG</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CASE_NUMBER</column>
+            <operator>notEqual</operator>
+            <value>00256215</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Tier_2_Request_Date__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Category__c</column>
+            <operator>equals</operator>
+            <value>Design - Out of Scope,Design - Supported</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Tier 2 Design Cases</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseCustomEntity$Case_Time_Worked__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

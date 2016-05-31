@@ -106,6 +106,7 @@
         </rules>
     </decisions>
     <description>4-10-15 Adds the user as the account manager on the store.</description>
+    <interviewLabel>Add Account Manager - add to account field as well {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Add Account Manager - add to account field as well</label>
     <processType>Flow</processType>
     <recordCreates>
@@ -201,6 +202,7 @@
         <locationY>42</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
         <connector>
             <targetReference>Lookup_User</targetReference>
         </connector>
@@ -238,6 +240,7 @@
         <locationY>141</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
         <fields>
             <name>FaultMessage</name>
             <fieldText>{!$Flow.CurrentDate}

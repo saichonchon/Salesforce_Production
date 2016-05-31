@@ -2,13 +2,13 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value>Grilletto assegna stato</value>
+        <value>Stato trigger assegnazione</value>
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value>Trigger assegnare statuses</value>
+        <value>Stati trigger assegnazione</value>
     </caseValues>
     <gender>Masculine</gender>
-    <nameFieldLabel>Grilletto assegna lo status nome</nameFieldLabel>
+    <nameFieldLabel>Nome stato trigger assegnazione</nameFieldLabel>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

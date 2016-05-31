@@ -2,12 +2,12 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value><!-- EUI Configuration --></value>
+        <value>Configuración de IU</value>
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value><!-- EUI Configuration --></value>
+        <value>Configuraciones de IU</value>
     </caseValues>
-    <gender><!-- Feminine --></gender>
-    <nameFieldLabel><!-- EUI Configuration Name --></nameFieldLabel>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nombre de la configuración de IU</nameFieldLabel>
 </CustomObjectTranslation>

@@ -113,6 +113,26 @@
         <template>Approval_Process_Templates/Enterprise_Partner_Request_Rejected</template>
     </alerts>
     <alerts>
+        <fullName>Enterprise_Sales_Closed_Opp_Notification</fullName>
+        <description>Enterprise Sales: Closed Opp Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>alecia.wall@bigcommerce.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>russell.griffin@bigcommerce.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sachin.wadhawan@bigcommerce.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>no-reply@bigcommerce.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Internal_Workflow_Communications_Sales/Closed_Enterprise_Deal</template>
+    </alerts>
+    <alerts>
         <fullName>Executive_Sponsorship</fullName>
         <description>Executive Sponsorship</description>
         <protected>false</protected>
@@ -761,6 +781,25 @@
         <description>Copies store URL to text field to enable searching on create/edit</description>
         <formula>Store_URL_TEXT__c &lt;&gt; StoreURL__c</formula>
         <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Enterprise%3A Opportunity Closed Notification</fullName>
+        <actions>
+            <name>Enterprise_Sales_Closed_Opp_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Email Notification that updates Enterprise Sales Management when an Opportunity has closed, whether one or lost.</description>
+        <formula>OR(  
+Owner.UserRoleId = &apos;00E13000001DGhr&apos;, /* Enterprise Leader */ 
+Owner.UserRoleId = &apos;00E13000001DGi1&apos;  /* Enterprise Sales */ 
+) &amp;&amp;  
+IsClosed = True &amp;&amp; 
+OR(  
+IsWon = False &amp;&amp;  Projected__c = True,
+IsWon = True &amp;&amp; Amount &gt; 500
+)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
         <fullName>KEEP Product Change Notification</fullName>

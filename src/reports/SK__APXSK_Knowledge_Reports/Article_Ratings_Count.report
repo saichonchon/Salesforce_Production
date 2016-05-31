@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>PKB_Article_Feedback_Deflection__c.Why_Not_Helpful__c</field>
+    </columns>
+    <columns>
+        <field>PKB_Article_Feedback_Deflection__c.Comments__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CUST_CREATED_DATE</column>
+            <operator>greaterThan</operator>
+            <value>11/20/2014 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PKB_Article_Feedback_Deflection__c.Feedback_Addressed__c</column>
+            <operator>notEqual</operator>
+            <value>Not About Article</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>PKB_Article_Feedback_Deflection__c.Deflection__c</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>PKB_Article_Feedback_Deflection__c.Article_Title__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Article Ratings Count</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$PKB_Article_Feedback_Deflection__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_LAST90</interval>
+    </timeFrameFilter>
+</Report>

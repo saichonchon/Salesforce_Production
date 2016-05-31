@@ -1,0 +1,32 @@
+<messaging:emailTemplate subject="Case: {!relatedTo.CaseNumber} {!relatedTo.Subject} {!relatedTo.E2CP__Case_Thread_Id__c}" recipientType="Contact" relatedToType="Case">
+<messaging:plainTextEmailBody >
+The solution(s) below should address your issue.
+
+To update this case via email, please reply to this message. Because your reply will be automatically processed, please enter your reply in the space below.
+
+[===&gt; Please enter your reply below this line &lt;===]
+
+[===&gt; Please enter your reply above this line &lt;===]
+
+---------------------------------------------------
+<apex:repeat var="cx" value="{!relatedTo.CaseSolutions}">
+{!cx.Solution.SolutionName}
+{!cx.Solution.SolutionNote}
+</apex:repeat>
+---------------------------------------------------
+
+
+
+{!relatedTo.E2CP__HistoryText__c}
+
+***************************
+Case: {!relatedTo.CaseNumber}
+Status: {!relatedTo.Status}
+Priority Level: {!relatedTo.Priority}
+Subject: {!relatedTo.Subject}
+Description:
+{!relatedTo.Description}
+
+{!relatedTo.E2CP__Case_Thread_Id__c}
+</messaging:plainTextEmailBody>
+</messaging:emailTemplate>

@@ -3,33 +3,33 @@
     <caseValues>
         <article>Definite</article>
         <plural>false</plural>
-        <value>Dienstrooster Zitting</value>
+        <value>Listesessionen</value>
     </caseValues>
     <caseValues>
         <article>Indefinite</article>
         <plural>false</plural>
-        <value>Dienstrooster Zitting</value>
+        <value>En listesession</value>
     </caseValues>
     <caseValues>
         <article>None</article>
         <plural>false</plural>
-        <value>Dienstrooster Zitting</value>
+        <value>Listesession</value>
     </caseValues>
     <caseValues>
         <article>Definite</article>
         <plural>true</plural>
-        <value>Dienstrooster sessies</value>
+        <value>Listesessionene</value>
     </caseValues>
     <caseValues>
         <article>Indefinite</article>
         <plural>true</plural>
-        <value>Dienstrooster sessies</value>
+        <value>Listesessioner</value>
     </caseValues>
     <caseValues>
         <article>None</article>
         <plural>true</plural>
-        <value>Dienstrooster sessies</value>
+        <value>Listesessioner</value>
     </caseValues>
-    <gender>Neuter</gender>
-    <nameFieldLabel>Dienstrooster Sessie Naam</nameFieldLabel>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Listesession Navn</nameFieldLabel>
 </CustomObjectTranslation>

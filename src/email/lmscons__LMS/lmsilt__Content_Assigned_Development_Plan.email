@@ -1,0 +1,36 @@
+<messaging:emailTemplate subject="{!$Label.lmscons__Subject_Content_Assigned}" recipientType="User" relatedToType="lmsilt__Development_Plan_Assignment__c">
+<messaging:htmlEmailBody >  
+<html>
+    <body>
+    <STYLE type="text/css">
+        TH {font-size: 11px; font-face: arial;background: #CCCCCC; border-width: 1;  text-align: center } 
+        TD  {font-size: 11px; font-face: verdana } 
+        TABLE {border: solid #CCCCCC; border-width: 1}
+        TR {border: solid #CCCCCC; border-width: 1}
+     </STYLE>
+     <font face="arial" size="2">
+<apex:image id="Logo" value="https://c.na19.content.force.com/servlet/servlet.ImageServer?id=01513000002mHj4&oid=00D30000001FDCG&lastMod=1459282679000" 
+/>
+<p>{!recipient.name},</p>
+<p>You've been assigned training!</p>
+
+
+<p><b>Name:</b> {!relatedTo.lmsilt__Development_Plan__r.Name}</p>
+<p><b>Description:</b> {!relatedTo.lmsilt__Development_Plan__r.lmsilt__Description__c} </p>
+
+
+<p>To access training, click on the <a href="https://lmscons.na19.visual.force.com/apex/MyTraining">My Training Tab</a>. Please ensure that you are logged in at login.salesforce.com. Your user name is your Bigcommerce email address and your password is your Bigcommerce email password.</p> 
+
+<p>If you have any questions, please contact training@bigcommerce.com.</p>
+            </font>
+        </body>
+    </html>
+</messaging:htmlEmailBody> 
+
+
+<messaging:plainTextEmailBody >
+{!$Label.lmscons__Hello} {!recipient.FirstName},
+
+{!$Label.lmscons__You_have_been_assigned_learning} {!relatedTo.lmsilt__Development_Plan__r.Name} - {!relatedTo.lmsilt__Development_Plan__r.lmsilt__Description__c}.
+</messaging:plainTextEmailBody>
+</messaging:emailTemplate>

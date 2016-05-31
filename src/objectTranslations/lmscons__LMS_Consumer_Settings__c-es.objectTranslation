@@ -2,12 +2,12 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value>Configuración del Consumidor</value>
+        <value>Configuración de consumidor</value>
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value>Configuración del Consumidor</value>
+        <value>Configuraciones de consumidor</value>
     </caseValues>
-    <gender>Feminine</gender>
-    <nameFieldLabel>Configuración de ID</nameFieldLabel>
+    <gender>Masculine</gender>
+    <nameFieldLabel>ID de configuración</nameFieldLabel>
 </CustomObjectTranslation>

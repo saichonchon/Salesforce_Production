@@ -9,6 +9,14 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>DeleteBannerPhotoAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeletePhotoAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>EditUserAction</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -45,7 +53,19 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>UpdateBannerPhotoAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>UpdatePhotoAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>UserActivationAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewPhotoAction</actionName>
         <type>Default</type>
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
@@ -1274,14 +1294,9 @@ IF(Tenured_Months__c &gt;=4, 1,0)
         <columns>CORE.PROFILE.USERTYPE</columns>
         <filterScope>Everything</filterScope>
         <filters>
-            <field>CORE.USERS.USERNAME</field>
-            <operation>contains</operation>
-            <value>justin.johnson</value>
-        </filters>
-        <filters>
             <field>CORE.PROFILE.NAME</field>
-            <operation>notEqual</operation>
-            <value>Community Client User</value>
+            <operation>equals</operation>
+            <value>support community client</value>
         </filters>
         <label>ADMIN: Look for user</label>
         <sharedTo>

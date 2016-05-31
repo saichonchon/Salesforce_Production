@@ -1,0 +1,6 @@
+<messaging:emailTemplate subject="Cancellation Notice: {!relatedTo.lmsilt__Event__c}" recipientType="User" relatedToType="lmsilt__Roster__c">
+<messaging:plainTextEmailBody >
+Hello {!relatedTo.Student__r.Name},
+An Event that you were enrolled in has been cancelled: {!relatedTo.Event__c}
+</messaging:plainTextEmailBody>
+</messaging:emailTemplate>

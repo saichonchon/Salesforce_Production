@@ -1,0 +1,33 @@
+<messaging:emailTemplate subject="{!$Label.lmscons__Subject_Content_Completed}" recipientType="User" relatedToType="lmsilt__Development_Plan_Assignment__c"  language="{!recipient.LanguageLocaleKey}">
+
+<messaging:htmlEmailBody >  
+<html>
+    <body>
+    <STYLE type="text/css">
+        TH {font-size: 11px; font-face: arial;background: #CCCCCC; border-width: 1;  text-align: center } 
+        TD  {font-size: 11px; font-face: verdana } 
+        TABLE {border: solid #CCCCCC; border-width: 1}
+        TR {border: solid #CCCCCC; border-width: 1}
+     </STYLE>
+     <font face="arial" size="2">
+<apex:image id="Logo" value="https://c.na19.content.force.com/servlet/servlet.ImageServer?id=01513000002mHj4&oid=00D30000001FDCG&lastMod=1459282679000" 
+/>
+<p>{!recipient.name},</p>
+<p>You've completed the following training!</p>
+
+<p><b>Name:</b> {!relatedTo.lmsilt__Development_Plan__r.Name}</p>
+<p><b>Description:</b> {!relatedTo.lmsilt__Development_Plan__r.lmsilt__Description__c} </p>
+
+<p>Congrats! </p>
+            </font>
+        </body>
+    </html>
+</messaging:htmlEmailBody> 
+
+
+<messaging:plainTextEmailBody >
+{!$Label.lmscons__Hello} {!recipient.FirstName},
+
+{!$Label.lmscons__You_ve_completed} {!relatedTo.lmsilt__Development_Plan__r.Name} - {!relatedTo.lmsilt__Development_Plan__r.lmsilt__Description__c}.
+</messaging:plainTextEmailBody>
+</messaging:emailTemplate>

@@ -1,0 +1,14 @@
+{!Case.E2CP__Most_Recent_Public_Comment__c}
+
+{!$User.FirstName} {!$User.LastName}
+
+
+{!Case.E2CP__HistoryText__c}
+
+***************************
+Case: {!Case.CaseNumber}
+Status: {!Case.Status}
+Priority Level: {!Case.Priority}
+
+
+{!Case.E2CP__Case_Thread_Id__c}

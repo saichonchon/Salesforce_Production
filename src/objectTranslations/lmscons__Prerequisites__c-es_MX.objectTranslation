@@ -2,12 +2,12 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value><!-- Prerequisite --></value>
+        <value>Prerrequisito</value>
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value><!-- Prerequisite --></value>
+        <value>Prerrequisitos</value>
     </caseValues>
-    <gender><!-- Masculine --></gender>
-    <nameFieldLabel><!-- Prerequisite Name --></nameFieldLabel>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nombre del prerrequisito</nameFieldLabel>
 </CustomObjectTranslation>

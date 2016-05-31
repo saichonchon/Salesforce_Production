@@ -12,6 +12,7 @@
     <isActive>true</isActive>
     <label>Sales</label>
     <optionsCustomRoutingIsEnabled>false</optionsCustomRoutingIsEnabled>
+    <optionsHasChasitorIdleTimeout>false</optionsHasChasitorIdleTimeout>
     <optionsHasInviteAfterAccept>false</optionsHasInviteAfterAccept>
     <optionsHasInviteAfterReject>true</optionsHasInviteAfterReject>
     <optionsHasRerouteDeclinedRequest>false</optionsHasRerouteDeclinedRequest>

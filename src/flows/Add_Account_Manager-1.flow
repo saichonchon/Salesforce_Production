@@ -135,6 +135,7 @@
         <locationY>42</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
         <connector>
             <targetReference>Lookup_User</targetReference>
         </connector>
@@ -172,6 +173,7 @@
         <locationY>141</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
         <fields>
             <name>FaultMessage</name>
             <fieldText>{!$Flow.CurrentDate}

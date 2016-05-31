@@ -2,12 +2,12 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value><!-- Development Plan Task --></value>
+        <value>Ontwikkelingsplan taak</value>
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value><!-- Development Plan Task --></value>
+        <value>Ontwikkelingsplan taken</value>
     </caseValues>
-    <gender><!-- Neuter --></gender>
-    <nameFieldLabel><!-- Task Title --></nameFieldLabel>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Titel van taak</nameFieldLabel>
 </CustomObjectTranslation>

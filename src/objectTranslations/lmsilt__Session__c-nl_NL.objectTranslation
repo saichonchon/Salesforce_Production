@@ -2,12 +2,12 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value><!-- Session --></value>
+        <value>Sessie</value>
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value><!-- Session --></value>
+        <value>Sessies</value>
     </caseValues>
-    <gender><!-- Neuter --></gender>
-    <nameFieldLabel><!-- Session Name --></nameFieldLabel>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Naam van sessie</nameFieldLabel>
 </CustomObjectTranslation>

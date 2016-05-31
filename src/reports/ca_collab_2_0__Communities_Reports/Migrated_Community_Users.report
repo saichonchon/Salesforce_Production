@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User$Name</field>
+    </columns>
+    <columns>
+        <field>User$Email</field>
+    </columns>
+    <columns>
+        <field>User$Username</field>
+    </columns>
+    <columns>
+        <field>User$Contact</field>
+    </columns>
+    <columns>
+        <field>User$Account.Name</field>
+    </columns>
+    <columns>
+        <field>User$Account.Active_Trials_Opp__c</field>
+    </columns>
+    <columns>
+        <field>User$IsActive</field>
+    </columns>
+    <columns>
+        <field>User$LastLoginDate</field>
+    </columns>
+    <columns>
+        <field>User$Contact.Id</field>
+    </columns>
+    <columns>
+        <field>User$Account.Id</field>
+    </columns>
+    <columns>
+        <field>User$Profile</field>
+    </columns>
+    <columns>
+        <field>User$Id</field>
+    </columns>
+    <description>Community Users migrated from MyBB</description>
+    <filter>
+        <criteriaItems>
+            <column>User$Profile.UserLicense.Name</column>
+            <operator>equals</operator>
+            <value>Customer Community Login</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$CreatedBy</column>
+            <operator>equals</operator>
+            <value>Maria Huemmer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$CreatedDate</column>
+            <operator>greaterThan</operator>
+            <value>3/31/2016 12:00 AM</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User$Account.Active_Stores_Opp__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Migrated Community Users</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Users_Custom__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>User$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

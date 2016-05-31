@@ -30,7 +30,7 @@
         <criteriaItems>
             <column>CREATED</column>
             <operator>equals</operator>
-            <value>Ray Vaccaro</value>
+            <value>Todd Wallace</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>
@@ -58,7 +58,7 @@
     <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <endDate>2016-05-21</endDate>
+        <endDate>2016-05-28</endDate>
         <interval>INTERVAL_CUSTOM</interval>
         <startDate>2016-05-01</startDate>
     </timeFrameFilter>

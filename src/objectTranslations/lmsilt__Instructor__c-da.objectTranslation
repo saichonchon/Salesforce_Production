@@ -3,12 +3,12 @@
     <caseValues>
         <article>Definite</article>
         <plural>false</plural>
-        <value>Instruktør</value>
+        <value>Instruktøren</value>
     </caseValues>
     <caseValues>
         <article>Indefinite</article>
         <plural>false</plural>
-        <value>Instruktør</value>
+        <value>En instruktør</value>
     </caseValues>
     <caseValues>
         <article>None</article>
@@ -18,7 +18,7 @@
     <caseValues>
         <article>Definite</article>
         <plural>true</plural>
-        <value>Instruktører</value>
+        <value>Instruktørerene</value>
     </caseValues>
     <caseValues>
         <article>Indefinite</article>
@@ -30,6 +30,6 @@
         <plural>true</plural>
         <value>Instruktører</value>
     </caseValues>
-    <gender>Neuter</gender>
+    <gender>Feminine</gender>
     <nameFieldLabel>Instruktør Id</nameFieldLabel>
 </CustomObjectTranslation>

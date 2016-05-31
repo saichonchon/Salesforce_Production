@@ -25,6 +25,8 @@
         <field>CLOSE_DATE</field>
     </columns>
     <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <aggregateTypes>Average</aggregateTypes>
         <field>AMOUNT</field>
     </columns>
     <columns>

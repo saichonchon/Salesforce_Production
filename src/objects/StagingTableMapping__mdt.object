@@ -4,12 +4,14 @@
         <fullName>Active__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
         <label>Active</label>
         <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>Object_Field_Name_API__c</fullName>
         <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
         <label>Object Field Name (API)</label>
         <length>255</length>
         <required>false</required>
@@ -19,6 +21,7 @@
     <fields>
         <fullName>Object_Name_API__c</fullName>
         <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
         <label>Object Name (API)</label>
         <length>255</length>
         <required>false</required>
@@ -28,6 +31,7 @@
     <fields>
         <fullName>Staging_Object_Field_Name_API__c</fullName>
         <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
         <label>Staging Object Field Name (API)</label>
         <length>255</length>
         <required>false</required>
@@ -37,6 +41,7 @@
     <fields>
         <fullName>Staging_Object_Name_API__c</fullName>
         <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
         <label>Staging Object Name (API)</label>
         <length>255</length>
         <required>false</required>
@@ -45,4 +50,5 @@
     </fields>
     <label>StagingTableMapping</label>
     <pluralLabel>StagingTableMapping</pluralLabel>
+    <visibility>Protected</visibility>
 </CustomObject>

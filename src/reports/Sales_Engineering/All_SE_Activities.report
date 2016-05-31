@@ -8,13 +8,11 @@
             <axisBinding>y</axisBinding>
             <column>RowCount</column>
         </chartSummaries>
-        <chartType>VerticalColumnStacked</chartType>
+        <chartType>VerticalColumn</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>ASSIGNED</groupingColumn>
-        <legendPosition>Right</legendPosition>
+        <groupingColumn>TASK_TYPE</groupingColumn>
         <location>CHART_TOP</location>
-        <secondaryGroupingColumn>TASK_TYPE</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -39,9 +37,6 @@
         <field>STAGE_NAME</field>
     </columns>
     <columns>
-        <field>DUE_DATE</field>
-    </columns>
-    <columns>
         <field>STATUS</field>
     </columns>
     <description>List of all ongoing SE activities</description>
@@ -53,11 +48,6 @@
         </criteriaItems>
     </filter>
     <format>Summary</format>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>ASSIGNED</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>TASK_TYPE</field>
@@ -79,8 +69,6 @@
     <reportType>Activity</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
-    <sortColumn>DUE_DATE</sortColumn>
-    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>DUE_DATE</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

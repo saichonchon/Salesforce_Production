@@ -9,6 +9,7 @@
                 <operation>equals</operation>
                 <value>Premium Services Email</value>
             </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
             <replyToEmail>premiumservices@bigcommerce.com</replyToEmail>
             <senderEmail>premiumservices@bigcommerce.com</senderEmail>
             <senderName>Premium Account Services</senderName>
@@ -25,6 +26,7 @@
                 <operation>equals</operation>
                 <value>partners@bigcommerce.com</value>
             </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
             <replyToEmail>partners@bigcommerce.com</replyToEmail>
             <senderEmail>no-reply@bigcommerce.com</senderEmail>
             <senderName>Bigcommerce Partner Team</senderName>
@@ -41,6 +43,7 @@
                 <operation>equals</operation>
                 <value>EIG Billing</value>
             </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
             <replyToEmail>no-reply@bigcommerce.com</replyToEmail>
             <senderEmail>no-reply@bigcommerce.com</senderEmail>
             <senderName>Bigcommerce</senderName>
@@ -57,6 +60,7 @@
                 <operation>equals</operation>
                 <value>team@bigcommerce.com</value>
             </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
             <replyToEmail>no-reply@bigcommerce.com</replyToEmail>
             <senderEmail>no-reply@bigcommerce.com</senderEmail>
             <senderName>Bigcommerce</senderName>
@@ -68,6 +72,7 @@
                 <operation>equals</operation>
                 <value>SBD - Escalations</value>
             </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
             <replyToEmail>sbdsupport@bigcommerce.com</replyToEmail>
             <senderEmail>no-reply@bigcommerce.com</senderEmail>
             <senderName>Bigcommerce</senderName>

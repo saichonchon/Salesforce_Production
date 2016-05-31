@@ -2,12 +2,12 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value>Tronco de Ajuste</value>
+        <value>Registro de depuración</value>
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value>Tronco de Ajuste</value>
+        <value>Registros de depuración</value>
     </caseValues>
-    <gender>Feminine</gender>
-    <nameFieldLabel>Nombre registro de depuración</nameFieldLabel>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nombre de DebugLog</nameFieldLabel>
 </CustomObjectTranslation>

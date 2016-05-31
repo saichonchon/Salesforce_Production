@@ -2,12 +2,12 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value>Catálogo aprendizaje camino</value>
+        <value>Senda de aprendizaje de catálogo</value>
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value>Catálogo aprendizaje caminos</value>
+        <value>Sendas de aprendizaje de catálogos</value>
     </caseValues>
-    <gender>Feminine</gender>
-    <nameFieldLabel>Catálogo aprendizaje nombre</nameFieldLabel>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nombre de aprendizaje de catálogo</nameFieldLabel>
 </CustomObjectTranslation>

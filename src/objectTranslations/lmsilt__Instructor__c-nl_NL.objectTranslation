@@ -2,12 +2,12 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value><!-- Instructor --></value>
+        <value>Instructeur</value>
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value><!-- Instructor --></value>
+        <value>Instructeurs</value>
     </caseValues>
-    <gender><!-- Neuter --></gender>
-    <nameFieldLabel><!-- Instructor Id --></nameFieldLabel>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Instucteur legitimatie</nameFieldLabel>
 </CustomObjectTranslation>

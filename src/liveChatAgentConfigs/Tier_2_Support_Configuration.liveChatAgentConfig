@@ -21,13 +21,19 @@
     <criticalWaitTime>120</criticalWaitTime>
     <enableAgentFileTransfer>true</enableAgentFileTransfer>
     <enableAgentSneakPeek>true</enableAgentSneakPeek>
+    <enableAssistanceFlag>false</enableAssistanceFlag>
     <enableAutoAwayOnDecline>true</enableAutoAwayOnDecline>
+    <enableAutoAwayOnPushTimeout>false</enableAutoAwayOnPushTimeout>
+    <enableChatConferencing>false</enableChatConferencing>
     <enableChatMonitoring>true</enableChatMonitoring>
-    <enableChatTransfer>true</enableChatTransfer>
+    <enableChatTransferToAgent>true</enableChatTransferToAgent>
+    <enableChatTransferToButton>false</enableChatTransferToButton>
+    <enableChatTransferToSkill>true</enableChatTransferToSkill>
     <enableLogoutSound>false</enableLogoutSound>
     <enableNotifications>true</enableNotifications>
     <enableRequestSound>true</enableRequestSound>
     <enableSneakPeek>true</enableSneakPeek>
+    <enableVisitorBlocking>false</enableVisitorBlocking>
     <enableWhisperMessage>true</enableWhisperMessage>
     <label>Tier 2 Support Configuration</label>
     <supervisorDefaultButtonFilter>Tier_2_Support</supervisorDefaultButtonFilter>

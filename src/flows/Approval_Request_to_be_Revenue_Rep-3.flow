@@ -126,6 +126,7 @@
         <locationY>18</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
         <connector>
             <targetReference>Lookup_Rev_Rep_Details</targetReference>
         </connector>
@@ -149,6 +150,7 @@
         <locationY>413</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
         <fields>
             <name>DisplayData</name>
             <fieldText>OppID: {!OppId}
@@ -168,6 +170,7 @@ RevRepTeam: {!RevRepRevenueTeam}</fieldText>
         <locationY>241</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
         <fields>
             <name>FaultMessage</name>
             <fieldText>{!$Flow.FaultMessage}

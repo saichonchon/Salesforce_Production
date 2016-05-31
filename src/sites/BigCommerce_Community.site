@@ -21,8 +21,10 @@
     <inactiveIndexPage>CommunitiesLogin</inactiveIndexPage>
     <indexPage>CommunitiesLanding</indexPage>
     <masterLabel>BigCommerce Community</masterLabel>
+    <requireHttps>true</requireHttps>
     <requireInsecurePortalAccess>false</requireInsecurePortalAccess>
     <robotsTxtPage>CommunityRobotsTxt</robotsTxtPage>
+    <selfRegPage>CommunitiesSelfReg</selfRegPage>
     <siteAdmin>miles.leymeister@bigcommerce.com</siteAdmin>
     <siteRedirectMappings>
         <action>Permanent</action>

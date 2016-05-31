@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CaseSettings xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseCommentNotificationTemplate>Case_Comment_Templates/Test_New_Comment_Template</caseCommentNotificationTemplate>
+    <caseFeedItemSettings>
+        <characterLimit>1200</characterLimit>
+        <collapseThread>true</collapseThread>
+        <displayFormat>HideBlankLines</displayFormat>
+        <feedItemType>EmailMessageEvent</feedItemType>
+    </caseFeedItemSettings>
     <closeCaseThroughStatusChange>true</closeCaseThroughStatusChange>
     <defaultCaseOwner>api@bigcommerce.com</defaultCaseOwner>
     <defaultCaseOwnerType>User</defaultCaseOwnerType>
     <defaultCaseUser>api@bigcommerce.com</defaultCaseUser>
+    <emailActionDefaultsHandlerClass>SmartTemplateLoader</emailActionDefaultsHandlerClass>
     <emailToCase>
         <enableEmailToCase>true</enableEmailToCase>
         <enableHtmlEmail>true</enableHtmlEmail>
@@ -13,6 +20,7 @@
         <enableThreadIDInSubject>false</enableThreadIDInSubject>
         <notifyOwnerOnNewCaseEmail>false</notifyOwnerOnNewCaseEmail>
         <overEmailLimitAction>Requeue</overEmailLimitAction>
+        <preQuoteSignature>false</preQuoteSignature>
         <routingAddresses>
             <addressType>EmailToCase</addressType>
             <caseOrigin>App Store Email</caseOrigin>
@@ -198,13 +206,12 @@
     <enableCaseFeed>true</enableCaseFeed>
     <enableDraftEmails>true</enableDraftEmails>
     <enableEarlyEscalationRuleTriggers>false</enableEarlyEscalationRuleTriggers>
-    <enableNewEmailDefaultTemplate>true</enableNewEmailDefaultTemplate>
+    <enableEmailActionDefaultsHandler>true</enableEmailActionDefaultsHandler>
     <enableSuggestedArticlesApplication>false</enableSuggestedArticlesApplication>
     <enableSuggestedArticlesCustomerPortal>false</enableSuggestedArticlesCustomerPortal>
     <enableSuggestedArticlesPartnerPortal>false</enableSuggestedArticlesPartnerPortal>
     <enableSuggestedSolutions>false</enableSuggestedSolutions>
     <keepRecordTypeOnAssignmentRule>true</keepRecordTypeOnAssignmentRule>
-    <newEmailDefaultTemplateClass>SmartTemplateLoader</newEmailDefaultTemplateClass>
     <notifyContactOnCaseComment>true</notifyContactOnCaseComment>
     <notifyDefaultCaseOwner>false</notifyDefaultCaseOwner>
     <notifyOwnerOnCaseComment>true</notifyOwnerOnCaseComment>

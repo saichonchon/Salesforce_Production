@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>30.0</apiVersion>
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Event/Class Cancelled</name>
+    <packageVersions>
+        <majorNumber>4</majorNumber>
+        <minorNumber>300</minorNumber>
+        <namespace>lmscons</namespace>
+    </packageVersions>
+    <style>none</style>
+    <subject>Event/Class Cancelled</subject>
+    <type>visualforce</type>
+</EmailTemplate>

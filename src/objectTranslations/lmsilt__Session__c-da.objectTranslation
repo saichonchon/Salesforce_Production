@@ -3,12 +3,12 @@
     <caseValues>
         <article>Definite</article>
         <plural>false</plural>
-        <value>Session</value>
+        <value>Sessionen</value>
     </caseValues>
     <caseValues>
         <article>Indefinite</article>
         <plural>false</plural>
-        <value>Session</value>
+        <value>En session</value>
     </caseValues>
     <caseValues>
         <article>None</article>
@@ -18,18 +18,18 @@
     <caseValues>
         <article>Definite</article>
         <plural>true</plural>
-        <value>Sessions</value>
+        <value>Sessionene</value>
     </caseValues>
     <caseValues>
         <article>Indefinite</article>
         <plural>true</plural>
-        <value>Sessions</value>
+        <value>Sessioner</value>
     </caseValues>
     <caseValues>
         <article>None</article>
         <plural>true</plural>
-        <value>Sessions</value>
+        <value>Sessioner</value>
     </caseValues>
-    <gender>Neuter</gender>
+    <gender>Feminine</gender>
     <nameFieldLabel>Session  Navn</nameFieldLabel>
 </CustomObjectTranslation>

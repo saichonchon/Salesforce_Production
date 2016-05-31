@@ -209,15 +209,15 @@ WARNING: This will expose some of your emails to the Unresolved Items Agent. -->
         <name>lmscons__CFS_Status__c</name>
         <picklistValues>
             <masterLabel>Active</masterLabel>
-            <translation><!-- Active --></translation>
+            <translation>진행중인 과정</translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Deactivated</masterLabel>
-            <translation><!-- Deactivated --></translation>
+            <translation>비활성화됨</translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Not CFS user</masterLabel>
-            <translation><!-- Not CFS user --></translation>
+            <translation>CFS 사용자 아님</translation>
         </picklistValues>
     </fields>
     <fields>

@@ -4,6 +4,7 @@
         <fullName>ChangeOwner_Value__c</fullName>
         <caseSensitive>false</caseSensitive>
         <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
         <label>ChangeOwner Value</label>
         <length>100</length>
         <required>false</required>
@@ -13,6 +14,7 @@
     <fields>
         <fullName>Queue_Name__c</fullName>
         <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
         <label>Queue Name</label>
         <length>150</length>
         <required>false</required>
@@ -21,4 +23,5 @@
     </fields>
     <label>CaseOwnerQueue</label>
     <pluralLabel>CaseOwnerQueues</pluralLabel>
+    <visibility>Protected</visibility>
 </CustomObject>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>NetworkActivityDailyMetrics.CommentCount:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel># Comments</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>NetworkActivityDailyMetrics.CommentCount:SUM +  NetworkActivityDailyMetrics.NewBestAnswerCount:SUM + NetworkActivityDailyMetrics.NewQuestionCount:SUM + NetworkActivityDailyMetrics.PostCount:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>NetworkActivityDailyMetrics.NewBestAnswerCount:SUM/NetworkActivityDailyMetrics.NewQuestionCount:SUM</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA3</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Question Resolution</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Network.NetworkActivityDailyMetrics$NewQuestionCount</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Network.NetworkActivityDailyMetrics$NewBestAnswerCount</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>Network.NetworkActivityDailyMetrics$NewAnswerCount</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Network$Name</column>
+            <operator>equals</operator>
+            <value>BigCommerce Community</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Network.NetworkActivityDailyMetrics$NetworkUserTypeDescriptor</column>
+            <operator>equals</operator>
+            <value>i,c</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Network.NetworkActivityDailyMetrics$NetworkUserTypeDescriptor</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Week</dateGranularity>
+        <field>Network.NetworkActivityDailyMetrics$PeriodEndDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Question Resolution</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>ca_collab_2_0__Network_Activity_Daily_Metrics_20__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Network.NetworkActivityDailyMetrics$PeriodEndDate</dateColumn>
+        <interval>INTERVAL_LAST30</interval>
+    </timeFrameFilter>
+</Report>

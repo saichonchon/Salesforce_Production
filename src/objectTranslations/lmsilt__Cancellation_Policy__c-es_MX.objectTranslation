@@ -2,12 +2,12 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value><!-- Cancellation Policy --></value>
+        <value>Política de cancelación</value>
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value><!-- Cancellation Policy --></value>
+        <value>Políticas de cancelación</value>
     </caseValues>
-    <gender><!-- Masculine --></gender>
-    <nameFieldLabel><!-- Name --></nameFieldLabel>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nombre</nameFieldLabel>
 </CustomObjectTranslation>

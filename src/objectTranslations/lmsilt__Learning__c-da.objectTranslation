@@ -3,12 +3,12 @@
     <caseValues>
         <article>Definite</article>
         <plural>false</plural>
-        <value>Læring</value>
+        <value>Læringen</value>
     </caseValues>
     <caseValues>
         <article>Indefinite</article>
         <plural>false</plural>
-        <value>Læring</value>
+        <value>En læring</value>
     </caseValues>
     <caseValues>
         <article>None</article>
@@ -18,18 +18,18 @@
     <caseValues>
         <article>Definite</article>
         <plural>true</plural>
-        <value>Læring</value>
+        <value>Læringene</value>
     </caseValues>
     <caseValues>
         <article>Indefinite</article>
         <plural>true</plural>
-        <value>Læring</value>
+        <value>Læringer</value>
     </caseValues>
     <caseValues>
         <article>None</article>
         <plural>true</plural>
-        <value>Læring</value>
+        <value>Læringer</value>
     </caseValues>
-    <gender>Neuter</gender>
+    <gender>Feminine</gender>
     <nameFieldLabel>Læring Id</nameFieldLabel>
 </CustomObjectTranslation>

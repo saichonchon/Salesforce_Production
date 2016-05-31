@@ -1,0 +1,18 @@
+<messaging:emailTemplate subject="Case: {!relatedTo.CaseNumber} {!relatedTo.Subject} {!relatedTo.E2CP__Case_Thread_Id__c}" recipientType="Contact" relatedToType="Case">
+<messaging:plainTextEmailBody >
+The following case has been opened for you. One of our staff members will be reviewing it shortly.
+
+To update this case via email, please reply to this message.
+
+{!relatedTo.E2CP__HistoryText__c}
+
+***************************
+Case: {!relatedTo.CaseNumber}
+Priority Level: {!relatedTo.Priority}
+Subject: {!relatedTo.Subject}
+Description:
+{!relatedTo.Description}
+
+{!relatedTo.E2CP__Case_Thread_Id__c}
+</messaging:plainTextEmailBody>
+</messaging:emailTemplate>

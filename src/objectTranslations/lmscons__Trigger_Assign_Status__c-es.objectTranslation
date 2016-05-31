@@ -2,12 +2,12 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value>Gatillo Asignar Estado</value>
+        <value>Estado de asignación del activador</value>
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value>Disparador Asignar Status de</value>
+        <value>Estados de asignación del activador</value>
     </caseValues>
-    <gender>Feminine</gender>
-    <nameFieldLabel>Estado de activación Asignar nombre</nameFieldLabel>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nombre de estado de asignación del activ</nameFieldLabel>
 </CustomObjectTranslation>

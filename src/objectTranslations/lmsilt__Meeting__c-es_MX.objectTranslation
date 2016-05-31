@@ -2,12 +2,12 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value><!-- Meeting --></value>
+        <value>Reunión</value>
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value><!-- Meeting --></value>
+        <value>Reuniones</value>
     </caseValues>
-    <gender><!-- Masculine --></gender>
-    <nameFieldLabel><!-- Meeting Name --></nameFieldLabel>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nombre de la reunión</nameFieldLabel>
 </CustomObjectTranslation>

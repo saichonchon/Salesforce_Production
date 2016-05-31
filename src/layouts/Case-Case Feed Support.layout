@@ -20,10 +20,10 @@
     <customConsoleComponents>
         <subtabComponents>
             <containers>
+                <isContainerAutoSizeEnabled>true</isContainerAutoSizeEnabled>
                 <region>Right</region>
                 <sidebarComponents>
                     <componentType>KnowledgeOne</componentType>
-                    <height>100</height>
                     <unit>Percentage</unit>
                 </sidebarComponents>
                 <style>Stack</style>
@@ -31,7 +31,13 @@
                 <width>15</width>
             </containers>
             <containers>
+                <isContainerAutoSizeEnabled>true</isContainerAutoSizeEnabled>
                 <region>Left</region>
+                <sidebarComponents>
+                    <componentType>Lookup</componentType>
+                    <label>Case Details</label>
+                    <lookup>self_lookup_component</lookup>
+                </sidebarComponents>
                 <sidebarComponents>
                     <componentType>Lookup</componentType>
                     <label>Account</label>
@@ -48,14 +54,17 @@
     <excludeButtons>Submit</excludeButtons>
     <feedLayout>
         <autocollapsePublisher>true</autocollapsePublisher>
+        <compactFeed>true</compactFeed>
         <feedFilterPosition>CenterDropDown</feedFilterPosition>
         <feedFilters>
             <feedFilterType>AllUpdates</feedFilterType>
         </feedFilters>
         <feedFilters>
+            <feedFilterName>Case.Comments_and_Posts</feedFilterName>
             <feedFilterType>Custom</feedFilterType>
         </feedFilters>
         <feedFilters>
+            <feedFilterName>Case.Internal</feedFilterName>
             <feedFilterType>Custom</feedFilterType>
         </feedFilters>
         <feedFilters>
@@ -63,10 +72,12 @@
             <feedItemType>ChangeStatusPost</feedItemType>
         </feedFilters>
         <feedFilters>
+            <feedFilterName>Case.Public_Comment</feedFilterName>
             <feedFilterType>Custom</feedFilterType>
         </feedFilters>
         <fullWidthFeed>true</fullWidthFeed>
         <hideSidebar>true</hideSidebar>
+        <highlightExternalFeedItems>true</highlightExternalFeedItems>
         <leftComponents>
             <componentType>HelpAndToolLinks</componentType>
         </leftComponents>
@@ -85,6 +96,7 @@
         <leftComponents>
             <componentType>CustomLinks</componentType>
         </leftComponents>
+        <useInlineFiltersInConsole>true</useInlineFiltersInConsole>
     </feedLayout>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -545,6 +557,14 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
+    <platformActionList>
+        <actionListContext>Record</actionListContext>
+        <platformActionListItems>
+            <actionName>FeedItem.TextPost</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>0</sortOrder>
+        </platformActionListItems>
+    </platformActionList>
     <quickActionList>
         <quickActionListItems>
             <quickActionName>FeedItem.TextPost</quickActionName>

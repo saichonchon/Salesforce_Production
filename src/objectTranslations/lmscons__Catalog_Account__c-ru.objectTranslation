@@ -3,63 +3,63 @@
     <caseValues>
         <caseType>Nominative</caseType>
         <plural>false</plural>
-        <value>Каталожный счет</value>
+        <value> Счет каталога</value>
     </caseValues>
     <caseValues>
         <caseType>Nominative</caseType>
         <plural>true</plural>
-        <value>Каталожные счета</value>
+        <value>Счета каталога</value>
     </caseValues>
     <caseValues>
         <caseType>Accusative</caseType>
         <plural>false</plural>
-        <value>Каталожный счет</value>
+        <value>Счет каталога</value>
     </caseValues>
     <caseValues>
         <caseType>Accusative</caseType>
         <plural>true</plural>
-        <value>Каталожные счета</value>
+        <value>Счета каталога</value>
     </caseValues>
     <caseValues>
         <caseType>Genitive</caseType>
         <plural>false</plural>
-        <value>Каталожного счета</value>
+        <value>Счета каталога</value>
     </caseValues>
     <caseValues>
         <caseType>Genitive</caseType>
         <plural>true</plural>
-        <value>Каталожных счетов</value>
+        <value>Счетов каталога</value>
     </caseValues>
     <caseValues>
         <caseType>Dative</caseType>
         <plural>false</plural>
-        <value>Каталожному счету</value>
+        <value>Счету каталога</value>
     </caseValues>
     <caseValues>
         <caseType>Dative</caseType>
         <plural>true</plural>
-        <value>Каталожным счетам</value>
+        <value>Счетам каталога</value>
     </caseValues>
     <caseValues>
         <caseType>Instrumental</caseType>
         <plural>false</plural>
-        <value>Каталожным счетом</value>
+        <value>Счетом каталога</value>
     </caseValues>
     <caseValues>
         <caseType>Instrumental</caseType>
         <plural>true</plural>
-        <value>Каталожными счетами</value>
+        <value>Счетами каталога</value>
     </caseValues>
     <caseValues>
         <caseType>Prepositional</caseType>
         <plural>false</plural>
-        <value>Каталожном счете</value>
+        <value>Счете каталога</value>
     </caseValues>
     <caseValues>
         <caseType>Prepositional</caseType>
         <plural>true</plural>
-        <value>Каталожных счетах</value>
+        <value>Счетах каталога</value>
     </caseValues>
-    <gender>Feminine</gender>
-    <nameFieldLabel>Имя котоложного счета</nameFieldLabel>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Название счета каталога</nameFieldLabel>
 </CustomObjectTranslation>

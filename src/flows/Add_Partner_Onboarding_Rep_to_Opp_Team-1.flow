@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <description>Add Partner Onboarding Rep to Opp Team - used to send deals to Enteprrise team to close</description>
+    <interviewLabel>Add Partner Onboarding Rep to Opp Team {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Add Partner Onboarding Rep to Opp Team</label>
     <processType>Flow</processType>
     <recordCreates>
@@ -39,6 +40,7 @@
         <locationY>278</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
         <fields>
             <name>Faultmessage</name>
             <fieldText>Sorry an error occured in the flow.

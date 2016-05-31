@@ -87,6 +87,9 @@
         <field>Case.Primary_Case_Rep__c</field>
     </columns>
     <columns>
+        <field>Case.Survey_Name__c</field>
+    </columns>
+    <columns>
         <field>Case.Survey_Completion_Date__c</field>
     </columns>
     <columns>
@@ -110,7 +113,7 @@
         <criteriaItems>
             <column>Case.Survey_Name__c</column>
             <operator>contains</operator>
-            <value>Support NPS Next - Web,Resolution Email Survey</value>
+            <value>Web,Resolution Email Survey</value>
         </criteriaItems>
         <criteriaItems>
             <column>ORIGIN</column>

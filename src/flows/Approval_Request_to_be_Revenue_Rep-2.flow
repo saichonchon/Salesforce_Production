@@ -125,6 +125,7 @@
         <locationY>18</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
         <connector>
             <targetReference>Lookup_Rev_Rep_Details</targetReference>
         </connector>
@@ -148,6 +149,7 @@
         <locationY>270</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
         <connector>
             <targetReference>Update_Opp_Product_Rep</targetReference>
         </connector>
@@ -170,6 +172,7 @@ RevRepTeam: {!RevRepRevenueTeam}</fieldText>
         <locationY>241</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
         <fields>
             <name>FaultMessage</name>
             <fieldText>{!$Flow.FaultMessage}

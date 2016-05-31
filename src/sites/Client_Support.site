@@ -15,6 +15,7 @@
     <inactiveIndexPage>BCSLogin</inactiveIndexPage>
     <indexPage>CommunitiesLanding</indexPage>
     <masterLabel>Client Support</masterLabel>
+    <requireHttps>false</requireHttps>
     <requireInsecurePortalAccess>false</requireInsecurePortalAccess>
     <siteAdmin>maggie.frederick@bigcommerce.com</siteAdmin>
     <siteRedirectMappings>

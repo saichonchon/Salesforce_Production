@@ -4,6 +4,7 @@
     <customConsoleComponents>
         <subtabComponents>
             <containers>
+                <isContainerAutoSizeEnabled>true</isContainerAutoSizeEnabled>
                 <region>Left</region>
                 <sidebarComponents>
                     <componentType>VisualForcePage</componentType>

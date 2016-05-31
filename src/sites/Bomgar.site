@@ -16,6 +16,7 @@
     <inactiveIndexPage>InMaintenance</inactiveIndexPage>
     <indexPage>SiteLogin</indexPage>
     <masterLabel>Bomgar</masterLabel>
+    <requireHttps>false</requireHttps>
     <requireInsecurePortalAccess>false</requireInsecurePortalAccess>
     <siteAdmin>maria.huemmer@bigcommerce.com</siteAdmin>
     <siteTemplate>SiteTemplate</siteTemplate>

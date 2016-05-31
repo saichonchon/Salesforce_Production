@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionOverrides>
+        <actionName>AddSubjectToCycle</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CustomizeRelatedLists</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeclineFeedback</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -9,7 +21,43 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>InviteOthersToFeedback</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>InvitePeer</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>InviteSkip</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>OfferFeedback</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ReassignManager</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RemindAboutFeedback</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ReopenFeedback</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestFeedback</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveDraftFeedback</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -17,7 +65,19 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>ShareFeedback</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SubmitFeedback</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>UploadCsv</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>

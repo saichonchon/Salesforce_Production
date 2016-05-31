@@ -7,8 +7,13 @@
         <domain>jira.bigcommerce.com</domain>
         <domain>intranet.bigcommerce.com</domain>
     </domainWhitelist>
+    <enableCustomizeMyTabs>false</enableCustomizeMyTabs>
     <enableKeyboardShortcuts>true</enableKeyboardShortcuts>
+    <enableListViewReskin>true</enableListViewReskin>
     <enableMultiMonitorComponents>true</enableMultiMonitorComponents>
+    <enablePinTabs>true</enablePinTabs>
+    <enableTabHover>false</enableTabHover>
+    <enableTabLimits>false</enableTabLimits>
     <isServiceCloudConsole>true</isServiceCloudConsole>
     <keyboardShortcuts>
         <defaultShortcut>
@@ -115,6 +120,51 @@
             <action>HOTKEYS_PANEL</action>
             <active>false</active>
             <keyCommand>SHIFT+K</keyCommand>
+        </defaultShortcut>
+        <defaultShortcut>
+            <action>FOCUS_MACRO</action>
+            <active>false</active>
+            <keyCommand>M</keyCommand>
+        </defaultShortcut>
+        <defaultShortcut>
+            <action>FOCUS_FOOTER_PANEL</action>
+            <active>false</active>
+            <keyCommand>F</keyCommand>
+        </defaultShortcut>
+        <defaultShortcut>
+            <action>TOGGLE_LIST_VIEW</action>
+            <active>false</active>
+            <keyCommand>SHIFT+N</keyCommand>
+        </defaultShortcut>
+        <defaultShortcut>
+            <action>TOGGLE_LEFT_SIDEBAR</action>
+            <active>false</active>
+            <keyCommand>SHIFT+LEFT ARROW</keyCommand>
+        </defaultShortcut>
+        <defaultShortcut>
+            <action>TOGGLE_RIGHT_SIDEBAR</action>
+            <active>false</active>
+            <keyCommand>SHIFT+RIGHT ARROW</keyCommand>
+        </defaultShortcut>
+        <defaultShortcut>
+            <action>TOGGLE_TOP_SIDEBAR</action>
+            <active>false</active>
+            <keyCommand>SHIFT+UP ARROW</keyCommand>
+        </defaultShortcut>
+        <defaultShortcut>
+            <action>TOGGLE_BOTTOM_SIDEBAR</action>
+            <active>false</active>
+            <keyCommand>SHIFT+DOWN ARROW</keyCommand>
+        </defaultShortcut>
+        <defaultShortcut>
+            <action>TOGGLE_APP_LEVEL_COMPONENTS</action>
+            <active>false</active>
+            <keyCommand>Z</keyCommand>
+        </defaultShortcut>
+        <defaultShortcut>
+            <action>REOPEN_LAST_TAB</action>
+            <active>false</active>
+            <keyCommand>SHIFT+C</keyCommand>
         </defaultShortcut>
     </keyboardShortcuts>
     <listPlacement>
