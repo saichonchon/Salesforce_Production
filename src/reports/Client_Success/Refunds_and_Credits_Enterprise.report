@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_12443120</developerName>
+        <masterLabel>EAM or Other (PAS)</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Account.SSC__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Chris Hall</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Corey Nihlean</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dani Feibleman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Gardner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ian Irvin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jay Mendoza</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Karl Avard</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Liam Garcia-Flores</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Margaret Penn</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Patrick Yang</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Phivu Nguyen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sarah George</sourceValue>
+            </sourceValues>
+            <value>EAM</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_53786075</developerName>
+        <masterLabel>MRR</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>FK_$Subscription__c.MonthlyRecurringRevenue__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>15</to>
+            </sourceValues>
+            <value>$0 or Hibernation</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>15</from>
+                <to>500</to>
+            </sourceValues>
+            <value>$500 or Less</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>500</from>
+                <to>999.99</to>
+            </sourceValues>
+            <value>&lt;$1000</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>999.99</from>
+                <to>2,499.99</to>
+            </sourceValues>
+            <value>&lt;$2500</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>2,499.99</from>
+            </sourceValues>
+            <value>$2500+</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>FK_$Subscription__c.Purchase_Rep__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Case.Refund_Credit_Amount__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>REASON</field>
+    </columns>
+    <columns>
+        <field>FK_$Subscription__c.Product__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Case.Bigcommerce_Store_URL__c</field>
+    </columns>
+    <columns>
+        <field>Account.Client_Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>Case.Jira_Link__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>REASON</column>
+            <operator>equals</operator>
+            <value>Refund,Credit</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Refund_Credit_Approver__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.MaxSub_Product__c</column>
+            <operator>contains</operator>
+            <value>enterprise</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Reason_Code__c</column>
+            <operator>notEqual</operator>
+            <value>Promotional</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Reason_Code__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_12443120</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_53786075</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Refunds and Credits - Enterprise (LM)</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList@Case.Subscription__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

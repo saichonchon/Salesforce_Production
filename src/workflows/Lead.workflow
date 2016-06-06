@@ -120,17 +120,6 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Change_owner_to_Alecia</fullName>
-        <description>Change owner to Alecia</description>
-        <field>OwnerId</field>
-        <lookupValue>alecia.wall@bigcommerce.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Change owner to Alecia</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Change_owner_to_The_Bigcommerce_Team</fullName>
         <field>OwnerId</field>
         <lookupValue>team@bigcommerce.com</lookupValue>
@@ -379,6 +368,17 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>Owner_Acquisition_Queue</fullName>
+        <description>changed to queue</description>
+        <field>OwnerId</field>
+        <lookupValue>Acquisition_Queue</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Owner = Acquisition Queue</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Owner_Dane_Koch</fullName>
         <description>This was assigning owner to Dane, he is no longer here so I have updated to TBT - 6-30-14- MH</description>
         <field>OwnerId</field>
@@ -386,27 +386,6 @@
         <lookupValueType>User</lookupValueType>
         <name>Owner = The Bigcommerce Team</name>
         <notifyAssignee>true</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Owner_Hassan_Johnson</fullName>
-        <description>changed to queue</description>
-        <field>OwnerId</field>
-        <lookupValue>Acquisition_Queue</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>Assign owner to Acq Queue</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Owner_Jay_Perkins</fullName>
-        <field>OwnerId</field>
-        <lookupValue>bryan.foster@bigcommerce.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Owner = Bryan Froster</name>
-        <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
     </fieldUpdates>

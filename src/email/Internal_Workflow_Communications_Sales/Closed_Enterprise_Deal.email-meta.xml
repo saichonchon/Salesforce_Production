@@ -9,13 +9,12 @@
     <subject>{!Opportunity.OwnerFullName}&apos;s Opportunity &quot;{!Opportunity.Name}&quot; has {!If(Opportunity.IsWon,&quot;Closed Won!&quot;, &quot;Closed Lost.&quot;)}</subject>
     <textOnly>The following sales opportunity has been closed as &quot;{!Opportunity.StageName}.&quot;
 
+Owner: {!Opportunity.OwnerFullName}
 Account: {!Opportunity.Account}
 Opportunity: {!Opportunity.Name}
+Opportunity Type: {!Opportunity.RecordType}
 Amount: {!Opportunity.Amount}
-Partner Account: {!Opportunity.rvpe__RVAccount__c} {!NullValue(Opportunity.rvpe__RVAccount__c, &quot;N/A&quot;)}
-
-Owner: {!Opportunity.OwnerFullName}
-Sales Engineer: {!IF(ISPICKVAL({!OpportunityTeamMember.TeamMemberRole},&quot;Pre-Sales Consultant&quot;),{!OpportunityTeamMember.Id},&quot;N/A&quot;)}
+RV Account: {!NullValue(Opportunity.rvpe__RVAccount__c, &quot;N/A&quot;)}
 
 Please click on {!Opportunity.Link} for more details.</textOnly>
     <type>html</type>

@@ -2868,36 +2868,12 @@
     <fields>
         <name>LeadSource</name>
         <picklistValues>
-            <masterLabel>ACQ Demand Gen</masterLabel>
-            <translation><!-- ACQ Demand Gen --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>ACQ Hubspot Content</masterLabel>
-            <translation><!-- ACQ Hubspot Content --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>ACQ Hubspot Demo Request</masterLabel>
-            <translation><!-- ACQ Hubspot Demo Request --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>ACQ List Upload</masterLabel>
             <translation><!-- ACQ List Upload --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>AYRM</masterLabel>
-            <translation><!-- AYRM --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Affiliate</masterLabel>
             <translation><!-- Affiliate --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Campaign Import</masterLabel>
-            <translation><!-- Campaign Import --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Chat</masterLabel>
-            <translation><!-- Chat --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Datanyze</masterLabel>
@@ -2916,32 +2892,8 @@
             <translation><!-- Display --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>EBQ DM</masterLabel>
-            <translation><!-- EBQ DM --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>EBQ DM2</masterLabel>
-            <translation><!-- EBQ DM2 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>EBQ DM3</masterLabel>
-            <translation><!-- EBQ DM3 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Email / Ticket</masterLabel>
-            <translation><!-- Email / Ticket --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Email Advertising</masterLabel>
             <translation><!-- Email Advertising --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Enterprise Partner Lead</masterLabel>
-            <translation><!-- Enterprise Partner Lead --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Event</masterLabel>
-            <translation><!-- Event --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Events</masterLabel>
@@ -2952,28 +2904,12 @@
             <translation><!-- G2Crowd --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>GPN Campaign Import</masterLabel>
-            <translation><!-- GPN Campaign Import --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Hubspot</masterLabel>
-            <translation><!-- Hubspot --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>IR Special Report 2014</masterLabel>
-            <translation><!-- IR Special Report 2014 --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Inbound</masterLabel>
             <translation><!-- Inbound --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Internet Retailer</masterLabel>
             <translation><!-- Internet Retailer --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Netline</masterLabel>
-            <translation><!-- Netline --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Organic Search</masterLabel>
@@ -2984,32 +2920,8 @@
             <translation><!-- Organic Social --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Orion</masterLabel>
-            <translation><!-- Orion --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Other</masterLabel>
             <translation><!-- Other --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>PRE Demand Gen</masterLabel>
-            <translation><!-- PRE Demand Gen --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>PRE Hubspot Content</masterLabel>
-            <translation><!-- PRE Hubspot Content --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>PRE Hubspot Demo Request</masterLabel>
-            <translation><!-- PRE Hubspot Demo Request --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Partner</masterLabel>
-            <translation><!-- Partner --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Phone / Queue</masterLabel>
-            <translation><!-- Phone / Queue --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Print Ads</masterLabel>
@@ -3030,22 +2942,6 @@
         <picklistValues>
             <masterLabel>Social Ads</masterLabel>
             <translation><!-- Social Ads --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Web Form</masterLabel>
-            <translation><!-- Web Form --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Web Trial</masterLabel>
-            <translation><!-- Web Trial --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>WebToLead</masterLabel>
-            <translation><!-- WebToLead --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Webinar</masterLabel>
-            <translation><!-- Webinar --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Webinar List</masterLabel>
@@ -3331,6 +3227,10 @@
         <help><!-- This opp amount - the store purchase opp&apos;s MRR - used for pricing --></help>
         <label><!-- MRR Change --></label>
         <name>MRR_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manager Notes --></label>
+        <name>Manager_Notes__c</name>
     </fields>
     <fields>
         <label><!-- Marketing Campaign --></label>
@@ -4191,52 +4091,36 @@
         <label><!-- Projected Annual Revenue --></label>
         <name>Projected_Annual_Revenue__c</name>
         <picklistValues>
-            <masterLabel>$1,000,000 - $2,500,000</masterLabel>
-            <translation><!-- $1,000,000 - $2,500,000 --></translation>
+            <masterLabel>$1,000,000 - $2,000,000</masterLabel>
+            <translation><!-- $1,000,000 - $2,000,000 --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>$10,000,001 +</masterLabel>
-            <translation><!-- $10,000,001 + --></translation>
+            <masterLabel>$2,000,000 - $5,000,000</masterLabel>
+            <translation><!-- $2,000,000 - $5,000,000 --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>$100,000 - $500,000</masterLabel>
-            <translation><!-- $100,000 - $500,000 --></translation>
+            <masterLabel>$250,000 - $500,000</masterLabel>
+            <translation><!-- $250,000 - $500,000 --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>$100,000,001 - $500,000,000</masterLabel>
-            <translation><!-- $100,000,001 - $500,000,000 --></translation>
+            <masterLabel>$5,000,000 - $50,000,000</masterLabel>
+            <translation><!-- $5,000,000 - $50,000,000 --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>$2,500,000 - $5,000,000</masterLabel>
-            <translation><!-- $2,500,000 - $5,000,000 --></translation>
+            <masterLabel>$50,000 - $250,000</masterLabel>
+            <translation><!-- $50,000 - $250,000 --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>$200,000 - $1,000,000</masterLabel>
-            <translation><!-- $200,000 - $1,000,000 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>$5,000,000+</masterLabel>
-            <translation><!-- $5,000,000+ --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>$5,000,001 - $10,000,000</masterLabel>
-            <translation><!-- $5,000,001 - $10,000,000 --></translation>
+            <masterLabel>$50,000,000 +</masterLabel>
+            <translation><!-- $50,000,000 + --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>$500,000 - $1,000,000</masterLabel>
             <translation><!-- $500,000 - $1,000,000 --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Less than $100,000</masterLabel>
-            <translation><!-- Less than $100,000 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Less than $200,000</masterLabel>
-            <translation><!-- Less than $200,000 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Less than $500,000</masterLabel>
-            <translation><!-- Less than $500,000 --></translation>
+            <masterLabel>&lt; $50,000</masterLabel>
+            <translation><!-- &lt; $50,000 --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -4395,7 +4279,7 @@
         <name>Sales_Do_Not_Call__c</name>
     </fields>
     <fields>
-        <label><!-- Manager Notes --></label>
+        <label><!-- Sales Notes --></label>
         <name>Sales_Notes__c</name>
     </fields>
     <fields>
@@ -4526,10 +4410,6 @@
         <picklistValues>
             <masterLabel>Purchased</masterLabel>
             <translation><!-- Purchased --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Qualification</masterLabel>
-            <translation><!-- Qualification --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Qualify</masterLabel>
@@ -5241,6 +5121,10 @@ Hot: came in from a good source and/or is progressing towards close --></help>
             <section>Marketing</section>
         </sections>
         <sections>
+            <label><!-- Marketing URLs --></label>
+            <section>Marketing URLs</section>
+        </sections>
+        <sections>
             <label><!-- Misc --></label>
             <section>Misc</section>
         </sections>
@@ -5416,6 +5300,10 @@ Hot: came in from a good source and/or is progressing towards close --></help>
             <section>Marketing</section>
         </sections>
         <sections>
+            <label><!-- Marketing URLs --></label>
+            <section>Marketing URLs</section>
+        </sections>
+        <sections>
             <label><!-- Misc --></label>
             <section>Misc</section>
         </sections>
@@ -5446,10 +5334,6 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         <sections>
             <label><!-- Totango --></label>
             <section>Totango</section>
-        </sections>
-        <sections>
-            <label><!-- Zuora Details --></label>
-            <section>Zuora Details</section>
         </sections>
     </layouts>
     <layouts>
@@ -5498,6 +5382,10 @@ Hot: came in from a good source and/or is progressing towards close --></help>
             <section>Marketing</section>
         </sections>
         <sections>
+            <label><!-- Marketing URLs --></label>
+            <section>Marketing URLs</section>
+        </sections>
+        <sections>
             <label><!-- Misc --></label>
             <section>Misc</section>
         </sections>
@@ -5528,10 +5416,6 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         <sections>
             <label><!-- Totango --></label>
             <section>Totango</section>
-        </sections>
-        <sections>
-            <label><!-- Zuora Details --></label>
-            <section>Zuora Details</section>
         </sections>
     </layouts>
     <layouts>

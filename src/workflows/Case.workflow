@@ -152,7 +152,8 @@
             <field>ContactId</field>
             <type>contactLookup</type>
         </recipients>
-        <senderType>CurrentUser</senderType>
+        <senderAddress>support@bigcommerce.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
         <template>Case_Templates/Case_OCR_Final_Response_and_Closure</template>
     </alerts>
     <alerts>
@@ -163,7 +164,8 @@
             <field>ContactId</field>
             <type>contactLookup</type>
         </recipients>
-        <senderType>CurrentUser</senderType>
+        <senderAddress>support@bigcommerce.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
         <template>Case_Templates/Case_OCR_Second_Response</template>
     </alerts>
     <alerts>
@@ -249,7 +251,7 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
-        <senderAddress>bigcommercemigration@bigcommerce.com</senderAddress>
+        <senderAddress>catalogtransfer@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Migration_Emails/Migration_Data_Spot_Check_24_hour_reminder</template>
     </alerts>
@@ -262,7 +264,7 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
-        <senderAddress>bigcommercemigration@bigcommerce.com</senderAddress>
+        <senderAddress>catalogtransfer@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Migration_Emails/Migration_Data_Spot_Check_1st_Email</template>
     </alerts>
@@ -275,7 +277,7 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
-        <senderAddress>bigcommercemigration@bigcommerce.com</senderAddress>
+        <senderAddress>catalogtransfer@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Migration_Emails/Migration_Delayed_CSAT_Survey</template>
     </alerts>
@@ -288,7 +290,7 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
-        <senderAddress>bigcommercemigration@bigcommerce.com</senderAddress>
+        <senderAddress>catalogtransfer@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Migration_Emails/Migration_Invalid_Credentials_Email</template>
     </alerts>
@@ -301,7 +303,7 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
-        <senderAddress>bigcommercemigration@bigcommerce.com</senderAddress>
+        <senderAddress>catalogtransfer@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Migration_Emails/Migration_Migration_Complete_No_CSAT</template>
     </alerts>
@@ -314,7 +316,7 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
-        <senderAddress>bigcommercemigration@bigcommerce.com</senderAddress>
+        <senderAddress>catalogtransfer@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Migration_Emails/Migration_Migration_Complete_with_CSAT_Survey</template>
     </alerts>
@@ -327,7 +329,7 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
-        <senderAddress>bigcommercemigration@bigcommerce.com</senderAddress>
+        <senderAddress>catalogtransfer@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Migration_Emails/Migration_Reviewing_your_Verification_Notes</template>
     </alerts>
@@ -340,7 +342,7 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
-        <senderAddress>bigcommercemigration@bigcommerce.com</senderAddress>
+        <senderAddress>catalogtransfer@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Migration_Emails/Migration_UAT_Data_Spot_Check</template>
     </alerts>
@@ -353,7 +355,7 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
-        <senderAddress>bigcommercemigration@bigcommerce.com</senderAddress>
+        <senderAddress>catalogtransfer@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Migration_Emails/Migration_Valid_Credentials_Received</template>
     </alerts>
@@ -465,7 +467,7 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
-        <senderAddress>bigcommercemigration@bigcommerce.com</senderAddress>
+        <senderAddress>catalogtransfer@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Migration_Emails/Migration_Kick_Off_Admin_Only</template>
     </alerts>
@@ -478,7 +480,7 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
-        <senderAddress>bigcommercemigration@bigcommerce.com</senderAddress>
+        <senderAddress>catalogtransfer@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Migration_Emails/Migration_Kick_Off_Admin_FTP</template>
     </alerts>
@@ -491,7 +493,7 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
-        <senderAddress>bigcommercemigration@bigcommerce.com</senderAddress>
+        <senderAddress>catalogtransfer@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Migration_Emails/Migration_Re_Request_Admin_Only</template>
     </alerts>
@@ -504,7 +506,7 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
-        <senderAddress>bigcommercemigration@bigcommerce.com</senderAddress>
+        <senderAddress>catalogtransfer@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Migration_Emails/Migration_Re_Request_Admin_FTP</template>
     </alerts>
@@ -517,7 +519,7 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
-        <senderAddress>bigcommercemigration@bigcommerce.com</senderAddress>
+        <senderAddress>catalogtransfer@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Migration_Emails/Migration_Withdrawn</template>
     </alerts>
@@ -2542,7 +2544,7 @@ NOT(ISPICKVAL(Status,&quot;Closed&quot;))</formula>
         <criteriaItems>
             <field>Case.Status</field>
             <operation>notEqual</operation>
-            <value>Closed,Auto-Closed</value>
+            <value>Closed,Auto-Closed,Open Unsolved</value>
         </criteriaItems>
         <criteriaItems>
             <field>Case.OCR_Resolution__c</field>
@@ -2579,7 +2581,7 @@ NOT(ISPICKVAL(Status,&quot;Closed&quot;))</formula>
         <criteriaItems>
             <field>Case.Status</field>
             <operation>notEqual</operation>
-            <value>Closed,Auto-Closed</value>
+            <value>Closed,Auto-Closed,Open Unsolved</value>
         </criteriaItems>
         <criteriaItems>
             <field>Case.OCR_Resolution__c</field>

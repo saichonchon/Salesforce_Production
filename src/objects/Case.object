@@ -581,11 +581,6 @@
             <isRequired>false</isRequired>
         </availableFields>
         <availableFields>
-            <field>E2CP__SubStatus__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
             <field>Type</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
@@ -2587,6 +2582,11 @@ IF(FIND(MID(Id,11,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,1,0)
             </picklistValues>
             <picklistValues>
                 <fullName>CNAME Record</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Control Panel</fullName>
+                <controllingFieldValues>Control Panel</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -5266,7 +5266,7 @@ IF(Lead__r.Website &lt;&gt; NULL,Lead__r.Website ,NULL))</formula>
         <relationshipName>Cases</relationshipName>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
+        <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
@@ -7400,6 +7400,11 @@ NULL))</formula>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Client Training Request</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Commissions</fullName>
                 <cssExposed>false</cssExposed>
                 <default>false</default>
@@ -7470,6 +7475,11 @@ NULL))</formula>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Downgrade/Cancellation</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>DSP Application</fullName>
                 <cssExposed>false</cssExposed>
                 <default>false</default>
@@ -7480,7 +7490,17 @@ NULL))</formula>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Enterprise Task</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Escalated</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Escalation</fullName>
                 <cssExposed>false</cssExposed>
                 <default>false</default>
             </picklistValues>
@@ -7556,6 +7576,11 @@ NULL))</formula>
             </picklistValues>
             <picklistValues>
                 <fullName>Login Issues</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manager Callback/Escalation</fullName>
                 <cssExposed>false</cssExposed>
                 <default>false</default>
             </picklistValues>
@@ -7755,6 +7780,16 @@ NULL))</formula>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Site Security</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Specialist Task</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>SSL</fullName>
                 <cssExposed>false</cssExposed>
                 <default>false</default>
@@ -7785,6 +7820,11 @@ NULL))</formula>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Success Plan Review</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>support@bigcommerce.com</fullName>
                 <cssExposed>false</cssExposed>
                 <default>false</default>
@@ -7811,6 +7851,11 @@ NULL))</formula>
             </picklistValues>
             <picklistValues>
                 <fullName>Upgrades</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Uptime/SLA Event</fullName>
                 <cssExposed>false</cssExposed>
                 <default>false</default>
             </picklistValues>
@@ -8179,6 +8224,10 @@ NULL))</formula>
             <picklistValues>
                 <fullName>Fraud</fullName>
                 <controllingFieldValues>Cancellation Reasons</controllingFieldValues>
+                <controllingFieldValues>Credit</controllingFieldValues>
+                <controllingFieldValues>Denied Refund/Credit</controllingFieldValues>
+                <controllingFieldValues>Refund</controllingFieldValues>
+                <controllingFieldValues>Refund/Credit Follow-up</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -9190,7 +9239,7 @@ Maria: E2CP can&apos;t read the actual record type when setting org wide outboun
         <required>false</required>
         <scale>2</scale>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <type>Currency</type>
     </fields>
     <fields>
@@ -13461,36 +13510,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <sharedTo>
             <role>Launch_Team</role>
             <role>Success_Squad</role>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Orion_Professional_Services</fullName>
-        <columns>CASES.CASE_NUMBER</columns>
-        <columns>NAME</columns>
-        <columns>CASES.SUBJECT</columns>
-        <columns>CASES.STATUS</columns>
-        <columns>CASES.PRIORITY</columns>
-        <columns>CASES.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>Product_Sold__c</columns>
-        <columns>Bigcommerce_Plan__c</columns>
-        <columns>SBD_Referral_ID__c</columns>
-        <columns>SBD_Store_Id__c</columns>
-        <columns>CASES.ORIGIN</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CASES.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Case.Professional_Services</value>
-        </filters>
-        <filters>
-            <field>CASES.SUBJECT</field>
-            <operation>equals</operation>
-            <value>Orion Client purchase</value>
-        </filters>
-        <label>Orion Professional Services</label>
-        <sharedTo>
-            <role>SystemAdministrator</role>
         </sharedTo>
     </listViews>
     <listViews>
@@ -26116,6 +26135,10 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
+                <fullName>Control Panel</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Conversion Code</fullName>
                 <default>false</default>
             </values>
@@ -31036,10 +31059,10 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
     </recordTypes>
     <recordTypes>
         <fullName>Enterprise_Account_Services</fullName>
-        <active>false</active>
+        <active>true</active>
         <businessProcess>Client Success Support Process</businessProcess>
         <description>Enterprise Account Services related cases</description>
-        <label>zEnterprise Account Services</label>
+        <label>Enterprise Account Services</label>
         <picklistValues>
             <picklist>Article_Type__c</picklist>
             <values>
@@ -33952,7 +33975,7 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
-                <fullName>Audits and Analytics</fullName>
+                <fullName>Client Training Request</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -33960,27 +33983,43 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
+                <fullName>Downgrade%2FCancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enterprise Task</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Escalation</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Feature Request</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Marketing and PPC</fullName>
+                <fullName>Manager Callback%2FEscalation</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Pre-launch</fullName>
+                <fullName>Site Security</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Product Best Practices</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Store Setup and Maintenance</fullName>
+                <fullName>Specialist Task</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Strategic Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Success Plan Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uptime%2FSLA Event</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -63110,7 +63149,7 @@ location.href = &apos;/apex/CaseButtonStartWorking?id={!Case.Id}&apos;;;
         <masterLabel>New Comment</masterLabel>
         <openType>onClickJavaScript</openType>
         <protected>false</protected>
-        <url>var myURL=&apos;/apex/E2CP__New_Comment?id={!Case.Id}&amp;scontrolCaching=1&amp;core.apexpages.devmode.url=1&apos;;
+        <url>var myURL=&apos;/apex/E2CP__New_Comment?id={!Case.Id}&apos;;
 
 if(typeof srcUp == &apos;function&apos;) {
 myURL+= &apos;&amp;isdtp=vw&amp;showheader=false&apos;;

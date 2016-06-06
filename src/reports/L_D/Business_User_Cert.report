@@ -53,7 +53,7 @@
         <criteriaItems>
             <column>lmscons__Transcript_Line__c$lmscons__Learning_Path_Item__c.lmscons__Learning_Path__c</column>
             <operator>contains</operator>
-            <value>Business</value>
+            <value>Noob</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -72,7 +72,7 @@
         <field>lmscons__Transcript_Line__c$lmscons__Training_User_License__c.lmscons__User__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Business User Cert</name>
+    <name>Noob Path Report</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -83,7 +83,8 @@
     <sortColumn>lmscons__Transcript_Line__c$lmscons__Learning_Path_Assignment__c.lmscons__Learning_Path_Progress__c</sortColumn>
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
-        <dateColumn>lmscons__Transcript_Line__c$lmscons__Completed_Date__c</dateColumn>
+        <dateColumn>lmscons__Transcript_Line__c$CreatedDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-05-18</startDate>
     </timeFrameFilter>
 </Report>

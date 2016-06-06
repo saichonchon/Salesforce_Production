@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>IRCE Ecom Workshop Invite/Reminder.Save the Date Email 3</name>
+    <style>none</style>
+    <subject>Join us in Chicago for a Taste of Pappy Van Winkle and Learn Best Practices in Ecommerce!</subject>
+    <textOnly>Join us for the Best Practices in Ecommerce workshop hosted by BigCommerce.
+Hi {{lead.First Name:default=there}},
+Join us for the Best Practices in Ecommerce Workshop &lt;[[http://grow.bigcommerce.com/BigCommerce-IRCE16-Ecommerce-Workshop.html]]&gt; hosted by BigCommerce in Chicago and sample Pappy Van Winkle Bourbon — one of the world’s most sought-after bourbons. 
+
+“Of course, this is no ordinary bourbon. Pappy Van Winkle has become the most famous whiskey in America, a unicorn unseen on store shelves for years, untasted by the vast majority of humans, and sold for astronomical sums on the secondary market. Those 28 bottles have a retail value of around $3,000 and a secondary value of perhaps $20,000, depending on age.” — Esquire
+What: Best Practices in Ecommerce Workshop, lunch will be provided
+When: Tuesday, June 7th from 10:00 AM - 4:00 PM, featuring an exclusive tasting of Pappy Van Winkle Bourbon during the reception
+Where: Hyatt Regency, 151 E Upper Wacker Dr, Chicago, IL 60601
+
+
+
+
+
+Register to attend &lt;[[http://grow.bigcommerce.com/BigCommerce-IRCE16-Ecommerce-Workshop.html]]&gt;
+
+
+
+
+This free event offers a unique opportunity for online merchants to connect and network with industry leaders to discover the latest ecommerce trends, all while learning best practices in store design, conversion, and omnichannel. Be sure to stick around for the networking reception at the end of the workshop for an exclusive tasting of Pappy Van Winkle Bourbon.
+Hope to see you there,
+The BigCommerce Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

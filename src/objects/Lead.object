@@ -558,46 +558,6 @@
         <label>Unqualified Reason</label>
         <picklist>
             <picklistValues>
-                <fullName>1 Lost to Competitor</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>2 Not Qualified</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Orion</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Poor In-Trial Client Success Experience</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Price</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>3 Product Feature/Functionality</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Risk of Migration Issues</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>4 Test Account</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Duplicate</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Could Not Contact</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
                 <fullName>Accidental Trial/No ecomm</fullName>
                 <default>false</default>
             </picklistValues>
@@ -1752,143 +1712,114 @@ SUBSTITUTE(SUBSTITUTE(FirstName, &quot; &quot;, &quot;+&quot;), &quot;&amp;&quot
             <controllingField>Closed_Lost_Reason__c</controllingField>
             <picklistValues>
                 <fullName>1,3,4 Other</fullName>
-                <controllingFieldValues>1 Lost to Competitor</controllingFieldValues>
-                <controllingFieldValues>3 Product Feature/Functionality</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>1 GoDaddy</fullName>
-                <controllingFieldValues>1 Lost to Competitor</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>1 Magento</fullName>
-                <controllingFieldValues>1 Lost to Competitor</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>1 Shopify</fullName>
-                <controllingFieldValues>1 Lost to Competitor</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>1 Volusion</fullName>
-                <controllingFieldValues>1 Lost to Competitor</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>2 Accidental trial</fullName>
-                <controllingFieldValues>2 Not Qualified</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>2 No Pitch-Not Interested</fullName>
-                <controllingFieldValues>2 Not Qualified</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>2 No products</fullName>
-                <controllingFieldValues>2 Not Qualified</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>2 No time</fullName>
-                <controllingFieldValues>2 Not Qualified</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>3 100% Uptime Servers</fullName>
-                <controllingFieldValues>3 Product Feature/Functionality</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>3 Affiliate Marketing</fullName>
-                <controllingFieldValues>3 Product Feature/Functionality</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>3 Ease of Use/Simplification</fullName>
-                <controllingFieldValues>3 Product Feature/Functionality</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>3 Difficulty with Product Options</fullName>
-                <controllingFieldValues>3 Product Feature/Functionality</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>3 Importing review</fullName>
-                <controllingFieldValues>3 Product Feature/Functionality</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>3 Integration with Third Party tool</fullName>
-                <controllingFieldValues>3 Product Feature/Functionality</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>3 Inventory/Billing Management</fullName>
-                <controllingFieldValues>3 Product Feature/Functionality</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>3 Lack of Themes</fullName>
-                <controllingFieldValues>3 Product Feature/Functionality</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>3 Multi-Language Support</fullName>
-                <controllingFieldValues>3 Product Feature/Functionality</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>3 Multiple Store Back-End</fullName>
-                <controllingFieldValues>3 Product Feature/Functionality</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>3 Provisioning Error</fullName>
-                <controllingFieldValues>3 Product Feature/Functionality</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>3 Shipping</fullName>
-                <controllingFieldValues>3 Product Feature/Functionality</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>3 Unsupported Cart-Migration</fullName>
-                <controllingFieldValues>3 Product Feature/Functionality</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>4 Minor/Child Sign Up</fullName>
-                <controllingFieldValues>4 Test Account</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>4 Orion</fullName>
-                <controllingFieldValues>4 Test Account</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>4 Pre-Employment</fullName>
-                <controllingFieldValues>4 Test Account</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>4 School Project</fullName>
-                <controllingFieldValues>4 Test Account</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>4 Spam Lead</fullName>
-                <controllingFieldValues>4 Test Account</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>4 Test Account</fullName>
-                <controllingFieldValues>4 Test Account</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -2685,110 +2616,6 @@ Have a developer check implications before removing</description>
         <inlineHelpText>Native Salesforce field. No default set.</inlineHelpText>
         <picklist>
             <picklistValues>
-                <fullName>Phone / Queue</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Email / Ticket</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Chat</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Campaign Import</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Web Trial</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Web Form</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Webinar</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Hubspot</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>WebToLead</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>AYRM</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EBQ DM</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EBQ DM2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EBQ DM3</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Orion</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>IR Special Report 2014</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>GPN Campaign Import</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Event</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Enterprise Partner Lead</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Netline</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ACQ Hubspot Content</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ACQ Hubspot Demo Request</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ACQ Demand Gen</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PRE Hubspot Content</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PRE Hubspot Demo Request</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PRE Demand Gen</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
                 <fullName>G2Crowd</fullName>
                 <default>false</default>
             </picklistValues>
@@ -3392,6 +3219,15 @@ IF(FIND(MID(Id,11,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,1,0)
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Manager_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Manager Notes</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
     </fields>
     <fields>
         <fullName>Marketing_Opt_In__c</fullName>
@@ -4370,7 +4206,7 @@ IF(FIND(MID(Id,11,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,1,0)
     <fields>
         <fullName>Sales_Rep_Notes__c</fullName>
         <externalId>false</externalId>
-        <label>Manager Notes</label>
+        <label>Sales Notes</label>
         <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -7145,25 +6981,6 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         </sharedTo>
     </listViews>
     <listViews>
-        <fullName>All_Open_Leads</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>LEAD.EMAIL</field>
-            <operation>contains</operation>
-            <value>bigcommerce</value>
-        </filters>
-        <label>All Open BC Test Leads</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
         <fullName>Bad_Contact_Info_Lead_Queue_Lead</fullName>
         <filterScope>Queue</filterScope>
         <label>Bad Contact Info Lead Queue</label>
@@ -7185,13 +7002,12 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <fullName>Contact_form_leads</fullName>
         <columns>FULL_NAME</columns>
         <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.STATE</columns>
         <columns>LEAD.EMAIL</columns>
         <columns>LEAD.STATUS</columns>
         <columns>LEAD.CREATED_DATE</columns>
         <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
         <columns>LEAD.LEAD_SOURCE</columns>
+        <columns>CLEAN_STATUS</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>LEAD.LEAD_SOURCE</field>
@@ -7206,780 +7022,12 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         </sharedTo>
     </listViews>
     <listViews>
-        <fullName>Direct_Bad_number_with_Domain_email</fullName>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 and 6</booleanFilter>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.URL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>LEAD.EMAIL</field>
-            <operation>notContain</operation>
-            <value>@bigcommerce,@gmail,@yahoo,@msn,@mac,@mail,@aol,@live,@rocketmail,@ymail,@icloud</value>
-        </filters>
-        <filters>
-            <field>Day_of_Trial__c</field>
-            <operation>greaterThan</operation>
-            <value>3</value>
-        </filters>
-        <filters>
-            <field>LEAD.COUNTRY</field>
-            <operation>equals</operation>
-            <value>US,CA,UK,IE,ZA,GB</value>
-        </filters>
-        <filters>
-            <field>Stage__c</field>
-            <operation>equals</operation>
-            <value>New</value>
-        </filters>
-        <filters>
-            <field>CORE.USERS.ALIAS</field>
-            <operation>equals</operation>
-            <value>markmeg</value>
-        </filters>
-        <filters>
-            <field>Day_of_Trial__c</field>
-            <operation>lessThan</operation>
-            <value>30</value>
-        </filters>
-        <label>Direct: Bad number with Domain email</label>
-        <sharedTo>
-            <role>Outbound_II_Leader</role>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Direct_Day_15_Trial_Leads</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>Stage__c</columns>
-        <columns>Day_of_Trial__c</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>Bad_Email__c</columns>
-        <columns>Bad_Phone_Number__c</columns>
-        <columns>Closed_Lost_Reason__c</columns>
-        <columns>Trial_Count__c</columns>
-        <columns>Lead_Age__c</columns>
-        <columns>Trial_Start_Date__c</columns>
-        <columns>Trial_Expiration_Date__c</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.Client_Prospect</value>
-        </filters>
-        <filters>
-            <field>Day_of_Trial__c</field>
-            <operation>equals</operation>
-            <value>15</value>
-        </filters>
-        <filters>
-            <field>Bad_Email__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>Non_English_Speaking__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <label>Direct: Day 15 Trial Leads</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>Direct_Day_17_Trial_Leads</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>Stage__c</columns>
-        <columns>Day_of_Trial__c</columns>
-        <columns>Trial_Count__c</columns>
-        <columns>Lead_Age__c</columns>
-        <columns>Trial_Start_Date__c</columns>
-        <columns>Trial_Expiration_Date__c</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>Bad_Email__c</columns>
-        <columns>Bad_Phone_Number__c</columns>
-        <columns>Closed_Lost_Reason__c</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.Client_Prospect</value>
-        </filters>
-        <filters>
-            <field>Day_of_Trial__c</field>
-            <operation>equals</operation>
-            <value>7</value>
-        </filters>
-        <filters>
-            <field>Bad_Email__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>Non_English_Speaking__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <label>Direct: Day 7 Trial Leads</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>Direct_Day_1_3_Trial_Leads</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>Stage__c</columns>
-        <columns>Day_of_Trial__c</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>Bad_Email__c</columns>
-        <columns>Bad_Phone_Number__c</columns>
-        <columns>Closed_Lost_Reason__c</columns>
-        <columns>Trial_Count__c</columns>
-        <columns>Lead_Age__c</columns>
-        <columns>Trial_Start_Date__c</columns>
-        <columns>Trial_Expiration_Date__c</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.Client_Prospect</value>
-        </filters>
-        <filters>
-            <field>Day_of_Trial__c</field>
-            <operation>equals</operation>
-            <value>0,1,2,3</value>
-        </filters>
-        <filters>
-            <field>Bad_Email__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>Non_English_Speaking__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <label>Direct: Day 1-3 Trial Leads</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>Direct_Day_Trial_Leads</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>Stage__c</columns>
-        <columns>Day_of_Trial__c</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>Bad_Email__c</columns>
-        <columns>Bad_Phone_Number__c</columns>
-        <columns>Closed_Lost_Reason__c</columns>
-        <columns>Trial_Count__c</columns>
-        <columns>Lead_Age__c</columns>
-        <columns>Trial_Start_Date__c</columns>
-        <columns>Trial_Expiration_Date__c</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.Client_Prospect</value>
-        </filters>
-        <filters>
-            <field>Day_of_Trial__c</field>
-            <operation>equals</operation>
-            <value>0,1,2,3</value>
-        </filters>
-        <filters>
-            <field>Bad_Email__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>Non_English_Speaking__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <label>mf Direct: Day 1-3 Trial Leads</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>Direct_Hubspot_Score_Increase</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>Stage__c</columns>
-        <columns>Day_of_Trial__c</columns>
-        <columns>Hubspot_Score_Difference__c</columns>
-        <columns>Hubspot_Score__c</columns>
-        <columns>Initial_Hubspot_Score__c</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>Lead_Age__c</columns>
-        <columns>Trial_Start_Date__c</columns>
-        <columns>Trial_Expiration_Date__c</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>Trial_Count__c</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.Client_Prospect</value>
-        </filters>
-        <filters>
-            <field>Trial_Expiration_Date__c</field>
-            <operation>greaterOrEqual</operation>
-            <value>TODAY</value>
-        </filters>
-        <filters>
-            <field>Hubspot_Score_Difference__c</field>
-            <operation>greaterOrEqual</operation>
-            <value>1</value>
-        </filters>
-        <label>Direct: Hubspot Score Increase</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>Direct_New_Existing_New_Trial_Leads</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>Trial_Start_Date__c</columns>
-        <columns>Trial_Count__c</columns>
-        <columns>Active_Trials__c</columns>
-        <columns>Lead_Age__c</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>Hubspot_Score__c</columns>
-        <columns>Stage__c</columns>
-        <columns>Type__c</columns>
-        <columns>Experience__c</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>Stage__c</field>
-            <operation>equals</operation>
-            <value>New,Existing: New Trial</value>
-        </filters>
-        <filters>
-            <field>LEAD.CREATED_DATE</field>
-            <operation>greaterThan</operation>
-            <value>9/1/2012 12:00 AM</value>
-        </filters>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.Client_Prospect</value>
-        </filters>
-        <label>Direct: New/Existing: New Trial Leads</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>Direct_Pricing_Test</fullName>
-        <booleanFilter>1 AND (2 OR 3) AND 4 AND 5</booleanFilter>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>Stage__c</columns>
-        <columns>Day_of_Trial__c</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>Seen_Pricing__c</columns>
-        <columns>Opened_Pricing_PDF__c</columns>
-        <columns>Bad_Email__c</columns>
-        <columns>Bad_Phone_Number__c</columns>
-        <columns>Trial_Count__c</columns>
-        <columns>Trial_Start_Date__c</columns>
-        <columns>Trial_Expiration_Date__c</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.Client_Prospect</value>
-        </filters>
-        <filters>
-            <field>Seen_Pricing__c</field>
-            <operation>equals</operation>
-            <value>No</value>
-        </filters>
-        <filters>
-            <field>Opened_Pricing_PDF__c</field>
-            <operation>equals</operation>
-            <value>1</value>
-        </filters>
-        <filters>
-            <field>Trial_Expiration_Date__c</field>
-            <operation>greaterOrEqual</operation>
-            <value>TODAY</value>
-        </filters>
-        <filters>
-            <field>Trial_Start_Date__c</field>
-            <operation>greaterOrEqual</operation>
-            <value>9/23/2013</value>
-        </filters>
-        <label>Direct: Pricing Test</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>Direct_Up_New_ExistingLeads</fullName>
-        <columns>Owner_Team__c</columns>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>Trial_Start_Date__c</columns>
-        <columns>Trial_Count__c</columns>
-        <columns>Active_Trials__c</columns>
-        <columns>Lead_Age__c</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>Hubspot_Score__c</columns>
-        <columns>Stage__c</columns>
-        <columns>Type__c</columns>
-        <columns>Experience__c</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>Stage__c</field>
-            <operation>equals</operation>
-            <value>New,Existing: New Trial</value>
-        </filters>
-        <filters>
-            <field>LEAD.CREATED_DATE</field>
-            <operation>greaterThan</operation>
-            <value>9/1/2012 12:00 AM</value>
-        </filters>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.Client_Prospect</value>
-        </filters>
-        <filters>
-            <field>Owner_Team__c</field>
-            <operation>contains</operation>
-            <value>direct</value>
-        </filters>
-        <label>Direct Upsell: New/ExistingLeads</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>Elisabeth_s_Leads1</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.LAST_ACTIVITY</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>LEAD.URL</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CORE.USERS.ALIAS</field>
-            <operation>contains</operation>
-            <value>elisabet</value>
-        </filters>
-        <filters>
-            <field>LEAD.STATUS</field>
-            <operation>notEqual</operation>
-            <value>Unqualified,Qualified</value>
-        </filters>
-        <label>Elisabeth&apos;s Leads</label>
-    </listViews>
-    <listViews>
-        <fullName>Existing_Trials</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>Trial_Count__c</columns>
-        <columns>Trial_Start_Date__c</columns>
-        <columns>Trial_Store_URL__c</columns>
-        <columns>Active_Trials__c</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>Active_Trials__c</field>
-            <operation>greaterThan</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>Stage__c</field>
-            <operation>notEqual</operation>
-            <value>Closed Lost</value>
-        </filters>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.Client_Prospect</value>
-        </filters>
-        <filters>
-            <field>Trial_Expiration_Date__c</field>
-            <operation>greaterThan</operation>
-            <value>TODAY</value>
-        </filters>
-        <label>Existing Trials</label>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Hubspot_Owner</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>Type__c</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>Trial_Count__c</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>CREATEDBY_USER.ALIAS</columns>
-        <columns>Lead_Unique_ID__c</columns>
-        <columns>MBAAccountID__c</columns>
-        <columns>Testing_Lead__c</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CORE.USERS.LAST_NAME</field>
-            <operation>equals</operation>
-            <value>Hubspot</value>
-        </filters>
-        <filters>
-            <field>LEAD.EMAIL</field>
-            <operation>notContain</operation>
-            <value>bigcommerce</value>
-        </filters>
-        <label>Hubspot Owner</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>International_New</fullName>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 and 6 and 7 and 8</booleanFilter>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>Stage__c</columns>
-        <columns>Day_of_Trial__c</columns>
-        <columns>Experience__c</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Stage__c</field>
-            <operation>equals</operation>
-            <value>New,Existing: New Trial</value>
-        </filters>
-        <filters>
-            <field>Day_of_Trial__c</field>
-            <operation>lessThan</operation>
-            <value>15</value>
-        </filters>
-        <filters>
-            <field>CORE.USERS.ALIAS</field>
-            <operation>equals</operation>
-            <value>markmeg</value>
-        </filters>
-        <filters>
-            <field>LEAD.COUNTRY</field>
-            <operation>notEqual</operation>
-            <value>N,US,CA,AU,NZ,United States,Canada,Australia,New Zealand</value>
-        </filters>
-        <filters>
-            <field>Bad_Phone_Number__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>LEAD.DO_NOT_CALL</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>Non_English_Speaking__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>Experience__c</field>
-            <operation>notEqual</operation>
-            <value>A Web Designer/Developer,I&apos;m setting up a store for a client</value>
-        </filters>
-        <label>International New</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>International_SG_PH_MY_New</fullName>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 and 6 and 7 and 8</booleanFilter>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>Stage__c</columns>
-        <columns>Day_of_Trial__c</columns>
-        <columns>Experience__c</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Stage__c</field>
-            <operation>equals</operation>
-            <value>New,Existing: New Trial</value>
-        </filters>
-        <filters>
-            <field>Day_of_Trial__c</field>
-            <operation>lessThan</operation>
-            <value>15</value>
-        </filters>
-        <filters>
-            <field>CORE.USERS.ALIAS</field>
-            <operation>equals</operation>
-            <value>markmeg</value>
-        </filters>
-        <filters>
-            <field>LEAD.COUNTRY</field>
-            <operation>equals</operation>
-            <value>SG,PH,MY</value>
-        </filters>
-        <filters>
-            <field>Bad_Phone_Number__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>LEAD.DO_NOT_CALL</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>Non_English_Speaking__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>Experience__c</field>
-            <operation>notEqual</operation>
-            <value>A Web Designer/Developer,I&apos;m setting up a store for a client</value>
-        </filters>
-        <label>International SG/PH/MY New</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>International_UK_IE_NG_New</fullName>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 and 6 and 7 and 8</booleanFilter>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>Stage__c</columns>
-        <columns>Day_of_Trial__c</columns>
-        <columns>Experience__c</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Stage__c</field>
-            <operation>equals</operation>
-            <value>New,Existing: New Trial</value>
-        </filters>
-        <filters>
-            <field>Day_of_Trial__c</field>
-            <operation>lessThan</operation>
-            <value>15</value>
-        </filters>
-        <filters>
-            <field>CORE.USERS.ALIAS</field>
-            <operation>equals</operation>
-            <value>markmeg</value>
-        </filters>
-        <filters>
-            <field>LEAD.COUNTRY</field>
-            <operation>equals</operation>
-            <value>NG,UK,GB,IE,United Kingdom,Ireland</value>
-        </filters>
-        <filters>
-            <field>Bad_Phone_Number__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>LEAD.DO_NOT_CALL</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>Non_English_Speaking__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>Experience__c</field>
-            <operation>notEqual</operation>
-            <value>A Web Designer/Developer,I&apos;m setting up a store for a client</value>
-        </filters>
-        <label>International UK/IE/NG New</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>International_ZA_New</fullName>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 and 6 and 7 and 8</booleanFilter>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>Stage__c</columns>
-        <columns>Day_of_Trial__c</columns>
-        <columns>Experience__c</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Stage__c</field>
-            <operation>equals</operation>
-            <value>New,Existing: New Trial</value>
-        </filters>
-        <filters>
-            <field>Day_of_Trial__c</field>
-            <operation>lessThan</operation>
-            <value>15</value>
-        </filters>
-        <filters>
-            <field>CORE.USERS.ALIAS</field>
-            <operation>equals</operation>
-            <value>markmeg</value>
-        </filters>
-        <filters>
-            <field>LEAD.COUNTRY</field>
-            <operation>equals</operation>
-            <value>ZA</value>
-        </filters>
-        <filters>
-            <field>Bad_Phone_Number__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>LEAD.DO_NOT_CALL</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>Non_English_Speaking__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>Experience__c</field>
-            <operation>notEqual</operation>
-            <value>A Web Designer/Developer,I&apos;m setting up a store for a client</value>
-        </filters>
-        <label>International ZA New</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>Lead_dedupling</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>LEAD.COMPANY</field>
-            <operation>contains</operation>
-            <value>blu dot</value>
-        </filters>
-        <label>Lead deduping</label>
-        <sharedTo>
-            <group>Managers</group>
-        </sharedTo>
-    </listViews>
-    <listViews>
         <fullName>Leads_No_Contact_Made_Lead</fullName>
         <filterScope>Queue</filterScope>
         <label>Leads - No Contact Made Queue</label>
         <queue>Leads_No_Contact_Made_queue</queue>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Magento_Enterprise_10_23</fullName>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.FIRST_NAME</columns>
-        <columns>LEAD.LAST_NAME</columns>
-        <columns>LEAD.TITLE</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>LEAD.URL</columns>
-        <columns>Datanyze_Industry__c</columns>
-        <columns>Datanyze_Revenue__c</columns>
-        <columns>Datanyze_Alexa_rank__c</columns>
-        <columns>Datanyze_Platform__c</columns>
-        <columns>LEAD.STATUS</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.STATUS</field>
-            <operation>notEqual</operation>
-            <value>Contacted,Unqualified,Qualified</value>
-        </filters>
-        <label>Magento Enterprise 10-23 D5</label>
-        <sharedTo>
-            <roleAndSubordinatesInternal>Head_of_Sales</roleAndSubordinatesInternal>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Magento_Enterprise_10_23_D4</fullName>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.FIRST_NAME</columns>
-        <columns>LEAD.LAST_NAME</columns>
-        <columns>LEAD.TITLE</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>LEAD.URL</columns>
-        <columns>Datanyze_Industry__c</columns>
-        <columns>Datanyze_Revenue__c</columns>
-        <columns>Datanyze_Alexa_rank__c</columns>
-        <columns>Datanyze_Platform__c</columns>
-        <columns>LEAD.STATUS</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.STATUS</field>
-            <operation>notEqual</operation>
-            <value>Contacted,Unqualified,Qualified</value>
-        </filters>
-        <label>Magento Enterprise 10-23 D4</label>
-        <sharedTo>
-            <roleAndSubordinatesInternal>Head_of_Sales</roleAndSubordinatesInternal>
         </sharedTo>
     </listViews>
     <listViews>
@@ -8066,7 +7114,7 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <filters>
             <field>LEAD.RECORDTYPE</field>
             <operation>equals</operation>
-            <value>Lead.Sales_Prospect</value>
+            <value>012a0000001NVUC</value>
         </filters>
         <filters>
             <field>Trial_Count__c</field>
@@ -8074,40 +7122,6 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             <value>1</value>
         </filters>
         <label>My Leads without Trials</label>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>My_Open_Trial_Leads</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>Active_Trials__c</columns>
-        <columns>Stage__c</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>Trial_Start_Date__c</columns>
-        <columns>Trial_Expiration_Date__c</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.Client_Prospect</value>
-        </filters>
-        <filters>
-            <field>Trial_Expiration_Date__c</field>
-            <operation>greaterThan</operation>
-            <value>TODAY</value>
-        </filters>
-        <filters>
-            <field>Stage__c</field>
-            <operation>notEqual</operation>
-            <value>Closed Lost</value>
-        </filters>
-        <label>My Open Trial Leads</label>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
@@ -8183,78 +7197,6 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         </filters>
         <label>SBD: Global Payments</label>
         <sharedTo>
-            <role>SystemAdministrator</role>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>SG_HK_ZA_ES_NZ_AUS_Leads_Sales</fullName>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND ( 5 OR 6 OR 7 OR 8 OR 9 OR 10)</booleanFilter>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>Stage__c</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <columns>CORE.USERS.FIRST_NAME</columns>
-        <columns>CORE.USERS.LAST_NAME</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CORE.USERS.ALIAS</field>
-            <operation>equals</operation>
-            <value>markmeg</value>
-        </filters>
-        <filters>
-            <field>Experience__c</field>
-            <operation>notEqual</operation>
-            <value>A Web Designer/Developer,I&apos;m setting up a store for a client</value>
-        </filters>
-        <filters>
-            <field>LEAD.EMAIL</field>
-            <operation>notContain</operation>
-            <value>bigcommerce</value>
-        </filters>
-        <filters>
-            <field>LEAD.CREATED_DATE</field>
-            <operation>equals</operation>
-            <value>LAST_N_DAYS:120</value>
-        </filters>
-        <filters>
-            <field>LEAD.COUNTRY</field>
-            <operation>contains</operation>
-            <value>Australia,New Zealand,Singapore,Hong Kong,HK,South Africa,Spain</value>
-        </filters>
-        <filters>
-            <field>LEAD.COUNTRY</field>
-            <operation>equals</operation>
-            <value>AU</value>
-        </filters>
-        <filters>
-            <field>LEAD.COUNTRY</field>
-            <operation>equals</operation>
-            <value>NZ</value>
-        </filters>
-        <filters>
-            <field>LEAD.COUNTRY</field>
-            <operation>equals</operation>
-            <value>SG</value>
-        </filters>
-        <filters>
-            <field>LEAD.COUNTRY</field>
-            <operation>equals</operation>
-            <value>ES</value>
-        </filters>
-        <filters>
-            <field>LEAD.COUNTRY</field>
-            <operation>equals</operation>
-            <value>ZA</value>
-        </filters>
-        <label>SG, HK, ZA, ES, NZ, AUS Leads Sales</label>
-        <sharedTo>
-            <role>Outbound_Sales_II</role>
             <role>SystemAdministrator</role>
         </sharedTo>
     </listViews>
@@ -11150,6 +10092,10 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>AmmoSeek</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>CS Cart</fullName>
                 <default>false</default>
             </values>
@@ -11250,6 +10196,10 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>YahooStores2</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Zen Cart</fullName>
                 <default>false</default>
             </values>
@@ -11269,11 +10219,39 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>Chicago Partner Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>EIG Re-engagement</fullName>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Full Service Agency July2014</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Houston Partner Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>London Partner Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NYC Partner Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner Import</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>ProStores</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>San Francisco Partner Event</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -11288,31 +10266,107 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <picklistValues>
             <picklist>Closed_Lost_Reason__c</picklist>
             <values>
-                <fullName>1 Lost to Competitor</fullName>
+                <fullName>Accidental Trial%2FNo ecomm</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>2 Not Qualified</fullName>
+                <fullName>Auto Closed Lost</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>3 Product Feature%2FFunctionality</fullName>
+                <fullName>Data Cleanup</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>4 Test Account</fullName>
+                <fullName>Duplicate Record</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Poor In-Trial Client Success Experience</fullName>
+                <fullName>Influenced by 3rd Party</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Price</fullName>
+                <fullName>Infrastructure %26 Security</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Risk of Migration Issues</fullName>
+                <fullName>Legal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Migration Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No longer in business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Mature Enough%2FNo Products%2FToo Small</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product%2FIntegration%2F3rd Party Tool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product%2FMerchandising</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product%2FMisc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product%2FMulti-Language Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product%2FMultiple Store Backend</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product%2FOmni Channel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product%2FPayments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product%2FPromotions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product%2FWholesale%2FB2B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timing - Reengage 1-3 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timing - Reengage 12%2B months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timing - Reengage 4-12 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trial expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unable to Contact</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -11335,7 +10389,19 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>Magento CE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Magento EE</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>NSCommerce</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Netsuite</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -11463,6 +10529,14 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
             <values>
                 <fullName>Portable Shops</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prostores</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prostores %28Homestead%29</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -11741,6 +10815,205 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
             <values>
                 <fullName>4 Test Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amazon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BC product not ready</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Backups</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bad Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bad Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Budget not approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cart APIs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Catalog staging</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Couponing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Discount restrictions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ERP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing vendor relationship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Faceted search</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General API Concern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal approvals needed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lack of Sandbox</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lack of themes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loyalty Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Platform</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Migration concern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nondisclosure agreements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order %26 form fields</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>POS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parent%2FChild accounts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment methods</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-employment Test</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing too complex</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing too high</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing too low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Options</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product recommendations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RMA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recurring billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registries</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reporting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School Project</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shared infrastructure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping Methods</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stencil HTML Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Taxes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terms of Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User permissions</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Has_Products__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -12063,55 +11336,7 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <picklistValues>
             <picklist>LeadSource</picklist>
             <values>
-                <fullName>ACQ Demand Gen</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>ACQ Hubspot Content</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>ACQ Hubspot Demo Request</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>AYRM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Campaign Import</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Chat</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Datanyze</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>EBQ DM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>EBQ DM2</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>EBQ DM3</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Email %2F Ticket</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Enterprise Partner Lead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Event</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -12119,51 +11344,7 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
-                <fullName>GPN Campaign Import</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hubspot</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Netline</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>PRE Demand Gen</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>PRE Hubspot Content</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>PRE Hubspot Demo Request</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone %2F Queue</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web Trial</fullName>
-                <default>true</default>
-            </values>
-            <values>
-                <fullName>WebToLead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Webinar</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -12178,6 +11359,10 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>Assigned to Creator</fullName>
+                <default>true</default>
+            </values>
+            <values>
                 <fullName>Channel Partner</fullName>
                 <default>false</default>
             </values>
@@ -12190,8 +11375,16 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>Imported</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Migrated from another user</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Round Robin</fullName>
-                <default>true</default>
+                <default>false</default>
             </values>
             <values>
                 <fullName>Same as existing account %28phone%29</fullName>
@@ -12207,6 +11400,204 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
             <values>
                 <fullName>Same as existing lead %28phone%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lead_Source_Detail__c</picklist>
+            <values>
+                <fullName>AOL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AdRoll</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Adam Seabrooke</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Admarketplace</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amazon Seller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Braintree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Capterra</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commission Junction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Datanyze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demandbase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Doba</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ecom Bytes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Endicia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Facebook</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>G2crowd</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Google</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Google Plus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Google Shopping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Happy Hour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Impact Radius</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instagram</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internet Retailer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intuit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LinkedIn</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Luncheon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MSN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meet-up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Netline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paypal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Perfect Audience</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pinterest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Practical Ecomm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Square</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TrustRadius</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Twitter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yahoo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>YouTube</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Merchant_Status__c</picklist>
+            <values>
+                <fullName>Brick and mortar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brick and mortar and online</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multiple stores online</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Store</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -12307,6 +11698,32 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Persona__c</picklist>
+            <values>
+                <fullName>Miderprise Marty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operator Owen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Startup Suzy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Private_SSL_Certificate__c</picklist>
+            <values>
+                <fullName>FALSE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TRUE</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Product_Detail__c</picklist>
             <values>
                 <fullName>Back Order Functionality</fullName>
@@ -12356,11 +11773,27 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>%24250%2C000 - %24500%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>%245%2C000%2C000 - %2450%2C000%2C000</fullName>
                 <default>false</default>
             </values>
             <values>
+                <fullName>%2450%2C000 - %24250%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>%2450%2C000%2C000 %2B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24500%2C000 - %241%2C000%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%3C %2450%2C000</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -12376,6 +11809,17 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
             <values>
                 <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SBD_Ebay_Power_User__c</picklist>
+            <values>
+                <fullName>False</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>True</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -12466,11 +11910,47 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <picklistValues>
             <picklist>Timeline_to_Purchase__c</picklist>
             <values>
+                <fullName>1-2 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1-2 weeks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1-3 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1-3 weeks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2-3 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3-4 weeks</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>3-6 months</fullName>
                 <default>false</default>
             </values>
             <values>
+                <fullName>4%2B months</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>6-12 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ASAP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than a week</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -12489,11 +11969,23 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>Design%2FTheme</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Driving Website Traffic</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Integrations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing%2FHelp Driving Traffic to Store</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Migration</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -12506,6 +11998,10 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
             <values>
                 <fullName>ROI%2FAnalytics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEO Services</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -12536,6 +12032,10 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>Partner Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Premium</fullName>
                 <default>false</default>
             </values>
@@ -12548,8 +12048,12 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Trial</fullName>
-                <default>true</default>
+                <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
@@ -12576,6 +12080,17 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
             <values>
                 <fullName>Pacific</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Viewed_Offers__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -13168,6 +12683,28 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
             <values>
                 <fullName>Seems like they will buy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>n2de__Action__c</picklist>
+            <values>
+                <fullName>Contacted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>rvpe__PartnerLeadAcceptance__c</picklist>
+            <values>
+                <fullName>Accepted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -15226,6 +14763,10 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>AmmoSeek</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>CS Cart</fullName>
                 <default>false</default>
             </values>
@@ -15298,6 +14839,10 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>Volusion 31</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Webinar</fullName>
                 <default>false</default>
             </values>
@@ -15345,11 +14890,39 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>Chicago Partner Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>EIG Re-engagement</fullName>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Full Service Agency July2014</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Houston Partner Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>London Partner Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NYC Partner Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner Import</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>ProStores</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>San Francisco Partner Event</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -15479,6 +15052,30 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>Demandware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>I am not currently selling online%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Magento CE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Magento EE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NSCommerce</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Netsuite</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Other</fullName>
                 <default>false</default>
             </values>
@@ -15603,6 +15200,14 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
             <values>
                 <fullName>Portable Shops</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prostores</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prostores %28Homestead%29</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -15771,6 +15376,118 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         </picklistValues>
         <picklistValues>
             <picklist>Functionality_Detail__c</picklist>
+            <values>
+                <fullName>1 GoDaddy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1 Magento</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1 Shopify</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1 Volusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1%2C3%2C4 Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 Accidental trial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 No Pitch-Not Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 No products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 No time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 100%25 Uptime Servers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 Affiliate Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 Difficulty with Product Options</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 Ease of Use%2FSimplification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 Importing review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 Integration with Third Party tool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 Inventory%2FBilling Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 Lack of Themes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 Multi-Language Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 Multiple Store Back-End</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 Provisioning Error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 Unsupported Cart-Migration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4 Minor%2FChild Sign Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4 Orion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4 Pre-Employment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4 School Project</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4 Spam Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4 Test Account</fullName>
+                <default>false</default>
+            </values>
             <values>
                 <fullName>Amazon</fullName>
                 <default>false</default>
@@ -15957,6 +15674,17 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
             <values>
                 <fullName>User permissions</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Has_Products__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -16279,15 +16007,30 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <picklistValues>
             <picklist>LeadSource</picklist>
             <values>
-                <fullName>ACQ Demand Gen</fullName>
+                <fullName>G2Crowd</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>ACQ Hubspot Content</fullName>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lead_Assignment_Method__c</picklist>
+            <values>
+                <fullName>Acquisition team lead %28email%29</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>ACQ Hubspot Demo Request</fullName>
+                <fullName>Acquisition team lead %28phone%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assigned to Creator</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Channel Partner</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16295,11 +16038,102 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
-                <fullName>Email %2F Ticket</fullName>
+                <fullName>Email Match</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Enterprise Partner Lead</fullName>
+                <fullName>Imported</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Migrated from another user</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Round Robin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same as existing account %28phone%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same as existing contact %28email%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same as existing lead %28email%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same as existing lead %28phone%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lead_Source_Detail__c</picklist>
+            <values>
+                <fullName>AOL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AdRoll</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Adam Seabrooke</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Admarketplace</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amazon Seller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Braintree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Capterra</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commission Junction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Datanyze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demandbase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Doba</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ecom Bytes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Endicia</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16307,11 +16141,59 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
-                <fullName>G2Crowd</fullName>
+                <fullName>Facebook</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Hubspot</fullName>
+                <fullName>G2crowd</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Google</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Google Plus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Google Shopping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Happy Hour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Impact Radius</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instagram</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internet Retailer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intuit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LinkedIn</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Luncheon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MSN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meet-up</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16319,46 +16201,70 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
-                <fullName>Orion</fullName>
+                <fullName>Partner</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Other</fullName>
+                <fullName>Paypal</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>PRE Demand Gen</fullName>
+                <fullName>Perfect Audience</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>PRE Hubspot Content</fullName>
+                <fullName>Pinterest</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>PRE Hubspot Demo Request</fullName>
+                <fullName>Practical Ecomm</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Phone %2F Queue</fullName>
-                <default>true</default>
+                <fullName>Sponsor</fullName>
+                <default>false</default>
             </values>
             <values>
-                <fullName>WebToLead</fullName>
+                <fullName>Square</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TrustRadius</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Twitter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yahoo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>YouTube</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Lead_Assignment_Method__c</picklist>
+            <picklist>Merchant_Status__c</picklist>
             <values>
-                <fullName>Assigned to Creator</fullName>
-                <default>true</default>
-            </values>
-            <values>
-                <fullName>Chat</fullName>
+                <fullName>Brick and mortar</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Imported</fullName>
+                <fullName>Brick and mortar and online</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multiple stores online</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Store</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -16459,6 +16365,32 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Persona__c</picklist>
+            <values>
+                <fullName>Miderprise Marty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operator Owen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Startup Suzy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Private_SSL_Certificate__c</picklist>
+            <values>
+                <fullName>FALSE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TRUE</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Product_Detail__c</picklist>
             <values>
                 <fullName>Back Order Functionality</fullName>
@@ -16508,11 +16440,27 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>%24250%2C000 - %24500%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>%245%2C000%2C000 - %2450%2C000%2C000</fullName>
                 <default>false</default>
             </values>
             <values>
+                <fullName>%2450%2C000 - %24250%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>%2450%2C000%2C000 %2B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24500%2C000 - %241%2C000%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%3C %2450%2C000</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -16528,6 +16476,17 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
             <values>
                 <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SBD_Ebay_Power_User__c</picklist>
+            <values>
+                <fullName>False</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>True</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -16572,7 +16531,15 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>Closing</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Engaged</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing%3A New Trial</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16610,11 +16577,47 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <picklistValues>
             <picklist>Timeline_to_Purchase__c</picklist>
             <values>
+                <fullName>1-2 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1-2 weeks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1-3 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1-3 weeks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2-3 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3-4 weeks</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>3-6 months</fullName>
                 <default>false</default>
             </values>
             <values>
+                <fullName>4%2B months</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>6-12 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ASAP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than a week</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16633,11 +16636,23 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>Design%2FTheme</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Driving Website Traffic</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Integrations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing%2FHelp Driving Traffic to Store</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Migration</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16652,11 +16667,35 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <fullName>ROI%2FAnalytics</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>SEO Services</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>Type__c</picklist>
             <values>
+                <fullName>Client Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Designer%2FDev Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Influencer</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Internal%2FBC Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>International</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16669,7 +16708,19 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
             <values>
                 <fullName>Prospect</fullName>
-                <default>true</default>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target %28DM%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trial</fullName>
+                <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
@@ -16696,6 +16747,17 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
             <values>
                 <fullName>Pacific</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Viewed_Offers__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -16829,6 +16891,10 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
             <values>
                 <fullName>Customer feedback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Design Partner</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17005,6 +17071,10 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
             <values>
                 <fullName>Marketing - ViralSweep</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Partner</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17283,6 +17353,28 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
         </picklistValues>
+        <picklistValues>
+            <picklist>n2de__Action__c</picklist>
+            <values>
+                <fullName>Contacted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>rvpe__PartnerLeadAcceptance__c</picklist>
+            <values>
+                <fullName>Accepted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
     </recordTypes>
     <recordTypes>
         <fullName>Strategic_Partner_Prospect</fullName>
@@ -17297,6 +17389,10 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>Price Test Group 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Test 1</fullName>
                 <default>false</default>
             </values>
@@ -17304,7 +17400,27 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <picklistValues>
             <picklist>Acquisition_Campaign__c</picklist>
             <values>
+                <fullName>1ShoppingCart</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3D Cart</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amazon Webstore</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>AmeriCommerce</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AmmoSeek</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CS Cart</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17316,11 +17432,23 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>Go Daddy</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Interspire</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Magento Enterprise</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MagentoGo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miva Merchant</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17336,7 +17464,15 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>OS Commerce</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pinnacle Cart</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17348,11 +17484,47 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>Volusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Volusion 28</fullName>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Volusion 31</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar - Visitors to Buyers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>X-Cart</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yahoo Stores 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yahoo Stores 3 Migratable</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>YahooStores</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>YahooStores2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Zen Cart</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17363,7 +17535,15 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <picklistValues>
             <picklist>Channel_Partner_Campaign__c</picklist>
             <values>
+                <fullName>Aussie Design Prospect Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Business Catalyst</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chicago Partner Event</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17371,7 +17551,31 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>Full Service Agency July2014</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Houston Partner Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>London Partner Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NYC Partner Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner Import</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>ProStores</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>San Francisco Partner Event</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17386,31 +17590,107 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <picklistValues>
             <picklist>Closed_Lost_Reason__c</picklist>
             <values>
-                <fullName>1 Lost to Competitor</fullName>
+                <fullName>Accidental Trial%2FNo ecomm</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>2 Not Qualified</fullName>
+                <fullName>Auto Closed Lost</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>3 Product Feature%2FFunctionality</fullName>
+                <fullName>Data Cleanup</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>4 Test Account</fullName>
+                <fullName>Duplicate Record</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Poor In-Trial Client Success Experience</fullName>
+                <fullName>Influenced by 3rd Party</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Price</fullName>
+                <fullName>Infrastructure %26 Security</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Risk of Migration Issues</fullName>
+                <fullName>Legal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Migration Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No longer in business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Mature Enough%2FNo Products%2FToo Small</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product%2FIntegration%2F3rd Party Tool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product%2FMerchandising</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product%2FMisc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product%2FMulti-Language Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product%2FMultiple Store Backend</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product%2FOmni Channel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product%2FPayments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product%2FPromotions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product%2FWholesale%2FB2B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timing - Reengage 1-3 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timing - Reengage 12%2B months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timing - Reengage 4-12 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trial expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unable to Contact</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -17422,6 +17702,30 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
             <values>
                 <fullName>Custom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demandware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>I am not currently selling online%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Magento CE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Magento EE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NSCommerce</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Netsuite</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17444,7 +17748,59 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <picklistValues>
             <picklist>Current_Platform__c</picklist>
             <values>
+                <fullName>1Shopping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3dcart</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amazon Webstores</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Americommerce</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ayacart</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bigcommerce %28BC to BC%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSCart</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Core Commerce</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Create A Shoppe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CubeCart</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Custom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GoDaddy - QSC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Interspire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lemonstand</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17456,7 +17812,19 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>Mal%27s eCommerce</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miva Merchant v4</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Netsuite</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network Solutions</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17464,7 +17832,39 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>OSCommerce</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OSMax commerce</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OpenCart</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Option Cart</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Portable Shops</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prostores</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prostores %28Homestead%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PureCommerce</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17472,7 +17872,31 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>ShoppePro</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Volusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WooCommerce</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Xcart</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yahoo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ZenCart</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Zoovy</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -17584,6 +18008,10 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
             <values>
                 <fullName>Experienced with eCommerce</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>I%27m setting up a store for a client</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17711,6 +18139,205 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
             <values>
                 <fullName>4 Test Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amazon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BC product not ready</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Backups</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bad Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bad Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Budget not approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cart APIs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Catalog staging</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Couponing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Discount restrictions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ERP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing vendor relationship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Faceted search</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General API Concern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal approvals needed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lack of Sandbox</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lack of themes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loyalty Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Platform</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Migration concern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nondisclosure agreements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order %26 form fields</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>POS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parent%2FChild accounts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment methods</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-employment Test</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing too complex</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing too high</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing too low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Options</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product recommendations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RMA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recurring billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registries</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reporting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School Project</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shared infrastructure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping Methods</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stencil HTML Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Taxes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terms of Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User permissions</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Has_Products__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -17862,6 +18489,10 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>00 - New Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>1 - SQL</fullName>
                 <default>false</default>
             </values>
@@ -17893,7 +18524,129 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <picklistValues>
             <picklist>LeadSource</picklist>
             <values>
-                <fullName>Email %2F Ticket</fullName>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lead_Assignment_Method__c</picklist>
+            <values>
+                <fullName>Acquisition team lead %28email%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Acquisition team lead %28phone%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assigned to Creator</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Channel Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Match</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Imported</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Migrated from another user</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Round Robin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same as existing account %28phone%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same as existing contact %28email%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same as existing lead %28email%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same as existing lead %28phone%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lead_Source_Detail__c</picklist>
+            <values>
+                <fullName>AOL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AdRoll</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Adam Seabrooke</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Admarketplace</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amazon Seller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Braintree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Capterra</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commission Junction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Datanyze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demandbase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Doba</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ecom Bytes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Endicia</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17901,30 +18654,130 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
-                <fullName>Other</fullName>
+                <fullName>Facebook</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Phone %2F Queue</fullName>
+                <fullName>G2crowd</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Web Form</fullName>
-                <default>true</default>
+                <fullName>Google</fullName>
+                <default>false</default>
             </values>
             <values>
-                <fullName>Web Trial</fullName>
+                <fullName>Google Plus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Google Shopping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Happy Hour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Impact Radius</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instagram</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internet Retailer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intuit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LinkedIn</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Luncheon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MSN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meet-up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Netline</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paypal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Perfect Audience</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pinterest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Practical Ecomm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Square</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TrustRadius</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Twitter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yahoo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>YouTube</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Lead_Assignment_Method__c</picklist>
+            <picklist>Merchant_Status__c</picklist>
             <values>
-                <fullName>Assigned to Creator</fullName>
-                <default>true</default>
+                <fullName>Brick and mortar</fullName>
+                <default>false</default>
             </values>
             <values>
-                <fullName>Channel Partner</fullName>
+                <fullName>Brick and mortar and online</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multiple stores online</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Store</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -18025,6 +18878,32 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Persona__c</picklist>
+            <values>
+                <fullName>Miderprise Marty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operator Owen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Startup Suzy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Private_SSL_Certificate__c</picklist>
+            <values>
+                <fullName>FALSE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TRUE</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Product_Detail__c</picklist>
             <values>
                 <fullName>Back Order Functionality</fullName>
@@ -18074,11 +18953,27 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>%24250%2C000 - %24500%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>%245%2C000%2C000 - %2450%2C000%2C000</fullName>
                 <default>false</default>
             </values>
             <values>
+                <fullName>%2450%2C000 - %24250%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>%2450%2C000%2C000 %2B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24500%2C000 - %241%2C000%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%3C %2450%2C000</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -18094,6 +18989,17 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
             <values>
                 <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SBD_Ebay_Power_User__c</picklist>
+            <values>
+                <fullName>False</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>True</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -18138,12 +19044,32 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>Closing</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Engaged</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing%3A New Trial</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>New</fullName>
                 <default>true</default>
+            </values>
+            <values>
+                <fullName>Requalified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Un-Engaged</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Winback</fullName>
+                <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
@@ -18162,17 +19088,152 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Timeline_to_Purchase__c</picklist>
+            <values>
+                <fullName>1-2 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1-2 weeks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1-3 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1-3 weeks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2-3 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3-4 weeks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3-6 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2B months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6-12 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ASAP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than a week</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Year %2B</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Topics_Discussed__c</picklist>
             <values>
+                <fullName>Business growth%2Fscalability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Design%2FTheme</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Driving Website Traffic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integrations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing%2FHelp Driving Traffic to Store</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Migration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payments%2C Shipping%2C %26 Returns</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ROI%2FAnalytics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEO Services</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
             <picklist>Type__c</picklist>
             <values>
+                <fullName>Client Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Designer%2FDev Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Influencer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal%2FBC Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>International</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premium</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Prospect</fullName>
-                <default>true</default>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target %28DM%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trial</fullName>
+                <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
@@ -18203,9 +19264,32 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Viewed_Offers__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Webinar_Name__c</picklist>
             <values>
                 <fullName>5 Things to Boost Sales in 2013</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bigcommerce Partner Program and You</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Success Squad - Store Launch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>The 3 Keys to Next-Level Conversion</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -18320,6 +19404,14 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
             <values>
                 <fullName>Customer feedback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Design Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Domain</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -18495,6 +19587,10 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>Marketing Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Merchandising - Make An Offer App</fullName>
                 <default>false</default>
             </values>
@@ -18631,6 +19727,10 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>SSL</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Ship Audit - 71lbs Shipping Audits</fullName>
                 <default>false</default>
             </values>
@@ -18763,6 +19863,28 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
             <values>
                 <fullName>Seems like they will buy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>n2de__Action__c</picklist>
+            <values>
+                <fullName>Contacted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>rvpe__PartnerLeadAcceptance__c</picklist>
+            <values>
+                <fullName>Accepted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

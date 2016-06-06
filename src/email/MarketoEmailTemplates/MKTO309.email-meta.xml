@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Important change to your partner program</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Partner Tiering - GTM 1052.Email 1</name>
+    <style>none</style>
+    <subject>Important changes to your Partner Program</subject>
+    <textOnly>This is your 60-day notification of changes to our Partner Program Guide Terms.
+
+
+Hi {{lead.First Name:default=there}},
+As your partner, we’re here to help your business grow and succeed. In early Q3, we’re introducing enhancements to the partner program that will improve the way you’re trained and the way you’re paid for referrals.
+
+What’s changing?
+
+
+
+ - We’re introducing a new, tiered ecosystem, allowing you to make bigger commissions as you sell more and grow your BigCommerce practice.
+ - We’re launching training classes that will help you sell more effectively and will be required for advancing in the Partner Program.
+ - We’re aligning marketing support and resources to help you grow your business.
+
+
+
+Over the course of the next month, we’ll be sending out more specifics, so watch your email for more details.
+
+Thank you for your partnership. We look forward to sharing these exciting new benefits with you!
+
+
+
+Sincerely,
+The BigCommerce Partner Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

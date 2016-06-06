@@ -164,110 +164,6 @@
         <inlineHelpText>Source from the lead (if any)</inlineHelpText>
         <picklist>
             <picklistValues>
-                <fullName>Phone / Queue</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Email / Ticket</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Chat</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Campaign Import</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Web Trial</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Web Form</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Webinar</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Hubspot</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>WebToLead</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>AYRM</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EBQ DM</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EBQ DM2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EBQ DM3</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Orion</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>IR Special Report 2014</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>GPN Campaign Import</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Event</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Enterprise Partner Lead</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Netline</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ACQ Hubspot Content</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ACQ Hubspot Demo Request</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ACQ Demand Gen</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PRE Hubspot Content</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PRE Hubspot Demo Request</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PRE Demand Gen</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
                 <fullName>G2Crowd</fullName>
                 <default>false</default>
             </picklistValues>
@@ -7897,14 +7793,6 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <picklistValues>
             <picklist>AccountSource</picklist>
             <values>
-                <fullName>Campaign Import</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Chat</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Datanyze</fullName>
                 <default>false</default>
             </values>
@@ -7913,27 +7801,7 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
                 <default>false</default>
             </values>
             <values>
-                <fullName>Email %2F Ticket</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Enterprise Partner Lead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>IR Special Report 2014</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Internet Retailer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Netline</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Orion</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -7941,23 +7809,7 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
                 <default>false</default>
             </values>
             <values>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone %2F Queue</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>SBD Acquisition</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web Trial</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Webinar</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -10884,35 +10736,7 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <picklistValues>
             <picklist>AccountSource</picklist>
             <values>
-                <fullName>ACQ Demand Gen</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>ACQ Hubspot Content</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>ACQ Hubspot Demo Request</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Campaign Import</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Chat</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Datanyze</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Email %2F Ticket</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Enterprise Partner Lead</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -10920,19 +10744,7 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
                 <default>false</default>
             </values>
             <values>
-                <fullName>IR Special Report 2014</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Internet Retailer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Netline</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Orion</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -10940,35 +10752,7 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
                 <default>false</default>
             </values>
             <values>
-                <fullName>PRE Demand Gen</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>PRE Hubspot Content</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>PRE Hubspot Demo Request</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone %2F Queue</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>SBD Acquisition</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web Trial</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Webinar</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -13610,47 +13394,11 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <picklistValues>
             <picklist>AccountSource</picklist>
             <values>
-                <fullName>Campaign Import</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Chat</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Email %2F Ticket</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Netline</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Other</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone %2F Queue</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>SBD Acquisition</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web Form</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web Trial</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Webinar</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -16301,43 +16049,11 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <picklistValues>
             <picklist>AccountSource</picklist>
             <values>
-                <fullName>Campaign Import</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Chat</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Email %2F Ticket</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Other</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone %2F Queue</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>SBD Acquisition</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web Form</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web Trial</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Webinar</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

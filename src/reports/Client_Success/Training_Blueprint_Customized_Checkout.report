@@ -68,6 +68,6 @@
     <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>lmscons__Training_Content__c$CreatedDate</dateColumn>
-        <interval>INTERVAL_CURRENT</interval>
+        <interval>INTERVAL_PREVCURY</interval>
     </timeFrameFilter>
 </Report>

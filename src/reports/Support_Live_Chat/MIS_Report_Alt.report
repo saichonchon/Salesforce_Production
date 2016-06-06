@@ -28,7 +28,13 @@
         <field>Case.Category__c</field>
     </columns>
     <columns>
+        <field>Case.Bigcommerce_Store_URL__c</field>
+    </columns>
+    <columns>
         <field>REASON</field>
+    </columns>
+    <columns>
+        <field>Case.Issue_Resolved__c</field>
     </columns>
     <columns>
         <field>STATUS</field>
@@ -123,6 +129,6 @@
     <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>COMMENT_CREATED_DATE</dateColumn>
-        <interval>INTERVAL_YESTERDAY</interval>
+        <interval>INTERVAL_TODAY</interval>
     </timeFrameFilter>
 </Report>

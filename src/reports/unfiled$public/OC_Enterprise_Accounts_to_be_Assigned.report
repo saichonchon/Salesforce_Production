@@ -131,6 +131,11 @@
         <field>Opportunity.Onboarding_Specialist__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>STAGE_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
     <name>Enterprise Accounts to be Assigned OC</name>
     <params>
         <name>open</name>

@@ -95,12 +95,6 @@
         </values>
         <values>
             <sourceValues>
-                <sourceValue>Giant Vapes</sourceValue>
-            </sourceValues>
-            <value>Giant Vapes</value>
-        </values>
-        <values>
-            <sourceValues>
                 <sourceValue>Meda</sourceValue>
             </sourceValues>
             <sourceValues>
@@ -152,6 +146,12 @@
                 <sourceValue>Thrifty Appliance Part</sourceValue>
             </sourceValues>
             <value>Appliance Zone</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>CanningValeAU</sourceValue>
+            </sourceValues>
+            <value>CanningVale</value>
         </values>
     </buckets>
     <buckets>
@@ -240,14 +240,19 @@
             <value>Enterprise Account Management,Premium Account Services</value>
         </criteriaItems>
         <criteriaItems>
-            <column>STAGE_NAME</column>
-            <operator>notEqual</operator>
-            <value>Closed Lost,Rejected,Terminated,Removed,Cancelled</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>RECORDTYPE</column>
             <operator>equals</operator>
             <value>Opportunity.Store_Purchase</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <operator>equals</operator>
+            <value>Purchased,Suspended</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.StoreURL__c</column>
+            <operator>notEqual</operator>
+            <value></value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>

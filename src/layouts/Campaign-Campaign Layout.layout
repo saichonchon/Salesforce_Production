@@ -305,8 +305,8 @@
         <fields>ACC_OWNER.ALIAS</fields>
         <fields>LAST_UPDATE</fields>
         <relatedList>RelatedCampaignMemberList</relatedList>
-        <sortField>COMPANY</sortField>
-        <sortOrder>Asc</sortOrder>
+        <sortField>LAST_UPDATE</sortField>
+        <sortOrder>Desc</sortOrder>
     </relatedLists>
     <relatedLists>
         <fields>CAMPAIGN.NAME</fields>

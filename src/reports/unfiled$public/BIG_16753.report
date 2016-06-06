@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>CREATED_DATE</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
     <columns>
         <field>CASE_NUMBER</field>
     </columns>
     <columns>
         <field>OWNER</field>
-    </columns>
-    <columns>
-        <field>CREATED_DATE</field>
     </columns>
     <columns>
         <field>AGE</field>
@@ -28,11 +49,16 @@
         <criteriaItems>
             <column>Case.JIRA_Link_Operations__c</column>
             <operator>contains</operator>
-            <value>EAT-1288</value>
+            <value>CP-576</value>
         </criteriaItems>
     </filter>
-    <format>Matrix</format>
-    <name>Cases for EAT-1288</name>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Cases for CP-576</name>
     <params>
         <name>units</name>
         <value>h</value>

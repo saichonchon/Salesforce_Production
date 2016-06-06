@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>IRCE Ecom Workshop Invite/Reminder.Reminder Email 1</name>
+    <style>none</style>
+    <subject>Thanks for registering for the Best Practices in Ecommerce Workshop</subject>
+    <textOnly>Join us for the Best Practices in Ecommerce workshop hosted by BigCommerce.
+Hi {{lead.First Name:default=there}},
+We are thrilled you are joining us for the Best Practices in Ecommerce workshop hosted by BigCommerce where you can sample one of the world’s most sought-after bourbons. Check out the latest agenda below and plan to stick around for the networking reception at the end of the workshop for the exclusive tasting of Pappy Van Winkle Bourbon.
+
+Agenda:
+
+
+
+
+ - 9:30 AM - 10:00 AM | Registration, Exhibit Hall Open 
+
+
+ - 10:00 AM - 10:30 AM | Welcome Keynote, Current Industry Trends: Brent Bellm, BigCommerce CEO 
+
+
+ - 10:30 AM - 11:00 AM | Payments: Transformation, Innovation and Partnership, Brad Brodigan, PayPal, VP and GM of Retail &amp; Mid Market, North America 
+
+
+ - 11:00 AM - 12:00 PM | Best Practices in Store Design, Adam Alter, author of NYT bestseller &apos;Drunk Tank Pink,&apos; marketing/psychology prof at NYU. Case studies from design partners. 
+
+
+ - 12:00 PM - 1:00 PM | Lunch sponsored by PayPal, Exhibit Hall Open 
+
+
+ - 1:00 PM - 2:00 PM | Best Practices in Store Conversion Doug Stephens, author of The Retail Revival &amp; global advisor on the #FutureOfRetail. Syndicated columnist for CBC Radio. Co-host of The Future In Store. Case studies from design and solution partners. 
+
+
+ - 2:00 PM - 2:45 PM | Best Practices in Omnichannel Doug Stephens, author of The Retail Revival &amp; global advisor on the #FutureOfRetail. Syndicated columnist for CBC Radio. Co-host of The Future In Store. Case studies from design and solution partners. 
+
+
+ - 2:45 PM - 3:00 PM | How We Buy — the latest research on ecommerce buying behavior 
+
+
+ - 3:00 PM | Networking Reception, Exhibit Hall Open “A Taste of Pappy” featuring a Pappy Van Winkle bourbon tasting Sponsored by: PayPal, Americaneagle.com, Ecommerce Partners, Groove, Plum Tree Group, Silk Software
+
+
+
+
+A Taste of Pappy, featuring Pappy Van Winkle Bourbon
+
+“Of course, this is no ordinary bourbon. Pappy Van Winkle has become the most famous whiskey in America, a unicorn unseen on store shelves for years, untasted by the vast majority of humans, and sold for astronomical sums on the secondary market. Those 28 bottles have a retail value of around $3,000 and a secondary value of perhaps $20,000, depending on age.” — Esquire
+What: Best Practices in Ecommerce Workshop, lunch will be provided
+When: Tuesday, June 7th from 10:00 AM - 4:00 PM, featuring an exclusive tasting of Pappy Van Winkle Bourbon during the reception
+Where: Hyatt Regency, 151 E Upper Wacker Dr, Chicago, IL 60601
+
+Want to bring a friend or colleague? Have them register below.
+
+
+
+
+Register to attend &lt;[[http://grow.bigcommerce.com/BigCommerce-IRCE16-Ecommerce-Workshop.html]]&gt;
+
+
+
+
+
+See you soon!
+Best, 
+The BigCommerce Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

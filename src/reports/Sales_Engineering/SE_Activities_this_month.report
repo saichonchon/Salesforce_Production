@@ -44,9 +44,14 @@
     <description>SE activities by type for the current month</description>
     <filter>
         <criteriaItems>
+            <column>ASSIGNED</column>
+            <operator>contains</operator>
+            <value>andrew todd,nathan booker,alexis varela,sachin wadhawan,stevie huval</value>
+        </criteriaItems>
+        <criteriaItems>
             <column>TASK_TYPE</column>
-            <operator>equals</operator>
-            <value>Demo - Onsite,Demo - Remote,Integration Scoping,Internal Consult,Partner Consult,Partner Onboarding,Partner Q&amp;A,Partner Scoping,Partner Training,Post-sale Consult,RFP,Technical Qualification</value>
+            <operator>notContain</operator>
+            <value>,Appointment,Autocreated,Chat,Meeting,Reminder,Success Squad Sync,Email</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

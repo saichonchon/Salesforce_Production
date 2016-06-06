@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVAccount__c.Total_Active_MRR__c</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVAccount__c.rvpe__StateProvince__c</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVAccount__c.rvpe__Country__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>FK_$rvpe__RVMember__c.rvpe__DateAgreedToTerms__c</column>
+            <operator>greaterOrEqual</operator>
+            <value>7/1/2015 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_OWNER_NAME</column>
+            <operator>contains</operator>
+            <value>Bigcommerce</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>rvpe__RVAccount__c.First_Rev_Date__c</column>
+            <operator>greaterOrEqual</operator>
+            <value>7/1/2015</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>Prog Partners: Transacted within past yr</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$rvpe__RVAccount__c@rvpe__RVAccount__c.rvpe__RVPrimaryMember__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>rvpe__RVAccount__c.Total_Active_MRR__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>rvpe__RVAccount__c.Approved_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

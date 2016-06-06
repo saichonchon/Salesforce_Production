@@ -96,6 +96,7 @@
         <field>Case.Feedback__c</field>
     </columns>
     <filter>
+        <booleanFilter>(1 AND 3) AND (2 OR 4)</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
             <operator>equals</operator>
@@ -110,6 +111,11 @@
             <column>Case.Satisfaction__c</column>
             <operator>notEqual</operator>
             <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Survey_Name__c</column>
+            <operator>contains</operator>
+            <value>Resolution Email Survey</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

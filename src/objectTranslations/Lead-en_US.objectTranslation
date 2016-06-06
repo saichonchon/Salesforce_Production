@@ -280,22 +280,6 @@
         <label><!-- Unqualified Reason --></label>
         <name>Closed_Lost_Reason__c</name>
         <picklistValues>
-            <masterLabel>1 Lost to Competitor</masterLabel>
-            <translation><!-- 1 Lost to Competitor --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>2 Not Qualified</masterLabel>
-            <translation><!-- 2 Not Qualified --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>3 Product Feature/Functionality</masterLabel>
-            <translation><!-- 3 Product Feature/Functionality --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>4 Test Account</masterLabel>
-            <translation><!-- 4 Test Account --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Accidental Trial/No ecomm</masterLabel>
             <translation><!-- Accidental Trial/No ecomm --></translation>
         </picklistValues>
@@ -304,16 +288,8 @@
             <translation><!-- Auto Closed Lost --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Could Not Contact</masterLabel>
-            <translation><!-- Could Not Contact --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Data Cleanup</masterLabel>
             <translation><!-- Data Cleanup --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Duplicate</masterLabel>
-            <translation><!-- Duplicate --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Duplicate Record</masterLabel>
@@ -342,18 +318,6 @@
         <picklistValues>
             <masterLabel>Not Mature Enough/No Products/Too Small</masterLabel>
             <translation><!-- Not Mature Enough/No Products/Too Small --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Orion</masterLabel>
-            <translation><!-- Orion --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Poor In-Trial Client Success Experience</masterLabel>
-            <translation><!-- Poor In-Trial Client Success Experience --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Price</masterLabel>
-            <translation><!-- Price --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Pricing Issue</masterLabel>
@@ -394,10 +358,6 @@
         <picklistValues>
             <masterLabel>Product/Wholesale/B2B</masterLabel>
             <translation><!-- Product/Wholesale/B2B --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Risk of Migration Issues</masterLabel>
-            <translation><!-- Risk of Migration Issues --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Test Account</masterLabel>
@@ -1697,36 +1657,12 @@
     <fields>
         <name>LeadSource</name>
         <picklistValues>
-            <masterLabel>ACQ Demand Gen</masterLabel>
-            <translation><!-- ACQ Demand Gen --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>ACQ Hubspot Content</masterLabel>
-            <translation><!-- ACQ Hubspot Content --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>ACQ Hubspot Demo Request</masterLabel>
-            <translation><!-- ACQ Hubspot Demo Request --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>ACQ List Upload</masterLabel>
             <translation><!-- ACQ List Upload --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>AYRM</masterLabel>
-            <translation><!-- AYRM --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Affiliate</masterLabel>
             <translation><!-- Affiliate --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Campaign Import</masterLabel>
-            <translation><!-- Campaign Import --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Chat</masterLabel>
-            <translation><!-- Chat --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Datanyze</masterLabel>
@@ -1745,32 +1681,8 @@
             <translation><!-- Display --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>EBQ DM</masterLabel>
-            <translation><!-- EBQ DM --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>EBQ DM2</masterLabel>
-            <translation><!-- EBQ DM2 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>EBQ DM3</masterLabel>
-            <translation><!-- EBQ DM3 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Email / Ticket</masterLabel>
-            <translation><!-- Email / Ticket --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Email Advertising</masterLabel>
             <translation><!-- Email Advertising --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Enterprise Partner Lead</masterLabel>
-            <translation><!-- Enterprise Partner Lead --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Event</masterLabel>
-            <translation><!-- Event --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Events</masterLabel>
@@ -1781,28 +1693,12 @@
             <translation><!-- G2Crowd --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>GPN Campaign Import</masterLabel>
-            <translation><!-- GPN Campaign Import --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Hubspot</masterLabel>
-            <translation><!-- Hubspot --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>IR Special Report 2014</masterLabel>
-            <translation><!-- IR Special Report 2014 --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Inbound</masterLabel>
             <translation><!-- Inbound --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Internet Retailer</masterLabel>
             <translation><!-- Internet Retailer --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Netline</masterLabel>
-            <translation><!-- Netline --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Organic Search</masterLabel>
@@ -1813,32 +1709,8 @@
             <translation><!-- Organic Social --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Orion</masterLabel>
-            <translation><!-- Orion --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Other</masterLabel>
             <translation><!-- Other --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>PRE Demand Gen</masterLabel>
-            <translation><!-- PRE Demand Gen --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>PRE Hubspot Content</masterLabel>
-            <translation><!-- PRE Hubspot Content --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>PRE Hubspot Demo Request</masterLabel>
-            <translation><!-- PRE Hubspot Demo Request --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Partner</masterLabel>
-            <translation><!-- Partner --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Phone / Queue</masterLabel>
-            <translation><!-- Phone / Queue --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Print Ads</masterLabel>
@@ -1859,22 +1731,6 @@
         <picklistValues>
             <masterLabel>Social Ads</masterLabel>
             <translation><!-- Social Ads --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Web Form</masterLabel>
-            <translation><!-- Web Form --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Web Trial</masterLabel>
-            <translation><!-- Web Trial --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>WebToLead</masterLabel>
-            <translation><!-- WebToLead --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Webinar</masterLabel>
-            <translation><!-- Webinar --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Webinar List</masterLabel>
@@ -2188,6 +2044,10 @@
         <help><!-- Marketing UTM Source populated from Hubspot --></help>
         <label><!-- MKT UTM Source --></label>
         <name>MKT_UTM_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manager Notes --></label>
+        <name>Manager_Notes__c</name>
     </fields>
     <fields>
         <help><!-- Check if the client is interested but needs time.  This will be used to send marketing material to the client. --></help>
@@ -2677,7 +2537,7 @@
         <name>Sales_Phone__c</name>
     </fields>
     <fields>
-        <label><!-- Manager Notes --></label>
+        <label><!-- Sales Notes --></label>
         <name>Sales_Rep_Notes__c</name>
     </fields>
     <fields>

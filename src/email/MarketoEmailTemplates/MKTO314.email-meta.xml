@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>IRCE Ecom Workshop Invite/Reminder.Reminder Email 2</name>
+    <style>none</style>
+    <subject>See you tomorrow for the Best Practices in Ecommerce Workshop</subject>
+    <textOnly>Join us for the Best Practices in Ecommerce workshop hosted by BigCommerce.
+Hi {{lead.First Name:default=there}},
+We’re looking forward to seeing you in Chicago tomorrow for the Best Practices in Ecommerce Workshop!
+When: Tuesday, June 7th, 11:00AM - 4:30PM, includes complimentary buffet lunch 
+Where: Hyatt Regency Chicago, Gold Level, West Tower, Regency Ballrooms, 151 E Upper Wacker Dr, Chicago, IL 60601 
+
+
+Agenda:
+
+
+
+
+ - 11:00 AM - 12:00 PM | Registration, Lunch sponsored by PayPal
+
+
+ - 12:00 PM - 12:15 PM | Welcome, Brent Bellm, BigCommerce CEO 
+
+
+ - 12:15 PM - 12:45 PM | Rewiring Commerce: Connecting with Today’s Consumers, Brad Brodigan, PayPal, VP and GM of Retail &amp; Mid Market, North America
+
+
+ - 12:45 PM - 1:45 PM | Best Practices in Store Design, Adam Alter, author of NYT bestseller &apos;Drunk Tank Pink&apos;
+
+
+ - 1:45 PM - 2:45 PM | Best Practices in Store Conversion, Doug Stephens, author of The Retail Revival. Syndicated columnist for CBC Radio. Co-host of The Future In Store. 
+
+
+ - 2:45 PM - 3:30 PM | Best Practices in Omnichannel, Doug Stephens, author of The Retail Revival. Syndicated columnist for CBC Radio. Co-host of The Future In Store.
+
+ - 3:30 PM | Reception, “A Taste of Pappy” featuring a Pappy Van Winkle bourbon tasting Sponsored by: PayPal, Americaneagle.com, Ecommerce Partners, Groove, Plum Tree Group, Silk Software
+
+
+“Of course, this is no ordinary bourbon. Pappy Van Winkle has become the most famous whiskey in America, a unicorn unseen on store shelves for years, untasted by the vast majority of humans, and sold for astronomical sums on the secondary market. Those 28 bottles have a retail value of around $3,000 and a secondary value of perhaps $20,000, depending on age.” — Esquire
+Best, 
+The BigCommerce Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -82,7 +82,7 @@
         <criteriaItems>
             <column>Opportunity.Account_Management_Services__c</column>
             <operator>equals</operator>
-            <value>Enterprise Account Management</value>
+            <value>Enterprise Account Management,Premium Account Services</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.ENT_Support__c</column>
@@ -119,7 +119,6 @@
     <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>Opportunity.Launch_Date__c</dateColumn>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2016-01-01</startDate>
+        <interval>INTERVAL_CURFY</interval>
     </timeFrameFilter>
 </Report>

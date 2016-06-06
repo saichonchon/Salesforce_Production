@@ -223,11 +223,11 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Sales_Notes__c</field>
+                <field>Pain_Points__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Pain_Points__c</field>
+                <field>Sales_Notes__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -238,6 +238,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Temperature__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Manager_Notes__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>

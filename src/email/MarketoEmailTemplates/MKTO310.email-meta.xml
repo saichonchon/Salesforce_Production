@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Post Paid.Email 7- Not Launched</name>
+    <style>none</style>
+    <subject>Need help launching your store?</subject>
+    <textOnly>It looks like you haven&apos;t launched your store yet. Here are a few Bigcommerce resources to help.
+We’re here to help
+
+
+
+
+
+
+
+Launch your store &lt;[[https://login.bigcommerce.com/login]]&gt;
+Get help launching your store
+It looks like you haven’t launched your store yet. Here are a few Bigcommerce resources that can help.
+
+Contact Support
+Merchants who have spoken with our experts have improved search traffic by 32% and increased revenue by 47% on average. Call 1-866-949-5336 &lt;[[tel:+18669495336]]&gt; or email support &lt;[[https://support.bigcommerce.com/contact]]&gt; to get help launching and growing your business.
+Check out our Support Portal
+Find how-to articles, videos, guides and troubleshooting &lt;[[https://support.bigcommerce.com/]]&gt; resources in our support portal.
+Leverage design or development experts
+Our global network of certified partners can help you set up and customize your online store. Find design or development experts &lt;[[https://www.bigcommerce.com/experts/]]&gt; now.
+Read the Bigcommerce Store Launch Guide
+Inside the Store Launch Guide &lt;[[https://support.bigcommerce.com/articles/Learning/Store-Launch-Guide]]&gt;, you will find all the steps to set up your store on the Bigcommerce platform.
+Launch your store &lt;[[https://login.bigcommerce.com/login]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

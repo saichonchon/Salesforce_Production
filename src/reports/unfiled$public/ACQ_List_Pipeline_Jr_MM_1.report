@@ -86,7 +86,7 @@
         <relatedTableJoinColumn>Opportunity</relatedTableJoinColumn>
     </crossFilters>
     <filter>
-        <booleanFilter>((((1 AND 2  AND 3) AND 4) AND 5)) AND 6</booleanFilter>
+        <booleanFilter>(((((1 AND 2  AND 3) AND 4) AND 5)) AND 6) AND 7</booleanFilter>
         <criteriaItems>
             <column>PRIMARY</column>
             <operator>equals</operator>
@@ -100,7 +100,7 @@
         <criteriaItems>
             <column>CAMPAIGN.PARENT.NAME</column>
             <operator>contains</operator>
-            <value>ACQ.Prospect,ACQ.Prospects,parent</value>
+            <value>ACQ.Prospect,ACQ.Prospects</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Owner_Team__c</column>
@@ -116,6 +116,11 @@
             <column>CAMPAIGN.PARENT.NAME</column>
             <operator>notContain</operator>
             <value>gobig,seabrook,enterprise,dialer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN.PARENT.NAME</column>
+            <operator>contains</operator>
+            <value>parent</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>

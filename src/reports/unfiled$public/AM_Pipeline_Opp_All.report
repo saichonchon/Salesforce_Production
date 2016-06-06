@@ -207,11 +207,6 @@
             <value>Enterprise Account Management</value>
         </criteriaItems>
         <criteriaItems>
-            <column>STAGE_NAME</column>
-            <operator>notEqual</operator>
-            <value>Closed Lost,Rejected,Terminated,Removed,Cancelled</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>RECORDTYPE</column>
             <operator>equals</operator>
             <value>Opportunity.Store_Purchase</value>
@@ -220,6 +215,16 @@
             <column>Opportunity.Launch_Status__c</column>
             <operator>equals</operator>
             <value>Launched</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <operator>equals</operator>
+            <value>Purchased,Suspended</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.StoreURL__c</column>
+            <operator>notEqual</operator>
+            <value></value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>

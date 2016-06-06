@@ -8010,6 +8010,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Manager_Notes__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Lead.Marketing_Opt_In__c</field>
         <readable>false</readable>
@@ -11317,6 +11322,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.MRR_Change__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Manager_Notes__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -16287,6 +16297,14 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>CaseClose-Client Success Close Case Layout</layout>
+        <recordType>Case.Partner_Support</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CaseClose-Client Success Close Case Layout</layout>
+        <recordType>Case.Premium_Account_Services</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CaseClose-Client Success Close Case Layout</layout>
         <recordType>Case.Professional_Services</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -16402,24 +16420,24 @@
         <layout>Lead-Default</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Lead-Default</layout>
+        <recordType>Lead.Lead_Qualifier</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead-Default</layout>
+        <recordType>Lead.Sales_Prospect</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead-Default</layout>
+        <recordType>Lead.Strategic_Partner_Prospect</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Lead-Default - No Outside Visualforce Pages</layout>
         <recordType>Lead.Client_Prospect</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Lead-Default - No Outside Visualforce Pages</layout>
-        <recordType>Lead.Lead_Qualifier</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lead-Default - No Outside Visualforce Pages</layout>
         <recordType>Lead.Partner_Prospect</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lead-Default - No Outside Visualforce Pages</layout>
-        <recordType>Lead.Sales_Prospect</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lead-Default - No Outside Visualforce Pages</layout>
-        <recordType>Lead.Strategic_Partner_Prospect</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Lead_Retrieved__c-Lead Owner Assignment Layout</layout>
@@ -17678,6 +17696,11 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Case.Direct_Sales</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.Enterprise_Account_Services</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>

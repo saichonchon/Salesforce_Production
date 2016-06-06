@@ -3827,15 +3827,6 @@ NULL)
         </sharedTo>
     </listViews>
     <listViews>
-        <fullName>Client_Development_Upsell</fullName>
-        <filterScope>Queue</filterScope>
-        <label>Client Development/Upsell Queue</label>
-        <queue>Client_Development_Upsell</queue>
-        <sharedTo>
-            <role>Outbound_Sales_II</role>
-        </sharedTo>
-    </listViews>
-    <listViews>
         <fullName>Day_15_Trials</fullName>
         <columns>NAME</columns>
         <columns>Lead__c</columns>

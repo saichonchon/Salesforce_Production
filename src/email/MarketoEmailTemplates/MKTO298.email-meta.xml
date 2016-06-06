@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Pinterest- Early Adopters Launch.Email 1</name>
+    <style>none</style>
+    <subject>Introducing Pinterest Buyable Pins</subject>
+    <textOnly>Preview text
+Sell directly on Pinterest
+Introducing our native Buyable Pins integration
+Get started &lt;[[https://www.bigcommerce.com/blog/bigcommerce-merchants-can-sell-on-pinterest]]&gt;
+Seamlessly sell your products on Pinterest
+Your store has been selected for early access to our new Pinterest Buyable Pins integration. Buyable Pins allow 100 million active monthly pinners to browse, pin and buy your products without ever leaving Pinterest.
+Connect your store to Pinterest to get:
+
+
+ - Streamlined purchasing right from Pinterest, reducing friction and improving conversion
+ - A mobile-optimized checkout that saves shipping and payment info so purchases can be completed with just two clicks
+ - A centralized inventory that lets you to process orders from Pinterest in your BigCommerce control panel
+Once you connect your store to Pinterest, any pinned product will automatically become a Buyable Pin — there’s no need to create or manage additional listings.
+Get Started &lt;[[https://www.bigcommerce.com/blog/bigcommerce-merchants-can-sell-on-pinterest]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

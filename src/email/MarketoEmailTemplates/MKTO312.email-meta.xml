@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>How We Buy.Auto Responder</name>
+    <style>none</style>
+    <subject>The State of Omni-Channel Retail Report Bonus Content</subject>
+    <textOnly>Now that you’ve gotten one piece of your bonus content from The State of Omni-Channel Retail Report, aren’t you curious about the bonus content?
+Hi {{lead.First Name:default=there}},
+Now that you’ve gotten one piece of content from The State of Omni-Channel Retail Report, aren’t you curious about the other bonus content pieces? I thought you might be! Here are permanent links to the landing pages for all three pieces of bonus content from our report. Just fill out the form and the info is all yours!
+
+
+
+ - Industry Experts Weigh in on The State of Omni-Channel Retail [Webinar] &lt;[[http://grow.bigcommerce.com/How-We-Buy-Webinar.html]]&gt;
+ - 20+ Data-Driven Recommendations to Grow Omni-Channel Revenue [Tips + Tricks] &lt;[[http://grow.bigcommerce.com/How-We-Buy-Retailer-Tips-Tricks.html]]&gt;
+ - Consumer Personas Across Channels [Merchandising Insights] &lt;[[http://grow.bigcommerce.com/How-We-Buy-Extra-Graphics.html]]&gt;
+
+
+
+Also, feel free to let me know how you plan to use this data to inform your go to market strategies. I&apos;m all ears, and you could even be featured on the blog!
+Best, 
+Tracey Wallace 
+Managing Editor, BigCommerce Blog</textOnly>
+    <type>custom</type>
+</EmailTemplate>

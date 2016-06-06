@@ -12,7 +12,7 @@
         <criteriaItems>
             <column>Case$RecordType</column>
             <operator>equals</operator>
-            <value>zEnterprise Account Services</value>
+            <value>Case.Enterprise_Account_Services</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case$IsClosed</column>

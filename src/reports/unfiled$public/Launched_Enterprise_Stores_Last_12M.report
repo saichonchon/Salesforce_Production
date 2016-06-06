@@ -87,7 +87,7 @@
         <criteriaItems>
             <column>Opportunity.Account_Management_Services__c</column>
             <operator>equals</operator>
-            <value>Enterprise Account Management</value>
+            <value>Enterprise Account Management,Premium Account Services</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.ENT_Support__c</column>

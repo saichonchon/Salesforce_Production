@@ -22,12 +22,12 @@
         <criteriaItems>
             <column>OWNER</column>
             <operator>equals</operator>
-            <value>,Aries Leyte,Carlos Venua,Clarissa Packing,Criza Vilo,Donny Cotejo,Glenn Saturno,Jasm Padilla,John San Diego,John Ubaldo,Jollyann Gudoy,Jovic Leovis,Kenneth Cabaobao,Kim Radaza,Neil Martinez,Paulo Mojica,Ryan Juarez,Adrian Estopace,Alvin DeLeon,Chris Tan,Elijah Ignacio,Gian deJesus,Harold De Asas,Jan Saria,Jeffrey Gregorio,John Ferrer,Jude Abrigo,Luigi Modesto,Maikko Aguilar,Marco Legaspi,Maria Gino,Marielle Morre,Marjorie Tamayo,Mark Hernandez,Mary Quilaga,Mireille Ferol,Nicollo Nalus,Patricia Cacho,Paul Castro,Racel Arce,Regie Matibag,Richard Nambatac,Ron Ramos,Ruth Relingado,Faith Esguerra,Mariechu Balerite,Regine SanJuan,Renz Santos,Shirley Detera,Jun Tupas</value>
+            <value>Adrian Estopace,Alvin DeLeon,Aries Leyte,Faith Esguerra,Harold De Asas,Jan Saria,Jeffrey Gregorio,John San Diego,John Ferrer,Jovic Leovis,Jude Abrigo,Jun Tupas,Kenneth Cabaobao,Kim Radaza,Luigi Modesto,Marielle Morre,Marjorie Tamayo,Mark Hernandez,Mary Quilaga,Mireille Ferol,Racel Arce,Regie Matibag,Regine SanJuan,Ryan Juarez,Shirley Detera,Juan Calanoc,Rianne Insigne,Jonathan Castro,Amanda Aguirre,Patricia Santos,Roger Dayap,Jonalyn Fresnido,Raymond Macatangay,Josiephene Caceres,Marfee DelaCruz,Christie Rodriguez,Jerome Cadangyao,Roshaolin Nuqui,Kristel Pura,Jenelyn Pawhay,John Ordonez</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
             <operator>notEqual</operator>
-            <value>Pending Acceptance,Waiting on Client,Closed</value>
+            <value>Pending Acceptance,Waiting on Client,Closed,Auto-Closed</value>
         </criteriaItems>
         <criteriaItems>
             <column>RECORDTYPE</column>

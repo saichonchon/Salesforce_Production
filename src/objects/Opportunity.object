@@ -65,10 +65,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Qualification</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Rejected</fullName>
             <default>false</default>
         </values>
@@ -179,10 +175,6 @@
         </values>
         <values>
             <fullName>Published</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Qualification</fullName>
             <default>false</default>
         </values>
         <values>
@@ -859,10 +851,11 @@ MBASubscriptionID__c,null)</formula>
         <fullName>Billing_Invoice_Special_Instructions__c</fullName>
         <externalId>false</externalId>
         <label>Billing/Invoice Special Instructions</label>
-        <required>false</required>
+        <length>1000</length>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
-        <type>TextArea</type>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
     </fields>
     <fields>
         <fullName>Billing_Terms__c</fullName>
@@ -4305,110 +4298,6 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
         <fullName>LeadSource</fullName>
         <picklist>
             <picklistValues>
-                <fullName>Phone / Queue</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Email / Ticket</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Chat</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Campaign Import</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Web Trial</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Web Form</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Webinar</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Hubspot</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>WebToLead</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>AYRM</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EBQ DM</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EBQ DM2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EBQ DM3</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Orion</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>IR Special Report 2014</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>GPN Campaign Import</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Event</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Enterprise Partner Lead</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Netline</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ACQ Hubspot Content</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ACQ Hubspot Demo Request</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ACQ Demand Gen</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PRE Hubspot Content</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PRE Hubspot Demo Request</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PRE Demand Gen</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
                 <fullName>G2Crowd</fullName>
                 <default>false</default>
             </picklistValues>
@@ -4941,6 +4830,16 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
         <scale>2</scale>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Manager_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Manager Notes</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
     </fields>
     <fields>
         <fullName>MarketingCampaign__c</fullName>
@@ -6381,23 +6280,15 @@ Account Management</description>
         <label>Projected Annual Revenue</label>
         <picklist>
             <picklistValues>
-                <fullName>Less than $100,000</fullName>
+                <fullName>&lt; $50,000</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>$100,000 - $500,000</fullName>
+                <fullName>$50,000 - $250,000</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Less than $200,000</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>$200,000 - $1,000,000</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Less than $500,000</fullName>
+                <fullName>$250,000 - $500,000</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -6405,27 +6296,19 @@ Account Management</description>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>$1,000,000 - $2,500,000</fullName>
+                <fullName>$1,000,000 - $2,000,000</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>$2,500,000 - $5,000,000</fullName>
+                <fullName>$2,000,000 - $5,000,000</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>$5,000,001 - $10,000,000</fullName>
+                <fullName>$5,000,000 - $50,000,000</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>$5,000,000+</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>$10,000,001 +</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>$100,000,001 - $500,000,000</fullName>
+                <fullName>$50,000,000 +</fullName>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
@@ -6805,7 +6688,7 @@ null) ,NULL
     <fields>
         <fullName>Sales_Notes__c</fullName>
         <externalId>false</externalId>
-        <label>Manager Notes</label>
+        <label>Sales Notes</label>
         <length>32768</length>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -6997,14 +6880,6 @@ null) ,NULL
                 <default>false</default>
                 <forecastCategory>Pipeline</forecastCategory>
                 <probability>10</probability>
-                <won>false</won>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Qualification</fullName>
-                <closed>false</closed>
-                <default>false</default>
-                <forecastCategory>Pipeline</forecastCategory>
-                <probability>15</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
@@ -11328,55 +11203,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>LeadSource</picklist>
             <values>
-                <fullName>Campaign Import</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Chat</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Email %2F Ticket</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Enterprise Partner Lead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hubspot</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Netline</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Other</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone %2F Queue</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>SBD Acquisition</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web Form</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web Trial</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Webinar</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -11768,11 +11599,27 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>Projected_Annual_Revenue__c</picklist>
             <values>
-                <fullName>%2410%2C000%2C001 %2B</fullName>
+                <fullName>%241%2C000%2C000 - %242%2C000%2C000</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>%24100%2C000%2C001 - %24500%2C000%2C000</fullName>
+                <fullName>%242%2C000%2C000 - %245%2C000%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24250%2C000 - %24500%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%245%2C000%2C000 - %2450%2C000%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2450%2C000 - %24250%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2450%2C000%2C000 %2B</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -11780,7 +11627,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Less than %24500%2C000</fullName>
+                <fullName>%3C %2450%2C000</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -13512,51 +13359,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>LeadSource</picklist>
             <values>
-                <fullName>Campaign Import</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Chat</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Email %2F Ticket</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hubspot</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Netline</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Other</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone %2F Queue</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>SBD Acquisition</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web Form</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web Trial</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Webinar</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -13800,11 +13607,27 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>Projected_Annual_Revenue__c</picklist>
             <values>
-                <fullName>%2410%2C000%2C001 %2B</fullName>
+                <fullName>%241%2C000%2C000 - %242%2C000%2C000</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>%24100%2C000%2C001 - %24500%2C000%2C000</fullName>
+                <fullName>%242%2C000%2C000 - %245%2C000%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24250%2C000 - %24500%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%245%2C000%2C000 - %2450%2C000%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2450%2C000 - %24250%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2450%2C000%2C000 %2B</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13812,7 +13635,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Less than %24500%2C000</fullName>
+                <fullName>%3C %2450%2C000</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -15358,51 +15181,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>LeadSource</picklist>
             <values>
-                <fullName>Campaign Import</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Chat</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Email %2F Ticket</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hubspot</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Netline</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Other</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone %2F Queue</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>SBD Acquisition</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web Form</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web Trial</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Webinar</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -15738,11 +15521,27 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>Projected_Annual_Revenue__c</picklist>
             <values>
-                <fullName>%2410%2C000%2C001 %2B</fullName>
+                <fullName>%241%2C000%2C000 - %242%2C000%2C000</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>%24100%2C000%2C001 - %24500%2C000%2C000</fullName>
+                <fullName>%242%2C000%2C000 - %245%2C000%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24250%2C000 - %24500%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%245%2C000%2C000 - %2450%2C000%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2450%2C000 - %24250%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2450%2C000%2C000 %2B</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -15750,7 +15549,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Less than %24500%2C000</fullName>
+                <fullName>%3C %2450%2C000</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -18390,11 +18189,27 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>Projected_Annual_Revenue__c</picklist>
             <values>
-                <fullName>%2410%2C000%2C001 %2B</fullName>
+                <fullName>%241%2C000%2C000 - %242%2C000%2C000</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>%24100%2C000%2C001 - %24500%2C000%2C000</fullName>
+                <fullName>%242%2C000%2C000 - %245%2C000%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24250%2C000 - %24500%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%245%2C000%2C000 - %2450%2C000%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2450%2C000 - %24250%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2450%2C000%2C000 %2B</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -18402,7 +18217,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Less than %24500%2C000</fullName>
+                <fullName>%3C %2450%2C000</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -20884,55 +20699,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>LeadSource</picklist>
             <values>
-                <fullName>Campaign Import</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Chat</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Email %2F Ticket</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Enterprise Partner Lead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hubspot</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Netline</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Other</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone %2F Queue</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>SBD Acquisition</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web Form</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web Trial</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Webinar</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -21522,35 +21293,27 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>Projected_Annual_Revenue__c</picklist>
             <values>
-                <fullName>%241%2C000%2C000 - %242%2C500%2C000</fullName>
+                <fullName>%241%2C000%2C000 - %242%2C000%2C000</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>%2410%2C000%2C001 %2B</fullName>
+                <fullName>%242%2C000%2C000 - %245%2C000%2C000</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>%24100%2C000 - %24500%2C000</fullName>
+                <fullName>%24250%2C000 - %24500%2C000</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>%24100%2C000%2C001 - %24500%2C000%2C000</fullName>
+                <fullName>%245%2C000%2C000 - %2450%2C000%2C000</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>%242%2C500%2C000 - %245%2C000%2C000</fullName>
+                <fullName>%2450%2C000 - %24250%2C000</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>%24200%2C000 - %241%2C000%2C000</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%245%2C000%2C000%2B</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%245%2C000%2C001 - %2410%2C000%2C000</fullName>
+                <fullName>%2450%2C000%2C000 %2B</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -21558,15 +21321,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Less than %24100%2C000</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Less than %24200%2C000</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Less than %24500%2C000</fullName>
+                <fullName>%3C %2450%2C000</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -24612,35 +24367,27 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>Projected_Annual_Revenue__c</picklist>
             <values>
-                <fullName>%241%2C000%2C000 - %242%2C500%2C000</fullName>
+                <fullName>%241%2C000%2C000 - %242%2C000%2C000</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>%2410%2C000%2C001 %2B</fullName>
+                <fullName>%242%2C000%2C000 - %245%2C000%2C000</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>%24100%2C000 - %24500%2C000</fullName>
+                <fullName>%24250%2C000 - %24500%2C000</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>%24100%2C000%2C001 - %24500%2C000%2C000</fullName>
+                <fullName>%245%2C000%2C000 - %2450%2C000%2C000</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>%242%2C500%2C000 - %245%2C000%2C000</fullName>
+                <fullName>%2450%2C000 - %24250%2C000</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>%24200%2C000 - %241%2C000%2C000</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%245%2C000%2C000%2B</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>%245%2C000%2C001 - %2410%2C000%2C000</fullName>
+                <fullName>%2450%2C000%2C000 %2B</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -24648,15 +24395,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Less than %24100%2C000</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Less than %24200%2C000</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Less than %24500%2C000</fullName>
+                <fullName>%3C %2450%2C000</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -26511,55 +26250,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>LeadSource</picklist>
             <values>
-                <fullName>Campaign Import</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Chat</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Email %2F Ticket</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Enterprise Partner Lead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hubspot</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Netline</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Other</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone %2F Queue</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>SBD Acquisition</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web Form</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web Trial</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Webinar</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -26966,11 +26661,27 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>Projected_Annual_Revenue__c</picklist>
             <values>
-                <fullName>%2410%2C000%2C001 %2B</fullName>
+                <fullName>%241%2C000%2C000 - %242%2C000%2C000</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>%24100%2C000%2C001 - %24500%2C000%2C000</fullName>
+                <fullName>%242%2C000%2C000 - %245%2C000%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%24250%2C000 - %24500%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%245%2C000%2C000 - %2450%2C000%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2450%2C000 - %24250%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%2450%2C000%2C000 %2B</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -26978,7 +26689,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Less than %24500%2C000</fullName>
+                <fullName>%3C %2450%2C000</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

@@ -177,8 +177,7 @@ public without sharing class CreateopportunityController {
             Opp.Revenue_Rep__c = UserInfo.getUserId();
             Opp.Revenue_Team__c = DLUtility.getuserbyName(UserInfo.getName()).Department;
             Opp.isTrial__c = false;
-            Opp.StageName = 'Qualification';
-            Opp.Probability = 15;
+            Opp.StageName = 'Qualify';
             Opp.Amount = 0.00;
             Opp.ParentOpportunity__c = o.Id;
             Opp.MKT_Friendly__c = null;

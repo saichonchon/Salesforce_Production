@@ -64,12 +64,88 @@
 	"buffers":
 	[
 		{
-			"file": "/C/MavensMate/workspaces/Salesforce_Production/.gitignore",
+			"file": "build.xml",
 			"settings":
 			{
-				"buffer_size": 63,
+				"buffer_size": 2258,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "#+TITLE: Ant tasks for Git using JGit\n\n[[https://github.com/rimerosolutions/ant-git-tasks/blob/master/LICENSE][file:https://img.shields.io/hexpm/l/plug.svg]]\n[[https://travis-ci.org/rimerosolutions/ant-git-tasks/][file:https://travis-ci.org/rimerosolutions/ant-git-tasks.png]]\n[[http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22ant-git-tasks%22][file:https://img.shields.io/maven-central/v/com.rimerosolutions.ant/ant-git-tasks.svg]]\n\n* Summary\nThis is a set of basic [[http://ant.apache.org/][Apache Ant]] tasks for [[http://git-scm.com/][Git]] to automate release processes, using the [[http://www.eclipse.org/jgit/][Eclipse JGit API]].\nThe goal is to leverage release management processes for Apache Ant based projects that use Git for revision control.\nThis set of Ant tasks is currently used by the [[https://github.com/rimerosolutions/ant-wrapper][Ant Command Line Wrapper]] project and by the =ant-git-tasks= project itself!\n\nBelow is one possible workflow:\n\n- Create a branch for a fix, feature or major change.\n- Merge the branch after some testing.\n- Update the documentation/changelog and/or other notes.\n- Prepare a release settings with ideally [[http://semver.org][semantic versioning]] by updating a /release properties/ file.\n- Commit the changes after updating the application version.\n- Tag the release and push the changes to a Git repository.\n- Push the code to a repository (Maven/Ivy).\n\n[[http://maven.apache.org][Apache Maven]]/[[http://ant.apache.org/ivy/][Apache Ivy]] repository hosting is provided via [[https://oss.sonatype.org/index.html][Sonatype OSS repositories]].\n\nIf you'd like to contribute, please also read the [[https://github.com/rimerosolutions/ant-git-tasks/wiki/Developer-notes][Developer Notes Wiki page]].\n \n* Tasks description and documentation\n\n** Apache Ant tasks documentation.\n\n- The available ant tasks documentation is available for online browsing via the project [[https://github.com/rimerosolutions/ant-git-tasks/wiki][wiki pages]].\n- You can also generate the Ant tasks documentation locally by running the *javadoc* target (=ant javadoc=). This generates both the API javadocs and the Ant tasks documentation (generated via a custom [[https://github.com/rimerosolutions/ant-git-tasks/blob/master/src/main/java/com/rimerosolutions/ant/git/AntTaskDoclet.java][Doclet]]).\n\nThe docs are more up to date via build vs. looking at the wiki.\n\n** Code samples\nThe [[https://github.com/rimerosolutions/ant-git-tasks/blob/master/src/test/resources/integration-tests.xml][available Apache AntUnit tests]] give a good overview of the intended usage.\nThe *ant-git-tasks* project is tested with Apache Ant itself, to have a feel of what's working and how usable the tasks are.\n\n* General information\n** Overview\nThe expectation is that you create a *git* tasks container where you nest commands as needed.\nThe initial step would be to setup the Git user information and credentials prior to running git commands.\n\n: <git:settings refId=\"gitSettingsReference\"\n:               username=\"me\" password=\"pwd\"\n:               name=\"me\" email=\"email@email.com\"/>\n\n: <git:git directory=\".\" settingsRef=\"gitSettingsReference\">\n:  <git:clone uri=\"someuri\"/>\n: </git:git>\n\n*** User identify and credentials\nThe Git settings tasks allows specifying reusable credentials and identity settings.\nYou typically first setup settings prior to running tasks unless you're not doing any *commits*'.\n*For now if you attempt a commit without settings, a null pointer exception is thrown, TBD fix it*.\n\n: <git:settings refId=\"git.testing\"\n:  username=\"xxxtesting\"\n:  password=\"xxxtesting\"\n:  name=\"xxxtesting\"\n:  email=\"xxxtesting@gmail.com\"/>\n\n*** Usage\nOnce the settings are initialize, you just reference them in your root *git* tasks container.\nThe *git* user information is require to commit to a repository and sometimes to push to remote repositories.\n\n: <git:git directory=\"repositoryCloneFolder\" verbose=\"true\" settingsRef=\"git.testing\">\n:  <git:clone uri=\"https://github.com/rimerosolutions/playground-repo.git\"/>\n:  <git:checkout branchName=\"dummyBranch\" createBranch=\"true\"/>\n: </git:git>\n\n* Integration\n\n** Git namespace\nYou'll need to add a reference to the git namespace to handle git related tasks.\n\n: <project name=\"myproject\"\n:         xmlns:git=\"antlib:com.rimerosolutions.ant.git\"\n:  // other build.xml elements\n: </project>\n\nAs noticed in the above lines, =ant-git-tasks= use [[http://ant.apache.org/manual/Types/antlib.html][Antlib]] to define tasks.\n\nInside the target(s) where you intend to call *git*, you'll need to setup the classpath and \ninitialize the custom task.\n\nSee the section below for dependency management strategies and classpath handling.\n\n** Dependency Management\nYou can either use [[http://ant.apache.org/ivy/][Apache Ivy]] as dependency manager, or you can put manually files where you want.\n\n*** Apache Ivy (preferred)\nYou'll need the following dependencies in your =ivy.xml= file.\n\n: <dependency org=\"org.eclipse.jgit\" \n:             name=\"org.eclipse.jgit.ant\" \n:             rev=\"3.0.0.201306101825-r\" conf=\"YOUR_IVY_CONFIGURATION\"/>\n\n: <dependency org=\"org.eclipse.jgit\" \n:             name=\"org.eclipse.jgit\" \n:             rev=\"3.0.0.201306101825-r\" conf=\"YOUR_IVY_CONFIGURATION\"/>\n\n: <dependency org=\"com.jcraft\" \n:             name=\"jsch\" \n:             rev=\"0.1.50\" conf=\"YOUR_IVY_CONFIGURATION\"/>\n\n: <dependency org=\"com.rimerosolutions.ant\" \n:             name=\"ant-git-tasks\"\n:             rev=\"0.0.1-SNAPSHOT\" \n:             changing=\"true\" conf=\"YOUR_IVY_CONFIGURATION\"/>\n\nThe versions mentionned above could be obsolete, please use the information from a site such as\n[[http://mvnrepository.com][mvnrepository]].\n\nIn your =ivysettings.xml= file, you need a reference to two repositories:\n- Maven Central for general dependencies\n- Sonatype snapshot repositories for =ant-git-tasks=\n\n: <url name=\"sonatype-snapshots\" m2compatible=\"true\">\n:  <artifact pattern=\"https://oss.sonatype.org/content/repositories/snapshots/[organisation]/[module]/[revision]/[artifact]-[revision](-[classifier]).[ext]\"/>\n: </url>\n: <ibiblio name=\"central\" m2compatible=\"true\"/>\n\nIn your =build.xml=, initialize the task definition and its classpath.\n\n: <ivy:cachepath pathid=\"ant.git.tasks.classpath\" conf=\"YOUR_IVY_CONFIGURATION\"/>\n:\n: <taskdef uri=\"antlib:com.rimerosolutions.ant.git\"\n:          resource=\"com/rimerosolutions/ant/git/jgit-ant-lib.xml\">\n:   <classpath>\n:     <path refid=\"ant.git.tasks.classpath\"/>\n:   </classpath>\n: </taskdef>\n\n*** Manual download ('quicker', but not recommended)\nYou can grab the files below from the Maven central and Sonatype OSS repositories:\n\n- [[https://oss.sonatype.org/content/repositories/releases/com/rimerosolutions/ant/ant-git-tasks/0.0.1/ant-git-tasks-0.0.1.jar][ant-git-tasks-0.0.1.jar]]\n- [[http://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit.ant/3.0.0.201306101825-r/org.eclipse.jgit.ant-3.0.0.201306101825-r.jar][org.eclipse.jgit.ant-3.0.0.201306101825-r.jar]]\n- [[http://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/3.0.0.201306101825-r/org.eclipse.jgit-3.0.0.201306101825-r.jar][org.eclipse.jgit-3.0.0.201306101825-r.jar]]\n- [[http://repo1.maven.org/maven2/com/jcraft/jsch/0.1.50/jsch-0.1.50.jar][jsch-0.1.50.jar]]\n\nIn your =build.xml=, initialize the task definition and its classpath.\n\n: <taskdef uri=\"antlib:com.rimerosolutions.ant.git\"\n:          resource=\"com/rimerosolutions/ant/git/jgit-ant-lib.xml\">\n:  <classpath>\n:   <pathelement location=\"path/to/org.eclipse.jgit.ant-3.0.0.201306101825-r.jar\"/>\n:   <pathelement location=\"path/to/org.eclipse.jgit-3.0.0.201306101825-r.jar\"/>\n:   <pathelement location=\"path/to/jsch-0.1.50.jar\"/>\n:   <pathelement location=\"path/to/ant-git-tasks-0.0.1-SNAPSHOT.jar\"/>\n:  </classpath>\n: </taskdef>\n\n* Building from source\n\n- You need [[http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html][JDK7]] to build the code from source. While it may also work for JDK8, it hasn't been tested.\n- If you don't want to use the ant wrapper =antw= script at the root of this folder, you'll need Apache Ant 1.8.0+.\n- =JAVA_HOME= is to be set for the custom [[http://docs.oracle.com/javase/6/docs/technotes/guides/javadoc/doclet/overview.html][Doclet]] compilation so that the =tools.jar= file can be found.\n\nBuilding with Apache Ant 1.7.1 leads to some intermittent errors when deleting temporary test folders.\nIt looks like some kind of race condition is happening.\n\nTo list available Apache Ant targets, please run =./antw -p= for Unix/Linux or =antw -p= for Windows.\n\nIf you use an IDE, take a look at [[http://ant.apache.org/ivy/links.html][Apache Ivy IDE Integration]] section on the Apache Ivy website.\n\n* Maven integration\n\nThe =pom.xml= file at the root of this project is only meant to illustrate Maven integration:\n\n- Apache AntUnit integration tests are run as part of the test phase.\n- A simple Apache Ant Git task is executed to showcase integration.\n\nNotes about Apache Ant versions:\n\n- Apache Ant 1.8.2 doesn't seem to create any weird issues (NoSuchMethodError, ClassNotFoundException, etc.).\n- Apache Ant 1.7.x leads to unpredictable builds as well as possible incompatibilities, version conflicts.\n\n\n* License\n\nSource Copyright 2013-2014 Rimero Solutions, Yves Zoundi and contributors.\n\nDistributed under the Apache License version 2.0. See the file LICENSE at the root of the project.\n",
+			"file": "/C/Users/stephen.oneal/AppData/Local/Temp/7zO44C27896/README.org",
+			"file_size": 9397,
+			"file_write_time": 131088580209864802,
+			"settings":
+			{
+				"buffer_size": 9397,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "GeneratePackage_xml.xml",
+			"settings":
+			{
+				"buffer_size": 10794,
 				"line_ending": "Windows",
-				"name": "*.sublime-project*.sublime-settings*.sublime-works"
+				"name": "<!--"
+			}
+		},
+		{
+			"contents": "global class RESTAPICallouts {\n\n@future(callout=true) \n    public static void BMPRequest (string strEndPointMethod, string bmpid, string strBody)\n    {\n        HttpResponse response;\n        \n        Http httpProtocol = new Http();\n        \n        // Create HTTP request to send.\n        HttpRequest request = new HttpRequest();\n        \n        \n        JiraSettings__c settings = JiraSettings__c.getValues('BMP');\n        \n        //Set your username and password here\n        String username = settings.UserName__c;\n        String password = settings.Credentials__c;\n        system.debug('credd '+settings.Credentials__c);\n        String jiraURL  = settings.Jira_URL__c;\n\n        Blob headerValue = Blob.valueOf(username+':'+settings.Credentials__c);\n        string authorizationHeader = 'Basic ' + EncodingUtil.base64Encode(headerValue);\n        request.setHeader('Authorization', authorizationHeader);\n        request.setHeader('Content-Type', 'application/json');\n        \n        // Set the endpoint URL.        \n       request.setEndPoint(jiraURL + strEndPointMethod + '/' + bmpid);\n        \n        // Set the HTTP verb to GET.\n        string strAction = 'PUT';\n        request.setMethod(strAction);\n    \n        // If a body exists\n        system.debug('*** body '+request.getBody());\n        if (strBody != null && strBody <> '')\n        {\n            request.setBody(strBody);\n            \n        }\n        system.debug('*** body '+request.getBody());\n        if(test.isRunningTest())\n        {\n            response = new HttpResponse();  \n        }\n        else\n        {\n        	try {\n        	     system.debug('*** REST:BMPRequestSetup - API Request Made with: ' + request.toString());\n            	 response = httpProtocol.send(request);\n            	 }\n				catch (Exception e)\n				{\n					System.debug('*** calling service failed: ' + e);\n					ErrorEmailHelper.notifyOnError('BMP Callout', 'Service Error', 'Error Occured in calling BMP', ' Error Message: ' + e.getMessage());\n        \n					//EmailUtils.sendTextEmail(recipients, emailSubject, textBody);\n				}\n        }\n        system.debug('***'+response.getBody());\n//      return response;\n    }\n /*   \n    public static HttpResponse JSONRequestSetup (string strEndPointMethod, string strAction, string strBody)\n    {\n        HttpResponse response;\n        \n        Http httpProtocol = new Http();\n        \n        // Create HTTP request to send.\n        HttpRequest request = new HttpRequest();\n        \n        \n        JiraSettings__c settings = JiraSettings__c.getValues(strAction);\n        \n        //Set your username and password here\n        String username = settings.UserName__c;\n //       String password = settings.Credentials__c;\n        String password = '8de162a672efb0bc2049072a4fe67057';\n        system.debug('password ' +password);\n        system.debug('credd '+settings.Credentials__c);\n        String jiraURL  = settings.Jira_URL__c;\n\n//      Blob headerValue = Blob.valueOf(username+':'+settings.Credentials__c);\n        Blob headerValue = Blob.valueOf(username+':'+ password);\n        string authorizationHeader = 'Basic ' + EncodingUtil.base64Encode(headerValue);\n        request.setHeader('Authorization', authorizationHeader);\n        request.setHeader('Content-Type', 'application/json;charset=UTF-8');\n        \n        // Set the endpoint URL.        \n//      request.setEndPoint(strEndPoint + strEndPointMethod + '/');\n        request.setEndPoint(jiraURL +  strEndPointMethod + '/');\n        \n        // Set the HTTP verb to POST.\n        request.setMethod(strAction);\n    \n        // If a body exists\n        if (strBody != null && strBody <> '')\n        {\n            request.setBody(strBody);\n        }\n        if(test.isRunningTest())\n        {\n            response = new HttpResponse();  \n        }\n        else\n        {\n            system.debug('*** SubscriptionREST:JSONRequestSetup - API Request Made with: ' + request.toString());\n            response = httpProtocol.send(request);\n        }\n        \n        return response;\n    }\n    \n  public static void testcall()      \n{               \n    string sfid ='00119000004WiUP';\n    \n    // Create a JSON generator object\n        JSONGenerator gen = JSON.createGenerator(true);\n        // open the JSON generator\n      \n      gen.writeStartObject();\n      gen.writeFieldName('data');\n      gen.writeStartObject();\n      gen.writeStringField('salesforce_id', sfId);\n      gen.writeEndObject();\n      gen.writeEndObject();\n        // close the JSON generator\n      \n    // create a string from the JSON generator\n      String json2 = gen.getAsString();\n      system.debug(json2);\n    \n    string strEndPointMethod = 'account';\n    string strAction= 'PUT';\n    string strBody = json2;\n    \n        HttpResponse response;\n        \n        Http httpProtocol = new Http();\n        \n        // Create HTTP request to send.\n        HttpRequest request = new HttpRequest();\n    \n        \n        JiraSettings__c settings = JiraSettings__c.getValues('account');\n        // Use actual username / password values for real       \n        \n        //Blob headerValue = Blob.valueOf('username:password');\n        //Set username and password here\n        String username = settings.UserName__c;\n        String password = settings.Credentials__c;\n        String jiraURL  = settings.Jira_URL__c;\n        Blob headerValue = Blob.valueOf(username+':'+settings.Credentials__c);\n        string authorizationHeader = 'Basic ' + EncodingUtil.base64Encode(headerValue);\n        request.setHeader('Authorization', authorizationHeader);\n    \n        request.setHeader('Content-Type', 'application/json;charset=UTF-8');\n        // Set the endpoint URL.        \n        //  request.setEndPoint('callout:BMP/00e60c4a-ae32-46aa-9ca7-02a444ee6742');\n        string sendid = 'b87cb696-d3a5-4d8e-a7da-0080598553e5';\n        //system.debug(sendid); \n        request.setEndPoint(jiraURL + sendid);\n        \n        // Set the HTTP verb to POST.\n        request.setMethod('PUT');\n    \n        // If a body exists\n        if (strBody != null && strBody <> '')\n        {\n            request.setBody(strBody);\n        }\n        \n        system.debug('*** API Request Made with: ' + request.toString());\n        response = httpProtocol.send(request);\n    //SONParser parser = JSON.createParser(response.getBody());\n            system.debug('***'+response.getBody());\n          \n}     \n */      \n}",
+			"file": "src/classes/RESTAPICallouts.cls",
+			"file_size": 6416,
+			"file_write_time": 131091880050220411,
+			"settings":
+			{
+				"buffer_size": 6416,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "************************************************************\nFileName: reports/Finance_Reports\nFullName/Id: Finance_Reports/00la0000002X4BMAA0\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): SFDC Automated User/005a0000007EvtMAAS\nLast Modified By (Name/Id): SFDC Automated User/005a0000007EvtMAAS\n************************************************************\n************************************************************\nFileName: reports/Support_Surveys\nFullName/Id: Support_Surveys/00la0000002XJ1LAAW\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Thomas Blahnik/00530000005hFUBAA2\nLast Modified By (Name/Id): Thomas Blahnik/00530000005hFUBAA2\n************************************************************\n************************************************************\nFileName: reports/SBD_Pipeline_Emails\nFullName/Id: SBD_Pipeline_Emails/00l13000003OEmzAAG\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Gustavo Maldonado/00513000009tTYBAA2\nLast Modified By (Name/Id): Gustavo Maldonado/00513000009tTYBAA2\n************************************************************\n************************************************************\nFileName: reports/Migrations\nFullName/Id: Migrations/00l13000002a3fRAAQ\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/Support_Surveys_2\nFullName/Id: Support_Surveys_2/00l13000002a4kYAAQ\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Thomas Blahnik/00530000005hFUBAA2\nLast Modified By (Name/Id): Thomas Blahnik/00530000005hFUBAA2\n************************************************************\n************************************************************\nFileName: reports/Acquisition\nFullName/Id: Acquisition/00l13000002a4h5AAA\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Gustavo Maldonado/00513000009tTYBAA2\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/L_D\nFullName/Id: L_D/00l13000002a6a1AAA\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/ca_collab_2_0__SfdcCommunitiesPulseDefaultMember_20\nFullName/Id: ca_collab_2_0__SfdcCommunitiesPulseDefaultMember_20/00l13000003OFpSAAW\nManageable State: installed\nNamespace Prefix: ca_collab_2_0\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/csmrgp__Case_Merge_Premium\nFullName/Id: csmrgp__Case_Merge_Premium/00l13000002a3chAAA\nManageable State: installed\nNamespace Prefix: csmrgp\nCreated By (Name/Id): Mary Kellum/005a000000AqrFEAAZ\nLast Modified By (Name/Id): Mary Kellum/005a000000AqrFEAAZ\n************************************************************\n************************************************************\nFileName: reports/Professional_Services\nFullName/Id: Professional_Services/00la0000002WrPLAA0\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): SFDC Automated User/005a0000007EvtMAAS\nLast Modified By (Name/Id): Mary Kellum/005a000000AqrFEAAZ\n************************************************************\n************************************************************\nFileName: reports/zArchive\nFullName/Id: zArchive/00l13000002a544AAA\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Gustavo Maldonado/00513000009tTYBAA2\nLast Modified By (Name/Id): Gustavo Maldonado/00513000009tTYBAA2\n************************************************************\n************************************************************\nFileName: reports/DB_Reports_Client_Success\nFullName/Id: DB_Reports_Client_Success/00la0000002XCaRAAW\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Katy Deschenes/005a000000A72JJAAZ\nLast Modified By (Name/Id): SFDC Automated User/005a0000007EvtMAAS\n************************************************************\n************************************************************\nFileName: reports/ca_collab_2_0__SfdcCommunitiesPulseDefaultSelfService20\nFullName/Id: ca_collab_2_0__SfdcCommunitiesPulseDefaultSelfService20/00l13000003OFpUAAW\nManageable State: installed\nNamespace Prefix: ca_collab_2_0\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/Partner_DB_Reports\nFullName/Id: Partner_DB_Reports/00la0000002WqP4AAK\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): SFDC Automated User/005a0000007EvtMAAS\nLast Modified By (Name/Id): SFDC Automated User/005a0000007EvtMAAS\n************************************************************\n************************************************************\nFileName: reports/ca_collab_2_0__Misc_Communities_Reports\nFullName/Id: ca_collab_2_0__Misc_Communities_Reports/00l13000003OFpOAAW\nManageable State: installed\nNamespace Prefix: ca_collab_2_0\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/Partner_Commission\nFullName/Id: Partner_Commission/00l13000003OEqrAAG\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Maggie Frederick/005a000000AqZr1AAF\nLast Modified By (Name/Id): Maggie Frederick/005a000000AqZr1AAF\n************************************************************\n************************************************************\nFileName: reports/DB_Reports_Sales_Engineering\nFullName/Id: DB_Reports_Sales_Engineering/00l13000002a5OJAAY\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Gustavo Maldonado/00513000009tTYBAA2\nLast Modified By (Name/Id): Gustavo Maldonado/00513000009tTYBAA2\n************************************************************\n************************************************************\nFileName: reports/Premium\nFullName/Id: Premium/00la0000002XJOVAA4\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/DB_Biz_Apps\nFullName/Id: DB_Biz_Apps/00la0000002XGxAAAW\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/ca_collab_2_0__Community_Management_Home_Reports\nFullName/Id: ca_collab_2_0__Community_Management_Home_Reports/00l13000003OFpNAAW\nManageable State: installed\nNamespace Prefix: ca_collab_2_0\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/dsfs__DocuSign_Reports\nFullName/Id: dsfs__DocuSign_Reports/00l13000002a60IAAQ\nManageable State: installed\nNamespace Prefix: dsfs\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/Outsource_Remotes\nFullName/Id: Outsource_Remotes/00la0000002XIbeAAG\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Mary Kellum/005a000000AqrFEAAZ\nLast Modified By (Name/Id): Mary Kellum/005a000000AqrFEAAZ\n************************************************************\n************************************************************\nFileName: reports/DB_Reports_Sales_Leadership_Team\nFullName/Id: DB_Reports_Sales_Leadership_Team/00la0000002WqW0AAK\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): SFDC Automated User/005a0000007EvtMAAS\nLast Modified By (Name/Id): SFDC Automated User/005a0000007EvtMAAS\n************************************************************\n************************************************************\nFileName: reports/Sales_Operations\nFullName/Id: Sales_Operations/00la0000002Wq9VAAS\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): SFDC Automated User/005a0000007EvtMAAS\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/SLT_Reports\nFullName/Id: SLT_Reports/00la0000002WqWFAA0\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Rick Fain/00530000007DlikAAC\nLast Modified By (Name/Id): SFDC Automated User/005a0000007EvtMAAS\n************************************************************\n************************************************************\nFileName: reports/Support_Tech_Leads\nFullName/Id: Support_Tech_Leads/00l13000003OFqJAAW\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): John Hebron/005a000000A6vg1AAB\nLast Modified By (Name/Id): John Hebron/005a000000A6vg1AAB\n************************************************************\n************************************************************\nFileName: reports/BizApps_User_Cleanup\nFullName/Id: BizApps_User_Cleanup/00l13000003OFHYAA4\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Nicole Smith/0051300000BsGMPAA3\nLast Modified By (Name/Id): Nicole Smith/0051300000BsGMPAA3\n************************************************************\n************************************************************\nFileName: reports/Calibration_Reports\nFullName/Id: Calibration_Reports/00l13000003OEY4AAO\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/Mid_Market_Sales\nFullName/Id: Mid_Market_Sales/00l13000003OFBQAA4\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Alecia Wall/005a0000008UcqGAAS\nLast Modified By (Name/Id): Alecia Wall/005a0000008UcqGAAS\n************************************************************\n************************************************************\nFileName: reports/ca_collab_2_0__SfdcCommunitiesPulseDefaultActivity_20\nFullName/Id: ca_collab_2_0__SfdcCommunitiesPulseDefaultActivity_20/00l13000003OFpPAAW\nManageable State: installed\nNamespace Prefix: ca_collab_2_0\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/n2de__Distribution_Engine_Reports\nFullName/Id: n2de__Distribution_Engine_Reports/00l13000003OGD3AAO\nManageable State: installed\nNamespace Prefix: n2de\nCreated By (Name/Id): James Juarez/005a000000AqjiSAAR\nLast Modified By (Name/Id): James Juarez/005a000000AqjiSAAR\n************************************************************\n************************************************************\nFileName: reports/DB_Reports_Upsell\nFullName/Id: DB_Reports_Upsell/00l13000002a3rrAAA\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/WorkIt2__WorkIt_Reports\nFullName/Id: WorkIt2__WorkIt_Reports/00l13000002a5P2AAI\nManageable State: installed\nNamespace Prefix: WorkIt2\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/ca_collab_2_0__SfdcCommunitiesPulseDefaultGroup_20\nFullName/Id: ca_collab_2_0__SfdcCommunitiesPulseDefaultGroup_20/00l13000003OFpRAAW\nManageable State: installed\nNamespace Prefix: ca_collab_2_0\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: unfiled$public\nFullName/Id: unfiled$public/\nManageable State: unmanaged\nNamespace Prefix: \nCreated By (Name/Id): Steve O'Neal/0051300000BlUUOAA3\nLast Modified By (Name/Id): Steve O'Neal/0051300000BlUUOAA3\n************************************************************\n************************************************************\nFileName: reports/Ninja_Trials\nFullName/Id: Ninja_Trials/00l13000003OFVQAA4\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Nicole Smith/0051300000BsGMPAA3\nLast Modified By (Name/Id): Nicole Smith/0051300000BsGMPAA3\n************************************************************\n************************************************************\nFileName: reports/Sales_Transformation\nFullName/Id: Sales_Transformation/00la0000002XJUTAA4\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/Partner_Team_Reports\nFullName/Id: Partner_Team_Reports/00la0000002WqZ9AAK\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): SFDC Automated User/005a0000007EvtMAAS\nLast Modified By (Name/Id): SFDC Automated User/005a0000007EvtMAAS\n************************************************************\n************************************************************\nFileName: reports/Support_Toolbelt\nFullName/Id: Support_Toolbelt/00la0000002XJA9AAO\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Thomas Blahnik/00530000005hFUBAA2\nLast Modified By (Name/Id): Thomas Blahnik/00530000005hFUBAA2\n************************************************************\n************************************************************\nFileName: reports/Chatter_Usage\nFullName/Id: Chatter_Usage/00l13000002a4dSAAQ\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Gustavo Maldonado/00513000009tTYBAA2\nLast Modified By (Name/Id): Gustavo Maldonado/00513000009tTYBAA2\n************************************************************\n************************************************************\nFileName: reports/DB_Reports_Marketing\nFullName/Id: DB_Reports_Marketing/00la0000002WqqpAAC\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): SFDC Automated User/005a0000007EvtMAAS\nLast Modified By (Name/Id): SFDC Automated User/005a0000007EvtMAAS\n************************************************************\n************************************************************\nFileName: reports/Public_Relations\nFullName/Id: Public_Relations/00l13000002a4T8AAI\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/Marketing_Team\nFullName/Id: Marketing_Team/00l13000002a4oGAAQ\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/DB_Reports_Business_Development\nFullName/Id: DB_Reports_Business_Development/00la0000002Wu0RAAS\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): SFDC Automated User/005a0000007EvtMAAS\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/Marketing_Reports\nFullName/Id: Marketing_Reports/00la0000002WqmTAAS\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): SFDC Automated User/005a0000007EvtMAAS\nLast Modified By (Name/Id): SFDC Automated User/005a0000007EvtMAAS\n************************************************************\n************************************************************\nFileName: reports/Zuora__Zuora_Reports\nFullName/Id: Zuora__Zuora_Reports/00l13000002a6KXAAY\nManageable State: installed\nNamespace Prefix: Zuora\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/ca_collab_2_0__SfdcCommunitiesPulseDefaultContent_20\nFullName/Id: ca_collab_2_0__SfdcCommunitiesPulseDefaultContent_20/00l13000003OFpQAAW\nManageable State: installed\nNamespace Prefix: ca_collab_2_0\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/DB_Reports_Inbound\nFullName/Id: DB_Reports_Inbound/00l13000002a3PiAAI\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Cindy Proct/005a000000Au1oiAAB\nLast Modified By (Name/Id): Cindy Proct/005a000000Au1oiAAB\n************************************************************\n************************************************************\nFileName: reports/Milestone_Project_Management\nFullName/Id: Milestone_Project_Management/00la0000002XHfNAAW\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Maggie Frederick/005a000000AqZr1AAF\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/Support_Sales_Pilot\nFullName/Id: Support_Sales_Pilot/00l13000002a5dYAAQ\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/Offboard_Requests\nFullName/Id: Offboard_Requests/00l13000002a5OOAAY\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/DB_Reports_Professional_Services\nFullName/Id: DB_Reports_Professional_Services/00la0000002WqhDAAS\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): SFDC Automated User/005a0000007EvtMAAS\nLast Modified By (Name/Id): Mary Kellum/005a000000AqrFEAAZ\n************************************************************\n************************************************************\nFileName: reports/Upsell\nFullName/Id: Upsell/00la0000002XJjBAAW\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/sites_reporting__Site_Usage_Reports\nFullName/Id: sites_reporting__Site_Usage_Reports/00l13000002a4dIAAQ\nManageable State: installed\nNamespace Prefix: sites_reporting\nCreated By (Name/Id): Gustavo Maldonado/00513000009tTYBAA2\nLast Modified By (Name/Id): Gustavo Maldonado/00513000009tTYBAA2\n************************************************************\n************************************************************\nFileName: reports/App_Partners\nFullName/Id: App_Partners/00l13000002a5ETAAY\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/Client_Success\nFullName/Id: Client_Success/00la0000002XDJ1AAO\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Katy Deschenes/005a000000A72JJAAZ\nLast Modified By (Name/Id): SFDC Automated User/005a0000007EvtMAAS\n************************************************************\n************************************************************\nFileName: reports/ca_collab_2_0__SfdcCommunitiesPulseDefaultTopics_20\nFullName/Id: ca_collab_2_0__SfdcCommunitiesPulseDefaultTopics_20/00l13000003OFpVAAW\nManageable State: installed\nNamespace Prefix: ca_collab_2_0\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/Enterprise_Account_Managers\nFullName/Id: Enterprise_Account_Managers/00l13000002a5IfAAI\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/Totango\nFullName/Id: Totango/00l13000002a4vCAAQ\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/Support_Daily\nFullName/Id: Support_Daily/00l13000002a3oJAAQ\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Thomas Blahnik/00530000005hFUBAA2\nLast Modified By (Name/Id): Thomas Blahnik/00530000005hFUBAA2\n************************************************************\n************************************************************\nFileName: reports/qbdialer__Dialer_Reports\nFullName/Id: qbdialer__Dialer_Reports/00la0000002XDTRAA4\nManageable State: installed\nNamespace Prefix: qbdialer\nCreated By (Name/Id): SFDC Automated User/005a0000007EvtMAAS\nLast Modified By (Name/Id): SFDC Automated User/005a0000007EvtMAAS\n************************************************************\n************************************************************\nFileName: reports/Reports_in_Development\nFullName/Id: Reports_in_Development/00l13000003OEqcAAG\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Gustavo Maldonado/00513000009tTYBAA2\nLast Modified By (Name/Id): Gustavo Maldonado/00513000009tTYBAA2\n************************************************************\n************************************************************\nFileName: reports/Support_Live_Chat\nFullName/Id: Support_Live_Chat/00la0000002XHgpAAG\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Thomas Blahnik/00530000005hFUBAA2\nLast Modified By (Name/Id): Thomas Blahnik/00530000005hFUBAA2\n************************************************************\n************************************************************\nFileName: reports/Support_Weekly_Metrics\nFullName/Id: Support_Weekly_Metrics/00la0000002XF6PAAW\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Thomas Blahnik/00530000005hFUBAA2\nLast Modified By (Name/Id): Thomas Blahnik/00530000005hFUBAA2\n************************************************************\n************************************************************\nFileName: reports/Support_Tier_2\nFullName/Id: Support_Tier_2/00l13000002a4I5AAI\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Thomas Blahnik/00530000005hFUBAA2\nLast Modified By (Name/Id): Thomas Blahnik/00530000005hFUBAA2\n************************************************************\n************************************************************\nFileName: reports/qbdialer__Sales_Acceleration_Reports\nFullName/Id: qbdialer__Sales_Acceleration_Reports/00l13000002a6OKAAY\nManageable State: installed\nNamespace Prefix: qbdialer\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/ca_collab_2_0__Chatter_Reports\nFullName/Id: ca_collab_2_0__Chatter_Reports/00l13000003OFpLAAW\nManageable State: installed\nNamespace Prefix: ca_collab_2_0\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/Insight_Billing\nFullName/Id: Insight_Billing/00l13000002a5aeAAA\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/SK__APXSK_Knowledge_Reports\nFullName/Id: SK__APXSK_Knowledge_Reports/00l13000002a4Y3AAI\nManageable State: installed\nNamespace Prefix: SK\nCreated By (Name/Id): Chris Robertson/0051300000BSM6RAAX\nLast Modified By (Name/Id): Chris Robertson/0051300000BSM6RAAX\n************************************************************\n************************************************************\nFileName: reports/Sales_Engineering\nFullName/Id: Sales_Engineering/00l13000003OFUDAA4\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Sachin Wadhawan/0051300000BswNUAAZ\nLast Modified By (Name/Id): Sachin Wadhawan/0051300000BswNUAAZ\n************************************************************\n************************************************************\nFileName: reports/SBD_Paypal_Braintree\nFullName/Id: SBD_Paypal_Braintree/00l13000002a6FcAAI\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/ca_collab_2_0__SfdcCommunitiesPulseDefaultModeration_20\nFullName/Id: ca_collab_2_0__SfdcCommunitiesPulseDefaultModeration_20/00l13000003OFpTAAW\nManageable State: installed\nNamespace Prefix: ca_collab_2_0\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/Subscription_Reports_Rohit\nFullName/Id: Subscription_Reports_Rohit/00l13000002a3UxAAI\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Maggie Frederick/005a000000AqZr1AAF\nLast Modified By (Name/Id): Maggie Frederick/005a000000AqZr1AAF\n************************************************************\n************************************************************\nFileName: reports/Work_com_Skills\nFullName/Id: Work_com_Skills/00l13000003OEYAAA4\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/InB_OutB_Auto_Team_Reports\nFullName/Id: InB_OutB_Auto_Team_Reports/00la0000002X1NPAA0\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): SFDC Automated User/005a0000007EvtMAAS\nLast Modified By (Name/Id): Jessica Kellum/005a000000AsUG5AAN\n************************************************************\n************************************************************\nFileName: reports/DB_Reports_Migrations\nFullName/Id: DB_Reports_Migrations/00la0000002WySqAAK\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Default Admin User/005a0000008UZ47AAG\nLast Modified By (Name/Id): SFDC Automated User/005a0000007EvtMAAS\n************************************************************\n************************************************************\nFileName: reports/Business_Development\nFullName/Id: Business_Development/00la0000002WtxhAAC\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): SFDC Automated User/005a0000007EvtMAAS\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/BizApps_Cleanup\nFullName/Id: BizApps_Cleanup/00l13000002a5XaAAI\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Maggie Frederick/005a000000AqZr1AAF\nLast Modified By (Name/Id): Maggie Frederick/005a000000AqZr1AAF\n************************************************************\n************************************************************\nFileName: reports/ca_collab_2_0__Communities_Reports\nFullName/Id: ca_collab_2_0__Communities_Reports/00l13000003OFpMAAW\nManageable State: installed\nNamespace Prefix: ca_collab_2_0\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/BigCommerce_Reports\nFullName/Id: BigCommerce_Reports/00l30000001k8JbAAI\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Arxxus Support/00530000004WIbWAAW\nLast Modified By (Name/Id): Gustavo Maldonado/00513000009tTYBAA2\n************************************************************\n************************************************************\nFileName: reports/Field_Trip__Field_Trip_Reports\nFullName/Id: Field_Trip__Field_Trip_Reports/00l13000002a4RvAAI\nManageable State: installed\nNamespace Prefix: Field_Trip\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/DB_Reports_InB_OutB_Auto\nFullName/Id: DB_Reports_InB_OutB_Auto/00la0000002WqHyAAK\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): SFDC Automated User/005a0000007EvtMAAS\nLast Modified By (Name/Id): Jessica Kellum/005a000000AsUG5AAN\n************************************************************\n************************************************************\nFileName: reports/SBD_Payleap_to_Securenet\nFullName/Id: SBD_Payleap_to_Securenet/00l13000002a5jqAAA\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/Acquisition_DB_Reports\nFullName/Id: Acquisition_DB_Reports/00la0000002Wq8NAAS\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): SFDC Automated User/005a0000007EvtMAAS\nLast Modified By (Name/Id): Default Admin User/005a0000008UZ47AAG\n************************************************************\n************************************************************\nFileName: reports/Zuora_Reports\nFullName/Id: Zuora_Reports/00l13000002a6VpAAI\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/Recognition_Reports_Motivate\nFullName/Id: Recognition_Reports_Motivate/00l13000003OEY9AAO\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/Insights_for_Ideas\nFullName/Id: Insights_for_Ideas/00l13000003OFrRAAW\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/Pricing_2015\nFullName/Id: Pricing_2015/00l13000003OEa5AAG\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/Hubspot\nFullName/Id: Hubspot/00l13000002a3fqAAA\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\nLast Modified By (Name/Id): Maria Huemmer/005a000000A6vfiAAB\n************************************************************\n************************************************************\nFileName: reports/Retention\nFullName/Id: Retention/00l13000002a3jsAAA\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Gustavo Maldonado/00513000009tTYBAA2\nLast Modified By (Name/Id): Gustavo Maldonado/00513000009tTYBAA2\n************************************************************\n************************************************************\nFileName: reports/DB_Report_Outbound\nFullName/Id: DB_Report_Outbound/00l13000002a3OGAAY\nManageable State: unmanaged\nNamespace Prefix: null\nCreated By (Name/Id): Cindy Proct/005a000000Au1oiAAB\nLast Modified By (Name/Id): Cindy Proct/005a000000Au1oiAAB\n************************************************************\n",
+			"file": "tmp/bigcommerce.ReportFolders.log",
+			"file_size": 35399,
+			"file_write_time": 131091870128989966,
+			"settings":
+			{
+				"buffer_size": 35399,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "build.properties",
+			"settings":
+			{
+				"buffer_size": 559,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 124,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "package.xml",
+			"settings":
+			{
+				"buffer_size": 312531,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<Package xmlns=\"http://soap.sforce.com/2006/04/metadata\">\n    <types>\n        <members>*</members>\n        <name>ApexClass</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>ApexComponent</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>ApexPage</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>ApexTrigger</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>AppMenu</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>ApprovalProcess</name>\n    </types>\n    <types>\n        <members>Case.Default Case Assignment Rule</members>\n        <members>Lead.Acquisition Queue Lead Assignment</members>\n        <members>Lead.BC Next</members>\n        <members>Lead.BigCommerce Lead Assignment</members>\n        <members>Lead.Premium Queue Lead Assignment</members>\n        <name>AssignmentRule</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>AuthProvider</name>\n    </types>\n    <types>\n        <members>Case.Client Case Autoresponse</members>\n        <name>AutoResponseRule</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>CallCenter</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>Community</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>ConnectedApp</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>CustomApplication</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>CustomApplicationComponent</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>CustomLabels</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>CustomMetadata</name>\n    </types>\n    <types>\n        <members>Account</members>\n        <members>AccountCleanInfo</members>\n        <members>AccountContactRole</members>\n        <members>Activity</members>\n        <members>Asset</members>\n        <members>AssistantProgress</members>\n        <members>Campaign</members>\n        <members>CampaignMember</members>\n        <members>Case</members>\n        <members>CaseContactRole</members>\n        <members>CaseOwnerQueue__mdt</members>\n        <members>Contact</members>\n        <members>ContactCleanInfo</members>\n        <members>ContentVersion</members>\n        <members>Contract</members>\n        <members>ContractContactRole</members>\n        <members>DuplicateRecordItem</members>\n        <members>DuplicateRecordSet</members>\n        <members>Event</members>\n        <members>FeedItem</members>\n        <members>Goal</members>\n        <members>GoalLink</members>\n        <members>Idea</members>\n        <members>Lead</members>\n        <members>LeadCleanInfo</members>\n        <members>LiveAgentSession</members>\n        <members>LiveChatTranscript</members>\n        <members>LiveChatTranscriptEvent</members>\n        <members>LiveChatTranscriptSkill</members>\n        <members>LiveChatVisitor</members>\n        <members>Macro</members>\n        <members>MacroAction</members>\n        <members>MacroInstruction</members>\n        <members>Metric</members>\n        <members>Opportunity</members>\n        <members>OpportunityCompetitor</members>\n        <members>OpportunityContactRole</members>\n        <members>OpportunityLineItem</members>\n        <members>OpportunitySplit</members>\n        <members>OpportunityTeamMember</members>\n        <members>PartnerRole</members>\n        <members>Pricebook2</members>\n        <members>PricebookEntry</members>\n        <members>Product2</members>\n        <members>ProfileSkill</members>\n        <members>ProfileSkillEndorsement</members>\n        <members>ProfileSkillUser</members>\n        <members>Question</members>\n        <members>QuickText</members>\n        <members>Quote</members>\n        <members>QuoteLineItem</members>\n        <members>Reply</members>\n        <members>Site</members>\n        <members>SocialPersona</members>\n        <members>Solution</members>\n        <members>StagingTableMapping__mdt</members>\n        <members>StreamingChannel</members>\n        <members>Task</members>\n        <members>User</members>\n        <members>UserProvisioningRequest</members>\n        <members>WorkBadge</members>\n        <members>WorkBadgeDefinition</members>\n        <members>WorkCoaching</members>\n        <members>WorkFeedback</members>\n        <members>WorkFeedbackQuestion</members>\n        <members>WorkFeedbackQuestionSet</members>\n        <members>WorkFeedbackRequest</members>\n        <members>WorkFeedbackTemplate</members>\n        <members>WorkPerformanceCycle</members>\n        <members>WorkReward</members>\n        <members>WorkRewardFund</members>\n        <members>WorkRewardFundType</members>\n        <members>WorkThanks</members>\n        <members>*</members>\n        <name>CustomObject</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>CustomObjectTranslation</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>CustomPageWebLink</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>CustomPermission</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>CustomSite</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>CustomTab</name>\n    </types>\n    <types>\n_replaceDashboardMembersTag_\n        <name>Dashboard</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>DataCategoryGroup</name>\n    </types>\n    <types>\n_replaceDocumentMembersTag_\n        <name>Document</name>\n    </types>\n    <types>\n_replaceEmailTemplateMembersTag_\n        <name>EmailTemplate</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>FlexiPage</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>Flow</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>Group</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>HomePageComponent</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>HomePageLayout</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>Layout</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>Letterhead</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>LiveChatAgentConfig</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>LiveChatButton</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>LiveChatDeployment</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>Network</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>PermissionSet</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>Portal</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>PostTemplate</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>Profile</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>Queue</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>QuickAction</name>\n    </types>\n    <types>\n        <members>app_grooveapp_com</members>\n        <members>Aspira_XObject</members>\n        <members>BigCommerce</members>\n        <members>BigCommerceWebsite</members>\n        <members>BMP</members>\n        <members>BomgarAppliance</members>\n        <members>CFSAPI</members>\n        <members>DocuSignDlrsMdapi</members>\n        <members>Five9_Web_Services</members>\n        <members>GoogleAnalytics</members>\n        <members>GoogleAnalytics3</members>\n        <members>GoogleAnalytics4</members>\n        <members>GoToTraining</members>\n        <members>JIRAOnDemand</members>\n        <members>PartnerSystem</members>\n        <members>TechPartnerIDev</members>\n        <members>TimeTrade</members>\n        <name>RemoteSiteSetting</name>\n    </types>\n    <types>\n_replaceReportMembersTag_\n        <name>Report</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>ReportType</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>Role</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>SamlSsoConfig</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>Scontrol</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>Settings</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>SharingSet</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>SiteDotCom</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>Skill</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>StaticResource</name>\n    </types>\n    <types>\n        <members>*</members>\n        <name>Workflow</name>\n    </types>\n    <version>36.0</version>\n</Package>\n",
+			"file": "/C/MavensMate/workspaces/Salesforce_Production/package_template.xml",
+			"file_size": 9242,
+			"file_write_time": 131088497559364718,
+			"settings":
+			{
+				"buffer_size": 8925,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -92,9 +168,13 @@
 	"command_palette":
 	{
 		"height": 151.0,
-		"last_filter": "Package Control: instal",
+		"last_filter": "Package Control: insta",
 		"selected_items":
 		[
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
 			[
 				"Package Control: instal",
 				"Package Control: Install Package"
@@ -126,10 +206,20 @@
 	},
 	"expanded_folders":
 	[
-		"/c/mavensmate/workspaces/Salesforce_Production"
+		"/c/mavensmate/workspaces/Salesforce_Production",
+		"/c/mavensmate/workspaces/Salesforce_Production/src",
+		"/c/mavensmate/workspaces/Salesforce_Production/src/classes"
 	],
 	"file_history":
 	[
+		"/c/mavensmate/workspaces/Salesforce_Production/describeMetadata.txt",
+		"/c/mavensmate/workspaces/Salesforce_Production/tmp/bigcommerce.Package.xml.Snnipet.Report",
+		"/C/MavensMate/workspaces/Salesforce_Production/describeMetadata.txt",
+		"/c/mavensmate/workspaces/Salesforce_Production/tmp/Package.xml",
+		"/c/mavensmate/workspaces/Salesforce_Production/tmp/BigCommerce.ReportFolders.log",
+		"/c/mavensmate/workspaces/Salesforce_Production/tmp/${sf.Name}.Package.xml.Snnipet.Dashboard",
+		"/C/MavensMate/workspaces/Salesforce_Production/.gitignore",
+		"/C/MavensMate/workspaces/Salesforce_Production/build.properties",
 		"/c/mavensmate/workspaces/Production/Production.sublime-project",
 		"/c/mavensmate/workspaces/GADev/src/classes/TestDataGenerator.cls",
 		"/C/Users/stephen.oneal/AppData/Roaming/Sublime Text 3/Packages/User/Base File.sublime-settings",
@@ -139,7 +229,7 @@
 	],
 	"find":
 	{
-		"height": 31.0
+		"height": 50.0
 	},
 	"find_in_files":
 	{
@@ -154,6 +244,50 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"filename",
+			"Package_computeFolderName",
+			"Snnipet",
+			"report",
+			"unfiled",
+			"full",
+			"fullname",
+			"Package_computeFolderName",
+			"describeMetadata",
+			"sfPassword.prop.",
+			"unfiled",
+			"GeneratePackage_xml",
+			"filename:",
+			"unfiled",
+			"sf",
+			"${",
+			"reportfolder",
+			"Package_computeFolderName",
+			"xmlPath",
+			"packageXMLPath",
+			".log",
+			"log",
+			"foldername",
+			"GeneratePackage_xml",
+			"orgName",
+			"packageXMLPath",
+			".log.edit",
+			".DashboardFolder.log.edit",
+			"dashboardfolder",
+			"sfpassword",
+			"sf.password",
+			"sfPassword",
+			"orgName",
+			"sfusername",
+			"sf.username",
+			"sfpro",
+			"Snnipet",
+			"retrieveUnpackaged",
+			"packageXMLPath",
+			"sf.xmlpath",
+			"_replaceDashboardMembersTag_",
+			"dashboard<",
+			"document",
+			"report",
 			"body",
 			"MBAAccountID__c",
 			"APISettings.",
@@ -186,6 +320,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"Snippet"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -196,40 +331,273 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/MavensMate/workspaces/Salesforce_Production/.gitignore",
+					"file": "build.xml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 63,
+						"buffer_size": 2258,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								63,
-								63
+								2180,
+								2180
 							]
 						],
 						"settings":
 						{
-							"auto_name": "*.sublime-project*.sublime-settings*.sublime-works",
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 840.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/stephen.oneal/AppData/Local/Temp/7zO44C27896/README.org",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9397,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1060.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "GeneratePackage_xml.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10794,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2648,
+								2648
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<!--",
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 220.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 3,
+					"file": "src/classes/RESTAPICallouts.cls",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 6416,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2322,
+								2322
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 480.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "tmp/bigcommerce.ReportFolders.log",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 35399,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16476,
+								16483
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2073.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "build.properties",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 559,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								498,
+								491
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/JavaProperties.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": ".gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 124,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								124,
+								124
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "package.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 312531,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 44413.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/C/MavensMate/workspaces/Salesforce_Production/package_template.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8925,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5379,
+								5407
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
 					"file": "README.md",
 					"semi_transient": false,
 					"settings":
@@ -253,7 +621,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 9,
 					"type": "text"
 				}
 			]
@@ -261,7 +629,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 30.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -302,7 +670,7 @@
 	"project": "Salesforce_Production.sublime-project",
 	"replace":
 	{
-		"height": 58.0
+		"height": 94.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -340,7 +708,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 378.0,
+	"side_bar_width": 618.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

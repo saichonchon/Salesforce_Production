@@ -11,11 +11,11 @@
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Gauge</componentType>
             <displayUnits>Auto</displayUnits>
-            <gaugeMax>150.0</gaugeMax>
+            <gaugeMax>500.0</gaugeMax>
             <gaugeMin>0.0</gaugeMin>
             <header>2016 YTD Event Total Leads Generated</header>
-            <indicatorBreakpoint1>100.0</indicatorBreakpoint1>
-            <indicatorBreakpoint2>120.0</indicatorBreakpoint2>
+            <indicatorBreakpoint1>200.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>300.0</indicatorBreakpoint2>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -50,10 +50,10 @@
                 <column>NUM_LEADS</column>
             </chartSummary>
             <componentType>ColumnStacked</componentType>
-            <displayUnits>Auto</displayUnits>
+            <displayUnits>Integer</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>false</enableHover>
+            <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>START_DATE</groupingColumn>
             <groupingColumn>CAMPAIGN_PARENT_NAME</groupingColumn>
@@ -100,7 +100,7 @@
             <displayUnits>Integer</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>false</enableHover>
+            <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>CAMPAIGN_STARTDATE</groupingColumn>
             <groupingColumn>CAMPAIGN_PARENT_NAME</groupingColumn>
@@ -206,7 +206,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>false</enableHover>
+            <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>START_DATE</groupingColumn>
             <groupingColumn>CAMPAIGN_PARENT_NAME</groupingColumn>
@@ -353,7 +353,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>false</enableHover>
+            <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>START_DATE</groupingColumn>
             <groupingColumn>CAMPAIGN_PARENT_NAME</groupingColumn>

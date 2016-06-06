@@ -65,7 +65,7 @@
         <criteriaItems>
             <column>Account.Cases$RecordType</column>
             <operator>equals</operator>
-            <value>zEnterprise Account Services</value>
+            <value>Case.Enterprise_Account_Services</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Cases$Bigcommerce_Plan__c</column>

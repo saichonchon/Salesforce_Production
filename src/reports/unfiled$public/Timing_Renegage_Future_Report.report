@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Lead$Id</field>
+    </columns>
+    <columns>
+        <field>Lead$Name</field>
+    </columns>
+    <columns>
+        <field>Lead$Closed_Lost_Reason__c</field>
+    </columns>
+    <columns>
+        <field>Lead$Status</field>
+    </columns>
+    <columns>
+        <field>Lead$Owner</field>
+    </columns>
+    <columns>
+        <field>Lead$LastModifiedBy</field>
+    </columns>
+    <columns>
+        <field>Lead$LastModifiedDate</field>
+    </columns>
+    <description>Leads that were unqualified because they were not ready to purchase today, but said to call them back in the future.</description>
+    <filter>
+        <criteriaItems>
+            <column>Lead$Closed_Lost_Reason__c</column>
+            <operator>equals</operator>
+            <value>Timing - Reengage 1-3 months,Timing - Reengage 4-12 months,Timing - Reengage 12+ months</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Timing - Renegage Future Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Leads_with_or_without_Campaigns__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Lead$LastActivityDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-02-01</startDate>
+    </timeFrameFilter>
+</Report>

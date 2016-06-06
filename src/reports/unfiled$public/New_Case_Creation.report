@@ -30,7 +30,7 @@
         <criteriaItems>
             <column>CREATED</column>
             <operator>equals</operator>
-            <value>Todd Wallace</value>
+            <value>John Fasano</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>
@@ -58,8 +58,6 @@
     <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <endDate>2016-05-28</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2016-05-01</startDate>
+        <interval>INTERVAL_LASTWEEK</interval>
     </timeFrameFilter>
 </Report>

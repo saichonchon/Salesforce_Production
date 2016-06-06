@@ -159,6 +159,10 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>Zuora__External_Id__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>Zuora__PriceTable__c</field>
             </layoutItems>
         </layoutColumns>
