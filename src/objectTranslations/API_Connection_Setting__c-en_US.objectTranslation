@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>API Connection Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>API Connection Setting</value>
+    </caseValues>
+    <fields>
+        <help><!-- The ID of the GA property to which the MP hit will be registered. In
+production, use UA-10308612-26, in development use UA-55705032-15.
+Used only when creating a Google Analytics connection --></help>
+        <label><!-- Google Analytics Property Id --></label>
+        <name>Google_Analytics_Property_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- The password for connecting to the API --></help>
+        <label><!-- Password --></label>
+        <name>Password__c</name>
+    </fields>
+    <fields>
+        <help><!-- The target URL of the API --></help>
+        <label><!-- URL --></label>
+        <name>URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- User name used for connecting to the API --></help>
+        <label><!-- UserName --></label>
+        <name>UserName__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

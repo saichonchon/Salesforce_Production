@@ -32,6 +32,7 @@
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
+        <aggregateTypes>Average</aggregateTypes>
         <field>Network.NetworkActivityDailyMetrics$CommentCount</field>
     </columns>
     <columns>
@@ -62,7 +63,7 @@
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
     <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
+        <dateGranularity>Week</dateGranularity>
         <field>Network.NetworkActivityDailyMetrics$PeriodEndDate</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
@@ -76,6 +77,6 @@
     <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>Network.NetworkActivityDailyMetrics$PeriodEndDate</dateColumn>
-        <interval>INTERVAL_LASTWEEK</interval>
+        <interval>INTERVAL_LAST30</interval>
     </timeFrameFilter>
 </Report>

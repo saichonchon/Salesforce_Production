@@ -1208,7 +1208,7 @@ NOT(ISCHANGED( OwnerId ))</formula>
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <booleanFilter>(1 OR 7) AND 2 AND 3 AND 4 AND 5 AND 6 AND 8 AND 9 AND 10 AND 11</booleanFilter>
+        <booleanFilter>((1 OR 7) AND 2 AND 3 AND 4 AND 5 AND 6 AND 8 AND 9 AND 10 AND 11) OR 12</booleanFilter>
         <criteriaItems>
             <field>Lead.LeadSource</field>
             <operation>equals</operation>
@@ -1261,6 +1261,11 @@ NOT(ISCHANGED( OwnerId ))</formula>
         <criteriaItems>
             <field>Lead.Duplicate__c</field>
             <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Closed_Lost_Reason__c</field>
+            <operation>contains</operation>
+            <value>Timing</value>
         </criteriaItems>
         <description>Based on given criteria, Marketo will pick up record to be synced with Marketo. The Marketo team has stored filter to only sync records that have the Sync with Marketo checkbox checked.</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>

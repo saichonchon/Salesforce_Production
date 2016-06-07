@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Provides connection data for external API callouts</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Google_Analytics_Property_Id__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The ID of the GA property to which the MP hit will be registered. In
+production, use UA-10308612-26, in development use UA-55705032-15.
+Used only when creating a Google Analytics connection</inlineHelpText>
+        <label>Google Analytics Property Id</label>
+        <length>15</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Password__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The password for connecting to the API</inlineHelpText>
+        <label>Password</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>URL__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The target URL of the API</inlineHelpText>
+        <label>URL</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>UserName__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>User name used for connecting to the API</inlineHelpText>
+        <label>UserName</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>API Connection Setting</label>
+    <visibility>Protected</visibility>
+</CustomObject>

@@ -34,11 +34,6 @@
             <operator>notEqual</operator>
             <value>Closed</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>OWNER</column>
-            <operator>notContain</operator>
-            <value>nichols,partner</value>
-        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>

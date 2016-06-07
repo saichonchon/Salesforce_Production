@@ -4,6 +4,9 @@
         <field>CASE_NUMBER</field>
     </columns>
     <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
         <field>Case.Bigcommerce_Store_URL__c</field>
     </columns>
     <columns>

@@ -56,15 +56,15 @@
             <axisBinding>y</axisBinding>
             <column>RowCount</column>
         </chartSummaries>
-        <chartType>Pie</chartType>
-        <enableHoverLabels>true</enableHoverLabels>
+        <chartType>Donut</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>false</expandOthers>
         <groupingColumn>BucketField_19077171</groupingColumn>
-        <legendPosition>Right</legendPosition>
+        <legendPosition>Bottom</legendPosition>
         <location>CHART_TOP</location>
-        <showAxisLabels>true</showAxisLabels>
-        <showPercentage>true</showPercentage>
-        <showTotal>false</showTotal>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>true</showTotal>
         <showValues>true</showValues>
         <size>Small</size>
         <summaryAxisRange>Auto</summaryAxisRange>
@@ -113,7 +113,7 @@
         <criteriaItems>
             <column>Case.Survey_Name__c</column>
             <operator>contains</operator>
-            <value>Resolution Email Survey,web</value>
+            <value>Resolution Email Survey,Web</value>
         </criteriaItems>
         <criteriaItems>
             <column>ORIGIN</column>
