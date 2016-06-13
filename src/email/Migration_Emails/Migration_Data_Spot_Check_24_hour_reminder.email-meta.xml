@@ -9,38 +9,26 @@
     <subject>Your BigCommerce Catalog Transfer: Your data check is due</subject>
     <textOnly>Hi {!Case.Contact_First_Name__c},
 
-
-We haven’t heard back about your migration. Please review your store and complete our spot­ check survey.
-
+We haven’t heard back about your catalog transfer. Please review your store and complete our spot­ check survey.
 
 Previous Store URL: {!Case.Current_Store_URL__c}
+BigCommerce Store URL: {!Case.Temporary_Store_URL__c}
 
-BigCommerce Migrated Store URL: {!Case.Temporary_Store_URL__c}
-
+You will want to log into your new BigCommerce control panel to view your store. You can access your store&apos;s control panel here (https://login.bigcommerce.com/login) using the email address and password you set up when your account was created. If you forgot your password, you can reset your password here (https://login.bigcommerce.com/recover/new).
 
 Indicate any areas that may need to be revisited:
-
 - Categories
-
 - Product images
-
 - Product options (if needed)
-
 - Product descriptions
-
 - Customers
-
 - Product/category 301 redirects
 
-
-We’re excited to finish your data migration so you can start selling more as soon as possible! If you don’t have the time to spot check your data in the next 24 hours, we’ll go ahead and move you on to the store setup phase.
-
+We’re excited to finish your catalog transfer so you can start selling more as soon as possible! If you don’t have the time to spot check your data in the next 24 hours, we’ll go ahead and move you on to the store setup phase.
 
 Thanks,
 
-
 The BigCommerce Team
-
 
 Case # {!Case.CaseNumber}</textOnly>
     <type>html</type>

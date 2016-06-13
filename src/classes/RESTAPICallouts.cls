@@ -11,15 +11,15 @@ global class RESTAPICallouts {
         HttpRequest request = new HttpRequest();
         
         
-        JiraSettings__c settings = JiraSettings__c.getValues('BMP');
+        API_Connection_Setting__c settings = API_Connection_Setting__c.getValues('BMP');
         
         //Set your username and password here
         String username = settings.UserName__c;
-        String password = settings.Credentials__c;
-        system.debug('credd '+settings.Credentials__c);
-        String jiraURL  = settings.Jira_URL__c;
+        String password = settings.Password__c;
+        system.debug('credd '+settings.Password__c);
+        String jiraURL  = settings.URL__c;
 
-        Blob headerValue = Blob.valueOf(username+':'+settings.Credentials__c);
+        Blob headerValue = Blob.valueOf(username+':'+settings.Password__c);
         string authorizationHeader = 'Basic ' + EncodingUtil.base64Encode(headerValue);
         request.setHeader('Authorization', authorizationHeader);
         request.setHeader('Content-Type', 'application/json');
@@ -48,16 +48,16 @@ global class RESTAPICallouts {
         	try {
         	     system.debug('*** REST:BMPRequestSetup - API Request Made with: ' + request.toString());
             	 response = httpProtocol.send(request);
-            	 }
+		         system.debug('***'+response.getBody());
+            	}
 				catch (Exception e)
 				{
 					System.debug('*** calling service failed: ' + e);
-					ErrorEmailHelper.notifyOnError('BMP Callout', 'Service Error', 'Error Occured in calling BMP', ' Error Message: ' + e.getMessage());
+					ErrorEmailHelper.notifyOnError('BMP Callout', 'Service Error', 'Error Occured in calling BMP', ' Request: ' + request.toString() + ' Error Message: ' + e.getMessage());
         
 					//EmailUtils.sendTextEmail(recipients, emailSubject, textBody);
 				}
         }
-        system.debug('***'+response.getBody());
 //      return response;
     }
  /*   

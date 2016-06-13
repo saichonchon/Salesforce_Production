@@ -7,9 +7,6 @@
         <field>SUBJECT</field>
     </columns>
     <columns>
-        <field>CREATED_DATE</field>
-    </columns>
-    <columns>
         <field>AGE</field>
     </columns>
     <columns>
@@ -19,10 +16,16 @@
         <field>CLOSED</field>
     </columns>
     <filter>
+        <booleanFilter>((1 or 2)) AND 3</booleanFilter>
         <criteriaItems>
             <column>Case.Success_Squad_Notes__c</column>
             <operator>contains</operator>
-            <value>engage,re-engage,re-engaged</value>
+            <value>engage,re-engage,re-engaged,activate,activation,reactivate,reactivation,re-activation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Reason_Code__c</column>
+            <operator>equals</operator>
+            <value>Legacy Partner Re-Apply Issue</value>
         </criteriaItems>
         <criteriaItems>
             <column>SUBJECT</column>
@@ -32,8 +35,8 @@
     </filter>
     <format>Summary</format>
     <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>FK_NAME</field>
+        <dateGranularity>Month</dateGranularity>
+        <field>CREATED_DATE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Responses from re-engagement  email</name>
@@ -50,6 +53,8 @@
     <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
+        <endDate>2016-12-31</endDate>
         <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-04-01</startDate>
     </timeFrameFilter>
 </Report>

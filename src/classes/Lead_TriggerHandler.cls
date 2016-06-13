@@ -1,95 +1,11 @@
 public without sharing class Lead_TriggerHandler {
 
-/*
-  Map<String, Id> leadEmail = new Map<String, Id>();
-  List<Id> convertedLeadIds = new List<Id>();
-  Map<Id,Id> leadToContactIds = new Map<Id,Id>();
-  Map<Id,Id> leadToAccountIds = new Map<Id,Id>();  
- 
-  public void getWebinar(List<Lead> leadList){    
-    
-    for(Lead leadId : leadList){
-     
-      leadEmail.put(leadId.Email,leadId.Id);
-    }   
 
-    List<Webinar__c> dbWebinarRec = [SELECT Registrant_Email__c FROM Webinar__c WHERE Registrant_Email__c IN : leadEmail.keySet() ];    
-
-    if(!dbWebinarRec.isEmpty()){
-
-      for(Webinar__c updateWebinar : dbWebinarRec ){
-
-        updateWebinar.Lead__c = leadEmail.get(updateWebinar.Registrant_email__c);
-
-        System.debug('getWebinar : lead__c Id ' + leadEmail.get(updateWebinar.Registrant_email__c));
-      }
-    }
-    update dbWebinarRec;   
-  } 
-
-  public void newLeadIsConverted(List<Lead> leadList){
-
-    for (Lead l : leadList) {       
-      convertedLeadIds.add(l.Id);
-      leadToContactIds.put(l.Id,l.ConvertedContactId);
-      leadToAccountIds.put(l.Id,l.ConvertedAccountId);     
-    }
-    if (!convertedLeadIds.isEmpty()) {
-      //Get webinar__c objects for these leads
-      List<Webinar__c> dbWebinars = [SELECT Id, Lead__c, Contact__c, Account__c FROM Webinar__c WHERE Lead__c IN :convertedLeadIds];
-
-      System.debug('newLeadIsConverted : dbWebinars ' + dbWebinars);
-      if (!dbWebinars.isEmpty()) {
-        for (Webinar__c webinar : dbWebinars) {
-          if (webinar.Contact__c == null) {
-            webinar.Contact__c = leadToContactIds.get(webinar.Lead__c);
-          }
-          if (webinar.Account__c == null) {
-            webinar.Account__c = leadToAccountIds.get(webinar.Lead__c);
-          }
-        }
-        update dbWebinars;
-      }
-    }    
-  }
- 
-  public static void updateSubOwner(Map <Id, Id> mapleadowner)
-  	
-  {
-	  
-    	List<Subscription__c> subs = new List<Subscription__c>([select Id, OwnerId, Lead__c from Subscription__c where  Lead__c in :mapleadOwner.KeySet() and Channel_Partner__c = null]);
-        
-        List<Subscription__c> updsubs = new List<Subscription__c>();
-             
-        
-        for (Subscription__c sub :subs)
-            {
-              if (sub.OwnerId <> mapLeadOwner.get(sub.Lead__c))	
-              {
-            	sub.OwnerId = mapLeadOwner.get(sub.Lead__c);
-                updsubs.add(sub);
-              }	
-            }
-            
-            try
-            {
-                
-                update updsubs;
-            }
-            catch(Exception exc)
-            {
-               ErrorEmailHelper.notifyOnError('Lead Trigger Handler', 'after update', 'Error in Lead Trigger Handler - update ', ': update Subscription' + subs[0].Id);
- 
-               system.debug('***ERROR: LeadTrigger:update Sub: ' + exc.getStackTraceString());
-            }
-    
-  } 
-  */
     public static void updateSubAccountandContact(Map<Id,Lead> mpLeadIdToLead)
     {
         system.debug('Inside updateAccountandContact Method'+mpLeadIdToLead);
         // Map to hold LeadId and Subscription.
-        //List to hold Account to Update.
+        // List to hold Account to Update.
         List<Subscription__c> lstsub = new List<Subscription__c>();
         
         for(Subscription__c sub:[SELECT Id,Lead__c, OwnerId FROM Subscription__c WHERE Lead__c IN : mpLeadIdToLead.keyset()])
@@ -97,7 +13,7 @@ public without sharing class Lead_TriggerHandler {
  			Lead clead = mpLeadIdToLead.get(sub.Lead__c);
  			sub.Contact__c = cLead.ConvertedContactId;
             sub.Account__c = cLead.ConvertedAccountId;
-            sub.OwnerId = cLead.OwnerId;
+ 
             lstsub.add(sub);
            
         }
@@ -114,7 +30,7 @@ public without sharing class Lead_TriggerHandler {
             }
         	catch(Exception exc)
             {
- //              ErrorEmailHelper.notifyOnError('Lead Trigger Handler', 'after update', 'Error in Lead Trigger Handler - update ', ': update Subscription Account, Contact' + lstsub[0].Id);
+            // ErrorEmailHelper.notifyOnError('Lead Trigger Handler', 'after update', 'Error in Lead Trigger Handler - update ', ': update Subscription Account, Contact' + lstsub[0].Id);
  
                system.debug('***ERROR: LeadTrigger:update Sub: ' + exc.getStackTraceString());
             }
@@ -131,19 +47,18 @@ public without sharing class Lead_TriggerHandler {
 		Set<String> setLeadPhone = new Set<String>();
 		
 		for ( Lead objLead : newLeads){	
-			//fetch the Email, needed for SOQL
+			// Fetch the Email, needed for SOQL
 			if (objLead.Email <> null ) setLeadEmail.add(objLead.Email);
 			if (objLead.Phone <> null) setLeadPhone.add(objLead.Phone);
 		}
 
 		Map<String, Account> mapAccount = new Map<String, Account>();
-		//Create a map of Email, Contact
+		// Create a map of Email, Contact
 		Map<String, Contact> mapContact = new Map<String, Contact>();
 		Map<String, Contact> mapPhoneContact = new Map<String, Contact>();
 		
 		for(Contact c : [SELECT Id, email,OwnerId, Phone FROM Contact WHERE email in :setLeadEmail AND IsDeleted = false ORDER BY CreatedDate DESC]){
 			mapContact.put(c.email, c);
-//			String numData = c.Phone.replaceAll('[^0-9]', '');
 			mapPhoneContact.put(c.Phone, c);
 		}
 		//Create a map of Email, Lead
@@ -151,12 +66,11 @@ public without sharing class Lead_TriggerHandler {
 		Map<String, Lead> mapPhoneLead = new Map<String, Lead>();
 		for(Lead l : [SELECT Id, email, Phone FROM Lead WHERE isConverted = false and (email in :setLeadEmail or phone in :setLeadPhone)]){
 			if (l.email <> null) mapLead.put(l.email, l);
-//			String numData = c.Phone.replaceAll('[^0-9]', '');
 			if (l.phone <> null) mapPhoneLead.put(l.phone, l);
 		}
 	
 		for(Lead l : newLeads){
-			//Check if Email is present in map
+			// Check if Email is present in map
 			if(mapContact.containsKey(l.Email) )
 			{
 				
@@ -169,7 +83,6 @@ public without sharing class Lead_TriggerHandler {
 					l.Email.addError('Another Contact has the same email address.');
 				}
 				
-//				l.status = 'Duplicate Contact Found';
 			}
 			//Check if Email is present in map
 			else if(mapLead.containsKey(l.Email) && mapLead.get(l.Email).Id <> l.Id && !l.isConverted)
@@ -184,8 +97,6 @@ public without sharing class Lead_TriggerHandler {
 				{
 					l.Email.addError('Another Lead has the same email address.');
 				}
-				
-//				l.status = 'Duplicate Lead Found';
 			}
 			if(mapPhoneLead.containsKey(l.Phone) && mapPhoneLead.get(l.Phone).Id <> l.Id)
 			{
@@ -193,11 +104,8 @@ public without sharing class Lead_TriggerHandler {
 				system.debug('*** Test'+userinfo.getLastName());
 				
 				l.phone_match__c = true;
-				
-//				l.status = 'Duplicate Lead Found';
 			}
-	    }
-	   
+	    }  
   }
   
   public static void updatePhoneNumbers(List<Lead> newList, List<Lead> oldList)
@@ -207,12 +115,9 @@ public without sharing class Lead_TriggerHandler {
   	  
   	  for (integer i =0; i < newList.size(); i++)
         {
-//			String newph = newList[i].Phone.replaceAll('[^0-9]', '');
-//			String oldph = oldList[i].Phone.replaceAll('[^0-9]', '');
             if (  oldList[i].Phone <> null && 
                   newList[i].Phone <> null && 
                   newList[i].Phone.replaceAll('[^0-9]', '') <> oldList[i].Phone.replaceAll('[^0-9]', '')
-//                  || (newList[i].Sales_Phone__c <> oldList[i].Sales_Phone__c && newList[i].Bad_Phone_Number__c == true)
   				)
                 {
  
@@ -236,13 +141,7 @@ public without sharing class Lead_TriggerHandler {
 	                   newList[i].MBA_Phone_1__c =  oldList[i].Phone;
 	                   newList[i].Bad_MBA_Phone_1__c = newList[i].Bad_Phone_Number__c;
                    }
- 
- /*                 if (newList[i].Sales_Phone__c <> oldList[i].Sales_Phone__c && 
-                      newList[i].Bad_Phone_Number__c == true)
-                  {
-                  	newList[i].Phone = newList[i].Sales_Phone__c;
-                  } 
- */                  
+                
                    newList[i].Bad_Phone_Number__c= false ;
                    
                 }
@@ -262,13 +161,10 @@ public without sharing class Lead_TriggerHandler {
 	            	newList[i].Take_Ownership__C.addError('Not allowed to change owner.');
 	            	
 	            }
-	            else {
+	            else 
+                {
 			            mapLeadOwner.put(newList[i].Id, UserInfo.getuserId());
-//			            newList[i].OwnerId= mapLeadOwner.get(newList[i].Id);
-//			            system.debug('*** user' +newList[i].OwnerId);
-//			            newList[i].Stage__c = 'Engaged';
-//			            newList[i].Take_Ownership__C = false;
-	         		 }
+         		 }
 	       }
 		}
 		changeOwner(mapLeadOwner);
@@ -295,7 +191,7 @@ public without sharing class Lead_TriggerHandler {
     public static void updateChatTranscript(Map<Id,Lead> mpLeadIdToLead)
     {
         
-        //List to hold ChatTranscript to Update.
+        //List to hold ChatTranscript to Update
         List<LiveChatTranscript> updlst = new List<LiveChatTranscript>();
         
         List<LiveChatTranscript> lstlct = new List<LiveChatTranscript>([SELECT Id, LeadId FROM LiveChatTranscript WHERE LeadId  IN :mpLeadIdToLead.keyset()]);
@@ -365,5 +261,78 @@ public without sharing class Lead_TriggerHandler {
 		}												 
 														 
     }
-  
+  	public static void accountGAUpdate(List<Lead> newList)
+    {
+       System.debug('Entering the GA account update criteria on lead convert' );
+        Set<Id> setAccountIds = new Set<Id>();
+        for (Lead l : newList) {
+           if (l.isConverted && l.ConvertedAccountId != null) setAccountIds.add(l.ConvertedAccountId);
+        }
+       
+        Map<Id, Account> mapAccounts = new Map<Id, Account>([select Id, GAClientId__c, galastTouchDate__c, gafirstTouchDate__c, gaTotalTouchCount__c from Account where Id in : setAccountIds]);
+        Map<Id, Account> mapAccountsToupdate = new Map<Id, Account>();
+       
+        for (Lead l : newList) {
+            if (l.isConverted && mapAccounts.containsKey(l.ConvertedAccountId)) {
+                Account a = mapAccounts.get(l.ConvertedAccountId);
+                if ( a.GAClientId__c == null) a.GAClientId__c = l.GAClientId__c;
+                else a.GAClientId__c = a.GAClientId__c +','+ l.GAClientId__c;
+                            
+                // MH - Start lead mapping for BAP-3498 - this logic sets or updates the account's first touch and/or last touch details if the lead's first touch and/or last touch details are more accurate
+                                
+                // If the lead's last Touch Date is later than the Account's last touch date or the Account doesn't have a last touch date set... 
+                System.debug('Account galastTouchdate' + a.galasttouchdate__c);
+                System.debug('Lead galastTouchDate' + l.galasttouchdate__c);
+                
+                
+                if (l.galastTouchDate__c != null && (a.galastTouchDate__c == null || l.galastTouchDate__c > a.galastTouchDate__c))
+                {
+                    System.debug('Entering the logic for galastTouch data');
+                    a.galastTouchCampaign__c = l.galastTouchCampaign__c;
+                    a.galastTouchChannel__c = l.galastTouchChannel__c;
+                    a.galastTouchKeyword__c = l.galastTouchKeyword__c;
+                    a.galastTouchMedium__c = l.galastTouchMedium__c;
+                    a.galastTouchSource__c = l.galastTouchSource__c;
+                    a.galastTouchDate__c = l.galastTouchDate__c;  
+                }
+                
+                // If the lead's first Touch Date is earlier than the Account's first touch date or the Account doesn't have a first touch date set...
+                System.debug('Account gafirstTouchDate__c' + a.gafirstTouchDate__c);
+                System.debug('Lead gafirstTouchDate__c' + l.gafirstTouchDate__c);
+                if (l.gafirstTouchDate__c != null && (a.gafirstTouchDate__c == null || l.gafirstTouchDate__c < a.gafirstTouchDate__c))
+                {
+                    System.debug('Entering the logic for gafirstTouch data');
+                    a.gafirstTouchCampaign__c = l.gafirstTouchCampaign__c;
+                    a.gafirstTouchChannel__c = l.gafirstTouchChannel__c;
+                    a.gafirstTouchKeyword__c = l.gafirstTouchKeyword__c;
+                    a.gafirstTouchMedium__c = l.gafirstTouchMedium__c;
+                    a.gafirstTouchSource__c = l.gafirstTouchSource__c;
+                    a.gafirstTouchDate__c = l.gafirstTouchDate__c;   
+                }
+                
+                // MH - BAP-3498 - Aggregate the Account's TouchCount total by adding the lead's TouchCount value to the account's TouchCount value 
+                
+             if (l.gatotalTouchCount__c != null) 
+                {
+                	System.debug('Account gatotalTouch Count is' + a.gatotalTouchCount__c);
+                    System.debug('Entering the logic for gatotalTouchCount data');
+                    if(a.gatotalTouchCount__c == null) 
+                    {
+                        System.debug('Entering the logic for gatotalTouchCount data ACCOUNT TOUCH COUNT IS NULL');
+                        a.gatotalTouchCount__c = l.gatotalTouchCount__c;
+                    }
+
+                    else 
+                     {
+                        System.debug('Entering the logic for gatotalTouchCount data ACCOUNT TOUCH COUNT IS ' +a.gatotalTouchCount__c);
+                        a.gatotalTouchCount__c = a.gatotalTouchCount__c + l.gatotalTouchCount__c;       
+                    }
+                    
+                }
+         mapAccountsToupdate.put(a.Id, a);
+   		 if (!mapAccountsToupdate.isEmpty()) update mapAccountsToupdate.values();
+   
+            }
+        }
+    }
 }

@@ -40,7 +40,7 @@
             <criteriaItems>
                 <column>HSTATUS</column>
                 <operator>equals</operator>
-                <value>Requires Rerun</value>
+                <value>UAT Review</value>
             </criteriaItems>
             <criteriaItems>
                 <column>PRIORITY</column>
@@ -62,9 +62,9 @@
         <scope>organization</scope>
         <timeFrameFilter>
             <dateColumn>CLOSED_DATEONLY</dateColumn>
-            <endDate>2016-05-01</endDate>
+            <endDate>2016-06-05</endDate>
             <interval>INTERVAL_CUSTOM</interval>
-            <startDate>2016-04-25</startDate>
+            <startDate>2016-05-30</startDate>
         </timeFrameFilter>
     </block>
     <block>
@@ -101,9 +101,9 @@
         <scope>organization</scope>
         <timeFrameFilter>
             <dateColumn>CLOSED_DATEONLY</dateColumn>
-            <endDate>2016-05-01</endDate>
+            <endDate>2016-06-05</endDate>
             <interval>INTERVAL_CUSTOM</interval>
-            <startDate>2016-04-25</startDate>
+            <startDate>2016-05-30</startDate>
         </timeFrameFilter>
     </block>
     <blockInfo>

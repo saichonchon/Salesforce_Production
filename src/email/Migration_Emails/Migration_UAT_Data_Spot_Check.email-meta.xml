@@ -9,32 +9,28 @@
     <subject>Your BigCommerce Catalog Transfer: Revisiting your data spot check</subject>
     <textOnly>Hi {!Case.Contact_First_Name__c},
 
-Good News: we have received your Data Migration Spot Check survey and have reviewed your feedback.
+Good News: we have received your Catalog Transfer Spot Check survey and have reviewed your feedback.
 
 Here is a list of changes we made based on your feedback:
 
 {!Case.MIG_UAT_Change_Made__c}
 
-The following items are not included in our scope of work for the data migration, but can be addressed during the store setup phase or through the help of our outstanding 24/7 support department:
-
+The following items are not included in our scope of work for the catalog transfer, but can be addressed during the store setup phase or through the help of our outstanding 24/7 support department:
 
 {!Case.MIG_UAT_Changed_Not_Made__c}
-
 
 Please review your store and update our spot ­check survey given the new changes.
 
 Survey Link: http://www.clicktools.com/survey?iv=3guvod81bnifq&amp;q1={Id} 
 
 Previous Store URL: {!Case.Current_Store_URL__c}
+BigCommerce Store URL: {!Case.Temporary_Store_URL__c}
 
-BigCommerce Migrated Store URL: {!Case.Temporary_Store_URL__c}
-
-We’re excited to finish your data migration so you can start selling more as soon as possible! If we don&apos;t hear back from you within the next 72 hours, we’ll go ahead and move you on to the store setup phase.
+We’re excited to finish your catalog transfer so you can start selling more as soon as possible! If we don&apos;t hear back from you within the next 72 hours, we’ll go ahead and move you on to the store setup phase.
 
 Thanks,
 
 The BigCommerce Team
-
 
 Case # {!Case.CaseNumber}</textOnly>
     <type>html</type>

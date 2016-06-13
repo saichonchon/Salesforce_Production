@@ -12,6 +12,9 @@
     <columns>
         <field>lmscons__Transcript_Line__c$lmscons__Status__c</field>
     </columns>
+    <columns>
+        <field>lmscons__Transcript_Line__c$CreatedDate</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>lmscons__Transcript_Line__c$lmscons__Quiz__c</column>

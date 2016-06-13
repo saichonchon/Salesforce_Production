@@ -232,6 +232,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>Deal_Registration_Notes__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>Channel_Partner__c</field>
             </layoutItems>
             <layoutItems>

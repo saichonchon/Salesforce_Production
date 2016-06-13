@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Trial Copy Test (Experienced): May 2016.Day 15 - Email 9: Trial is over</name>
+    <style>none</style>
+    <subject>Your trial ends today</subject>
+    <textOnly>Today is the last day for your free Bigcommerce trial. Upgrade your store by picking a plan today.
+Log in to your control panel &lt;[[https://login.bigcommerce.com/login]]&gt;
+Your free trial ends today
+Choose your plan &lt;[[https://login.bigcommerce.com/login]]&gt;
+We offer a range of plans to fit businesses of all sizes.
+
+Select one today to get:
+
+
+
+
+	- Enterprise features for high-volume brands
+
+
+
+
+	- Transparent pricing with unlimited bandwidth and products
+
+
+
+
+	- One platform for all your sales channels; including Amazon Marketplace, POS, social commerce
+
+
+
+
+	- Reliable, secure and scalable
+
+
+
+
+Choose your plan today »
+
+
+
+&quot;In two years, we&apos;ve seen a 150% increase in online sales. We had a big vision, and BigCommerce has not only supported us, they&apos;ve grown with us.&quot;
+
+
+
+— Raven + Lily</textOnly>
+    <type>custom</type>
+</EmailTemplate>

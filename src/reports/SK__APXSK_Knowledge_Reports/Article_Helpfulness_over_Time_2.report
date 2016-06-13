@@ -20,7 +20,7 @@
         <chartType>Line</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>PKB_Article_Feedback_Deflection__c.Last_Published_Date__c</groupingColumn>
+        <groupingColumn>PKB_Article_Feedback_Deflection__c.Article_Title__c</groupingColumn>
         <location>CHART_TOP</location>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
@@ -42,17 +42,9 @@
         <midColor>#C2C254</midColor>
     </colorRanges>
     <columns>
-        <field>CUST_CREATED_DATE</field>
-    </columns>
-    <columns>
         <field>PKB_Article_Feedback_Deflection__c.ArticleCreatedBy__c</field>
     </columns>
     <filter>
-        <criteriaItems>
-            <column>PKB_Article_Feedback_Deflection__c.ArticleLastModifiedBy__c</column>
-            <operator>equals</operator>
-            <value>Karen Friedman</value>
-        </criteriaItems>
         <criteriaItems>
             <column>PKB_Article_Feedback_Deflection__c.Feedback_Addressed__c</column>
             <operator>notEqual</operator>
@@ -63,16 +55,11 @@
             <operator>notEqual</operator>
             <value>&quot;Did not help, I&apos;m looking for help with a known issue&quot;,I don&apos;t like this feature,I have feedback about Bigcommerce</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>PKB_Article_Feedback_Deflection__c.Article_Title__c</column>
-            <operator>equals</operator>
-            <value>Product Options: Product List</value>
-        </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>
-        <dateGranularity>Month</dateGranularity>
-        <field>PKB_Article_Feedback_Deflection__c.Last_Published_Date__c</field>
+        <dateGranularity>Week</dateGranularity>
+        <field>CUST_CREATED_DATE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
     <groupingsAcross>
@@ -85,18 +72,16 @@
         <field>PKB_Article_Feedback_Deflection__c.Article_Title__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Article Helpfulness over Time</name>
+    <name>Article Helpfulness over Time 2</name>
     <params>
         <name>co</name>
         <value>1</value>
     </params>
     <reportType>CustomEntity$PKB_Article_Feedback_Deflection__c</reportType>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>CUST_CREATED_DATE</dateColumn>
-        <endDate>2016-05-26</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2015-06-01</startDate>
+        <interval>INTERVAL_LAST90</interval>
     </timeFrameFilter>
 </Report>

@@ -9,12 +9,16 @@
     <subject>Your BigCommerce Catalog Transfer: We&apos;re reviewing your feedback</subject>
     <textOnly>Hi {!Case.Contact_First_Name__c},
 
-Thanks for completing your Migration Verification Checklist. We have received your feedback and our data migration team is reviewing your feedback and will contact you when we&apos;re ready for you to review the migration details again. Please hold off on making changes to your products and categories until we have had addressed your feedback.
+Thanks for completing your Catalog Transfer Verification Checklist. We have received your feedback and our catalog transfer services team is reviewing your feedback and will contact you when we&apos;re ready for you to review the catalog transfer details again.
 
-Remember, we’re here to help. If you have any additional questions, please don’t hesitate to reach out to migrations@bigcommerce.com. We’re looking forward to working with you!
+Please hold off on making changes to your products, options and categories until we have had addressed your feedback.
+
+Remember, we’re here to help. If you have any additional questions, please don’t hesitate to reach out to catalogtransfer@bigcommerce.com. We’re looking forward to working with you!
 
 Thanks,
 
-The BigCommerce Team</textOnly>
+The BigCommerce Team
+
+Case # {!Case.CaseNumber}</textOnly>
     <type>html</type>
 </EmailTemplate>

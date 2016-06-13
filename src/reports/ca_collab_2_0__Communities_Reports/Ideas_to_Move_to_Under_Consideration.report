@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Idea$Title</field>
+    </columns>
+    <columns>
+        <field>Idea$CreatedBy.Contact.Account.Name</field>
+    </columns>
+    <columns>
+        <field>Idea$InternalScore</field>
+    </columns>
+    <columns>
+        <field>Idea$WeightedSum</field>
+    </columns>
+    <columns>
+        <field>Idea$Id</field>
+    </columns>
+    <description>This is a report of Ideas that have achieved a vote total of 1k points.</description>
+    <filter>
+        <criteriaItems>
+            <column>Idea$WeightedSum</column>
+            <operator>greaterOrEqual</operator>
+            <value>1000</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Idea$Status</column>
+            <operator>notEqual</operator>
+            <value>Under Consideration</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Ideas to Move to Under Consideration</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Ideas_with_Lookup__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Idea$InternalScore</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Idea$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

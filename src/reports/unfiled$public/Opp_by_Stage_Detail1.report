@@ -35,10 +35,13 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>Opportunity.OpportunityTeamMembers$TeamMemberRole</field>
+        <field>Opportunity$Name</field>
     </columns>
     <columns>
-        <field>Opportunity$Name</field>
+        <field>Opportunity$Closed_Lost_Reason__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Closed_Lost_Reason_Detail__c</field>
     </columns>
     <columns>
         <field>Opportunity$Primary_Campaign_Name__c</field>
@@ -47,19 +50,7 @@
         <field>Opportunity$Original_Plan_Purchased__c</field>
     </columns>
     <columns>
-        <field>Opportunity$Estimated_Product__c</field>
-    </columns>
-    <columns>
-        <field>Opportunity$Upgrade_Plan__c</field>
-    </columns>
-    <columns>
         <field>Opportunity$PurchaseDate__c</field>
-    </columns>
-    <columns>
-        <field>Opportunity$Purchase_Team__c</field>
-    </columns>
-    <columns>
-        <field>Opportunity$Direct_Purchase__c</field>
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
@@ -85,7 +76,7 @@
         <criteriaItems>
             <column>Opportunity$Owner_Team__c</column>
             <operator>notEqual</operator>
-            <value>Sales Development - Inbound SDR,Sales Development - Outbound SDR</value>
+            <value>Sales Development - Outbound SDR</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>

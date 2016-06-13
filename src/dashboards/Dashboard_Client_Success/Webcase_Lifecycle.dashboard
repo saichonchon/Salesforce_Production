@@ -33,19 +33,6 @@
     </leftSection>
     <middleSection>
         <columnSize>Medium</columnSize>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
-            <displayUnits>Auto</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>Support_Live_Chat/BPO_Dash_NO_reply_surveys</report>
-            <showPicturesOnTables>true</showPicturesOnTables>
-            <sortBy>RowValueDescending</sortBy>
-        </components>
     </middleSection>
     <rightSection>
         <columnSize>Medium</columnSize>

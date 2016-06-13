@@ -45,17 +45,12 @@
         <criteriaItems>
             <column>PKB_Article_Feedback_Deflection__c.ArticleLastModifiedBy__c</column>
             <operator>equals</operator>
-            <value>A.B. Martinez,Josh Burney,Karen Friedman</value>
+            <value>Mary Stanish,tA.B. Martinez,Josh Burney,Karen Friedman</value>
         </criteriaItems>
         <criteriaItems>
             <column>PKB_Article_Feedback_Deflection__c.Feedback_Addressed__c</column>
             <operator>notEqual</operator>
             <value>Not About Article</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>PKB_Article_Feedback_Deflection__c.Why_Not_Helpful__c</column>
-            <operator>notEqual</operator>
-            <value>&quot;Did not help, I&apos;m looking for help with a known issue&quot;,I don&apos;t like this feature,I have feedback about Bigcommerce</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>

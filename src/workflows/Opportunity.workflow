@@ -359,6 +359,15 @@
         <template>App_Partner_Templates/App_Submitted</template>
     </alerts>
     <fieldUpdates>
+        <fullName>BA_Test_Opportunity_False</fullName>
+        <field>BA_Testing_Opportunity__c</field>
+        <literalValue>0</literalValue>
+        <name>BA Test Opportunity = False</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Bigcommerce_Approved</fullName>
         <field>Enterprise_Partner_Request_Status__c</field>
         <literalValue>Bigcommerce Approved</literalValue>
@@ -960,6 +969,27 @@ CONTAINS(Owner.Profile.Name, &quot;Sales Rep&quot;) &amp;&amp;
 NOT(CONTAINS( Owner.Full_Name__c, &quot;Team&quot;)) &amp;&amp; 
 DATEVALUE(CreatedDate) &lt;&gt; TODAY()</formula>
         <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity%3A BA Test Opportunity %3D True</fullName>
+        <actions>
+            <name>BA_Test_Opportunity_False</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.BA_Testing_Opportunity__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.MonthlyRecurringRevenue__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <description>BAP-3748: Sets the BA Test Opportunity field to false (usually set to true due to being previously Closed Lost as &quot;Test Account&quot;) and it has a positive MRR associated with it.
+**NOTE**  Field may no longer be valid in revenue report filtering.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
         <fullName>Opportunity%3ASet the BA Testing Opportunity field to true</fullName>

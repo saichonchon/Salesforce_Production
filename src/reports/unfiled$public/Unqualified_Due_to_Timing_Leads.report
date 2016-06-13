@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Lead$Id</field>
+    </columns>
+    <columns>
+        <field>Lead$Owner</field>
+    </columns>
+    <columns>
+        <field>Lead$Closed_Lost_Reason__c</field>
+    </columns>
+    <columns>
+        <field>Lead$Closed_Lost_Date__c</field>
+    </columns>
+    <columns>
+        <field>Lead$Status</field>
+    </columns>
+    <columns>
+        <field>Lead$LeadSource</field>
+    </columns>
+    <columns>
+        <field>Lead$Name</field>
+    </columns>
+    <columns>
+        <field>Lead.CampaignMembers$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Lead$Closed_Lost_Reason__c</column>
+            <operator>equals</operator>
+            <value>Timing - Reengage 1-3 months</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead$Closed_Lost_Date__c</column>
+            <operator>lessOrEqual</operator>
+            <value>4/21/2016</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Unqualified Due to Timing Leads</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Leads_with_Campaign_History__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Lead$Closed_Lost_Date__c</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

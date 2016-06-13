@@ -9,7 +9,6 @@
     <customButtons>Round_Robin</customButtons>
     <customButtons>Qualify</customButtons>
     <excludeButtons>DataDotComClean</excludeButtons>
-    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>DisableCustomerPortalAccount</excludeButtons>
     <excludeButtons>DisablePartnerPortalAccount</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
@@ -81,6 +80,73 @@
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
+    </layoutSections>
+    <layoutSections>
+        <customLabel>true</customLabel>
+        <detailHeading>true</detailHeading>
+        <editHeading>true</editHeading>
+        <label>Google Analytics</label>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>gaClientID__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>gafirstTouchDate__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>gafirstTouchCampaign__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>gafirstTouchChannel__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>gafirstTouchKeyword__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>gafirstTouchMedium__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>gafirstTouchSource__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>gatotalTouchCount__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>galastTouchDate__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>galastTouchCampaign__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>galastTouchKeyword__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>galastTouchSource__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>galastTouchMedium__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>galastTouchChannel__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsLeftToRight</style>
     </layoutSections>
     <layoutSections>
         <customLabel>true</customLabel>
@@ -498,25 +564,6 @@
         </layoutColumns>
         <style>OneColumn</style>
     </layoutSections>
-    <miniLayout>
-        <fields>Name</fields>
-        <fields>OwnerId</fields>
-        <fields>Active_MRR_Value_Opp__c</fields>
-        <fields>Active_Stores_Opp__c</fields>
-        <fields>MBAAccountID__c</fields>
-        <fields>Status__c</fields>
-        <fields>ParentId</fields>
-        <relatedLists>
-            <fields>OPPORTUNITY.NAME</fields>
-            <fields>StoreURL__c</fields>
-            <relatedList>RelatedOpportunityList</relatedList>
-        </relatedLists>
-        <relatedLists>
-            <fields>CASES.CASE_NUMBER</fields>
-            <fields>CASES.STATUS</fields>
-            <relatedList>RelatedCaseList</relatedList>
-        </relatedLists>
-    </miniLayout>
     <relatedLists>
         <fields>FULL_NAME</fields>
         <fields>Type__c</fields>
@@ -703,7 +750,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h1300000AXT3i</masterLabel>
+        <masterLabel>00h1300000EM37O</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

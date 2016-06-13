@@ -729,6 +729,15 @@ Assign to Fritz since Abbey has left.</description>
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>Case_Email_Log_Second_OCR_Response_1</fullName>
+        <field>Email_Log__c</field>
+        <formula>Email_Log__c +&quot;; &quot;+&quot;Second OCR Response&quot;</formula>
+        <name>Case: Email Log =+ Second OCR Response</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Case_Origin_Cancellations</fullName>
         <description>Update Case Origin to be Cancellations</description>
         <field>Origin</field>
@@ -2555,6 +2564,10 @@ NOT(ISPICKVAL(Status,&quot;Closed&quot;))</formula>
             <actions>
                 <name>Case_Send_Second_OCR_Response_Email</name>
                 <type>Alert</type>
+            </actions>
+            <actions>
+                <name>Case_Email_Log_Second_OCR_Response_1</name>
+                <type>FieldUpdate</type>
             </actions>
             <timeLength>24</timeLength>
             <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>

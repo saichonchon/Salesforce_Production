@@ -101,7 +101,7 @@
         </components>
     </leftSection>
     <middleSection>
-        <columnSize>Medium</columnSize>
+        <columnSize>Wide</columnSize>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
@@ -119,6 +119,29 @@
             <sortBy>RowLabelAscending</sortBy>
             <title>SE Activities Current Month</title>
             <useReportChart>true</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
+                <column>RowCount</column>
+            </chartSummary>
+            <componentType>ColumnStacked</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <groupingColumn>OPPORTUNITY_OWNER</groupingColumn>
+            <groupingColumn>ASSIGNED</groupingColumn>
+            <legendPosition>Bottom</legendPosition>
+            <report>Sales_Engineering/SE_resources_by_AE</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>SE resources by AE YTD</title>
+            <useReportChart>false</useReportChart>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
@@ -150,7 +173,7 @@
         </components>
     </middleSection>
     <rightSection>
-        <columnSize>Medium</columnSize>
+        <columnSize>Wide</columnSize>
         <components>
             <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
@@ -172,6 +195,29 @@
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
             <title>SE Activities by Stage</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
+                <column>RowCount</column>
+            </chartSummary>
+            <componentType>ColumnStacked</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <groupingColumn>OPPORTUNITY_OWNER</groupingColumn>
+            <groupingColumn>TASK_TYPE</groupingColumn>
+            <legendPosition>Right</legendPosition>
+            <report>Sales_Engineering/Activity_type_by_AE</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Activity Type by AE</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>

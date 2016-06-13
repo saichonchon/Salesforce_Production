@@ -81,10 +81,16 @@
         <field>OWNER</field>
     </columns>
     <columns>
+        <field>REASON</field>
+    </columns>
+    <columns>
         <field>Case.Category__c</field>
     </columns>
     <columns>
         <field>Case.Primary_Case_Rep__c</field>
+    </columns>
+    <columns>
+        <field>Case.Resolution_Count__c</field>
     </columns>
     <columns>
         <field>Case.Survey_Name__c</field>

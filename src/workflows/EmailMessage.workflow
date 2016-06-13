@@ -210,6 +210,17 @@ FIND(&quot;Does this resolve your case?&quot;,HtmlBody)-(FIND(&quot;&gt;Proposed
         <targetObject>ParentId</targetObject>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>Update_Resolution_Count</fullName>
+        <description>BAP-3743. Update Resolution Count each time an OCR is sent</description>
+        <field>Resolution_Count__c</field>
+        <formula>IF(ISBLANK(Parent.Resolution_Count__c),1,Parent.Resolution_Count__c+1)</formula>
+        <name>Update Resolution Count</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>ParentId</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_Status_to_Open_Unsolved</fullName>
         <field>Status</field>
         <literalValue>Open Unsolved</literalValue>
@@ -395,7 +406,7 @@ FIND(&quot;Does this resolve your case?&quot;,HtmlBody)-(FIND(&quot;&gt;Proposed
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7</booleanFilter>
         <criteriaItems>
             <field>EmailMessage.HtmlBody</field>
             <operation>contains</operation>
@@ -425,6 +436,11 @@ FIND(&quot;Does this resolve your case?&quot;,HtmlBody)-(FIND(&quot;&gt;Proposed
             <field>Case.Tier_2_Request_Date__c</field>
             <operation>equals</operation>
         </criteriaItems>
+        <criteriaItems>
+            <field>EmailMessage.Incoming</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </criteriaItems>
         <triggerType>onCreateOnly</triggerType>
     </rules>
     <rules>
@@ -445,6 +461,10 @@ FIND(&quot;Does this resolve your case?&quot;,HtmlBody)-(FIND(&quot;&gt;Proposed
             <name>Case_OCR_Resolution_update</name>
             <type>FieldUpdate</type>
         </actions>
+        <actions>
+            <name>Update_Resolution_Count</name>
+            <type>FieldUpdate</type>
+        </actions>
         <active>true</active>
         <criteriaItems>
             <field>EmailMessage.HtmlBody</field>
@@ -461,12 +481,13 @@ FIND(&quot;Does this resolve your case?&quot;,HtmlBody)-(FIND(&quot;&gt;Proposed
             <operation>notEqual</operation>
             <value>Closed,Auto-Closed</value>
         </criteriaItems>
+        <criteriaItems>
+            <field>EmailMessage.Incoming</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </criteriaItems>
         <triggerType>onCreateOnly</triggerType>
         <workflowTimeTriggers>
-            <actions>
-                <name>Case_Email_Log_Second_OCR_Response</name>
-                <type>FieldUpdate</type>
-            </actions>
             <timeLength>1</timeLength>
             <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
         </workflowTimeTriggers>

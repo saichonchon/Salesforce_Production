@@ -24,7 +24,7 @@
         <criteriaItems>
             <column>STAGE_NAME</column>
             <operator>equals</operator>
-            <value>Discover,Migration Scoping,Build Value,Validate,Agree,Closing</value>
+            <value>Discover,Migration Scoping,Build Value,Validate,Agree,Closing,Closed Won,Closed Lost</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

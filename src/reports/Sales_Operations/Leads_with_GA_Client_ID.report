@@ -4,6 +4,9 @@
         <field>COMPANY</field>
     </columns>
     <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
         <field>Lead.gaClientID__c</field>
     </columns>
     <columns>
@@ -51,6 +54,11 @@
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
+        <criteriaItems>
+            <column>EMAIL</column>
+            <operator>notContain</operator>
+            <value>bigcommerce</value>
+        </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>
@@ -65,7 +73,7 @@
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>OWNER</field>
+        <field>STATUS</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Leads with GA Client ID</name>

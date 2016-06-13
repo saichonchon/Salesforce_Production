@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Trial Copy Test (Experienced): May 2016.Day 07 - Email 6: Payment Gateway</name>
+    <style>none</style>
+    <subject>It&apos;s time to get paid</subject>
+    <textOnly>Select one of our payment gateways. Call 1-844-632-8912 for assistance on selecting a BigCommerce plan today.
+Log in to your control panel &lt;[[https://login.bigcommerce.com/login]]&gt;
+We have your
+
+payment gateway
+VIEW PAYMENT GATEWAYS &lt;[[https://login.bigcommerce.com/deep-links/index.php?ToDo=viewPaymentMethods#]]&gt;
+More payment options, better rates
+
+When it comes to accepting payments, no other platform gives you better options than BigCommerce. Your store seamlessly integrates with all the leading payment solutions, including PayPal powered by Braintree, Square, Stripe, WorldPay, First Data, Cybersource, Authorize.net and many more.
+
+
+
+You’ll get access to the latest payment technology to improve conversion, plus special pre-negotiated card processing rates to reduce costs.
+
+
+
+
+Find a payment gateway today » &lt;[[https://login.bigcommerce.com/deep-links/index.php?ToDo=viewPaymentMethods#]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

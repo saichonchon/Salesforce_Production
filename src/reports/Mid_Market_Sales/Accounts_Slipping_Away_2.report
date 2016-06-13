@@ -71,14 +71,14 @@
         <criteriaItems>
             <column>ActivityDate</column>
             <operator>equals</operator>
-            <value>LAST_N_DAYS:60</value>
+            <value>LAST_N_DAYS:30</value>
         </criteriaItems>
         <operation>without</operation>
         <primaryTableColumn>Account$Id</primaryTableColumn>
         <relatedTable>Activity</relatedTable>
         <relatedTableJoinColumn>Account</relatedTableJoinColumn>
     </crossFilters>
-    <description>Accounts without Activity by the MM team in the last 60 days</description>
+    <description>Accounts without Activity by the MM team in the last 30 days</description>
     <filter>
         <criteriaItems>
             <column>Account.Opportunities$Owner.UserRole</column>

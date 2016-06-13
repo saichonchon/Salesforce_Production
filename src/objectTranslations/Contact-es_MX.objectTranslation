@@ -864,6 +864,21 @@
         </sections>
     </layouts>
     <layouts>
+        <layout>Sys Admin</layout>
+        <sections>
+            <label><!-- Google Analytics --></label>
+            <section>Google Analytics</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing --></label>
+            <section>Marketing</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Information --></label>
+            <section>Partner Information</section>
+        </sections>
+    </layouts>
+    <layouts>
         <layout>zContact without ToutApp Layout</layout>
         <sections>
             <label><!-- Additional Information --></label>

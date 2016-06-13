@@ -4327,6 +4327,49 @@ Grow - Potential for big opp;Partner choosing platform --></help>
         </sections>
     </layouts>
     <layouts>
+        <layout>Default</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Channel Partner --></label>
+            <section>Channel Partner</section>
+        </sections>
+        <sections>
+            <label><!-- Client Experience --></label>
+            <section>Client Experience</section>
+        </sections>
+        <sections>
+            <label><!-- Datanyze Data --></label>
+            <section>Datanyze Data</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing --></label>
+            <section>Marketing</section>
+        </sections>
+        <sections>
+            <label><!-- Misc --></label>
+            <section>Misc</section>
+        </sections>
+        <sections>
+            <label><!-- Qualifier Details --></label>
+            <section>Qualifier Details</section>
+        </sections>
+        <sections>
+            <label><!-- Store and Revenue Detail --></label>
+            <section>Store and Revenue Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Totango Insights --></label>
+            <section>Totango Insights</section>
+        </sections>
+    </layouts>
+    <layouts>
         <layout>Partner Account Layout</layout>
         <sections>
             <label><!-- Address --></label>
@@ -4372,6 +4415,10 @@ Grow - Potential for big opp;Partner choosing platform --></help>
             <section>Description</section>
         </sections>
         <sections>
+            <label><!-- Google Analytics --></label>
+            <section>Google Analytics</section>
+        </sections>
+        <sections>
             <label><!-- Marketing --></label>
             <section>Marketing</section>
         </sections>
@@ -4393,7 +4440,7 @@ Grow - Potential for big opp;Partner choosing platform --></help>
         </sections>
     </layouts>
     <layouts>
-        <layout>Sys Admin Account</layout>
+        <layout>Sys Admin</layout>
         <sections>
             <label><!-- Address --></label>
             <section>Address</section>
@@ -4413,6 +4460,10 @@ Grow - Potential for big opp;Partner choosing platform --></help>
         <sections>
             <label><!-- Description --></label>
             <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Google Analytics --></label>
+            <section>Google Analytics</section>
         </sections>
         <sections>
             <label><!-- Marketing --></label>

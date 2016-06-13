@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
+        <field>Case.Manager_Callback_Requestor__c</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE_BY</field>
+    </columns>
+    <columns>
         <field>CASE_NUMBER</field>
     </columns>
     <columns>
@@ -8,6 +14,12 @@
     </columns>
     <columns>
         <field>Case.Bigcommerce_Store_URL__c</field>
+    </columns>
+    <columns>
+        <field>REASON</field>
+    </columns>
+    <columns>
+        <field>Case.Category__c</field>
     </columns>
     <columns>
         <field>ACCOUNT.NAME</field>

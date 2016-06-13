@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Trial Spear Design Test: February 2016.Day 12 Engaged - Spear Template A</name>
+    <style>none</style>
+    <subject>{{company.Company Name:default=Your store}} is almost ready to open</subject>
+    <textOnly>You&apos;re so close — quickly launch your online store. Pick a plan that&apos;s right for you or call 1-844-632-8912 for assistance.
+Resources  &lt;[[https://support.bigcommerce.com/articles/University/Welcome-to-Bigcommerce-University-Video/]]&gt;| Log in &lt;[[https://login.bigcommerce.com/login]]&gt;
+You&apos;re so close — quickly launch your online store
+
+Just upgrade your plan
+Start now &lt;[[https://login.bigcommerce.com/login]]&gt;
+Don&apos;t lose your trial
+
+The countdown is on! You&apos;re almost there, but you only have three days left in your free trial. Upgrade and pick a plan that&apos;s right for you to get the time you need to launch your store.
+
+Ready?
+
+Upgrade your plan » &lt;[[https://login.bigcommerce.com/login]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

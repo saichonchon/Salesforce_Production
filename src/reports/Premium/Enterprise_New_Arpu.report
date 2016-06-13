@@ -27,25 +27,13 @@
         <useOther>false</useOther>
         <values>
             <sourceValues>
-                <sourceValue>Hassan Johnson</sourceValue>
-            </sourceValues>
-            <sourceValues>
                 <sourceValue>Annette Caputo</sourceValue>
-            </sourceValues>
-            <sourceValues>
-                <sourceValue>Bill Paul</sourceValue>
             </sourceValues>
             <value>AE2</value>
         </values>
         <values>
             <sourceValues>
-                <sourceValue>James Hodgkins</sourceValue>
-            </sourceValues>
-            <sourceValues>
                 <sourceValue>Nicholas Amelio</sourceValue>
-            </sourceValues>
-            <sourceValues>
-                <sourceValue>Andrew King</sourceValue>
             </sourceValues>
             <sourceValues>
                 <sourceValue>Ryan Hamer</sourceValue>
@@ -54,7 +42,16 @@
                 <sourceValue>Justin Hospie</sourceValue>
             </sourceValues>
             <sourceValues>
-                <sourceValue>Michael Putnam</sourceValue>
+                <sourceValue>Lizette Flores</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Juan Jacinto</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Robert King</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tanner Moore</sourceValue>
             </sourceValues>
             <value>AE1</value>
         </values>
@@ -148,7 +145,7 @@
         <criteriaItems>
             <column>Opportunity.Oppotunity_Products__r$Revenue_Rep__c</column>
             <operator>notEqual</operator>
-            <value>Tanner Moore,Alecia Wall,Mike Sanchez</value>
+            <value>michael putnam,Alecia Wall,Mike Sanchez,bill paul,james hodgkins,hassan johnson</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>

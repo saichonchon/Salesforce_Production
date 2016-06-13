@@ -53,9 +53,9 @@
             <value>Lead,Engagement</value>
         </criteriaItems>
         <criteriaItems>
-            <column>FULL_NAME</column>
+            <column>STAGE_NAME</column>
             <operator>notEqual</operator>
-            <value>Elsa Carreker</value>
+            <value>Suspended,Terminated</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>IRCE Ecom Workshop Followup (Prospect Non-Attendees).Email 1</name>
+    <style>none</style>
+    <subject>Sorry we missed you at the Best Practices in Ecommerce Workshop</subject>
+    <textOnly>Preview text
+Hi {{lead.First Name:default=there}},
+Sorry we missed you at the Best Practices in Ecommerce Workshop. There were many topics covered during the workshop and the presenters did an outstanding job of sharing their expertise with attendees.
+
+For more information on how to grow your business on BigCommerce up to twice as fast as the industry average, request a demo &lt;[[http://grow.bigcommerce.com/Event-Demo-Request.html?utm_campaign=Prospects.Marketing%20Events.2015Q4.&amp;utm_source=bestpracticesirce&amp;utm_medium=event&amp;utm_term=BigCommerceEnterprise&amp;utm_content=followup]]&gt;.
+Best, 
+The BigCommerce Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

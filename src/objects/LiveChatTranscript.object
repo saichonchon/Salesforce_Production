@@ -328,6 +328,10 @@ VALUE(MID(TEXT( RequestTime -5/24),12,2)))</formula>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>VisitorNetwork</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>WaitTime</fullName>
     </fields>
     <listViews>

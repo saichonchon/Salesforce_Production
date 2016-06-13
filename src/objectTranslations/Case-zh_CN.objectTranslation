@@ -5683,6 +5683,11 @@ Referral : needs booking --></help>
         </picklistValues>
     </fields>
     <fields>
+        <help><!-- A counter to count every time an OCR email is sent in a case. --></help>
+        <label><!-- Resolution Count --></label>
+        <name>Resolution_Count__c</name>
+    </fields>
+    <fields>
         <help><!-- SBD Referral ID from the Account --></help>
         <label><!-- SBD Referral ID --></label>
         <name>SBD_Referral_ID__c</name>

@@ -383,6 +383,10 @@
             <masterLabel>Unable to Contact</masterLabel>
             <translation><!-- Unable to Contact --></translation>
         </picklistValues>
+        <picklistValues>
+            <masterLabel>Unable to Contact Through Flow</masterLabel>
+            <translation><!-- Unable to Contact Through Flow --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <help><!-- For partner request web form mapping --></help>
@@ -756,6 +760,11 @@
     <fields>
         <label><!-- Days to Conversion --></label>
         <name>Days_to_Conversion__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used for the PRM Integration - -  PRM writes to this field --></help>
+        <label><!-- Deal Registration Notes --></label>
+        <name>Deal_Registration_Notes__c</name>
     </fields>
     <fields>
         <help><!-- Decision Maker Notes --></help>
@@ -2627,6 +2636,10 @@ No = they were routed to the new pricing test page and will require a PDF doc fo
             <translation><!-- Contacted --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>In Flow</masterLabel>
+            <translation><!-- In Flow --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Open</masterLabel>
             <translation><!-- Open --></translation>
         </picklistValues>
@@ -3922,6 +3935,10 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         <sections>
             <label><!-- Datanyze Data --></label>
             <section>Datanyze Data</section>
+        </sections>
+        <sections>
+            <label><!-- Google Analytics --></label>
+            <section>Google Analytics</section>
         </sections>
         <sections>
             <label><!-- MBA --></label>

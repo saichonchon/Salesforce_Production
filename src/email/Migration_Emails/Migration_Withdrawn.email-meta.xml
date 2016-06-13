@@ -9,22 +9,17 @@
     <subject>Your BigCommerce Catalog Transfer: Your request has been withdrawn</subject>
     <textOnly>Hi {!Case.Contact_First_Name__c},
 
-
-We’ve been attempting to get in touch with you via email and over the phone.
+We’ve been attempting to get in touch with you.
 
 We still haven’t received your current store’s credentials from you.
 
-Unfortunately, we’re cancelling your data migration request so we can help other clients in our queue. If you paid a fee for this service, then expect a refund of your money into your account within 3-5 business days.
+Unfortunately, we’re cancelling your catalog transfer request so we can help other clients in our queue. If you paid a fee for this service, then expect a refund of your money into your account within 3-5 business days.
 
-
-We’re so sorry it didn’t work out this time. If you’re still interested in having your store migrated to BigCommerce, please contact your sales agent and have them set up a new migration request.
-
+We’re so sorry it didn’t work out this time. If you’re still interested in having your catalog transferred to BigCommerce, please contact your sales agent and have them set up a new catalog transfer request.
 
 Thanks,
 
-
 The BigCommerce Team
-
 
 Case # {!Case.CaseNumber}</textOnly>
     <type>html</type>

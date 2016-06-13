@@ -7,34 +7,31 @@
     <name>Migration: Migration Complete with CSAT Survey</name>
     <style>formalLetter</style>
     <subject>Your BigCommerce Catalog Transfer: Congrats, it’s time to set up your store</subject>
-    <textOnly>It’s official: we’ve completed the data migration from your store to BigCommerce. Welcome to the family! Please take a moment to complete our quick survey and let us know about your data migration experience before you move on to store setup. We’re always trying to improve, and welcome any feedback about your data migration.
+    <textOnly>Hi {!Case.Contact_First_Name__c},
+
+It’s official: we’ve completed the catalog transfer from your store to BigCommerce. Welcome to the family! Please take a moment to complete our quick survey and let us know about your catalog transfer experience before you move on to store setup. We’re always trying to improve, and welcome any feedback about your catalog transfer.
 
 http://www.clicktools.com/survey?iv=372l9k0nn6ljf&amp;q1={Id}
 
-The data migration is the first step in successfully re-launching your online business with BigCommerce. Now it’s time to get your business ready to sell! Here are a few things to finalize before you launch:
+The catalog transfer is the first step in successfully re-launching your online business with BigCommerce. Now it’s time to get your business ready to sell! Here are a few things to finalize before you launch:
 
 - Organize your categories
-
 - Add homepage text
-
 - Add category descriptions/images (if needed)
-
 - Set up store settings
-
 - Set up shipping, taxes and payment gateways
-
 - Place a test order
-
 - Move over your domain
-
 - Install an SSL certificate (optional)
 
-If this feels overwhelming, don&apos;t fret. We have a team of Client Success Coaches who can help guide you in setting up your store. To utilize this free service simply call 866-949-5336.
+If this feels overwhelming, don&apos;t fret. We have a team of Support Ninjas who can help guide you in setting up your store. To utilize this free service simply call 866-949-5336.
 
 It has been great working with you. Good luck and happy selling!
 
 Thanks,
 
-The BigCommerce Team</textOnly>
+The BigCommerce Team
+
+Case # {!Case.CaseNumber}</textOnly>
     <type>html</type>
 </EmailTemplate>

@@ -1190,18 +1190,18 @@ MBASubscriptionID__c,null)</formula>
             <controllingField>Closed_Lost_Reason__c</controllingField>
             <picklistValues>
                 <fullName>100% Uptime Servers</fullName>
-                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Accidental trial</fullName>
-                <controllingFieldValues>Not Qualified</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Not Qualified</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Affiliate Marketing</fullName>
-                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Back in stock</fullName>
@@ -1213,8 +1213,8 @@ MBASubscriptionID__c,null)</formula>
             </picklistValues>
             <picklistValues>
                 <fullName>Ease of Use/Simplification</fullName>
-                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Freight Shipping</fullName>
@@ -1226,13 +1226,13 @@ MBASubscriptionID__c,null)</formula>
             </picklistValues>
             <picklistValues>
                 <fullName>GoDaddy</fullName>
-                <controllingFieldValues>Lost to Competitor</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Lost to Competitor</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Importing review</fullName>
-                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Integrated Dropshipping</fullName>
@@ -1240,24 +1240,24 @@ MBASubscriptionID__c,null)</formula>
             </picklistValues>
             <picklistValues>
                 <fullName>Integration with Third Party tool</fullName>
-                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Inventory/Billing Management</fullName>
-                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Lack of Themes</fullName>
+                <default>false</default>
                 <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
                 <controllingFieldValues>Product/Misc</controllingFieldValues>
-                <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Magento</fullName>
-                <controllingFieldValues>Lost to Competitor</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Lost to Competitor</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Map Pricing</fullName>
@@ -1273,8 +1273,8 @@ MBASubscriptionID__c,null)</formula>
             </picklistValues>
             <picklistValues>
                 <fullName>Multi-Language Support</fullName>
-                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Multiple ship from location</fullName>
@@ -1286,21 +1286,21 @@ MBASubscriptionID__c,null)</formula>
             </picklistValues>
             <picklistValues>
                 <fullName>Multiple Store Back-End</fullName>
-                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>No products</fullName>
+                <default>false</default>
                 <controllingFieldValues>Not Qualified</controllingFieldValues>
                 <controllingFieldValues>Timing - Reengage 1-3 Months</controllingFieldValues>
                 <controllingFieldValues>Timing - Reengage 12+ Months</controllingFieldValues>
                 <controllingFieldValues>Timing - Reengage 4-12 Months</controllingFieldValues>
-                <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>No time</fullName>
-                <controllingFieldValues>Not Qualified</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Not Qualified</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Orion</fullName>
@@ -1308,10 +1308,10 @@ MBASubscriptionID__c,null)</formula>
             </picklistValues>
             <picklistValues>
                 <fullName>Other</fullName>
+                <default>false</default>
                 <controllingFieldValues>Lost to Competitor</controllingFieldValues>
                 <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
                 <controllingFieldValues>Product/Misc</controllingFieldValues>
-                <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Pre-Employment</fullName>
@@ -1327,28 +1327,28 @@ MBASubscriptionID__c,null)</formula>
             </picklistValues>
             <picklistValues>
                 <fullName>Provisioning Error</fullName>
-                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Recurring Billing</fullName>
-                <controllingFieldValues>Product/Payments</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product/Payments</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>School Project</fullName>
-                <controllingFieldValues>Test Account</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Test Account</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Shipping</fullName>
-                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Shopify</fullName>
-                <controllingFieldValues>Lost to Competitor</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Lost to Competitor</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Spam Lead</fullName>
@@ -1364,292 +1364,307 @@ MBASubscriptionID__c,null)</formula>
             </picklistValues>
             <picklistValues>
                 <fullName>Unsupported Cart-Migration</fullName>
-                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Volusion</fullName>
-                <controllingFieldValues>Lost to Competitor</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Lost to Competitor</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Recurring Platform Issues</fullName>
-                <controllingFieldValues>Upsell Closed/Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Upsell Closed/Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Don&apos;t need API</fullName>
-                <controllingFieldValues>Upsell Closed/Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Upsell Closed/Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Don&apos;t need Google Trusted Stores</fullName>
-                <controllingFieldValues>Upsell Closed/Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Upsell Closed/Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Don&apos;t need loyalty marketing</fullName>
-                <controllingFieldValues>Upsell Closed/Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Upsell Closed/Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Don&apos;t need omni channel sales</fullName>
-                <controllingFieldValues>Upsell Closed/Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Upsell Closed/Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Don&apos;t need the storage</fullName>
-                <controllingFieldValues>Upsell Closed/Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Upsell Closed/Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Need more time and will upgrade later</fullName>
-                <controllingFieldValues>Upsell Closed/Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Upsell Closed/Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Not enough sales for Abandoned Cart</fullName>
-                <controllingFieldValues>Upsell Closed/Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Upsell Closed/Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Too expensive</fullName>
-                <controllingFieldValues>Upsell Closed/Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Upsell Closed/Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Didn&apos;t see the value</fullName>
-                <controllingFieldValues>Upsell Closed/Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Upsell Closed/Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Difficulty with product options</fullName>
-                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Lack of Sandbox</fullName>
-                <controllingFieldValues>Test Account</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Test Account</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Pre-employment Test</fullName>
-                <controllingFieldValues>Test Account</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Test Account</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Priced Too High</fullName>
-                <controllingFieldValues>Pricing Issue</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Pricing Issue</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Pricing Too Complex</fullName>
-                <controllingFieldValues>Pricing Issue</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Pricing Issue</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Priced Too Low</fullName>
-                <controllingFieldValues>Pricing Issue</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Pricing Issue</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>ERP</fullName>
-                <controllingFieldValues>Product/Integration w/3rd Party Tool</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product/Integration w/3rd Party Tool</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>OMS</fullName>
-                <controllingFieldValues>Product/Integration w/3rd Party Tool</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product/Integration w/3rd Party Tool</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>POS</fullName>
-                <controllingFieldValues>Product/Integration w/3rd Party Tool</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product/Integration w/3rd Party Tool</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>CMS</fullName>
-                <controllingFieldValues>Product/Integration w/3rd Party Tool</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product/Integration w/3rd Party Tool</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Marketing Platform</fullName>
-                <controllingFieldValues>Product/Integration w/3rd Party Tool</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product/Integration w/3rd Party Tool</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>General API Concern</fullName>
-                <controllingFieldValues>Product/Integration w/3rd Party Tool</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product/Integration w/3rd Party Tool</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Product Options</fullName>
-                <controllingFieldValues>Product/Merchandising</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product/Merchandising</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Faceted Search</fullName>
-                <controllingFieldValues>Product/Merchandising</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product/Merchandising</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Product Recommendations</fullName>
-                <controllingFieldValues>Product/Merchandising</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product/Merchandising</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Registries</fullName>
-                <controllingFieldValues>Product/Merchandising</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product/Merchandising</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Loyalty Program</fullName>
-                <controllingFieldValues>Product/Merchandising</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product/Merchandising</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Catalog Staging</fullName>
-                <controllingFieldValues>Product/Merchandising</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product/Merchandising</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Payment Methods</fullName>
-                <controllingFieldValues>Product/Wholesale/B2B</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product/Wholesale/B2B</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Discount Restrictions</fullName>
-                <controllingFieldValues>Product/Wholesale/B2B</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product/Wholesale/B2B</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Parent/Child Accounts</fullName>
-                <controllingFieldValues>Product/Wholesale/B2B</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product/Wholesale/B2B</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Reporting</fullName>
-                <controllingFieldValues>Product/Wholesale/B2B</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product/Wholesale/B2B</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Shipping Methods</fullName>
-                <controllingFieldValues>Product/Wholesale/B2B</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product/Wholesale/B2B</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Amazon</fullName>
-                <controllingFieldValues>Product/Payments</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product/Payments</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Couponing</fullName>
+                <default>false</default>
                 <controllingFieldValues>Product/Payments</controllingFieldValues>
                 <controllingFieldValues>Product/Promotions</controllingFieldValues>
-                <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Discount Exclusions</fullName>
-                <controllingFieldValues>Product/Promotions</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product/Promotions</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Budget Not Approved</fullName>
+                <default>false</default>
                 <controllingFieldValues>Timing - Reengage 1-3 Months</controllingFieldValues>
                 <controllingFieldValues>Timing - Reengage 12+ Months</controllingFieldValues>
                 <controllingFieldValues>Timing - Reengage 4-12 Months</controllingFieldValues>
-                <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Migration Concern</fullName>
+                <default>false</default>
                 <controllingFieldValues>Timing - Reengage 1-3 Months</controllingFieldValues>
                 <controllingFieldValues>Timing - Reengage 12+ Months</controllingFieldValues>
                 <controllingFieldValues>Timing - Reengage 4-12 Months</controllingFieldValues>
-                <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>BC Product Not Ready</fullName>
+                <default>false</default>
                 <controllingFieldValues>Timing - Reengage 1-3 Months</controllingFieldValues>
                 <controllingFieldValues>Timing - Reengage 12+ Months</controllingFieldValues>
                 <controllingFieldValues>Timing - Reengage 4-12 Months</controllingFieldValues>
-                <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Internal Approvals Needed</fullName>
+                <default>false</default>
                 <controllingFieldValues>Timing - Reengage 1-3 Months</controllingFieldValues>
                 <controllingFieldValues>Timing - Reengage 12+ Months</controllingFieldValues>
                 <controllingFieldValues>Timing - Reengage 4-12 Months</controllingFieldValues>
-                <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Backups</fullName>
-                <controllingFieldValues>Infrastructure &amp; Security</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Infrastructure &amp; Security</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>User Permissions</fullName>
-                <controllingFieldValues>Infrastructure &amp; Security</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Infrastructure &amp; Security</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Shared Infrastructure</fullName>
-                <controllingFieldValues>Infrastructure &amp; Security</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Infrastructure &amp; Security</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Cart APIs</fullName>
-                <controllingFieldValues>Infrastructure &amp; Security</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Infrastructure &amp; Security</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>RMA</fullName>
-                <controllingFieldValues>Infrastructure &amp; Security</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Infrastructure &amp; Security</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Order &amp; Form Fields</fullName>
-                <controllingFieldValues>Infrastructure &amp; Security</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Infrastructure &amp; Security</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Taxes</fullName>
-                <controllingFieldValues>Infrastructure &amp; Security</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Infrastructure &amp; Security</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Terms of Service</fullName>
-                <controllingFieldValues>Legal</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Legal</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Nondisclosure Agreements</fullName>
-                <controllingFieldValues>Legal</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Legal</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Existing Vendor Relationship</fullName>
-                <controllingFieldValues>Legal</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Legal</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Stencil HTML Access</fullName>
-                <controllingFieldValues>Product/Misc</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Product/Misc</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Not Influencer or DM</fullName>
-                <controllingFieldValues>SQL Rejected</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>SQL Rejected</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Not Interested</fullName>
-                <controllingFieldValues>SQL Rejected</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>SQL Rejected</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Unable to Contact</fullName>
-                <controllingFieldValues>SQL Rejected</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>SQL Rejected</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bad Email</fullName>
+                <default>false</default>
+                <controllingFieldValues>Unable to Contact</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bad Phone</fullName>
+                <default>false</default>
+                <controllingFieldValues>Unable to Contact</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No Response</fullName>
+                <default>false</default>
+                <controllingFieldValues>Unable to Contact</controllingFieldValues>
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
@@ -1701,13 +1716,13 @@ MBASubscriptionID__c,null)</formula>
             </picklistValues>
             <picklistValues>
                 <fullName>Test Account</fullName>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Upsell Closed/Lost</fullName>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Refund</fullName>
@@ -1746,119 +1761,124 @@ MBASubscriptionID__c,null)</formula>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Accidental Trial/No ecomm</fullName>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
+                <fullName>Unable to Contact</fullName>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Accidental Trial/No ecomm</fullName>
+                <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Not Mature Enough/No Products/Too Small</fullName>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>SQL Rejected</fullName>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Pricing Issue</fullName>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Product/Integration w/3rd Party Tool</fullName>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Product/Merchandising</fullName>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Product/Wholesale/B2B</fullName>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Product/Payments</fullName>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Product/Promotions</fullName>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Product/Multi-Language Support</fullName>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Product/Multiple Store Back End</fullName>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Product/Omni Channel</fullName>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Product/Misc</fullName>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Timing - Reengage 1-3 Months</fullName>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Timing - Reengage 4-12 Months</fullName>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Timing - Reengage 12+ Months</fullName>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Infrastructure &amp; Security</fullName>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Legal</fullName>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Migration Issues</fullName>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Influenced by 3rd Party</fullName>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>No Longer in Business</fullName>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Duplicate Record</fullName>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Trial Expired</fullName>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Data Cleanup</fullName>
@@ -3076,6 +3096,19 @@ MBASubscriptionID__c,null)</formula>
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Deal_Registration_Notes__c</fullName>
+        <description>BAP-3181 - Used for the PRM Integration -- PRM writes to this field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used for the PRM Integration -- PRM writes to this field</inlineHelpText>
+        <label>Deal Registration Notes</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Dec_Criteria_Dec_Appr_Processes__c</fullName>
         <externalId>false</externalId>
         <label>Dec. Criteria, Dec. &amp; Appr. Processes</label>
@@ -4201,7 +4234,9 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
     <fields>
         <fullName>IsTrial__c</fullName>
         <defaultValue>true</defaultValue>
+        <description>MH - This field indicates whether the store associated with this opportunity was ever a trial</description>
         <externalId>false</externalId>
+        <inlineHelpText>MH - This field indicates whether the store associated with this opportunity was ever a trial</inlineHelpText>
         <label>IsTrial</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -4416,13 +4451,13 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
             <controllingField>LeadSource</controllingField>
             <picklistValues>
                 <fullName>Adam Seabrooke</fullName>
-                <controllingFieldValues>ACQ List Upload</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>ACQ List Upload</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Admarketplace</fullName>
-                <controllingFieldValues>SEM</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>SEM</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>AdRoll</fullName>
@@ -4430,167 +4465,167 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
             </picklistValues>
             <picklistValues>
                 <fullName>Amazon Seller</fullName>
-                <controllingFieldValues>Display</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Display</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>AOL</fullName>
-                <controllingFieldValues>Organic Search</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Organic Search</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Bing</fullName>
+                <default>false</default>
                 <controllingFieldValues>Organic Search</controllingFieldValues>
                 <controllingFieldValues>SEM</controllingFieldValues>
-                <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Braintree</fullName>
-                <controllingFieldValues>SBD</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>SBD</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Call</fullName>
-                <controllingFieldValues>Inbound</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Inbound</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Capterra</fullName>
-                <controllingFieldValues>Affiliate</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Affiliate</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Chat</fullName>
-                <controllingFieldValues>Inbound</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Inbound</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Commission Junction</fullName>
-                <controllingFieldValues>Affiliate</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Affiliate</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Datanyze</fullName>
-                <controllingFieldValues>ACQ List Upload</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>ACQ List Upload</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Demandbase</fullName>
-                <controllingFieldValues>Display</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Display</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Doba</fullName>
-                <controllingFieldValues>SBD</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>SBD</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Ecom Bytes</fullName>
-                <controllingFieldValues>Display</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Display</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Endicia</fullName>
-                <controllingFieldValues>SBD</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>SBD</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Event</fullName>
-                <controllingFieldValues>ACQ List Upload</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>ACQ List Upload</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Facebook</fullName>
+                <default>false</default>
                 <controllingFieldValues>Organic Social</controllingFieldValues>
                 <controllingFieldValues>Social Ads</controllingFieldValues>
-                <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>G2crowd</fullName>
-                <controllingFieldValues>Affiliate</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Affiliate</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Google</fullName>
+                <default>false</default>
                 <controllingFieldValues>Display</controllingFieldValues>
                 <controllingFieldValues>Organic Search</controllingFieldValues>
                 <controllingFieldValues>SEM</controllingFieldValues>
-                <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Google Plus</fullName>
-                <controllingFieldValues>Organic Social</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Organic Social</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Google Shopping</fullName>
-                <controllingFieldValues>SBD</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>SBD</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Happy Hour</fullName>
-                <controllingFieldValues>Events</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Events</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Impact Radius</fullName>
-                <controllingFieldValues>Affiliate</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Affiliate</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Instagram</fullName>
-                <controllingFieldValues>Organic Social</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Organic Social</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Internet Retailer</fullName>
+                <default>false</default>
                 <controllingFieldValues>ACQ List Upload</controllingFieldValues>
                 <controllingFieldValues>Display</controllingFieldValues>
                 <controllingFieldValues>Email Advertising</controllingFieldValues>
                 <controllingFieldValues>Print Ads</controllingFieldValues>
                 <controllingFieldValues>Webinar List</controllingFieldValues>
-                <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Intuit</fullName>
-                <controllingFieldValues>SBD</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>SBD</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>LinkedIn</fullName>
+                <default>false</default>
                 <controllingFieldValues>Organic Social</controllingFieldValues>
                 <controllingFieldValues>Social Ads</controllingFieldValues>
-                <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Luncheon</fullName>
-                <controllingFieldValues>Events</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Events</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Meet-up</fullName>
-                <controllingFieldValues>Events</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Events</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>MSN</fullName>
-                <controllingFieldValues>Organic Search</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Organic Search</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Netline</fullName>
-                <controllingFieldValues>ACQ List Upload</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>ACQ List Upload</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Partner</fullName>
-                <controllingFieldValues>Webinar List</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Webinar List</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Paypal</fullName>
-                <controllingFieldValues>SBD</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>SBD</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Perfect Audience</fullName>
@@ -4598,54 +4633,54 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
             </picklistValues>
             <picklistValues>
                 <fullName>Pinterest</fullName>
+                <default>false</default>
                 <controllingFieldValues>Organic Social</controllingFieldValues>
                 <controllingFieldValues>Social Ads</controllingFieldValues>
-                <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Practical Ecomm</fullName>
+                <default>false</default>
                 <controllingFieldValues>Display</controllingFieldValues>
                 <controllingFieldValues>Email Advertising</controllingFieldValues>
-                <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Sponsor</fullName>
-                <controllingFieldValues>Events</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Events</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Square</fullName>
-                <controllingFieldValues>SBD</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>SBD</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Trade Show</fullName>
-                <controllingFieldValues>Events</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Events</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>TrustRadius</fullName>
-                <controllingFieldValues>Affiliate</controllingFieldValues>
                 <default>false</default>
+                <controllingFieldValues>Affiliate</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Twitter</fullName>
+                <default>false</default>
                 <controllingFieldValues>Organic Social</controllingFieldValues>
                 <controllingFieldValues>Social Ads</controllingFieldValues>
-                <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Yahoo</fullName>
+                <default>false</default>
                 <controllingFieldValues>Display</controllingFieldValues>
                 <controllingFieldValues>Organic Search</controllingFieldValues>
                 <controllingFieldValues>SEM</controllingFieldValues>
-                <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>YouTube</fullName>
+                <default>false</default>
                 <controllingFieldValues>Display</controllingFieldValues>
                 <controllingFieldValues>Organic Social</controllingFieldValues>
-                <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
@@ -6430,6 +6465,20 @@ Account Management</description>
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Random_Sample_Number__c</fullName>
+        <description>Added for BAP-3629, replaces old formula field Sample_100__c</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Random number from 1-100, generated on record creation via a trigger.  This is used by BI to randomize the selection of opportunities for testing &quot;what if&quot; scenarios.</inlineHelpText>
+        <label>Random Sample Number</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>RecommendedMigrationPartner__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
         <description>What migration partner was recommending during pre-sales scoping?</description>
@@ -6804,270 +6853,270 @@ null) ,NULL
         <picklist>
             <picklistValues>
                 <fullName>Qualify</fullName>
-                <closed>false</closed>
                 <default>false</default>
+                <closed>false</closed>
                 <forecastCategory>Pipeline</forecastCategory>
                 <probability>0</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Discover</fullName>
-                <closed>false</closed>
                 <default>false</default>
+                <closed>false</closed>
                 <forecastCategory>Pipeline</forecastCategory>
                 <probability>15</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Migration Scoping</fullName>
-                <closed>false</closed>
                 <default>false</default>
+                <closed>false</closed>
                 <forecastCategory>Pipeline</forecastCategory>
                 <probability>15</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Build Value</fullName>
-                <closed>false</closed>
                 <default>false</default>
+                <closed>false</closed>
                 <forecastCategory>Pipeline</forecastCategory>
                 <probability>30</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Validate</fullName>
-                <closed>false</closed>
                 <default>false</default>
+                <closed>false</closed>
                 <forecastCategory>BestCase</forecastCategory>
                 <probability>50</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Agree</fullName>
-                <closed>false</closed>
                 <default>false</default>
+                <closed>false</closed>
                 <forecastCategory>BestCase</forecastCategory>
                 <probability>75</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Closing</fullName>
-                <closed>false</closed>
                 <default>false</default>
+                <closed>false</closed>
                 <forecastCategory>Pipeline</forecastCategory>
                 <probability>90</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Lead</fullName>
-                <closed>false</closed>
                 <default>false</default>
+                <closed>false</closed>
                 <forecastCategory>Omitted</forecastCategory>
                 <probability>25</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Sale</fullName>
-                <closed>false</closed>
                 <default>false</default>
+                <closed>false</closed>
                 <forecastCategory>Omitted</forecastCategory>
                 <probability>50</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Prospect</fullName>
-                <closed>false</closed>
                 <default>false</default>
+                <closed>false</closed>
                 <forecastCategory>Pipeline</forecastCategory>
                 <probability>10</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Waiting on payment</fullName>
-                <closed>false</closed>
                 <default>false</default>
+                <closed>false</closed>
                 <forecastCategory>BestCase</forecastCategory>
                 <probability>80</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Trial</fullName>
-                <closed>false</closed>
                 <default>false</default>
                 <description>An MBA trial has been opened</description>
+                <closed>false</closed>
                 <forecastCategory>Pipeline</forecastCategory>
                 <probability>0</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Trial - Unengaged</fullName>
-                <closed>false</closed>
                 <default>false</default>
                 <description>Used by the direct team to ascertain what follow up emails should be sent</description>
+                <closed>false</closed>
                 <forecastCategory>Pipeline</forecastCategory>
                 <probability>0</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Sales Qualified Lead</fullName>
-                <closed>false</closed>
                 <default>false</default>
+                <closed>false</closed>
                 <forecastCategory>Pipeline</forecastCategory>
                 <probability>25</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Demo</fullName>
-                <closed>false</closed>
                 <default>false</default>
+                <closed>false</closed>
                 <forecastCategory>Pipeline</forecastCategory>
                 <probability>50</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Negotiate</fullName>
-                <closed>false</closed>
                 <default>false</default>
+                <closed>false</closed>
                 <forecastCategory>BestCase</forecastCategory>
                 <probability>75</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Finalizing Closure</fullName>
-                <closed>false</closed>
                 <default>false</default>
+                <closed>false</closed>
                 <forecastCategory>Forecast</forecastCategory>
                 <probability>90</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Purchased</fullName>
-                <closed>true</closed>
                 <default>false</default>
+                <closed>true</closed>
                 <forecastCategory>Closed</forecastCategory>
                 <probability>100</probability>
                 <won>true</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Suspended</fullName>
-                <closed>false</closed>
                 <default>false</default>
+                <closed>false</closed>
                 <forecastCategory>Omitted</forecastCategory>
                 <probability>75</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Cancelled</fullName>
-                <closed>true</closed>
                 <default>false</default>
+                <closed>true</closed>
                 <forecastCategory>Omitted</forecastCategory>
                 <probability>0</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Closed Won</fullName>
-                <closed>true</closed>
                 <default>false</default>
+                <closed>true</closed>
                 <forecastCategory>Closed</forecastCategory>
                 <probability>100</probability>
                 <won>true</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Closed Lost</fullName>
-                <closed>true</closed>
                 <default>false</default>
+                <closed>true</closed>
                 <forecastCategory>Omitted</forecastCategory>
                 <probability>0</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Trial Expired</fullName>
-                <closed>true</closed>
                 <default>false</default>
+                <closed>true</closed>
                 <forecastCategory>Omitted</forecastCategory>
                 <probability>0</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Pending</fullName>
-                <closed>true</closed>
                 <default>false</default>
+                <closed>true</closed>
                 <forecastCategory>Closed</forecastCategory>
                 <probability>50</probability>
                 <won>true</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Design</fullName>
-                <closed>false</closed>
                 <default>false</default>
+                <closed>false</closed>
                 <forecastCategory>Pipeline</forecastCategory>
                 <probability>50</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Integration</fullName>
-                <closed>false</closed>
                 <default>false</default>
+                <closed>false</closed>
                 <forecastCategory>Pipeline</forecastCategory>
                 <probability>50</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Development</fullName>
-                <closed>false</closed>
                 <default>false</default>
+                <closed>false</closed>
                 <forecastCategory>Pipeline</forecastCategory>
                 <probability>50</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Approved</fullName>
-                <closed>true</closed>
                 <default>false</default>
                 <description>App is approved</description>
+                <closed>true</closed>
                 <forecastCategory>Closed</forecastCategory>
                 <probability>100</probability>
                 <won>true</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Rejected</fullName>
-                <closed>true</closed>
                 <default>false</default>
                 <description>App is rejected</description>
+                <closed>true</closed>
                 <forecastCategory>Omitted</forecastCategory>
                 <probability>0</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Published</fullName>
-                <closed>true</closed>
                 <default>false</default>
+                <closed>true</closed>
                 <forecastCategory>Closed</forecastCategory>
                 <probability>100</probability>
                 <won>true</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Terminated</fullName>
-                <closed>true</closed>
                 <default>false</default>
                 <description>Terminated from MBA</description>
+                <closed>true</closed>
                 <forecastCategory>Omitted</forecastCategory>
                 <probability>0</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Migration Pre Scoping</fullName>
-                <closed>false</closed>
                 <default>false</default>
                 <description>Indicates that the opportunity is being scoped for migration</description>
+                <closed>false</closed>
                 <forecastCategory>Pipeline</forecastCategory>
                 <probability>15</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
                 <fullName>Removed</fullName>
-                <closed>true</closed>
                 <default>false</default>
+                <closed>true</closed>
                 <forecastCategory>Omitted</forecastCategory>
                 <probability>0</probability>
                 <won>false</won>
@@ -9529,6 +9578,14 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
+                <fullName>Bad Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bad Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Budget Not Approved</fullName>
                 <default>false</default>
             </values>
@@ -9690,6 +9747,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
             <values>
                 <fullName>Need more time and will upgrade later</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -9877,6 +9938,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
             <values>
                 <fullName>No contact from developer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unable to Contact</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -11961,6 +12026,14 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
+                <fullName>Bad Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bad Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Budget Not Approved</fullName>
                 <default>false</default>
             </values>
@@ -12090,6 +12163,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
             <values>
                 <fullName>Multiple ship to location</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -12341,6 +12418,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
             <values>
                 <fullName>Trial Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unable to Contact</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -13906,6 +13987,14 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
+                <fullName>Bad Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bad Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Budget Not Approved</fullName>
                 <default>false</default>
             </values>
@@ -14035,6 +14124,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
             <values>
                 <fullName>Multiple ship to location</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -14210,6 +14303,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
             <values>
                 <fullName>Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unable to Contact</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -15851,6 +15948,14 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
+                <fullName>Bad Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bad Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Budget Not Approved</fullName>
                 <default>false</default>
             </values>
@@ -15980,6 +16085,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
             <values>
                 <fullName>Multiple ship to location</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16247,6 +16356,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
             <values>
                 <fullName>Trial Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unable to Contact</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -18733,6 +18846,14 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
+                <fullName>Bad Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bad Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Budget Not Approved</fullName>
                 <default>false</default>
             </values>
@@ -18894,6 +19015,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
             <values>
                 <fullName>Need more time and will upgrade later</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -19157,6 +19282,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
             <values>
                 <fullName>Trial Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unable to Contact</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -21729,6 +21858,14 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
+                <fullName>Bad Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bad Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Budget Not Approved</fullName>
                 <default>false</default>
             </values>
@@ -21862,6 +21999,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
             <values>
                 <fullName>Multiple ship to location</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -22129,6 +22270,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
             <values>
                 <fullName>Trial Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unable to Contact</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -24755,6 +24900,14 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
+                <fullName>Bad Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bad Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Budget Not Approved</fullName>
                 <default>false</default>
             </values>
@@ -24912,6 +25065,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
             <values>
                 <fullName>Need more time and will upgrade later</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -25167,6 +25324,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
             <values>
                 <fullName>Timing - Reengage 4-12 Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unable to Contact</fullName>
                 <default>false</default>
             </values>
             <values>

@@ -50,6 +50,9 @@
         <field>Case.Category__c</field>
     </columns>
     <columns>
+        <field>Case.Resolution_Count__c</field>
+    </columns>
+    <columns>
         <field>Case.Survey_Name__c</field>
     </columns>
     <columns>

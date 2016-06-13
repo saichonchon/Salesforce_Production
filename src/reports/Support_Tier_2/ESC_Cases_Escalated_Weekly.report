@@ -108,8 +108,6 @@
     <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>Case.Escalation_Date__c</dateColumn>
-        <endDate>2016-02-27</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2015-11-29</startDate>
+        <interval>INTERVAL_CURRENTQ</interval>
     </timeFrameFilter>
 </Report>

@@ -549,6 +549,14 @@
             <translation><!-- Backups --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Bad Email</masterLabel>
+            <translation><!-- Bad Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bad Phone</masterLabel>
+            <translation><!-- Bad Phone --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Budget Not Approved</masterLabel>
             <translation><!-- Budget Not Approved --></translation>
         </picklistValues>
@@ -711,6 +719,10 @@
         <picklistValues>
             <masterLabel>Need more time and will upgrade later</masterLabel>
             <translation><!-- Need more time and will upgrade later --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Response</masterLabel>
+            <translation><!-- No Response --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>No products</masterLabel>
@@ -1063,6 +1075,10 @@
         <picklistValues>
             <masterLabel>Trial Expired</masterLabel>
             <translation><!-- Trial Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unable to Contact</masterLabel>
+            <translation><!-- Unable to Contact --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Upsell Closed/Lost</masterLabel>
@@ -2131,6 +2147,11 @@
         <name>Days_to_Close__c</name>
     </fields>
     <fields>
+        <help><!-- Used for the PRM Integration - -  PRM writes to this field --></help>
+        <label><!-- Deal Registration Notes --></label>
+        <name>Deal_Registration_Notes__c</name>
+    </fields>
+    <fields>
         <label><!-- Dec. Criteria, Dec. &amp; Appr. Processes --></label>
         <name>Dec_Criteria_Dec_Appr_Processes__c</name>
     </fields>
@@ -2818,6 +2839,7 @@
         <name>Integrations_needed__c</name>
     </fields>
     <fields>
+        <help><!-- MH - This field indicates whether the store associated with this opportunity was ever a trial --></help>
         <label><!-- IsTrial --></label>
         <name>IsTrial__c</name>
     </fields>
@@ -4167,6 +4189,11 @@
         <name>RV_Primary_Member_ID__c</name>
     </fields>
     <fields>
+        <help><!-- Random number from 1-100, generated on record creation via a trigger.  This is used by BI to randomize the selection of opportunities for testing &quot;what if&quot; scenarios. --></help>
+        <label><!-- Random Sample Number --></label>
+        <name>Random_Sample_Number__c</name>
+    </fields>
+    <fields>
         <help><!-- What migration partner was recommending during pre-sales scoping? --></help>
         <label><!-- Recommended Migration Partner --></label>
         <name>RecommendedMigrationPartner__c</name>
@@ -5514,6 +5541,10 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         <sections>
             <label><!-- Marketing --></label>
             <section>Marketing</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing Links --></label>
+            <section>Marketing Links</section>
         </sections>
         <sections>
             <label><!-- Misc --></label>
