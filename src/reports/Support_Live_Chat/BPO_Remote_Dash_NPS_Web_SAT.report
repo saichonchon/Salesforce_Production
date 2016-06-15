@@ -125,7 +125,7 @@
         <criteriaItems>
             <column>Case.Survey_Name__c</column>
             <operator>contains</operator>
-            <value>Resolution Email Survey,Web</value>
+            <value>Resolution Email Survey</value>
         </criteriaItems>
         <criteriaItems>
             <column>ORIGIN</column>

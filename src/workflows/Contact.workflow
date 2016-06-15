@@ -86,25 +86,6 @@
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
-        <fullName>Populate Recorded Product Tour Date</fullName>
-        <actions>
-            <name>Populate_Recorded_Product_Tour_Date</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Contact.Openend_Product_Tour_Recording__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Contact.Recorded_Product_Tour_Date__c</field>
-            <operation>equals</operation>
-        </criteriaItems>
-        <description>Captures date the Opened Product Tour Recording = True</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>Send App Partner Application Received Email</fullName>
         <actions>
             <name>Partner_Application_Submitted_CONTACT</name>
@@ -156,6 +137,25 @@
         <description>Update Email 2 field (Groove field) with the other email</description>
         <formula>ISCHANGED( Other_Email__c )</formula>
         <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>zPopulate Recorded Product Tour Date</fullName>
+        <actions>
+            <name>Populate_Recorded_Product_Tour_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Contact.Openend_Product_Tour_Recording__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Recorded_Product_Tour_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Captures date the Opened Product Tour Recording = True</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <tasks>
         <fullName>App_Approved_Contact_Email_Sent</fullName>

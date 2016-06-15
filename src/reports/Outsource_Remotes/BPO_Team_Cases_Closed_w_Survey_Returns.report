@@ -34,7 +34,7 @@
     </groupingsAcross>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Case.Survey_Taken__c</field>
+        <field>Case.Survey_Name__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>BPO Team - Cases Closed w Survey Returns</name>
@@ -51,8 +51,6 @@
     <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>CLOSED_DATEONLY</dateColumn>
-        <endDate>2016-05-07</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2016-02-07</startDate>
+        <interval>INTERVAL_THISWEEK</interval>
     </timeFrameFilter>
 </Report>

@@ -4331,10 +4331,6 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Datanyze</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
                 <fullName>Datanyze Import</fullName>
                 <default>false</default>
             </picklistValues>

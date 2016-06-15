@@ -326,17 +326,6 @@
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
-        <fullName>Hubspot Client Age</fullName>
-        <actions>
-            <name>Hubspot_Client_Age</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <description>Created in an attempt to offer a non-formula field for Hubspot to know the age of a client, but the workflow can&apos;t fire off the formula field calculating it.  ISSUE: should be deleted or troubleshoot to fix it</description>
-        <formula>ISCHANGED( Client_Age__c )</formula>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
         <fullName>Hubspot Store URL</fullName>
         <actions>
             <name>MaxSub_Store_URL_Update</name>
@@ -605,6 +594,17 @@ NOT( ISNULL( AppDeveloperContact__c ))</formula>
         </criteriaItems>
         <description>formulates the iDev link based on iDev ID</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>zHubspot Client Age</fullName>
+        <actions>
+            <name>Hubspot_Client_Age</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Created in an attempt to offer a non-formula field for Hubspot to know the age of a client, but the workflow can&apos;t fire off the formula field calculating it.  ISSUE: should be deleted or troubleshoot to fix it</description>
+        <formula>ISCHANGED( Client_Age__c )</formula>
+        <triggerType>onAllChanges</triggerType>
     </rules>
     <tasks>
         <fullName>Sent_App_Partner_App_Approved_Email</fullName>

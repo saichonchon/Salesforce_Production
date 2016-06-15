@@ -418,15 +418,6 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Populate_Initial_Hubspot_Score</fullName>
-        <field>Initial_Hubspot_Score__c</field>
-        <formula>Hubspot_Score__c</formula>
-        <name>Populate Initial Hubspot Score</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Provisioning_Error_True</fullName>
         <field>Provisioning_Error__c</field>
         <literalValue>1</literalValue>
@@ -734,36 +725,6 @@
         <useDeadLetterQueue>false</useDeadLetterQueue>
     </outboundMessages>
     <rules>
-        <fullName>Assign Hubspot leads to The Bigcommerce Team when trial comes in</fullName>
-        <actions>
-            <name>Change_owner_to_The_Bigcommerce_Team</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
-        <criteriaItems>
-            <field>Lead.OwnerId</field>
-            <operation>contains</operation>
-            <value>Hubspot</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Lead.LeadSource</field>
-            <operation>equals</operation>
-            <value>Hubspot</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Lead.Active_Trials__c</field>
-            <operation>greaterThan</operation>
-            <value>0</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Lead.MBA_Partner_ID__c</field>
-            <operation>equals</operation>
-        </criteriaItems>
-        <description>We are currently creating leads (owned by Hubspot) for all content downloads. When a trial is associated with this lead, we want to change ownership to the Bigcommerce Team to allow our sales team to call out on the lead.</description>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
         <fullName>Assignment Method %3A Channel Partner</fullName>
         <actions>
             <name>Assignment_Method_Channel_Partner</name>
@@ -773,26 +734,6 @@
         <description>If MBA Partner ID is populated, change assignment method to Partner</description>
         <formula>DATEVALUE(CreatedDate) = TODAY() &amp;&amp; ISBLANK(MBA_Partner_ID__c ) = FALSE</formula>
         <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
-        <fullName>Chat Lead Owner to Queue</fullName>
-        <actions>
-            <name>Owner_to_Chat_Queue</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Lead.Company</field>
-            <operation>equals</operation>
-            <value>t.b.d.</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Lead.OwnerId</field>
-            <operation>equals</operation>
-            <value>Hubspot</value>
-        </criteriaItems>
-        <description>change owner to Chat Queue</description>
-        <triggerType>onCreateOnly</triggerType>
     </rules>
     <rules>
         <fullName>Company %3D Trial New Entry</fullName>
@@ -909,74 +850,6 @@ CONTAINS(Owner:User.UserRole.Name,&quot;Outbound&quot;) = FALSE)
         <triggerType>onCreateOnly</triggerType>
     </rules>
     <rules>
-        <fullName>Generate task if Pinterest eBook is True</fullName>
-        <actions>
-            <name>Notify_Rep_of_Lead_who_downloaded_Pinterest_eBook</name>
-            <type>Alert</type>
-        </actions>
-        <actions>
-            <name>Capture_Date_of_Pinterest_eBook</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Lead_Downloaded_Pinterest_eBook</name>
-            <type>Task</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>1 AND 2</booleanFilter>
-        <criteriaItems>
-            <field>Lead.Pinterest_eBook__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Lead.Owner_Team__c</field>
-            <operation>contains</operation>
-            <value>Direct</value>
-        </criteriaItems>
-        <description>With create a task for the lead owner when &quot;Pinterest eBook&quot; is checked off.</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Generate task if Product Tour is Watched</fullName>
-        <actions>
-            <name>Notify_Rep_of_Lead_who_viewed_the_Product_Tour</name>
-            <type>Alert</type>
-        </actions>
-        <actions>
-            <name>Capture_Date_of_Recorded_Product_Tour</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Lead_Watched_Recorded_Product_Tour</name>
-            <type>Task</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Lead.Openend_Product_Tour_Recording__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Lead.Owner_Team__c</field>
-            <operation>contains</operation>
-            <value>Direct</value>
-        </criteriaItems>
-        <description>With create a task for the lead owner when &quot;Opened Product Tour Recording&quot; is checked off.</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Hubspot Store URL %3A Lead</fullName>
-        <actions>
-            <name>Most_Recenet_Trial_URL_Population</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <description>so HS can use in emails</description>
-        <formula>ISCHANGED( Most_Recent_Trial__c )</formula>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
         <fullName>Lead Type %3A Provisioning Error</fullName>
         <actions>
             <name>Provisioning_Error_True</name>
@@ -1053,16 +926,6 @@ CONTAINS(Owner:User.UserRole.Name,&quot;Outbound&quot;) = FALSE)
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>Lead%3ASet the BA Testing Lead field to true%2E</fullName>
-        <actions>
-            <name>set_the_BA_Testing_Lead_field_to_true</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <formula>and(  ISPICKVAL( Closed_Lost_Reason__c ,&apos;4 Test Account&apos;), ISCHANGED(Closed_Lost_Reason__c) )</formula>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
         <fullName>Move Datanyze Standard Lead Data to Lead Standard Fields</fullName>
         <actions>
             <name>Owner_Acq_Queue</name>
@@ -1090,7 +953,7 @@ CONTAINS(Owner:User.UserRole.Name,&quot;Outbound&quot;) = FALSE)
         </actions>
         <active>true</active>
         <description>When a lead is created with lead source &quot;Datanyze&quot;, it will copy the Datanyze fields from the Datanyze section to the native lead field:</description>
-        <formula>ISPICKVAL(LeadSource, &apos;Datanyze&apos;) &amp;&amp;
+        <formula>ISPICKVAL(LeadSource, &apos;Datanyze Import&apos;) &amp;&amp;
 NOT(ISCHANGED( OwnerId ))</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
@@ -1120,25 +983,6 @@ NOT(ISCHANGED( OwnerId ))</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>Populate Initial Hubspot Score</fullName>
-        <actions>
-            <name>Populate_Initial_Hubspot_Score</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Lead.Hubspot_Score__c</field>
-            <operation>greaterThan</operation>
-            <value>0</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Lead.Initial_Hubspot_Score__c</field>
-            <operation>equals</operation>
-        </criteriaItems>
-        <description>Captures the Hubspot score value the very first time one comes through to the lead</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>Populate Owner Phone on Lead</fullName>
         <actions>
             <name>Update_Owner_Phone</name>
@@ -1148,58 +992,6 @@ NOT(ISCHANGED( OwnerId ))</formula>
         <description>Captures the owner phone number if the owner ever changes so that Hubspot can use it in email template signatures.  Workflow is required because HS can&apos;t read formula fields.</description>
         <formula>ISCHANGED(OwnerId) || (OwnerId &lt;&gt; &quot;00530000004W020&quot; &amp;&amp; ISBLANK( Owner_Phone__c ) = TRUE)</formula>
         <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
-        <fullName>Record Type from Sales to Client Prospect</fullName>
-        <actions>
-            <name>Lead_RT_to_Client_Prospect</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Type_Trial</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Lead.MBAAccountID__c</field>
-            <operation>notEqual</operation>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Lead.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Sales Prospect</value>
-        </criteriaItems>
-        <description>Updates the lead record type when a trial is added to a lead that previously did not have any MBA trial and data</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Stage to Closed Lost if Reason field Populated</fullName>
-        <actions>
-            <name>Closed_Lost_Stage</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Lead.Closed_Lost_Reason__c</field>
-            <operation>notEqual</operation>
-        </criteriaItems>
-        <description>If a rep fills in the Closed Lost Reason, stage will move to Closed Lost for them.  Created because Acq wanted field dependency but Direct didn&apos;t.  This lets Acq reps only focus on lost reason</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Store Name Contains %22usertesting%22</fullName>
-        <actions>
-            <name>usertesting_URL_to_API</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Lead.Trial_Store_URL__c</field>
-            <operation>contains</operation>
-            <value>usertesting</value>
-        </criteriaItems>
-        <description>transfer to API User</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
         <fullName>Sync with Marketo</fullName>
@@ -1268,26 +1060,6 @@ NOT(ISCHANGED( OwnerId ))</formula>
             <value>Timing</value>
         </criteriaItems>
         <description>Based on given criteria, Marketo will pick up record to be synced with Marketo. The Marketo team has stored filter to only sync records that have the Sync with Marketo checkbox checked.</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Transfer Lead to GSB Queue</fullName>
-        <actions>
-            <name>Lead_Owner_GSB</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Lead.CreatedDate</field>
-            <operation>equals</operation>
-            <value>TODAY</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Lead.Marketing_Promotion__c</field>
-            <operation>contains</operation>
-            <value>GSB2013</value>
-        </criteriaItems>
-        <description>Transfers lead ownership to the GSB queue for marketing to monitor for the store giveaway promotion.  Can be deleted if Megan O&apos;Brien is finished with her reporting</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
@@ -1467,7 +1239,7 @@ NOT(ISCHANGED( OwnerId ))</formula>
             <name>Ownership_Change_Requestor_User</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Lead.Request_Ownership__c</field>
             <operation>equals</operation>
@@ -1487,15 +1259,143 @@ NOT(ISCHANGED( OwnerId ))</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
+        <fullName>zAssign Hubspot leads to The Bigcommerce Team when trial comes in</fullName>
+        <actions>
+            <name>Change_owner_to_The_Bigcommerce_Team</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+        <criteriaItems>
+            <field>Lead.OwnerId</field>
+            <operation>contains</operation>
+            <value>Hubspot</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.LeadSource</field>
+            <operation>equals</operation>
+            <value>Hubspot</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Active_Trials__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.MBA_Partner_ID__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>We are currently creating leads (owned by Hubspot) for all content downloads. When a trial is associated with this lead, we want to change ownership to the Bigcommerce Team to allow our sales team to call out on the lead.</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>zChat Lead Owner to Queue</fullName>
+        <actions>
+            <name>Owner_to_Chat_Queue</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.Company</field>
+            <operation>equals</operation>
+            <value>t.b.d.</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.OwnerId</field>
+            <operation>equals</operation>
+            <value>Hubspot</value>
+        </criteriaItems>
+        <description>change owner to Chat Queue</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>zGenerate task if Pinterest eBook is True</fullName>
+        <actions>
+            <name>Notify_Rep_of_Lead_who_downloaded_Pinterest_eBook</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Capture_Date_of_Pinterest_eBook</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Lead_Downloaded_Pinterest_eBook</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Lead.Pinterest_eBook__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Owner_Team__c</field>
+            <operation>contains</operation>
+            <value>Direct</value>
+        </criteriaItems>
+        <description>With create a task for the lead owner when &quot;Pinterest eBook&quot; is checked off.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>zGenerate task if Product Tour is Watched</fullName>
+        <actions>
+            <name>Notify_Rep_of_Lead_who_viewed_the_Product_Tour</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Capture_Date_of_Recorded_Product_Tour</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Lead_Watched_Recorded_Product_Tour</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.Openend_Product_Tour_Recording__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Owner_Team__c</field>
+            <operation>contains</operation>
+            <value>Direct</value>
+        </criteriaItems>
+        <description>With create a task for the lead owner when &quot;Opened Product Tour Recording&quot; is checked off.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>zHubspot Store URL %3A Lead</fullName>
+        <actions>
+            <name>Most_Recenet_Trial_URL_Population</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>so HS can use in emails</description>
+        <formula>ISCHANGED( Most_Recent_Trial__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
         <fullName>zLead Transfer to Bryan Foster%3A Hubspot</fullName>
         <actions>
             <name>Lead_Owner_to_Bryan_Foster</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <description>reassigns incoming leads from Hubspot to BFoss from Mitch</description>
         <formula>Campaign.Name = &quot;Hubspot Campaign&quot;</formula>
         <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>zLead%3ASet the BA Testing Lead field to true%2E</fullName>
+        <actions>
+            <name>set_the_BA_Testing_Lead_field_to_true</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>and(  ISPICKVAL( Closed_Lost_Reason__c ,&apos;4 Test Account&apos;), ISCHANGED(Closed_Lost_Reason__c) )</formula>
+        <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
         <fullName>zNew Trail Added to Lead</fullName>
@@ -1503,12 +1403,99 @@ NOT(ISCHANGED( OwnerId ))</formula>
             <name>New_Trial_Old_Lead_Email_Owner</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <description>Sends lead owner an email if a new trial is added to an old lead</description>
         <formula>PRIORVALUE( Active_Trials__c ) &lt; Active_Trials__c &amp;&amp;   $User.Id  &lt;&gt; &quot;005a0000007EvtM&quot; &amp;&amp;  OwnerId &lt;&gt; &quot;00530000004W020&quot; &amp;&amp; OwnerId &lt;&gt; &quot;00530000007EJEO&quot;  &amp;&amp;  
 OwnerId &lt;&gt;  $Label.Lead_Default_Owner  &amp;&amp;
 DATEVALUE( CreatedDate ) &lt;&gt; TODAY() &amp;&amp;  Trial_Start_Date__c = TODAY()</formula>
         <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>zPopulate Initial Hubspot Score</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.Hubspot_Score__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Initial_Hubspot_Score__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Captures the Hubspot score value the very first time one comes through to the lead</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>zRecord Type from Sales to Client Prospect</fullName>
+        <actions>
+            <name>Lead_RT_to_Client_Prospect</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Type_Trial</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.MBAAccountID__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Sales Prospect</value>
+        </criteriaItems>
+        <description>Updates the lead record type when a trial is added to a lead that previously did not have any MBA trial and data</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>zStage to Closed Lost if Reason field Populated</fullName>
+        <actions>
+            <name>Closed_Lost_Stage</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.Closed_Lost_Reason__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>If a rep fills in the Closed Lost Reason, stage will move to Closed Lost for them.  Created because Acq wanted field dependency but Direct didn&apos;t.  This lets Acq reps only focus on lost reason</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>zStore Name Contains %22usertesting%22</fullName>
+        <actions>
+            <name>usertesting_URL_to_API</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.Trial_Store_URL__c</field>
+            <operation>contains</operation>
+            <value>usertesting</value>
+        </criteriaItems>
+        <description>transfer to API User</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>zTransfer Lead to GSB Queue</fullName>
+        <actions>
+            <name>Lead_Owner_GSB</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.CreatedDate</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Marketing_Promotion__c</field>
+            <operation>contains</operation>
+            <value>GSB2013</value>
+        </criteriaItems>
+        <description>Transfers lead ownership to the GSB queue for marketing to monitor for the store giveaway promotion.  Can be deleted if Megan O&apos;Brien is finished with her reporting</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <tasks>
         <fullName>Bad_Phone_Number_Email_Sent</fullName>

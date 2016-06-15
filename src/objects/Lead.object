@@ -2646,10 +2646,6 @@ Have a developer check implications before removing</description>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Datanyze</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
                 <fullName>Datanyze Import</fullName>
                 <default>false</default>
             </picklistValues>
@@ -11366,10 +11362,6 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         </picklistValues>
         <picklistValues>
             <picklist>LeadSource</picklist>
-            <values>
-                <fullName>Datanyze</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>G2Crowd</fullName>
                 <default>false</default>

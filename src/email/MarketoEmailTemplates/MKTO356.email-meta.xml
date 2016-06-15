@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>ShipperHQ Survey (GTM-1190).Email 1</name>
+    <style>none</style>
+    <subject>We want your feedback on ShipperHQ</subject>
+    <textOnly>As we work on new features, we like to reach out to customers to get their thoughts.
+Hi {{lead.First Name:default=there}},
+
+
+Thank you for recently trying out BigCommerce’s integration with ShipperHQ. To help us continue to improve our service, we’d like to ask you a few short questions about your experience.
+This survey should take less than 5 minutes to complete.
+
+
+
+
+TAKE THE SHORT SURVEY &lt;[[https://www.surveymonkey.com/r/CYVQNXY]]&gt;
+Thanks,
+
+Jordan Sim 
+Product Management</textOnly>
+    <type>custom</type>
+</EmailTemplate>

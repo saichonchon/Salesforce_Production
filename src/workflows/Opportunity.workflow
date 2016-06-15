@@ -735,13 +735,6 @@
         <useDeadLetterQueue>false</useDeadLetterQueue>
     </outboundMessages>
     <rules>
-        <fullName>Assign App Opps to John N</fullName>
-        <active>true</active>
-        <description>Assign App Opps to John N</description>
-        <formula>RecordTypeId  = &quot;01213000000AVUj&quot;</formula>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
         <fullName>Change the opportunity owner if landing page contains WSI</fullName>
         <actions>
             <name>Update_Account_Owner</name>
@@ -1305,6 +1298,13 @@ ispickval( App_Revshare__c , &quot;Signed&quot;)</formula>
         <active>true</active>
         <formula>(rvpe__NotifyRVMember__c == true)</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>zAssign App Opps to John N</fullName>
+        <active>false</active>
+        <description>Assign App Opps to John N</description>
+        <formula>RecordTypeId  = &quot;01213000000AVUj&quot;</formula>
+        <triggerType>onCreateOnly</triggerType>
     </rules>
     <tasks>
         <fullName>WFR_Fired</fullName>
