@@ -9255,7 +9255,7 @@ Maria: E2CP can&apos;t read the actual record type when setting org wide outboun
             <filterItems>
                 <field>User.Full_Name__c</field>
                 <operation>equals</operation>
-                <value>Nicole Smith,Phillip Estrada,Kit Gulick,Dustin Shipley</value>
+                <value>Phillip Estrada,Kit Gulick,Dustin Shipley</value>
             </filterItems>
             <filterItems>
                 <field>User.Full_Name__c</field>
@@ -9270,12 +9270,12 @@ Maria: E2CP can&apos;t read the actual record type when setting org wide outboun
             <filterItems>
                 <field>User.Full_Name__c</field>
                 <operation>equals</operation>
-                <value>Paul Vaillancourt,Melanie Kalemba,Robert Alvarez,Brent Bellm,Warren Washington</value>
+                <value>Paul Vaillancourt,Robert Alvarez,Brent Bellm,Warren Washington</value>
             </filterItems>
             <filterItems>
                 <field>User.Full_Name__c</field>
                 <operation>equals</operation>
-                <value>Fritz Stegmann</value>
+                <value>Russell Griffin,Fritz Stegmann,Timothy Shuman,Eric Her</value>
             </filterItems>
             <isOptional>false</isOptional>
         </lookupFilter>
@@ -62797,7 +62797,8 @@ CONTAINS(&apos;005a0000007rA7YAAU&apos;,Refund_Credit_Approver__c) /* Liam Garci
 (Refund_Credit_Amount__c &gt; 3000 &amp;&amp;
 OR(
 CONTAINS(&apos;0051300000Bt8G1AAJ&apos;,Refund_Credit_Approver__c),  /* Paul Robinson */
-CONTAINS(&apos;005a000000A6vfVAAR&apos;,Refund_Credit_Approver__c)  /* Fritz Stegmann */
+CONTAINS(&apos;005a000000A6vfVAAR&apos;,Refund_Credit_Approver__c),  /* Fritz Stegmann */
+CONTAINS(&apos;005a0000008WYShAAO&apos;,Refund_Credit_Approver__c)   /* Timothy Shuman */
 ))
 
 ||
@@ -62812,7 +62813,8 @@ CONTAINS(&apos;00513000009tW94AAE&apos;,Refund_Credit_Approver__c)  /* Phillip E
 (Refund_Credit_Amount__c &gt; 300 &amp;&amp;
 OR(
 CONTAINS(&apos;00513000009tSLzAAM&apos;,Refund_Credit_Approver__c), /* Kit Gulick */
-CONTAINS(&apos;0051300000BSCoIAAX&apos;,Refund_Credit_Approver__c)  /* Dustin Shipley */
+CONTAINS(&apos;0051300000BSCoIAAX&apos;,Refund_Credit_Approver__c), /* Dustin Shipley */
+CONTAINS(&apos;0051300000BTnmCAAT&apos;,Refund_Credit_Approver__c)  /* Eric Her */
 ))</errorConditionFormula>
         <errorMessage>The approver selected is not eligible to approve the specified Refund/Credit Amount. Please select the proper Refund/Credit Approver.</errorMessage>
     </validationRules>

@@ -185,7 +185,7 @@ public without sharing class CreateopportunityController {
             Opp.MKT_Showcase__c = null;
             Opp.MKT_Testimonial__c = null;
             Opp.Client_Reference_Status__c = null;
-            Opp.Big_Brand__c = null;
+            Opp.Big_Brand__c = false;
             Opp.Zuora_External_Id__c = null;
              
             Opp.CloseDate=Date.today().addDays(30);

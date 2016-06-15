@@ -91,6 +91,11 @@
             <operator>equals</operator>
             <value>Web</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <operator>notContain</operator>
+            <value>Design,Tier 2,API,Escalated,Garrett Cluff</value>
+        </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsDown>

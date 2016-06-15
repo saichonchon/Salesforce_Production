@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_77546661</developerName>
+        <masterLabel>Owner</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Support</sourceValue>
+            </sourceValues>
+            <value>Support Queue</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Adrian Estopace</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>John Ferrer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Josiephene Caceres</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jun Tupas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Patricia Santos</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Regine SanJuan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gerald Bobiles</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ella Vinalon</sourceValue>
+            </sourceValues>
+            <value>Web Agent Name</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Alvin DeLeon</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Amanda Aguirre</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Aries Leyte</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christie Rodriguez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Faith Esguerra</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jeff Gregorio</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rob San Diego</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kenneth Cabaobao</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kim Radaza</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kristel Pura</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marielle Morre</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marjorie Tamayo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jay Ordonez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jonalyn Fresnido</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jonathan Castro</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jovic Leovis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Juan Calanoc</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mireille Ferol</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Racel Arce</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Raymond Macatangay</sourceValue>
+            </sourceValues>
+            <value>Chat Agent Name</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Daphne Apatan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Foy Howard</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Phillip Estrada</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Joey Fulgencio</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mel Martinez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bungay Beau</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Leyanne Bertumen</sourceValue>
+            </sourceValues>
+            <value>Billing</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Rianne Insigne</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ryan Juarez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shirley Detera</sourceValue>
+            </sourceValues>
+            <value>Chat Agent Name2</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumnStacked</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>CREATED_DATE</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <secondaryGroupingColumn>BucketField_77546661</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Small</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATEONLY</field>
+    </columns>
+    <columns>
+        <field>Case.Hours_Open__c</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <description>All active/open cases needing to be worked/closed.</description>
+    <filter>
+        <criteriaItems>
+            <column>STATUS</column>
+            <operator>equals</operator>
+            <value>New,Open Unsolved,Client Responded,Reopened</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Case.Client_Success</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <operator>equals</operator>
+            <value>Web,Chat</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <operator>notContain</operator>
+            <value>Trash,API,Design,Manager,Escalated,Tier 2,Cancellation,Billing</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>STATUS</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_77546661</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Active Open Cases - Webcase Lifecycle</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_PREVCURFY</interval>
+    </timeFrameFilter>
+</Report>

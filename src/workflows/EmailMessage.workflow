@@ -579,6 +579,7 @@ FIND(&quot;Does this resolve your case?&quot;,HtmlBody)-(FIND(&quot;&gt;Proposed
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND (6 OR 7)</booleanFilter>
         <criteriaItems>
             <field>EmailMessage.FromAddress</field>
             <operation>notContain</operation>
@@ -603,6 +604,16 @@ FIND(&quot;Does this resolve your case?&quot;,HtmlBody)-(FIND(&quot;&gt;Proposed
             <field>Case.RecordTypeId</field>
             <operation>equals</operation>
             <value>Partner Support,Premium Account Services</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>notEqual</operation>
+            <value>Partner Deal Registration</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Subject</field>
+            <operation>notEqual</operation>
+            <value>New Deal Registration Received</value>
         </criteriaItems>
         <description>Reopens Premium Account Services/Partner Support Case when an email has been sent regarding a case that is already closed. Related to BAP-2964/BAP-3175.</description>
         <triggerType>onCreateOnly</triggerType>

@@ -72,7 +72,7 @@
         <criteriaItems>
             <column>Opportunity.Big_Brand__c</column>
             <operator>equals</operator>
-            <value>Yes</value>
+            <value>1</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>

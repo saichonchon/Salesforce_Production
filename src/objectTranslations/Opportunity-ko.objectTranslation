@@ -259,10 +259,6 @@
         <help><!-- Is this client/prospect a big brand? --></help>
         <label><!-- Big Brand --></label>
         <name>Big_Brand__c</name>
-        <picklistValues>
-            <masterLabel>Yes</masterLabel>
-            <translation><!-- Yes --></translation>
-        </picklistValues>
     </fields>
     <fields>
         <label><!-- Billing Amount --></label>

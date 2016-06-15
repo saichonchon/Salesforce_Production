@@ -55,7 +55,7 @@
     </filter>
     <format>Summary</format>
     <groupingsDown>
-        <dateGranularity>Week</dateGranularity>
+        <dateGranularity>Month</dateGranularity>
         <field>COMMENT_CREATED_DATE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>

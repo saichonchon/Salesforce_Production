@@ -1,0 +1,268 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<title></title>
+
+<style type="text/css">
+body {
+    margin:0;
+    padding:0;
+}
+table {
+    border-collapse: collapse;
+}
+p {
+    margin: 10px 0 10px 0;
+}
+
+.applelinksheader a {
+    text-decoration: none; 
+    color: #363636 !important;
+}
+
+.applelinks a {
+    text-decoration: none; 
+    color: #777777 !important;
+}
+            
+@media (max-width : 480px) {
+/*@media only screen and (max-device-width: 480px) {*/
+.bodyWidth, #TopContainer, #LogoContainer, #EyebrowContainer, #HeaderContainer, #Eyebrow, #BodyContainer, #MiddleContainer, #SidebarContainer, #FooterContainer {
+    width: 100% !important;
+}
+#TopMargin {
+        margin:0 !important;
+}
+#Logo {
+        text-align: center !important;
+}
+#Eyebrow {
+        text-align: center !important;
+}
+#TopContainer {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+}
+#HeaderContainer {
+        float: none !important;
+        padding: 0 0 0 0 !important;
+}
+#HeaderPadding {
+        padding: 30px 15px !important;
+}
+#BodyPadding {
+        padding: 30px 20px 0px 20px !important;
+}
+#GraphicContainer {
+        float: none !important;
+}
+#Graphic img {
+        width: 100% !important;
+        max-width: initial !important;
+}
+#Headline {
+        font-size: 26px !important;
+        line-height: 30px !important;
+}
+#SidebarFloat {
+        float: left;
+}
+#SidebarContainer {
+        float: none !important;
+}
+#SidebarPadding {
+        padding: 25px 20px 35px 20px !important;
+        text-align: center;
+}
+#SidebarImageContainer {
+        text-align:center !important;
+}
+img#SidebarHorizontal {
+        width:100%;
+}
+#FooterContainer {
+        float: none !important;
+}
+#FooterPadding {
+        padding: 20px 20px 20px 20px !important;
+}
+#FooterLogoPadding {
+        padding: 0 20px 20px 20px !important;
+}
+#ButtonContainer {
+        padding-bottom: 32px !important;
+}
+#button1text {
+        font-size: 14px;
+}
+.SpeakerTable {
+        width: 220px !important;
+}
+.clearFloat {
+        float:none !important;
+        width: 100% !important;
+}
+.center_mobile {
+        text-align: center !important;
+}
+.hide_mobile {
+        display: none !important;
+}
+
+.applelinksheader a {
+text-decoration: none; 
+color: #363636 !important;
+}
+
+.applelinks a {
+text-decoration: none; 
+color: #777777 !important;
+}
+
+}
+</style>
+</head>
+<body style="margin:0 0 0 0; background:#e2e7e7; -webkit-text-size-adjust:none; " ><!-- Preview text (text which appears right after subject) -->
+<div class="mktEditable" id="preview-text" style="display:none; color:#ffffff; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; " >Visit Bigcommerce.com to request a demo</div>
+<div align="center" style="margin-top:20px; " id="TopMargin" ><table width="600" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" style="background:#ffffff; " ><tr>
+<td valign="top" id="TopContainer" style="padding:25px 25px;">
+<table border="0" cellspacing="0" cellpadding="0" align="left" width="270" id="LogoContainer">
+<tr>
+<td valign="top" align="left" id="Logo"><a href="http://www.bigcommerce.com"><img src="http://grow.bigcommerce.com/rs/695-JJT-333/images/BIG-3001R-Templates_GeneralLP_logo.png" width="185" height="45" border="0"></a></td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" align="right" width="270" id="EyebrowContainer" class="hide_mobile">
+<tr>
+<td id="Eyebrow" align="right" valign="middle" height="45" style="font-family:Helvetica,Arial,sans-serif;color:#9aa42d;font-size:16px; line-height:20px;"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr ><td valign="middle" align="left" id="HeaderContainer" style="background:#434d55; padding:0 0 0 0; " ><div style="mso-table-lspace:0; mso-table-rspace:0; " ><table border="0" cellspacing="0" cellpadding="0" width="325" style="border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; " align="left" class="clearFloat" ><tr ><td valign="middle" align="left" style="padding:30px 0 0 32px; " id="HeaderPadding" ><table border="0" cellspacing="0" cellpadding="0" ><tr ><td valign="top" align="center" style="font-family:Helvetica,Arial,sans-serif; color:#ffffff; font-size:26px; line-height:30px; padding-bottom:15px; " ><div class="mktEditable" id="header" >Connect to Google&nbsp;Shopping</div>
+</td>
+</tr>
+<tr ><td align="center" ><table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; display:inline-block; " ><tr ><td valign="top" style="line-height:40px;"><img src="http://grow.bigcommerce.com/rs/695-JJT-333/images/BIG-3001R-Templates_Email_button-left.png" width="6" height="40" style="display:block;"></td>
+<td valign="middle" align="center" height="40" width="163" style="background:#00abc9; font-family:Helvetica,Arial,sans-serif; font-size:16px; padding:0 10px 0 10px; " ><div class="mktEditable" id="cta" ><p style="margin: 0 0;"><span style="color: #ffffff;"><a href="https://www.bigcommerce.com/apps/google-shopping/" target="_blank" style="color: #ffffff; text-decoration: none; display: block;">Get started</a></span></p></div>
+</td>
+<td valign="top" style="line-height:40px;"><img src="http://grow.bigcommerce.com/rs/695-JJT-333/images/BIG-3001R-Templates_Email_button-right.png" width="6" height="40" style="display:block;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" width="245" align="right" class="clearFloat" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; " ><tr ><td valign="top" align="center" style="line-height:172px; " id="Graphic" ><div class="mktEditable" id="image" ><img src="http://grow.bigcommerce.com/rs/695-JJT-333/images/Google Shopping icon.jpg" style="display:block;" width="245"></div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr ><td valign="top" align="left" ><table border="0" cellspacing="0" cellpadding="0" width="600" id="MiddleContainer" ><tr ><td valign="top" ><table border="0" cellspacing="0" cellpadding="0" width="550" id="BodyContainer" align="left" ><tr ><td valign="top" align="left" id="BodyPadding" style="padding:35px 0 30px 32px; " ><div style="mso-table-lspace:0; mso-table-rspace:0; " ><table border="0" cellspacing="0" cellpadding="0" ><tr ><td style="padding:0 0 15px 0; font-family:Helvetica,Arial,sans-serif; color:#222222; font-size:20px; line-height:24px; " ><div class="mktEditable" id="secondary-headline" >Place products directly in front of potential customers</div>
+</td>
+</tr>
+<tr ><td align="left" valign="top" style="font-family:Helvetica,Arial,sans-serif; color:#777777; font-size:14px; line-height:20px; " ><div class="mktEditable" id="body-text" ><p style="margin-top: 0;">With our Google Shopping partnership you can generate traffic for your store and put your products front and center of shoppers searching for items on Google.</p>
+<p>Traditionally, the hardest part of using Google Shopping was adding all your products. Now you can automatically import product data from your Bigcommerce store to:</p>
+<ul>
+<li style="margin-bottom: 12px; line-height: 20px;"><strong>Save time and effort </strong> by not having to submit separate files to Google</li>
+<li style="margin-bottom: 12px; line-height: 20px;"><strong>Improve accuracy </strong> by automatically syncing your latest product data</li>
+<li style="line-height: 20px;"><strong>Make advertising easier </strong>by having new products automatically sent to Google Shopping</li>
+</ul>
+<p>To help you get started, we'll give you $100 in AdWords credits when you spend $25 on Google Shopping campaigns. See terms and conditions as well as how to redeem this offer below.</p>
+<p>Here is your exclusive promo code: {{social.promo code}}</p></div>
+<div class="mktEditable" id="secondary-cta" ><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; display: inline-block; margin: 15px 0px 15px 0px;">
+<tbody>
+<tr>
+<td valign="middle" align="center" height="40" width="130" style="background: #00abc9; font-family: Helvetica,Arial,sans-serif; font-size: 16px; padding: 0 10px 0 10px; border-radius: 4px;">
+<p style="margin: 0 0; color: #ffffff;"><a href="https://www.bigcommerce.com/apps/google-shopping/" target="_blank" style="color: #ffffff; text-decoration: none; display: block;">Get&nbsp;started</a></p>
+</td>
+</tr>
+</tbody>
+</table></div>
+</td>
+</tr>
+<tr ><td align="left" valign="top" style="font-family:Helvetica,Arial,sans-serif; color:#777777; font-size:14px; line-height:20px; " ><div class="mktEditable" id="closing-text" ><p>Sincerely,</p>
+<p style="color: #44494c;">The Bigcommerce Team<br /><br /></p>
+<p><span style="font-size: 10px; color: #89949b;">Terms and conditions for this offer:</span></p>
+<ol style="font-size: 10px; line-height: 1em;">
+<li>
+<div><span style="line-height: 1em; font-size: 10px; color: #89949b;">Offer available to customers with a billing address in the United States only. One promotional code per advertiser.</span></div>
+</li>
+<li>
+<div><span style="line-height: 1em; font-size: 10px; color: #89949b;">To activate this offer: <span style="color: #89949b;">Enter the promotional code<a href="http:// https://support.google.com/adwords/answer/1703648"></a></span> in your account before 12/31/2016.</span></div>
+</li>
+<li>
+<div><span style="line-height: 1em; font-size: 10px; color: #89949b;">To earn the credit: After entering the code, your advertising campaigns must accrue costs of at least $25, excluding any taxes, within 30 days. Making a payment of $25 is not sufficient. The tracking of advertising costs towards $25 begins after you've entered the code.</span></div>
+</li>
+<li>
+<div><span style="line-height: 1em; font-size: 10px; color: #89949b;">Once 2 &amp; 3 are completed, the credit will typically be applied within 5 days to the Billing Summary of your account.</span></div>
+</li>
+<li>
+<div><span style="line-height: 1em; font-size: 10px; color: #89949b;">Credits apply to future advertising costs only. Credits cannot be applied to costs accrued before the code was entered.</span></div>
+</li>
+<li>
+<div><span style="line-height: 1em; font-size: 10px; color: #89949b;">You will not receive a notification once your credit is used up and any additional advertising costs will be charged to your form of payment. If you don't want to continue advertising, you can pause or delete your campaigns at any time.</span></div>
+</li>
+<li>
+<div><span style="line-height: 1em; font-size: 10px; color: #89949b;">Your account must be successfully billed by AdWords and remain in good standing in order to qualify for the promotional credit.</span></div>
+</li>
+<li>
+<div><span style="line-height: 1em; font-size: 10px; color: #89949b;">Full terms and conditions can be found here: <span style="color: #00abc9;"><a href="http://www.google.com/adwords/coupons/terms.html" style="color: #00abc9; text-decoration: none;">http://www.google.com/adwords/coupons/terms.html</a></span></span></div>
+</li>
+</ol></div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" width="20" id="SidebarContainer" align="right">
+<tr>
+<td id="SidebarPadding" valign="top" align="left" style="padding:35px 23px 65px 0;">
+<div style="mso-table-lspace:0;mso-table-rspace:0;">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td valign="top" align="left" style="font-family:Helvetica,Arial,sans-serif;color:#222222;font-size:13px; line-height:17px;padding-bottom:30px;"></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left" style="background:#434d55;"><!-- Footer -->
+<table width="600" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" style="background:#434d55;">
+<tr>
+<td valign="top" align="left">
+<table align="left" border="0" cellspacing="0" cellpadding="0" id="FooterContainer">
+<tr>
+<td valign="top" align="left" id="FooterPadding" style="padding:18px 0 25px 32px; font-family:Helvetica,Arial,sans-serif; color:#b2b2b2; font-size:11px; line-height:15px;"><a href="https://www.facebook.com/Bigcommerce"><img src="http://grow.bigcommerce.com/rs/695-JJT-333/images/facebook-social-icon.png" alt="Facebook" border="0" style="padding-bottom: 5px; padding-right: 10px;"></a> <a href="https://twitter.com/Bigcommerce"><img src="http://grow.bigcommerce.com/rs/695-JJT-333/images/twitter-social-icon.png" alt="Twitter" border="0" style="padding-bottom: 5px; padding-right: 10px;"></a> <a href="https://plus.google.com/+bigcommerce/posts"><img src="http://grow.bigcommerce.com/rs/695-JJT-333/images/googleplus-social-icon.png" alt="Google Plus" border="0" style="padding-bottom: 5px; padding-right: 10px;"></a><br>
+<a href="http://grow.bigcommerce.com/subscribe-to-bigcommerce-blog.html" style="text-decoration: none; color: #00abc9">Subscribe to the Bigcommerce Blog</a><br>
+&copy; Copyright 2003 - 2015 Bigcommerce Pty. Ltd. Shopping Cart Software</td>
+</tr>
+</table>
+<table align="right" border="0" cellspacing="0" cellpadding="0" class="clearFloat">
+<tr>
+<td valign="top" style="padding:18px 32px 0 0;" id="FooterLogoPadding"><a href="http://www.bigcommerce.com"><img src="http://grow.bigcommerce.com/rs/695-JJT-333/images/BIG-3001R-Templates_Email_logo-footer%5B1%5D.png" alt="Bigcommerce" border="0"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p id="footer" align="center" style="font-family:Helvetica,Arial,sans-serif; color:#777777; font-size:11px; line-height:15px;">Bigcommerce&nbsp; <span class="applelinks">11305 Four Points Dr., Building 2, Floor 3&nbsp;</span> <span class="applelinks">Austin&nbsp;</span> <span class="applelinks">TX&nbsp;</span> <span class="applelinks">78726&nbsp;</span><br>
+You received this because you are subscribed to emails from <a href="https://www.bigcommerce.com/">Bigcommerce</a>.<br>
+Update your <a href="http://grow.bigcommerce.com/manage-your-email-preferences.html">email preferences</a> to choose the types of emails you receive.</p>
+</div>
+</body>
+</html>

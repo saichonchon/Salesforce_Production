@@ -41,6 +41,9 @@
         <field>OWNER</field>
     </columns>
     <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
         <field>Case.Primary_Case_Rep__c</field>
     </columns>
     <columns>

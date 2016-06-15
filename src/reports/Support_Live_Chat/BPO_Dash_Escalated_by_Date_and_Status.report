@@ -52,7 +52,7 @@
         <chartType>VerticalColumn</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Case.Tier_2_Request_Date__c</groupingColumn>
+        <groupingColumn>CREATED_DATEONLY</groupingColumn>
         <location>CHART_TOP</location>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
@@ -69,7 +69,7 @@
         <field>CASE_NUMBER</field>
     </columns>
     <columns>
-        <field>OWNER</field>
+        <field>Case.Manager_Callback_Requestor__c</field>
     </columns>
     <columns>
         <field>Case.Escalated_By__c</field>
@@ -98,9 +98,9 @@
     <columns>
         <field>CLOSED</field>
     </columns>
-    <description>Showing current status of cases with date of escalation</description>
+    <description>Showing current status of cases, by opened date, with an escalation</description>
     <filter>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND (5 OR 6)</booleanFilter>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND (5 OR 6 OR 7)</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
             <operator>equals</operator>
@@ -114,7 +114,7 @@
         <criteriaItems>
             <column>OWNER</column>
             <operator>notContain</operator>
-            <value>billing,api,cancellation</value>
+            <value>billing,api,cancellation,design</value>
         </criteriaItems>
         <criteriaItems>
             <column>CREATED_DATEONLY</column>
@@ -131,6 +131,11 @@
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Case.Manager_Callback_Requestor__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>
@@ -140,7 +145,12 @@
     </groupingsAcross>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Case.Tier_2_Request_Date__c</field>
+        <field>CREATED_DATEONLY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>BPO Dash - Escalated by Date and Status</name>
@@ -154,7 +164,7 @@
     </params>
     <reportType>CaseList</reportType>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
         <interval>INTERVAL_LAST7</interval>

@@ -32,6 +32,10 @@
                 <behavior>Readonly</behavior>
                 <field>CleanStatus</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Big_Brand__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

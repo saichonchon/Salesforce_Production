@@ -1429,7 +1429,7 @@ NOT(ISCHANGED( OwnerId ))</formula>
             <name>rvee__AssignedToPartnerTimestamp</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <formula>(rvpe__IsDealRegistration__c == false) &amp;&amp; (ISNEW() || ISCHANGED(rvpe__RVMember__c)) &amp;&amp; (rvpe__RVMember__c != null)</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>

@@ -774,20 +774,14 @@ MBASubscriptionID__c,null)</formula>
     </fields>
     <fields>
         <fullName>Big_Brand__c</fullName>
+        <defaultValue>false</defaultValue>
         <description>Is this client/prospect a big brand?</description>
         <externalId>false</externalId>
         <inlineHelpText>Is this client/prospect a big brand?</inlineHelpText>
         <label>Big Brand</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
-        <type>Picklist</type>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>BillingAmount__c</fullName>
@@ -5505,7 +5499,7 @@ Product__c ) ))))))))))</formula>
         <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -5531,7 +5525,7 @@ Product__c ) ))))))))))</formula>
         <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -6225,7 +6219,7 @@ Account Management</description>
         <inlineHelpText>To identify clients who are entitled to receive Premium Services.</inlineHelpText>
         <label>zPremium Services?</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
+        <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
     <fields>
@@ -8127,7 +8121,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             <sorted>false</sorted>
         </picklist>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
+        <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
     <fields>
@@ -15849,13 +15843,6 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Big_Brand__c</picklist>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>BillingCycle__c</picklist>
             <values>
                 <fullName>3 Yearly</fullName>
@@ -18635,13 +18622,6 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <fullName>No</fullName>
                 <default>false</default>
             </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Big_Brand__c</picklist>
             <values>
                 <fullName>Yes</fullName>
                 <default>false</default>
@@ -21772,13 +21752,6 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <fullName>No</fullName>
                 <default>false</default>
             </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Big_Brand__c</picklist>
             <values>
                 <fullName>Yes</fullName>
                 <default>false</default>

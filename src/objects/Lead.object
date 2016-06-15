@@ -458,6 +458,15 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>Big_Brand__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Big Brand?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Budget_Description__c</fullName>
         <externalId>false</externalId>
         <label>Budget Description</label>

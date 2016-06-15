@@ -34,8 +34,8 @@
                 <field>CleanStatus</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Dialer_Eligible_Lead__c</field>
+                <behavior>Edit</behavior>
+                <field>Big_Brand__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -58,6 +58,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Other_Comments__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Dialer_Eligible_Lead__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>

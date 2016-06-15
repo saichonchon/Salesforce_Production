@@ -129,6 +129,6 @@
     <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>COMMENT_CREATED_DATE</dateColumn>
-        <interval>INTERVAL_TODAY</interval>
+        <interval>INTERVAL_THISWEEK</interval>
     </timeFrameFilter>
 </Report>

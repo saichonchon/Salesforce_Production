@@ -8,7 +8,6 @@
     <excludeButtons>EnablePrmSuperUser</excludeButtons>
     <excludeButtons>EnableSelfService</excludeButtons>
     <excludeButtons>RequestUpdate</excludeButtons>
-    <excludeButtons>RequestUseSfdc</excludeButtons>
     <excludeButtons>Share</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
     <excludeButtons>ViewSelfService</excludeButtons>
@@ -49,6 +48,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>DoNotCall</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CleanStatus</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

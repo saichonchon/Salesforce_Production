@@ -9,7 +9,9 @@
         <columnSize>Wide</columnSize>
         <components>
             <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-            <chartAxisRange>Auto</chartAxisRange>
+            <chartAxisRange>Manual</chartAxisRange>
+            <chartAxisRangeMax>125.0</chartAxisRangeMax>
+            <chartAxisRangeMin>0.0</chartAxisRangeMin>
             <chartSummary>
                 <axisBinding>y</axisBinding>
                 <column>RowCount</column>
@@ -27,15 +29,115 @@
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title># Daily Opened</title>
+            <title># Daily Opened by Status (Last 7 days)</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>ColumnStacked</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <legendPosition>Right</legendPosition>
+            <report>Support_Live_Chat/Active_Open_Cases_Webcase_Lifecycle</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Open/Active by Owner</title>
             <useReportChart>false</useReportChart>
         </components>
     </leftSection>
     <middleSection>
-        <columnSize>Medium</columnSize>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Manual</chartAxisRange>
+            <chartAxisRangeMax>125.0</chartAxisRangeMax>
+            <chartAxisRangeMin>0.0</chartAxisRangeMin>
+            <componentType>ColumnStacked</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <legendPosition>Right</legendPosition>
+            <report>Support_Live_Chat/BPO_Dash_Escalated_by_Date_and_Status</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Escalated by Owner (Last 7 days)</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
+                <column>RowCount</column>
+            </chartSummary>
+            <componentType>Donut</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>true</expandOthers>
+            <groupingColumn>BucketField_77546661</groupingColumn>
+            <legendPosition>Bottom</legendPosition>
+            <report>Support_Live_Chat/Active_Open_Cases_Webcase_Lifecycle</report>
+            <showPercentage>false</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>true</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>Open/Active by Owner (Alt View)</title>
+            <useReportChart>false</useReportChart>
+        </components>
     </middleSection>
     <rightSection>
-        <columnSize>Medium</columnSize>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Manual</chartAxisRange>
+            <chartAxisRangeMax>125.0</chartAxisRangeMax>
+            <chartAxisRangeMin>0.0</chartAxisRangeMin>
+            <componentType>ColumnStacked</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <legendPosition>Right</legendPosition>
+            <report>Support_Live_Chat/Transfered_Date_Owner_Web_Lifecycle</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Transferred by Owner (Last 7 days)</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
+                <column>RowCount</column>
+            </chartSummary>
+            <componentType>Column</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <groupingColumn>AGE</groupingColumn>
+            <legendPosition>Bottom</legendPosition>
+            <report>Support_Live_Chat/Open_Cases_by_Age_Webcase_Lifecycle</report>
+            <showPercentage>false</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Open/Active by Age</title>
+            <useReportChart>false</useReportChart>
+        </components>
     </rightSection>
     <runningUser>garrett.cluff@bigcommerce.com</runningUser>
     <textColor>#000000</textColor>

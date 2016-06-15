@@ -211,6 +211,10 @@
         <name>Bad_Phone_Number__c</name>
     </fields>
     <fields>
+        <label><!-- Big Brand? --></label>
+        <name>Big_Brand__c</name>
+    </fields>
+    <fields>
         <label><!-- Budget Description --></label>
         <name>Budget_Description__c</name>
     </fields>

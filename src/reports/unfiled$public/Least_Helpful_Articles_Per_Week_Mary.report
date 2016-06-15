@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumnStackedTo100</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>PKB_Article_Feedback_Deflection__c.Deflection__c</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <secondaryGroupingColumn>PKB_Article_Feedback_Deflection__c.Article_Title__c</secondaryGroupingColumn>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <title>Was this article helpful?</title>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>PKB_Article_Feedback_Deflection__c.Why_Not_Helpful__c</field>
+    </columns>
+    <columns>
+        <field>PKB_Article_Feedback_Deflection__c.Comments__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CUST_CREATED_DATE</column>
+            <operator>greaterThan</operator>
+            <value>11/20/2014 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PKB_Article_Feedback_Deflection__c.Feedback_Addressed__c</column>
+            <operator>notEqual</operator>
+            <value>Not About Article</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PKB_Article_Feedback_Deflection__c.Why_Not_Helpful__c</column>
+            <operator>notEqual</operator>
+            <value>&quot;Did not help, I&apos;m looking for help with a known issue&quot;,I don&apos;t like this feature,I have feedback about Bigcommerce</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PKB_Article_Feedback_Deflection__c.ArticleLastModifiedBy__c</column>
+            <operator>equals</operator>
+            <value>Mary Stanish</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Week</dateGranularity>
+        <field>CUST_CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>PKB_Article_Feedback_Deflection__c.Deflection__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>PKB_Article_Feedback_Deflection__c.Article_Title__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Least Helpful Articles Per Week (Mary)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$PKB_Article_Feedback_Deflection__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_LASTWEEK</interval>
+    </timeFrameFilter>
+</Report>

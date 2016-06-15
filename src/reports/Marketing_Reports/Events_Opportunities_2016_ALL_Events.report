@@ -5,8 +5,9 @@
         <backgroundColor2>#FFFFFF</backgroundColor2>
         <backgroundFadeDir>Diagonal</backgroundFadeDir>
         <chartSummaries>
+            <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>RowCount</column>
+            <column>AMOUNT</column>
         </chartSummaries>
         <chartType>VerticalColumnStacked</chartType>
         <enableHoverLabels>false</enableHoverLabels>
