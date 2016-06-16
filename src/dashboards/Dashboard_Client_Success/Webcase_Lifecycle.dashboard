@@ -29,7 +29,7 @@
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title># Daily Opened by Status (Last 7 days)</title>
+            <title>Opened &amp; Status (Last 7 days)</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -46,7 +46,7 @@
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Open/Active by Owner</title>
+            <title>Open/Active Cases &amp; Case Owner</title>
             <useReportChart>false</useReportChart>
         </components>
     </leftSection>
@@ -68,7 +68,7 @@
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Escalated by Owner (Last 7 days)</title>
+            <title>Escalated &amp; Case Owner (Last 7 days)</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -91,7 +91,7 @@
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowValueDescending</sortBy>
-            <title>Open/Active by Owner (Alt View)</title>
+            <title>Open/Active Cases &amp; Owner (Alt View)</title>
             <useReportChart>false</useReportChart>
         </components>
     </middleSection>
@@ -113,7 +113,7 @@
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Transferred by Owner (Last 7 days)</title>
+            <title>Transferred &amp; Case Owner (Last 7 days)</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -134,8 +134,8 @@
             <report>Support_Live_Chat/Open_Cases_by_Age_Webcase_Lifecycle</report>
             <showPercentage>false</showPercentage>
             <showValues>true</showValues>
-            <sortBy>RowLabelAscending</sortBy>
-            <title>Open/Active by Age</title>
+            <sortBy>RowLabelDescending</sortBy>
+            <title>Open/Active Cases &amp; Age in Days</title>
             <useReportChart>false</useReportChart>
         </components>
     </rightSection>

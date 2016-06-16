@@ -16572,18 +16572,6 @@
         <layout>Lead-Default</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lead-Default</layout>
-        <recordType>Lead.Lead_Qualifier</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lead-Default</layout>
-        <recordType>Lead.Sales_Prospect</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lead-Default</layout>
-        <recordType>Lead.Strategic_Partner_Prospect</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Lead-Default - No Outside Visualforce Pages</layout>
         <recordType>Lead.Client_Prospect</recordType>
     </layoutAssignments>

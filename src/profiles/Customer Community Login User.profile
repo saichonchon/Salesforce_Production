@@ -16561,19 +16561,7 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Lead-Default</layout>
-        <recordType>Lead.Lead_Qualifier</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lead-Default</layout>
         <recordType>Lead.Partner_Prospect</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lead-Default</layout>
-        <recordType>Lead.Sales_Prospect</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lead-Default</layout>
-        <recordType>Lead.Strategic_Partner_Prospect</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Lead_Retrieved__c-Lead Owner Assignment Layout</layout>

@@ -4092,20 +4092,8 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         <name>Client_Prospect</name>
     </recordTypes>
     <recordTypes>
-        <label><!-- zLead Qualifier --></label>
-        <name>Lead_Qualifier</name>
-    </recordTypes>
-    <recordTypes>
         <label><!-- Partner Prospect --></label>
         <name>Partner_Prospect</name>
-    </recordTypes>
-    <recordTypes>
-        <label><!-- zSales Prospect --></label>
-        <name>Sales_Prospect</name>
-    </recordTypes>
-    <recordTypes>
-        <label><!-- zStrategic Partner Prospect --></label>
-        <name>Strategic_Partner_Prospect</name>
     </recordTypes>
     <validationRules>
         <errorMessage><!-- Please ask the owner of the lead to change ownership. --></errorMessage>

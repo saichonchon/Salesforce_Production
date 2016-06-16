@@ -6,10 +6,21 @@
         <ruleEntry>
             <assignedTo>Support_Trash</assignedTo>
             <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 OR (2 AND 3)</booleanFilter>
             <criteriaItems>
                 <field>Case.Subject</field>
                 <operation>contains</operation>
                 <value>Undelivered Mail Returned to Sender,Email Loop Protection</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>ecommerceconsultant@bigcommerce.com</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Subject</field>
+                <operation>contains</operation>
+                <value>[Auto-Reply]</value>
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
