@@ -513,6 +513,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>LghtIdeasInstallHandler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>LghtIdeasInstallHandlerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>LiveAgentChatController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -754,6 +762,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>TaskHandler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>TempIdeasController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -9058,31 +9070,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Learning__kav.Next_Button_URL__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>LghtIdeasCategories__c.Label__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>LghtIdeasCategories__c.Parent__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>LghtIdeasSettings__c.Description__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>LghtIdeasSettings__c.Label__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>LghtIdeasSettings__c.Value__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>

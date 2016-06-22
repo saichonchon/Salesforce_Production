@@ -534,6 +534,14 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>LghtIdeasInstallHandler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>LghtIdeasInstallHandlerTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>LiveAgentChatController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -775,6 +783,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>TaskHandler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>TempIdeasController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -9093,31 +9105,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>LghtIdeasCategories__c.Label__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>LghtIdeasCategories__c.Parent__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>LghtIdeasSettings__c.Description__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>LghtIdeasSettings__c.Label__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>LghtIdeasSettings__c.Value__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>LiveAgentSession.ChatReqAssigned</field>
         <readable>true</readable>
@@ -16578,12 +16565,6 @@
         <layout>Learning__kav-Learning Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>LghtIdeasCategories__c-LghtIdeasCategories Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>LghtIdeasSettings__c-LghtIdeas Settings Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>LiveAgentSession-Live Agent Session Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -17131,24 +17112,6 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>Learning__kav</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>LghtIdeasCategories__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>LghtIdeasSettings__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>

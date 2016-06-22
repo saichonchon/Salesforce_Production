@@ -31,6 +31,9 @@
         <field>LAST_UPDATE_BY</field>
     </columns>
     <columns>
+        <field>Case.Owner_Indicator__c</field>
+    </columns>
+    <columns>
         <field>RECORDTYPE</field>
     </columns>
     <columns>
@@ -134,8 +137,6 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <endDate>2016-06-09</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2016-06-05</startDate>
+        <interval>INTERVAL_THISWEEK</interval>
     </timeFrameFilter>
 </Report>

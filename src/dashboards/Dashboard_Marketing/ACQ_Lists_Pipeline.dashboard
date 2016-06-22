@@ -102,7 +102,12 @@
             <showPicturesOnTables>true</showPicturesOnTables>
         </components>
         <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Opportunity.MonthlyRecurringRevenue__c</column>
+            </chartSummary>
             <componentType>Gauge</componentType>
             <displayUnits>Integer</displayUnits>
             <gaugeMax>8000.0</gaugeMax>
@@ -119,7 +124,12 @@
             <showValues>false</showValues>
         </components>
         <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Opportunity$MonthlyRecurringRevenue__c</column>
+            </chartSummary>
             <componentType>Gauge</componentType>
             <displayUnits>Integer</displayUnits>
             <gaugeMax>12000.0</gaugeMax>

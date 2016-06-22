@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <aggregates>
-        <acrossGroupingContext>ORIGIN</acrossGroupingContext>
-        <calculatedFormula>(Case.Promoter__c:SUM/RowCount*100) -(Case.Detractor__c:SUM/RowCount*100)</calculatedFormula>
-        <datatype>number</datatype>
-        <description>Net Promoter Score</description>
-        <developerName>FORMULA1</developerName>
-        <downGroupingContext>GRAND_SUMMARY</downGroupingContext>
-        <isActive>true</isActive>
-        <isCrossBlock>false</isCrossBlock>
-        <masterLabel>Loyalty</masterLabel>
-        <scale>2</scale>
-    </aggregates>
-    <aggregates>
         <calculatedFormula>(Case.Satisfaction_Promoter__c:SUM/RowCount*100) - (Case.Satisfaction_Detractor__c:SUM/RowCount*100)</calculatedFormula>
         <datatype>number</datatype>
         <developerName>FORMULA2</developerName>
@@ -67,30 +55,20 @@
     </columns>
     <filter>
         <criteriaItems>
-            <column>RECORDTYPE</column>
-            <operator>equals</operator>
-            <value>Case.Client_Success</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>Case.Survey_Name__c</column>
-            <operator>contains</operator>
-            <value>Support NPS Next - Web</value>
+            <operator>equals</operator>
+            <value>Resolution Email Survey</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Issue_Resolved__c</column>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
-        <criteriaItems>
-            <column>Case.Issue_Resolved__c</column>
-            <operator>equals</operator>
-            <value>Yes,No</value>
-        </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>
         <dateGranularity>Day</dateGranularity>
-        <field>ORIGIN</field>
+        <field>Case.Resolution_Count__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
     <groupingsDown>

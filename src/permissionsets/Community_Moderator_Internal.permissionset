@@ -513,6 +513,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>LghtIdeasInstallHandler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>LghtIdeasInstallHandlerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>LiveAgentChatController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -754,6 +762,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>TaskHandler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>TempIdeasController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -9062,31 +9074,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>LghtIdeasCategories__c.Label__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>LghtIdeasCategories__c.Parent__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>LghtIdeasSettings__c.Description__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>LghtIdeasSettings__c.Label__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>LghtIdeasSettings__c.Value__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>LiveAgentSession.ChatReqAssigned</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -16231,6 +16218,15 @@
         <readable>false</readable>
     </fieldPermissions>
     <label>Community Moderator - Internal</label>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Idea</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
     <pageAccesses>
         <apexPage>AccountButtonChangeOwner</apexPage>
         <enabled>false</enabled>
@@ -16877,7 +16873,7 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <recordType>Idea.Record_type_for_community_09a13000000DPEYAA4_entity_Idea</recordType>
-        <visible>false</visible>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <recordType>Idea.Record_type_for_community_09aa0000000LB0pAAG_entity_Idea</recordType>

@@ -425,7 +425,7 @@ FIND(&quot;Does this resolve your case?&quot;,HtmlBody)-(FIND(&quot;&gt;Proposed
         <criteriaItems>
             <field>Case.Status</field>
             <operation>notEqual</operation>
-            <value>Closed,Auto-Closed</value>
+            <value>Closed,Auto-Closed,Open Unsolved</value>
         </criteriaItems>
         <criteriaItems>
             <field>Case.Escalated__c</field>
@@ -433,8 +433,9 @@ FIND(&quot;Does this resolve your case?&quot;,HtmlBody)-(FIND(&quot;&gt;Proposed
             <value>True</value>
         </criteriaItems>
         <criteriaItems>
-            <field>Case.Tier_2_Request_Date__c</field>
-            <operation>equals</operation>
+            <field>Case.IsEscalated</field>
+            <operation>notEqual</operation>
+            <value>True</value>
         </criteriaItems>
         <criteriaItems>
             <field>EmailMessage.Incoming</field>

@@ -109,7 +109,7 @@
             <value>Purchased,Closed Won</value>
         </criteriaItems>
         <criteriaItems>
-            <column>CAMPAIGN.NAME</column>
+            <column>CAMPAIGN.PARENT.NAME</column>
             <operator>contains</operator>
             <value>acq.prospects</value>
         </criteriaItems>
@@ -119,19 +119,19 @@
             <value>THIS_MONTH</value>
         </criteriaItems>
         <criteriaItems>
-            <column>CAMPAIGN.PARENT.NAME</column>
-            <operator>contains</operator>
-            <value>parent</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>OPP.RECORDTYPE</column>
             <operator>equals</operator>
             <value>Opportunity.Store_Purchase</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Contact.RV_Member__c</column>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>
-        <dateGranularity>Day</dateGranularity>
+        <dateGranularity>Week</dateGranularity>
         <field>Opportunity.PurchaseDate__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>

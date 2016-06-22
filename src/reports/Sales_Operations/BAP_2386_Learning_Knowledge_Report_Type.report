@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Learning__ka$ArticleNumber</field>
+    </columns>
+    <columns>
+        <field>Learning__ka$LastModifiedDate</field>
+    </columns>
+    <columns>
+        <field>Learning__ka.Learning__kav$Article__c</field>
+    </columns>
+    <columns>
+        <field>Learning__ka.Learning__kav$IsLatestVersion</field>
+    </columns>
+    <columns>
+        <field>Learning__ka.Learning__kav$Title</field>
+    </columns>
+    <columns>
+        <field>Learning__ka.Learning__kav$VersionNumber</field>
+    </columns>
+    <format>Tabular</format>
+    <name>BAP 2386 Learning Knowledge Report Type</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Learning_Knowledge__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Learning__ka$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

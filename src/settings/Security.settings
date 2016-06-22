@@ -246,7 +246,7 @@
         <enablePostForSessions>false</enablePostForSessions>
         <enableSMSIdentity>true</enableSMSIdentity>
         <enforceIpRangesEveryRequest>false</enforceIpRangesEveryRequest>
-        <forceLogoutOnSessionTimeout>false</forceLogoutOnSessionTimeout>
+        <forceLogoutOnSessionTimeout>true</forceLogoutOnSessionTimeout>
         <forceRelogin>false</forceRelogin>
         <lockSessionsToDomain>false</lockSessionsToDomain>
         <lockSessionsToIp>false</lockSessionsToIp>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Australian Shipping Carriers (GTM-1153).Email 1</name>
+    <style>none</style>
+    <subject>What Australian shipping carriers do you use?</subject>
+    <textOnly>BigCommerce Shipping Survey: What Australian shipping carriers do you use? I’d like invite you to take a short 3 minute survey that I’ll use to understand how I can improve the BigCommerce’s shipping options for you!
+Hi {{lead.First Name:default=there}},
+
+
+I&apos;m a Product Manager at Bigcommerce and am performing customer research to learn more about how you ship your products domestically within Australia and internationally from Australia.
+I’d like invite you to take a short 3 minute survey that I’ll use to understand how I can improve the BigCommerce’s shipping options for you!
+
+
+
+
+Start the Survey &lt;[[https://www.surveymonkey.com/r/G58ZKN8]]&gt;
+Thank you in advance for your feedback
+
+Jordan Sim 
+Product Management</textOnly>
+    <type>custom</type>
+</EmailTemplate>

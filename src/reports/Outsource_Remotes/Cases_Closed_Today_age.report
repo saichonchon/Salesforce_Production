@@ -94,7 +94,7 @@
         <criteriaItems>
             <column>STATUS</column>
             <operator>equals</operator>
-            <value>Closed</value>
+            <value>Closed,Auto-Closed</value>
         </criteriaItems>
         <criteriaItems>
             <column>ORIGIN</column>

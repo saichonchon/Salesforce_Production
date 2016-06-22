@@ -124,8 +124,8 @@
         </criteriaItems>
         <criteriaItems>
             <column>Case.Survey_Name__c</column>
-            <operator>contains</operator>
-            <value>Support NPS Next - Web</value>
+            <operator>equals</operator>
+            <value>Resolution Email Survey</value>
         </criteriaItems>
         <criteriaItems>
             <column>ORIGIN</column>

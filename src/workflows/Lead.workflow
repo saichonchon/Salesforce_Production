@@ -928,10 +928,6 @@ CONTAINS(Owner:User.UserRole.Name,&quot;Outbound&quot;) = FALSE)
     <rules>
         <fullName>Move Datanyze Standard Lead Data to Lead Standard Fields</fullName>
         <actions>
-            <name>Owner_Acq_Queue</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
             <name>Update_Datanyze_City_toAddress_City</name>
             <type>FieldUpdate</type>
         </actions>
@@ -953,7 +949,7 @@ CONTAINS(Owner:User.UserRole.Name,&quot;Outbound&quot;) = FALSE)
         </actions>
         <active>true</active>
         <description>When a lead is created with lead source &quot;Datanyze&quot;, it will copy the Datanyze fields from the Datanyze section to the native lead field:</description>
-        <formula>ISPICKVAL(LeadSource, &apos;Datanyze Import&apos;) &amp;&amp;
+        <formula>ISPICKVAL(Lead_Source_Detail__c, &apos;Datanyze&apos;) &amp;&amp;
 NOT(ISCHANGED( OwnerId ))</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>

@@ -192,7 +192,7 @@
     </filter>
     <format>Summary</format>
     <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
+        <dateGranularity>Week</dateGranularity>
         <field>Opportunity.Oppotunity_Products__r$StartDate__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
@@ -209,6 +209,6 @@
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Opportunity.Oppotunity_Products__r$StartDate__c</dateColumn>
-        <interval>INTERVAL_THISMONTH</interval>
+        <interval>INTERVAL_LASTTHISMONTH</interval>
     </timeFrameFilter>
 </Report>

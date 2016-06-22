@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Lead.CampaignMembers$Name</field>
+    </columns>
+    <columns>
+        <field>Lead$Current_Platform__c</field>
+    </columns>
+    <columns>
+        <field>Lead$Name</field>
+    </columns>
+    <columns>
+        <field>Lead$Company</field>
+    </columns>
+    <columns>
+        <field>Lead$Website</field>
+    </columns>
+    <columns>
+        <field>Lead$Phone</field>
+    </columns>
+    <columns>
+        <field>Lead$Email</field>
+    </columns>
+    <columns>
+        <field>Lead$Country</field>
+    </columns>
+    <description>ACQ Leads for Australia 2016</description>
+    <filter>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <column>Lead.CampaignMembers$Name</column>
+            <operator>contains</operator>
+            <value>ACQ.Prospects.Magento Australia 2016.06 D1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead.CampaignMembers$Name</column>
+            <operator>contains</operator>
+            <value>ACQ.Prospects.Shopify.Australia 2016.06</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Shopify Magento Australia ACQ Leads</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Leads_with_Campaign_History__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Lead.CampaignMembers$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

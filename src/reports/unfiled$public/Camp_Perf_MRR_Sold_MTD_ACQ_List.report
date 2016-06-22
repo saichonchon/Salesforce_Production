@@ -28,6 +28,10 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity$MonthlyRecurringRevenue__c</field>
+    </columns>
+    <columns>
         <field>Opportunity$Primary_Campaign_Name__c</field>
     </columns>
     <columns>
@@ -95,19 +99,19 @@
             <value>Purchased,Closed Won</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity.OpportunityTeamMembers$TeamMemberRole</column>
+            <column>Opportunity$Campaign.Parent</column>
             <operator>contains</operator>
-            <value>qualifier</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity$Campaign.Parent.Parent</column>
-            <operator>contains</operator>
-            <value>ACQ.Prospects Lists Grandparent Campaign</value>
+            <value>ACQ.Prospects</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity$PurchaseDate__c</column>
-            <operator>notEqual</operator>
-            <value></value>
+            <operator>equals</operator>
+            <value>THIS_MONTH</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$RecordType</column>
+            <operator>equals</operator>
+            <value>Opportunity.Store_Purchase</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>

@@ -103,18 +103,13 @@
         </criteriaItems>
         <criteriaItems>
             <column>Case.Survey_Name__c</column>
-            <operator>contains</operator>
-            <value>Support NPS Next - Web</value>
+            <operator>equals</operator>
+            <value>Resolution Email Survey</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Satisfaction__c</column>
             <operator>notEqual</operator>
             <value></value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Case.Primary_Case_Rep__c</column>
-            <operator>equals</operator>
-            <value>Juan Anolles,Donna Enriquez,Mylen Mahinay,Fred Dawson,Simona Cimpean,Sorin Poenar</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

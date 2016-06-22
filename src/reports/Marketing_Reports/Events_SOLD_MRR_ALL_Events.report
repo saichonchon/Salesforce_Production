@@ -34,6 +34,11 @@
             <operator>notContain</operator>
             <value>parent</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <operator>equals</operator>
+            <value>Purchased,Closed Won</value>
+        </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>
@@ -54,7 +59,7 @@
     <name>Events - SOLD MRR ALL Events</name>
     <params>
         <name>open</name>
-        <value>closedwon</value>
+        <value>closed</value>
     </params>
     <params>
         <name>probability</name>

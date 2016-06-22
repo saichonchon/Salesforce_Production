@@ -9,10 +9,12 @@
         <value>LghtIdeas Settings</value>
     </caseValues>
     <fields>
+        <help><!-- Description field for settings value --></help>
         <label><!-- Description --></label>
         <name>Description__c</name>
     </fields>
     <fields>
+        <help><!-- Settings variable label --></help>
         <label><!-- Label --></label>
         <name>Label__c</name>
     </fields>

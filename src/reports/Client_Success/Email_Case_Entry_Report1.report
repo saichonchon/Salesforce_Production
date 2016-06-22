@@ -25,6 +25,12 @@
         <field>AGE</field>
     </columns>
     <columns>
+        <field>LAST_UPDATE_BY</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <columns>
         <field>RECORDTYPE</field>
     </columns>
     <columns>
@@ -38,66 +44,6 @@
     </columns>
     <columns>
         <field>Case.Bigcommerce_Store_URL__c</field>
-    </columns>
-    <columns>
-        <field>OPEN</field>
-    </columns>
-    <columns>
-        <field>CLOSED</field>
-    </columns>
-    <columns>
-        <field>Case.Escalated__c</field>
-    </columns>
-    <columns>
-        <field>CLOSED_ON_CREATE</field>
-    </columns>
-    <columns>
-        <field>Case.Survey_Sent_Date__c</field>
-    </columns>
-    <columns>
-        <field>Case.Survey_Sent__c</field>
-    </columns>
-    <columns>
-        <field>Case.Survey_Taken__c</field>
-    </columns>
-    <columns>
-        <field>Case.Survey_Status__c</field>
-    </columns>
-    <columns>
-        <field>Case.Satisfaction__c</field>
-    </columns>
-    <columns>
-        <field>Case.Survey_Satisfaction__c</field>
-    </columns>
-    <columns>
-        <field>Case.Professionalism__c</field>
-    </columns>
-    <columns>
-        <field>Case.Knowledgeable__c</field>
-    </columns>
-    <columns>
-        <field>Case.Total_Case_Handle_Time__c</field>
-    </columns>
-    <columns>
-        <field>Case.Total_Case_Time__c</field>
-    </columns>
-    <columns>
-        <field>Case.Total_Case_Time_Worked__c</field>
-    </columns>
-    <columns>
-        <field>Case.Total_Chat_Time__c</field>
-    </columns>
-    <columns>
-        <field>Case.Bigcommerce_Plan__c</field>
-    </columns>
-    <columns>
-        <field>Case.Status_Reason__c</field>
-    </columns>
-    <columns>
-        <field>COMMENT_PUBLISHED</field>
-    </columns>
-    <columns>
-        <field>Case.Reopened__c</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -124,8 +70,6 @@
     <reportType>CaseList</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
-    <sortColumn>REASON</sortColumn>
-    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
         <interval>INTERVAL_THISWEEK</interval>

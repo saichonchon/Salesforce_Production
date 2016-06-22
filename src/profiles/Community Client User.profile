@@ -523,7 +523,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>LghtIdeasController</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>LghtIdeasControllerTest</apexClass>
@@ -531,7 +531,15 @@
     </classAccesses>
     <classAccesses>
         <apexClass>LghtIdeasHelper</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>LghtIdeasInstallHandler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>LghtIdeasInstallHandlerTest</apexClass>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>LiveAgentChatController</apexClass>
@@ -775,6 +783,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>TaskHandler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>TempIdeasController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -9094,31 +9106,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>LghtIdeasCategories__c.Label__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>LghtIdeasCategories__c.Parent__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>LghtIdeasSettings__c.Description__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>LghtIdeasSettings__c.Label__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>LghtIdeasSettings__c.Value__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>LiveAgentSession.ChatReqAssigned</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -16572,12 +16559,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Learning__kav-Learning Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>LghtIdeasCategories__c-LghtIdeasCategories Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>LghtIdeasSettings__c-LghtIdeas Settings Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>LiveAgentSession-Live Agent Session Layout</layout>

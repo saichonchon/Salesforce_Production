@@ -5056,6 +5056,10 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Amazon Marketplace</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Amazon Webstore</fullName>
                 <default>false</default>
             </picklistValues>
@@ -5080,6 +5084,10 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>CRE Loaded</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>CSCart</fullName>
                 <default>false</default>
             </picklistValues>
@@ -5089,6 +5097,10 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
             </picklistValues>
             <picklistValues>
                 <fullName>GoDaddy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GoDaddy QuickCart</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -5104,6 +5116,10 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Magento CE/EE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Magento/Magento CE</fullName>
                 <default>false</default>
             </picklistValues>
@@ -5113,6 +5129,10 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
             </picklistValues>
             <picklistValues>
                 <fullName>Mal&apos;s eCommerce</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Miva Merchant</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -5165,6 +5185,10 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
             </picklistValues>
             <picklistValues>
                 <fullName>Shoppe Pro Ultimate</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>VirtueMart</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -15323,23 +15347,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>Migration_Platform__c</picklist>
             <values>
-                <fullName>1Shopping</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>3dCart</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Amazon Webstore</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Amazon Webstores</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Ayacart</fullName>
+                <fullName>Amazon Marketplace</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -15347,23 +15359,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>CSCart</fullName>
+                <fullName>CRE Loaded</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>CoreCommerce</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CreateAShoppe</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>CubeCart</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>GoDaddy</fullName>
+                <fullName>GoDaddy QuickCart</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -15371,31 +15371,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Lemon Stand</fullName>
+                <fullName>Magento CE%2FEE</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Loaded Commerce %28CRELoaded%2FOSCommerce%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magento Go</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magento%2FMagento CE</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Mal%27s eCommerce</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Miva Merchant V4</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Miva Merchant V5</fullName>
+                <fullName>Miva Merchant</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -15407,31 +15387,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>OpenCart</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>OptionCart</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>OsMaxCommerce</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Portable Shops</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Prostores</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>PureCommerce</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -15439,11 +15395,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Shoppe Pro Ultimate</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>ShoppePro</fullName>
+                <fullName>VirtueMart</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -15464,10 +15416,6 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
             <values>
                 <fullName>Zen Cart</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Zoovy</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

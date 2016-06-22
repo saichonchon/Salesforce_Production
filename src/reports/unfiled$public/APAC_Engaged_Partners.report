@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$rvpe__RVMember__c.rvpe__Email__c</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVAccount__c.rvpe__WebSite__c</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVAccount__c.Active_Store_Count__c</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVAccount__c.Total_Active_MRR__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <column>rvpe__RVAccount__c.rvpe__Country__c</column>
+            <operator>contains</operator>
+            <value>AU,Australia,NZ,New Zealand</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$rvpe__RVMember__c.rvpe__DateAgreedToTerms__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>rvpe__RVAccount__c.Agreement__c</column>
+            <operator>contains</operator>
+            <value>bypass</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>APAC Engaged Partners</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$rvpe__RVAccount__c@rvpe__RVAccount__c.rvpe__RVPrimaryMember__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>rvpe__RVAccount__c.Total_Active_MRR__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>rvpe__RVAccount__c.Approved_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

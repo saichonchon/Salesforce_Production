@@ -10,12 +10,12 @@
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Gauge</componentType>
-            <displayUnits>Auto</displayUnits>
-            <gaugeMax>500.0</gaugeMax>
+            <displayUnits>Integer</displayUnits>
+            <gaugeMax>1000.0</gaugeMax>
             <gaugeMin>0.0</gaugeMin>
             <header>2016 YTD Event Total Leads Generated</header>
-            <indicatorBreakpoint1>200.0</indicatorBreakpoint1>
-            <indicatorBreakpoint2>300.0</indicatorBreakpoint2>
+            <indicatorBreakpoint1>500.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>800.0</indicatorBreakpoint2>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>

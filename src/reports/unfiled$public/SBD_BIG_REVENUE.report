@@ -4,22 +4,22 @@
         <field>Opportunity.Subscription__c</field>
     </columns>
     <columns>
+        <field>Opportunity.Theme_Framework__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Theme__c</field>
+    </columns>
+    <columns>
         <field>Opportunity.MBASubscriptionID__c</field>
     </columns>
     <columns>
-        <field>Opportunity.Projected_Annual_Revenue__c</field>
-    </columns>
-    <columns>
-        <field>Account.Projected_Annual_Revenue__c</field>
+        <field>FULL_NAME</field>
     </columns>
     <columns>
         <field>CREATED_DATE</field>
     </columns>
     <columns>
         <field>AGE</field>
-    </columns>
-    <columns>
-        <field>CREATED</field>
     </columns>
     <columns>
         <field>ACCOUNT_NAME</field>
@@ -31,25 +31,22 @@
         <field>Opportunity.StoreURL__c</field>
     </columns>
     <columns>
-        <field>Opportunity.Trailing_12_Month_GMV_Band__c</field>
-    </columns>
-    <columns>
         <field>Opportunity.TrailingGMVCount__c</field>
     </columns>
     <columns>
         <field>STAGE_NAME</field>
     </columns>
     <columns>
+        <field>Opportunity.Closed_Lost_Reason__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Other_Comments__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Closed_Lost_Reason_Detail__c</field>
+    </columns>
+    <columns>
         <field>Opportunity.Product__c</field>
-    </columns>
-    <columns>
-        <field>DESCRIPTION</field>
-    </columns>
-    <columns>
-        <field>FULL_NAME</field>
-    </columns>
-    <columns>
-        <field>ROLLUP_DESCRIPTION</field>
     </columns>
     <description>Results &amp; Project Opportunity Status</description>
     <filter>
@@ -76,6 +73,8 @@
     <reportType>Opportunity</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
+    <sortColumn>FULL_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>
         <interval>INTERVAL_CURRENT</interval>

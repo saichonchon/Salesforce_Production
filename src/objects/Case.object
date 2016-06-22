@@ -250,18 +250,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>VE Assigned</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>VE In Progress</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>VE QA</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Verification</fullName>
             <default>false</default>
         </values>
@@ -5825,6 +5813,10 @@ IF(
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Amazon Marketplace</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Amazon Webstore</fullName>
                 <default>false</default>
             </picklistValues>
@@ -5881,6 +5873,10 @@ IF(
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>GoDaddy QuickCart</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>HHG multistore</fullName>
                 <default>false</default>
             </picklistValues>
@@ -5910,6 +5906,10 @@ IF(
             </picklistValues>
             <picklistValues>
                 <fullName>Magento</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Magento CE/EE</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -12700,58 +12700,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         </sharedTo>
     </listViews>
     <listViews>
-        <fullName>Billing_Client_Open</fullName>
-        <booleanFilter>1 AND (2 OR 6) AND 3 AND 4 AND 5</booleanFilter>
-        <columns>CASES.CASE_NUMBER</columns>
-        <columns>OWNER_NAME</columns>
-        <columns>CASES.STATUS</columns>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>CASES.REASON</columns>
-        <columns>Reason_Code__c</columns>
-        <columns>CASES.ORIGIN</columns>
-        <columns>CASES.CREATED_DATE</columns>
-        <columns>CREATEDBY_USER.ALIAS</columns>
-        <columns>Subscription__c</columns>
-        <columns>Bigcommerce_Store_URL__c</columns>
-        <columns>CASES.SUBJECT</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CASES.CLOSED</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>CASES.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Case.Billing</value>
-        </filters>
-        <filters>
-            <field>CASES.REASON</field>
-            <operation>notEqual</operation>
-            <value>Cancellation</value>
-        </filters>
-        <filters>
-            <field>CREATEDBY_USER.ALIAS</field>
-            <operation>equals</operation>
-            <value>api,guest</value>
-        </filters>
-        <filters>
-            <field>CASES.STATUS</field>
-            <operation>notEqual</operation>
-            <value>Waiting on Client,Completed by Billing</value>
-        </filters>
-        <filters>
-            <field>OWNER_NAME</field>
-            <operation>equals</operation>
-            <value>Billing Queue</value>
-        </filters>
-        <label>Billing: Client Requests</label>
-        <sharedTo>
-            <group>Billing</group>
-            <role>Client_Success_Rep_Use</role>
-        </sharedTo>
-    </listViews>
-    <listViews>
         <fullName>Billing_Downgrades</fullName>
         <columns>CASES.CASE_NUMBER</columns>
         <columns>CASES.STATUS</columns>
@@ -12782,51 +12730,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             <value>Downgrade</value>
         </filters>
         <label>Billing: Downgrades</label>
-        <sharedTo>
-            <group>Billing</group>
-            <role>Client_Success_Rep_Use</role>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Billing_Internal_Requests</fullName>
-        <columns>CASES.CASE_NUMBER</columns>
-        <columns>CASES.STATUS</columns>
-        <columns>CASES.REASON</columns>
-        <columns>Reason_Code__c</columns>
-        <columns>CASES.ORIGIN</columns>
-        <columns>CASES.CREATED_DATE</columns>
-        <columns>CREATEDBY_USER.ALIAS</columns>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>Subscription__c</columns>
-        <columns>Bigcommerce_Store_URL__c</columns>
-        <columns>CASES.SUBJECT</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CASES.CLOSED</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>CASES.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Case.Billing</value>
-        </filters>
-        <filters>
-            <field>CASES.REASON</field>
-            <operation>notEqual</operation>
-            <value>Cancellation</value>
-        </filters>
-        <filters>
-            <field>CREATEDBY_USER.ALIAS</field>
-            <operation>notEqual</operation>
-            <value>api,guest</value>
-        </filters>
-        <filters>
-            <field>CASES.STATUS</field>
-            <operation>notEqual</operation>
-            <value>Pending Approval,Waiting on Client,Completed by Billing</value>
-        </filters>
-        <label>Billing: Internal Requests</label>
         <sharedTo>
             <group>Billing</group>
             <role>Client_Success_Rep_Use</role>
@@ -12879,43 +12782,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <sharedTo>
             <group>Billing</group>
             <role>Client_Success_Rep_Use</role>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Billing_Need_Ops_to_Complete</fullName>
-        <columns>CASES.CASE_NUMBER</columns>
-        <columns>CASES.STATUS</columns>
-        <columns>JIRA_Status__c</columns>
-        <columns>Subscription__c</columns>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>NAME</columns>
-        <columns>CASES.REASON</columns>
-        <columns>Reason_Code__c</columns>
-        <columns>CASES.ORIGIN</columns>
-        <columns>CASES.CREATED_DATE</columns>
-        <columns>CREATEDBY_USER.ALIAS</columns>
-        <columns>Bigcommerce_Store_URL__c</columns>
-        <columns>CASES.SUBJECT</columns>
-        <columns>CASES.EMAIL</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CASES.STATUS</field>
-            <operation>notEqual</operation>
-            <value>Completed by Billing &amp; Ops,Completed by Ops,Completed,Closed</value>
-        </filters>
-        <filters>
-            <field>CASES.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Case.Billing</value>
-        </filters>
-        <filters>
-            <field>CASES.REASON</field>
-            <operation>equals</operation>
-            <value>Account Merge,Account Split</value>
-        </filters>
-        <label>Billing: Completed by Billing/not Ops</label>
-        <sharedTo>
-            <group>Billing</group>
         </sharedTo>
     </listViews>
     <listViews>
@@ -39899,6 +39765,10 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
+                <fullName>Amazon Marketplace</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Amazon Webstore</fullName>
                 <default>false</default>
             </values>
@@ -39935,6 +39805,10 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
+                <fullName>GoDaddy QuickCart</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Interspire %28standard SOW%29</fullName>
                 <default>false</default>
             </values>
@@ -39948,6 +39822,10 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             </values>
             <values>
                 <fullName>Magento</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Magento CE%2FEE</fullName>
                 <default>false</default>
             </values>
             <values>

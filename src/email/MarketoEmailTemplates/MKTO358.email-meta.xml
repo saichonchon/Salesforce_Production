@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Partner Reactivation.Email 3</name>
+    <style>none</style>
+    <subject>We’re sorry to see you go</subject>
+    <textOnly>Since you didn’t reactivate your BigCommerce partnership before June 15, 2016, we’ve removed you from our Partner Program.
+
+
+
+Hi {{lead.First Name:default=there}},
+
+
+
+We’re sorry to see you leave the BigCommerce Partner Program. Since you didn’t reactivate your BigCommerce partnership before June 15, 2016, we’ve removed you from our Partner Program.
+
+
+Is our Affiliate Program a better fit for you? BigCommerce affiliates can earn commissions by promoting BigCommerce using a referral link, pre-made banners, emails and more. Apply for your Affiliate Membership &lt;[[https://www.bigcommerce.com/partners/affiliates/]]&gt; to receive your referral link.
+
+
+If you decide you want to re-engage as a Design and Solutions Partner in the future, you can always re-apply here &lt;[[https://www.bigcommerce.com/partners/design-solution/]]&gt;.
+
+
+We wish you all the best for continued success in ecommerce design!
+
+
+
+Sincerely,
+
+
+ The BigCommerce Partner Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

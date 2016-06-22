@@ -24,6 +24,7 @@
             <expandOthers>false</expandOthers>
             <groupingColumn>CREATED_DATEONLY</groupingColumn>
             <groupingColumn>STATUS</groupingColumn>
+            <header>A1</header>
             <legendPosition>Right</legendPosition>
             <report>Support_Live_Chat/BPO_Dash_New_Cases_Opened_today</report>
             <showPercentage>false</showPercentage>
@@ -41,6 +42,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <header>B1</header>
             <legendPosition>Right</legendPosition>
             <report>Support_Live_Chat/Active_Open_Cases_Webcase_Lifecycle</report>
             <showPercentage>false</showPercentage>
@@ -49,13 +51,36 @@
             <title>Open/Active Cases &amp; Case Owner</title>
             <useReportChart>false</useReportChart>
         </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <axisBinding>y2</axisBinding>
+                <column>RowCount</column>
+            </chartSummary>
+            <componentType>ColumnGrouped</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <groupingColumn>Case.Resolution_Count__c</groupingColumn>
+            <groupingColumn>CREATED_DATEONLY</groupingColumn>
+            <legendPosition>Bottom</legendPosition>
+            <report>Support_Surveys_2/Resolution_Webcase_Lifecycle</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Attempts at Resolution</title>
+            <useReportChart>false</useReportChart>
+        </components>
     </leftSection>
     <middleSection>
         <columnSize>Wide</columnSize>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <chartAxisRange>Manual</chartAxisRange>
-            <chartAxisRangeMax>125.0</chartAxisRangeMax>
+            <chartAxisRangeMax>30.0</chartAxisRangeMax>
             <chartAxisRangeMin>0.0</chartAxisRangeMin>
             <componentType>ColumnStacked</componentType>
             <displayUnits>Auto</displayUnits>
@@ -63,6 +88,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
+            <header>A2</header>
             <legendPosition>Right</legendPosition>
             <report>Support_Live_Chat/BPO_Dash_Escalated_by_Date_and_Status</report>
             <showPercentage>false</showPercentage>
@@ -85,6 +111,7 @@
             <enableHover>false</enableHover>
             <expandOthers>true</expandOthers>
             <groupingColumn>BucketField_77546661</groupingColumn>
+            <header>B2</header>
             <legendPosition>Bottom</legendPosition>
             <report>Support_Live_Chat/Active_Open_Cases_Webcase_Lifecycle</report>
             <showPercentage>false</showPercentage>
@@ -100,7 +127,7 @@
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <chartAxisRange>Manual</chartAxisRange>
-            <chartAxisRangeMax>125.0</chartAxisRangeMax>
+            <chartAxisRangeMax>30.0</chartAxisRangeMax>
             <chartAxisRangeMin>0.0</chartAxisRangeMin>
             <componentType>ColumnStacked</componentType>
             <displayUnits>Auto</displayUnits>
@@ -108,6 +135,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
+            <header>A3</header>
             <legendPosition>Right</legendPosition>
             <report>Support_Live_Chat/Transfered_Date_Owner_Web_Lifecycle</report>
             <showPercentage>false</showPercentage>
@@ -123,19 +151,21 @@
                 <axisBinding>y</axisBinding>
                 <column>RowCount</column>
             </chartSummary>
-            <componentType>Column</componentType>
+            <componentType>ColumnStacked</componentType>
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
-            <groupingColumn>AGE</groupingColumn>
-            <legendPosition>Bottom</legendPosition>
+            <groupingColumn>BucketField_70182376</groupingColumn>
+            <groupingColumn>STATUS</groupingColumn>
+            <header>B3</header>
+            <legendPosition>Right</legendPosition>
             <report>Support_Live_Chat/Open_Cases_by_Age_Webcase_Lifecycle</report>
             <showPercentage>false</showPercentage>
-            <showValues>true</showValues>
-            <sortBy>RowLabelDescending</sortBy>
-            <title>Open/Active Cases &amp; Age in Days</title>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Open/Active by Case Age &amp; Status</title>
             <useReportChart>false</useReportChart>
         </components>
     </rightSection>

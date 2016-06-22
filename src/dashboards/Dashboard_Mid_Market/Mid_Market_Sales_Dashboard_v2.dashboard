@@ -11,10 +11,10 @@
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Gauge</componentType>
             <displayUnits>Integer</displayUnits>
-            <gaugeMax>59000.0</gaugeMax>
+            <gaugeMax>63250.0</gaugeMax>
             <gaugeMin>0.0</gaugeMin>
-            <indicatorBreakpoint1>41000.0</indicatorBreakpoint1>
-            <indicatorBreakpoint2>50000.0</indicatorBreakpoint2>
+            <indicatorBreakpoint1>44275.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>53762.5</indicatorBreakpoint2>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -121,27 +121,27 @@
             <useReportChart>false</useReportChart>
         </components>
         <components>
-            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-            <chartAxisRange>Auto</chartAxisRange>
-            <chartSummary>
-                <axisBinding>y</axisBinding>
-                <column>FORMULA8</column>
-            </chartSummary>
-            <componentType>LineGrouped</componentType>
-            <displayUnits>Integer</displayUnits>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardTableColumn>
+                <column>FULL_NAME</column>
+                <sortBy>RowLabelAscending</sortBy>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <aggregateType>Sum</aggregateType>
+                <calculatePercent>false</calculatePercent>
+                <column>AMOUNT</column>
+                <decimalPlaces>2</decimalPlaces>
+                <showTotal>false</showTotal>
+            </dashboardTableColumn>
+            <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>true</enableHover>
-            <expandOthers>false</expandOthers>
-            <groupingColumn>Opportunity.Oppotunity_Products__r$StartDate__c</groupingColumn>
-            <groupingColumn>Opportunity.Oppotunity_Products__r$Purchase__c</groupingColumn>
-            <legendPosition>Bottom</legendPosition>
-            <report>Premium/Mid_Market_Monthly_Churn</report>
-            <showPercentage>false</showPercentage>
-            <showValues>false</showValues>
-            <sortBy>RowLabelAscending</sortBy>
-            <title>Monthly Churn</title>
-            <useReportChart>false</useReportChart>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>Mid_Market_Sales/Upside_Deals_This_Month</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
         </components>
     </leftSection>
     <middleSection>

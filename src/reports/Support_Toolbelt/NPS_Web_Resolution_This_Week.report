@@ -113,22 +113,17 @@
     <columns>
         <field>Case.Feedback__c</field>
     </columns>
+    <description>This Report was broken on purpose.  This report puts data into the Toolbelt and the &quot;Resolution Rate&quot; is no longer a standard formula so we want a BLANK or 0 to show instead.</description>
     <filter>
-        <booleanFilter>(1 AND 3) AND (2 OR 4)</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
             <operator>equals</operator>
             <value>Case.Client_Success</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Case.Survey_Name__c</column>
-            <operator>contains</operator>
-            <value>Support NPS Next - Web</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>Case.Issue_Resolved__c</column>
             <operator>notEqual</operator>
-            <value></value>
+            <value>Yes,No</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Survey_Name__c</column>

@@ -1,10 +1,11 @@
 *.sublime-project
 *.sublime-settings
 *.sublime-workspace
-apex-scripts/log*
 tmp/*
-config/.*
+config/*
 lib/*
-mm.log
 package.xml
 build.*
+destructiveChanges.xml
+Salesforce_Production.sublime-workspace
+*.log

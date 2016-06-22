@@ -4,7 +4,7 @@ public class LghtIdeasHelper {
 		Map<String, String> listItem;
 
 		if (source == 'Custom settings') {
-			List<LghtIdeasCategories__c> rows = [SELECT Name, Label__c, Parent__c FROM LghtIdeasCategories__c];
+			List<LghtIdeasCategories__c> rows = [SELECT Name, Label__c, Parent__c FROM LghtIdeasCategories__c LIMIT 1000];
 
 			for (LghtIdeasCategories__c row : rows) {
 				listItem = new Map<String, String>();
@@ -48,27 +48,39 @@ public class LghtIdeasHelper {
 
 	
 	public static String compileWhereStatement(Map<String,String> filterData) {
-        String[] whereList = new List<String>();
-		String category, status, ideaTheme, owner;
+        List<String> whereList = new List<String>();
+		List<String> searchIds = new List<String>();
+		String searchQuery, category, status, ideaTheme, owner;
 
 		if (filterData == null) return '';
 
-        category = filterData.get('category');
+        searchQuery = filterData.get('search');
+		category = filterData.get('category');
 		status = filterData.get('status');
 		ideaTheme = filterData.get('idea_theme');
 		owner = filterData.get('created_by_me');
 
-        if(String.isNotBlank(category))
+        if (String.isNotBlank(category))
 			whereList.add('Categories INCLUDES (\'' + String.escapeSingleQuotes(category) + '\')');
 
-        if(String.isNotBlank(status))
+        if (String.isNotBlank(status))
 			whereList.add('Status = \'' + String.escapeSingleQuotes(status) + '\'');
 
-		if(String.isNotBlank(ideaTheme))
+		if (String.isNotBlank(ideaTheme))
 			whereList.add('IdeaThemeID = \'' + String.escapeSingleQuotes(ideaTheme) + '\'');
 
-        if(String.isNotBlank(owner) && owner == 'true')
+        if (String.isNotBlank(owner) && owner == 'true')
 			whereList.add('CreatedById = \'' + UserInfo.getUserId() + '\'') ;
+
+		if (String.isNotBlank(searchQuery)) {
+			List<List<SObject>> searchList = [FIND :searchQuery IN ALL FIELDS RETURNING Idea(Id)];
+
+			for (SObject obj : searchList[0]) {
+				searchIds.add(obj.Id);
+			}
+
+			whereList.add('Id IN (\'' + String.join(searchIds, '\',\'') + '\')');
+		}
 
         return String.join(whereList, ' AND ');
     }
@@ -90,23 +102,30 @@ public class LghtIdeasHelper {
     }
 
 
-	public static String getCommunityId() {
-		/*	String communityName = LghtIdeasHelper.getConfigValue('community');
-if (communityName == '')
-{ System.debug('Cannot find community name within component settings'); return ''; }
-try
-{ Community community = [SELECT Id FROM Community WHERE Name = :communityName LIMIT 1]; return community.Id; }
-catch (Exception e)
-{ System.debug('No communities with name "' + communityName + '"'); }
-return ''; */
-Community community = [SELECT Id FROM Community WHERE Id = :Label.Idea_Community_Id LIMIT 1];
-        
-        return community.Id;
+	public static String getCommunityId(String communityName) {
+		if (String.isBlank(communityName)) {
+			communityName = LghtIdeasHelper.getConfigValue('community');
+		}
+
+		if (communityName == '') { 
+			System.debug('Cannot find community name within settings');
+			return ''; 
+		}
+
+		try {
+			Community community = [SELECT Id FROM Community WHERE Name = :communityName LIMIT 1];
+			return community.Id;
+		}
+		catch (Exception e) {
+			System.debug('No communities with name "' + communityName + '"');
+		}
+		
+		return '';
 	}
 
 
 	public static String getConfigValue(String name) {
-		for (LghtIdeasSettings__c row : [SELECT Name, Value__c FROM LghtIdeasSettings__c]) {
+		for (LghtIdeasSettings__c row : [SELECT Name, Value__c FROM LghtIdeasSettings__c LIMIT 100]) {
 			if (row.Name == name) return row.Value__c;
 		}
 
@@ -116,11 +135,23 @@ Community community = [SELECT Id FROM Community WHERE Id = :Label.Idea_Community
 
 	public static void performAccessCheck(String accessType) {
 		Schema.DescribeSObjectResult ideaDescribe = Idea.sObjectType.getDescribe();
+        Schema.DescribeSObjectResult voteDescribe = Vote.sObjectType.getDescribe();
+        Schema.DescribeSObjectResult commentDescribe = IdeaComment.sObjectType.getDescribe();
 
 		if (!ideaDescribe.isAccessible()
 				|| (accessType == 'create' && !ideaDescribe.isCreateable())
 				|| (accessType == 'edit' && !ideaDescribe.isUpdateable())
 				|| (accessType == 'search' && !ideaDescribe.isSearchable()))
 			throw new AuraHandledException('Access not granted');
+
+		if (accessType == 'create_vote' && !voteDescribe.isAccessible()
+				|| accessType == 'create_vote' && !voteDescribe.isCreateable()) {
+			throw new AuraHandledException('Access not granted');
+		}
+        
+        if ((accessType == 'read_comments' && !commentDescribe.isAccessible()) 
+            	|| (accessType == 'create_comments') && !commentDescribe.isCreateable()) {
+			throw new AuraHandledException('Access not granted');
+		}
 	}
 }

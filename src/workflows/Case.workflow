@@ -738,6 +738,24 @@ Assign to Fritz since Abbey has left.</description>
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>Case_Escalated_Custom_TRUE</fullName>
+        <field>Escalated__c</field>
+        <literalValue>1</literalValue>
+        <name>Case: Escalated (Custom) = TRUE</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Escalated_TRUE</fullName>
+        <field>IsEscalated</field>
+        <literalValue>1</literalValue>
+        <name>Case: Escalated = TRUE</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Case_Origin_Cancellations</fullName>
         <description>Update Case Origin to be Cancellations</description>
         <field>Origin</field>
@@ -2659,6 +2677,35 @@ NOT(ISPICKVAL(Status,&quot;Closed&quot;))</formula>
         <triggerType>onCreateOnly</triggerType>
     </rules>
     <rules>
+        <fullName>Case%3A Escalated</fullName>
+        <actions>
+            <name>Case_Escalated_Custom_TRUE</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Case_Escalated_TRUE</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>Billing Queue,Design Support,Tier 2 Support Queue,Support - Escalated Level 1,Support - Manager Callback,Support - Design Support Approved,Support - Design Support Out Of Scope,Support - Manager Callback,Support - API</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.IsEscalated</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Escalated__c</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
         <fullName>Case%3A OCR Close Case on Client Accepting Resolution</fullName>
         <actions>
             <name>Case_Status_Auto_Closed</name>
@@ -2690,8 +2737,9 @@ NOT(ISPICKVAL(Status,&quot;Closed&quot;))</formula>
             <value>True</value>
         </criteriaItems>
         <criteriaItems>
-            <field>Case.Tier_2_Request_Date__c</field>
-            <operation>equals</operation>
+            <field>Case.IsEscalated</field>
+            <operation>notEqual</operation>
+            <value>True</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>

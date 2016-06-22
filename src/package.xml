@@ -311,6 +311,7 @@
         <members> DaScoopComposer__Groove </members>
         <members> Email_Template_Attachments </members>
         <members> Flags </members>
+        <members> IS2_TGH__InsightSquared </members>
         <members> Images </members>
         <members> Knowledge_Articles </members>
         <members> Project_Management_Folder </members>
@@ -368,6 +369,7 @@
         <members>Flags/Purple_Flag.jpg</members>
         <members>Flags/Red_Flag.jpg</members>
         <members>Flags/Yellow_Flag.jpg</members>
+        <members>IS2_TGH__InsightSquared/IS2_TGH__Is2_Tab_Logo.png</members>
         <members>Images/Employee_Accounts_Case_Icon.jpg</members>
         <members>Images/Enterprise_Support_Icon.png</members>
         <members>Images/Premium_Dot_1.gif</members>
@@ -1045,7 +1047,11 @@
         <members>MarketoEmailTemplates/MKTO354</members>
         <members>MarketoEmailTemplates/MKTO355</members>
         <members>MarketoEmailTemplates/MKTO356</members>
+        <members>MarketoEmailTemplates/MKTO357</members>
+        <members>MarketoEmailTemplates/MKTO358</members>
+        <members>MarketoEmailTemplates/MKTO359</members>
         <members>MarketoEmailTemplates/MKTO36</members>
+        <members>MarketoEmailTemplates/MKTO360</members>
         <members>MarketoEmailTemplates/MKTO37</members>
         <members>MarketoEmailTemplates/MKTO38</members>
         <members>MarketoEmailTemplates/MKTO39</members>
@@ -1772,6 +1778,7 @@
         <members>Business_Development/DB_SBD_Referral_Calls</members>
         <members>Business_Development/DB_SBD_Referral_Store_Counts_This_Year</members>
         <members>Business_Development/Opps_for_reps</members>
+        <members>Business_Development/SBD_Daily_Sales_Activity_Report</members>
         <members>Business_Development/SBD_Domains_by_Partner</members>
         <members>Business_Development/SBD_Pipeline</members>
         <members>Business_Development/SBD_Referral_Intuit_Clients</members>
@@ -1825,6 +1832,7 @@
         <members>Client_Success/Call_Object_Identifier</members>
         <members>Client_Success/Cancellation_Numbers</members>
         <members>Client_Success/Cancellation_and_Retention</members>
+        <members>Client_Success/Case_Comments_Billing_This_Week</members>
         <members>Client_Success/Case_Comments_Tier_1_Today</members>
         <members>Client_Success/Case_Comments_by_Remote_Rep_s</members>
         <members>Client_Success/Case_Creation_Phone_Ninjas</members>
@@ -1836,6 +1844,7 @@
         <members>Client_Success/Case_Time_Worked_by_Ninja</members>
         <members>Client_Success/Case_Times_by_Subscription</members>
         <members>Client_Success/Case_from_Phone_with_0_CTI_Time</members>
+        <members>Client_Success/Cases_Assigned_Billing_Team</members>
         <members>Client_Success/Cases_Assigned_to_Agents</members>
         <members>Client_Success/Cases_Closed_By_Escalations_Rep</members>
         <members>Client_Success/Cases_Closed_Today_Phone_Agents_T2</members>
@@ -1878,6 +1887,7 @@
         <members>Client_Success/EMAIL_NPS_Overall</members>
         <members>Client_Success/Email_AHT_by_Ninja</members>
         <members>Client_Success/Email_Case_Entry_Report1</members>
+        <members>Client_Success/Email_Case_Entry_Report_Last_Modified1</members>
         <members>Client_Success/Email_Queue_action_needed</members>
         <members>Client_Success/Emails_Sent_MaNinjas</members>
         <members>Client_Success/Employee_Stores1</members>
@@ -2332,6 +2342,7 @@
         <members>L_D/New_Hire_Midterm_Store_Set_Up_1</members>
         <members>L_D/New_Hire_Store_Management</members>
         <members>L_D/New_Pricing_Jan_2016</members>
+        <members>L_D/Ninja_Trials_Genin_A1</members>
         <members>L_D/Ninja_Trials_SMEs1</members>
         <members>L_D/People_People_Management_Legalities</members>
         <members>L_D/Publisher</members>
@@ -2489,6 +2500,7 @@
         <members>Mid_Market_Sales/SQLs_delivered_to_MM_this_Month2</members>
         <members>Mid_Market_Sales/SQLs_delivered_to_MM_this_Month21</members>
         <members>Mid_Market_Sales/Team_Activities_This_Week</members>
+        <members>Mid_Market_Sales/Upside_Deals_This_Month</members>
         <members>Mid_Market_Sales/X25_Oldest_Opps</members>
         <members>Migrations/Mig_Test_Reruns</members>
         <members>Migrations/Migration_Cases_All_Time</members>
@@ -3007,14 +3019,18 @@
         <members>Sales_Operations/BAP_2290_Cases_with_Emails</members>
         <members>Sales_Operations/BAP_2319</members>
         <members>Sales_Operations/BAP_2344</members>
+        <members>Sales_Operations/BAP_2386_Learning_Knowledge_Report_Type</members>
         <members>Sales_Operations/BAP_2427_original</members>
+        <members>Sales_Operations/BAP_2556_Client_Success_Rep_Users</members>
         <members>Sales_Operations/BAP_2973_Modify_I3_Phone_Option</members>
         <members>Sales_Operations/BAP_300_Export_Partner_Contacts</members>
         <members>Sales_Operations/BAP_3029_Support_Survey_Sync</members>
         <members>Sales_Operations/BAP_3029_Support_Surveys_created_this_we</members>
         <members>Sales_Operations/BAP_3110_All_RV_Members</members>
+        <members>Sales_Operations/BAP_3440_Platforms</members>
         <members>Sales_Operations/BAP_3464</members>
         <members>Sales_Operations/BAP_3479</members>
+        <members>Sales_Operations/BAP_3803_Update_Author_to_Owner</members>
         <members>Sales_Operations/BAP_399_Export_Current_Partners</members>
         <members>Sales_Operations/BAP_435_Exclude_from_Dialer</members>
         <members>Sales_Operations/BAP_435_Include_in_Dialer</members>
@@ -3175,6 +3191,7 @@
         <members>Support_Live_Chat/Case_Remotes_Web_AHT_V3_0</members>
         <members>Support_Live_Chat/Case_Remotes_Web_AHT_V3_0_New</members>
         <members>Support_Live_Chat/Case_Remotes_Web_AHT_V3_0_w_Details</members>
+        <members>Support_Live_Chat/Cases_Closed_Age_Webcase_Lifecycle</members>
         <members>Support_Live_Chat/Cases_Escalated_BPO_Dash</members>
         <members>Support_Live_Chat/Cases_Escalated_Last_Month1</members>
         <members>Support_Live_Chat/Cases_Escalated_by_Origin</members>
@@ -3230,6 +3247,7 @@
         <members>Support_Sales_Pilot/Opps_Created_by_Brian_Miller</members>
         <members>Support_Sales_Pilot/Support_Transfer_Opportunities1</members>
         <members>Support_Surveys/NPS_Web_Satisfaction_by_Open_Date</members>
+        <members>Support_Surveys/NPS_Web_Satisfaction_by_Open_Date1</members>
         <members>Support_Surveys/NPS_Web_by_Case_Opened_Date_Kris</members>
         <members>Support_Surveys_2/CSAT_Total_Sent</members>
         <members>Support_Surveys_2/Cases_with_phone_surveys2</members>
@@ -3246,6 +3264,7 @@
         <members>Support_Surveys_2/NPS_Web_Resolution</members>
         <members>Support_Surveys_2/NPS_Web_Satisfaction_w_Categories</members>
         <members>Support_Surveys_2/NPS_Web_Surveys1</members>
+        <members>Support_Surveys_2/Resolution_Webcase_Lifecycle</members>
         <members>Support_Surveys_2/Surveys_Sent_Web_Cancelations</members>
         <members>Support_Surveys_2/Surveys_Sent_Web_Last_Week</members>
         <members>Support_Surveys_2/Web_Closed_Cases_Survey_Sent_Status2</members>
@@ -3281,6 +3300,7 @@
         <members>Support_Tier_2/NPS_Design_Cases_Denied</members>
         <members>Support_Tier_2/NPS_Escalation_Cases</members>
         <members>Support_Tier_2/NPS_Tier_2_Cases</members>
+        <members>Support_Tier_2/T2_Cases_Closed_Including_T1_agents</members>
         <members>Support_Tier_2/T2_Cases_Closed_Per_Rep2</members>
         <members>Support_Tier_2/T2_Cases_Closed_Per_Rep_30_Day_Report</members>
         <members>Support_Tier_2/T2_Cases_Closed_in_24hrs</members>
@@ -3376,6 +3396,7 @@
         <members>Support_Weekly_Metrics/Case_Closed_Cases_by_Agent</members>
         <members>Support_Weekly_Metrics/Case_Web_AHT_V3_01</members>
         <members>Support_Weekly_Metrics/Case_Web_Service_Level_Report</members>
+        <members>Support_Weekly_Metrics/Cases_Closed_by_Billing_Team</members>
         <members>Support_Weekly_Metrics/Cases_Closed_by_Tier_1</members>
         <members>Support_Weekly_Metrics/Cases_Support_by_Case_Origin</members>
         <members>Support_Weekly_Metrics/Contacts_by_Account_and_Plan_StartDate</members>
@@ -3852,6 +3873,7 @@
         <members>unfiled$public/ACQ_attribution_Report_JG_Copy</members>
         <members>unfiled$public/AM_OC_Pipeline_Opp_All</members>
         <members>unfiled$public/AM_Pipeline_Opp_All</members>
+        <members>unfiled$public/APAC_Engaged_Partners</members>
         <members>unfiled$public/APAC_program_partners_enrolled_w_MRR</members>
         <members>unfiled$public/API_Today</members>
         <members>unfiled$public/API_WTD</members>
@@ -4070,6 +4092,7 @@
         <members>unfiled$public/Chad_Kalina_Opp_by_Stage</members>
         <members>unfiled$public/ChannelAdvisor_Landing_Page_Leads</members>
         <members>unfiled$public/Channel_Advisor_PWS</members>
+        <members>unfiled$public/Channel_Advisor_Store_Report</members>
         <members>unfiled$public/Channel_Partner_Accounts</members>
         <members>unfiled$public/Chat_Abandons_by_Client</members>
         <members>unfiled$public/Chat_Detail</members>
@@ -4096,6 +4119,7 @@
         <members>unfiled$public/Closed_Lost_Reason_with_New_Rejected_SQL</members>
         <members>unfiled$public/Closed_Won_Last_month</members>
         <members>unfiled$public/Coaching_Tech_Lead_Monthly_Focus</members>
+        <members>unfiled$public/Commission_Rebuild</members>
         <members>unfiled$public/Committed_Deals_W_RV</members>
         <members>unfiled$public/Community_Advice</members>
         <members>unfiled$public/Complete_List_Bypass_Agreement_Partners</members>
@@ -4121,6 +4145,8 @@
         <members>unfiled$public/Deal_Registrations_Received</members>
         <members>unfiled$public/Deal_Registrations_by_Month</members>
         <members>unfiled$public/December_Commission_Bug</members>
+        <members>unfiled$public/Demandbase_Ad_Target_Sales_Activity_List</members>
+        <members>unfiled$public/Demandbase_WATCH_LIST_with_Activity</members>
         <members>unfiled$public/Demo_Camp_Perf_Opps_Created</members>
         <members>unfiled$public/Demo_Camp_Perf_Opps_Created_YTD</members>
         <members>unfiled$public/Demo_Camp_Perf_Opps_Sold_QTRLY</members>
@@ -4507,6 +4533,7 @@
         <members>unfiled$public/Opps_Expiring_This_Month_Channel_Sales</members>
         <members>unfiled$public/Opps_Expiring_Today1</members>
         <members>unfiled$public/Opps_Influenced_by_Demo_Grandparent_Camp</members>
+        <members>unfiled$public/Opps_Owned_by_SDR_Team</members>
         <members>unfiled$public/Opps_by_Average_Monthly_GMV_Range</members>
         <members>unfiled$public/Opps_closed_by_robby_lizette_juan</members>
         <members>unfiled$public/Opps_created_by_Aubrie_O_Connor</members>
@@ -4652,6 +4679,7 @@
         <members>unfiled$public/SQLs_In_Qualify_Stage_14_Days</members>
         <members>unfiled$public/SQLs_by_AE</members>
         <members>unfiled$public/SQLs_owned_by_SDR_team_Automated_Sales</members>
+        <members>unfiled$public/SUpport_Site_Users</members>
         <members>unfiled$public/Sales_ALL_BT</members>
         <members>unfiled$public/Sales_Calls_by_Rep_5_Minutes</members>
         <members>unfiled$public/Sales_Chat_Transcripts1</members>
@@ -4665,12 +4693,14 @@
         <members>unfiled$public/Scott_Richards_Opps</members>
         <members>unfiled$public/ShipperHQ_trials</members>
         <members>unfiled$public/Shop_org_Awareness_Email_List</members>
+        <members>unfiled$public/Shopify_Magento_Australia_ACQ_Leads</members>
         <members>unfiled$public/Shopify_Migration_Surveys</members>
         <members>unfiled$public/Shopify_Migrations</members>
         <members>unfiled$public/Shopify_Migrations_Active</members>
         <members>unfiled$public/Signed_Magento_Partners</members>
         <members>unfiled$public/Signed_Partners_Monthly_DSP</members>
         <members>unfiled$public/Signed_Partners_Monthly_Territories</members>
+        <members>unfiled$public/Silk_China_June_2016</members>
         <members>unfiled$public/Slipping_Away_Annette</members>
         <members>unfiled$public/SmallBizExpo</members>
         <members>unfiled$public/Small_Business_SQL_Report</members>
@@ -4704,6 +4734,7 @@
         <members>unfiled$public/Team_Mike_ACT_Report</members>
         <members>unfiled$public/Team_POC_Analysis</members>
         <members>unfiled$public/Tech_partners_after_april_24</members>
+        <members>unfiled$public/Tech_partners_in_Sales_Qualification</members>
         <members>unfiled$public/Technology_Partner_Report</members>
         <members>unfiled$public/Terms_Not_Accepted_All</members>
         <members>unfiled$public/Terms_Not_Accepted_Central</members>
@@ -4774,11 +4805,13 @@
         <members>unfiled$public/X2016_Pending_Tech_Partners</members>
         <members>unfiled$public/X2016_Tech_Partner_Applications</members>
         <members>unfiled$public/X60_Day_Partners_w_Revenue</members>
+        <members>unfiled$public/Yesterday_SDR_Call_Activity</members>
         <members>unfiled$public/Zero_MRR</members>
         <members>unfiled$public/Zero_MRR_opps</members>
         <members>unfiled$public/Zoovy_Lead_List_05_2016</members>
         <members>unfiled$public/Zoovy_Migration_Status</members>
         <members>unfiled$public/Zoovy_Migrations_Opened_by_Month</members>
+        <members>unfiled$public/Zoovy_Store_Report</members>
         <members>unfiled$public/Zoovy_opportunities_to_sales</members>
         <members>unfiled$public/all_active_users_who_have_not_logged_int</members>
         <members>unfiled$public/cases_by_rep_w_details_template_TL</members>
@@ -4791,6 +4824,7 @@
         <members>unfiled$public/other_report_2</members>
         <members>unfiled$public/partner_account1</members>
         <members>unfiled$public/small_biz_by_lead_source_jan</members>
+        <members>unfiled$public/test</members>
         <members>zArchive/DB_This_Month_Revenue_Acquisition</members>
         <members>zArchive/New_MRR_by_team_no_upgrades</members>
         <name>Report</name>
