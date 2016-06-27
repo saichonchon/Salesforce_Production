@@ -85,7 +85,7 @@
         <chartType>Pie</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>false</expandOthers>
-        <groupingColumn>Support_Survey__c$Live_Chat_Transcript__c.Owner</groupingColumn>
+        <groupingColumn>BucketField_78140429</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_TOP</location>
         <showAxisLabels>true</showAxisLabels>
@@ -100,25 +100,25 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>Support_Survey__c$Case__c.Total_Chat_Time__c</field>
-    </columns>
-    <columns>
-        <field>Support_Survey__c$Case__c</field>
-    </columns>
-    <columns>
         <field>Support_Survey__c$Live_Chat_Transcript__c</field>
-    </columns>
-    <columns>
-        <field>Support_Survey__c$CreatedDate</field>
     </columns>
     <columns>
         <field>Support_Survey__c$Live_Chat_Transcript__c.Chat_Duration_Minutes__c</field>
     </columns>
     <columns>
+        <field>Support_Survey__c$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Support_Survey__c$Survey_Sent_Date__c</field>
+    </columns>
+    <columns>
         <field>Support_Survey__c$Survey_Completion_Date__c</field>
     </columns>
     <columns>
-        <field>Support_Survey__c$Issue_Resolved__c</field>
+        <field>Support_Survey__c$Case__c</field>
+    </columns>
+    <columns>
+        <field>Support_Survey__c$Name</field>
     </columns>
     <columns>
         <field>Support_Survey__c$Feedback__c</field>
@@ -130,7 +130,7 @@
         <field>Support_Survey__c$Satisfaction__c</field>
     </columns>
     <filter>
-        <booleanFilter>((1 AND 2 AND 3 AND 4) AND 5) AND 6</booleanFilter>
+        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
         <criteriaItems>
             <column>Support_Survey__c$Survey_Name__c</column>
             <operator>contains</operator>
@@ -151,18 +151,8 @@
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
-        <criteriaItems>
-            <column>Support_Survey__c$Live_Chat_Transcript__c.Owner</column>
-            <operator>equals</operator>
-            <value>Chris Tan,Gian DeJesus,Jude Abrigo,Jun Tupas,Luigi Modesto,Marco Legaspi,Mariechu Balerite,Racel Arce,Marielle Morre,Shirley Detera,Jan Saria,Regie Matibag,Alvin De Leon,Harold De Asas,Mirelle Ferol,Elijah Ignacio,Marjorie Tamayo,Paul Castro,Ron Ramos</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Support_Survey__c$Live_Chat_Transcript__c.Owner</column>
-            <operator>equals</operator>
-            <value>Chris Tan,Gian DeJesus,Jude Abrigo,Jun Tupas,Luigi Modesto,Marco Legaspi,Mariechu Balerite,Racel Arce,Marielle Morre,Shirley Detera,Jan Saria,Regie Matibag,Alvin De Leon,Harold De Asas,Mirelle Ferol,Elijah Ignacio,Marjorie Tamayo,Paul Castro,Ron Ramos</value>
-        </criteriaItems>
     </filter>
-    <format>Summary</format>
+    <format>Matrix</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>Support_Survey__c$Live_Chat_Transcript__c.Owner</field>
@@ -173,7 +163,7 @@
         <field>BucketField_78140429</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>NEW CHAT PEEPZ SURVEY</name>
+    <name>Chat CSAT (By Name)</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -181,8 +171,6 @@
     <reportType>Support_Surveys_with_Lookup__c</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
-    <sortColumn>Support_Survey__c$Case__c</sortColumn>
-    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Support_Survey__c$CreatedDate</dateColumn>
         <interval>INTERVAL_THISWEEK</interval>

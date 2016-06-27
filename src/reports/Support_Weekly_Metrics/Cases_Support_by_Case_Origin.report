@@ -49,6 +49,11 @@
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <operator>notEqual</operator>
+            <value>Partner Support</value>
+        </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>

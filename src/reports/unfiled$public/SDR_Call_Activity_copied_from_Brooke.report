@@ -68,6 +68,7 @@
         <field>Activity$Dialer_Campaign__c</field>
     </columns>
     <filter>
+        <booleanFilter>(1 AND 2 AND 3) OR 4</booleanFilter>
         <criteriaItems>
             <column>Activity$Owner.Department</column>
             <operator>startsWith</operator>
@@ -82,6 +83,11 @@
             <column>Activity$Owner.Department</column>
             <operator>contains</operator>
             <value>sales development</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$Owner.FirstName</column>
+            <operator>equals</operator>
+            <value>halie</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>
@@ -116,6 +122,8 @@
     <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>Activity$ActivityDate</dateColumn>
-        <interval>INTERVAL_YESTERDAY</interval>
+        <endDate>2016-06-23</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-06-23</startDate>
     </timeFrameFilter>
 </Report>

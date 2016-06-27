@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
-        <field>lmscons__Quiz_Statistic__c$lmscons__Assignment__c.lmscons__Training_User_License__c.lmscons__User__c.Manager</field>
-    </columns>
-    <columns>
         <field>lmscons__Quiz_Statistic__c$lmscons__Assignment__c</field>
     </columns>
     <columns>
-        <field>lmscons__Quiz_Statistic__c$lmscons__Assignment__c.lmscons__Content_Title__c</field>
+        <field>lmscons__Quiz_Statistic__c$lmscons__Quiz__c</field>
     </columns>
     <columns>
-        <field>lmscons__Quiz_Statistic__c$lmscons__Assignment__c.lmscons__Status__c</field>
-    </columns>
-    <columns>
-        <field>lmscons__Quiz_Statistic__c$lmscons__Assignment__c.lmscons__Progress__c</field>
-    </columns>
-    <columns>
-        <field>lmscons__Quiz_Statistic__c$lmscons__Assignment__c.lmscons__Training_Path_Name__c</field>
+        <field>lmscons__Quiz_Statistic__c$lmscons__Question__c</field>
     </columns>
     <columns>
         <field>lmscons__Quiz_Statistic__c$lmscons__Question__c.lmscons__Question__c</field>
@@ -24,7 +15,7 @@
     <columns>
         <field>lmscons__Quiz_Statistic__c$lmscons__Long_Answer__c</field>
     </columns>
-    <description>Answers for the Genin exam</description>
+    <description>Answers to the Genin exam (6/24 and forward)</description>
     <filter>
         <criteriaItems>
             <column>lmscons__Quiz_Statistic__c$lmscons__Learner__c</column>
@@ -39,7 +30,7 @@
         <criteriaItems>
             <column>lmscons__Quiz_Statistic__c$lmscons__Quiz__c</column>
             <operator>contains</operator>
-            <value>Genin</value>
+            <value>CS - Ninja Trials - Genin (A)</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -53,7 +44,7 @@
         <field>lmscons__Quiz_Statistic__c$lmscons__Learner__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Ninja Trials - Genin A</name>
+    <name>Ninja Trials - Genin (A) v2</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -63,6 +54,8 @@
     <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>lmscons__Quiz_Statistic__c$CreatedDate</dateColumn>
+        <endDate>2016-06-24</endDate>
         <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-06-23</startDate>
     </timeFrameFilter>
 </Report>

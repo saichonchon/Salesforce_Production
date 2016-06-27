@@ -5792,6 +5792,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Contact.Demo_Requested_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Contact.Department</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -7708,6 +7713,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Lead.Decision_Maker_Notes__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.Demo_Requested_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -11003,6 +11013,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Decision_Maker_Notes__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Demo_Requested_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>

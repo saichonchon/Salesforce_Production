@@ -949,9 +949,8 @@ CONTAINS(Owner:User.UserRole.Name,&quot;Outbound&quot;) = FALSE)
         </actions>
         <active>true</active>
         <description>When a lead is created with lead source &quot;Datanyze&quot;, it will copy the Datanyze fields from the Datanyze section to the native lead field:</description>
-        <formula>ISPICKVAL(Lead_Source_Detail__c, &apos;Datanyze&apos;) &amp;&amp;
-NOT(ISCHANGED( OwnerId ))</formula>
-        <triggerType>onAllChanges</triggerType>
+        <formula>ISPICKVAL(Lead_Source_Detail__c, &apos;Datanyze&apos;)</formula>
+        <triggerType>onCreateOnly</triggerType>
     </rules>
     <rules>
         <fullName>No Assign %3D True</fullName>

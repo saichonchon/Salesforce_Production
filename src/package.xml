@@ -1052,7 +1052,22 @@
         <members>MarketoEmailTemplates/MKTO359</members>
         <members>MarketoEmailTemplates/MKTO36</members>
         <members>MarketoEmailTemplates/MKTO360</members>
+        <members>MarketoEmailTemplates/MKTO361</members>
+        <members>MarketoEmailTemplates/MKTO362</members>
+        <members>MarketoEmailTemplates/MKTO363</members>
+        <members>MarketoEmailTemplates/MKTO364</members>
+        <members>MarketoEmailTemplates/MKTO365</members>
+        <members>MarketoEmailTemplates/MKTO366</members>
+        <members>MarketoEmailTemplates/MKTO367</members>
+        <members>MarketoEmailTemplates/MKTO368</members>
+        <members>MarketoEmailTemplates/MKTO369</members>
         <members>MarketoEmailTemplates/MKTO37</members>
+        <members>MarketoEmailTemplates/MKTO370</members>
+        <members>MarketoEmailTemplates/MKTO371</members>
+        <members>MarketoEmailTemplates/MKTO372</members>
+        <members>MarketoEmailTemplates/MKTO373</members>
+        <members>MarketoEmailTemplates/MKTO374</members>
+        <members>MarketoEmailTemplates/MKTO375</members>
         <members>MarketoEmailTemplates/MKTO38</members>
         <members>MarketoEmailTemplates/MKTO39</members>
         <members>MarketoEmailTemplates/MKTO4</members>
@@ -1385,6 +1400,7 @@
         <members>Mass_Email_Templates/TECHOPS_19755_Email</members>
         <members>Mass_Email_Templates/TECHOPS_20499_Email</members>
         <members>Mass_Email_Templates/TECHOPS_20834_Email</members>
+        <members>Mass_Email_Templates/TECHOPS_20928_Email</members>
         <members>Mid_Market/Account_Kickoff_No_Migration</members>
         <members>Mid_Market/SQL_Warm_Handoff_Response</members>
         <members>Mid_Market/accountkickoffnomigrationwos9nq7</members>
@@ -1437,6 +1453,7 @@
         <members>Partner_Support_Templates/Tech_Support</members>
         <members>Partner_Support_Templates/Tech_Support_Application_More_info_needed</members>
         <members>Partner_Support_Templates/Theme_Application</members>
+        <members>Partner_Support_Templates/Waiting_case_1</members>
         <members>Partner_Support_Templates/Walkthrough</members>
         <members>Partner_Support_Templates/Where_can_I_see_my_referrals_commissions</members>
         <members>Quarantined_Templates/ContactFollowUpSAMPLE</members>
@@ -1703,6 +1720,10 @@
         <members> ca_collab_2_0__SfdcCommunitiesPulseDefaultActivity_20 </members>
         <members> ca_collab_2_0__SfdcCommunitiesPulseDefaultContent_20 </members>
         <members> ca_collab_2_0__SfdcCommunitiesPulseDefaultGroup_20 </members>
+        <members> ca_collab_2_0__SfdcCommunitiesPulseDefaultMAuditTrail </members>
+        <members> ca_collab_2_0__SfdcCommunitiesPulseDefaultMFlagged </members>
+        <members> ca_collab_2_0__SfdcCommunitiesPulseDefaultMPending </members>
+        <members> ca_collab_2_0__SfdcCommunitiesPulseDefaultMUser </members>
         <members> ca_collab_2_0__SfdcCommunitiesPulseDefaultMember_20 </members>
         <members> ca_collab_2_0__SfdcCommunitiesPulseDefaultModeration_20 </members>
         <members> ca_collab_2_0__SfdcCommunitiesPulseDefaultSelfService20 </members>
@@ -1898,6 +1919,7 @@
         <members>Client_Success/Improper_Escalations_By_Rep_Category</members>
         <members>Client_Success/Insight_Billing_Cases</members>
         <members>Client_Success/JIRA_Breakdown_January_2014</members>
+        <members>Client_Success/JIRA_test_for_Bala</members>
         <members>Client_Success/JIRAs_Attached_To_Cases_Specific_JIRA</members>
         <members>Client_Success/JIRAs_Last_Week_w_MRR_and_GMV</members>
         <members>Client_Success/MBR_Closed_Manager_Contacts</members>
@@ -1943,6 +1965,7 @@
         <members>Client_Success/Phone_Cases_by_Category_Today</members>
         <members>Client_Success/Phone_Cases_by_Category_w_CTI_Info1</members>
         <members>Client_Success/Pixel_Union_Support_Cases</members>
+        <members>Client_Success/Pixel_Union_Themes_Cases_Auto_Closed</members>
         <members>Client_Success/Plan_Upsells</members>
         <members>Client_Success/Pricing1</members>
         <members>Client_Success/Refund_Cred_Total_Avg_LW</members>
@@ -2321,6 +2344,7 @@
         <members>L_D/Business_User_Cert</members>
         <members>L_D/CS_All_Assignments</members>
         <members>L_D/CS_Learning_Paths</members>
+        <members>L_D/CS_Ninja_Trials_All_Genin_Scores</members>
         <members>L_D/CS_Ninja_Trials_Post_Genin_Survey</members>
         <members>L_D/CS_Ninja_Trials_Post_Noob_Path_Surve</members>
         <members>L_D/CS_Prod_Insights_Refresher</members>
@@ -2342,7 +2366,6 @@
         <members>L_D/New_Hire_Midterm_Store_Set_Up_1</members>
         <members>L_D/New_Hire_Store_Management</members>
         <members>L_D/New_Pricing_Jan_2016</members>
-        <members>L_D/Ninja_Trials_Genin_A1</members>
         <members>L_D/Ninja_Trials_SMEs1</members>
         <members>L_D/People_People_Management_Legalities</members>
         <members>L_D/Publisher</members>
@@ -2401,6 +2424,7 @@
         <members>Marketing_Reports/Lead_MKT_Source</members>
         <members>Marketing_Reports/Lead_Restriction_Criteria_for_Marketo</members>
         <members>Marketing_Reports/Lead_Restriction_Criteria_inclusion_fi</members>
+        <members>Marketing_Reports/Leads_created_7_1_2013</members>
         <members>Marketing_Reports/MKT_Featured_Stores</members>
         <members>Marketing_Reports/Marketing_Cohort_Report_January_2016</members>
         <members>Marketing_Reports/Marketing_Insight_Z2</members>
@@ -2433,6 +2457,7 @@
         <members>Marketing_Reports/dw_pcf_test</members>
         <members>Marketing_Reports/dw_theme_report_clients</members>
         <members>Marketing_Reports/mid_market</members>
+        <members>Marketing_Team/Blog_Magic_Action_Source_Leads</members>
         <members>Marketing_Team/Campaign_Rollup_Report_Nea</members>
         <members>Marketing_Team/Campaign_Rollup_Report_for_Liz</members>
         <members>Marketing_Team/Campaign_Timeline</members>
@@ -2506,6 +2531,7 @@
         <members>Migrations/Migration_Cases_All_Time</members>
         <members>Migrations/Opps_in_Migration_Prescoping</members>
         <members>Migrations/all_migrations</members>
+        <members>Ninja_Trials/CS_Ninja_Trials_Genin_A_v2</members>
         <members>Ninja_Trials/Ninja_Trials_2016</members>
         <members>Ninja_Trials/Ninja_Trials_Genin_A</members>
         <members>Ninja_Trials/Ninja_Trials_Passed_Genin1</members>
@@ -3399,6 +3425,7 @@
         <members>Support_Weekly_Metrics/Cases_Closed_by_Billing_Team</members>
         <members>Support_Weekly_Metrics/Cases_Closed_by_Tier_1</members>
         <members>Support_Weekly_Metrics/Cases_Support_by_Case_Origin</members>
+        <members>Support_Weekly_Metrics/Cases_Web_Opened_Last_Week</members>
         <members>Support_Weekly_Metrics/Contacts_by_Account_and_Plan_StartDate</members>
         <members>Support_Weekly_Metrics/Five9s_SF_Screen_Pops</members>
         <members>Support_Weekly_Metrics/Live_Chat_Abandons</members>
@@ -3772,6 +3799,13 @@
         <members>ca_collab_2_0__SfdcCommunitiesPulseDefaultGroup_20/ca_collab_2_0__Insights_G_Groups_With_Deactivated_Owners_2_0</members>
         <members>ca_collab_2_0__SfdcCommunitiesPulseDefaultGroup_20/ca_collab_2_0__Insights_G_Groups_With_Inactive_Owners_2_0</members>
         <members>ca_collab_2_0__SfdcCommunitiesPulseDefaultGroup_20/ca_collab_2_0__Insights_G_New_Groups_1_0</members>
+        <members>ca_collab_2_0__SfdcCommunitiesPulseDefaultMAuditTrail/ca_collab_2_0__Insights_M_Moderation_Audit_3_0</members>
+        <members>ca_collab_2_0__SfdcCommunitiesPulseDefaultMFlagged/ca_collab_2_0__Moderation_F_Flagged_Comments_1_0</members>
+        <members>ca_collab_2_0__SfdcCommunitiesPulseDefaultMFlagged/ca_collab_2_0__Moderation_F_Flagged_Files_1_0</members>
+        <members>ca_collab_2_0__SfdcCommunitiesPulseDefaultMFlagged/ca_collab_2_0__Moderation_F_Flagged_Messages_1_0</members>
+        <members>ca_collab_2_0__SfdcCommunitiesPulseDefaultMFlagged/ca_collab_2_0__Moderation_F_Flagged_Posts_1_0</members>
+        <members>ca_collab_2_0__SfdcCommunitiesPulseDefaultMPending/ca_collab_2_0__Moderation_P_Posts_Pending_Approval_1_0</members>
+        <members>ca_collab_2_0__SfdcCommunitiesPulseDefaultMUser/ca_collab_2_0__Moderation_M_Frozen_Members_1_0</members>
         <members>ca_collab_2_0__SfdcCommunitiesPulseDefaultMember_20/MH_Members_with_Posts</members>
         <members>ca_collab_2_0__SfdcCommunitiesPulseDefaultMember_20/New_Members</members>
         <members>ca_collab_2_0__SfdcCommunitiesPulseDefaultMember_20/ca_collab_2_0__Insights_A_Active_Members_1_0</members>
@@ -3873,6 +3907,8 @@
         <members>unfiled$public/ACQ_attribution_Report_JG_Copy</members>
         <members>unfiled$public/AM_OC_Pipeline_Opp_All</members>
         <members>unfiled$public/AM_Pipeline_Opp_All</members>
+        <members>unfiled$public/AM_Pipeline_Opp_UnAssigned</members>
+        <members>unfiled$public/AM_Unassigned_Accounts</members>
         <members>unfiled$public/APAC_Engaged_Partners</members>
         <members>unfiled$public/APAC_program_partners_enrolled_w_MRR</members>
         <members>unfiled$public/API_Today</members>
@@ -3961,7 +3997,6 @@
         <members>unfiled$public/CA_Premium_Webstores_opps_to_sales</members>
         <members>unfiled$public/CENTRAL_RE_ASSIGNMENTS</members>
         <members>unfiled$public/CENTRAL_RE_ASSIGNMENTS1</members>
-        <members>unfiled$public/CSAT_Survey_Chat</members>
         <members>unfiled$public/CS_users</members>
         <members>unfiled$public/C_L_Juan_Jacinto</members>
         <members>unfiled$public/C_L_Robby_King</members>
@@ -4084,6 +4119,7 @@
         <members>unfiled$public/Cases_with_Forum_Login_Issues</members>
         <members>unfiled$public/Cases_with_Support_Pin_Issues</members>
         <members>unfiled$public/Catalyst_2016_Leads_by_Owner</members>
+        <members>unfiled$public/Central_Partners_John</members>
         <members>unfiled$public/Central_Pipeline_Snapshot1</members>
         <members>unfiled$public/Central_Pipeline_Snapshot_edit</members>
         <members>unfiled$public/Central_RV_Account_Snapshot</members>
@@ -4095,6 +4131,7 @@
         <members>unfiled$public/Channel_Advisor_Store_Report</members>
         <members>unfiled$public/Channel_Partner_Accounts</members>
         <members>unfiled$public/Chat_Abandons_by_Client</members>
+        <members>unfiled$public/Chat_CSAT_By_Name</members>
         <members>unfiled$public/Chat_Detail</members>
         <members>unfiled$public/Chat_Handle_Brian_Miller</members>
         <members>unfiled$public/Chat_Handle_Rate</members>
@@ -4195,6 +4232,7 @@
         <members>unfiled$public/EOM_Expiring_Leads_Channel</members>
         <members>unfiled$public/Easy_Money_List</members>
         <members>unfiled$public/Elite_Partners</members>
+        <members>unfiled$public/Email_CSAT_By_Primary_Case_Rep</members>
         <members>unfiled$public/Email_CSAT_Case_Reason</members>
         <members>unfiled$public/Engaged_Opps_Channel_Sales</members>
         <members>unfiled$public/Enrolled_Partners_w_Revenue_no_Paypal</members>
@@ -4244,6 +4282,7 @@
         <members>unfiled$public/Enterprise_Total_MRR_by_AM_Opp</members>
         <members>unfiled$public/Enterprise_cases_created</members>
         <members>unfiled$public/Enterprise_plans</members>
+        <members>unfiled$public/Eric_Owens_Eric_Wills_Andrew_King_Opps</members>
         <members>unfiled$public/Expired_Trials_for_Keith_trailing_6_mos</members>
         <members>unfiled$public/Expired_Trials_for_Keith_trailing_6_mos1</members>
         <members>unfiled$public/Facebook_Demo_Request</members>
@@ -4301,6 +4340,8 @@
         <members>unfiled$public/Jennifer_Partner_Performance_Q4_2016</members>
         <members>unfiled$public/Jeremy_Peabody_Opps</members>
         <members>unfiled$public/Joe_Maragoni_Opps</members>
+        <members>unfiled$public/John_Partners_6_22</members>
+        <members>unfiled$public/John_Partners_RV_member_6_22</members>
         <members>unfiled$public/Juan_SBD_Report</members>
         <members>unfiled$public/Juan_s_Open_Opps_Outside_of_Qualify</members>
         <members>unfiled$public/Justin_Hospie_Open_Opps</members>
@@ -4472,7 +4513,6 @@
         <members>unfiled$public/Monthly_Opps_iDev_Only</members>
         <members>unfiled$public/Monthly_Paid_Stores_Channel_Sales</members>
         <members>unfiled$public/Monthly_Signed_Partners_Bypass</members>
-        <members>unfiled$public/NEW_CHAT_PEEPZ_SURVEY</members>
         <members>unfiled$public/NPS_Chat_Satisfaction_Case_Reason</members>
         <members>unfiled$public/NPS_Phone_Sat</members>
         <members>unfiled$public/Nell_s_Stencil_Cases</members>
@@ -4599,6 +4639,7 @@
         <members>unfiled$public/Preview_Dialer_by_SFDC_Campaign_WoW</members>
         <members>unfiled$public/Preview_Dialer_by_SFDC_Campaign_by_Week</members>
         <members>unfiled$public/Pricing_Upgrade_Opps_W_Channel</members>
+        <members>unfiled$public/Print_Ad_Lead_Conversion_Tim</members>
         <members>unfiled$public/Products_with_Rate_Plan</members>
         <members>unfiled$public/Professional_Services_Sales</members>
         <members>unfiled$public/Prog_Partners_Transacted_within_past_yr</members>
@@ -4763,10 +4804,8 @@
         <members>unfiled$public/Trailing_12_Month_GMV_Range</members>
         <members>unfiled$public/Trailing_gmv</members>
         <members>unfiled$public/Training_Pinterest_Buyable_Pins_CS</members>
-        <members>unfiled$public/Training_assigned_cases</members>
         <members>unfiled$public/Transacting_Free_Stores</members>
         <members>unfiled$public/Transacting_Partner_Sandboxes</members>
-        <members>unfiled$public/Transaction_Count</members>
         <members>unfiled$public/Trial_Count_by_Day_BT</members>
         <members>unfiled$public/Trial_Count_by_Day_Direct_Dial</members>
         <members>unfiled$public/Trial_Count_by_Team_Opp</members>

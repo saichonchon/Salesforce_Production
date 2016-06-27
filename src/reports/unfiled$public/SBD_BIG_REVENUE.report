@@ -4,12 +4,6 @@
         <field>Opportunity.Subscription__c</field>
     </columns>
     <columns>
-        <field>Opportunity.Theme_Framework__c</field>
-    </columns>
-    <columns>
-        <field>Opportunity.Theme__c</field>
-    </columns>
-    <columns>
         <field>Opportunity.MBASubscriptionID__c</field>
     </columns>
     <columns>
@@ -23,6 +17,9 @@
     </columns>
     <columns>
         <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Product__c</field>
     </columns>
     <columns>
         <field>OPPORTUNITY_NAME</field>
@@ -40,13 +37,7 @@
         <field>Opportunity.Closed_Lost_Reason__c</field>
     </columns>
     <columns>
-        <field>Opportunity.Other_Comments__c</field>
-    </columns>
-    <columns>
         <field>Opportunity.Closed_Lost_Reason_Detail__c</field>
-    </columns>
-    <columns>
-        <field>Opportunity.Product__c</field>
     </columns>
     <description>Results &amp; Project Opportunity Status</description>
     <filter>
@@ -73,7 +64,7 @@
     <reportType>Opportunity</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
-    <sortColumn>FULL_NAME</sortColumn>
+    <sortColumn>Opportunity.Product__c</sortColumn>
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>

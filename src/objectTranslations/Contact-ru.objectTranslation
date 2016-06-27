@@ -102,6 +102,10 @@
         <name>Deleted__c</name>
     </fields>
     <fields>
+        <label><!-- Demo Requested Date --></label>
+        <name>Demo_Requested_Date__c</name>
+    </fields>
+    <fields>
         <help><!-- Is this a duplicate of another contact in Salesforce? --></help>
         <label><!-- Duplicate? --></label>
         <name>Duplicate__c</name>

@@ -12,17 +12,17 @@
     <columns>
         <field>lmscons__Transcript_Line__c$lmscons__Status__c</field>
     </columns>
-    <description>Learners with passing scores on Genin exams. Note: Genin is composed of 5 quizzes.</description>
+    <description>Learners with passing scores on the Genin exam. Passing is 90%</description>
     <filter>
         <criteriaItems>
             <column>lmscons__Transcript_Line__c$lmscons__Quiz__c</column>
-            <operator>startsWith</operator>
-            <value>CS - Ninja Trials: Genin</value>
+            <operator>equals</operator>
+            <value>CS - Ninja Trials - Genin (A)</value>
         </criteriaItems>
         <criteriaItems>
-            <column>lmscons__Transcript_Line__c$lmscons__Score_int__c</column>
+            <column>lmscons__Transcript_Line__c$lmscons__Score__c</column>
             <operator>greaterOrEqual</operator>
-            <value>85</value>
+            <value>90</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>

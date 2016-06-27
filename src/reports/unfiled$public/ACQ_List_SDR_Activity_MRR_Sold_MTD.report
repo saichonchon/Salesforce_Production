@@ -63,6 +63,9 @@
         <field>OPP.OWNER_NAME</field>
     </columns>
     <columns>
+        <field>OPP.CLOSE_DATE</field>
+    </columns>
+    <columns>
         <field>Opportunity.Opportunity_Count__c</field>
     </columns>
     <columns>
@@ -88,9 +91,6 @@
     </columns>
     <columns>
         <field>OPP.NAME</field>
-    </columns>
-    <columns>
-        <field>OPP.CLOSE_DATE</field>
     </columns>
     <columns>
         <field>ACCOUNT.NAME</field>

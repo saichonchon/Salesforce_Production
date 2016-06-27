@@ -106,7 +106,7 @@
         <criteriaItems>
             <column>Opportunity$PurchaseDate__c</column>
             <operator>equals</operator>
-            <value>THIS_MONTH</value>
+            <value>THIS_YEAR</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity$RecordType</column>
@@ -116,7 +116,7 @@
     </filter>
     <format>Matrix</format>
     <groupingsAcross>
-        <dateGranularity>Week</dateGranularity>
+        <dateGranularity>Month</dateGranularity>
         <field>Opportunity$PurchaseDate__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
@@ -130,7 +130,7 @@
         <field>Opportunity$Campaign.Parent</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Camp Perf MRR Sold MTD (ACQ List)</name>
+    <name>Camp Perf MRR Sold YTD (ACQ List)</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -141,6 +141,6 @@
     <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>Opportunity$PurchaseDate__c</dateColumn>
-        <interval>INTERVAL_THISMONTH</interval>
+        <interval>INTERVAL_CURY</interval>
     </timeFrameFilter>
 </Report>

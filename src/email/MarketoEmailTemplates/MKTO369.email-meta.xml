@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Post Paid.Email 4- Shipping</name>
+    <style>none</style>
+    <subject>Setting up your shipping</subject>
+    <textOnly>You can offer your buyers a wide range of domestic and international shipping options at checkout.
+Customize your shipping
+
+
+
+
+
+
+
+Update your settings &lt;[[https://login.bigcommerce.com/deep-links/shipping?utm_medium=eml&amp;utm_source=post-paid&amp;utm_campaign=email4&amp;utm_term=&amp;utm_content=shipping]]&gt;
+Shipping options to fit your business
+You can offer your buyers a wide range of domestic and international shipping options at checkout. Choose from free shipping, flat rates, and real-time shipping quotes for all the major carriers.  
+Looking for more details on how to develop a shipping strategy? Refer to our Shipping Overview &lt;[[https://support.bigcommerce.com/articles/Public/Shipping-Overview?utm_medium=eml&amp;utm_source=post-paid&amp;utm_campaign=email4&amp;utm_term=&amp;utm_content=shipping]]&gt;.
+Print shipping labels at home with Endicia
+Shipping orders can be both costly and time consuming, but Endicia streamlines the process and saves you money — and it’s integrated right into your Bigcommerce control panel.
+
+Our USPS by Endicia shipping option is convenient, efficient and will significantly reduce your shipping costs:
+
+
+
+	- Save up to 44% over retail postage rates, and never overpay for postage
+
+
+	- Quickly buy and print USPS shipping labels from your Orders screen
+
+
+	- Save time by not having to go to the post office or manually fill out envelopes and labels 
+Update your settings &lt;[[https://login.bigcommerce.com/deep-links/shipping?utm_medium=eml&amp;utm_source=post-paid&amp;utm_campaign=email4&amp;utm_term=&amp;utm_content=shipping]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

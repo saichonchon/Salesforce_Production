@@ -71,6 +71,9 @@
         <field>STATUS</field>
     </columns>
     <columns>
+        <field>Case.Case_Closed_By__c</field>
+    </columns>
+    <columns>
         <field>Case.Case_Age_in_Days__c</field>
     </columns>
     <columns>
@@ -86,6 +89,7 @@
         <field>CLOSED</field>
     </columns>
     <filter>
+        <booleanFilter>1 AND 2 AND 3 AND (4 OR 5)</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
             <operator>equals</operator>
@@ -106,11 +110,16 @@
             <operator>equals</operator>
             <value>Garrett Cluff,Mary Quilaga,Jude Abrigo,Glen Saturno,Paulo Mojica,Adrian Estopace,Alvin DeLeon,Aries Leyte,Faith Esguerra,Harold De Asas,Jan Saria,Jeffrey Gregorio,John San Diego,John Ferrer,Jovic Leovis,Jun Tupas,Kenneth Cabaobao,Kim Radaza,Luigi Modesto,Marielle Morre,Marjorie Tamayo,Mark Hernandez,Mireille Ferol,Racel Arce,Regie Matibag,Regine SanJuan,Ryan Juarez,Shirley Detera,Juan Calanoc,Rianne Insigne,Jonathan Castro,Amanda Aguirre,Patricia Santos,Roger Dayap,Jonalyn Fresnido,Raymond Macatangay,Josiephene Caceres,Marfee DelaCruz,Christie Rodriguez,Jerome Cadangyao,Roshaolin Nuqui,Kristel Pura,Jenelyn Pawhay,John Ordonez</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>LAST_UPDATE_BY</column>
+            <operator>equals</operator>
+            <value>Garrett Cluff,Mary Quilaga,Jude Abrigo,Glen Saturno,Paulo Mojica,Adrian Estopace,Alvin DeLeon,Aries Leyte,Faith Esguerra,Harold De Asas,Jan Saria,Jeffrey Gregorio,John San Diego,John Ferrer,Jovic Leovis,Jun Tupas,Kenneth Cabaobao,Kim Radaza,Luigi Modesto,Marielle Morre,Marjorie Tamayo,Mark Hernandez,Mireille Ferol,Racel Arce,Regie Matibag,Regine SanJuan,Ryan Juarez,Shirley Detera,Juan Calanoc,Rianne Insigne,Jonathan Castro,Amanda Aguirre,Patricia Santos,Roger Dayap,Jonalyn Fresnido,Raymond Macatangay,Josiephene Caceres,Marfee DelaCruz,Christie Rodriguez,Jerome Cadangyao,Roshaolin Nuqui,Kristel Pura,Jenelyn Pawhay,John Ordonez</value>
+        </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>
         <dateGranularity>Day</dateGranularity>
-        <field>Case.Case_Closed_By__c</field>
+        <field>LAST_UPDATE_BY</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
     <groupingsDown>

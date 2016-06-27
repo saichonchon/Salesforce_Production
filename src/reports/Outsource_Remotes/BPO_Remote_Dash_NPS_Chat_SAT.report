@@ -170,6 +170,6 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Support_Survey__c$CreatedDate</dateColumn>
-        <interval>INTERVAL_LASTWEEK</interval>
+        <interval>INTERVAL_THISWEEK</interval>
     </timeFrameFilter>
 </Report>

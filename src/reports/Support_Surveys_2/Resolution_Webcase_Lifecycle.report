@@ -80,6 +80,11 @@
             <operator>equals</operator>
             <value>Web</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>notEqual</operator>
+            <value>Case.Billing,Case.Cancellations,Case.Trash</value>
+        </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>

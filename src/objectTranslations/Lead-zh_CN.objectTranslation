@@ -776,6 +776,10 @@
         <name>Decision_Maker_Notes__c</name>
     </fields>
     <fields>
+        <label><!-- Demo Requested Date --></label>
+        <name>Demo_Requested_Date__c</name>
+    </fields>
+    <fields>
         <label><!-- zPAR Design Account ID --></label>
         <name>Design_Account_ID__c</name>
     </fields>
@@ -2634,6 +2638,10 @@ No = they were routed to the new pricing test page and will require a PDF doc fo
         <picklistValues>
             <masterLabel>Contacted</masterLabel>
             <translation><!-- Contacted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Demo Requested</masterLabel>
+            <translation><!-- Demo Requested --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>In Flow</masterLabel>

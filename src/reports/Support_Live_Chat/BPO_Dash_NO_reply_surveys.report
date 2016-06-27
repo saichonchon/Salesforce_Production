@@ -35,6 +35,9 @@
         <field>CREATED_DATE</field>
     </columns>
     <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <columns>
         <field>Case.Case_Age_in_Days__c</field>
     </columns>
     <columns>
@@ -45,6 +48,9 @@
     </columns>
     <columns>
         <field>Case.Primary_Case_Rep__c</field>
+    </columns>
+    <columns>
+        <field>Case.Bigcommerce_Store_URL__c</field>
     </columns>
     <columns>
         <field>REASON</field>
@@ -95,6 +101,11 @@
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <operator>notEqual</operator>
+            <value>Closed</value>
+        </criteriaItems>
     </filter>
     <format>Matrix</format>
     <name>Resolution = NO - Webcase Lifecycle</name>
@@ -111,6 +122,6 @@
     <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>LAST_UPDATEONLY</dateColumn>
-        <interval>INTERVAL_TODAY</interval>
+        <interval>INTERVAL_LAST60</interval>
     </timeFrameFilter>
 </Report>

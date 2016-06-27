@@ -1296,7 +1296,7 @@ IF(Tenured_Months__c &gt;=4, 1,0)
         <filters>
             <field>FULL_NAME</field>
             <operation>contains</operation>
-            <value>liam</value>
+            <value>meredith</value>
         </filters>
         <filters>
             <field>CORE.PROFILE.NAME</field>

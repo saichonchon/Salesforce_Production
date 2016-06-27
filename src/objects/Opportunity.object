@@ -3123,6 +3123,16 @@ MBASubscriptionID__c,null)</formula>
         <visibleLines>3</visibleLines>
     </fields>
     <fields>
+        <fullName>Demo_Requested_Date__c</fullName>
+        <description>Field used to determine if there was a ever a demo request submitted and if so, the date of the demo request.</description>
+        <externalId>false</externalId>
+        <label>Demo Requested Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
         <fullName>Description</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>

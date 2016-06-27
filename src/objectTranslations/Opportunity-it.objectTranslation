@@ -2156,6 +2156,10 @@
         <name>Decision_Maker_Notes__c</name>
     </fields>
     <fields>
+        <label><!-- Demo Requested Date --></label>
+        <name>Demo_Requested_Date__c</name>
+    </fields>
+    <fields>
         <label><!-- Direct Dialer Eligible --></label>
         <name>Direct_Dialer_Eligible__c</name>
     </fields>
