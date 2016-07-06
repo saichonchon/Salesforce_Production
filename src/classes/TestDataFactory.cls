@@ -12,6 +12,140 @@ global without sharing class TestDataFactory {
 
     private static string TestAccountPrefix = 'testBCCompany';
 
+
+    ///////////////
+    // CAMPAIGNS //
+    ///////////////
+
+    /**
+     * Creates an instance of a Campaign
+     * @author Steve O'Neal
+     * @date   2016-06-22
+     * @ticket link          https://jira.bigcommerce.com/browse/BAP-3811
+     * @return Test campaign
+     */
+    private static Campaign createTestCampaign()
+    {
+        String seed1 = String.valueof(MathUtility.RandomInteger(100, 999));
+
+        Campaign testCampaign = new Campaign();
+        testCampaign.Name = TestAccountPrefix + ' Campaign ' + seed1;
+        testCampaign.Status = 'Planned';
+        testCampaign.IsActive = true;
+        testCampaign.Type = 'Other';
+        testCampaign.StartDate = Date.today();
+        testCampaign.EndDate = Date.today().addDays(5);
+        
+        return testCampaign;
+    }
+
+    /**
+     * Creates a group of campaigns
+     * @author Steve O'Neal
+     * @date   2016-06-22
+     * @ticket link            https://jira.bigcommerce.com/browse/BAP-3811
+     * @param  numberOfRecords The total number of campaigns to create
+     * @return                 List of campaigns
+     */
+    global static List<Campaign> createTestCampaigns(integer numberOfRecords)
+    {
+        List<Campaign> retVal = new List<Campaign>();
+
+        for (integer i = 0; i < numberOfRecords; i++)
+        {
+            retVal.add(TestDataFactory.createTestCampaign());
+        }
+
+        if (retVal.size() > 0)
+        {
+            insert retVal;
+        }
+
+        return retVal;
+    }
+
+    /**
+     * Creates an instance of a Campaign Member
+     * @author Steve O'Neal
+     * @date   2016-06-22
+     * @ticket link        https://jira.bigcommerce.com/browse/BAP-3811
+     * @param  cmpgn       The campaign it belongs to
+     * @param  demoRequest If the type of campaign is a demo request
+     * @param  member      The sobject to link the campaign member to
+     * @return             Instance of a campaign member
+     */
+    private static CampaignMember createCampaignMember(Campaign cmpgn, boolean demoRequest, sObject member)
+    {
+        CampaignMember retVal = new CampaignMember();
+        retVal.CampaignId = cmpgn.Id;
+
+        if (demoRequest)
+        {
+            retVal.Status = 'Demo Requested';
+        }
+        else
+        {
+            retVal.Status = 'New';
+        }
+
+        if (member != null)
+        {
+            if (member.getSObjectType() == Lead.getSObjectType())
+            {
+                Lead tmpLead = (Lead)member;
+                retVal.LeadId = tmpLead.ID;
+            }
+            else if (member.getSObjectType() == Contact.getSObjectType())
+            {
+                Contact tmpCont = (Contact)member;
+                retVal.ContactId = tmpCont.ID;
+            }
+            else
+            {
+                throw new ApplicationException('Not a valid recordtype: ' + member.getSObjectType());
+            }
+        }
+
+        return retVal;
+    }
+
+
+    /**
+     * Creates a group of campaign members
+     * @author Steve O'Neal
+     * @date   2016-06-22
+     * @ticket link            https://jira.bigcommerce.com/browse/BAP-3811
+     * @param  numberOfRecords The total number of campaigns to create
+     * @return                 List of campaign members
+     */
+    global static List<CampaignMember> createTestCampaignMembers(List<Campaign> campaigns, boolean demoRequest, List<SObject> members)
+    {
+        List<CampaignMember> retVal = new List<CampaignMember>();
+
+        for (Campaign cmpgn : campaigns)
+        {
+            if (members != null && members.size() > 0)
+            {
+                for (SObject member : members)
+                {
+                    retVal.add(TestDataFactory.createCampaignMember(cmpgn, demoRequest, member));
+                }
+            }
+            else
+            {
+                retVal.add(TestDataFactory.createCampaignMember(cmpgn, demoRequest, null));
+            }
+        }
+
+        if (retVal.size() > 0)
+        {
+            insert retVal;
+        }
+
+        return retVal;
+    }
+
+
 	///////////
 	// LEADS //
 	///////////
@@ -112,7 +246,7 @@ global without sharing class TestDataFactory {
     //////////////
     // ACCOUNTS //
     //////////////
-	global enum AccountRecordType {BMP_Client, Channel_Parnter_Record_Type, Client_Record_Type, Strategic_Partner_Record_Type}
+	global enum AccountRecordType {BMP_Client, Channel_Partner_Record_Type, Client_Record_Type, Strategic_Partner_Record_Type}
 
     /**
      * Deletes any accounts with a name that starts with the TestAccountPrefix
@@ -216,6 +350,141 @@ global without sharing class TestDataFactory {
         if (retVal.size() > 0)
         {
         	insert retVal;
+        }
+
+        return retVal;
+    }
+
+
+    //////////////
+    // CONTACTS //
+    //////////////
+
+    /**
+     * Creates an instance of a test Contact
+     * @author Steve O'Neal
+     * @date   2016-06-22
+     * @ticket link       https://jira.bigcommerce.com/browse/BAP-3811
+     * @param  acct       The account to attach the record to
+     * @return            A test contact
+     */
+    private static Contact createTestContact(Account acct)
+    {
+        String seed1 = String.valueof(MathUtility.RandomInteger(100, 999));
+        string seed2 = string.valueof(MathUtility.RandomInteger(1000, 9999));
+        String fullSeed = seed1 + '.' + seed2;
+
+        Contact retVal = new Contact();
+        retVal.LastName = 'testLName' + fullSeed;
+        retVal.FirstName = 'testFirstName';
+        if (acct != null)
+        {
+            retVal.AccountId = acct.Id;
+        }
+        retVal.Email = 'testEmail+' + fullSeed + '@test.com';
+        retVal.Phone = '512' + seed1 + seed2;
+        
+        return retVal;
+    }
+
+
+    /**
+     * Creates a list of test contacts
+     * @author Steve O'Neal
+     * @date   2016-06-22
+     * @ticket link            https://jira.bigcommerce.com/browse/BAP-3811
+     * @param  numberOfRecords The number of contacts to create for each account
+     * @param  accounts        The accounts to create contacts for
+     * @return                 A list of test contacts
+     */
+    global static List<Contact> createTestContacts(integer numberOfRecords, List<Account> accounts)
+    {
+        List<Contact> retVal = new List<Contact>();
+
+        if (accounts != null && accounts.size() > 0)
+        {
+            for (Account acct : accounts)
+            {
+                for (integer i = 0; i < numberOfRecords; i++)
+                {
+                    retVal.add(TestDataFactory.createTestContact(acct));
+                }
+            }
+        }
+        else
+        {
+             for (integer i = 0; i < numberOfRecords; i++)
+            {
+                retVal.add(TestDataFactory.createTestContact(null));
+            }
+        }
+
+        if (retVal.size() > 0)
+        {
+            insert retVal;
+        }
+
+        return retVal;
+    }
+
+
+    ///////////////////
+    // OPPORTUNITIES //
+    ///////////////////
+    global enum OpportunityRecordType {App, One_Time_Product, Professional_Services, Store_Purchase, Theme, Trial, Upgrade_Store}
+
+    /**
+     * Creates a test opportunity
+     * @author Steve O'Neal
+     * @date   2016-06-22
+     * @ticket link         https://jira.bigcommerce.com/browse/BAP-3811
+     * @param  acct         The account to tie the opportunity to
+     * @param  recordTypeId The record type id for the opportunity
+     * @return              A test opportunity
+     */
+    private static Opportunity createTestOpportunity(Account acct, Id recordTypeId)
+    {
+        String seed1 = String.valueof(MathUtility.RandomInteger(100, 999));
+        string seed2 = string.valueof(MathUtility.RandomInteger(1000, 9999));
+        String fullSeed = seed1 + '.' + seed2;
+
+        Opportunity retVal = new Opportunity();
+        retVal.RecordTypeId = recordTypeId;
+        retVal.AccountId = acct.Id;
+        retVal.Name = TestAccountPrefix + ' opp ' + fullSeed;
+        retVal.CloseDate = Date.today().addDays(4);
+        retVal.StageName = 'Qualify';
+        retVal.Status__c = 'Active';
+
+        return retVal;
+    }
+
+    /**
+     * Creates a list of test opportunities
+     * @author Steve O'Neal
+     * @date   2016-06-22
+     * @ticket link            https://jira.bigcommerce.com/browse/BAP-XXXX
+     * @param  numberOfRecords Number of opportunities to make per Account
+     * @param  accounts        The accounts to tie the opportunities to
+     * @param  recordType      The record type to create
+     * @return                 A list of opportunities
+     */
+    global static List<Opportunity> createTestOpportunities(integer numberOfRecords, List<Account> accounts, OpportunityRecordType recordType)
+    {
+        RecordType oppRecordType = [Select Id, DeveloperName from RecordType where SObjectType = 'Opportunity' and DeveloperName = :String.valueof(recordType) limit 1];
+        List<Opportunity> retVal = new List<Opportunity>();
+
+        for (Account acct : accounts)
+        {
+            for (integer i = 0; i < numberOfRecords; i++)
+            {
+                retVal.add(TestDataFactory.createTestOpportunity(acct, oppRecordType.Id));
+            }
+        }
+
+        if (retVal.size() > 0)
+        {
+            insert retVal;
         }
 
         return retVal;

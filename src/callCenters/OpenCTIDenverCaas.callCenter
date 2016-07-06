@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CallCenter xmlns="http://soap.sforce.com/2006/04/metadata">
-    <adapterUrl>https://cl-017-den.us.caas.hosted-inin.com/bigcommerce/salesforceclient.aspx</adapterUrl>
+    <adapterUrl>https://sf-017.us.caas.hosted-inin.com/BigCommerce/salesforceclient.aspx</adapterUrl>
     <customSettings>{&quot;reqSoftphoneHeight&quot;:&quot;650&quot;,&quot;reqUseApi&quot;:&quot;true&quot;,&quot;reqSoftphoneWidth&quot;:&quot;850&quot;}</customSettings>
-    <displayName>Den Open CTI Interactive Intelligence Web Client Connector, CIC 4.0</displayName>
+    <displayName>new url Open CTI Interactive Intelligence Web Client Connector, CIC 4.0</displayName>
     <displayNameLabel>Display Name</displayNameLabel>
     <internalNameLabel>InternalName</internalNameLabel>
     <sections>
         <items>
             <label>CTI Adapter URL</label>
             <name>reqAdapterUrl</name>
-            <value>https://cl-017-den.us.caas.hosted-inin.com/bigcommerce/salesforceclient.aspx</value>
+            <value>https://sf-017.us.caas.hosted-inin.com/BigCommerce/salesforceclient.aspx</value>
         </items>
         <items>
             <label>Use CTI API</label>

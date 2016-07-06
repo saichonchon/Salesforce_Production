@@ -23,8 +23,12 @@
             <section>Onboarding Details</section>
         </sections>
         <sections>
-            <label><!-- Partner Commissions --></label>
-            <section>Partner Commissions</section>
+            <label><!-- Partner Commissions - Overall --></label>
+            <section>Partner Commissions - Overall</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Commissions - Recent --></label>
+            <section>Partner Commissions - Recent</section>
         </sections>
     </layouts>
 </CustomObjectTranslation>

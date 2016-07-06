@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NMI &amp; USA ePay to iPayment (GTM-1196).Email 2</name>
+    <style>none</style>
+    <subject>Lower processing fees to earn credit in your account</subject>
+    <textOnly>BigCommerce believes we can significantly reduce your payment processing costs while keeping your existing gateway.
+Hello {{lead.First Name:default=there}},
+
+
+BigCommerce believes we can significantly reduce your payment processing costs while keeping your existing gateway.
+
+We’ve teamed up with one of our preferred payment partners to offer you up to $800 worth of credit in your BigCommerce account and, for qualifying merchants, reduced processing fees.
+
+All you have to do is submit basic information &lt;[[http://grow.bigcommerce.com/iPayment-Contact-Page.html]]&gt;, and we’ll follow up with you personally.
+
+We want to make payment processing easier and more affordable for you and your customers. Get more information about this special offer &lt;[[http://grow.bigcommerce.com/iPayment-Contact-Page.html]]&gt;.
+Offer expires August 30, 2016.
+
+
+
+
+Learn More &lt;[[http://grow.bigcommerce.com/iPayment-Contact-Page.html]]&gt;
+I look forward to working with you,
+
+Jeremy Gryder
+ Client Development Executive 
+ accountservices@bigcommerce.com &lt;[[mailto:accountservices@bigcommerce.com]]&gt;   /   1-866-949-5338 &lt;[[tel:+18669495338]]&gt;
+ bigcommerce.com &lt;[[http://www.bigcommerce.com]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -13,6 +13,9 @@
         <field>CREATED_DATE</field>
     </columns>
     <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <columns>
         <field>AGE</field>
     </columns>
     <columns>
@@ -68,6 +71,8 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>
-        <interval>INTERVAL_CURRENT</interval>
+        <endDate>2016-06-24</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-06-20</startDate>
     </timeFrameFilter>
 </Report>

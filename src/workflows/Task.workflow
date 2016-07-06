@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Demo_Request_Assigment_Notification</fullName>
+        <description>Demo Request Assignment Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>no-reply@bigcommerce.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Internal_Workflow_Communications_Sales/New_Demo_Request_Received</template>
+    </alerts>
     <fieldUpdates>
         <fullName>Change_Type_to_Reminder</fullName>
         <field>Type</field>
@@ -144,6 +155,29 @@
         </criteriaItems>
         <description>For automated Email task logs that are created as Calls</description>
         <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Demo Request Assignment Notification</fullName>
+        <actions>
+            <name>Demo_Request_Assigment_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Change_Type_to_Reminder</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Sends an email alert to the owner when a demo request has been assigned to them.</description>
+        <formula>AND( 
+Subject = &apos;**Demo Requested**&apos;, 
+OR( 
+Owner:User.Profile.Id = &apos;00e13000000jUNJ&apos;, /* Lead Development Rep */  
+Owner:User.Profile.Id = &apos;00e130000024OSc&apos;, /* Sales Rep */  
+Owner:User.Profile.Id = &apos;00e13000000jUyt&apos;, /* Sales Rep - Dial on Opps */  
+Owner:User.Profile.Id = &apos;00e130000024OSX&apos;, /* Sales Leader */  
+LEFT(Owner:User.Id,15) = &apos;0051300000BsGMP&apos;) 
+)</formula>
+        <triggerType>onCreateOnly</triggerType>
     </rules>
     <rules>
         <fullName>First of Month Date Population %3A Task</fullName>

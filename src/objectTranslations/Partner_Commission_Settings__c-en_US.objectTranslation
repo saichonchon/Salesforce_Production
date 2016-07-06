@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Partner Commission Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Partner Commission Settings</value>
+    </caseValues>
+    <fields>
+        <help><!-- If the start date is left blank on a partner commission run, this is the earliest BI Data to pull in --></help>
+        <label><!-- Earliest Possible Start Date --></label>
+        <name>Earliest_Possible_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the day of the month we should consider as the start of a new bill cycle.  If the number is greater than the number of days in the month, the first day of the following month will be used. --></help>
+        <label><!-- First Day of Bill Cycle --></label>
+        <name>First_Day_of_Bill_Cycle__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

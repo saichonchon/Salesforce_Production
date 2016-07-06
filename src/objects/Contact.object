@@ -996,6 +996,10 @@ SUBSTITUTE(SUBSTITUTE(FirstName, &quot; &quot;, &quot;+&quot;), &quot;&amp;&quot
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Campaign Import</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Datanyze Import</fullName>
                 <default>false</default>
             </picklistValues>
@@ -1013,6 +1017,10 @@ SUBSTITUTE(SUBSTITUTE(FirstName, &quot; &quot;, &quot;+&quot;), &quot;&amp;&quot
             </picklistValues>
             <picklistValues>
                 <fullName>Social Ads</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Blogs</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>

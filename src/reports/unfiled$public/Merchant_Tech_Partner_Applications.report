@@ -25,14 +25,9 @@
             <value>product</value>
         </criteriaItems>
         <criteriaItems>
-            <column>RECORDTYPE</column>
+            <column>Account.Status__c</column>
             <operator>equals</operator>
-            <value>Account.Partner_Record_Type</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>TYPE</column>
-            <operator>equals</operator>
-            <value>Prospect,Existing BC Client</value>
+            <value>Sales Qualification</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

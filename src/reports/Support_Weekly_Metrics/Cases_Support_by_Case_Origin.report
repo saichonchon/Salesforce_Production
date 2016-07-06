@@ -51,8 +51,8 @@
         </criteriaItems>
         <criteriaItems>
             <column>ORIGIN</column>
-            <operator>notEqual</operator>
-            <value>Partner Support</value>
+            <operator>notContain</operator>
+            <value>Partner Support,Pixel Union Themes</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>

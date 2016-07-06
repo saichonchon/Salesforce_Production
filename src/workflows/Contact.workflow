@@ -75,6 +75,18 @@
         <protected>false</protected>
     </flowActions>
     <rules>
+        <fullName>Demo Request Task - Contact</fullName>
+        <actions>
+            <name>Demo_Requested</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <description>When a contact is added as a campaign member for a demo request, this date is set.  Create a task for the contact owner.
+For BAP-3811</description>
+        <formula>AND(  NOT(ISBLANK(Demo_Requested_Date__c)),  OR(Owner.Profile.Id = &apos;00e13000000jUNJ&apos;, /* Lead Development Rep */     Owner.Profile.Id = &apos;00e130000024OSc&apos;, /* Sales Rep */     Owner.Profile.Id = &apos;00e13000000jUyt&apos;, /* Sales Rep - Dial on Opps */     Owner.Profile.Id = &apos;00e130000024OSX&apos;) /* Sales Leader */ )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
         <fullName>Populate Owner Phone on Contact</fullName>
         <actions>
             <name>Populate_Owner_Phone</name>
@@ -167,6 +179,17 @@
         <protected>false</protected>
         <status>Completed</status>
         <subject>App Approved Contact Email Sent</subject>
+    </tasks>
+    <tasks>
+        <fullName>Demo_Requested</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>A potential customer has requested a demo. Please reach out ASAP and close the task once it has been completed.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>**Demo Requested**</subject>
     </tasks>
     <tasks>
         <fullName>Send_App_Partner_App_Decline_Email_CONTACT</fullName>

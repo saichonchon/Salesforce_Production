@@ -94,7 +94,7 @@
         <criteriaItems>
             <column>OWNER</column>
             <operator>notContain</operator>
-            <value>Design,Tier 2,API,Escalated</value>
+            <value>Billing,Design,Tier 2,API,Escalated</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Satisfaction__c</column>
@@ -122,6 +122,6 @@
     <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>LAST_UPDATEONLY</dateColumn>
-        <interval>INTERVAL_LAST60</interval>
+        <interval>INTERVAL_LAST30</interval>
     </timeFrameFilter>
 </Report>

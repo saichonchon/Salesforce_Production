@@ -7755,6 +7755,11 @@ NULL))</formula>
                 <cssExposed>false</cssExposed>
             </picklistValues>
             <picklistValues>
+                <fullName>Payment Error</fullName>
+                <default>false</default>
+                <cssExposed>false</cssExposed>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Payment Gateway</fullName>
                 <default>false</default>
                 <cssExposed>false</cssExposed>
@@ -8075,6 +8080,11 @@ NULL))</formula>
                 <fullName>Client Services Error</fullName>
                 <default>false</default>
                 <controllingFieldValues>Credit</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Commission Rebuild</fullName>
+                <default>false</default>
+                <controllingFieldValues>Commissions</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Comparing Plans</fullName>
@@ -8622,6 +8632,7 @@ NULL))</formula>
                 <fullName>Other</fullName>
                 <default>false</default>
                 <controllingFieldValues>Account Merge</controllingFieldValues>
+                <controllingFieldValues>Payment Error</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Other Project</fullName>
@@ -10448,6 +10459,19 @@ NULL))</formula>
     </fields>
     <fields>
         <fullName>SuppliedPhone</fullName>
+    </fields>
+    <fields>
+        <fullName>Support_Case_Return_Queue__c</fullName>
+        <description>The queue that the case will return to if left in the agent&apos;s name for 4 hours. BAP-2556</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used by Client Success to specify what queue this case return to if held in an agent&apos;s name over 4 hours</inlineHelpText>
+        <label>Support Case Return Queue</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Support_Pin__c</fullName>
@@ -16312,6 +16336,10 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             </values>
             <values>
                 <fullName>Merge and Split</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment Error</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -48143,6 +48171,10 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             </values>
             <values>
                 <fullName>Client Services Error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commission Rebuild</fullName>
                 <default>false</default>
             </values>
             <values>

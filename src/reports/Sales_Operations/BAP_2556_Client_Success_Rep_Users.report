@@ -4,9 +4,6 @@
         <field>User$Name</field>
     </columns>
     <columns>
-        <field>User$Profile</field>
-    </columns>
-    <columns>
         <field>User$LastLoginDate</field>
     </columns>
     <columns>
@@ -35,6 +32,9 @@
     </columns>
     <columns>
         <field>User$Username</field>
+    </columns>
+    <columns>
+        <field>User$Manager.UserRole</field>
     </columns>
     <columns>
         <field>User$Manager.Profile</field>
@@ -71,7 +71,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>User$Manager.UserRole</field>
+        <field>User$Profile</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>BAP 2556 Client Success Rep Users</name>

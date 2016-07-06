@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Invoice Transaction</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Invoice Transactions</value>
+    </caseValues>
+    <fields>
+        <help><!-- Total amount of this payment that has been accrued for use in partner commissions. --></help>
+        <label><!-- Amount Accrued for Commissions --></label>
+        <name>Amount_Accrued_for_Commissions__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of money credited to the invoice --></help>
+        <label><!-- Amount Credited --></label>
+        <name>Amount_Credited__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount that was due on the invoice --></help>
+        <label><!-- Amount Due --></label>
+        <name>Amount_Due__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount paid (net) minus the amount accrued for commissions.  This value is used to calculate future payments to referral partners. --></help>
+        <label><!-- Amount Not Yet Accrued for Commissions --></label>
+        <name>Amount_Not_Yet_Accrued_for_Commissions__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount paid on the invoice --></help>
+        <label><!-- Amount Paid --></label>
+        <name>Amount_Paid__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount paid minus amount credited --></help>
+        <label><!-- Amount Paid (net) --></label>
+        <name>Amount_Paid_net__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of this payment refunded to the customer --></help>
+        <label><!-- Amount Refunded --></label>
+        <name>Amount_Refunded__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of the transaction divided by the term.  This represents the amount of revenue we may recognize per month based on the payment made. --></help>
+        <label><!-- CMRR --></label>
+        <name>CMRR__c</name>
+    </fields>
+    <fields>
+        <help><!-- The customer contact that made the transaction --></help>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Invoice Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The date the invoice was due --></help>
+        <label><!-- Date Due --></label>
+        <name>Date_Due__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date that the payment was made --></help>
+        <label><!-- Date Paid --></label>
+        <name>Date_Paid__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date that this payment was refunded --></help>
+        <label><!-- Date Refunded --></label>
+        <name>Date_Refunded__c</name>
+    </fields>
+    <fields>
+        <help><!-- Descriptive name of the invoice product, including the date range the payment applies to --></help>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- The invoice that this payment was made against --></help>
+        <label><!-- Invoice ID --></label>
+        <name>Invoice_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Represents a specific product on a specific invoice that the payment was against.  This is an external unique ID in the BI database. --></help>
+        <label><!-- Invoice Item ID --></label>
+        <name>Invoice_Item_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- The current status of the invoice --></help>
+        <label><!-- Invoice Status --></label>
+        <name>Invoice_Status__c</name>
+        <picklistValues>
+            <masterLabel>Paid</masterLabel>
+            <translation><!-- Paid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refunded</masterLabel>
+            <translation><!-- Refunded --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The number of times this transaction has been used to accrue partner commissions --></help>
+        <label><!-- Number of Partner Commissions --></label>
+        <name>Number_of_Partner_Commissions__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date that the partner account was taken out of the program.  After this date, incoming commissions will no longer accrue. --></help>
+        <label><!-- Partner Account - Date Inactivated --></label>
+        <name>Partner_Account_Date_Inactivated__c</name>
+    </fields>
+    <fields>
+        <help><!-- The unique external id of the store opportunity&apos;s partner account --></help>
+        <label><!-- Partner Account External ID --></label>
+        <name>Partner_Account_External_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- The ID representing the Partner Account associated with the store opportunity, where applicable --></help>
+        <label><!-- Partner Account ID --></label>
+        <name>Partner_Account_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of the reseller partner account, where applicable.  This value is provided via the RV Account field on the Store Opportunity. --></help>
+        <label><!-- Partner Account Name --></label>
+        <name>Partner_Account_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- The partner account&apos;s current bounty rate --></help>
+        <label><!-- Partner Commission % --></label>
+        <name>Partner_Commission_Percent__c</name>
+    </fields>
+    <fields>
+        <help><!-- If BI failed to pass a payment term, we assume that the term is 1 --></help>
+        <label><!-- Payment Term (Calculated) --></label>
+        <name>Payment_Term_Calculated__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of payment terms that this payment applies to.  For example, if the customer is paying for an annual plan, the term would be 12. --></help>
+        <label><!-- Payment Term --></label>
+        <name>Payment_Term__c</name>
+    </fields>
+    <fields>
+        <help><!-- The type of product for the invoice line item --></help>
+        <label><!-- Product Type --></label>
+        <name>Product_Type__c</name>
+        <picklistValues>
+            <masterLabel>Hosting</masterLabel>
+            <translation><!-- Hosting --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The store that this transaction was related to --></help>
+        <label><!-- Store Opportunity --></label>
+        <name>Store_Opportunity__c</name>
+        <relationshipLabel><!-- Invoice Transactions --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Invoice Transaction Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Invoice --></label>
+            <section>Invoice</section>
+        </sections>
+        <sections>
+            <label><!-- Payment --></label>
+            <section>Payment</section>
+        </sections>
+        <sections>
+            <label><!-- Reseller Partner --></label>
+            <section>Reseller Partner</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

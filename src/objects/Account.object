@@ -168,6 +168,10 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Campaign Import</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Datanyze Import</fullName>
                 <default>false</default>
             </picklistValues>
@@ -185,6 +189,10 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Social Ads</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Blogs</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -5613,6 +5621,10 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
                 <fullName>Existing BC Client</fullName>
                 <default>false</default>
             </picklistValues>
+            <picklistValues>
+                <fullName>Payment Partner</fullName>
+                <default>false</default>
+            </picklistValues>
             <sorted>false</sorted>
         </picklist>
         <trackFeedHistory>false</trackFeedHistory>
@@ -7788,6 +7800,14 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <label>BMP Client</label>
         <picklistValues>
             <picklist>AccountSource</picklist>
+            <values>
+                <fullName>Blogs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Campaign Import</fullName>
+                <default>false</default>
+            </values>
             <values>
                 <fullName>Datanyze Import</fullName>
                 <default>false</default>
@@ -10728,6 +10748,14 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <picklistValues>
             <picklist>AccountSource</picklist>
             <values>
+                <fullName>Blogs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Campaign Import</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>G2Crowd</fullName>
                 <default>false</default>
             </values>
@@ -13382,6 +13410,14 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <picklistValues>
             <picklist>AccountSource</picklist>
             <values>
+                <fullName>Blogs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Campaign Import</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Other</fullName>
                 <default>false</default>
             </values>
@@ -15466,6 +15502,10 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
                 <default>true</default>
             </values>
             <values>
+                <fullName>Payment Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Prospect</fullName>
                 <default>false</default>
             </values>
@@ -16036,6 +16076,14 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <label>Strategic Partner Record Type</label>
         <picklistValues>
             <picklist>AccountSource</picklist>
+            <values>
+                <fullName>Blogs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Campaign Import</fullName>
+                <default>false</default>
+            </values>
             <values>
                 <fullName>Other</fullName>
                 <default>false</default>

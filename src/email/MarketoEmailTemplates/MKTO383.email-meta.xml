@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>IRCE Event Followup.Email 1</name>
+    <style>none</style>
+    <subject>Nice meeting you at IRCE</subject>
+    <textOnly>Thanks for taking the time to attend IRCE.
+Hi {{lead.First Name:default=there}},
+Thanks for taking time to speak with our team at IRCE. We hope you had a great time.
+Our team is looking forward to giving you a personal tour of BigCommerce. We&apos;ll be in touch soon to schedule some time with you.
+Our contact information is below. Please don&apos;t hesitate to reach out if you have questions or want to schedule time now &lt;[[http://grow.bigcommerce.com/Event-Demo-Request.html?utm_campaign=Prospects.Marketing Events.2015Q4.&amp;utm_source=irce&amp;utm_medium=event&amp;utm_term=BigCommerceEnterprise&amp;utm_content=followup]]&gt;.
+
+Thanks,
+The BigCommerce Team
+ecommerceconsultant@bigcommerce.com &lt;[[mailto:ecommerceconsultant@bigcommerce.com]]&gt;   /   1-855-884-6610 &lt;[[tel:+18558846610]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

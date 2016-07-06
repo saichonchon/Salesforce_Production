@@ -320,6 +320,10 @@
             <translation><!-- No longer in business --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Not Interested</masterLabel>
+            <translation><!-- Not Interested --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Not Mature Enough/No Products/Too Small</masterLabel>
             <translation><!-- Not Mature Enough/No Products/Too Small --></translation>
         </picklistValues>
@@ -1680,6 +1684,14 @@
         <picklistValues>
             <masterLabel>Affiliate</masterLabel>
             <translation><!-- Affiliate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blogs</masterLabel>
+            <translation><!-- Blogs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Campaign Import</masterLabel>
+            <translation><!-- Campaign Import --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Datanyze Import</masterLabel>
@@ -4234,6 +4246,11 @@ Hot: came in from a good source and/or is progressing towards close --></help>
     <workflowTasks>
         <name>Bad_Phone_Number_Email_Sent</name>
         <subject><!-- Bad Phone Number Email Sent --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- A potential customer has requested a demo. Please reach out ASAP and close the task once it has been completed. --></description>
+        <name>Demo_Requested</name>
+        <subject><!-- **Demo Requested** --></subject>
     </workflowTasks>
     <workflowTasks>
         <description><!-- This lead has downloaded the Pinterest eBook and needs to be followed up on. --></description>

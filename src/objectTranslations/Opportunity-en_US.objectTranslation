@@ -569,8 +569,16 @@
             <translation><!-- Catalog Staging --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Couldn&apos;t Beat Rates</masterLabel>
+            <translation><!-- Couldn&apos;t Beat Rates --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Couponing</masterLabel>
             <translation><!-- Couponing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denied</masterLabel>
+            <translation><!-- Denied --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Didn&apos;t see the value</masterLabel>
@@ -739,6 +747,10 @@
         <picklistValues>
             <masterLabel>Not Interested</masterLabel>
             <translation><!-- Not Interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not a Good Fit for Solution</masterLabel>
+            <translation><!-- Not a Good Fit for Solution --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Not enough sales for Abandoned Cart</masterLabel>
@@ -929,6 +941,10 @@
             <translation><!-- Cancelled --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Client Not Interested</masterLabel>
+            <translation><!-- Client Not Interested --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Contract declined</masterLabel>
             <translation><!-- Contract declined --></translation>
         </picklistValues>
@@ -987,6 +1003,10 @@
         <picklistValues>
             <masterLabel>Other</masterLabel>
             <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Was Not a Solution</masterLabel>
+            <translation><!-- Partner Was Not a Solution --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Poor In-Trial Client Success Experience</masterLabel>
@@ -1109,6 +1129,10 @@
             <masterLabel>Yahoo</masterLabel>
             <translation><!-- Yahoo --></translation>
         </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ContactId --></label>
+        <name>ContactId__c</name>
     </fields>
     <fields>
         <label><!-- Contact Bad Phone Number --></label>
@@ -2898,6 +2922,14 @@
             <translation><!-- Affiliate --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Blogs</masterLabel>
+            <translation><!-- Blogs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Campaign Import</masterLabel>
+            <translation><!-- Campaign Import --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Datanyze Import</masterLabel>
             <translation><!-- Datanyze Import --></translation>
         </picklistValues>
@@ -4112,6 +4144,10 @@
         <name>Primary_Campaign_Name__c</name>
     </fields>
     <fields>
+        <label><!-- Primary Gateway --></label>
+        <name>Primary_Gateway__c</name>
+    </fields>
+    <fields>
         <label><!-- Product ID --></label>
         <name>ProductID__c</name>
     </fields>
@@ -4463,6 +4499,10 @@
             <translation><!-- Qualify --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Referred</masterLabel>
+            <translation><!-- Referred --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Rejected</masterLabel>
             <translation><!-- Rejected --></translation>
         </picklistValues>
@@ -4499,8 +4539,16 @@
             <translation><!-- Trial Expired --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Underwriting</masterLabel>
+            <translation><!-- Underwriting --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Validate</masterLabel>
             <translation><!-- Validate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting on Statements</masterLabel>
+            <translation><!-- Waiting on Statements --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Waiting on payment</masterLabel>
@@ -4667,6 +4715,10 @@
             <masterLabel>Store</masterLabel>
             <translation><!-- Store --></translation>
         </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subscription ID --></label>
+        <name>Subscription_ID__c</name>
     </fields>
     <fields>
         <label><!-- Opp Subscription Terms (months) --></label>
@@ -5309,6 +5361,21 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         </sections>
     </layouts>
     <layouts>
+        <layout>SBD Upsell</layout>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Notes --></label>
+            <section>Sales Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Store Information --></label>
+            <section>Store Information</section>
+        </sections>
+    </layouts>
+    <layouts>
         <layout>Sales Marketing Store Purchase</layout>
         <sections>
             <label><!-- Account Management --></label>
@@ -5698,6 +5765,10 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         <name>Professional_Services</name>
     </recordTypes>
     <recordTypes>
+        <label><!-- SBD Upsell --></label>
+        <name>SBD_Upsell</name>
+    </recordTypes>
+    <recordTypes>
         <label><!-- Store Purchase --></label>
         <name>Store_Purchase</name>
     </recordTypes>
@@ -5862,6 +5933,10 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         <name>Merge_Opportunity</name>
     </webLinks>
     <webLinks>
+        <label><!-- Payment_Error_Case --></label>
+        <name>Payment_Error_Case</name>
+    </webLinks>
+    <webLinks>
         <label><!-- Platinum --></label>
         <name>Platinum</name>
     </webLinks>
@@ -5985,6 +6060,11 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         <label><!-- QuoteNew --></label>
         <name>zqu__QuoteNew</name>
     </webLinks>
+    <workflowTasks>
+        <description><!-- A potential customer has requested a demo. Please reach out ASAP and close the task once it has been completed. --></description>
+        <name>Demo_Requested</name>
+        <subject><!-- **Demo Requested** --></subject>
+    </workflowTasks>
     <workflowTasks>
         <description><!-- Grow bundle email fired --></description>
         <name>WFR_Fired</name>

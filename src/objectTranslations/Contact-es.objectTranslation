@@ -200,6 +200,14 @@
             <translation><!-- Affiliate --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Blogs</masterLabel>
+            <translation><!-- Blogs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Campaign Import</masterLabel>
+            <translation><!-- Campaign Import --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Datanyze Import</masterLabel>
             <translation><!-- Datanyze Import --></translation>
         </picklistValues>
@@ -1124,6 +1132,11 @@
     <workflowTasks>
         <name>App_Approved_Contact_Email_Sent</name>
         <subject><!-- App Approved Contact Email Sent --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- A potential customer has requested a demo. Please reach out ASAP and close the task once it has been completed. --></description>
+        <name>Demo_Requested</name>
+        <subject><!-- **Demo Requested** --></subject>
     </workflowTasks>
     <workflowTasks>
         <name>Send_App_Partner_App_Decline_Email_CONTACT</name>

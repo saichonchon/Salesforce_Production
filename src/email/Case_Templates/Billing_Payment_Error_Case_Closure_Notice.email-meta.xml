@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Billing : Payment Error Case Closure Notice</name>
+    <style>none</style>
+    <subject>** Payment Error Case Closure Notification **  Account: {!Case.Account}</subject>
+    <type>text</type>
+</EmailTemplate>

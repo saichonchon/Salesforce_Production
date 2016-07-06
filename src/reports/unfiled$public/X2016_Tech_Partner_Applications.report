@@ -1,5 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_8081467</developerName>
+        <masterLabel>Application / Account Status</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Account.Status__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>New</sourceValue>
+            </sourceValues>
+            <value>New</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Pending</sourceValue>
+            </sourceValues>
+            <value>Pending</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Sales Qualification</sourceValue>
+            </sourceValues>
+            <value>Sales Qualification</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Active</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Onboarding</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Account</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Open</sourceValue>
+            </sourceValues>
+            <value>Approved</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Terminated</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Declined</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Inactive</sourceValue>
+            </sourceValues>
+            <value>Declined</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_8081467</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
     <columns>
         <field>Account.Partner_Approved_Date__c</field>
     </columns>
@@ -9,11 +89,16 @@
             <operator>contains</operator>
             <value>product</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Account.Partner_Record_Type</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Account.Status__c</field>
+        <field>BucketField_8081467</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
@@ -21,7 +106,7 @@
         <field>ACCOUNT.NAME</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>2016 Tech Partner Applications</name>
+    <name>2016 Tech Partner Program Applicants</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -31,6 +116,8 @@
     <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>
-        <interval>INTERVAL_CURFY</interval>
+        <endDate>2016-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-01-01</startDate>
     </timeFrameFilter>
 </Report>

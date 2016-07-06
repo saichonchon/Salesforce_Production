@@ -524,8 +524,8 @@
         <fields>CONTACT.EMAIL</fields>
         <fields>CONTACT.PHONE1</fields>
         <fields>Primary_MBA_Contact__c</fields>
-        <fields>CORE.USERS.LAST_NAME</fields>
         <fields>CONTACT.CREATED_DATE</fields>
+        <fields>No_longer_with_the_company__c</fields>
         <relatedList>RelatedContactList</relatedList>
     </relatedLists>
     <relatedLists>

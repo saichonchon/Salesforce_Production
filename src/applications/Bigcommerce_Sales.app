@@ -14,8 +14,8 @@
     <tab>standard-Dashboard</tab>
     <tab>standard-Case</tab>
     <tab>standard-Campaign</tab>
-    <tab>Admin_Request__c</tab>
     <tab>standard-Knowledge</tab>
     <tab>PKB_Article_Feedback_Deflection__c</tab>
     <tab>Call_Center_Settings</tab>
+    <tab>standard-JigsawSearch</tab>
 </CustomApplication>

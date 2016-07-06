@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Partner Commission Summary History</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Partner Commission Summary Histories</value>
+    </caseValues>
+    <fields>
+        <help><!-- The total number of active reseller partners for closed Partner Commission Summaries --></help>
+        <label><!-- Active Partners - Closed --></label>
+        <name>Active_Partners_Closed__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of active reseller partners for open Partner Commission Summaries --></help>
+        <label><!-- Active Partners - Open --></label>
+        <name>Active_Partners_Open__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of active reseller partners for Partner Commission Summaries --></help>
+        <label><!-- Active Partners --></label>
+        <name>Active_Partners__c</name>
+    </fields>
+    <fields>
+        <help><!-- The net amount owed to partners --></help>
+        <label><!-- Balance --></label>
+        <name>Balance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total commission earned for open Partner Commission Summaries --></help>
+        <label><!-- Commission Earned - Closed --></label>
+        <name>Commission_Earned_Closed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total commission earned for open Partner Commission Summaries --></help>
+        <label><!-- Commission Earned - Open --></label>
+        <name>Commission_Earned_Open__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total commission earned for open Partner Commission Summaries --></help>
+        <label><!-- Commission Earned --></label>
+        <name>Commission_Earned__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total transaction value that can be used for calculating commissions in closed Partner Commission Summaries --></help>
+        <label><!-- Commissionable Revenue - Closed --></label>
+        <name>Commissionable_Revenue_Closed__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total transaction value that can be used for calculating commissions in open Partner Commission Summaries --></help>
+        <label><!-- Commissionable Revenue - Open --></label>
+        <name>Commissionable_Revenue_Open__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total transaction value that can be used for calculating commissions in closed Partner Commission Summaries --></help>
+        <label><!-- Commissionable Revenue --></label>
+        <name>Commissionable_Revenue__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of commissionable transactions for closed Partner Commission Summaries --></help>
+        <label><!-- Commissionable Transactions - Closed --></label>
+        <name>Commissionable_Transactions_Closed__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of commissionable transactions for open Partner Commission Summaries --></help>
+        <label><!-- Commissionable Transactions - Open --></label>
+        <name>Commissionable_Transactions_Open__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of commissionable transactions for Partner Commission Summaries --></help>
+        <label><!-- Commissionable Transactions --></label>
+        <name>Commissionable_Transactions__c</name>
+    </fields>
+    <fields>
+        <help><!-- The earliest start date for closed Partner Commissions --></help>
+        <label><!-- Earliest Start Date - Closed --></label>
+        <name>Earliest_Start_Date_Closed__c</name>
+    </fields>
+    <fields>
+        <help><!-- The earliest start date for open Partner Commissions --></help>
+        <label><!-- Earliest Start Date - Open --></label>
+        <name>Earliest_Start_Date_Open__c</name>
+    </fields>
+    <fields>
+        <help><!-- The earliest start date for Partner Commissions --></help>
+        <label><!-- Earliest Start Date --></label>
+        <name>Earliest_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unique key to ensure that only one record is created per day --></help>
+        <label><!-- Key --></label>
+        <name>Key__c</name>
+    </fields>
+    <fields>
+        <help><!-- The latest end date for closed Partner Commission Summaries --></help>
+        <label><!-- Latest End Date - Closed --></label>
+        <name>Latest_End_Date_Closed__c</name>
+    </fields>
+    <fields>
+        <help><!-- The latest end date for open Partner Commission Summaries --></help>
+        <label><!-- Latest End Date - Open --></label>
+        <name>Latest_End_Date_Open__c</name>
+    </fields>
+    <fields>
+        <help><!-- The latest end date for Partner Commission Summaries --></help>
+        <label><!-- Latest End Date --></label>
+        <name>Latest_End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of partners that have been paid to date --></help>
+        <label><!-- Partners Paid --></label>
+        <name>Partners_Paid__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total amount paid out to partners --></help>
+        <label><!-- Payment Amount --></label>
+        <name>Payment_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of payments made to our partners --></help>
+        <label><!-- Payments --></label>
+        <name>Payments__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of closed Partner Commission Summary records --></help>
+        <label><!-- Summary Count - Closed --></label>
+        <name>Summary_Count_Closed__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of open Partner Commission Summary records --></help>
+        <label><!-- Summary Count - Open --></label>
+        <name>Summary_Count_Open__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of Partner Commission Summary records --></help>
+        <label><!-- Summary Count --></label>
+        <name>Summary_Count__c</name>
+    </fields>
+    <layouts>
+        <layout>Partner Commission Metric Layout</layout>
+        <sections>
+            <label><!-- Closed Partner Commission Summaries --></label>
+            <section>Closed Partner Commission Summaries</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Open Partner Commission Summaries --></label>
+            <section>Open Partner Commission Summaries</section>
+        </sections>
+        <sections>
+            <label><!-- Payments --></label>
+            <section>Payments</section>
+        </sections>
+        <sections>
+            <label><!-- Totals --></label>
+            <section>Totals</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

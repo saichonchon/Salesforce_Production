@@ -1294,14 +1294,9 @@ IF(Tenured_Months__c &gt;=4, 1,0)
         <columns>CORE.PROFILE.USERTYPE</columns>
         <filterScope>Everything</filterScope>
         <filters>
-            <field>FULL_NAME</field>
-            <operation>contains</operation>
-            <value>meredith</value>
-        </filters>
-        <filters>
             <field>CORE.PROFILE.NAME</field>
-            <operation>notContain</operation>
-            <value>community</value>
+            <operation>contains</operation>
+            <value>standard platform</value>
         </filters>
         <label>ADMIN: Look for user</label>
         <sharedTo>

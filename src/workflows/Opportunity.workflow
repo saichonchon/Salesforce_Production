@@ -785,6 +785,18 @@
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
+        <fullName>Demo Request Task - Opportunity</fullName>
+        <actions>
+            <name>Demo_Requested</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <description>When a contact is added as a campaign member for a demo request, this date is set. Create a task for the contact owner. 
+For BAP-3811</description>
+        <formula>AND(  NOT(ISBLANK(Demo_Requested_Date__c)),  OR(Owner.Profile.Id = &apos;00e13000000jUNJ&apos;, /* Lead Development Rep */  Owner.Profile.Id = &apos;00e130000024OSc&apos;, /* Sales Rep */  Owner.Profile.Id = &apos;00e13000000jUyt&apos;, /* Sales Rep - Dial on Opps */  Owner.Profile.Id = &apos;00e130000024OSX&apos;) /* Sales Leader */ )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
         <fullName>Enterprise%3A Opportunity Closed Notification</fullName>
         <actions>
             <name>Enterprise_Sales_Closed_Opp_Notification</name>
@@ -1306,6 +1318,17 @@ ispickval( App_Revshare__c , &quot;Signed&quot;)</formula>
         <formula>RecordTypeId  = &quot;01213000000AVUj&quot;</formula>
         <triggerType>onCreateOnly</triggerType>
     </rules>
+    <tasks>
+        <fullName>Demo_Requested</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>A potential customer has requested a demo. Please reach out ASAP and close the task once it has been completed.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>**Demo Requested**</subject>
+    </tasks>
     <tasks>
         <fullName>WFR_Fired</fullName>
         <assignedTo>maria.huemmer@bigcommerce.com</assignedTo>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Partner Commission Payment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Partner Commission Payments</value>
+    </caseValues>
+    <fields>
+        <help><!-- Notes for the transaction --></help>
+        <label><!-- Custom Note --></label>
+        <name>Custom_Note__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description of the payment --></help>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Fees associated with the transaction --></help>
+        <label><!-- Fee --></label>
+        <name>Fee__c</name>
+    </fields>
+    <fields>
+        <help><!-- Message attached to the transaction --></help>
+        <label><!-- Message --></label>
+        <name>Message__c</name>
+    </fields>
+    <fields>
+        <help><!-- The partner (RV Account) that this payment was issued to --></help>
+        <label><!-- Partner Account --></label>
+        <name>Partner_Account__c</name>
+        <relationshipLabel><!-- Partner Commission Payments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The amount paid to the partner --></help>
+        <label><!-- Amount --></label>
+        <name>Payment_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date that the payment was issued to the partner --></help>
+        <label><!-- Payment Date --></label>
+        <name>Payment_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The method of payment to the partner --></help>
+        <label><!-- Payment Method --></label>
+        <name>Payment_Method__c</name>
+        <picklistValues>
+            <masterLabel>PayPal</masterLabel>
+            <translation><!-- PayPal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Reason code returned from the bank --></help>
+        <label><!-- Reason Code --></label>
+        <name>Reason_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- The email of the recipient at the time of the payment.  May not necessarily match the RV Account&apos;s paypal Id if it has changed over time. --></help>
+        <label><!-- Recipient --></label>
+        <name>Recipient__c</name>
+    </fields>
+    <fields>
+        <help><!-- The status of the payment - only &quot;Completed&quot; means that the monies were received --></help>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- The external transaction ID for the payment --></help>
+        <label><!-- Transaction ID --></label>
+        <name>Transaction_ID__c</name>
+    </fields>
+    <layouts>
+        <layout>Partner Commission Payment Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

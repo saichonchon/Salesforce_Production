@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Roles up all customer payments to a reselling partner and calculates the earned commission</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Commissionable_Revenue__c</fullName>
+        <description>For BAP-3698 - Partner Commission v2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Net transactions that can be used to pay out commissions</inlineHelpText>
+        <label>Commissionable Revenue</label>
+        <summarizedField>Partner_Commission_Invoice_Transaction__c.Accrued_Transaction_Amount__c</summarizedField>
+        <summaryForeignKey>Partner_Commission_Invoice_Transaction__c.Partner_Commission_Summary__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The latest payment date that can be used to collect payment data for this partner</inlineHelpText>
+        <label>End Date</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Invoice_Transactions__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The total count of invoice transactions associated with this summary</inlineHelpText>
+        <label>Number of Invoice Transactions</label>
+        <summaryForeignKey>Partner_Commission_Invoice_Transaction__c.Partner_Commission_Summary__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Partner_Account_External_ID__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <formula>Partner_Account__r.rvpe__ExtAccountId__c</formula>
+        <inlineHelpText>The unique external id of the partner account</inlineHelpText>
+        <label>Partner Account External ID</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partner_Account__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Partner Account (RV Account) that this Partner Commission is tied to.</inlineHelpText>
+        <label>Partner Account</label>
+        <referenceTo>rvpe__RVAccount__c</referenceTo>
+        <relationshipLabel>Partner Commission Summaries</relationshipLabel>
+        <relationshipName>Partner_Commission_Summaries</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Partner_Commission_Earned__c</fullName>
+        <description>For BAP-3698 - Partner Commission v2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total commissions earned in this summary</inlineHelpText>
+        <label>Partner Commission Earned</label>
+        <summarizedField>Partner_Commission_Invoice_Transaction__c.Partner_Commission_Earned__c</summarizedField>
+        <summaryForeignKey>Partner_Commission_Invoice_Transaction__c.Partner_Commission_Summary__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Partner_Commission_Summary_Dedupe_Key__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <externalId>true</externalId>
+        <inlineHelpText>A unique key that prevents duplicate summaries for the same scope and partner to be created</inlineHelpText>
+        <label>Partner Commission Summary Dedupe Key</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The earliest customer payment date to include when calculating this partner&apos;s commissions</inlineHelpText>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <label>Partner Commission Summary</label>
+    <nameField>
+        <displayFormat>PC-{00000}</displayFormat>
+        <label>Partner Commission Summary Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Partner Commission Summaries</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Closed</fullName>
+        <active>true</active>
+        <description>For partner commissions that have been marked as being paid</description>
+        <label>Closed</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Open</fullName>
+        <active>true</active>
+        <description>This partner commission summary has not yet been closed out</description>
+        <label>Open</label>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

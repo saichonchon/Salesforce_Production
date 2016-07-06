@@ -3,6 +3,7 @@ private  class CaseOwnerUpdateTest {
 	
 	static testMethod void testCaseOwnerUpdate() 
     {
+		Test.startTest();
 		Id idCSCaseRecordType =  Case.getSObjectType().getDescribe().getRecordTypeInfosByName().get('Client Success').getRecordTypeId();
   
 		TestDataGenerator td = new TestDataGenerator();
@@ -22,14 +23,14 @@ private  class CaseOwnerUpdateTest {
 			caseOwnerQueue.put(s.ChangeOwner_Value__c, s.Queue_Name__c);
 		}
 			 
-		Test.startTest();
 		
 		for (String sname :caseOwnerQueue.KeySet())
 		{
 			c.Change_Owner__c = sname;
-			update c;
-			
 		}
+		update c;
+
+		Test.stopTest();
 		
     }
 }

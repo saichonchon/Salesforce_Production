@@ -411,6 +411,10 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Promotion</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Public Relations</fullName>
                 <default>false</default>
             </picklistValues>
@@ -436,6 +440,10 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Webinar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Workshop</fullName>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>

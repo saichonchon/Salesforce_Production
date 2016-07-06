@@ -13,8 +13,8 @@
       <ol class="breadcrumb">
          <li><a href="{!pkbCon.currentSiteUrl}">BigCommerce Support</a></li>
          <li><a href="{!pkbCon.currentSiteUrl}/guides">Guides</a></li>
-         <li class="active active-label">{!Learning__kav.Nav_Title__c}</li>
          <li class="active article-label"></li>
+         <li class="active active-label">{!Learning__kav.Nav_Title__c}</li>
       </ol>
       <div class="content">
         <div class="guide-title">

@@ -68,6 +68,18 @@
         <fullName>Country</fullName>
     </fields>
     <fields>
+        <fullName>Demo_Request__c</fullName>
+        <description>For BAP-3811 - Create Trigger for updating Demo Requested Date field</description>
+        <externalId>false</externalId>
+        <formula>OR(
+CONTAINS(UPPER(Campaign.Name), &apos;DEMO REQUEST&apos;),  /* The campaign name has the words demo request in it */
+ISPICKVAL(Status,&apos;Demo Requested&apos;) /* The Status is demo requested */
+)</formula>
+        <inlineHelpText>Calculates if the campaign member is part of a demo request campaign</inlineHelpText>
+        <label>Demo Request?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Description</fullName>
     </fields>
     <fields>
@@ -132,6 +144,10 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Campaign Import</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Datanyze Import</fullName>
                 <default>false</default>
             </picklistValues>
@@ -149,6 +165,10 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Social Ads</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Blogs</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>

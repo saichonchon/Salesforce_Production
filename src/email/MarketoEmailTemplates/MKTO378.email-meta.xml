@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PayPal Commerce Beta Invite.Email 1</name>
+    <style>none</style>
+    <subject>Invitation to join our PayPal Commerce Beta</subject>
+    <textOnly>We would like to invite you to beta test our new integration with PayPal Commerce.
+
+
+Hi {{lead.First Name:default=there}},
+
+
+I’m the Director of Product Marketing at BigCommerce, and I’d like to personally invite you to beta test our new integration with PayPal Commerce.
+
+PayPal Commerce’s vision is a seamless and secure way to sell wherever your products are seen—email, social shares, blogs, articles, ads, in-page, in-app and anywhere consumers go online or on their mobile devices—all without changing the way you manage your business.
+
+With PayPal Commerce you can:
+
+
+
+ - Embed buy buttons into blogs, articles, and more to offer a checkout experience beyond the boundaries of your storefront
+ - Drop buy buttons right into emails—reduce friction and the potential for cart abandonment
+ - Seamless sync your inventory and conduct business as usual no matter where you sell
+
+
+PayPal Commerce will be available to all BigCommerce stores at no additional cost later this quarter, and your input will be key in shaping the final product.
+
+If you’d like to participate in this beta, all you have to do is reply back to this email, and Azita Habibi, from the PayPal Commerce team, will be in touch with you shortly to schedule an overview of the solution and share details of how you can proceed with the beta.
+Thank You, 
+Michael Chorazak
+ Director of Product Marketing, BigCommerce
+ michael.chorazak@bigcommerce.com &lt;[[mailto:Michael.Chorazak@bigcommerce.com]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

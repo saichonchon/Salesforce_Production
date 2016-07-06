@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>EAT-1510 Closure Notification</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>EAT-1510 Email</name>
+    <style>freeForm</style>
+    <subject>Case Number: {!Case.CaseNumber} Subject: {!Case.Subject}</subject>
+    <textOnly>*****************************************************************
+Case Number: {!Case.CaseNumber}
+Issue Reported: {!Case.Description}
+
+Hello,
+
+Your patience has been truly appreciated. Recently, you lost access to to single click apps. The root cause has been resolved.
+
+Please visit http://status.bigcommerce.com/incidents/x3sc1wfkhk5v for more information if you are still having trouble.
+
+We apologize for the inconvenience caused. Please don&apos;t hesitate to contact us if you have further questions. Technical support is available 24/7:
+
+BigCommerce Support
+http://support.bigcommerce.com/contact
+
+You can reply to this email or to view your case&apos;s status you can go here.
+
+Please do not remove: {!Case.E2CP__Case_Thread_Id__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

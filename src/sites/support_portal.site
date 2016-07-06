@@ -36,6 +36,36 @@
     <siteRedirectMappings>
         <action>Permanent</action>
         <isActive>true</isActive>
+        <source>/articles/Learning/Advanced-SEO-on-BigCommerce/</source>
+        <target>/articles/Learning/Advanced-SEO-on-Bigcommerce/</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
+        <source>/articles/Learning/BigCommerce-Analytics-Glossary-of-Terms</source>
+        <target>/articles/Learning/Bigcommerce-Analytics-Glossary-of-Terms</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
+        <source>/articles/Learning/BigCommerce-Analytics-vs-Google-Analytics</source>
+        <target>/articles/Learning/Bigcommerce-Analytics-vs-Google-Analytics</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
+        <source>/articles/Learning/BigCommerce-SEO-Success-Essentials/</source>
+        <target>/articles/Learning/Bigcommerce-SEO-Success-Essentials/</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
+        <source>/articles/Learning/Sales-Tax-Report-Guide-to-BigCommerce-Analytics</source>
+        <target>/articles/Learning/Sales-Tax-Report-Guide-to-Bigcommerce-Analytics</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
         <source>/articles/Public/Adding-Funds-to-Your-Endicia-Postage-Account</source>
         <target>/articles/Public/Shipping-Labels</target>
     </siteRedirectMappings>
@@ -72,8 +102,26 @@
     <siteRedirectMappings>
         <action>Permanent</action>
         <isActive>true</isActive>
+        <source>/articles/Public/BigCommerce-Analytics-Abandoned-Cart-Recovery-Report</source>
+        <target>/articles/Public/Bigcommerce-Analytics-Abandoned-Cart-Recovery-Report</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
+        <source>/articles/Public/BigCommerce-Analytics-In-Store-Search-Report</source>
+        <target>/articles/Public/Bigcommerce-Analytics-In-Store-Search-Report</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
         <source>/articles/Public/Changing-the-Default-Product-Sort-Order-on-Free-Bigcommerce-Themes</source>
         <target>/articles/Public/Changing-the-Default-Product-Sort-Order</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
+        <source>/articles/Public/Customizing-the-BigCommerce-Mobile-Theme</source>
+        <target>/articles/Public/Customizing-the-Bigcommerce-Mobile-Theme</target>
     </siteRedirectMappings>
     <siteRedirectMappings>
         <action>Permanent</action>
@@ -104,6 +152,12 @@
         <isActive>true</isActive>
         <source>/articles/Public/How-do-I-Access-and-Modify-my-Template-Files</source>
         <target>/articles/Public/Accessing-and-Customizing-Template-Files</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
+        <source>/articles/Public/How-do-I-access-and-install-the-new-single-click-apps-within-my-BigCommerce-store-control-panel</source>
+        <target>/articles/Public/How-do-I-access-and-install-the-new-single-click-apps-within-my-Bigcommerce-store-control-panel</target>
     </siteRedirectMappings>
     <siteRedirectMappings>
         <action>Permanent</action>
@@ -252,6 +306,12 @@
     <siteRedirectMappings>
         <action>Permanent</action>
         <isActive>true</isActive>
+        <source>/articles/Public/How-do-I-use-ShipWorks-with-my-BigCommerce-store/</source>
+        <target>/articles/Public/How-do-I-use-ShipWorks-with-my-Bigcommerce-store/</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
         <source>/articles/Public/How-do-I-view-my-Products</source>
         <target>/articles/Public/Products-Overview</target>
     </siteRedirectMappings>
@@ -294,6 +354,18 @@
     <siteRedirectMappings>
         <action>Permanent</action>
         <isActive>true</isActive>
+        <source>/articles/Public/Managing-Domains-Registered-through-BigCommerce</source>
+        <target>/articles/Public/Managing-Domains-Registered-through-Bigcommerce</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
+        <source>/articles/Public/New-BigCommerce-Analytics</source>
+        <target>/articles/Public/New-Bigcommerce-Analytics</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
         <source>/articles/Public/Order-Statuses</source>
         <target>/articles/Public/Understanding-Order-Statuses</target>
     </siteRedirectMappings>
@@ -308,6 +380,12 @@
         <isActive>true</isActive>
         <source>/articles/Public/Product-Option-Display-Styles/</source>
         <target>/articles/Public/Adding-Product-Options</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
+        <source>/articles/Public/Purchasing-a-Domain-from-BigCommerce</source>
+        <target>/articles/Public/Purchasing-a-Domain-from-Bigcommerce</target>
     </siteRedirectMappings>
     <siteRedirectMappings>
         <action>Permanent</action>
@@ -414,6 +492,12 @@
     <siteRedirectMappings>
         <action>Permanent</action>
         <isActive>true</isActive>
+        <source>/articles/Public/Starting-a-BigCommerce-Trial</source>
+        <target>/articles/Public/Starting-a-Bigcommerce-Trial</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
         <source>/articles/Public/Store-Launch-Guide</source>
         <target>/articles/Learning/Store-Launch-Guide</target>
     </siteRedirectMappings>
@@ -444,8 +528,26 @@
     <siteRedirectMappings>
         <action>Permanent</action>
         <isActive>true</isActive>
+        <source>/articles/Public/The-BigCommerce-Account-Dashboard</source>
+        <target>/articles/Public/The-Bigcommerce-Account-Dashboard</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
+        <source>/articles/Public/The-BigCommerce-Themes-Marketplace</source>
+        <target>/articles/Public/The-Bigcommerce-Themes-Marketplace</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
         <source>/articles/Public/Users</source>
         <target>/articles/Public/Users-Overview</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
+        <source>/articles/Public/Using-the-BigCommerce-Mobile-Theme</source>
+        <target>/articles/Public/Using-the-Bigcommerce-Mobile-Theme</target>
     </siteRedirectMappings>
     <siteRedirectMappings>
         <action>Permanent</action>
@@ -890,6 +992,12 @@
         <isActive>true</isActive>
         <source>/articles/University/What-Are-Google-Adwords-Video</source>
         <target>/articles/Univeristy/Google-Adwords-Basics-Video</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
+        <source>/articles/en_US/Public/Managing-your-eBay-listings-on-BigCommerce</source>
+        <target>/articles/Public/Managing-your-eBay-listings-on-Bigcommerce</target>
     </siteRedirectMappings>
     <siteRedirectMappings>
         <action>Permanent</action>

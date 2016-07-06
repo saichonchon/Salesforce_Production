@@ -137,6 +137,11 @@
             <operator>notContain</operator>
             <value>Manager,Design,Tier 2,API,Escalated,Garrett Cluff</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Case.Satisfaction__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>

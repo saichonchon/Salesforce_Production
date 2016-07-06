@@ -676,6 +676,10 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Accidental Trial/No ecomm</fullName>
                 <default>false</default>
             </picklistValues>
@@ -2761,6 +2765,10 @@ Have a developer check implications before removing</description>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Campaign Import</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Datanyze Import</fullName>
                 <default>false</default>
             </picklistValues>
@@ -2778,6 +2786,10 @@ Have a developer check implications before removing</description>
             </picklistValues>
             <picklistValues>
                 <fullName>Social Ads</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Blogs</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -2949,6 +2961,7 @@ Have a developer check implications before removing</description>
                 <fullName>Adam Seabrooke</fullName>
                 <default>false</default>
                 <controllingFieldValues>ACQ List Upload</controllingFieldValues>
+                <controllingFieldValues>Campaign Import</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Admarketplace</fullName>
@@ -3004,6 +3017,7 @@ Have a developer check implications before removing</description>
                 <fullName>Datanyze</fullName>
                 <default>false</default>
                 <controllingFieldValues>ACQ List Upload</controllingFieldValues>
+                <controllingFieldValues>Campaign Import</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Demandbase</fullName>
@@ -3029,6 +3043,7 @@ Have a developer check implications before removing</description>
                 <fullName>Event</fullName>
                 <default>false</default>
                 <controllingFieldValues>ACQ List Upload</controllingFieldValues>
+                <controllingFieldValues>Campaign Import</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Facebook</fullName>
@@ -3077,6 +3092,7 @@ Have a developer check implications before removing</description>
                 <fullName>Internet Retailer</fullName>
                 <default>false</default>
                 <controllingFieldValues>ACQ List Upload</controllingFieldValues>
+                <controllingFieldValues>Campaign Import</controllingFieldValues>
                 <controllingFieldValues>Display</controllingFieldValues>
                 <controllingFieldValues>Email Advertising</controllingFieldValues>
                 <controllingFieldValues>Print Ads</controllingFieldValues>
@@ -3112,6 +3128,7 @@ Have a developer check implications before removing</description>
                 <fullName>Netline</fullName>
                 <default>false</default>
                 <controllingFieldValues>ACQ List Upload</controllingFieldValues>
+                <controllingFieldValues>Campaign Import</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Partner</fullName>
@@ -8028,6 +8045,10 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Not Mature Enough%2FNo Products%2FToo Small</fullName>
                 <default>false</default>
             </values>
@@ -8936,6 +8957,14 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
             <values>
                 <fullName>Affiliate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blogs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Campaign Import</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -10373,6 +10402,10 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Not Mature Enough%2FNo Products%2FToo Small</fullName>
                 <default>false</default>
             </values>
@@ -11077,6 +11110,14 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
             <values>
                 <fullName>Affiliate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blogs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Campaign Import</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -12391,6 +12432,7 @@ ISPICKVAL(Closed_Lost_Reason__c, &quot;No Longer in Business&quot;) ||
 ISPICKVAL(Closed_Lost_Reason__c, &quot;Duplicate Record&quot;) || 
 ISPICKVAL(Closed_Lost_Reason__c, &quot;Trial Expired&quot;) || 
 ISPICKVAL(Closed_Lost_Reason__c, &quot;Auto Closed Lost&quot;) || 
+ISPICKVAL(Closed_Lost_Reason__c, &quot;Not Interested&quot;) || 
 ISPICKVAL(Closed_Lost_Reason__c, &quot;Data Cleanup&quot;)
 ),  
 ISBLANK(TEXT( Functionality_Detail__c ))=TRUE, 

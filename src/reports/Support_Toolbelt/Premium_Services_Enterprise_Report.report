@@ -10,16 +10,28 @@
         <field>ACCOUNT_NAME</field>
     </columns>
     <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Launch_Date__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Launch_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Account_Age__c</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
         <field>Account.SSC__c</field>
     </columns>
     <columns>
+        <field>Account.Active_Stores_Opp__c</field>
+    </columns>
+    <columns>
         <field>Opportunity.StoreURL__c</field>
-    </columns>
-    <columns>
-        <field>Opportunity.Trailing_Order_Count__c</field>
-    </columns>
-    <columns>
-        <field>Opportunity.TrailingGMVCount__c</field>
     </columns>
     <columns>
         <field>Opportunity.Agency__c</field>
@@ -31,7 +43,7 @@
         <field>Opportunity.Product__c</field>
     </columns>
     <columns>
-        <field>Opportunity.Premium_Services__c</field>
+        <field>Opportunity.Enterprise_Tier__c</field>
     </columns>
     <columns>
         <field>Opportunity.Account_Management_Services__c</field>
@@ -43,13 +55,40 @@
         <field>Opportunity.Existing_contract__c</field>
     </columns>
     <columns>
+        <field>Opportunity.Contract_Sent_Date__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Contract_Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Contract_End_Date__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Premium_Services__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.BC_Insiders_List__c</field>
+    </columns>
+    <columns>
         <field>Opportunity.MBASubscriptionID__c</field>
     </columns>
     <columns>
         <field>Account.Active_MRR_Value_Opp__c</field>
     </columns>
     <columns>
+        <field>Opportunity.MonthlyRecurringRevenue__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.MRR_Change__c</field>
+    </columns>
+    <columns>
         <field>EXP_AMOUNT</field>
+    </columns>
+    <columns>
+        <field>Opportunity.TrailingGMVCount__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Trailing_Order_Count__c</field>
     </columns>
     <columns>
         <field>Opportunity.BillingAmount__c</field>
@@ -59,6 +98,24 @@
     </columns>
     <columns>
         <field>Opportunity.Status__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.BillingCycle__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Payment_Method__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Payment_Terms__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.PaymentStatus__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Billing_Terms__c</field>
+    </columns>
+    <columns>
+        <field>HASOPPLINEITEM</field>
     </columns>
     <columns>
         <field>Opportunity.Temperature__c</field>
@@ -94,6 +151,24 @@
         <field>Opportunity.Contact_Phone__c</field>
     </columns>
     <columns>
+        <field>DO_NOT_CALL</field>
+    </columns>
+    <columns>
+        <field>CON.EMAIL_OPT_OUT</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_COUNTRY</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_STATE</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_CITY</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_ZIP</field>
+    </columns>
+    <columns>
         <field>Account.Twitter__c</field>
     </columns>
     <columns>
@@ -103,13 +178,16 @@
         <field>Opportunity.LinkedIn_URL__c</field>
     </columns>
     <columns>
-        <field>Opportunity.BillingCycle__c</field>
-    </columns>
-    <columns>
         <field>Opportunity.totango__TotangoActive_users_last_14_days__c</field>
     </columns>
     <columns>
         <field>Opportunity.totango__TotangoEngagement__c</field>
+    </columns>
+    <columns>
+        <field>LAST_ACTIVITY</field>
+    </columns>
+    <columns>
+        <field>Opportunity.BI_Data__c</field>
     </columns>
     <columns>
         <field>Opportunity.totango__TotangoEngagementChange__c</field>
@@ -138,32 +216,32 @@
     <columns>
         <field>FULL_NAME</field>
     </columns>
+    <columns>
+        <field>ACCOUNT_OWNER</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Onboarding_Specialist__c</field>
+    </columns>
     <filter>
-        <booleanFilter>(((((1 AND 2)) AND 3)) AND 4) AND 5</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
             <operator>equals</operator>
             <value>Opportunity.Store_Purchase</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity.Product__c</column>
-            <operator>contains</operator>
-            <value>Enterprise</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity.Status__c</column>
+            <column>Opportunity.Account_Management_Services__c</column>
             <operator>equals</operator>
-            <value>Active,Suspended</value>
+            <value>Enterprise Account Management,Premium Account Services</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity.Product__c</column>
+            <column>STAGE_NAME</column>
+            <operator>equals</operator>
+            <value>Purchased,Suspended</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.StoreURL__c</column>
             <operator>notEqual</operator>
-            <value>Test Free Store (Enterprise Plan)</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity.Agency__c</column>
-            <operator>equals</operator>
-            <value>Big Commerce</value>
+            <value></value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
@@ -183,7 +261,7 @@
     <reportType>Opportunity</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
-    <sortColumn>ACCOUNT_NAME</sortColumn>
+    <sortColumn>Opportunity.TrailingGMVCount__c</sortColumn>
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CLOSE_DATE</dateColumn>

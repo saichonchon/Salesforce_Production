@@ -427,6 +427,15 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>Rating_Hot</fullName>
+        <field>Rating</field>
+        <literalValue>Hot</literalValue>
+        <name>Rating = Hot</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Referral_Date_Capture</fullName>
         <field>Referral_Date__c</field>
         <formula>TODAY()</formula>
@@ -751,6 +760,22 @@
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
+        <fullName>Demo Request Task - Lead</fullName>
+        <actions>
+            <name>Rating_Hot</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Demo_Requested</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <description>When a Lead is added as a campaign member for a demo request, this date is set. Create a task for the Lead owner. 
+For BAP-3811</description>
+        <formula>AND(  NOT(ISBLANK(Demo_Requested_Date__c)),  OR( Owner:User.Profile.Id  = &apos;00e13000000jUNJ&apos;, /* Lead Development Rep */     Owner:User.Profile.Id = &apos;00e130000024OSc&apos;, /* Sales Rep */     Owner:User.Profile.Id = &apos;00e13000000jUyt&apos;, /* Sales Rep - Dial on Opps */     Owner:User.Profile.Id = &apos;00e130000024OSX&apos;, /* Sales Leader */  Owner:User.Id = &apos;0051300000BsGMP&apos;))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
         <fullName>Design Account Field Updates and Owner Email</fullName>
         <actions>
             <name>Owner_Lead_Referral_Notification</name>
@@ -1028,7 +1053,7 @@ CONTAINS(Owner:User.UserRole.Name,&quot;Outbound&quot;) = FALSE)
         <criteriaItems>
             <field>Lead.LeadSource</field>
             <operation>equals</operation>
-            <value>SEM,Social Ads,Display,Print Ads,Email Advertising,Organic Search,Organic Social,Other,Deal Registration,Affiliate,SBD,ACQ List Upload,Events,Inbound,Webinar List</value>
+            <value>SEM,Social Ads,Display,Print Ads,Email Advertising,Organic Search,Organic Social,Other,Deal Registration,Affiliate,Events,Inbound,Webinar List</value>
         </criteriaItems>
         <criteriaItems>
             <field>Lead.Is_Duplicate__c</field>
@@ -1501,6 +1526,17 @@ DATEVALUE( CreatedDate ) &lt;&gt; TODAY() &amp;&amp;  Trial_Start_Date__c = TODA
         <protected>false</protected>
         <status>Completed</status>
         <subject>Bad Phone Number Email Sent</subject>
+    </tasks>
+    <tasks>
+        <fullName>Demo_Requested</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>A potential customer has requested a demo. Please reach out ASAP and close the task once it has been completed.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>**Demo Requested**</subject>
     </tasks>
     <tasks>
         <fullName>Lead_Downloaded_Pinterest_eBook</fullName>

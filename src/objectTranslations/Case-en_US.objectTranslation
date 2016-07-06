@@ -4401,6 +4401,10 @@ Referral : needs booking --></help>
             <translation><!-- Partner Portal --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Payment Error</masterLabel>
+            <translation><!-- Payment Error --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Payment Gateway</masterLabel>
             <translation><!-- Payment Gateway --></translation>
         </picklistValues>
@@ -4636,6 +4640,10 @@ Referral : needs booking --></help>
         <picklistValues>
             <masterLabel>Client Services Error</masterLabel>
             <translation><!-- Client Services Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commission Rebuild</masterLabel>
+            <translation><!-- Commission Rebuild --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Comparing Plans</masterLabel>
@@ -6211,6 +6219,11 @@ NOTE: The Contact Name field MUST be populated on the case in order for them to 
         <name>Suggested_Template__c</name>
     </fields>
     <fields>
+        <help><!-- Used by Client Success to specify what queue this case return to if held in an agent&apos;s name over 4 hours --></help>
+        <label><!-- Support Case Return Queue --></label>
+        <name>Support_Case_Return_Queue__c</name>
+    </fields>
+    <fields>
         <help><!-- Pulled from associated account --></help>
         <label><!-- Support Pin --></label>
         <name>Support_Pin__c</name>
@@ -7784,6 +7797,10 @@ Source_Details_Confirmed__c  -  DATEVALUE(CreatedDate ) --></help>
             <section>System Information</section>
         </sections>
     </layouts>
+    <quickActions>
+        <label><!-- Support Case Reassigned to Queue --></label>
+        <name>Case_Reassigned_to_Queue</name>
+    </quickActions>
     <quickActions>
         <label><!-- Close --></label>
         <name>Close</name>

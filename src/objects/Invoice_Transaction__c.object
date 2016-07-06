@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>To record all financial transactions with BigCommerce customers, such as invoice payments and refunds.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Amount_Accrued_for_Commissions__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total amount of this payment that has been accrued for use in partner commissions.</inlineHelpText>
+        <label>Amount Accrued for Commissions</label>
+        <summarizedField>Partner_Commission_Invoice_Transaction__c.Accrued_Transaction_Amount__c</summarizedField>
+        <summaryForeignKey>Partner_Commission_Invoice_Transaction__c.Invoice_Transaction__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Amount_Credited__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The amount of money credited to the invoice</inlineHelpText>
+        <label>Amount Credited</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Amount_Due__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The amount that was due on the invoice</inlineHelpText>
+        <label>Amount Due</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Amount_Not_Yet_Accrued_for_Commissions__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <formula>Amount_Paid_net__c - Amount_Accrued_for_Commissions__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The amount paid (net) minus the amount accrued for commissions.  This value is used to calculate future payments to referral partners.</inlineHelpText>
+        <label>Amount Not Yet Accrued for Commissions</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Amount_Paid__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The amount paid on the invoice</inlineHelpText>
+        <label>Amount Paid</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Amount_Paid_net__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <formula>Amount_Paid__c - Amount_Refunded__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The amount paid minus amount credited</inlineHelpText>
+        <label>Amount Paid (net)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Amount_Refunded__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The amount of this payment refunded to the customer</inlineHelpText>
+        <label>Amount Refunded</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CMRR__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <formula>Amount_Paid__c / Payment_Term__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The amount of the transaction divided by the term.  This represents the amount of revenue we may recognize per month based on the payment made.</inlineHelpText>
+        <label>CMRR</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The customer contact that made the transaction</inlineHelpText>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Invoice Transactions</relationshipLabel>
+        <relationshipName>Invoice_Transactions_del</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Date_Due__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date the invoice was due</inlineHelpText>
+        <label>Date Due</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Paid__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date that the payment was made</inlineHelpText>
+        <label>Date Paid</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Refunded__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date that this payment was refunded</inlineHelpText>
+        <label>Date Refunded</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Descriptive name of the invoice product, including the date range the payment applies to</inlineHelpText>
+        <label>Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice_ID__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The invoice that this payment was made against</inlineHelpText>
+        <label>Invoice ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice_Item_ID__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Represents a specific product on a specific invoice that the payment was against.  This is an external unique ID in the BI database.</inlineHelpText>
+        <label>Invoice Item ID</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice_Status__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The current status of the invoice</inlineHelpText>
+        <label>Invoice Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Paid</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Refunded</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Partner_Commissions__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The number of times this transaction has been used to accrue partner commissions</inlineHelpText>
+        <label>Number of Partner Commissions</label>
+        <summaryForeignKey>Partner_Commission_Invoice_Transaction__c.Invoice_Transaction__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Partner_Account_Date_Inactivated__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <formula>Store_Opportunity__r.rvpe__RVAccount__r.Inactivated_Date__c</formula>
+        <inlineHelpText>The date that the partner account was taken out of the program.  After this date, incoming commissions will no longer accrue.</inlineHelpText>
+        <label>Partner Account - Date Inactivated</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Partner_Account_External_ID__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <formula>Store_Opportunity__r.rvpe__RVAccount__r.rvpe__ExtAccountId__c</formula>
+        <inlineHelpText>The unique external id of the store opportunity&apos;s partner account</inlineHelpText>
+        <label>Partner Account External ID</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partner_Account_ID__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <formula>Store_Opportunity__r.rvpe__RVAccount__c</formula>
+        <inlineHelpText>The ID representing the Partner Account associated with the store opportunity, where applicable</inlineHelpText>
+        <label>Partner Account ID</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partner_Account_Name__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <formula>Store_Opportunity__r.rvpe__RVAccount__r.Name</formula>
+        <inlineHelpText>The name of the reseller partner account, where applicable.  This value is provided via the RV Account field on the Store Opportunity.</inlineHelpText>
+        <label>Partner Account Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partner_Commission_Percent__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <formula>Store_Opportunity__r.rvpe__RVAccount__r.Commission__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The partner account&apos;s current bounty rate</inlineHelpText>
+        <label>Partner Commission %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Term_Calculated__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <formula>BLANKVALUE(Payment_Term__c, 1)</formula>
+        <inlineHelpText>If BI failed to pass a payment term, we assume that the term is 1</inlineHelpText>
+        <label>Payment Term (Calculated)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Payment_Term__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The number of payment terms that this payment applies to.  For example, if the customer is paying for an annual plan, the term would be 12.</inlineHelpText>
+        <label>Payment Term</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Type__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The type of product for the invoice line item</inlineHelpText>
+        <label>Product Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Hosting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Store_Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The store that this transaction was related to</inlineHelpText>
+        <label>Store Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipName>Account_Transactions</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Invoice Transaction</label>
+    <nameField>
+        <displayFormat>TRAN-{0000000000}</displayFormat>
+        <label>Transaction Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Invoice Transactions</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
+</CustomObject>

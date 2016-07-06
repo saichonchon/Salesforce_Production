@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Partner Commission Summary</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Partner Commission Summaries</value>
+    </caseValues>
+    <fields>
+        <help><!-- Net transactions that can be used to pay out commissions --></help>
+        <label><!-- Commissionable Revenue --></label>
+        <name>Commissionable_Revenue__c</name>
+    </fields>
+    <fields>
+        <help><!-- The latest payment date that can be used to collect payment data for this partner --></help>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total count of invoice transactions associated with this summary --></help>
+        <label><!-- Number of Invoice Transactions --></label>
+        <name>Number_of_Invoice_Transactions__c</name>
+    </fields>
+    <fields>
+        <help><!-- The unique external id of the partner account --></help>
+        <label><!-- Partner Account External ID --></label>
+        <name>Partner_Account_External_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Partner Account (RV Account) that this Partner Commission is tied to. --></help>
+        <label><!-- Partner Account --></label>
+        <name>Partner_Account__c</name>
+        <relationshipLabel><!-- Partner Commission Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Total commissions earned in this summary --></help>
+        <label><!-- Partner Commission Earned --></label>
+        <name>Partner_Commission_Earned__c</name>
+    </fields>
+    <fields>
+        <help><!-- A unique key that prevents duplicate summaries for the same scope and partner to be created --></help>
+        <label><!-- Partner Commission Summary Dedupe Key --></label>
+        <name>Partner_Commission_Summary_Dedupe_Key__c</name>
+    </fields>
+    <fields>
+        <help><!-- The earliest customer payment date to include when calculating this partner&apos;s commissions --></help>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <layouts>
+        <layout>Partner Commission Summary Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Closed --></label>
+        <name>Closed</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Open --></label>
+        <name>Open</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

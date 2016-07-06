@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Rebillia NPS.Survey Email 1</name>
+    <style>none</style>
+    <subject>We want your feedback on Rebillia</subject>
+    <textOnly>Thank you for recently trying out BigCommerce’s integration with Rebillia.
+Hi {{lead.First Name:default=there}},
+Thank you for recently trying out BigCommerce’s integration with Rebillia. To help us continue to improve our service, we’d like to ask you a few short questions about your experience.
+This survey should take less than 5 minutes to complete.
+
+
+
+
+Take the Survey &lt;[[https://www.surveymonkey.com/r/QYRC3RP]]&gt;
+Thanks, 
+Mike Chorazak
+Director of Product Marketing, BigCommerce</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -60,12 +60,7 @@
     <format>Matrix</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Case$CreatedDate</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Case$Origin</field>
+        <field>Case$CreatedBy</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Chat cases - Support Queue</name>

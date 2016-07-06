@@ -284,41 +284,90 @@
     <layoutSections>
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
-        <editHeading>false</editHeading>
-        <label>Partner Commissions</label>
+        <editHeading>true</editHeading>
+        <label>Partner Commissions - Overall</label>
         <layoutColumns>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Overall_Closed_Commissionable_Revenue__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Partner_Commission_Earned__c</field>
+            </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Commission__c</field>
             </layoutItems>
+        </layoutColumns>
+        <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Commission_Amount__c</field>
+                <behavior>Readonly</behavior>
+                <field>Partner_Commission_Paid__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Current_Month_Payments__c</field>
+                <field>Partner_Commission_Balance__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsLeftToRight</style>
+    </layoutSections>
+    <layoutSections>
+        <customLabel>true</customLabel>
+        <detailHeading>true</detailHeading>
+        <editHeading>true</editHeading>
+        <label>Partner Commissions - Recent</label>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Last_Month_s_Partner_Commission_Summary__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Commission_Payment_Status__c</field>
+                <behavior>Readonly</behavior>
+                <field>Last_Month_s_Commissionable_Revenue__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Last_Month_s_Commission_Earned__c</field>
+            </layoutItems>
+            <layoutItems>
+                <emptySpace>true</emptySpace>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Most_Recent_Commission_Payment__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Most_Recent_Commission_Payment_Amount__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>RollupCommission__c</field>
+                <behavior>Readonly</behavior>
+                <field>This_Month_s_Partner_Commission_Summary__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Expected_Current_Month_Commission__c</field>
+                <field>This_Month_s_Commission_Earned__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>PaymentNotActivated__c</field>
+                <behavior>Readonly</behavior>
+                <field>This_Month_s_Commissionable_Revenue__c</field>
+            </layoutItems>
+            <layoutItems>
+                <emptySpace>true</emptySpace>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Most_Recent_Commission_Payment_Status__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Most_Recent_Commission_Payment_Date__c</field>
             </layoutItems>
         </layoutColumns>
-        <style>TwoColumnsLeftToRight</style>
+        <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -447,14 +496,35 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Opportunity__c</fields>
-        <fields>Payment__c</fields>
+        <fields>Transaction_ID__c</fields>
         <fields>Payment_Date__c</fields>
+        <fields>Payment_Method__c</fields>
+        <fields>Status__c</fields>
+        <fields>Payment_Amount__c</fields>
+        <relatedList>Partner_Commission_Payment__c.Partner_Account__c</relatedList>
+        <sortField>Payment_Date__c</sortField>
+        <sortOrder>Desc</sortOrder>
+    </relatedLists>
+    <relatedLists>
         <fields>RECORDTYPE</fields>
-        <fields>CREATED_DATE</fields>
-        <relatedList>Partner_Commission__c.RVAccount__c</relatedList>
-        <sortField>RECORDTYPE</sortField>
-        <sortOrder>Asc</sortOrder>
+        <fields>NAME</fields>
+        <fields>End_Date__c</fields>
+        <fields>Number_of_Invoice_Transactions__c</fields>
+        <fields>Commissionable_Revenue__c</fields>
+        <fields>Partner_Commission_Earned__c</fields>
+        <relatedList>Partner_Commission_Summary__c.Partner_Account__c</relatedList>
+        <sortField>End_Date__c</sortField>
+        <sortOrder>Desc</sortOrder>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>Invoice_Transaction__c</fields>
+        <fields>Partner_Commission_Percent__c</fields>
+        <fields>Accrued_Transaction_Amount__c</fields>
+        <fields>Partner_Commission_Earned__c</fields>
+        <relatedList>Partner_Commission_Invoice_Transaction__c.Partner_Account__c</relatedList>
+        <sortField>NAME</sortField>
+        <sortOrder>Desc</sortOrder>
     </relatedLists>
     <relatedLists>
         <fields>TASK.SUBJECT</fields>

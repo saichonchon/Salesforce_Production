@@ -43,9 +43,6 @@
         <field>Activity.Task_Type__c</field>
     </columns>
     <columns>
-        <field>Activity.Dialer_Campaign__c</field>
-    </columns>
-    <columns>
         <field>CALLOBJECT</field>
     </columns>
     <columns>
@@ -85,9 +82,9 @@
     <reportType>Activity</reportType>
     <roleHierarchyFilter>SystemAdministrator</roleHierarchyFilter>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>DUE_DATE</dateColumn>
-        <interval>INTERVAL_TODAY</interval>
+        <interval>INTERVAL_LASTWEEK</interval>
     </timeFrameFilter>
 </Report>

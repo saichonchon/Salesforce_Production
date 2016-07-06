@@ -69,6 +69,16 @@
         <template>Case_Templates/Billing_Case_Opened_Notice</template>
     </alerts>
     <alerts>
+        <fullName>Billing_Payment_Error_Case_Closure_Notice</fullName>
+        <description>Billing : Payment Error Case Closure Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Case_Templates/Billing_Payment_Error_Case_Closure_Notice</template>
+    </alerts>
+    <alerts>
         <fullName>CS_New_Case_Sent_to_support_bigcommerce_com</fullName>
         <description>CS : New Case Sent to support@bigcommerce.com - directs client to open case another way</description>
         <protected>false</protected>
@@ -1900,6 +1910,25 @@ Set by hierarchy : Contact &gt; Lead &gt; Web Email &gt; Subscription Email</des
         </criteriaItems>
         <description>Sends case opened notification email to client IF the Send Client Email Notifications box is checked</description>
         <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Billing%3A Payment Error Case Close Notification</fullName>
+        <actions>
+            <name>Billing_Payment_Error_Case_Closure_Notice</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Payment Error</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Closed,Auto-Closed</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
         <fullName>CS %3A Status %3D On Hold</fullName>

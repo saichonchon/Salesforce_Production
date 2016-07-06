@@ -1,0 +1,9 @@
+This notification is to let you know that the Payment Error Case you created: Case# {!Case.CaseNumber} is now closed.
+
+Case Description: {!Case.Description}
+Account: {!Case.Account}
+Opportunity: {!Case.Opportunity__c}
+Client Contact: {!Case.Contact}
+Case url: {!Case.Link}
+
+{!Case.E2CP__Case_Thread_Id__c}

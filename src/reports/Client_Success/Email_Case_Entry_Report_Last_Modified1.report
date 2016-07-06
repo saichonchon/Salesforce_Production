@@ -137,8 +137,6 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <endDate>2016-06-20</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2016-06-12</startDate>
+        <interval>INTERVAL_THISWEEK</interval>
     </timeFrameFilter>
 </Report>
