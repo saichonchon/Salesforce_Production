@@ -944,17 +944,6 @@ Assign to Fritz since Abbey has left.</description>
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Case_Update_owner</fullName>
-        <description>Updates the case owner to the Knowledge queue</description>
-        <field>OwnerId</field>
-        <lookupValue>Knowledge</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>Case: Update owner</name>
-        <notifyAssignee>true</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Category_Other</fullName>
         <description>Update the support category for Pixel union support cases.</description>
         <field>Category__c</field>
@@ -1356,6 +1345,16 @@ IF( ISBLANK( Subscription__r.Lead__c ) = FALSE,  Subscription__r.Lead__r.Owner:U
         <name>Reopened = True</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Case_Owner_Profile_Field</fullName>
+        <description>Set Case Owner Profile Field</description>
+        <field>Owner_Profile__c</field>
+        <formula>Owner:User.ProfileId</formula>
+        <name>Set Case Owner Profile Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
@@ -1865,7 +1864,7 @@ Set by hierarchy : Contact &gt; Lead &gt; Web Email &gt; Subscription Email</des
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>equals</operation>
-            <value>Web,billing@bigcommerce.com,cancellations@bigcommerce.com</value>
+            <value>Web</value>
         </criteriaItems>
         <criteriaItems>
             <field>Case.RecordTypeId</field>
@@ -1896,7 +1895,7 @@ Set by hierarchy : Contact &gt; Lead &gt; Web Email &gt; Subscription Email</des
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>equals</operation>
-            <value>Web,billing@bigcommerce.com,cancellations@bigcommerce.com</value>
+            <value>Web</value>
         </criteriaItems>
         <criteriaItems>
             <field>Case.RecordTypeId</field>
@@ -2192,7 +2191,7 @@ Set by hierarchy : Contact &gt; Lead &gt; Web Email &gt; Subscription Email</des
         <triggerType>onCreateOnly</triggerType>
     </rules>
     <rules>
-        <fullName>CS Email %3A New Email Sent to support%40bigcommerce%2Ecom</fullName>
+        <fullName>CS Email %3A New Email Sent to support%40%2C billing%40%2C cancellations%40</fullName>
         <actions>
             <name>CS_New_Case_Sent_to_support_bigcommerce_com</name>
             <type>Alert</type>
@@ -2210,6 +2209,43 @@ Set by hierarchy : Contact &gt; Lead &gt; Web Email &gt; Subscription Email</des
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>support@bigcommerce.com (closed),billing@bigcommerce.com,cancellations@bigcommerce.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.SuppliedEmail</field>
+            <operation>notContain</operation>
+            <value>mailer-daemon,postmaster</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Subject</field>
+            <operation>notContain</operation>
+            <value>loop protection,Undelivered Mail Return</value>
+        </criteriaItems>
+        <description>If client emails support@, billing@, cancellation@ without case reference, automatically close new case and email client directing them to open case via chat, web, or phone</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>CS Email %3A New Email Sent to support%40bigcommerce%2Ecom</fullName>
+        <actions>
+            <name>CS_New_Case_Sent_to_support_bigcommerce_com</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Case_Reason_support_bc</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Case_Status_Closed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Do_Not_Send_Survey_True</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>equals</operation>
@@ -3629,6 +3665,17 @@ ISCHANGED( Survey_Completion_Date__c )</formula>
         </criteriaItems>
         <description>Send SOW Email to new Prof Services Cases for specific &quot;product sold&quot; values</description>
         <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set Client Success Case Owner Profile</fullName>
+        <actions>
+            <name>Set_Case_Owner_Profile_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Set Client Success Case Owner Profile - used for Process to return cases to queue after a particular time frame</description>
+        <formula>RecordType.Name = &apos;Client Success&apos; &amp;&amp; NOT(ISBLANK(Owner:User.ProfileId )) /* Checks to see that the owner is not a queue */</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
         <fullName>Update Employee Accounts Subject Name</fullName>

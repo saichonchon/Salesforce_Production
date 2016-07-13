@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <customSettingsType>Hierarchy</customSettingsType>
-    <description>Settings for Partner Commissions  functionality</description>
+    <description>Settings for Partner Commissions  functionality.
+When making a change to the start date, make sure to also change the Partner Commission Payment rollup on RV Account so that the numbers can be calculated properly.  The date there should reflect one month after the date on this custom setting.</description>
     <enableFeeds>false</enableFeeds>
     <fields>
         <fullName>Earliest_Possible_Start_Date__c</fullName>

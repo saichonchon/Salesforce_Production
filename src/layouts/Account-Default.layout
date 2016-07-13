@@ -506,8 +506,6 @@
         <fields>Status__c</fields>
         <fields>ParentId</fields>
         <relatedLists>
-            <fields>OPPORTUNITY.NAME</fields>
-            <fields>StoreURL__c</fields>
             <relatedList>RelatedOpportunityList</relatedList>
         </relatedLists>
         <relatedLists>

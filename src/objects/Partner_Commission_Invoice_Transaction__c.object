@@ -60,11 +60,37 @@ For BAP-3698 - Partner Commissions v2</description>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <fields>
+        <fullName>Account_Name__c</fullName>
+        <description>BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <formula>Invoice_Transaction__r.Store_Opportunity__r.Account.Name</formula>
+        <inlineHelpText>Name of the Account related to the payment</inlineHelpText>
+        <label>Account Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Accrued_Transaction_Amount__c</fullName>
         <description>For BAP-3698 - Partner Commissions v2</description>
         <externalId>false</externalId>
         <inlineHelpText>The total recognizable revenue from a transaction that will be applied to this commission</inlineHelpText>
         <label>Accrued Transaction Amount (CMRR)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Amount_Paid__c</fullName>
+        <description>BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <formula>Invoice_Transaction__r.Amount_Paid__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The total amount the customer paid toward their invoice</inlineHelpText>
+        <label>Amount Paid</label>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
@@ -135,6 +161,86 @@ For BAP-3698 - Partner Commissions v2</description>
         <trackTrending>false</trackTrending>
         <type>MasterDetail</type>
         <writeRequiresMasterRead>true</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Partner_Has_PayPal_ID__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <formula>Partner_Commission_Summary__r.Partner_Account__r.Has_PayPal_Id__c</formula>
+        <inlineHelpText>Indicates if the partner has supplied us with their PayPal id</inlineHelpText>
+        <label>Partner Has PayPal ID</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Partner_Is_Eligible_for_Payment__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <formula>AND( Partner_is_Engaged__c,  Partner_Has_PayPal_ID__c )</formula>
+        <inlineHelpText>Indicates if the partner has provided a PayPal id and has become engaged by accepting the terms and conditions.</inlineHelpText>
+        <label>Partner Is Eligible for Payment</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Partner_is_Engaged__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <formula>Partner_Commission_Summary__r.Partner_Account__r.Engaged__c</formula>
+        <inlineHelpText>Indicates if the partner is engaged and has accepted the terms and conditions.  If not, they are not eligible for payment.</inlineHelpText>
+        <label>Partner is Engaged</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Date__c</fullName>
+        <description>BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <formula>Invoice_Transaction__r.Date_Paid__c</formula>
+        <inlineHelpText>The date that the customer paid their invoice</inlineHelpText>
+        <label>Payment Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Term__c</fullName>
+        <description>BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <formula>Invoice_Transaction__r.Payment_Term_Calculated__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The number of months that the customer paid towards</inlineHelpText>
+        <label>Payment Term</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Store_Plan__c</fullName>
+        <description>BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <formula>Invoice_Transaction__r.Store_Opportunity__r.Product__c</formula>
+        <inlineHelpText>The store&apos;s current plan</inlineHelpText>
+        <label>Store Plan</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Store_URL__c</fullName>
+        <description>BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <formula>Invoice_Transaction__r.Store_Opportunity__r.StoreURL__c</formula>
+        <inlineHelpText>The related store&apos;s URL</inlineHelpText>
+        <label>Store URL</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <label>Partner Commission / Invoice Transaction</label>
     <nameField>

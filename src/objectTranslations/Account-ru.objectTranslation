@@ -4215,6 +4215,22 @@ Grow - Potential for big opp;Partner choosing platform --></help>
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Is distributed --></label>
+        <name>n2de__Is_distributed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is reassigned --></label>
+        <name>n2de__Is_reassigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date last distributed to user --></label>
+        <name>n2de__Last_distributed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date last auto reassigned --></label>
+        <name>n2de__Last_reassigned__c</name>
+    </fields>
+    <fields>
         <label><!-- NeuralView: Close Score Last Updated --></label>
         <name>qbdialer__CloseDate__c</name>
     </fields>

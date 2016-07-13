@@ -58,6 +58,18 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <fields>
+        <fullName>Closed__c</fullName>
+        <description>BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <formula>RecordType.Name = &apos;Closed&apos;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Is this summary closed</inlineHelpText>
+        <label>Closed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Commissionable_Revenue__c</fullName>
         <description>For BAP-3698 - Partner Commission v2</description>
         <externalId>false</externalId>
@@ -77,6 +89,21 @@
         <inlineHelpText>The latest payment date that can be used to collect payment data for this partner</inlineHelpText>
         <label>End Date</label>
         <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Expected_Commission_Payment_Date__c</fullName>
+        <description>BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <formula>IF(MONTH(End_Date__c) = 12,
+   DATE(YEAR(End_Date__c) + 1, 1, 15),
+   DATE(YEAR(End_Date__c), MONTH(End_Date__c) + 1, 15)
+)</formula>
+        <inlineHelpText>The expected payment date for this summary</inlineHelpText>
+        <label>Expected Commission Payment Date</label>
+        <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>

@@ -30,6 +30,10 @@
                 <behavior>Readonly</behavior>
                 <field>Partner_Commission_Earned__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Closed__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -43,6 +47,10 @@
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>End_Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Expected_Commission_Payment_Date__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>

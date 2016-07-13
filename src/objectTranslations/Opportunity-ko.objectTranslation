@@ -438,7 +438,7 @@
         <relationshipLabel><!-- Client Opportunities --></relationshipLabel>
     </fields>
     <fields>
-        <label><!-- Channel --></label>
+        <label><!-- Marketing Channel --></label>
         <name>Channel__c</name>
     </fields>
     <fields>
@@ -3297,10 +3297,6 @@
     <fields>
         <label><!-- Marketing Keyword --></label>
         <name>Marketing_Keyword__c</name>
-    </fields>
-    <fields>
-        <label><!-- Marketing Medium --></label>
-        <name>Marketing_Medium__c</name>
     </fields>
     <fields>
         <help><!-- Marketing Price Testing Group from Lead --></help>

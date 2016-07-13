@@ -40,7 +40,13 @@
         <field>Opportunity.Strategic_Partner__c</field>
     </columns>
     <columns>
+        <field>Opportunity.Original_Plan_Purchased__c</field>
+    </columns>
+    <columns>
         <field>Opportunity.Product__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.PurchaseDate__c</field>
     </columns>
     <columns>
         <field>Opportunity.Enterprise_Tier__c</field>
@@ -178,9 +184,6 @@
         <field>Opportunity.LinkedIn_URL__c</field>
     </columns>
     <columns>
-        <field>Opportunity.totango__TotangoActive_users_last_14_days__c</field>
-    </columns>
-    <columns>
         <field>Opportunity.totango__TotangoEngagement__c</field>
     </columns>
     <columns>
@@ -193,22 +196,10 @@
         <field>Opportunity.totango__TotangoEngagementChange__c</field>
     </columns>
     <columns>
-        <field>Opportunity.totango__Totango_Online_Status__c</field>
-    </columns>
-    <columns>
-        <field>Account.totango__Totango_Account_Health_Icon__c</field>
-    </columns>
-    <columns>
-        <field>Opportunity.totango__Totango_isOnline__c</field>
-    </columns>
-    <columns>
         <field>Opportunity.totango__Totango_Last_Update__c</field>
     </columns>
     <columns>
         <field>Opportunity.totango__TotangoInsights__c</field>
-    </columns>
-    <columns>
-        <field>Opportunity.totango__Totango_URL__c</field>
     </columns>
     <columns>
         <field>Opportunity.Industry__c</field>
@@ -261,8 +252,8 @@
     <reportType>Opportunity</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
-    <sortColumn>Opportunity.TrailingGMVCount__c</sortColumn>
-    <sortOrder>Asc</sortOrder>
+    <sortColumn>Opportunity.MRR_Change__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CLOSE_DATE</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

@@ -102,7 +102,7 @@
             <criteriaItems>
                 <field>Case.Origin</field>
                 <operation>equals</operation>
-                <value>billing@bigcommerce.com,EIG Billing,Employee Account</value>
+                <value>EIG Billing,Employee Account</value>
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
@@ -121,15 +121,6 @@
                 <field>Case.Origin</field>
                 <operation>equals</operation>
                 <value>partners@bigcommerce.com,partnerevents@bigcommerce.com,partnerwithus@bigcommerce.com,Partner Application,Partner Deal Failed,Partner Deal Registration,Partner Marketing,Partner Support,Partner with Us,Partners</value>
-            </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>Case_Cancellation_Queue</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <criteriaItems>
-                <field>Case.Origin</field>
-                <operation>equals</operation>
-                <value>cancellations@bigcommerce.com</value>
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
@@ -230,15 +221,6 @@
                 <field>Case.RecordTypeId</field>
                 <operation>equals</operation>
                 <value>Migration Specialist</value>
-            </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>Knowledge</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <criteriaItems>
-                <field>Case.RecordTypeId</field>
-                <operation>equals</operation>
-                <value>Knowledge Request</value>
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>

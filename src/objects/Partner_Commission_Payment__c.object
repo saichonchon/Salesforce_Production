@@ -158,6 +158,14 @@ Records the payments made out to our referral partners for their commissions</de
                 <fullName>PayPal</fullName>
                 <default>true</default>
             </picklistValues>
+            <picklistValues>
+                <fullName>ACH</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Check</fullName>
+                <default>false</default>
+            </picklistValues>
             <sorted>false</sorted>
         </picklist>
         <trackHistory>false</trackHistory>

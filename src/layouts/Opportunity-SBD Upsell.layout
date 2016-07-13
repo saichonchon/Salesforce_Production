@@ -138,10 +138,6 @@
                 <behavior>Readonly</behavior>
                 <field>MBA_Account_ID__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>MBASubscriptionID__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

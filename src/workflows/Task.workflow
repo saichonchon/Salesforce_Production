@@ -87,16 +87,6 @@
         <reevaluateOnChange>true</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Test</fullName>
-        <description>Test</description>
-        <field>Description</field>
-        <formula>&quot;TEST&quot;</formula>
-        <name>Test</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Type_Email</fullName>
         <field>Type</field>
         <literalValue>Email</literalValue>
@@ -112,16 +102,6 @@
         <name>Type Text Capture</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>true</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>WFR_Trigger</fullName>
-        <field>WFR_Trigger__c</field>
-        <literalValue>1</literalValue>
-        <name>WFR Trigger = True</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
         <protected>false</protected>
         <reevaluateOnChange>true</reevaluateOnChange>
     </fieldUpdates>

@@ -53,16 +53,12 @@
     <columns>
         <field>CAMPAIGN_ID</field>
     </columns>
+    <description>Removed &apos;dialer eligible=true&apos; to get leads into Distribution Engine 7/2016</description>
     <filter>
         <criteriaItems>
             <column>CAMPAIGN_TYPE</column>
             <operator>equals</operator>
             <value>Dialer</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Lead.Dialer_Eligible_Lead__c</column>
-            <operator>equals</operator>
-            <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lead.qbdialer__Dials__c</column>
@@ -91,13 +87,18 @@
         </criteriaItems>
         <criteriaItems>
             <column>LEAD_STATUS</column>
-            <operator>equals</operator>
-            <value>Open</value>
+            <operator>contains</operator>
+            <value>Open,In Flow</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lead.rvpe__RVAccount__c</column>
             <operator>equals</operator>
             <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead.Dialer_Eligible_Lead__c</column>
+            <operator>equals</operator>
+            <value>1</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>

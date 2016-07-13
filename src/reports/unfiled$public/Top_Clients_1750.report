@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_21554385</developerName>
+        <masterLabel>Account Buckets</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>ACCOUNT_NAME</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>CetaphilStore</sourceValue>
+            </sourceValues>
+            <value>Cetaphil Store</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Discount Electronics LLC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Discount Electronics</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Discount Electronics Stores</sourceValue>
+            </sourceValues>
+            <value>Discount Electronics</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Dupont</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dupont Main</sourceValue>
+            </sourceValues>
+            <value>Dupont</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>ecommerce ventures</sourceValue>
+            </sourceValues>
+            <value>Beds Online</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Educational Outfitters</sourceValue>
+            </sourceValues>
+            <value>Educational Outfitters</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Meda</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Meda Enterprises, LLC</sourceValue>
+            </sourceValues>
+            <value>Meda</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Paragon Solution Network, Inc.</sourceValue>
+            </sourceValues>
+            <value>1 Ink</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>PreferredFlorist.com, LLC</sourceValue>
+            </sourceValues>
+            <value>Preferred Florist</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Pro Tool Warehouse LLC</sourceValue>
+            </sourceValues>
+            <value>Pro Tool Warehouse</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Rock Bottom Golf</sourceValue>
+            </sourceValues>
+            <value>Rock Bottom Golf</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>American Rec</sourceValue>
+            </sourceValues>
+            <value>American Rec</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>AZ</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Appliance Zone</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Speedy Appliance Parts</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Thrifty Appliance Part</sourceValue>
+            </sourceValues>
+            <value>Appliance Zone</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>CanningValeAU</sourceValue>
+            </sourceValues>
+            <value>CanningVale</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Scott&apos;s Liquid Gold, Inc</sourceValue>
+            </sourceValues>
+            <value>Scott&apos;s Liquid Gold, Inc</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Tampa Bay Sports Store</sourceValue>
+            </sourceValues>
+            <value>Tampa Bay Sports Store</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>boticario-english</sourceValue>
+            </sourceValues>
+            <value>Boticario</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_99354723</developerName>
+        <masterLabel>MRR</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Opportunity.MonthlyRecurringRevenue__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>15</to>
+            </sourceValues>
+            <value>$0 or Hibernation</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>15</from>
+                <to>1,000</to>
+            </sourceValues>
+            <value>&lt; $1K</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>1,000</from>
+                <to>2,500</to>
+            </sourceValues>
+            <value>&lt; $2.5K</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>2,500</from>
+            </sourceValues>
+            <value>$2.5K+</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Opportunity.MonthlyRecurringRevenue__c</field>
+    </columns>
+    <columns>
+        <field>Account.MaxSub_Store_URL__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Opportunity.Store_Purchase</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <operator>equals</operator>
+            <value>Purchased,Suspended</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.StoreURL__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.MonthlyRecurringRevenue__c</column>
+            <operator>greaterOrEqual</operator>
+            <value>1750</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Account_Management_Services__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Top Clients (&gt;=$1750)</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Opportunity.MonthlyRecurringRevenue__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Opportunity.PurchaseDate__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -19,7 +19,7 @@
         <scale>0</scale>
     </aggregates>
     <aggregates>
-        <calculatedFormula>Opportunity.MonthlyRecurringRevenue__c:SUM/7000</calculatedFormula>
+        <calculatedFormula>Opportunity_Product__c.RevenueChange__c:SUM / Opportunity_Product__c.Revenue_Rep__c.Quota__c:SUM</calculatedFormula>
         <datatype>percent</datatype>
         <developerName>FORMULA12</developerName>
         <isActive>true</isActive>
@@ -192,7 +192,9 @@
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>Opportunity.Oppotunity_Products__r$Revenue_Rep__c</field>
-        <sortOrder>Asc</sortOrder>
+        <sortByName>FORMULA8</sortByName>
+        <sortOrder>Desc</sortOrder>
+        <sortType>CustomSummaryFormula</sortType>
     </groupingsDown>
     <name>Mid-Market Sales MTD</name>
     <params>

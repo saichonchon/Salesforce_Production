@@ -6534,6 +6534,16 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>n2de__Is_archived__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Is archived</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>n2de__Is_distributed__c</fullName>
         <defaultValue>false</defaultValue>
         <deprecated>false</deprecated>
@@ -6574,6 +6584,16 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>n2de__Last_archive_date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Last archive date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
         <fullName>n2de__Last_distributed__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
@@ -6592,6 +6612,18 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>n2de__Source_queue__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Source queue</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>n2de__Time_to_action_mins__c</fullName>
@@ -7195,27 +7227,6 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         </sharedTo>
     </listViews>
     <listViews>
-        <fullName>Marketing_GSB</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>Active_Trials__c</columns>
-        <columns>Hubspot_Score__c</columns>
-        <columns>Marketing_Promotion__c</columns>
-        <columns>Stage__c</columns>
-        <filterScope>Queue</filterScope>
-        <filters>
-            <field>Testing_Lead__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <label>Marketing - GSB Queue</label>
-        <queue>Marketing_GSB</queue>
-        <sharedTo/>
-    </listViews>
-    <listViews>
         <fullName>My_Leads</fullName>
         <columns>FULL_NAME</columns>
         <columns>LEAD.COMPANY</columns>
@@ -7227,68 +7238,6 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <columns>LEAD.UNREAD</columns>
         <filterScope>Mine</filterScope>
         <label>My Leads</label>
-    </listViews>
-    <listViews>
-        <fullName>My_Leads_Expiring_in_the_Next_3_Days</fullName>
-        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>Stage__c</columns>
-        <columns>Trial_Count__c</columns>
-        <columns>Active_Trials__c</columns>
-        <columns>Trial_Start_Date__c</columns>
-        <columns>Trial_Expiration_Date__c</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>LEAD.LAST_ACTIVITY</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.Client_Prospect</value>
-        </filters>
-        <filters>
-            <field>Trial_Expiration_Date__c</field>
-            <operation>equals</operation>
-            <value>NEXT_N_DAYS:3</value>
-        </filters>
-        <filters>
-            <field>Trial_Expiration_Date__c</field>
-            <operation>equals</operation>
-            <value>TODAY</value>
-        </filters>
-        <label>My Leads Expiring in the Next 3 Days</label>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>My_Leads_without_Trials</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>Stage__c</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>012a0000001NVUC</value>
-        </filters>
-        <filters>
-            <field>Trial_Count__c</field>
-            <operation>lessThan</operation>
-            <value>1</value>
-        </filters>
-        <label>My Leads without Trials</label>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
     </listViews>
     <listViews>
         <fullName>Partner_Record_Leads</fullName>

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
+        <field>CAMPAIGN_STARTDATE</field>
+    </columns>
+    <columns>
         <aggregateTypes>Sum</aggregateTypes>
         <field>AMOUNT</field>
     </columns>
@@ -43,7 +46,7 @@
     <format>Matrix</format>
     <groupingsAcross>
         <dateGranularity>Year</dateGranularity>
-        <field>CAMPAIGN_STARTDATE</field>
+        <field>CLOSE_DATE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
     <groupingsDown>
@@ -71,7 +74,7 @@
     </params>
     <reportType>OpportunityCampaign</reportType>
     <scope>organization</scope>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>CAMPAIGN_STARTDATE</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

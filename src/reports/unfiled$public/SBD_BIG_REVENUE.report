@@ -7,6 +7,12 @@
         <field>Opportunity.MBASubscriptionID__c</field>
     </columns>
     <columns>
+        <field>Opportunity.Sales_Notes__c</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_ID</field>
+    </columns>
+    <columns>
         <field>FULL_NAME</field>
     </columns>
     <columns>
@@ -22,7 +28,13 @@
         <field>ACCOUNT_NAME</field>
     </columns>
     <columns>
+        <field>Opportunity.ParentOpportunity__c</field>
+    </columns>
+    <columns>
         <field>Opportunity.Product__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_ID</field>
     </columns>
     <columns>
         <field>OPPORTUNITY_NAME</field>
@@ -71,8 +83,8 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>
-        <endDate>2016-06-24</endDate>
+        <endDate>2016-07-13</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2016-06-20</startDate>
+        <startDate>2016-04-04</startDate>
     </timeFrameFilter>
 </Report>

@@ -65,6 +65,11 @@
         <name>Date_Paid__c</name>
     </fields>
     <fields>
+        <help><!-- The date that the payment would continue to count towards commission accrual, equivalent to one month less than the term.  For 1 month terms, it will match Date Paid.  For 12 month terms, it will equal 11 months later.  Populated by a trigger. --></help>
+        <label><!-- Date Payment Effective Until --></label>
+        <name>Date_Payment_Effective_Until__c</name>
+    </fields>
+    <fields>
         <help><!-- The date that this payment was refunded --></help>
         <label><!-- Date Refunded --></label>
         <name>Date_Refunded__c</name>
@@ -109,7 +114,7 @@
     </fields>
     <fields>
         <help><!-- The unique external id of the store opportunity&apos;s partner account --></help>
-        <label><!-- Partner Account External ID --></label>
+        <label><!-- Partner Account - External ID --></label>
         <name>Partner_Account_External_ID__c</name>
     </fields>
     <fields>
@@ -145,6 +150,11 @@
             <masterLabel>Hosting</masterLabel>
             <translation><!-- Hosting --></translation>
         </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The related store&apos;s provisioning system --></help>
+        <label><!-- Provisioning System --></label>
+        <name>Provisioning_System__c</name>
     </fields>
     <fields>
         <help><!-- The store that this transaction was related to --></help>

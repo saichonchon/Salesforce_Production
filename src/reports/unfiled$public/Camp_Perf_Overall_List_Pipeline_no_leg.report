@@ -107,7 +107,7 @@
         <criteriaItems>
             <column>CAMPAIGN.PARENT.NAME</column>
             <operator>contains</operator>
-            <value>ACQ.Prospects,parent</value>
+            <value>ACQ.Prospects</value>
         </criteriaItems>
         <criteriaItems>
             <column>CAMPAIGN.PARENT.NAME</column>
@@ -142,7 +142,7 @@
     </params>
     <reportType>CampaignInfluence</reportType>
     <scope>user</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <sortColumn>Opportunity.Opportunity_Count__c</sortColumn>
     <sortOrder>Asc</sortOrder>
 </Report>

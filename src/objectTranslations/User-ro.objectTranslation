@@ -181,6 +181,11 @@ WARNING: This will expose some of your emails to the Unresolved Items Agent. -->
         <name>User_Image__c</name>
     </fields>
     <fields>
+        <help><!-- Your store URL --></help>
+        <label><!-- Website --></label>
+        <name>Website__c</name>
+    </fields>
+    <fields>
         <label><!-- Weekly All In Quota --></label>
         <name>Weekly_All_In_Quota__c</name>
     </fields>
@@ -334,6 +339,22 @@ WARNING: This will expose some of your emails to the Unresolved Items Agent. -->
         <sections>
             <label><!-- About --></label>
             <section>About</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>User Profile Layout</layout>
+        <layoutType>UserAlt</layoutType>
+        <sections>
+            <label><!-- About --></label>
+            <section>About</section>
+        </sections>
+        <sections>
+            <label><!-- Contact --></label>
+            <section>Contact</section>
         </sections>
         <sections>
             <label><!-- Custom Links --></label>

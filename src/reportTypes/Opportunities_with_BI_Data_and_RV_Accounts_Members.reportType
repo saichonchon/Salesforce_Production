@@ -772,11 +772,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Marketing_Medium__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Marketing_Price_Testing_Group__c</field>
             <table>Opportunity</table>
         </columns>

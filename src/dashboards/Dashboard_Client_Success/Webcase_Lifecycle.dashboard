@@ -67,7 +67,7 @@
             <groupingColumn>Case.Resolution_Count__c</groupingColumn>
             <groupingColumn>CREATED_DATEONLY</groupingColumn>
             <legendPosition>Bottom</legendPosition>
-            <report>Support_Surveys_2/Resolution_Webcase_Lifecycle</report>
+            <report>Support_Weekly_Metrics/Resolution_Webcase_Lifecycle</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>

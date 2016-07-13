@@ -194,6 +194,16 @@
         <type>Date</type>
     </fields>
     <fields>
+        <fullName>Date_Payment_Effective_Until__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date that the payment would continue to count towards commission accrual, equivalent to one month less than the term.  For 1 month terms, it will match Date Paid.  For 12 month terms, it will equal 11 months later.  Populated by a trigger.</inlineHelpText>
+        <label>Date Payment Effective Until</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
         <fullName>Date_Refunded__c</fullName>
         <description>For BAP-3698 - Partner Commissions v2</description>
         <externalId>false</externalId>
@@ -288,7 +298,7 @@
         <externalId>false</externalId>
         <formula>Store_Opportunity__r.rvpe__RVAccount__r.rvpe__ExtAccountId__c</formula>
         <inlineHelpText>The unique external id of the store opportunity&apos;s partner account</inlineHelpText>
-        <label>Partner Account External ID</label>
+        <label>Partner Account - External ID</label>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
@@ -375,6 +385,18 @@
         </picklist>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Provisioning_System__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <formula>TEXT( Store_Opportunity__r.Source__c )</formula>
+        <inlineHelpText>The related store&apos;s provisioning system</inlineHelpText>
+        <label>Provisioning System</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Store_Opportunity__c</fullName>

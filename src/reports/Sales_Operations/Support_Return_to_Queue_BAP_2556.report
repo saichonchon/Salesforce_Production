@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
-        <field>ASSIGNED</field>
+        <field>ACTIVITY_ID</field>
     </columns>
     <columns>
         <field>SUBJECT</field>
@@ -48,7 +48,7 @@
             <value>02503591</value>
         </criteriaItems>
     </filter>
-    <format>Tabular</format>
+    <format>Summary</format>
     <name>Support Return to Queue BAP 2556</name>
     <params>
         <name>closed</name>
@@ -64,7 +64,7 @@
     </params>
     <reportType>Activity</reportType>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <sortColumn>CASE</sortColumn>
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>

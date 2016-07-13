@@ -3751,6 +3751,10 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Is archived --></label>
+        <name>n2de__Is_archived__c</name>
+    </fields>
+    <fields>
         <label><!-- Is distributed --></label>
         <name>n2de__Is_distributed__c</name>
     </fields>
@@ -3767,12 +3771,20 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         <name>n2de__Is_triggered__c</name>
     </fields>
     <fields>
+        <label><!-- Last archive date --></label>
+        <name>n2de__Last_archive_date__c</name>
+    </fields>
+    <fields>
         <label><!-- Last distributed --></label>
         <name>n2de__Last_distributed__c</name>
     </fields>
     <fields>
         <label><!-- Last reassigned --></label>
         <name>n2de__Last_reassigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source queue --></label>
+        <name>n2de__Source_queue__c</name>
     </fields>
     <fields>
         <label><!-- Time to action (mins) --></label>

@@ -316,9 +316,6 @@
         <fields>SupportPin__c</fields>
         <fields>ParentId</fields>
         <relatedLists>
-            <fields>OPPORTUNITY.NAME</fields>
-            <fields>OPPORTUNITY.STAGE_NAME</fields>
-            <fields>Product__c</fields>
             <relatedList>RelatedOpportunityList</relatedList>
         </relatedLists>
         <relatedLists>

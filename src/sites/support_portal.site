@@ -66,6 +66,12 @@
     <siteRedirectMappings>
         <action>Permanent</action>
         <isActive>true</isActive>
+        <source>/articles/Learning/Store-Overview-Report-Guide-to-BigCommerce-Analytics</source>
+        <target>/articles/Learning/Store-Overview-Report-Guide-to-Bigcommerce-Analytics</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
         <source>/articles/Public/Adding-Funds-to-Your-Endicia-Postage-Account</source>
         <target>/articles/Public/Shipping-Labels</target>
     </siteRedirectMappings>
@@ -356,6 +362,12 @@
         <isActive>true</isActive>
         <source>/articles/Public/Managing-Domains-Registered-through-BigCommerce</source>
         <target>/articles/Public/Managing-Domains-Registered-through-Bigcommerce</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
+        <source>/articles/Public/Managing-your-eBay-listings-on-BigCommerce</source>
+        <target>/articles/Public/Managing-your-eBay-listings-on-Bigcommerce</target>
     </siteRedirectMappings>
     <siteRedirectMappings>
         <action>Permanent</action>

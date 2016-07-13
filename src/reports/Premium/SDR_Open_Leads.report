@@ -65,6 +65,11 @@
         <field>Lead$LDR_Rating__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Lead$Status</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>Lead$Owner</field>

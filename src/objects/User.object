@@ -827,6 +827,16 @@ IF(Tenured_Months__c &gt;=4, 1,0)
         <type>Url</type>
     </fields>
     <fields>
+        <fullName>Website__c</fullName>
+        <description>Store URL -- populated by community users manually -- visible to authenticated internal Salesforce users as well as authenticated community users</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Your store URL</inlineHelpText>
+        <label>Website</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
         <fullName>Weekly_All_In_Quota__c</fullName>
         <externalId>false</externalId>
         <formula>All_in_Quota__c / Weeks_in_the_Month__c</formula>

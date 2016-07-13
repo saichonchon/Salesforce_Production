@@ -9,9 +9,19 @@
         <value>Partner Commission / Invoice Transaction</value>
     </caseValues>
     <fields>
+        <help><!-- Name of the Account related to the payment --></help>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
         <help><!-- The total recognizable revenue from a transaction that will be applied to this commission --></help>
         <label><!-- Accrued Transaction Amount (CMRR) --></label>
         <name>Accrued_Transaction_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total amount the customer paid toward their invoice --></help>
+        <label><!-- Amount Paid --></label>
+        <name>Amount_Paid__c</name>
     </fields>
     <fields>
         <help><!-- The transaction that this partner commission is for. --></help>
@@ -41,5 +51,47 @@
         <name>Partner_Commission_Summary__c</name>
         <relationshipLabel><!-- Partner Commission / Invoice Transaction --></relationshipLabel>
     </fields>
+    <fields>
+        <help><!-- Indicates if the partner has supplied us with their PayPal id --></help>
+        <label><!-- Partner Has PayPal ID --></label>
+        <name>Partner_Has_PayPal_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if the partner has provided a PayPal id and has become engaged by accepting the terms and conditions. --></help>
+        <label><!-- Partner Is Eligible for Payment --></label>
+        <name>Partner_Is_Eligible_for_Payment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if the partner is engaged and has accepted the terms and conditions.  If not, they are not eligible for payment. --></help>
+        <label><!-- Partner is Engaged --></label>
+        <name>Partner_is_Engaged__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date that the customer paid their invoice --></help>
+        <label><!-- Payment Date --></label>
+        <name>Payment_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of months that the customer paid towards --></help>
+        <label><!-- Payment Term --></label>
+        <name>Payment_Term__c</name>
+    </fields>
+    <fields>
+        <help><!-- The store&apos;s current plan --></help>
+        <label><!-- Store Plan --></label>
+        <name>Store_Plan__c</name>
+    </fields>
+    <fields>
+        <help><!-- The related store&apos;s URL --></help>
+        <label><!-- Store URL --></label>
+        <name>Store_URL__c</name>
+    </fields>
+    <layouts>
+        <layout>Partner Commission / Account Transaction Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

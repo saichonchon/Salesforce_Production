@@ -162,7 +162,7 @@
         <criteriaItems>
             <column>RECORDTYPE</column>
             <operator>equals</operator>
-            <value>Case.Client_Success</value>
+            <value>Case.Client_Success,Case.Billing,Case.Cancellations</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>

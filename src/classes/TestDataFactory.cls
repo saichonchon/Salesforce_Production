@@ -12,6 +12,126 @@ global without sharing class TestDataFactory {
 
     private static string TestAccountPrefix = 'testBCCompany';
 
+    /////////////////
+    // RV ACCOUNTS //
+    /////////////////
+
+    /**
+     * Creates an RV Account (reseller partner)
+     * @author Steve O'Neal
+     * @date   2016-07-01
+     * @ticket link          https://jira.bigcommerce.com/browse/BAP-3698
+     * @return An RV Account
+     */
+    private static rvpe__RVAccount__c createTestRVAccount()
+    {
+        String seed1 = String.valueof(MathUtility.RandomInteger(1000, 9999));
+
+        rvpe__RVAccount__c retVal = new rvpe__RVAccount__c();
+        retVal.Name = TestAccountPrefix + ' RV Account ' + seed1;
+        retVal.Commission__c = 20;
+        retVal.Partner_Commission__c = retVal.Commission__c;
+        retVal.Status__c = 'Account';
+        retVal.Magento_Partner__c = 'No';
+        retVal.Approved_Date__c = Date.today().addYears(-2);
+        retVal.rvpe__ExtAccountId__c = Decimal.valueOf(seed1);
+
+        return retVal;
+    }
+
+    /**
+     * Creates a list of test RV Accounts (reseller partners)
+     * @author Steve O'Neal
+     * @date   2016-07-01
+     * @ticket link            https://jira.bigcommerce.com/browse/BAP-3698
+     * @param  numberOfRecords Number of accounts to create
+     * @return                 A list of RV Accounts
+     */
+    global static List<rvpe__RVAccount__c> createTestRVAccounts(integer numberOfRecords)
+    {
+        List<rvpe__RVAccount__c> retVal = new List<rvpe__RVAccount__c>();
+
+        for (integer i = 0; i < numberOfRecords; i++)
+        {
+            retVal.add(TestDataFactory.createTestRVAccount());
+        }
+
+        if (retVal.size() > 0)
+        {
+            insert retVal;
+        }
+
+        return retVal;
+    }
+
+
+    //////////////////////////
+    // INVOICE TRANSACTIONS //
+    //////////////////////////
+
+    /**
+     * Creates an invoice transaction, which represents a customer paying on their invoice
+     * @author Steve O'Neal
+     * @date   2016-07-01
+     * @ticket link             https://jira.bigcommerce.com/browse/BAP-3698
+     * @param  storeOpportunity The store that the payment is related to
+     * @return                  An invoice transaction
+     */
+    private static Invoice_Transaction__c createTestInvoiceTransaction(Opportunity storeOpportunity)
+    {
+        Invoice_Transaction__c retVal = new Invoice_Transaction__c();
+        integer amountDueDollars = MathUtility.RandomInteger(10, 999);
+        decimal amountDueCents = MathUtility.RandomInteger(0, 99);
+        decimal amountDue = decimal.valueof(amountDueDollars + '.' + amountDueCents);
+        String seed1 = String.valueof(MathUtility.RandomInteger(1000, 9999));
+        String seed2 = String.valueof(MathUtility.RandomInteger(1000, 9999));
+
+        retVal.Amount_Credited__c = 0;
+        retVal.Amount_Due__c = amountDue;
+        retVal.Amount_Paid__c = amountDue;
+        retVal.Amount_Refunded__c = 0;
+        retVal.Date_Due__c = Date.today().addDays(MathUtility.RandomInteger(-365, 0));
+        retVal.Date_Paid__c = retVal.Date_Due__c;
+        retVal.Description__c = 'Test Customer Payment';
+        retVal.Invoice_ID__c = seed1;
+        retVal.Invoice_Item_ID__c = seed1 + seed2;
+        retVal.Invoice_Status__c = 'Paid';
+        retVal.Payment_Term__c = MathUtility.RandomBoolean()?1:12;
+        retVal.Product_Type__c = 'Hosting';
+        retVal.Store_Opportunity__c = storeOpportunity.Id;
+        retVal.Store_Opportunity__c = storeOpportunity.Id;
+
+        return retVal;
+    }
+
+    /**
+     * Creates a list of Invoice Transactions
+     * @author Steve O'Neal
+     * @date   2016-07-01
+     * @ticket link               https://jira.bigcommerce.com/browse/BAP-3698
+     * @param  numberOfRecords    Number of transactions to make for each opportunity
+     * @param  storeOpportunities The opportunities to create transactions against
+     * @return                    A list of Invoice Transactions
+     */
+    global static List<Invoice_Transaction__c> createTestInvoiceTransactions(integer numberOfRecords, List<Opportunity> storeOpportunities)
+    {
+        List<Invoice_Transaction__c> retVal = new List<Invoice_Transaction__c>();
+
+        for (Opportunity opp : storeOpportunities)
+        {
+            for (integer i = 0; i < numberOfRecords; i++)
+            {
+                retVal.add(TestDataFactory.createTestInvoiceTransaction(opp));
+            }
+        }
+
+        if (retVal.size() > 0)
+        {
+            insert retVal;
+        }
+
+        return retVal;
+    }
 
     ///////////////
     // CAMPAIGNS //

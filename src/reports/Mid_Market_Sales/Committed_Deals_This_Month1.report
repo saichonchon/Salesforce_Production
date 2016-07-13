@@ -1,5 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>AMOUNT:SUM / User.Quota__c:SUM</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Percent of Goal</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_95386859</developerName>
+        <masterLabel>Level</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>FULL_NAME</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Justin Hospie</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nicholas Amelio</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ryan Hamer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lizette Flores</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Juan Jacinto</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Joe Gillen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Robert King</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tanner Moore</sourceValue>
+            </sourceValues>
+            <value>AE1</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Rachel Hess</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shelly Alexander</sourceValue>
+            </sourceValues>
+            <value>AE2</value>
+        </values>
+    </buckets>
     <buckets>
         <bucketType>number</bucketType>
         <developerName>BucketField_99397384</developerName>
@@ -36,10 +90,15 @@
             <axisBinding>y</axisBinding>
             <column>AMOUNT</column>
         </chartSummaries>
-        <chartType>VerticalColumn</chartType>
+        <chartSummaries>
+            <axisBinding>y2</axisBinding>
+            <column>FORMULA1</column>
+        </chartSummaries>
+        <chartType>VerticalColumnLine</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
         <groupingColumn>FULL_NAME</groupingColumn>
+        <legendPosition>Right</legendPosition>
         <location>CHART_TOP</location>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
@@ -81,10 +140,10 @@
         <field>CREATED_DATE</field>
     </columns>
     <columns>
-        <field>Opportunity.Executive_Sponsorship__c</field>
+        <field>Opportunity.Sales_Notes__c</field>
     </columns>
     <columns>
-        <field>Opportunity.Sales_Notes__c</field>
+        <field>Opportunity.Executive_Sponsorship__c</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -112,7 +171,9 @@
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>FULL_NAME</field>
-        <sortOrder>Asc</sortOrder>
+        <sortByName>FORMULA1</sortByName>
+        <sortOrder>Desc</sortOrder>
+        <sortType>CustomSummaryFormula</sortType>
     </groupingsDown>
     <name>Committed Deals This Month</name>
     <params>
@@ -130,6 +191,8 @@
     <reportType>Opportunity</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
+    <sortColumn>AMOUNT</sortColumn>
+    <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CLOSE_DATE</dateColumn>
         <interval>INTERVAL_THISMONTH</interval>

@@ -166,6 +166,6 @@
     <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>Opportunity.Oppotunity_Products__r$StartDate__c</dateColumn>
-        <interval>INTERVAL_CURPREV1</interval>
+        <interval>INTERVAL_CURY</interval>
     </timeFrameFilter>
 </Report>

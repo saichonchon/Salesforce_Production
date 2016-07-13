@@ -1087,7 +1087,7 @@ MBASubscriptionID__c,null)</formula>
     <fields>
         <fullName>Channel__c</fullName>
         <externalId>false</externalId>
-        <label>Channel</label>
+        <label>Marketing Channel</label>
         <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -4993,15 +4993,6 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
         <fullName>Marketing_Keyword__c</fullName>
         <externalId>false</externalId>
         <label>Marketing Keyword</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>TextArea</type>
-    </fields>
-    <fields>
-        <fullName>Marketing_Medium__c</fullName>
-        <externalId>false</externalId>
-        <label>Marketing Medium</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -9124,6 +9115,30 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <label>My Upsell Opportunities</label>
         <sharedTo>
             <role>SystemAdministrator</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Open_SBD_Opportunities</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Opportunity.SBD_Upsell</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Open SBD Opportunities</label>
+        <sharedTo>
+            <group>Managers</group>
         </sharedTo>
     </listViews>
     <listViews>

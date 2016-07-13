@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Partner Re-engagement- 1160.Email 1</name>
+    <style>none</style>
+    <subject>How to help merchants make room in their budget for you</subject>
+    <textOnly>One of the biggest decisions online merchants face is choosing between a SaaS provider like BigCommerce and an on-premise platform like Magento.
+Hi {{lead.First Name:default=there}},
+One of the biggest decisions online merchants face is choosing between a SaaS provider like BigCommerce and an on-premise platform like Magento. Whether you offer design and dev for one platform or both, you play an integral role in helping customers decide what’s right for their company. And every dollar you save a merchant can mean a dollar invested in growing their business with your services.
+
+Here are a few questions to ask merchants up front:
+
+
+
+ - Do you need more money to spend on marketing and other growth avenues? 
+
+
+ - Do you want control over your infrastructure and the responsibilities that come along with it (provisioning servers, maintenance, updates, PCI compliance, 24/7/365 troubleshooting)? 
+
+
+ - What is your desired time to launch, and how much will a longer wait cost you?
+
+
+
+
+For most merchants, SaaS platforms will provide dramatically better total cost of ownership. To compare the hard numbers for your customers, use our total cost of ownership calculator &lt;[[http://tools.bigcommerce.com/total-cost-of-ownership-calculator/?utm_medium=email&amp;utm_source=partner]]&gt;.
+
+Settled on SaaS? Don’t forget to register your deal &lt;[[https://partners.bigcommerce.com/English/?utm_medium=email&amp;utm_source=partner]]&gt; and start a client trial store today.
+Happy Selling, 
+The BigCommerce Partner Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

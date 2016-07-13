@@ -9,6 +9,11 @@
         <value>Partner Commission Summaries</value>
     </caseValues>
     <fields>
+        <help><!-- Is this summary closed --></help>
+        <label><!-- Closed --></label>
+        <name>Closed__c</name>
+    </fields>
+    <fields>
         <help><!-- Net transactions that can be used to pay out commissions --></help>
         <label><!-- Commissionable Revenue --></label>
         <name>Commissionable_Revenue__c</name>
@@ -17,6 +22,11 @@
         <help><!-- The latest payment date that can be used to collect payment data for this partner --></help>
         <label><!-- End Date --></label>
         <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The expected payment date for this summary --></help>
+        <label><!-- Expected Commission Payment Date --></label>
+        <name>Expected_Commission_Payment_Date__c</name>
     </fields>
     <fields>
         <help><!-- The total count of invoice transactions associated with this summary --></help>

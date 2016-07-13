@@ -3826,6 +3826,11 @@ Referral : needs booking --></help>
         <name>Owner_Indicator__c</name>
     </fields>
     <fields>
+        <help><!-- Owner Profile - -  used in the time based workflow to return to Queue --></help>
+        <label><!-- Owner Profile --></label>
+        <name>Owner_Profile__c</name>
+    </fields>
+    <fields>
         <help><!-- Email address of sales rep that owns the account or lead associated --></help>
         <label><!-- Parent Record Owner Email --></label>
         <name>Parent_Record_Owner_Email__c</name>
@@ -7362,6 +7367,10 @@ Source_Details_Confirmed__c  -  DATEVALUE(CreatedDate ) --></help>
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Is archived --></label>
+        <name>n2de__Is_archived__c</name>
+    </fields>
+    <fields>
         <label><!-- Is distributed --></label>
         <name>n2de__Is_distributed__c</name>
     </fields>
@@ -7378,12 +7387,20 @@ Source_Details_Confirmed__c  -  DATEVALUE(CreatedDate ) --></help>
         <name>n2de__Is_triggered__c</name>
     </fields>
     <fields>
+        <label><!-- Last archive date --></label>
+        <name>n2de__Last_archive_date__c</name>
+    </fields>
+    <fields>
         <label><!-- Date last distributed to user --></label>
         <name>n2de__Last_distributed__c</name>
     </fields>
     <fields>
         <label><!-- Date last auto reassigned --></label>
         <name>n2de__Last_reassigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source queue --></label>
+        <name>n2de__Source_queue__c</name>
     </fields>
     <fields>
         <label><!-- Time to action (mins) --></label>
@@ -7846,10 +7863,6 @@ Source_Details_Confirmed__c  -  DATEVALUE(CreatedDate ) --></help>
         <name>Enterprise_Account_Services</name>
     </recordTypes>
     <recordTypes>
-        <label><!-- zKnowledge Request --></label>
-        <name>Knowledge_Request</name>
-    </recordTypes>
-    <recordTypes>
         <label><!-- Migration --></label>
         <name>Migration</name>
     </recordTypes>
@@ -7946,7 +7959,7 @@ Source_Details_Confirmed__c  -  DATEVALUE(CreatedDate ) --></help>
         <name>Support_Case_Owner_Queue_Change</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Please verify that Case and Contact are all on the same Account.  If you have any questions, please contact your manager, thanks! --></errorMessage>
+        <errorMessage><!-- Please verify that Case, Contact, Subscription are all on the same Account.  If you have any questions, please contact your manager, thanks! --></errorMessage>
         <name>Validation_on_Account</name>
     </validationRules>
     <webLinks>

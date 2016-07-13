@@ -6,8 +6,9 @@
   <title>Request Submitted | Bigcommerce Support</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <apex:stylesheet value="{!URLFOR($Resource.case_assets, 'case_assets/styles/bootstrap/bootstrap.min.css')}" />
-  <apex:stylesheet value="{!URLFOR($Resource.case_assets, 'case_assets/styles/styles.css')}" />
+   <apex:stylesheet value="{!URLFOR($Resource.support_assets, 'support_assets/stylesheets/vendor/normalize.min.css')}" />
+  <apex:stylesheet value="{!URLFOR($Resource.support_assets, 'support_assets/stylesheets/vendor/foundation.min.css')}" />
+  <apex:stylesheet value="{!URLFOR($Resource.support_assets, 'support_assets/stylesheets/chatstyles.css')}" />
   <apex:includeScript value="{!$Resource.jQuery}"/>
 </head>
 <body class="page-thanks">
@@ -17,7 +18,7 @@
         <header id="header">
           <div class="row">
             <div class="col-xs-12 text-center">
-              <a href="http://support.bigcommerce.com/" id="link-home" title="support.bigcommerce.com"><apex:image value="{!URLFOR($Resource.case_assets, 'case_assets/img/Bigcommerce-Logo-Notag-280.png')}" alt="Bigcommerce Logo; click to go to bigcommerce.com" width="280" height="68" /></a>
+              <a href="http://support.bigcommerce.com/" id="link-home" title="support.bigcommerce.com"><apex:image value="{!URLFOR($Resource.support_assets, 'support_assets/images/logo.png')}" alt="Bigcommerce Logo; click to go to bigcommerce.com"  /></a>
             </div>
           </div>
         </header>

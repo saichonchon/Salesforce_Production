@@ -70,7 +70,7 @@
     </groupingsAcross>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Opportunity.Channel__c</field>
+        <field>Opportunity.MarketingSource__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
@@ -78,7 +78,7 @@
         <field>RECORDTYPE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>SFDC - Organic Search - Paid Performance</name>
+    <name>Organic Search - Cohort Performance</name>
     <params>
         <name>open</name>
         <value>all</value>

@@ -18,6 +18,10 @@
                 <behavior>Edit</behavior>
                 <field>About_Me_Custom__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Website__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>OneColumn</style>
     </layoutSections>

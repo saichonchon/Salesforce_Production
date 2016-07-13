@@ -1,0 +1,127 @@
+<apex:page controller="PartnerCommissionToolsController" showHeader="true" sidebar="true" tabStyle="Partner_Commission_Tools__tab">
+
+	<apex:form id="mainForm">
+		<apex:actionPoller reRender="MonitorRegion,OverviewRegion" action="{!RefreshPageData}" interval="5" />
+
+		<apex:pageBlock title="Reporting" id="OverviewRegion">
+
+			<apex:pageBlockSection title="Overview" columns="2" collapsible="false">
+
+				<apex:outputText label="Start Date" value="{0, date, M/d/YYYY}">
+					<apex:param value="{!PartnerCommissionSummaryHistory.Earliest_Start_Date__c}" />
+				</apex:outputText>
+
+				<apex:outputText label="End Date" value="{0, date, M/d/YYYY}">
+					<apex:param value="{!PartnerCommissionSummaryHistory.Latest_End_Date__c}" />
+				</apex:outputText>
+				
+				<apex:outputText label="Summaries" value="{0, number, ###,##0}">
+					<apex:param value="{!PartnerCommissionSummaryHistory.Summary_Count__c}" />
+				</apex:outputText>
+
+				<apex:outputText label="Commissionable Revenue" value="{0,Number,Currency}">
+					<apex:param value="{!PartnerCommissionSummaryHistory.Commissionable_Revenue__c}" />
+				</apex:outputText>
+
+				<apex:outputText label="Commissionable Transactions" value="{0, number, ###,##0}">
+					<apex:param value="{!PartnerCommissionSummaryHistory.Commissionable_Transactions__c}" />
+				</apex:outputText>
+
+				<apex:outputText label="Earned Commissions" value="{0,Number,Currency}">
+					<apex:param value="{!PartnerCommissionSummaryHistory.Commission_Earned__c}" />
+				</apex:outputText>
+
+			</apex:pageBlockSection>
+
+			<apex:pageBlockSection title="Open Summaries" columns="2" collapsible="false">
+
+				<apex:outputText label="Start Date" value="{0, date, M/d/YYYY}">
+					<apex:param value="{!PartnerCommissionSummaryHistory.Earliest_Start_Date_Open__c}" />
+				</apex:outputText>
+
+				<apex:outputText label="End Date" value="{0, date, M/d/YYYY}">
+					<apex:param value="{!PartnerCommissionSummaryHistory.Latest_End_Date_Open__c}" />
+				</apex:outputText>
+				
+				<apex:outputText label="Summaries" value="{0, number, ###,##0}">
+					<apex:param value="{!PartnerCommissionSummaryHistory.Summary_Count_Open__c}" />
+				</apex:outputText>
+
+				<apex:outputText label="Commissionable Revenue" value="{0,Number,Currency}">
+					<apex:param value="{!PartnerCommissionSummaryHistory.Commissionable_Revenue_Open__c}" />
+				</apex:outputText>
+
+				<apex:outputText label="Commissionable Transactions" value="{0, number, ###,##0}">
+					<apex:param value="{!PartnerCommissionSummaryHistory.Commissionable_Transactions_Open__c}" />
+				</apex:outputText>
+
+				<apex:outputText label="Earned Commissions" value="{0,Number,Currency}">
+					<apex:param value="{!PartnerCommissionSummaryHistory.Commission_Earned_Open__c}" />
+				</apex:outputText>
+
+			</apex:pageBlockSection>
+
+			<apex:pageBlockSection title="Closed Summaries" columns="2" collapsible="false">
+
+				<apex:outputText label="Start Date" value="{0, date, M/d/YYYY}">
+					<apex:param value="{!PartnerCommissionSummaryHistory.Earliest_Start_Date_Closed__c}" />
+				</apex:outputText>
+
+				<apex:outputText label="End Date" value="{0, date, M/d/YYYY}">
+					<apex:param value="{!PartnerCommissionSummaryHistory.Latest_End_Date_Closed__c}" />
+				</apex:outputText>
+				
+				<apex:outputText label="Summaries" value="{0, number, ###,##0}">
+					<apex:param value="{!PartnerCommissionSummaryHistory.Summary_Count_Closed__c}" />
+				</apex:outputText>
+
+				<apex:outputText label="Commissionable Revenue" value="{0,Number,Currency}">
+					<apex:param value="{!PartnerCommissionSummaryHistory.Commissionable_Revenue_Closed__c}" />
+				</apex:outputText>
+
+				<apex:outputText label="Commissionable Transactions" value="{0, number, ###,##0}">
+					<apex:param value="{!PartnerCommissionSummaryHistory.Commissionable_Transactions_Closed__c}" />
+				</apex:outputText>
+
+				<apex:outputText label="Earned Commissions" value="{0,Number,Currency}">
+					<apex:param value="{!PartnerCommissionSummaryHistory.Commission_Earned_Closed__c}" />
+				</apex:outputText>
+
+			</apex:pageBlockSection>
+
+			<apex:pageBlockSection title="Payments" columns="2" collapsible="false">
+
+				<apex:outputText label="Payments" value="{0, number, ###,##0}">
+					<apex:param value="{!PartnerCommissionSummaryHistory.Payments__c}" />
+				</apex:outputText>
+
+				<apex:outputText label="Payment Amount" value="{0,Number,Currency}">
+					<apex:param value="{!PartnerCommissionSummaryHistory.Payment_Amount__c}" />
+				</apex:outputText>
+
+				<apex:outputText label="Outstanding Balance" value="{0,Number,Currency}">
+					<apex:param value="{!PartnerCommissionSummaryHistory.Balance__c}" />
+				</apex:outputText>
+
+			</apex:pageBlockSection>
+
+		</apex:pageBlock>
+
+
+		<apex:pageBlock title="Monitor" id="MonitorRegion">
+			<apex:pageBlockSection title="Job Status" columns="2" rendered="true" collapsible="false">
+				<apex:outputText label="Job Name" value="{!BatchStatus.JobName}" />
+				<apex:outputText label="Job Id" value="{!BatchStatus.Id}" />
+				<apex:outputText label="# Records" value="{!BatchStatus.NumberOfRecords}" />
+				<apex:outputText label="Started" value="{!BatchStatus.CreatedDate}" />
+				<apex:outputText label="# Records Processed" value="{!BatchStatus.NumberOfRecordsProcessed}" />
+				<apex:outputText label="Status" value="{!BatchStatus.Status}" />
+				<apex:outputText label="Progress" value="{0,Number,0} %" >
+					<apex:param value="{!BatchStatus.ProgressPercent}" />
+				</apex:outputText>
+				<!--progress class="skill-1" max="100" value="{!BatchStatus.ProgressPercent}"></progress-->
+			</apex:pageBlockSection>
+		</apex:pageBlock>
+	</apex:form>
+
+</apex:page>

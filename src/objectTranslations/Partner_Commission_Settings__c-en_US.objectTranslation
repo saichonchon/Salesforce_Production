@@ -4,10 +4,6 @@
         <plural>false</plural>
         <value>Partner Commission Settings</value>
     </caseValues>
-    <caseValues>
-        <plural>true</plural>
-        <value>Partner Commission Settings</value>
-    </caseValues>
     <fields>
         <help><!-- If the start date is left blank on a partner commission run, this is the earliest BI Data to pull in --></help>
         <label><!-- Earliest Possible Start Date --></label>

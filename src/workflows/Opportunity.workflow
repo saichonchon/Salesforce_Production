@@ -405,30 +405,6 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Clear_Closed_lost_comments</fullName>
-        <field>Other_Comments__c</field>
-        <name>Clear Closed lost comments</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Null</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Clear_Closed_lost_reason_detail</fullName>
-        <field>Closed_Lost_Reason_Detail__c</field>
-        <name>Clear Closed lost reason detail</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Clear_closed_lost_reason</fullName>
-        <field>Closed_Lost_Reason__c</field>
-        <name>Clear closed lost reason</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Copy_Store_URL_TEXT</fullName>
         <description>Update Store URL text value</description>
         <field>Store_URL_TEXT__c</field>
@@ -488,15 +464,6 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Oppty_Add_Contact_Phone</fullName>
-        <field>Contact_Phone__c</field>
-        <formula>Contact__r.Phone</formula>
-        <name>Oppty: Add Contact Phone</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Set_App_Approval_Date</fullName>
         <field>App_Approved_Date__c</field>
         <formula>TODAY()</formula>
@@ -543,15 +510,6 @@
         <name>Set Revshare signed date</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Stage_Agreement</fullName>
-        <field>StageName</field>
-        <literalValue>Agreement</literalValue>
-        <name>Stage Agreement</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
@@ -793,7 +751,15 @@
         <active>false</active>
         <description>When a contact is added as a campaign member for a demo request, this date is set. Create a task for the contact owner. 
 For BAP-3811</description>
-        <formula>AND(  NOT(ISBLANK(Demo_Requested_Date__c)),  OR(Owner.Profile.Id = &apos;00e13000000jUNJ&apos;, /* Lead Development Rep */  Owner.Profile.Id = &apos;00e130000024OSc&apos;, /* Sales Rep */  Owner.Profile.Id = &apos;00e13000000jUyt&apos;, /* Sales Rep - Dial on Opps */  Owner.Profile.Id = &apos;00e130000024OSX&apos;) /* Sales Leader */ )</formula>
+        <formula>AND(  
+NOT(ISBLANK(Demo_Requested_Date__c)),  
+OR(
+Owner.Profile.Id = &apos;00e13000000jUNJ&apos;, /* Lead Development Rep */  
+Owner.Profile.Id = &apos;00e130000024OSc&apos;, /* Sales Rep */  
+Owner.Profile.Id = &apos;00e13000000jUyt&apos;, /* Sales Rep - Dial on Opps */  
+Owner.Profile.Id = &apos;00e130000024OSX&apos;  /* Sales Leader */ 
+)
+)</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>

@@ -9,6 +9,7 @@
     <customButtons>Round_Robin</customButtons>
     <customButtons>Qualify</customButtons>
     <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>DisableCustomerPortalAccount</excludeButtons>
     <excludeButtons>DisablePartnerPortalAccount</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
@@ -576,7 +577,6 @@
         <relatedList>RelatedContactList</relatedList>
     </relatedLists>
     <relatedLists>
-        <excludeButtons>New</excludeButtons>
         <fields>OPPORTUNITY.NAME</fields>
         <fields>OPPORTUNITY.RECORDTYPE</fields>
         <fields>OPPORTUNITY.STAGE_NAME</fields>

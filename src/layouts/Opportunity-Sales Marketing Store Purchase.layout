@@ -47,6 +47,10 @@
                 <behavior>Readonly</behavior>
                 <field>Sample_100__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Demo_Requested_Date__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -802,11 +806,11 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Marketing_Medium__c</field>
+                <field>MarketingCampaign__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>MarketingCampaign__c</field>
+                <field>Channel__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>

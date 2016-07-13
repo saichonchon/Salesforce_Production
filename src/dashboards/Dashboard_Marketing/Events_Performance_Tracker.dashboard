@@ -332,7 +332,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <groupingColumn>CAMPAIGN_STARTDATE</groupingColumn>
+            <groupingColumn>CLOSE_DATE</groupingColumn>
             <header>Total Event SOLD MRR YoY</header>
             <legendPosition>Bottom</legendPosition>
             <report>Marketing_Reports/Events_SOLD_MRR_ALL_Events</report>

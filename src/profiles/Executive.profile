@@ -214,6 +214,30 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>BatchPartnerCommissionAddPaymentHistory</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>BatchPartnerCommissionCleanup</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>BatchPartnerCommissionCleanupScheduler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>BatchPartnerCommissionCreateDetails</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>BatchPartnerCommissionCreateHistory</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>BatchPartnerCommissionCreateSummaries</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>BatchPartnerCommissions</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -594,6 +618,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>PartnerCommissionSummaryTriggerHandler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PartnerCommissionToolsController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>PartnerCommissionsHelper</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -923,6 +955,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>TestOppsForConsole</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>TestPartnerCommissions</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -2618,6 +2654,26 @@
         <editable>true</editable>
         <field>Account.lmsilt__UpsellOpportunity__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.n2de__Is_distributed__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.n2de__Is_reassigned__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.n2de__Last_distributed__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.n2de__Last_reassigned__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -4670,6 +4726,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Owner_Profile__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Case.ParentId</field>
         <readable>false</readable>
@@ -5495,6 +5556,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.n2de__Is_archived__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Case.n2de__Is_distributed__c</field>
         <readable>true</readable>
@@ -5515,6 +5581,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.n2de__Last_archive_date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Case.n2de__Last_distributed__c</field>
         <readable>true</readable>
@@ -5523,6 +5594,11 @@
         <editable>true</editable>
         <field>Case.n2de__Last_reassigned__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.n2de__Source_queue__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -6358,6 +6434,26 @@
         <editable>true</editable>
         <field>Contact.mkto_si__View_in_Marketo__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.n2de__Is_distributed__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.n2de__Is_reassigned__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.n2de__Last_distributed__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.n2de__Last_reassigned__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -7356,6 +7452,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Invoice_Transaction__c.Date_Payment_Effective_Until__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Invoice_Transaction__c.Date_Refunded__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -7418,6 +7519,11 @@
         <editable>false</editable>
         <field>Invoice_Transaction__c.Product_Type__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Invoice_Transaction__c.Provisioning_System__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -7720,12 +7826,12 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Lead.DaScoopComposer__Groove_LinkedIn__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Lead.DaScoopComposer__Groove_Log_a_Call__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -8752,62 +8858,62 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Lead.gafirstTouchChannel__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Lead.gafirstTouchDate__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Lead.gafirstTouchKeyword__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Lead.gafirstTouchMedium__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Lead.gafirstTouchSource__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Lead.galastTouchCampaign__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Lead.galastTouchChannel__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Lead.galastTouchDate__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Lead.galastTouchKeyword__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Lead.galastTouchMedium__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Lead.galastTouchSource__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Lead.gatotalTouchCount__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -8890,7 +8996,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Lead.mkto_si__Add_to_Marketo_Campaign__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -8920,7 +9026,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Lead.mkto_si__Last_Interesting_Moment__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -8940,7 +9046,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Lead.mkto_si__Relative_Score__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -8950,12 +9056,12 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Lead.mkto_si__Urgency__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Lead.mkto_si__View_in_Marketo__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -8963,6 +9069,11 @@
         <editable>true</editable>
         <field>Lead.n2de__Action__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.n2de__Is_archived__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -8985,6 +9096,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.n2de__Last_archive_date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Lead.n2de__Last_distributed__c</field>
         <readable>true</readable>
@@ -8993,6 +9109,11 @@
         <editable>true</editable>
         <field>Lead.n2de__Last_reassigned__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.n2de__Source_queue__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -11545,11 +11666,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.Marketing_Medium__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Marketing_Price_Testing_Group__c</field>
         <readable>true</readable>
@@ -12826,7 +12942,17 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Partner_Commission_Invoice_Transaction__c.Account_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Partner_Commission_Invoice_Transaction__c.Accrued_Transaction_Amount__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Partner_Commission_Invoice_Transaction__c.Amount_Paid__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -12842,6 +12968,41 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Partner_Commission_Invoice_Transaction__c.Partner_Commission_Percent__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Partner_Commission_Invoice_Transaction__c.Partner_Has_PayPal_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Partner_Commission_Invoice_Transaction__c.Partner_Is_Eligible_for_Payment__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Partner_Commission_Invoice_Transaction__c.Partner_is_Engaged__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Partner_Commission_Invoice_Transaction__c.Payment_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Partner_Commission_Invoice_Transaction__c.Payment_Term__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Partner_Commission_Invoice_Transaction__c.Store_Plan__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Partner_Commission_Invoice_Transaction__c.Store_URL__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -13016,7 +13177,17 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Partner_Commission_Summary__c.Closed__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Partner_Commission_Summary__c.Commissionable_Revenue__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Partner_Commission_Summary__c.Expected_Commission_Payment_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -16305,6 +16476,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>User.Website__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>User.Weekly_All_In_Quota__c</field>
         <readable>true</readable>
@@ -16747,10 +16923,6 @@
         <recordType>Case.Enterprise_Account_Services</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-Knowledge Request</layout>
-        <recordType>Case.Knowledge_Request</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Case-Migration Layout</layout>
         <recordType>Case.Migration</recordType>
     </layoutAssignments>
@@ -16793,10 +16965,6 @@
     <layoutAssignments>
         <layout>CaseClose-Client Success Close Case Layout</layout>
         <recordType>Case.Client_Success</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CaseClose-Client Success Close Case Layout</layout>
-        <recordType>Case.Knowledge_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CaseClose-Client Success Close Case Layout</layout>
@@ -18230,6 +18398,10 @@
     <pageAccesses>
         <apexPage>OppForConsole</apexPage>
         <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>PartnerCommissionTools</apexPage>
+        <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
         <apexPage>PartnerHome</apexPage>
