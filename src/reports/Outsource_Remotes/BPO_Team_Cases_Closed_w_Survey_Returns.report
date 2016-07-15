@@ -51,6 +51,8 @@
     <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>CLOSED_DATEONLY</dateColumn>
-        <interval>INTERVAL_THISWEEK</interval>
+        <endDate>2016-07-09</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-04-10</startDate>
     </timeFrameFilter>
 </Report>

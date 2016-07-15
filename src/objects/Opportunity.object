@@ -7012,7 +7012,7 @@ null) ,NULL
                 <fullName>Closing</fullName>
                 <default>false</default>
                 <closed>false</closed>
-                <forecastCategory>Pipeline</forecastCategory>
+                <forecastCategory>Forecast</forecastCategory>
                 <probability>90</probability>
                 <won>false</won>
             </picklistValues>
@@ -8996,10 +8996,13 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <columns>OPPORTUNITY.NAME</columns>
         <columns>ACCOUNT.NAME</columns>
         <columns>OPPORTUNITY.AMOUNT</columns>
-        <columns>OPPORTUNITY.LAST_ACTIVITY</columns>
         <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.LAST_ACTIVITY</columns>
         <columns>OPPORTUNITY.STAGE_NAME</columns>
-        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Contact__c</columns>
+        <columns>Contact_Email__c</columns>
+        <columns>Contact_Phone__c</columns>
+        <columns>Primary_Campaign_Name__c</columns>
         <filterScope>Mine</filterScope>
         <filters>
             <field>OPPORTUNITY.WON</field>
@@ -9125,6 +9128,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <columns>OPPORTUNITY.CLOSE_DATE</columns>
         <columns>OPPORTUNITY.STAGE_NAME</columns>
         <columns>CORE.USERS.ALIAS</columns>
+        <columns>Primary_Campaign_Name__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>OPPORTUNITY.RECORDTYPE</field>

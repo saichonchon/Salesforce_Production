@@ -398,6 +398,10 @@ ISPICKVAL(Status,&apos;Demo Requested&apos;) /* The Status is demo requested */
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Promo Demo Request</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Referred Lead</fullName>
                 <default>false</default>
             </picklistValues>

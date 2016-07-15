@@ -4,7 +4,6 @@
     <name>Sales Templates : Partner</name>
     <publicFolderAccess>ReadOnly</publicFolderAccess>
     <sharedTo>
-        <allInternalUsers></allInternalUsers>
-        <roleAndSubordinatesInternal>Executive</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>VP_of_Sales</roleAndSubordinatesInternal>
     </sharedTo>
 </EmailFolder>

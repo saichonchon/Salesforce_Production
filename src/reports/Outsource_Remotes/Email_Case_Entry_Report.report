@@ -72,6 +72,6 @@
     <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>COMMENT_CREATED_DATE</dateColumn>
-        <interval>INTERVAL_THISWEEK</interval>
+        <interval>INTERVAL_LAST30</interval>
     </timeFrameFilter>
 </Report>

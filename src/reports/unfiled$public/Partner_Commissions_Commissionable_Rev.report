@@ -13,6 +13,12 @@
         <field>Partner_Commission_Summary__c.End_Date__c</field>
     </columns>
     <columns>
+        <field>rvpe__RVAccount__c.Total_Active_MRR__c</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVAccount__c.Last_Month_s_Commissionable_Revenue__c</field>
+    </columns>
+    <columns>
         <field>Partner_Commission_Summary__c.Number_of_Invoice_Transactions__c</field>
     </columns>
     <columns>
@@ -32,7 +38,7 @@
         </criteriaItems>
     </filter>
     <format>Tabular</format>
-    <name>Partner Commissions</name>
+    <name>Partner Commissions + Commissionable Rev</name>
     <params>
         <name>co</name>
         <value>1</value>

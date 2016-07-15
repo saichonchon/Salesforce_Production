@@ -1103,6 +1103,19 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Amount_Due__c</fields>
+        <fields>Date_Due__c</fields>
+        <fields>Amount_Paid__c</fields>
+        <fields>Date_Paid__c</fields>
+        <fields>Amount_Refunded__c</fields>
+        <fields>Date_Refunded__c</fields>
+        <fields>Amount_Paid_net__c</fields>
+        <fields>CMRR__c</fields>
+        <fields>Invoice_Status__c</fields>
+        <relatedList>Invoice_Transaction__c.Store_Opportunity__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
         <fields>tinderbox__Category__c</fields>
         <fields>CREATED_DATE</fields>
         <fields>LAST_UPDATE</fields>

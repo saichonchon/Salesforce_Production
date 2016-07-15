@@ -66,8 +66,6 @@
     <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>Case.WorkIt2__Timings__r.WorkIt2__Time_Entries__r$WorkIt2__End__c</dateColumn>
-        <endDate>2016-01-11</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2016-01-11</startDate>
+        <interval>INTERVAL_LASTWEEK</interval>
     </timeFrameFilter>
 </Report>

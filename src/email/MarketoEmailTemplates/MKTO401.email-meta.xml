@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>GTM-1248:  POS / Amazon Beta Interest.Beta Invitation Email</name>
+    <style>none</style>
+    <subject>Invitation to participate in upcoming betas</subject>
+    <textOnly>Your invited to participate in exciting new betas with BigCommerce
+
+
+Hi {{lead.First Name:default=there}},
+
+
+I’m the Director of Product Marketing at BigCommerce, and I’d like to invite you to participate in betas for several new and exciting BigCommerce products.
+
+In the past you’ve expressed interest in testing new products, so we’d like you to be one of the first to try them.
+
+If you’re interested in participating please click on the following link to see and select the betas you’d like to join. We will be contacting you in the upcoming weeks to get started.
+
+Choose your Betas &lt;[[http://goo.gl/forms/VYdMD23G0PlE89Zj2]]&gt;
+
+
+Thank you,
+
+
+Michael Chorazak
+
+ Director of Product Marketing, BigCommerce
+ 
+michael.chorazak@bigcommerce.com &lt;[[mailto:michael.chorazak@bigcommerce.com]]&gt;
+ 
+bigcommerce.com &lt;[[http://www.bigcommerce.com]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

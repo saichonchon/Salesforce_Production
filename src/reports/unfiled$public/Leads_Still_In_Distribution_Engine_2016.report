@@ -97,11 +97,6 @@
             <value></value>
         </criteriaItems>
         <criteriaItems>
-            <column>CAMPAIGN_TYPE</column>
-            <operator>equals</operator>
-            <value>Other</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>CAMPAIGN_NAME</column>
             <operator>notContain</operator>
             <value>australia</value>
@@ -110,6 +105,11 @@
             <column>Lead.qbdialer__Dials__c</column>
             <operator>lessOrEqual</operator>
             <value>5</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LEAD_STATUS</column>
+            <operator>notEqual</operator>
+            <value>Contacted,Unqualified,Demo Requested</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

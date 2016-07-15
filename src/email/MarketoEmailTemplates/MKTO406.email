@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html><head>
+<title></title>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
+<style type="text/css">
+        *{ color: #34313F !important; font-family: 'Source Sans Pro', sans-serif;}
+        body { background: #ffffff; margin:0; padding:0; }
+        table {border-collapse: collapse; }
+
+        p { font-size:16px; font-weight: 300; letter-spacing: 0.1px; line-height: 30px; margin-bottom: 5px; }
+        li{ font-size:16px; font-weight: 300; letter-spacing: 0.1px; line-height: 30px; padding-bottom:10px; }
+        h3{ font-size:18px; font-weight: normal; line-height: 25px; }
+        
+        .msgicon{position:relative;top:8px;}
+        .applelinksheader a { color: #363636 !important; text-decoration: none; }
+        .applelinks a { color: #777777 !important; text-decoration: none; }
+
+        a { color: #4B71FC !important; text-decoration: none !important; }
+        a:hover, a:focus, a:visited { color: #3F5CD6 !important; }
+
+        .cta a { color: #ffffff !important; font-size:14px; font-weight:bold; letter-spacing: 1.2px; line-height: 16px; text-decoration: none !important;}
+        .cta:hover, .cta:focus { background: #3F5CD6 !important; }
+        .cta:hover a, .cta:focus a { color: #ffffff !important; text-decoration: none; }
+
+        .footer p, .footer span, .footer a { color:#828189 !important; margin:0px !important;}
+        .footer .mobile-padding a { color: #ffffff !important; }
+        
+        @media (max-width : 480px) {
+        /*@media only screen and (max-device-width: 480px) {*/
+        .bodyWidth, #TopContainer, #LogoContainer { width: 100% !important; }
+        
+        /* Media query for mobile*/
+        @media only screen and (max-width: 480px)  {
+          
+          td{padding:0px !important;}
+          div{padding: 0px 30px !important;}
+          
+          .body{padding: 0px 20px!important;}
+          .button{margin:auto !important;}
+          .msgicon{display:block;margin:auto;}
+          .textcenter{text-align:center;}
+          .mobile-block{display:block;padding:0px !important;}
+          .no-padding{padding:0px !important;}
+          .hidemobile {display: none;}
+          .header{height:350px !important;}
+          .bodyWidth{max-width:480px;padding:0px !important;}
+          .center-image{display: block !important; padding-left: 0px !important;}
+          .mobile-padding{padding-left: 30px; padding-right: 30px; text-align: left !important;}
+          .hide-mobile{display: none !important;}
+          
+          
+          #Logo { padding-left:30px !important;padding-top:30px !important; padding-bottom: 30px !important; }
+          .bottom-logo{padding-top:40px;padding-left:30px;float:left;}
+          .footer .footer-logo img { margin: 15px auto 0; text-align: center; }
+          .footer-social {width:250px !important;padding-top:15px;margin-right:60px; }
+          .applelinksheader a { color: #363636 !important; text-decoration: none;}
+          .applelinks a { text-decoration: none; color: #828189 !important;}
+
+          
+        }
+</style>
+</head>
+<body style="margin:auto; display:block; background-color:#ffffff; -webkit-text-size-adjust:none; font-family:Helvetica, Arial, sans-serif; " bgcolor="#FFFFFF" ><!-- Outlook Font Fix -->
+<!--[if mso]>
+    <style type="text/css">
+    body, table, td {font-family: Helvetica, Arial, sans-serif !important;}
+    </style>
+    <![endif]-->
+<!-- Preview text (text which appears right after subject) -->
+<div class="mktEditable" id="preview-text" style="display:none; color:#ffffff; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; " ><span style="color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: #ffffff;">Your invited to participate in exciting new betas with BigCommerce</span><br style="color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;" /></div>
+<table align="center" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="margin:auto; background:#ffffff; border:none; " ><tr ><td ><!-- Logo Block -->
+<table width="800" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" style="background:#ffffff">
+<tr>
+<td valign="top" id="TopContainer" style="padding:32px 0px 0px 0px;">
+<table border="0" cellspacing="0" cellpadding="0" align="center" width="800" id="LogoContainer">
+<tr>
+<td valign="top" align="left" id="Logo" style="padding-left:100px;"><a href="http://www.bigcommerce.com?utm_source=header&utm_medium=email"><img src="http://grow.bigcommerce.com/rs/695-JJT-333/images/bigcommerce-logo-163x37.png" alt="BigCommerce Logo" width="163" border="0"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End Logo Block -->
+<!-- Body -->
+<table align="center" style="margin-bottom:30px !important; " width="800" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" ><tr ><td class="body" width="100%" valign="top" align="center" style="padding-top:40px; padding-bottom:50px; " ><table width="580" cellspacing="0" cellpadding="0" border="0" align="center" style="table-layout:fixed; border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; " class="bodyWidth" ><tr ><td style="color:#34313f; text-align:left; font-family:'Source Sans Pro', Helvetica, Arial, sans-serif; letter-spacing:0.1px; font-size:22px; font-weight:normal; line-height:35px; vertical-align:top; padding:0px 8px 0px 8px; " bgcolor="#FFFFFF" ><div class="mktEditable" id="Salutation" style="font-size:18px; font-weight:normal; line-height:25px; " ><h3>Hi {{lead.First Name:default=there}},</h3></div>
+<!--[if mso]>
+                      <div style="height:10px">&nbsp;</div>
+                      <![endif]--></td>
+</tr>
+<tr ><td style="font-size:16px; color:#34313f; text-align:left; font-family:'Source Sans Pro', Helvetica, Arial, sans-serif; letter-spacing:0.1px; line-height:30px; vertical-align:top; padding:0px 8px 0px 8px; " bgcolor="#FFFFFF" ><div class="mktEditable" id="Body" ><p style="padding-top: 5px;">I&rsquo;m the Director of Product Marketing at BigCommerce, and I&rsquo;d like to invite you to participate in betas for several new and exciting BigCommerce products.</p>
+<p>In the past you&rsquo;ve expressed interest in testing new products, so we&rsquo;d like you to be one of the first to try them.</p>
+<p>If you&rsquo;re interested in participating please click on the following link to see and select the betas you&rsquo;d like to join. We will be contacting you in the upcoming weeks to get started.<br /><br /></p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; display: inline-block; padding-bottom: 15px; padding-top: 5px;">
+<tbody>
+<tr>
+<td class="cta" valign="middle" align="center" height="40" width="225" style="text-decoration: none; font-size: 14px; color: #ffffff !important; background: #4b70fc; border-radius: 25px; text-transform: uppercase;">
+<div id="secondary-cta">
+<p style="margin: 0 0; color: #ffffff !important;"><a href="http://goo.gl/forms/VYdMD23G0PlE89Zj2" style="color: #ffffff !important; font-size: 14px; font-weight: 500; letter-spacing: 1.2px; line-height: 16px; text-decoration: none !important;" target="_blank">Choose your Betas</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Thank you,</p></div>
+<!--[if mso]>
+                      <div style="height:10px">&nbsp;</div>
+                      <![endif]--></td>
+</tr>
+<tr ><td style="font-size:16px; color:#34313f; text-align:left; font-family:'Source Sans Pro', Helvetica, Arial, sans-serif; letter-spacing:0.1px; line-height:30px; vertical-align:top; padding:0px 8px 10px 8px; " bgcolor="#FFFFFF" ><div class="mktEditable" id="Closing" ><p><strong>Michael Chorazak</strong><br /> Director of Product Marketing, BigCommerce<br /> <a href="mailto:michael.chorazak@bigcommerce.com" style="text-decoration: none; color: #4b70fc !important;">michael.chorazak@bigcommerce.com</a><br /> <a href="http://www.bigcommerce.com" style="text-decoration: none; color: #4b70fc !important;">bigcommerce.com</a></p></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- Footer -->
+
+<table class="footer" width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="margin: 0 auto; background: #ffffff; border:none">
+<tr>
+<td>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" align="center" style="background-color:#2b2936;clear:both;">
+<tr>
+<td width="100%" valign="top" align="center" bgcolor="#2B2936" style="padding-top:32px">
+<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="bodyWidth" style="table-layout:fixed;">
+<tr>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" align="left" class="bodyWidth">
+<tr>
+<td valign="top" style="background-color: #2b2936; text-align: center; font-family: 'Open Sans', Helvetica, sans-serif; font-size: 11px; line-height: 28px; color: #828189;" align="center" class="center"></td>
+</tr>
+<tr>
+<td valign="top" style="background-color: #2b2936; padding-bottom: 32px; text-align: left; font-family: 'Open Sans', Helvetica, sans-serif; font-size: 11px; line-height: 28px;color:#ffffff;" align="left">
+<div style="padding-left:40px; padding-top:25px;">
+<p><a class="footer-logo" href="http://www.bigcommerce.com?utm_source=footer&utm_medium=email"><img alt="BigCommerce Logo" align="middle" class="center-image" border="0" style="top:15px; padding-bottom: 20px !important; boerder-style: none;" src="http://grow.bigcommerce.com/rs/695-JJT-333/images/BigCommerce_icon_white-sized.png"></a> <span 
+class="hide-mobile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href="https://twitter.com/BigCommerce" style="color:#ffffff; font-size: 14px; display:inline-block; text-decoration:none;">Twitter</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.facebook.com/BigCommerce" style="color:#ffffff; font-size: 14px; display:inline-block; text-decoration:none;">Facebook</a> &nbsp;&nbsp;&nbsp;&nbsp; <a 
+href="https://www.linkedin.com/company/bigcommerce" style="color:#ffffff; font-size: 14px; display:inline-block; text-decoration:none;">LinkedIn</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.youtube.com/user/bigcommercedotcom" style="color:#ffffff; font-size: 14px; display:inline-block; text-decoration:none;">YouTube</a> &nbsp;&nbsp;&nbsp;&nbsp; <a 
+href="https://www.pinterest.com/bigcommerce/" style="color:#ffffff; font-size: 14px; display:inline-block; text-decoration:none;">Pinterest</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://plus.google.com/+bigcommerce" style="color:#ffffff; font-size: 14px; display:inline-block; text-decoration:none;">Google+</a></p>
+<p style="color:#828189; text-align:left; font-size:12px;">&#169; 2016 BigCommerce <span class="applelinks">11305 Four Points Dr., Building 2, Floor 3, Austin TX 78726</span><br>
+You received this email because you are subscribed to emails from BigCommerce.<br>
+<span style="color:#828189;text-align:left;font-size:12px"><a style="color:#828189;padding-right:5px;" href="http://grow.bigcommerce.com/subscribe-to-bigcommerce-blog.html">Subscribe to our Blog</a> | <a style="color:#828189;padding-left:5px;padding-right:5px;" href="http://grow.bigcommerce.com/manage-your-email-preferences.html">Update your email preferences</a> | <a 
+style="color:#828189;padding-left:5px;" href="{{system.viewAsWebpageLink}}">View as webpage</a></span></p>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End Footer --></body>
+</html>

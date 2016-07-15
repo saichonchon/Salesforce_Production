@@ -17,9 +17,10 @@
             <componentType>Gauge</componentType>
             <displayUnits>Integer</displayUnits>
             <footer>Total LDR Qualified Opps</footer>
+            <gaugeMin>0.0</gaugeMin>
             <header>Qualified Opps MTD</header>
-            <indicatorBreakpoint1>0.0</indicatorBreakpoint1>
-            <indicatorBreakpoint2>189.0</indicatorBreakpoint2>
+            <indicatorBreakpoint1>300.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>400.0</indicatorBreakpoint2>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_89399248</developerName>
+        <masterLabel>Grouped</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Support</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Support - API</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Support - Design Support Approved</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Support - Design Support Out Of Scope</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Support - Escalated Level 1</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Support - Legal/Abuse</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Support - Manager Callback</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Support - Trash</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tier 2 Support Queue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Billing Queue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Billing: Level 2</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Design Support</sourceValue>
+            </sourceValues>
+            <value>Grouped</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CREATED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>REASON</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <description>Case Origin Totals by Origin modified for Weekly Dashboard</description>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Case.Client_Success</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <operator>notEqual</operator>
+            <value>Support - Trash</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <operator>notEqual</operator>
+            <value>support@bigcommerce.com (closed),billing@bigcommerce.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <operator>notContain</operator>
+            <value>Partner Support,Pixel Union Themes</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>ORIGIN</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_89399248</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>WKRP_Support Totals</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LASTWEEK</interval>
+    </timeFrameFilter>
+</Report>

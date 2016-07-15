@@ -2045,6 +2045,10 @@ Set by hierarchy : Contact &gt; Lead &gt; Web Email &gt; Subscription Email --><
         <name>Client_Notification_Email__c</name>
     </fields>
     <fields>
+        <label><!-- Client Type --></label>
+        <name>Client_Type__c</name>
+    </fields>
+    <fields>
         <label><!-- Closed at Creation --></label>
         <name>Closed_at_Creation__c</name>
     </fields>
@@ -5229,6 +5233,14 @@ Referral : needs booking --></help>
         <picklistValues>
             <masterLabel>Robots.txt</masterLabel>
             <translation><!-- Robots.txt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBD: PayPal Offer</masterLabel>
+            <translation><!-- SBD: PayPal Offer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBD: iPayment Offer</masterLabel>
+            <translation><!-- SBD: iPayment Offer --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>SEO</masterLabel>

@@ -6,7 +6,7 @@
     <dashboardType>SpecifiedUser</dashboardType>
     <isGridLayout>false</isGridLayout>
     <leftSection>
-        <columnSize>Medium</columnSize>
+        <columnSize>Wide</columnSize>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
@@ -66,7 +66,7 @@
         </components>
     </leftSection>
     <middleSection>
-        <columnSize>Medium</columnSize>
+        <columnSize>Wide</columnSize>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
@@ -74,14 +74,14 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>false</enableHover>
+            <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <footer>only shows week the prospect first became active</footer>
             <header>ACTIVE Watch List Prospects (net new)</header>
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/Demandbase_WATCH_LIST_with_Activity</report>
             <showPercentage>false</showPercentage>
-            <showValues>false</showValues>
+            <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
             <useReportChart>false</useReportChart>
         </components>
@@ -131,11 +131,34 @@
         </components>
     </middleSection>
     <rightSection>
-        <columnSize>Medium</columnSize>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
+                <column>RowCount</column>
+            </chartSummary>
+            <componentType>ColumnGrouped</componentType>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <groupingColumn>MEMBER_CREATED_DATE</groupingColumn>
+            <groupingColumn>CAMPAIGN_NAME</groupingColumn>
+            <header>Combined Ad &amp; Watch List Leads Added</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>unfiled$public/Demandbase_Ad_and_Watch_List_w_Activity</report>
+            <showPercentage>false</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <useReportChart>false</useReportChart>
+        </components>
     </rightSection>
     <runningUser>julie.brezinski@bigcommerce.com</runningUser>
     <textColor>#000000</textColor>
-    <title>Demandbase Activities</title>
+    <title>Demandbase Funnel Activities</title>
     <titleColor>#000000</titleColor>
     <titleSize>12</titleSize>
 </Dashboard>

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EmailFolder xmlns="http://soap.sforce.com/2006/04/metadata">
-    <accessType>Public</accessType>
+    <accessType>Shared</accessType>
     <name>CS 2016 Templates</name>
     <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <roleAndSubordinates>VP_of_Client_Success</roleAndSubordinates>
+    </sharedTo>
 </EmailFolder>

@@ -66,6 +66,7 @@
             <expandOthers>false</expandOthers>
             <groupingColumn>Case.Resolution_Count__c</groupingColumn>
             <groupingColumn>CREATED_DATEONLY</groupingColumn>
+            <header>C1</header>
             <legendPosition>Bottom</legendPosition>
             <report>Support_Weekly_Metrics/Resolution_Webcase_Lifecycle</report>
             <showPercentage>false</showPercentage>
@@ -119,6 +120,29 @@
             <showValues>true</showValues>
             <sortBy>RowValueDescending</sortBy>
             <title>Open/Active Cases &amp; Owner (Alt View)</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
+                <column>RowCount</column>
+            </chartSummary>
+            <componentType>Column</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <groupingColumn>REASON</groupingColumn>
+            <header>C2</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>Outsource_Remotes/Esc_by_Cat_Reason_Webcase_Lifecycle</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Escalated by Category &amp; Reason (30 days)</title>
             <useReportChart>false</useReportChart>
         </components>
     </middleSection>

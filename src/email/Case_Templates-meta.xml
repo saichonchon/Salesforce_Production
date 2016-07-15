@@ -4,6 +4,6 @@
     <name>Case Templates</name>
     <publicFolderAccess>ReadOnly</publicFolderAccess>
     <sharedTo>
-        <allInternalUsers></allInternalUsers>
+        <roleAndSubordinatesInternal>VP_of_Client_Success</roleAndSubordinatesInternal>
     </sharedTo>
 </EmailFolder>

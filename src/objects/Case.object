@@ -3799,6 +3799,19 @@ Set by hierarchy : Contact &gt; Lead &gt; Web Email &gt; Subscription Email</inl
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Client_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(TEXT(Opportunity__r.Account_Management_Services__c))&amp;&amp;ISBLANK(TEXT(Opportunity__r.ENT_Support__c)),
+&quot;&quot;, 
+IMAGE(&quot;resource/EnterpriseClient&quot;, &quot;Enterprise Client&quot;,20,110) 
+)</formula>
+        <label>Client Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>ClosedDate</fullName>
     </fields>
     <fields>
@@ -7711,6 +7724,11 @@ NULL))</formula>
                 <cssExposed>false</cssExposed>
             </picklistValues>
             <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <cssExposed>false</cssExposed>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Outbound Design</fullName>
                 <default>false</default>
                 <cssExposed>false</cssExposed>
@@ -7947,11 +7965,6 @@ NULL))</formula>
             </picklistValues>
             <picklistValues>
                 <fullName>Weekly Status Call</fullName>
-                <default>false</default>
-                <cssExposed>false</cssExposed>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Other</fullName>
                 <default>false</default>
                 <cssExposed>false</cssExposed>
             </picklistValues>
@@ -8808,6 +8821,18 @@ NULL))</formula>
             <picklistValues>
                 <fullName>Saved from Cancellation</fullName>
                 <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SBD: iPayment Offer</fullName>
+                <default>false</default>
+                <controllingFieldValues>Credit</controllingFieldValues>
+                <controllingFieldValues>Refund</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SBD: PayPal Offer</fullName>
+                <default>false</default>
+                <controllingFieldValues>Credit</controllingFieldValues>
+                <controllingFieldValues>Refund</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Seasonal User</fullName>
@@ -16787,6 +16812,14 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             </values>
             <values>
                 <fullName>Retained at current plan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SBD%3A PayPal Offer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SBD%3A iPayment Offer</fullName>
                 <default>false</default>
             </values>
             <values>

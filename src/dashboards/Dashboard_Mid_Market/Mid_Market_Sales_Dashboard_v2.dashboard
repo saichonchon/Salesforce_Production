@@ -179,14 +179,14 @@
                 <calculatePercent>false</calculatePercent>
                 <column>FORMULA1</column>
                 <decimalPlaces>0</decimalPlaces>
-                <showTotal>true</showTotal>
+                <showTotal>false</showTotal>
                 <sortBy>RowValueDescending</sortBy>
             </dashboardTableColumn>
             <dashboardTableColumn>
                 <aggregateType>Sum</aggregateType>
                 <calculatePercent>false</calculatePercent>
                 <column>AMOUNT</column>
-                <showTotal>false</showTotal>
+                <showTotal>true</showTotal>
             </dashboardTableColumn>
             <displayUnits>Integer</displayUnits>
             <drillEnabled>false</drillEnabled>

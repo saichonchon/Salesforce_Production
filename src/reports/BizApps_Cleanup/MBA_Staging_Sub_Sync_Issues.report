@@ -14,6 +14,6 @@
     <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>CUST_LAST_UPDATE</dateColumn>
-        <interval>INTERVAL_CURY</interval>
+        <interval>INTERVAL_LAST7</interval>
     </timeFrameFilter>
 </Report>
