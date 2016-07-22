@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>LEAD_ID</field>
+    </columns>
+    <columns>
+        <field>LEAD_OWNER</field>
+    </columns>
+    <columns>
+        <field>COMPANY</field>
+    </columns>
+    <columns>
+        <field>URL</field>
+    </columns>
+    <columns>
+        <field>Lead.qbdialer__LastCallTime__c</field>
+    </columns>
+    <columns>
+        <field>Lead.qbdialer__Dials__c</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_NAME</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_ID</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_MEMBER_ID</field>
+    </columns>
+    <columns>
+        <field>LEAD_STATUS</field>
+    </columns>
+    <columns>
+        <field>PHONE</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>Lead.Created_Date_Time__c</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <filter>
+        <booleanFilter>((1 OR 2)) AND 3</booleanFilter>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <operator>equals</operator>
+            <value>ACQ.PrintAds.Demandbase Watchlist w/Activity 2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <operator>equals</operator>
+            <value>ACQ.PrintAds.Demandbase Ad-Targets w/Activity 2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead.qbdialer__LastCallTime__c</column>
+            <operator>greaterOrEqual</operator>
+            <value>6/1/2016 12:00 AM</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Demandbase Ad, Watchlist Call Activity 2</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignLead</reportType>
+    <scope>orgAll</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Lead.qbdialer__LastCallTime__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+</Report>

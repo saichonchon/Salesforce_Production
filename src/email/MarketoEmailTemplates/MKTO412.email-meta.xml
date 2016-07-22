@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Trial Copy Test (InExperienced): May 2016.Day 14 - Email 8: Trial Ends Soon</name>
+    <style>none</style>
+    <subject>Set up your store before your trial ends</subject>
+    <textOnly>You&apos;re so close — quickly launch your online store. Pick a plan that&apos;s right for you.
+
+
+Log in to your control panel &lt;[[https://login.bigcommerce.com/login]]&gt;
+
+
+Your free trial ends soon
+
+Set up your store
+
+
+Select your plan
+Don&apos;t lose your store
+
+We noticed that you haven&apos;t launched your online store yet. You can set it up and open for business in just a few easy steps by logging in now.
+ 
+ Or select a subscription plan and get the time you need to finish building your store.
+
+Select your plan » &lt;[[https://login.bigcommerce.com/login]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

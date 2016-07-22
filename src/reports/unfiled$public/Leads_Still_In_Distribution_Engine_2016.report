@@ -5,17 +5,16 @@
         <backgroundColor2>#FFFFFF</backgroundColor2>
         <backgroundFadeDir>Diagonal</backgroundFadeDir>
         <chartSummaries>
-            <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>Lead.Lead_Count__c</column>
+            <column>RowCount</column>
         </chartSummaries>
-        <chartType>VerticalColumnStacked</chartType>
+        <chartType>VerticalColumnGrouped</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>LEAD_STATUS</groupingColumn>
+        <groupingColumn>Lead.qbdialer__Dials__c</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
-        <secondaryGroupingColumn>Lead.qbdialer__Dials__c</secondaryGroupingColumn>
+        <secondaryGroupingColumn>CAMPAIGN_PARENT_NAME</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -28,7 +27,10 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>CAMPAIGN_PARENT_NAME</field>
+        <field>Lead.Lead_Count__c</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_NAME</field>
     </columns>
     <columns>
         <field>LEAD_ID</field>
@@ -56,10 +58,6 @@
     </columns>
     <columns>
         <field>Lead.Closed_Lost_Reason__c</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Lead.Lead_Count__c</field>
     </columns>
     <columns>
         <field>CampaignMember.Dialer_Sync_Status__c</field>
@@ -108,16 +106,21 @@
         </criteriaItems>
         <criteriaItems>
             <column>LEAD_STATUS</column>
-            <operator>notEqual</operator>
-            <value>Contacted,Unqualified,Demo Requested</value>
+            <operator>equals</operator>
+            <value>,Open,In Flow,Contacted</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_TYPE</column>
+            <operator>equals</operator>
+            <value>Telemarketing</value>
         </criteriaItems>
     </filter>
-    <format>Summary</format>
-    <groupingsDown>
+    <format>Matrix</format>
+    <groupingsAcross>
         <dateGranularity>Day</dateGranularity>
-        <field>CAMPAIGN_NAME</field>
+        <field>Lead.qbdialer__Dials__c</field>
         <sortOrder>Asc</sortOrder>
-    </groupingsDown>
+    </groupingsAcross>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>LEAD_STATUS</field>
@@ -125,7 +128,7 @@
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Lead.qbdialer__Dials__c</field>
+        <field>CAMPAIGN_PARENT_NAME</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Leads Still In Distribution Engine 2016</name>

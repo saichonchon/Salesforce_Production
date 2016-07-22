@@ -56,15 +56,4 @@
         <description>Sends a notification when a new task is assigned via PM Milestones.</description>
         <triggerType>onCreateOnly</triggerType>
     </rules>
-    <rules>
-        <fullName>zNotify Maria that project task is completed</fullName>
-        <active>false</active>
-        <criteriaItems>
-            <field>Milestone1_Task__c.Complete__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <description>Notify Maria that project task is completed</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
 </Workflow>

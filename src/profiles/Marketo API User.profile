@@ -254,6 +254,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>BatchSubscriptionCleanup</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>BatchSubscriptionCleanupScheduler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>BatchUpDateSurveys</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -846,6 +854,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>TestBatchSubscriptionCleanup</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>TestBatchTaskController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -1283,6 +1295,11 @@
         <editable>false</editable>
         <field>Account.Assign_To_Team__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.BMP_Account_ID__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -4458,6 +4475,11 @@
         <editable>true</editable>
         <field>Case.Last_Case_Comment_Date__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.Last_Case_Routed_Date__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -9701,6 +9723,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>MBA_Staging_Account__c.Original_External_Account_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>MBA_Staging_Account__c.PostalCode__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -9767,6 +9794,16 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>MBA_Staging_Contact__c.MBAClientID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MBA_Staging_Contact__c.Original_External_Account_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MBA_Staging_Contact__c.Original_External_Contact_ID__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -9963,6 +10000,16 @@
         <editable>false</editable>
         <field>MBA_Staging_Subscription__c.OrderIncrement__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MBA_Staging_Subscription__c.Original_External_Account_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MBA_Staging_Subscription__c.Original_External_Subscription_ID__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -12043,6 +12090,16 @@
         <editable>false</editable>
         <field>Opportunity.Promo_Given_Date__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Promo_Months_Free__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Promo__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>

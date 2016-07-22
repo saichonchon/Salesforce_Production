@@ -356,7 +356,7 @@
             <name>Demo_Requested</name>
             <type>Task</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <description>When a Lead is added as a campaign member for a demo request, this date is set. Create a task for the Lead owner. 
 For BAP-3811</description>
         <formula>AND(  
@@ -749,34 +749,6 @@ CONTAINS(Owner:User.UserRole.Name,&quot;Outbound&quot;) = FALSE)
         </actions>
         <active>true</active>
         <formula>(rvpe__NotifyRVMember__c == true)</formula>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>zNew Trail Added to Lead</fullName>
-        <actions>
-            <name>New_Trial_Old_Lead_Email_Owner</name>
-            <type>Alert</type>
-        </actions>
-        <active>false</active>
-        <description>Sends lead owner an email if a new trial is added to an old lead</description>
-        <formula>PRIORVALUE( Active_Trials__c ) &lt; Active_Trials__c &amp;&amp;   $User.Id  &lt;&gt; &quot;005a0000007EvtM&quot; &amp;&amp;  OwnerId &lt;&gt; &quot;00530000004W020&quot; &amp;&amp; OwnerId &lt;&gt; &quot;00530000007EJEO&quot;  &amp;&amp;  
-OwnerId &lt;&gt;  $Label.Lead_Default_Owner  &amp;&amp;
-DATEVALUE( CreatedDate ) &lt;&gt; TODAY() &amp;&amp;  Trial_Start_Date__c = TODAY()</formula>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
-        <fullName>zPopulate Initial Hubspot Score</fullName>
-        <active>false</active>
-        <criteriaItems>
-            <field>Lead.Hubspot_Score__c</field>
-            <operation>greaterThan</operation>
-            <value>0</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Lead.Initial_Hubspot_Score__c</field>
-            <operation>equals</operation>
-        </criteriaItems>
-        <description>Captures the Hubspot score value the very first time one comes through to the lead</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <tasks>

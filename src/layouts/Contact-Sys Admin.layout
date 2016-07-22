@@ -9,6 +9,7 @@
     <excludeButtons>EnablePrmSuperUser</excludeButtons>
     <excludeButtons>EnableSelfService</excludeButtons>
     <excludeButtons>RequestUpdate</excludeButtons>
+    <excludeButtons>RequestUseSfdc</excludeButtons>
     <excludeButtons>Share</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
     <excludeButtons>ViewSelfService</excludeButtons>
@@ -44,6 +45,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>MBAClientID__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>Primary_MBA_Contact__c</field>
             </layoutItems>
             <layoutItems>
@@ -53,6 +58,10 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>CleanStatus</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>qbdialer__Dials__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

@@ -34,6 +34,11 @@
         <name>MBAAccountID__c</name>
     </fields>
     <fields>
+        <help><!-- hen processing a migrated account from another system, we need to process the record using the original ID. Otherewise, a duplicate account would be created. --></help>
+        <label><!-- Original External Account ID --></label>
+        <name>Original_External_Account_ID__c</name>
+    </fields>
+    <fields>
         <label><!-- Postal Code --></label>
         <name>PostalCode__c</name>
     </fields>

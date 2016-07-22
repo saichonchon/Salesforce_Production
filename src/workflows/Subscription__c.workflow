@@ -37,7 +37,7 @@
         <description>Send email stating new Enterprise Account is paid</description>
         <protected>false</protected>
         <recipients>
-            <recipient>maria.huemmer@bigcommerce.com</recipient>
+            <recipient>miles.leymeister@bigcommerce.com</recipient>
             <type>user</type>
         </recipients>
         <senderAddress>no-reply@bigcommerce.com</senderAddress>

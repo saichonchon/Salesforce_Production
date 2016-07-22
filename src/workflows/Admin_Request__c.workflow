@@ -28,34 +28,4 @@
         <operation>Formula</operation>
         <protected>false</protected>
     </fieldUpdates>
-    <rules>
-        <fullName>zBiz Apps Request%3A Updated Email Notification</fullName>
-        <actions>
-            <name>Admin_Request_Update</name>
-            <type>Alert</type>
-        </actions>
-        <active>false</active>
-        <description>sends Requestor/Owner an email when an admin request&apos;s SOps Note field is updated</description>
-        <formula>ISCHANGED( Sales_Ops_Notes__c ) &amp;&amp;  RecordTypeId =&quot;012a0000001NQpT&quot;</formula>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
-        <fullName>zPopulate Completion Date</fullName>
-        <actions>
-            <name>Populate_Completion_Date</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>false</active>
-        <criteriaItems>
-            <field>Admin_Request__c.Status__c</field>
-            <operation>equals</operation>
-            <value>Completed</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Admin_Request__c.Completion_Date__c</field>
-            <operation>equals</operation>
-        </criteriaItems>
-        <description>If admin request is moved to Completed and no date is entered, marks date as today</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
 </Workflow>

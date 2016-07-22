@@ -64,6 +64,30 @@
             <sortBy>RowLabelAscending</sortBy>
             <useReportChart>false</useReportChart>
         </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Lead.Lead_Count__c</column>
+            </chartSummary>
+            <componentType>ColumnStacked</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <groupingColumn>Lead.qbdialer__Dials__c</groupingColumn>
+            <groupingColumn>CAMPAIGN_NAME</groupingColumn>
+            <header>Demandbase Lead Call Activities (Ad &amp; Watch)</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>unfiled$public/Demandbase_test_activity</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <useReportChart>false</useReportChart>
+        </components>
     </leftSection>
     <middleSection>
         <columnSize>Wide</columnSize>
@@ -126,6 +150,24 @@
             <report>Marketing_Team/Demandbase_Opportunities_Created</report>
             <showPercentage>true</showPercentage>
             <showValues>true</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Bar</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <header>Demandbase Opportunity Call Activities (Ad &amp; Watch)</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>unfiled$public/Demandbase_Opportunity_Call_Activity</report>
+            <showPercentage>false</showPercentage>
+            <showPicturesOnCharts>false</showPicturesOnCharts>
+            <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
             <useReportChart>false</useReportChart>
         </components>

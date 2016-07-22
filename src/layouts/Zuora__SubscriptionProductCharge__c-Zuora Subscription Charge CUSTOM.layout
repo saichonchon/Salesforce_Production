@@ -134,6 +134,14 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>Zuora__RatePlanId__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Zuora__ProductSKU__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>Zuora__RatePlanDescription__c</field>
             </layoutItems>
             <layoutItems>

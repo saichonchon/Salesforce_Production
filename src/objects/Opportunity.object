@@ -6495,9 +6495,53 @@ Account Management</description>
         <type>Date</type>
     </fields>
     <fields>
+        <fullName>Promo_Months_Free__c</fullName>
+        <externalId>false</externalId>
+        <label>Promo Months Free</label>
+        <picklist>
+            <picklistValues>
+                <fullName>2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Promo__c</fullName>
+        <externalId>false</externalId>
+        <label>Promotion</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Comp Cart Free Mos Aug 2016</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Netsuite Free Mos July 2016</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
         <fullName>Promotion__c</fullName>
         <externalId>false</externalId>
-        <inlineHelpText>Marketing : promotion given to a prospect to encourage them to upgrade from a free trial to a paid store</inlineHelpText>
+        <inlineHelpText>Promotion applied to a purchase.</inlineHelpText>
         <label>Promotion</label>
         <length>255</length>
         <required>false</required>
@@ -11878,6 +11922,32 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Promo_Months_Free__c</picklist>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Promo__c</picklist>
+            <values>
+                <fullName>Comp Cart Free Mos Aug 2016</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Netsuite Free Mos July 2016</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Rising_43__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -13910,6 +13980,32 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Promo_Months_Free__c</picklist>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Promo__c</picklist>
+            <values>
+                <fullName>Comp Cart Free Mos Aug 2016</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Netsuite Free Mos July 2016</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Rising_43__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -15768,6 +15864,32 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
             <values>
                 <fullName>%3C %2450%2C000</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Promo_Months_Free__c</picklist>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Promo__c</picklist>
+            <values>
+                <fullName>Comp Cart Free Mos Aug 2016</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Netsuite Free Mos July 2016</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -18687,6 +18809,32 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Promo_Months_Free__c</picklist>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Promo__c</picklist>
+            <values>
+                <fullName>Comp Cart Free Mos Aug 2016</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Netsuite Free Mos July 2016</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Rising_43__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -21565,6 +21713,32 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
             <values>
                 <fullName>%3C %2450%2C000</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Promo_Months_Free__c</picklist>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Promo__c</picklist>
+            <values>
+                <fullName>Comp Cart Free Mos Aug 2016</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Netsuite Free Mos July 2016</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -24690,6 +24864,32 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Promo_Months_Free__c</picklist>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Promo__c</picklist>
+            <values>
+                <fullName>Comp Cart Free Mos Aug 2016</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Netsuite Free Mos July 2016</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Rising_43__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -27781,6 +27981,32 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Promo_Months_Free__c</picklist>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Promo__c</picklist>
+            <values>
+                <fullName>Comp Cart Free Mos Aug 2016</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Netsuite Free Mos July 2016</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Rising_43__c</picklist>
             <values>
                 <fullName>No</fullName>
@@ -30095,6 +30321,32 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
             <values>
                 <fullName>%3C %2450%2C000</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Promo_Months_Free__c</picklist>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Promo__c</picklist>
+            <values>
+                <fullName>Comp Cart Free Mos Aug 2016</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Netsuite Free Mos July 2016</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

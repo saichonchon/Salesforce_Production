@@ -1,37 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
-    <chart>
-        <backgroundColor1>#FFFFFF</backgroundColor1>
-        <backgroundColor2>#FFFFFF</backgroundColor2>
-        <backgroundFadeDir>Diagonal</backgroundFadeDir>
-        <chartSummaries>
-            <axisBinding>y</axisBinding>
-            <column>RowCount</column>
-        </chartSummaries>
-        <chartType>VerticalColumn</chartType>
-        <enableHoverLabels>true</enableHoverLabels>
-        <expandOthers>true</expandOthers>
-        <groupingColumn>MEMBER_CREATED_DATE</groupingColumn>
-        <location>CHART_BOTTOM</location>
-        <showAxisLabels>true</showAxisLabels>
-        <showPercentage>false</showPercentage>
-        <showTotal>false</showTotal>
-        <showValues>true</showValues>
-        <size>Medium</size>
-        <summaryAxisRange>Auto</summaryAxisRange>
-        <textColor>#000000</textColor>
-        <textSize>12</textSize>
-        <titleColor>#000000</titleColor>
-        <titleSize>18</titleSize>
-    </chart>
     <columns>
         <field>MEMBER_ID</field>
     </columns>
     <columns>
         <field>COMPANY</field>
-    </columns>
-    <columns>
-        <field>LC_OWNER</field>
     </columns>
     <columns>
         <field>PHONE</field>
@@ -79,8 +52,8 @@
     </filter>
     <format>Summary</format>
     <groupingsDown>
-        <dateGranularity>Week</dateGranularity>
-        <field>MEMBER_CREATED_DATE</field>
+        <dateGranularity>Day</dateGranularity>
+        <field>LC_OWNER</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Demandbase Ad Target Sales Activity List</name>
@@ -95,6 +68,6 @@
     <reportType>CampaignWithCampaignMembers</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
-    <sortColumn>LAST_NAME</sortColumn>
+    <sortColumn>COMPANY</sortColumn>
     <sortOrder>Asc</sortOrder>
 </Report>

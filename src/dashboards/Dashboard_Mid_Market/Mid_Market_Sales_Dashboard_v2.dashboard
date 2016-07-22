@@ -25,6 +25,33 @@
             <title>Team Performance to Quota</title>
         </components>
         <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
+                <column>FORMULA8</column>
+            </chartSummary>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
+                <column>FORMULA11</column>
+            </chartSummary>
+            <componentType>Line</componentType>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Refunds and Cancellations will be Deducted in month sold</footer>
+            <groupingColumn>Opportunity.Oppotunity_Products__r$StartDate__c</groupingColumn>
+            <legendPosition>Bottom</legendPosition>
+            <report>Premium/Enterprise_Revenue_MoM</report>
+            <showPercentage>false</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Revenue MoM</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Table</componentType>
             <dashboardTableColumn>
@@ -73,33 +100,6 @@
             <report>Premium/Mid_Market_Sales_MTD_Upgrade_Categories</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <title>MRR by Upgrade Categories</title>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-            <chartAxisRange>Auto</chartAxisRange>
-            <chartSummary>
-                <axisBinding>y</axisBinding>
-                <column>FORMULA8</column>
-            </chartSummary>
-            <chartSummary>
-                <axisBinding>y</axisBinding>
-                <column>FORMULA11</column>
-            </chartSummary>
-            <componentType>Line</componentType>
-            <displayUnits>Integer</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>false</enableHover>
-            <expandOthers>false</expandOthers>
-            <footer>Refunds and Cancellations will be Deducted in month sold</footer>
-            <groupingColumn>Opportunity.Oppotunity_Products__r$StartDate__c</groupingColumn>
-            <legendPosition>Bottom</legendPosition>
-            <report>Premium/Enterprise_Revenue_MoM</report>
-            <showPercentage>false</showPercentage>
-            <showValues>true</showValues>
-            <sortBy>RowLabelAscending</sortBy>
-            <title>Revenue MoM</title>
-            <useReportChart>false</useReportChart>
         </components>
         <components>
             <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
@@ -223,6 +223,29 @@
             <report>Mid_Market_Sales/Upside_Deals_This_Month</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <title>Upside Deals This Month</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>AMOUNT</column>
+            </chartSummary>
+            <componentType>Funnel</componentType>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>true</expandOthers>
+            <groupingColumn>STAGE_NAME</groupingColumn>
+            <legendPosition>Right</legendPosition>
+            <report>Premium/Opportunity_Pipeline_Current_Month</report>
+            <showPercentage>true</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>This Month&apos;s Pipeline by Stage</title>
+            <useReportChart>false</useReportChart>
         </components>
         <components>
             <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
@@ -353,36 +376,13 @@
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <report>Mid_Market_Sales/MRR_MTD_TEST</report>
             <showPicturesOnTables>true</showPicturesOnTables>
-            <title>TEST - IN PRODUCTION</title>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
-            <dashboardTableColumn>
-                <column>Opportunity.Oppotunity_Products__r$Revenue_Rep__c</column>
-                <sortBy>RowValueDescending</sortBy>
-            </dashboardTableColumn>
-            <dashboardTableColumn>
-                <calculatePercent>false</calculatePercent>
-                <column>FORMULA8</column>
-                <showTotal>true</showTotal>
-            </dashboardTableColumn>
-            <displayUnits>Integer</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>Mid_Market_Sales/Mid_Market_Sales_MTD</report>
-            <showPicturesOnTables>true</showPicturesOnTables>
-            <title>Monthly Revenue Leaderboard</title>
+            <title>Sales Leaderboard MTD</title>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Table</componentType>
             <dashboardTableColumn>
                 <column>Opportunity$Owner</column>
-                <sortBy>RowLabelAscending</sortBy>
             </dashboardTableColumn>
             <dashboardTableColumn>
                 <calculatePercent>false</calculatePercent>
@@ -391,9 +391,16 @@
             </dashboardTableColumn>
             <dashboardTableColumn>
                 <calculatePercent>false</calculatePercent>
+                <column>FORMULA3</column>
+                <decimalPlaces>0</decimalPlaces>
+                <showTotal>false</showTotal>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <calculatePercent>false</calculatePercent>
                 <column>FORMULA1</column>
-                <decimalPlaces>2</decimalPlaces>
+                <decimalPlaces>0</decimalPlaces>
                 <showTotal>true</showTotal>
+                <sortBy>RowValueDescending</sortBy>
             </dashboardTableColumn>
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
@@ -403,7 +410,7 @@
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <report>Mid_Market_Sales/Migrations_Sold_MTD</report>
             <showPicturesOnTables>true</showPicturesOnTables>
-            <title>Migrations Sold this Month</title>
+            <title>Catalog Transfers Sold MTD</title>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
@@ -426,30 +433,7 @@
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <report>Premium/Total_Pipeline_by_Rep</report>
             <showPicturesOnTables>true</showPicturesOnTables>
-            <title>Pipeline by Rep - Total Pipeline</title>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-            <chartAxisRange>Auto</chartAxisRange>
-            <chartSummary>
-                <aggregate>Sum</aggregate>
-                <axisBinding>y</axisBinding>
-                <column>AMOUNT</column>
-            </chartSummary>
-            <componentType>Column</componentType>
-            <displayUnits>Integer</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>false</enableHover>
-            <expandOthers>false</expandOthers>
-            <groupingColumn>STAGE_NAME</groupingColumn>
-            <legendPosition>Bottom</legendPosition>
-            <report>Premium/Opportunity_Pipeline_Current_Month</report>
-            <showPercentage>false</showPercentage>
-            <showValues>true</showValues>
-            <sortBy>RowLabelAscending</sortBy>
-            <title>Current Month Pipeline by Stage</title>
-            <useReportChart>false</useReportChart>
+            <title>Total Pipeline by Rep</title>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>

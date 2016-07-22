@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Square Import/Export Survey- 1221.Email 1</name>
+    <style>none</style>
+    <subject>We want your feedback on Square Inventory Sync</subject>
+    <textOnly>We hope you are enjoying Square&apos;s import/export and inventory sync functionality.
+Hi {{lead.First Name:default=there}},
+
+
+Thank you for recently trying out BigCommerce’s integration with Square’s import/export and inventory sync functionality. To help us continue to improve our service, we’d like to ask you a few short questions about your experience.
+This survey should take less than 5 minutes to complete.
+
+
+
+
+TAKE THE SURVEY &lt;[[https://www.surveymonkey.com/r/QX8Y98J]]&gt;
+Thanks, 
+
+The BigCommerce Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

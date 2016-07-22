@@ -47,7 +47,7 @@
         </criteriaItems>
     </filter>
     <format>Tabular</format>
-    <name>Silk China - June 2016</name>
+    <name>Silk China - July 2016</name>
     <params>
         <name>open</name>
         <value>all</value>
@@ -63,12 +63,10 @@
     <reportType>Opportunity</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
-    <sortColumn>STAGE_NAME</sortColumn>
-    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>
-        <endDate>2016-06-30</endDate>
+        <endDate>2016-07-18</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2016-06-01</startDate>
+        <startDate>2016-07-11</startDate>
     </timeFrameFilter>
 </Report>

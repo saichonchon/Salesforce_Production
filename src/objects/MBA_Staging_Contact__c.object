@@ -176,6 +176,31 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Original_External_Account_ID__c</fullName>
+        <externalId>true</externalId>
+        <inlineHelpText>When processing a migrated account from another system, we need to process the record using the original ID.  Otherewise, a duplicate contact would be created.</inlineHelpText>
+        <label>Original External Account ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Original_External_Contact_ID__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <externalId>true</externalId>
+        <inlineHelpText>Uniquely identifies the contact in its originating system of record</inlineHelpText>
+        <label>Original External Contact ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
         <fullName>Phone__c</fullName>
         <externalId>false</externalId>
         <label>Phone</label>

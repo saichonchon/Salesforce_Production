@@ -748,7 +748,7 @@
             <name>Demo_Requested</name>
             <type>Task</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <description>When a contact is added as a campaign member for a demo request, this date is set. Create a task for the contact owner. 
 For BAP-3811</description>
         <formula>AND(  
@@ -758,7 +758,8 @@ Owner.Profile.Id = &apos;00e13000000jUNJ&apos;, /* Lead Development Rep */
 Owner.Profile.Id = &apos;00e130000024OSc&apos;, /* Sales Rep */  
 Owner.Profile.Id = &apos;00e13000000jUyt&apos;, /* Sales Rep - Dial on Opps */  
 Owner.Profile.Id = &apos;00e130000024OSX&apos;  /* Sales Leader */ 
-)
+),
+Owner.Id != &apos;005a000000AsxToAAJ&apos; /* The BigCommerce Team */
 )</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
@@ -1277,13 +1278,6 @@ ispickval( App_Revshare__c , &quot;Signed&quot;)</formula>
         <formula>(rvpe__NotifyRVMember__c == true)</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
-    <rules>
-        <fullName>zAssign App Opps to John N</fullName>
-        <active>false</active>
-        <description>Assign App Opps to John N</description>
-        <formula>RecordTypeId  = &quot;01213000000AVUj&quot;</formula>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
     <tasks>
         <fullName>Demo_Requested</fullName>
         <assignedToType>owner</assignedToType>
@@ -1294,17 +1288,5 @@ ispickval( App_Revshare__c , &quot;Signed&quot;)</formula>
         <protected>false</protected>
         <status>Not Started</status>
         <subject>**Demo Requested**</subject>
-    </tasks>
-    <tasks>
-        <fullName>WFR_Fired</fullName>
-        <assignedTo>maria.huemmer@bigcommerce.com</assignedTo>
-        <assignedToType>user</assignedToType>
-        <description>Grow bundle email fired</description>
-        <dueDateOffset>0</dueDateOffset>
-        <notifyAssignee>false</notifyAssignee>
-        <priority>Normal</priority>
-        <protected>false</protected>
-        <status>Completed</status>
-        <subject>TEST WFR Fired</subject>
     </tasks>
 </Workflow>

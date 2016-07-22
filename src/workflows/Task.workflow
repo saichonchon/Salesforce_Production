@@ -146,7 +146,7 @@
             <name>Change_Type_to_Reminder</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <description>Sends an email alert to the owner when a demo request has been assigned to them.</description>
         <formula>AND( 
 Subject = &apos;**Demo Requested**&apos;, 
@@ -154,8 +154,8 @@ OR(
 Owner:User.Profile.Id = &apos;00e13000000jUNJ&apos;, /* Lead Development Rep */  
 Owner:User.Profile.Id = &apos;00e130000024OSc&apos;, /* Sales Rep */  
 Owner:User.Profile.Id = &apos;00e13000000jUyt&apos;, /* Sales Rep - Dial on Opps */  
-Owner:User.Profile.Id = &apos;00e130000024OSX&apos;, /* Sales Leader */  
-LEFT(Owner:User.Id,15) = &apos;0051300000BsGMP&apos;) 
+Owner:User.Profile.Id = &apos;00e130000024OSX&apos;  /* Sales Leader */  
+) 
 )</formula>
         <triggerType>onCreateOnly</triggerType>
     </rules>

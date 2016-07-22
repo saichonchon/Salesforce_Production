@@ -54,6 +54,16 @@
         <name>MBAClientID__c</name>
     </fields>
     <fields>
+        <help><!-- When processing a migrated account from another system, we need to process the record using the original ID.  Otherewise, a duplicate contact would be created. --></help>
+        <label><!-- Original External Account ID --></label>
+        <name>Original_External_Account_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Uniquely identifies the contact in its originating system of record --></help>
+        <label><!-- Original External Contact ID --></label>
+        <name>Original_External_Contact_ID__c</name>
+    </fields>
+    <fields>
         <label><!-- Phone --></label>
         <name>Phone__c</name>
     </fields>

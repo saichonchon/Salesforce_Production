@@ -228,6 +228,7 @@
         <members>Dashboard_Marketing/Affiliate_Dashboard</members>
         <members>Dashboard_Marketing/Demo_Dashboard_for_Liz</members>
         <members>Dashboard_Marketing/Events_Performance_Tracker</members>
+        <members>Dashboard_Marketing/Marketing_Dashboard</members>
         <members>Dashboard_Marketing/Prospects_ACQ_Lists_Camapign_Dashboard_public</members>
         <members>Dashboard_Marketing/This_Year_Marketing_Campaign_Performance</members>
         <members>Dashboard_Marketing/X2015_Events</members>
@@ -264,6 +265,7 @@
         <members>Partner_Dashboards/App_Partner_Dashboard</members>
         <members>Partner_Dashboards/DSP_Dashboard</members>
         <members>Partner_Dashboards/Design_Solution_Partner</members>
+        <members>Partner_Dashboards/Partner_Marketing_Dashboard</members>
         <members>Partner_Dashboards/Partner_Support_Dashboard</members>
         <members>Partner_Dashboards/Tech_Partner_Ecosystem_Pipeline</members>
         <members>Partner_Dashboards/WIP_Partner_Support_Dashboard</members>
@@ -1108,11 +1110,54 @@
         <members>MarketoEmailTemplates/MKTO405</members>
         <members>MarketoEmailTemplates/MKTO406</members>
         <members>MarketoEmailTemplates/MKTO407</members>
+        <members>MarketoEmailTemplates/MKTO408</members>
+        <members>MarketoEmailTemplates/MKTO409</members>
         <members>MarketoEmailTemplates/MKTO41</members>
+        <members>MarketoEmailTemplates/MKTO410</members>
+        <members>MarketoEmailTemplates/MKTO411</members>
+        <members>MarketoEmailTemplates/MKTO412</members>
+        <members>MarketoEmailTemplates/MKTO413</members>
+        <members>MarketoEmailTemplates/MKTO414</members>
+        <members>MarketoEmailTemplates/MKTO415</members>
+        <members>MarketoEmailTemplates/MKTO416</members>
+        <members>MarketoEmailTemplates/MKTO417</members>
+        <members>MarketoEmailTemplates/MKTO418</members>
+        <members>MarketoEmailTemplates/MKTO419</members>
         <members>MarketoEmailTemplates/MKTO42</members>
+        <members>MarketoEmailTemplates/MKTO420</members>
+        <members>MarketoEmailTemplates/MKTO421</members>
+        <members>MarketoEmailTemplates/MKTO422</members>
+        <members>MarketoEmailTemplates/MKTO423</members>
+        <members>MarketoEmailTemplates/MKTO424</members>
+        <members>MarketoEmailTemplates/MKTO425</members>
+        <members>MarketoEmailTemplates/MKTO426</members>
+        <members>MarketoEmailTemplates/MKTO427</members>
+        <members>MarketoEmailTemplates/MKTO428</members>
+        <members>MarketoEmailTemplates/MKTO429</members>
         <members>MarketoEmailTemplates/MKTO43</members>
+        <members>MarketoEmailTemplates/MKTO430</members>
+        <members>MarketoEmailTemplates/MKTO431</members>
+        <members>MarketoEmailTemplates/MKTO432</members>
+        <members>MarketoEmailTemplates/MKTO433</members>
+        <members>MarketoEmailTemplates/MKTO434</members>
+        <members>MarketoEmailTemplates/MKTO435</members>
+        <members>MarketoEmailTemplates/MKTO436</members>
+        <members>MarketoEmailTemplates/MKTO437</members>
+        <members>MarketoEmailTemplates/MKTO438</members>
+        <members>MarketoEmailTemplates/MKTO439</members>
         <members>MarketoEmailTemplates/MKTO44</members>
+        <members>MarketoEmailTemplates/MKTO440</members>
+        <members>MarketoEmailTemplates/MKTO441</members>
+        <members>MarketoEmailTemplates/MKTO442</members>
+        <members>MarketoEmailTemplates/MKTO443</members>
+        <members>MarketoEmailTemplates/MKTO444</members>
+        <members>MarketoEmailTemplates/MKTO445</members>
+        <members>MarketoEmailTemplates/MKTO446</members>
+        <members>MarketoEmailTemplates/MKTO447</members>
+        <members>MarketoEmailTemplates/MKTO448</members>
+        <members>MarketoEmailTemplates/MKTO449</members>
         <members>MarketoEmailTemplates/MKTO45</members>
+        <members>MarketoEmailTemplates/MKTO450</members>
         <members>MarketoEmailTemplates/MKTO46</members>
         <members>MarketoEmailTemplates/MKTO47</members>
         <members>MarketoEmailTemplates/MKTO48</members>
@@ -1412,6 +1457,7 @@
         <members>Mass_Email_Templates/BIG_27407_Email</members>
         <members>Mass_Email_Templates/BIG_27457_Email</members>
         <members>Mass_Email_Templates/BIG_27498_Email</members>
+        <members>Mass_Email_Templates/BIG_27785</members>
         <members>Mass_Email_Templates/BIG_27827_Email</members>
         <members>Mass_Email_Templates/BIG_27828_Email</members>
         <members>Mass_Email_Templates/BIG_27829_Email</members>
@@ -1468,10 +1514,12 @@
         <members>PRM_Templates/PRM_Reset_Password</members>
         <members>Partner_Support_Templates/Acknowledgement</members>
         <members>Partner_Support_Templates/Affiliate_Link</members>
+        <members>Partner_Support_Templates/Approved_Deal_Registration_Explain</members>
         <members>Partner_Support_Templates/Client_Sandbox</members>
         <members>Partner_Support_Templates/Commission_Explain</members>
         <members>Partner_Support_Templates/Commissions_Angry_reply</members>
         <members>Partner_Support_Templates/Commissions_July_15</members>
+        <members>Partner_Support_Templates/Commissions_May_June_Explain_August_true_up</members>
         <members>Partner_Support_Templates/Commissions_hold_for_solution</members>
         <members>Partner_Support_Templates/Commissions_missing_paypal_issues</members>
         <members>Partner_Support_Templates/DSP_and_Tech_Partner</members>
@@ -1725,6 +1773,7 @@
         <members> Outsource_Remotes </members>
         <members> Partner_Commission </members>
         <members> Partner_DB_Reports </members>
+        <members> Partner_Marketing </members>
         <members> Partner_Team_Reports </members>
         <members> Premium </members>
         <members> Pricing_2015 </members>
@@ -1962,6 +2011,7 @@
         <members>Client_Success/Improper_Escalations_By_Rep_Category</members>
         <members>Client_Success/Insight_Billing_Cases</members>
         <members>Client_Success/JIRA_Breakdown_January_2014</members>
+        <members>Client_Success/JIRA_in_subject_not_linked</members>
         <members>Client_Success/JIRA_test_for_Bala</members>
         <members>Client_Success/JIRAs_Attached_To_Cases_Specific_JIRA</members>
         <members>Client_Success/JIRAs_Last_Week_w_MRR_and_GMV</members>
@@ -2433,6 +2483,7 @@
         <members>Marketing_Reports/Active_Partners_agreed_to_terms1</members>
         <members>Marketing_Reports/AdRoll_September_By_Country</members>
         <members>Marketing_Reports/Approved_Ent_Client_Reference_Stores</members>
+        <members>Marketing_Reports/Bigcommerce_Clients_in_Texas</members>
         <members>Marketing_Reports/Client_Reference_Stores</members>
         <members>Marketing_Reports/Clients_Default_Prospects_near_Denver</members>
         <members>Marketing_Reports/Cohort_Marketing_Master_Opps</members>
@@ -2491,7 +2542,11 @@
         <members>Marketing_Reports/SFDC_Organic_Search_Paid_Performance</members>
         <members>Marketing_Reports/Test133</members>
         <members>Marketing_Reports/Test_Opp_Report_3_Nea</members>
+        <members>Marketing_Reports/Texas_Opportunities_in_MM_Pipeline</members>
+        <members>Marketing_Reports/Texas_Sales_Prospects</members>
         <members>Marketing_Reports/Trial_Count_By_Day_PowerBI</members>
+        <members>Marketing_Reports/Trial_Count_YTD</members>
+        <members>Marketing_Reports/Trial_Count_by_Day</members>
         <members>Marketing_Reports/Trial_Count_by_Day_Opp</members>
         <members>Marketing_Reports/Trial_Count_by_Day_Opp_ARPU_MRR</members>
         <members>Marketing_Reports/Trial_Count_by_Day_Opp_KV_Final</members>
@@ -2689,6 +2744,7 @@
         <members>Partner_DB_Reports/Technology_Partners_W_Primary_Contact</members>
         <members>Partner_DB_Reports/This_Month_s_Revenue_Channel_Sales_v2</members>
         <members>Partner_DB_Reports/Total_Month_by_Parnter</members>
+        <members>Partner_Marketing/Time_to_First_Revenue_for_Active_Partner</members>
         <members>Partner_Team_Reports/Active_Channel_Partners_w_Contact_Info</members>
         <members>Partner_Team_Reports/Channel_Partner_Revenue</members>
         <members>Partner_Team_Reports/DB_This_Month_Approved_Partner_Accts</members>
@@ -2905,6 +2961,7 @@
         <members>Premium/SBD_Sourced_Pipeline_to_ENT</members>
         <members>Premium/SDR_Call_Activity</members>
         <members>Premium/SDR_MRR_in_Last_3_Months</members>
+        <members>Premium/SDR_OUTBOUND_Open_Leads</members>
         <members>Premium/SDR_Open_Leads</members>
         <members>Premium/SDR_Qualified_Opps_LM</members>
         <members>Premium/SDR_Qualified_Opps_MTD</members>
@@ -3121,7 +3178,9 @@
         <members>Sales_Operations/BAP_3479</members>
         <members>Sales_Operations/BAP_3787_Audit</members>
         <members>Sales_Operations/BAP_3803_Update_Author_to_Owner</members>
+        <members>Sales_Operations/BAP_3965</members>
         <members>Sales_Operations/BAP_399_Export_Current_Partners</members>
+        <members>Sales_Operations/BAP_4010</members>
         <members>Sales_Operations/BAP_435_Exclude_from_Dialer</members>
         <members>Sales_Operations/BAP_435_Include_in_Dialer</members>
         <members>Sales_Operations/BMP_Plan_Names</members>
@@ -3129,6 +3188,7 @@
         <members>Sales_Operations/Bigcommerce_Employees</members>
         <members>Sales_Operations/Billing_Case_Status_BAP_2163</members>
         <members>Sales_Operations/Billing_Cases</members>
+        <members>Sales_Operations/Billing_Contacts</members>
         <members>Sales_Operations/Bizible_Lead_Data</members>
         <members>Sales_Operations/Calls_With_Complete_Status</members>
         <members>Sales_Operations/Campaign_Import_Activity_Update</members>
@@ -3181,6 +3241,7 @@
         <members>Sales_Operations/Hubspot_Contact_import_for_Migration</members>
         <members>Sales_Operations/Hubspot_field_mapping</members>
         <members>Sales_Operations/I3_Activities</members>
+        <members>Sales_Operations/I3_Call_Object_Identifier</members>
         <members>Sales_Operations/I3_menu_and_pin_capture</members>
         <members>Sales_Operations/Ideas_with_Lookup_Data</members>
         <members>Sales_Operations/Ideas_with_Votes</members>
@@ -4069,6 +4130,7 @@
         <members>unfiled$public/Baldemar_Zamora_Opps</members>
         <members>unfiled$public/Bay_Area_Partners</members>
         <members>unfiled$public/BigCommerce_Consulting_Clients</members>
+        <members>unfiled$public/BigPay_Public</members>
         <members>unfiled$public/Bill_Paul_Open_Opps</members>
         <members>unfiled$public/Booker_Copy_of_Derek_Pipeline_Closed</members>
         <members>unfiled$public/Burney_s_Article_Helpfulness</members>
@@ -4270,11 +4332,17 @@
         <members>unfiled$public/Deal_Registrations_Received</members>
         <members>unfiled$public/Deal_Registrations_by_Month</members>
         <members>unfiled$public/December_Commission_Bug</members>
+        <members>unfiled$public/Demandbase_Activities_w_Campaigns</members>
         <members>unfiled$public/Demandbase_Ad_Target_Sales_Activity_List</members>
         <members>unfiled$public/Demandbase_Ad_and_Watch_List_w_Activity</members>
+        <members>unfiled$public/Demandbase_Lead_List_Ad_Activities</members>
+        <members>unfiled$public/Demandbase_Opportunity_Call_Activity</members>
         <members>unfiled$public/Demandbase_Sales_Activities</members>
         <members>unfiled$public/Demandbase_Sales_Activities_Report</members>
         <members>unfiled$public/Demandbase_WATCH_LIST_with_Activity</members>
+        <members>unfiled$public/Demandbase_Watchlist_Call_Activity_2</members>
+        <members>unfiled$public/Demandbase_call_list</members>
+        <members>unfiled$public/Demandbase_test_activity</members>
         <members>unfiled$public/Demo_Camp_Perf_Opps_Created</members>
         <members>unfiled$public/Demo_Camp_Perf_Opps_Created_YTD</members>
         <members>unfiled$public/Demo_Camp_Perf_Opps_Sold_QTRLY</members>
@@ -4320,6 +4388,7 @@
         <members>unfiled$public/ENT_AM_Daily_Activity_Account</members>
         <members>unfiled$public/ENT_Account_Base_Summary</members>
         <members>unfiled$public/ENT_ChannelAdvisor_leads1</members>
+        <members>unfiled$public/ENT_Stores_Launched_Since_Last_Month</members>
         <members>unfiled$public/EOM_Expiring_Leads_Channel</members>
         <members>unfiled$public/Easy_Money_List</members>
         <members>unfiled$public/Elite_Partners</members>
@@ -4391,6 +4460,7 @@
         <members>unfiled$public/Griffin_s_Registered_Deals</members>
         <members>unfiled$public/Hamer_Active_Deals</members>
         <members>unfiled$public/Heartland_Subscription_Report</members>
+        <members>unfiled$public/HighRisk_NMI_USAepay_Auth1</members>
         <members>unfiled$public/High_GMV_Programmatic</members>
         <members>unfiled$public/Homestead_Project_Stores_Created_WCW1</members>
         <members>unfiled$public/Homestead_Store_Report_Stores_Created</members>
@@ -4477,6 +4547,7 @@
         <members>unfiled$public/Lizette_Pipeline</members>
         <members>unfiled$public/Lizette_s_Open_Opps_Outside_of_Qualify</members>
         <members>unfiled$public/Look_at_Trial_Extension_Impact</members>
+        <members>unfiled$public/Lynn_s_Look_at_AUS</members>
         <members>unfiled$public/MDR_Converted_Leads</members>
         <members>unfiled$public/MDR_Disposition_Outcomes</members>
         <members>unfiled$public/MDR_MasterDemoRequests_Q42015</members>
@@ -4633,6 +4704,7 @@
         <members>unfiled$public/Nick_Amelio_Open_Pipeline</members>
         <members>unfiled$public/Nick_Amelio_Open_Pipeline1</members>
         <members>unfiled$public/Nigel_Support_cases_by_category1</members>
+        <members>unfiled$public/No_Opp_Prod_Hist_for_Nicole</members>
         <members>unfiled$public/No_Terms_Accepted</members>
         <members>unfiled$public/No_Terms_Report</members>
         <members>unfiled$public/No_percent</members>
@@ -4676,6 +4748,7 @@
         <members>unfiled$public/Opps_created_owned_by_Brian_Miller</members>
         <members>unfiled$public/Opps_in_Qualify_for_Reps</members>
         <members>unfiled$public/Opps_only_in_RV_w_active_legacy_partner</members>
+        <members>unfiled$public/Opps_with_Activities</members>
         <members>unfiled$public/Opps_with_Activities_March</members>
         <members>unfiled$public/Opps_with_no_activity</members>
         <members>unfiled$public/Oppty_Pipeline_Current_Year_Channel</members>
@@ -4723,6 +4796,7 @@
         <members>unfiled$public/Partners_w_Revenue_No_Terms</members>
         <members>unfiled$public/Patrick_Yang_Accounts</members>
         <members>unfiled$public/PayPal_Special_Offers</members>
+        <members>unfiled$public/Payments_made_to_WSI_ICs</members>
         <members>unfiled$public/Paypal_Commission_non_active</members>
         <members>unfiled$public/Peabody_Hubspot_Leads</members>
         <members>unfiled$public/Peabody_MDR_activities</members>
@@ -4801,6 +4875,7 @@
         <members>unfiled$public/SDR_MRR_Current_and_Previous_Month</members>
         <members>unfiled$public/SDR_MRR_MTD</members>
         <members>unfiled$public/SDR_Opps_Created_this_Month</members>
+        <members>unfiled$public/SDR_Owned_Opportunities</members>
         <members>unfiled$public/SDR_Qualified_OPS_by_Campaign</members>
         <members>unfiled$public/SDR_SQL_Audit</members>
         <members>unfiled$public/SDR_Team_Calls_and_Contacts</members>
@@ -4831,6 +4906,7 @@
         <members>unfiled$public/Sales_Development_Email_List</members>
         <members>unfiled$public/Sales_Development_MRR_MOM</members>
         <members>unfiled$public/Sales_LiveChat</members>
+        <members>unfiled$public/Sales_Spiff_PPBT2</members>
         <members>unfiled$public/Sales_Trial_Campaign_Report</members>
         <members>unfiled$public/Satisfied_Yahoo_Migrations</members>
         <members>unfiled$public/Scott_Richards_Opps</members>

@@ -7,6 +7,9 @@
         <field>rvpe__RVAccount__c.Account_Owner__c</field>
     </columns>
     <columns>
+        <field>rvpe__RVAccount__c.rvpe__Inactive__c</field>
+    </columns>
+    <columns>
         <field>rvpe__RVAccount__c.rvpe__PartnerLevel__c</field>
     </columns>
     <columns>
@@ -52,22 +55,7 @@
         <field>rvpe__RVAccount__c.Partner_Commission__c</field>
     </columns>
     <columns>
-        <field>rvpe__RVAccount__c.Commission__c</field>
-    </columns>
-    <columns>
         <field>rvpe__RVAccount__c.Commission_Payment_Status__c</field>
-    </columns>
-    <columns>
-        <field>rvpe__RVAccount__c.Commission_Amount__c</field>
-    </columns>
-    <columns>
-        <field>rvpe__RVAccount__c.Current_Month_Payments__c</field>
-    </columns>
-    <columns>
-        <field>rvpe__RVAccount__c.Expected_Current_Month_Commission__c</field>
-    </columns>
-    <columns>
-        <field>rvpe__RVAccount__c.RollupCommission__c</field>
     </columns>
     <columns>
         <field>rvpe__RVAccount__c.Approved_Date__c</field>

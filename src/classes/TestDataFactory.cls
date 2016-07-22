@@ -179,8 +179,22 @@ global without sharing class TestDataFactory {
         if (retVal.size() > 0)
         {
             insert retVal;
-        }
 
+            // create campaignmemberstatus records for each campaign
+            List<CampaignMemberStatus> cmsList = new List<CampaignMemberStatus>();
+            for (Campaign c : retVal)
+            {
+                CampaignMemberStatus cms = new CampaignMemberStatus();
+                cms.CampaignId = c.Id;
+                cms.Label = 'Demo Requested';
+                cms.IsDefault = false;
+                cms.HasResponded = false;
+                cms.SortOrder = 3;
+                cmsList.add(cms);
+            }
+
+            insert cmsList;
+        }
         return retVal;
     }
 
@@ -445,6 +459,7 @@ global without sharing class TestDataFactory {
         return testAccount;
     }
 
+    private static boolean firstAccountsCreated = false;
 
     /**
      * Creates a list of unique accounts
@@ -458,6 +473,12 @@ global without sharing class TestDataFactory {
      */
     global static List<Account> createTestAccounts(integer numberOfRecords, boolean createGAId, AccountRecordType recordType)
     {
+        if (!firstAccountsCreated)
+        {
+            CreateTestAccountRollupData();
+            firstAccountsCreated = true;
+        }
+
     	Id recordTypeId = SChema.SObjectType.Account.getRecordTypeInfosByName().get(String.valueOf(recordType).Replace('_',' ')).getRecordTypeId();
         List<Account> retVal = new List<Account>();
 
@@ -466,13 +487,27 @@ global without sharing class TestDataFactory {
         	retVal.add(TestDataFactory.createTestAccount(createGAId, recordTypeId));
         }
 
-
         if (retVal.size() > 0)
         {
         	insert retVal;
         }
 
         return retVal;
+    }
+
+
+    /**
+     * Sets up rollup fields so that the future callout does not cause an error
+     * @author Steve O'Neal
+     * @date   2016-07-14
+     * @ticket link       https://jira.bigcommerce.com/browse/BAP-3991
+     */
+    private static void CreateTestAccountRollupData()
+    {
+        AccountMaxSubRollup__c ams = new AccountMaxSubRollup__c();
+        ams.Name = 'Fields';
+        ams.FieldList1__c = 'product__c,monthlyrecurringrevenue__c,purchasedate__c,istrial__c,status__c,purchase_team__c,startdate__c,expirationdate__c,billingcycle__c,billingamount__c';
+        insert ams;
     }
 
 
@@ -608,6 +643,65 @@ global without sharing class TestDataFactory {
         }
 
         return retVal;
+    }
+
+
+    ///////////////////
+    // SUBSCRIPTIONS //
+    ///////////////////
+    global enum SubscriptionRecordType {MBA_Subscription, Forecast_Subscription}
+
+    /**
+     * Creates an instance of a Subscription
+     * @author Steve O'Neal
+     * @date   2016-07-14
+     * @ticket link       https://jira.bigcommerce.com/browse/BAP-3991
+     * @param  acct       The account to tie the subscription to
+     * @param  recordType The recordtype of the subscription
+     * @return            An instance of a subscription
+     */
+    private static Subscription__c createTestSubscription(Account acct, SubscriptionRecordType recordType)
+    {
+        Id recordTypeId = Schema.SObjectType.Subscription__c.getRecordTypeInfosByName().get(String.valueOf(recordType).Replace('_',' ')).getRecordTypeId();
+        Subscription__c retVal = new Subscription__c();
+        retVal.Account__c = acct.Id;
+        String seed1 = String.valueof(MathUtility.RandomInteger(1000000, 9999999));
+        retVal.StoreURL__c = 'www.' + seed1 + '.com';
+        retVal.recordTypeId = recordTypeId;
+
+        return retVal;
+    }
+
+
+    /**
+     * Creates a list of subscriptions
+     * @author Steve O'Neal
+     * @date   2016-07-14
+     * @ticket link            https://jira.bigcommerce.com/browse/BAP-XXXX
+     * @param  numberOfRecords Number of subscriptions to create for each account
+     * @param  accts           The accounts to create subscriptions for
+     * @param  recordType      The recordtype of the subscriptions to create
+     * @return                 List of subscriptions
+     */
+    global static List<Subscription__c> createTestSubscriptions(integer numberOfRecords, List<Account> accts, SubscriptionRecordType recordType)
+    {
+        List<Subscription__c> retVal = new List<Subscription__c>();
+
+        for (Account acct : accts)
+        {
+            for (integer i = 0; i < numberOfRecords; i++)
+            {
+                retVal.add(TestDataFactory.createTestSubscription(acct, recordType));
+            }
+        }
+
+        if (retVal.size() > 0)
+        {
+            insert retVal;
+        }
+
+        return retVal;
+
     }
 
 

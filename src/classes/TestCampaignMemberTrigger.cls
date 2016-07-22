@@ -13,6 +13,11 @@ private class TestCampaignMemberTrigger {
 
 		// create campaign members
 		List<Campaign> cmpgns = TestDataFactory.createTestCampaigns(1);
+		for (Campaign c : cmpgns)
+		{
+			c.Name += ' DEMO REQUEST';
+		}
+
 		List<CampaignMember> cmpgnMemberLead = TestDataFactory.createTestCampaignMembers(cmpgns, true, leads);
 		List<CampaignMember> cmpgnMemberContact = TestDataFactory.createTestCampaignMembers(cmpgns, true, contacts);
 		List<CampaignMember> cmpgnMemberContactNoAccount = TestDataFactory.createTestCampaignMembers(cmpgns, true, contactWithoutAccount);

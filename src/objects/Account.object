@@ -719,6 +719,17 @@ IMAGE(&quot;/resource/1405031526000/Blackflag&quot;, &quot;Within SLA&quot;, 20,
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>BMP_Account_ID__c</fullName>
+        <externalId>true</externalId>
+        <label>BMP Account ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>BigCommerce_Mojo_Meter__c</fullName>
         <description>for partner team</description>
         <externalId>false</externalId>

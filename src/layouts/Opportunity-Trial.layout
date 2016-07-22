@@ -138,6 +138,10 @@
                 <behavior>Edit</behavior>
                 <field>Growth_Rate_Adjustment__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Promo__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -151,6 +155,10 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Master_Agreement_Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Promo_Months_Free__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>

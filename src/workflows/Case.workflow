@@ -3757,7 +3757,7 @@ ISCHANGED( Survey_Completion_Date__c )</formula>
     </rules>
     <tasks>
         <fullName>Cancellation_Survey_Sent_Testing</fullName>
-        <assignedTo>maria.huemmer@bigcommerce.com</assignedTo>
+        <assignedTo>miles.leymeister@bigcommerce.com</assignedTo>
         <assignedToType>user</assignedToType>
         <dueDateOffset>0</dueDateOffset>
         <notifyAssignee>false</notifyAssignee>

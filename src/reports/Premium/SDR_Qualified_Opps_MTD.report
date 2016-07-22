@@ -17,11 +17,13 @@
             <axisBinding>y</axisBinding>
             <column>RowCount</column>
         </chartSummaries>
-        <chartType>VerticalColumn</chartType>
+        <chartType>VerticalColumnGrouped</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>true</expandOthers>
         <groupingColumn>Opportunity.OpportunityTeamMembers$Department</groupingColumn>
+        <legendPosition>Right</legendPosition>
         <location>CHART_TOP</location>
+        <secondaryGroupingColumn>Opportunity.OpportunityTeamMembers$Name</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -39,6 +41,9 @@
     </columns>
     <columns>
         <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$LeadSource</field>
     </columns>
     <columns>
         <field>Opportunity$Primary_Campaign_Name__c</field>
@@ -85,11 +90,6 @@
             <operator>startsWith</operator>
             <value>Sales Development -</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity$Owner_Team__c</column>
-            <operator>notEqual</operator>
-            <value>Sales Development - Inbound SDR,Sales Development - Outbound SDR</value>
-        </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>
@@ -120,7 +120,7 @@
     <reportType>Opportunities_with_Team_Member__c</reportType>
     <roleHierarchyFilter>SystemAdministrator</roleHierarchyFilter>
     <scope>organization</scope>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>Opportunity.OpportunityTeamMembers*OpportunityTeamMember$Team_Member_Created_Date__c</dateColumn>
         <interval>INTERVAL_THISMONTH</interval>

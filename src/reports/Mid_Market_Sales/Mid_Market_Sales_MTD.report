@@ -175,7 +175,7 @@
         <criteriaItems>
             <column>Opportunity.Oppotunity_Products__r$Revenue_Rep__c</column>
             <operator>notEqual</operator>
-            <value>stevie huval,andrew king,jason svatek,Mike Sanchez,Eric Reyes,alecia wall,bill paul,hassan johnson</value>
+            <value>stevie huval,andrew king,jason svatek,Mike Sanchez,Eric Reyes,bill paul,hassan johnson</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Oppotunity_Products__r$Price_Change_Reason__c</column>

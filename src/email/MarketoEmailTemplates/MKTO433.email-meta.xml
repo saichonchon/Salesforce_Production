@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>07-2016 Town Hall.Email 1</name>
+    <style>none</style>
+    <subject>Hi {{lead.First Name:default=there}}, join us for a look at upcoming updates to BigCommerce</subject>
+    <textOnly>Join us for the July BigCommerce Town Hall. During this month&apos;s conversation, BigCommerce CEO Brent Bellm and the Product Team will give you a detailed look at the lastest product updates.
+Hi {{lead.First Name:default=there}},
+Join us for the July BigCommerce Town Hall &lt;[[http://grow.bigcommerce.com/07-2016-Town-Hall-Registration-Page.html]]&gt;.
+During this month&apos;s conversation, BigCommerce CEO Brent Bellm and the Product Team will give you a detailed look at:
+
+
+ - Stencil theme updates
+ - Optimized checkout update
+ - Amazon beta
+ - Responsive control panel navigation
+ - And more!
+
+
+
+We&apos;ll hold a live Q&amp;A session during the Town Hall, but you can also submit questions in advance by logging in and commenting in our Community &lt;[[https://forum.bigcommerce.com/s/group/0F913000000HLTBCA4?t=1461271876897]]&gt;.
+BigCommerce Town Hall &lt;[[http://grow.bigcommerce.com/07-2016-Town-Hall-Registration-Page.html]]&gt; 
+ When: Tuesday, July 26, 2016 2:00 PM - 3:00 PM CDT 
+ What: A discussion of BigCommerce news and a look at upcoming product enhancements, followed by live Q&amp;A. 
+ Presenters: CEO Brent Bellm and the BigCommerce Product Team
+
+
+
+
+
+Reserve your spot &lt;[[http://grow.bigcommerce.com/07-2016-Town-Hall-Registration-Page.html]]&gt;
+If you’re unable to join us, don’t worry — we’ll record each Town Hall and post the video in the  Community &lt;[[https://forum.bigcommerce.com/s/article/BigCommerce-Town-Halls?t=1461271876897]]&gt; and Partner Portal.
+Hope to see you there, 
+The BigCommerce Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

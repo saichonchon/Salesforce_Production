@@ -1425,6 +1425,16 @@
         <name>OrderIncrement__c</name>
     </fields>
     <fields>
+        <help><!-- Identifies the account id from its originating system of record --></help>
+        <label><!-- Original External Account ID --></label>
+        <name>Original_External_Account_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- The unique identifier of the subscription in its originating system of record --></help>
+        <label><!-- Original External Subscription ID --></label>
+        <name>Original_External_Subscription_ID__c</name>
+    </fields>
+    <fields>
         <label><!-- Payment Status --></label>
         <name>PaymentStatus__c</name>
     </fields>

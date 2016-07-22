@@ -6,7 +6,7 @@
         <developerName>FORMULA1</developerName>
         <isActive>true</isActive>
         <isCrossBlock>false</isCrossBlock>
-        <masterLabel>Sum of Total Price</masterLabel>
+        <masterLabel>Total CTS Revenue</masterLabel>
         <scale>2</scale>
     </aggregates>
     <aggregates>
@@ -15,7 +15,16 @@
         <developerName>FORMULA2</developerName>
         <isActive>true</isActive>
         <isCrossBlock>false</isCrossBlock>
-        <masterLabel>Sum of Quantity</masterLabel>
+        <masterLabel># CTS Sold</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>OpportunityLineItem.TotalPrice:SUM/OpportunityLineItem.Quantity:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA3</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Avg CTS Price</masterLabel>
         <scale>2</scale>
     </aggregates>
     <chart>
@@ -25,6 +34,10 @@
         <chartSummaries>
             <axisBinding>y</axisBinding>
             <column>FORMULA1</column>
+        </chartSummaries>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA3</column>
         </chartSummaries>
         <chartSummaries>
             <axisBinding>y</axisBinding>
@@ -84,7 +97,7 @@
     <reportType>Opportunities_With_Products_and_Lookup_Fields__c</reportType>
     <roleHierarchyFilter>SystemAdministrator</roleHierarchyFilter>
     <scope>organization</scope>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <sortColumn>Opportunity.OpportunityLineItems$TotalPrice</sortColumn>
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>

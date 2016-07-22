@@ -13,6 +13,7 @@ trigger CampaignMemberTrigger on CampaignMember (after insert) {
 	 */
 	if (trigger.isAfter && trigger.isInsert)
 	{
+		System.debug('After Insert CampaignMember');
 		Set<Id> ContactsAddedToDemoCampaignSet = new Set<Id>();
 		Set<Id> LeadsAddedToDemoCampaignSet = new Set<Id>();
 		// identify the opportunities or contacts that need to have their Demo Requested Date set.
@@ -23,6 +24,7 @@ trigger CampaignMemberTrigger on CampaignMember (after insert) {
 			System.Debug('Campaign member: ' + cm);
 			if (cm.Demo_Request__c)
 			{
+				System.debug('Demo requested');
 				if (cm.ContactId != null)
 				{
 					System.debug('Added to contact list');
@@ -55,7 +57,7 @@ trigger CampaignMemberTrigger on CampaignMember (after insert) {
 			Set<Id> AccountIdsToSearch = new Set<Id>();
 			for (Contact cont : ContactsToSearchForDemoStartDate)
 			{
-				if (cont.Account != null)
+				if (cont.AccountId != null)
 				{
 					AccountIdsToSearch.add(cont.AccountId);
 				}

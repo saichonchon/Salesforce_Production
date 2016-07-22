@@ -438,10 +438,6 @@ NOT( ISNULL( AppDeveloperContact__c ))</formula>
             <name>Send_App_Partner_Rev_Share_Reminder_Email</name>
             <type>Alert</type>
         </actions>
-        <actions>
-            <name>WFR_Ran</name>
-            <type>Task</type>
-        </actions>
         <active>true</active>
         <description>Sends App Partners their Rev Share reminder email</description>
         <formula>ISCHANGED(App_Send_Rev_Share_Email__c) &amp;&amp; App_Send_Rev_Share_Email__c &lt;&gt;  PRIORVALUE(App_Send_Rev_Share_Email__c) &amp;&amp; NOT(ISBLANK(App_Send_Rev_Share_Email__c)) &amp;&amp; App_Send_Rev_Share_Email__c = Today()</formula>
@@ -595,20 +591,9 @@ NOT( ISNULL( AppDeveloperContact__c ))</formula>
         <description>formulates the iDev link based on iDev ID</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
-    <rules>
-        <fullName>zHubspot Client Age</fullName>
-        <actions>
-            <name>Hubspot_Client_Age</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>false</active>
-        <description>Created in an attempt to offer a non-formula field for Hubspot to know the age of a client, but the workflow can&apos;t fire off the formula field calculating it.  ISSUE: should be deleted or troubleshoot to fix it</description>
-        <formula>ISCHANGED( Client_Age__c )</formula>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
     <tasks>
         <fullName>Sent_App_Partner_App_Approved_Email</fullName>
-        <assignedTo>maria.huemmer@bigcommerce.com</assignedTo>
+        <assignedTo>miles.leymeister@bigcommerce.com</assignedTo>
         <assignedToType>user</assignedToType>
         <dueDateOffset>0</dueDateOffset>
         <notifyAssignee>false</notifyAssignee>
@@ -619,7 +604,7 @@ NOT( ISNULL( AppDeveloperContact__c ))</formula>
     </tasks>
     <tasks>
         <fullName>Sent_App_Partner_App_Declined_Email</fullName>
-        <assignedTo>maria.huemmer@bigcommerce.com</assignedTo>
+        <assignedTo>miles.leymeister@bigcommerce.com</assignedTo>
         <assignedToType>user</assignedToType>
         <dueDateOffset>0</dueDateOffset>
         <notifyAssignee>false</notifyAssignee>
@@ -630,7 +615,7 @@ NOT( ISNULL( AppDeveloperContact__c ))</formula>
     </tasks>
     <tasks>
         <fullName>Sent_App_Partner_App_Received_Email</fullName>
-        <assignedTo>maria.huemmer@bigcommerce.com</assignedTo>
+        <assignedTo>miles.leymeister@bigcommerce.com</assignedTo>
         <assignedToType>user</assignedToType>
         <dueDateOffset>0</dueDateOffset>
         <notifyAssignee>false</notifyAssignee>
@@ -638,17 +623,5 @@ NOT( ISNULL( AppDeveloperContact__c ))</formula>
         <protected>false</protected>
         <status>Completed</status>
         <subject>Sent App Partner App Received Email</subject>
-    </tasks>
-    <tasks>
-        <fullName>WFR_Ran</fullName>
-        <assignedTo>maria.huemmer@bigcommerce.com</assignedTo>
-        <assignedToType>user</assignedToType>
-        <description>WFR Ran</description>
-        <dueDateOffset>0</dueDateOffset>
-        <notifyAssignee>false</notifyAssignee>
-        <priority>Normal</priority>
-        <protected>false</protected>
-        <status>Completed</status>
-        <subject>WFR Ran</subject>
     </tasks>
 </Workflow>

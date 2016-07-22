@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>EIG Homestead- 1202.Email 1</name>
+    <style>none</style>
+    <subject>Try BigCommerce to get all the latest features for your website</subject>
+    <textOnly>Since you left BigCommerce, we’ve added some powerful new partners and features that are helping our merchants sell more than ever before.
+Hi {{lead.First Name:default=there}},
+Since you left BigCommerce, we’ve added some powerful new partner solutions and features that are helping our merchants sell more than ever before.
+
+Start a BigCommerce trial and gain access to features like:
+
+
+ - PayPal powered by Braintree - A payment gateway that combines credit and debit card processing with Paypal OneTouch, an interface that lets your customers pay with their PayPal account without ever leaving your storefront.
+ - Sift Science - A single-click app that uses thousands of signals associated with an order to distinguish legitimate shoppers from fraudsters.
+ - Square - Use our Square Point of Sale integration to sync your product inventory.
+
+
+
+We’re giving you a free 15-day trial to check out more notable features like:
+
+
+ - Improved analytics - We’ve revamped our analytics to bring you powerful new reports that show you what’s selling, who’s buying, where to spend your marketing budget and more.
+ - Shipping label printing - Now you can get improved USPS quotes and print shipping labels right from your control panel using USPS by Endicia.
+ - Automated sales tax - With our new tax system, US sales tax will be automatically calculated and added at checkout using the latest rates.
+
+
+
+
+
+
+
+Start your free trial &lt;[[https://www.bigcommerce.com/welcome-back?utm_medium=email&amp;utm_source=partner]]&gt;
+Happy selling, 
+The BigCommerce Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -2740,6 +2740,11 @@ Referral : needs booking --></help>
         <name>Last_Case_Comment_Date__c</name>
     </fields>
     <fields>
+        <help><!-- Last Case Routed Date - used as a way to exclude cases in the process builder from validation rules --></help>
+        <label><!-- Last Case Routed Date --></label>
+        <name>Last_Case_Routed_Date__c</name>
+    </fields>
+    <fields>
         <help><!-- Was the store launched? For used by Cancellation team. --></help>
         <label><!-- Cancellation Launch Status --></label>
         <name>Launch_Status__c</name>

@@ -5257,6 +5257,17 @@ IF (ISPICKVAL( Migration_Partner__c, &apos;EIG&apos;), (&apos;https://bigcommerc
         <type>DateTime</type>
     </fields>
     <fields>
+        <fullName>Last_Case_Routed_Date__c</fullName>
+        <description>Last Case Routed Date - used as a way to exclude cases in the process builder from validation rules</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Last Case Routed Date - used as a way to exclude cases in the process builder from validation rules</inlineHelpText>
+        <label>Last Case Routed Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
         <fullName>Launch_Status__c</fullName>
         <description>Cancellation Launch status - requested by AR-5168</description>
         <externalId>false</externalId>
@@ -59251,7 +59262,8 @@ Owner:Queue.QueueName  =  &apos;Migrations Queue&apos;)</errorConditionFormula>
 $User.ProfileId &lt;&gt; &apos;00ea00000024K8X&apos; &amp;&amp;
 NOT(ISBLANK( Subscription__c )) &amp;&amp;
 Not ISBLANK( Contact.Account.Name ) &amp;&amp;  (Subscription__r.Account__r.Name &lt;&gt; null &amp;&amp; Contact.Account.Name &lt;&gt;  
-Subscription__r.Account__r.Name) 
+Subscription__r.Account__r.Name) &amp;&amp;
+NOT(ISCHANGED( Last_Case_Routed_Date__c ))
 /*&amp;&amp;  $User.ProfileId &lt;&gt; &apos;00e30000001hS8e&apos;*/</errorConditionFormula>
         <errorDisplayField>ContactId</errorDisplayField>
         <errorMessage>Please verify that Case, Contact, Subscription are all on the same Account.  If you have any questions, please contact your manager, thanks!</errorMessage>

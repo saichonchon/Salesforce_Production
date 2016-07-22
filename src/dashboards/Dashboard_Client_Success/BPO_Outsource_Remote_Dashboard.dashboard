@@ -150,7 +150,7 @@
         <components>
             <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
             <chartAxisRange>Manual</chartAxisRange>
-            <chartAxisRangeMax>150.0</chartAxisRangeMax>
+            <chartAxisRangeMax>100.0</chartAxisRangeMax>
             <chartAxisRangeMin>0.0</chartAxisRangeMin>
             <chartSummary>
                 <axisBinding>y</axisBinding>
@@ -174,7 +174,7 @@
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <chartAxisRange>Manual</chartAxisRange>
-            <chartAxisRangeMax>150.0</chartAxisRangeMax>
+            <chartAxisRangeMax>100.0</chartAxisRangeMax>
             <chartAxisRangeMin>0.0</chartAxisRangeMin>
             <componentType>Column</componentType>
             <displayUnits>Auto</displayUnits>

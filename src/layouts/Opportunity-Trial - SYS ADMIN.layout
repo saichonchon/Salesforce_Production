@@ -783,6 +783,10 @@
                 <behavior>Edit</behavior>
                 <field>Marketing_Content__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Channel__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

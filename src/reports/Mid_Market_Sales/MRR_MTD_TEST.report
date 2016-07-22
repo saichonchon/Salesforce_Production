@@ -61,16 +61,41 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
+        <field>Opportunity$Account</field>
+    </columns>
+    <columns>
         <field>Opportunity$Name</field>
     </columns>
     <columns>
-        <field>Opportunity.Oppotunity_Products__r$Name</field>
+        <field>Opportunity$LeadSource</field>
+    </columns>
+    <columns>
+        <field>Opportunity$rvpe__RVAccount__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Oppotunity_Products__r$Product__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Oppotunity_Products__r$RevenueChange__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Oppotunity_Products__r$Purchase__c</field>
     </columns>
     <filter>
         <criteriaItems>
             <column>Opportunity.Oppotunity_Products__r$Revenue_Team__c</column>
             <operator>equals</operator>
             <value>Midmarket Enterprise Sales</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Oppotunity_Products__r$Price_Change_Reason__c</column>
+            <operator>notEqual</operator>
+            <value>BC Pricing Change</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Oppotunity_Products__r$RevenueChange__c</column>
+            <operator>greaterThan</operator>
+            <value>0</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -79,7 +104,7 @@
         <field>Opportunity.Oppotunity_Products__r$Revenue_Rep__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>MRR MTD TEST</name>
+    <name>Mid-Market Sales MTD</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -89,7 +114,7 @@
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <timeFrameFilter>
-        <dateColumn>Opportunity.Oppotunity_Products__r$CreatedDate</dateColumn>
+        <dateColumn>Opportunity.Oppotunity_Products__r$StartDate__c</dateColumn>
         <interval>INTERVAL_THISMONTH</interval>
     </timeFrameFilter>
 </Report>

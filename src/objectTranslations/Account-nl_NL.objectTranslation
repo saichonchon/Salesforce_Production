@@ -319,6 +319,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- BMP Account ID --></label>
+        <name>BMP_Account_ID__c</name>
+    </fields>
+    <fields>
         <help><!-- Unknown:No contact to discuss goals
 Sustaining:eCom not big portion of business, no plans/means to increase
 Nurture:Use BC/Other platforms;No platform loyalty;May need features/dev from Product
@@ -4693,10 +4697,5 @@ Grow - Potential for big opp;Partner choosing platform --></help>
     <workflowTasks>
         <name>Sent_App_Partner_App_Received_Email</name>
         <subject><!-- Sent App Partner App Received Email --></subject>
-    </workflowTasks>
-    <workflowTasks>
-        <description><!-- WFR Ran --></description>
-        <name>WFR_Ran</name>
-        <subject><!-- WFR Ran --></subject>
     </workflowTasks>
 </CustomObjectTranslation>

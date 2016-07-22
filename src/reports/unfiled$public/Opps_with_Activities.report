@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$RecordType</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Activities$Subject</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Activities$Account</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity$RecordType</column>
+            <operator>equals</operator>
+            <value>Opportunity.SBD_Upsell</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Campaign</column>
+            <operator>startsWith</operator>
+            <value>bigpay</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Opps with Activities</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunities_with_Activities__c</reportType>
+    <roleHierarchyFilter>Strategic_Business_Development</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Opportunity.Activities$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

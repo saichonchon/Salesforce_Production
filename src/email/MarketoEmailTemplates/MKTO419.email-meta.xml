@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>ShipperHQ Activation- Clients w/GMV- 1207.Email 1</name>
+    <style>none</style>
+    <subject>Start using ShipperHQ to take advantage of advanced shipping tools</subject>
+    <textOnly>Connect your BigCommerce store to ShipperHQ, the industry&apos;s most sophisticated shipping rate calculator and rules engine to provide accurate, real-time shipping quotes to your customers.
+Utilize our advanced shipping tools
+Improve conversion with customizable shipping rates
+Get Started Now &lt;[[https://login.bigcommerce.com/login]]&gt;
+Start using ShipperHQ to take advantage of advanced shipping tools
+Connect your BigCommerce store to ShipperHQ, the industry&apos;s most sophisticated shipping rate calculator and rules engine to provide accurate, real-time shipping quotes to your customers.
+Our ShipperHQ integration allows you to:
+
+
+ - Ship via all the major carriers, including UPS™, FedEx™, USPS™ and more using base rates or your own negotiated rates.
+ - Set and adapt shipping rates and carriers based on criteria like location, price, weight, product type or customer group.
+ - Get sophisticated shipping tools like LTL freight, dimensional shipping, multi-origin, dropshipping and time-in-transit.
+ShipperHQ and BigCommerce have helped retailers save $60,000 or more per year in misquoted shipping costs. So, why wait to ship via ShipperHQ?
+Start using ShipperHQ &lt;[[https://login.bigcommerce.com/login]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

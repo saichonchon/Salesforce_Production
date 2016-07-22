@@ -63,22 +63,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/triggers/SubscriptionC_Trigger.trigger",
-			"settings":
-			{
-				"buffer_size": 1115,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/classes/Subscription_TriggerHandler.cls",
-			"settings":
-			{
-				"buffer_size": 14313,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -126,13 +110,13 @@
 	},
 	"expanded_folders":
 	[
-		"/c/mavensmate/workspaces/Salesforce_Production",
-		"/c/mavensmate/workspaces/Salesforce_Production/src",
-		"/c/mavensmate/workspaces/Salesforce_Production/src/classes",
-		"/c/mavensmate/workspaces/Salesforce_Production/src/triggers"
+		"/c/mavensmate/workspaces/Salesforce_Production"
 	],
 	"file_history":
 	[
+		"/c/mavensmate/workspaces/Salesforce_Production/src/classes/Subscription_TriggerHandler.cls",
+		"/C/MavensMate/workspaces/SBFull_Backup/build.properties",
+		"/C/MavensMate/workspaces/SBFull_Backup/config/.settings",
 		"/c/mavensmate/workspaces/Salesforce_Production/src/classes/TestCaseStartWorkingController.cls",
 		"/C/MavensMate/workspaces/Salesforce_Production/destructiveChanges.xml",
 		"/c/mavensmate/workspaces/Salesforce_Production/src/workflows/Opportunity.workflow",
@@ -189,6 +173,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"stephen.",
 			"insertTotango",
 			"@aura",
 			"permission",
@@ -300,69 +285,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/triggers/SubscriptionC_Trigger.trigger",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 1115,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								243,
-								243
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/classes/Subscription_TriggerHandler.cls",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 14313,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								645,
-								658
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],

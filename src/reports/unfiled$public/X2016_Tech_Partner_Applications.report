@@ -64,15 +64,17 @@
             <axisBinding>y</axisBinding>
             <column>RowCount</column>
         </chartSummaries>
-        <chartType>VerticalColumn</chartType>
+        <chartType>VerticalColumnStacked</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
         <groupingColumn>BucketField_8081467</groupingColumn>
+        <legendPosition>Right</legendPosition>
         <location>CHART_TOP</location>
+        <secondaryGroupingColumn>TYPE</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
-        <showValues>true</showValues>
+        <showValues>false</showValues>
         <size>Medium</size>
         <summaryAxisRange>Auto</summaryAxisRange>
         <textColor>#000000</textColor>
@@ -99,6 +101,11 @@
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>BucketField_8081467</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>TYPE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>

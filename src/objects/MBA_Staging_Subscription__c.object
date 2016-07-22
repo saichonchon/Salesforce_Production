@@ -1741,6 +1741,33 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Original_External_Account_ID__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies the account id from its originating system of record</inlineHelpText>
+        <label>Original External Account ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Original_External_Subscription_ID__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <externalId>true</externalId>
+        <inlineHelpText>The unique identifier of the subscription in its originating system of record</inlineHelpText>
+        <label>Original External Subscription ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
         <fullName>PaymentStatus__c</fullName>
         <externalId>false</externalId>
         <label>Payment Status</label>

@@ -83,6 +83,10 @@
                 <behavior>Edit</behavior>
                 <field>Amount</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Account_Mismatch__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>

@@ -18,6 +18,9 @@
     <columns>
         <field>Case.Case_Time_Worked_Records__c</field>
     </columns>
+    <columns>
+        <field>Case.Escalation_Date__c</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>OWNER</column>
@@ -55,6 +58,6 @@
     <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <interval>INTERVAL_THISWEEK</interval>
+        <interval>INTERVAL_CURPREVQ</interval>
     </timeFrameFilter>
 </Report>
