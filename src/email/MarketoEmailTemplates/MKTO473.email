@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html><head>
+<title></title>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
+<style type="text/css">
+*{ color: #34313F !important; font-family: 'Source Sans Pro', sans-serif;}
+body { background: #ffffff; margin:0; padding:0; }
+table { border-collapse: collapse; }
+p, li { color: #34331f !important; font-size:16px; font-weight:300; letter-spacing: 0.1px; line-height: 30px; }
+a { color: #4B71FC !important; text-decoration: none !important; }
+a:hover, a:focus, a:visited { color: #3F5CD6 !important; }
+h2 { color: #34331f; font-size: 35px; font-weight: normal; line-height: 30px; }
+#subhead h4 { color: #818586 !important; font-size: 22px; font-weight: 300; line-height: 35px; }
+h3 { color: #44494c !important; font-size: 22px; font-weight: normal; line-height: 26px; }
+h4 { color: #44494c !important; font-size: 16px; font-weight: normal; line-height: 30px; }
+
+.footer p, .footer span, .footer a { color:#828189 !important; margin:0px !important;}
+.footer .mobile-padding a { color: #ffffff !important; }
+.msgicon{ position:relative; top:8px; }
+.applelinksheader a { color: #828189 !important; text-decoration: none; }
+.applelinks a { color: #828189 !important; text-decoration: none; }
+
+.cta a { color: #ffffff !important; font-size:14px; font-weight:bold; letter-spacing: 1.2px; line-height: 16px; text-decoration: none !important;}
+.cta:hover, .cta:focus { background: #3F5CD6 !important; }
+.cta:hover a, .cta:focus a { color: #ffffff !important; text-decoration: none; }
+
+@media (max-width : 480px) {
+/*@media only screen and (max-device-width: 480px) {*/
+    .bodyWidth, #TopContainer, #LogoContainer, #EyebrowContainer, #HeaderContainer, #Eyebrow, .BodyContainer, .MiddleContainer, #SidebarContainer, #FooterContainer {width: 100% !important; }
+    #bannerBackground { background-position: bottom left !important; }
+}
+
+/* Media query for mobile*/
+@media only screen and (max-width: 480px) {
+    table{max-width:480px;}
+    td{padding:0px !important;}
+    div{padding: 0px 30px !important;}
+
+    .body{padding: 0px 30px!important;}
+    .button{margin:auto !important;}
+    .msgicon{display:block;margin:auto;}
+    .textcenter{text-align:center;}
+    .mobile-block{display:block;padding:0px !important;}
+    .no-padding{padding:0px !important;}
+    .hidemobile {display: none;}                       
+    .header{height:420px !important;}
+    .bodyWidth{max-width:480px;padding:0px !important;}
+    .removepadding{padding-right: 0px !important; padding-left: 0px !important;}
+    .bodyWidth .body td { width: 100%; }
+
+    #Logo { padding-bottom: 30px !important; padding-left:30px !important; padding-top:30px !important; }
+    .bottom-logo{padding-top:40px;padding-left:30px;float:left;}
+    .footer-social {width:250px !important;padding-top:15px;margin-right:60px;}
+    .applelinksheader a { color: #363636 !important; text-decoration: none; }
+    .applelinks a { color: #828189 !important; text-decoration: none; }
+    .footer a { color: #ffffff; }
+}
+
+</style>
+</head>
+<body style="background-color:#D9D9DA !important; display:block; font-family:Helvetica, Arial, sans-serif; margin:0 0 0 0; -webkit-text-size-adjust:none; " bgcolor="#D9D9DA" ><!-- Preview text (text which appears right after subject) -->
+<div class="mktEditable" id="preview-text" style="display:none; color:#D9D9DA; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; " >Improve conversion with customizable shipping rates</div>
+<!-- End Preview text -->
+<!-- Outlook Fallback Font -->
+<!--[if mso]>
+    <style type="text/css">
+    body, table, td, h2, h4 {font-family: Helvetica, Arial, sans-serif !important;}
+    </style>
+    <![endif]-->
+<!-- End Outlook Fallback Font -->
+<table align="center" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="margin:0 auto; background:#ffffff; border:none; " ><tr ><td width="800" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" ><!-- Logo Block -->
+<table width="800" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" style="background:#f7f7f7">
+<tr>
+<td valign="top" id="TopContainer" style="padding:32px 0px 0px 0px;">
+<table border="0" cellspacing="0" cellpadding="0" align="center" width="800" id="LogoContainer">
+<tr>
+<td valign="top" align="left" id="Logo" style="padding-left:125px;"><a href="http://www.bigcommerce.com?utm_source=header&utm_medium=email"><img src="http://grow.bigcommerce.com/rs/695-JJT-333/images/BigCommerce_logo_dark.png" alt="BigCommerce" width="160" height="40" border="0"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End Logo Block -->
+<!-- Header -->
+<!-- Grey Background & Fallback Color -->
+<table width="800" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" ><!-- End Grey Background -->
+<tr ><td id="bannerBackground" background="http://grow.bigcommerce.com/rs/695-JJT-333/images/Shippingbox.png" bgcolor="#F7F7F7" width="800" height="351" valign="top" alt="BigCommerce Banner" style="background-position:top right; " ><div><!--[if gte mso 9]>
+                                    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:800px;">
+                                    <v:fill type="tile" src="http://grow.bigcommerce.com/rs/695-JJT-333/images/Shippingbox.png" color="#f7f7f7" alt="BigCommerce Banner" />
+                                    <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+                                    <![endif]--></div>
+<!-- Editable Sections -->
+<table width="55%" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" ><tr ><td width="100%" valign="top" align="left" style="color:#34331f; padding-left:125px; padding-top:50px; " ><div class="mktEditable" id="header" ><h2 style="color: #34331f; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 35px; font-weight: normal; line-height: 30px;">Get $25 off your first paid month</h2></div>
+<div class="mktEditable" id="subhead" ><h4 style="color: #818586; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 22px; font-weight: 300; line-height: 35px;">When you install a ShipperHQ plan</h4></div>
+<table class="body" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; display:inline-block; " ><tbody ><tr ><td class="cta" valign="middle" align="center" height="40" width="150" style="text-decoration:none; font-size:13px; color:#ffffff; background:#4b71fc; border-radius:25px; text-transform:uppercase; " ><div class="mktEditable" id="cta" ><p style="margin: 0;"><a href="https://www.bigcommerce.com/apps/shipperhq/" style="color: #ffffff; text-decoration: none;">Get Started Now</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</table>
+<!-- End Editable Sections --></td>
+</tr>
+</table>
+<!-- End Header -->
+<!-- Body -->
+<table style="margin-bottom:30px !important; padding:0px 50px; " width="800" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" ><tr ><td class="body" width="100%" valign="top" align="left" style="padding:50px 125px; font-family:Helvetica, Arial, sans-serif; color:#34331f; font-size:15px; line-height:25px; " ><div class="mktEditable removepadding" id="body-headline" ><h3>Improve conversion with customizable shipping rates</h3></div>
+<div class="mktEditable removepadding" id="description" ><p>Our integration with ShipperHQ has helped BigCommerce retailers save $60,000 or more per year in misquoted shipping costs*.</p></div>
+<div class="mktEditable removepadding" id="secondary-description" ><h4>Our ShipperHQ integration allows you to:</h4>
+<ul>
+<li>Ship via all the major carriers, including UPS&trade;, FedEx&trade;, USPS&trade; and more using base rates or your own negotiated rates.</li>
+<li>Set and adapt shipping rates and carriers based on criteria like location, price, weight, product type or customer group.</li>
+<li>Get sophisticated shipping tools like LTL freight, dimensional shipping, multi-origin, dropshipping and time-in-transit.</li>
+</ul></div>
+<div class="mktEditable removepadding" id="closing" ><p><b>Get $25 off your first paid month</b> after you install ShipperHQ using coupon code <b>JULY25BC</b> and see just how much it can improve your conversion and grow your bottom line.</p>
+<p>Only new ShipperHQ customers who sign up for a paid plan are eligible. This offer is valid until August 19, 2016. Other restrictions may apply.</p>
+<p>*As reported by our customers.</p></div>
+<table border="0" cellspacing="0" cellpadding="0" style="padding-top:25px; padding-bottom:25px; border-collapse:collapse; display:inline-block; " ><tbody ><tr ><td class="cta" valign="middle" align="center" height="40" width="230" style="text-decoration:none; font-size:14px; color:#ffffff; background:#4b70fc; border-radius:25px; text-transform:uppercase; " ><div class="mktEditable" id="secondary-cta" ><p style="margin: 0;"><a href="https://www.bigcommerce.com/apps/shipperhq/" style="color: #ffffff !important; text-decoration: none;">Get Started Now</a></p></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</table>
+<!-- End Body -->
+<!-- Footer -->
+
+<table class="footer" width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="margin: 0 auto; background: #ffffff; border:none">
+<tr>
+<td>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" align="center" style="background-color:#2b2936;clear:both;">
+<tr>
+<td width="100%" valign="top" align="center" bgcolor="#2B2936" style="padding-top:32px">
+<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="bodyWidth" style="table-layout:fixed;">
+<tr>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" align="left" class="bodyWidth">
+<tr>
+<td valign="top" style="background-color: #2b2936; text-align: center; font-size: 11px; line-height: 28px; color: #828189;" align="center" class="center"></td>
+</tr>
+<tr>
+<td valign="top" style="background-color: #2b2936; padding-bottom: 32px; text-align: left; font-size: 11px; line-height: 28px;color:#ffffff;" align="left">
+<div style="padding-left:40px; padding-top:25px;">
+<p class="mobile-padding"><a href="http://www.bigcommerce.com?utm_source=footer&utm_medium=email"><img alt="BigCommerce" align="middle" class="center-image" border="0" style="top:15px; padding-bottom: 20px !important; border-style: none;" src="http://grow.bigcommerce.com/rs/695-JJT-333/images/Bigcommerce_icon_white-sized.png"></a> <span 
+class="hide-mobile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href="https://twitter.com/Bigcommerce" style="color:#ffffff; font-size: 14px; display:inline-block; text-decoration:none;">Twitter</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.facebook.com/BigCommerce" style="color:#ffffff; font-size: 14px; display:inline-block; text-decoration:none;">Facebook</a> &nbsp;&nbsp;&nbsp;&nbsp; <a 
+href="https://www.linkedin.com/company/bigcommerce" style="color:#ffffff; font-size: 14px; display:inline-block; text-decoration:none;">LinkedIn</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.youtube.com/user/bigcommercedotcom" style="color:#ffffff; font-size: 14px; display:inline-block; text-decoration:none;">YouTube</a> &nbsp;&nbsp;&nbsp;&nbsp; <a 
+href="https://www.bigcommerce.com/pinterest/?utm_source=footer&utm_medium=email" style="color:#ffffff; font-size: 14px; display:inline-block; text-decoration:none;">Pinterest</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://plus.google.com/+bigcommerce" style="color:#ffffff; font-size: 14px; display:inline-block; text-decoration:none;">Google+</a></p>
+<p style="color:#828189; text-align:left; font-size:12px;">&#169; 2016 BigCommerce <span class="applelinks">11305 Four Points Dr., Building 2, Floor 3, Austin TX 78726</span><br>
+You received this email because you are subscribed to emails from BigCommerce.<br>
+<span style="color:#828189;text-align:left;font-size:12px"><a style="color:#828189;padding-right:5px;" href="http://grow.bigcommerce.com/subscribe-to-bigcommerce-blog.html?utm_source=footer&utm_medium=email">Subscribe to our Blog</a> | <a style="color:#828189;padding-left:5px;padding-right:5px;" 
+href="http://grow.bigcommerce.com/manage-your-email-preferences.html?utm_source=footer&utm_medium=email">Update your email preferences</a> | <a style="color:#828189;padding-left:5px;" href="{{system.viewAsWebpageLink}}">View as webpage</a></span></p>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End Footer --></td>
+</tr>
+</table>
+</body>
+</html>

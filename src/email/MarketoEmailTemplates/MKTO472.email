@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Responsive Email Template</title>
+
+<style type="text/css">
+    *{ color: #34313F !important; font-family:'Source Sans Pro', Helvetica, Arial, sans-serif;}
+    body { border:none !important; }
+    p, li { color: #34331f !important; font-size:15px; font-weight:300; letter-spacing: 0.1px; line-height: 30px; }
+    a { color: #4B71FC !important; text-decoration: none !important; }
+    a:hover, a:focus, a:visited { color: #3F5CD6 !important; }
+    h2 { color: #34331f; font-size: 32px; font-weight: normal; line-height: 35px; }
+    #subhead h4 { color: #818586 !important; font-size: 22px; font-weight: 300; line-height: 35px; }
+    h3 { color: #34331f; font-size: 20px; font-weight: normal; line-height: 26px; }
+    h4 { color: #34331f; font-size: 16px; font-weight: normal; line-height: 30px; }
+        
+    .footer p, .footer span, .footer a { color:#828189 !important; margin:0px !important;}
+    .footer .mobile-padding a { color: #ffffff !important; }
+    .msgicon{ position:relative; top:8px; }
+    .applelinksheader a { color: #828189 !important; text-decoration: none; }
+    .applelinks a { color: #828189 !important; text-decoration: none; }
+
+    .cta a { color: #ffffff !important; font-size:14px; font-weight:bold; letter-spacing: 1.2px; line-height: 16px; text-decoration: none !important;}
+    .cta:hover, .cta:focus { background: #3F5CD6 !important; }
+    .cta:hover a, .cta:focus a { color: #ffffff !important; text-decoration: none; }
+    
+    .ReadMsgBody {width: 100%; background-color: #ffffff;}
+    .ExternalClass {width: 100%; background-color: #ffffff;}
+    body     {width: 100%; background-color: #ffffff; margin:0; padding:0;font-family: 'Source Sans Pro', sans-serif;color: #34313F ;font-weight:300;}
+    table {border-collapse: collapse;}
+    .deviceWidth.twoColumn { width: 48%; }
+
+    @media only screen and (max-width: 640px)  {
+        body[yahoo] .deviceWidth {width:100% !important;padding:0;}
+        body[yahoo] .center {text-align: center!important;}
+    }
+
+    @media only screen and (max-width: 479px) {
+        body[yahoo] .deviceWidth {width:100% !important;padding:0;}
+        body[yahoo] .center {text-align: center!important;}
+        .deviceWidth.twoColumn { width: 100% !important; }
+    }
+
+</style>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" yahoo="fix" style="font-family:'Source Sans Pro', Helvetica, Arial, sans-serif; background:#54656D; " ><!-- Outlook Font Fix -->
+<!--[if mso]>
+    <style type="text/css">
+    body, table, td {font-family: Helvetica, Arial, sans-serif !important;}
+    </style>
+    <![endif]-->
+<!-- Preview text (text which appears right after subject) -->
+<div class="mktEditable" id="preview-text" style="display:none; color:#ffffff; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; " >In April, we launched the inaugural BigCommerce Design Awards to find the best of the best in BigCommerce site design and ingenuity. After 6,000 social votes and an intensive review by our panel of judges, we&rsquo;ve finalized our winners, who will receive a cash prize and be featured in the September 2016 edition of Inc Magazine.</div>
+<!-- Wrapper -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="background:#ffffff; " ><tr ><td ><table width="800" border="0" cellpadding="0" cellspacing="0" align="center" class="deviceWidth" bgcolor="#F7F7F7" style="margin:0 auto; " ><tr ><td ><table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="deviceWidth" style="margin:0 auto; " ><tr ><td width="800" bgcolor="#F7F7F7" style="padding-top:30px; " ><!-- Logo -->
+<table border="0" cellpadding="0" cellspacing="0" align="left" class="deviceWidth">
+<tr>
+<td class="center"><a href="http://www.bigcommerce.com"><img src="http://grow.bigcommerce.com/rs/695-JJT-333/images/BigCommerce_logo_dark.png" alt="BigCommerce" width="177" height="40" border="0"></a></td>
+</tr>
+</table>
+<!-- End Logo -->
+<!-- Nav -->
+<table border="0" cellpadding="0" cellspacing="0" align="right" class="deviceWidth" ><tr ><td class="center" style="font-size:14px; color:#4C4B58; font-weight:300; text-align:right; font-family:'Source Sans Pro', Helvetica, Arial, sans-serif; text-transform:uppercase; line-height:28px; vertical-align:middle; padding:10px 20px; " ><div class="mktEditable" id="Eyebrow" ><p><strong>June&nbsp;2016&nbsp;</strong> Newsletter</p></div>
+</td>
+</tr>
+</table>
+<!-- End Nav --></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- Hero Image -->
+<table width="800" border="0" cellspacing="0" cellpadding="0" align="center" class="deviceWidth header" style="margin:auto; " ><tr ><td class="body" width="800" valign="top" align="center" style="background:url(http://grow.bigcommerce.com/rs/695-JJT-333/images/bg-1.jpg) no-repeat bottom center; background-size:cover; margin:auto; padding-top:20px; " ><div class="mktEditable" id="Hero-Image" ><!-- img style="position: relative; top: 20px; max-width: 70%;" src=" http://grow.bigcommerce.com/rs/695-JJT-333/images/BC-Community-Email-Asset.png" / --> <img style="position: relative; top: 20px; max-width: 70%;" src=" http://grow.bigcommerce.com/rs/695-JJT-333/images/blog-screenshots-600px.png" /></div>
+</td>
+</tr>
+</table>
+<!-- End Hero Image -->
+<!-- One Column -->
+<table width="800" class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" style="margin:0 auto; " ><tr ><td ><table width="600" class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" style="margin:0 auto; " ><tr ><td style="font-size:14px; color:#4C4B58; font-weight:300; text-align:left; font-family:'Source Sans Pro', Helvetica, Arial, sans-serif; line-height:28px; vertical-align:top; padding:50px 8px 10px 8px; " bgcolor="#FFFFFF" ><table ><tr ><td valign="middle" style="padding:0 10px 10px 0; margin:0; font-family:'Source Sans Pro', Helvetica, Arial, sans-serif; " ><div class="mktEditable" id="Headline" ><h2 style="margin: 0;">See the winners of the 2016 BigCommerce Design Awards!</h2></div>
+</td>
+</tr>
+</table>
+<div class="mktEditable" id="Description" ><p>In April, we launched the inaugural BigCommerce Design Awards to find the best of the best in BigCommerce site design and ingenuity. After 6,000 social votes and an intensive review by our panel of judges, we&rsquo;ve finalized our winners, who will receive a cash prize and be featured in the September 2016 edition of Inc Magazine.</p></div>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; display:inline-block; padding-bottom:15px; padding-top:5px; " ><tbody ><tr ><td class="cta" valign="middle" align="center" height="40" width="225" style="text-decoration:none; font-size:14px; color:#ffffff; background:#4b70fc; border-radius:25px; text-transform:uppercase; " ><div class="mktEditable" id="primary-cta" ><p style="margin: 0 0; color: #ffffff;"><a href="https://www.bigcommerce.com/blog/best-ecommerce-website-design/?utm_medium=email&amp;utm_source=partner" style="color: #ffffff !important; text-decoration: none; display: block; font-size: 14px; font-weight: 600;" target="_blank">See the Winners</a></p></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</table>
+<!-- End One Column -->
+<!-- Two Column (Images Stacked over Text) -->
+<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="deviceWidth" bgcolor="#FFFFFF" style="margin:0 auto; border-top:1px solid #C1B8B8; " ><tr ><td style="padding:10px 0 0 0px; text-align:left; vertical-align:top; " ><table width="48%" border="0" cellpadding="0" cellspacing="0" align="left" class="deviceWidth twoColumn" ><tr ><td style="font-size:12px; color:#959595; font-weight:normal; text-align:left; font-family:'Source Sans Pro', sans-serif; line-height:24px; vertical-align:top; padding:10px 8px 10px 8px; " ><table ><tr ><td valign="middle" style="padding:0 10px 10px 0; font-size:20px; font-weight:normal; line-height:26px; " ><div class="mktEditable" id="Block-Header-1" ><h3 style="margin-bottom: 0px;">Great seeing you in Chicago at IRCE</h3></div>
+</td>
+</tr>
+</table>
+<div class="mktEditable" id="Block-Desc-1" ><p style="margin-top: 0px;">We were thrilled to interact with so many partners and merchants during the 2016 International Retailer Conference + Exhibition this month in Chicago. From our CEO&rsquo;s speech &ldquo;Curation + Comedy + Connection = Word of Mouth That Moves the Needle&rdquo; to encounters on the trade show floor to our one-day &ldquo;Best Practices in Ecommerce&rdquo; workshop, we were able to trade advice, handshakes and laughs with many of you.<br /><br />If you didn&rsquo;t make it to this year&rsquo;s event, make it a priority for 2017!</p></div>
+</td>
+</tr>
+</table>
+<table width="48%" border="0" cellpadding="0" cellspacing="0" align="left" class="deviceWidth twoColumn" ><tr ><td style="font-size:12px; color:#959595; font-weight:normal; text-align:left; font-family:'Source Sans Pro', sans-serif; line-height:24px; vertical-align:top; padding:10px 8px 10px 8px; " ><table ><tr ><td valign="middle" style="padding:0 10px 10px 0; font-size:20px; font-weight:normal; line-height:26px; " ><div class="mktEditable" id="Block-Header-2" ><h3 style="margin-bottom: 0px;">Coming Soon &mdash; On-Demand Training<br /></h3></div>
+</td>
+</tr>
+</table>
+<div class="mktEditable" id="Block-Desc-2" ><p style="margin-top: 0px;">We know that design and solutions partners like you are self-motivated learners. That&rsquo;s why we&rsquo;re creating an on-demand training program that will enable you to expand your BigCommerce design or marketing skills whenever the inspiration strikes.</p>
+<p>Courses include BigCommerce Foundations, Sales 101 &amp; 102, Technology 101 &amp; 102, a Stencil deep dive and more.</p>
+<p>Be on the lookout for more details, coming soon.</p></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End Two Column (Images Stacked over Text) -->
+<!-- Two Column (Images Stacked over Text) -->
+<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="deviceWidth" bgcolor="#FFFFFF" style="margin:0 auto; " ><tr ><td style="padding:10px 0 0 0px; text-align:left; vertical-align:top; " ><table width="48%" border="0" cellpadding="0" cellspacing="0" align="left" class="deviceWidth twoColumn" ><tr ><td style="font-size:12px; color:#959595; font-weight:normal; text-align:left; font-family:'Source Sans Pro', sans-serif; line-height:24px; vertical-align:top; padding:10px 8px 10px 8px; " ><table ><tr ><td valign="middle" style="padding:0 10px 10px 0; font-size:20px; font-weight:normal; line-height:26px; " ><div class="mktEditable" id="Block-Header-3" ><h3 style="margin-bottom: 0px;">BigCommerce Channel Manager for Social Platform Integration</h3></div>
+</td>
+</tr>
+</table>
+<div class="mktEditable" id="Block-Desc-3" ><p style="margin-top: 0px;">You may have already noticed a new menu in the side navigation of the BigCommerce Control panel &mdash; the <a style="color: #4b70fc; text-decoration: none;" href="https://www.bigcommerce.com/blog/introducing-channel-manager/?utm_medium=email&amp;utm_source=partner&amp;utm_campaign=newsletter&amp;utm_term=&amp;utm_content=introducing-channel-manager" target="_blank">BigCommerce Channel Manager</a>. The Channel Manager is a new addition to our platform designed to help merchants grow sales while making multi-channel selling easier than ever: <br /></p>
+<ul>
+<li><span style="line-height: 14px;">Add a Shop section to merchants&rsquo; Facebook pages and implement Pinterest Buyable Pins.</span></li>
+</ul>
+<ul>
+<li>Reach more customers with native integrations and catalog syncing with Facebook, Pinterest and leading marketplaces (coming soon).</li>
+</ul>
+<ul>
+<li><span style="line-height: 14px;">Remove barriers and unify channels with built-in bulk export and inventory syncing.</span><br /></li>
+</ul>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;"><a style="text-decoration: none; color: #4b71fc; font-size: 14px; font-weight: 500;" href="https://www.bigcommerce.com/blog/introducing-channel-manager/?utm_medium=email&amp;utm_source=partner&amp;utm_campaign=newsletter&amp;utm_term=&amp;utm_content=introducing-channel-manager" target="_blank">Read More</a></p></div>
+</td>
+</tr>
+</table>
+<table width="48%" border="0" cellpadding="0" cellspacing="0" align="left" class="deviceWidth twoColumn" ><tr ><td style="font-size:12px; color:#959595; font-weight:normal; text-align:left; font-family:'Source Sans Pro', sans-serif; line-height:24px; vertical-align:top; padding:10px 8px 10px 8px; " ><table ><tr ><td valign="middle" style="padding:0 10px 10px 0; font-size:20px; font-weight:normal; line-height:26px; " ><div class="mktEditable" id="Block-Header-4" ><h3 style="margin-bottom: 0px;">New to the Partner Portal: All the Stencil info you need in one place<br /></h3></div>
+</td>
+</tr>
+</table>
+<div class="mktEditable" id="Block-Desc-4" ><p style="margin-top: 0px;">When we introduced Stencil, our new approach to theme and front-end development, no one was more excited than our design and solutions partners. Now we&rsquo;ve made it easier for you to access answers to common questions you might have as a developer / designer, directly from your partner portal: <br /></p>
+<ul>
+<li><span style="line-height: 24px;">Technology Overview &ndash; a rich introduction</span></li>
+</ul>
+<ul>
+<li>Installation and Launch instructions</li>
+</ul>
+<ul>
+<li><span style="line-height: 14px;">Development Quick Start tutorial</span></li>
+</ul>
+<ul>
+<li><span style="line-height: 14px;">Handlebars overview</span></li>
+</ul>
+<ul>
+<li><span style="line-height: 14px;">Upcoming Releases</span></li>
+</ul>
+<ul>
+<li><span style="line-height: 14px;">Support</span></li>
+</ul>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;"><a style="text-decoration: none; color: #4b71fc; font-size: 14px; font-weight: 500;" href="https://partners.bigcommerce.com/English/Solutions/resources/stencil.aspx?utm_medium=email&amp;utm_source=partner&amp;utm_campaign=newsletter&amp;utm_term=&amp;utm_content=partner-portal" target="_blank">Take Me There</a></p></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End Two Column (Images Stacked over Text) -->
+<!-- One Column -->
+<table width="600" class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" style="margin:0 auto; " ><tr ><td style="font-size:13px; color:#959595; font-weight:normal; text-align:left; font-family:'Source Sans Pro', sans-serif; line-height:24px; vertical-align:top; padding:50px 0px 10px 0px; " bgcolor="#FFFFFF" ><div class="mktEditable" id="Secondary-Image" ><div><img style="position: relative; top: 20px; max-width: 80%; display: block; margin-left: auto; margin-right: auto;" src="http://grow.bigcommerce.com/rs/695-JJT-333/images/ConsumerBehavior_IntroGraphics_Page_1-1-1024x7.jpg" /></div></div>
+</td>
+</tr>
+</table>
+<table width="600" class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" style="margin:0 auto; " ><tr ><td style="font-size:14px; color:#4C4B58; font-weight:300; text-align:left; font-family:'Source Sans Pro', Helvetica, Arial, sans-serif; line-height:28px; vertical-align:top; padding:50px 8px 10px 8px; " bgcolor="#FFFFFF" ><table ><tr ><td valign="middle" style="padding:0 10px 10px 0; " ><div class="mktEditable" id="Secondary-Headline" ><h2 style="margin: 0;">New Study: How to Find Success in Omni-Channel Sales</h2></div>
+</td>
+</tr>
+</table>
+<div class="mktEditable" id="Secondary-Description" ><p>Ecommerce leaders like you know that consumer behavior has changed drastically over the last few years, with more people engaging in a combination of online and brick-and-mortar research and buying. But until now, it&rsquo;s been difficult to find data on where, when and how consumers were using each sales channel or how merchants could best focus their resources when creating an omni-channel strategy for their brand.</p>
+<p>To help partners and merchants better understand what makes a seamless and successful omni-channel experience, we conducted a survey in partnership with <a style="color: #4b70fc; text-decoration: none;" href="http://keltonglobal.com/" target="_blank">Kelton Global</a> of more than 1,000 nationally representative Americans 18 years and older who cited making an online purchase within the previous six months.</p>
+<p>The results illuminate answers to omni-channel questions like:<br /></p>
+<ul>
+<li>Who shops online</li>
+<li>Where Americans spend online</li>
+<li>When Americans spend online</li>
+<li>What Americans are buying</li>
+<li>What influences the American shopper to purchase</li>
+<li>How Americans feel about online shopping</li>
+<li>How important is online shopping</li>
+<li>What this means for U.S. retailers</li>
+</ul>
+We think this data will prove highly valuable as you help your merchants build successful brands and omni-channel experiences.<br /><br /></div>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; display:inline-block; padding-bottom:15px; padding-top:5px; " ><tbody ><tr ><td class="cta" valign="middle" align="center" height="40" width="225" style="text-decoration:none; font-size:14px; color:#ffffff; background:#4b70fc; border-radius:25px; text-transform:uppercase; " ><div class="mktEditable" id="secondary-cta" ><p style="margin: 0 0; color: #ffffff;"><a href="https://www.bigcommerce.com/blog/omni-channel-retail/?utm_medium=email&amp;utm_source=partner&amp;utm_campaign=newsletter&amp;utm_term=&amp;utm_content=omni-channel-retail" style="color: #ffffff !important; text-decoration: none; display: block; font-size: 14px; font-weight: 600;" target="_blank">Read the Full Results</a></p></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</table>
+<!-- End One Column -->
+<div class="mktEditable" id="additional-stories" >
+<table width="600" class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" style="margin: 0 auto; margin-top: 40px; border-top: 1px solid #C1B8B8;">
+<tbody>
+<tr>
+<td style="font-size: 13px; color: #959595; font-weight: normal; text-align: left; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; line-height: 24px; vertical-align: top; padding: 50px 8px 10px 8px;" bgcolor="#FFFFFF">
+<table style="color: #959595; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 13px; font-weight: normal; line-height: 24px;">
+<tbody>
+<tr>
+<td valign="middle" style="padding: 0 10px 10px 0;">
+<h3 style="margin-top: 50px; font-size: 22px; line-height: 30px; color: #34313f; margin: 0;">Other product updates, new apps, and promotions</h3>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;"><strong>Join the BigCommerce Community</strong><br /><strong></strong></p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;">Last month, we announced our new and improved <a style="color: #4b70fc; text-decoration: none;" href="http://forum.bigcommerce.com/?utm_medium=email&amp;utm_source=partner&amp;utm_campaign=newsletter&amp;utm_term=&amp;utm_content=forum" target="_blank">Community</a>, designed to make it easier for merchants and 
+partners to find all the answers, resources and connections needed to help businesses grow.
+ This also offers a great opportunity for partners like you to interact directly with merchants to provide your own BigCommerce design expertise and guidance.
+ Interact and offer services and support to merchants like never before.
+ To get started, register and complete your profile, then start a discussion.</p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;"><strong><a href="http://forum.bigcommerce.com/?utm_medium=email&amp;utm_source=partner&amp;utm_campaign=newsletter&amp;utm_term=&amp;utm_content=forum" style="text-decoration: none; color: #4b71fc;" target="_blank">Get Started Now&nbsp;</a></strong><span style="color: #000000;"></span></p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;"><strong>Request for public comment: Proposed Cart API Schema</strong></p>
+<p style="color: #959595; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 13px; font-weight: normal; line-height: 24px;"><span color="#4c4b58" face="Source Sans Pro, Helvetica, Arial, sans-serif" style="color: #4c4b58; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;"><span style="font-size: 14px; line-height: 28px;"><span style="color: #4c4b58; font-family: 
+'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 300; letter-spacing: normal; line-height: 28px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: #ffffff;">As a 
+valued partner, you can play a key role in the future of our platform.
+ We are under way creating a public Cart API and we'd like your feedback.
+ Last week, we posted an open request for comment on GitHub of our proposed Cart API schema, which considers use cases such as:</span>&nbsp;</span></span><br /></p>
+<ul style="color: #959595; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 13px; font-weight: normal; line-height: 24px;">
+<li style="color: #959595; font-size: 13px; font-weight: normal; line-height: 24px;"><span color="#4c4b58" face="Source Sans Pro, Helvetica, Arial, sans-serif" style="color: #4c4b58; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;"><span style="font-size: 14px; line-height: 28px;"><span style="color: #4c4b58; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 
+14px; font-style: normal; font-variant: normal; font-weight: 300; letter-spacing: normal; line-height: 28px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: #ffffff;">Retrieving an abandoned cart</span></span></span></li>
+<li style="color: #959595; font-size: 13px; font-weight: normal; line-height: 24px;"><span color="#4c4b58" face="Source Sans Pro, Helvetica, Arial, sans-serif" style="color: #4c4b58; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;"><span style="font-size: 14px; line-height: 28px;"><span style="color: #4c4b58; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 
+14px; font-style: normal; font-variant: normal; font-weight: 300; letter-spacing: normal; line-height: 28px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: #ffffff;">Reconstructing a cart from a URL</span></span></span></li>
+<li style="color: #959595; font-size: 13px; font-weight: normal; line-height: 24px;"><span color="#4c4b58" face="Source Sans Pro, Helvetica, Arial, sans-serif" style="color: #4c4b58; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;"><span style="font-size: 14px; line-height: 28px;"><span style="color: #4c4b58; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 
+14px; font-style: normal; font-variant: normal; font-weight: 300; letter-spacing: normal; line-height: 28px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: #ffffff;">Supporting multiple shipping destinations for a single cart 
+quote<br /></span></span></span></li>
+</ul>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;"><span color="#4c4b58" face="Source Sans Pro, Helvetica, Arial, sans-serif" style="color: #4c4b58; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;"><span style="font-size: 14px; line-height: 28px;"><span style="color: #4c4b58; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 
+14px; font-style: normal; font-variant: normal; font-weight: 300; letter-spacing: normal; line-height: 28px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: #ffffff;">What would you like the new Cart API to do? Share youre thoughts 
+on our GitHub discussion.</span><br /></span></span></p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;"><strong><a href="https://github.com/bigcommerce/api?utm_medium=email&amp;utm_source=partner&amp;utm_campaign=newsletter&amp;utm_term=&amp;utm_content=github" target="_blank" style="text-decoration: none; color: #4b71fc;">Go to GitHub</a><br /></strong></p>
+<div style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;">
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;"><strong>Beta testing: New optimized single-page checkout</strong><br /><strong></strong></p>
+<div style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;">Over 18% of all carts are abandoned due to complicated checkout flows.
+ That&rsquo;s we&rsquo;re introducing the most streamlined checkout in the industry, incorporating the industry&rsquo;s best practices to give your merchants the best conversion rates possible.
+ Customers will zoom through an intuitive checkout with a reduced number of steps, address autofill, credit card type detection, optional fields, and an optimized guest checkout experience.&nbsp;
+<p>To nominate your client stores for this beta, please fill out the application form.</p>
+<p><strong><a href="http://grow.bigcommerce.com/beta-test-unified-checkout.html?utm_medium=email&amp;utm_source=partner&amp;utm_campaign=newsletter&amp;utm_term=&amp;utm_content=unified-checkout" target="_blank" style="text-decoration: none; color: #4b71fc;">Read More</a><br /></strong></p>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<strong><strong><strong><strong><strong><!--mce:protected 
+%3C%21--mce%3Aprotected%20%253C%2521--mce%253Aprotected%2520%250A%25253C%252521--mce%25253Aprotected%252520%2525253C%25252521--mce%2525253Aprotected%25252520%2525250A%252525253C%2525252521--mce%252525253Aprotected%2525252520%252525250A%25252525253C%252525252521--mce%25252525253Aprotected%252525252520%25252525250A%2525252525253C%25252525252521--mce%2525252525253Aprotected%25252525252520%2525252525250A%252525252525253C%2525252525252521--mce%252525252525253Aprotected%2525252525252520%252525252525250A%25252525252525253C%252525252525252521--mce%25252525252525253Aprotected%252525252525252520%25252525252525250A%2525252525252525253C%25252525252525252521--mce%2525252525252525253Aprotected%25252525252525252520%2525252525252525250A%252525252525252525253C%2525252525252525252521--mce%252525252525252525253Aprotected%2525252525252525252520%252525252525252525250A%25252525252525252525253C%252525252525252
+525252521--mce%25252525252525252525253Aprotected%252525252525252525252520%2525252525252525252525253C%25252525252525252525252521--mce%2525252525252525252525253Aprotected%25252525252525252525252520%2525252525252525252525250A%252525252525252525252525253C%2525252525252525252525252521--mce%250A%252525252525252525252525253Aprotected%2525252525252525252525252520%252525252525252525252525250A%25252525252525252525252525253C%252525252525252525252525252521--mce%25252525252525252525252525253Aprotected%252525252525252525252525252520%2525252525252525252525252525253C%25252525252525252525252525252521--mce%25252525252525252525252%2525250A52525253Aprotected%25252525252525252525252525252520%252525252525252525252525252525253C%2525252525252525252525252525252521--mce%252525252525252525252525252525253Aprotected%2525252525%252525250A252525252525252525252520%25252525252525252525252525252525253C%252525252525252525
+252525252525252521--mce%25252525252525252525252525252525253Aprotected%25252525252525252525252525252%25252525250A5252520%2525252525252525252525252525252525253C%25252525252525252525252525252525252521--mce%2525252525252525252525252525252525253Aprotected%25252525252525252525252525252525252520%252525252525252525252%2525252525250A525252525252525253C%2525252525252525252525252525252525252521--mce%252525252525252525%250A252525252525252525253Aprotected%2525252525252525252525252525252525252520%252525252525252525252525252525252525%252525252525250A25253C%252525252525252525252525252525252525252521--mce%25252525252525252525252525252525252525253Aprotected%252525252525252525252525252525252525252520%2525252525252525252525252525252525252525253C%2525252525252525252525%25252525252525250A2525252525252525252521--mce%2525252525252525252525252525252525252525253Aprotected%25252525252525%2525250A252525252525252525
+252525252520%252525252525252525252525252525252525252525253C%252525252525252525252525252525252%2525252525252525250A5252525252521--%2525252525252525252525252525252525252525252520End%25252525252525252525252525252525252525252525%252525250A20One%2525252525252525252525252525252525252525252520Column%25252525252525252525252525252525252525252525%252525252525252525250A20--%252525252525252525252525252525252525252525253E--%2525252525252525252525252525252525252525253E--%25252525252525252525252525252525252%25252525250A52525%250A3E--%252525252525252525252525252525252525253E--%2525252525252525252525252525252525253E--%25252525252525252525252525252525253E--%252525252525252525252525252525253E--%2525252525252525252525252525253E--%25252525252525252525252525253E--%252525252525252525252525253E--%2525252525252525252525253E--%25252525252525252525253E--%252525252525252525253E--%2525252525252525253E--%252525252525
+25253E--%252525252525253E--%2525252525253E--%25252525253E--%252525253E--%2525253E--%25253E--%253E--%3E--> <!--mce:protected 
+%3C%21--mce%3Aprotected%20%253C%2521--mce%253Aprotected%2520%250A%25253C%252521--mce%25253Aprotected%252520%2525253C%25252521--mce%2525253Aprotected%25252520%2525250A%252525253C%2525252521--mce%252525253Aprotected%2525252520%252525250A%25252525253C%252525252521--mce%25252525253Aprotected%252525252520%25252525250A%2525252525253C%25252525252521--mce%2525252525253Aprotected%25252525252520%2525252525250A%252525252525253C%2525252525252521--mce%252525252525253Aprotected%2525252525252520%252525252525250A%25252525252525253C%252525252525252521--mce%25252525252525253Aprotected%252525252525252520%25252525252525250A%2525252525252525253C%25252525252525252521--mce%2525252525252525253Aprotected%25252525252525252520%2525252525252525250A%252525252525252525253C%2525252525252525252521--mce%252525252525252525253Aprotected%2525252525252525252520%252525252525252525250A%25252525252525252525253C%252525252525252
+525252521--mce%25252525252525252525253Aprotected%252525252525252525252520%2525252525252525252525253C%25252525252525252525252521--mce%2525252525252525252525253Aprotected%25252525252525252525252520%2525252525252525252525250A%252525252525252525252525253C%2525252525252525252525252521--mce%250A%252525252525252525252525253Aprotected%2525252525252525252525252520%252525252525252525252525250A%25252525252525252525252525253C%252525252525252525252525252521--mce%25252525252525252525252525253Aprotected%252525252525252525252525252520%2525252525252525252525252525253C%25252525252525252525252525252521--mce%25252525252525252525252%2525250A52525253Aprotected%25252525252525252525252525252520%252525252525252525252525252525253C%2525252525252525252525252525252521--mce%252525252525252525252525252525253Aprotected%2525252525%252525250A252525252525252525252520%25252525252525252525252525252525253C%252525252525252525
+252525252525252521--mce%25252525252525252525252525252525253Aprotected%25252525252525252525252525252%25252525250A5252520%2525252525252525252525252525252525253C%25252525252525252525252525252525252521--mce%2525252525252525252525252525252525253Aprotected%25252525252525252525252525252525252520%252525252525252525252%2525252525250A5252525252525250A%252525252525252525252525252525252525253C%2525252525252525252525252%250A525252525252521--mce%252525252525252525252525252525252525253Aprotected%25252525252525252525252525252525252525%252525252525250A20%25252525252525252525252525252525252525253C%252525252525252525252525252525252525252521--mce%25252525252525252525252525252525252525253Aprotected%252525252525252525252525252525252525252520%2525252525252525252525252525%25252525252525250A252525252525253C%25252525252525252525252525252525252525252521--mce%25252525252525252525252525252%2525250A52525252525253Apro
+tected%25252525252525252525252525252525252525252520%25252525252525252525252525252525252525252%2525252525252525250A5253C%2525252525252525252525252525252525252525252521--%2525252525252525252525252525252525252525252520One%252525252525252%252525250A5252525252525252525252525252520Column%2525252525252525252525252525252525252525252520--%2525252525252525252525252525%252525252525252525250A25252525252525253E--%2525252525252525252525252525252525252525253E--%25252525252525252525252525252525252525253E--%2525252525252%252525252%250A50A52525252525252525252525253E--%2525252525252525252525252525252525253E--%25252525252525252525252525252525253E--%252525252525252525252525252525253E--%2525252525252525252525252525253E--%25252525252525252525252525253E--%252525252525252525252525253E--%2525252525252525252525253E--%25252525252525252525253E--%252525252525252525253E--%2525252525252525253E--%25252525252525253E--%252525252525253E--%2525252525253E--%25252525253E--%252525253E--%2525253E--%25253E--%253E--%3E-->
+</strong
+></strong
+></strong
+></strong
+></strong
+>
+<table width="600" class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" style="margin: 0 auto; margin-bottom: 50px;">
+<tbody>
+<tr>
+<td style="font-size: 13px; color: #959595; font-weight: normal; text-align: left; font-family: 'Source Sans Pro', sans-serif; line-height: 24px; vertical-align: top; padding: 50px 8px 10px 8px;" bgcolor="#FFFFFF">
+<table>
+<tbody>
+<tr>
+<td valign="middle" style="padding: 0 10px 10px 0;">
+<h3 style="margin-top: 50px; font-size: 22px; line-height: 30px; color: #34313f; margin: 0;">Upcoming Events</h3>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;"><strong>Webinar: Getting Started with the BigCommerce Partner Portal</strong></p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;">Tuesday, July 12, 2016, 11 a.m.
+ CT; Tuesday, Aug.
+ 23, 2016, 6 p.m.
+ CT<br /></p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;">Join the BigCommerce Partner Marketing Team for a tour of your partner portal and tips on how to make yourself and your clients more successful.</p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;"><strong><a href="http://grow.bigcommerce.com/Portal-Webinar-Register.html?utm_medium=email&amp;utm_source=partner&amp;utm_campaign=newsletter&amp;utm_term=&amp;utm_content=webinar-register" target="_blank" style="text-decoration: none; color: #4b71fc;">Register Now</a><br /></strong><strong><br />Shop.org 
+Retail&rsquo;s Digital Summit</strong></p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;">Monday-Wednesday, Sept.
+ 26-28, 2016<br />Kay Bailey Hutchison Convention Center, Dallas, TX<br />Booth #4029</p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;">Going to Shop.org&rsquo;s summit of more than 5,000 ecommerce professionals? We&rsquo;d love to see you! Stop by our exhibit hall booth, where we&rsquo;ll be sharing insights into the latest and greatest BigCommerce tools and other exciting updates.</p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;"><strong><a href="http://retailsdigitalsummit.nrf.com/" target="_blank" style="text-decoration: none; color: #4b71fc;">Learn More</a></strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+<!-- End One Column --></td>
+</tr>
+</table>
+<!--Footer -->
+
+<table class="footer" width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+<tr>
+<td bgcolor="#2B2936" style="padding:30px 0">
+<table width="600" border="0" cellpadding="10" cellspacing="0" align="center" class="deviceWidth" style="margin:0 auto;">
+<tr>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" align="left" class="deviceWidth">
+<tr>
+<td valign="top" style="color:#828189 !important; background-color: #2b2936; text-align: center; font-family: 'Open Sans', Helvetica, sans-serif; font-size: 11px; line-height: 28px; color: #828189;" class="center">
+<div style="padding-top:25px;">
+<p style="color:#828189 !important; text-align: left;"><a href="http://www.bigcommerce.com"><img align="middle" class="center-image" border="0" style="top:15px; padding-bottom: 20px !important; border-style: none;" src="http://grow.bigcommerce.com/rs/695-JJT-333/images/Bigcommerce_icon_white-sized.png" alt="BigCommerce"></a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://twitter.com/Bigcommerce" 
+style="color:#ffffff; font-size: 14px; display:inline-block; text-decoration:none;">Twitter</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.facebook.com/BigCommerce" style="color:#ffffff; font-size: 14px; display:inline-block; text-decoration:none;">Facebook</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.linkedin.com/company/bigcommerce" style="color:#ffffff; font-size: 14px; 
+display:inline-block; text-decoration:none;">LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.youtube.com/user/bigcommercedotcom" style="color:#ffffff; font-size: 14px; display:inline-block; text-decoration:none;">YouTube</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.pinterest.com/bigcommerce/" style="color:#ffffff; font-size: 14px; display:inline-block; 
+text-decoration:none;">Pinterest</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://plus.google.com/+bigcommerce" style="color:#ffffff; font-size: 14px; display:inline-block; text-decoration:none;">Google+</a></p>
+<p style="color:#828189; text-align:left; font-size:12px;">&#169; 2016 BigCommerce <span class="applelinks">11305 Four Points Dr., Building 2, Floor 3, Austin TX 78726</span><br>
+You received this email because you are subscribed to emails from BigCommerce.<br>
+<span style="color:#828189; text-align:left; font-size:12px;"><a style="color:#828189;padding-right:5px; font-size:12px; text-decoration: underline" href="http://grow.bigcommerce.com/subscribe-to-bigcommerce-blog.html">Subscribe to our Blog</a> | <a style="color:#828189; padding-left:5px; padding-right:5px; font-size:12px; text-decoration: underline" 
+href="http://grow.bigcommerce.com/manage-your-email-preferences.html">Update your email preferences</a> | <a style="color:#828189;padding-left:5px; font-size:12px; text-decoration: underline" href="{{system.viewAsWebpageLink}}">View as webpage</a></span></p>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End Footer --></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End Wrapper --></body>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Post Paid.CUS - Email 1- Welcome Resources</name>
+    <style>none</style>
+    <subject>Welcome to BigCommerce | Resources to get started</subject>
+    <textOnly>Here are some important resources you can use to learn more about the BigCommerce platform, open your store and get help if you need it.
+Welcome to BigCommerce
+
+
+
+
+
+
+
+Log into your store &lt;[[https://login.bigcommerce.com/login?utm_medium=eml&amp;utm_source=post-paid&amp;utm_campaign=email1&amp;utm_term=&amp;utm_content=welcome-resources]]&gt;
+Congratulations on taking the next step to opening an online store.
+You can now log in to your control panel to continue building or launch your store. Here are some important resources you can use to learn more about the BigCommerce platform, open your store and get help if you need it.
+The BigCommerce Store Launch Guide &lt;[[https://support.bigcommerce.com/articles/Learning/Store-Launch-Guide?utm_medium=eml&amp;utm_source=post-paid&amp;utm_campaign=email1&amp;utm_term=&amp;utm_content=welcome-resources]]&gt;
+
+This comprehensive guide includes everything you need to properly set up your BigCommerce store.
+Contact our support team 24/7 via phone, email, or chat, plus find how-to articles, videos, guides and troubleshooting resources.
+Get expert advice from BigCommerce merchants, staff and partners.
+Our global network of certified designers and developers can assist you with everything from enhancing your design theme to building a custom site.
+Resources for software developers, including documentation on theme customization and working with the BigCommerce APIs.
+Over the next two weeks, we’ll be sending a series of emails that will help get your store ready for business. Watch for those to learn how to add products, manage your store settings and more.
+Log into your store &lt;[[https://login.bigcommerce.com/login?utm_medium=eml&amp;utm_source=post-paid&amp;utm_campaign=email1&amp;utm_term=&amp;utm_content=welcome-resources]]&gt;
+Forgot your password? &lt;[[https://login.bigcommerce.com/recover/new?utm_medium=eml&amp;utm_source=post-paid&amp;utm_campaign=email1&amp;utm_term=&amp;utm_content=welcome-resources]]&gt; If you originally opened your store with a free trial, you’ll use that same login information.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

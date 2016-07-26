@@ -102,7 +102,7 @@
         <criteriaItems>
             <column>Lead.qbdialer__Dials__c</column>
             <operator>lessOrEqual</operator>
-            <value>5</value>
+            <value>2</value>
         </criteriaItems>
         <criteriaItems>
             <column>LEAD_STATUS</column>
@@ -123,12 +123,12 @@
     </groupingsAcross>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>LEAD_STATUS</field>
+        <field>CAMPAIGN_PARENT_NAME</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>CAMPAIGN_PARENT_NAME</field>
+        <field>LEAD_STATUS</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Leads Still In Distribution Engine 2016</name>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Blog Retraction 7/25.Email 1</name>
+    <style>none</style>
+    <subject>Whoops! — Here’s the correct links to this week’s content</subject>
+    <textOnly>Looks like the last email we sent you didn’t pull through our content. That’s our fault! Here is what we published last week to help you grow your business.
+Hi {{lead.First Name:default=there}},
+Looks like the last email we sent you didn’t pull through our content. That’s our fault! Here is what we published last week to help you grow your business.
+
+
+
+ - 14 Tips to Win Increasingly Discount-Hungry Back-to-School Shoppers &lt;[[https://www.bigcommerce.com/blog/back-to-school-shopping-trends/?utm_source=email&amp;utm_medium=marketo-email&amp;utm_campaign=retraction-email]]&gt; 
+
+ - The Significance of Sneakers –– and a Definitive End to Toe Creases &lt;[[https://www.bigcommerce.com/blog/definitive-end-toe-creases-socktips/?utm_source=email&amp;utm_medium=marketo-email&amp;utm_campaign=retraction-email]]&gt;
+
+
+
+If you have any questions, please reach out. Thanks and happy Monday!
+Best, 
+Tracey Wallace, Managing Editor</textOnly>
+    <type>custom</type>
+</EmailTemplate>

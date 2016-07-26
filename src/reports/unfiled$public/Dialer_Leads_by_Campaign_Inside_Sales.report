@@ -80,7 +80,7 @@
         <criteriaItems>
             <column>Lead.qbdialer__Dials__c</column>
             <operator>lessThan</operator>
-            <value>5</value>
+            <value>3</value>
         </criteriaItems>
         <criteriaItems>
             <column>CAMPAIGN_OWNER</column>

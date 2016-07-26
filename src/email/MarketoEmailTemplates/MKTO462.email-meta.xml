@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Post Paid.CUS - Email 3- Products</name>
+    <style>none</style>
+    <subject>Add your products</subject>
+    <textOnly>You can use our powerful product management system to quickly add products individually or import in bulk.
+Add your products
+
+
+
+
+
+
+
+Get started now &lt;[[https://login.bigcommerce.com/deep-links/index.php?ToDo=addProduct?utm_medium=eml&amp;utm_source=post-paid&amp;utm_campaign=email3&amp;utm_term=&amp;utm_content=add-products]]&gt;
+Start adding products
+You can use our powerful product management system to quickly add products individually or import in bulk, add and manage product categories, and create product options like size, color, style, etc. 
+For more information on managing your products and inventory, refer to our Products Overview &lt;[[https://support.bigcommerce.com/articles/Public/Products-Overview?utm_medium=eml&amp;utm_source=post-paid&amp;utm_campaign=email3&amp;utm_term=&amp;utm_content=add-products]]&gt;.
+Position your products to sell better on BigCommerce
+Our Guide to Products &lt;[[https://support.bigcommerce.com/articles/Learning/Getting-Started-with-Products-and-Services?utm_medium=eml&amp;utm_source=post-paid&amp;utm_campaign=email3&amp;utm_term=&amp;utm_content=add-products]]&gt; will not only discuss how to generate ideas and source products to help you successfully expand your product catalog, but it will also walk you through the essentials of adding, customizing, organizing and managing your product listings, so you can better scale you business.
+Add products now &lt;[[https://login.bigcommerce.com/deep-links/index.php?ToDo=addProduct?utm_medium=eml&amp;utm_source=post-paid&amp;utm_campaign=email3&amp;utm_term=&amp;utm_content=add-products]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

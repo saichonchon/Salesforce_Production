@@ -425,7 +425,7 @@
         <name>CancellationRequestDate__c</name>
     </fields>
     <fields>
-        <label><!-- RV Match - Channel Partner IDEV Id --></label>
+        <label><!-- zRV Match - Channel Partner IDEV Id --></label>
         <name>Channel_Partner_Idev_accout__c</name>
     </fields>
     <fields>
@@ -2585,11 +2585,11 @@
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Has RV Account? --></label>
+        <label><!-- zHas RV Account? --></label>
         <name>Has_RV_Account__c</name>
     </fields>
     <fields>
-        <label><!-- Has RV Member? --></label>
+        <label><!-- zHas RV Member? --></label>
         <name>Has_RV_Member__c</name>
     </fields>
     <fields>
@@ -4260,12 +4260,12 @@
         <name>Purchase_Team__c</name>
     </fields>
     <fields>
-        <label><!-- RV Match - RV Account IDEV ID --></label>
+        <label><!-- zRV Match - RV Account IDEV ID --></label>
         <name>RV_Match_RV_Account_IDEV_ID__c</name>
     </fields>
     <fields>
         <help><!-- FORMULA - Lookup the primary member id from the RV Account --></help>
-        <label><!-- RV Primary Member ID --></label>
+        <label><!-- zRV Primary Member ID --></label>
         <name>RV_Primary_Member_ID__c</name>
     </fields>
     <fields>

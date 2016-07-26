@@ -4479,7 +4479,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.Last_Case_Routed_Date__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>

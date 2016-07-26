@@ -2561,7 +2561,7 @@ Set by hierarchy : Contact &gt; Lead &gt; Web Email &gt; Subscription Email</des
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>notEqual</operation>
-            <value>Employee Account</value>
+            <value>Employee Account,Web</value>
         </criteriaItems>
         <description>Sends Client Success Survey Email</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>

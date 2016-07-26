@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>BigPay- 1021.Email 2</name>
+    <style>none</style>
+    <subject>Upcoming changes to your payment gateway - please be advised</subject>
+    <textOnly>We’re focusing on integrations with select payment providers in order to streamline our offering and provide you with the best possible features and security. As a result, we’ll be removing your current payment gateway effective August 15
+We’re updating our payment gateway options
+As a result, we’ll be removing one of your current payment gateways effective August 15, 2016.
+Get Started &lt;[[https://login.bigcommerce.com/login]]&gt;
+Why are we removing your current payment gateway?
+We’re focusing on integrations with select payment providers in order to streamline our offering and provide you with the best possible features and security.
+What do you need to do?
+
+Set up a new payment option in your control panel by August 15, 2016 to ensure no interruption to your online sales. If you do not make the switch by the deadline, our team will auto enable PayPal powered by Braintree between the dates of August 16, 2016 and August 18, 2016.  Click here to view details and next steps on our auto enablement process.  &lt;[[http://grow.bigcommerce.com/Choose-New-Payment-Gateway.html]]&gt;
+
+You can choose another gateway in the Payments section of your control panel but for your business, we recommend using the all-in-one solution of PayPal powered by Braintree for credit/debit cards and PayPal payments.
+
+PayPal powered by Braintree is easy to enable and apply for an account. We’ve pre-negotiated special credit and debit card processing rates with PayPal to help you reduce costs. Click here to see more about these special rates and eligibility &lt;[[https://www.bigcommerce.com/paypal-rates/?utm_medium=email&amp;utm_source=partner]]&gt;.
+Not sure how to make the switch? Read our instructions &lt;[[https://support.bigcommerce.com/articles/Public/Connecting-with-PayPal-powered-by-Braintree-Automated-Setup/?utm_medium=email&amp;utm_source=partner]]&gt;, give us a call at 866-949-5338 &lt;[[tel:+18669495338]]&gt; or email accountservices@bigcommerce.com &lt;[[mailto:accountservices@bigcommerce.com]]&gt;.
+Start Setup Now &lt;[[https://login.bigcommerce.com/login]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -37,23 +37,22 @@
             <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
             <chartSummary>
-                <aggregate>Sum</aggregate>
                 <axisBinding>y</axisBinding>
-                <column>Lead.Lead_Count__c</column>
+                <column>RowCount</column>
             </chartSummary>
-            <componentType>ColumnGrouped</componentType>
+            <componentType>ColumnStacked</componentType>
             <displayUnits>Integer</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>Lead.qbdialer__Dials__c</groupingColumn>
-            <groupingColumn>CAMPAIGN_PARENT_NAME</groupingColumn>
+            <groupingColumn>LEAD_STATUS</groupingColumn>
             <header>Leads in Distribution Engine (Open,Inflow,Contacted)</header>
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/Leads_Still_In_Distribution_Engine_2016</report>
             <showPercentage>false</showPercentage>
-            <showValues>true</showValues>
+            <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
             <useReportChart>false</useReportChart>
         </components>

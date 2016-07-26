@@ -126,28 +126,6 @@
                 <axisBinding>y</axisBinding>
                 <column>RowCount</column>
             </chartSummary>
-            <componentType>Funnel</componentType>
-            <displayUnits>Integer</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>true</enableHover>
-            <expandOthers>false</expandOthers>
-            <groupingColumn>Opportunity$StageName</groupingColumn>
-            <legendPosition>Bottom</legendPosition>
-            <report>Premium/SDR_Trial_Pipeline_per_outbound_MDR</report>
-            <showPercentage>true</showPercentage>
-            <showValues>true</showValues>
-            <sortBy>RowLabelAscending</sortBy>
-            <title>MDR Qualified</title>
-            <useReportChart>false</useReportChart>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-            <chartAxisRange>Auto</chartAxisRange>
-            <chartSummary>
-                <axisBinding>y</axisBinding>
-                <column>RowCount</column>
-            </chartSummary>
             <componentType>BarStacked</componentType>
             <displayUnits>Integer</displayUnits>
             <drillEnabled>false</drillEnabled>
@@ -294,33 +272,6 @@
                 <axisBinding>y2</axisBinding>
                 <column>FORMULA1</column>
             </chartSummary>
-            <componentType>ColumnLine</componentType>
-            <displayUnits>Auto</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>false</enableHover>
-            <expandOthers>false</expandOthers>
-            <footer>Total Talk Time &amp; Dials This Month</footer>
-            <groupingColumn>Activity$Owner</groupingColumn>
-            <legendPosition>Bottom</legendPosition>
-            <report>Premium/LDR_Call_Activity_v3</report>
-            <showPercentage>false</showPercentage>
-            <showValues>false</showValues>
-            <sortBy>RowLabelAscending</sortBy>
-            <title>This Month per MDR</title>
-            <useReportChart>false</useReportChart>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-            <chartAxisRange>Auto</chartAxisRange>
-            <chartSummary>
-                <axisBinding>y</axisBinding>
-                <column>RowCount</column>
-            </chartSummary>
-            <chartSummary>
-                <axisBinding>y2</axisBinding>
-                <column>FORMULA1</column>
-            </chartSummary>
             <componentType>ColumnLineStacked</componentType>
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
@@ -419,31 +370,6 @@
             <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
             <chartSummary>
-                <aggregate>Sum</aggregate>
-                <axisBinding>y</axisBinding>
-                <column>Opportunity$Amount</column>
-            </chartSummary>
-            <componentType>BarStacked</componentType>
-            <displayUnits>Integer</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>true</enableHover>
-            <expandOthers>false</expandOthers>
-            <footer>Total MRR Attributed to and LDR in the last 3 Months</footer>
-            <groupingColumn>Opportunity.OpportunityTeamMembers$Name</groupingColumn>
-            <groupingColumn>Opportunity$CloseDate</groupingColumn>
-            <legendPosition>Bottom</legendPosition>
-            <report>Premium/Rev_Last_3_Months_per_LDR</report>
-            <showPercentage>false</showPercentage>
-            <showValues>false</showValues>
-            <sortBy>RowValueDescending</sortBy>
-            <title>MRR in Last 3 Months per MDR</title>
-            <useReportChart>false</useReportChart>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-            <chartAxisRange>Auto</chartAxisRange>
-            <chartSummary>
                 <axisBinding>y</axisBinding>
                 <column>RowCount</column>
             </chartSummary>
@@ -471,6 +397,55 @@
                 <axisBinding>y</axisBinding>
                 <column>RowCount</column>
             </chartSummary>
+            <chartSummary>
+                <axisBinding>y2</axisBinding>
+                <column>FORMULA1</column>
+            </chartSummary>
+            <componentType>ColumnLine</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Total Talk Time &amp; Dials This Month</footer>
+            <groupingColumn>Activity$Owner</groupingColumn>
+            <legendPosition>Bottom</legendPosition>
+            <report>Premium/LDR_Call_Activity_v3</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>This Month per MDR</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
+                <column>RowCount</column>
+            </chartSummary>
+            <componentType>Funnel</componentType>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <groupingColumn>Opportunity$StageName</groupingColumn>
+            <legendPosition>Bottom</legendPosition>
+            <report>Premium/SDR_Trial_Pipeline_per_outbound_MDR</report>
+            <showPercentage>true</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>MDR Qualified</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
+                <column>RowCount</column>
+            </chartSummary>
             <componentType>BarStacked</componentType>
             <displayUnits>Integer</displayUnits>
             <drillEnabled>false</drillEnabled>
@@ -486,6 +461,31 @@
             <showValues>false</showValues>
             <sortBy>RowValueDescending</sortBy>
             <title>Qualified in Last 3 Months per MDR</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Opportunity$Amount</column>
+            </chartSummary>
+            <componentType>BarStacked</componentType>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Total MRR Attributed to and LDR in the last 3 Months</footer>
+            <groupingColumn>Opportunity.OpportunityTeamMembers$Name</groupingColumn>
+            <groupingColumn>Opportunity$CloseDate</groupingColumn>
+            <legendPosition>Bottom</legendPosition>
+            <report>Premium/Rev_Last_3_Months_per_LDR</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>MRR in Last 3 Months per MDR</title>
             <useReportChart>false</useReportChart>
         </components>
     </rightSection>

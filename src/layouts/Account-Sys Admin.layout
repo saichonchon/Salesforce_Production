@@ -582,11 +582,11 @@
         <fields>OPPORTUNITY.STAGE_NAME</fields>
         <fields>OPPORTUNITY.AMOUNT</fields>
         <fields>Product__c</fields>
-        <fields>Day_of_Trial__c</fields>
         <fields>CORE.USERS.FULL_NAME</fields>
         <fields>PurchaseDate__c</fields>
         <fields>Purchase_Rep__c</fields>
         <fields>StoreURL__c</fields>
+        <fields>Account_Management_Services__c</fields>
         <relatedList>RelatedOpportunityList</relatedList>
     </relatedLists>
     <relatedLists>

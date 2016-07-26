@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Responsive Email Template</title>
+
+<style type="text/css">
+    *{font-family:'Source Sans Pro', Helvetica, Arial, sans-serif;}
+    body {border:none !important;}
+    h2{font-size:28px;line-height:32px;color:#34313f;}
+    h3{font-size:22px;line-height:30px;color:#34313f;}
+    p {font-size:14px;line-height:28px;color:#4C4B58;font-weight:300;}
+    a{text-decoration:none;color:#4B71FC;font-size:14px;font-weight:500;}
+    a:hover{color:#3F5CD6;}
+    
+    .applelinks a {
+        text-decoration: none; 
+        color: #777777 !important;
+        font-weight: 300; 
+    }
+    
+    
+    
+    
+    
+    .ReadMsgBody {width: 100%; background-color: #ffffff;}
+    .ExternalClass {width: 100%; background-color: #ffffff;}
+    body     {width: 100%; background-color: #ffffff; margin:0; padding:0;font-family: 'Source Sans Pro', sans-serif;color: #34313F ;font-weight:300;}
+    table {border-collapse: collapse;}
+
+    @media only screen and (max-width: 640px)  {
+                    body[yahoo] .deviceWidth {width:100% !important;padding:0;}
+                    body[yahoo] .center {text-align: center!important;}
+            }
+
+    @media only screen and (max-width: 479px) {
+                    body[yahoo] .deviceWidth {width:100% !important;padding:0;}
+                    body[yahoo] .center {text-align: center!important;}
+            }
+
+</style>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" yahoo="fix" style="font-family:'Source Sans Pro', Helvetica, Arial, sans-serif; background:#54656D; " ><!-- Outlook Font Fix -->
+<!--[if mso]>
+    <style type="text/css">
+    body, table, td {font-family: Helvetica, Arial, sans-serif !important;}
+    </style>
+    <![endif]-->
+<!-- Preview text (text which appears right after subject) -->
+<div class="mktEditable" id="preview-text" style="display:none; color:#ffffff; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; " >BigCommerce is excited to launch a new and improved Community for merchants and partners. With these updates, we&rsquo;ll make it easier to find the answers, resources and connections needed to help businesses grow.</div>
+<!-- Wrapper -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="background:#ffffff; " ><tr ><td ><table width="800" border="0" cellpadding="0" cellspacing="0" align="center" class="deviceWidth" bgcolor="#F7F7F7" style="margin:0 auto; " ><tr ><td ><table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="deviceWidth" style="margin:0 auto; " ><tr ><td width="800" bgcolor="#F7F7F7" style="padding-top:30px; " ><!-- Logo -->
+<table border="0" cellpadding="0" cellspacing="0" align="left" class="deviceWidth">
+<tr>
+<td class="center"><a href="http://www.bigcommerce.com"><img src="http://grow.bigcommerce.com/rs/695-JJT-333/images/BigCommerce_logo_dark.png" alt="BigCommerce" width="177" height="40" border="0"></a></td>
+</tr>
+</table>
+<!-- End Logo -->
+<!-- Nav -->
+<table border="0" cellpadding="0" cellspacing="0" align="right" class="deviceWidth" ><tr ><td class="center" style="font-size:14px; color:#4C4B58; font-weight:300; text-align:right; font-family:'Source Sans Pro', Helvetica, Arial, sans-serif; text-transform:uppercase; line-height:28px; vertical-align:middle; padding:10px 20px; " ><div class="mktEditable" id="Eyebrow" ><p><strong>May 2016&nbsp;</strong> Newsletter</p></div>
+</td>
+</tr>
+</table>
+<!-- End Nav --></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- Hero Image -->
+<table width="800" border="0" cellspacing="0" cellpadding="0" align="center" class="deviceWidth header" style="margin:auto; " ><tr ><td class="body" width="800" valign="top" align="center" style="background:url(http://grow.bigcommerce.com/rs/695-JJT-333/images/bg-1.jpg) no-repeat bottom center; background-size:cover; margin:auto; padding-top:20px; " ><div class="mktEditable" id="Hero-Image" ><img style="position: relative; top: 20px; max-width: 70%;" src=" http://grow.bigcommerce.com/rs/695-JJT-333/images/BC-Community-Email-Asset.png" /></div>
+</td>
+</tr>
+</table>
+<!-- End Hero Image -->
+<!-- One Column -->
+<table width="800" class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" style="margin:0 auto; " ><tr ><td ><table width="600" class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" style="margin:0 auto; " ><tr ><td style="font-size:14px; color:#4C4B58; font-weight:300; text-align:left; font-family:'Source Sans Pro', Helvetica, Arial, sans-serif; line-height:28px; vertical-align:top; padding:50px 8px 10px 8px; " bgcolor="#FFFFFF" ><table ><tr ><td valign="middle" style="padding:0 10px 10px 0; font-size:28px; line-height:38px; color:#34313f; margin:0; font-family:'Source Sans Pro', Helvetica, Arial; " ><div class="mktEditable" id="Headline" ><h2 style="margin: 0;">Introducing the New BigCommerce Community</h2></div>
+</td>
+</tr>
+</table>
+<div class="mktEditable" id="Description" ><p>BigCommerce is excited to launch a new and improved <a style="color: #4b70fc; text-decoration: none;" href="http://forum.bigcommerce.com/" target="_blank">Community</a> for merchants and partners. With these updates, we&rsquo;ll make it easier to find the answers, resources and connections needed to help businesses grow. BigCommerce partners will now be able to register, log in, interact and offer services and support to merchants like never before. Introduce yourself to our merchants online by logging in, completing your profile and starting a discussion.</p></div>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; display:inline-block; padding-bottom:15px; padding-top:5px; " ><tbody ><tr ><td valign="middle" align="center" height="40" width="225" style="text-decoration:none; font-size:14px; color:#ffffff; background:#4b70fc; border-radius:25px; text-transform:uppercase; " ><div class="mktEditable" id="primary-cta" ><p style="margin: 0 0; color: #ffffff;"><a href="http://forum.bigcommerce.com/" style="color: #ffffff; text-decoration: none; display: block; font-size: 14px; font-weight: 600;">Get Started Now</a></p></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</table>
+<!-- End One Column -->
+<!-- Two Column (Images Stacked over Text) -->
+<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="deviceWidth" bgcolor="#FFFFFF" style="margin:0 auto; border-top:1px solid #C1B8B8; " ><tr ><td class="center" style="padding:10px 0 0 0px; " ><table width="49%" border="0" cellpadding="0" cellspacing="0" align="left" class="deviceWidth" ><tr ><td style="font-size:12px; color:#959595; font-weight:normal; text-align:left; font-family:'Source Sans Pro', sans-serif; line-height:24px; vertical-align:top; padding:10px 8px 10px 8px; " ><table ><tr ><td valign="middle" style="padding:0 10px 10px 0; margin-bottom:0px; font-size:22px; line-height:30px; color:#34313f; font-family:'Source Sans Pro', Helvetica, Arial, sans-serif; " ><div class="mktEditable" id="Block-Header-1" ><h3 style="margin-bottom: 0px;">Announcement &mdash; BigCommerce raises $30 million in round of funding</h3></div>
+</td>
+</tr>
+</table>
+<div class="mktEditable" id="Block-Desc-1" ><p style="margin-top: 0px;">BigCommerce has raised a $30 million round of funding led by <a style="color: #4b70fc; text-decoration: none;" href="http://www.ggvc.com/" target="_blank">GGV Capital</a>, a San Francisco-based investment firm that has also invested in innovative companies including Airbnb, Alibaba, Houzz, Pandora, Slack, Square and Zendesk. With this funding, managing partner at GGV Capital Jeff Richards joins the BigCommerce board. The round also included participation from all existing investors, including Stephan Schambach, founder and former chairman of Demandware.</p>
+<p>&ldquo;This new financing follows on the successful launch of several new products, our partnerships with major players in ecommerce like eBay and Square, and our successful expansion into the midmarket,&rdquo; Brent Bellm, CEO of BigCommerce said.</p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;"><a style="text-decoration: none; color: #4b71fc; font-size: 14px; font-weight: 500;" href="https://www.bigcommerce.com/press/releases/" target="_blank">Read the Announcement</a></p></div>
+</td>
+</tr>
+</table>
+<table width="49%" border="0" cellpadding="0" cellspacing="0" align="left" class="deviceWidth" ><tr ><td style="font-size:22px; color:#34313f; font-weight:normal; text-align:left; font-family:'Source Sans Pro', Helvetica, Arial, sans-serif; line-height:30px; vertical-align:top; padding:10px 8px 10px 8px; " ><table ><tr ><td valign="middle" style="padding:0 10px 10px 0; " ><div class="mktEditable" id="Block-Header-2" ><h3 style="margin-bottom: 0px;">Coming Soon &mdash; New partnership tiers, partner training, and more<br /></h3></div>
+</td>
+</tr>
+</table>
+<div class="mktEditable" id="Block-Desc-2" ><p style="margin-top: 0px;">As your partner, we&rsquo;re here to help your business grow and succeed. In Q3, we&rsquo;re introducing enhancements to the partner program that will improve the way you&rsquo;re trained and the way you&rsquo;re paid for referrals.</p>
+<p>What&rsquo;s changing? We&rsquo;re introducing a new, tiered ecosystem, allowing you to make bigger commissions as you sell more and grow your BigCommerce practice. We&rsquo;re also launching training classes that will help you sell more effectively and will be required for advancing in the Partner Program. Finally, we&rsquo;re aligning marketing support and resources to help you grow your business.</p>
+<p>Over the next couple of months, we&rsquo;ll be sending out more specifics, so watch your email for more details.</p></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End Two Column (Images Stacked over Text) -->
+<!-- Two Column (Images Stacked over Text) -->
+<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="deviceWidth" bgcolor="#FFFFFF" style="margin:0 auto; " ><tr ><td class="center" style="padding:10px 0 0 0px; " ><table width="49%" border="0" cellpadding="0" cellspacing="0" align="left" class="deviceWidth" ><tr ><td style="font-size:12px; color:#959595; font-weight:normal; text-align:left; font-family:'Source Sans Pro', sans-serif; line-height:24px; vertical-align:top; padding:10px 8px 10px 8px; " ><table ><tr ><td valign="middle" style="padding:0 10px 10px 0; font-size:22px; line-height:30px; color:#34313f; " ><div class="mktEditable" id="Block-Header-3" ><h3 style="margin-bottom: 0px;">Announcing Pinterest Buyable Pins to help customers sell more</h3></div>
+</td>
+</tr>
+</table>
+<div class="mktEditable" id="Block-Desc-3" ><p style="margin-top: 0px;">We&rsquo;re thrilled to introduce Pinterest Buyable Pins, a convenient feature that will help your customers sell even more on social media. Buyable Pins let Pinterest users find merchants&rsquo; products, learn more about them, and purchase them &mdash; all without ever leaving the Pinterest app. <a style="color: #4b70fc; text-decoration: none;" href="https://business.pinterest.com/en/buyable-pins" target="_blank">Buyable Pins</a> are just like regular pins, but feature a blue &ldquo;Buy it&rdquo; button, which enables Pinterest users to purchase merchants&rsquo; products directly through the Pinterest app. It&rsquo;s a sleek, intuitive, and fast checkout experience that we know your customers (and theirs) will love.</p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;"><a style="text-decoration: none; color: #4b71fc; font-size: 14px; font-weight: 500;" href="https://support.bigcommerce.com/articles/Public/Selling-on-Pinterest" target="_blank">Read Now</a></p></div>
+</td>
+</tr>
+</table>
+<table width="49%" border="0" cellpadding="0" cellspacing="0" align="left" class="deviceWidth" ><tr ><td style="font-size:12px; color:#959595; font-weight:normal; text-align:left; font-family:'Source Sans Pro', sans-serif; line-height:24px; vertical-align:top; padding:10px 8px 10px 8px; " ><table ><tr ><td valign="middle" style="padding:0 10px 10px 0; font-size:22px; line-height:30px; color:#34313f; " ><div class="mktEditable" id="Block-Header-4" ><h3 style="margin-bottom: 0px;">Introducing new enhancements to our Shipping API<br /></h3></div>
+</td>
+</tr>
+</table>
+<div class="mktEditable" id="Block-Desc-4" ><p style="margin-top: 0px;">You asked for it, and we&rsquo;re delivering. BigCommerce will now auto-detect the shipping provider for your customers&rsquo; orders based on the associated tracking number. This important feature upgrade will improve the end customer experience and ensure a clickable tracking link is provided. You do not need to make any changes to make use of this feature -- it will automatically roll out to all stores that have utilized the Order Shipments API endpoint.</p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;"><a style="text-decoration: none; color: #4b71fc; font-size: 14px; font-weight: 500;" href="https://developer.bigcommerce.com/api/stores/v2/orders/shipments" target="_blank">Read More on the Order Shipments API</a></p></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End Two Column (Images Stacked over Text) -->
+<!-- One Column -->
+<table width="600" class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" style="margin:0 auto; " ><tr ><td style="font-size:13px; color:#959595; font-weight:normal; text-align:left; font-family:'Source Sans Pro', sans-serif; line-height:24px; vertical-align:top; padding:50px 0px 10px 0px; " bgcolor="#FFFFFF" ><div class="mktEditable" id="Secondary-Image" ><div><img style="position: relative; top: 20px; max-width: 100%; display: block; margin-left: auto; margin-right: auto;" src="http://grow.bigcommerce.com/rs/695-JJT-333/images/Laquan storefront fabric.png" /></div></div>
+</td>
+</tr>
+</table>
+<table width="600" class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" style="margin:0 auto; " ><tr ><td style="font-size:14px; color:#4C4B58; font-weight:300; text-align:left; font-family:'Source Sans Pro', Helvetica, Arial, sans-serif; line-height:28px; vertical-align:top; padding:50px 8px 10px 8px; " bgcolor="#FFFFFF" ><table ><tr ><td valign="middle" style="padding:0 10px 10px 0; font-size:28px; line-height:32px; color:#34313f; " ><div class="mktEditable" id="Secondary-Headline" ><h2 style="margin: 0;">What&rsquo;s new with Stencil?</h2></div>
+</td>
+</tr>
+</table>
+<div class="mktEditable" id="Secondary-Description" ><p>We&rsquo;re happy to announce you now have the ability to automatically upload your custom theme. For more information, see the technical documentation. <a style="color: #4b70fc; text-decoration: none;" href="https://stencil.bigcommerce.com/docs/bundling-and-submitting-a-theme" target="_blank">Read more</a>.</p>
+<p>In addition, we are proud to release 16 additional theme variations designed to help businesses like you fully express the power of your brand. Key additions include eight long-awaited theme variations that feature a sidebar navigation, in addition to four theme variations for larger catalog sizes.</p>
+<p>Stay tuned for more Stencil news in the near future!</p></div>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; display:inline-block; padding-bottom:15px; padding-top:5px; " ><tbody ><tr ><td valign="middle" align="center" height="40" width="225" style="text-decoration:none; font-size:14px; color:#ffffff; background:#4b70fc; border-radius:25px; text-transform:uppercase; " ><div class="mktEditable" id="secondary-cta" ><p style="margin: 0 0; color: #ffffff;"><a href="https://support.bigcommerce.com/articles/Public/The-Bigcommerce-Themes-Marketplace?q=stencil&amp;l=en_US&amp;fs=Search&amp;pn=1" style="color: #ffffff; text-decoration: none; display: block; font-size: 14px; font-weight: 600;" target="_blank">See All Stencil Themes</a></p></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</table>
+<!-- End One Column -->
+<div class="mktEditable" id="additional-stories" ><!--mce:protected 
+%3C%21--mce%3Aprotected%20%0A%253C%2521--mce%253Aprotected%2520%250A%25253C%252521--mce%25253Aprotected%252520%2525253C%25252521--mce%2525253Aprotected%25252520%2525250A%252525253C%2525252521--mce%252525253Aprotected%2525252520%252525250A%25252525253C%252525252521--mce%25252525253Aprotected%252525252520%2525252525253C%25252525252521--mce%2525252525253Aprotected%25252525252520%252525252525253C%2525252525252521--mce%252525252525253Aprotected%2525252525252520%25252525252525253C%252525252525252521--mce%25252525252525253Aprotected%252525252525252520%2525252525252525253C%25252525252525252521--mce%2525252525252525253Aprotected%25252525252525252520%252525252525252525253C%2525252525252525252521--mce%252525252525252525253Aprotected%2525252525252525252520%25252525252525252525253C%252525252525252525252521--mce%25252525252525252525253Aprotected%252525252525252525252520%2525252525252525252525253C%2525
+2525252525252525252521--mce%2525252525252525252525253Aprotected%25252525252525252525252520%252525252525252525252525253C%252525252525252%0A5252525252521--%2525252525252525252525252520One%2525252525252525252525252520Column%2525252525252525252525252520--%252525252525252525252525253%250AE--%2525252525252525252525253E--%25252525252525252525253E--%252525252525252525253E--%2525252525252525253E--%25252525252525253E--%252525252525253E--%2525252525253E--%25252525253E--%252525253E--%2525253E--%25253E--%253E--%3E-->
+<table width="600" class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" style="margin: 0 auto; margin-top: 40px; border-top: 1px solid #C1B8B8;">
+<tbody>
+<tr>
+<td style="font-size: 13px; color: #959595; font-weight: normal; text-align: left; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; line-height: 24px; vertical-align: top; padding: 50px 8px 10px 8px;" bgcolor="#FFFFFF">
+<table>
+<tbody>
+<tr>
+<td valign="middle" style="padding: 0 10px 10px 0;">
+<h3 style="margin-top: 50px; font-size: 22px; line-height: 30px; color: #34313f; margin: 0;">Other product updates, new apps, and promotions</h3>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;"><strong>Add targeted product recommendations to your clients&rsquo; stores with LimeSpot</strong><br /><strong></strong></p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;">Did you know that incorporating product recommendations into your clients&rsquo; sites can help them get more pageviews per user and up to 40% more traffic and sales? LimeSpot seamlessly integrates with BigCommerce stores to cross-sell and upsell by suggesting products related to each visitor&rsquo;s behavior and 
+profile, as well as products that are trending, popular or featured, or have been recently viewed.<br /><strong><a href="https://www.bigcommerce.com/apps/limespot-personalization-product-recommendation/" style="text-decoration: none; color: #4b71fc;" target="_blank">Read More&nbsp;</a></strong><span style="color: #000000;"></span></p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;"><strong>Incorporate LiveEngage Chat into merchants&rsquo; sites for 20% Off</strong></p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;">When it comes to ecommerce, the right touch at the right time is critical for building customer relationships and driving business leads.
+ LivePerson&rsquo;s chat solution is powered by live data so you can identify high-value customers, or those about to abandon their cart, and engage with them when it matters most -- saving up your precious resources for customers who are really in need.
+ On average, LiveEngage users see a 20% increase in conversions and a 35% increase average order value.
+ For a limited time, BigCommerce community members can add LiveEngage to their website at 20% off!<br /><strong><a href="https://www.bigcommerce.com/apps/liveperson-livechat-messaging/" style="text-decoration: none; color: #4b71fc;" target="_blank">Get Started</a></strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--mce:protected 
+%3C%21--mce%3Aprotected%20%0A%253C%2521--mce%253Aprotected%2520%250A%25253C%252521--mce%25253Aprotected%252520%2525253C%25252521--mce%2525253Aprotected%25252520%2525250A%252525253C%2525252521--mce%252525253Aprotected%2525252520%252525250A%25252525253C%252525252521--mce%25252525253Aprotected%252525252520%2525252525253C%25252525252521--mce%2525252525253Aprotected%25252525252520%252525252525253C%2525252525252521--mce%252525252525253Aprotected%2525252525252520%25252525252525253C%252525252525252521--mce%25252525252525253Aprotected%252525252525252520%2525252525252525253C%25252525252525252521--mce%2525252525252525253Aprotected%25252525252525252520%252525252525252525253C%2525252525252525252521--mce%252525252525252525253Aprotected%2525252525252525252520%25252525252525252525253C%252525252525252525252521--mce%25252525252525252525253Aprotected%252525252525252525252520%2525252525252525252525253C%2525
+2525252525252525252521--mce%2525252525252525252525253Aprotected%25252525252525252525252520%252525252525252525252525253C%252525252525252%0A5252525252521--%2525252525252525252525252520End%2525252525252525252525252520One%2525252525252525252525252520Column%25252525252525252525252525%250A20--%252525252525252525252525253E--%2525252525252525252525253E--%25252525252525252525253E--%252525252525252525253E--%2525252525252525253E--%25252525252525253E--%252525252525253E--%2525252525253E--%25252525253E--%252525253E--%2525253E--%25253E--%253E--%3E--> 
+<!--mce:protected 
+%3C%21--mce%3Aprotected%20%0A%253C%2521--mce%253Aprotected%2520%250A%25253C%252521--mce%25253Aprotected%252520%2525253C%25252521--mce%2525253Aprotected%25252520%2525250A%252525253C%2525252521--mce%252525253Aprotected%2525252520%252525250A%25252525253C%252525252521--mce%25252525253Aprotected%252525252520%2525252525253C%25252525252521--mce%2525252525253Aprotected%25252525252520%252525252525253C%2525252525252521--mce%252525252525253Aprotected%2525252525252520%25252525252525253C%252525252525252521--mce%25252525252525253Aprotected%252525252525252520%2525252525252525253C%25252525252525252521--mce%2525252525252525253Aprotected%25252525252525252520%2525252525252525250A%252525252525252525253C%2525252525252525252521--mce%252525252525252525253Aprotected%2525252525252525252520%25252525252525252525253C%252525252525252525252521--mce%25252525252525252525253Aprotected%252525252525252525252520%2525252525
+252525252525253C%25252525252525252525252521--mce%2525252525252525252525253Aprotected%25252525252525252525252520%25252525252525252525252%0A5253C%2525252525252525252525252521--%2525252525252525252525252520One%2525252525252525252525252520Column%2525252525252525252525252520--%2525252525%250A25252525252525253E--%2525252525252525252525253E--%25252525252525252525253E--%252525252525252525253E--%2525252525252525253E--%25252525252525253E--%252525252525253E--%2525252525253E--%25252525253E--%252525253E--%2525253E--%25253E--%253E--%3E-->
+<table width="600" class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" style="margin: 0 auto; margin-bottom: 50px;">
+<tbody>
+<tr>
+<td style="font-size: 13px; color: #959595; font-weight: normal; text-align: left; font-family: 'Source Sans Pro', sans-serif; line-height: 24px; vertical-align: top; padding: 50px 8px 10px 8px;" bgcolor="#FFFFFF">
+<table>
+<tbody>
+<tr>
+<td valign="middle" style="padding: 0 10px 10px 0;">
+<h3 style="margin-top: 50px; font-size: 22px; line-height: 30px; color: #34313f; margin: 0;">Upcoming Events</h3>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;"><strong>Best Practices in Ecommerce Workshop</strong></p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;">Tuesday, June 7, 2016, 11:00 AM - 4:00 PM CT<br />Hyatt Regency, 151 E Upper Wacker Dr, Chicago, IL 60601</p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;">BigCommerce is hosting a half-day, merchant-focused workshop designed to provide valuable best practices from leading ecommerce experts.
+ Spread the word to your merchants and encourage them to register today!</p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;"><strong><a href="http://about.bigcommerce.com./jiKJ0123J00ax0FTTUe0E00" target="_blank" style="text-decoration: none; color: #4b71fc;">Register Here</a><br /></strong><strong><br />Save the Date &nbsp;&mdash; &nbsp;BigCommerce CEO speaking at IRCE</strong></p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;">Wednesday, June 8, 2016, 3:45 PM - 4:15 PM CT<br />McCormick Place West, 2301 S King Dr, Chicago, IL 60616</p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;">Attending the Internet Retailer Conference and Exhibition in Chicago this summer? Don't miss our CEO Brent Bellm's panel: Curation + Comedy + Connection = Word of Mouth That Moves the Needle.</p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;"><strong><a href="http://www.irce.com/" target="_blank" style="text-decoration: none; color: #4b71fc;">Learn More</a><br /></strong><strong><br />mCommerce Mixer with Shopgate and BigCommerce at IRCE</strong><strong><br /></strong></p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;">Wednesday, June 8, 2016, 8:00 PM - 12:00 AM CT<br />The Manor Room at Virgin Hotel Chicago, 203 N.
+ Wabash, Chicago, IL 60601</p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;">Network with mobile commerce leaders while you learn about best practices, forge valuable new partnerships, enjoy some of the best drinks in Chicago and watch Game 3 of the NBA finals.</p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;"><strong><a href="https://www.eventbrite.com/e/mcommerce-mixer-hosted-by-shopgate-tickets-25390377302" target="_blank" style="text-decoration: none; color: #4b71fc;">Register Now</a></strong><strong><br /></strong><strong><br />Getting Started with the BigCommerce Partner Portal Webinar</strong></p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;">Tuesday, June 14, 2016, 6:00 AM CT</p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;">Join the BigCommerce Partner Marketing Team for a tour of your partner portal and tips on how to make yourself and your clients more successful.</p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;"><strong><a href="http://grow.bigcommerce.com/Portal-Webinar-Register.html" target="_blank" style="text-decoration: none; color: #4b71fc;">Register Now</a><br /><br /></strong><strong>Cocktails with Endicia and Stamps.com at IRCE</strong></p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;">Wednesday, June 8, 2016, 9:30 PM - 12:00 AM CT<br />The HighLine Bar - 2nd Floor, 169 W.
+ Kenzie St.
+ Chicago, IL 60610</p>
+<p style="font-size: 14px; line-height: 28px; color: #4c4b58; font-weight: 300;">Network with ecommerce shipping leaders and merchants and enjoy a few cocktails after a busy day at IRCE.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+<!-- End One Column --></td>
+</tr>
+</table>
+<!--Footer -->
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+<tr>
+<td bgcolor="#2B2936" style="padding:30px 0">
+<table width="600" border="0" cellpadding="10" cellspacing="0" align="center" class="deviceWidth" style="margin:0 auto;">
+<tr>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" align="left" class="deviceWidth">
+<tr>
+<td valign="top" style="background-color: #2b2936; text-align: center; font-family: 'Open Sans', Helvetica, sans-serif; font-size: 11px; line-height: 28px; color: #828189;" class="center">
+<div style="padding-top:25px;">
+<p style="text-align: left;"><a href="http://www.bigcommerce.com"><img align="middle" class="center-image" border="0" style="top:15px; padding-bottom: 20px !important; border-style: none;" src="http://grow.bigcommerce.com/rs/695-JJT-333/images/Bigcommerce_icon_white-sized.png" alt="BigCommerce"></a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://twitter.com/Bigcommerce" style="color:#ffffff; 
+font-size: 14px; display:inline-block; text-decoration:none;">Twitter</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.facebook.com/BigCommerce" style="color:#ffffff; font-size: 14px; display:inline-block; text-decoration:none;">Facebook</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.linkedin.com/company/bigcommerce" style="color:#ffffff; font-size: 14px; display:inline-block; 
+text-decoration:none;">LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.youtube.com/user/bigcommercedotcom" style="color:#ffffff; font-size: 14px; display:inline-block; text-decoration:none;">YouTube</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.bigcommerce.com/pinterest/" style="color:#ffffff; font-size: 14px; display:inline-block; 
+text-decoration:none;">Pinterest</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://plus.google.com/+bigcommerce" style="color:#ffffff; font-size: 14px; display:inline-block; text-decoration:none;">Google+</a></p>
+<p style="color:#828189; text-align:left; font-size:12px;">&#169; 2016 BigCommerce <span class="applelinks">11305 Four Points Dr., Building 2, Floor 3, Austin TX 78726</span><br>
+You received this email because you are subscribed to emails from BigCommerce.<br>
+<span style="color:#828189; text-align:left; font-size:12px;"><a style="color:#828189;padding-right:5px; font-size:12px; text-decoration: underline" href="http://grow.bigcommerce.com/subscribe-to-bigcommerce-blog.html">Subscribe to our Blog</a> | <a style="color:#828189; padding-left:5px; padding-right:5px; font-size:12px; text-decoration: underline" 
+href="http://grow.bigcommerce.com/manage-your-email-preferences.html">Update your email preferences</a> | <a style="color:#828189;padding-left:5px; font-size:12px; text-decoration: underline" href="{{system.viewAsWebpageLink}}">View as webpage</a></span></p>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End Footer --></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End Wrapper --></body>
+</html>

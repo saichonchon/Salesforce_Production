@@ -1158,8 +1158,34 @@
         <members>MarketoEmailTemplates/MKTO449</members>
         <members>MarketoEmailTemplates/MKTO45</members>
         <members>MarketoEmailTemplates/MKTO450</members>
+        <members>MarketoEmailTemplates/MKTO451</members>
+        <members>MarketoEmailTemplates/MKTO452</members>
+        <members>MarketoEmailTemplates/MKTO453</members>
+        <members>MarketoEmailTemplates/MKTO454</members>
+        <members>MarketoEmailTemplates/MKTO455</members>
+        <members>MarketoEmailTemplates/MKTO456</members>
+        <members>MarketoEmailTemplates/MKTO457</members>
+        <members>MarketoEmailTemplates/MKTO458</members>
+        <members>MarketoEmailTemplates/MKTO459</members>
         <members>MarketoEmailTemplates/MKTO46</members>
+        <members>MarketoEmailTemplates/MKTO460</members>
+        <members>MarketoEmailTemplates/MKTO461</members>
+        <members>MarketoEmailTemplates/MKTO462</members>
+        <members>MarketoEmailTemplates/MKTO463</members>
+        <members>MarketoEmailTemplates/MKTO464</members>
+        <members>MarketoEmailTemplates/MKTO465</members>
+        <members>MarketoEmailTemplates/MKTO466</members>
+        <members>MarketoEmailTemplates/MKTO467</members>
+        <members>MarketoEmailTemplates/MKTO468</members>
+        <members>MarketoEmailTemplates/MKTO469</members>
         <members>MarketoEmailTemplates/MKTO47</members>
+        <members>MarketoEmailTemplates/MKTO470</members>
+        <members>MarketoEmailTemplates/MKTO471</members>
+        <members>MarketoEmailTemplates/MKTO472</members>
+        <members>MarketoEmailTemplates/MKTO473</members>
+        <members>MarketoEmailTemplates/MKTO474</members>
+        <members>MarketoEmailTemplates/MKTO475</members>
+        <members>MarketoEmailTemplates/MKTO476</members>
         <members>MarketoEmailTemplates/MKTO48</members>
         <members>MarketoEmailTemplates/MKTO49</members>
         <members>MarketoEmailTemplates/MKTO5</members>
@@ -2017,6 +2043,7 @@
         <members>Client_Success/JIRAs_Last_Week_w_MRR_and_GMV</members>
         <members>Client_Success/KellyReport</members>
         <members>Client_Success/MBR_Closed_Manager_Contacts</members>
+        <members>Client_Success/MGRCB_Queue_Count</members>
         <members>Client_Success/MGR_Call_Backs_Created_by_Rep</members>
         <members>Client_Success/Manager_Contact_Dashboard_Active</members>
         <members>Client_Success/Manager_Contact_Dashboard_Closed</members>
@@ -2963,8 +2990,10 @@
         <members>Premium/SDR_MRR_in_Last_3_Months</members>
         <members>Premium/SDR_OUTBOUND_Open_Leads</members>
         <members>Premium/SDR_Open_Leads</members>
+        <members>Premium/SDR_Outbound_Opps_MTD</members>
         <members>Premium/SDR_Qualified_Opps_LM</members>
         <members>Premium/SDR_Qualified_Opps_MTD</members>
+        <members>Premium/SDR_Qualified_Opps_MTD_by_Record_Type</members>
         <members>Premium/SDR_Trial_Pipeline_per_outbound_MDR</members>
         <members>Premium/SDR_in_MRR_MTD</members>
         <members>Premium/Shop_Org_Campaign_Reporting</members>
@@ -3118,6 +3147,7 @@
         <members>Sales_Operations/Active_SFDC_Standard_License_Users_Sales1</members>
         <members>Sales_Operations/Active_Sales_User_List</members>
         <members>Sales_Operations/Active_Stores</members>
+        <members>Sales_Operations/Active_Users_without_Recent_Logins</members>
         <members>Sales_Operations/Actives_Stores_by_Purchase_Date</members>
         <members>Sales_Operations/AllProducts24324</members>
         <members>Sales_Operations/All_Active_Users</members>
@@ -4335,6 +4365,7 @@
         <members>unfiled$public/Demandbase_Activities_w_Campaigns</members>
         <members>unfiled$public/Demandbase_Ad_Target_Sales_Activity_List</members>
         <members>unfiled$public/Demandbase_Ad_and_Watch_List_w_Activity</members>
+        <members>unfiled$public/Demandbase_Ad_and_Watch_Recently_Added</members>
         <members>unfiled$public/Demandbase_Lead_List_Ad_Activities</members>
         <members>unfiled$public/Demandbase_Opportunity_Call_Activity</members>
         <members>unfiled$public/Demandbase_Sales_Activities</members>
@@ -4356,6 +4387,7 @@
         <members>unfiled$public/Demo_Campaign_Opps_Sold_for_Liz</members>
         <members>unfiled$public/Demo_Request_Counts_jb</members>
         <members>unfiled$public/Demo_Requests</members>
+        <members>unfiled$public/Demo_and_Task_Maintenance</members>
         <members>unfiled$public/Demo_camp_perf_members_added_YoY</members>
         <members>unfiled$public/Demo_camp_perf_members_added_by_QTR</members>
         <members>unfiled$public/Demp_Camp_Perform_Opps_Sold_by_Month_YTD</members>

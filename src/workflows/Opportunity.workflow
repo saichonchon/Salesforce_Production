@@ -759,7 +759,7 @@ Owner.Profile.Id = &apos;00e130000024OSc&apos;, /* Sales Rep */
 Owner.Profile.Id = &apos;00e13000000jUyt&apos;, /* Sales Rep - Dial on Opps */  
 Owner.Profile.Id = &apos;00e130000024OSX&apos;  /* Sales Leader */ 
 ),
-Owner.Id != &apos;005a000000AsxToAAJ&apos; /* The BigCommerce Team */
+Owner.Id != &apos;005a000000AsxTo&apos; /* The BigCommerce Team */
 )</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>

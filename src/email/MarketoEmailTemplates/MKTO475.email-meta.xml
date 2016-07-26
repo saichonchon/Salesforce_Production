@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Partner Re-engagement- 1160.PAR - Email 2</name>
+    <style>none</style>
+    <subject>A tip for making customers happier</subject>
+    <textOnly>When your customers are happy, you’re happy. And nothing makes merchants happier than outpacing their competition.
+Hi {{lead.First Name:default=there}},
+When your customers are happy, you’re happy. And nothing makes merchants happier than outpacing their competition.
+
+Market research firm Ipsos recently found that online stores built on BigCommerce grow up to 2x faster than other ecommerce stores. We’re thrilled the research supports what we already knew: if we give talented designers and devs like you the tools you need to create beautiful, custom ecommerce sites with great SEO and easy business-app integration, it will lead to amazing results.
+
+When you’re ready to help your customers sell more, faster, just visit your partner portal to register your deal &lt;[[https://partners.bigcommerce.com/English/?utm_medium=email&amp;utm_source=partner]]&gt; and start a client trial store.
+Happy Selling, 
+The BigCommerce Partner Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

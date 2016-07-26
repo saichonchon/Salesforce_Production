@@ -1043,7 +1043,7 @@ MBASubscriptionID__c,null)</formula>
         <fullName>Channel_Partner_Idev_accout__c</fullName>
         <externalId>false</externalId>
         <formula>Channel_Partner__r.iDev_ID_Text__c</formula>
-        <label>RV Match - Channel Partner IDEV Id</label>
+        <label>zRV Match - Channel Partner IDEV Id</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Text</type>
@@ -3334,7 +3334,7 @@ MBASubscriptionID__c,null)</formula>
 &amp;&amp; Contact__r.Phone != NULL 
 &amp;&amp; ISPICKVAL(Status__c,&apos;Active&apos;) 
 &amp;&amp; NOT ISPICKVAL(StageName,&apos;Purchased&apos;) &amp;&amp; NOT ISPICKVAL(StageName,&apos;Closed Lost&apos;) 
-&amp;&amp; NOT CONTAINS(Contact__r.Email , &apos;@bigcommerce.com&apos;) 
+&amp;&amp; (NOT CONTAINS(Contact__r.Email,&apos;@bigcommerce.com&apos;) || NOT CONTAINS(Contact__r.Email, &apos;@onesaas&apos;) || NOT CONTAINS(Contact__r.Email,&apos;@madwiremedi&apos;))
 &amp;&amp; NOT ISPICKVAL(Status__c, &apos;Cancelled&apos;) 
 &amp;&amp; Owner.Alias = &apos;markmeg&apos; 
 &amp;&amp; RecordTypeId = &apos;01213000000AUty&apos; 
@@ -3980,7 +3980,7 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
         <fullName>Has_RV_Account__c</fullName>
         <externalId>false</externalId>
         <formula>IF(NOT(ISBLANK(rvpe__RVAccount__c)),TRUE,FALSE)</formula>
-        <label>Has RV Account?</label>
+        <label>zHas RV Account?</label>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
@@ -3988,7 +3988,7 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
         <fullName>Has_RV_Member__c</fullName>
         <externalId>false</externalId>
         <formula>IF(NOT(ISBLANK( rvpe__RVMember__c )),TRUE,FALSE)</formula>
-        <label>Has RV Member?</label>
+        <label>zHas RV Member?</label>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
@@ -6599,7 +6599,7 @@ Account Management</description>
         <fullName>RV_Match_RV_Account_IDEV_ID__c</fullName>
         <externalId>false</externalId>
         <formula>rvpe__RVAccount__r.IDev_ID__c</formula>
-        <label>RV Match - RV Account IDEV ID</label>
+        <label>zRV Match - RV Account IDEV ID</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Text</type>
@@ -6611,7 +6611,7 @@ Account Management</description>
         <externalId>false</externalId>
         <formula>rvpe__RVAccount__r.rvpe__RVPrimaryMember__r.Id</formula>
         <inlineHelpText>FORMULA - Lookup the primary member id from the RV Account</inlineHelpText>
-        <label>RV Primary Member ID</label>
+        <label>zRV Primary Member ID</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Text</type>

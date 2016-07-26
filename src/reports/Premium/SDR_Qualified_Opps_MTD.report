@@ -43,6 +43,9 @@
         <field>Opportunity$Name</field>
     </columns>
     <columns>
+        <field>Opportunity$RecordType</field>
+    </columns>
+    <columns>
         <field>Opportunity$LeadSource</field>
     </columns>
     <columns>
@@ -72,9 +75,6 @@
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
         <field>Opportunity$Amount</field>
-    </columns>
-    <columns>
-        <field>Opportunity$RecordType</field>
     </columns>
     <columns>
         <field>Opportunity.OpportunityTeamMembers*OpportunityTeamMember$Team_Member_Created_Date__c</field>

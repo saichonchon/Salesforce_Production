@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>ShipperHQ Adoption- ENT- 1207.CUS - Email 1</name>
+    <style>none</style>
+    <subject>Get customizable shipping rates with ShipperHQ</subject>
+    <textOnly>Connect with ShipperHQ for free to get advanced shipping tools
+Get customizable shipping rates
+Connect with ShipperHQ for free today
+Get Started Now &lt;[[https://login.bigcommerce.com/deep-links/shipping]]&gt;
+Connect with ShipperHQ for free to get advanced shipping tools
+Unexpected shipping costs are the biggest driver of online cart abandonment, but BigCommerce has a solution. We’ve integrated with ShipperHQ to help you increase checkouts with fully customizable, real-time rates.
+ShipperHQ is included with your BigCommerce Enterprise plan at no extra charge. Just install the app to start improving your conversion and growing your bottom line.
+
+Install ShipperHQ » &lt;[[https://login.bigcommerce.com/deep-links/shipping]]&gt;
+Our ShipperHQ integration allows you to:
+
+
+	- Ship via all the major carriers, including UPS™, FedEx™, USPS™ and more using base rates or your own negotiated rates.
+	- Set and adapt shipping rates and carriers based on criteria like location, price, weight, product type or customer group.
+	- Get sophisticated shipping tools like LTL freight, dimensional shipping, multi-origin, dropshipping and time-in-transit.
+Install ShipperHQ &lt;[[https://login.bigcommerce.com/deep-links/shipping]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>
