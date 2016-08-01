@@ -49,7 +49,16 @@ trigger CaseBefore on Case (before insert, before update) {
             }
          }
          Boolean updateCases = false;
-         if (!lstCaseToUpdate.isEmpty()) CaseHandle_Helper.rollUpCaseHandleTimeCases( updateCases, lstCaseToUpdate);
+        
+        if (!lstCaseToUpdate.isEmpty())
+        {
+            if (!CaseHandle_Helper.ALREADY_RAN)
+            {
+                CaseHandle_Helper.ALREADY_RAN = true;
+                CaseHandle_Helper.rollUpCaseHandleTimeCases( updateCases, lstCaseToUpdate);
+            }
+        }
+
          if (!updCases.isEmpty()) 
          {
          	CaseOwnerUpdate cs = new CaseOwnerUpdate();

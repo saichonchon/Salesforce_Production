@@ -198,6 +198,12 @@
     <siteRedirectMappings>
         <action>Permanent</action>
         <isActive>true</isActive>
+        <source>/articles/Public/How-do-I-create-bulk-discount-pricing-for-my-products/</source>
+        <target>/articles/Public/Adding-a-Product-Bulk-Pricing</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
         <source>/articles/Public/How-do-I-create-custom-template-files-for-my-store</source>
         <target>/articles/Public/Creating-Custom-Template-Files</target>
     </siteRedirectMappings>

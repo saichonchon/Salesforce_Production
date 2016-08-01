@@ -18,57 +18,60 @@ global class zDefaultValues extends zqu.CreateQuoteController.PopulateDefaultFie
        
       // Find the contacts associated with the account        
 
-		Contact BillingContact = ContactUtility.getBillContact(accountId);
-		Contact PrimaryContact = ContactUtility.getPrimaryContact(accountId);
-		
-         record.put('zqu__BillToContact__c', BillingContact.Id);            
-         record.put('zqu__SoldToContact__c', PrimaryContact.Id);            
-       
-         // Beforeretrieving  the lookup  options, needs to populate the map first            
-         super.setLookupOptions(pcc);            
-       
-         // Now retrieve the lookup component options            
-         zqu.LookupComponentOptions billToOptions = super.getLookupOption('zqu__BillToContact__c');            
-         if (BillingContact <> null)
-         {
-	         billToOptions.targetId = BillingContact.Id;            
-	         billToOptions.targetName = BillingContact.Name;    
-         }        
-         zqu.LookupComponentOptions soldToOptions  = super.getLookupOption('zqu__SoldToContact__c');            
-         if (PrimaryContact <> null)
-         {
-	         soldToOptions.targetId = PrimaryContact.Id;            
-	         soldToOptions.targetName = PrimaryContact.Name;  
-         }
- /*        else if (BillingContact <> null)
-         {
-         	soldToOptions.targetId = BillingContact.Id;            
-	        soldToOptions.targetName = BillingContact.Name; 
-         } 
-  */     
-  
- /*
-      Opportunity op;
-      Object sop = record.get('zqu__Opportunity__c');
-      Id opId = (Id)sop;
-      Opportunity o = [Select Id, AccountId from Opportunity where id =:opId];
- 
-      List<Zuora__CustomerAccount__c> zcalist = [Select Id, Zuora__Zuora_Id__c, Zuora__PaymentMethod_Type__c 
-													from Zuora__CustomerAccount__c 
-      												where Zuora__Account__c = :accountId];
- 		Zuora__CustomerAccount__c zca = zcaList[0];
- */ 
-      Zuora__CustomerAccount__c zca = ZuoraUtility.getBillingAccount(accountId);
-   
-      
- //     record.put('zqu__Account__c',o.AccountId);
-      if (zca <> null ) 
+		Contact BillingContact = null;
+      Contact PrimaryContact = null;
+
+      try
       {
-      	 record.put('zqu__ZuoraAccountID__c', zca.Zuora__Zuora_Id__c);
-		 if (zca.Zuora__PaymentMethod_Type__c == 'Credit Card' 
-		     || zca.Zuora__PaymentMethod_Type__c == 'ACH')
-		     record.put('zqu__ProcessPayment__c', true);
+         PrimaryContact = ContactUtility.getPrimaryContact(accountId);
       }
+      catch (Exception e)
+      {
+      }
+
+      try
+      {
+         BillingContact = ContactUtility.getBillContact(accountId);
+      }
+      catch (Exception e)
+      {
+         BillingContact = PrimaryContact;
+      }
+		
+      // Beforeretrieving  the lookup  options, needs to populate the map first            
+      super.setLookupOptions(pcc);            
+    
+      // Now retrieve the lookup component options            
+      zqu.LookupComponentOptions billToOptions = super.getLookupOption('zqu__BillToContact__c');            
+      if (BillingContact <> null)
+      {
+         record.put('zqu__BillToContact__c', BillingContact.Id);            
+         billToOptions.targetId = BillingContact.Id;            
+         billToOptions.targetName = BillingContact.Name;    
+      }        
+      zqu.LookupComponentOptions soldToOptions  = super.getLookupOption('zqu__SoldToContact__c');            
+      if (PrimaryContact <> null)
+      {
+         record.put('zqu__SoldToContact__c', PrimaryContact.Id);
+         soldToOptions.targetId = PrimaryContact.Id;            
+         soldToOptions.targetName = PrimaryContact.Name;  
+      }
+
+      try
+      {
+         Zuora__CustomerAccount__c zca = ZuoraUtility.getBillingAccount(accountId);
+         record.put('zqu__ZuoraAccountID__c', zca.Zuora__Zuora_Id__c);
+         if (zca.Zuora__PaymentMethod_Type__c == 'Credit Card' 
+          || zca.Zuora__PaymentMethod_Type__c == 'ACH')
+         {
+            record.put('zqu__ProcessPayment__c', true);
+         }
+      }
+      catch (Exception e)
+      {
+         throw new ApplicationException('No billing account found for this account (' + accountId + ').  Please contact the Bizapps team to update the Zuora account with this Salesforce ID, then sync Zuora back to Salesforce.');
+      }
+   
       
      
    }

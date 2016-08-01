@@ -12038,6 +12038,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.Previous_Owner__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.PricingTestGroup__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -14243,6 +14248,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Subscription__c.BMP_Subscription_ID__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Subscription__c.Bad_Phone_Number__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -14664,6 +14674,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Subscription__c.MBA_Partner_ID_Reconciliation__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Subscription__c.MBA_Subscription_ID_Size__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>

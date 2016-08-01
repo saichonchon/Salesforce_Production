@@ -13,6 +13,7 @@ private class pkb_Test {
   class TestException extends Exception { }
 
   static testMethod void testController() {
+    test.StartTest();
     setupData();
     setupSettingsData();
 
@@ -218,6 +219,7 @@ private class pkb_Test {
   }
 
   static testMethod void testSettingsController() {
+    test.StartTest();
     setupSettingsData();
 
     pkb_SettingsController refCon = new pkb_SettingsController();
@@ -248,10 +250,13 @@ private class pkb_Test {
     pkb_SettingsController.isRunningTest = true;
     p = pkbsc.saveSettings();
     System.assert(p.getUrl().contains(pkb.Id));
+
+    test.StopTest();
   }
 
 
 static testMethod void testSettings_CTI_keywords() {
+    test.StartTest();
 	setupSettingsData();
 
 	pkb_SettingsController refCon = new pkb_SettingsController();
@@ -306,10 +311,11 @@ static testMethod void testSettings_CTI_keywords() {
 	}
 
 	system.assertEquals(updatedElm.Add_Case_Id__c,false);
-
+    test.StopTest();
   }
 
 static testMethod void test_searchString() {
+    test.StartTest();
     setupData();
     setupSettingsData();
 
@@ -340,6 +346,7 @@ static testMethod void test_searchString() {
     pkbCon = new pkb_Controller(new ApexPages.StandardController(new KnowledgeArticle()));
 	//there was a search query but with less than 4 chars
     system.assertEquals(pkbCon.enteredSearchQuery, pkbCon.searchPrompt);
+    test.StopTest();
 
   }
 

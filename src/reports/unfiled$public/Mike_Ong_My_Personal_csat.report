@@ -40,19 +40,16 @@
         <field>Support_Survey__c$Case__c.Total_Chat_Time__c</field>
     </columns>
     <columns>
-        <field>Support_Survey__c$Case__c</field>
+        <field>Support_Survey__c$Survey_Completion_Date__c</field>
     </columns>
     <columns>
         <field>Support_Survey__c$Live_Chat_Transcript__c</field>
     </columns>
     <columns>
-        <field>Support_Survey__c$Survey_Completion_Date__c</field>
+        <field>Support_Survey__c$Case__c</field>
     </columns>
     <columns>
-        <field>Support_Survey__c$Feedback__c</field>
-    </columns>
-    <columns>
-        <field>Support_Survey__c$Issue_Resolved__c</field>
+        <field>Support_Survey__c$Live_Chat_Transcript__c.Owner</field>
     </columns>
     <columns>
         <field>Support_Survey__c$Recommend__c</field>
@@ -61,7 +58,10 @@
         <field>Support_Survey__c$Satisfaction__c</field>
     </columns>
     <columns>
-        <field>Support_Survey__c$Live_Chat_Transcript__c.Owner</field>
+        <field>Support_Survey__c$Issue_Resolved__c</field>
+    </columns>
+    <columns>
+        <field>Support_Survey__c$Feedback__c</field>
     </columns>
     <description>Patterned to the Detractor Analysis template</description>
     <filter>

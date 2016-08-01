@@ -182,27 +182,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>EB_Comments__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>EB_Date__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>EB_Next_Step__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>EBQ_Added__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>EB_Rating__c</field>
+            <field>Previous_Owner__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -432,22 +412,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Partner_Expected_Stores__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Partner_Referral_Date__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Referral_Email__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Referral_Form_URL__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -457,17 +422,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Partner_Referral_Submission_Type__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>PaymentStatus__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>PricingTestGroup__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -567,11 +522,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>SBD_Referral_ID__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>SBD_Store_ID__c</field>
             <table>Opportunity</table>
         </columns>
@@ -618,11 +568,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>StoreURL__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>zStrategic_Partner__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>

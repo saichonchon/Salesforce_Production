@@ -76,11 +76,6 @@
                 <operator>greaterThan</operator>
                 <value>0</value>
             </criteriaItems>
-            <criteriaItems>
-                <column>Opportunity$Premium_Services__c</column>
-                <operator>equals</operator>
-                <value>1</value>
-            </criteriaItems>
         </filter>
         <format>Summary</format>
         <name>SAM Accounts</name>

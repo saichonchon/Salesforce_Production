@@ -96,18 +96,8 @@
             <operator>greaterThan</operator>
             <value>0</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity$Premium_Services__c</column>
-            <operator>equals</operator>
-            <value>0</value>
-        </criteriaItems>
     </filter>
     <format>Matrix</format>
-    <groupingsAcross>
-        <dateGranularity>Day</dateGranularity>
-        <field>Opportunity$Premium_Services__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsAcross>
     <groupingsAcross>
         <dateGranularity>Day</dateGranularity>
         <field>BucketField_4224943</field>

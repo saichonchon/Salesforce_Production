@@ -4131,6 +4131,10 @@
         <name>Premium_Services__c</name>
     </fields>
     <fields>
+        <label><!-- Previous Owner --></label>
+        <name>Previous_Owner__c</name>
+    </fields>
+    <fields>
         <help><!-- Which pricing page the client is cookied to based on when they started their trial / purchased their store. Populated from MBA --></help>
         <label><!-- zMBA Pricing Test Group --></label>
         <name>PricingTestGroup__c</name>

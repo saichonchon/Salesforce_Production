@@ -464,6 +464,16 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>Owner_The_BigCommerce_Team</fullName>
+        <field>OwnerId</field>
+        <lookupValue>team@bigcommerce.com</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Owner: The BigCommerce Team</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Set_App_Approval_Date</fullName>
         <field>App_Approved_Date__c</field>
         <formula>TODAY()</formula>
@@ -1214,6 +1224,23 @@ ispickval( App_Revshare__c , &quot;Signed&quot;)</formula>
             <value>Store Purchase</value>
         </criteriaItems>
         <description>Update store URL to most recent store purchased.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Opp Owner when Closed Lost</fullName>
+        <actions>
+            <name>Owner_The_BigCommerce_Team</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Update the Opportunity owner to the bigcommerce team when the opportunity is closed lost</description>
+        <formula>AND(
+OR(
+ISPICKVAL(StageName, &apos;Closed Lost&apos;),
+ISPICKVAL(StageName, &apos;Trial Expired&apos;)
+),
+OwnerId  &lt;&gt; &apos;005a000000AsxTo&apos; /* The BigCommerce Team */
+)</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>

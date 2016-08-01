@@ -390,6 +390,16 @@ NULL)
         <type>Currency</type>
     </fields>
     <fields>
+        <fullName>BMP_Subscription_ID__c</fullName>
+        <externalId>true</externalId>
+        <label>BMP Subscription ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Bad_Phone_Number__c</fullName>
         <description>Formula pulling the field value from either the associated contact or lead to show if the sales rep has marked this client info as bad data. Used in reporting.</description>
         <externalId>false</externalId>
@@ -1890,6 +1900,19 @@ Note true historical as it will only contain the plan name prior to the current 
         <fullName>MBA_Partner_ID_Reconciliation__c</fullName>
         <externalId>false</externalId>
         <label>MBA Partner ID Reconciliation</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MBA_Subscription_ID_Size__c</fullName>
+        <externalId>false</externalId>
+        <formula>LEN( MBASubscriptionID__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>MBA Subscription ID Size</label>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>

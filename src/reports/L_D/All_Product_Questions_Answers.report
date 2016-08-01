@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_58802691</developerName>
+        <masterLabel>Question Name</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>lmscons__Question__c$Name</sourceColumnName>
+        <useOther>false</useOther>
+    </buckets>
+    <columns>
+        <field>lmscons__Question__c$Id</field>
+    </columns>
+    <columns>
+        <field>lmscons__Question__c$lmscons__Type__c</field>
+    </columns>
+    <columns>
+        <field>lmscons__Question__c$lmscons__Question__c</field>
+    </columns>
+    <columns>
+        <field>lmscons__Question__c.lmscons__Answers__r$lmscons__Answer__c</field>
+    </columns>
+    <columns>
+        <field>lmscons__Question__c.lmscons__Answers__r$lmscons__Correct_incorrect__c</field>
+    </columns>
+    <description>All Quiz Questions that begin with PROD + answers + which one is correct</description>
+    <filter>
+        <criteriaItems>
+            <column>lmscons__Question__c$Name</column>
+            <operator>startsWith</operator>
+            <value>PROD</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>lmscons__Question__c$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>All Product Questions + Answers</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>z_Quiz_Question_Test__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>lmscons__Question__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

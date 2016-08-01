@@ -22,14 +22,15 @@ trigger MBA_Staging_Contact_Trigger on MBA_Staging_Contact__c (before insert, be
   if (Trigger.isAfter)
   {
 
-	string soqlWHERE_SubIDs = '';
 	string soqlWHERE_MBAConIDs = '';  
-	string soqlWHERE_MBAAccIDs = '';  
 		
 	Contact objContact;
 	
 	// Set to hold MBA Contact Ids
 	set<string> stMBAConId = new set<string>();
+
+    // Set to hold MBA Account Ids
+    set<string> stMBAOrigAcctId = new set<string>();
 	
 	// Set to hold MBA Account Ids
 	set<string> stMBAAccId = new set<string>();
@@ -39,6 +40,8 @@ trigger MBA_Staging_Contact_Trigger on MBA_Staging_Contact__c (before insert, be
 		
 	// Map to hold existing Contact Records by MBA Contact Id
 	map<string, Contact> mpCon = new map<string, Contact>();
+	set<string> stContId = new set<string>();
+	set<string> stContOrigId = new set<string>();
 	
 	// Account Map - To Store the Account links for the Contact records
 	map<string, Id> mpMBAAcctIdToAcctId = new map<string, Id>();
@@ -67,16 +70,13 @@ trigger MBA_Staging_Contact_Trigger on MBA_Staging_Contact__c (before insert, be
         // Grab the list of MBA Account Ids
         if (mba.MBAAccountID__c != null)
         {
-        	if (stAcctId.add(mba.MBAAccountID__c))
-        	{
-        		soqlWHERE_MBAAccIDs += (soqlWHERE_MBAAccIDs.length() == 0 ? '' : ', ') + '\'' + mba.MBAAccountID__c + '\'';
-        	
-        	}
+        	stAcctId.add(mba.MBAAccountID__c);
         }
+
     }
-    
-	string soql_Sub = SObjectUtils.ContactSelect + ' WHERE MBAClientID__c IN (' + soqlWHERE_MBAConIDs + ')';
-		
+
+    string soql_Sub = SObjectUtils.ContactSelect + ' WHERE MBAClientID__c IN (' + soqlWHERE_MBAConIDs + ')';
+
 	// Grab all the subscriptions that match the Client id
     for (Contact c : database.query(soql_Sub))
 	{
@@ -86,7 +86,8 @@ trigger MBA_Staging_Contact_Trigger on MBA_Staging_Contact__c (before insert, be
 	// Create Map of Account and non Salesforce defined keys to help link Contacts with Accounts
 	for (Account accLoop : [SELECT MBAAccountID__c, Id 
 							FROM Account 
-							WHERE MBAAccountID__c IN :stAcctId])
+							WHERE MBAAccountID__c IN :stAcctId
+                               or MBAAccountID__c IN :stContOrigId])
 	{
 		mpMBAAcctIdToAcctId.put(accLoop.MBAAccountID__c, accLoop.Id);
 	}
@@ -104,7 +105,10 @@ trigger MBA_Staging_Contact_Trigger on MBA_Staging_Contact__c (before insert, be
         {
         	// Ensure the contact is pointing to the correct account record
         	objContact = mpCon.get(mba.MBAClientID__c);
-        	objContact.AccountId = mpMBAAcctIdToAcctId.get(mba.MBAAccountID__c);
+            if (mpMBAAcctIdToAcctId.containsKey(mba.MBAAccountID__c))
+            {
+            	objContact.AccountId = mpMBAAcctIdToAcctId.get(mba.MBAAccountID__c);
+            }
         	
         	// Add to the map of the staging record to the existing Account
         	mpStagingToExisting.put(mba, objContact);
@@ -114,12 +118,19 @@ trigger MBA_Staging_Contact_Trigger on MBA_Staging_Contact__c (before insert, be
         // If it is not found then create a new one
         else if(!mpCon.containsKey(mba.MBAClientID__c) && (mba.IsPaid__c || mpMBAAcctIdToAcctId.containsKey(mba.MBAAccountID__c)))
         { 
-        	 // Assign New Account to this record
-        	objContact = new Contact(AccountId = mpMBAAcctIdToAcctId.get(mba.MBAAccountID__c));
-        	
-        	mpStagingToExisting.put(mba, objContact);
-        	
-        	system.debug('***** mpStagingToExisting for New: ' + mpStagingToExisting);
+
+            // only create the contact if they are primary.
+            // MBA will never send anything but a primary contact, and BMP will often duplicate the primary and send it as a billing contact.
+            // Since the vast majority of contacts coming from BMP are duplicates, we will mimic the behavior that already existed in MBA and ignmore any non-primary contacts
+            if ((mba.Source__c == 'BMP' && mba.Type__c.toUpperCase().StartsWith('PRIMARY')) || mba.Source__c != 'BMP')
+            {
+                if (mpMBAAcctIdToAcctId.containsKey(mba.MBAAccountID__c))
+                {
+                    objContact = new Contact(AccountId = mpMBAAcctIdToAcctId.get(mba.MBAAccountID__c));
+                    mpStagingToExisting.put(mba, objContact);
+                    system.debug('***** mpStagingToExisting for New: ' + mpStagingToExisting);
+                }
+            }
         }
     }
 
@@ -133,48 +144,6 @@ trigger MBA_Staging_Contact_Trigger on MBA_Staging_Contact__c (before insert, be
 	
     SObjectUtils.SyncObjects('MBA_Staging_Contact__c', 'Contact', mpStagingToExisting, dml);
     
- /*
-    ///////////////////////////////////////////////////////////////////////////
-    // First try and match to existing Leads to update info
-    // Maggie 8/28/14
-    ///////////////////////////////////////////////////////////////////////////
- 	if(Trigger.isAfter && Trigger.isUpdate)
-    {
  
-	 	Lead objLead;
-	 	mpStagingToExisting = new map<SObject, SObject>();
-	 	
-	 	// Map to hold existing Contact Records by MBA Contact Id
-		map<string, Lead> mpLead = new map<string, Lead>();
-		
-	    string soql_lead = SObjectUtils.LeadSelect + ' WHERE MBAAccountID__c IN (' + soqlWHERE_MBAAccIDs + ') and isConverted = false';
-			
-		// Grab all the subscriptions that match the Client id
-	    for (Lead l : database.query(soql_lead))
-		{
-			mpLead.put(l.MBAClientID__c, l);
-		}
-	    
-	    ///////////////////////////////////////////////////////////////////////////
-		// Find all the Leads being updated
-	    ///////////////////////////////////////////////////////////////////////////
-	    for (MBA_Staging_Contact__c mba : trigger.new)
-	    {
-	    	
-	        // Check if a Lead record exists already
-	        if (mpLead.containsKey(mba.MBAClientID__c))
-	        {
-	        	
-	        	// Add to the map of the staging record to the existing Lead
-	        	objLead = mpLead.get(mba.MBAClientID__c);
-	        	mpStagingToExisting.put(mba, objLead);
-	        	
-	        	system.debug('***** mpStagingToExisting for Existing: ' + mpStagingToExisting);
-	        }
-	    }
-	    
-	    SObjectUtils.SyncObjects('MBA_Staging_Contact__c', 'Lead', mpStagingToExisting, dml);
-    }   
-    */
   }
 }

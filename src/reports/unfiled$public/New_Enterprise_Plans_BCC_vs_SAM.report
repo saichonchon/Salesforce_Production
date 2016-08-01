@@ -100,11 +100,6 @@
     <format>Matrix</format>
     <groupingsAcross>
         <dateGranularity>Day</dateGranularity>
-        <field>Opportunity$Premium_Services__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsAcross>
-    <groupingsAcross>
-        <dateGranularity>Day</dateGranularity>
         <field>BucketField_4224943</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>

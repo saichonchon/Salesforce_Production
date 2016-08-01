@@ -163,6 +163,10 @@
         <name>BI_This_Month_s_Revenue__c</name>
     </fields>
     <fields>
+        <label><!-- BMP Subscription ID --></label>
+        <name>BMP_Subscription_ID__c</name>
+    </fields>
+    <fields>
         <label><!-- Bad Phone Number --></label>
         <name>Bad_Phone_Number__c</name>
     </fields>
@@ -1019,6 +1023,10 @@ Note that this is not a field to report on historical events as it only contains
     <fields>
         <label><!-- MBA Partner ID Reconciliation --></label>
         <name>MBA_Partner_ID_Reconciliation__c</name>
+    </fields>
+    <fields>
+        <label><!-- MBA Subscription ID Size --></label>
+        <name>MBA_Subscription_ID_Size__c</name>
     </fields>
     <fields>
         <help><!-- Check when client received a free theme. --></help>

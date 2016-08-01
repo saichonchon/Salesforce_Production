@@ -142,11 +142,6 @@
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity$Premium_Services__c</column>
-            <operator>equals</operator>
-            <value>0</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>BucketField_4224943</column>
             <operator>equals</operator>
             <value>BC Consulting</value>

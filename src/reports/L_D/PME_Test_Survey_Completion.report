@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>lmscons__Transcript_Line__c$lmscons__Training_User_License__c.lmscons__User__c</field>
+    </columns>
+    <columns>
+        <field>lmscons__Transcript_Line__c$lmscons__Percent_Complete__c</field>
+    </columns>
+    <columns>
+        <field>lmscons__Transcript_Line__c$lmscons__Completed_Date__c</field>
+    </columns>
+    <columns>
+        <field>lmscons__Transcript_Line__c$Name</field>
+    </columns>
+    <description>% completion of PME course tests and surveys</description>
+    <filter>
+        <criteriaItems>
+            <column>lmscons__Transcript_Line__c$lmscons__Quiz__c</column>
+            <operator>startsWith</operator>
+            <value>SKILL PME</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>lmscons__Transcript_Line__c$lmscons__Quiz__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>PME Test/Survey Completion</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Assignments_w_Lookup_Data_CUSTOM__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>lmscons__Transcript_Line__c$lmscons__Completed_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

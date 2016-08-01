@@ -7,7 +7,7 @@
     <description>Test Weekly Dash</description>
     <isGridLayout>false</isGridLayout>
     <leftSection>
-        <columnSize>Medium</columnSize>
+        <columnSize>Wide</columnSize>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Table</componentType>
@@ -94,7 +94,7 @@
         </components>
     </leftSection>
     <middleSection>
-        <columnSize>Medium</columnSize>
+        <columnSize>Wide</columnSize>
         <components>
             <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
             <chartSummary>
@@ -195,7 +195,7 @@
         </components>
     </middleSection>
     <rightSection>
-        <columnSize>Medium</columnSize>
+        <columnSize>Wide</columnSize>
         <components>
             <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>

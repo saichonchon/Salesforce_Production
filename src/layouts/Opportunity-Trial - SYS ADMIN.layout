@@ -50,8 +50,8 @@
                 <field>Product_Price__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Sample_100__c</field>
+                <behavior>Edit</behavior>
+                <field>Random_Sample_Number__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

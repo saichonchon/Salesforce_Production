@@ -167,7 +167,7 @@
         <criteriaItems>
             <column>Opportunity$LeadSource</column>
             <operator>equals</operator>
-            <value>Phone / Queue,Email / Ticket,Chat,Campaign Import,Web Form,Webinar,Hubspot,PRE Hubspot Content,PRE Hubspot Demo Request,PRE Demand Gen,Datanyze Import,ACQ List Upload,Inbound</value>
+            <value>Phone / Queue,Email / Ticket,Chat,Campaign Import,Web Form,Webinar,Hubspot,PRE Hubspot Content,PRE Hubspot Demo Request,PRE Demand Gen,Datanyze,Datanyze Import,ACQ List Upload,Inbound</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

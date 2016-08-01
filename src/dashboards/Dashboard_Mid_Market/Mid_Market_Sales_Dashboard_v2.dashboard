@@ -228,23 +228,23 @@
             <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
             <chartSummary>
-                <aggregate>Sum</aggregate>
                 <axisBinding>y</axisBinding>
-                <column>AMOUNT</column>
+                <column>RowCount</column>
             </chartSummary>
-            <componentType>Funnel</componentType>
+            <componentType>BarStacked</componentType>
             <displayUnits>Integer</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>false</enableHover>
-            <expandOthers>true</expandOthers>
-            <groupingColumn>STAGE_NAME</groupingColumn>
-            <legendPosition>Right</legendPosition>
-            <report>Premium/Opportunity_Pipeline_Current_Month</report>
-            <showPercentage>true</showPercentage>
-            <showValues>true</showValues>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <groupingColumn>ASSIGNED</groupingColumn>
+            <groupingColumn>STATUS</groupingColumn>
+            <legendPosition>Bottom</legendPosition>
+            <report>Mid_Market_Sales/MM_Demo_Requests_MTD</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>This Month&apos;s Pipeline by Stage</title>
+            <title>Demo Requests MTD</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -314,29 +314,6 @@
             <report>Mid_Market_Sales/SQLs_delivered_to_MM_this_Month2</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <title>SQLs delivered this month by Channel</title>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-            <chartAxisRange>Auto</chartAxisRange>
-            <chartSummary>
-                <axisBinding>y</axisBinding>
-                <column>RowCount</column>
-            </chartSummary>
-            <componentType>BarStacked</componentType>
-            <displayUnits>Auto</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>true</enableHover>
-            <expandOthers>false</expandOthers>
-            <groupingColumn>Account.Projected_Annual_Revenue__c</groupingColumn>
-            <groupingColumn>BucketField_54220586</groupingColumn>
-            <legendPosition>Bottom</legendPosition>
-            <report>unfiled$public/SQL_by_GMV_bands</report>
-            <showPercentage>false</showPercentage>
-            <showValues>false</showValues>
-            <sortBy>RowLabelDescending</sortBy>
-            <title>SQLs delivered this month by GMV</title>
-            <useReportChart>false</useReportChart>
         </components>
     </middleSection>
     <rightSection>
@@ -436,6 +413,29 @@
             <title>Total Pipeline by Rep</title>
         </components>
         <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>AMOUNT</column>
+            </chartSummary>
+            <componentType>Funnel</componentType>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>true</expandOthers>
+            <groupingColumn>STAGE_NAME</groupingColumn>
+            <legendPosition>Right</legendPosition>
+            <report>Premium/Opportunity_Pipeline_Current_Month</report>
+            <showPercentage>true</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>This Month&apos;s Pipeline by Stage</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Table</componentType>
             <dashboardTableColumn>
@@ -490,6 +490,29 @@
             <report>Mid_Market_Sales/Accounts_Slipping_Away_2</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <title>Accounts w/no Activity in 30 Days</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
+                <column>RowCount</column>
+            </chartSummary>
+            <componentType>BarStacked</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <groupingColumn>Account.Projected_Annual_Revenue__c</groupingColumn>
+            <groupingColumn>BucketField_54220586</groupingColumn>
+            <legendPosition>Bottom</legendPosition>
+            <report>unfiled$public/SQL_by_GMV_bands</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelDescending</sortBy>
+            <title>SQLs delivered this month by GMV</title>
+            <useReportChart>false</useReportChart>
         </components>
     </rightSection>
     <runningUser>alecia.wall@bigcommerce.com</runningUser>

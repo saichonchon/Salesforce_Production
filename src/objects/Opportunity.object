@@ -6326,6 +6326,17 @@ Account Management</description>
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>Previous_Owner__c</fullName>
+        <externalId>false</externalId>
+        <label>Previous Owner</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Pricebook2Id</fullName>
         <type>Lookup</type>
     </fields>

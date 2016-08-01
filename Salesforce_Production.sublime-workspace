@@ -63,6 +63,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "src/classes/OpportunityOperations.cls",
+			"settings":
+			{
+				"buffer_size": 54780,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -110,7 +118,9 @@
 	},
 	"expanded_folders":
 	[
-		"/c/mavensmate/workspaces/Salesforce_Production"
+		"/c/mavensmate/workspaces/Salesforce_Production",
+		"/c/mavensmate/workspaces/Salesforce_Production/src",
+		"/c/mavensmate/workspaces/Salesforce_Production/src/classes"
 	],
 	"file_history":
 	[
@@ -285,8 +295,39 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/classes/OpportunityOperations.cls",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 54780,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								54780,
+								54780
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 30638.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],

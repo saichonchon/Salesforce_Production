@@ -37,13 +37,10 @@
         <field>OPPORTUNITY_NAME</field>
     </columns>
     <columns>
-        <field>Opportunity.Closed_Lost_Reason__c</field>
+        <field>LAST_ACTIVITY</field>
     </columns>
     <columns>
-        <field>Opportunity.Closed_Lost_Reason_Detail__c</field>
-    </columns>
-    <columns>
-        <field>RECORDTYPE</field>
+        <field>Opportunity.Sales_Notes__c</field>
     </columns>
     <filter>
         <criteriaItems>

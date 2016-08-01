@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Trial Spear Design Test: February 2016.ACQ - Day 08 Engaged - Spear Template B</name>
+    <style>none</style>
+    <subject>You have 1 week left - Get your store up and running</subject>
+    <textOnly>Log in today to get your store open for business. Call 1-844-632-8912 for assistance on selecting a BigCommerce plan today.
+
+Resources  &lt;[[https://support.bigcommerce.com/articles/University/Welcome-to-Bigcommerce-University-Video/]]&gt;| Log in &lt;[[https://login.bigcommerce.com/login]]&gt;
+
+You have 1 week left in your trial
+
+
+You&apos;ve made great progress on your store!
+Finish your store setup &lt;[[https://login.bigcommerce.com/login]]&gt;
+You&apos;ve made great progress! You still have 7 days left in your free trial to take the final steps and open for business.
+
+Log in today » &lt;[[https://login.bigcommerce.com/login]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>
