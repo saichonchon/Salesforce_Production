@@ -120,6 +120,12 @@
     <siteRedirectMappings>
         <action>Permanent</action>
         <isActive>true</isActive>
+        <source>/articles/Public/Bigcommerce-SSL-Options</source>
+        <target>/articles/Public/BigCommerce-SSL-Options</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
         <source>/articles/Public/Changing-the-Default-Product-Sort-Order-on-Free-Bigcommerce-Themes</source>
         <target>/articles/Public/Changing-the-Default-Product-Sort-Order</target>
     </siteRedirectMappings>

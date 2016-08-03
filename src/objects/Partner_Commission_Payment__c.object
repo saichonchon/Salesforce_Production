@@ -226,6 +226,11 @@ Records the payments made out to our referral partners for their commissions</de
         <unique>true</unique>
     </fields>
     <label>Partner Commission Payment</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
     <nameField>
         <displayFormat>PCP-{00000}</displayFormat>
         <label>Partner Commission Payment Name</label>
@@ -233,6 +238,15 @@ Records the payments made out to our referral partners for their commissions</de
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Partner Commission Payments</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts>
+        <searchResultsAdditionalFields>Recipient__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Payment_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Payment_Method__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Payment_Amount__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Fee__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Transaction_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Description__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
 </CustomObject>

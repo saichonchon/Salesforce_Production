@@ -40,7 +40,7 @@
     </columns>
     <description>To track all leads generated as a result of various types of events</description>
     <filter>
-        <booleanFilter>1 OR 2</booleanFilter>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
         <criteriaItems>
             <column>CAMPAIGN_NAME</column>
             <operator>contains</operator>
@@ -51,10 +51,15 @@
             <operator>equals</operator>
             <value>PRE: Q1 2015 - NRF Show Followup,MKT: Q2 FY15 PeSA (AUS)</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>START_DATE</column>
+            <operator>greaterOrEqual</operator>
+            <value>1/1/2015</value>
+        </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>
-        <dateGranularity>Year</dateGranularity>
+        <dateGranularity>FiscalQuarter</dateGranularity>
         <field>START_DATE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>

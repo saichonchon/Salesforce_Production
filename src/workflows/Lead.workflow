@@ -699,6 +699,26 @@ CONTAINS(Owner:User.UserRole.Name,&quot;Outbound&quot;) = FALSE)
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
+        <fullName>Update Owner When Unqualified</fullName>
+        <actions>
+            <name>Owner_Acquisition_Queue</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.Status</field>
+            <operation>equals</operation>
+            <value>Unqualified</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Owner_ID__c</field>
+            <operation>notEqual</operation>
+            <value>00Ga00000044WHq</value>
+        </criteriaItems>
+        <description>Update the Lead Owner to Acquisition Queue when the Status is set to Unqualified.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
         <fullName>Update Status to Unqualified</fullName>
         <actions>
             <name>Lead_Status_Unqualified</name>

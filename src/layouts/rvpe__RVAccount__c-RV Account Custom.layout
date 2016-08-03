@@ -510,6 +510,7 @@
         <fields>NAME</fields>
         <fields>Transaction_ID__c</fields>
         <fields>Payment_Date__c</fields>
+        <fields>Recipient__c</fields>
         <fields>Payment_Method__c</fields>
         <fields>Status__c</fields>
         <fields>Payment_Amount__c</fields>
@@ -534,6 +535,10 @@
         <fields>Partner_Commission_Percent__c</fields>
         <fields>Accrued_Transaction_Amount__c</fields>
         <fields>Partner_Commission_Earned__c</fields>
+        <fields>Payment_Date__c</fields>
+        <fields>Payment_Term__c</fields>
+        <fields>Amount_Paid__c</fields>
+        <fields>Account_Name__c</fields>
         <relatedList>Partner_Commission_Invoice_Transaction__c.Partner_Account__c</relatedList>
         <sortField>NAME</sortField>
         <sortOrder>Desc</sortOrder>

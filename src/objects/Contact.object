@@ -1777,6 +1777,16 @@ SUBSTITUTE(SUBSTITUTE(FirstName, &quot; &quot;, &quot;+&quot;), &quot;&amp;&quot
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>isPortalEnabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Check this box if this contact is associated with a community portal enabled user</description>
+        <externalId>false</externalId>
+        <label>isPortalEnabled</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>lmsilt__Languages__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>

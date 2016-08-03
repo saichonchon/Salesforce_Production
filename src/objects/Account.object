@@ -2465,6 +2465,19 @@ if((Active_Trials_Opp__c &gt;0),1,
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>MBA_Account_ID_Size__c</fullName>
+        <externalId>false</externalId>
+        <formula>LEN( MBAAccountID__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>MBA Account ID Size</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>MBA_Partner_ID__c</fullName>
         <description>integrated to MBA - do not delete</description>
         <externalId>false</externalId>
@@ -19134,7 +19147,7 @@ f.submit();</url>
         <protected>false</protected>
         <showsLocation>true</showsLocation>
         <showsStatus>true</showsStatus>
-        <url>https://manage.bigcommerce.com/admin/accounts/{!Account.MBAAccountID__c}</url>
+        <url>https://manage.bigcommerce.com/admin/accounts/{!Account.MBAAccountID__c}/external</url>
     </webLinks>
     <webLinks>
         <fullName>View_MBA_Account</fullName>

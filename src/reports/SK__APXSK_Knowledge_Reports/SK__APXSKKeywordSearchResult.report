@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>RowCount/PARENTGROUPVAL(RowCount,KnowledgeKeywordSearchHistory.AsOfDate)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>KnowledgeKeywordSearchHistory$Success</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>%</masterLabel>
+        <scale>0</scale>
+    </aggregates>
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
         <backgroundColor2>#FFFFFF</backgroundColor2>
@@ -32,13 +42,23 @@
         <field>KnowledgeKeywordSearchHistory$Keyword</field>
     </columns>
     <columns>
+        <field>KnowledgeKeywordSearchHistory$Channel</field>
+    </columns>
+    <columns>
         <aggregateTypes>Sum</aggregateTypes>
         <field>KnowledgeKeywordSearchHistory$Count</field>
     </columns>
     <description>How do successful and unsuccessful keyword searches compare?</description>
+    <filter>
+        <criteriaItems>
+            <column>KnowledgeKeywordSearchHistory$Channel</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
     <format>Summary</format>
     <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
+        <dateGranularity>Week</dateGranularity>
         <field>KnowledgeKeywordSearchHistory$AsOfDate</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
@@ -57,6 +77,6 @@
     <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>KnowledgeKeywordSearchHistory$AsOfDate</dateColumn>
-        <interval>INTERVAL_LAST7</interval>
+        <interval>INTERVAL_LAST30</interval>
     </timeFrameFilter>
 </Report>

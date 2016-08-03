@@ -24,22 +24,6 @@
         <template>Internal_Email_Template/New_Trial_Opp_not_owned_by_Account_Owner</template>
     </alerts>
     <alerts>
-        <fullName>Email_Alert_lead_converted</fullName>
-        <description>Email Alert - lead converted</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>maggie.frederick@bigcommerce.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>maria.huemmer@bigcommerce.com</recipient>
-            <type>user</type>
-        </recipients>
-        <senderAddress>no-reply@bigcommerce.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Internal_Email_Template/TesT123</template>
-    </alerts>
-    <alerts>
         <fullName>Email_Migraiton_Team_of_new_prescoping_opportunity</fullName>
         <description>Email Migration Team of new prescoping opportunity</description>
         <protected>false</protected>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Plan Upgrade 08/16- 1278.CUS Email 1</name>
+    <style>none</style>
+    <subject>Important: changes to your pricing plan</subject>
+    <textOnly>Congratulations for all your success on the BigCommerce platform.
+Hi {{lead.First Name:default=there}},
+We&apos;re excited for your success and sincerely delighted that our product is helping to support your growth. Accordingly we wanted to send a courtesy notification that with your increase in orders, you’ve exceeded the current maximum amount of sales for your plan. We’ve automatically upgraded you to a new plan that includes more sales, plus advanced features to help you increase revenue and streamline your business.
+To see all the details of your new plan, please visit the Billing section of your control panel.
+
+
+
+
+Login now &lt;[[https://login.bigcommerce.com/login]]&gt;
+
+
+
+
+
+Learn more &lt;[[https://support.bigcommerce.com/articles/Public/How-Bigcommerce-Calculates-Trailing-12-Month-Sales-Orders-to-Determine-Your-Pricing?utm_medium=email&amp;utm_source=engagement]]&gt; about our pricing plans, how we calculate sales volume and more.
+Thanks for using BigCommerce to power your business,
+The BigCommerce Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

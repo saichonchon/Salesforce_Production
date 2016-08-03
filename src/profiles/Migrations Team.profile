@@ -1732,6 +1732,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.MBA_Account_ID_Size__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Account.MBA_Partner_ID__c</field>
         <readable>true</readable>
@@ -6299,6 +6304,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Contact.gatotalTouchCount__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.isPortalEnabled__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

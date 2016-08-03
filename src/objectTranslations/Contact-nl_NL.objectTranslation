@@ -586,6 +586,10 @@
         <name>gatotalTouchCount__c</name>
     </fields>
     <fields>
+        <label><!-- isPortalEnabled --></label>
+        <name>isPortalEnabled__c</name>
+    </fields>
+    <fields>
         <label><!-- Languages --></label>
         <name>lmsilt__Languages__c</name>
     </fields>

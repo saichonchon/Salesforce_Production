@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Current Trial: January 2016.Day 15</name>
+    <style>none</style>
+    <subject>Your Bigcommerce trial ends today</subject>
+    <textOnly>Today is the last day of your Bigcommerce trial - it&apos;s time to pick a plan and launch your store
+Choose a plan and start selling today
+Today is the last day of your free Bicommerce trial.That means it’s time to pick a plan and launch your store!
+Pick a plan &lt;[[https://login.bigcommerce.com/login]]&gt;
+Three reasons why super smart online sellers like you choose Bigcommerce:
+
+Totally Transparent Pricing
+
+No matter what plan you select, you know exactly what you’re getting. We clearly show you all the included features, and we never charge hidden fees.
+
+Built to increase your sales
+
+Our merchants sell more than retailers on other ecommerce solutions thanks to advanced features, better site performance and streamlined business processes.
+
+Leave the technology to us
+
+We handle all the hassles of hosting, uptime, security, PCI compliance and site performance so you can focus on your business.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

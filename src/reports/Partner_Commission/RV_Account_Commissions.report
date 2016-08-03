@@ -24,11 +24,14 @@
     <columns>
         <field>Partner_Commission__c.Rollup_Commission__c</field>
     </columns>
+    <columns>
+        <field>Partner_Commission__c.Batch_Date__c</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>CUST_ID</column>
             <operator>equals</operator>
-            <value>a4l130000003XP6</value>
+            <value>a4l130000003WNI</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

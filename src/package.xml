@@ -1226,7 +1226,17 @@
         <members>MarketoEmailTemplates/MKTO509</members>
         <members>MarketoEmailTemplates/MKTO51</members>
         <members>MarketoEmailTemplates/MKTO510</members>
+        <members>MarketoEmailTemplates/MKTO511</members>
+        <members>MarketoEmailTemplates/MKTO512</members>
+        <members>MarketoEmailTemplates/MKTO513</members>
+        <members>MarketoEmailTemplates/MKTO514</members>
+        <members>MarketoEmailTemplates/MKTO515</members>
+        <members>MarketoEmailTemplates/MKTO516</members>
+        <members>MarketoEmailTemplates/MKTO517</members>
+        <members>MarketoEmailTemplates/MKTO518</members>
+        <members>MarketoEmailTemplates/MKTO519</members>
         <members>MarketoEmailTemplates/MKTO52</members>
+        <members>MarketoEmailTemplates/MKTO520</members>
         <members>MarketoEmailTemplates/MKTO53</members>
         <members>MarketoEmailTemplates/MKTO54</members>
         <members>MarketoEmailTemplates/MKTO55</members>
@@ -2137,6 +2147,7 @@
         <members>Client_Success/Restore_Data</members>
         <members>Client_Success/Returned_NPS_Sat_Surveys_7_27_8_2</members>
         <members>Client_Success/Security_Awareness_20161</members>
+        <members>Client_Success/Shipping_Info</members>
         <members>Client_Success/Sift_Training1</members>
         <members>Client_Success/Square_POS_Cases</members>
         <members>Client_Success/Standard_Plans_Below_Cost</members>
@@ -2618,7 +2629,9 @@
         <members>Marketing_Reports/Trial_Count_by_Day_Opp_KV_Final</members>
         <members>Marketing_Reports/Trial_Count_by_Day_Opp_MKT_Source_2</members>
         <members>Marketing_Reports/Trial_Count_by_Day_Opp_MKT_Source_KV</members>
+        <members>Marketing_Reports/Trials_1st_day_of_month_2016</members>
         <members>Marketing_Reports/Trials_ByCountry_ByDay_Bizible</members>
+        <members>Marketing_Reports/Trials_Created_by_Day</members>
         <members>Marketing_Reports/X2015_ENT_Demo_Requests_Sales_Call_Down_x</members>
         <members>Marketing_Reports/dw_contacts_us_gmv</members>
         <members>Marketing_Reports/dw_pcf_test</members>
@@ -2671,6 +2684,7 @@
         <members>Mid_Market_Sales/Deals_4_000_closing_this_month</members>
         <members>Mid_Market_Sales/Deals_between_2k_4k_closing_this_month</members>
         <members>Mid_Market_Sales/Deals_in_play_this_month</members>
+        <members>Mid_Market_Sales/July_Sales</members>
         <members>Mid_Market_Sales/June_Best_Case_Deals</members>
         <members>Mid_Market_Sales/MM_Demo_Requests_MTD</members>
         <members>Mid_Market_Sales/MRR_MTD_TEST</members>
@@ -2775,10 +2789,14 @@
         <members>Outsource_Remotes/NPS_Chat_SAT_Overall_w_Date1</members>
         <members>Outsource_Remotes/NPS_by_Category</members>
         <members>Outsource_Remotes/T2_Chat_Sessions</members>
+        <members>Outsource_Remotes/VEND_Ninja_Trials_Noob</members>
         <members>Outsource_Remotes/WEB_NPS_Sat</members>
         <members>Partner_Commission/Closed_Partner_Commission_Summaries</members>
         <members>Partner_Commission/Commission_Not_Activated</members>
+        <members>Partner_Commission/Commission_Payments_Need_Assignment</members>
         <members>Partner_Commission/Completed_October_Payments</members>
+        <members>Partner_Commission/Outstanding_Partner_Commissions_Owed</members>
+        <members>Partner_Commission/Overpaid_partners</members>
         <members>Partner_Commission/Partner_Commission_BMP_MBA_last_60_day</members>
         <members>Partner_Commission/Partner_Commission_Engagement</members>
         <members>Partner_Commission/Partner_Commission_Payment_Terms</members>
@@ -2788,6 +2806,7 @@
         <members>Partner_Commission/Partner_Monthly_Commission_Oct</members>
         <members>Partner_Commission/Payments_by_RV_account</members>
         <members>Partner_Commission/RV_Account_Commissions</members>
+        <members>Partner_Commission/RV_Accounts_for_Loading_Payments</members>
         <members>Partner_DB_Reports/BAP_1770</members>
         <members>Partner_DB_Reports/DB_Partner_Sales_Opp_No_Orion</members>
         <members>Partner_DB_Reports/DB_This_Month_Revenue_Partner</members>
@@ -3181,6 +3200,7 @@
         <members>Sales_Operations/Acq_book_test</members>
         <members>Sales_Operations/Active_Clients_with_GMV_data</members>
         <members>Sales_Operations/Active_Contributors</members>
+        <members>Sales_Operations/Active_Cornerstone_Users</members>
         <members>Sales_Operations/Active_SFDC_Standard_License_Users1</members>
         <members>Sales_Operations/Active_SFDC_Standard_License_Users_CS1</members>
         <members>Sales_Operations/Active_SFDC_Standard_License_Users_MKT1</members>
@@ -3290,6 +3310,7 @@
         <members>Sales_Operations/Converted_leads</members>
         <members>Sales_Operations/Cornerstone_User_Audit</members>
         <members>Sales_Operations/Cornerstone_Users_inactive</members>
+        <members>Sales_Operations/Cornerstone_Users_to_Deactivate</members>
         <members>Sales_Operations/Course_with_Assignment_Test</members>
         <members>Sales_Operations/Customer_Users_with_Company_Name</members>
         <members>Sales_Operations/DBAmp_API_Call_in_Last_7_Days</members>
@@ -3601,6 +3622,7 @@
         <members>Support_Toolbelt/Credit_and_Refunds_Approved_or_Rejec</members>
         <members>Support_Toolbelt/ESC_Closed_Cases_by_Tech_This_Week</members>
         <members>Support_Toolbelt/Enterpris_JIRAs_raw_data</members>
+        <members>Support_Toolbelt/Fraud_Suspensions</members>
         <members>Support_Toolbelt/Ideas_dashboard1</members>
         <members>Support_Toolbelt/Ideas_with_Lookup_Data_Toolbelt</members>
         <members>Support_Toolbelt/JIRAs_Last_Week_w_MRR_and_GMV1</members>
@@ -4554,6 +4576,7 @@
         <members>unfiled$public/IB_OB_Call_Activity</members>
         <members>unfiled$public/IB_Team_Call_Activity</members>
         <members>unfiled$public/In_active_RV_accounts</members>
+        <members>unfiled$public/Inactivated_portal_users</members>
         <members>unfiled$public/Inactive_users_that_own_accounts</members>
         <members>unfiled$public/Inbound_Daily_Rev</members>
         <members>unfiled$public/Inbound_MRR_Exc_Orion</members>
@@ -4575,6 +4598,7 @@
         <members>unfiled$public/Intuit_Solutions_Weekly_Lead_Report1</members>
         <members>unfiled$public/Intuit_Subscription_Report</members>
         <members>unfiled$public/Invalid_Email_Re_opened_Cases</members>
+        <members>unfiled$public/Ivy</members>
         <members>unfiled$public/JENS_Leads_to_Convert_to_Opps</members>
         <members>unfiled$public/J_Hoss_Accounts</members>
         <members>unfiled$public/J_Hoss_Subscriptions</members>
@@ -4619,6 +4643,7 @@
         <members>unfiled$public/Lauryn_s_Demo_Calldown_List1</members>
         <members>unfiled$public/Lauryn_s_Product_Filtering_Calldown_List1</members>
         <members>unfiled$public/Lead_List_With_Source_Codes_and_Detail</members>
+        <members>unfiled$public/Leads_Owned_by_Inactive_Users</members>
         <members>unfiled$public/Leads_Still_In_Distribution_Engine_2016</members>
         <members>unfiled$public/Leads_by_Aubrie_O_Connor</members>
         <members>unfiled$public/Leads_by_Brian_Miller</members>

@@ -1397,6 +1397,10 @@ Grow - Potential for big opp;Partner choosing platform --></help>
         <name>MBAUserID__c</name>
     </fields>
     <fields>
+        <label><!-- MBA Account ID Size --></label>
+        <name>MBA_Account_ID_Size__c</name>
+    </fields>
+    <fields>
         <label><!-- MBA Partner ID --></label>
         <name>MBA_Partner_ID__c</name>
     </fields>

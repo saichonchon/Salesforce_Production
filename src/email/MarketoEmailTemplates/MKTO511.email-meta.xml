@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Switch to CP2 Survey Set 2- 1239.CUS - Email 1</name>
+    <style>none</style>
+    <subject>BigCommerce control panel feedback requested</subject>
+    <textOnly>We’re interested in learning more about your experience with the new control panel and would appreciate any feedback you’d be willing to share.
+Hi {{lead.First Name:default=there}},
+You may have noticed that your BigCommerce control panel has been updated with a new look and navigation. We’re interested in learning more about your experience with the new control panel and would appreciate any feedback you’d be willing to share.
+
+
+
+
+Take our short survey &lt;[[https://www.surveymonkey.com/r/956SHLJ]]&gt;
+
+
+
+
+
+Thank you in advance for your help.
+Sincerely, 
+The BigCommerce Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>
