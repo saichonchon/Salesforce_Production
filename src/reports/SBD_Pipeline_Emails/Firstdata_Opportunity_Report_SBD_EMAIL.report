@@ -13,9 +13,6 @@
         <field>Opportunity$Name</field>
     </columns>
     <columns>
-        <field>Opportunity$SBD_Store_ID__c</field>
-    </columns>
-    <columns>
         <field>Opportunity$StoreURL__c</field>
     </columns>
     <columns>
@@ -25,7 +22,7 @@
         <field>Opportunity$New_Product_Plan__c</field>
     </columns>
     <columns>
-        <field>Opportunity$Product__c</field>
+        <field>Opportunity$Amount</field>
     </columns>
     <filter>
         <criteriaItems>

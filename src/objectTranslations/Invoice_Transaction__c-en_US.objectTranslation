@@ -108,6 +108,11 @@
         <name>Number_of_Partner_Commissions__c</name>
     </fields>
     <fields>
+        <help><!-- The Approved Date from the related RV Account, represents the date that the Partner entered the program. --></help>
+        <label><!-- Partner Account - Date Activated --></label>
+        <name>Partner_Account_Date_Activated__c</name>
+    </fields>
+    <fields>
         <help><!-- The date that the partner account was taken out of the program.  After this date, incoming commissions will no longer accrue. --></help>
         <label><!-- Partner Account - Date Inactivated --></label>
         <name>Partner_Account_Date_Inactivated__c</name>

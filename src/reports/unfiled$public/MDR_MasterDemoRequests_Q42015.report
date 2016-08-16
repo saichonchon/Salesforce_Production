@@ -43,7 +43,7 @@
         <field>CAMPAIGN_ID</field>
     </columns>
     <filter>
-        <booleanFilter>((((((1) or (2) or (3) or (4) or (5) or (6) or (7) or (8) or (9) AND 10) OR 11)) OR 12) AND 13)</booleanFilter>
+        <booleanFilter>(1 or 2 or 3 or 4 or 5 or 6 or 7 or 8 or 9 OR 11 OR 12  OR 14) AND 13 AND 10</booleanFilter>
         <criteriaItems>
             <column>CAMPAIGN_NAME</column>
             <operator>contains</operator>
@@ -109,6 +109,11 @@
             <operator>greaterOrEqual</operator>
             <value>LAST_N_DAYS:45</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <operator>contains</operator>
+            <value>MKT.Promotion</value>
+        </criteriaItems>
     </filter>
     <format>Tabular</format>
     <name>MDR.MasterDemoRequests.Q42015</name>
@@ -123,4 +128,6 @@
     <reportType>CampaignWithCampaignMembers</reportType>
     <scope>orgActive</scope>
     <showDetails>true</showDetails>
+    <sortColumn>MEMBER_CREATED_DATE</sortColumn>
+    <sortOrder>Desc</sortOrder>
 </Report>

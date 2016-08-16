@@ -5,6 +5,11 @@
     <description>Email notification for Distribution Engine assignment, alerting and re-assignment</description>
     <encodingKey>ISO-8859-1</encodingKey>
     <name>Distribution Engine Notification</name>
+    <packageVersions>
+        <majorNumber>6</majorNumber>
+        <minorNumber>7</minorNumber>
+        <namespace>n2de</namespace>
+    </packageVersions>
     <style>none</style>
     <type>visualforce</type>
 </EmailTemplate>

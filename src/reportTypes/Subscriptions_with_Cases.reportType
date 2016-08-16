@@ -1310,11 +1310,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Incident__c</field>
-            <table>Subscription__c.Cases__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Intersire_Staging_URL__c</field>
             <table>Subscription__c.Cases__r</table>
         </columns>

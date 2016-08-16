@@ -852,17 +852,6 @@
     </miniLayout>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>CREATEDBY_USER</fields>
-        <fields>CREATED_DATE</fields>
-        <fields>Field_Name__c</fields>
-        <fields>Old_Value__c</fields>
-        <fields>New_Value__c</fields>
-        <relatedList>Subscription_History__c.Subscription__c</relatedList>
-        <sortField>CREATED_DATE</sortField>
-        <sortOrder>Desc</sortOrder>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
         <fields>Lifetime_GMV__c</fields>
         <fields>Lifetime_Orders__c</fields>
         <fields>Last_12_months_GMV__c</fields>

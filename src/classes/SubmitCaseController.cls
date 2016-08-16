@@ -473,9 +473,7 @@ public class SubmitCaseController {
         }
         
         // Redirect to completion page
-        return new PageReference(css.Redirect_URL__c + '?caseNum=' + EncodingUtil.urlEncode(caseNum, 'UTF-8') +
-                                    '&contactEmail=' + EncodingUtil.urlEncode(formEmail.value, 'UTF-8') + '&storeUrl=' 
-                                    + EncodingUtil.urlEncode(formURL.value, 'UTF-8'));           
+        return new PageReference(css.Redirect_URL__c + '?caseNum=' + EncodingUtil.urlEncode(caseNum, 'UTF-8'));           
     }
     /**
      * Validates the ticket description. Returns bolean for has errors.
@@ -544,6 +542,8 @@ public class SubmitCaseController {
             {
 	            c.OwnerId = css.Default_Support_Owner_ID__c;
 	            c.Department__c = 'Cancellation';
+                c.Reason = 'Cancellation Reasons';
+                c.Reason_Code__c = 'Cancellation';
 	            c.Subject = 'Cancellation Request for '+ formURL.value;
             }
             else 

@@ -35,7 +35,7 @@
     </columns>
     <description>Original report before some campaigns were removed for the dialer</description>
     <filter>
-        <booleanFilter>(((((((1) or (2) or (3) or (4) or (5) or (6) or (7) or (8) or (9) AND 10) OR 11)) OR 12)  AND 13))</booleanFilter>
+        <booleanFilter>(1 or 2 or 3 or 4 or 5 or 6 or 7 or 8 or 9 OR 14 OR 11 OR 12) AND 10 AND 13</booleanFilter>
         <criteriaItems>
             <column>CAMPAIGN_NAME</column>
             <operator>contains</operator>
@@ -98,8 +98,13 @@
         </criteriaItems>
         <criteriaItems>
             <column>MEMBER_CREATED_DATE</column>
-            <operator>greaterThan</operator>
+            <operator>greaterOrEqual</operator>
             <value>1/1/2016 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <operator>contains</operator>
+            <value>mkt.promotion</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>

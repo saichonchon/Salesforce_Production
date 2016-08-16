@@ -390,6 +390,20 @@ NULL)
         <type>Currency</type>
     </fields>
     <fields>
+        <fullName>BMP_Subscription_ID_Length__c</fullName>
+        <externalId>false</externalId>
+        <formula>LEN(BMP_Subscription_ID__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The size of the BMP Subscription ID value</inlineHelpText>
+        <label>BMP Subscription ID Length</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>BMP_Subscription_ID__c</fullName>
         <externalId>true</externalId>
         <label>BMP Subscription ID</label>
@@ -913,6 +927,23 @@ CAN PROBABLY BE DELETED but check with Dan</description>
         <externalId>false</externalId>
         <label>zCoupon Code</label>
         <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Created_Date_Rounded_Text__c</fullName>
+        <externalId>false</externalId>
+        <formula>LEFT(TEXT(CreatedDate),14) + 
+
+IF(VALUE(MID(TEXT(CreatedDate),15,2)) &lt; 15, &apos;00&apos;,
+IF(VALUE(MID(TEXT(CreatedDate),15,2)) &lt; 30, &apos;15&apos;,
+IF(VALUE(MID(TEXT(CreatedDate),15,2)) &lt; 45, &apos;30&apos;,
+&apos;45&apos;)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Shows the created date time rounded into its nearest quarter-hour.  Used for identifying records created within a similar timeframe</inlineHelpText>
+        <label>Created Date Rounded Text</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Text</type>
@@ -4853,9 +4884,7 @@ NULL)
             <value>Active</value>
         </filters>
         <label>Upsell Team to Call</label>
-        <sharedTo>
-            <role>Outbound_Sales_II</role>
-        </sharedTo>
+        <sharedTo/>
     </listViews>
     <listViews>
         <fullName>X1_Update_Strategic_Partners</fullName>
@@ -5919,6 +5948,8 @@ NULL)
         <lookupDialogsAdditionalFields>StoreURL__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>Support_PIN__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>MBAAccountID__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>MBASubscriptionID__c</lookupDialogsAdditionalFields>
         <lookupFilterFields>MBASubscriptionID__c</lookupFilterFields>
         <lookupFilterFields>StoreURL__c</lookupFilterFields>
         <lookupFilterFields>Contact__c</lookupFilterFields>

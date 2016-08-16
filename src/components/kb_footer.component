@@ -17,4 +17,5 @@
     </div>
   </div>
   <script src="{!URLFOR($Resource.knowledge_assets, 'js/youtube-api.js')}" type="text/javascript"></script>
+  <script>(function(e,t,s,o){var n,c,a;e.SMCX=e.SMCX||[],t.getElementById(o)||(n=t.getElementsByTagName(s),c=n[n.length-1],a=t.createElement(s),a.type="text/javascript",a.async=!0,a.id=o,a.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/XKuAvzBXgy6yfbvGhl8TPVBDFG_2FsaMmRs3Gf9NkY3IJCo1qbsb2sa2_2FeTm7u2wIw.js"].join(""),c.parentNode.insertBefore(a,c))})(window,document,"script","smcx-sdk");</script>
 </apex:component>

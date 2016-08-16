@@ -5,12 +5,12 @@
         <ul>
         <li><apex:outputLink value="{!URLFOR('apex/Milestones1_GettingStarted')}" >{!$Label.Milestone1_GettingStarted}</apex:outputLink></li>
         <li><apex:outputLink value="{!URLFOR('apex/Milestones1_Summary2')}" >{!$Label.Milestone1_Summary}</apex:outputLink></li>
-        <li><apex:outputLink value="{!URLFOR($Action.Milestone1_Project__c.List, $ObjectType.Milestone1_Project__c)}" >{!$Label.Milestone1_Projects}</apex:outputLink></li>
-        <li><apex:outputLink value="{!URLFOR($Action.Milestone1_Milestone__c.List, $ObjectType.Milestone1_Milestone__c)}" >{!$Label.Milestone1_Milestones}</apex:outputLink></li>
-        <li><apex:outputLink value="{!URLFOR($Action.Milestone1_Task__c.List, $ObjectType.Milestone1_Task__c)}" >{!$Label.Milestone1_Tasks}</apex:outputLink></li>
-        <li><apex:outputLink value="{!URLFOR($Action.Milestone1_Time__c.List, $ObjectType.Milestone1_Time__c)}" >{!$Label.Milestone1_Times}</apex:outputLink></li>
-        <li><apex:outputLink value="{!URLFOR($Action.Milestone1_Expense__c.List, $ObjectType.Milestone1_Expense__c)}" >{!$Label.Milestone1_Expenses}</apex:outputLink></li>
-        <li><apex:outputLink value="{!URLFOR($Action.Milestone1_Log__c.List, $ObjectType.Milestone1_Log__c)}" >{!$Label.Milestone1_Logs}</apex:outputLink></li>
+        <li><apex:outputLink value="{!URLFOR($Action.01Ia0000002L2NW.List, $ObjectType.01Ia0000002L2NW)}" >{!$Label.Milestone1_Projects}</apex:outputLink></li>
+        <li><apex:outputLink value="{!URLFOR($Action.01Ia0000002L2NV.List, $ObjectType.01Ia0000002L2NV)}" >{!$Label.Milestone1_Milestones}</apex:outputLink></li>
+        <li><apex:outputLink value="{!URLFOR($Action.01Ia0000002L2NY.List, $ObjectType.01Ia0000002L2NY)}" >{!$Label.Milestone1_Tasks}</apex:outputLink></li>
+        <li><apex:outputLink value="{!URLFOR($Action.01Ia0000002L2NZ.List, $ObjectType.01Ia0000002L2NZ)}" >{!$Label.Milestone1_Times}</apex:outputLink></li>
+        <li><apex:outputLink value="{!URLFOR($Action.01Ia0000002L2NT.List, $ObjectType.01Ia0000002L2NT)}" >{!$Label.Milestone1_Expenses}</apex:outputLink></li>
+        <li><apex:outputLink value="{!URLFOR($Action.01Ia0000002L2NU.List, $ObjectType.01Ia0000002L2NU)}" >{!$Label.Milestone1_Logs}</apex:outputLink></li>
         <li><apex:outputLink value="{!URLFOR('apex/Milestones1_Calendar_Large')}" >{!$Label.Milestone1_Calendar}</apex:outputLink></li>
         <li><apex:outputLink value="{!URLFOR('apex/Milestones1_Import_Project')}" >{!$Label.Milestone1_ImportTemplate}</apex:outputLink></li>
         </ul>

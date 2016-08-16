@@ -51,6 +51,23 @@
             <metricLabel>Cases Closed Last Week</metricLabel>
             <report>Support_Daily/Billing_Cases_Closed_L_Week</report>
         </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Column</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <legendPosition>Bottom</legendPosition>
+            <report>Support_Daily/Billing_Cases_in_Reps_Name</report>
+            <showPercentage>false</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Cases Left in Reps Name</title>
+            <useReportChart>false</useReportChart>
+        </components>
     </leftSection>
     <middleSection>
         <columnSize>Wide</columnSize>
@@ -61,8 +78,8 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>false</enableHover>
-            <expandOthers>false</expandOthers>
+            <enableHover>true</enableHover>
+            <expandOthers>true</expandOthers>
             <legendPosition>Bottom</legendPosition>
             <report>Support_Daily/Billing_L2_Cases_Closed_Per_Rep_L_Week</report>
             <showPercentage>false</showPercentage>
@@ -84,7 +101,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
-            <expandOthers>false</expandOthers>
+            <expandOthers>true</expandOthers>
             <groupingColumn>Case.Case_Closed_By__c</groupingColumn>
             <legendPosition>Bottom</legendPosition>
             <report>Support_Daily/Billing_L2_Cases_Closed_Per_Rep_T_Week</report>

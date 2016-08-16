@@ -647,6 +647,10 @@
                 <behavior>Readonly</behavior>
                 <field>Start_Create__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Created_Date_Rounded_Text__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -672,6 +676,10 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Is_Cancelled__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>BMP_Subscription_ID__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -711,17 +719,6 @@
         <fields>OwnerId</fields>
         <fields>Plan_Change_Date__c</fields>
     </miniLayout>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>CREATEDBY_USER</fields>
-        <fields>CREATED_DATE</fields>
-        <fields>Field_Name__c</fields>
-        <fields>Old_Value__c</fields>
-        <fields>New_Value__c</fields>
-        <relatedList>Subscription_History__c.Subscription__c</relatedList>
-        <sortField>CREATED_DATE</sortField>
-        <sortOrder>Desc</sortOrder>
-    </relatedLists>
     <relatedLists>
         <fields>OPPORTUNITY.NAME</fields>
         <fields>ACCOUNT.NAME</fields>

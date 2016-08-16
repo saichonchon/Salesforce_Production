@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Post Trial Winback.ACQ - Email 5: Run Your Business Efficiently</name>
+    <style>none</style>
+    <subject>We make running your business easy</subject>
+    <textOnly>Learn how BigCommerce app partners save time, money and increase efficiency
+Run your business more efficiently
+CHECK OUT APPS &lt;[[https://www.bigcommerce.com/apps/]]&gt;
+One marketplace for all your needs
+
+BigCommerce has an industry-leading selection of third-party apps and integrations, all carefully curated to make sure we only feature the best solutions. You can seamlessly connect your store to the software you need to sell effectively.
+ 
+ The marketplace features many options to fit your needs including marketing conversion, accounting, shipping, tax or payment gateway.
+ 
+ Some of our app partners:
+ 
+ 
+ 
+ [INSERT LOGOS]
+ 
+ 
+ 
+
+
+Check out apps in our marketplace » &lt;[[https://www.bigcommerce.com/apps/]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

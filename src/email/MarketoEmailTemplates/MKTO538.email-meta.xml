@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>QBO Merchant Services V1- 1276.CUS Email 1</name>
+    <style>none</style>
+    <subject>Service notice: removal of previous payment gateway on Aug 15</subject>
+    <textOnly>We’re updating our payment gateway options and as a result, we’ll be removing Quickbooks Merchant Services V1 effective August 15, 2016.
+Hi {{lead.First Name:default=there}},
+We’re updating our payment gateway options and as a result, we’ll be removing Quickbooks Merchant Services V1 effective August 15, 2016.
+
+Why are we removing this payment gateway? 
+We’re focusing on integrations with select payment providers in order to streamline our offering and provide you with the best possible features and security.
+
+What do you need to do? 
+Nothing! Since you have Quickbooks Merchant Services V2 (also known as Quickbooks Payments) already active in your store, you do not need to take any action.
+
+If you are interested in switching to a new primary payment gateway, then click here &lt;[[https://support.bigcommerce.com/articles/Public/Adding-a-Payment-Gateway/?q=how+to+connect+your+gateway?utm_medium=email&amp;utm_source=sbd]]&gt; to view details on how to enable an alternate gateway. There is no limit to how many payment methods you can set up, although we recommend not using more than two or three, including PayPal Express Checkout.
+Need more information? Give us a call at 866.848.5338 &lt;[[tel:+18669495338]]&gt; or email  accountservices@bigcommerce.com &lt;[[mailto:accountservices@bigcommerce.com=]]&gt;.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

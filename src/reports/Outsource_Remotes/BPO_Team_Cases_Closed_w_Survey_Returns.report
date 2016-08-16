@@ -18,7 +18,7 @@
         <criteriaItems>
             <column>Case.Primary_Case_Rep__c</column>
             <operator>equals</operator>
-            <value>Adrian Estopace,Alvin DeLeon,Aries Leyte,Faith Esguerra,Harold De Asas,Jan Saria,Jeffrey Gregorio,John San Diego,John Ferrer,Jovic Leovis,Jude Abrigo,Jun Tupas,Kenneth Cabaobao,Kim Radaza,Luigi Modesto,Marielle Morre,Marjorie Tamayo,Mark Hernandez,Mary Quilaga,Mireille Ferol,Racel Arce,Regie Matibag,Regine SanJuan,Ryan Juarez,Shirley Detera,Juan Calanoc,Rianne Insigne,Jonathan Castro,Amanda Aguirre,Patricia Santos,Roger Dayap,Jonalyn Fresnido,Raymond Macatangay,Josiephene Caceres,Marfee DelaCruz,Christie Rodriguez,Jerome Cadangyao,Roshaolin Nuqui,Kristel Pura,Jenelyn Pawhay,John Ordonez</value>
+            <value>Adrian Estopace,Alvin DeLeon,Aries Leyte,Faith Esguerra,Harold De Asas,Jan Saria,Jeffrey Gregorio,John San Diego,John Ferrer,Jovic Leovis,Jude Abrigo,Jun Tupas,Kenneth Cabaobao,Kim Radaza,Luigi Modesto,Marielle Morre,Marjorie Tamayo,Mark Hernandez,Mary Quilaga,Mireille Ferol,Racel Arce,Regie Matibag,Regine SanJuan,Ryan Juarez,Shirley Detera,Juan Calanoc,Rianne Insigne,Jonathan Castro,Amanda Aguirre,Patricia Santos,Roger Dayap,Jonalyn Fresnido,Raymond Macatangay,Josiephene Caceres,Marfee DelaCruz,Christie Rodriguez,Jerome Cadangyao,Roshaolin Nuqui,Kristel Pura,Jenelyn Pawhay,John Ordonez,Ella Vinalon,Gerald Bobiles,Anne Ilagan,Lorain Miranda,Sid Secjadas,Julie Due,AJ Agustin,Mark Galzote,Eric Ong</value>
         </criteriaItems>
         <criteriaItems>
             <column>ORIGIN</column>
@@ -51,8 +51,8 @@
     <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>CLOSED_DATEONLY</dateColumn>
-        <endDate>2016-07-09</endDate>
+        <endDate>2016-07-30</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2016-04-10</startDate>
+        <startDate>2016-05-01</startDate>
     </timeFrameFilter>
 </Report>

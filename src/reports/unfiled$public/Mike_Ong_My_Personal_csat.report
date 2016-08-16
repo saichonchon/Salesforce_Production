@@ -28,6 +28,9 @@
         </values>
     </buckets>
     <columns>
+        <field>Support_Survey__c$Case__c.Reason</field>
+    </columns>
+    <columns>
         <field>Support_Survey__c$Case__c.Department__c</field>
     </columns>
     <columns>

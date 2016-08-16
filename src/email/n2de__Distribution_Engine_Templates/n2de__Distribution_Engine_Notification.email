@@ -1,4 +1,4 @@
-<messaging:emailTemplate subject="Distribution Engine Notification" recipientType="User" relatedToType="n2de__Distribution_log__c">
+<messaging:emailTemplate subject="Record Assignment Notification" recipientType="User" relatedToType="n2de__Distribution_log__c">
 <messaging:htmlEmailBody >
 <c:EmailNotification LogId="{!relatedTo.Id}" />
 <c:EmailNotificationFooter />

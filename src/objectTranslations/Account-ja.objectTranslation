@@ -2999,6 +2999,97 @@ Grow - Potential for big opp;Partner choosing platform --></help>
         </picklistValues>
     </fields>
     <fields>
+        <help><!-- Option to combine quantities of multiple assets for the same product into one line when renewal quote is generated. --></help>
+        <label><!-- Combine Asset Quantities --></label>
+        <name>SBQQ__AssetQuantitiesCombined__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable to combine assets and subscriptions from multiple co-termed contracts. By default, each co-termed contract generates a separate group on renewal quote. --></help>
+        <label><!-- Combine Co-Termed Contracts --></label>
+        <name>SBQQ__CoTermedContractsCombined__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines when contracts are co-terminated. --></help>
+        <label><!-- Co-Termination Event --></label>
+        <name>SBQQ__CoTerminationEvent__c</name>
+        <picklistValues>
+            <masterLabel>Add-on</masterLabel>
+            <translation><!-- Add-on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation><!-- Renewal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Determines how service and subscription contracts for this customer are co-terminated. --></help>
+        <label><!-- Contract Co-Termination --></label>
+        <name>SBQQ__ContractCoTermination__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation><!-- Always --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never</masterLabel>
+            <translation><!-- Never --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prompt</masterLabel>
+            <translation><!-- Prompt --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Default opportunity for this account used by an e-Commerce module to obtain the customer&apos;s price book and associate with &quot;shopping cart&quot; quotes. --></help>
+        <label><!-- Default Opportunity --></label>
+        <name>SBQQ__DefaultOpportunity__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select if contracted prices should not be inherited from the parent account. --></help>
+        <label><!-- Ignore Parent Contracted Prices --></label>
+        <name>SBQQ__IgnoreParentContractedPrices__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to maintain bundle hierarchy on renewal quotes and amendments. --></help>
+        <label><!-- Preserve Bundle Structure --></label>
+        <name>SBQQ__PreserveBundle__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter date until which the prices must be held. --></help>
+        <label><!-- Price Hold End --></label>
+        <name>SBQQ__PriceHoldEnd__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose Asset Based to make renewals based off of an account&apos;s Assets or choose Subscription based to makes renewals based off of subscriptions created from a quote. --></help>
+        <label><!-- Renewal Model --></label>
+        <name>SBQQ__RenewalModel__c</name>
+        <picklistValues>
+            <masterLabel>Asset Based</masterLabel>
+            <translation><!-- Asset Based --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract Based</masterLabel>
+            <translation><!-- Contract Based --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Use &quot;Same&quot; to keep the same price paid last time. Use &quot;List&quot; to use current list price. Use &quot;Uplift&quot; to use the price paid last time plus some uplift. --></help>
+        <label><!-- Renewal Pricing Method --></label>
+        <name>SBQQ__RenewalPricingMethod__c</name>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation><!-- List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Same</masterLabel>
+            <translation><!-- Same --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uplift</masterLabel>
+            <translation><!-- Uplift --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label><!-- Enterprise Account Manager --></label>
         <name>SSC__c</name>
         <relationshipLabel><!-- Accounts (Enterprise Account Manager) --></relationshipLabel>
@@ -4425,11 +4516,26 @@ Grow - Potential for big opp;Partner choosing platform --></help>
         </sections>
     </layouts>
     <layouts>
-        <layout>Sales Marketing Client Account</layout>
+        <layout>Sales Account Layout</layout>
         <sections>
-            <label><!-- Address --></label>
-            <section>Address</section>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
         </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Qualifier Details --></label>
+            <section>Qualifier Details</section>
+        </sections>
+        <sections>
+            <label><!-- Store and Revenue Detail --></label>
+            <section>Store and Revenue Detail</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sales Marketing Client Account</layout>
         <sections>
             <label><!-- Channel Partner --></label>
             <section>Channel Partner</section>
@@ -4437,6 +4543,10 @@ Grow - Potential for big opp;Partner choosing platform --></help>
         <sections>
             <label><!-- Client Experience --></label>
             <section>Client Experience</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
         </sections>
         <sections>
             <label><!-- Datanyze Data --></label>
@@ -4459,16 +4569,16 @@ Grow - Potential for big opp;Partner choosing platform --></help>
             <section>Misc</section>
         </sections>
         <sections>
+            <label><!-- Partner Approval --></label>
+            <section>Partner Approval</section>
+        </sections>
+        <sections>
             <label><!-- Qualifier Details --></label>
             <section>Qualifier Details</section>
         </sections>
         <sections>
             <label><!-- Store and Revenue Detail --></label>
             <section>Store and Revenue Detail</section>
-        </sections>
-        <sections>
-            <label><!-- Totango Insights --></label>
-            <section>Totango Insights</section>
         </sections>
     </layouts>
     <layouts>
@@ -4609,6 +4719,14 @@ Grow - Potential for big opp;Partner choosing platform --></help>
     <webLinks>
         <label><!-- Round_Robin --></label>
         <name>Round_Robin</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Assets --></label>
+        <name>SBQQ__Amend_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Renew_Assets --></label>
+        <name>SBQQ__Renew_Assets</name>
     </webLinks>
     <webLinks>
         <label><!-- Send_Survey --></label>

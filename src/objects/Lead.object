@@ -7213,7 +7213,6 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <label>Contact form leads</label>
         <sharedTo>
             <role>Direct_LDR_Inbound</role>
-            <role>Outbound_Sales_II</role>
             <role>SystemAdministrator</role>
         </sharedTo>
     </listViews>
@@ -7238,6 +7237,28 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <columns>LEAD.UNREAD</columns>
         <filterScope>Mine</filterScope>
         <label>My Leads</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Promotional_Leads</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.STATE</columns>
+        <columns>LEAD.EMAIL</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LEAD.UNREAD</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Promotional Leads</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Acquisition_Leader</roleAndSubordinatesInternal>
+            <roleAndSubordinatesInternal>Direct_LDR_Inbound</roleAndSubordinatesInternal>
+            <roleAndSubordinatesInternal>Enterprise_Leader</roleAndSubordinatesInternal>
+            <roleAndSubordinatesInternal>Enterprise_Sales</roleAndSubordinatesInternal>
+            <roleAndSubordinatesInternal>Outbound_II_Leader</roleAndSubordinatesInternal>
+            <roleAndSubordinatesInternal>Outbound_Sales_I</roleAndSubordinatesInternal>
+            <roleAndSubordinatesInternal>Partner_Leader</roleAndSubordinatesInternal>
+        </sharedTo>
     </listViews>
     <listViews>
         <fullName>Partner_Record_Leads</fullName>
@@ -12208,26 +12229,21 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <customTabListAdditionalFields>LEAD.COMPANY</customTabListAdditionalFields>
         <customTabListAdditionalFields>LEAD.PHONE</customTabListAdditionalFields>
         <customTabListAdditionalFields>LEAD.EMAIL</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Trial_Count__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>MBAAccountID__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>CORE.USERS.ALIAS</customTabListAdditionalFields>
         <customTabListAdditionalFields>LEAD.LAST_ACTIVITY</customTabListAdditionalFields>
         <listViewButtons>qbdialer__Create_List</listViewButtons>
         <listViewButtons>qbdialer__Manage_Lists</listViewButtons>
         <listViewButtons>qbdialer__Launch_Click_to_Call</listViewButtons>
-        <listViewButtons>ToutApp__Push_to_Tout</listViewButtons>
         <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>LEAD.COMPANY</lookupDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>LEAD.COMPANY</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>LEAD.PHONE</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>LEAD.MOBILE_PHONE</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>00N1300000BQufo</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>00N1300000BQuft</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>00N1300000BQufy</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>00N1300000BQug3</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>00N1300000BQufj</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>00N1300000BQs2L</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>MBA_Phone_1__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>MBA_Phone_2__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Sales_Phone__c</lookupPhoneDialogsAdditionalFields>
         <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LEAD.COMPANY</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LEAD.PHONE</searchResultsAdditionalFields>
@@ -12235,8 +12251,6 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <searchResultsAdditionalFields>LEAD.CREATED_DATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LEAD.LEAD_SOURCE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Stage__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LDR_Rating__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LEAD.STATUS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>Private</sharingModel>

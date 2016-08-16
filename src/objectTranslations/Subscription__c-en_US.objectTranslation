@@ -163,6 +163,11 @@
         <name>BI_This_Month_s_Revenue__c</name>
     </fields>
     <fields>
+        <help><!-- The size of the BMP Subscription ID value --></help>
+        <label><!-- BMP Subscription ID Length --></label>
+        <name>BMP_Subscription_ID_Length__c</name>
+    </fields>
+    <fields>
         <label><!-- BMP Subscription ID --></label>
         <name>BMP_Subscription_ID__c</name>
     </fields>
@@ -478,6 +483,11 @@
     <fields>
         <label><!-- zCoupon Code --></label>
         <name>CouponCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows the created date time rounded into its nearest quarter-hour.  Used for identifying records created within a similar timeframe --></help>
+        <label><!-- Created Date Rounded Text --></label>
+        <name>Created_Date_Rounded_Text__c</name>
     </fields>
     <fields>
         <help><!-- Formula needed to show specific time the sub was created to troubleshoot MBA syncing issues --></help>

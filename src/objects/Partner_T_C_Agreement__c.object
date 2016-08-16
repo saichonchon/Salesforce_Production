@@ -46,7 +46,7 @@
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <deploymentStatus>Deployed</deploymentStatus>
+    <deploymentStatus>InDevelopment</deploymentStatus>
     <description>PRM Portal terms and conditions for Channel Partners</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
@@ -63,7 +63,6 @@
         <externalId>false</externalId>
         <label>Accepted By</label>
         <referenceTo>Contact</referenceTo>
-        <relationshipLabel>Partner T&amp;C Agreements</relationshipLabel>
         <relationshipName>Partner_T_C_Agreements</relationshipName>
         <required>true</required>
         <trackHistory>false</trackHistory>
@@ -86,7 +85,6 @@
         <inlineHelpText>Partner Account that has accepted the T&amp;C record</inlineHelpText>
         <label>Account</label>
         <referenceTo>Account</referenceTo>
-        <relationshipLabel>Partner T&amp;C Agreements</relationshipLabel>
         <relationshipName>Partner_T_C_Agreements</relationshipName>
         <relationshipOrder>0</relationshipOrder>
         <reparentableMasterDetail>false</reparentableMasterDetail>
@@ -100,7 +98,6 @@
         <externalId>false</externalId>
         <label>Terms &amp; Conditions</label>
         <referenceTo>Terms_Conditions__c</referenceTo>
-        <relationshipLabel>Partner T&amp;C Agreements</relationshipLabel>
         <relationshipName>Partner_T_C_Agreements</relationshipName>
         <relationshipOrder>1</relationshipOrder>
         <reparentableMasterDetail>false</reparentableMasterDetail>
@@ -109,7 +106,7 @@
         <type>MasterDetail</type>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
     </fields>
-    <label>Partner T&amp;C Agreement</label>
+    <label>zPartner T&amp;C Agreement</label>
     <nameField>
         <displayFormat>PTCA-{0}</displayFormat>
         <label>Partner T&amp;C Agreement Name</label>

@@ -52,6 +52,7 @@
     </columns>
     <description>MTD tracking of all demo opps created</description>
     <filter>
+        <booleanFilter>(1 OR 3) and 2</booleanFilter>
         <criteriaItems>
             <column>Opportunity$Campaign.Parent.Parent</column>
             <operator>contains</operator>
@@ -61,6 +62,11 @@
             <column>Opportunity$CreatedDate</column>
             <operator>equals</operator>
             <value>THIS_MONTH</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Primary_Campaign_Name__c</column>
+            <operator>contains</operator>
+            <value>mkt.promotion</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>
@@ -80,6 +86,7 @@
         <value>1</value>
     </params>
     <reportType>Opportunities_with_Team_Member__c</reportType>
+    <roleHierarchyFilter>SystemAdministrator</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>false</showDetails>
     <timeFrameFilter>

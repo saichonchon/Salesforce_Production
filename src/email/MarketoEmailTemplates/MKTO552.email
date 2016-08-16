@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html><head>
+<title></title>
+
+<style type="text/css">
+            body {
+                margin:0;
+                padding:0;
+                background: #ffffff;
+
+            }
+            table {
+                border-collapse: collapse;
+            }
+            p {
+                margin: 0 0 10px 0;
+            }
+            .msgicon{position:relative;top:8px;}
+            .applelinksheader a {
+                text-decoration: none; 
+                color: #363636 !important;
+            }
+
+            .applelinks a {
+                text-decoration: none; 
+                color: #777777 !important;
+            }
+
+                @media (max-width : 480px) {
+                /*@media only screen and (max-device-width: 480px) {*/
+                
+                    .bodyWidth, #TopContainer, #LogoContainer {
+                        width: 100% !important;
+                    }
+
+                    /* Media query for mobile*/
+
+                    @media only screen and (max-width: 480px)  {
+                        
+                        h2,h3,h4 {text-align:center;}
+                        .button{margin:auto !important;}
+                        .msgicon{display:block;margin:auto;padding-bottom: 10px}
+                        .textcenter{text-align:center;}
+                        .mobile-block{display:block; padding:15px !important; text-align: center !important}
+                        .mobile-padding{padding: 25px 25px !important}
+                        .no-padding{padding:0px !important;}
+                        .hidemobile {
+                            display: none;
+                        }
+                     .bodyWidth{max-width:320px;padding:0px !important;}
+                      .MiddleContainer{width:320px;padding:0px;margin:0px;}
+                    }
+
+
+                    #Logo {
+                        text-align: center !important;
+                    }
+
+                    .applelinksheader a {
+                        text-decoration: none; 
+                        color: #363636 !important;
+                    }
+                    
+                    .applelinks a {
+                        text-decoration: none; 
+                        color: #777777 !important;
+                    }
+
+                }
+</style>
+</head>
+<body style="padding-top:20px; margin:0 0 0 0; display:block; background-color:#ffffff; -webkit-text-size-adjust:none; font-family:Helvetica, Arial, sans-serif; " bgcolor="#FFFFFF" class="removepaddingcta3" ><!-- Preview text (text which appears right after subject) -->
+<div class="mktEditable" id="Preview-text" style="display:none; color:#ffffff; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; " >Select one of our payment gateways. Call 1-844-632-8912 for assistance on selecting a BigCommerce plan today.</div>
+<table align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="margin:0 auto; background:#ffffff; " ><tr ><td ><!-- Logo Block -->
+<table width="600" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" style="background:#ffffff">
+<tr>
+<td valign="top" id="TopContainer" style="padding:25px 25px 25px 0px;">
+<table border="0" cellspacing="0" cellpadding="0" align="left" width="270" id="LogoContainer">
+<tr>
+<td valign="top" align="left" id="Logo"><a href="http://www.bigcommerce.com"><img src="http://grow.bigcommerce.com/rs/695-JJT-333/images/BIG-3001R-Templates_GeneralLP_logo.png" alt="Bigcommerce" width="185" height="45" border="0"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- Main Section -->
+<table width="600" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" style="background:#ffffff; " ><tr ><td class="mobile-block" width="300" valign="top" align="left" style="padding:25px 25px 25px 0px; " ><div class="mktEditable" id="intro" ><p><a style="font-weight: 400; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 15px; color: #4b70fc; text-decoration: none;" href="https://login.bigcommerce.com/login?utm_medium=email&amp;utm_source=Trial+Onboarding&amp;utm_campaign=Experienced&amp;utm_term=Day+7+Email+6&amp;utm_content=Control+Panel" target="_blank">Log in to your control panel</a></p>
+</div>
+<div class="mktEditable" id="header" ><h2 style="font-weight: 300; font-family: 'Open Sans Light', Helvetica, Arial, sans-serif; font-size: 25px; color: #424d55;">Great credit card rates built in<br></h2>
+</div>
+<div class="mktEditable" id="subheader" ></div>
+<div class="mktEditable" id="cta" ><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; display: inline-block;">
+<tbody>
+<tr>
+<td valign="middle" align="center" height="40" width="186" style="background: #4b70fc; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; padding: 0 10px 0 10px; border-radius: 4px;">
+<p style="margin: 0 0; color: #ffffff;"><a href="https://login.bigcommerce.com/deep-links/index.php?ToDo=viewPaymentMethods#" style="color: #ffffff; text-decoration: none; display: block;" target="_blank">VIEW PAYMENT GATEWAYS</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td class="mobile-block" width="top" valign="middle" align="right" ><div class="mktEditable" id="image" ><p><img src="http://grow.bigcommerce.com/rs/695-JJT-333/images/PaymentGateways.png" alt="Check out our payment options" width="350"></p>
+</div>
+</td>
+</tr>
+</table>
+<!-- Bottom Copy -->
+<table width="600" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" style="background:#ffffff; " bgcolor="#FFFFFF" ><tr ><td valign="top" align="left" class="mobile-padding" style="padding:25px 0px 40px 0px; font-family:'Open Sans Light', Helvetica, Arial, sans-serif; font-size:15px; color:#424d55; " ><div class="mktEditable" id="body" ><h3>More payment options, better rates</h3>
+<p>When it comes to accepting payments, no other platform gives you better options than BigCommerce. Your store seamlessly integrates with all the leading payment solutions, including PayPal powered by Braintree, Square, Stripe, WorldPay, First Data, Cybersource, Authorize.net and many more.<br>
+<br>
+You&rsquo;ll get access to the latest payment technology to improve conversion, plus special pre-negotiated card processing rates to reduce costs.<br></p>
+<p><br>
+<a style="color: #4b70fc; text-decoration: none;" href="https://login.bigcommerce.com/deep-links/index.php?ToDo=viewPaymentMethods#" target="_blank">Find a payment gateway today &raquo;</a><br></p>
+</div>
+</td>
+</tr>
+</table>
+<!-- Help Section -->
+<table width="600" border="0" cellspacing="0" cellpadding="0" class="bodyWidth help-section" style="background:#ffffff" bgcolor="#FFFFFF">
+<tr>
+<td class="no-padding" valign="top" align="left">
+<table border="0" cellspacing="0" cellpadding="0" width="600" class="MiddleContainer" bgcolor="#FFFFFF" style="background: #ffffff">
+<tr>
+<td valign="top" style="padding:20px; background:#e2e7e7">
+<p style="text-align:center; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size:15px; color: #424d55;"><strong>Have questions about payment gateways?</strong></p>
+<p style="text-align:center; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size:15px; color: #424d55;">Read our <a style="color: #4b70fc; text-decoration: none;" href="https://support.bigcommerce.com/articles/Public/Payments-Overview/?utm_medium=email&utm_source=Trial+Onboarding&utm_campaign=Experienced&utm_term=Day+7+Email+6&utm_content=Gateway+Overview" target="_blank">Payment Gateway Overview</a> for step-by-step instructions<br>
+or call <a href="tel:+18446328912" style="text-decoration: none;"><span style="color: #4b70fc;">1-844-632-8912</span></a>.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- Footer -->
+<table width="600" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" style="background:#ffffff" bgcolor="#FFFFFF">
+<tr>
+<td valign="top" align="left" style="padding:25px 25px; font-family: 'Open Sans Light', Helvetica, Arial, sans-serif; font-size: 12px; color: #777777">
+<p style="text-align:center; font-family: 'Open Sans Light', Helvetica, Arial, sans-serif; font-size: 12px; color: #777777">&#169; Copyright 2003 - 2016 Bigcommerce Pty. Ltd. Shopping Cart software<br>
+<span class="applelinks">11305 Four Points Dr., Building 2, Floor 3 Austin TX 78726</span><br>
+<a href="http://grow.bigcommerce.com/manage-your-email-preferences.html?utm_medium=email&utm_source=Trial+Onboarding&utm_campaign=Experienced&utm_term=Day+7+Email+6&utm_content=Email+Preferences" style="text-decoration: none;"><span style="color:#4b70fc">Click here</span></a> to update your email preferences</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

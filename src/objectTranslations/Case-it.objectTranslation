@@ -2633,11 +2633,6 @@ Referral : needs booking --></help>
         <name>Improper_Escalation__c</name>
     </fields>
     <fields>
-        <label><!-- zIncident --></label>
-        <name>Incident__c</name>
-        <relationshipLabel><!-- Cases --></relationshipLabel>
-    </fields>
-    <fields>
         <label><!-- Insight Service 1st Invoice Amount --></label>
         <name>Insight_Service_1st_Invoice_Amount__c</name>
     </fields>

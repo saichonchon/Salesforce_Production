@@ -51,10 +51,16 @@
         <field>Opportunity$LeadSource</field>
     </columns>
     <filter>
+        <booleanFilter>1 OR 2</booleanFilter>
         <criteriaItems>
             <column>Opportunity$Campaign.Parent.Parent</column>
             <operator>contains</operator>
             <value>demo</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Primary_Campaign_Name__c</column>
+            <operator>contains</operator>
+            <value>MKT.Promotion</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>

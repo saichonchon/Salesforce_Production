@@ -1549,11 +1549,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Incident__c</field>
-            <table>Account.Cases</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Intersire_Staging_URL__c</field>
             <table>Account.Cases</table>
         </columns>

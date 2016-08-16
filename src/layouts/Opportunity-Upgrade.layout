@@ -33,7 +33,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Store_Opportunity__c</field>
+                <field>ParentOpportunity__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>

@@ -789,6 +789,16 @@ SUBSTITUTE(SUBSTITUTE(FirstName, &quot; &quot;, &quot;+&quot;), &quot;&amp;&quot
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>Do_Not_Merge__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Typically this flag is set if the contact is a portal user AND their duplicate is also a portal user</inlineHelpText>
+        <label>Do Not Merge</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Duplicate__c</fullName>
         <defaultValue>false</defaultValue>
         <description>Is this a duplicate of another contact in Salesforce?(auto based on email).</description>
@@ -1101,6 +1111,19 @@ SUBSTITUTE(SUBSTITUTE(FirstName, &quot; &quot;, &quot;+&quot;), &quot;&amp;&quot
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MBA_Client_ID_Size__c</fullName>
+        <externalId>false</externalId>
+        <formula>LEN( MBAClientID__c )</formula>
+        <inlineHelpText>The number of characters in the MBA Client ID field</inlineHelpText>
+        <label>MBA Client ID Size</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
         <unique>false</unique>
     </fields>
     <fields>
@@ -2613,7 +2636,6 @@ HYPERLINK(&quot;/apex/mkto_si__Contact_Full_List?view=IM&amp;id=&quot; &amp; Id,
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>CONTACT.PHONE1</customTabListAdditionalFields>
         <listViewButtons>qbdialer__Launch_Click_to_Call</listViewButtons>
-        <listViewButtons>ToutApp__Push_to_Tout</listViewButtons>
         <listViewButtons>qbdialer__Create_List</listViewButtons>
         <listViewButtons>qbdialer__Manage_Lists</listViewButtons>
         <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
@@ -2632,17 +2654,14 @@ HYPERLINK(&quot;/apex/mkto_si__Contact_Full_List?view=IM&amp;id=&quot; &amp; Id,
         <lookupFilterFields>CONTACT.ADDRESS2_CITY</lookupFilterFields>
         <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE1</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE3</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE4</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE5</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE6</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>00N1300000BQugc</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>00N1300000BQugh</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>00N1300000BQugm</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>00N1300000BQugr</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>00N1300000BQugX</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>MBA_Phone_1__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>MBA_Phone_2__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Sales_Phone__c</lookupPhoneDialogsAdditionalFields>
         <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Primary_MBA_Contact__c</searchResultsAdditionalFields>

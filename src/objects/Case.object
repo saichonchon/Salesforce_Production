@@ -1093,11 +1093,6 @@
             <isRequired>false</isRequired>
         </displayedFields>
         <displayedFields>
-            <field>Incident__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
             <field>Subject</field>
             <isFieldManaged>true</isFieldManaged>
             <isRequired>true</isRequired>
@@ -4981,20 +4976,6 @@ NULL)</formula>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Incident__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <description>Support : link to the incident record (if associated); used to group cases that are related to the same issue</description>
-        <externalId>false</externalId>
-        <label>zIncident</label>
-        <referenceTo>Incident__c</referenceTo>
-        <relationshipLabel>Cases</relationshipLabel>
-        <relationshipName>Cases</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Insight_Service_1st_Invoice_Amount__c</fullName>
@@ -13141,7 +13122,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             <group>Billing</group>
             <group>Managers</group>
             <role>Outbound_Sales_I</role>
-            <role>Outbound_Sales_II</role>
         </sharedTo>
     </listViews>
     <listViews>
@@ -13473,7 +13453,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         </filters>
         <label>My Closed Support Cases</label>
         <sharedTo>
-            <role>Client_Success_Escalations_Manager</role>
             <role>Client_Success_Manager_Use</role>
             <role>Client_Success_Rep_Use</role>
             <role>SystemAdministrator</role>
@@ -13537,7 +13516,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         </filters>
         <label>My Open Support Cases</label>
         <sharedTo>
-            <role>Client_Success_Escalations_Manager</role>
             <role>Client_Success_Manager_Use</role>
             <role>Client_Success_Rep_Use</role>
             <role>SystemAdministrator</role>
@@ -14072,7 +14050,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <label>Support: Design Support</label>
         <queue>Design_Support</queue>
         <sharedTo>
-            <roleAndSubordinatesInternal>Client_Success_Escalations_Manager</roleAndSubordinatesInternal>
             <roleAndSubordinatesInternal>Client_Success_Manager_Use</roleAndSubordinatesInternal>
             <roleAndSubordinatesInternal>Client_Success_Rep_Use</roleAndSubordinatesInternal>
         </sharedTo>
@@ -14415,7 +14392,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         </filters>
         <label>Support: Tier 2</label>
         <sharedTo>
-            <role>Client_Success_Escalations_Manager</role>
             <role>Client_Success_Leader</role>
             <role>Client_Success_Manager_Use</role>
             <role>Client_Success_Rep_Use</role>
@@ -14480,7 +14456,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <sharedTo>
             <role>Outbound_II_Leader</role>
             <role>Outbound_Sales_I</role>
-            <role>Outbound_Sales_II</role>
             <role>Shared_Services</role>
             <role>SystemAdministrator</role>
         </sharedTo>
@@ -14511,7 +14486,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <sharedTo>
             <role>Outbound_II_Leader</role>
             <role>Outbound_Sales_I</role>
-            <role>Outbound_Sales_II</role>
             <role>Shared_Services</role>
             <role>SystemAdministrator</role>
         </sharedTo>

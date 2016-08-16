@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <acrossGroupingContext>Case.Category__c</acrossGroupingContext>
+        <calculatedFormula>RowCount/PARENTGROUPVAL(RowCount, ORIGIN, COLUMN_GRAND_SUMMARY)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>ORIGIN</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% of Total Contacts by Category</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <acrossGroupingContext>Case.Category__c</acrossGroupingContext>
+        <calculatedFormula>Case.Minutes_Open__c:SUM/PARENTGROUPVAL(Case.Minutes_Open__c:SUM, ORIGIN, COLUMN_GRAND_SUMMARY)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA3</developerName>
+        <downGroupingContext>ORIGIN</downGroupingContext>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% of Time Open</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <acrossGroupingContext>Case.Category__c</acrossGroupingContext>
+        <calculatedFormula>Case.Total_Case_Handle_Time__c:SUM/PARENTGROUPVAL(Case.Total_Case_Handle_Time__c:SUM, ORIGIN, COLUMN_GRAND_SUMMARY)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA4</developerName>
+        <downGroupingContext>ORIGIN</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% of Handle Time</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_41355309</developerName>
+        <masterLabel>Plans</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Case.Bigcommerce_Plan__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Enterprise Plan - Tier 10</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Plan - Tier 11</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Plan - Tier 12</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Plan - Tier 13</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Plan - Tier 14</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Plan - Tier 15</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Plan - Tier 16</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Plan - Tier 17</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Plan - Tier 18</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Plan - Tier 19</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>STORE-ENTERPRISE-NP-MONTHLY-T10</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>STORE-ENTERPRISE-NP-MONTHLY-T11</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>STORE-ENTERPRISE-NP-MONTHLY-T12</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>STORE-ENTERPRISE-NP-MONTHLY-T13</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>STORE-ENTERPRISE-NP-MONTHLY-T15</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>STORE-ENTERPRISE-NP-MONTHLY-T17</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>STORE-ENTERPRISE-NP-MONTHLY-T18</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>STORE-ENTERPRISE-NP-QUARTERLY-T13</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>STORE-ENTERPRISE-NP-YEARLY-T10</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bigcommerce Enterprise Plan Plus SLA</sourceValue>
+            </sourceValues>
+            <value>Enterprise 10+</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Case.Total_Case_Handle_Time__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND (4 OR (5 AND 6))</booleanFilter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Case.Client_Success</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>REASON</column>
+            <operator>notEqual</operator>
+            <value>,Trash/Spam,support@bigcommerce.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <operator>equals</operator>
+            <value>Chat,Phone,Web</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>REASON</column>
+            <operator>equals</operator>
+            <value>Shipping</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>REASON</column>
+            <operator>equals</operator>
+            <value>Order Management</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Category__c</column>
+            <operator>equals</operator>
+            <value>Create Shipment,Invoices &amp; Packing Slips,Label Printing</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>REASON</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Category__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ORIGIN</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_41355309</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Shipping &amp; Orders - Jordan</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseCustomEntity$Case_Time_Worked__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <endDate>2016-06-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-01-01</startDate>
+    </timeFrameFilter>
+</Report>

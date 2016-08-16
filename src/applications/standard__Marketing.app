@@ -9,7 +9,6 @@
     <tab>standard-report</tab>
     <tab>standard-Dashboard</tab>
     <tab>standard-GoogleDocs</tab>
-    <tab>Admin_Request__c</tab>
     <tab>standard-ContentSearch</tab>
     <tab>Call_Center_Settings</tab>
 </CustomApplication>

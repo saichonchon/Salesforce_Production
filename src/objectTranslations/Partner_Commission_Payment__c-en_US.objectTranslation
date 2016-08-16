@@ -9,6 +9,11 @@
         <value>Partner Commission Payments</value>
     </caseValues>
     <fields>
+        <help><!-- Was the payment to the partner made during the current month? --></help>
+        <label><!-- Current Month --></label>
+        <name>Current_Month__c</name>
+    </fields>
+    <fields>
         <help><!-- Notes for the transaction --></help>
         <label><!-- Custom Note --></label>
         <name>Custom_Note__c</name>
@@ -33,6 +38,16 @@
         <label><!-- Partner Account --></label>
         <name>Partner_Account__c</name>
         <relationshipLabel><!-- Partner Commission Payments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The month that the payment was made to the partner --></help>
+        <label><!-- Payment Month --></label>
+        <name>PaymentMonth__c</name>
+    </fields>
+    <fields>
+        <help><!-- The year that the payment was made to the partner --></help>
+        <label><!-- Payment Year --></label>
+        <name>PaymentYear__c</name>
     </fields>
     <fields>
         <help><!-- The amount paid to the partner --></help>

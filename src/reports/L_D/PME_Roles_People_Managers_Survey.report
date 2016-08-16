@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>lmscons__Quiz_Statistic__c$lmscons__Learner__c</field>
+    </columns>
+    <columns>
+        <field>lmscons__Quiz_Statistic__c$lmscons__Long_Answer__c</field>
+    </columns>
+    <description>Answers to the SKILL PME - Role &amp; Competencies of People Managers - Post Course Survey</description>
+    <filter>
+        <criteriaItems>
+            <column>lmscons__Quiz_Statistic__c$lmscons__Quiz__c</column>
+            <operator>equals</operator>
+            <value>SKILL PME - Role &amp; Competencies of People Managers - Post Course Survey</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>lmscons__Quiz_Statistic__c$lmscons__Question__c.lmscons__Question__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>PME - Roles... People Managers Survey</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Quiz_Statistics_CUSTOM__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>lmscons__Quiz_Statistic__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -46,7 +46,7 @@
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <deploymentStatus>Deployed</deploymentStatus>
+    <deploymentStatus>InDevelopment</deploymentStatus>
     <description>Holds the Terms &amp; Conditions for any use</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
@@ -100,7 +100,7 @@
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
     </fields>
-    <label>Terms &amp; Conditions</label>
+    <label>zTerms &amp; Conditions</label>
     <nameField>
         <displayFormat>TC-{0}</displayFormat>
         <label>Terms &amp; Conditions</label>

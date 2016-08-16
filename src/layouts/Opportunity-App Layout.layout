@@ -130,6 +130,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>Multi_User_Enabled__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>App_Public_Website_Listing__c</field>
             </layoutItems>
         </layoutColumns>

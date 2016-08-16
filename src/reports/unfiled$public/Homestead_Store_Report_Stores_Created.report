@@ -13,6 +13,15 @@
         <field>FK_NAME</field>
     </columns>
     <columns>
+        <field>FK_ACC_ID</field>
+    </columns>
+    <columns>
+        <field>CUST_ID</field>
+    </columns>
+    <columns>
+        <field>CUST_LAST_UPDATE</field>
+    </columns>
+    <columns>
         <field>FK_$Account.Active_MRR_Value_Opp__c</field>
     </columns>
     <columns>

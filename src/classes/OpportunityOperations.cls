@@ -70,7 +70,7 @@ public map<Id,Contact> querycontact(Set<Id> setAccid)
     Set<Id> mbaContacts = new Set<Id>();
     
     Map<Id,Contact> mpAccountIdToContact = new Map<Id,Contact>();
-    for(Contact obj:[SELECT Id, AccountId, Name, MBAAccountID__c,Email,Phone, Primary_MBA_Contact__c, Type__C From CONTACT WHERE AccountId IN:setAccid order by createddate desc])
+    for(Contact obj:[SELECT Id, AccountId, Account.Name, Name, MBAAccountID__c,Email,Phone, Primary_MBA_Contact__c, Type__C From CONTACT WHERE AccountId IN:setAccid order by createddate desc])
     {
    // if it is a primary contact this is the One !!      
           if (obj.Type__c == 'Primary Contact')
@@ -190,8 +190,15 @@ public void BeforeInsert(List<Opportunity> lstopp)
 // set the name on the opportunity
         	
             if (mpAccountIdToContact.containskey(lstopp[i].AccountID))  
-            {     
-               lstopp[i].Name = setOppName(mpAccountIdToContact.get(lstopp[i].AccountId).Name, lstopp[i].MBASubscriptionID__c) ;  
+            {
+                try 
+                {
+                    lstopp[i].Name = setOppName(mpAccountIdToContact.get(lstopp[i].AccountId).Account.Name, lstopp[i].MBASubscriptionID__c) ;  
+                }
+                catch (Exception e)
+                {
+                    System.Debug(e);
+                }
                
             }
         }

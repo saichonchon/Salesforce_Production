@@ -84,13 +84,14 @@
         <description>When a contact is added as a campaign member for a demo request, this date is set.  Create a task for the contact owner.
 For BAP-3811</description>
         <formula>AND(  
-NOT(ISBLANK(Demo_Requested_Date__c)),  
+NOT(ISBLANK(Demo_Requested_Date__c)),
+Owner.Id &lt;&gt; &apos;005a000000AsxTo&apos;, /* The BigCommerce Team */
 OR(
 Owner.Profile.Id = &apos;00e13000000jUNJ&apos;, /* Lead Development Rep */     
 Owner.Profile.Id = &apos;00e130000024OSc&apos;, /* Sales Rep */     
 Owner.Profile.Id = &apos;00e13000000jUyt&apos;, /* Sales Rep - Dial on Opps */     
-Owner.Profile.Id = &apos;00e130000024OSX&apos;) /* Sales Leader */ ,
-Owner.Id != &apos;005a000000AsxTo&apos; /* The BigCommerce Team */
+Owner.Profile.Id = &apos;00e130000024OSX&apos;  /* Sales Leader */
+)
 )</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>

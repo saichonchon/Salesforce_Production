@@ -389,6 +389,14 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>Closed_Lost_Reason_to_Null</fullName>
+        <field>Closed_Lost_Reason__c</field>
+        <name>Closed Lost Reason to Null</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Copy_Store_URL_TEXT</fullName>
         <description>Update Store URL text value</description>
         <field>Store_URL_TEXT__c</field>
@@ -413,6 +421,15 @@
         <field>Closed_Lost_Reason__c</field>
         <literalValue>Auto Closed Lost</literalValue>
         <name>Set CL reason to Auto Closed Lost</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Historical_DE_Eligible_True</fullName>
+        <field>Historical_Distribution_Engine_Eligible__c</field>
+        <literalValue>1</literalValue>
+        <name>Historical DE Eligible = True</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
@@ -504,6 +521,15 @@
         <name>Set Revshare signed date</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Stage_to_Qualify</fullName>
+        <field>StageName</field>
+        <literalValue>Qualify</literalValue>
+        <name>Stage to Qualify</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
@@ -716,6 +742,25 @@
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
+        <fullName>Close Lost canceled trials owned by BCT</fullName>
+        <active>true</active>
+        <description>Automatically close/lost trial opportunities owned by the Bigcommerce team or Marketing test user</description>
+        <formula>((OwnerId  =&apos;005a000000AsxTo&apos;) || (OwnerId  =&apos;0051300000BTCyk&apos;)) &amp;&amp; ( ISPICKVAL(Status__c,&apos;Cancelled&apos;) ) &amp;&amp; RecordTypeId =&apos;01213000000AUty&apos;</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Field_Update_Closed_Lost_Reason</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <actions>
+                <name>Update_Stage_to_Closed_Lost</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <timeLength>33</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
         <fullName>ClosedWon Opportunity Close Date</fullName>
         <actions>
             <name>FieldUpdate_CloseDate</name>
@@ -746,14 +791,14 @@
         <description>When a contact is added as a campaign member for a demo request, this date is set. Create a task for the contact owner. 
 For BAP-3811</description>
         <formula>AND(  
-NOT(ISBLANK(Demo_Requested_Date__c)),  
+NOT(ISBLANK(Demo_Requested_Date__c)), 
+Owner.Id &lt;&gt; &apos;005a000000AsxTo&apos;, /* The BigCommerce Team */ 
 OR(
 Owner.Profile.Id = &apos;00e13000000jUNJ&apos;, /* Lead Development Rep */  
 Owner.Profile.Id = &apos;00e130000024OSc&apos;, /* Sales Rep */  
 Owner.Profile.Id = &apos;00e13000000jUyt&apos;, /* Sales Rep - Dial on Opps */  
 Owner.Profile.Id = &apos;00e130000024OSX&apos;  /* Sales Leader */ 
-),
-Owner.Id != &apos;005a000000AsxTo&apos; /* The BigCommerce Team */
+)
 )</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
@@ -774,6 +819,17 @@ OR(
 IsWon = False &amp;&amp;  Projected__c = True,
 IsWon = True &amp;&amp; Amount &gt; 500
 )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Historical DE Eligible</fullName>
+        <actions>
+            <name>Historical_DE_Eligible_True</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Checks the Historical Distribution Engine Eligible field if the record was ever eligible, even if it no longer meets eligibility criteria.</description>
+        <formula>AND (  Do_Not_Call__c = false,  Contact_Bad_Phone_Number__c = false,  Contact__r.Phone != NULL,  NOT CONTAINS(Contact__r.Email,&apos;@bigcommerce.com&apos;),  NOT ISPICKVAL(Experience__c,&apos;I\&apos;m doing research as a student, app developer or job applicant&apos;)  )</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
@@ -838,6 +894,33 @@ MonthlyRecurringRevenue__c &gt; 0)) &amp;&amp;
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
+        <fullName>Move Stage to Qualify</fullName>
+        <actions>
+            <name>Closed_Lost_Reason_to_Null</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Owner_The_BigCommerce_Team</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Stage_to_Qualify</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Stage_Change_Notification_Qualify</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <description>Move Stage from Closed Lost to Qualify when a customer has re-engaged via a demo request</description>
+        <formula>AND( 
+ISCHANGED(Demo_Requested_Date__c),
+NOT ISNULL(Demo_Requested_Date__c),
+ISPICKVAL(StageName, &apos;Closed Lost&apos;)
+)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
         <fullName>Notify Opp Team of Purchased Opp</fullName>
         <actions>
             <name>Email</name>
@@ -860,25 +943,6 @@ MonthlyRecurringRevenue__c &gt; 0)) &amp;&amp;
         </criteriaItems>
         <description>Email the Opportunity Team when a purchase has been made.</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Opp Trial Automatically close%2Flost opportunities owned by the Bigcommerce</fullName>
-        <active>true</active>
-        <description>Automatically close/lost trial opportunities owned by the Bigcommerce team or Marketing test user</description>
-        <formula>((OwnerId  =&apos;005a000000AsxTo&apos;) || (OwnerId  =&apos;0051300000BTCyk&apos;)) &amp;&amp; ( ISPICKVAL(Status__c,&apos;Cancelled&apos;) ) &amp;&amp; RecordTypeId =&apos;01213000000AUty&apos;</formula>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-        <workflowTimeTriggers>
-            <actions>
-                <name>Field_Update_Closed_Lost_Reason</name>
-                <type>FieldUpdate</type>
-            </actions>
-            <actions>
-                <name>Update_Stage_to_Closed_Lost</name>
-                <type>FieldUpdate</type>
-            </actions>
-            <timeLength>33</timeLength>
-            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
-        </workflowTimeTriggers>
     </rules>
     <rules>
         <fullName>Opp%3A Cancellation Notification</fullName>
@@ -1216,7 +1280,7 @@ ispickval( App_Revshare__c , &quot;Signed&quot;)</formula>
             <name>Owner_The_BigCommerce_Team</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <description>Update the Opportunity owner to the bigcommerce team when the opportunity is closed lost</description>
         <formula>AND(
 OR(
@@ -1299,5 +1363,18 @@ OwnerId  &lt;&gt; &apos;005a000000AsxTo&apos; /* The BigCommerce Team */
         <protected>false</protected>
         <status>Not Started</status>
         <subject>**Demo Requested**</subject>
+    </tasks>
+    <tasks>
+        <fullName>Stage_Change_Notification_Qualify</fullName>
+        <assignedTo>api@bigcommerce.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>Customer has re-engaged and requested a demo.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Opportunity.Demo_Requested_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Completed</status>
+        <subject>Stage to Qualify - Re-engaged via Demo Request</subject>
     </tasks>
 </Workflow>

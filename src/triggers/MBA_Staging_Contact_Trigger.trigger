@@ -13,13 +13,32 @@ trigger MBA_Staging_Contact_Trigger on MBA_Staging_Contact__c (before insert, be
             mbc.FirstName__c = DataUtility.truncateString(mbc.FirstName__c, 40);
             if (mbc.LastName__c == null)
             {
-            		mbc.LastName__c = 'Trial';
+                    mbc.LastName__c = 'Trial';
             }
             else 
             {
                 mbc.LastName__c = DataUtility.truncateString(mbc.LastName__c, 80);
             }
-        }	
+
+            /**
+             * BAP-4116 - New BMP Accounts not able to get into the Community
+             * Steve O'Neal
+             * 2016-08-15
+             * BMP is not currently passing the Primary MBA Contact field, which is required to grant the person access to the community.
+             * When the type of the contact contains Primary, automatically check off the box for them.
+             */
+            if (mbc.Source__c != null && mbc.Source__c == 'BMP')
+            {
+                if (mbc.Type__c != null && mbc.Type__c.Contains('Primary'))
+                {
+                    mbc.Primary_MBA_Contact__c = true;
+                }
+                else
+                {
+                    mbc.Primary_MBA_Contact__c = false;
+                }
+            }
+        }   
     }
 
 
@@ -61,7 +80,7 @@ trigger MBA_Staging_Contact_Trigger on MBA_Staging_Contact__c (before insert, be
             // Grab all the MBA Contact Ids
             if (mba.MBAClientID__c != null)
             {
-            	stMBAConId.add(mba.MBAClientID__c);
+                stMBAConId.add(mba.MBAClientID__c);
             }
 
             // Grab the original contact ids
@@ -73,7 +92,7 @@ trigger MBA_Staging_Contact_Trigger on MBA_Staging_Contact__c (before insert, be
             // Grab the list of MBA Account Ids
             if (mba.MBAAccountID__c != null)
             {
-            	stAcctId.add(mba.MBAAccountID__c);
+                stAcctId.add(mba.MBAAccountID__c);
             }
         }
 
@@ -94,8 +113,8 @@ trigger MBA_Staging_Contact_Trigger on MBA_Staging_Contact__c (before insert, be
 
         // Create Map of Account and non Salesforce defined keys to help link Contacts with Accounts
         for (Account accLoop : [SELECT MBAAccountID__c, Id 
-        					    FROM Account 
-        					    WHERE MBAAccountID__c IN :stAcctId])
+                                FROM Account 
+                                WHERE MBAAccountID__c IN :stAcctId])
         {
             mpMBAAcctIdToAcctId.put(accLoop.MBAAccountID__c, accLoop.Id);
         }
@@ -155,10 +174,10 @@ trigger MBA_Staging_Contact_Trigger on MBA_Staging_Contact__c (before insert, be
         // Create/Update Subscription records from the staging records -- This updates and syncs the selected records from the MBA Accounts to Accounts object 
         //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         database.Dmloptions dml = new database.Dmloptions();
-    	dml.assignmentRuleHeader.useDefaultRule = false;
-    	dml.emailHeader.triggerUserEmail = false;
-    	dml.optAllOrNone = Subscription_Utility.blnAllOrNone;
-    	
+        dml.assignmentRuleHeader.useDefaultRule = false;
+        dml.emailHeader.triggerUserEmail = false;
+        dml.optAllOrNone = Subscription_Utility.blnAllOrNone;
+        
         SObjectUtils.SyncObjects('MBA_Staging_Contact__c', 'Contact', mpStagingToExisting, dml);
     }
 }

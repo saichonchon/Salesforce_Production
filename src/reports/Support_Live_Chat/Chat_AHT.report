@@ -52,7 +52,7 @@
         <field>LiveChatTranscript$CreatedBy</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Chat AHT</name>
+    <name>Chat AHT - Team Cesa</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -62,6 +62,6 @@
     <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>LiveChatTranscript$RequestTime</dateColumn>
-        <interval>INTERVAL_LASTWEEK</interval>
+        <interval>INTERVAL_LASTMONTH</interval>
     </timeFrameFilter>
 </Report>

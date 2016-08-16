@@ -46,7 +46,7 @@
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <deploymentStatus>Deployed</deploymentStatus>
+    <deploymentStatus>InDevelopment</deploymentStatus>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
@@ -80,7 +80,6 @@
         <externalId>false</externalId>
         <label>Lead</label>
         <referenceTo>Lead</referenceTo>
-        <relationshipLabel>Leads Retrieved</relationshipLabel>
         <relationshipName>Leads_Retrieved</relationshipName>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -102,7 +101,6 @@
         <externalId>false</externalId>
         <label>Opportunity</label>
         <referenceTo>Opportunity</referenceTo>
-        <relationshipLabel>Leads Retrieved</relationshipLabel>
         <relationshipName>Leads_Retrieved</relationshipName>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -146,7 +144,7 @@
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
-    <label>Lead Owner Assignment</label>
+    <label>zLead Owner Assignment</label>
     <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>

@@ -30,6 +30,12 @@
         <field>Lead.Lead_Count__c</field>
     </columns>
     <columns>
+        <field>LEAD_OWNER</field>
+    </columns>
+    <columns>
+        <field>Lead.Owner_Team__c</field>
+    </columns>
+    <columns>
         <field>CAMPAIGN_NAME</field>
     </columns>
     <columns>

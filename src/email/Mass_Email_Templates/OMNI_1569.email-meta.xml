@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>OMNI-1569 Email</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>OMNI-1569</name>
+    <style>freeForm</style>
+    <subject>Case Number: {!Case.CaseNumber} Subject: {!Case.Subject}</subject>
+    <textOnly>******************************************************************
+Case Number: {!Case.CaseNumber}
+Issue Reported: {!Case.Description}
+
+Hello,
+
+We wanted to update you on a recent issue you reported. Stores integrated with Facebook Shop that received approval from Facebook were not syncing products or stalling in the sync process.
+
+This issue has been resolved by our engineering team. Please don&apos;t hesitate to contact us if you have further questions. Technical support is available 24/7:
+
+BigCommerce Support
+http://support.bigcommerce.com/contact
+
+You can reply to this email or to view your case&apos;s status you can go here.
+
+Please do not remove: {!Case.E2CP__Case_Thread_Id__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

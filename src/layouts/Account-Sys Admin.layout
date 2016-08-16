@@ -9,7 +9,6 @@
     <customButtons>Round_Robin</customButtons>
     <customButtons>Qualify</customButtons>
     <excludeButtons>DataDotComClean</excludeButtons>
-    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>DisableCustomerPortalAccount</excludeButtons>
     <excludeButtons>DisablePartnerPortalAccount</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
@@ -489,6 +488,10 @@
                 <behavior>Edit</behavior>
                 <field>App_Send_Rev_Share_Email__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>BMP_Account_ID__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -565,6 +568,11 @@
         </layoutColumns>
         <style>OneColumn</style>
     </layoutSections>
+    <miniLayout>
+        <fields>Name</fields>
+        <fields>ParentId</fields>
+        <fields>MBAAccountID__c</fields>
+    </miniLayout>
     <relatedLists>
         <fields>FULL_NAME</fields>
         <fields>Type__c</fields>

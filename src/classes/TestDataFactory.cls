@@ -867,6 +867,81 @@ global without sharing class TestDataFactory {
     }
 
 
+    ///////////
+    // CASES //
+    ///////////
+
+    /**
+     * Creates a Case
+     * @author Steve O'Neal
+     * @date   2016-08-11
+     * @ticket link       https://jira.bigcommerce.com/browse/BAP-4026
+     * @param  cont       The contact to link the case to
+     * @return            A unique case
+     */
+    private static Case createTestCase(Contact cont)
+    {
+        Case retVal = new Case();
+        String seed1 = String.valueof(MathUtility.RandomInteger(1000, 9999));
+
+        retVal.Reason = 'Test Case - ' + seed1;
+        retVal.Origin = 'Web';
+        retVal.Status = 'New';
+        retVal.Requesting_Department__c = 'Client Success';
+        if (cont != null)
+        {
+            if (cont.AccountId != null)
+            {
+                retVal.AccountId = cont.AccountId;
+                retVal.Account = cont.Account;
+            }
+            retVal.ContactId = cont.Id;
+            retVal.Contact = cont;
+        }
+
+        return retVal;
+
+    }
+
+    /**
+     * Creates a list of unique cases
+     * @author Steve O'Neal
+     * @date   2016-08-11
+     * @ticket link            https://jira.bigcommerce.com/browse/BAP-XXXX
+     * @param  numberOfRecords Number of cases to make for each supplied Contact
+     * @param  contacts        List of contacts to link to the cases
+     * @return                 List of unique cases
+     */
+    public static List<Case> createTestCases(integer numberOfRecords, List<Contact> contacts)
+    {
+        List<Case> retVal = new List<Case>();
+
+        if (contacts != null && contacts.size() > 0)
+        {
+            for (Contact cont : contacts)
+            {
+                for (integer i = 0; i < numberOfRecords; i++)
+                {
+                    retVal.add(TestDataFactory.createTestCase(cont));
+                }
+            }
+        }
+        else
+        {
+             for (integer i = 0; i < numberOfRecords; i++)
+            {
+                retVal.add(TestDataFactory.createTestCase(null));
+            }
+        }
+
+        if (retVal.size() > 0)
+        {
+            insert retVal;
+        }
+
+        return retVal;
+
+    }
 
 
 

@@ -42,7 +42,7 @@
         <criteriaItems>
             <column>Case.WorkIt2__Timings__r$Owner</column>
             <operator>notEqual</operator>
-            <value>,Bungay Beau,Daphne Apatan,Joey Fulgencio,Leyanne Bertumen</value>
+            <value>Dante Munoz,Derek Donovan,Dave Enriquez,Timothy Azark,Jose Flores,Bungay Beau,Daphne Apatan,Joey Fulgencio,Leyanne Bertumen</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>
@@ -66,6 +66,8 @@
     <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>Case.WorkIt2__Timings__r.WorkIt2__Time_Entries__r$WorkIt2__End__c</dateColumn>
-        <interval>INTERVAL_LASTWEEK</interval>
+        <endDate>2016-07-02</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-06-26</startDate>
     </timeFrameFilter>
 </Report>

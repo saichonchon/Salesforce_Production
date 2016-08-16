@@ -631,57 +631,6 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Assign_to_Fritz</fullName>
-        <description>Assign case to Abbey in Billing---
-Assign to Fritz since Abbey has left.</description>
-        <field>OwnerId</field>
-        <lookupValue>friedrich.stegmann@bigcommerce.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Assign to Fritz</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Assign_to_PS_Launch_TeamQueue</fullName>
-        <field>OwnerId</field>
-        <lookupValue>Launch_Team_PS_Cases</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>Assign to PS-Launch TeamQueue</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Assign_to_PS_Success_Squad_Queue</fullName>
-        <field>OwnerId</field>
-        <lookupValue>Success_Squad_PS_Cases</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>Assign to PS-Success Squad Queue</name>
-        <notifyAssignee>true</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>BC_Migration_Assignee_N_A</fullName>
-        <description>If Technician = C2C, auto-update BC Assignee to N/A</description>
-        <field>BC_Migration_Assignee__c</field>
-        <literalValue>N/A</literalValue>
-        <name>BC Migration Assignee = N/A</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>BC_Migration_Technician_Unassigned</fullName>
-        <field>BC_Migration_Assignee__c</field>
-        <literalValue>Unassigned</literalValue>
-        <name>BC Migration Technician = Unassigned</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Backpay_Requested_Date_Today</fullName>
         <field>Backpay_Requested_Date__c</field>
         <formula>TODAY()</formula>
@@ -689,17 +638,6 @@ Assign to Fritz since Abbey has left.</description>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Case_Category_to_JIRA</fullName>
-        <description>update Case Category to JIRA</description>
-        <field>Category__c</field>
-        <literalValue>JIRA</literalValue>
-        <name>Case Category to JIRA</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>true</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Case_Chat_Transcript_Sent</fullName>
@@ -766,16 +704,6 @@ Assign to Fritz since Abbey has left.</description>
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Case_Origin_Cancellations</fullName>
-        <description>Update Case Origin to be Cancellations</description>
-        <field>Origin</field>
-        <literalValue>cancellations@bigcommerce.com</literalValue>
-        <name>Case Origin = Cancellations</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Case_Origin_Pixel_Union_Themes</fullName>
         <description>Update case origin when the case is related to Pixel Union Themes</description>
         <field>Origin</field>
@@ -794,16 +722,6 @@ Assign to Fritz since Abbey has left.</description>
         <name>Case Owner = Support Queue</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Case_Reason</fullName>
-        <description>Update Case Reason to &quot;App Store Communications&quot;</description>
-        <field>Reason</field>
-        <literalValue>App Store Communications</literalValue>
-        <name>Case Reason = App Store Communication</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
@@ -890,37 +808,10 @@ Assign to Fritz since Abbey has left.</description>
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Case_Status_to_Completed</fullName>
-        <field>Status</field>
-        <literalValue>Completed</literalValue>
-        <name>Case Status to Completed</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Case_Status_to_Completed_by_Ops</fullName>
-        <field>Status</field>
-        <literalValue>Completed by Ops</literalValue>
-        <name>Case Status to Completed by Ops</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Case_Status_to_Director_Approved</fullName>
         <field>Status</field>
         <literalValue>Director Approved</literalValue>
         <name>Case Status to Director Approved</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Case_Status_to_New</fullName>
-        <field>Status</field>
-        <literalValue>New</literalValue>
-        <name>Case Status to New</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
@@ -1080,15 +971,6 @@ IF(Opportunity__r.Contact_Email__c &lt;&gt; NULL,Opportunity__r.Contact_Email__c
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Manager_Callback_Date_Populated</fullName>
-        <field>Manager_Callback_Date__c</field>
-        <formula>NOW ()</formula>
-        <name>Manager Callback Date Populated</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Manager_Callback_Requestor</fullName>
         <field>Manager_Callback_Requestor__c</field>
         <formula>$User.Full_Name__c</formula>
@@ -1147,27 +1029,6 @@ IF(Opportunity__r.Contact_Email__c &lt;&gt; NULL,Opportunity__r.Contact_Email__c
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>NPS_update_to_case_reason</fullName>
-        <description>Update the case reason to Tier 2 Phone Escalation when the NPS less than or equal to 6.</description>
-        <field>Reason</field>
-        <literalValue>Tier 2 Phone Escalation</literalValue>
-        <name>NPS update to case reason</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>true</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>NPS_update_to_case_reason_to_Tier2_phone</fullName>
-        <description>Update the case reason to Tier 2 Phone Escalation when the NPS less than or equal to 6 or blank.</description>
-        <field>Reason</field>
-        <literalValue>Tier 2 Phone Escalation</literalValue>
-        <name>NPS update to case reason to Tier2 hone</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>On_Hold_Date_Now</fullName>
         <field>On_Hold_Date__c</field>
         <formula>Now()</formula>
@@ -1186,52 +1047,12 @@ IF(Opportunity__r.Contact_Email__c &lt;&gt; NULL,Opportunity__r.Contact_Email__c
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Owner_Cancellation_Queue</fullName>
-        <field>OwnerId</field>
-        <lookupValue>Case_Cancellation_Queue</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>Owner = Cancellation Queue</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Owner_Channel_Queue</fullName>
-        <field>OwnerId</field>
-        <lookupValue>Sales_Partners</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>Owner = Channel Queue</name>
-        <notifyAssignee>true</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Owner_Escalated_Level_1</fullName>
         <description>If status of escalated is selected, set owner to Escalated 1 queue</description>
         <field>OwnerId</field>
         <lookupValue>Support_Escalated_Level_1</lookupValue>
         <lookupValueType>Queue</lookupValueType>
         <name>Owner = Escalated Level 1</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Owner_Sales_Queue</fullName>
-        <field>OwnerId</field>
-        <lookupValue>Direct_Sales</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>Owner = Sales Queue</name>
-        <notifyAssignee>true</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Owner_Support_Queue</fullName>
-        <field>OwnerId</field>
-        <lookupValue>Support</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>Owner = Support Queue</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
         <protected>false</protected>
@@ -1286,46 +1107,6 @@ IF( ISBLANK( Subscription__r.Lead__c ) = FALSE,  Subscription__r.Lead__r.Owner:U
         <operation>Literal</operation>
         <protected>false</protected>
         <reevaluateOnChange>true</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Record_Type_Billing</fullName>
-        <field>RecordTypeId</field>
-        <lookupValue>Billing</lookupValue>
-        <lookupValueType>RecordType</lookupValueType>
-        <name>Record Type = Billing</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Record_Type_CS</fullName>
-        <field>RecordTypeId</field>
-        <lookupValue>Client_Success</lookupValue>
-        <lookupValueType>RecordType</lookupValueType>
-        <name>Record Type = Client Success</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Record_Type_Cancellations</fullName>
-        <field>RecordTypeId</field>
-        <lookupValue>Cancellations</lookupValue>
-        <lookupValueType>RecordType</lookupValueType>
-        <name>Record Type = Cancellations</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Record_Type_Sales</fullName>
-        <field>RecordTypeId</field>
-        <lookupValue>Direct_Sales</lookupValue>
-        <lookupValueType>RecordType</lookupValueType>
-        <name>Record Type = Sales</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Reopened_False</fullName>
@@ -1394,16 +1175,6 @@ IF( ISBLANK( Subscription__r.Lead__c ) = FALSE,  Subscription__r.Lead__r.Owner:U
         <field>Migration_Supporting_Department__c</field>
         <literalValue>Migration</literalValue>
         <name>Set Migration Support Dept to Migration</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Set_Migration_Verification_to_Auto</fullName>
-        <description>Set Migration Verification to Auto Verified</description>
-        <field>Migration_Verification__c</field>
-        <literalValue>Auto Verified</literalValue>
-        <name>Set Migration Verification to Auto</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
@@ -1480,26 +1251,6 @@ IF( ISBLANK( Subscription__r.Lead__c ) = FALSE,  Subscription__r.Lead__r.Owner:U
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Status_To_Cosed</fullName>
-        <field>Status</field>
-        <literalValue>Closed</literalValue>
-        <name>Status To Cosed</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Status_to_Open</fullName>
-        <description>When NPS less than or eual to 6 update status to open</description>
-        <field>Status</field>
-        <literalValue>Reopened</literalValue>
-        <name>Status to Re-opened</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>true</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Status_to_Re_opened</fullName>
         <description>When NPS less than or eual to 6 or blank update status to re-open</description>
         <field>Status</field>
@@ -1546,62 +1297,6 @@ IF( ISBLANK( Subscription__r.Lead__c ) = FALSE,  Subscription__r.Lead__r.Owner:U
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Survey_Status_Close_Survey_Last_30_Day</fullName>
-        <field>Survey_Status__c</field>
-        <literalValue>Close Survey Last 30 Days</literalValue>
-        <name>Survey Status = Close Survey Last 30 Day</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Survey_Status_Closed_Inbound_Email</fullName>
-        <field>Survey_Status__c</field>
-        <literalValue>Closed Inbound Email</literalValue>
-        <name>Survey Status = Closed Inbound Email</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Survey_Status_Closed_with_Survey</fullName>
-        <field>Survey_Status__c</field>
-        <literalValue>Closed with Survey</literalValue>
-        <name>Survey Status = Closed with Survey</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>TEST</fullName>
-        <field>Subject</field>
-        <formula>&quot;Eligible for Close WFR&quot;</formula>
-        <name>TEST</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Technician_BC</fullName>
-        <description>If Platform =  Interspire, ProStores or Yahoo</description>
-        <field>Technician__c</field>
-        <literalValue>Bigcommerce</literalValue>
-        <name>Technician = BC</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Technician_C2C</fullName>
-        <description>WFR: Migration: Technicial Default to C2C</description>
-        <field>Technician__c</field>
-        <literalValue>Cart2Cart</literalValue>
-        <name>Technician = C2C</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Update_Case_Flag_for_PXU</fullName>
         <description>Update the case flag for escalated Pixel Union support cases</description>
         <field>Case_Flag__c</field>
@@ -1613,40 +1308,10 @@ IF( ISBLANK( Subscription__r.Lead__c ) = FALSE,  Subscription__r.Lead__r.Owner:U
         <reevaluateOnChange>true</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Update_Case_Reason_to_Jira</fullName>
-        <description>Update Case Reason to Jira</description>
-        <field>Reason</field>
-        <literalValue>JIRA</literalValue>
-        <name>Update Case Reason to Jira</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>true</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Update_Owner_to_Insight_Billing_Queue</fullName>
-        <field>OwnerId</field>
-        <lookupValue>Insights_Billing</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>Update Owner to Insight Billing Queue</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Verification_Date_Now</fullName>
         <field>Verification_Date__c</field>
         <formula>NOW()</formula>
         <name>Verification Date = Now</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Verification_Date_Populated</fullName>
-        <field>Verification_Date__c</field>
-        <formula>Now()</formula>
-        <name>Verification Date Populated</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
@@ -2597,7 +2262,8 @@ Set by hierarchy : Contact &gt; Lead &gt; Web Email &gt; Subscription Email</des
         <formula>Do_Not_Send_Survey__c = TRUE &amp;&amp;
 Survey_Sent__c = FALSE &amp;&amp;
 ISCHANGED(Status) &amp;&amp;
-NOT(ISPICKVAL(Status,&quot;Closed&quot;))</formula>
+NOT(ISPICKVAL(Status,&quot;Closed&quot;)) &amp;&amp;
+NOT(ISNEW())</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>

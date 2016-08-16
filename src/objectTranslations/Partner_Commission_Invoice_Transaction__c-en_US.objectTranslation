@@ -24,6 +24,11 @@
         <name>Amount_Paid__c</name>
     </fields>
     <fields>
+        <help><!-- Was the payment from the customer made within the current month? --></help>
+        <label><!-- Current Month --></label>
+        <name>Current_Month__c</name>
+    </fields>
+    <fields>
         <help><!-- The transaction that this partner commission is for. --></help>
         <label><!-- Invoice Transaction --></label>
         <name>Invoice_Transaction__c</name>
@@ -65,6 +70,16 @@
         <help><!-- Indicates if the partner is engaged and has accepted the terms and conditions.  If not, they are not eligible for payment. --></help>
         <label><!-- Partner is Engaged --></label>
         <name>Partner_is_Engaged__c</name>
+    </fields>
+    <fields>
+        <help><!-- The month that the custom paid us --></help>
+        <label><!-- Payment Month --></label>
+        <name>PaymentMonth__c</name>
+    </fields>
+    <fields>
+        <help><!-- The year that the customer paid us --></help>
+        <label><!-- Payment Year --></label>
+        <name>PaymentYear__c</name>
     </fields>
     <fields>
         <help><!-- The date that the customer paid their invoice --></help>

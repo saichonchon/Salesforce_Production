@@ -31,15 +31,6 @@
         <senderType>OrgWideEmailAddress</senderType>
         <template>Case_Templates/Case_Working_More_Than_1_Hour</template>
     </alerts>
-    <fieldUpdates>
-        <fullName>Stop_Time_Now</fullName>
-        <field>Stop_Time__c</field>
-        <formula>Now()</formula>
-        <name>Stop Time = Now</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
     <rules>
         <fullName>CS Internal CS Manager Notification - CTW %3A Case Working %3E1hr</fullName>
         <active>true</active>

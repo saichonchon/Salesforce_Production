@@ -256,6 +256,10 @@
         <relationshipLabel><!-- Opportunities --></relationshipLabel>
     </fields>
     <fields>
+        <label><!-- BMP Subscription ID --></label>
+        <name>BMP_Subscription_ID__c</name>
+    </fields>
+    <fields>
         <help><!-- Is this client/prospect a big brand? --></help>
         <label><!-- Big Brand --></label>
         <name>Big_Brand__c</name>
@@ -2593,6 +2597,10 @@
         <name>Has_RV_Member__c</name>
     </fields>
     <fields>
+        <label><!-- Historical Distribution Engine Eligible --></label>
+        <name>Historical_Distribution_Engine_Eligible__c</name>
+    </fields>
+    <fields>
         <help><!-- How did the prospect hear about us? --></help>
         <label><!-- How did you hear about us? --></label>
         <name>How_did_you_hear_about_us__c</name>
@@ -3222,6 +3230,10 @@
         <name>MBA_Account_ID__c</name>
     </fields>
     <fields>
+        <label><!-- MBA Subscription ID Length --></label>
+        <name>MBA_Subscription_ID_Length__c</name>
+    </fields>
+    <fields>
         <help><!-- Do we have a case study on this store? --></help>
         <label><!-- MKT Case Study --></label>
         <name>MKT_Case_Study__c</name>
@@ -3609,6 +3621,10 @@
         <name>Motivation_for_moving_to_Bigcommerce__c</name>
     </fields>
     <fields>
+        <label><!-- Multi-User Enabled --></label>
+        <name>Multi_User_Enabled__c</name>
+    </fields>
+    <fields>
         <help><!-- PRICING FIELD - manually populated by sales --></help>
         <label><!-- New Plan Tier --></label>
         <name>New_Plan_Tier__c</name>
@@ -3626,6 +3642,11 @@
     <fields>
         <label><!-- Not Partner Owner --></label>
         <name>Not_Partner_Owner__c</name>
+    </fields>
+    <fields>
+        <help><!-- The count of Product History records --></help>
+        <label><!-- Number of Product Histories --></label>
+        <name>Number_of_Product_Histories__c</name>
     </fields>
     <fields>
         <label><!-- Number of Products --></label>
@@ -4131,6 +4152,10 @@
         <name>Premium_Services__c</name>
     </fields>
     <fields>
+        <label><!-- Previous Owner Team --></label>
+        <name>Previous_Owner_Team__c</name>
+    </fields>
+    <fields>
         <label><!-- Previous Owner --></label>
         <name>Previous_Owner__c</name>
     </fields>
@@ -4386,6 +4411,43 @@
         </picklistValues>
     </fields>
     <fields>
+        <help><!-- Lookup to your Amended Contract. --></help>
+        <label><!-- Amended Contract --></label>
+        <name>SBQQ__AmendedContract__c</name>
+        <relationshipLabel><!-- Amendment Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- SteelBrick CPQ uses this field to automatically convert assets and subscriptions. --></help>
+        <label><!-- Contracted --></label>
+        <name>SBQQ__Contracted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to create Contracted Prices without creating a Contract. --></help>
+        <label><!-- Create Contracted Prices --></label>
+        <name>SBQQ__CreateContractedPrices__c</name>
+    </fields>
+    <fields>
+        <help><!-- SteelBrick CPQ uses this to point to the primary quote on this opportunity. --></help>
+        <label><!-- Primary Quote --></label>
+        <name>SBQQ__PrimaryQuote__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quote Pricebook Id --></label>
+        <name>SBQQ__QuotePricebookId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates this opportunity is a renewal opportunity. --></help>
+        <label><!-- Renewal --></label>
+        <name>SBQQ__Renewal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contract being renewed by this renewal opportunity. If the several contracts roll up to this opportunity, this points at the master contract. --></help>
+        <label><!-- Renewed Contract --></label>
+        <name>SBQQ__RenewedContract__c</name>
+        <relationshipLabel><!-- Renewal Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
         <label><!-- zSales Do Not Call --></label>
         <name>Sales_Do_Not_Call__c</name>
     </fields>
@@ -4507,6 +4569,10 @@
             <translation><!-- Negotiate --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Pending</masterLabel>
             <translation><!-- Pending --></translation>
         </picklistValues>
@@ -4529,6 +4595,10 @@
         <picklistValues>
             <masterLabel>Referred</masterLabel>
             <translation><!-- Referred --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referred - Started Trial</masterLabel>
+            <translation><!-- Referred - Started Trial --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Rejected</masterLabel>
@@ -4747,6 +4817,11 @@
     <fields>
         <label><!-- Subscription ID --></label>
         <name>Subscription_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies store or trial opportunities where the MBA Subscription ID field does not match its related Subscription. --></help>
+        <label><!-- Subscription Mismatch --></label>
+        <name>Subscription_Mismatch__c</name>
     </fields>
     <fields>
         <label><!-- Opp Subscription Terms (months) --></label>
@@ -5977,6 +6052,14 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         <name>Professional_Services</name>
     </webLinks>
     <webLinks>
+        <label><!-- Amend_Contract --></label>
+        <name>SBQQ__Amend_Contract</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Include_Document --></label>
+        <name>SBQQ__Include_Document</name>
+    </webLinks>
+    <webLinks>
         <label><!-- Set_Callback --></label>
         <name>Set_Callback</name>
     </webLinks>
@@ -6092,5 +6175,10 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         <description><!-- A potential customer has requested a demo. Please reach out ASAP and close the task once it has been completed. --></description>
         <name>Demo_Requested</name>
         <subject><!-- **Demo Requested** --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Customer has re-engaged and requested a demo. --></description>
+        <name>Stage_Change_Notification_Qualify</name>
+        <subject><!-- Stage to Qualify - Re-engaged via Demo Request --></subject>
     </workflowTasks>
 </CustomObjectTranslation>

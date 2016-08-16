@@ -4,6 +4,12 @@
         <field>Opportunity$StartDate__c</field>
     </columns>
     <columns>
+        <field>Opportunity$PurchaseDate__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$CancellationDate__c</field>
+    </columns>
+    <columns>
         <field>Opportunity$Status__c</field>
     </columns>
     <columns>
@@ -25,7 +31,7 @@
         <field>Opportunity$New_Product_Plan__c</field>
     </columns>
     <columns>
-        <field>Opportunity$Product__c</field>
+        <field>Opportunity$Amount</field>
     </columns>
     <filter>
         <criteriaItems>

@@ -106,6 +106,11 @@
         <name>Demo_Requested_Date__c</name>
     </fields>
     <fields>
+        <help><!-- Typically this flag is set if the contact is a portal user AND their duplicate is also a portal user --></help>
+        <label><!-- Do Not Merge --></label>
+        <name>Do_Not_Merge__c</name>
+    </fields>
+    <fields>
         <help><!-- Is this a duplicate of another contact in Salesforce? --></help>
         <label><!-- Duplicate? --></label>
         <name>Duplicate__c</name>
@@ -283,6 +288,11 @@
     <fields>
         <label><!-- MBA Client ID --></label>
         <name>MBAClientID__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of characters in the MBA Client ID field --></help>
+        <label><!-- MBA Client ID Size --></label>
+        <name>MBA_Client_ID_Size__c</name>
     </fields>
     <fields>
         <label><!-- MBA Phone 1 --></label>
@@ -976,10 +986,6 @@
             <section>General Information</section>
         </sections>
         <sections>
-            <label><!-- Hubspot --></label>
-            <section>Hubspot</section>
-        </sections>
-        <sections>
             <label><!-- MBA Information --></label>
             <section>MBA Information</section>
         </sections>
@@ -990,10 +996,6 @@
         <sections>
             <label><!-- System Information --></label>
             <section>System Information</section>
-        </sections>
-        <sections>
-            <label><!-- Toutapp --></label>
-            <section>Toutapp</section>
         </sections>
     </layouts>
     <layouts>
@@ -1052,10 +1054,6 @@
         <sections>
             <label><!-- System Information --></label>
             <section>System Information</section>
-        </sections>
-        <sections>
-            <label><!-- Toutapp --></label>
-            <section>Toutapp</section>
         </sections>
     </layouts>
     <layouts>

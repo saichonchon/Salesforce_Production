@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Trial Onboarding - Experienced vs Inexperienced - GTM-1296.ACQ - Experienced - D</name>
+    <style>none</style>
+    <subject>Quickly fill your store with products</subject>
+    <textOnly>Learn how to quickly to add products to your BigCommerce store. Call 1-844-632-8912 for assistance on selecting a BigCommerce plan today.
+Log in to your control panel &lt;[[https://login.bigcommerce.com/login]]&gt;
+Get started now
+ADD PRODUCTS &lt;[[https://login.bigcommerce.com/deep-links/index.php?ToDo=addProduct]]&gt;
+There are many ways to get products into your BigCommerce store:
+
+
+
+
+
+	- Bulk import from a CSV file &lt;[[https://support.bigcommerce.com/articles/Public/Importing-Data/]]&gt;
+
+
+
+
+	- Sync your inventory from Square &lt;[[https://support.bigcommerce.com/articles/Public/Syncing-Your-Products-with-Square/?q=square&amp;l=en_US&amp;fs=Search&amp;pn=1]]&gt;
+
+
+
+
+	- Manually add products &lt;[[https://support.bigcommerce.com/articles/Public/Adding-Products]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

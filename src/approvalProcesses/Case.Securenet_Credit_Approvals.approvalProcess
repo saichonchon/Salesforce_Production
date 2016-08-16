@@ -66,10 +66,6 @@
     </entryCriteria>
     <finalApprovalActions>
         <action>
-            <name>Assign_to_Fritz</name>
-            <type>FieldUpdate</type>
-        </action>
-        <action>
             <name>Case_Status_to_Director_Approved</name>
             <type>FieldUpdate</type>
         </action>

@@ -282,6 +282,25 @@
         <type>Summary</type>
     </fields>
     <fields>
+        <fullName>Partner_Account_Date_Activated__c</fullName>
+        <description>For BAP-4085 - Partner Commissions not taking into account the partner start and end dates
+Note that currently this formula modifies the Approved Date if the RV Account has an IDev ID.  This is hopefully a temporary fix until Treehouse can set the actual Approved Dates on their account records.</description>
+        <externalId>false</externalId>
+        <formula>IF (NOT(ISBLANK(Store_Opportunity__r.rvpe__RVAccount__c)),
+    IF (
+        NOT(ISBLANK(Store_Opportunity__r.rvpe__RVAccount__r.IDev_ID__c)),
+        DATE(2013,1,1),
+        Store_Opportunity__r.rvpe__RVAccount__r.Approved_Date__c
+       ),
+    null
+   )</formula>
+        <inlineHelpText>The Approved Date from the related RV Account, represents the date that the Partner entered the program.</inlineHelpText>
+        <label>Partner Account - Date Activated</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
         <fullName>Partner_Account_Date_Inactivated__c</fullName>
         <description>For BAP-3698 - Partner Commissions v2</description>
         <externalId>false</externalId>

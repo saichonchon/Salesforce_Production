@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>lmscons__Training_Path__c$Name</field>
+    </columns>
+    <columns>
+        <field>lmscons__Training_Path__c.lmscons__Training_Path_Assignment__r$lmscons__Transcript__c.lmscons__Trainee__c</field>
+    </columns>
+    <columns>
+        <field>lmscons__Training_Path__c.lmscons__Training_Path_Assignment__r$lmscons__StatusPicklist__c</field>
+    </columns>
+    <columns>
+        <field>lmscons__Training_Path__c.lmscons__Training_Path_Assignment__r$lmscons__Transcript__c.lmscons__Trainee__c.Email</field>
+    </columns>
+    <columns>
+        <field>lmscons__Training_Path__c.lmscons__Training_Path_Assignment__r$lmscons__Completion_Date__c</field>
+    </columns>
+    <columns>
+        <field>lmscons__Training_Path__c.lmscons__Training_Path_Assignment__r$lmscons__Last_Launched_Date__c</field>
+    </columns>
+    <columns>
+        <field>lmscons__Training_Path__c$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>lmscons__Training_Path__c$LastModifiedDate</field>
+    </columns>
+    <description>Completion Status of Security Awareness 2016 Course Assignments</description>
+    <filter>
+        <criteriaItems>
+            <column>lmscons__Training_Path__c$Name</column>
+            <operator>startsWith</operator>
+            <value>BC - Security Awareness</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>lmscons__Training_Path__c$Name</column>
+            <operator>contains</operator>
+            <value>2016</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Security Awareness Course Completion</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Courses_with_Course_Assignment_CUSTOM__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>lmscons__Training_Path__c.lmscons__Training_Path_Assignment__r$lmscons__StatusPicklist__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>lmscons__Training_Path__c$CreatedDate</dateColumn>
+        <endDate>2016-08-12</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-01-01</startDate>
+    </timeFrameFilter>
+</Report>

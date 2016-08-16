@@ -4978,6 +4978,182 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>SBQQ__AssetQuantitiesCombined__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Option to combine quantities of multiple assets for the same product into one line when renewal quote is generated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option to combine quantities of multiple assets for the same product into one line when renewal quote is generated.</inlineHelpText>
+        <label>Combine Asset Quantities</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CoTermedContractsCombined__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flag that controls whether assets and subscriptions from multiple co-teremed contracts are rolled up together. By default, each co-termed contract generates a separate group on renewal quote.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enable to combine assets and subscriptions from multiple co-termed contracts. By default, each co-termed contract generates a separate group on renewal quote.</inlineHelpText>
+        <label>Combine Co-Termed Contracts</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CoTerminationEvent__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Determines when contracts are co-terminated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Determines when contracts are co-terminated.</inlineHelpText>
+        <label>Co-Termination Event</label>
+        <picklist>
+            <controllingField>SBQQ__ContractCoTermination__c</controllingField>
+            <picklistValues>
+                <fullName>Add-on</fullName>
+                <default>false</default>
+                <controllingFieldValues>Always</controllingFieldValues>
+                <controllingFieldValues>Prompt</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Renewal</fullName>
+                <default>false</default>
+                <controllingFieldValues>Always</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ContractCoTermination__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Determines how service and subscription contracts for this customer are co-terminated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Determines how service and subscription contracts for this customer are co-terminated.</inlineHelpText>
+        <label>Contract Co-Termination</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Never</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Always</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prompt</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__DefaultOpportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Default opportunity for this account used by an e-Commerce module to obtain the customer&apos;s price book and associate with &quot;shopping cart&quot; quotes.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Default opportunity for this account used by an e-Commerce module to obtain the customer&apos;s price book and associate with &quot;shopping cart&quot; quotes.</inlineHelpText>
+        <label>Default Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>WebAccounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__IgnoreParentContractedPrices__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Select if contracted prices should not be inherited from the parent account.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select if contracted prices should not be inherited from the parent account.</inlineHelpText>
+        <label>Ignore Parent Contracted Prices</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PreserveBundle__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Select to maintain bundle hierarchy on renewal quotes and amendments</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select checkbox to maintain bundle hierarchy on renewal quotes and amendments.</inlineHelpText>
+        <label>Preserve Bundle Structure</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PriceHoldEnd__c</fullName>
+        <deprecated>false</deprecated>
+        <description>End date for any price hold that may be in effect.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter date until which the prices must be held.</inlineHelpText>
+        <label>Price Hold End</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RenewalModel__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The option to distinguish between Subscription or Asset based renewal.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose Asset Based to make renewals based off of an account&apos;s Assets or choose Subscription based to makes renewals based off of subscriptions created from a quote.</inlineHelpText>
+        <label>Renewal Model</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Asset Based</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Contract Based</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RenewalPricingMethod__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Method for pricing products on renewal.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Use &quot;Same&quot; to keep the same price paid last time. Use &quot;List&quot; to use current list price. Use &quot;Uplift&quot; to use the price paid last time plus some uplift.</inlineHelpText>
+        <label>Renewal Pricing Method</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Same</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>List</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Uplift</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
         <fullName>SSC__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -18695,7 +18871,6 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <searchFilterFields>ACCOUNT.TYPE</searchFilterFields>
         <searchFilterFields>ACCOUNT.PHONE1</searchFilterFields>
         <searchFilterFields>PARENT_NAME</searchFilterFields>
-        <searchFilterFields>Partner_Account__c</searchFilterFields>
         <searchFilterFields>CORE.USERS.ALIAS</searchFilterFields>
         <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>MBAAccountID__c</searchResultsAdditionalFields>
@@ -19000,6 +19175,29 @@ else {
 alert(&apos;Please populate the LDR Assign To Team&apos;); 
 } 
 }</url>
+    </webLinks>
+    <webLinks>
+        <fullName>SBQQ__Amend_Assets</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Amend Assets</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>../apex/SBQQ__AssetSelector?scontrolCaching=1&amp;id={!Account.Id}&amp;isAmend=true</url>
+    </webLinks>
+    <webLinks>
+        <fullName>SBQQ__Renew_Assets</fullName>
+        <availability>online</availability>
+        <description>It is used to renew assets from an account when Global Settings - Renewal Model is set to Asset Based.</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Renew Assets</masterLabel>
+        <openType>sidebar</openType>
+        <page>SBQQ__AssetSelector</page>
+        <protected>false</protected>
     </webLinks>
     <webLinks>
         <fullName>Send_Survey</fullName>

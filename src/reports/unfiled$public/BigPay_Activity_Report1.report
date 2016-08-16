@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunities__r$Account</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunities__r$Current_Store_URL__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunities__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunities__r$RecordType</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunities__r$Status__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Opportunities__r$RecordType</column>
+            <operator>equals</operator>
+            <value>Opportunity.Store_Purchase</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>BigPay Activity Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_with_Opportunities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$Birthdate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

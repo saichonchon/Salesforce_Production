@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PCI Blog - RSS Email Clicks Bonus Content.Bonus Email (GTM - 1230)</name>
+    <style>none</style>
+    <subject>Take PCI Compliance for a Test Run</subject>
+    <textOnly>BigCommerce has PCI DSS 3.1 Level 1 Certification, at both the merchant and service provider levels.
+
+
+Hey {{lead.First Name:default=there}},
+
+
+Hope you’re having a great week! I noticed that you’re reading a bit about PCI compliance on the blog.
+
+I’ve been doing a lot of research into the topic over the last few months and would happy to answer any questions you might have. Better yet, you can read more about BigCommerce’s specific PCI DSS 3.1 Level 1 certification &lt;[[https://www.bigcommerce.com/features/secure-web-hosting/?utm_source=blog&amp;utm_medium=blog&amp;utm_campaign=blg-newsletter]]&gt; at both the merchant and service provider level. This protects against credit card data breaches and eliminates the massive cost and hassle of compliance.
+
+READ MORE &lt;[[https://www.bigcommerce.com/features/secure-web-hosting/?utm_source=blog&amp;utm_medium=blog&amp;utm_campaign=blg-newsletter]]&gt;
+
+In the meantime, feel free to start a trial &lt;[[https://www.bigcommerce.com/dm/start-a-free-trial/?utm_medium=email&amp;utm_source=Blog+RSS&amp;utm_campaign=Bonus+Email&amp;utm_term=&amp;utm_content=Start+Trial]]&gt; with us and see the features in action.
+
+Thanks for reading!
+
+Best,
+
+
+Tracey Wallace
+
+ Managing Editor
+ 
+bigcommerce.com &lt;[[http://www.bigcommerce.com]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -360,7 +360,8 @@
         <description>When a Lead is added as a campaign member for a demo request, this date is set. Create a task for the Lead owner. 
 For BAP-3811</description>
         <formula>AND(  
-NOT(ISBLANK(Demo_Requested_Date__c)),  
+NOT(ISBLANK(Demo_Requested_Date__c)), 
+OwnerId &lt;&gt; &apos;005a000000AsxTo&apos;, /* The BigCommerce Team */   
 OR( 
 Owner:User.Profile.Id = &apos;00e13000000jUNJ&apos;, /* Lead Development Rep */     
 Owner:User.Profile.Id = &apos;00e130000024OSc&apos;, /* Sales Rep */     

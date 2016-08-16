@@ -50,8 +50,12 @@
                 <field>Product_Price__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Random_Sample_Number__c</field>
+                <behavior>Readonly</behavior>
+                <field>Account_Mismatch__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Subscription_Mismatch__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -78,6 +82,14 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Amount</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Demo_Requested_Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Random_Sample_Number__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>

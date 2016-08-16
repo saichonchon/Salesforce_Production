@@ -46,7 +46,7 @@
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <deploymentStatus>Deployed</deploymentStatus>
+    <deploymentStatus>InDevelopment</deploymentStatus>
     <description>PRM Portal materials for channel partners</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
@@ -188,7 +188,7 @@
         <type>Number</type>
         <unique>false</unique>
     </fields>
-    <label>Marketing Material</label>
+    <label>zMarketing Material</label>
     <nameField>
         <displayFormat>MM-{0}</displayFormat>
         <label>Marketing Material Name</label>

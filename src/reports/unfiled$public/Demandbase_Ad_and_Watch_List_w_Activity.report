@@ -8,13 +8,11 @@
             <axisBinding>y</axisBinding>
             <column>RowCount</column>
         </chartSummaries>
-        <chartType>VerticalColumnGrouped</chartType>
+        <chartType>VerticalColumn</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>MEMBER_CREATED_DATE</groupingColumn>
-        <legendPosition>Right</legendPosition>
+        <groupingColumn>CAMPAIGN_NAME</groupingColumn>
         <location>CHART_BOTTOM</location>
-        <secondaryGroupingColumn>CAMPAIGN_NAME</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -31,6 +29,9 @@
     </columns>
     <columns>
         <field>COMPANY</field>
+    </columns>
+    <columns>
+        <field>MEMBER_CREATED_DATE</field>
     </columns>
     <columns>
         <field>LC_OWNER</field>
@@ -80,11 +81,6 @@
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>CAMPAIGN_NAME</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Week</dateGranularity>
-        <field>MEMBER_CREATED_DATE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Demandbase Ad and Watch List w/ Activity</name>

@@ -11,30 +11,22 @@
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <componentType>Gauge</componentType>
             <displayUnits>Integer</displayUnits>
-            <gaugeMax>57000.0</gaugeMax>
+            <gaugeMax>66250.0</gaugeMax>
             <gaugeMin>0.0</gaugeMin>
-            <indicatorBreakpoint1>39900.0</indicatorBreakpoint1>
-            <indicatorBreakpoint2>48450.0</indicatorBreakpoint2>
+            <indicatorBreakpoint1>40000.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>50000.0</indicatorBreakpoint2>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>Mid_Market_Sales/Mid_Market_Sales_MTD</report>
+            <report>Mid_Market_Sales/MRR_MTD_TEST</report>
             <showPercentage>true</showPercentage>
             <showTotal>true</showTotal>
             <showValues>false</showValues>
             <title>Team Performance to Quota</title>
         </components>
         <components>
-            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
-            <chartSummary>
-                <axisBinding>y</axisBinding>
-                <column>FORMULA8</column>
-            </chartSummary>
-            <chartSummary>
-                <axisBinding>y</axisBinding>
-                <column>FORMULA11</column>
-            </chartSummary>
             <componentType>Line</componentType>
             <displayUnits>Integer</displayUnits>
             <drillEnabled>false</drillEnabled>
@@ -42,7 +34,6 @@
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
             <footer>Refunds and Cancellations will be Deducted in month sold</footer>
-            <groupingColumn>Opportunity.Oppotunity_Products__r$StartDate__c</groupingColumn>
             <legendPosition>Bottom</legendPosition>
             <report>Premium/Enterprise_Revenue_MoM</report>
             <showPercentage>false</showPercentage>

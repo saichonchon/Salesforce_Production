@@ -26,6 +26,11 @@
             <operator>notEqual</operator>
             <value>Incomplete</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <operator>notEqual</operator>
+            <value>Subscription__c.Forecast_Subscription</value>
+        </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>

@@ -423,11 +423,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Case__c.Incident__c</field>
-            <table>Case_Time_Worked__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Case__c.Intersire_Staging_URL__c</field>
             <table>Case_Time_Worked__c</table>
         </columns>

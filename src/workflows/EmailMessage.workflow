@@ -21,16 +21,6 @@
         <targetObject>ParentId</targetObject>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Case_Email_Log_Second_OCR_Response</fullName>
-        <field>Email_Log__c</field>
-        <formula>Parent.Email_Log__c +&quot;; &quot;+&quot;Second OCR Response&quot;</formula>
-        <name>Case: Email Log =+ Second OCR Response</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-        <targetObject>ParentId</targetObject>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Case_Issue_Resolved_blank</fullName>
         <field>Issue_Resolved__c</field>
         <name>Case: Issue Resolved? = blank</name>
@@ -92,57 +82,6 @@ FIND(&quot;Does this resolve your case?&quot;,HtmlBody)-(FIND(&quot;&gt;Proposed
         <name>Case Status = Reopened</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
-        <protected>false</protected>
-        <targetObject>ParentId</targetObject>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Department_API</fullName>
-        <field>Department__c</field>
-        <literalValue>API</literalValue>
-        <name>Department = API</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <targetObject>ParentId</targetObject>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Department_Legal_Abuse</fullName>
-        <field>Department__c</field>
-        <literalValue>Legal/Abuse</literalValue>
-        <name>Department = Legal/Abuse</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <targetObject>ParentId</targetObject>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Do_Not_Send_Survey_EM</fullName>
-        <field>Do_Not_Send_Survey__c</field>
-        <literalValue>1</literalValue>
-        <name>Do Not Send Survey-EM</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <targetObject>ParentId</targetObject>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Email_Recd_Closed_Case_True</fullName>
-        <field>Email_Recd_Closed_Case__c</field>
-        <literalValue>1</literalValue>
-        <name>Email Recd Closed Case = True</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <targetObject>ParentId</targetObject>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Owner_Support_API_Queue</fullName>
-        <field>OwnerId</field>
-        <lookupValue>Support_API</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>Owner = Support - API Queue</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
         <protected>false</protected>
         <targetObject>ParentId</targetObject>
     </fieldUpdates>
@@ -360,7 +299,7 @@ FIND(&quot;Does this resolve your case?&quot;,HtmlBody)-(FIND(&quot;&gt;Proposed
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND (6 or 7)</booleanFilter>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND (6 or 7) AND 8</booleanFilter>
         <criteriaItems>
             <field>Case.IsClosed</field>
             <operation>equals</operation>
@@ -395,6 +334,11 @@ FIND(&quot;Does this resolve your case?&quot;,HtmlBody)-(FIND(&quot;&gt;Proposed
             <field>EmailMessage.Subject</field>
             <operation>notContain</operation>
             <value>loop protection</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>EmailMessage.FromAddress</field>
+            <operation>notContain</operation>
+            <value>support+bc@pixelunion.net</value>
         </criteriaItems>
         <description>If a case is closed and the client sends an email within 7 days of close date change the status to Reopened.</description>
         <triggerType>onCreateOnly</triggerType>

@@ -98,6 +98,17 @@ For BAP-3698 - Partner Commissions v2</description>
         <type>Currency</type>
     </fields>
     <fields>
+        <fullName>Current_Month__c</fullName>
+        <description>For BAP-4107 - Treehouse requires additional fields for Partner Commissions integration</description>
+        <externalId>false</externalId>
+        <formula>MONTH(TODAY()) = MONTH(Payment_Date__c) &amp;&amp; YEAR(TODAY()) = YEAR(Payment_Date__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Was the payment from the customer made within the current month?</inlineHelpText>
+        <label>Current Month</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Invoice_Transaction__c</fullName>
         <description>For BAP-3698 - Partner Commissions v2</description>
         <externalId>false</externalId>
@@ -191,6 +202,36 @@ For BAP-3698 - Partner Commissions v2</description>
         <label>Partner is Engaged</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PaymentMonth__c</fullName>
+        <description>For BAP-4107 - Treehouse requires additional fields for Partner Commissions integration</description>
+        <externalId>false</externalId>
+        <formula>MONTH( Payment_Date__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The month that the custom paid us</inlineHelpText>
+        <label>Payment Month</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PaymentYear__c</fullName>
+        <description>For BAP-4107 - Treehouse requires additional fields for Partner Commissions integration</description>
+        <externalId>false</externalId>
+        <formula>Year(Payment_Date__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The year that the customer paid us</inlineHelpText>
+        <label>Payment Year</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Payment_Date__c</fullName>

@@ -5,6 +5,7 @@
     <customButtons>View_in_iDev</customButtons>
     <customButtons>View_BMP_Account</customButtons>
     <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>DisableCustomerPortalAccount</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
@@ -150,19 +151,19 @@
         <label>Channel Partner Details</label>
         <layoutColumns>
             <layoutItems>
-                <height>25</height>
-                <page>ApprovePartnerButton</page>
-                <showLabel>true</showLabel>
-                <showScrollbars>false</showScrollbars>
-                <width>100%</width>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Partner_iDevID__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>iDev_Partner_ID__c</field>
+            </layoutItems>
+            <layoutItems>
+                <height>25</height>
+                <page>ApprovePartnerButton</page>
+                <showLabel>true</showLabel>
+                <showScrollbars>false</showScrollbars>
+                <width>100%</width>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -204,19 +205,11 @@
                 <behavior>Readonly</behavior>
                 <field>CreatedById</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Testing_Account__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>LastModifiedById</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>IsPartner</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>

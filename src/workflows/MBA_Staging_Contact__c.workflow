@@ -15,7 +15,7 @@
             <name>Remove_Primary</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>MBA_Staging_Contact__c.Source__c</field>
             <operation>equals</operation>

@@ -43,6 +43,7 @@
         <value>1</value>
     </params>
     <reportType>Opportunities_with_lookup_data__c</reportType>
+    <roleHierarchyFilter>SystemAdministrator</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>false</showDetails>
     <timeFrameFilter>

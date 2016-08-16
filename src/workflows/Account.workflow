@@ -68,16 +68,6 @@
         <template>App_Partner_Templates/Rev_Share_Reminder_Email</template>
     </alerts>
     <fieldUpdates>
-        <fullName>Account_Owner_to_Simon</fullName>
-        <field>OwnerId</field>
-        <lookupValue>evan.smith@bigcommerce.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Account Owner to Simon</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Account_Type_to_Client</fullName>
         <field>Type</field>
         <literalValue>Client</literalValue>
@@ -114,29 +104,10 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Hubspot_Client_Age</fullName>
-        <field>Hubspot_Client_Age__c</field>
-        <formula>Client_Age__c</formula>
-        <name>Hubspot Client Age</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>MaxSub_Store_URL_Update</fullName>
         <field>MaxSub_Store_URL__c</field>
         <formula>MaxSub_Subscription__r.StoreURL__c</formula>
         <name>MaxSub Store URL Update</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Populate_MKT_Account_Owner_Team</fullName>
-        <description>Populate MKT Account Owner Team</description>
-        <field>MKT_Account_Owner_Team__c</field>
-        <formula>Owner_Team__c</formula>
-        <name>Populate MKT Account Owner Team</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
@@ -156,15 +127,6 @@
         <field>OLD_Survey_Link_Success_Squad__c</field>
         <formula>SSC__r.Survey_Link__c</formula>
         <name>SS Survey Rep Link</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>SS_Survey_Rep_Link_Acq</fullName>
-        <field>OLD_Survey_Link_Success_Squad_Acq__c</field>
-        <formula>SSC__r.Survey_Link_Acquisition__c</formula>
-        <name>SS Survey Rep Link Acq</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
@@ -224,15 +186,6 @@
         <field>Onboarding_MRR__c</field>
         <formula>PAR_Total_Active_MRR__c</formula>
         <name>Set Total Revenue for Partner Onboarding</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Survey_Date_Today</fullName>
-        <field>OLD_Survey_Date__c</field>
-        <formula>Today()</formula>
-        <name>Survey Date = Today</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
@@ -363,17 +316,6 @@ DATEVALUE(CreatedDate) &lt;&gt; TODAY()</formula>
 
  /*(Outbound Direct Sales, LDR)*/ &amp;&amp; ( $User.Id != Owner.Id )
 &amp;&amp;  $User.Id != $Label.The_Bigcommerce_Team</formula>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
-        <fullName>Populate MKT Account Owner Team</fullName>
-        <actions>
-            <name>Populate_MKT_Account_Owner_Team</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <description>Populate MKT Account Owner Team so Hubspot has the data</description>
-        <formula>ISCHANGED(OwnerId)</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>

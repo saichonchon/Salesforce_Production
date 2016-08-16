@@ -54,15 +54,6 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Migration_True</fullName>
-        <field>Migration__c</field>
-        <literalValue>1</literalValue>
-        <name>Migration = True</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Original_Plan_Name_Capture</fullName>
         <field>Original_Plan_Purchased__c</field>
         <formula>Product__c</formula>
@@ -78,16 +69,6 @@
         <name>Original Plan Value Capture</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Owner_Update</fullName>
-        <field>OwnerId</field>
-        <lookupValue>alecia.wall@bigcommerce.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Owner Update</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
@@ -141,24 +122,6 @@
         <field>Hubspot_Score_at_Conversion__c</field>
         <formula>Hubspot_Score__c</formula>
         <name>Populate Hubspot Conversion Score</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Populate_Hubspot_Score_at_Trial_Expirati</fullName>
-        <field>Hubspot_Score_at_Trial_Expiration__c</field>
-        <formula>Lead_Hubspot_Score__c</formula>
-        <name>Populate Hubspot Score at Trial Expirati</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Populate_Initial_Totango_Score</fullName>
-        <field>Initial_Totango_Score__c</field>
-        <formula>Totango_Score__c</formula>
-        <name>Populate Initial Totango Score</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
@@ -219,24 +182,6 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Status_to_Active</fullName>
-        <field>Status__c</field>
-        <literalValue>Active</literalValue>
-        <name>Status to Active</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Status_to_Cancelled</fullName>
-        <field>Status__c</field>
-        <literalValue>Cancelled</literalValue>
-        <name>Status to Cancelled</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Sub_Email_Update_Contact</fullName>
         <field>Email__c</field>
         <formula>Contact__r.Email</formula>
@@ -250,33 +195,6 @@
         <field>Email__c</field>
         <formula>Lead__r.Email</formula>
         <name>Sub Email Update : Lead</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Sub_Phone_Update_Contact</fullName>
-        <field>Phone__c</field>
-        <formula>Contact__r.Phone</formula>
-        <name>Sub Phone Update : Contact</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Sub_Phone_Update_Lead</fullName>
-        <field>Phone__c</field>
-        <formula>Lead__r.Phone</formula>
-        <name>Sub Phone Update : Lead</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Subscription_Copy_Store_URL_TEXT</fullName>
-        <field>Store_URL_TEXT__c</field>
-        <formula>StoreURL__c</formula>
-        <name>Subscription Copy Store URL TEXT</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
@@ -313,16 +231,6 @@
         <field>Previous_Product_Value__c</field>
         <formula>PRIORVALUE( MonthlyRecurringRevenue__c )</formula>
         <name>Previous Upgrade Plan Value</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Update_Referral_ID</fullName>
-        <description>Update Referral Id to Globalpayments</description>
-        <field>Referral_ID__c</field>
-        <formula>&quot;Globalpayments&quot;</formula>
-        <name>Update Referral ID</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
@@ -469,10 +377,6 @@
             <name>Sub_Email_Update_Contact</name>
             <type>FieldUpdate</type>
         </actions>
-        <actions>
-            <name>Sub_Phone_Update_Contact</name>
-            <type>FieldUpdate</type>
-        </actions>
         <active>true</active>
         <description>Updates sub phone &amp; email field if the Contact value is changed.  Originally used for list views but is also the last resort for a case email notifications if the case doesn&apos;t have a web address, lead or contact associated</description>
         <formula>Contact__c &lt;&gt; NULL || ISCHANGED(Contact__c) = TRUE</formula>
@@ -482,10 +386,6 @@
         <fullName>Email%2FPhone Field Updates %3A Lead</fullName>
         <actions>
             <name>Sub_Email_Update_Lead</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Sub_Phone_Update_Lead</name>
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
@@ -506,26 +406,6 @@
             <value>Heartland</value>
         </criteriaItems>
         <description>Transfers sub owner to Susan if the agency is Heartand</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Migration Updates on Subs</fullName>
-        <actions>
-            <name>Migration_True</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Subscription__c.Product__c</field>
-            <operation>contains</operation>
-            <value>migration</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Subscription__c.Migration__c</field>
-            <operation>equals</operation>
-            <value>False</value>
-        </criteriaItems>
-        <description>Checks the Migration box if the product name ever contains &quot;Migration&quot;</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
@@ -682,7 +562,7 @@ CONTAINS(Product__c, &quot;Free&quot;) = FALSE)
     </rules>
     <rules>
         <fullName>Populate Hubspot Score at Trial Expiration</fullName>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Subscription__c.StartDate__c</field>
             <operation>equals</operation>
@@ -696,32 +576,9 @@ CONTAINS(Product__c, &quot;Free&quot;) = FALSE)
         <description>Captures the Hubspot score value at the time the sub starts as a trial.  ISSUE: rule name does not fit filter criteria</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
         <workflowTimeTriggers>
-            <actions>
-                <name>Populate_Hubspot_Score_at_Trial_Expirati</name>
-                <type>FieldUpdate</type>
-            </actions>
             <timeLength>16</timeLength>
             <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
-    </rules>
-    <rules>
-        <fullName>Populate Initial Totango Score</fullName>
-        <actions>
-            <name>Populate_Initial_Totango_Score</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Subscription__c.Totango_Score__c</field>
-            <operation>greaterThan</operation>
-            <value>0</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Subscription__c.Initial_Totango_Score__c</field>
-            <operation>equals</operation>
-        </criteriaItems>
-        <description>Captures the Totango score value the very first time one comes through to the sub</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
         <fullName>Populate Totango Score at Expiration</fullName>
@@ -796,17 +653,6 @@ CONTAINS(Product__c, &quot;Free&quot;) = FALSE)
         </criteriaItems>
         <description>Checks the Sandbox field if the product name ever contains &quot;Sandbox&quot;</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Subscription Copy Store URL TEXT</fullName>
-        <actions>
-            <name>Subscription_Copy_Store_URL_TEXT</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <description>Copies store URL to text field to enable searching on create/edit</description>
-        <formula>Store_URL_TEXT__c &lt;&gt; StoreURL__c</formula>
-        <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
         <fullName>Testing %3D True</fullName>

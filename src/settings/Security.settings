@@ -225,7 +225,7 @@
     <passwordPolicies>
         <complexity>AlphaNumeric</complexity>
         <expiration>Never</expiration>
-        <historyRestriction>5</historyRestriction>
+        <historyRestriction>3</historyRestriction>
         <lockoutInterval>FifteenMinutes</lockoutInterval>
         <maxLoginAttempts>TenAttempts</maxLoginAttempts>
         <minimumPasswordLength>8</minimumPasswordLength>

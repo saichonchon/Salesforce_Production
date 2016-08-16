@@ -24,7 +24,7 @@ global class BatchPartnerCommissionAddPaymentHistory implements Database.Batchab
 			startDate = earliestDate;
 		}
 
-		string retVal = 'SELECT Id, Payment_Amount__c, Payment_Date__c, Partner_Account__c, Partner_Account__r.Most_Recent_Commission_Payment__c, Partner_Account__r.Most_Recent_Commission_Payment__r.Payment_Date__c  from Partner_Commission_Payment__c where Partner_Account__r.rvpe__ExtAccountId__c != 0 and Status__c = \'Completed\' and Payment_Date__c  <= ' + BatchPartnerCommissionCreateDetails.formatDateForQuery(endDate) + ' and Payment_Date__c  >= ' + BatchPartnerCommissionCreateDetails.formatDateForQuery(startDate);
+		string retVal = 'SELECT Id, Payment_Amount__c, Payment_Date__c, Partner_Account__c, Partner_Account__r.Most_Recent_Commission_Payment__c, Partner_Account__r.Most_Recent_Commission_Payment__r.Payment_Date__c  from Partner_Commission_Payment__c where Partner_Account__r.rvpe__ExtAccountId__c != 0 AND (NOT Description__c like \'%bounty%\') AND Status__c = \'Completed\' AND Payment_Date__c  <= ' + BatchPartnerCommissionCreateDetails.formatDateForQuery(endDate) + ' and Payment_Date__c  >= ' + BatchPartnerCommissionCreateDetails.formatDateForQuery(startDate);
 		System.Debug('Generated SOQL query: ' + retVal);
 
 		return retVal;

@@ -205,41 +205,52 @@ public class AccountTriggerHandler {
             
     public static void UpdateOppOwner(Map<Id, Account> mapAcc)
     {        
-            List<Opportunity> opps = new List<Opportunity>([select Id, OwnerId, AccountId, Channel_Partner__c from Opportunity where isClosed = false and  AccountId in :mapAcc.KeySet() ]);
-            List<Opportunity> updopps = new List<Opportunity>();
-            system.debug('user profile id '+UserInfo.getProfileId() );
+        List<Schema.RecordType> recordTypes = [select Id, Name, DeveloperName, SObjectType from RecordType where SObjectType = 'Opportunity'];
+        List<Id> omitOppRecordTypes = new List<Id>();
+        for (RecordType rt : recordTypes)
+        {
+            // record types to ignore when updating ownership
+            if (rt.DeveloperName == 'SBD_Upsell' || rt.DeveloperName == 'Upgrade_Store' || rt.DeveloperName == 'Professional_Services')
+            {
+                omitOppRecordTypes.add(rt.Id);
+            }
+        }
+
+        List<Opportunity> opps = new List<Opportunity>([select Id, OwnerId, AccountId, Channel_Partner__c from Opportunity where isClosed = false and  AccountId in :mapAcc.KeySet() and recordTypeId not in :omitOppRecordTypes ]);
+        List<Opportunity> updopps = new List<Opportunity>();
+        system.debug('user profile id '+UserInfo.getProfileId() );
+        
+        for (Opportunity o :opps)
+        {
+        	if ( StaticVariables.runningAccRoundRobin ||
+        	     (
+        	     (o.Channel_Partner__c == null || o.OwnerId == Label.Account_Default_Owner )
+        		 && (o.OwnerId == Label.Account_Default_Owner 
+        		 || UserInfo.getProfileId() <> Label.Sales_Rep_Profile
+        		 || o.OwnerId == UserInfo.getUserId())
+        	     && o.OwnerId <> mapAcc.get(o.AccountId).OwnerId)
+        	     )
+        	{
+        		{
+        			o.OwnerId = mapAcc.get(o.AccountId).OwnerId;
+        			 system.debug('***AccountTrigger:: updating Opportunity Owner **');
+        			updopps.add(o);
+        		}
+        	}
+
+        }
+        
+        try
+        {
             
-            for (Opportunity o :opps)
-            {
-            	if ( StaticVariables.runningAccRoundRobin ||
-            	     (
-            	     (o.Channel_Partner__c == null || o.OwnerId == Label.Account_Default_Owner )
-            		 && (o.OwnerId == Label.Account_Default_Owner 
-            		 || UserInfo.getProfileId() <> Label.Sales_Rep_Profile
-            		 || o.OwnerId == UserInfo.getUserId())
-            	     && o.OwnerId <> mapAcc.get(o.AccountId).OwnerId)
-            	     )
-            	{
-            		{
-            			o.OwnerId = mapAcc.get(o.AccountId).OwnerId;
-            			 system.debug('***AccountTrigger:: updating Opportunity Owner **');
-            			updopps.add(o);
-            		}
-            	}
-   
-            }
-            
-            try
-            {
-                
-                update updopps;
-            }
-            catch(Exception exc)
-            {
-               ErrorEmailHelper.notifyOnError('Account Trigger Handler', 'after update', 'Error in Account Trigger Handler - update ', ': update Opportunity'+updopps );
- 
-               system.debug('***ERROR: AccountTrigger:: ' + exc.getStackTraceString());
-            }
+            update updopps;
+        }
+        catch(Exception exc)
+        {
+           ErrorEmailHelper.notifyOnError('Account Trigger Handler', 'after update', 'Error in Account Trigger Handler - update ', ': update Opportunity'+updopps );
+
+           system.debug('***ERROR: AccountTrigger:: ' + exc.getStackTraceString());
+        }
     }  
     
     public static void UpdatePartnerOppOwner(Map<Id, Account> mapchAcc)

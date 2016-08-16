@@ -98,7 +98,7 @@
         <field>Opportunity.Oppotunity_Products__r$StartDate__c</field>
     </columns>
     <filter>
-        <booleanFilter>(1 AND 2 AND (3 OR 4) AND 5 AND 6 AND 7 AND 8 AND 9 AND (12 OR (10 AND 11)) AND 13)</booleanFilter>
+        <booleanFilter>((1 AND 2 AND (3 OR 4) AND 5 AND 6 AND 7 AND 8 AND 9 AND (12 OR (10 AND 11)) AND 13)) AND 14</booleanFilter>
         <criteriaItems>
             <column>Opportunity.Oppotunity_Products__r$Status__c</column>
             <operator>equals</operator>
@@ -163,6 +163,11 @@
             <column>Opportunity$BA_Testing_Opportunity__c</column>
             <operator>equals</operator>
             <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Oppotunity_Products__r$Revenue_Rep__c</column>
+            <operator>notEqual</operator>
+            <value>Victor soares</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

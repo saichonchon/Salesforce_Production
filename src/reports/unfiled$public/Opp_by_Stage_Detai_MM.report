@@ -41,6 +41,15 @@
         <field>Opportunity$Name</field>
     </columns>
     <columns>
+        <field>Opportunity$Closed_Lost_Reason__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Closed_Lost_Reason_Detail__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Other_Comments__c</field>
+    </columns>
+    <columns>
         <field>Opportunity$Primary_Campaign_Name__c</field>
     </columns>
     <columns>
@@ -90,7 +99,7 @@
         <criteriaItems>
             <column>Opportunity$Owner</column>
             <operator>equals</operator>
-            <value>Juan Jacinto,Justin Hospie,Lizette Flores,Nicholas Amelio,Robert King,Ryan Hamer,Tanner Moore,Annette Caputo,Joe Gillen</value>
+            <value>Juan Jacinto,Justin Hospie,Lizette Flores,Nicholas Amelio,Robert King,Ryan Hamer,Tanner Moore,Eric Owens,Joe Gillen</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>

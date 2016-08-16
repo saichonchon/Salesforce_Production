@@ -140,10 +140,13 @@
         <field>CREATED_DATE</field>
     </columns>
     <columns>
-        <field>Opportunity.Sales_Notes__c</field>
+        <field>Opportunity.Executive_Sponsorship__c</field>
     </columns>
     <columns>
-        <field>Opportunity.Executive_Sponsorship__c</field>
+        <field>Opportunity.Manager_Notes__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Sales_Notes__c</field>
     </columns>
     <filter>
         <criteriaItems>

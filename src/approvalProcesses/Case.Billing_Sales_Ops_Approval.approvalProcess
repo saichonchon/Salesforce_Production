@@ -22,10 +22,6 @@
         <allowDelegate>false</allowDelegate>
         <approvalActions>
             <action>
-                <name>Case_Status_to_Completed_by_Ops</name>
-                <type>FieldUpdate</type>
-            </action>
-            <action>
                 <name>Owner_to_Billing_Queue</name>
                 <type>FieldUpdate</type>
             </action>

@@ -145,6 +145,42 @@ WARNING: This will expose some of your emails to the Unresolved Items Agent. -->
         <name>Ramp_Level__c</name>
     </fields>
     <fields>
+        <help><!-- Customize default tab in Product Lookup page. --></help>
+        <label><!-- Default Product Lookup Tab --></label>
+        <name>SBQQ__DefaultProductLookupTab__c</name>
+        <picklistValues>
+            <masterLabel>Guided Selling</masterLabel>
+            <translation><!-- Guided Selling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Search Filters</masterLabel>
+            <translation><!-- Search Filters --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Check to allow this user to change output format of quote documents. --></help>
+        <label><!-- Allow Output Format Change --></label>
+        <name>SBQQ__OutputFormatChangeAllowed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select &quot;Followed&quot; to display products you follow in Chatter before others when adding to quote. --></help>
+        <label><!-- Product Sort Preference --></label>
+        <name>SBQQ__ProductSortPreference__c</name>
+        <picklistValues>
+            <masterLabel>Followed</masterLabel>
+            <translation><!-- Followed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Check to clear search filters and results every time you add products to your quotes. Otherwise, your previous selections are kept. --></help>
+        <label><!-- Reset Product Lookup --></label>
+        <name>SBQQ__ResetProductLookup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Theme --></label>
+        <name>SBQQ__Theme__c</name>
+    </fields>
+    <fields>
         <help><!-- Used in international email templates --></help>
         <label><!-- Skype Name --></label>
         <name>Skype_Name__c</name>
@@ -365,6 +401,10 @@ WARNING: This will expose some of your emails to the Unresolved Items Agent. -->
         <errorMessage><!-- The Department field cannot be edited.  Please contact your Salesforce Admin if you need the value changed --></errorMessage>
         <name>Users_Cannot_CHange_Department_Field</name>
     </validationRules>
+    <webLinks>
+        <label><!-- Select_Theme --></label>
+        <name>SBQQ__Select_Theme</name>
+    </webLinks>
     <webLinks>
         <label><!-- Clone --></label>
         <name>ctu__Clone</name>

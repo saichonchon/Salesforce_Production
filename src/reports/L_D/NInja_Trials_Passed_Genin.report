@@ -12,7 +12,7 @@
     <columns>
         <field>lmscons__Transcript_Line__c$lmscons__Status__c</field>
     </columns>
-    <description>Learners with passing scores on the Genin exam. Passing is 90%</description>
+    <description>Learners with passing scores on the Genin exam. Passing is 80%</description>
     <filter>
         <criteriaItems>
             <column>lmscons__Transcript_Line__c$lmscons__Quiz__c</column>

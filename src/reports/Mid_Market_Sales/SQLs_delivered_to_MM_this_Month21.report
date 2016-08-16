@@ -26,6 +26,9 @@
             <sourceValues>
                 <sourceValue>Amanda Mancuso</sourceValue>
             </sourceValues>
+            <sourceValues>
+                <sourceValue>Brian Miller</sourceValue>
+            </sourceValues>
             <value>IB</value>
         </values>
         <values>
@@ -34,9 +37,6 @@
             </sourceValues>
             <sourceValues>
                 <sourceValue>Leonard Dingle</sourceValue>
-            </sourceValues>
-            <sourceValues>
-                <sourceValue>Brian Miller</sourceValue>
             </sourceValues>
             <sourceValues>
                 <sourceValue>Aubrie O&apos;Connor</sourceValue>
@@ -89,7 +89,10 @@
             <sourceValues>
                 <sourceValue>Evan Smith</sourceValue>
             </sourceValues>
-            <value>Partner</value>
+            <sourceValues>
+                <sourceValue>Lauryn Spence</sourceValue>
+            </sourceValues>
+            <value>DSP</value>
         </values>
         <values>
             <sourceValues>
@@ -101,7 +104,10 @@
             <sourceValues>
                 <sourceValue>Alecia Wall</sourceValue>
             </sourceValues>
-            <value>Trial</value>
+            <sourceValues>
+                <sourceValue>Marty Solis</sourceValue>
+            </sourceValues>
+            <value>SB</value>
         </values>
     </buckets>
     <chart>
@@ -156,6 +162,9 @@
     </columns>
     <columns>
         <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Closed_Lost_Reason_Detail__c</field>
     </columns>
     <columns>
         <field>PROBABILITY</field>

@@ -71,7 +71,6 @@
         <externalId>false</externalId>
         <label>Account</label>
         <referenceTo>Account</referenceTo>
-        <relationshipLabel>Webinars</relationshipLabel>
         <relationshipName>Webinars</relationshipName>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -141,7 +140,6 @@ NULL)))))</formula>
         <externalId>false</externalId>
         <label>Contact</label>
         <referenceTo>Contact</referenceTo>
-        <relationshipLabel>Webinars</relationshipLabel>
         <relationshipName>Webinars</relationshipName>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -195,7 +193,6 @@ IF( OR(ISBLANK(  Contact__c ) &amp;&amp; NOT(ISBLANK(  Lead__c  )),NOT(ISBLANK( 
         <externalId>false</externalId>
         <label>Lead</label>
         <referenceTo>Lead</referenceTo>
-        <relationshipLabel>Webinars</relationshipLabel>
         <relationshipName>Webinars</relationshipName>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -544,7 +541,7 @@ IF(FIND(MID(Id,11,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,1,0)
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <label>Webinar</label>
+    <label>zWebinar</label>
     <nameField>
         <label>Webinar Name</label>
         <type>Text</type>

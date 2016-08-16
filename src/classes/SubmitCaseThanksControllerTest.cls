@@ -6,15 +6,16 @@ private class SubmitCaseThanksControllerTest {
 		PageReference pg = Page.SubmitCaseThanks;
     Test.setCurrentPage(pg);
 
-    ApexPages.currentPage().getParameters().put('caseNum', '1234'); 
-    ApexPages.currentPage().getParameters().put('contactEmail', 'test@bigcommerce.com'); 
-    ApexPages.currentPage().getParameters().put('storeUrl', 'teststore.bigcommerce.com'); 
+    // create a test case and supporting objects
+    List<Account> testAccounts = TestDataFactory.createTestAccounts(1, false, TestDataFactory.AccountRecordType.Client_Record_Type);
+    List<Contact> testContacts = TestDataFactory.createTestContacts(1, testAccounts);
+    List<Case> testCases = TestDataFactory.createTestCases(1, testContacts);
+
+    ApexPages.currentPage().getParameters().put('caseNum', testCases[0].CaseNumber); 
 
     sct = new SubmitCaseThanksController();
 
-    System.assertEquals(sct.caseNum, '1234');
-    System.assertEquals(sct.contactEmail, 'test@bigcommerce.com');
-    System.assertEquals(sct.storeUrl, 'teststore.bigcommerce.com');
+    System.assertEquals(sct.caseNum, testCases[0].CaseNumber);
 	}
 
 }

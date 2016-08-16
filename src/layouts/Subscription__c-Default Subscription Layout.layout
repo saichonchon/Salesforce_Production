@@ -383,10 +383,6 @@
         <relatedList>RelatedEntityHistoryList</relatedList>
     </relatedLists>
     <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Subscription_History__c.Subscription__c</relatedList>
-    </relatedLists>
-    <relatedLists>
         <fields>CASES.CASE_NUMBER</fields>
         <fields>CASES.RECORDTYPE</fields>
         <fields>CASES.SUBJECT</fields>

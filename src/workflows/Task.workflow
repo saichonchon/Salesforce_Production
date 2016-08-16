@@ -137,29 +137,6 @@
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
-        <fullName>Demo Request Assignment Notification</fullName>
-        <actions>
-            <name>Demo_Request_Assigment_Notification</name>
-            <type>Alert</type>
-        </actions>
-        <actions>
-            <name>Change_Type_to_Reminder</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <description>Sends an email alert to the owner when a demo request has been assigned to them.</description>
-        <formula>AND( 
-Subject = &apos;**Demo Requested**&apos;, 
-OR( 
-Owner:User.Profile.Id = &apos;00e13000000jUNJ&apos;, /* Lead Development Rep */  
-Owner:User.Profile.Id = &apos;00e130000024OSc&apos;, /* Sales Rep */  
-Owner:User.Profile.Id = &apos;00e13000000jUyt&apos;, /* Sales Rep - Dial on Opps */  
-Owner:User.Profile.Id = &apos;00e130000024OSX&apos;  /* Sales Leader */  
-) 
-)</formula>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
         <fullName>First of Month Date Population %3A Task</fullName>
         <actions>
             <name>First_of_Month_Date_Population_Task</name>

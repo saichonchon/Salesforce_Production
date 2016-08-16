@@ -74,8 +74,8 @@
     <filter>
         <criteriaItems>
             <column>Case.Case_Closed_By__c</column>
-            <operator>equals</operator>
-            <value>Jose Fulgencio,Daphne Apatan,Beau Bungay,Melchor Martinez,Patricia Santos,Foy Howard,Phillip Estrada</value>
+            <operator>contains</operator>
+            <value>Fulgencio,Apatan,Bungay,Martinez,Santos,Howard,Estrada</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>

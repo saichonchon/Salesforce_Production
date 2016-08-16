@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Partner Re-engagement- 1160.PAR - Email 5</name>
+    <style>none</style>
+    <subject>Ecommerce research you should see</subject>
+    <textOnly>When you help your customers pick an ecommerce platform, you’re not only deciding how their store will look and operate, but how much it will cost them over the life of their business.
+Hi {{lead.First Name:default=there}},
+When you help your customers pick an ecommerce platform, you’re not only deciding how their store will look and operate, but how much it will cost them over the life of their business.
+
+To show you how BigCommerce rates on total cost of ownership, we wanted to share the results of a 2016 Price Intelligently study &lt;[[http://www.priceintelligently.com/blog/ecommerce-platform-pricing-bigcommerce-shopify-magento-demandware]]&gt; that breaks down the costs and benefits of platforms including Magento, Volusion, Shopify, Demandware and BigCommerce.
+
+Enjoy!
+Sincerely,
+
+The BigCommerce Partner Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

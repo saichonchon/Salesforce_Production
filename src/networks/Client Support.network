@@ -38,45 +38,32 @@
     <site>Client_Support</site>
     <status>Live</status>
     <tabs>
-        <customTab>n2de__Console</customTab>
         <customTab>BGIntegration__BomgarSession__c</customTab>
-        <customTab>n2de__Logs</customTab>
         <customTab>BGIntegration__Configuration</customTab>
-        <customTab>n2de__Manage_Holidays</customTab>
         <customTab>BGIntegration__Error_Log__c</customTab>
-        <customTab>n2de__Distribution_Analytics</customTab>
         <customTab>BGIntegration__Outbound_Event__c</customTab>
-        <customTab>n2de__Distribution_Tags</customTab>
-        <customTab>n2de__Team__c</customTab>
-        <customTab>n2de__Out_of_office</customTab>
-        <customTab>n2de__Settings</customTab>
         <customTab>lmscons__Catalog__c</customTab>
         <customTab>lmscons__Content_License__c</customTab>
         <customTab>lmscons__Curriculum__c</customTab>
         <customTab>lmscons__Debug_Log</customTab>
         <customTab>rh2__Rollup_Helper_Exceptions</customTab>
         <customTab>ToutApp__Tout_Outbox</customTab>
-        <customTab>Price_Plan</customTab>
         <customTab>csmrgp__Duplicate_Group__c</customTab>
         <customTab>DaScoopComposer__DaScoop_Snippet__c</customTab>
         <customTab>DaScoopComposer__Email_Blacklist</customTab>
         <customTab>DaScoopComposer__Activity_Performance</customTab>
         <customTab>KB_Global_Search_And_Replace__c</customTab>
-        <customTab>KB_Global_Search_History__c</customTab>
         <customTab>lmscons__Learning</customTab>
-        <customTab>User_Status__c</customTab>
+        <customTab>KB_Global_Search_History__c</customTab>
         <customTab>IS2_TGH__Sales_Pipeline_Analytics</customTab>
-        <customTab>Article_Search_and_Replace</customTab>
         <customTab>IS2_TGH__PipelineHistory</customTab>
-        <customTab>rh2__Rollup_Helper_Help</customTab>
-        <customTab>rh2__Rollup_Helper_Home</customTab>
+        <customTab>Article_Search_and_Replace</customTab>
         <customTab>mkto_si__Marketo</customTab>
-        <customTab>Revenue_Share_History__c</customTab>
         <customTab>mkto_si__Marketo_Sales_Insight_Config__c</customTab>
-        <customTab>lmscons__Training_Content__c</customTab>
         <customTab>Zuora__Connection_Setup</customTab>
-        <customTab>lmscons__Training_Path_Assignment_Progress__c</customTab>
+        <customTab>lmscons__Training_Content__c</customTab>
         <customTab>Zuora__Schema_Setup</customTab>
+        <customTab>lmscons__Training_Path_Assignment_Progress__c</customTab>
         <customTab>permissioner__The_Permissioner</customTab>
         <customTab>lmscons__My_Team</customTab>
         <customTab>lmscons__My_Training</customTab>
@@ -87,131 +74,168 @@
         <customTab>lmscons__LMS_Content__c</customTab>
         <customTab>lmscons__Learning_Path__c</customTab>
         <customTab>lmsilt__Development_Plans</customTab>
-        <customTab>tinderbox__TinderBox_Library</customTab>
         <customTab>lmsilt__Event__c</customTab>
-        <customTab>tinderbox__TinderBox_Log__c</customTab>
-        <customTab>BI_Data__c</customTab>
         <customTab>lmsilt__ILT_Settings</customTab>
-        <customTab>tinderbox__TinderBox</customTab>
-        <customTab>tinderbox__TinderBox_Settings</customTab>
-        <customTab>lmsilt__Development_Plan__c</customTab>
-        <customTab>Zuora__PaymentTerm__c</customTab>
-        <customTab>tinderbox__TinderBox_Tracking</customTab>
+        <customTab>BI_Data__c</customTab>
         <customTab>Support_Survey__c</customTab>
-        <customTab>rh2__PS_Enable_Real_Time</customTab>
+        <customTab>Zuora__PaymentTerm__c</customTab>
+        <customTab>lmsilt__Development_Plan__c</customTab>
         <customTab>lmscons__Trigger_Rule__c</customTab>
         <customTab>lmscons__Upload_Content</customTab>
-        <customTab>rh2__PS_Getting_Started</customTab>
         <customTab>lmscons__temp_xlsx__c</customTab>
-        <customTab>rh2__PS_Import_Export</customTab>
-        <customTab>rh2__PS_Rollup_Helper</customTab>
-        <customTab>lmscons__Training_Path__c</customTab>
         <customTab>Zuora__Sync_Histories</customTab>
-        <customTab>lmscons__Training_Unit__c</customTab>
+        <customTab>lmscons__Training_Path__c</customTab>
         <customTab>Zuora__ZBilling</customTab>
-        <customTab>rh2__Job__c</customTab>
+        <customTab>lmscons__Training_Unit__c</customTab>
         <customTab>lmscons__Transcript_Line__c</customTab>
-        <customTab>rh2__PS_All_Rollups</customTab>
         <customTab>lmscons__Transcript__c</customTab>
         <customTab>Field_Trip__Object_Analysis__c</customTab>
         <customTab>PKB_2_Settings</customTab>
-        <customTab>Subscription__c</customTab>
         <customTab>PKB_Article_Feedback_Deflection__c</customTab>
+        <customTab>PKB_Featured__c</customTab>
+        <customTab>Zuora__SubscriptionProductCharge__c</customTab>
+        <customTab>lmsilt__Learning</customTab>
+        <customTab>DaScoopComposer__Groove</customTab>
+        <customTab>DaScoopComposer__Pipeline_Performance</customTab>
+        <customTab>DaScoopComposer__Template_Performance</customTab>
+        <customTab>DaScoopComposer__Groove_Mobile</customTab>
+        <customTab>DaScoopComposer__Groove_Setup</customTab>
+        <customTab>DaScoopComposer__Tracked_Message__c</customTab>
+        <customTab>DaScoopComposer__Unresolved_Items</customTab>
+        <customTab>Zuora__Subscription__c</customTab>
+        <customTab>dsfs__DocuSign_Partner_Demo</customTab>
+        <customTab>dsfs__DocuSign_Status__c</customTab>
+        <customTab>dsfs__DocuSign_Admin</customTab>
+        <customTab>MBA_Staging_Account__c</customTab>
+        <customTab>MBA_Staging_Contact__c</customTab>
+        <customTab>ctu__Clone_This_User</customTab>
+        <customTab>qbdialer__InsideSales_Setup</customTab>
+        <customTab>qbdialer__Dialer_Queries</customTab>
+        <customTab>qbdialer__Dialer</customTab>
+        <customTab>MBA_Staging_Subscription__c</customTab>
+        <customTab>qbdialer__is_links</customTab>
+        <customTab>Partner_Commission_Tools</customTab>
+        <customTab>n2de__Console</customTab>
+        <customTab>n2de__Logs</customTab>
+        <customTab>n2de__Manage_Holidays</customTab>
+        <customTab>n2de__Distribution_Analytics</customTab>
+        <customTab>n2de__Distribution_Tags</customTab>
+        <customTab>n2de__Team__c</customTab>
+        <customTab>n2de__Out_of_office</customTab>
+        <customTab>n2de__Settings</customTab>
+        <customTab>Price_Plan</customTab>
+        <customTab>SBQQ__InstallProcessorLog__c</customTab>
+        <customTab>SBQQ__Localization__c</customTab>
+        <customTab>SBQQ__PriceRule__c</customTab>
+        <customTab>SBQQ__ProductRule__c</customTab>
+        <customTab>SBQQ__QuoteProcess__c</customTab>
+        <customTab>SBQQ__QuoteTemplate__c</customTab>
+        <customTab>SBQQ__QuoteTerm__c</customTab>
+        <customTab>SBQQ__Quote__c</customTab>
+        <customTab>User_Status__c</customTab>
+        <customTab>rh2__Rollup_Helper_Help</customTab>
+        <customTab>rh2__Rollup_Helper_Home</customTab>
+        <customTab>Revenue_Share_History__c</customTab>
+        <customTab>tinderbox__TinderBox_Library</customTab>
+        <customTab>tinderbox__TinderBox_Log__c</customTab>
+        <customTab>tinderbox__TinderBox</customTab>
+        <customTab>TASKRAY__TaskRay</customTab>
+        <customTab>TASKRAY__trChecklistItem__c</customTab>
+        <customTab>TASKRAY__trSF1LeftMenu</customTab>
+        <customTab>tinderbox__TinderBox_Settings</customTab>
+        <customTab>TASKRAY__trTaskTime__c</customTab>
+        <customTab>tinderbox__TinderBox_Tracking</customTab>
+        <customTab>rh2__PS_Enable_Real_Time</customTab>
+        <customTab>rh2__PS_Getting_Started</customTab>
+        <customTab>rh2__PS_Import_Export</customTab>
+        <customTab>TASKRAY__Project_Task__c</customTab>
+        <customTab>rh2__PS_Rollup_Helper</customTab>
+        <customTab>TASKRAY__Project__c</customTab>
+        <customTab>rh2__PS_All_Rollups</customTab>
+        <customTab>Subscription__c</customTab>
         <customTab>csmrgp__Settings</customTab>
         <customTab>csmrgp__Setup_Wizard</customTab>
         <customTab>csmrgp__Case_Merge_Premium</customTab>
         <customTab>mkto2__AboutMarketo</customTab>
         <customTab>mkto2__Marketo</customTab>
         <customTab>csplit__Setup_Wizard</customTab>
-        <customTab>PKB_Featured__c</customTab>
-        <customTab>Zuora__SubscriptionProductCharge__c</customTab>
+        <customTab>SBQQ__DiscountCategory__c</customTab>
+        <customTab>SBQQ__DiscountSchedule__c</customTab>
+        <customTab>SBQQ__Favorite__c</customTab>
+        <customTab>SBQQ__ImportFormat__c</customTab>
         <customTab>totango__TotangoTab</customTab>
-        <customTab>lmsilt__Learning</customTab>
-        <customTab>DaScoopComposer__Groove</customTab>
-        <customTab>DaScoopComposer__Pipeline_Performance</customTab>
+        <customTab>SBQQ__CustomAction__c</customTab>
+        <customTab>SBQQ__CustomScript__c</customTab>
+        <customTab>SBQQ__SummaryVariable__c</customTab>
+        <customTab>SBQQ__TemplateContent__c</customTab>
+        <customTab>SBQQ__WebQuote__c</customTab>
         <customTab>E2CP__Settings</customTab>
-        <customTab>DaScoopComposer__Template_Performance</customTab>
         <customTab>E2CP__Setup_Wizard</customTab>
-        <customTab>DaScoopComposer__Groove_Mobile</customTab>
         <customTab>E2CP__Canned_Comment__c</customTab>
-        <customTab>DaScoopComposer__Groove_Setup</customTab>
         <customTab>E2CP__New_Comment_Action__c</customTab>
-        <customTab>DaScoopComposer__Tracked_Message__c</customTab>
-        <customTab>DaScoopComposer__Unresolved_Items</customTab>
-        <customTab>Zuora__Subscription__c</customTab>
+        <customTab>SBQQ__SearchFilter__c</customTab>
+        <customTab>SBQQ__SolutionGroup__c</customTab>
         <customTab>Partner_Commission_Payment__c</customTab>
         <customTab>WorkIt2__Timing__c</customTab>
-        <customTab>dsfs__DocuSign_Partner_Demo</customTab>
-        <customTab>dsfs__DocuSign_Status__c</customTab>
         <customTab>STOWD__Status_Ownership_Duration__c</customTab>
-        <customTab>dsfs__DocuSign_Admin</customTab>
         <customTab>lmscons__CFS_Badge__c</customTab>
         <customTab>lmscons__CFS_Link__c</customTab>
-        <customTab>MBA_Staging_Account__c</customTab>
         <customTab>lmscons__Channel__c</customTab>
         <customTab>lmscons__Theme__c</customTab>
-        <customTab>MBA_Staging_Contact__c</customTab>
-        <customTab>Incident__c</customTab>
-        <customTab>ctu__Clone_This_User</customTab>
-        <customTab>qbdialer__InsideSales_Setup</customTab>
-        <customTab>qbdialer__Dialer_Queries</customTab>
-        <customTab>MBA_Staging_Subscription__c</customTab>
-        <customTab>qbdialer__Dialer</customTab>
         <customTab>WorkIt2__Session_Type__c</customTab>
         <customTab>WorkIt2__Time_Entry__c</customTab>
-        <customTab>qbdialer__is_links</customTab>
         <customTab>zqu__Quote__c</customTab>
-        <customTab>PKB_Content__c</customTab>
         <customTab>zqu__Z_Quote_Config</customTab>
+        <customTab>PKB_Content__c</customTab>
         <customTab>zqu__ZuoraConfig__c</customTab>
-        <customTab>Partner_Commission_Tools</customTab>
         <customTab>zqu__Quote_Template__c</customTab>
         <defaultTab>home</defaultTab>
-        <standardTab>Account</standardTab>
         <standardTab>Document</standardTab>
-        <standardTab>WorkFeedbackRequest</standardTab>
         <standardTab>Questions</standardTab>
-        <standardTab>OtherUserProfile</standardTab>
         <standardTab>WorkBadge</standardTab>
         <standardTab>ContentSearch</standardTab>
-        <standardTab>KnowledgePublishing</standardTab>
-        <standardTab>Idea</standardTab>
-        <standardTab>Contract</standardTab>
         <standardTab>Recognition</standardTab>
-        <standardTab>Product2</standardTab>
-        <standardTab>Case</standardTab>
         <standardTab>AdvForecast</standardTab>
         <standardTab>ContentSubscriptions</standardTab>
-        <standardTab>Lead</standardTab>
         <standardTab>ProfileSkill</standardTab>
-        <standardTab>DuplicateRecordSet</standardTab>
-        <standardTab>Solution</standardTab>
-        <standardTab>report</standardTab>
         <standardTab>WorkBadgeDefinition</standardTab>
-        <standardTab>GoogleDocs</standardTab>
         <standardTab>GoalV2</standardTab>
-        <standardTab>CollaborationGroup</standardTab>
         <standardTab>Dashboard</standardTab>
-        <standardTab>Knowledge</standardTab>
-        <standardTab>ProfilePlatformFeed</standardTab>
-        <standardTab>ProfilePlatformOverview</standardTab>
-        <standardTab>ProfilePlatformGoals</standardTab>
         <standardTab>Campaign</standardTab>
-        <standardTab>File</standardTab>
-        <standardTab>UserProfile</standardTab>
-        <standardTab>Coaching</standardTab>
+        <standardTab>Forecasting3</standardTab>
         <standardTab>ProfilePlatformFeedback</standardTab>
         <standardTab>Opportunity</standardTab>
         <standardTab>Console</standardTab>
         <standardTab>AppLauncher</standardTab>
         <standardTab>Answers</standardTab>
-        <standardTab>Calibration</standardTab>
-        <standardTab>home</standardTab>
-        <standardTab>Contact</standardTab>
         <standardTab>Chatter</standardTab>
+        <standardTab>home</standardTab>
+        <standardTab>Metric</standardTab>
+        <standardTab>Account</standardTab>
+        <standardTab>WorkFeedbackRequest</standardTab>
+        <standardTab>OtherUserProfile</standardTab>
+        <standardTab>KnowledgePublishing</standardTab>
+        <standardTab>Idea</standardTab>
+        <standardTab>Contract</standardTab>
+        <standardTab>Product2</standardTab>
+        <standardTab>Case</standardTab>
+        <standardTab>Lead</standardTab>
+        <standardTab>DuplicateRecordSet</standardTab>
+        <standardTab>Solution</standardTab>
+        <standardTab>report</standardTab>
+        <standardTab>GoogleDocs</standardTab>
+        <standardTab>CollaborationGroup</standardTab>
+        <standardTab>Knowledge</standardTab>
+        <standardTab>ProfilePlatformFeed</standardTab>
+        <standardTab>ProfilePlatformOverview</standardTab>
+        <standardTab>ProfilePlatformGoals</standardTab>
+        <standardTab>File</standardTab>
+        <standardTab>Coaching</standardTab>
+        <standardTab>UserProfile</standardTab>
+        <standardTab>Calibration</standardTab>
+        <standardTab>Contact</standardTab>
         <standardTab>WorkPerformanceCycle</standardTab>
         <standardTab>ChatterAnswers</standardTab>
-        <standardTab>Metric</standardTab>
         <standardTab>Workspace</standardTab>
     </tabs>
     <urlPathPrefix>Client</urlPathPrefix>

@@ -3,6 +3,9 @@
  * Author: Steve O'Neal
  * Created: 2016-06-08
  * For building out partner commission data
+ *
+ *
+ * 2016-08-03	Steve O'Neal	BAP-4085	Added functionality to take into consideration the partners' Approved Date and their Date Inactivated
  */
 
 global class BatchPartnerCommissionCreateDetails implements Database.Batchable<sObject> {
@@ -73,7 +76,7 @@ global class BatchPartnerCommissionCreateDetails implements Database.Batchable<s
 			startDate = earliestDate;
 		}
 		// Note that we not only exclude any records that are not currently assigned to any partner, we also exclude any that are assigned to our generic placeholder account with an external id of 0
-		string retVal = ' select id, name, Amount_Accrued_for_Commissions__c, Amount_Not_Yet_Accrued_for_Commissions__c, Amount_Paid_net__c, CMRR__c, Date_Paid__c, Date_Payment_Effective_Until__c, Number_of_Partner_Commissions__c, Partner_Account_Date_Inactivated__c, Partner_Account_ID__c, Partner_Account_External_ID__c, Partner_Commission_Percent__c, Payment_Term_Calculated__c, Product_Type__c, Store_Opportunity__c';
+		string retVal = ' select id, name, Amount_Accrued_for_Commissions__c, Amount_Not_Yet_Accrued_for_Commissions__c, Amount_Paid_net__c, CMRR__c, Date_Paid__c, Date_Payment_Effective_Until__c, Number_of_Partner_Commissions__c, Partner_Account_Date_Inactivated__c, Partner_Account_Date_Activated__c, Partner_Account_ID__c, Partner_Account_External_ID__c, Partner_Commission_Percent__c, Payment_Term_Calculated__c, Product_Type__c, Store_Opportunity__c';
 		retVal +=		' from Invoice_Transaction__c';
 		retVal +=		' where Partner_Account_ID__c != \'\'';
 		retVal +=		'	and Partner_Account_External_ID__c != 0';
@@ -81,6 +84,7 @@ global class BatchPartnerCommissionCreateDetails implements Database.Batchable<s
 		retVal +=		'	and Amount_Not_Yet_Accrued_for_Commissions__c != 0';
 		retVal +=		' 	and Date_Paid__c <= ' + BatchPartnerCommissionCreateDetails.formatDateForQuery(endDate);
 		retVal +=		' 	and Date_Payment_Effective_Until__c >= ' + BatchPartnerCommissionCreateDetails.formatDateForQuery(startDate);
+		//retVal +=		' 	and Payment_Term_Calculated__c > 1';
 		// filter the results to only the specified partners
 		if (targetPartnerAccounts.size() > 0)
 		{
@@ -174,65 +178,100 @@ global class BatchPartnerCommissionCreateDetails implements Database.Batchable<s
 				 */
 
 				// figure out how many payments we should be paying the customer for if their term spans more than one month
-				double amountNotYetAccrued = invTrans.Amount_Paid_net__c;
+				double netPaid = invTrans.Amount_Paid_net__c;
+				double amountAccrued = 0;
 				// if the payment term is blank or 1, or the effective end date is in the past, assume we owe them the entire amount
-				decimal percentageAccrued = 1;
+				decimal percentageAccrued = 0;
 				// if the payment term is more than one, or the effective end date is in the past, calculate what percentage they have accrued
-				if (invTrans.Payment_Term_Calculated__c > 1)
+				/**
+				 * Our partners will only accrue payments from whichever date is LATEST:
+				 *   1) The payment date
+				 *   2) The commission run start date
+				 *   3) The Partner Account Date Activated
+				 */
+				Date effectiveStartDate = invTrans.Date_Paid__c;
+				System.Debug('effectiveStartDate: ' + effectiveStartDate);
+				if (startDate != null && effectiveStartDate < startDate)
 				{
-					Date paymentDate = invTrans.Date_Paid__c;
-					// sometimes, annual payments may overlap the start date.  For simple math, we add months to the payment date until it falls into range
-					while (paymentDate < startDate)
-					{
-						paymentDate = paymentDate.addMonths(1);
-					}
-
-					integer numberOfPaymentsEarned = 0;
-
-					System.debug(paymentDate + ' <= ' + endDate + ' && ' + numberOfPaymentsEarned + ' < ' + invTrans.Payment_Term_Calculated__c);
-					// while the adjusted payment date does not exceed the date range we are calculating for, and it does not exceed the effective until date, calculate how many months they have accrued to date
-					while (paymentDate <= endDate && numberOfPaymentsEarned < invTrans.Payment_Term_Calculated__c && paymentDate <= invTrans.Date_Payment_Effective_Until__c)
-					{
-						paymentDate = paymentDate.addMonths(1);
-						numberOfPaymentsEarned++;
-					}
-
-					// we now know how many CMRRs we owe them for, calculate the percentage that we should pay this month
-					percentageAccrued = (numberOfPaymentsEarned/invTrans.Payment_Term_Calculated__c);
+					effectiveStartDate = startDate;
 				}
+				System.Debug('effectiveStartDate: ' + effectiveStartDate);
+
+				if (invTrans.Partner_Account_Date_Activated__c != null && effectiveStartDate < invTrans.Partner_Account_Date_Activated__c)
+				{
+					effectiveStartDate = invTrans.Partner_Account_Date_Activated__c;
+				}
+				System.Debug('effectiveStartDate: ' + effectiveStartDate);
+				/**
+				 * Payments will end on whichever date is the EARLIEST:
+				 * 	 1) The effective payment end date
+				 * 	 2) The commission run end date
+				 * 	 3) The Partner Account Date Inactivated
+				 */
+				Date effectiveEndDate = endDate;
+				System.Debug('effectiveEndDate: ' + effectiveEndDate);
+				if (invTrans.Date_Payment_Effective_Until__c != null && effectiveEndDate > invTrans.Date_Payment_Effective_Until__c)
+				{
+					effectiveEndDate = invTrans.Date_Payment_Effective_Until__c;
+				}
+				System.Debug('effectiveEndDate: ' + effectiveEndDate);
+
+				if (invTrans.Partner_Account_Date_Inactivated__c != null && effectiveEndDate > invTrans.Partner_Account_Date_Inactivated__c)
+				{
+					effectiveEndDate = invTrans.Partner_Account_Date_Inactivated__c;
+				}
+				System.Debug('effectiveEndDate: ' + effectiveEndDate);
+
+				integer numberOfPaymentsEarned = 0;
+
+				System.debug('effectiveStartDate: ' + effectiveStartDate + ' <= effectiveEndDate: ' + effectiveEndDate);
+				// while the adjusted payment date does not exceed the date range we are calculating for, and it does not exceed the effective until date, calculate how many months they have accrued to date
+				while (effectiveStartDate <= effectiveEndDate && numberOfPaymentsEarned < invTrans.Payment_Term_Calculated__c)
+				{
+					effectiveStartDate = effectiveStartDate.addMonths(1);
+					numberOfPaymentsEarned++;
+				}
+				System.debug('numberOfPaymentsEarned: ' + numberOfPaymentsEarned + ' < invTrans.Payment_Term_Calculated__c: ' + invTrans.Payment_Term_Calculated__c);
+
+				// we now know how many CMRRs we owe them for, calculate the percentage that we should pay this month
+				percentageAccrued = (numberOfPaymentsEarned/invTrans.Payment_Term_Calculated__c);
 
 				System.debug('Percentage accrued = ' + percentageAccrued);
 
 				// create the commission object
 				if (percentageAccrued > 0)
 				{
-					System.debug('Total Payment: ' + amountNotYetAccrued + ', payment term: ' + invTrans.Payment_Term_Calculated__c + ', payment date: ' + invTrans.Date_Paid__c);
+					System.debug('Total Payment: ' + netPaid + ', payment term: ' + invTrans.Payment_Term_Calculated__c + ', payment date: ' + invTrans.Date_Paid__c);
 					// this amount represents the TOTAL amount accrued on this date based on the net payment for this transaction
-					amountNotYetAccrued = amountNotYetAccrued * percentageAccrued;
+					amountAccrued = netPaid * percentageAccrued;
 
-					System.debug('Total accrued: ' + amountNotYetAccrued);
+					System.debug('Total accrued: ' + amountAccrued);
 					// to get the REMAINING amount accrued to this date, we must subtract the amount already accrued
-					amountNotYetAccrued = amountNotYetAccrued - invTrans.Amount_Accrued_for_Commissions__c;
+					amountAccrued = amountAccrued - invTrans.Amount_Accrued_for_Commissions__c;
 
-					System.debug('Net accrued: ' + amountNotYetAccrued);
+					System.debug('Net accrued: ' + amountAccrued);
 					// sanity check for rounding errors.  If the value we are trying to accrue goes past the total, make them equal
 					if (
-						(invTrans.Amount_Not_Yet_Accrued_for_Commissions__c >= 0 && amountNotYetAccrued > invTrans.Amount_Not_Yet_Accrued_for_Commissions__c)
-						|| (invTrans.Amount_Not_Yet_Accrued_for_Commissions__c <= 0 && amountNotYetAccrued < invTrans.Amount_Not_Yet_Accrued_for_Commissions__c)
+						(invTrans.Amount_Not_Yet_Accrued_for_Commissions__c >= 0 && amountAccrued > invTrans.Amount_Not_Yet_Accrued_for_Commissions__c)
+						|| (invTrans.Amount_Not_Yet_Accrued_for_Commissions__c <= 0 && amountAccrued < invTrans.Amount_Not_Yet_Accrued_for_Commissions__c)
 					   )
 					{
-						amountNotYetAccrued = invTrans.Amount_Not_Yet_Accrued_for_Commissions__c;
+						amountAccrued = invTrans.Amount_Not_Yet_Accrued_for_Commissions__c;
 					}
-					System.debug('Corrected net accrued: ' + amountNotYetAccrued);
+					System.debug('Corrected net accrued: ' + amountAccrued);
 					Partner_Commission_Invoice_Transaction__c pcit = new Partner_Commission_Invoice_Transaction__c();
 					pcit.Invoice_Transaction__c = invTrans.id;
 					pcit.Partner_Account__c = invTrans.Partner_Account_Id__c;
-					pcit.Accrued_Transaction_Amount__c = amountNotYetAccrued;
+					pcit.Accrued_Transaction_Amount__c = amountAccrued;
 					pcit.Partner_Commission_Percent__c = invTrans.Partner_Commission_Percent__c;
 					pcit.Partner_Commission_Earned__c = pcit.Accrued_Transaction_Amount__c * (pcit.Partner_Commission_Percent__c/100);
 					pcit.Partner_Commission_Summary__c = pcsMap.get(PartnerCommissionSummaryKey).Id;
-					pcitList.add(pcit);
-					System.Debug('Adding partner commission for ' + pcit.Invoice_Transaction__c + ' to ' + pcit.Partner_Commission_Summary__c);
+					System.Debug(pcit);
+					if (pcit.Partner_Commission_Earned__c != 0)
+					{
+						pcitList.add(pcit);
+						System.Debug('Adding partner commission');
+					}
 				}
 				
 			}
