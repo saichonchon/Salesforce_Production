@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Post Trial Winback.ACQ - Email 3: Sell Everywhere</name>
+    <style>none</style>
+    <subject>Sell more, everywhere</subject>
+    <textOnly>Learn how BigCommerce helps you expand your reach and increase sales.
+Resources &lt;[[https://www.bigcommerce.com/resource-center/]]&gt; | Log in &lt;[[https://login.bigcommerce.com/login]]&gt;
+The ultimate solution for omni-channel retailing
+LEARN MORE &lt;[[https://www.bigcommerce.com/blog/multichannel-selling-online-marketplace-considerations-to-boost-sales/]]&gt;
+BigCommerce makes it easy for you to expand your reach and grow your sales  
+
+Retailers selling on two or more channels average twice the revenue as single-channel sellers. We have developed our platform as a hub for selling on social channels like Facebook and Pinterest, in person with Square and soon through marketplaces like eBay.   
+Online store:  Build a modern online store with a responsive design that looks and performs beautifully on desktops, laptops and mobile devices.
+
+ Physical store:  Connect BigCommerce with the Square POS to have your inventory automatically updated whenever you make a sale, online or in person.
+
+ Social media:  Shoppers can discover and buy your products on some of the world’s most popular social media platforms, including Facebook and Pinterest.
+
+ Online marketplaces:  Get your products in front of millions of shoppers by listing on high-traffic marketplaces like Amazon and eBay.
+
+Learn about omni-channel »</textOnly>
+    <type>custom</type>
+</EmailTemplate>

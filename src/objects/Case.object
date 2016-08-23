@@ -2279,6 +2279,36 @@ IF( ISBLANK(Subscription__r.StoreURL__c ) = FALSE, Subscription__r.StoreURL__c ,
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>Case_Thread_Id_2__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;[ ref:_&quot; &amp; 
+LEFT( $Organization.Id , 5) &amp; 
+IF (MID ( $Organization.Id, 6, 1) &lt;&gt; &quot;0&quot;, RIGHT($Organization.Id,10), 
+IF (MID ( $Organization.Id, 7, 1) &lt;&gt; &quot;0&quot;,RIGHT($Organization.Id, 9), 
+IF (MID ( $Organization.Id, 8, 1) &lt;&gt;&quot;0&quot;, RIGHT($Organization.Id, 8), 
+IF (MID ( $Organization.Id, 9, 1)&lt;&gt; &quot;0&quot;, RIGHT($Organization.Id, 7), 
+IF (MID ( $Organization.Id,10, 1) &lt;&gt; &quot;0&quot;, RIGHT($Organization.Id, 6), 
+IF (MID ($Organization.Id, 11, 1) &lt;&gt; &quot;0&quot;, RIGHT($Organization.Id, 5), 
+IF(MID ( $Organization.Id, 12, 1) &lt;&gt; &quot;0&quot;, RIGHT($Organization.Id,4), 
+IF (MID ( $Organization.Id, 13, 1) &lt;&gt; &quot;0&quot;,RIGHT($Organization.Id, 3), 
+IF (MID ( $Organization.Id, 14, 1) &lt;&gt;&quot;0&quot;, RIGHT($Organization.Id, 2), &quot;&quot;) ) ) ) ) ) ) ) )
+&amp; &quot;._&quot; &amp;LEFT( Id, 5) &amp; 
+IF(MID ( Id, 6, 1) &lt;&gt; &quot;0&quot;, RIGHT(Id, 10), 
+IF (MID ( Id, 7, 1)&lt;&gt; &quot;0&quot;, RIGHT(Id, 9), 
+IF (MID ( Id, 8, 1) &lt;&gt; &quot;0&quot;, RIGHT(Id,8), 
+IF (MID ( Id, 9, 1) &lt;&gt; &quot;0&quot;, RIGHT(Id, 7), 
+IF (MID ( Id, 10,1) &lt;&gt; &quot;0&quot;, RIGHT(Id, 6), 
+IF (MID ( Id, 11, 1) &lt;&gt; &quot;0&quot;,RIGHT(Id, 5), 
+IF (MID ( Id, 12, 1) &lt;&gt; &quot;0&quot;, RIGHT(Id, 4), 
+IF (MID( Id, 13, 1) &lt;&gt; &quot;0&quot;, RIGHT(Id, 3), 
+IF (MID ( Id, 14, 1) &lt;&gt;&quot;0&quot;, RIGHT(Id, 2), &quot;&quot;) ) ) ) ) ) ) ) ) &amp; &quot;:ref ]&quot;</formula>
+        <label>Case Thread Id 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Case_Time_Worked_Records__c</fullName>
         <description>Support : Count of case time worked records associated to case</description>
         <externalId>false</externalId>

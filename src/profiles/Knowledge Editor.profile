@@ -3793,6 +3793,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Case.Case_Thread_Id_2__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Case.Case_Time_Worked_Records__c</field>
         <readable>false</readable>
     </fieldPermissions>

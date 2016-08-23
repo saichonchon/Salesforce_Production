@@ -184,29 +184,6 @@
         <template>Internal_Email_Template/Product_Change_Alert_Opp</template>
     </alerts>
     <alerts>
-        <fullName>Notify_Opp_Owner_of_store_cancellation</fullName>
-        <description>Notify Opp Owner of store cancellation</description>
-        <protected>false</protected>
-        <recipients>
-            <type>owner</type>
-        </recipients>
-        <senderAddress>no-reply@bigcommerce.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Internal_Email_Template/Opp_Cancellation_Email_Alert</template>
-    </alerts>
-    <alerts>
-        <fullName>Product_Change_Notice_to_Owner_Opp</fullName>
-        <ccEmails>maria.huemmer@bigcommerce.com</ccEmails>
-        <description>Product Change Notice to Owner</description>
-        <protected>false</protected>
-        <recipients>
-            <type>owner</type>
-        </recipients>
-        <senderAddress>no-reply@bigcommerce.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Internal_Email_Template/Product_Change_Alert</template>
-    </alerts>
-    <alerts>
         <fullName>SBD_Intuit_Plus_Plan_Email</fullName>
         <ccEmails>maria.huemmer@bigcommerce.com</ccEmails>
         <description>SBD Intuit Plus Plan Email</description>

@@ -14,7 +14,7 @@ public class RESTAPIUtility {
 		return mapBmpIdBody;
 	}
 
-    private static string getJSON( String sfId )
+    public static string getJSON( String sfId )
     {
     	
     	// Create a JSON generator object

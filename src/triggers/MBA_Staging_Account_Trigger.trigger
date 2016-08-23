@@ -94,5 +94,31 @@ trigger MBA_Staging_Account_Trigger on MBA_Staging_Account__c (before insert, be
 		dml.optAllOrNone = Subscription_Utility.blnAllOrNone;
 		
 	    SObjectUtils.SyncObjects('MBA_Staging_Account__c', 'Account', mpStagingToExisting, dml);
+
+
+	    //////////////////////////////////////////////////////
+	    // Communicate back to BMP with the new account IDs //
+	    //////////////////////////////////////////////////////
+        List<RESTAPICallouts.BMPSalesforceIDCallout> bmpIdsToUpdate = new List<RESTAPICallouts.BMPSalesforceIDCallout>();
+		for(SObject sObjAccount : mpStagingToExisting.values())
+        {
+            Account acct = (Account)sObjAccount;
+            if (acct.Source__c == 'BMP')
+            {
+            	bmpIdsToUpdate.add(new RESTAPICallouts.BMPSalesforceIDCallout('account', acct.MBAAccountID__c, acct.Id));
+            }
+
+        }
+
+        // Send the message to BMP API
+        if (!bmpIdsToUpdate.isEmpty())
+        {
+            System.debug('Making account callouts to BMP:' + bmpIdsToUpdate);
+            RESTAPICallouts.BMPSendSalesforceIDs(bmpIdsToUpdate);
+        }
+        else
+        {
+            System.debug('No BMP account callouts needed');
+        }
    }
 }

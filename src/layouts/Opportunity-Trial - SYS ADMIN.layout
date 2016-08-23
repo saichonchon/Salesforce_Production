@@ -438,6 +438,10 @@
                 <behavior>Edit</behavior>
                 <field>rvpe__IsDealRegistration__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Influencing_RVAccount__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -450,11 +454,15 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Deal_Registration_Notes__c</field>
+                <field>rvpe__PartnerLastModifiedDate__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>rvpe__PartnerLastModifiedDate__c</field>
+                <field>Influencing_RV_Account_Assigned__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Influencing_RV_Account_Assigned_By__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>

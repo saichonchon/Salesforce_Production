@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <alerts>
-        <fullName>Design_Partner_Lead_Referral_Notification</fullName>
-        <description>Design Partner Lead Referral Notification</description>
-        <protected>false</protected>
-        <recipients>
-            <field>Referral_Email__c</field>
-            <type>email</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Internal_Email_Template/Design_Partner_Lead_Notification</template>
-    </alerts>
-    <alerts>
         <fullName>Direct_Intl_Email_Sent</fullName>
         <description>Direct : Intl Email Sent</description>
         <protected>false</protected>
@@ -23,17 +12,6 @@
         <template>Direct_Sales_Templates/Direct_International_Trial</template>
     </alerts>
     <alerts>
-        <fullName>Email_Client_if_Bad_Phone_True</fullName>
-        <description>Email Client if Bad Phone = True</description>
-        <protected>false</protected>
-        <recipients>
-            <field>Email</field>
-            <type>email</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Direct_Sales_Templates/Direct_No_Phone_Number</template>
-    </alerts>
-    <alerts>
         <fullName>New_Lead_Created</fullName>
         <description>Lead: New Created</description>
         <protected>false</protected>
@@ -42,36 +20,6 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Internal_Email_Template/LeadsNewassignmentnotificationSAMPLE</template>
-    </alerts>
-    <alerts>
-        <fullName>New_Trial_Old_Lead_Email_Owner</fullName>
-        <description>New Trial Old Lead : Email Owner</description>
-        <protected>false</protected>
-        <recipients>
-            <type>owner</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Internal_Email_Template/Leads_New_Trial_Added_to_Old_Lead</template>
-    </alerts>
-    <alerts>
-        <fullName>Notify_Rep_of_Lead_who_downloaded_Pinterest_eBook</fullName>
-        <description>Notify Rep of Lead who downloaded Pinterest eBook</description>
-        <protected>false</protected>
-        <recipients>
-            <type>owner</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Internal_Email_Template/Direct_Rep_Notification_for_Pinterest_eBook</template>
-    </alerts>
-    <alerts>
-        <fullName>Notify_Rep_of_Lead_who_viewed_the_Product_Tour</fullName>
-        <description>Notify Rep of Lead who viewed the Product Tour</description>
-        <protected>false</protected>
-        <recipients>
-            <type>owner</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Internal_Email_Template/Direct_Rep_Notification_for_Product_TOur</template>
     </alerts>
     <alerts>
         <fullName>Owner_Lead_Referral_Notification</fullName>

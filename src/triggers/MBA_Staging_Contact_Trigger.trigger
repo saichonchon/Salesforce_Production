@@ -179,5 +179,31 @@ trigger MBA_Staging_Contact_Trigger on MBA_Staging_Contact__c (before insert, be
         dml.optAllOrNone = Subscription_Utility.blnAllOrNone;
         
         SObjectUtils.SyncObjects('MBA_Staging_Contact__c', 'Contact', mpStagingToExisting, dml);
+
+
+        //////////////////////////////////////////////////////
+        // Communicate back to BMP with the new contact IDs //
+        //////////////////////////////////////////////////////
+        List<RESTAPICallouts.BMPSalesforceIDCallout> bmpIdsToUpdate = new List<RESTAPICallouts.BMPSalesforceIDCallout>();
+        for(SObject sObjContact : mpStagingToExisting.values())
+        {
+            Contact cont = (Contact)sObjContact;
+            if (cont.Source__c == 'BMP')
+            {
+                bmpIdsToUpdate.add(new RESTAPICallouts.BMPSalesforceIDCallout('contact', cont.MBAClientID__c, cont.Id));
+            }
+
+        }
+
+        // Send the message to BMP API
+        if (!bmpIdsToUpdate.isEmpty())
+        {
+            System.debug('Making contact callouts to BMP:' + bmpIdsToUpdate);
+            RESTAPICallouts.BMPSendSalesforceIDs(bmpIdsToUpdate);
+        }
+        else
+        {
+            System.debug('No BMP contact callouts needed');
+        }
     }
 }

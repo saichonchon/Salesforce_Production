@@ -14,6 +14,7 @@ VERSION AUTHOR              DATE        DETAIL
 4.0     Maggie Frederick    8/7/2015    RV Rollup
 5.0     Maggie Frederick    5/9/2016    Google Analytics -- Maria Huemmer commenting existing code
 5.1		Steve O'Neal		5/10/2016	Google Analytics, changing method signature for GAUtility
+6.0     Steve O'Neal        08/19/2016  Changed callout functionality to BMP
  
 ***********************************************************************/
 
@@ -280,69 +281,12 @@ trigger Opportunity on Opportunity (after insert, after update, before insert, b
         }
     }
     
-    //
-    // API Callout to BMP      
-    //
+
+    ///////////////////////////////////////////////////////////////////////////
+    // *Google Analytics* Notify Google Analytics when an opportunity is won //
+    ///////////////////////////////////////////////////////////////////////////
     if (trigger.isAfter && !trigger.isDelete)
     {
-
-        Id rtStorePurchase = Opportunity.getSObjectType().getDescribe().getRecordTypeInfosByName().get(Label.Opportunity_Recordtype_StorePurchase).getRecordTypeId();
-        Id rtOneTimeProduct = Opportunity.getSObjectType().getDescribe().getRecordTypeInfosByName().get(Label.Opportunity_Recordtype_OneTimeProduct).getRecordTypeId();
-        Id rtTrial = Opportunity.getSObjectType().getDescribe().getRecordTypeInfosByName().get(Label.Opportunity_RecordType_Trial).getRecordTypeId();       
-
-        Map<String, String> bmpsfIds = new Map<String, String>();
-        
-        for(Opportunity o : trigger.new)
-        {
-            
-            if (o.Source__c <> 'BMP')
-            {
-                // Skip to next iteration 
-                System.debug(o.Id + ' is not a BMP opportunity, will not be processed');
-                continue;
-            }
-            if (o.RecordTypeId <> rtTrial && o.RecordTypeId <> rtStorePurchase && o.RecordTypeId <> rtOneTimeProduct)
-            {
-                // Skip to next iteration 
-                System.debug(o.Id + ' has a record type of ' + o.RecordTypeId + ', will not be processed');
-                continue;               
-            }
-            
-            if (Trigger.isInsert)
-            {
-                System.debug('New Store or Trial Opp added notify BMP');
-                bmpsfIds.put(o.MBASubscriptionID__c, o.Id); 
-            }
-            else if ( o.MBASubscriptionID__c != trigger.oldMap.get(o.id).MBASubscriptionID__c )
-            {
-                System.debug('BMP Subscription ID has changed, update BMP');
-                bmpsfIds.put(o.MBASubscriptionID__c, o.Id ); 
-            }
-            else if ( trigger.oldMap.get(o.id).Source__c <> 'BMP' )
-            {
-                System.debug('Opportunity Source changed to BMP, notify BMP');
-                bmpsfIds.put(o.MBASubscriptionID__c, o.Id ); 
-            }
-                  
-        }
-        
-        if (!bmpsfIds.isEmpty())
-        {
-            System.debug('Making callouts to BMP:' + bmpsfIds.size());
-            Map<String, String> mapBmpIdBody = RESTAPIUtility.getJSONBody( bmpsfIds);
-            for (String sendbmpId :mapBmpIdBody.KeySet())
-            {
-              RESTAPICallouts.BMPRequest('subscription', sendbmpId, mapBmpIdBody.get(sendbmpId));
-            }
-        }
-        else
-        {
-            System.debug('No BMP opportunity callouts needed');
-        }
-
-        ///////////////////////////////////////////////////////////////////////////
-        // *Google Analytics* Notify Google Analytics when an opportunity is won //
-        ///////////////////////////////////////////////////////////////////////////
         List<Opportunity> gaWonOpportunities = new List<Opportunity>();
         
         for(Opportunity o: trigger.new)

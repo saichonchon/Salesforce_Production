@@ -1,10 +1,10 @@
 trigger MBA_Staging_Subscription_Trigger on MBA_Staging_Subscription__c (before insert, after insert, before update, after update) 
 {
 
-/*Modified By:-Laxmikant Kurmi.
-Modified Date:-05/08/2014.
-*/
- if(Trigger.isBefore )
+    /*Modified By:-Laxmikant Kurmi.
+    Modified Date:-05/08/2014.
+    */
+    if(Trigger.isBefore )
     {
         for(MBA_Staging_Subscription__c obj:trigger.new)
         {
@@ -30,12 +30,10 @@ Modified Date:-05/08/2014.
             
         }
     }
-     
-/* Modification Ends Here */
+    /* Modification Ends Here */
 
- else if (Trigger.isAfter) 
-    
- {
+    else if (Trigger.isAfter) 
+    {
 
    string soqlWHERE_SubIDs = '';
         
@@ -281,6 +279,33 @@ Modified Date:-05/08/2014.
             ErrorEmailHelper.notifyOnError('Staging Subscription Trigger', 'Opportunity Sync', 'Error in Opportunity Sync', 'Error With Opportunity: ' +  mpStagingToOpp.Values() + '; Error Message: ' + e.getMessage());
         }
     
-    system.debug('*** Completed Subscription Staging Handling: ' + trigger.new);   
-  }
+    system.debug('*** Completed Subscription Staging Handling: ' + trigger.new);
+
+
+        //////////////////////////////////////////////////////////
+        // Communicate back to BMP with the new opportunity IDs //
+        //////////////////////////////////////////////////////////
+        List<RESTAPICallouts.BMPSalesforceIDCallout> bmpIdsToUpdate = new List<RESTAPICallouts.BMPSalesforceIDCallout>();
+        for(SObject sObjOpportunity : mpStagingToOpp.values())
+        {
+            Opportunity bmpOpp = (Opportunity)sObjOpportunity;
+            if (bmpOpp.Source__c == 'BMP')
+            {
+                bmpIdsToUpdate.add(new RESTAPICallouts.BMPSalesforceIDCallout('subscription', bmpOpp.MBASubscriptionID__c, bmpOpp.Id));
+            }
+
+        }
+
+        // Send the message to BMP API
+        if (!bmpIdsToUpdate.isEmpty())
+        {
+            System.debug('Making opportunity callouts to BMP:' + bmpIdsToUpdate);
+            RESTAPICallouts.BMPSendSalesforceIDs(bmpIdsToUpdate);
+        }
+        else
+        {
+            System.debug('No BMP opportunity callouts needed');
+        }
+
+    }
 }

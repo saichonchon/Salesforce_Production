@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html><head>
+<title></title>
+
+<style type="text/css">
+            body {
+                margin:0;
+                padding:0;
+                background: #ffffff;
+
+            }
+            table {
+                border-collapse: collapse;
+            }
+            p {
+                margin: 0 0 10px 0;
+            }
+            .msgicon{position:relative;top:8px;}
+            .applelinksheader a {
+                text-decoration: none; 
+                color: #363636 !important;
+            }
+
+            .applelinks a {
+                text-decoration: none; 
+                color: #777777 !important;
+            }
+
+                @media (max-width : 480px) {
+                /*@media only screen and (max-device-width: 480px) {*/
+                
+                    .bodyWidth, #TopContainer, #LogoContainer {
+                        width: 100% !important;
+                    }
+
+                    /* Media query for mobile*/
+
+                    @media only screen and (max-width: 480px)  {
+                        
+                        h2,h3,h4 {text-align:center;}
+                        .button{margin:auto !important;}
+                        .msgicon{display:block;margin:auto;padding-bottom: 10px}
+                        .textcenter{text-align:center;}
+                        .mobile-block{display:block; padding:15px !important; text-align: center !important}
+                        .mobile-padding{padding: 25px 25px !important}
+                        .no-padding{padding:0px !important;}
+                        .hidemobile {
+                            display: none;
+                        }
+                     .bodyWidth{max-width:320px;padding:0px !important;}
+                      .MiddleContainer{width:320px;padding:0px;margin:0px;}
+                    }
+
+
+                    #Logo {
+                        text-align: center !important;
+                    }
+
+                    .applelinksheader a {
+                        text-decoration: none; 
+                        color: #363636 !important;
+                    }
+                    
+                    .applelinks a {
+                        text-decoration: none; 
+                        color: #777777 !important;
+                    }
+
+                }
+</style>
+</head>
+<body style="padding-top:20px; margin:0 0 0 0; display:block; background-color:#ffffff; -webkit-text-size-adjust:none; font-family:Helvetica, Arial, sans-serif; " bgcolor="#FFFFFF" class="removepaddingcta3" ><!-- Preview text (text which appears right after subject) -->
+<div class="mktEditable" id="Preview-text" style="display:none; color:#ffffff; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; " >Learn how BigCommerce helps you expand your reach and increase sales.</div>
+<table align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="margin:0 auto; background:#ffffff; " ><tr ><td ><!-- Logo Block -->
+<table width="600" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" style="background:#ffffff">
+<tr>
+<td valign="top" id="TopContainer" style="padding:25px 25px 25px 0px;">
+<table border="0" cellspacing="0" cellpadding="0" align="left" width="270" id="LogoContainer">
+<tr>
+<td valign="top" align="left" id="Logo"><a href="http://www.bigcommerce.com"><img src="http://grow.bigcommerce.com/rs/695-JJT-333/images/BIG-3001R-Templates_GeneralLP_logo.png" alt="Bigcommerce" width="185" height="45" border="0"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- Main Section -->
+<table width="600" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" style="background:#ffffff; " ><tr ><td class="mobile-block" width="300" valign="top" align="left" style="padding:25px 25px 25px 0px; " ><div class="mktEditable" id="intro" ></div>
+<div class="mktEditable" id="header" ><h2 style="font-weight: 300; font-family: 'Open Sans Light', Helvetica, Arial, sans-serif; font-size: 25px; color: #424d55;">The ultimate solution for omni-channel retailing<br /></h2></div>
+<div class="mktEditable" id="subheader" ><h3 style="font-weight: 400; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 18px; color: #424d55;"><br></h3>
+</div>
+<div class="mktEditable" id="cta" ><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; display: inline-block;">
+<tbody>
+<tr>
+<td valign="middle" align="center" height="40" width="186" style="background: #4b70fc; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; padding: 0 10px 0 10px; border-radius: 4px;">
+<p style="margin: 0 0; color: #ffffff;"><a href="https://www.bigcommerce.com/omni-channel-software?utm_medium=email&amp;utm_source=post-trial&amp;utm_campaign=&amp;utm_term=&amp;utm_content=nurture" style="color: #ffffff; text-decoration: none; display: block;" target="_blank">LEARN MORE</a></p>
+</td>
+</tr>
+</tbody>
+</table></div>
+</td>
+<td class="mobile-block" width="top" valign="middle" align="right" ><div class="mktEditable" id="image" ><img src="http://grow.bigcommerce.com/rs/695-JJT-333/images/Revenue-Oval-Blue-250.png" alt="Selling on 2 channels averages twice the revenue" height="250" width="250" constrain="true" imagepreview="false" /></div>
+</td>
+</tr>
+</table>
+<!-- Bottom Copy -->
+<table width="600" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" style="background:#ffffff; " bgcolor="#FFFFFF" ><tr ><td valign="top" align="left" class="mobile-padding" style="padding:25px 0px 40px 0px; font-family:'Open Sans Light', Helvetica, Arial, sans-serif; font-size:15px; color:#424d55; " ><div class="mktEditable" id="body" ><h3 style="font-family: 'Open Sans Light', Helvetica, Arial, sans-serif; font-size: 22px; color: #424d55;">BigCommerce makes it easy for you to expand your reach and grow your sales &nbsp;<br /></h3>
+<p><span color="#424D55" face="Open Sans Light, Helvetica, Arial, sans-serif" style="color: #424d55; font-family: 'Open Sans Light', Helvetica, Arial, sans-serif;"><span style="font-size: 15px;">Retailers selling on two or more channels average twice the revenue as single-channel sellers. We have developed our platform as a hub for selling on social channels like Facebook and Pinterest, in person&nbsp;with Square and soon through marketplaces like eBay<span style="color: #263238; font-family: arial, sans-serif; font-size: 13px;">.</span>&nbsp; &nbsp;</span></span></p>
+<div style="padding-left: 30px;"><strong>Online store:</strong> &nbsp;Build a modern online store with a responsive design that looks and performs beautifully on desktops, laptops and mobile devices.</div>
+<div style="padding-left: 30px;"><strong><br /> Physical store:</strong>&nbsp; Connect BigCommerce with the Square POS to have your inventory automatically updated whenever you make a sale, online or in person.</div>
+<div style="padding-left: 30px;"><strong><br /> Social media:&nbsp;</strong> Shoppers can discover and buy your products on some of the world&rsquo;s most popular social media platforms, including Facebook and Pinterest.</div>
+<div style="padding-left: 30px;"><strong><br /> Online marketplaces:&nbsp;</strong>&nbsp;Get your products in front of millions of shoppers by listing on high-traffic marketplaces like Amazon and eBay.</div>
+<div><a style="font-weight: 400; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 15px; color: #4b70fc; text-decoration: none;" href="https://www.bigcommerce.com/omni-channel-software?utm_medium=eml&amp;utm_source=post-trial&amp;utm_campaign=&amp;utm_term=&amp;utm_content=nurture" target="_blank"><br />Learn about omni-channel &raquo;</a></div></div>
+</td>
+</tr>
+</table>
+<!-- Help Section -->
+<table width="600" border="0" cellspacing="0" cellpadding="0" class="bodyWidth help-section" style="background:#ffffff" bgcolor="#FFFFFF">
+<tr>
+<td class="no-padding" valign="top" align="left">
+<table border="0" cellspacing="0" cellpadding="0" width="600" class="MiddleContainer" bgcolor="#FFFFFF" style="background: #ffffff">
+<tr>
+<td valign="top" style="padding:20px; background:#e2e7e7">
+<p style="text-align:center; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size:15px; color: #424d55;"><strong>Questions on how we can help you sell in more places?</strong><br>
+<br>
+Call <a href="tel:+18446328912" style="text-decoration: none;"><span style="color: #4b70fc;">1-844-632-8912</span></a> to speak with one of our certified ecommerce consultants.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- Footer -->
+<table width="600" border="0" cellspacing="0" cellpadding="0" class="bodyWidth" style="background:#ffffff" bgcolor="#FFFFFF">
+<tr>
+<td valign="top" align="left" style="padding:25px 25px; font-family: 'Open Sans Light', Helvetica, Arial, sans-serif; font-size: 12px; color: #777777">
+<p style="text-align:center; font-family: 'Open Sans Light', Helvetica, Arial, sans-serif; font-size: 12px; color: #777777">&#169; Copyright 2003 - 2016 Bigcommerce Pty. Ltd. Shopping Cart software<br>
+<span class="applelinks">11305 Four Points Dr., Building 2, Floor 3 Austin TX 78726</span><br>
+<a href="http://grow.bigcommerce.com/manage-your-email-preferences.html" style="text-decoration: none;"><span style="color:#4b70fc">Click here</span></a> to update your email preferences</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

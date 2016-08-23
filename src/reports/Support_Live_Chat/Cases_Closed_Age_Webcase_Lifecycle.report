@@ -137,8 +137,6 @@
     <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>CLOSED_DATEONLY</dateColumn>
-        <endDate>2016-06-25</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2016-05-29</startDate>
+        <interval>INTERVAL_LASTTHISMONTH</interval>
     </timeFrameFilter>
 </Report>

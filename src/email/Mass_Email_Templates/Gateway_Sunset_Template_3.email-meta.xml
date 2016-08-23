@@ -7,7 +7,7 @@
     <name>Gateway Sunset - Template 3</name>
     <style>freeForm</style>
     <subject>Re: Action Required: complete Stripe application process, impacted payment gateway removed</subject>
-    <textOnly>Hi {!Case.OwnerFirstName},
+    <textOnly>Hi {!Case.Contact_First_Name__c},
 
 We have removed your impacted gateway from your store
 Per various emails sent and/or phone calls attempted, BigCommerce has streamlined our payments offering to focus on a select number of payment providers. With the August 15, 2016 deadline, we have removed the impacted gateway from your store that we will no longer be supporting. Please see the full list of impacted gateways and additional details on this change.
@@ -24,6 +24,6 @@ https://support.bigcommerce.com/articles/Public/Adding-a-Payment-Gateway
 BigCommerce Technical Support
 Support.bigcommerce.com
 
-Please do not remove: {!Case.E2CP__Case_Thread_Id__c}</textOnly>
+Please do not remove: {!Case.Case_Thread_Id_2__c}</textOnly>
     <type>html</type>
 </EmailTemplate>

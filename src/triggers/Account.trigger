@@ -22,38 +22,6 @@ trigger Account on Account (after insert, after update) {
 
     List<string> GAapiCalloutStrings = new List<string>();
 
-
-	//Sets the Account source to 'BMP' if the source is 'BMP' or the source is updated to BMP and the Account's MBA Account ID is changed
-	if (trigger.isAfter)
-	{
-		Map<String, String> bmpsfIds = new Map<String, String>(); //Stores Salesforce Account IDs to send to BMP
-		for(Account acc : trigger.new)
-        {
-            
-            if ((Trigger.isInsert && acc.Source__c == 'BMP') ||
-                  (!Trigger.isInsert && acc.Source__c == 'BMP' 
-                	&& (trigger.oldMap.get(acc.id).Source__c <> 'BMP'
-                	     || acc.Source__c == 'BMP' && acc.MBAAccountID__c!= trigger.oldMap.get(acc.id).MBAAccountID__c)
-                	    )
-               )
-            {      
-              
-                 bmpsfIds.put(acc.MBAAccountID__c, acc.Id);                   
-            }
-                  
-        }
-
-		//If there are new accounts with source BMP or an account is updated from a source of MBA to BMP, send the account details to BMP via JSON Rest API request 
-        if (!bmpsfIds.isEmpty())
-        {
-	        Map<String, String> mapBmpIdBody = RESTAPIUtility.getJSONBody( bmpsfIds);
-	        for (String sendbmpId :mapBmpIdBody.KeySet())
-			{
-			  RESTAPICallouts.BMPRequest('account', sendbmpId, mapBmpIdBody.get(sendbmpId));
-			}
-        }
-	}
-
 	if (trigger.isUpdate && trigger.isAfter)
 	{
         Map <Id, Account> mapacct = new Map <Id, Account>();

@@ -7,6 +7,12 @@
         <field>LAST_NAME</field>
     </columns>
     <columns>
+        <field>DEPARTMENT</field>
+    </columns>
+    <columns>
+        <field>ROLE</field>
+    </columns>
+    <columns>
         <field>USERNAME</field>
     </columns>
     <columns>
@@ -17,13 +23,18 @@
     </columns>
     <filter>
         <criteriaItems>
+            <column>DEPARTMENT</column>
+            <operator>equals</operator>
+            <value>Sales Development - Outbound SDR</value>
+        </criteriaItems>
+        <criteriaItems>
             <column>ROLE</column>
-            <operator>contains</operator>
-            <value>ldr,outbound,enterprise</value>
+            <operator>equals</operator>
+            <value>ldr</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
-    <name>User Report</name>
+    <name>User Report - SDR Team</name>
     <params>
         <name>active</name>
         <value>active</value>

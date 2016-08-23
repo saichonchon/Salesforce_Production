@@ -1,7 +1,80 @@
 global class RESTAPICallouts {
+    /**
+     * Steve O'Neal
+     * 2016-08-19
+     * Used to contain a communication from Salesforce to BMP
+     */
+    public class BMPSalesforceIDCallout
+    {
+        // Which Rest api landing point should we hit
+        public string EndPointMethod;
+        // Which BMP record are we updating
+        public string BMPId;
+        // What Salesforce record to pass to BMP
+        public string SFDCId;
 
-@future(callout=true) 
-    public static void BMPRequest (string strEndPointMethod, string bmpid, string strBody)
+        /**
+         * Intantiates an instance of BMPSalesforceIDCallout
+         * @author Steve O'Neal
+         * @date   2016-08-19
+         * @ticket link           https://jira.bigcommerce.com/browse/BRP-4144
+         * @param  endPointMethod Endpoint to call
+         * @param  bmpID          The BMP ID to update
+         * @param  sfdcID         The Salesforce ID to associate with the BMP ID
+         * @return                Instance of BMPSalesforceIDCallout
+         */
+        public BMPSalesforceIDCallout(string endPointMethod, string bmpID, string sfdcID)
+        {
+            this.EndPointMethod = endPointMethod;
+            this.BMPId = bmpID;
+            this.SFDCId = sfdcID;
+        }
+    }
+
+    private static string delimiter = '|';
+    private static string delimiterRegEx = '\\|';
+
+    /**
+     * Accepts a list of callouts to make to BMP for setting Salesforce IDs
+     * @author Steve O'Neal
+     * @date   2016-08-19
+     * @ticket link        https://jira.bigcommerce.com/browse/BRP-4144
+     * @param  bmpCallouts List of API callout requests to be made
+     */
+    public static void BMPSendSalesforceIDs(List<RESTAPICallouts.BMPSalesforceIDCallout> bmpCallouts)
+    {
+        System.debug(bmpCallouts);
+        List<string> BMPFutureCalloutStringList = new List<string>();
+
+        for (RESTAPICallouts.BMPSalesforceIDCallout bmpCallout : bmpCallouts)
+        {
+            BMPFutureCalloutStringList.add(bmpCallout.EndPointMethod + delimiter + bmpCallout.BMPId + delimiter + bmpCallout.SFDCId);
+        }
+
+        System.debug(BMPFutureCalloutStringList);
+        BMPSendSalesforceIDsFuture(BMPFutureCalloutStringList);
+    }
+
+    /**
+     * Because future callouts may only accept lists of primitive data types as parameters, this method is called indirectly from BMPSendSalesforceIDs
+     * after converting the more complex data.
+     * @author Steve O'Neal
+     * @date   2016-08-19
+     * @ticket link       https://jira.bigcommerce.com/browse/BRP-4144
+     * @param  bmpCallouts    List of API callout requests to be made
+     */
+    @future(callout=true)
+    private static void BMPSendSalesforceIDsFuture(List<string> BMPFutureCalloutStringList)
+    {
+        for (string callout : BMPFutureCalloutStringList)
+        {
+            List<string> calloutPieces = callout.Split(delimiterRegEx);
+            System.debug('endPointMethod=' + calloutPieces[0] + ', BMPId=' + calloutPieces[1] + ', SFDCId=' + calloutPieces[2]);
+            BMPRequest(calloutPieces[0], calloutPieces[1], RESTAPIUtility.getJSON(calloutPieces[2]));
+        }
+    }
+
+    private static void BMPRequest (string strEndPointMethod, string bmpid, string strBody)
     {
         HttpResponse response;
         
@@ -58,125 +131,6 @@ global class RESTAPICallouts {
 					//EmailUtils.sendTextEmail(recipients, emailSubject, textBody);
 				}
         }
-//      return response;
     }
- /*   
-    public static HttpResponse JSONRequestSetup (string strEndPointMethod, string strAction, string strBody)
-    {
-        HttpResponse response;
-        
-        Http httpProtocol = new Http();
-        
-        // Create HTTP request to send.
-        HttpRequest request = new HttpRequest();
-        
-        
-        JiraSettings__c settings = JiraSettings__c.getValues(strAction);
-        
-        //Set your username and password here
-        String username = settings.UserName__c;
- //       String password = settings.Credentials__c;
-        String password = '8de162a672efb0bc2049072a4fe67057';
-        system.debug('password ' +password);
-        system.debug('credd '+settings.Credentials__c);
-        String jiraURL  = settings.Jira_URL__c;
 
-//      Blob headerValue = Blob.valueOf(username+':'+settings.Credentials__c);
-        Blob headerValue = Blob.valueOf(username+':'+ password);
-        string authorizationHeader = 'Basic ' + EncodingUtil.base64Encode(headerValue);
-        request.setHeader('Authorization', authorizationHeader);
-        request.setHeader('Content-Type', 'application/json;charset=UTF-8');
-        
-        // Set the endpoint URL.        
-//      request.setEndPoint(strEndPoint + strEndPointMethod + '/');
-        request.setEndPoint(jiraURL +  strEndPointMethod + '/');
-        
-        // Set the HTTP verb to POST.
-        request.setMethod(strAction);
-    
-        // If a body exists
-        if (strBody != null && strBody <> '')
-        {
-            request.setBody(strBody);
-        }
-        if(test.isRunningTest())
-        {
-            response = new HttpResponse();  
-        }
-        else
-        {
-            system.debug('*** SubscriptionREST:JSONRequestSetup - API Request Made with: ' + request.toString());
-            response = httpProtocol.send(request);
-        }
-        
-        return response;
-    }
-    
-  public static void testcall()      
-{               
-    string sfid ='00119000004WiUP';
-    
-    // Create a JSON generator object
-        JSONGenerator gen = JSON.createGenerator(true);
-        // open the JSON generator
-      
-      gen.writeStartObject();
-      gen.writeFieldName('data');
-      gen.writeStartObject();
-      gen.writeStringField('salesforce_id', sfId);
-      gen.writeEndObject();
-      gen.writeEndObject();
-        // close the JSON generator
-      
-    // create a string from the JSON generator
-      String json2 = gen.getAsString();
-      system.debug(json2);
-    
-    string strEndPointMethod = 'account';
-    string strAction= 'PUT';
-    string strBody = json2;
-    
-        HttpResponse response;
-        
-        Http httpProtocol = new Http();
-        
-        // Create HTTP request to send.
-        HttpRequest request = new HttpRequest();
-    
-        
-        JiraSettings__c settings = JiraSettings__c.getValues('account');
-        // Use actual username / password values for real       
-        
-        //Blob headerValue = Blob.valueOf('username:password');
-        //Set username and password here
-        String username = settings.UserName__c;
-        String password = settings.Credentials__c;
-        String jiraURL  = settings.Jira_URL__c;
-        Blob headerValue = Blob.valueOf(username+':'+settings.Credentials__c);
-        string authorizationHeader = 'Basic ' + EncodingUtil.base64Encode(headerValue);
-        request.setHeader('Authorization', authorizationHeader);
-    
-        request.setHeader('Content-Type', 'application/json;charset=UTF-8');
-        // Set the endpoint URL.        
-        //  request.setEndPoint('callout:BMP/00e60c4a-ae32-46aa-9ca7-02a444ee6742');
-        string sendid = 'b87cb696-d3a5-4d8e-a7da-0080598553e5';
-        //system.debug(sendid); 
-        request.setEndPoint(jiraURL + sendid);
-        
-        // Set the HTTP verb to POST.
-        request.setMethod('PUT');
-    
-        // If a body exists
-        if (strBody != null && strBody <> '')
-        {
-            request.setBody(strBody);
-        }
-        
-        system.debug('*** API Request Made with: ' + request.toString());
-        response = httpProtocol.send(request);
-    //SONParser parser = JSON.createParser(response.getBody());
-            system.debug('***'+response.getBody());
-          
-}     
- */      
 }

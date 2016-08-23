@@ -891,6 +891,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Case Thread Id 2 --></label>
+        <name>Case_Thread_Id_2__c</name>
+    </fields>
+    <fields>
         <label><!-- Case Time Worked Records --></label>
         <name>Case_Time_Worked_Records__c</name>
     </fields>

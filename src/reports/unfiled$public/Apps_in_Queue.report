@@ -10,6 +10,9 @@
         <field>Account.Opportunities$Owner</field>
     </columns>
     <columns>
+        <field>Account.Opportunities$CreatedDate</field>
+    </columns>
+    <columns>
         <field>Account.Opportunities$LastModifiedDate</field>
     </columns>
     <columns>
@@ -24,7 +27,7 @@
         <criteriaItems>
             <column>Account.Opportunities$StageName</column>
             <operator>equals</operator>
-            <value>Prospect,Qualification,Demo,App Development,Development</value>
+            <value>Prospect,Demo,Development</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Opportunities$App_Store_Status__c</column>
@@ -36,11 +39,6 @@
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>Account.Opportunities$StageName</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Account.Opportunities$Status__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Apps in Queue</name>

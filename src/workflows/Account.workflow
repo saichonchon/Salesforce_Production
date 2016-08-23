@@ -22,16 +22,6 @@
         <template>Internal_Email_Template/Account_New_Trial</template>
     </alerts>
     <alerts>
-        <fullName>New_Subscription_Added_to_Account</fullName>
-        <description>New Subscription Added to Account</description>
-        <protected>false</protected>
-        <recipients>
-            <type>accountOwner</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Internal_Email_Template/Account_New_Subscription_Added</template>
-    </alerts>
-    <alerts>
         <fullName>Partner_Approved</fullName>
         <description>Partner Approved</description>
         <protected>false</protected>

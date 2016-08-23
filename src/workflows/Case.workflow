@@ -417,16 +417,6 @@
         <template>Internal_Email_Template/Case_Sales_Rep_New_Case_Notification</template>
     </alerts>
     <alerts>
-        <fullName>Owner_Assignment_Notification</fullName>
-        <description>PS: Owner Assignment Notification</description>
-        <protected>false</protected>
-        <recipients>
-            <type>owner</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>professional_Services/Owner_Assignment_Notification</template>
-    </alerts>
-    <alerts>
         <fullName>PS_New_Case_Notification</fullName>
         <description>PS: New Case Notification</description>
         <protected>false</protected>
