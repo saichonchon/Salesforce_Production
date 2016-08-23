@@ -23,73 +23,72 @@
             <showPercentage>true</showPercentage>
             <showTotal>true</showTotal>
             <showValues>false</showValues>
-            <title>Total MRR</title>
+            <title>Total SMB MRR MTD</title>
         </components>
         <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
-            <dashboardTableColumn>
-                <column>Opportunity.Oppotunity_Products__r$Price_Change_Reason__c</column>
-            </dashboardTableColumn>
-            <dashboardTableColumn>
-                <calculatePercent>false</calculatePercent>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
                 <column>FORMULA8</column>
-                <showTotal>true</showTotal>
-                <sortBy>RowValueDescending</sortBy>
-            </dashboardTableColumn>
-            <displayUnits>Auto</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
+            </chartSummary>
+            <componentType>Gauge</componentType>
+            <displayUnits>Integer</displayUnits>
+            <gaugeMax>45950.0</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <indicatorBreakpoint1>39057.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>41355.0</indicatorBreakpoint2>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>unfiled$public/SMB_MTD_MRR_UP</report>
-            <showPicturesOnTables>true</showPicturesOnTables>
-            <title>Pricing Change Categories</title>
+            <report>unfiled$public/SMB_SA_MTD_MRR</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+            <title>Sales Assisted MRR MTD</title>
         </components>
         <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
-            <dashboardTableColumn>
-                <column>Opportunity.Oppotunity_Products__r$Price_Change_Reason__c</column>
-            </dashboardTableColumn>
-            <dashboardTableColumn>
-                <calculatePercent>false</calculatePercent>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
                 <column>FORMULA8</column>
-                <showTotal>true</showTotal>
-                <sortBy>RowValueDescending</sortBy>
-            </dashboardTableColumn>
-            <displayUnits>Auto</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
+            </chartSummary>
+            <componentType>Gauge</componentType>
+            <displayUnits>Integer</displayUnits>
+            <gaugeMax>43532.0</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <indicatorBreakpoint1>37002.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>39178.0</indicatorBreakpoint2>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>unfiled$public/SMB_MTD_MRR_Upgrade_Categories</report>
-            <showPicturesOnTables>true</showPicturesOnTables>
-            <title>BC Team Pricing Change Categories</title>
+            <report>unfiled$public/SMB_SS_MTD_MRR</report>
+            <showPercentage>false</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+            <title>Self Serve MRR MTD</title>
         </components>
         <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
-            <dashboardTableColumn>
-                <column>Opportunity.Oppotunity_Products__r$Price_Change_Reason__c</column>
-            </dashboardTableColumn>
-            <dashboardTableColumn>
-                <calculatePercent>false</calculatePercent>
-                <column>FORMULA8</column>
-                <showTotal>true</showTotal>
-                <sortBy>RowValueDescending</sortBy>
-            </dashboardTableColumn>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
+                <column>RowCount</column>
+            </chartSummary>
+            <componentType>BarStacked</componentType>
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>unfiled$public/SMB_MTD_MRR_Upgrade_Categories1</report>
-            <showPicturesOnTables>true</showPicturesOnTables>
-            <title>SB Team Pricing Change Categories</title>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <groupingColumn>Opportunity$Owner</groupingColumn>
+            <groupingColumn>Opportunity$StageName</groupingColumn>
+            <legendPosition>Bottom</legendPosition>
+            <report>DB_Reports_InB_OutB_Auto/DB_In_Out_Auto_Opps_by_Stage_v2</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Opps Owned over 2 months</title>
+            <useReportChart>false</useReportChart>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
@@ -130,34 +129,6 @@
             <componentType>Table</componentType>
             <dashboardTableColumn>
                 <column>Opportunity.Oppotunity_Products__r$Revenue_Rep__c</column>
-                <sortBy>RowLabelAscending</sortBy>
-            </dashboardTableColumn>
-            <dashboardTableColumn>
-                <calculatePercent>false</calculatePercent>
-                <column>FORMULA8</column>
-                <decimalPlaces>0</decimalPlaces>
-                <showTotal>true</showTotal>
-            </dashboardTableColumn>
-            <dashboardTableColumn>
-                <calculatePercent>false</calculatePercent>
-                <column>FORMULA10</column>
-                <showTotal>false</showTotal>
-            </dashboardTableColumn>
-            <displayUnits>Auto</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <header>MTD Upgrades</header>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>unfiled$public/SMB_MTD_MRR_Upgrades</report>
-            <showPicturesOnTables>true</showPicturesOnTables>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
-            <dashboardTableColumn>
-                <column>Opportunity.Oppotunity_Products__r$Revenue_Rep__c</column>
             </dashboardTableColumn>
             <dashboardTableColumn>
                 <calculatePercent>false</calculatePercent>
@@ -181,51 +152,6 @@
             <showPicturesOnTables>false</showPicturesOnTables>
             <title>(No Orion)</title>
         </components>
-        <components>
-            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-            <chartAxisRange>Auto</chartAxisRange>
-            <chartSummary>
-                <axisBinding>y</axisBinding>
-                <column>RowCount</column>
-            </chartSummary>
-            <componentType>Funnel</componentType>
-            <displayUnits>Integer</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>true</enableHover>
-            <expandOthers>true</expandOthers>
-            <groupingColumn>Opportunity$StageName</groupingColumn>
-            <header>MTD Pipeline</header>
-            <legendPosition>Bottom</legendPosition>
-            <report>DB_Reports_InB_OutB_Auto/DB_In_Out_Auto_Opps_by_Stage_v2</report>
-            <showPercentage>true</showPercentage>
-            <showValues>true</showValues>
-            <sortBy>RowLabelAscending</sortBy>
-            <title>Trial by Stage</title>
-            <useReportChart>false</useReportChart>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
-            <dashboardTableColumn>
-                <column>Opportunity$Owner</column>
-            </dashboardTableColumn>
-            <dashboardTableColumn>
-                <calculatePercent>false</calculatePercent>
-                <column>RowCount</column>
-                <showTotal>true</showTotal>
-                <sortBy>RowValueDescending</sortBy>
-            </dashboardTableColumn>
-            <displayUnits>Integer</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>DB_Reports_InB_OutB_Auto/DB_In_Out_Auto_Opps_by_Stage_v2</report>
-            <showPicturesOnTables>false</showPicturesOnTables>
-            <title>Trials by Rep</title>
-        </components>
     </leftSection>
     <middleSection>
         <columnSize>Wide</columnSize>
@@ -233,15 +159,15 @@
             <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
             <chartSummary>
                 <axisBinding>y</axisBinding>
-                <column>FORMULA10</column>
+                <column>FORMULA9</column>
             </chartSummary>
             <componentType>Gauge</componentType>
             <displayUnits>Integer</displayUnits>
             <footer>No Orion</footer>
-            <gaugeMax>70.0</gaugeMax>
+            <gaugeMax>89482.0</gaugeMax>
             <gaugeMin>0.0</gaugeMin>
-            <indicatorBreakpoint1>55.0</indicatorBreakpoint1>
-            <indicatorBreakpoint2>65.0</indicatorBreakpoint2>
+            <indicatorBreakpoint1>79288.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>83952.0</indicatorBreakpoint2>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -249,35 +175,49 @@
             <showPercentage>true</showPercentage>
             <showTotal>true</showTotal>
             <showValues>false</showValues>
-            <title>Total ARPU</title>
+            <title>Total MRR Run Rate</title>
         </components>
         <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
-            <dashboardTableColumn>
-                <column>Opportunity$Owner</column>
-            </dashboardTableColumn>
-            <dashboardTableColumn>
-                <calculatePercent>false</calculatePercent>
-                <column>FORMULA1</column>
-                <decimalPlaces>2</decimalPlaces>
-                <showTotal>true</showTotal>
-                <sortBy>RowValueDescending</sortBy>
-            </dashboardTableColumn>
-            <dashboardTableColumn>
-                <calculatePercent>false</calculatePercent>
-                <column>FORMULA2</column>
-                <showTotal>true</showTotal>
-            </dashboardTableColumn>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
+                <column>FORMULA9</column>
+            </chartSummary>
+            <componentType>Gauge</componentType>
             <displayUnits>Integer</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <header>MTD Professional Services</header>
+            <gaugeMax>45950.0</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <indicatorBreakpoint1>39057.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>41355.0</indicatorBreakpoint2>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>DB_Reports_InB_OutB_Auto/MTD_Prof_Sevices_Out_In_Auto_v2</report>
-            <showPicturesOnTables>false</showPicturesOnTables>
+            <report>unfiled$public/SMB_SA_MTD_MRR</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+            <title>Sales Assisted MRR Run Rate</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
+                <column>FORMULA9</column>
+            </chartSummary>
+            <componentType>Gauge</componentType>
+            <displayUnits>Integer</displayUnits>
+            <gaugeMax>43532.0</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <indicatorBreakpoint1>37002.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>39178.0</indicatorBreakpoint2>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>unfiled$public/SMB_SS_MTD_MRR</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+            <title>Self Serve MRR Run Rate</title>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
@@ -337,15 +277,15 @@
             <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
             <chartSummary>
                 <axisBinding>y</axisBinding>
-                <column>FORMULA9</column>
+                <column>FORMULA10</column>
             </chartSummary>
             <componentType>Gauge</componentType>
             <displayUnits>Integer</displayUnits>
             <footer>No Orion</footer>
-            <gaugeMax>89482.0</gaugeMax>
+            <gaugeMax>65.0</gaugeMax>
             <gaugeMin>0.0</gaugeMin>
-            <indicatorBreakpoint1>79288.0</indicatorBreakpoint1>
-            <indicatorBreakpoint2>83952.0</indicatorBreakpoint2>
+            <indicatorBreakpoint1>40.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>55.0</indicatorBreakpoint2>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -353,7 +293,49 @@
             <showPercentage>true</showPercentage>
             <showTotal>true</showTotal>
             <showValues>false</showValues>
-            <title>Total MRR Run Rate</title>
+            <title>Total ARPU</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
+                <column>FORMULA10</column>
+            </chartSummary>
+            <componentType>Gauge</componentType>
+            <displayUnits>Integer</displayUnits>
+            <gaugeMax>65.0</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <indicatorBreakpoint1>40.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>55.0</indicatorBreakpoint2>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>unfiled$public/SMB_SA_MTD_MRR</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+            <title>Sales Assisted ARPU MTD</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
+                <column>FORMULA10</column>
+            </chartSummary>
+            <componentType>Gauge</componentType>
+            <displayUnits>Integer</displayUnits>
+            <gaugeMax>65.0</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <indicatorBreakpoint1>40.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>55.0</indicatorBreakpoint2>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>unfiled$public/SMB_SS_MTD_MRR</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+            <title>Self Serve ARPU MTD</title>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
@@ -436,42 +418,6 @@
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <report>DB_Reports_InB_OutB_Auto/Todays_OutB_InB_Auto_Prod_Calls_v2</report>
             <showPicturesOnTables>false</showPicturesOnTables>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
-            <dashboardTableColumn>
-                <column>LiveChatTranscript$Owner</column>
-            </dashboardTableColumn>
-            <dashboardTableColumn>
-                <calculatePercent>false</calculatePercent>
-                <column>RowCount</column>
-                <showTotal>true</showTotal>
-                <sortBy>RowValueDescending</sortBy>
-            </dashboardTableColumn>
-            <displayUnits>Integer</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <header>MTD Chats</header>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>DB_Reports_InB_OutB_Auto/DB_MTD_Chats</report>
-            <showPicturesOnTables>false</showPicturesOnTables>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
-            <displayUnits>Integer</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <header>MTD Attempts</header>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>DB_Reports_InB_OutB_Auto/SMB_Attempts</report>
-            <showPicturesOnTables>false</showPicturesOnTables>
-            <sortBy>RowValueDescending</sortBy>
         </components>
     </rightSection>
     <runningUser>api@bigcommerce.com</runningUser>

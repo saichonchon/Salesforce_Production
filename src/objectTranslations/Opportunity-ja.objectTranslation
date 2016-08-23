@@ -517,32 +517,8 @@
         <label><!-- Closed Lost Reason Detail --></label>
         <name>Closed_Lost_Reason_Detail__c</name>
         <picklistValues>
-            <masterLabel>100% Uptime Servers</masterLabel>
-            <translation><!-- 100% Uptime Servers --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Accidental trial</masterLabel>
-            <translation><!-- Accidental trial --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Affiliate Marketing</masterLabel>
-            <translation><!-- Affiliate Marketing --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Amazon</masterLabel>
-            <translation><!-- Amazon --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>BC Product Not Ready</masterLabel>
             <translation><!-- BC Product Not Ready --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Back Order Functionality</masterLabel>
-            <translation><!-- Back Order Functionality --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Back in stock</masterLabel>
-            <translation><!-- Back in stock --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Backups</masterLabel>
@@ -561,24 +537,12 @@
             <translation><!-- Budget Not Approved --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>CMS</masterLabel>
-            <translation><!-- CMS --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Cart APIs</masterLabel>
             <translation><!-- Cart APIs --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Catalog Staging</masterLabel>
-            <translation><!-- Catalog Staging --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Couldn&apos;t Beat Rates</masterLabel>
             <translation><!-- Couldn&apos;t Beat Rates --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Couponing</masterLabel>
-            <translation><!-- Couponing --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Denied</masterLabel>
@@ -587,18 +551,6 @@
         <picklistValues>
             <masterLabel>Didn&apos;t see the value</masterLabel>
             <translation><!-- Didn&apos;t see the value --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Difficulty with product options</masterLabel>
-            <translation><!-- Difficulty with product options --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Discount Exclusions</masterLabel>
-            <translation><!-- Discount Exclusions --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Discount Restrictions</masterLabel>
-            <translation><!-- Discount Restrictions --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Don&apos;t need API</masterLabel>
@@ -621,108 +573,40 @@
             <translation><!-- Don&apos;t need the storage --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>ERP</masterLabel>
-            <translation><!-- ERP --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Ease of Use/Simplification</masterLabel>
-            <translation><!-- Ease of Use/Simplification --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Existing Vendor Relationship</masterLabel>
             <translation><!-- Existing Vendor Relationship --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Faceted Search</masterLabel>
-            <translation><!-- Faceted Search --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Freight Shipping</masterLabel>
-            <translation><!-- Freight Shipping --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>General API Concern</masterLabel>
-            <translation><!-- General API Concern --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>General Shipping Enhancements</masterLabel>
-            <translation><!-- General Shipping Enhancements --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>GoDaddy</masterLabel>
-            <translation><!-- GoDaddy --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Importing review</masterLabel>
-            <translation><!-- Importing review --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Integrated Dropshipping</masterLabel>
-            <translation><!-- Integrated Dropshipping --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Integration with Third Party tool</masterLabel>
-            <translation><!-- Integration with Third Party tool --></translation>
+            <masterLabel>Integration w/3rd Party Tool</masterLabel>
+            <translation><!-- Integration w/3rd Party Tool --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Internal Approvals Needed</masterLabel>
             <translation><!-- Internal Approvals Needed --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Inventory/Billing Management</masterLabel>
-            <translation><!-- Inventory/Billing Management --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Lack of Sandbox</masterLabel>
             <translation><!-- Lack of Sandbox --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Lack of Themes</masterLabel>
-            <translation><!-- Lack of Themes --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Loyalty Program</masterLabel>
-            <translation><!-- Loyalty Program --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>MCM</masterLabel>
-            <translation><!-- MCM --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Magento</masterLabel>
-            <translation><!-- Magento --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Map Pricing</masterLabel>
-            <translation><!-- Map Pricing --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Marketing Platform</masterLabel>
-            <translation><!-- Marketing Platform --></translation>
+            <masterLabel>Merchandising</masterLabel>
+            <translation><!-- Merchandising --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Migration Concern</masterLabel>
             <translation><!-- Migration Concern --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Minor/Child Sign Up</masterLabel>
-            <translation><!-- Minor/Child Sign Up --></translation>
+            <masterLabel>Miscellaneous</masterLabel>
+            <translation><!-- Miscellaneous --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Multi-Language Support</masterLabel>
             <translation><!-- Multi-Language Support --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Multiple Store Back-End</masterLabel>
-            <translation><!-- Multiple Store Back-End --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Multiple ship from location</masterLabel>
-            <translation><!-- Multiple ship from location --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Multiple ship to location</masterLabel>
-            <translation><!-- Multiple ship to location --></translation>
+            <masterLabel>Multiple Store Back End</masterLabel>
+            <translation><!-- Multiple Store Back End --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Need more time and will upgrade later</masterLabel>
@@ -735,10 +619,6 @@
         <picklistValues>
             <masterLabel>No products</masterLabel>
             <translation><!-- No products --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>No time</masterLabel>
-            <translation><!-- No time --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Nondisclosure Agreements</masterLabel>
@@ -761,36 +641,16 @@
             <translation><!-- Not enough sales for Abandoned Cart --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>OMS</masterLabel>
-            <translation><!-- OMS --></translation>
+            <masterLabel>Omni Channel</masterLabel>
+            <translation><!-- Omni Channel --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Order &amp; Form Fields</masterLabel>
             <translation><!-- Order &amp; Form Fields --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Orion</masterLabel>
-            <translation><!-- Orion --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Other</masterLabel>
-            <translation><!-- Other --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>POS</masterLabel>
-            <translation><!-- POS --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Parent/Child Accounts</masterLabel>
-            <translation><!-- Parent/Child Accounts --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Payment Methods</masterLabel>
-            <translation><!-- Payment Methods --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Pre-Employment</masterLabel>
-            <translation><!-- Pre-Employment --></translation>
+            <masterLabel>Payment</masterLabel>
+            <translation><!-- Payment --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Pre-employment Test</masterLabel>
@@ -809,44 +669,16 @@
             <translation><!-- Pricing Too Complex --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Product Level Shipping</masterLabel>
-            <translation><!-- Product Level Shipping --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Product Options</masterLabel>
-            <translation><!-- Product Options --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Product Recommendations</masterLabel>
-            <translation><!-- Product Recommendations --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Product visibility based on date</masterLabel>
-            <translation><!-- Product visibility based on date --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Provisioning Error</masterLabel>
-            <translation><!-- Provisioning Error --></translation>
+            <masterLabel>Promotions</masterLabel>
+            <translation><!-- Promotions --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>RMA</masterLabel>
             <translation><!-- RMA --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Recurring Billing</masterLabel>
-            <translation><!-- Recurring Billing --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Recurring Platform Issues</masterLabel>
             <translation><!-- Recurring Platform Issues --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Registries</masterLabel>
-            <translation><!-- Registries --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Reporting</masterLabel>
-            <translation><!-- Reporting --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>School Project</masterLabel>
@@ -861,36 +693,12 @@
             <translation><!-- Shipping --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Shipping Methods</masterLabel>
-            <translation><!-- Shipping Methods --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Shopify</masterLabel>
-            <translation><!-- Shopify --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Spam Lead</masterLabel>
-            <translation><!-- Spam Lead --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Stencil HTML Access</masterLabel>
-            <translation><!-- Stencil HTML Access --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Taxes</masterLabel>
             <translation><!-- Taxes --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Template Ease of Use / Simplification</masterLabel>
-            <translation><!-- Template Ease of Use / Simplification --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Terms of Service</masterLabel>
             <translation><!-- Terms of Service --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Test Account</masterLabel>
-            <translation><!-- Test Account --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Too expensive</masterLabel>
@@ -901,16 +709,12 @@
             <translation><!-- Unable to Contact --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Unsupported Cart-Migration</masterLabel>
-            <translation><!-- Unsupported Cart-Migration --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>User Permissions</masterLabel>
             <translation><!-- User Permissions --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Volusion</masterLabel>
-            <translation><!-- Volusion --></translation>
+            <masterLabel>Wholesale/B2B</masterLabel>
+            <translation><!-- Wholesale/B2B --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -931,14 +735,6 @@
         <picklistValues>
             <masterLabel>App will not install</masterLabel>
             <translation><!-- App will not install --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Auto Closed Lost</masterLabel>
-            <translation><!-- Auto Closed Lost --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Bad Phone Number</masterLabel>
-            <translation><!-- Bad Phone Number --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Cancelled</masterLabel>
@@ -981,10 +777,6 @@
             <translation><!-- Legal --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Lost to Competitor</masterLabel>
-            <translation><!-- Lost to Competitor --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Migration Issues</masterLabel>
             <translation><!-- Migration Issues --></translation>
         </picklistValues>
@@ -1001,10 +793,6 @@
             <translation><!-- Not Mature Enough/No Products/Too Small --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Not Qualified</masterLabel>
-            <translation><!-- Not Qualified --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Other</masterLabel>
             <translation><!-- Other --></translation>
         </picklistValues>
@@ -1013,64 +801,16 @@
             <translation><!-- Partner Was Not a Solution --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Poor In-Trial Client Success Experience</masterLabel>
-            <translation><!-- Poor In-Trial Client Success Experience --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Price</masterLabel>
-            <translation><!-- Price --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Pricing Issue</masterLabel>
             <translation><!-- Pricing Issue --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Product Feature/Functionality</masterLabel>
-            <translation><!-- Product Feature/Functionality --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Product/Integration w/3rd Party Tool</masterLabel>
-            <translation><!-- Product/Integration w/3rd Party Tool --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Product/Merchandising</masterLabel>
-            <translation><!-- Product/Merchandising --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Product/Misc</masterLabel>
-            <translation><!-- Product/Misc --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Product/Multi-Language Support</masterLabel>
-            <translation><!-- Product/Multi-Language Support --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Product/Multiple Store Back End</masterLabel>
-            <translation><!-- Product/Multiple Store Back End --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Product/Omni Channel</masterLabel>
-            <translation><!-- Product/Omni Channel --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Product/Payments</masterLabel>
-            <translation><!-- Product/Payments --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Product/Promotions</masterLabel>
-            <translation><!-- Product/Promotions --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Product/Wholesale/B2B</masterLabel>
-            <translation><!-- Product/Wholesale/B2B --></translation>
+            <masterLabel>Product</masterLabel>
+            <translation><!-- Product --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Refund</masterLabel>
             <translation><!-- Refund --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Risk of Migration Issues</masterLabel>
-            <translation><!-- Risk of Migration Issues --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>SQL Rejected</masterLabel>
@@ -1110,12 +850,32 @@
         <label><!-- Competitor --></label>
         <name>Competitor__c</name>
         <picklistValues>
-            <masterLabel>Americommerce</masterLabel>
-            <translation><!-- Americommerce --></translation>
+            <masterLabel>3D Cart</masterLabel>
+            <translation><!-- 3D Cart --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Custom</masterLabel>
             <translation><!-- Custom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Demandware</masterLabel>
+            <translation><!-- Demandware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Magento 2.0</masterLabel>
+            <translation><!-- Magento 2.0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Magento Cloud</masterLabel>
+            <translation><!-- Magento Cloud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mozu</masterLabel>
+            <translation><!-- Mozu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Other</masterLabel>
@@ -1126,12 +886,12 @@
             <translation><!-- Shopify --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Volusion</masterLabel>
-            <translation><!-- Volusion --></translation>
+            <masterLabel>Shopify Plus</masterLabel>
+            <translation><!-- Shopify Plus --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Yahoo</masterLabel>
-            <translation><!-- Yahoo --></translation>
+            <masterLabel>Volusion</masterLabel>
+            <translation><!-- Volusion --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -2863,6 +2623,22 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Influencing RV Account --></label>
+        <lookupFilter>
+            <errorMessage><!-- This is not a valid Influencing Partner. Please select a new Influencing Partner. --></errorMessage>
+        </lookupFilter>
+        <name>Influencing_RVAccount__c</name>
+        <relationshipLabel><!-- Influenced Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Influencing RV Account Assigned By --></label>
+        <name>Influencing_RV_Account_Assigned_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Influencing RV Account Assigned --></label>
+        <name>Influencing_RV_Account_Assigned__c</name>
+    </fields>
+    <fields>
         <label><!-- Initial Submitter --></label>
         <name>Initial_Submitter__c</name>
     </fields>
@@ -2906,12 +2682,36 @@
         <label><!-- Launch Status --></label>
         <name>Launch_Status__c</name>
         <picklistValues>
+            <masterLabel>At Risk</masterLabel>
+            <translation><!-- At Risk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Launched</masterLabel>
             <translation><!-- Launched --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Track</masterLabel>
+            <translation><!-- On Track --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan to Correct</masterLabel>
+            <translation><!-- Plan to Correct --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Unlaunched</masterLabel>
             <translation><!-- Unlaunched --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Withdrawn</masterLabel>
+            <translation><!-- Withdrawn --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -4356,6 +4156,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Risk Mitigation Strategy --></label>
+        <name>Risk_Mitigation_Strategy__c</name>
+    </fields>
+    <fields>
         <label><!-- Roll-up Active Store --></label>
         <name>Roll_up_Active_Store__c</name>
     </fields>
@@ -4446,6 +4250,34 @@
         <label><!-- Renewed Contract --></label>
         <name>SBQQ__RenewedContract__c</name>
         <relationshipLabel><!-- Renewal Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Salesvue Add To Plan Ids --></label>
+        <name>SalesVue__Salesvue_Add_To_Plan_Ids__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesvue Plan Status --></label>
+        <name>SalesVue__Salesvue_Plan_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Removed</masterLabel>
+            <translation><!-- Removed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Salesvue Remove From Plan Ids --></label>
+        <name>SalesVue__Salesvue_Remove_From_Plan_Ids__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Zone --></label>
+        <name>SalesVue__Time_Zone__c</name>
     </fields>
     <fields>
         <label><!-- zSales Do Not Call --></label>
@@ -4840,6 +4672,10 @@
     <fields>
         <label><!-- Support Pin --></label>
         <name>SupportPin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Launch Date --></label>
+        <name>Target_Launch_Date__c</name>
     </fields>
     <fields>
         <label><!-- zTax Exempt Certificate Number --></label>
@@ -5419,6 +5255,10 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         <sections>
             <label><!-- Sales Engineering --></label>
             <section>Sales Engineering</section>
+        </sections>
+        <sections>
+            <label><!-- Totango --></label>
+            <section>Totango</section>
         </sections>
         <sections>
             <label><!-- Zuora Details --></label>
@@ -6058,6 +5898,26 @@ Hot: came in from a good source and/or is progressing towards close --></help>
     <webLinks>
         <label><!-- Include_Document --></label>
         <name>SBQQ__Include_Document</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_Opportunities_To_Plans --></label>
+        <name>SalesVue__Add_Opportunities_To_Plans</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_Opportunity_To_Plans --></label>
+        <name>SalesVue__Add_Opportunity_To_Plans</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Log_SalesVue_Free_Task --></label>
+        <name>SalesVue__Log_SalesVue_Free_Task</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Remove_From_Plans --></label>
+        <name>SalesVue__Remove_From_Plans</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Remove_Single_From_Plans --></label>
+        <name>SalesVue__Remove_Single_From_Plans</name>
     </webLinks>
     <webLinks>
         <label><!-- Set_Callback --></label>

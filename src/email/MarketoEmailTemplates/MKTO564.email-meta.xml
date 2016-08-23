@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Amazon Teikametrics Webinar 08/16- 1313.CUS Email 1</name>
+    <style>none</style>
+    <subject>[Webinar] How to Use Amazon to Grow Your Ecommerce Brand</subject>
+    <textOnly>As Amazon refines its network to bring in even more sellers, brands need to find a way to beat their increasingly fierce competition.
+Hi {{lead.First Name:default=there}},
+As Amazon refines its network to bring in even more sellers, brands need to find a way to beat their increasingly fierce competition.
+
+In our upcoming webinar, Teikametrics CEO and former Amazon seller, Alasdair McLean-Foreman, and BigCommerce CEO, Brent Bellm, will share leading practices for ecommerce sellers to maximize their brand&apos;s potential with Amazon.
+Webinar: How to Use Amazon to Grow Your Ecommerce Brand &lt;[[http://bit.ly/2aM48TF]]&gt;
+When: Wednesday, August 24 at 3 PM EST
+ Presenters: BigCommerce CEO, Brent Bellm and Teikametrics CEO, Alasdair McLean-Foreman
+
+
+
+
+
+Reserve your spot &lt;[[http://bit.ly/2aM48TF]]&gt;
+Brent and Alasdair will discuss:
+
+
+ - Navigating the evolving Amazon marketplace to stay ahead of the curve
+ - Driving more traffic to your product listings and increasing conversions
+ - Optimizing your Amazon Sponsored Products campaigns for maximum return
+ - Scaling your business without breaking the bank
+
+
+Click here to reserve your spot today! &lt;[[http://bit.ly/2aM48TF]]&gt;
+Hope to see you there, 
+The BigCommerce Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

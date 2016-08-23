@@ -97,65 +97,45 @@
             <chartAxisRange>Auto</chartAxisRange>
             <chartSummary>
                 <axisBinding>y</axisBinding>
-                <column>FORMULA9</column>
+                <column>RowCount</column>
             </chartSummary>
-            <componentType>LineGrouped</componentType>
-            <displayUnits>Integer</displayUnits>
+            <componentType>BarStacked</componentType>
+            <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>false</enableHover>
+            <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <footer>Does not Include API User Opps</footer>
-            <groupingColumn>Opportunity.Oppotunity_Products__r$StartDate__c</groupingColumn>
-            <groupingColumn>BucketField_40993979</groupingColumn>
+            <groupingColumn>Account.Projected_Annual_Revenue__c</groupingColumn>
+            <groupingColumn>BucketField_54220586</groupingColumn>
             <legendPosition>Bottom</legendPosition>
-            <report>Premium/Enterprise_New_Arpu</report>
+            <report>unfiled$public/SQL_by_GMV_bands</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
-            <sortBy>RowLabelAscending</sortBy>
-            <title>ARPU MoM - New</title>
-            <useReportChart>false</useReportChart>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-            <chartAxisRange>Auto</chartAxisRange>
-            <chartSummary>
-                <aggregate>Average</aggregate>
-                <axisBinding>y</axisBinding>
-                <column>AGE</column>
-            </chartSummary>
-            <componentType>LineGrouped</componentType>
-            <displayUnits>Integer</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>false</enableHover>
-            <expandOthers>false</expandOthers>
-            <footer>2015 - Not 100% accurate due to dupe opps on close</footer>
-            <groupingColumn>CLOSE_DATE</groupingColumn>
-            <groupingColumn>BucketField_88679573</groupingColumn>
-            <legendPosition>Bottom</legendPosition>
-            <report>Premium/Average_Sales_Cycle</report>
-            <showPercentage>false</showPercentage>
-            <showValues>false</showValues>
-            <sortBy>RowLabelAscending</sortBy>
-            <title>Average Sales Cycle</title>
+            <sortBy>RowLabelDescending</sortBy>
+            <title>SQLs delivered this month by GMV</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Gauge</componentType>
+            <componentType>Table</componentType>
+            <dashboardTableColumn>
+                <column>BucketField_54220586</column>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <calculatePercent>false</calculatePercent>
+                <column>RowCount</column>
+                <showTotal>true</showTotal>
+                <sortBy>RowValueDescending</sortBy>
+            </dashboardTableColumn>
             <displayUnits>Auto</displayUnits>
-            <gaugeMin>0.0</gaugeMin>
-            <indicatorBreakpoint1>26.0</indicatorBreakpoint1>
-            <indicatorBreakpoint2>30.0</indicatorBreakpoint2>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>Premium/CR_TEST</report>
-            <showPercentage>false</showPercentage>
-            <showTotal>true</showTotal>
-            <showValues>false</showValues>
-            <title>Close Rate % - 2015</title>
+            <report>Mid_Market_Sales/SQLs_delivered_to_MM_this_Month2</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <title>SQLs delivered this month by Channel</title>
         </components>
     </leftSection>
     <middleSection>
@@ -284,28 +264,6 @@
             <sortBy>RowValueDescending</sortBy>
             <useReportChart>false</useReportChart>
         </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
-            <dashboardTableColumn>
-                <column>BucketField_54220586</column>
-            </dashboardTableColumn>
-            <dashboardTableColumn>
-                <calculatePercent>false</calculatePercent>
-                <column>RowCount</column>
-                <showTotal>true</showTotal>
-                <sortBy>RowValueDescending</sortBy>
-            </dashboardTableColumn>
-            <displayUnits>Auto</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>Mid_Market_Sales/SQLs_delivered_to_MM_this_Month2</report>
-            <showPicturesOnTables>true</showPicturesOnTables>
-            <title>SQLs delivered this month by Channel</title>
-        </components>
     </middleSection>
     <rightSection>
         <columnSize>Wide</columnSize>
@@ -381,29 +339,6 @@
             <title>Catalog Transfers Sold MTD</title>
         </components>
         <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
-            <dashboardTableColumn>
-                <column>FULL_NAME</column>
-                <sortBy>RowValueDescending</sortBy>
-            </dashboardTableColumn>
-            <dashboardTableColumn>
-                <aggregateType>Sum</aggregateType>
-                <calculatePercent>false</calculatePercent>
-                <column>AMOUNT</column>
-                <showTotal>true</showTotal>
-            </dashboardTableColumn>
-            <displayUnits>Integer</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>Premium/Total_Pipeline_by_Rep</report>
-            <showPicturesOnTables>true</showPicturesOnTables>
-            <title>Total Pipeline by Rep</title>
-        </components>
-        <components>
             <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
             <chartSummary>
@@ -425,6 +360,29 @@
             <sortBy>RowLabelAscending</sortBy>
             <title>This Month&apos;s Pipeline by Stage</title>
             <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardTableColumn>
+                <column>FULL_NAME</column>
+                <sortBy>RowValueDescending</sortBy>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <aggregateType>Sum</aggregateType>
+                <calculatePercent>false</calculatePercent>
+                <column>AMOUNT</column>
+                <showTotal>true</showTotal>
+            </dashboardTableColumn>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>Premium/Total_Pipeline_by_Rep</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <title>Total Pipeline by Rep</title>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
@@ -453,57 +411,6 @@
             <report>Premium/Enterprise_Team_Old_Opps</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <title>Opportunities with Old Close Dates</title>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
-            <dashboardTableColumn>
-                <column>Account.Opportunities$Owner</column>
-                <sortBy>RowLabelAscending</sortBy>
-            </dashboardTableColumn>
-            <dashboardTableColumn>
-                <calculatePercent>false</calculatePercent>
-                <column>RowCount</column>
-                <showTotal>true</showTotal>
-            </dashboardTableColumn>
-            <dashboardTableColumn>
-                <calculatePercent>false</calculatePercent>
-                <column>FORMULA1</column>
-                <showTotal>true</showTotal>
-            </dashboardTableColumn>
-            <displayUnits>Integer</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <header>Accounts Slipping Away</header>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>Mid_Market_Sales/Accounts_Slipping_Away_2</report>
-            <showPicturesOnTables>true</showPicturesOnTables>
-            <title>Accounts w/no Activity in 30 Days</title>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-            <chartAxisRange>Auto</chartAxisRange>
-            <chartSummary>
-                <axisBinding>y</axisBinding>
-                <column>RowCount</column>
-            </chartSummary>
-            <componentType>BarStacked</componentType>
-            <displayUnits>Auto</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>true</enableHover>
-            <expandOthers>false</expandOthers>
-            <groupingColumn>Account.Projected_Annual_Revenue__c</groupingColumn>
-            <groupingColumn>BucketField_54220586</groupingColumn>
-            <legendPosition>Bottom</legendPosition>
-            <report>unfiled$public/SQL_by_GMV_bands</report>
-            <showPercentage>false</showPercentage>
-            <showValues>false</showValues>
-            <sortBy>RowLabelDescending</sortBy>
-            <title>SQLs delivered this month by GMV</title>
-            <useReportChart>false</useReportChart>
         </components>
     </rightSection>
     <runningUser>alecia.wall@bigcommerce.com</runningUser>

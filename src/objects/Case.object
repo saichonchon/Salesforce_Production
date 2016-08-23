@@ -308,6 +308,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Closed - Manual Payment Requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>In Progress</fullName>
             <default>false</default>
         </values>
@@ -8053,6 +8057,11 @@ NULL))</formula>
                 <controllingFieldValues>JIRA</controllingFieldValues>
             </picklistValues>
             <picklistValues>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+                <controllingFieldValues>Cancellation Reasons</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Change in Payment Amount</fullName>
                 <default>false</default>
                 <controllingFieldValues>Commissions</controllingFieldValues>
@@ -10156,6 +10165,11 @@ NULL))</formula>
                 <fullName>Auto-Closed</fullName>
                 <default>false</default>
                 <closed>true</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed - Manual Payment Requested</fullName>
+                <default>false</default>
+                <closed>false</closed>
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
@@ -16329,6 +16343,10 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
+                <fullName>Cancellation Reasons</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Credit</fullName>
                 <default>false</default>
             </values>
@@ -16409,6 +16427,10 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             </values>
             <values>
                 <fullName>Brick %26 Mortar Out of Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancellation</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16536,10 +16558,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
-                <fullName>Fraud</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Free Theme</fullName>
                 <default>false</default>
             </values>
@@ -16564,15 +16582,7 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
-                <fullName>Lack of Features</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Last 4 Needed</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Leaving for competitor</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16593,10 +16603,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             </values>
             <values>
                 <fullName>Merge</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Migration</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16628,10 +16634,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
-                <fullName>Multiple Stores%2F Consolidating</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Need More Customization</fullName>
                 <default>false</default>
             </values>
@@ -16652,19 +16654,7 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
-                <fullName>No Time</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>No products</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>No products to sell%2Fsupplier relationship</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>No%2FLow Sales</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16673,14 +16663,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             </values>
             <values>
                 <fullName>Not enough sales for Abandoned Cart</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Not moving forward with the business</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Not using the store</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16716,23 +16698,7 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
-                <fullName>Out of Business</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Oversold</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Paid for free trial by mistake</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Partner issues</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Personal Reason</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16745,10 +16711,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             </values>
             <values>
                 <fullName>Platform Experience</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Platform Limitations</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16820,19 +16782,7 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
-                <fullName>Sales Experience</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Sandbox Site</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Saved from Cancellation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Seasonal User</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16877,14 +16827,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             </values>
             <values>
                 <fullName>Third Party Issues</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Too Difficult</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Too Expensive</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17354,6 +17296,10 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
+                <fullName>Closed my business</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>DNWD%3A Did not%2Fwould not disclose</fullName>
                 <default>false</default>
             </values>
@@ -17366,7 +17312,19 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
+                <fullName>Missing product features</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moving to Another Platform</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>NTCM%3A No time %2F Changed mind</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No time to invest in website</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17394,7 +17352,15 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
+                <fullName>Something Else</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>UNR%3A Unengaged %2F No response</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Value</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

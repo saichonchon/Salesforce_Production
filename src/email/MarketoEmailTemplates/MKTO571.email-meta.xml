@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>eBay Open Sellers Event Followup- 1247.ACQ - Email 2</name>
+    <style>none</style>
+    <subject>Reconnecting after eBay OPEN</subject>
+    <textOnly>We hope you&apos;ve had time to settle back in after eBay OPEN. Our team is looking forward to giving you a personal tour of BigCommerce.
+
+
+Hi {{lead.First Name:default=there}},
+
+
+Thanks for dropping by the BigCommerce booth at eBay OPEN.
+
+I’d like to invite you to register for the BigCommerce Product Tour &lt;[[https://attendee.gotowebinar.com/rt/6572861094668613633]]&gt;. This 30-minute live session will introduce you to the BigCommerce platform and show you how it helps thousands of successful retailers sell more. You’ll also have the opportunity to ask questions specific to your business.
+
+If you’d like to schedule time to discuss your business goals and how BigCommerce can help you reach them, please let me know.
+
+Thanks,
+
+
+The BigCommerce Team
+ecommerceconsultant@bigcommerce.com &lt;[[mailto:ecommerceconsultant@bigcommerce.com]]&gt;   /   1-855-884-6610 &lt;[[tel:+18558846610]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

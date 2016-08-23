@@ -34,7 +34,7 @@
         <criteriaItems>
             <column>STATUS</column>
             <operator>equals</operator>
-            <value>New,On Hold,Open Unsolved,Client Responded,Reopened</value>
+            <value>New,On Hold,Open Unsolved,Client Responded,Reopened,Waiting on Client</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>

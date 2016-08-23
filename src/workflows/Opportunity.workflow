@@ -352,6 +352,16 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>BA_Testing_Opportunity_True</fullName>
+        <field>BA_Testing_Opportunity__c</field>
+        <literalValue>1</literalValue>
+        <name>BA Testing Opportunity = True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Bigcommerce_Approved</fullName>
         <field>Enterprise_Partner_Request_Status__c</field>
         <literalValue>Bigcommerce Approved</literalValue>
@@ -544,6 +554,26 @@
         <targetObject>AccountId</targetObject>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>Update_Influencing_RV_Acct_Assigned</fullName>
+        <description>Update Influencing RV Account Assigned to the current date.</description>
+        <field>Influencing_RV_Account_Assigned__c</field>
+        <formula>TODAY()</formula>
+        <name>Update Influencing RV Acct Assigned</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Influencing_RV_Acct_Assigned_By</fullName>
+        <description>Update field to the person that changed the value of the Influencing RV Account field</description>
+        <field>Influencing_RV_Account_Assigned_By__c</field>
+        <formula>$User.Full_Name__c</formula>
+        <name>Update Influencing RV Acct Assigned By</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_Opportunity_Owner</fullName>
         <field>OwnerId</field>
         <lookupValue>jennifer.schultz@bigcommerce.com</lookupValue>
@@ -606,17 +636,6 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>set_the_BA_Testing_Opportunity_field_to</fullName>
-        <description>set the BA Testing Opportunity field to</description>
-        <field>BA_Testing_Opportunity__c</field>
-        <literalValue>1</literalValue>
-        <name>set the BA Testing Opportunity field to</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>true</reevaluateOnChange>
     </fieldUpdates>
     <flowActions>
         <fullName>Add_Opp_Contacts_to_Totango_Campaign</fullName>
@@ -945,6 +964,38 @@ ISPICKVAL(StageName, &apos;Closed Lost&apos;)
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
+        <fullName>Opp%3A BA Test Opportunity %3D False</fullName>
+        <actions>
+            <name>BA_Test_Opportunity_False</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.BA_Testing_Opportunity__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.MonthlyRecurringRevenue__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <description>BAP-3748: Sets the BA Test Opportunity field to false (usually set to true due to being previously Closed Lost as &quot;Test Account&quot;) and it has a positive MRR associated with it.
+**NOTE**  Field may no longer be valid in revenue report filtering.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp%3A BA Testing Opportunity %3D True</fullName>
+        <actions>
+            <name>BA_Testing_Opportunity_True</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Set the BA Testing Opportunity field to true</description>
+        <formula>AND( RecordTypeId =&apos;01213000000AUty&apos; ,ISPICKVAL(Closed_Lost_Reason__c,&apos;Test Account&apos;),  ISCHANGED(Closed_Lost_Reason__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
         <fullName>Opp%3A Cancellation Notification</fullName>
         <actions>
             <name>Send_Cancellation_notice_to_Opp_Owner</name>
@@ -998,38 +1049,6 @@ ISCHANGED(Product__c)&amp;&amp;
 CONTAINS(Owner.Profile.Name, &quot;Sales Rep&quot;) &amp;&amp; 
 NOT(CONTAINS( Owner.Full_Name__c, &quot;Team&quot;)) &amp;&amp; 
 DATEVALUE(CreatedDate) &lt;&gt; TODAY()</formula>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
-        <fullName>Opportunity%3A BA Test Opportunity %3D True</fullName>
-        <actions>
-            <name>BA_Test_Opportunity_False</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Opportunity.BA_Testing_Opportunity__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Opportunity.MonthlyRecurringRevenue__c</field>
-            <operation>greaterThan</operation>
-            <value>0</value>
-        </criteriaItems>
-        <description>BAP-3748: Sets the BA Test Opportunity field to false (usually set to true due to being previously Closed Lost as &quot;Test Account&quot;) and it has a positive MRR associated with it.
-**NOTE**  Field may no longer be valid in revenue report filtering.</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Opportunity%3ASet the BA Testing Opportunity field to true</fullName>
-        <actions>
-            <name>set_the_BA_Testing_Opportunity_field_to</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <description>Set the BA Testing Opportunity field to true</description>
-        <formula>AND( RecordTypeId =&apos;01213000000AUty&apos; ,ISPICKVAL(Closed_Lost_Reason__c,&apos;Test Account&apos;),  ISCHANGED(Closed_Lost_Reason__c))</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
@@ -1239,6 +1258,24 @@ ispickval( App_Revshare__c , &quot;Signed&quot;)</formula>
         <description>Last Date  when stage changed</description>
         <formula>OR (ISCHANGED(StageName),ISNEW())
 &amp;&amp; RecordType.Name = &apos;Trial&apos;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Influenced RV Account Info</fullName>
+        <actions>
+            <name>Update_Influencing_RV_Acct_Assigned</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Influencing_RV_Acct_Assigned_By</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Update Influenced RV Account Assigned and Assigned By when the &quot;Influencing RV Account&quot; field is populated. BAP-4115</description>
+        <formula>AND(
+ISCHANGED( Influencing_RVAccount__c ),
+NOT ISNULL( Influencing_RVAccount__c )
+)</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>

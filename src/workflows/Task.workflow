@@ -106,37 +106,6 @@
         <reevaluateOnChange>true</reevaluateOnChange>
     </fieldUpdates>
     <rules>
-        <fullName>Change Task Type to Email</fullName>
-        <actions>
-            <name>Type_Email</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>(1 OR 3 OR 4) AND 2</booleanFilter>
-        <criteriaItems>
-            <field>Task.Subject</field>
-            <operation>contains</operation>
-            <value>Bad Phone Number Email Sent,Non English Speaking Email Sent</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Task.Type</field>
-            <operation>equals</operation>
-            <value>Call</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Task.OwnerId</field>
-            <operation>equals</operation>
-            <value>Hubspot</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Task.CreatedById</field>
-            <operation>equals</operation>
-            <value>Hubspot</value>
-        </criteriaItems>
-        <description>For automated Email task logs that are created as Calls</description>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
         <fullName>First of Month Date Population %3A Task</fullName>
         <actions>
             <name>First_of_Month_Date_Population_Task</name>

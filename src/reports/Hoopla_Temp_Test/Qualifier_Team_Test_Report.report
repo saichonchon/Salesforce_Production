@@ -19,7 +19,7 @@
         <criteriaItems>
             <column>ROLE</column>
             <operator>contains</operator>
-            <value>ldr,outbound</value>
+            <value>ldr,outbound,enterprise</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>

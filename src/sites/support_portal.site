@@ -1080,8 +1080,26 @@
     <siteRedirectMappings>
         <action>Permanent</action>
         <isActive>true</isActive>
+        <source>/categories/Design+Customization/Checkout+%26+Cart/</source>
+        <target>/articles/Public/Checkout-Overview/</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
+        <source>/categories/Design+Customization/Customize+Content/</source>
+        <target>/articles/Public/Themes-Design-Overview/</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
         <source>/categories/Getting+Started/</source>
         <target>https://support.bigcommerce.com</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
+        <source>/categories/Getting+Started/Taxes/</source>
+        <target>/articles/Public/Tax-Overview</target>
     </siteRedirectMappings>
     <siteRedirectMappings>
         <action>Permanent</action>
@@ -1094,6 +1112,30 @@
         <isActive>true</isActive>
         <source>/categories/Running+Your+Store/Live+Chat/</source>
         <target>/contact</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
+        <source>/categories/Running+Your+Store/Orders/</source>
+        <target>/articles/Public/Orders-Overview</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
+        <source>/categories/Search+Engine+Optimization/</source>
+        <target>/articles/Public/SEO-Overview/</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
+        <source>/categories/Shipping/</source>
+        <target>/articles/Public/Shipping-Overview</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
+        <source>/categories/Store+Domains/Domain+%26+DNS/</source>
+        <target>/articles/Public/Domains-DNS-Overview/</target>
     </siteRedirectMappings>
     <siteRedirectMappings>
         <action>Permanent</action>
@@ -1454,6 +1496,12 @@
         <isActive>true</isActive>
         <source>/questions/1062/How+do+I+import+products+and+product+options+with+a+CSV+file%3F</source>
         <target>/articles/Public/How-do-I-import-products-and-product-options-with-a-CSV-file</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
+        <source>/questions/1062/How+do+I+import+products+with+a+CSV+file%3F</source>
+        <target>/articles/Public/Importing-Products/</target>
     </siteRedirectMappings>
     <siteRedirectMappings>
         <action>Permanent</action>
@@ -1914,6 +1962,12 @@
     <siteRedirectMappings>
         <action>Permanent</action>
         <isActive>true</isActive>
+        <source>/questions/1146/</source>
+        <target>/</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
         <source>/questions/1149/</source>
         <target>https://support.bigcommerce.com/articles/Public/Themes-Design-Overview</target>
     </siteRedirectMappings>
@@ -2070,6 +2124,12 @@
     <siteRedirectMappings>
         <action>Permanent</action>
         <isActive>true</isActive>
+        <source>/questions/1174/Registering+your+QBMS+module+with+Intuit</source>
+        <target>/articles/Public/Installing-the-Quickbooks-Online-App/</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
         <source>/questions/1176/Setting+up+your+QuickBooks+Merchant+Service+module+-+Live+account</source>
         <target>/articles/Public/What-are-the-steps-to-configure-QuickBooks-Merchant-Services</target>
     </siteRedirectMappings>
@@ -2166,6 +2226,12 @@
     <siteRedirectMappings>
         <action>Permanent</action>
         <isActive>true</isActive>
+        <source>/questions/1195/How+do+I+setup+Google+Analytics+e-commerce+tracking%3F</source>
+        <target>/articles/Public/Setting-Up-Google-Analytics/</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
         <source>/questions/1196/</source>
         <target>https://support.bigcommerce.com/articles/Public/Setting-up-Free-Shipping</target>
     </siteRedirectMappings>
@@ -2228,6 +2294,12 @@
         <isActive>true</isActive>
         <source>/questions/1205</source>
         <target>https://support.bigcommerce.com/articles/Public/Domains-DNS-Overview</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
+        <source>/questions/1205/</source>
+        <target>/</target>
     </siteRedirectMappings>
     <siteRedirectMappings>
         <action>Permanent</action>
@@ -2550,6 +2622,12 @@
     <siteRedirectMappings>
         <action>Permanent</action>
         <isActive>true</isActive>
+        <source>/questions/1253/How+do+I+add+oLark+live+chat+to+my+site%3F</source>
+        <target>/articles/Public/How-do-I-add-oLark-live-chat-to-my-site/</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
         <source>/questions/1255</source>
         <target>https://support.bigcommerce.com/articles/Public/Setting-up-Customer-Groups</target>
     </siteRedirectMappings>
@@ -2804,6 +2882,12 @@
         <isActive>true</isActive>
         <source>/questions/1294/How+do+I+hide+my+products%27+ratings%3F</source>
         <target>https://support.bigcommerce.com/articles/Public/Display-Settings</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
+        <source>/questions/1296/How+do+I+delete+a+sub+category+from+my+store%3F</source>
+        <target>/articles/Public/Managing-Product-Categories/</target>
     </siteRedirectMappings>
     <siteRedirectMappings>
         <action>Permanent</action>
@@ -3840,6 +3924,12 @@
     <siteRedirectMappings>
         <action>Permanent</action>
         <isActive>true</isActive>
+        <source>/questions/1504/How+do+I+set+up+my+store+as+an+online+catalog%3F+</source>
+        <target>/articles/Public/Adding-a-Product-Details</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
         <source>/questions/1507/</source>
         <target>https://support.bigcommerce.com/articles/Public/Searching-Orders-for-Specific-Products</target>
     </siteRedirectMappings>
@@ -4100,6 +4190,12 @@
         <isActive>true</isActive>
         <source>/questions/1560/How+do+I+access+the+API+for+my+store%3F</source>
         <target>http://developer.bigcommerce.com</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
+        <source>/questions/1560/How+do+I+enable+the+API+for+my+store%3F</source>
+        <target>/articles/Public/Legacy-API-Accounts/</target>
     </siteRedirectMappings>
     <siteRedirectMappings>
         <action>Permanent</action>
@@ -5370,6 +5466,12 @@
     <siteRedirectMappings>
         <action>Permanent</action>
         <isActive>true</isActive>
+        <source>/questions/1744/Analytics+-+In-Store+Search</source>
+        <target>/articles/Learning/In-Store-Search-Report-Guide-to-BigCommerce-Analytics/</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
         <source>/questions/1746/</source>
         <target>https://support.bigcommerce.com/articles/Public/Pointing-your-domain</target>
     </siteRedirectMappings>
@@ -5714,6 +5816,12 @@
         <isActive>true</isActive>
         <source>/questions/1784/How+do+I+setup+email+with+Microsoft+Outlook+2010%3F</source>
         <target>https://support.bigcommerce.com/articles/Public/How-do-I-setup-email-with-Microsoft-Outlook-2010</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
+        <source>/questions/1786/Can+I+keep+Credit+Card+numbers+in+my+store%3F</source>
+        <target>/articles/Public/Incorrectly-Storing-Credit-Card-Data/</target>
     </siteRedirectMappings>
     <siteRedirectMappings>
         <action>Permanent</action>

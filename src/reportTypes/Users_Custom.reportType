@@ -681,6 +681,11 @@
             <field>Contact.Account.Source__c</field>
             <table>User</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact.Primary_MBA_Contact__c</field>
+            <table>User</table>
+        </columns>
         <masterLabel>Users</masterLabel>
     </sections>
 </ReportType>

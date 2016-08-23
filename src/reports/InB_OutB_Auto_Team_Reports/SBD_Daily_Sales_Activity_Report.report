@@ -73,7 +73,7 @@
     <reportType>Activity</reportType>
     <roleHierarchyFilter>SystemAdministrator</roleHierarchyFilter>
     <scope>organization</scope>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>DUE_DATE</dateColumn>
         <interval>INTERVAL_LASTWEEK</interval>

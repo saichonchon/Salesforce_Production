@@ -414,8 +414,11 @@ Owner:User.Profile.Id = &apos;00e130000024OSX&apos; /* Sales Leader */
         </actions>
         <active>true</active>
         <description>Emails Partner &amp; Acq reps if a new lead is assigned to them.  Direct didn&apos;t want the alert as it junks up their in-box</description>
-        <formula>RecordTypeId = &quot;012a0000001NQQK&quot; &amp;&amp;   (CONTAINS(Owner:User.UserRole.Name,&quot;Inbound&quot;) = FALSE  ||
-CONTAINS(Owner:User.UserRole.Name,&quot;Outbound&quot;) = FALSE)
+        <formula>RecordTypeId = &quot;012a0000001NQQK&quot; &amp;&amp;   (
+CONTAINS(Owner:User.UserRole.Name,&quot;Inbound&quot;) = FALSE  ||
+CONTAINS(Owner:User.UserRole.Name,&quot;Outbound&quot;) = FALSE ||
+CONTAINS(Owner:User.UserRole.Name,&quot;Small Business Sales&quot;) = FALSE
+)
 &amp;&amp; OwnerId &lt;&gt; &quot;00530000007EJEO&quot;</formula>
         <triggerType>onCreateOnly</triggerType>
     </rules>

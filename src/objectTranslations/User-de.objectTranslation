@@ -217,6 +217,11 @@ WARNING: This will expose some of your emails to the Unresolved Items Agent. -->
         <name>User_Image__c</name>
     </fields>
     <fields>
+        <help><!-- For identifying portal users that have modified either their username or their contact email so that they no longer match.  This is used to avoid accidentally deleting duplicate contacts associated to multiple user records. --></help>
+        <label><!-- Username/contact email mismatch --></label>
+        <name>Username_contact_email_mismatch__c</name>
+    </fields>
+    <fields>
         <help><!-- Your store URL --></help>
         <label><!-- Website --></label>
         <name>Website__c</name>

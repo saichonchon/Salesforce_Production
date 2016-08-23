@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>rvpe__RVAccount__c.Partner_Commission_Balance__c</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVAccount__c.rvpe__Inactive__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>rvpe__RVAccount__c.Partner_Commission_Balance__c</column>
+            <operator>lessThan</operator>
+            <value>0</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Overpaid RV Accounts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$rvpe__RVAccount__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>rvpe__RVAccount__c.Partner_Commission_Balance__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>rvpe__RVAccount__c.Approved_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

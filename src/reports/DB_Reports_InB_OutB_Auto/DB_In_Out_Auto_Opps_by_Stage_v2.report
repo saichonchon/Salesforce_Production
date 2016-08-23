@@ -56,7 +56,7 @@
         <criteriaItems>
             <column>Opportunity$Owner.Department</column>
             <operator>contains</operator>
-            <value>Inbound,Outbound,Client Development Sales,Automated Sales User,Small Business Sales Team</value>
+            <value>Small Business Sales Team</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -81,6 +81,6 @@
     <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>Opportunity$StartDate__c</dateColumn>
-        <interval>INTERVAL_THISMONTH</interval>
+        <interval>INTERVAL_LASTTHISMONTH</interval>
     </timeFrameFilter>
 </Report>

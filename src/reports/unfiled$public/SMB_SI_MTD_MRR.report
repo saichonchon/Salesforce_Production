@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Previous_Owner__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Owner_Team__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Oppotunity_Products__r$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity$Owner_Team__c</column>
+            <operator>equals</operator>
+            <value>automated sales user</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Previous_Owner__c</column>
+            <operator>contains</operator>
+            <value>darren,chris,marty,sam,chad,jeremy,nathan</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>SMB SI MTD MRR</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opp_with_Prod_Hist_and_Lookup_Data__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CancellationDate__c</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

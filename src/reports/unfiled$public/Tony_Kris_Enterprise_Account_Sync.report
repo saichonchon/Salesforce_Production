@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <acrossGroupingContext>GRAND_SUMMARY</acrossGroupingContext>
+        <calculatedFormula>Opportunity.MonthlyRecurringRevenue__c:AVG</calculatedFormula>
+        <datatype>currency</datatype>
+        <developerName>FORMULA2</developerName>
+        <downGroupingContext>GRAND_SUMMARY</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>MRR Total Average</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Opportunity.MonthlyRecurringRevenue__c:SUM/RowCount</calculatedFormula>
+        <datatype>currency</datatype>
+        <developerName>FORMULA4</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>MRR Averages</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Opportunity.MonthlyRecurringRevenue__c:SUM</calculatedFormula>
+        <datatype>currency</datatype>
+        <developerName>FORMULA5</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>MRR Totals</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_21554385</developerName>
+        <masterLabel>Account Buckets</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>ACCOUNT_NAME</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>CetaphilStore</sourceValue>
+            </sourceValues>
+            <value>Cetaphil Store</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Discount Electronics LLC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Discount Electronics</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Discount Electronics Stores</sourceValue>
+            </sourceValues>
+            <value>Discount Electronics</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Dupont</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dupont Main</sourceValue>
+            </sourceValues>
+            <value>Dupont</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>ecommerce ventures</sourceValue>
+            </sourceValues>
+            <value>Beds Online</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Educational Outfitters</sourceValue>
+            </sourceValues>
+            <value>Educational Outfitters</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Meda</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Meda Enterprises, LLC</sourceValue>
+            </sourceValues>
+            <value>Meda</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Paragon Solution Network, Inc.</sourceValue>
+            </sourceValues>
+            <value>1 Ink</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>PreferredFlorist.com, LLC</sourceValue>
+            </sourceValues>
+            <value>Preferred Florist</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Pro Tool Warehouse LLC</sourceValue>
+            </sourceValues>
+            <value>Pro Tool Warehouse</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Rock Bottom Golf</sourceValue>
+            </sourceValues>
+            <value>Rock Bottom Golf</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>American Rec</sourceValue>
+            </sourceValues>
+            <value>American Rec</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>AZ</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Appliance Zone</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Speedy Appliance Parts</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Thrifty Appliance Part</sourceValue>
+            </sourceValues>
+            <value>Appliance Zone</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>CanningValeAU</sourceValue>
+            </sourceValues>
+            <value>CanningVale</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Scott&apos;s Liquid Gold, Inc</sourceValue>
+            </sourceValues>
+            <value>Scott&apos;s Liquid Gold, Inc</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Tampa Bay Sports Store</sourceValue>
+            </sourceValues>
+            <value>Tampa Bay Sports Store</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>boticario-english</sourceValue>
+            </sourceValues>
+            <value>Boticario</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_14218303</developerName>
+        <masterLabel>Extra Accounts</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Opportunity.BA_Store_ID__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>10068387</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>70040</sourceValue>
+            </sourceValues>
+            <value>Tony Xtra PAS</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>810326</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>10000435</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>918295</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>681725</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>799898</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>544743</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>983443</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>933815</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>40513</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>900456</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>759984</sourceValue>
+            </sourceValues>
+            <value>Kris Xtra EAM</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>1007068</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>957806</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>877689</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>936236</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>892818</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>999382</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>834452</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>838743</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>821382</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>10004563</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>987507</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>10017902</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>260838</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>859048</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>527057</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>10131654</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>10100986</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>936224</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>964461</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>48337</sourceValue>
+            </sourceValues>
+            <value>Kris Xtra PAS I</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>1006172</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>976672</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>558834</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>764833</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>10061563</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>1001475</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>10056691</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>10068321</sourceValue>
+            </sourceValues>
+            <value>Kris Xtra PAS II</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_99354723</developerName>
+        <masterLabel>MRR</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Opportunity.MonthlyRecurringRevenue__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>15</to>
+            </sourceValues>
+            <value>$0 or Hibernation</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>15</from>
+                <to>1,000</to>
+            </sourceValues>
+            <value>&lt; $1K</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>1,000</from>
+                <to>2,500</to>
+            </sourceValues>
+            <value>&lt; $2.5K</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>2,500</from>
+            </sourceValues>
+            <value>$2.5K+</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Opportunity.Account_Management_Services__c</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Opportunity.BA_Store_ID__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.MonthlyRecurringRevenue__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.StoreURL__c</field>
+    </columns>
+    <columns>
+        <field>Account.MaxSub_Store_URL__c</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Migration_Platform__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity.BA_Store_ID__c</column>
+            <operator>equals</operator>
+            <value>10068387,70040,810326,10000435,918295,681725,799898,544743,983443,933815,40513,900456,759984,1007068,957806,877689,936236,892818,999382,834452,838743,821382,10004563,987507,10017902,260838,859048,527057,10131654,10100986,936224,964461,48337,1006172,976672,558834,764833,10061563,1001475,10056691,10068321</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_14218303</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.Account_Management_Services__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Tony/Kris Enterprise Account Sync</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Opportunity.PurchaseDate__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

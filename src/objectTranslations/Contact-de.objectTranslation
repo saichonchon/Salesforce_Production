@@ -378,6 +378,34 @@
         <name>Recorded_Product_Tour_Date__c</name>
     </fields>
     <fields>
+        <label><!-- Salesvue Add To Plan Ids --></label>
+        <name>SalesVue__Salesvue_Add_To_Plan_Ids__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesvue Plan Status --></label>
+        <name>SalesVue__Salesvue_Plan_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Removed</masterLabel>
+            <translation><!-- Removed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Salesvue Remove From Plan Ids --></label>
+        <name>SalesVue__Salesvue_Remove_From_Plan_Ids__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Zone --></label>
+        <name>SalesVue__Time_Zone__c</name>
+    </fields>
+    <fields>
         <help><!-- Use this field to store a preferred phone number for this contact. --></help>
         <label><!-- Sales Phone --></label>
         <name>Sales_Phone__c</name>
@@ -594,6 +622,22 @@
     <fields>
         <label><!-- GA TotalTouch Count --></label>
         <name>gatotalTouchCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facebook Id --></label>
+        <name>hoot2sf_FacebookId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facebook Username --></label>
+        <name>hoot2sf_FacebookUsername__c</name>
+    </fields>
+    <fields>
+        <label><!-- Twitter Id --></label>
+        <name>hoot2sf_TwitterId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Twitter Username --></label>
+        <name>hoot2sf_TwitterUsername__c</name>
     </fields>
     <fields>
         <label><!-- isPortalEnabled --></label>
@@ -1086,6 +1130,26 @@
     <webLinks>
         <label><!-- Professional_Services_Contact --></label>
         <name>Professional_Services_Contact</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_Contact_To_Plans --></label>
+        <name>SalesVue__Add_Contact_To_Plans</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_Contacts_To_Plans --></label>
+        <name>SalesVue__Add_Contacts_To_Plans</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Log_SalesVue_Free_Task --></label>
+        <name>SalesVue__Log_SalesVue_Free_Task</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Remove_From_Plans --></label>
+        <name>SalesVue__Remove_From_Plans</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Remove_Single_From_Plans --></label>
+        <name>SalesVue__Remove_Single_From_Plans</name>
     </webLinks>
     <webLinks>
         <label><!-- SendGmail --></label>

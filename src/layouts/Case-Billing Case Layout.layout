@@ -6,7 +6,6 @@
     <customButtons>View_in_MyBigAccount</customButtons>
     <customButtons>Assign_To_Support</customButtons>
     <customButtons>Billing</customButtons>
-    <customButtons>Cancellation</customButtons>
     <customButtons>API_Support</customButtons>
     <customButtons>Legal</customButtons>
     <customButtons>Trash</customButtons>
@@ -120,7 +119,11 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Downgrade_Details__c</field>
+                <field>Withdrawal_Cancellation_Reason__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Platform__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>

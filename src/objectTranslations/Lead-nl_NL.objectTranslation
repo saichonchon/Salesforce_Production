@@ -2558,6 +2558,34 @@
         <name>SBD_Tenure__c</name>
     </fields>
     <fields>
+        <label><!-- Salesvue Add To Plan Ids --></label>
+        <name>SalesVue__Salesvue_Add_To_Plan_Ids__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesvue Plan Status --></label>
+        <name>SalesVue__Salesvue_Plan_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Removed</masterLabel>
+            <translation><!-- Removed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Salesvue Remove From Plan Ids --></label>
+        <name>SalesVue__Salesvue_Remove_From_Plan_Ids__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Zone --></label>
+        <name>SalesVue__Time_Zone__c</name>
+    </fields>
+    <fields>
         <label><!-- Sales Phone --></label>
         <name>Sales_Phone__c</name>
     </fields>
@@ -3622,6 +3650,22 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         <name>gatotalTouchCount__c</name>
     </fields>
     <fields>
+        <label><!-- Facebook Id --></label>
+        <name>hoot2sf_FacebookId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facebook Username --></label>
+        <name>hoot2sf_FacebookUsername__c</name>
+    </fields>
+    <fields>
+        <label><!-- Twitter Id --></label>
+        <name>hoot2sf_TwitterId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Twitter Username --></label>
+        <name>hoot2sf_TwitterUsername__c</name>
+    </fields>
+    <fields>
         <label><!-- Acquisition Date --></label>
         <name>mkto2__Acquisition_Date__c</name>
     </fields>
@@ -4182,6 +4226,26 @@ Hot: came in from a good source and/or is progressing towards close --></help>
     <webLinks>
         <label><!-- New_Trial_Store --></label>
         <name>New_Trial_Store</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_Lead_To_Plans --></label>
+        <name>SalesVue__Add_Lead_To_Plans</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_Leads_To_Plans --></label>
+        <name>SalesVue__Add_Leads_To_Plans</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Log_SalesVue_Free_Task --></label>
+        <name>SalesVue__Log_SalesVue_Free_Task</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Remove_From_Plans --></label>
+        <name>SalesVue__Remove_From_Plans</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Remove_Single_From_Plans --></label>
+        <name>SalesVue__Remove_Single_From_Plans</name>
     </webLinks>
     <webLinks>
         <label><!-- SendGmail --></label>

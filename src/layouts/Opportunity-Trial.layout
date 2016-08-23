@@ -14,6 +14,9 @@
     <customButtons>Add_LDR</customButtons>
     <customButtons>Add_PAR</customButtons>
     <customButtons>tinderbox__new_tinderbox_document</customButtons>
+    <customButtons>SalesVue__Log_SalesVue_Free_Task</customButtons>
+    <customButtons>SalesVue__Add_Opportunity_To_Plans</customButtons>
+    <customButtons>SalesVue__Remove_Single_From_Plans</customButtons>
     <layoutSections>
         <customLabel>false</customLabel>
         <detailHeading>true</detailHeading>
@@ -210,6 +213,14 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>Current_Platform__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Competitor__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>Number_of_Products__c</field>
             </layoutItems>
             <layoutItems>
@@ -223,14 +234,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>How_did_you_hear_about_us__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Current_Platform__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Competitor__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -248,15 +251,15 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Temperature__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Experience__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Industry__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Temperature__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -433,6 +436,10 @@
                 <behavior>Edit</behavior>
                 <field>rvpe__IsDealRegistration__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Influencing_RVAccount__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -446,6 +453,14 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>rvpe__PartnerLastModifiedDate__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Influencing_RV_Account_Assigned__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Influencing_RV_Account_Assigned_By__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>

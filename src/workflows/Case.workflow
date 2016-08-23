@@ -253,6 +253,42 @@
         <template>professional_Services/Prof_Services_SOW</template>
     </alerts>
     <alerts>
+        <fullName>Gateway_Sunset_Communication_Template_1</fullName>
+        <description>Gateway Sunset Communication - Template 1</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>support@bigcommerce.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Mass_Email_Templates/Gateway_Sunset_Template_1</template>
+    </alerts>
+    <alerts>
+        <fullName>Gateway_Sunset_Communication_Template_2</fullName>
+        <description>Gateway Sunset Communication - Template 2</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>support@bigcommerce.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Mass_Email_Templates/Gateway_Sunset_Template_2</template>
+    </alerts>
+    <alerts>
+        <fullName>Gateway_Sunset_Communication_Template_3</fullName>
+        <description>Gateway Sunset Communication - Template 3</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>support@bigcommerce.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Mass_Email_Templates/Gateway_Sunset_Template_3</template>
+    </alerts>
+    <alerts>
         <fullName>Migration_Data_Migration_24_hour_reminder</fullName>
         <ccEmails>mindy.kreitzman@bigcommerce.com</ccEmails>
         <description>Migration: Data Migration Reminder</description>
@@ -2491,6 +2527,35 @@ NOT(ISNEW())</formula>
             <value>No</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Close Case in Billing Queue Waiting on Client after 72 hrs</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>Billing Queue</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Client Success,Billing</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Waiting on Client</value>
+        </criteriaItems>
+        <description>Close Case in Billing Queue Waiting on Client after 72 hrs</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Case_Status_Auto_Closed</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <timeLength>72</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
     </rules>
     <rules>
         <fullName>Close Insight Billing Cases</fullName>

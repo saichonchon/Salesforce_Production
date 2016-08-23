@@ -63,7 +63,7 @@
     <columns>
         <field>Support_Survey__c$Feedback__c</field>
     </columns>
-    <description>For Aries</description>
+    <description>For Team Mike</description>
     <filter>
         <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
         <criteriaItems>
@@ -88,7 +88,7 @@
         </criteriaItems>
     </filter>
     <format>Tabular</format>
-    <name>Aries</name>
+    <name>Post Chat Analysis</name>
     <params>
         <name>co</name>
         <value>1</value>

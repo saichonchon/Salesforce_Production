@@ -1376,6 +1376,64 @@ SUBSTITUTE(SUBSTITUTE(FirstName, &quot; &quot;, &quot;+&quot;), &quot;&amp;&quot
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>SalesVue__Salesvue_Add_To_Plan_Ids__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Salesvue Add To Plan Ids</label>
+        <length>15000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SalesVue__Salesvue_Plan_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Salesvue Plan Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>None</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Removed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SalesVue__Salesvue_Remove_From_Plan_Ids__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Salesvue Remove From Plan Ids</label>
+        <length>15000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SalesVue__Time_Zone__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Time Zone</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Sales_Phone__c</fullName>
         <description>Phone number entered by Sales Rep</description>
         <externalId>false</externalId>
@@ -1797,6 +1855,50 @@ SUBSTITUTE(SUBSTITUTE(FirstName, &quot; &quot;, &quot;+&quot;), &quot;&amp;&quot
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>hoot2sf_FacebookId__c</fullName>
+        <externalId>false</externalId>
+        <label>Facebook Id</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>hoot2sf_FacebookUsername__c</fullName>
+        <externalId>false</externalId>
+        <label>Facebook Username</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>hoot2sf_TwitterId__c</fullName>
+        <externalId>false</externalId>
+        <label>Twitter Id</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>hoot2sf_TwitterUsername__c</fullName>
+        <externalId>false</externalId>
+        <label>Twitter Username</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
         <unique>false</unique>
     </fields>
     <fields>
@@ -2719,6 +2821,62 @@ HYPERLINK(&quot;/apex/mkto_si__Contact_Full_List?view=IM&amp;id=&quot; &amp; Id,
         <masterLabel>Professional Services</masterLabel>
         <openType>replace</openType>
         <page>ContactCreateOppButton</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>SalesVue__Add_Contact_To_Plans</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Add To Plans</masterLabel>
+        <openType>sidebar</openType>
+        <page>SalesVue__Add_Contact_To_Plans</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>SalesVue__Add_Contacts_To_Plans</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Add To Plans</masterLabel>
+        <openType>sidebar</openType>
+        <page>SalesVue__Add_Contacts_To_Plans</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>SalesVue__Log_SalesVue_Free_Task</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Log Salesvue Free Task</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>window.navigateToUrl(&apos;/apex/&apos; + (&apos;{!URLFOR($Action.SalesVue__Touch_Type__c.SalesVue__Manage_Results)}&apos;.toLowerCase().indexOf(&apos;salesvue&apos;) !== -1 ? &apos;Salesvue__&apos; : &apos;&apos;) + &apos;plan_task_resolution?entityId={!Contact.Id}&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>SalesVue__Remove_From_Plans</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Remove From Plans</masterLabel>
+        <openType>sidebar</openType>
+        <page>SalesVue__Remove_Contacts_From_Plan</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>SalesVue__Remove_Single_From_Plans</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Remove From Plans</masterLabel>
+        <openType>sidebar</openType>
+        <page>SalesVue__Remove_Contact_From_Plans</page>
         <protected>false</protected>
     </webLinks>
     <webLinks>

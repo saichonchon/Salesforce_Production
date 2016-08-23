@@ -292,15 +292,19 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>rvpe__NotifyRVMember__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>rvpe__IsDealRegistration__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Partner_Stage__c</field>
+                <field>rvpe__NotifyRVMember__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Influencing_RVAccount__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Influencing_RV_Account_Assigned__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -326,7 +330,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Partner_Owner__c</field>
+                <field>Influencing_RV_Account_Assigned_By__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>

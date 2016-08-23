@@ -60,73 +60,6 @@
             <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
             <chartSummary>
-                <axisBinding>y</axisBinding>
-                <column>RowCount</column>
-            </chartSummary>
-            <componentType>BarGrouped</componentType>
-            <displayUnits>Integer</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>true</enableHover>
-            <expandOthers>false</expandOthers>
-            <footer>Show each LDR&apos;s qualified Opps - This Month</footer>
-            <groupingColumn>Opportunity.OpportunityTeamMembers$Department</groupingColumn>
-            <groupingColumn>Opportunity.OpportunityTeamMembers$Name</groupingColumn>
-            <legendPosition>Bottom</legendPosition>
-            <report>Premium/SDR_Qualified_Opps_MTD</report>
-            <showPercentage>false</showPercentage>
-            <showValues>true</showValues>
-            <sortBy>RowValueDescending</sortBy>
-            <title>Qualified Opportunities MTD by SDR</title>
-            <useReportChart>false</useReportChart>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-            <chartAxisRange>Auto</chartAxisRange>
-            <chartSummary>
-                <axisBinding>y</axisBinding>
-                <column>RowCount</column>
-            </chartSummary>
-            <componentType>Funnel</componentType>
-            <displayUnits>Integer</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>true</enableHover>
-            <expandOthers>false</expandOthers>
-            <groupingColumn>Opportunity$StageName</groupingColumn>
-            <header>Trial Pipeline This Month</header>
-            <legendPosition>Bottom</legendPosition>
-            <report>InB_OutB_Auto_Team_Reports/SDR_Trial_Pipeline</report>
-            <showPercentage>true</showPercentage>
-            <showValues>true</showValues>
-            <sortBy>RowLabelAscending</sortBy>
-            <title>SDR Qualified</title>
-            <useReportChart>false</useReportChart>
-        </components>
-    </leftSection>
-    <middleSection>
-        <columnSize>Wide</columnSize>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Gauge</componentType>
-            <displayUnits>Auto</displayUnits>
-            <gaugeMax>180.0</gaugeMax>
-            <gaugeMin>0.0</gaugeMin>
-            <header>Outbound SDR SQLS MTD (ACQ LIST ONLY)</header>
-            <indicatorBreakpoint1>110.0</indicatorBreakpoint1>
-            <indicatorBreakpoint2>140.0</indicatorBreakpoint2>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>unfiled$public/Camp_Perf_SQLs_MTD_ACq_lists</report>
-            <showPercentage>false</showPercentage>
-            <showTotal>true</showTotal>
-            <showValues>false</showValues>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-            <chartAxisRange>Auto</chartAxisRange>
-            <chartSummary>
                 <aggregate>Sum</aggregate>
                 <axisBinding>y</axisBinding>
                 <column>Lead.Lead_Count__c</column>
@@ -139,7 +72,7 @@
             <expandOthers>false</expandOthers>
             <groupingColumn>Lead.qbdialer__Dials__c</groupingColumn>
             <groupingColumn>CAMPAIGN_PARENT_NAME</groupingColumn>
-            <header>Dialer Leads Remaining (By # of Dials)</header>
+            <header>Leads in Dialer by Campaign and Dials (&lt;3 dials &amp; open)</header>
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/Dialer_Leads_by_Campaign_Inside_Sales</report>
             <showPercentage>false</showPercentage>
@@ -168,6 +101,116 @@
             <report>Premium/SDR_in_MRR_MTD</report>
             <showPercentage>true</showPercentage>
             <showTotal>true</showTotal>
+            <showValues>true</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>SDR MRR</title>
+            <useReportChart>false</useReportChart>
+        </components>
+    </leftSection>
+    <middleSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Gauge</componentType>
+            <displayUnits>Auto</displayUnits>
+            <gaugeMax>180.0</gaugeMax>
+            <gaugeMin>0.0</gaugeMin>
+            <header>Outbound SDR SQLS MTD (ACQ LIST ONLY)</header>
+            <indicatorBreakpoint1>110.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>140.0</indicatorBreakpoint2>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>unfiled$public/Camp_Perf_SQLs_MTD_ACq_lists</report>
+            <showPercentage>false</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>false</showValues>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
+                <column>RowCount</column>
+            </chartSummary>
+            <componentType>Donut</componentType>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <groupingColumn>CAMPAIGN_PARENT_NAME</groupingColumn>
+            <header>Leads in Distribution Engine by Campaign (&lt;3 dials &amp; open))</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>unfiled$public/Leads_Still_In_Distribution_Engine_2016</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>true</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Donut</componentType>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>true</expandOthers>
+            <header>Leads in Dialer, by Campaign (&lt;3 dials &amp; open)</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>unfiled$public/Dialer_Leads_by_Campaign_Inside_Sales</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
+            <showValues>true</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
+                <column>RowCount</column>
+            </chartSummary>
+            <componentType>BarGrouped</componentType>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Show each LDR&apos;s qualified Opps - This Month</footer>
+            <groupingColumn>Opportunity.OpportunityTeamMembers$Department</groupingColumn>
+            <groupingColumn>Opportunity.OpportunityTeamMembers$Name</groupingColumn>
+            <legendPosition>Bottom</legendPosition>
+            <report>Premium/SDR_Qualified_Opps_MTD</report>
+            <showPercentage>false</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>Qualified Opportunities MTD by SDR</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Opportunity$Amount</column>
+            </chartSummary>
+            <componentType>Column</componentType>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Total MRR Attributed to an LDR in the last 3 Months</footer>
+            <groupingColumn>Opportunity$CloseDate</groupingColumn>
+            <header>MRR in Last 3 Months</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>Premium/SDR_MRR_in_Last_3_Months</report>
+            <showPercentage>false</showPercentage>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
             <title>SDR MRR</title>
@@ -306,25 +349,47 @@
             <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
             <chartSummary>
-                <aggregate>Sum</aggregate>
                 <axisBinding>y</axisBinding>
-                <column>Opportunity$Amount</column>
+                <column>RowCount</column>
             </chartSummary>
-            <componentType>Column</componentType>
+            <componentType>Funnel</componentType>
             <displayUnits>Integer</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>false</enableHover>
+            <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <footer>Total MRR Attributed to an LDR in the last 3 Months</footer>
-            <groupingColumn>Opportunity$CloseDate</groupingColumn>
-            <header>MRR in Last 3 Months</header>
+            <groupingColumn>Opportunity$StageName</groupingColumn>
+            <header>Trial Pipeline This Month</header>
             <legendPosition>Bottom</legendPosition>
-            <report>Premium/SDR_MRR_in_Last_3_Months</report>
-            <showPercentage>false</showPercentage>
+            <report>InB_OutB_Auto_Team_Reports/SDR_Trial_Pipeline</report>
+            <showPercentage>true</showPercentage>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>SDR MRR</title>
+            <title>SDR Qualified</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
+                <column>RowCount</column>
+            </chartSummary>
+            <componentType>BarStacked</componentType>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Show Opps Qualified for previous 3 months</footer>
+            <groupingColumn>Opportunity.OpportunityTeamMembers$Name</groupingColumn>
+            <groupingColumn>Opportunity.OpportunityTeamMembers*OpportunityTeamMember$Team_Member_Created_Date__c</groupingColumn>
+            <legendPosition>Bottom</legendPosition>
+            <report>Premium/LDR_Qualified_Opps_Last_3_Months_v2</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>Qualified in Last 3 Months per SDR</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -350,30 +415,6 @@
             <showValues>false</showValues>
             <sortBy>RowValueDescending</sortBy>
             <title>MRR in Last 3 Months per SDR</title>
-            <useReportChart>false</useReportChart>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-            <chartAxisRange>Auto</chartAxisRange>
-            <chartSummary>
-                <axisBinding>y</axisBinding>
-                <column>RowCount</column>
-            </chartSummary>
-            <componentType>BarStacked</componentType>
-            <displayUnits>Integer</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>true</enableHover>
-            <expandOthers>false</expandOthers>
-            <footer>Show Opps Qualified for previous 3 months</footer>
-            <groupingColumn>Opportunity.OpportunityTeamMembers$Name</groupingColumn>
-            <groupingColumn>Opportunity.OpportunityTeamMembers*OpportunityTeamMember$Team_Member_Created_Date__c</groupingColumn>
-            <legendPosition>Bottom</legendPosition>
-            <report>Premium/LDR_Qualified_Opps_Last_3_Months_v2</report>
-            <showPercentage>false</showPercentage>
-            <showValues>false</showValues>
-            <sortBy>RowValueDescending</sortBy>
-            <title>Qualified in Last 3 Months per SDR</title>
             <useReportChart>false</useReportChart>
         </components>
     </rightSection>

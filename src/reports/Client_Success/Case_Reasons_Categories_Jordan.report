@@ -33,6 +33,47 @@
         <masterLabel>% of Handle Time</masterLabel>
         <scale>2</scale>
     </aggregates>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_36749759</developerName>
+        <masterLabel>MRR Buckets</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Account.Active_MRR_Value_Opp__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>30</to>
+            </sourceValues>
+            <value>Standard</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>30</from>
+                <to>80</to>
+            </sourceValues>
+            <value>Plus</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>80</from>
+                <to>200</to>
+            </sourceValues>
+            <value>Pro</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>200</from>
+                <to>1,000</to>
+            </sourceValues>
+            <value>Enterprise &lt;1000</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>1,000</from>
+            </sourceValues>
+            <value>Enterprise &gt;1000</value>
+        </values>
+    </buckets>
     <columns>
         <field>OWNER</field>
     </columns>
@@ -89,6 +130,11 @@
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>ORIGIN</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_36749759</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Case Reasons/Categories - Jordan</name>

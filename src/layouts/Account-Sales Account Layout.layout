@@ -8,7 +8,9 @@
     <customButtons>Add_AT</customButtons>
     <customButtons>Round_Robin</customButtons>
     <customButtons>Qualify</customButtons>
-    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
+    <customButtons>SalesVue__Log_SalesVue_Free_Task</customButtons>
+    <customButtons>SalesVue__Add_Account_To_Plans</customButtons>
+    <customButtons>SalesVue__Remove_Single_From_Plans</customButtons>
     <excludeButtons>DisableCustomerPortalAccount</excludeButtons>
     <excludeButtons>DisablePartnerPortalAccount</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
@@ -212,6 +214,11 @@
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
+    <miniLayout>
+        <fields>Name</fields>
+        <fields>ParentId</fields>
+        <fields>BillingAddress</fields>
+    </miniLayout>
     <relatedLists>
         <fields>FULL_NAME</fields>
         <fields>Type__c</fields>

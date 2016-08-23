@@ -522,7 +522,7 @@
         <required>false</required>
         <scale>2</scale>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <type>Currency</type>
     </fields>
     <fields>
@@ -634,7 +634,7 @@
             <sorted>false</sorted>
         </picklist>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <type>Picklist</type>
     </fields>
     <fields>
@@ -1243,188 +1243,21 @@ MBASubscriptionID__c,null)</formula>
                 <controllingFieldValues>Partner Was Not a Solution</controllingFieldValues>
             </picklistValues>
             <picklistValues>
-                <fullName>100% Uptime Servers</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Accidental trial</fullName>
-                <default>false</default>
-                <controllingFieldValues>Not Qualified</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Affiliate Marketing</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Back in stock</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Back Order Functionality</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Ease of Use/Simplification</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Freight Shipping</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>General Shipping Enhancements</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>GoDaddy</fullName>
-                <default>false</default>
-                <controllingFieldValues>Lost to Competitor</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Importing review</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Integrated Dropshipping</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Integration with Third Party tool</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Inventory/Billing Management</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Lack of Themes</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
-                <controllingFieldValues>Product/Misc</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Magento</fullName>
-                <default>false</default>
-                <controllingFieldValues>Lost to Competitor</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Map Pricing</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>MCM</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Minor/Child Sign Up</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Multi-Language Support</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Multiple ship from location</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Multiple ship to location</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Multiple Store Back-End</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No products</fullName>
-                <default>false</default>
-                <controllingFieldValues>Not Qualified</controllingFieldValues>
-                <controllingFieldValues>Timing - Reengage 1-3 Months</controllingFieldValues>
-                <controllingFieldValues>Timing - Reengage 12+ Months</controllingFieldValues>
-                <controllingFieldValues>Timing - Reengage 4-12 Months</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No time</fullName>
-                <default>false</default>
-                <controllingFieldValues>Not Qualified</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Orion</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Other</fullName>
-                <default>false</default>
-                <controllingFieldValues>Lost to Competitor</controllingFieldValues>
-                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
-                <controllingFieldValues>Product/Misc</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Pre-Employment</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Product Level Shipping</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Product visibility based on date</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Provisioning Error</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Recurring Billing</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product/Payments</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
                 <fullName>School Project</fullName>
                 <default>false</default>
                 <controllingFieldValues>Test Account</controllingFieldValues>
             </picklistValues>
             <picklistValues>
+                <fullName>No products</fullName>
+                <default>false</default>
+                <controllingFieldValues>Timing - Reengage 1-3 Months</controllingFieldValues>
+                <controllingFieldValues>Timing - Reengage 12+ Months</controllingFieldValues>
+                <controllingFieldValues>Timing - Reengage 4-12 Months</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Shipping</fullName>
                 <default>false</default>
-                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Shopify</fullName>
-                <default>false</default>
-                <controllingFieldValues>Lost to Competitor</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Spam Lead</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Template Ease of Use / Simplification</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Test Account</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Unsupported Cart-Migration</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Volusion</fullName>
-                <default>false</default>
-                <controllingFieldValues>Lost to Competitor</controllingFieldValues>
+                <controllingFieldValues>Product</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Recurring Platform Issues</fullName>
@@ -1479,11 +1312,6 @@ MBASubscriptionID__c,null)</formula>
                 <controllingFieldValues>Upsell Closed/Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
-                <fullName>Difficulty with product options</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product Feature/Functionality</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
                 <fullName>Lack of Sandbox</fullName>
                 <default>false</default>
                 <controllingFieldValues>Test Account</controllingFieldValues>
@@ -1507,107 +1335,6 @@ MBASubscriptionID__c,null)</formula>
                 <fullName>Priced Too Low</fullName>
                 <default>false</default>
                 <controllingFieldValues>Pricing Issue</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ERP</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product/Integration w/3rd Party Tool</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>OMS</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product/Integration w/3rd Party Tool</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>POS</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product/Integration w/3rd Party Tool</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>CMS</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product/Integration w/3rd Party Tool</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Marketing Platform</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product/Integration w/3rd Party Tool</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>General API Concern</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product/Integration w/3rd Party Tool</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Product Options</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product/Merchandising</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Faceted Search</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product/Merchandising</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Product Recommendations</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product/Merchandising</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Registries</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product/Merchandising</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Loyalty Program</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product/Merchandising</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Catalog Staging</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product/Merchandising</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Payment Methods</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product/Wholesale/B2B</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Discount Restrictions</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product/Wholesale/B2B</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Parent/Child Accounts</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product/Wholesale/B2B</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Reporting</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product/Wholesale/B2B</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Shipping Methods</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product/Wholesale/B2B</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Amazon</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product/Payments</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Couponing</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product/Payments</controllingFieldValues>
-                <controllingFieldValues>Product/Promotions</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Discount Exclusions</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product/Promotions</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Budget Not Approved</fullName>
@@ -1688,11 +1415,6 @@ MBASubscriptionID__c,null)</formula>
                 <controllingFieldValues>Legal</controllingFieldValues>
             </picklistValues>
             <picklistValues>
-                <fullName>Stencil HTML Access</fullName>
-                <default>false</default>
-                <controllingFieldValues>Product/Misc</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
                 <fullName>Not Influencer or DM</fullName>
                 <default>false</default>
                 <controllingFieldValues>SQL Rejected</controllingFieldValues>
@@ -1733,6 +1455,51 @@ MBASubscriptionID__c,null)</formula>
                 <default>false</default>
                 <controllingFieldValues>Unable to Contact</controllingFieldValues>
             </picklistValues>
+            <picklistValues>
+                <fullName>Merchandising</fullName>
+                <default>false</default>
+                <controllingFieldValues>Product</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wholesale/B2B</fullName>
+                <default>false</default>
+                <controllingFieldValues>Product</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Payment</fullName>
+                <default>false</default>
+                <controllingFieldValues>Product</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Promotions</fullName>
+                <default>false</default>
+                <controllingFieldValues>Product</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Multi-Language Support</fullName>
+                <default>false</default>
+                <controllingFieldValues>Product</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Multiple Store Back End</fullName>
+                <default>false</default>
+                <controllingFieldValues>Product</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Omni Channel</fullName>
+                <default>false</default>
+                <controllingFieldValues>Product</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Integration w/3rd Party Tool</fullName>
+                <default>false</default>
+                <controllingFieldValues>Product</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+                <controllingFieldValues>Product</controllingFieldValues>
+            </picklistValues>
             <sorted>false</sorted>
         </picklist>
         <trackFeedHistory>false</trackFeedHistory>
@@ -1759,31 +1526,7 @@ MBASubscriptionID__c,null)</formula>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Lost to Competitor</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Not Qualified</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
                 <fullName>Other</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Poor In-Trial Client Success Experience</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Price</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Product Feature/Functionality</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Risk of Migration Issues</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -1802,14 +1545,6 @@ MBASubscriptionID__c,null)</formula>
             </picklistValues>
             <picklistValues>
                 <fullName>Credit Card Declined</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Bad Phone Number</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Auto Closed Lost</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -1853,49 +1588,8 @@ MBASubscriptionID__c,null)</formula>
                 <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
-                <fullName>Product/Integration w/3rd Party Tool</fullName>
+                <fullName>Product</fullName>
                 <default>false</default>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Product/Merchandising</fullName>
-                <default>false</default>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Product/Wholesale/B2B</fullName>
-                <default>false</default>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Product/Payments</fullName>
-                <default>false</default>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Product/Promotions</fullName>
-                <default>false</default>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Product/Multi-Language Support</fullName>
-                <default>false</default>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Product/Multiple Store Back End</fullName>
-                <default>false</default>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Product/Omni Channel</fullName>
-                <default>false</default>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Product/Misc</fullName>
-                <default>false</default>
-                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Timing - Reengage 1-3 Months</fullName>
@@ -1974,29 +1668,61 @@ MBASubscriptionID__c,null)</formula>
         <inlineHelpText>What competitor platform is the prospect considering?</inlineHelpText>
         <label>Competitor</label>
         <picklist>
-            <picklistValues>
-                <fullName>Volusion</fullName>
-                <default>false</default>
-            </picklistValues>
+            <controllingField>StageName</controllingField>
             <picklistValues>
                 <fullName>Shopify</fullName>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
-                <fullName>Yahoo</fullName>
+                <fullName>Shopify Plus</fullName>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
-                <fullName>Americommerce</fullName>
+                <fullName>Magento 2.0</fullName>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Magento Cloud</fullName>
+                <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Demandware</fullName>
+                <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Volusion</fullName>
+                <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3D Cart</fullName>
+                <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mozu</fullName>
+                <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Custom</fullName>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>None</fullName>
+                <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Other</fullName>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
@@ -4331,6 +4057,51 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>Influencing_RVAccount__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Influencing RV Account</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>This is not a valid Influencing Partner. Please select a new Influencing Partner.</errorMessage>
+            <filterItems>
+                <field>rvpe__RVAccount__c.Eligible_to_Receive_Sales_Opps__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>rvpe__RVAccount__c</referenceTo>
+        <relationshipLabel>Influenced Opportunities</relationshipLabel>
+        <relationshipName>Influenced_Opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Influencing_RV_Account_Assigned_By__c</fullName>
+        <description>The user that assigned the Influencing RV Account. BAP-4115.</description>
+        <externalId>false</externalId>
+        <label>Influencing RV Account Assigned By</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Influencing_RV_Account_Assigned__c</fullName>
+        <description>The date the Influencing RV Account was assigned. BAP-4115</description>
+        <externalId>false</externalId>
+        <label>Influencing RV Account Assigned</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
         <fullName>Initial_Submitter__c</fullName>
         <externalId>false</externalId>
         <label>Initial Submitter</label>
@@ -4433,6 +4204,30 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
             </picklistValues>
             <picklistValues>
                 <fullName>Unlaunched</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>At Risk</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>On Track</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Plan to Correct</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Withdrawn</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cancelled</fullName>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
@@ -4859,7 +4654,7 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
         <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -4881,7 +4676,7 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
         <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -6852,6 +6647,16 @@ Account Management</description>
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>Risk_Mitigation_Strategy__c</fullName>
+        <externalId>false</externalId>
+        <label>Risk Mitigation Strategy</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
         <fullName>Roll_up_Active_Store__c</fullName>
         <externalId>false</externalId>
         <formula>IF(IsTrial__c = FALSE &amp;&amp; RecordType.Name  =   $Label.Opportunity_Recordtype_StorePurchase   &amp;&amp; ISPICKVAL( SubscriptionType__c,&quot;Store&quot;), 1, 0)</formula>
@@ -7084,6 +6889,64 @@ null) ,NULL
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SalesVue__Salesvue_Add_To_Plan_Ids__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Salesvue Add To Plan Ids</label>
+        <length>15000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SalesVue__Salesvue_Plan_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Salesvue Plan Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>None</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Removed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SalesVue__Salesvue_Remove_From_Plan_Ids__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Salesvue Remove From Plan Ids</label>
+        <length>15000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SalesVue__Time_Zone__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Time Zone</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Sales_Do_Not_Call__c</fullName>
@@ -7842,6 +7705,15 @@ null) ,NULL
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Target_Launch_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Target Launch Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
     </fields>
     <fields>
         <fullName>Tax_Exempt_Certificate_Number__c</fullName>
@@ -9996,31 +9868,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>Closed_Lost_Reason_Detail__c</picklist>
             <values>
-                <fullName>100%25 Uptime Servers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Accidental trial</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Affiliate Marketing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Amazon</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>BC Product Not Ready</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Back Order Functionality</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Back in stock</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -10040,35 +9888,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>CMS</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Cart APIs</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Catalog Staging</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Couponing</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Didn%27t see the value</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Difficulty with product options</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Discount Exclusions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Discount Restrictions</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -10092,47 +9916,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>ERP</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Ease of Use%2FSimplification</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Existing Vendor Relationship</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Faceted Search</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Freight Shipping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>General API Concern</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>General Shipping Enhancements</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>GoDaddy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Importing review</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Integrated Dropshipping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Integration with Third Party tool</fullName>
+                <fullName>Integration w%2F3rd Party Tool</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -10140,35 +9928,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Inventory%2FBilling Management</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Lack of Sandbox</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Lack of Themes</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Loyalty Program</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MCM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magento</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Map Pricing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Marketing Platform</fullName>
+                <fullName>Merchandising</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -10176,7 +9940,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Minor%2FChild Sign Up</fullName>
+                <fullName>Miscellaneous</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -10184,15 +9948,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Multiple Store Back-End</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Multiple ship from location</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Multiple ship to location</fullName>
+                <fullName>Multiple Store Back End</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -10208,10 +9964,6 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>No time</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Nondisclosure Agreements</fullName>
                 <default>false</default>
             </values>
@@ -10220,7 +9972,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>OMS</fullName>
+                <fullName>Omni Channel</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -10228,27 +9980,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Orion</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>POS</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Parent%2FChild Accounts</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Payment Methods</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pre-Employment</fullName>
+                <fullName>Payment</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -10268,23 +10000,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Product Level Shipping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product Options</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product Recommendations</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product visibility based on date</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provisioning Error</fullName>
+                <fullName>Promotions</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -10292,19 +10008,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Recurring Billing</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Recurring Platform Issues</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Registries</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Reporting</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -10320,27 +10024,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Shipping Methods</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Shopify</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Spam Lead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Stencil HTML Access</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Taxes</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Template Ease of Use %2F Simplification</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -10348,15 +10032,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Test Account</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Too expensive</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Unsupported Cart-Migration</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -10364,7 +10040,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Volusion</fullName>
+                <fullName>Wholesale%2FB2B</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -10398,11 +10074,31 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>Competitor__c</picklist>
             <values>
-                <fullName>Americommerce</fullName>
+                <fullName>3D Cart</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Custom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demandware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Magento 2%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Magento Cloud</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mozu</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -10414,11 +10110,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Volusion</fullName>
+                <fullName>Shopify Plus</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Yahoo</fullName>
+                <fullName>Volusion</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -12478,31 +12174,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>Closed_Lost_Reason_Detail__c</picklist>
             <values>
-                <fullName>100%25 Uptime Servers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Accidental trial</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Affiliate Marketing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Amazon</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>BC Product Not Ready</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Back Order Functionality</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Back in stock</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -12522,35 +12194,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>CMS</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Cart APIs</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Catalog Staging</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Couponing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Discount Exclusions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Discount Restrictions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>ERP</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Ease of Use%2FSimplification</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -12558,35 +12202,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Faceted Search</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Freight Shipping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>General API Concern</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>General Shipping Enhancements</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>GoDaddy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Importing review</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Integrated Dropshipping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Integration with Third Party tool</fullName>
+                <fullName>Integration w%2F3rd Party Tool</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -12594,35 +12210,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Inventory%2FBilling Management</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Lack of Sandbox</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Lack of Themes</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Loyalty Program</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MCM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magento</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Map Pricing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Marketing Platform</fullName>
+                <fullName>Merchandising</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -12630,7 +12222,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Minor%2FChild Sign Up</fullName>
+                <fullName>Miscellaneous</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -12638,15 +12230,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Multiple Store Back-End</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Multiple ship from location</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Multiple ship to location</fullName>
+                <fullName>Multiple Store Back End</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -12658,15 +12242,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>No time</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Nondisclosure Agreements</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>OMS</fullName>
+                <fullName>Omni Channel</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -12674,27 +12254,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Orion</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>POS</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Parent%2FChild Accounts</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Payment Methods</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pre-Employment</fullName>
+                <fullName>Payment</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -12714,39 +12274,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Product Level Shipping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product Options</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product Recommendations</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product visibility based on date</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provisioning Error</fullName>
+                <fullName>Promotions</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>RMA</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Recurring Billing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Registries</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Reporting</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -12762,27 +12294,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Shipping Methods</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Shopify</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Spam Lead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Stencil HTML Access</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Taxes</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Template Ease of Use %2F Simplification</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -12790,19 +12302,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Test Account</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Unsupported Cart-Migration</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>User Permissions</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Volusion</fullName>
+                <fullName>Wholesale%2FB2B</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -12849,39 +12353,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Product%2FIntegration w%2F3rd Party Tool</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FMerchandising</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FMisc</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FMulti-Language Support</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FMultiple Store Back End</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FOmni Channel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FPayments</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FPromotions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FWholesale%2FB2B</fullName>
+                <fullName>Product</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -12912,11 +12384,31 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>Competitor__c</picklist>
             <values>
-                <fullName>Americommerce</fullName>
+                <fullName>3D Cart</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Custom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demandware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Magento 2%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Magento Cloud</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mozu</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -12928,11 +12420,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Volusion</fullName>
+                <fullName>Shopify Plus</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Yahoo</fullName>
+                <fullName>Volusion</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -14473,31 +13965,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>Closed_Lost_Reason_Detail__c</picklist>
             <values>
-                <fullName>100%25 Uptime Servers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Accidental trial</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Affiliate Marketing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Amazon</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>BC Product Not Ready</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Back Order Functionality</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Back in stock</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -14517,35 +13985,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>CMS</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Cart APIs</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Catalog Staging</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Couponing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Discount Exclusions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Discount Restrictions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>ERP</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Ease of Use%2FSimplification</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -14553,35 +13993,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Faceted Search</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Freight Shipping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>General API Concern</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>General Shipping Enhancements</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>GoDaddy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Importing review</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Integrated Dropshipping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Integration with Third Party tool</fullName>
+                <fullName>Integration w%2F3rd Party Tool</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -14589,35 +14001,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Inventory%2FBilling Management</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Lack of Sandbox</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Lack of Themes</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Loyalty Program</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MCM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magento</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Map Pricing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Marketing Platform</fullName>
+                <fullName>Merchandising</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -14625,7 +14013,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Minor%2FChild Sign Up</fullName>
+                <fullName>Miscellaneous</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -14633,15 +14021,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Multiple Store Back-End</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Multiple ship from location</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Multiple ship to location</fullName>
+                <fullName>Multiple Store Back End</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -14653,15 +14033,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>No time</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Nondisclosure Agreements</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>OMS</fullName>
+                <fullName>Omni Channel</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -14669,27 +14045,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Orion</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>POS</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Parent%2FChild Accounts</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Payment Methods</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pre-Employment</fullName>
+                <fullName>Payment</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -14709,39 +14065,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Product Level Shipping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product Options</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product Recommendations</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product visibility based on date</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provisioning Error</fullName>
+                <fullName>Promotions</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>RMA</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Recurring Billing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Registries</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Reporting</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -14757,27 +14085,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Shipping Methods</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Shopify</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Spam Lead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Stencil HTML Access</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Taxes</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Template Ease of Use %2F Simplification</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -14785,19 +14093,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Test Account</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Unsupported Cart-Migration</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>User Permissions</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Volusion</fullName>
+                <fullName>Wholesale%2FB2B</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -14831,11 +14131,31 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>Competitor__c</picklist>
             <values>
-                <fullName>Americommerce</fullName>
+                <fullName>3D Cart</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Custom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demandware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Magento 2%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Magento Cloud</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mozu</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -14847,11 +14167,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Volusion</fullName>
+                <fullName>Shopify Plus</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Yahoo</fullName>
+                <fullName>Volusion</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -16596,6 +15916,22 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
+                <fullName>Integration w%2F3rd Party Tool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merchandising</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multiple Store Back End</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Not Interested</fullName>
                 <default>false</default>
             </values>
@@ -16604,7 +15940,23 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
+                <fullName>Omni Channel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Promotions</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Too expensive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wholesale%2FB2B</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -16626,11 +15978,31 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>Competitor__c</picklist>
             <values>
-                <fullName>Americommerce</fullName>
+                <fullName>3D Cart</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Custom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demandware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Magento 2%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Magento Cloud</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mozu</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16642,11 +16014,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Volusion</fullName>
+                <fullName>Shopify Plus</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Yahoo</fullName>
+                <fullName>Volusion</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -19523,31 +18895,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>Closed_Lost_Reason_Detail__c</picklist>
             <values>
-                <fullName>100%25 Uptime Servers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Accidental trial</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Affiliate Marketing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Amazon</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>BC Product Not Ready</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Back Order Functionality</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Back in stock</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -19567,35 +18915,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>CMS</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Cart APIs</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Catalog Staging</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Couponing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Discount Exclusions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Discount Restrictions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>ERP</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Ease of Use%2FSimplification</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -19603,35 +18923,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Faceted Search</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Freight Shipping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>General API Concern</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>General Shipping Enhancements</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>GoDaddy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Importing review</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Integrated Dropshipping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Integration with Third Party tool</fullName>
+                <fullName>Integration w%2F3rd Party Tool</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -19639,35 +18931,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Inventory%2FBilling Management</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Lack of Sandbox</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Lack of Themes</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Loyalty Program</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MCM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magento</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Map Pricing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Marketing Platform</fullName>
+                <fullName>Merchandising</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -19675,7 +18943,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Minor%2FChild Sign Up</fullName>
+                <fullName>Miscellaneous</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -19683,15 +18951,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Multiple Store Back-End</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Multiple ship from location</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Multiple ship to location</fullName>
+                <fullName>Multiple Store Back End</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -19700,10 +18960,6 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
             <values>
                 <fullName>No products</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>No time</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -19719,7 +18975,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>OMS</fullName>
+                <fullName>Omni Channel</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -19727,27 +18983,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Orion</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>POS</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Parent%2FChild Accounts</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Payment Methods</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pre-Employment</fullName>
+                <fullName>Payment</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -19767,39 +19003,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Product Level Shipping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product Options</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product Recommendations</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product visibility based on date</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provisioning Error</fullName>
+                <fullName>Promotions</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>RMA</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Recurring Billing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Registries</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Reporting</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -19815,27 +19023,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Shipping Methods</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Shopify</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Spam Lead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Stencil HTML Access</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Taxes</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Template Ease of Use %2F Simplification</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -19843,15 +19031,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Test Account</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Unable to Contact</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Unsupported Cart-Migration</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -19859,7 +19039,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Volusion</fullName>
+                <fullName>Wholesale%2FB2B</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -19906,39 +19086,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Product%2FIntegration w%2F3rd Party Tool</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FMerchandising</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FMisc</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FMulti-Language Support</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FMultiple Store Back End</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FOmni Channel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FPayments</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FPromotions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FWholesale%2FB2B</fullName>
+                <fullName>Product</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -19973,11 +19121,31 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>Competitor__c</picklist>
             <values>
-                <fullName>Americommerce</fullName>
+                <fullName>3D Cart</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Custom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demandware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Magento 2%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Magento Cloud</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mozu</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -19989,11 +19157,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Volusion</fullName>
+                <fullName>Shopify Plus</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Yahoo</fullName>
+                <fullName>Volusion</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -21202,11 +20370,35 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>Launch_Status__c</picklist>
             <values>
+                <fullName>At Risk</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Launched</fullName>
                 <default>false</default>
             </values>
             <values>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Track</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plan to Correct</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Unlaunched</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Withdrawn</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -22448,31 +21640,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>Closed_Lost_Reason_Detail__c</picklist>
             <values>
-                <fullName>100%25 Uptime Servers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Accidental trial</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Affiliate Marketing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Amazon</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>BC Product Not Ready</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Back Order Functionality</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Back in stock</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -22492,35 +21660,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>CMS</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Cart APIs</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Catalog Staging</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Couponing</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Didn%27t see the value</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Difficulty with product options</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Discount Exclusions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Discount Restrictions</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -22544,47 +21688,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>ERP</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Ease of Use%2FSimplification</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Existing Vendor Relationship</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Faceted Search</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Freight Shipping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>General API Concern</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>General Shipping Enhancements</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>GoDaddy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Importing review</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Integrated Dropshipping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Integration with Third Party tool</fullName>
+                <fullName>Integration w%2F3rd Party Tool</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -22592,35 +21700,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Inventory%2FBilling Management</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Lack of Sandbox</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Lack of Themes</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Loyalty Program</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MCM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magento</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Map Pricing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Marketing Platform</fullName>
+                <fullName>Merchandising</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -22628,7 +21712,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Minor%2FChild Sign Up</fullName>
+                <fullName>Miscellaneous</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -22636,15 +21720,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Multiple Store Back-End</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Multiple ship from location</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Multiple ship to location</fullName>
+                <fullName>Multiple Store Back End</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -22660,10 +21736,6 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>No time</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Nondisclosure Agreements</fullName>
                 <default>false</default>
             </values>
@@ -22676,7 +21748,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>OMS</fullName>
+                <fullName>Omni Channel</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -22684,27 +21756,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Orion</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>POS</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Parent%2FChild Accounts</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Payment Methods</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pre-Employment</fullName>
+                <fullName>Payment</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -22724,23 +21776,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Product Level Shipping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product Options</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product Recommendations</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product visibility based on date</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provisioning Error</fullName>
+                <fullName>Promotions</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -22748,19 +21784,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Recurring Billing</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Recurring Platform Issues</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Registries</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Reporting</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -22776,27 +21800,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Shipping Methods</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Shopify</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Spam Lead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Stencil HTML Access</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Taxes</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Template Ease of Use %2F Simplification</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -22804,15 +21808,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Test Account</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Too expensive</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Unsupported Cart-Migration</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -22820,7 +21816,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Volusion</fullName>
+                <fullName>Wholesale%2FB2B</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -22863,42 +21859,6 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Product%2FIntegration w%2F3rd Party Tool</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FMerchandising</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FMisc</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FMulti-Language Support</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FMultiple Store Back End</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FOmni Channel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FPayments</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FPromotions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FWholesale%2FB2B</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Test Account</fullName>
                 <default>false</default>
             </values>
@@ -22930,11 +21890,31 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>Competitor__c</picklist>
             <values>
-                <fullName>Americommerce</fullName>
+                <fullName>3D Cart</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Custom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demandware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Magento 2%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Magento Cloud</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mozu</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -22946,11 +21926,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Volusion</fullName>
+                <fullName>Shopify Plus</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Yahoo</fullName>
+                <fullName>Volusion</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -25487,31 +24467,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>Closed_Lost_Reason_Detail__c</picklist>
             <values>
-                <fullName>100%25 Uptime Servers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Accidental trial</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Affiliate Marketing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Amazon</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>BC Product Not Ready</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Back Order Functionality</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Back in stock</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -25531,39 +24487,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>CMS</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Cart APIs</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Catalog Staging</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Couponing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Difficulty with product options</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Discount Exclusions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Discount Restrictions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>ERP</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Ease of Use%2FSimplification</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -25571,35 +24495,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Faceted Search</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Freight Shipping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>General API Concern</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>General Shipping Enhancements</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>GoDaddy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Importing review</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Integrated Dropshipping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Integration with Third Party tool</fullName>
+                <fullName>Integration w%2F3rd Party Tool</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -25607,35 +24503,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Inventory%2FBilling Management</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Lack of Sandbox</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Lack of Themes</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Loyalty Program</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MCM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magento</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Map Pricing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Marketing Platform</fullName>
+                <fullName>Merchandising</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -25643,7 +24515,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Minor%2FChild Sign Up</fullName>
+                <fullName>Miscellaneous</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -25651,15 +24523,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Multiple Store Back-End</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Multiple ship from location</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Multiple ship to location</fullName>
+                <fullName>Multiple Store Back End</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -25668,10 +24532,6 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
             <values>
                 <fullName>No products</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>No time</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -25687,7 +24547,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>OMS</fullName>
+                <fullName>Omni Channel</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -25695,27 +24555,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Orion</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>POS</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Parent%2FChild Accounts</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Payment Methods</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pre-Employment</fullName>
+                <fullName>Payment</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -25735,39 +24575,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Product Level Shipping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product Options</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product Recommendations</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product visibility based on date</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provisioning Error</fullName>
+                <fullName>Promotions</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>RMA</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Recurring Billing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Registries</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Reporting</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -25783,27 +24595,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Shipping Methods</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Shopify</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Spam Lead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Stencil HTML Access</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Taxes</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Template Ease of Use %2F Simplification</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -25811,15 +24603,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Test Account</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Unable to Contact</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Unsupported Cart-Migration</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -25827,7 +24611,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Volusion</fullName>
+                <fullName>Wholesale%2FB2B</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -25874,39 +24658,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Product%2FIntegration w%2F3rd Party Tool</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FMerchandising</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FMisc</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FMulti-Language Support</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FMultiple Store Back End</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FOmni Channel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FPayments</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FPromotions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FWholesale%2FB2B</fullName>
+                <fullName>Product</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -25941,11 +24693,31 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>Competitor__c</picklist>
             <values>
-                <fullName>Americommerce</fullName>
+                <fullName>3D Cart</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Custom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demandware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Magento 2%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Magento Cloud</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mozu</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -25957,11 +24729,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Volusion</fullName>
+                <fullName>Shopify Plus</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Yahoo</fullName>
+                <fullName>Volusion</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -28563,31 +27335,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>Closed_Lost_Reason_Detail__c</picklist>
             <values>
-                <fullName>100%25 Uptime Servers</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Accidental trial</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Affiliate Marketing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Amazon</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>BC Product Not Ready</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Back Order Functionality</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Back in stock</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -28607,31 +27355,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>CMS</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Cart APIs</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Catalog Staging</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Couponing</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Didn%27t see the value</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Discount Exclusions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Discount Restrictions</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -28655,47 +27383,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>ERP</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Ease of Use%2FSimplification</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Existing Vendor Relationship</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Faceted Search</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Freight Shipping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>General API Concern</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>General Shipping Enhancements</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>GoDaddy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Importing review</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Integrated Dropshipping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Integration with Third Party tool</fullName>
+                <fullName>Integration w%2F3rd Party Tool</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -28703,35 +27395,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Inventory%2FBilling Management</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Lack of Sandbox</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Lack of Themes</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Loyalty Program</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>MCM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Magento</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Map Pricing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Marketing Platform</fullName>
+                <fullName>Merchandising</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -28739,7 +27407,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Minor%2FChild Sign Up</fullName>
+                <fullName>Miscellaneous</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -28747,15 +27415,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Multiple Store Back-End</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Multiple ship from location</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Multiple ship to location</fullName>
+                <fullName>Multiple Store Back End</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -28771,10 +27431,6 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>No time</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Nondisclosure Agreements</fullName>
                 <default>false</default>
             </values>
@@ -28787,7 +27443,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>OMS</fullName>
+                <fullName>Omni Channel</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -28795,27 +27451,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Orion</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>POS</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Parent%2FChild Accounts</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Payment Methods</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Pre-Employment</fullName>
+                <fullName>Payment</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -28835,23 +27471,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Product Level Shipping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product Options</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product Recommendations</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product visibility based on date</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Provisioning Error</fullName>
+                <fullName>Promotions</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -28859,19 +27479,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Recurring Billing</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Recurring Platform Issues</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Registries</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Reporting</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -28887,35 +27495,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Shipping Methods</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Shopify</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Spam Lead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Stencil HTML Access</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Taxes</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Template Ease of Use %2F Simplification</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Terms of Service</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Test Account</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -28927,15 +27511,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Unsupported Cart-Migration</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>User Permissions</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Volusion</fullName>
+                <fullName>Wholesale%2FB2B</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -28970,39 +27550,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Product%2FIntegration w%2F3rd Party Tool</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FMerchandising</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FMisc</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FMulti-Language Support</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FMultiple Store Back End</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FOmni Channel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FPayments</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FPromotions</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Product%2FWholesale%2FB2B</fullName>
+                <fullName>Product</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -29033,11 +27581,31 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>Competitor__c</picklist>
             <values>
-                <fullName>Americommerce</fullName>
+                <fullName>3D Cart</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Custom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demandware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Magento 2%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Magento Cloud</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mozu</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -29049,11 +27617,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
-                <fullName>Volusion</fullName>
+                <fullName>Shopify Plus</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Yahoo</fullName>
+                <fullName>Volusion</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -31635,6 +30203,62 @@ window.location.href=&apos;/apex/CreatePSOpportunity?id=&apos;+oppid;</url>
         <masterLabel>Include Document</masterLabel>
         <openType>sidebar</openType>
         <page>SBQQ__NewOpportunityRelatedContent</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>SalesVue__Add_Opportunities_To_Plans</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Add To Plans</masterLabel>
+        <openType>sidebar</openType>
+        <page>SalesVue__Add_Opportunities_To_Plans</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>SalesVue__Add_Opportunity_To_Plans</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Add To Plans</masterLabel>
+        <openType>sidebar</openType>
+        <page>SalesVue__Add_Opportunity_To_Plans</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>SalesVue__Log_SalesVue_Free_Task</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Log Salesvue Free Task</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>window.navigateToUrl(&apos;/apex/&apos; + (&apos;{!URLFOR($Action.SalesVue__Touch_Type__c.SalesVue__Manage_Results)}&apos;.toLowerCase().indexOf(&apos;salesvue&apos;) !== -1 ? &apos;Salesvue__&apos; : &apos;&apos;) + &apos;plan_task_resolution?entityId={!Opportunity.Id}&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>SalesVue__Remove_From_Plans</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Remove From Plans</masterLabel>
+        <openType>sidebar</openType>
+        <page>SalesVue__Remove_Opportunities_From_Plans</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>SalesVue__Remove_Single_From_Plans</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Remove From Plans</masterLabel>
+        <openType>sidebar</openType>
+        <page>SalesVue__Remove_Opportunity_From_Plans</page>
         <protected>false</protected>
     </webLinks>
     <webLinks>

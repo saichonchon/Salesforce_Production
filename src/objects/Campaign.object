@@ -131,6 +131,10 @@
                 <fullName>Client Success</fullName>
                 <default>false</default>
             </picklistValues>
+            <picklistValues>
+                <fullName>Sales</fullName>
+                <default>false</default>
+            </picklistValues>
             <sorted>false</sorted>
         </picklist>
         <type>Picklist</type>

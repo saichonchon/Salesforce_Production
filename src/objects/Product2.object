@@ -272,6 +272,17 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>ExternalID__c</fullName>
+        <externalId>true</externalId>
+        <label>ExternalID</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Family</fullName>
         <picklist>
             <picklistValues>
@@ -341,6 +352,17 @@
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>Growth_Rate_Adjustment__c</fullName>
+        <externalId>false</externalId>
+        <label>Growth Rate Adjustment</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
         <fullName>IsActive</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -359,6 +381,121 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order_Cap_Range__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Cap Range</label>
+        <picklist>
+            <picklistValues>
+                <fullName>0 - 2,000</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2,001 - 3,000</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3,001 - 4,000</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4,001 - 5,000</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5,001 - 6,000</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6,001 - 7,000</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7,001 - 8,000</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8,001 - 9,000</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>9,001 - 10,000</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>10,001 - 15,000</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>15,001 - 20,000</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>20,001 - 30,000</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>30,001 - 40,000</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>40,001 - 50,000</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>50,001 - 75,000</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>75,001 - 100,000</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>100,001 - 150,000</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>150,001 - 200,000</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>200,001 - 300,000</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>300,001 - 400,000</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Order_Cap__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Cap</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order_Increment__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Increment</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
         <unique>false</unique>
     </fields>
     <fields>
@@ -1835,6 +1972,77 @@
                 <default>false</default>
             </values>
         </picklistValues>
+        <picklistValues>
+            <picklist>SBQQ__ConfigurationType__c</picklist>
+            <values>
+                <fullName>Allowed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disabled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Required</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SBQQ__OptionLayout__c</picklist>
+            <values>
+                <fullName>Sections</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tabs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wizard</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SBQQ__OptionSelectionMethod__c</picklist>
+            <values>
+                <fullName>Add</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Click</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SBQQ__PricingMethod__c</picklist>
+            <values>
+                <fullName>Block</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Percent Of Total</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SBQQ__SubscriptionPricing__c</picklist>
+            <values>
+                <fullName>Fixed Price</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Percent Of Total</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
     </recordTypes>
     <recordTypes>
         <fullName>Store</fullName>
@@ -2000,6 +2208,17 @@
             </values>
             <values>
                 <fullName>Recurring</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SBQQ__SubscriptionPricing__c</picklist>
+            <values>
+                <fullName>Fixed Price</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Percent Of Total</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

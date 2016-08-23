@@ -8,7 +8,7 @@
             <axisBinding>y</axisBinding>
             <column>RowCount</column>
         </chartSummaries>
-        <chartType>VerticalColumnGrouped</chartType>
+        <chartType>VerticalColumnStacked</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>true</expandOthers>
         <groupingColumn>Lead.qbdialer__Dials__c</groupingColumn>

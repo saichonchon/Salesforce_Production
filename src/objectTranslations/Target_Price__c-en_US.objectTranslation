@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Target Price</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Target Prices</value>
+    </caseValues>
+    <fields>
+        <label><!-- ExternalID --></label>
+        <name>ExternalID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Growth Rate Adjustment --></label>
+        <name>Growth_Rate_Adjustment__c</name>
+    </fields>
+    <fields>
+        <label><!-- MInimum Price --></label>
+        <name>MInimum_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max AOV --></label>
+        <name>Max_AOV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Min AOV --></label>
+        <name>Min_AOV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Min Order % --></label>
+        <name>Min_Order_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent of Total --></label>
+        <name>Percent_of_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProductName --></label>
+        <name>ProductName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- Target Prices --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Target Price Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Partner Re-engagement- 1160.PAR - Email 3</name>
+    <style>none</style>
+    <subject>A benefit of BigCommerce Partnership</subject>
+    <textOnly>As partners in your success, we’re eager for any opportunity to send business your way.
+Hi {{lead.First Name:default=there}},
+As partners in your success, we’re eager for any opportunity to send business your way. And one way we do that is by giving you access to our audience of thousands of merchants, many of whom are looking for a design and solutions partner like you.
+
+When you update your profile on the BigCommerce Partner Marketplace, your business overview, competency or specialty, and contact information will be included in our faceted search tool for merchants. If you haven’t already updated your profile, we highly encourage you to take advantage of this free partnership benefit &lt;[[https://partners.bigcommerce.com/English/?ReturnUrl=%2fEnglish%2fSolutions%2fresources%2fmarketplace_guide.aspx%3f?utm_medium=email&amp;utm_source=partner]]&gt; right now.
+Happy Selling, 
+ The BigCommerce Partner Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

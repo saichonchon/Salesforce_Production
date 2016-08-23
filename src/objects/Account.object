@@ -5166,6 +5166,64 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>SalesVue__Salesvue_Add_To_Plan_Ids__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Salesvue Add To Plan Ids</label>
+        <length>15000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SalesVue__Salesvue_Plan_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Salesvue Plan Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>None</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Removed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SalesVue__Salesvue_Remove_From_Plan_Ids__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Salesvue Remove From Plan Ids</label>
+        <length>15000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SalesVue__Time_Zone__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Time Zone</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Sales_Decision_Date__c</fullName>
         <description>Date that Sales makes a decision on qualified account, or date that account is autoaccepted</description>
         <externalId>false</externalId>
@@ -19197,6 +19255,62 @@ alert(&apos;Please populate the LDR Assign To Team&apos;);
         <masterLabel>Renew Assets</masterLabel>
         <openType>sidebar</openType>
         <page>SBQQ__AssetSelector</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>SalesVue__Add_Account_To_Plans</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Add To Plans</masterLabel>
+        <openType>sidebar</openType>
+        <page>SalesVue__Add_Account_To_Plans</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>SalesVue__Add_Accounts_To_Plans</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Add To Plans</masterLabel>
+        <openType>sidebar</openType>
+        <page>SalesVue__Add_Accounts_To_Plans</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>SalesVue__Log_SalesVue_Free_Task</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Log Salesvue Free Task</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>window.navigateToUrl(&apos;/apex/&apos; + (&apos;{!URLFOR($Action.SalesVue__Touch_Type__c.SalesVue__Manage_Results)}&apos;.toLowerCase().indexOf(&apos;salesvue&apos;) !== -1 ? &apos;Salesvue__&apos; : &apos;&apos;) + &apos;plan_task_resolution?entityId={!Account.Id}&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>SalesVue__Remove_From_Plans</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Remove From Plans</masterLabel>
+        <openType>sidebar</openType>
+        <page>SalesVue__Remove_Accounts_From_Plan</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>SalesVue__Remove_Single_From_Plans</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Remove From Plans</masterLabel>
+        <openType>sidebar</openType>
+        <page>SalesVue__Remove_Account_From_Plans</page>
         <protected>false</protected>
     </webLinks>
     <webLinks>

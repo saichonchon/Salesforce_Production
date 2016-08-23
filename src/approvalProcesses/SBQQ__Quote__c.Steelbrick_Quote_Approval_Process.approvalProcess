@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <allowRecall>false</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Owner</field>
+        <field>Name</field>
+        <field>SBQQ__ListAmount__c</field>
+        <field>SBQQ__CustomerDiscount__c</field>
+        <field>SBQQ__Opportunity2__c</field>
+        <field>SBQQ__LineItemsPrinted__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>alecia.wall@bigcommerce.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>russell.griffin@bigcommerce.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.SBQQ__CustomerDiscount__c</field>
+                <operation>greaterThan</operation>
+                <value>20</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>Discount Approval</label>
+        <name>Discount_Approval</name>
+    </approvalStep>
+    <emailTemplate>Internal_Email_Template/Steelbrick_Quote_Approval_Needed</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <label>Steelbrick Quote Approval Process</label>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

@@ -55,8 +55,6 @@
         <customTab>KB_Global_Search_And_Replace__c</customTab>
         <customTab>lmscons__Learning</customTab>
         <customTab>KB_Global_Search_History__c</customTab>
-        <customTab>IS2_TGH__Sales_Pipeline_Analytics</customTab>
-        <customTab>IS2_TGH__PipelineHistory</customTab>
         <customTab>Article_Search_and_Replace</customTab>
         <customTab>mkto_si__Marketo</customTab>
         <customTab>mkto_si__Marketo_Sales_Insight_Config__c</customTab>
@@ -138,17 +136,17 @@
         <customTab>Revenue_Share_History__c</customTab>
         <customTab>tinderbox__TinderBox_Library</customTab>
         <customTab>tinderbox__TinderBox_Log__c</customTab>
-        <customTab>tinderbox__TinderBox</customTab>
         <customTab>TASKRAY__TaskRay</customTab>
+        <customTab>tinderbox__TinderBox</customTab>
         <customTab>TASKRAY__trChecklistItem__c</customTab>
         <customTab>TASKRAY__trSF1LeftMenu</customTab>
-        <customTab>tinderbox__TinderBox_Settings</customTab>
         <customTab>TASKRAY__trTaskTime__c</customTab>
+        <customTab>tinderbox__TinderBox_Settings</customTab>
         <customTab>tinderbox__TinderBox_Tracking</customTab>
         <customTab>rh2__PS_Enable_Real_Time</customTab>
         <customTab>rh2__PS_Getting_Started</customTab>
-        <customTab>rh2__PS_Import_Export</customTab>
         <customTab>TASKRAY__Project_Task__c</customTab>
+        <customTab>rh2__PS_Import_Export</customTab>
         <customTab>rh2__PS_Rollup_Helper</customTab>
         <customTab>TASKRAY__Project__c</customTab>
         <customTab>rh2__PS_All_Rollups</customTab>
@@ -166,6 +164,12 @@
         <customTab>totango__TotangoTab</customTab>
         <customTab>SBQQ__CustomAction__c</customTab>
         <customTab>SBQQ__CustomScript__c</customTab>
+        <customTab>SalesVue__Manager_Home</customTab>
+        <customTab>SalesVue__Prospecting_Plans</customTab>
+        <customTab>SalesVue__Prospecting_Tasks</customTab>
+        <customTab>SalesVue__SalesVue_Analytics</customTab>
+        <customTab>SalesVue__Salesvue_Settings</customTab>
+        <customTab>SalesVue__Salesvue_Tools</customTab>
         <customTab>SBQQ__SummaryVariable__c</customTab>
         <customTab>SBQQ__TemplateContent__c</customTab>
         <customTab>SBQQ__WebQuote__c</customTab>
@@ -195,7 +199,6 @@
         <standardTab>WorkBadge</standardTab>
         <standardTab>ContentSearch</standardTab>
         <standardTab>Recognition</standardTab>
-        <standardTab>AdvForecast</standardTab>
         <standardTab>ContentSubscriptions</standardTab>
         <standardTab>ProfileSkill</standardTab>
         <standardTab>WorkBadgeDefinition</standardTab>

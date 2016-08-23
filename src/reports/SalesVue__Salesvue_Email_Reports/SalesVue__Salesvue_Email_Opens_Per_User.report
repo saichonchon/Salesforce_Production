@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>SalesVue__Plan_Task_Email__c.SalesVue__Email_Events__r$SalesVue__Plan_Name__c</field>
+    </columns>
+    <columns>
+        <field>SalesVue__Plan_Task_Email__c.SalesVue__Email_Events__r$SalesVue__Plan_Task_Name__c</field>
+    </columns>
+    <columns>
+        <field>SalesVue__Plan_Task_Email__c$SalesVue__Entity_Name__c</field>
+    </columns>
+    <columns>
+        <field>SalesVue__Plan_Task_Email__c.SalesVue__Email_Events__r$SalesVue__Event_Time__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>SalesVue__Plan_Task_Email__c.SalesVue__Email_Events__r$Name</column>
+            <operator>contains</operator>
+            <value>opened</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SalesVue__Plan_Task_Email__c$SalesVue__From_Address__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SalesVue__Plan_Task_Email__c.SalesVue__Email_Events__r$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Emails Opened per User</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SalesVue__Plan_Task_Email_With_Events__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>SalesVue__Plan_Task_Email__c$SalesVue__Entity_Name__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>SalesVue__Plan_Task_Email__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

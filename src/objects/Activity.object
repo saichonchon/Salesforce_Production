@@ -800,6 +800,18 @@ NULL)))))</formula>
         <type>Url</type>
     </fields>
     <fields>
+        <fullName>SalesVue__Plan_Task__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Plan Task</label>
+        <referenceTo>SalesVue__Plan_Task__c</referenceTo>
+        <relationshipLabel>Activities</relationshipLabel>
+        <relationshipName>Activities</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Success_Squad_Call_Disposition__c</fullName>
         <description>Call disposition for PS team</description>
         <externalId>false</externalId>

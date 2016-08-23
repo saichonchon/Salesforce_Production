@@ -4,12 +4,6 @@
         <field>lmscons__Quiz_Statistic__c$lmscons__Assignment__c.lmscons__Training_User_License__c.lmscons__User__c.Manager</field>
     </columns>
     <columns>
-        <field>lmscons__Quiz_Statistic__c$lmscons__Assignment__c.lmscons__Content_Title__c</field>
-    </columns>
-    <columns>
-        <field>lmscons__Quiz_Statistic__c$lmscons__Question__c</field>
-    </columns>
-    <columns>
         <field>lmscons__Quiz_Statistic__c$lmscons__Long_Answer__c</field>
     </columns>
     <filter>
@@ -40,6 +34,11 @@
         <field>lmscons__Quiz_Statistic__c$lmscons__Learner__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>lmscons__Quiz_Statistic__c$lmscons__Question__c.lmscons__Question__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
     <name>CS - Ninja Trials - Post Genin Survey</name>
     <params>
         <name>co</name>
@@ -48,8 +47,6 @@
     <reportType>Quiz_Statistics_CUSTOM__c</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
-    <sortColumn>lmscons__Quiz_Statistic__c$lmscons__Question__c</sortColumn>
-    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>lmscons__Quiz_Statistic__c$CreatedDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

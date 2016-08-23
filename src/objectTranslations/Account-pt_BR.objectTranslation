@@ -3095,6 +3095,34 @@ Grow - Potential for big opp;Partner choosing platform --></help>
         <relationshipLabel><!-- Accounts (Enterprise Account Manager) --></relationshipLabel>
     </fields>
     <fields>
+        <label><!-- Salesvue Add To Plan Ids --></label>
+        <name>SalesVue__Salesvue_Add_To_Plan_Ids__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesvue Plan Status --></label>
+        <name>SalesVue__Salesvue_Plan_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Removed</masterLabel>
+            <translation><!-- Removed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Salesvue Remove From Plan Ids --></label>
+        <name>SalesVue__Salesvue_Remove_From_Plan_Ids__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Zone --></label>
+        <name>SalesVue__Time_Zone__c</name>
+    </fields>
+    <fields>
         <help><!-- Date that Sales makes a decision on qualified account, or it is autoaccepted --></help>
         <label><!-- Sales Decision Date --></label>
         <name>Sales_Decision_Date__c</name>
@@ -4727,6 +4755,26 @@ Grow - Potential for big opp;Partner choosing platform --></help>
     <webLinks>
         <label><!-- Renew_Assets --></label>
         <name>SBQQ__Renew_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_Account_To_Plans --></label>
+        <name>SalesVue__Add_Account_To_Plans</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_Accounts_To_Plans --></label>
+        <name>SalesVue__Add_Accounts_To_Plans</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Log_SalesVue_Free_Task --></label>
+        <name>SalesVue__Log_SalesVue_Free_Task</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Remove_From_Plans --></label>
+        <name>SalesVue__Remove_From_Plans</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Remove_Single_From_Plans --></label>
+        <name>SalesVue__Remove_Single_From_Plans</name>
     </webLinks>
     <webLinks>
         <label><!-- Send_Survey --></label>

@@ -4,12 +4,6 @@
         <field>OPPORTUNITY_NAME</field>
     </columns>
     <columns>
-        <field>TYPE</field>
-    </columns>
-    <columns>
-        <field>LEAD_SOURCE</field>
-    </columns>
-    <columns>
         <field>AMOUNT</field>
     </columns>
     <columns>
@@ -42,11 +36,25 @@
     <columns>
         <field>ACCOUNT_NAME</field>
     </columns>
+    <columns>
+        <field>LEAD_SOURCE</field>
+    </columns>
+    <columns>
+        <field>CREATED</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_ID</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>Opportunity.Owner_Team__c</column>
             <operator>contains</operator>
             <value>enterprise</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <operator>equals</operator>
+            <value>Closed Lost,Purchased,Closed Won</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
@@ -65,7 +73,7 @@
     </params>
     <reportType>Opportunity</reportType>
     <scope>organization</scope>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>CLOSE_DATE</dateColumn>
         <interval>INTERVAL_PREV1</interval>

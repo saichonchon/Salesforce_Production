@@ -6,7 +6,6 @@
     <customButtons>Escalate_1</customButtons>
     <customButtons>Manager_Callback</customButtons>
     <customButtons>Billing</customButtons>
-    <customButtons>Cancellation</customButtons>
     <customButtons>Trash</customButtons>
     <customButtons>API_Support</customButtons>
     <customButtons>View_in_MyBigAccount</customButtons>
@@ -514,6 +513,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Documentation_Only__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Support_Case_Return_Queue__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>

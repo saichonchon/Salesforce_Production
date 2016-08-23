@@ -4643,6 +4643,10 @@ Referral : needs booking --></help>
             <translation><!-- Bug --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Cancellation</masterLabel>
+            <translation><!-- Cancellation --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Change in Payment Amount</masterLabel>
             <translation><!-- Change in Payment Amount --></translation>
         </picklistValues>
@@ -5910,6 +5914,10 @@ NOTE: The Contact Name field MUST be populated on the case in order for them to 
         <picklistValues>
             <masterLabel>Closed</masterLabel>
             <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Manual Payment Requested</masterLabel>
+            <translation><!-- Closed - Manual Payment Requested --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Closed as Duplicate</masterLabel>
@@ -7554,6 +7562,33 @@ Source_Details_Confirmed__c  -  DATEVALUE(CreatedDate ) --></help>
         </sections>
     </layouts>
     <layouts>
+        <layout>Billing Case Feed Layout</layout>
+        <sections>
+            <label><!-- Case Detail --></label>
+            <section>Case Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Department --></label>
+            <section>Department</section>
+        </sections>
+        <sections>
+            <label><!-- MBA --></label>
+            <section>MBA</section>
+        </sections>
+        <sections>
+            <label><!-- Store Detail --></label>
+            <section>Store Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Survey Information --></label>
+            <section>Survey Information</section>
+        </sections>
+    </layouts>
+    <layouts>
         <layout>Billing Case Layout</layout>
         <sections>
             <label><!-- Case Comments --></label>
@@ -7582,6 +7617,21 @@ Source_Details_Confirmed__c  -  DATEVALUE(CreatedDate ) --></help>
         <sections>
             <label><!-- Survey Information --></label>
             <section>Survey Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Cancellation Feed Layout</layout>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Department --></label>
+            <section>Department</section>
+        </sections>
+        <sections>
+            <label><!-- Store Detail --></label>
+            <section>Store Detail</section>
         </sections>
     </layouts>
     <layouts>

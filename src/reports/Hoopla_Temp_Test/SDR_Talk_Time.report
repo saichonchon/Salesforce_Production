@@ -65,13 +65,8 @@
     <filter>
         <criteriaItems>
             <column>Activity$Owner.Department</column>
-            <operator>startsWith</operator>
-            <value>Sales Development -</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Activity$Owner.Department</column>
-            <operator>notEqual</operator>
-            <value>Sales Development - Outbound MDR</value>
+            <operator>equals</operator>
+            <value>Sales Development - Outbound SDR</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity$CallType</column>

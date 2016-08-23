@@ -12,10 +12,10 @@
         <chartType>VerticalColumnStacked</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Lead.qbdialer__Dials__c</groupingColumn>
+        <groupingColumn>CAMPAIGN_PARENT_NAME</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
-        <secondaryGroupingColumn>CAMPAIGN_PARENT_NAME</secondaryGroupingColumn>
+        <secondaryGroupingColumn>Lead.qbdialer__Dials__c</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>

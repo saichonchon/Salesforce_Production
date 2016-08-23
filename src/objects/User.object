@@ -899,6 +899,14 @@ IF(Tenured_Months__c &gt;=4, 1,0)
         <type>Url</type>
     </fields>
     <fields>
+        <fullName>Username_contact_email_mismatch__c</fullName>
+        <externalId>false</externalId>
+        <formula>AND(NOT(ISBLANK(ContactId)),  Contact.Email &lt;&gt; Username)</formula>
+        <inlineHelpText>For identifying portal users that have modified either their username or their contact email so that they no longer match.  This is used to avoid accidentally deleting duplicate contacts associated to multiple user records.</inlineHelpText>
+        <label>Username/contact email mismatch</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Website__c</fullName>
         <description>Store URL -- populated by community users manually -- visible to authenticated internal Salesforce users as well as authenticated community users</description>
         <externalId>false</externalId>

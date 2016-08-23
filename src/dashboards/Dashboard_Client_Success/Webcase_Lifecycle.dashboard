@@ -129,20 +129,21 @@
                 <axisBinding>y</axisBinding>
                 <column>RowCount</column>
             </chartSummary>
-            <componentType>Column</componentType>
+            <componentType>ColumnGrouped</componentType>
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>true</enableHover>
+            <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
-            <groupingColumn>REASON</groupingColumn>
+            <groupingColumn>BucketField_30775879</groupingColumn>
+            <groupingColumn>CLOSED_DATEONLY</groupingColumn>
             <header>C2</header>
             <legendPosition>Bottom</legendPosition>
-            <report>Outsource_Remotes/Esc_by_Cat_Reason_Webcase_Lifecycle</report>
+            <report>Support_Live_Chat/Cases_Closed_Age_Webcase_Lifecycle</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Escalated by Category &amp; Reason (30 days)</title>
+            <title>Case Age at Close</title>
             <useReportChart>false</useReportChart>
         </components>
     </middleSection>
@@ -190,6 +191,29 @@
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
             <title>Open/Active by Case Age &amp; Status</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
+                <column>RowCount</column>
+            </chartSummary>
+            <componentType>Column</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <groupingColumn>REASON</groupingColumn>
+            <header>C3</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>Outsource_Remotes/Esc_by_Cat_Reason_Webcase_Lifecycle</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Escalated by Category &amp; Reason (30 days)</title>
             <useReportChart>false</useReportChart>
         </components>
     </rightSection>

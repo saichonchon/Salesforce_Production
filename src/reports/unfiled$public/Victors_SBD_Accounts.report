@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity.ParentOpportunity__c</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_SOURCE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Strategic_Partner__c</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_COUNTRY</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Sales_Notes__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Product__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.TrailingGMVCount__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Acct_Active_Store_Count__c</field>
+    </columns>
+    <description>does not include Bigpay (we did not yet separate by territory)</description>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Opportunity.SBD_Upsell</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <operator>equals</operator>
+            <value>victor soares</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Primary_Campaign_Name__c</column>
+            <operator>notContain</operator>
+            <value>Bigpay</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <operator>notContain</operator>
+            <value>Closed Lost,Closed Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ADDRESS1_STATE</column>
+            <operator>contains</operator>
+            <value>,Wyoming,Washington,Utah,Texas,South Dakota,Oregon,Oklahoma,Nevada,New Mexico,Nebraska,North Dakota,Montana,Northern Mariana Islands,Missouri,Minnesota,Louisiana,Kansas,Idaho,Iowa,Hawaii,Guam,Colorado,California,Arizona,American Samoa,Arkansas,Alaska,WY,WA,UT,TX,SD,OR,OK,NV,NM,NE,ND,MT,MP,MO,MN,LA,KS,ID,IA,HI,GU,CO,CA,AZ,AS,AR,AK,Alberta,British Columbia,Manitoba,Nunavut,Northwest Territories,Saskatchewan,Yukon,AB,BC,MB,NU,NT,SK,YU</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ADDRESS1_COUNTRY</column>
+            <operator>contains</operator>
+            <value>USA,US,Canada,CA,Australia,AU,New Zealand,NZ</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ACCOUNT_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Victors SBD Accounts</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity@Opportunity.Subscription__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

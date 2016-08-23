@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
+        <field>Opportunity.StoreURL__c</field>
+    </columns>
+    <columns>
         <field>Opportunity.Strategic_Partner__c</field>
     </columns>
     <columns>
