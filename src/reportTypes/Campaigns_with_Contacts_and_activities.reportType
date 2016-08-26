@@ -2017,11 +2017,6 @@
             <field>Webinar_Questions__c</field>
             <table>Campaign.ContactCampaignMembers</table>
         </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Webinar_Status__c</field>
-            <table>Campaign.ContactCampaignMembers</table>
-        </columns>
         <masterLabel>Contacts</masterLabel>
     </sections>
     <sections>

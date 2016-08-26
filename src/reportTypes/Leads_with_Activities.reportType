@@ -97,11 +97,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Day_of_Trial__c</field>
-            <table>Lead</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Description</field>
             <table>Lead</table>
         </columns>
@@ -158,11 +153,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Industry</field>
-            <table>Lead</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Interspire_Edition__c</field>
             <table>Lead</table>
         </columns>
         <columns>

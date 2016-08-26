@@ -577,11 +577,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>OLD_Client_Service_Rep__c</field>
-            <table>Account</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Commission_Structure__c</field>
             <table>Account</table>
         </columns>

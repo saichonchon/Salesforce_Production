@@ -35,6 +35,7 @@
                                     <apex:outputLabel value="Support PIN" for="supportpin" styleClass="sr-only" /> 
                                     <apex:inputText required="true" id="supportpin" value="{!supportpin}" label="Support Pin" styleClass="form-control" html-placeholder="Support PIN"  />
                                     <p class="help-block text-right"><a href="https://support.bigcommerce.com/articles/Public/What-is-my-support-PIN-and-where-do-I-find-it" target="_blank" id="support-ticket-help" class="medium-text-left">How do I find my Support PIN?</a></p>
+                                    <p class="help-block text-right"><a href="BCSLogin" target="_blank" id="support-ticket-help" class="medium-text-left">Already have an Account?</a></p>
                                 </div>
                                 <div class="text-right">
                                     <apex:commandButton styleclass="btn btn-primary btn-lg" id="control" action="{!authenticateUser}" value="Next"  />

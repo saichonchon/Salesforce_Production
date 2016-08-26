@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User$Name</field>
+    </columns>
+    <columns>
+        <field>User*User$Case_Safe_ID__c</field>
+    </columns>
+    <columns>
+        <field>User$Manager.Manager</field>
+    </columns>
+    <columns>
+        <field>User$Manager.Case_Safe_ID__c</field>
+    </columns>
+    <columns>
+        <field>User$Username</field>
+    </columns>
+    <columns>
+        <field>User$Profile.UserLicense.Name</field>
+    </columns>
+    <description>Report to export for back up when updating &quot;Reporting To&quot;  from Bamboo data.</description>
+    <filter>
+        <criteriaItems>
+            <column>User$Profile</column>
+            <operator>notContain</operator>
+            <value>gold,totango,bomgar,survey,support-portal,public,portal,hubspot,default,chatter,api,community client user,client support profile</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$Name</column>
+            <operator>notContain</operator>
+            <value>team,support,read,sfdc,bedrock</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$IsActive</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$Manager.Case_Safe_ID__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>Bigcommerce Employees for Sync</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Users_Custom__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>User$Username</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>User$ChatterAdoptionStageModifiedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -104,7 +104,7 @@
         <field>Opportunity.Oppotunity_Products__r$Price_Change_Reason__c</field>
     </columns>
     <filter>
-        <booleanFilter>(((1 AND 2 AND (3 OR 4) AND 5 AND 6 AND (7 OR 12) AND 8 AND 9) AND 10 AND 11)) AND 13</booleanFilter>
+        <booleanFilter>((((1 AND 2 AND (3 OR 4) AND 5 AND 6 AND (7 OR 12) AND 8 AND 9) AND 10 AND 11)) AND 13) AND 14</booleanFilter>
         <criteriaItems>
             <column>Opportunity.Oppotunity_Products__r$Status__c</column>
             <operator>equals</operator>
@@ -169,6 +169,11 @@
             <column>Opportunity.Oppotunity_Products__r$Price_Change_Reason__c</column>
             <operator>notEqual</operator>
             <value>BC Pricing Change</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Oppotunity_Products__r$Revenue_Rep__c</column>
+            <operator>notEqual</operator>
+            <value>victor soares,jeremy gryder,warren washington,melanie kalemba</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

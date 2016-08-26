@@ -4,16 +4,10 @@
         <field>Lead$Name</field>
     </columns>
     <columns>
-        <field>Lead$SBD_Referral_ID__c</field>
-    </columns>
-    <columns>
         <field>Lead$LeadSource</field>
     </columns>
     <columns>
         <field>Lead$CreatedDate</field>
-    </columns>
-    <columns>
-        <field>Lead$Trial_Count__c</field>
     </columns>
     <columns>
         <field>Lead$Active_Trials__c</field>

@@ -1683,30 +1683,6 @@ SUBSTITUTE(SUBSTITUTE(FirstName, &quot; &quot;, &quot;+&quot;), &quot;&amp;&quot
         <visibleLines>5</visibleLines>
     </fields>
     <fields>
-        <fullName>Webinar_Status__c</fullName>
-        <description>Can probably delete but ask Miles.  Was used before the Webinar object existed</description>
-        <externalId>false</externalId>
-        <label>zWebinar Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Attended</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Registered</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Watched Recording</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-    </fields>
-    <fields>
         <fullName>gaClientID__c</fullName>
         <externalId>false</externalId>
         <label>GA Client ID</label>

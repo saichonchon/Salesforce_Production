@@ -63,7 +63,7 @@
         <field>Opportunity.OpportunityTeamMembers*OpportunityTeamMember$Team_Member_Created_Date__c</field>
     </columns>
     <filter>
-        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <booleanFilter>1 AND 2</booleanFilter>
         <criteriaItems>
             <column>Opportunity.OpportunityTeamMembers$TeamMemberRole</column>
             <operator>contains</operator>
@@ -73,11 +73,6 @@
             <column>Opportunity.OpportunityTeamMembers$Department</column>
             <operator>equals</operator>
             <value>Sales Development - Outbound SDR</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity.OpportunityTeamMembers$Name</column>
-            <operator>equals</operator>
-            <value>Jeremy Peabody</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

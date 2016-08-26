@@ -31,13 +31,7 @@
         <field>Lead.Temperature__c</field>
     </columns>
     <columns>
-        <field>Lead.Channel_Partner_Campaign__c</field>
-    </columns>
-    <columns>
         <field>CONVERTED</field>
-    </columns>
-    <columns>
-        <field>Lead.Portfolio__c</field>
     </columns>
     <columns>
         <field>LEAD_SOURCE</field>
@@ -47,11 +41,6 @@
             <column>EMAIL</column>
             <operator>notEqual</operator>
             <value>joy.wallis@bigcommerce.com</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Lead.Channel_Partner_Campaign__c</column>
-            <operator>contains</operator>
-            <value>Partner Import</value>
         </criteriaItems>
         <criteriaItems>
             <column>Lead.Stage__c</column>

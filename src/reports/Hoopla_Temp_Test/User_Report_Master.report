@@ -32,6 +32,11 @@
             <operator>equals</operator>
             <value>ldr,outbound direct sales,enterprise sales</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <operator>notEqual</operator>
+            <value>Joe Maragoni</value>
+        </criteriaItems>
     </filter>
     <format>Tabular</format>
     <name>User Report - Master</name>

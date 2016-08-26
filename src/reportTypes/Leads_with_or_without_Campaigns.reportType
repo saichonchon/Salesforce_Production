@@ -92,11 +92,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Day_of_Trial__c</field>
-            <table>Lead</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Description</field>
             <table>Lead</table>
         </columns>
@@ -157,22 +152,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Google_Analytics_Ad_Content__c</field>
-            <table>Lead</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Industry</field>
-            <table>Lead</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Expected_Plan_Value__c</field>
-            <table>Lead</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Interspire_Edition__c</field>
             <table>Lead</table>
         </columns>
         <columns>
@@ -297,11 +277,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Marketing_Promotion__c</field>
-            <table>Lead</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Rating</field>
             <table>Lead</table>
         </columns>
@@ -323,11 +298,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Street</field>
-            <table>Lead</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Support_Expiration__c</field>
             <table>Lead</table>
         </columns>
         <columns>
@@ -378,16 +348,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Lead_Unique_ID__c</field>
-            <table>Lead</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Referred_to_Hubspot__c</field>
-            <table>Lead</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Partner_Source_Owner_ID__c</field>
             <table>Lead</table>
         </columns>
         <columns>

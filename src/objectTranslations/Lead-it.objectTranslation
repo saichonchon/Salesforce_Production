@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
-        <label><!-- zAcq Price Testing Page --></label>
-        <name>Acq_Price_Testing_Page__c</name>
-        <picklistValues>
-            <masterLabel>Original</masterLabel>
-            <translation><!-- Original --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Price Test Group 2</masterLabel>
-            <translation><!-- Price Test Group 2 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Test 1</masterLabel>
-            <translation><!-- Test 1 --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
         <label><!-- zAcquisition Campaign --></label>
         <name>Acquisition_Campaign__c</name>
         <picklistValues>
@@ -162,11 +146,6 @@
         <name>Active_Trials__c</name>
     </fields>
     <fields>
-        <help><!-- Stores value of &quot;Additional Information&quot; form field from Hubspot form --></help>
-        <label><!-- zMKT Hubspot Additional Information --></label>
-        <name>Additional_Information__c</name>
-    </fields>
-    <fields>
         <label><!-- Alternate Email --></label>
         <name>Alternate_Email__c</name>
     </fields>
@@ -174,10 +153,6 @@
         <help><!-- Flag used to tell the code to re-assign the lead using coded assignment rules and round robin if the record qualifies. --></help>
         <label><!-- zAssign Now --></label>
         <name>Assign_Now__c</name>
-    </fields>
-    <fields>
-        <label><!-- zAutoResponder Testing --></label>
-        <name>AutoResponder_Testing__c</name>
     </fields>
     <fields>
         <help><!-- BC Value Prop for the Prospect --></help>
@@ -217,63 +192,6 @@
     <fields>
         <label><!-- Budget Description --></label>
         <name>Budget_Description__c</name>
-    </fields>
-    <fields>
-        <help><!-- What Campaign is this lead associated with? --></help>
-        <label><!-- zPAR Channel Partner Campaign --></label>
-        <name>Channel_Partner_Campaign__c</name>
-        <picklistValues>
-            <masterLabel>Aussie Design Prospect Campaign</masterLabel>
-            <translation><!-- Aussie Design Prospect Campaign --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Business Catalyst</masterLabel>
-            <translation><!-- Business Catalyst --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Chicago Partner Event</masterLabel>
-            <translation><!-- Chicago Partner Event --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>EIG Re-engagement</masterLabel>
-            <translation><!-- EIG Re-engagement --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Full Service Agency July2014</masterLabel>
-            <translation><!-- Full Service Agency July2014 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Houston Partner Event</masterLabel>
-            <translation><!-- Houston Partner Event --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>London Partner Event</masterLabel>
-            <translation><!-- London Partner Event --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>NYC Partner Event</masterLabel>
-            <translation><!-- NYC Partner Event --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Partner Import</masterLabel>
-            <translation><!-- Partner Import --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>ProStores</masterLabel>
-            <translation><!-- ProStores --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>San Francisco Partner Event</masterLabel>
-            <translation><!-- San Francisco Partner Event --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Volusion</masterLabel>
-            <translation><!-- Volusion --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Yahoo</masterLabel>
-            <translation><!-- Yahoo --></translation>
-        </picklistValues>
     </fields>
     <fields>
         <label><!-- Unqualified Date --></label>
@@ -395,11 +313,6 @@
             <masterLabel>Unable to Contact Through Flow</masterLabel>
             <translation><!-- Unable to Contact Through Flow --></translation>
         </picklistValues>
-    </fields>
-    <fields>
-        <help><!-- For partner request web form mapping --></help>
-        <label><!-- zPAR Company Description --></label>
-        <name>Company_Description__c</name>
     </fields>
     <fields>
         <help><!-- Is there a match on company? Used for deduping. --></help>
@@ -788,10 +701,6 @@
         <name>Design_Account_ID__c</name>
     </fields>
     <fields>
-        <label><!-- zDesign Account Lead Referral Email --></label>
-        <name>Design_Account_Lead_Referral_Email__c</name>
-    </fields>
-    <fields>
         <help><!-- Designates which partner BigCommerce has brought in to help with a client&apos;s design --></help>
         <label><!-- Design Account --></label>
         <name>Design_Account__c</name>
@@ -812,113 +721,9 @@
         <name>Duplicate__c</name>
     </fields>
     <fields>
-        <help><!-- Executive Admin Email --></help>
-        <label><!-- zExec Admin Email --></label>
-        <name>EA_Email__c</name>
-    </fields>
-    <fields>
-        <help><!-- Executive Admin Name --></help>
-        <label><!-- zExec Admin Name --></label>
-        <name>EA_Name__c</name>
-    </fields>
-    <fields>
-        <help><!-- Executive Admin Phone --></help>
-        <label><!-- zExec Admin Phone --></label>
-        <name>EA_Phone__c</name>
-    </fields>
-    <fields>
-        <help><!-- Date to be entered b y EBQ. --></help>
-        <label><!-- zEBQ Added --></label>
-        <name>EBQ_Added__c</name>
-    </fields>
-    <fields>
-        <label><!-- zEB Comments --></label>
-        <name>EB_Comments__c</name>
-    </fields>
-    <fields>
-        <label><!-- zEB Date --></label>
-        <name>EB_Date__c</name>
-    </fields>
-    <fields>
-        <label><!-- zEB Next Step --></label>
-        <name>EB_Next_Step__c</name>
-    </fields>
-    <fields>
-        <label><!-- zEB Rating --></label>
-        <name>EB_Rating__c</name>
-        <picklistValues>
-            <masterLabel>0</masterLabel>
-            <translation><!-- 0 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>1</masterLabel>
-            <translation><!-- 1 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>10</masterLabel>
-            <translation><!-- 10 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>2</masterLabel>
-            <translation><!-- 2 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>3</masterLabel>
-            <translation><!-- 3 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>4</masterLabel>
-            <translation><!-- 4 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>5</masterLabel>
-            <translation><!-- 5 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>6</masterLabel>
-            <translation><!-- 6 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>7</masterLabel>
-            <translation><!-- 7 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>8</masterLabel>
-            <translation><!-- 8 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>86</masterLabel>
-            <translation><!-- 86 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>9</masterLabel>
-            <translation><!-- 9 --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
-        <help><!-- Created for Mike Smith prior to the Hubspot integration to SF.  Manually populated by dataloader so he knew which contacts not to pull for email campaigns.  Can probably be deletd --></help>
-        <label><!-- zEmail Bounce in Hubspot --></label>
-        <name>Email_Bounce_in_Hubspot__c</name>
-    </fields>
-    <fields>
         <help><!-- Used for deduping. --></help>
         <label><!-- BA Email match --></label>
         <name>Email_match__c</name>
-    </fields>
-    <fields>
-        <help><!-- Is our Sales team engaged with this lead? --></help>
-        <label><!-- zEngaged --></label>
-        <name>Engaged__c</name>
-    </fields>
-    <fields>
-        <help><!-- Please enter the expected close date. --></help>
-        <label><!-- zExpected Close Date --></label>
-        <name>Expected_Close_Date__c</name>
-    </fields>
-    <fields>
-        <help><!-- The expected value of the plan selected on this lead. --></help>
-        <label><!-- zExpected Plan Value --></label>
-        <name>Expected_Plan_Value__c</name>
     </fields>
     <fields>
         <help><!-- Expected Plan. Default to Bronze. --></help>
@@ -936,11 +741,6 @@
             <masterLabel>Standard</masterLabel>
             <translation><!-- Standard --></translation>
         </picklistValues>
-    </fields>
-    <fields>
-        <help><!-- For partner request web form mapping --></help>
-        <label><!-- zPAR Expected Stores --></label>
-        <name>Expected_Stores__c</name>
     </fields>
     <fields>
         <help><!-- Experience. Populated from MBA --></help>
@@ -974,10 +774,6 @@
     <fields>
         <label><!-- Facebook --></label>
         <name>Facebook__c</name>
-    </fields>
-    <fields>
-        <label><!-- zFollowed Up to Twitter Webinar --></label>
-        <name>Followed_Up_to_Twitter_Webinar__c</name>
     </fields>
     <fields>
         <label><!-- Full Name --></label>
@@ -1288,10 +1084,6 @@
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- zGoogle Analytics Ad Content --></label>
-        <name>Google_Analytics_Ad_Content__c</name>
-    </fields>
-    <fields>
         <label><!-- Google+ --></label>
         <name>Google__c</name>
     </fields>
@@ -1590,39 +1382,9 @@
         <name>Initial_Hubspot_Score__c</name>
     </fields>
     <fields>
-        <help><!-- Interspire Shopping Cart edition --></help>
-        <label><!-- zInterspire Edition --></label>
-        <name>Interspire_Edition__c</name>
-    </fields>
-    <fields>
         <help><!-- Is there a duplicate? --></help>
         <label><!-- BA Is Duplicate --></label>
         <name>Is_Duplicate__c</name>
-    </fields>
-    <fields>
-        <help><!-- What is this person&apos;s job function? --></help>
-        <label><!-- zJob Function --></label>
-        <name>Job_Function__c</name>
-        <picklistValues>
-            <masterLabel>Executive</masterLabel>
-            <translation><!-- Executive --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>IT</masterLabel>
-            <translation><!-- IT --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Marketing</masterLabel>
-            <translation><!-- Marketing --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Other</masterLabel>
-            <translation><!-- Other --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Sales</masterLabel>
-            <translation><!-- Sales --></translation>
-        </picklistValues>
     </fields>
     <fields>
         <help><!-- LDR Rating --></help>
@@ -1669,11 +1431,6 @@
         <help><!-- URL the client clicked on when signing up for the first trial --></help>
         <label><!-- MKT Landing Page --></label>
         <name>Landing_Page__c</name>
-    </fields>
-    <fields>
-        <help><!-- Populated via trigger with most recent case survey date --></help>
-        <label><!-- zLast Case Survey Date --></label>
-        <name>Last_Case_Survey_Date__c</name>
     </fields>
     <fields>
         <name>LeadSource</name>
@@ -1826,10 +1583,6 @@
         <help><!-- For reporting purposes only; not on layouts --></help>
         <label><!-- REPORT Lead Count --></label>
         <name>Lead_Count__c</name>
-    </fields>
-    <fields>
-        <label><!-- zLead Creation Date --></label>
-        <name>Lead_Creation_Date__c</name>
     </fields>
     <fields>
         <label><!-- Lead Source Detail --></label>
@@ -2075,11 +1828,6 @@
         <name>Manager_Notes__c</name>
     </fields>
     <fields>
-        <help><!-- Check if the client is interested but needs time.  This will be used to send marketing material to the client. --></help>
-        <label><!-- zMarketing Opt In --></label>
-        <name>Marketing_Opt_In__c</name>
-    </fields>
-    <fields>
         <help><!-- This field describes a promotion given to a prospect to encourage them to upgrade from a free trial to a paid store. --></help>
         <label><!-- zMKT Promotion --></label>
         <name>Marketing_Promotion__c</name>
@@ -2090,67 +1838,9 @@
         <name>Marketing_Source__c</name>
     </fields>
     <fields>
-        <help><!-- Where is the merchant currently selling? --></help>
-        <label><!-- zMerchant Status --></label>
-        <name>Merchant_Status__c</name>
-        <picklistValues>
-            <masterLabel>Brick and mortar</masterLabel>
-            <translation><!-- Brick and mortar --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Brick and mortar and online</masterLabel>
-            <translation><!-- Brick and mortar and online --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Multiple stores online</masterLabel>
-            <translation><!-- Multiple stores online --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>No Store</masterLabel>
-            <translation><!-- No Store --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
-        <label><!-- zMost Recent Trial URL --></label>
-        <name>Most_Recent_Trial_URL__c</name>
-    </fields>
-    <fields>
         <label><!-- zMost Recent Trial --></label>
         <name>Most_Recent_Trial__c</name>
         <relationshipLabel><!-- Leads --></relationshipLabel>
-    </fields>
-    <fields>
-        <help><!-- Next Step in lead development process --></help>
-        <label><!-- zNext Step --></label>
-        <name>Next_Step__c</name>
-        <picklistValues>
-            <masterLabel>Appointment Scheduled</masterLabel>
-            <translation><!-- Appointment Scheduled --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Call Back</masterLabel>
-            <translation><!-- Call Back --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Follow Up Call</masterLabel>
-            <translation><!-- Follow Up Call --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Nurture</masterLabel>
-            <translation><!-- Nurture --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Schedule Appointment</masterLabel>
-            <translation><!-- Schedule Appointment --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Send Email</masterLabel>
-            <translation><!-- Send Email --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
-        <label><!-- zNext Steps --></label>
-        <name>Next_Steps__c</name>
     </fields>
     <fields>
         <label><!-- No Assign --></label>
@@ -2159,10 +1849,6 @@
     <fields>
         <label><!-- Non English Speaking --></label>
         <name>Non_English_Speaking__c</name>
-    </fields>
-    <fields>
-        <label><!-- zDay of Trial # --></label>
-        <name>Num_Day_of_Trial__c</name>
     </fields>
     <fields>
         <help><!-- This is a field populated from Hubspot to Salesforce. Can be updated by a Sales rep --></help>
@@ -2190,10 +1876,6 @@
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- zPartner Number of Employees --></label>
-        <name>Number_of_Employees__c</name>
-    </fields>
-    <fields>
         <help><!-- Populated from Hubspot form. Can be updated by a Sales rep. --></help>
         <label><!-- Number of Products --></label>
         <name>Number_of_Products__c</name>
@@ -2217,16 +1899,6 @@
             <masterLabel>50,000+</masterLabel>
             <translation><!-- 50,000+ --></translation>
         </picklistValues>
-    </fields>
-    <fields>
-        <help><!-- Populated by Hubspot if a trialer opens the new pricing PDF --></help>
-        <label><!-- z MKT Opened Pricing PDF --></label>
-        <name>Opened_Pricing_PDF__c</name>
-    </fields>
-    <fields>
-        <help><!-- Has this client viewed/clicked the &quot;Play&quot; button for the recorded Product Tour Webinar --></help>
-        <label><!-- z MKT Openend Product Tour Recording --></label>
-        <name>Openend_Product_Tour_Recording__c</name>
     </fields>
     <fields>
         <label><!-- zSBD Orion Segment --></label>
@@ -2253,24 +1925,6 @@
     <fields>
         <label><!-- Owner Team --></label>
         <name>Owner_Team__c</name>
-    </fields>
-    <fields>
-        <help><!-- This field is required in order to submit an ownership change request --></help>
-        <label><!-- zOwnership Change Reason --></label>
-        <name>Ownership_Change_Reason__c</name>
-    </fields>
-    <fields>
-        <label><!-- zOwnership Change Request Date --></label>
-        <name>Ownership_Change_Request_Date__c</name>
-    </fields>
-    <fields>
-        <label><!-- zOwnership Change Requestor --></label>
-        <name>Ownership_Change_Requestor__c</name>
-    </fields>
-    <fields>
-        <help><!-- Has this referral been confirmed by the PDE owner of the Design Account? --></help>
-        <label><!-- zPAR PDE Verified --></label>
-        <name>PDE_Verified__c</name>
     </fields>
     <fields>
         <help><!-- Current prospect pain points with existing solution --></help>
@@ -2325,18 +1979,6 @@
         <name>Phone_Match__c</name>
     </fields>
     <fields>
-        <label><!-- z MKT Pinterest eBook Date --></label>
-        <name>Pinterest_eBook_Date__c</name>
-    </fields>
-    <fields>
-        <label><!-- z MKT Pinterest eBook --></label>
-        <name>Pinterest_eBook__c</name>
-    </fields>
-    <fields>
-        <label><!-- zPAR Portfolio --></label>
-        <name>Portfolio__c</name>
-    </fields>
-    <fields>
         <help><!-- Was the most recent trial in a price test group? --></help>
         <label><!-- zMKT Pricing Test Group --></label>
         <name>Pricing_Test_Group__c</name>
@@ -2344,18 +1986,6 @@
     <fields>
         <label><!-- zPrimary MBA Contact --></label>
         <name>Primary_MBA_Contact__c</name>
-    </fields>
-    <fields>
-        <label><!-- zSBD Private SSL Certificate --></label>
-        <name>Private_SSL_Certificate__c</name>
-        <picklistValues>
-            <masterLabel>FALSE</masterLabel>
-            <translation><!-- FALSE --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>TRUE</masterLabel>
-            <translation><!-- TRUE --></translation>
-        </picklistValues>
     </fields>
     <fields>
         <help><!-- Detail on Product Closed Lost Reason --></help>
@@ -2436,19 +2066,6 @@
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- z ACQ Projected Close Date --></label>
-        <name>Projected_Close_Date__c</name>
-    </fields>
-    <fields>
-        <label><!-- zProjected Value --></label>
-        <name>Projected_Value__c</name>
-    </fields>
-    <fields>
-        <help><!-- Check this box if any subscriptions associated to this lead did not provision and are in a &quot;Pending&quot; status or if the active trial store URL is not a workable link/returns an error --></help>
-        <label><!-- zProvisioning Error --></label>
-        <name>Provisioning_Error__c</name>
-    </fields>
-    <fields>
         <name>Rating</name>
         <picklistValues>
             <masterLabel>Cold</masterLabel>
@@ -2464,25 +2081,6 @@
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- zRecorded Product Tour Date --></label>
-        <name>Recorded_Product_Tour_Date__c</name>
-    </fields>
-    <fields>
-        <help><!-- Date of original referral to a Design Partner regardless of any subsequent referrals --></help>
-        <label><!-- zPAR Referral Date --></label>
-        <name>Referral_Date__c</name>
-    </fields>
-    <fields>
-        <help><!-- If the Design Partner prefers to be send leads via email, this is the address Salesforce is using based on the Design Account selection made by the sales rep --></help>
-        <label><!-- zPAR Referral Email --></label>
-        <name>Referral_Email__c</name>
-    </fields>
-    <fields>
-        <help><!-- Populated once a Design Account is saved if that partner requires leads be submitted to the via their own form --></help>
-        <label><!-- zPAR Referral Form URL --></label>
-        <name>Referral_Form_URL__c</name>
-    </fields>
-    <fields>
         <help><!-- Brief description of why this client is being referred to the designer.  If the budget field is $0, this note field is required. --></help>
         <label><!-- zReferral Notes --></label>
         <name>Referral_Notes__c</name>
@@ -2493,47 +2091,9 @@
         <name>Referral_Submission_Type__c</name>
     </fields>
     <fields>
-        <help><!-- Use if you send this lead out to Hubspot --></help>
-        <label><!-- zReferred to Hubspot --></label>
-        <name>Referred_to_Hubspot__c</name>
-    </fields>
-    <fields>
-        <label><!-- zRequest Ownership --></label>
-        <name>Request_Ownership__c</name>
-    </fields>
-    <fields>
-        <label><!-- zSBD Ebay Power User --></label>
-        <name>SBD_Ebay_Power_User__c</name>
-        <picklistValues>
-            <masterLabel>False</masterLabel>
-            <translation><!-- False --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>True</masterLabel>
-            <translation><!-- True --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
         <help><!-- SBD Orion Consultation Requested by Customer should be check by the Sales Rep which will note an Orion client who has requested a Consultation. Consultations are only available for clients whose SBD Orion Segment = HIGH. --></help>
         <label><!-- zSBD Orion Consultation Requested --></label>
         <name>SBD_Orion_Consultation_Requested__c</name>
-    </fields>
-    <fields>
-        <label><!-- zSBD Orion Persona --></label>
-        <name>SBD_Orion_Persona__c</name>
-    </fields>
-    <fields>
-        <label><!-- zSBD Orion Store Cancelled --></label>
-        <name>SBD_Orion_Store_Cancelled__c</name>
-    </fields>
-    <fields>
-        <help><!-- SBD Orion Store GMV --></help>
-        <label><!-- zSBD Orion Store GMV --></label>
-        <name>SBD_Orion_Store_GMV__c</name>
-    </fields>
-    <fields>
-        <label><!-- zSBD Orion Trialer --></label>
-        <name>SBD_Orion_Trialer__c</name>
     </fields>
     <fields>
         <help><!-- SBD partner unique ID --></help>
@@ -2541,21 +2101,9 @@
         <name>SBD_Referral_ID__c</name>
     </fields>
     <fields>
-        <label><!-- zSBD Store Count --></label>
-        <name>SBD_Store_Count__c</name>
-    </fields>
-    <fields>
         <help><!-- External ID. --></help>
         <label><!-- SBD Indexed Store ID --></label>
         <name>SBD_Store_ID_EXT__c</name>
-    </fields>
-    <fields>
-        <label><!-- zSBD Store ID --></label>
-        <name>SBD_Store_ID__c</name>
-    </fields>
-    <fields>
-        <label><!-- zSBD Tenure --></label>
-        <name>SBD_Tenure__c</name>
     </fields>
     <fields>
         <label><!-- Salesvue Add To Plan Ids --></label>
@@ -2592,45 +2140,6 @@
     <fields>
         <label><!-- Sales Notes --></label>
         <name>Sales_Rep_Notes__c</name>
-    </fields>
-    <fields>
-        <help><!-- Yes = this client saw the standard pricing page when they signed up for a trial
-No = they were routed to the new pricing test page and will require a PDF doc for pricing --></help>
-        <label><!-- z MKT Seen Pricing --></label>
-        <name>Seen_Pricing__c</name>
-        <picklistValues>
-            <masterLabel>No</masterLabel>
-            <translation><!-- No --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Yes</masterLabel>
-            <translation><!-- Yes --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
-        <help><!-- For partner request web form mapping --></help>
-        <label><!-- zPAR Services Offered --></label>
-        <name>Services_Offered__c</name>
-        <picklistValues>
-            <masterLabel>Advanced (eg Backoffice Integration)</masterLabel>
-            <translation><!-- Advanced (eg Backoffice Integration) --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Design</masterLabel>
-            <translation><!-- Design --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Search Engine Optimization</masterLabel>
-            <translation><!-- Search Engine Optimization --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Store Setup</masterLabel>
-            <translation><!-- Store Setup --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Training</masterLabel>
-            <translation><!-- Training --></translation>
-        </picklistValues>
     </fields>
     <fields>
         <label><!-- Skype --></label>
@@ -2701,12 +2210,6 @@ No = they were routed to the new pricing test page and will require a PDF doc fo
         </picklistValues>
     </fields>
     <fields>
-        <help><!-- Lookup field to the Strategic BD Partner account --></help>
-        <label><!-- zSBD Partner --></label>
-        <name>Strategic_BD_Partner__c</name>
-        <relationshipLabel><!-- Strategic BD Leads --></relationshipLabel>
-    </fields>
-    <fields>
         <help><!-- Pulls the Strategic Partner field from the most recent trial --></help>
         <label><!-- zSBD Strategic Partner --></label>
         <name>Strategic_Partner__c</name>
@@ -2715,11 +2218,6 @@ No = they were routed to the new pricing test page and will require a PDF doc fo
         <help><!-- MBA account pin used to verify account access for cases --></help>
         <label><!-- zSupport Pin --></label>
         <name>SupportPin__c</name>
-    </fields>
-    <fields>
-        <help><!-- Interspire support expiration date --></help>
-        <label><!-- zInterspire Support Expiration --></label>
-        <name>Support_Expiration__c</name>
     </fields>
     <fields>
         <label><!-- Sync with Marketo --></label>
@@ -2861,15 +2359,6 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- zTotango Score Test --></label>
-        <name>Totango_Score_Test__c</name>
-    </fields>
-    <fields>
-        <help><!-- Total number of trial subscriptions associated to this lead regardless of status --></help>
-        <label><!-- zTrial Count --></label>
-        <name>Trial_Count__c</name>
-    </fields>
-    <fields>
         <label><!-- zTrial Expiration Date --></label>
         <name>Trial_Expiration_Date__c</name>
     </fields>
@@ -2968,630 +2457,9 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- zSBD Viewed Offers At --></label>
-        <name>Viewed_Offers_At__c</name>
-    </fields>
-    <fields>
-        <label><!-- zSBD Viewed Offers --></label>
-        <name>Viewed_Offers__c</name>
-        <picklistValues>
-            <masterLabel>No</masterLabel>
-            <translation><!-- No --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Yes</masterLabel>
-            <translation><!-- Yes --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
-        <help><!-- Used by Ops to force an edit/save across multiple leads via dataloader --></help>
-        <label><!-- zBA WFR Trigger --></label>
-        <name>WFR_Trigger__c</name>
-    </fields>
-    <fields>
         <help><!-- Stores web to lead form message --></help>
         <label><!-- Web to Lead Message --></label>
         <name>Web_to_Lead_Message__c</name>
-    </fields>
-    <fields>
-        <label><!-- zWebinar Date --></label>
-        <name>Webinar_Date__c</name>
-    </fields>
-    <fields>
-        <label><!-- zWebinar Name --></label>
-        <name>Webinar_Name__c</name>
-        <picklistValues>
-            <masterLabel>5 Things to Boost Sales in 2013</masterLabel>
-            <translation><!-- 5 Things to Boost Sales in 2013 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Bigcommerce Partner Program and You</masterLabel>
-            <translation><!-- Bigcommerce Partner Program and You --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Success Squad - Store Launch</masterLabel>
-            <translation><!-- Success Squad - Store Launch --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>The 3 Keys to Next-Level Conversion</masterLabel>
-            <translation><!-- The 3 Keys to Next-Level Conversion --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Using Content to grow eCommerce Sales</masterLabel>
-            <translation><!-- Using Content to grow eCommerce Sales --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
-        <label><!-- zWebinar Status --></label>
-        <name>Webinar_Status__c</name>
-        <picklistValues>
-            <masterLabel>Attended</masterLabel>
-            <translation><!-- Attended --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Registered</masterLabel>
-            <translation><!-- Registered --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Watched Recording</masterLabel>
-            <translation><!-- Watched Recording --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
-        <label><!-- z3rd Party Categories --></label>
-        <name>X3rd_Party_Apps_Categories_Discussed__c</name>
-        <picklistValues>
-            <masterLabel>Accounting</masterLabel>
-            <translation><!-- Accounting --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Accounting - MYOB by Innovent</masterLabel>
-            <translation><!-- Accounting - MYOB by Innovent --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Accounting - OneSaaS</masterLabel>
-            <translation><!-- Accounting - OneSaaS --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Accounting - SoftCookies</masterLabel>
-            <translation><!-- Accounting - SoftCookies --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Accounting - Tradebox</masterLabel>
-            <translation><!-- Accounting - Tradebox --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Accounting - eBridge</masterLabel>
-            <translation><!-- Accounting - eBridge --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Accounting - eCC Cloud</masterLabel>
-            <translation><!-- Accounting - eCC Cloud --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Accounting - eCC Desktop</masterLabel>
-            <translation><!-- Accounting - eCC Desktop --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Advertising - Bing Shopping by Yahoo</masterLabel>
-            <translation><!-- Advertising - Bing Shopping by Yahoo --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Advertising - Facebook Retargeting</masterLabel>
-            <translation><!-- Advertising - Facebook Retargeting --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Advertising - Lexity Amazon Shopping</masterLabel>
-            <translation><!-- Advertising - Lexity Amazon Shopping --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Advertising - Lexity Retargeting</masterLabel>
-            <translation><!-- Advertising - Lexity Retargeting --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Advertising - Sales and Orders Ads</masterLabel>
-            <translation><!-- Advertising - Sales and Orders Ads --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Affiliate Software - BCATracker</masterLabel>
-            <translation><!-- Affiliate Software - BCATracker --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Affiliate Software - LeadDyno</masterLabel>
-            <translation><!-- Affiliate Software - LeadDyno --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Affiliate Software - Omnistar</masterLabel>
-            <translation><!-- Affiliate Software - Omnistar --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Analytics</masterLabel>
-            <translation><!-- Analytics --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Analytics - Inventory Planner</masterLabel>
-            <translation><!-- Analytics - Inventory Planner --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Analytics - Lexity Live</masterLabel>
-            <translation><!-- Analytics - Lexity Live --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Cloud Integrations - Kevy</masterLabel>
-            <translation><!-- Cloud Integrations - Kevy --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Customer Feedback - SupportBee</masterLabel>
-            <translation><!-- Customer Feedback - SupportBee --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Customer Feedback - SurveyGizmo</masterLabel>
-            <translation><!-- Customer Feedback - SurveyGizmo --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Customer feedback</masterLabel>
-            <translation><!-- Customer feedback --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Design Partner</masterLabel>
-            <translation><!-- Design Partner --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Domain</masterLabel>
-            <translation><!-- Domain --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Dropship Product - Access Merchandise</masterLabel>
-            <translation><!-- Dropship Product - Access Merchandise --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Dropshipping - eCommHub</masterLabel>
-            <translation><!-- Dropshipping - eCommHub --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Email Marketing - ActiveCampaign</masterLabel>
-            <translation><!-- Email Marketing - ActiveCampaign --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Email Marketing - AustoresponderMax</masterLabel>
-            <translation><!-- Email Marketing - AustoresponderMax --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Email Marketing - BC2IS</masterLabel>
-            <translation><!-- Email Marketing - BC2IS --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Email Marketing - ConstantContact</masterLabel>
-            <translation><!-- Email Marketing - ConstantContact --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Email Marketing - Klaviyo</masterLabel>
-            <translation><!-- Email Marketing - Klaviyo --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Email Marketing - Mailchimp</masterLabel>
-            <translation><!-- Email Marketing - Mailchimp --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Email Marketing - Mineful</masterLabel>
-            <translation><!-- Email Marketing - Mineful --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Email Marketing - SimpleRelevance</masterLabel>
-            <translation><!-- Email Marketing - SimpleRelevance --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Email Marketing - Upsell by Email</masterLabel>
-            <translation><!-- Email Marketing - Upsell by Email --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Email Marketing - iContact</masterLabel>
-            <translation><!-- Email Marketing - iContact --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Financing - Kabbage</masterLabel>
-            <translation><!-- Financing - Kabbage --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Fraud Prevention - Subuno</masterLabel>
-            <translation><!-- Fraud Prevention - Subuno --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Live Chat - Lexity Live Sales</masterLabel>
-            <translation><!-- Live Chat - Lexity Live Sales --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Live Chat - LiveChat</masterLabel>
-            <translation><!-- Live Chat - LiveChat --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Live Chat - LivePerson</masterLabel>
-            <translation><!-- Live Chat - LivePerson --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Live Chat - Olark</masterLabel>
-            <translation><!-- Live Chat - Olark --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Live Chat - SnapEngage</masterLabel>
-            <translation><!-- Live Chat - SnapEngage --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Live Chat - Teledini</masterLabel>
-            <translation><!-- Live Chat - Teledini --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Live Chat - Zopim</masterLabel>
-            <translation><!-- Live Chat - Zopim --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Live chat</masterLabel>
-            <translation><!-- Live chat --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Marketing</masterLabel>
-            <translation><!-- Marketing --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Marketing - BoostSuite</masterLabel>
-            <translation><!-- Marketing - BoostSuite --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Marketing - Commerce Sciences</masterLabel>
-            <translation><!-- Marketing - Commerce Sciences --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Marketing - Daily Deal Bar</masterLabel>
-            <translation><!-- Marketing - Daily Deal Bar --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Marketing - Fan Builder</masterLabel>
-            <translation><!-- Marketing - Fan Builder --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Marketing - Hubspot</masterLabel>
-            <translation><!-- Marketing - Hubspot --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Marketing - Incentivibe</masterLabel>
-            <translation><!-- Marketing - Incentivibe --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Marketing - Justuno Social Bribery</masterLabel>
-            <translation><!-- Marketing - Justuno Social Bribery --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Marketing - Nextopia Search</masterLabel>
-            <translation><!-- Marketing - Nextopia Search --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Marketing - NudgeSpot</masterLabel>
-            <translation><!-- Marketing - NudgeSpot --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Marketing - PersonalBar</masterLabel>
-            <translation><!-- Marketing - PersonalBar --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Marketing - Refer-A-Friend</masterLabel>
-            <translation><!-- Marketing - Refer-A-Friend --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Marketing - ReferralCandy</masterLabel>
-            <translation><!-- Marketing - ReferralCandy --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Marketing - S Loyalty</masterLabel>
-            <translation><!-- Marketing - S Loyalty --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Marketing - SMS Marketing 360</masterLabel>
-            <translation><!-- Marketing - SMS Marketing 360 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Marketing - SearchSpring</masterLabel>
-            <translation><!-- Marketing - SearchSpring --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Marketing - Spring Metrics Smart Offers</masterLabel>
-            <translation><!-- Marketing - Spring Metrics Smart Offers --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Marketing - The Cart Closer</masterLabel>
-            <translation><!-- Marketing - The Cart Closer --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Marketing - Time 2 Buy</masterLabel>
-            <translation><!-- Marketing - Time 2 Buy --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Marketing - Vibetrace</masterLabel>
-            <translation><!-- Marketing - Vibetrace --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Marketing - ViralSweep</masterLabel>
-            <translation><!-- Marketing - ViralSweep --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Marketing Partner</masterLabel>
-            <translation><!-- Marketing Partner --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Merchandising - Make An Offer App</masterLabel>
-            <translation><!-- Merchandising - Make An Offer App --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Merchandising - Warranty Life</masterLabel>
-            <translation><!-- Merchandising - Warranty Life --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Merchandising - Webtise Filter</masterLabel>
-            <translation><!-- Merchandising - Webtise Filter --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Merchandising - WisePricer</masterLabel>
-            <translation><!-- Merchandising - WisePricer --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Mobile - Apptive</masterLabel>
-            <translation><!-- Mobile - Apptive --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Mobile - Boom! 1-Touch Checkout</masterLabel>
-            <translation><!-- Mobile - Boom! 1-Touch Checkout --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Mobile - MobiCart</masterLabel>
-            <translation><!-- Mobile - MobiCart --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Mobile - Pickn&apos;Tell</masterLabel>
-            <translation><!-- Mobile - Pickn&apos;Tell --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Mobile - epicMobi</masterLabel>
-            <translation><!-- Mobile - epicMobi --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Mobile - iRunAShop</masterLabel>
-            <translation><!-- Mobile - iRunAShop --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Multi-channel listing</masterLabel>
-            <translation><!-- Multi-channel listing --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Multi-channel listing - Brightpearl</masterLabel>
-            <translation><!-- Multi-channel listing - Brightpearl --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Multi-channel listing - ChannelAdvisor</masterLabel>
-            <translation><!-- Multi-channel listing - ChannelAdvisor --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Multi-channel listing - ChannelGrabber</masterLabel>
-            <translation><!-- Multi-channel listing - ChannelGrabber --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Multi-channel listing - ChannelUnity</masterLabel>
-            <translation><!-- Multi-channel listing - ChannelUnity --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Multi-channel listing - EdaptIT</masterLabel>
-            <translation><!-- Multi-channel listing - EdaptIT --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Multi-channel listing - Linnworks</masterLabel>
-            <translation><!-- Multi-channel listing - Linnworks --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Multi-channel listing - SellerExpress</masterLabel>
-            <translation><!-- Multi-channel listing - SellerExpress --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Multi-channel listing - Stitchlabs</masterLabel>
-            <translation><!-- Multi-channel listing - Stitchlabs --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Multi-channel listing - StoreFeeder</masterLabel>
-            <translation><!-- Multi-channel listing - StoreFeeder --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Order Management - BizSyncXL</masterLabel>
-            <translation><!-- Order Management - BizSyncXL --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Order Management - FetchAPp</masterLabel>
-            <translation><!-- Order Management - FetchAPp --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Order Management - GoBigCalendar</masterLabel>
-            <translation><!-- Order Management - GoBigCalendar --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Order Management - NumberCruncher</masterLabel>
-            <translation><!-- Order Management - NumberCruncher --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Order management</masterLabel>
-            <translation><!-- Order management --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>POS - AmberPOS</masterLabel>
-            <translation><!-- POS - AmberPOS --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>POS - Brightpearl</masterLabel>
-            <translation><!-- POS - Brightpearl --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>POS - KountaPOS</masterLabel>
-            <translation><!-- POS - KountaPOS --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>POS - POS-SYNC</masterLabel>
-            <translation><!-- POS - POS-SYNC --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>POS - StitchLabs</masterLabel>
-            <translation><!-- POS - StitchLabs --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>POS - ZingCheckout</masterLabel>
-            <translation><!-- POS - ZingCheckout --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Product Reviews - Aggregated Reviews</masterLabel>
-            <translation><!-- Product Reviews - Aggregated Reviews --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Product Reviews - YotPo</masterLabel>
-            <translation><!-- Product Reviews - YotPo --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>SMS Marketing - SMS Marketing 360</masterLabel>
-            <translation><!-- SMS Marketing - SMS Marketing 360 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>SSL</masterLabel>
-            <translation><!-- SSL --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Ship Audit - 71lbs Shipping Audits</masterLabel>
-            <translation><!-- Ship Audit - 71lbs Shipping Audits --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Ship Audit - Refund Retriever</masterLabel>
-            <translation><!-- Ship Audit - Refund Retriever --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Shipping</masterLabel>
-            <translation><!-- Shipping --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Shipping - AfterShip</masterLabel>
-            <translation><!-- Shipping - AfterShip --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Shipping - Atandra T-Hub</masterLabel>
-            <translation><!-- Shipping - Atandra T-Hub --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Shipping - Linnworks</masterLabel>
-            <translation><!-- Shipping - Linnworks --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Shipping - Ordoro</masterLabel>
-            <translation><!-- Shipping - Ordoro --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Shipping - Shiplark</masterLabel>
-            <translation><!-- Shipping - Shiplark --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Shipping - ShippingEasy</masterLabel>
-            <translation><!-- Shipping - ShippingEasy --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Shipping - Shipstation</masterLabel>
-            <translation><!-- Shipping - Shipstation --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Shipping - Stamps.com</masterLabel>
-            <translation><!-- Shipping - Stamps.com --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Shipping - StarShip</masterLabel>
-            <translation><!-- Shipping - StarShip --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Shipping - TrueShip</masterLabel>
-            <translation><!-- Shipping - TrueShip --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Shipping - netParcel</masterLabel>
-            <translation><!-- Shipping - netParcel --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Shop Comp - DataFeedWatch</masterLabel>
-            <translation><!-- Shop Comp - DataFeedWatch --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Shop Comp - GoDataFeed</masterLabel>
-            <translation><!-- Shop Comp - GoDataFeed --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Shop Comp - Lexity Google Shopping</masterLabel>
-            <translation><!-- Shop Comp - Lexity Google Shopping --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Shop Comp - Lexity Shopping Feeds</masterLabel>
-            <translation><!-- Shop Comp - Lexity Shopping Feeds --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Shop Comp - SmartFeed</masterLabel>
-            <translation><!-- Shop Comp - SmartFeed --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>SocialMedia - Optimizely</masterLabel>
-            <translation><!-- SocialMedia - Optimizely --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>SocialMedia - Sociocast</masterLabel>
-            <translation><!-- SocialMedia - Sociocast --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>SocialMedia - Visual Website Optimizer</masterLabel>
-            <translation><!-- SocialMedia - Visual Website Optimizer --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Third PL - Acutrack</masterLabel>
-            <translation><!-- Third PL - Acutrack --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Third PL - PackageBee</masterLabel>
-            <translation><!-- Third PL - PackageBee --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Third PL - Webgistix</masterLabel>
-            <translation><!-- Third PL - Webgistix --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Third PL - Whiplast Fulfillment</masterLabel>
-            <translation><!-- Third PL - Whiplast Fulfillment --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Third PL - eFulfillment Service</masterLabel>
-            <translation><!-- Third PL - eFulfillment Service --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Tools - Addrexx</masterLabel>
-            <translation><!-- Tools - Addrexx --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Tools - EasyCSVtoHTML.com</masterLabel>
-            <translation><!-- Tools - EasyCSVtoHTML.com --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Tools - Squixa</masterLabel>
-            <translation><!-- Tools - Squixa --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
-        <label><!-- z3rd Party Interest Level --></label>
-        <name>X3rd_Party_Apps_Interest_Level__c</name>
-        <picklistValues>
-            <masterLabel>Interested but can&apos;t tell if they are going to buy</masterLabel>
-            <translation><!-- Interested but can&apos;t tell if they are going to buy --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Not Interested</masterLabel>
-            <translation><!-- Not Interested --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Seems like they will buy</masterLabel>
-            <translation><!-- Seems like they will buy --></translation>
-        </picklistValues>
     </fields>
     <fields>
         <label><!-- GA Client ID --></label>

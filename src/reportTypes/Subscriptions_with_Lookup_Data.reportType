@@ -1258,11 +1258,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Account__c.OLD_Client_Service_Rep__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Account__c.Commission_Structure__c</field>
             <table>Subscription__c</table>
         </columns>
@@ -1863,17 +1858,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Account__c.OLD_Survey_Contact__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Account__c.OLD_Survey_Contact_Email__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Account__c.OLD_Survey_Contact_Name__c</field>
             <table>Subscription__c</table>
         </columns>
         <columns>
@@ -2118,11 +2103,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Active_Lead_Owner__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Lead__c.Address</field>
             <table>Subscription__c</table>
         </columns>
@@ -2148,11 +2128,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Channel_Partner_Campaign__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Lead__c.City</field>
             <table>Subscription__c</table>
         </columns>
@@ -2174,11 +2149,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Lead__c.Company</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Company_Description__c</field>
             <table>Subscription__c</table>
         </columns>
         <columns>
@@ -2223,11 +2193,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Day_of_Trial__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Lead__c.Days_to_Conversion__c</field>
             <table>Subscription__c</table>
         </columns>
@@ -2239,16 +2204,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Lead__c.Design_Account__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Design_Account_ID__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Design_Account_Lead_Referral_Email__c</field>
             <table>Subscription__c</table>
         </columns>
         <columns>
@@ -2278,16 +2233,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Engaged__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Expected_Stores__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Lead__c.Experience__c</field>
             <table>Subscription__c</table>
         </columns>
@@ -2308,22 +2253,12 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Followed_Up_to_Twitter_Webinar__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Lead__c.Name</field>
             <table>Subscription__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Lead__c.Full_Name__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Google_Analytics_Ad_Content__c</field>
             <table>Subscription__c</table>
         </columns>
         <columns>
@@ -2338,22 +2273,12 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Interspire_Edition__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Lead__c.LastActivityDate</field>
             <table>Subscription__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Lead__c.qbdialer__LastCallTime__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Last_Case_Survey_Date__c</field>
             <table>Subscription__c</table>
         </columns>
         <columns>
@@ -2389,11 +2314,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Lead__c.Lead_Assignment_Method__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Lead_Creation_Date__c</field>
             <table>Subscription__c</table>
         </columns>
         <columns>
@@ -2453,11 +2373,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Next_Steps__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Lead__c.NumberOfEmployees</field>
             <table>Subscription__c</table>
         </columns>
@@ -2473,22 +2388,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Number_of_Employees__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Lead__c.MBAHostingID__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Opened_Pricing_PDF__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Openend_Product_Tour_Recording__c</field>
             <table>Subscription__c</table>
         </columns>
         <columns>
@@ -2513,32 +2413,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Partner_Engagement_Preference__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Lead__c.Partner_Account__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Partner_Source_Country__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Partner_Source_ID__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Partner_Source_Owner_ID__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.PDE_Verified__c</field>
             <table>Subscription__c</table>
         </columns>
         <columns>
@@ -2548,57 +2423,12 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Portfolio__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Primary_MBA_Contact__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Marketing_Promotion__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Lead__c.Rating</field>
             <table>Subscription__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Recorded_Product_Tour_Date__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Referral_Date__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Referral_Email__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Referral_Form_URL__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Lead__c.Referral_Notes__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Referral_Submission_Type__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Referred_to_Hubspot__c</field>
             <table>Subscription__c</table>
         </columns>
         <columns>
@@ -2618,16 +2448,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Seen_Pricing__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Services_Offered__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Lead__c.Stage__c</field>
             <table>Subscription__c</table>
         </columns>
@@ -2638,17 +2458,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Strategic_BD_Partner__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Lead__c.Street</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Support_Expiration__c</field>
             <table>Subscription__c</table>
         </columns>
         <columns>
@@ -2673,22 +2483,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Trial_Count__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Lead__c.Trial_Expiration_Date__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Trial_Start_Date__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Trial_Store_URL__c</field>
             <table>Subscription__c</table>
         </columns>
         <columns>
@@ -2708,27 +2503,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Webinar_Date__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Webinar_Name__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Webinar_Status__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Lead__c.Website</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.WFR_Trigger__c</field>
             <table>Subscription__c</table>
         </columns>
         <columns>
@@ -3003,11 +2778,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.SBD_Referral_ID__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Upgrade_Rep__c.UserRole</field>
             <table>Subscription__c</table>
         </columns>
@@ -3076,27 +2846,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Converted_Within_7_Days__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Totango_Score__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Email_Bounce_in_Hubspot__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Projected_Value__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Projected_Close_Date__c</field>
             <table>Subscription__c</table>
         </columns>
         <columns>
@@ -3107,11 +2857,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account_Name__c</field>
-            <table>Subscription__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Converted_Within_16_Days__c</field>
             <table>Subscription__c</table>
         </columns>
         <columns>

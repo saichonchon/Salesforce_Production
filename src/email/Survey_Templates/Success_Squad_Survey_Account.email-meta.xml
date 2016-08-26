@@ -6,7 +6,7 @@
     <name>Success Squad Survey : Account</name>
     <style>freeForm</style>
     <subject>How was your Consultation?  Let us Know</subject>
-    <textOnly>Dear {!Account.OLD_Survey_Contact_Name__c},
+    <textOnly>Dear {!Account.00Na0000009rwVr},
 
 It was a pleasure speaking with you today. As part of our ongoing effort to provide better service and to ensure the success of clients like you, we would greatly appreciate your feedback through this very short one minute survey.
 

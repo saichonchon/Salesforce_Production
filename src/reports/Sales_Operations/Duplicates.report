@@ -8,12 +8,6 @@
         <field>Lead$Active_Trials__c</field>
     </columns>
     <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <aggregateTypes>Average</aggregateTypes>
-        <aggregateTypes>Maximum</aggregateTypes>
-        <field>Lead$Trial_Count__c</field>
-    </columns>
-    <columns>
         <field>Lead$Email</field>
     </columns>
     <columns>

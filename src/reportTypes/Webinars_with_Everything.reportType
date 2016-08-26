@@ -118,11 +118,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Day_of_Trial__c</field>
-            <table>Webinar__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Lead__c.Days_to_Conversion__c</field>
             <table>Webinar__c</table>
         </columns>
@@ -139,11 +134,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Contact_or_Lead__c</field>
-            <table>Webinar__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Email_Bounce_in_Hubspot__c</field>
             <table>Webinar__c</table>
         </columns>
         <columns>
@@ -268,26 +258,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.PDE_Verified__c</field>
-            <table>Webinar__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Partner_Source_Owner_ID__c</field>
-            <table>Webinar__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Partner_Source_ID__c</field>
-            <table>Webinar__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Partner_Source_Country__c</field>
-            <table>Webinar__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Lead__c.Stage__c</field>
             <table>Webinar__c</table>
         </columns>
@@ -308,17 +278,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Strategic_BD_Partner__c</field>
-            <table>Webinar__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Lead__c.Temperature__c</field>
-            <table>Webinar__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Trial_Count__c</field>
             <table>Webinar__c</table>
         </columns>
         <columns>
@@ -693,11 +653,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Contact__c.Webinar_Status__c</field>
-            <table>Webinar__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Account__c.Partner_No_of_Expected_Stores__c</field>
             <table>Webinar__c</table>
         </columns>
@@ -844,11 +799,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account__c.Channel_Partner_Campaign__c</field>
-            <table>Webinar__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Account__c.OLD_Client_Service_Rep__c</field>
             <table>Webinar__c</table>
         </columns>
         <columns>
@@ -1438,17 +1388,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Account__c.OLD_Survey_Contact__c</field>
-            <table>Webinar__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Account__c.OLD_Survey_Contact_Email__c</field>
-            <table>Webinar__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Account__c.OLD_Survey_Contact_Name__c</field>
             <table>Webinar__c</table>
         </columns>
         <columns>
@@ -1519,11 +1459,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Lead__c.Phone</field>
-            <table>Webinar__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Lead__c.Followed_Up_to_Twitter_Webinar__c</field>
             <table>Webinar__c</table>
         </columns>
         <columns>

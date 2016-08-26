@@ -1087,11 +1087,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>OLD_Client_Service_Rep__c</field>
-            <table>Account</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Converted_LeadId__c</field>
             <table>Account</table>
         </columns>
@@ -1122,17 +1117,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>OLD_Survey_Contact__c</field>
-            <table>Account</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>OLD_Survey_Contact_Email__c</field>
-            <table>Account</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>OLD_Survey_Contact_Name__c</field>
             <table>Account</table>
         </columns>
         <columns>
@@ -1841,11 +1826,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Webinar_Questions__c</field>
-            <table>Account.Contacts</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Webinar_Status__c</field>
             <table>Account.Contacts</table>
         </columns>
         <columns>

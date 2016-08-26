@@ -2,7 +2,7 @@
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <aggregates>
         <acrossGroupingContext>GRAND_SUMMARY</acrossGroupingContext>
-        <calculatedFormula>FK_Subscription__c.MonthlyRecurringRevenue__c:SUM</calculatedFormula>
+        <calculatedFormula>Opportunity.MonthlyRecurringRevenue__c:SUM</calculatedFormula>
         <datatype>currency</datatype>
         <developerName>FORMULA1</developerName>
         <downGroupingContext>GRAND_SUMMARY</downGroupingContext>
@@ -13,7 +13,7 @@
     </aggregates>
     <aggregates>
         <acrossGroupingContext>Opportunity.Account_Management_Services__c</acrossGroupingContext>
-        <calculatedFormula>FK_Subscription__c.MonthlyRecurringRevenue__c:SUM</calculatedFormula>
+        <calculatedFormula>Opportunity.MonthlyRecurringRevenue__c:SUM</calculatedFormula>
         <datatype>currency</datatype>
         <developerName>FORMULA2</developerName>
         <downGroupingContext>GRAND_SUMMARY</downGroupingContext>

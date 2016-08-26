@@ -104,7 +104,7 @@
         <field>Opportunity.Oppotunity_Products__r$Price_Change_Reason__c</field>
     </columns>
     <filter>
-        <booleanFilter>1 AND 2 AND (3 OR 4) AND 5 AND 6 AND (7 OR 11) AND 8 AND 9 AND 10  AND 12 AND 13</booleanFilter>
+        <booleanFilter>1 AND 2 AND (3 OR 4) AND 5 AND 6 AND 7 AND 8  AND 9 AND 10</booleanFilter>
         <criteriaItems>
             <column>Opportunity.Oppotunity_Products__r$Status__c</column>
             <operator>equals</operator>
@@ -136,16 +136,6 @@
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity$PurchaseDate__c</column>
-            <operator>notEqual</operator>
-            <value></value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity.Oppotunity_Products__r$Sub_Migration__c</column>
-            <operator>equals</operator>
-            <value>0</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>Opportunity$BA_Testing_Opportunity__c</column>
             <operator>equals</operator>
             <value>0</value>
@@ -153,12 +143,7 @@
         <criteriaItems>
             <column>Opportunity.Oppotunity_Products__r$Revenue_Team__c</column>
             <operator>contains</operator>
-            <value>Small Business,automated sales user</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity$Master_Agreement_Date__c</column>
-            <operator>notEqual</operator>
-            <value></value>
+            <value>Automated Sales User,Sales Development - Inbound SDR,Sales Development - Outbound SDR,Small Business Sales Team</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Oppotunity_Products__r$Price_Change_Reason__c</column>

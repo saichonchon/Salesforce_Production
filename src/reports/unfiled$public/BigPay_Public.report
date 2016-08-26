@@ -4,6 +4,12 @@
         <field>Opportunity.Primary_Campaign_Name__c</field>
     </columns>
     <columns>
+        <field>Opportunity.Previous_Owner__c</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
         <field>Opportunity.Strategic_Partner__c</field>
     </columns>
     <columns>
@@ -34,9 +40,6 @@
         <field>HASOPPLINEITEM</field>
     </columns>
     <columns>
-        <field>FULL_NAME</field>
-    </columns>
-    <columns>
         <field>OPPORTUNITY_NAME</field>
     </columns>
     <columns>
@@ -52,7 +55,7 @@
             <value>Opportunity.SBD_Upsell</value>
         </criteriaItems>
         <criteriaItems>
-            <column>CAMPAIGN_SOURCE</column>
+            <column>Opportunity.Primary_Campaign_Name__c</column>
             <operator>startsWith</operator>
             <value>Bigpay</value>
         </criteriaItems>
@@ -81,8 +84,6 @@
     <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>CLOSE_DATE</dateColumn>
-        <endDate>2016-09-30</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2016-05-01</startDate>
     </timeFrameFilter>
 </Report>

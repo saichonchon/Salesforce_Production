@@ -3468,7 +3468,7 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
     <fields>
         <fullName>Expected_Plan__c</fullName>
         <externalId>false</externalId>
-        <label>Expected Plan from Lead</label>
+        <label>zExpected Plan from Lead</label>
         <picklist>
             <picklistValues>
                 <fullName>Premium</fullName>
@@ -6200,6 +6200,16 @@ Account Management</description>
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>Preventable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Account management opportunity detail information.</description>
+        <externalId>false</externalId>
+        <label>Preventable?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Previous_Owner_Team__c</fullName>
         <description>For reporting purposes - hidden from layout.</description>
         <externalId>false</externalId>
@@ -6589,6 +6599,26 @@ Account Management</description>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Regrettable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Account management opportunity detail information.</description>
+        <externalId>false</externalId>
+        <label>Regrettable?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Retrospective__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Account management opportunity detail information.</description>
+        <externalId>false</externalId>
+        <label>Retrospective?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>Revenue_Rep__c</fullName>
@@ -9642,7 +9672,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <fullName>App</fullName>
         <active>true</active>
         <businessProcess>App Lifecycle</businessProcess>
-        <description>Opportunity to represent App development</description>
+        <description>01213000000AVUjAAO | Opportunity to represent App development</description>
         <label>App</label>
         <picklistValues>
             <picklist>App_Public_Website_Listing__c</picklist>
@@ -12093,7 +12123,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <fullName>One_Time_Product</fullName>
         <active>true</active>
         <businessProcess>Sales Process %28Trial to Purchase%29</businessProcess>
-        <description>Use when the client makes a one-time purchase, such as SSL or Domains.</description>
+        <description>01213000000AUtwAAG | Use when the client makes a one-time purchase, such as SSL or Domains.</description>
         <label>One-Time Product</label>
         <picklistValues>
             <picklist>App_Public_Website_Listing__c</picklist>
@@ -13924,6 +13954,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <fullName>Professional_Services</fullName>
         <active>true</active>
         <businessProcess>Professional Services Process</businessProcess>
+        <description>012a0000001NaypAAC</description>
         <label>Professional Services</label>
         <picklistValues>
             <picklist>App_Public_Website_Listing__c</picklist>
@@ -15594,6 +15625,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <fullName>SBD_Upsell</fullName>
         <active>true</active>
         <businessProcess>SBD Upsell</businessProcess>
+        <description>01213000001FtxEAAS</description>
         <label>SBD Upsell</label>
         <picklistValues>
             <picklist>Account_Management_Services__c</picklist>
@@ -18784,7 +18816,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <fullName>Store_Purchase</fullName>
         <active>true</active>
         <businessProcess>Sales Process %28Trial to Purchase%29</businessProcess>
-        <description>Use when the trial becomes a store.</description>
+        <description>01213000000AUtxAAG | Use when the trial becomes a store.</description>
         <label>Store Purchase</label>
         <picklistValues>
             <picklist>Account_Management_Services__c</picklist>
@@ -21387,7 +21419,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <fullName>Theme</fullName>
         <active>true</active>
         <businessProcess>Theme Lifecycle</businessProcess>
-        <description>Theme Registry submissions</description>
+        <description>01213000000AWkiAAG | Theme Registry submissions</description>
         <label>Theme</label>
         <picklistValues>
             <picklist>App_Public_Website_Listing__c</picklist>
@@ -24375,7 +24407,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <fullName>Trial</fullName>
         <active>true</active>
         <businessProcess>Sales Process %28Trial to Purchase%29</businessProcess>
-        <description>Use when the client has created a trial store.</description>
+        <description>01213000000AUtyAAG | Use when the client has created a trial store.</description>
         <label>Trial</label>
         <picklistValues>
             <picklist>Account_Management_Services__c</picklist>
@@ -27254,7 +27286,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <fullName>Upgrade_Store</fullName>
         <active>true</active>
         <businessProcess>Upsell</businessProcess>
-        <description>To be used with Upsell Opportunity</description>
+        <description>01213000000AV6NAAW | To be used with Upsell Opportunity</description>
         <label>Upgrade Store</label>
         <picklistValues>
             <picklist>App_Public_Website_Listing__c</picklist>

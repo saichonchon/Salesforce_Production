@@ -11,6 +11,7 @@
     <customButtons>SalesVue__Log_SalesVue_Free_Task</customButtons>
     <customButtons>SalesVue__Add_Account_To_Plans</customButtons>
     <customButtons>SalesVue__Remove_Single_From_Plans</customButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>DisableCustomerPortalAccount</excludeButtons>
     <excludeButtons>DisablePartnerPortalAccount</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
@@ -244,17 +245,29 @@
         <relatedList>RelatedOpportunityList</relatedList>
     </relatedLists>
     <relatedLists>
-        <fields>OPPORTUNITY.NAME</fields>
-        <fields>ACCOUNT.NAME</fields>
-        <fields>OPPORTUNITY.CLOSE_DATE</fields>
-        <fields>OPPORTUNITY.STAGE_NAME</fields>
-        <fields>OPPORTUNITY.TYPE</fields>
+        <fields>TASK.SUBJECT</fields>
+        <fields>TASK.WHO_NAME</fields>
+        <fields>TASK.WHAT_NAME</fields>
+        <fields>ACTIVITY.TASK</fields>
+        <fields>TASK.DUE_DATE</fields>
+        <fields>TASK.STATUS</fields>
+        <fields>TASK.PRIORITY</fields>
         <fields>CORE.USERS.FULL_NAME</fields>
-        <fields>CORE.USERS.ALIAS</fields>
-        <fields>OPPORTUNITY.RECORDTYPE</fields>
-        <fields>Day_of_Trial__c</fields>
-        <fields>StoreURL__c</fields>
-        <relatedList>Opportunity.Strategic_Partner__c</relatedList>
+        <fields>Acquisition_Campaign__c</fields>
+        <relatedList>RelatedActivityList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>TASK.SUBJECT</fields>
+        <fields>TASK.WHO_NAME</fields>
+        <fields>TASK.WHAT_NAME</fields>
+        <fields>Comments_short__c</fields>
+        <fields>TASK.TYPE</fields>
+        <fields>Call_Outcome__c</fields>
+        <fields>TASK.CALLDISPOSITION</fields>
+        <fields>TASK.DUE_DATE</fields>
+        <fields>CORE.USERS.FULL_NAME</fields>
+        <fields>Call_Duration_Minutes__c</fields>
+        <relatedList>RelatedHistoryList</relatedList>
     </relatedLists>
     <relatedLists>
         <excludeButtons>NewCase</excludeButtons>
@@ -348,18 +361,6 @@
         <relatedList>RelatedNoteList</relatedList>
     </relatedLists>
     <relatedLists>
-        <fields>TASK.SUBJECT</fields>
-        <fields>TASK.WHO_NAME</fields>
-        <fields>TASK.WHAT_NAME</fields>
-        <fields>ACTIVITY.TASK</fields>
-        <fields>TASK.DUE_DATE</fields>
-        <fields>TASK.STATUS</fields>
-        <fields>TASK.PRIORITY</fields>
-        <fields>CORE.USERS.FULL_NAME</fields>
-        <fields>Acquisition_Campaign__c</fields>
-        <relatedList>RelatedActivityList</relatedList>
-    </relatedLists>
-    <relatedLists>
         <fields>NAME</fields>
         <fields>Zuora__Amount__c</fields>
         <fields>Zuora__BillingAccount__c</fields>
@@ -376,19 +377,6 @@
         <fields>Zuora__Amount__c</fields>
         <fields>Zuora__UpdatedDate__c</fields>
         <relatedList>Zuora__Refund__c.Zuora__Account__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>TASK.SUBJECT</fields>
-        <fields>TASK.WHO_NAME</fields>
-        <fields>TASK.WHAT_NAME</fields>
-        <fields>Comments_short__c</fields>
-        <fields>TASK.TYPE</fields>
-        <fields>Call_Outcome__c</fields>
-        <fields>TASK.CALLDISPOSITION</fields>
-        <fields>TASK.DUE_DATE</fields>
-        <fields>CORE.USERS.FULL_NAME</fields>
-        <fields>Call_Duration_Minutes__c</fields>
-        <relatedList>RelatedHistoryList</relatedList>
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedEntityHistoryList</relatedList>

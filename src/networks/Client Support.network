@@ -53,15 +53,15 @@
         <customTab>DaScoopComposer__Email_Blacklist</customTab>
         <customTab>DaScoopComposer__Activity_Performance</customTab>
         <customTab>KB_Global_Search_And_Replace__c</customTab>
-        <customTab>lmscons__Learning</customTab>
         <customTab>KB_Global_Search_History__c</customTab>
+        <customTab>lmscons__Learning</customTab>
         <customTab>Article_Search_and_Replace</customTab>
         <customTab>mkto_si__Marketo</customTab>
         <customTab>mkto_si__Marketo_Sales_Insight_Config__c</customTab>
-        <customTab>Zuora__Connection_Setup</customTab>
         <customTab>lmscons__Training_Content__c</customTab>
-        <customTab>Zuora__Schema_Setup</customTab>
+        <customTab>Zuora__Connection_Setup</customTab>
         <customTab>lmscons__Training_Path_Assignment_Progress__c</customTab>
+        <customTab>Zuora__Schema_Setup</customTab>
         <customTab>permissioner__The_Permissioner</customTab>
         <customTab>lmscons__My_Team</customTab>
         <customTab>lmscons__My_Training</customTab>
@@ -73,18 +73,18 @@
         <customTab>lmscons__Learning_Path__c</customTab>
         <customTab>lmsilt__Development_Plans</customTab>
         <customTab>lmsilt__Event__c</customTab>
-        <customTab>lmsilt__ILT_Settings</customTab>
         <customTab>BI_Data__c</customTab>
-        <customTab>Support_Survey__c</customTab>
-        <customTab>Zuora__PaymentTerm__c</customTab>
+        <customTab>lmsilt__ILT_Settings</customTab>
         <customTab>lmsilt__Development_Plan__c</customTab>
+        <customTab>Zuora__PaymentTerm__c</customTab>
+        <customTab>Support_Survey__c</customTab>
         <customTab>lmscons__Trigger_Rule__c</customTab>
         <customTab>lmscons__Upload_Content</customTab>
         <customTab>lmscons__temp_xlsx__c</customTab>
-        <customTab>Zuora__Sync_Histories</customTab>
         <customTab>lmscons__Training_Path__c</customTab>
-        <customTab>Zuora__ZBilling</customTab>
+        <customTab>Zuora__Sync_Histories</customTab>
         <customTab>lmscons__Training_Unit__c</customTab>
+        <customTab>Zuora__ZBilling</customTab>
         <customTab>lmscons__Transcript_Line__c</customTab>
         <customTab>lmscons__Transcript__c</customTab>
         <customTab>Field_Trip__Object_Analysis__c</customTab>
@@ -109,8 +109,8 @@
         <customTab>ctu__Clone_This_User</customTab>
         <customTab>qbdialer__InsideSales_Setup</customTab>
         <customTab>qbdialer__Dialer_Queries</customTab>
-        <customTab>qbdialer__Dialer</customTab>
         <customTab>MBA_Staging_Subscription__c</customTab>
+        <customTab>qbdialer__Dialer</customTab>
         <customTab>qbdialer__is_links</customTab>
         <customTab>Partner_Commission_Tools</customTab>
         <customTab>n2de__Console</customTab>
@@ -136,17 +136,17 @@
         <customTab>Revenue_Share_History__c</customTab>
         <customTab>tinderbox__TinderBox_Library</customTab>
         <customTab>tinderbox__TinderBox_Log__c</customTab>
-        <customTab>TASKRAY__TaskRay</customTab>
         <customTab>tinderbox__TinderBox</customTab>
+        <customTab>TASKRAY__TaskRay</customTab>
         <customTab>TASKRAY__trChecklistItem__c</customTab>
         <customTab>TASKRAY__trSF1LeftMenu</customTab>
-        <customTab>TASKRAY__trTaskTime__c</customTab>
         <customTab>tinderbox__TinderBox_Settings</customTab>
+        <customTab>TASKRAY__trTaskTime__c</customTab>
         <customTab>tinderbox__TinderBox_Tracking</customTab>
         <customTab>rh2__PS_Enable_Real_Time</customTab>
         <customTab>rh2__PS_Getting_Started</customTab>
-        <customTab>TASKRAY__Project_Task__c</customTab>
         <customTab>rh2__PS_Import_Export</customTab>
+        <customTab>TASKRAY__Project_Task__c</customTab>
         <customTab>rh2__PS_Rollup_Helper</customTab>
         <customTab>TASKRAY__Project__c</customTab>
         <customTab>rh2__PS_All_Rollups</customTab>
@@ -189,8 +189,8 @@
         <customTab>WorkIt2__Session_Type__c</customTab>
         <customTab>WorkIt2__Time_Entry__c</customTab>
         <customTab>zqu__Quote__c</customTab>
-        <customTab>zqu__Z_Quote_Config</customTab>
         <customTab>PKB_Content__c</customTab>
+        <customTab>zqu__Z_Quote_Config</customTab>
         <customTab>zqu__ZuoraConfig__c</customTab>
         <customTab>zqu__Quote_Template__c</customTab>
         <defaultTab>home</defaultTab>
@@ -211,8 +211,8 @@
         <standardTab>Console</standardTab>
         <standardTab>AppLauncher</standardTab>
         <standardTab>Answers</standardTab>
-        <standardTab>Chatter</standardTab>
         <standardTab>home</standardTab>
+        <standardTab>Chatter</standardTab>
         <standardTab>Metric</standardTab>
         <standardTab>Account</standardTab>
         <standardTab>WorkFeedbackRequest</standardTab>
@@ -233,8 +233,8 @@
         <standardTab>ProfilePlatformOverview</standardTab>
         <standardTab>ProfilePlatformGoals</standardTab>
         <standardTab>File</standardTab>
-        <standardTab>Coaching</standardTab>
         <standardTab>UserProfile</standardTab>
+        <standardTab>Coaching</standardTab>
         <standardTab>Calibration</standardTab>
         <standardTab>Contact</standardTab>
         <standardTab>WorkPerformanceCycle</standardTab>

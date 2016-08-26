@@ -2638,7 +2638,7 @@ if((Active_Trials_Opp__c &gt;0),1,
         <fullName>MaxSub_MonthlyRecurringRevenue__c</fullName>
         <description>Used in subscription data roll-up trigger</description>
         <externalId>false</externalId>
-        <label>MaxSub Monthly Recurring Revenue</label>
+        <label>zMaxSub Monthly Recurring Revenue</label>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
@@ -2650,7 +2650,7 @@ if((Active_Trials_Opp__c &gt;0),1,
         <fullName>MaxSub_Product__c</fullName>
         <description>Used in subscription data roll-up trigger</description>
         <externalId>false</externalId>
-        <label>MaxSub Product</label>
+        <label>zMaxSub Product</label>
         <length>100</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -2706,7 +2706,7 @@ if((Active_Trials_Opp__c &gt;0),1,
         <fullName>MaxSub_Store_URL__c</fullName>
         <description>used for Marketo cross-sell emails.  Populated by WFR but should be added to code</description>
         <externalId>false</externalId>
-        <label>MaxSub Store URL</label>
+        <label>zMaxSub Store URL</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -2882,19 +2882,6 @@ if((Active_Trials_Opp__c &gt;0),1,
         <type>Picklist</type>
     </fields>
     <fields>
-        <fullName>OLD_Client_Service_Rep__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <description>hidden 1/14/14; can delete a month later</description>
-        <externalId>false</externalId>
-        <label>zOLD Client Service Rep</label>
-        <referenceTo>User</referenceTo>
-        <relationshipName>Accounts4</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
         <fullName>OLD_Ongoing_Account__c</fullName>
         <defaultValue>false</defaultValue>
         <description>hidden 1/14/14; can delete a month later</description>
@@ -2968,32 +2955,6 @@ professional services team status for appointment setting</description>
         <trackHistory>false</trackHistory>
         <type>Email</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>OLD_Survey_Contact_Name__c</fullName>
-        <description>hidden 1/14/14; can delete a month later</description>
-        <externalId>false</externalId>
-        <formula>OLD_Survey_Contact__r.FirstName</formula>
-        <label>zOLD Survey Contact Name</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>OLD_Survey_Contact__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <description>hidden 1/14/14; can delete a month later</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Once this field is populated, the Success Squad survey link will be emailed to this contact</inlineHelpText>
-        <label>zOLD Survey Contact</label>
-        <referenceTo>Contact</referenceTo>
-        <relationshipLabel>Survey Accounts</relationshipLabel>
-        <relationshipName>Accounts</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>OLD_Survey_Date__c</fullName>
@@ -5925,6 +5886,16 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <inlineHelpText>Account website address (URL).</inlineHelpText>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Welcome_Call__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Account management information field.</description>
+        <externalId>false</externalId>
+        <label>Welcome Call</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>Why_Use__c</fullName>

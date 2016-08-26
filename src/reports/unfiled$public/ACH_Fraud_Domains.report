@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$Contact__c</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$Contact__c.Email</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$MBASubscriptionID__c</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$ProductType__c</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$Product__c</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$StoreURL__c</field>
+    </columns>
+    <description>sample report to create list of fraudulent domain purchases for eNom</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Subscriptions__r$Contact__c</column>
+            <operator>contains</operator>
+            <value>Beheler</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>ACH Fraud - Domains</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Subscriptions__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account.Subscriptions__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

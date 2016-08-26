@@ -34,11 +34,6 @@
             <value>joy.wallis@bigcommerce.com</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Lead.Channel_Partner_Campaign__c</column>
-            <operator>notEqual</operator>
-            <value></value>
-        </criteriaItems>
-        <criteriaItems>
             <column>Lead.Stage__c</column>
             <operator>notEqual</operator>
             <value>Closed Lost</value>

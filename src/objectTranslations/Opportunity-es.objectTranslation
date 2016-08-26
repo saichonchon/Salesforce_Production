@@ -817,6 +817,10 @@
             <translation><!-- SQL Rejected --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Self-Serve</masterLabel>
+            <translation><!-- Self-Serve --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Test Account</masterLabel>
             <translation><!-- Test Account --></translation>
         </picklistValues>
@@ -2194,7 +2198,7 @@
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Expected Plan from Lead --></label>
+        <label><!-- zExpected Plan from Lead --></label>
         <name>Expected_Plan__c</name>
         <picklistValues>
             <masterLabel>Enterprise</masterLabel>
@@ -3952,6 +3956,10 @@
         <name>Premium_Services__c</name>
     </fields>
     <fields>
+        <label><!-- Preventable? --></label>
+        <name>Preventable__c</name>
+    </fields>
+    <fields>
         <label><!-- Previous Owner Team --></label>
         <name>Previous_Owner_Team__c</name>
     </fields>
@@ -4127,6 +4135,14 @@
         <help><!-- Used for Partner team --></help>
         <label><!-- Partner Referral Notes --></label>
         <name>Referral_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regrettable? --></label>
+        <name>Regrettable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retrospective? --></label>
+        <name>Retrospective__c</name>
     </fields>
     <fields>
         <label><!-- Revenue Rep --></label>

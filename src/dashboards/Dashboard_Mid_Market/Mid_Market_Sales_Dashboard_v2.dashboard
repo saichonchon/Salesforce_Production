@@ -284,13 +284,13 @@
                 <column>FORMULA2</column>
                 <decimalPlaces>0</decimalPlaces>
                 <showTotal>false</showTotal>
-                <sortBy>RowValueDescending</sortBy>
             </dashboardTableColumn>
             <dashboardTableColumn>
                 <calculatePercent>false</calculatePercent>
                 <column>FORMULA1</column>
                 <decimalPlaces>2</decimalPlaces>
                 <showTotal>true</showTotal>
+                <sortBy>RowValueDescending</sortBy>
             </dashboardTableColumn>
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>

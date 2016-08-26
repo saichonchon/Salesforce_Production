@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Account</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Oppotunity_Products__r$Revenue_Rep__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Oppotunity_Products__r$RevenueChange__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity.Oppotunity_Products__r$Revenue_Team__c</column>
+            <operator>equals</operator>
+            <value>Midmarket Enterprise Sales</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Oppotunity_Products__r$Price_Change_Reason__c</column>
+            <operator>notEqual</operator>
+            <value>BC Pricing Change</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Oppotunity_Products__r$RevenueChange__c</column>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Oppotunity_Products__r$Purchase__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Oppotunity_Products__r$RevenueChange__c</column>
+            <operator>greaterThan</operator>
+            <value>800</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Mid Market Large Deals MTD</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opp_with_Prod_Hist_and_Lookup_Data__c</reportType>
+    <roleHierarchyFilter>Enterprise_Leader</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Opportunity.Oppotunity_Products__r$RevenueChange__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Opportunity.Oppotunity_Products__r$StartDate__c</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

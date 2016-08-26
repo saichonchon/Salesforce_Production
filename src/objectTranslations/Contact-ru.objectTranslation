@@ -552,22 +552,6 @@
         <name>Webinar_Questions__c</name>
     </fields>
     <fields>
-        <label><!-- zWebinar Status --></label>
-        <name>Webinar_Status__c</name>
-        <picklistValues>
-            <masterLabel>Attended</masterLabel>
-            <translation><!-- Attended --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Registered</masterLabel>
-            <translation><!-- Registered --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Watched Recording</masterLabel>
-            <translation><!-- Watched Recording --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
         <label><!-- GA Client ID --></label>
         <name>gaClientID__c</name>
     </fields>

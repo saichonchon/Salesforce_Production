@@ -1461,11 +1461,11 @@ Grow - Potential for big opp;Partner choosing platform --></help>
         <name>MaxSub_IsTrial__c</name>
     </fields>
     <fields>
-        <label><!-- MaxSub Monthly Recurring Revenue --></label>
+        <label><!-- zMaxSub Monthly Recurring Revenue --></label>
         <name>MaxSub_MonthlyRecurringRevenue__c</name>
     </fields>
     <fields>
-        <label><!-- MaxSub Product --></label>
+        <label><!-- zMaxSub Product --></label>
         <name>MaxSub_Product__c</name>
     </fields>
     <fields>
@@ -1485,7 +1485,7 @@ Grow - Potential for big opp;Partner choosing platform --></help>
         <name>MaxSub_Status__c</name>
     </fields>
     <fields>
-        <label><!-- MaxSub Store URL --></label>
+        <label><!-- zMaxSub Store URL --></label>
         <name>MaxSub_Store_URL__c</name>
     </fields>
     <fields>
@@ -1561,11 +1561,6 @@ Grow - Potential for big opp;Partner choosing platform --></help>
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- zOLD Client Service Rep --></label>
-        <name>OLD_Client_Service_Rep__c</name>
-        <relationshipLabel><!-- Accounts (zOLD Client Service Rep) --></relationshipLabel>
-    </fields>
-    <fields>
         <help><!-- Client&apos;s that are walking through multiple Success Squad sessions --></help>
         <label><!-- zOLD Ongoing Account --></label>
         <name>OLD_Ongoing_Account__c</name>
@@ -1617,16 +1612,6 @@ Grow - Potential for big opp;Partner choosing platform --></help>
     <fields>
         <label><!-- zOLD Survey Contact Email --></label>
         <name>OLD_Survey_Contact_Email__c</name>
-    </fields>
-    <fields>
-        <label><!-- zOLD Survey Contact Name --></label>
-        <name>OLD_Survey_Contact_Name__c</name>
-    </fields>
-    <fields>
-        <help><!-- Once this field is populated, the Success Squad survey link will be emailed to this contact --></help>
-        <label><!-- zOLD Survey Contact --></label>
-        <name>OLD_Survey_Contact__c</name>
-        <relationshipLabel><!-- Survey Accounts --></relationshipLabel>
     </fields>
     <fields>
         <label><!-- zOLD Survey Date --></label>
@@ -3553,6 +3538,10 @@ Grow - Potential for big opp;Partner choosing platform --></help>
     <fields>
         <label><!-- Valid Activity Date --></label>
         <name>Valid_Activity_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Welcome Call --></label>
+        <name>Welcome_Call__c</name>
     </fields>
     <fields>
         <help><!-- Why should a client choose this design partner over another? --></help>

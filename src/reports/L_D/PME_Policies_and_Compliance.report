@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>lmscons__Quiz_Statistic__c$lmscons__Learner__c</field>
+    </columns>
+    <columns>
+        <field>lmscons__Quiz_Statistic__c$lmscons__Long_Answer__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>lmscons__Quiz_Statistic__c$lmscons__Quiz__c</column>
+            <operator>equals</operator>
+            <value>SKILL PME - Post Class Survey - HR Policies &amp; Compliance</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>lmscons__Quiz_Statistic__c$lmscons__Question__c.lmscons__Question__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>PME - Policies and Compliance</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Quiz_Statistics_CUSTOM__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>lmscons__Quiz_Statistic__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

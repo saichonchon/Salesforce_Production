@@ -739,11 +739,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Webinar_Status__c</field>
-            <table>Campaign.ContactCampaignMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Account.Name</field>
             <table>Campaign.ContactCampaignMembers</table>
         </columns>
@@ -1234,11 +1229,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Account.OLD_Client_Service_Rep__c</field>
-            <table>Campaign.ContactCampaignMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Account.Converted_LeadId__c</field>
             <table>Campaign.ContactCampaignMembers</table>
         </columns>
@@ -1269,17 +1259,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Account.OLD_Survey_Contact__c</field>
-            <table>Campaign.ContactCampaignMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Account.OLD_Survey_Contact_Email__c</field>
-            <table>Campaign.ContactCampaignMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Account.OLD_Survey_Contact_Name__c</field>
             <table>Campaign.ContactCampaignMembers</table>
         </columns>
         <columns>

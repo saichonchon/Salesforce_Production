@@ -103,16 +103,6 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>SS_Survey_Contact_Email</fullName>
-        <field>OLD_Survey_Contact_Email__c</field>
-        <formula>OLD_Survey_Contact__r.Email</formula>
-        <name>SS Survey Contact Email</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>true</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>SS_Survey_Rep_Link</fullName>
         <field>OLD_Survey_Link_Success_Squad__c</field>
         <formula>SSC__r.Survey_Link__c</formula>

@@ -2035,16 +2035,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>OLD_Survey_Contact__c</field>
-            <table>User.Account$OwnerId</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>OLD_Survey_Contact_Name__c</field>
-            <table>User.Account$OwnerId</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>OLD_Survey_Contact_Email__c</field>
             <table>User.Account$OwnerId</table>
         </columns>
@@ -2206,11 +2196,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Dialer_Priority__c</field>
-            <table>User.Account$OwnerId</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>OLD_Client_Service_Rep__c</field>
             <table>User.Account$OwnerId</table>
         </columns>
         <columns>

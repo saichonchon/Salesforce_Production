@@ -106,7 +106,7 @@
         <criteriaItems>
             <column>Opportunity$PurchaseDate__c</column>
             <operator>equals</operator>
-            <value>THIS_YEAR</value>
+            <value>THIS_MONTH</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity$RecordType</column>

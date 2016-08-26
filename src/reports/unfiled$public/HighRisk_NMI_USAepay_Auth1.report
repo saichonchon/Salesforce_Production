@@ -4,10 +4,13 @@
         <field>Opportunity.StoreURL__c</field>
     </columns>
     <columns>
-        <field>Opportunity.Strategic_Partner__c</field>
+        <field>CAMPAIGN_SOURCE</field>
     </columns>
     <columns>
-        <field>STAGE_NAME</field>
+        <field>Opportunity.TrailingGMVCount__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Strategic_Partner__c</field>
     </columns>
     <columns>
         <field>ADDRESS1_COUNTRY</field>
@@ -16,13 +19,7 @@
         <field>Opportunity.Product__c</field>
     </columns>
     <columns>
-        <field>Opportunity.TrailingGMVCount__c</field>
-    </columns>
-    <columns>
         <field>HASOPPLINEITEM</field>
-    </columns>
-    <columns>
-        <field>FULL_NAME</field>
     </columns>
     <columns>
         <field>OPPORTUNITY_NAME</field>
@@ -58,15 +55,20 @@
             <value>Opportunity.SBD_Upsell</value>
         </criteriaItems>
         <criteriaItems>
-            <column>CAMPAIGN_SOURCE</column>
-            <operator>startsWith</operator>
-            <value>Highrisk</value>
+            <column>Opportunity.Primary_Campaign_Name__c</column>
+            <operator>contains</operator>
+            <value>NMI</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>CAMPAIGN_SOURCE</field>
+        <field>FULL_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>STAGE_NAME</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>HighRisk: NMI,USAepay &amp; Auth</name>
@@ -87,6 +89,6 @@
     <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>
-        <interval>INTERVAL_LAST90</interval>
+        <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>
