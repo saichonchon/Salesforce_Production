@@ -1655,6 +1655,10 @@ MBASubscriptionID__c,null)</formula>
                 <default>false</default>
                 <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
+            <picklistValues>
+                <fullName>Self-Serve</fullName>
+                <default>false</default>
+            </picklistValues>
             <sorted>false</sorted>
         </picklist>
         <trackFeedHistory>false</trackFeedHistory>
@@ -19126,6 +19130,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
+                <fullName>Self-Serve</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Test Account</fullName>
                 <default>false</default>
             </values>
@@ -24698,6 +24706,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
+                <fullName>Self-Serve</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Test Account</fullName>
                 <default>false</default>
             </values>
@@ -27587,6 +27599,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
             <values>
                 <fullName>SQL Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Serve</fullName>
                 <default>false</default>
             </values>
             <values>

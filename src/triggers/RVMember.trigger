@@ -39,13 +39,9 @@ trigger RVMember on rvpe__RVMember__c (before insert, after insert, after update
         ///////////////////////////////////////////////////////////////////////////
         // Build map for Syncing
         ///////////////////////////////////////////////////////////////////////////
-        string soqlWHERE_rvIds = '';
             
-        // Set to hold RV Member Ids
-        set<Integer> stRVMemId = new set<Integer>();
-
-        // Map to hold existing Subscription Records by MBA Subscription Id
-        map<Integer, Contact> mpCon = new map<Integer, Contact>();
+        // Map to hold RV Member Id to the existing contact
+        map<Id, Contact> mapRVMemberIdToContact = new map<Id, Contact>();
         
         // Map to hold the Staging Record to the Existing Record
         map<SObject, SObject> mpStagingToExisting = new map<SObject, SObject>();
@@ -54,58 +50,52 @@ trigger RVMember on rvpe__RVMember__c (before insert, after insert, after update
         // First try and match to existing Subscriptions
         ///////////////////////////////////////////////////////////////////////////
         //  Query the Fields of RV Member.
+
+        string soqlWHERE_rvIds = '';
+        string soqlComma = '';
+
         for (rvpe__RVMember__c rvm : trigger.new)
         {
             // Grab all the Ids
-            
-    //            stRVMemId.add(rvm.rvpe__ExtMemberId__c.intValue());
-            if (stRVMemId.add(rvm.rvpe__ExtMemberId__c.intValue()))
-            {
-                soqlWHERE_rvIds +=  (soqlWHERE_rvIds.length() == 0 ? '' : ',') + rvm.rvpe__ExtMemberId__c.intValue();
-            } 
-            
+            soqlWHERE_rvIds += soqlComma + '\'' + rvm.Id + '\'';
+            soqlComma = ',';
         }
-        System.Debug('test '+stRVMemId);
-        System.Debug('soqlWHERE_rvIds '+soqlWHERE_rvIds );
         // Build the SOQL to query for existing contacts using the custom setting to retrieve all needed fields  
-    
-        string soql_Con = SObjectUtils.ContactRVStagingSelect + ' WHERE RVMemberId__c <> null and RVMemberId__c IN (' +soqlWHERE_rvIds +')';
-         System.Debug(' soql '+soql_Con);
+
+        // create a map using the RV Member ID as the key and the contact record as the data
+        string soql_Con = SObjectUtils.ContactRVStagingSelect + ' WHERE RV_Member__c IN (' +soqlWHERE_rvIds +')';
+        System.Debug(' soql '+soql_Con);
                 
         // Grab all the contacts that match the rv member id
-        for (Contact c : database.query(soql_Con))
+        for (Contact rvContact : database.query(soql_Con))
         {
-            mpCon.put(c.RVMemberID__c.intValue(), c);
+            mapRVMemberIdToContact.put(rvContact.RV_Member__c, rvContact);
         }
         
-        Contact con;
-    
         // Find all the members being inserted/updated
+        Contact con;
         for (rvpe__RVMember__c rvm : trigger.new)
         {
             // Check if a contact record exists already
-            if (mpcon.containsKey(rvm.rvpe__ExtMemberId__c.intValue()))
+            if (mapRVMemberIdToContact.containsKey(rvm.ID))
             {
-                con = mpcon.get(rvm.rvpe__ExtMemberId__c.intValue());
+                con = mapRVMemberIdToContact.get(rvm.Id);
                  
                 // Add to the map of the staging record to the existing contact
                 mpStagingToExisting.put(rvm, con);
-                
-                
             }
             // contact does not already exist so it is a new record
             else
             {
                 // Create a new contact record
                 con = new contact();
+                con.RV_Member__c = rvm.Id;
                 con.AccountId = Label.RV_Partner_Account;
-                con.RVAccountName__c = rvm.RVAccountName__c;
+                con.RV_Account__c = rvm.rvpe__RVAccount__c;
                 con.Type__c ='Partner RV Member';
-                con.RVMemberID__c = rvm.rvpe__ExtMemberId__c;
                 
                 // Add to the map of the staging record to the existing contact
                 mpStagingToExisting.put(rvm, con);
-               
             }
         } 
         

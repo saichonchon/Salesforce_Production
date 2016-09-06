@@ -187,6 +187,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Previous_Owner_Team__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Price_Change_Reason__c</field>
             <table>Opportunity.Oppotunity_Products__r</table>
         </columns>

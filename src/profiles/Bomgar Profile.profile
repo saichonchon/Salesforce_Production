@@ -8393,11 +8393,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Lead.Primary_MBA_Contact__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Lead.Product_Detail__c</field>
         <readable>false</readable>
     </fieldPermissions>

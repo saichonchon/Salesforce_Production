@@ -76,6 +76,6 @@
     <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>DUE_DATE</dateColumn>
-        <interval>INTERVAL_LASTWEEK</interval>
+        <interval>INTERVAL_YESTERDAY</interval>
     </timeFrameFilter>
 </Report>

@@ -303,7 +303,7 @@ global without sharing class SObjectUtils
     {
         get
         {
-            return BuildSelectFromStagingToTableMapping ('Contact', true, new string[]{'RVMemberId__c'  , 'OwnerId'});
+            return BuildSelectFromStagingToTableMapping ('Contact', true, new string[]{'RV_Member__c', 'RV_Account__c', 'OwnerId'});
         }
     }
     public static string MonthNameFromVal (integer val)

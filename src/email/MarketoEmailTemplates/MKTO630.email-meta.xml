@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Post Trial Winback.ACQ - Email 5: Run Your Business Efficiently</name>
+    <style>none</style>
+    <subject>We make running your business easy</subject>
+    <textOnly>Learn how BigCommerce app partners save time, money and increase efficiency
+Run your business more efficiently
+CHECK OUT APPS &lt;[[https://www.bigcommerce.com/apps/]]&gt;
+Best of breed technology and partner integrations
+
+
+BigCommerce provides an open, feature-rich architecture that is complemented by seamless integrations with the industry’s top providers.  Whether your business is just getting started or an advanced Enterprise, we have developed partnerships with the best companies and tools that will help save time, money and increase operational efficiency.
+
+
+
+
+ - Built-in integrations with leading shipment and logistics companies provide flexibility and choice
+
+
+
+ - Anticipate fraudulent transactions with Sift Science
+
+
+
+ - Pre-negotiated rates with leading payments solutions, including PayPal powered by Braintree, Square, Stripe and WorldPay, with no penalties or additional fees
+
+
+ - Real-time, automated sync with Quickbooks Online for streamlined bookkeeping
+
+
+
+
+
+
+Check out apps in our marketplace » &lt;[[https://www.bigcommerce.com/features/apps-and-integrations/]]&gt;
+{{my.Litmus Test 5:default=editme}}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

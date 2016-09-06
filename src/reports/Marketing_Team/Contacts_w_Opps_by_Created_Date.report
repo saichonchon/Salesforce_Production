@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunities__r$Name</field>
+    </columns>
+    <crossFilters>
+        <criteriaItems>
+            <column>Product__c</column>
+            <operator>contains</operator>
+            <value>trial</value>
+        </criteriaItems>
+        <operation>with</operation>
+        <primaryTableColumn>Contact.Opportunities__r$Id</primaryTableColumn>
+        <relatedTable>Opportunity_Product__c</relatedTable>
+        <relatedTableJoinColumn>OpportunityID__c</relatedTableJoinColumn>
+    </crossFilters>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.Opportunities__r$CreatedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.Opportunities__r$Owner_Team__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Contacts w/Opps by Created Date</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_with_Opportunities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact.Opportunities__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_THISWEEK</interval>
+    </timeFrameFilter>
+</Report>

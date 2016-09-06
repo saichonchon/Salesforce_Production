@@ -60,7 +60,7 @@
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <timeFrameFilter>
-        <dateColumn>CLOSE_DATE</dateColumn>
-        <interval>INTERVAL_CUSTOM</interval>
+        <dateColumn>LAST_UPDATE</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
     </timeFrameFilter>
 </Report>

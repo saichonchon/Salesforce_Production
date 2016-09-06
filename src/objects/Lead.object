@@ -3321,16 +3321,6 @@ IF(FIND(MID(Id,11,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,1,0)
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Primary_MBA_Contact__c</fullName>
-        <defaultValue>false</defaultValue>
-        <description>mapped to MBA staging table to designate original contact on an MBA account/user</description>
-        <externalId>false</externalId>
-        <label>zPrimary MBA Contact</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>Product_Detail__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Detail on Product Closed Lost Reason</inlineHelpText>

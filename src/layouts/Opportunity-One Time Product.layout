@@ -428,6 +428,10 @@
                 <behavior>Readonly</behavior>
                 <field>Direct_Dialer_Eligible__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Subscription_Mismatch__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -445,6 +449,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Probability</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Account_Mismatch__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>

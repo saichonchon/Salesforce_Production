@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Post Paid.CUS - Email 06 (Day 10)- Taxes</name>
+    <style>none</style>
+    <subject>Configure your taxes</subject>
+    <textOnly>It is easy to get started with your taxes. Automated tax is available for U.S. sales, which calculates tax at checkout using the most up-to-date rates.
+Customize your tax requirements
+
+
+
+
+
+
+
+Update your settings &lt;[[https://login.bigcommerce.com/deep-links/tax?utm_medium=eml&amp;utm_source=post-paid&amp;utm_campaign=email6&amp;utm_term=&amp;utm_content=taxes]]&gt;
+Configure your tax settings to fit your business
+Automated tax is available for U.S. sales, which calculates tax at checkout using the most up-to-date rates. Manual settings are available for exemptions, excise tax and other special requirements.  
+Want more information on how taxes work? Refer to our Tax Overview &lt;[[https://support.bigcommerce.com/articles/Public/Tax-Overview?utm_medium=eml&amp;utm_source=post-paid&amp;utm_campaign=email6&amp;utm_term=&amp;utm_content=taxes]]&gt;.
+Manage your taxes using Avalara
+Our built-in integration with Avalara AvaTax &lt;[[https://support.bigcommerce.com/articles/Public/Configuring-Tax-Automatically?utm_medium=eml&amp;utm_source=post-paid&amp;utm_campaign=email6&amp;utm_term=&amp;utm_content=taxes]]&gt; lets you instantly and accurately calculate US sales tax for your customers at checkout.
+
+Avalara uses hundreds of thousands of taxability rules and the latest tax jurisdiction boundaries to assign the right rates. So even if you sell products with special tax needs, you can be sure that you’re maintaining tax compliance and accurately charging your customers.
+
+BigCommerce chose Avalara to power our automatic tax calculation because they’re the leader in sales tax calculation, and are already used by thousands of merchants around the world.
+{{my.Litmus Test 6:default=editme}}
+Update your settings &lt;[[https://login.bigcommerce.com/deep-links/tax?utm_medium=eml&amp;utm_source=post-paid&amp;utm_campaign=email6&amp;utm_term=&amp;utm_content=taxes]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -42,6 +42,11 @@
     </folderShares>
     <folderShares>
         <accessLevel>View</accessLevel>
+        <sharedTo>Head_of_Sales</sharedTo>
+        <sharedToType>RoleAndSubordinates</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
         <sharedTo>Managers</sharedTo>
         <sharedToType>Group</sharedToType>
     </folderShares>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Post Trial Winback.ACQ - Email 6: The Best ROI</name>
+    <style>none</style>
+    <subject>See why we are the best value in ecommerce</subject>
+    <textOnly>Why BigCommerce is the best ROI of any ecommerce platform
+Get the best ROI of any ecommerce platform
+COMPARE COSTS &lt;[[https://login.bigcommerce.com/login]]&gt;
+Less time to build, launch and maintain
+
+
+BigCommerce offers the best return on investment of any ecommerce platform. Everything you need to grow your business is included: a beautiful online store, secure hosting with world-class site performance and uptime, hundreds of marketing and conversion tools, and much more.  Plus, BigCommerce is 25% of the cost of on-premise solutions and takes 1/2 the time to set up. Spend more time to  growing sales and less time managing technology.  
+ 
+ Compare platforms »
+ 
+ 
+
+{{my.Litmus Test 6:default=editme}}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

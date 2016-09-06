@@ -8,7 +8,11 @@
     <leftSection>
         <columnSize>Wide</columnSize>
         <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
+                <column>FORMULA8</column>
+            </chartSummary>
             <componentType>Gauge</componentType>
             <displayUnits>Integer</displayUnits>
             <footer>No Orion</footer>
@@ -19,7 +23,7 @@
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>unfiled$public/SMB_MTD_MRR1</report>
+            <report>Sales_Small_Business/SMB_MTD_Sales</report>
             <showPercentage>true</showPercentage>
             <showTotal>true</showTotal>
             <showValues>false</showValues>
@@ -40,7 +44,7 @@
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>unfiled$public/SMB_SA_MTD_MRR</report>
+            <report>Sales_Small_Business/SMB_SA_MTD_Sales</report>
             <showPercentage>true</showPercentage>
             <showTotal>true</showTotal>
             <showValues>false</showValues>
@@ -61,7 +65,7 @@
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>unfiled$public/SMB_SS_MTD_MRR</report>
+            <report>Sales_Small_Business/SMB_SS_MTD_Sales</report>
             <showPercentage>false</showPercentage>
             <showTotal>true</showTotal>
             <showValues>false</showValues>
@@ -171,7 +175,7 @@
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>unfiled$public/SMB_MTD_MRR1</report>
+            <report>Sales_Small_Business/SMB_MTD_Sales</report>
             <showPercentage>true</showPercentage>
             <showTotal>true</showTotal>
             <showValues>false</showValues>
@@ -192,7 +196,7 @@
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>unfiled$public/SMB_SA_MTD_MRR</report>
+            <report>Sales_Small_Business/SMB_SA_MTD_Sales</report>
             <showPercentage>true</showPercentage>
             <showTotal>true</showTotal>
             <showValues>false</showValues>
@@ -213,7 +217,7 @@
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>unfiled$public/SMB_SS_MTD_MRR</report>
+            <report>Sales_Small_Business/SMB_SS_MTD_Sales</report>
             <showPercentage>true</showPercentage>
             <showTotal>true</showTotal>
             <showValues>false</showValues>
@@ -289,7 +293,7 @@
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>unfiled$public/SMB_MTD_MRR1</report>
+            <report>Sales_Small_Business/SMB_MTD_Sales</report>
             <showPercentage>true</showPercentage>
             <showTotal>true</showTotal>
             <showValues>false</showValues>
@@ -310,7 +314,7 @@
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>unfiled$public/SMB_SA_MTD_MRR</report>
+            <report>Sales_Small_Business/SMB_SA_MTD_Sales</report>
             <showPercentage>true</showPercentage>
             <showTotal>true</showTotal>
             <showValues>false</showValues>
@@ -331,7 +335,7 @@
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>unfiled$public/SMB_SS_MTD_MRR</report>
+            <report>Sales_Small_Business/SMB_SS_MTD_Sales</report>
             <showPercentage>true</showPercentage>
             <showTotal>true</showTotal>
             <showValues>false</showValues>

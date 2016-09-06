@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Post Paid.CUS - Email 07 (Day 14)- Not Launched</name>
+    <style>none</style>
+    <subject>Need help launching your store?</subject>
+    <textOnly>It looks like you haven&apos;t launched your store yet. Here are a few Bigcommerce resources to help.
+We’re here to help
+
+
+
+
+
+
+
+Launch your store &lt;[[https://login.bigcommerce.com/login?utm_medium=eml&amp;utm_source=post-paid&amp;utm_campaign=email7&amp;utm_term=&amp;utm_content=not-launched]]&gt;
+Get help launching your store
+It looks like you haven’t launched your store yet. Here are a few BigCommerce resources that can help.
+Contact Support
+Merchants who have spoken with our experts have improved search traffic by 32% and increased revenue by 47% on average. Email support &lt;[[https://support.bigcommerce.com/contact?utm_medium=eml&amp;utm_source=post-paid&amp;utm_campaign=email7&amp;utm_term=&amp;utm_content=not-launched]]&gt; to get help launching and growing your business. 
+Check out our Support Portal
+Find how-to articles, videos, guides and troubleshooting &lt;[[https://support.bigcommerce.com?utm_medium=eml&amp;utm_source=post-paid&amp;utm_campaign=email7&amp;utm_term=&amp;utm_content=not-launched]]&gt; resources in our support portal.
+Leverage design or development experts
+Our global network of certified partners can help you set up and customize your online store. Find design or development experts &lt;[[https://www.bigcommerce.com/experts/?utm_medium=eml&amp;utm_source=post-paid&amp;utm_campaign=email7&amp;utm_term=&amp;utm_content=not-launched]]&gt; now. 
+Read the BigCommerce Store Launch Guide
+Inside the Store Launch Guide &lt;[[https://support.bigcommerce.com/articles/Learning/Store-Launch-Guide?utm_medium=eml&amp;utm_source=post-paid&amp;utm_campaign=email7&amp;utm_term=&amp;utm_content=not-launched]]&gt;, you will find all the steps to set up your store on the Bigcommerce platform.
+{{my.Litmus Test 7:default=editme}}
+Launch your store &lt;[[https://login.bigcommerce.com/login?utm_medium=eml&amp;utm_source=post-paid&amp;utm_campaign=email7&amp;utm_term=&amp;utm_content=not-launched]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

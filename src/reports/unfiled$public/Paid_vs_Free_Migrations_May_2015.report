@@ -16,8 +16,15 @@
         <values>
             <sourceValues>
                 <from>0</from>
+                <to>326</to>
             </sourceValues>
-            <value>Paid</value>
+            <value>Paid Standard</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>326</from>
+            </sourceValues>
+            <value>Paid Custom</value>
         </values>
     </buckets>
     <buckets>
@@ -61,9 +68,6 @@
     </columns>
     <columns>
         <field>ACCOUNT_NAME</field>
-    </columns>
-    <columns>
-        <field>Account.MaxSub_PurchaseDate__c</field>
     </columns>
     <columns>
         <field>OPPORTUNITY_NAME</field>
@@ -116,6 +120,6 @@
     <timeFrameFilter>
         <dateColumn>CLOSE_DATE</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2015-05-01</startDate>
+        <startDate>2015-08-01</startDate>
     </timeFrameFilter>
 </Report>

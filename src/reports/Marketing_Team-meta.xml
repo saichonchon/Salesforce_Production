@@ -6,14 +6,19 @@
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>
+        <accessLevel>EditAllContents</accessLevel>
+        <sharedTo>liz.ivey@bigcommerce.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
         <accessLevel>View</accessLevel>
         <sharedTo>malcolm.holmes@bigcommerce.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>
-        <accessLevel>Manage</accessLevel>
-        <sharedTo>maria.huemmer@bigcommerce.com</sharedTo>
-        <sharedToType>User</sharedToType>
+        <accessLevel>View</accessLevel>
+        <sharedTo>Head_of_Sales</sharedTo>
+        <sharedToType>RoleAndSubordinates</sharedToType>
     </folderShares>
     <folderShares>
         <accessLevel>View</accessLevel>
