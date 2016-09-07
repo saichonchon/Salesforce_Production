@@ -90,6 +90,12 @@
     <siteRedirectMappings>
         <action>Permanent</action>
         <isActive>true</isActive>
+        <source>/articles/Public/Adding-a-Product-Bulk-Pricing</source>
+        <target>/articles/Public/How-do-I-create-bulk-discount-pricing-for-my-products</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
         <source>/articles/Public/Adding-the-Add-to-Cart-Button-Back-to-Your-Store</source>
         <target>/articles/Public/troubleshooting-add-to-cart-button-missing</target>
     </siteRedirectMappings>
@@ -416,6 +422,12 @@
         <isActive>true</isActive>
         <source>/articles/Public/Removing-Search-Suggestions-on-Free-Bigcommerce-Themes</source>
         <target>/articles/Public/Disabling-Search-Suggestions</target>
+    </siteRedirectMappings>
+    <siteRedirectMappings>
+        <action>Permanent</action>
+        <isActive>true</isActive>
+        <source>/articles/Public/Renewing-a-BigCommerce-SSL-Certificate</source>
+        <target>/articles/Public/Renewing-a-Bigcommerce-SSL-Certificate</target>
     </siteRedirectMappings>
     <siteRedirectMappings>
         <action>Permanent</action>

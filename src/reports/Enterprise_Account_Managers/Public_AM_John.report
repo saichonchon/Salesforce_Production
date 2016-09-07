@@ -54,6 +54,9 @@
         <field>Opportunity.Industry__c</field>
     </columns>
     <columns>
+        <field>INDUSTRY</field>
+    </columns>
+    <columns>
         <field>Opportunity.Existing_contract__c</field>
     </columns>
     <columns>
