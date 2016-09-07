@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_12832213</developerName>
+        <masterLabel>Bucketed Status</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Account.Subscriptions__r.Cases__r$Status</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Active</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>In Progress</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Migration in Progress</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Client Responded</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Waiting on Client</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Awaiting Review</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Assigned</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Valid Credentials</sourceValue>
+            </sourceValues>
+            <value>Open (WIP)</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Verification</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Awaiting Verification</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Waiting on Client</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Awaiting Launch</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Awaiting Re-Verification</sourceValue>
+            </sourceValues>
+            <value>Awaiting Verification</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Completed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Completed by Billing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Completed by Billing &amp; Ops</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Completed by Ops</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed</sourceValue>
+            </sourceValues>
+            <value>Closed</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Scoping</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>V2 Error</sourceValue>
+            </sourceValues>
+            <value>Blocked</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Withdrawn</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cancelled</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Request Declined</sourceValue>
+            </sourceValues>
+            <value>Cancelled</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Review - Escalated</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Review</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UAT Review</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise UAT</sourceValue>
+            </sourceValues>
+            <value>Review</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>VE QA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VE In Progress</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VE Assigned</sourceValue>
+            </sourceValues>
+            <value>VE</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Awaiting Requirements</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Requirements Review</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Requested Credentials</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Invalid Credentials</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Re-Requested Credentials</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>No Credentials</sourceValue>
+            </sourceValues>
+            <value>Awaiting Credentials</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>New</sourceValue>
+            </sourceValues>
+            <value>New</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Received Credentials</sourceValue>
+            </sourceValues>
+            <value>Received Credentials</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Requires Rerun</sourceValue>
+            </sourceValues>
+            <value>Requires Rerun</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Account.Subscriptions__r.Cases__r$Status</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Tiny</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Account.Subscriptions__r.Cases__r$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$StoreURL__c</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$Email__c</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$New_Product_Plan__c</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r.Cases__r$SBD_Referral_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r.Cases__r$SBD_Store_Id__c</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$Requested_Migration__c</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r$Requested_Migration_At__c</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r.Cases__r$RecordType</field>
+    </columns>
+    <columns>
+        <field>Account.Subscriptions__r.Cases__r$Id</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Subscriptions__r.Cases__r$RecordType</column>
+            <operator>equals</operator>
+            <value>Case.Migration</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BucketField_12832213</column>
+            <operator>equals</operator>
+            <value>Requires Rerun</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Subscriptions__r.Cases__r$Status</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Week</dateGranularity>
+        <field>Account.Subscriptions__r.Cases__r$CreatedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>CTS Requires Rerun</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Subscriptions_and_Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account.Subscriptions__r.Cases__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

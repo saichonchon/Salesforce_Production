@@ -1,44 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
-        <field>FK_$Subscription__c.Purchase_Rep__c</field>
-    </columns>
-    <columns>
         <aggregateTypes>Sum</aggregateTypes>
         <field>Case.Refund_Credit_Amount__c</field>
-    </columns>
-    <columns>
-        <field>CREATED</field>
-    </columns>
-    <columns>
-        <field>Case.Requesting_Department__c</field>
-    </columns>
-    <columns>
-        <field>CREATED_DATE</field>
     </columns>
     <columns>
         <field>REASON</field>
     </columns>
     <columns>
-        <field>FK_$Subscription__c.Product__c</field>
-    </columns>
-    <columns>
-        <field>FK_NAME</field>
-    </columns>
-    <columns>
-        <field>Case.Bigcommerce_Store_URL__c</field>
-    </columns>
-    <columns>
-        <field>Account.Client_Start_Date__c</field>
-    </columns>
-    <columns>
         <field>OWNER</field>
     </columns>
     <columns>
-        <field>STATUS</field>
+        <field>Case.Requesting_Department__c</field>
     </columns>
     <columns>
-        <field>Case.Jira_Link__c</field>
+        <field>CREATED</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -77,7 +53,7 @@
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>CaseList@Case.Subscription__c</reportType>
+    <reportType>CaseList</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <timeFrameFilter>

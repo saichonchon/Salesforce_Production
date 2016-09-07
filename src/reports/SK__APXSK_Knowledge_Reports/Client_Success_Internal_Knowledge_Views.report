@@ -120,8 +120,6 @@
     <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>KnowledgeViewEventHistory$AsOfDate</dateColumn>
-        <endDate>2015-08-08</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2014-10-01</startDate>
+        <interval>INTERVAL_LAST60</interval>
     </timeFrameFilter>
 </Report>

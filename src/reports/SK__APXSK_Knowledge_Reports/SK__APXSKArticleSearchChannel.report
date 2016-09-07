@@ -32,17 +32,26 @@
         <aggregateTypes>Sum</aggregateTypes>
         <field>KnowledgeSearchEventHistory$DeltaCount</field>
     </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>KnowledgeSearchEventHistory$CumulativeCount</field>
+    </columns>
     <description>How many searches have been performed per channel during the last 30 days?</description>
     <filter>
         <criteriaItems>
+            <column>KnowledgeSearchEventHistory$Channel</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
             <column>KnowledgeSearchEventHistory$Duration</column>
             <operator>equals</operator>
-            <value>D</value>
+            <value>M</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>
-        <dateGranularity>Week</dateGranularity>
+        <dateGranularity>Month</dateGranularity>
         <field>KnowledgeSearchEventHistory$AsOfDate</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
@@ -66,6 +75,6 @@
     <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>KnowledgeSearchEventHistory$AsOfDate</dateColumn>
-        <interval>INTERVAL_LAST30</interval>
+        <interval>INTERVAL_CURY</interval>
     </timeFrameFilter>
 </Report>

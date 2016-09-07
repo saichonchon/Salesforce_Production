@@ -22,34 +22,47 @@ public without sharing class ChangeOwnerController
         if (objId != null)
         {
            
-	        objAccount =[select Id, Name, OwnerId from Account where Id = :objId];
+	        objAccount =[select Id, Name, OwnerId, Owner.IsActive from Account where Id = :objId];
          
-            if (objAccount.OwnerId <> Label.Account_Default_Owner)
+            boolean AccountCanBeReassigned = false;
+            if (!objAccount.Owner.IsActive)
             {
-            	
-            	ApexPages.Message myMsg = new ApexPages.Message(ApexPages.Severity.Error, 'Unable to change the owner ....Please contact your manager');
+                // anything owned by an inactive user/queue can be reassigned
+                AccountCanBeReassigned = true;
+            }
+            else if (objAccount.OwnerId == Label.Lead_Default_Owner)
+            {
+                // anything owned by the bigcommerce default owner can be reassigned
+                AccountCanBeReassigned = true;
+            }
+
+            if (AccountCanBeReassigned)
+            {
+                // let the current user claim the record
+                objAccount.OwnerId= USERID;
+
+                try
+                {
+                    update objAccount;
+
+                }
+                catch(Exception exc)
+                {
+                    ApexPages.Message myMsg = new ApexPages.Message(ApexPages.Severity.Error, 'An error occurred trying to change the owner ....Please contact your support');
+                    ApexPages.addMessage(myMsg);
+                    system.debug('***ERROR: ChangeOwnerController:changeOwner: ' + exc.getStackTraceString());
+                    return null;
+                }
+            }
+            else
+            {
+                ApexPages.Message myMsg = new ApexPages.Message(ApexPages.Severity.Error, 'Unable to change the owner ....Please contact your manager');
                 ApexPages.addMessage(myMsg);
                 return null;
             }
-            
-            objAccount.OwnerId= USERID;
-            List<Account> stAccountIds = new List<Account>();
-            stAccountIds.add(objAccount);
-
-            try
-            {
-                update stAccountIds;
-
-            }
-            catch(Exception exc)
-            {
-                ApexPages.Message myMsg = new ApexPages.Message(ApexPages.Severity.Error, 'An error occurred trying to change the owner ....Please contact your support');
-                ApexPages.addMessage(myMsg);
-                system.debug('***ERROR: ChangeOwnerController:changeOwner: ' + exc.getStackTraceString());
-            }
         }
         
-        
+        // return the user back to the account
         return new PageReference('/' + objId);
         
     }
@@ -77,36 +90,51 @@ public without sharing class ChangeOwnerController
         if (objId != null)
         {
            
-	        objLead =[select Id, Name, OwnerId from Lead where Id = :objId];
-         
-            if (objLead.OwnerId <> Label.Lead_Default_Owner)
+	        objLead =[select Id, Name, OwnerId, Owner.Type, Owner.IsActive from Lead where Id = :objId];
+
+            boolean LeadCanBeReassigned = false;
+            if (!objLead.Owner.IsActive)
             {
-            	
-            	ApexPages.Message myMsg = new ApexPages.Message(ApexPages.Severity.Error, 'Unable to change the owner ....Please contact your manager');
+                // anything owned by an inactive user/queue can be reassigned
+                LeadCanBeReassigned = true;
+            }
+            else if (objLead.OwnerId == Label.Lead_Default_Owner)
+            {
+                // anything owned by the bigcommerce default owner can be reassigned
+                LeadCanBeReassigned = true;
+            }
+            else if (objLead.Owner.Type == 'Queue')
+            {
+                // anything owned by a queue
+                LeadCanBeReassigned = true;
+            }
+         
+            if (LeadCanBeReassigned)
+            {
+                // let the current user claim the record
+                objLead.OwnerId= USERID;
+                try
+                {
+                    update objLead;
+
+                }
+                catch(Exception exc)
+                {
+                    ApexPages.Message myMsg = new ApexPages.Message(ApexPages.Severity.Error, 'An error occurred trying to change the owner ....Please contact your support');
+                    ApexPages.addMessage(myMsg);
+                    system.debug('***ERROR: ChangeOwnerController:changeLeadOwner : ' + exc.getStackTraceString());
+                    return null;
+                }
+            }
+            else
+            {
+                ApexPages.Message myMsg = new ApexPages.Message(ApexPages.Severity.Error, 'Unable to change the owner ....Please contact your manager');
                 ApexPages.addMessage(myMsg);
                 return null;
             }
-            
-            objLead.OwnerId= USERID;
-            List<Lead> stLeadIds = new List<Lead>();
-            stLeadIds.add(objLead);
-            
-
-            try
-            {
-                update stLeadIds;
-
-            }
-            catch(Exception exc)
-            {
-                ApexPages.Message myMsg = new ApexPages.Message(ApexPages.Severity.Error, 'An error occurred trying to change the owner ....Please contact your support');
-                ApexPages.addMessage(myMsg);
-                system.debug('***ERROR: ChangeOwnerController:changeLeadOwner : ' + exc.getStackTraceString());
-            }
         }
         
-        
+        // return the user to the lead        
         return new PageReference('/' + objId);
-        
     }
 }

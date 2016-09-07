@@ -7,11 +7,6 @@
     </folderShares>
     <folderShares>
         <accessLevel>View</accessLevel>
-        <sharedTo>Acquisition_Leader</sharedTo>
-        <sharedToType>Role</sharedToType>
-    </folderShares>
-    <folderShares>
-        <accessLevel>View</accessLevel>
         <sharedTo>Executive</sharedTo>
         <sharedToType>Role</sharedToType>
     </folderShares>
@@ -33,6 +28,11 @@
     <folderShares>
         <accessLevel>View</accessLevel>
         <sharedTo>VP_of_Client_Success</sharedTo>
+        <sharedToType>Role</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>Acquisition_Leader</sharedTo>
         <sharedToType>Role</sharedToType>
     </folderShares>
     <name>Sales Transformation</name>

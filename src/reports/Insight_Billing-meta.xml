@@ -37,17 +37,17 @@
     </folderShares>
     <folderShares>
         <accessLevel>View</accessLevel>
+        <sharedTo>VP_of_Sales</sharedTo>
+        <sharedToType>Role</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
         <sharedTo>Strategic_Business_Development</sharedTo>
         <sharedToType>Role</sharedToType>
     </folderShares>
     <folderShares>
         <accessLevel>View</accessLevel>
         <sharedTo>VP_of_Client_Success</sharedTo>
-        <sharedToType>Role</sharedToType>
-    </folderShares>
-    <folderShares>
-        <accessLevel>View</accessLevel>
-        <sharedTo>VP_of_Sales</sharedTo>
         <sharedToType>Role</sharedToType>
     </folderShares>
     <name>Insight Billing</name>

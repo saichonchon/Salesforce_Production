@@ -2,9 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
-    <description>LDR</description>
+    <description>SDR</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>LDR</name>
+    <name>Sales Development Rep</name>
     <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Outbound_II_Leader</parentRole>
 </Role>

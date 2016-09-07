@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Responsive Email Template</title>
+
+<style type="text/css">
+        *{color:#4C4B58; font-family:'Source Sans Pro', Helvetica, Arial, sans-serif;}
+        body {border:none !important;}
+        h2{font-size:32px;font-weight:normal;line-height:32px;color:#34313f;}
+        h3{font-size:20px;font-weight:normal;line-height:26px;color:#34313f;}
+        p {font-size:15px;font-weight:300;letter-spacing:0.1px;line-height:26px;color:#34313f;font-weight:300;}
+        a{text-decoration:none;color:#4B71FC;font-size:15px;font-weight:500;}
+        a:hover{color:#3F5CD6;}
+        .applelinks a {
+        color: #777777 !important;
+        font-weight: 300;
+        text-decoration: none;
+        }
+        .deviceWidth.twoColumn { width: 48%;}
+        .ReadMsgBody {width: 100%; background-color: #ffffff;}
+        .ExternalClass {width: 100%; background-color: #ffffff;}
+        body {width: 100%; background-color: #ffffff; margin:0; padding:0;font-family: 'Source Sans Pro', sans-serif;color: #34313F ;font-weight:300;}
+        table {border-collapse: collapse;}
+        @media only screen and (max-width: 640px)  {
+        body[yahoo] .deviceWidth {width:100% !important;padding:0;}
+        body[yahoo] .center {text-align: center!important;}
+        }
+        @media only screen and (max-width: 479px) {
+        body[yahoo] .deviceWidth {width:100% !important;padding:0;}
+        body[yahoo] .center {text-align: center!important;}
+        .deviceWidth.twoColumn { width: 100% !important;}
+        }
+</style>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" yahoo="fix" style="font-family:'Source Sans Pro', Helvetica, Arial, sans-serif; background:#54656D; " ><!-- Outlook Font Fix -->
+<!--[if mso]>
+        <style type="text/css">
+        body, table, td {font-family: Helvetica, Arial, sans-serif !important;}
+        </style>
+        <![endif]-->
+<!-- Preview text (text which appears right after subject) -->
+<div class="mktEditable" id="preview-text" style="display:none; color:#ffffff; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; " >Learn about our new Channel Manager, new themes and editing features, and advanced shipping</div>
+<!-- Wrapper -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="background:#ffffff; color:#4C4B58; " ><tr ><td ><table width="800" border="0" cellpadding="0" cellspacing="0" align="center" class="deviceWidth" bgcolor="#F7F7F7" style="margin:0 auto; " ><tr ><td ><table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="deviceWidth" style="margin:0 auto; " ><tr ><td width="800" bgcolor="#F7F7F7" style="padding-top:30px; " ><!-- Logo -->
+<table border="0" cellpadding="0" cellspacing="0" align="left" class="deviceWidth">
+<tr>
+<td class="center"><a href="http://www.bigcommerce.com"><img src="http://grow.bigcommerce.com/rs/695-JJT-333/images/BigCommerce_logo_dark.png" alt="BigCommerce" width="177" height="40" border="0"></a></td>
+</tr>
+</table>
+<!-- End Logo -->
+<!-- Nav -->
+<table border="0" cellpadding="0" cellspacing="0" align="right" class="deviceWidth" ><tr ><td class="center" style="font-size:14px; color:#4C4B58; font-weight:300; text-align:right; font-family:'Source Sans Pro', Helvetica, Arial, sans-serif; text-transform:uppercase; line-height:28px; vertical-align:middle; padding:10px 20px; " ><div class="mktEditable" id="Eyebrow" ><p><strong>June 2016&nbsp;</strong>&nbsp;Updates</p></div>
+</td>
+</tr>
+</table>
+<!-- End Nav --></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- Hero Image -->
+<table width="800" border="0" cellspacing="0" cellpadding="0" align="center" class="deviceWidth header" style="margin:auto; " ><tr ><td class="body" width="800" valign="top" align="center" style="background:url(http://grow.bigcommerce.com/rs/695-JJT-333/images/bg-1.jpg) no-repeat bottom center; background-size:cover; margin:auto; padding-top:20px; " ><div class="mktEditable" id="Hero-Image" ><img style="position: relative; top: 20px; max-width: 70%;" src="http://grow.bigcommerce.com/rs/695-JJT-333/images/channel-manager-control-panel.png"></div>
+</td>
+</tr>
+</table>
+<!-- End Hero Image -->
+<!-- One Column -->
+<table width="800" class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" style="margin:0 auto; " ><tr ><td ><table width="600" class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" style="margin:0 auto; " ><tr ><td style="font-size:14px; color:#4C4B58; font-weight:300; text-align:left; font-family:'Source Sans Pro', Helvetica, Arial, sans-serif; line-height:28px; vertical-align:top; padding:50px 8px 10px 8px; " bgcolor="#FFFFFF" ><table ><tr ><td valign="middle" style="padding:0 10px 10px 0; font-size:28px; line-height:38px; color:#34313f; margin:0; font-family:'Source Sans Pro', Helvetica, Arial; " ><div class="mktEditable" id="Headline" ><h2 style="margin: 0;">Introducing the BigCommerce Channel Manager</h2>
+</div>
+</td>
+</tr>
+</table>
+<div class="mktEditable" id="Description" ><p>The new BigCommerce Channel Manager makes selling on multiple channels effortless. No matter what channel a sale comes from, you can process, fulfill and track it from your BigCommerce dashboard. Channel Manager currently supports the following channels, with more coming in Q3:</p>
+<ul>
+<li>
+<div><strong>Facebook Shop:</strong> Add a Shop section to your Facebook Page and showcase your products to more than 1 billion users.&nbsp;</div>
+</li>
+<li>
+<div><strong>Pinterest Buyable Pins:</strong> Let shoppers browse, pin and buy your products without ever leaving Pinterest.</div>
+</li>
+</ul></div>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; display:inline-block; padding-bottom:15px; padding-top:5px; " ><tbody ><tr ><td valign="middle" align="center" height="40" width="225" style="color:#ffffff; background:#4b70fc; border-radius:25px; font-size:14px; font-weight:bold; height:38px; letter-spacing:1.2px; text-decoration:none; text-transform:uppercase; " ><div class="mktEditable" id="primary-cta" ><p style="margin: 0 0; color: #ffffff;"><a href="https://www.bigcommerce.com/blog/introducing-channel-manager?utm_medium=email&amp;utm_source=engagement&amp;utm_campaign=june-newsletter&amp;utm_term=&amp;utm_content=channelmanagerarticle" style="color: #ffffff; display: block; font-size: 14px; font-weight: bold; letter-spacing: 1.2px; text-decoration: none;">Get Started</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</table>
+<!-- End One Column -->
+<!-- Two Column (Images Stacked over Text) -->
+<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="deviceWidth" bgcolor="#FFFFFF" style="margin:0 auto; border-top:1px solid #C1B8B8; " ><tr ><td style="padding:10px 0 0 0px; text-align:left; vertical-align:top; " ><table width="48%" border="0" cellpadding="0" cellspacing="0" align="left" class="deviceWidth twoColumn" ><tr ><td style="font-size:12px; color:#959595; font-weight:normal; text-align:left; font-family:'Source Sans Pro', sans-serif; line-height:24px; vertical-align:top; padding:10px 8px 10px 8px; " ><table ><tr ><td valign="middle" style="padding:0 10px 10px 0; " ><div class="mktEditable" id="Block-Header-1" ><h3 style="margin-bottom: 0px;">Report: When, where, why and how Americans buy online</h3>
+</div>
+</td>
+</tr>
+</table>
+<div class="mktEditable" id="Block-Desc-1" ><p style="line-height: 24px; margin-top: 0px;">BigCommerce and Kelton Research have surveyed thousands of consumers to produce a comprehensive look at the purchasing methods and influencers of the modern buyer journey.</p>
+<p style="line-height: 24px; margin-top: 0px;"><a href="https://www.bigcommerce.com/blog/omni-channel-retail/?utm_medium=email&amp;utm_source=engagement&amp;utm_campaign=june-newsletter&amp;utm_term=&amp;utm_content=buyingonline" style="text-decoration: none; color: #4b71fc;">Read the full report</a> for valuable data that can help you build a winning multi-channel sales strategy.</p>
+</div>
+</td>
+</tr>
+</table>
+<table width="48%" border="0" cellpadding="0" cellspacing="0" align="left" class="deviceWidth twoColumn" ><tr ><td style="font-size:12px; color:#959595; font-weight:normal; text-align:left; font-family:'Source Sans Pro', sans-serif; line-height:24px; vertical-align:top; padding:10px 8px 10px 8px; " ><table ><tr ><td valign="middle" style="padding:0 10px 10px 0; " ><div class="mktEditable" id="Block-Header-2" ><h3 style="margin-bottom: 0px;">Optimize your shipping solutions&nbsp;&mdash; activate ShipperHQ</h3>
+</div>
+</td>
+</tr>
+</table>
+<div class="mktEditable" id="Block-Desc-2" ><p style="margin-top: 0px;">BigCommerce offers you access to ShipperHQ, the leading shipping rate calculation and rules engine, right from your control panel. Get fully customizable shipping rates, multi-carrier support, sophisticated shipping tools and much more. ShipperHQ is included on Enterprise plans at no extra charge. All other BigCommerce merchants will receive a 30-day free trial. <a href="https://www.bigcommerce.com/apps/shipperhq/?utm_medium=email&amp;utm_source=engagement&amp;utm_campaign=june-newsletter&amp;utm_term=&amp;utm_content=ShipperHQ" style="text-decoration: none; color: #4b71fc;">Activate ShipperHQ today</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End Two Column (Images Stacked over Text) -->
+<!-- Two Column (Images Stacked over Text) -->
+<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="deviceWidth" bgcolor="#FFFFFF" style="margin:0 auto; " ><tr ><td style="padding:10px 0 0 0px; text-align:left; vertical-align:top; " ><table width="48%" border="0" cellpadding="0" cellspacing="0" align="left" class="deviceWidth twoColumn" ><tr ><td style="font-size:12px; color:#959595; font-weight:normal; text-align:left; font-family:'Source Sans Pro', sans-serif; line-height:24px; vertical-align:top; padding:10px 8px 10px 8px; " ><table ><tr ><td valign="middle" style="padding:0 10px 10px 0; " ><div class="mktEditable" id="Block-Header-3" ><h3 style="margin-bottom: 0px;">Use the RFM model to power customer personalization<br></h3>
+</div>
+</td>
+</tr>
+</table>
+<div class="mktEditable" id="Block-Desc-3" ><p style="margin-top: 0px;">In <a href="https://www.bigcommerce.com/blog/rfm-model/?utm_medium=email&amp;utm_source=engagement&amp;utm_campaign=june-newsletter&amp;utm_term=&amp;utm_content=RFMmodel" style="text-decoration: none; color: #4b71fc;">his blog post on the RFM model</a>, commerce expert and podcaster Kunle Campbell walks you through implementing a customer personalization strategy that tracks directly back to revenue.</p>
+</div>
+</td>
+</tr>
+</table>
+<table width="48%" border="0" cellpadding="0" cellspacing="0" align="left" class="deviceWidth twoColumn" ><tr ><td style="font-size:12px; color:#959595; font-weight:normal; text-align:left; font-family:'Source Sans Pro', sans-serif; line-height:24px; vertical-align:top; padding:10px 8px 10px 8px; " ><table ><tr ><td valign="middle" style="padding:0 10px 10px 0; " ><div class="mktEditable" id="Block-Header-4" ><h3 style="margin-bottom: 0px;">Industry experts weigh in on the state of omni-channel retail</h3>
+</div>
+</td>
+</tr>
+</table>
+<div class="mktEditable" id="Block-Desc-4" ><p style="margin-top: 0px;"><a href="http://grow.bigcommerce.com/How-We-Buy-Webinar.html?utm_medium=email&amp;utm_source=engagement&amp;utm_campaign=june-newsletter&amp;utm_term=&amp;utm_content=grow-webinar" style="text-decoration: none; color: #4b71fc;">Watch our free webinar</a> to see Internet Retailer&rsquo;s Managing Editor, Kelton Research Firm&rsquo;s President and the Senior Product Manager at BigCommerce offer their views on the newest industry report.</p>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End Two Column (Images Stacked over Text) -->
+<!-- One Column -->
+<table width="600" class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" style="margin:0 auto; " ><tr ><td style="font-size:13px; color:#959595; font-weight:normal; text-align:left; font-family:'Source Sans Pro', sans-serif; line-height:24px; vertical-align:top; padding:50px 0px 10px 0px; " bgcolor="#FFFFFF" ><div class="mktEditable" id="Secondary-Image" ><div><img style="position: relative; top: 20px; max-width: 85%; display: block; margin-left: auto; margin-right: auto;" src="http://grow.bigcommerce.com/rs/695-JJT-333/images/geneva.png" /></div></div>
+</td>
+</tr>
+</table>
+<table width="600" class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" style="margin:0 auto; " ><tr ><td style="font-size:14px; color:#4C4B58; font-weight:300; text-align:left; font-family:'Source Sans Pro', Helvetica, Arial, sans-serif; line-height:28px; vertical-align:top; padding:50px 8px 10px 8px; " bgcolor="#FFFFFF" ><table ><tr ><td valign="middle" style="padding:0 10px 10px 0; font-size:28px; line-height:32px; color:#34313f; " ><div class="mktEditable" id="Secondary-Headline" ><h2 style="margin: 0;">New early access themes and theme editing features</h2>
+</div>
+</td>
+</tr>
+</table>
+<div class="mktEditable" id="Secondary-Description" ><p>We&rsquo;ve released <a href="https://www.bigcommerce.com/blog/new-bigcommerce-themes-more-options/?utm_medium=email&amp;utm_source=engagement&amp;utm_campaign=june-newsletter&amp;utm_term=&amp;utm_content=stencil" style="text-decoration: none; color: #4b71fc;">16 new early access themes</a> that include features like sidebar navigation (Exhibit and Runway), multi-level categories (Exhibit), mega-navigation (Hero), and a unique homepage grid (Atelier). We&rsquo;ve also added two new theme editing features: the ability to adjust the position of your logo, and the ability to resize images.&nbsp;The new editing features will be available on the Cornerstone theme this month, and will be added to all our new themes soon.<br /></p>
+<p dir="ltr" style="color: #222222; font-family: arial, sans-serif; font-size: 13px; line-height: 1.2; margin-top: 8pt; margin-bottom: 0pt;"><span style="font-size: 14.6667px; font-family: 'Source Sans Pro'; color: #333333; vertical-align: baseline; white-space: pre-wrap;"><b></b></span></p></div>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; display:inline-block; padding-bottom:15px; padding-top:5px; " ><tbody ><tr ><td valign="middle" align="center" height="40" width="225" style="color:#ffffff; background:#4b70fc; border-radius:25px; font-size:14px; font-weight:bold; height:38px; letter-spacing:1.2px; text-decoration:none; text-transform:uppercase; " ><div class="mktEditable" id="secondary-cta" ><p style="margin: 0 0; color: #ffffff;"><a href="https://www.bigcommerce.com/theme-store/?utm_medium=eml&amp;utm_source=Newsletter&amp;utm_campaign=customers.junenewsletter.2016.Q2&amp;utm_term=&amp;utm_content=themes" style="color: #ffffff; display: block; font-size: 14px; font-weight: bold; letter-spacing: 1.2px; text-decoration: none;">Explore themes</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</table>
+<!-- End One Column -->
+<div class="mktEditable" id="additional-stories" ><table width="600" class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" style="margin: 0 auto; /* margin-top: 40px; */border-top: 1px solid #C1B8B8;">
+<tbody>
+<tr>
+<td style="font-size: 13px; color: #959595; font-weight: normal; text-align: left; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; line-height: 24px; vertical-align: top; padding: 50px 8px 10px 8px;" bgcolor="#FFFFFF">
+<table>
+<tbody>
+<tr>
+<td valign="middle" style="padding: 0 10px 10px 0;">
+<h3 style="margin-top: 50px; margin: 0;">See the BigCommerce Design Awards winners</h3>
+</td>
+</tr>
+</tbody>
+</table>
+<p>After 6,000 social votes and an intensive review by our panel of judges, we&rsquo;ve finalized our winners for the first BigCommerce Design Awards. Winners were selected for excellence in ecommerce design. They will receive a cash prize and be featured in the September 2016 edition of Inc Magazine. <a href="https://www.bigcommerce.com/blog/?utm_medium=email&amp;utm_source=engagement&amp;utm_campaign=june-newsletter&amp;utm_term=&amp;utm_content=Designawardsmmerce.com/blog/?utm_medium=email&amp;utm_source=engagement" style="text-decoration: none; color: #4b71fc;">Visit our blog</a> on June 21 to learn more about the winners.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="600" class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" style="margin: 0 auto; margin-bottom: 50px;">
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<!-- End One Column --></td>
+</tr>
+</table>
+<!--Footer -->
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+<tr>
+<td bgcolor="#2B2936" style="padding:30px 0">
+<table width="600" border="0" cellpadding="10" cellspacing="0" align="center" class="deviceWidth" style="margin:0 auto;">
+<tr>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" align="left" class="deviceWidth">
+<tr>
+<td valign="top" style="background-color: #2b2936; text-align: center; font-family: 'Open Sans', Helvetica, sans-serif; font-size: 11px; line-height: 28px; color: #828189;" class="center">
+<div style="padding-top:25px;">
+<p style="text-align: left;"><a href="http://www.bigcommerce.com"><img align="middle" class="center-image" border="0" style="top:15px; padding-bottom: 20px !important; border-style: none;" src="http://grow.bigcommerce.com/rs/695-JJT-333/images/Bigcommerce_icon_white-sized.png" alt="BigCommerce"></a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://twitter.com/Bigcommerce" style="color:#ffffff; 
+font-size: 14px; display:inline-block; text-decoration:none;">Twitter</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.facebook.com/BigCommerce" style="color:#ffffff; font-size: 14px; display:inline-block; text-decoration:none;">Facebook</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.linkedin.com/company/bigcommerce" style="color:#ffffff; font-size: 14px; display:inline-block; 
+text-decoration:none;">LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.youtube.com/user/bigcommercedotcom" style="color:#ffffff; font-size: 14px; display:inline-block; text-decoration:none;">YouTube</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.pinterest.com/bigcommerce/" style="color:#ffffff; font-size: 14px; display:inline-block; 
+text-decoration:none;">Pinterest</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://plus.google.com/+bigcommerce" style="color:#ffffff; font-size: 14px; display:inline-block; text-decoration:none;">Google+</a></p>
+<p style="color:#828189; text-align:left; font-size:12px;">&#169; 2016 BigCommerce <span class="applelinks">11305 Four Points Dr., Building 2, Floor 3, Austin TX 78726</span><br>
+You received this email because you are subscribed to emails from BigCommerce.<br>
+<span style="color:#828189; text-align:left; font-size:12px;"><a style="color:#828189;padding-right:5px; font-size:12px; text-decoration: underline" href="http://grow.bigcommerce.com/subscribe-to-bigcommerce-blog.html">Subscribe to our Blog</a> | <a style="color:#828189; padding-left:5px; padding-right:5px; font-size:12px; text-decoration: underline" 
+href="http://grow.bigcommerce.com/manage-your-email-preferences.html">Update your email preferences</a> | <a style="color:#828189;padding-left:5px; font-size:12px; text-decoration: underline" href="{{system.viewAsWebpageLink}}">View as webpage</a></span></p>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End Footer --></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End Wrapper --></body>
+</html>

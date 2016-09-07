@@ -249,8 +249,8 @@ public class ZuoraUtility {
                 opplnt.OpportunityId=zsc.Related_Opportunity__c;
                 system.debug( ' product sku '+zsc.Zuora__ProductSKU_Product__c);
                 opplnt.PricebookEntryId = mpProductcodeToPricebook1.get(zsc.Zuora__ProductSKU_Product__c).Id;
-                opplnt.Quantity=zsc.Zuora__Quantity__c;
-                opplnt.UnitPrice = zsc.Zuora__Price__c;
+                opplnt.Quantity = zsc.Zuora__Quantity__c;
+                opplnt.UnitPrice = zsc.Zuora__ExtendedAmount__c;
            		opplnt.Zuora_SubscriptionCharge_Id__c = zsc.Id;
                 lstnewOppLntm.add(opplnt);
                 mapOppPb.put(opplnt.OpportunityId, mpProductcodeToPricebook1.get(zsc.Zuora__ProductSKU_Product__c).Pricebook2Id);

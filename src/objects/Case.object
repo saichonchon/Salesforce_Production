@@ -9393,7 +9393,7 @@ Maria: E2CP can&apos;t read the actual record type when setting org wide outboun
             <filterItems>
                 <field>User.Full_Name__c</field>
                 <operation>equals</operation>
-                <value>Phillip Estrada,Kit Gulick,Dustin Shipley</value>
+                <value>Phillip Estrada,Kit Gulick,Dustin Shipley,Lauren McIntyre</value>
             </filterItems>
             <filterItems>
                 <field>User.Full_Name__c</field>
@@ -59124,7 +59124,8 @@ CONTAINS(&apos;005a0000008WYShAAO&apos;,Refund_Credit_Approver__c)   /* Timothy 
 
 (Refund_Credit_Amount__c &gt; 1000 &amp;&amp;
 OR(
-CONTAINS(&apos;00513000009tW94AAE&apos;,Refund_Credit_Approver__c)  /* Phillip Estrada */
+CONTAINS(&apos;00513000009tW94AAE&apos;,Refund_Credit_Approver__c),  /* Phillip Estrada */
+CONTAINS(&apos;005a0000008TkuSAAS&apos;,Refund_Credit_Approver__c)   /* Lauren McIntyre */
 ))
 
 ||

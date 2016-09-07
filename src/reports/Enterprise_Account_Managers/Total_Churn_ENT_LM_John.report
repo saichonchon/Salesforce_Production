@@ -11,17 +11,6 @@
         <masterLabel>MRR Grand Total</masterLabel>
         <scale>2</scale>
     </aggregates>
-    <aggregates>
-        <acrossGroupingContext>Opportunity.Account_Management_Services__c</acrossGroupingContext>
-        <calculatedFormula>FK_Subscription__c.MonthlyRecurringRevenue__c:SUM</calculatedFormula>
-        <datatype>currency</datatype>
-        <developerName>FORMULA2</developerName>
-        <downGroupingContext>GRAND_SUMMARY</downGroupingContext>
-        <isActive>true</isActive>
-        <isCrossBlock>false</isCrossBlock>
-        <masterLabel>MRR Subtotal</masterLabel>
-        <scale>2</scale>
-    </aggregates>
     <buckets>
         <bucketType>number</bucketType>
         <developerName>BucketField_96410854</developerName>
@@ -93,6 +82,15 @@
     <columns>
         <field>Opportunity.Regrettable__c</field>
     </columns>
+    <columns>
+        <field>Opportunity.Account_Management_Services__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Launch_Status__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Churn_Type__c</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
@@ -121,11 +119,6 @@
         </criteriaItems>
     </filter>
     <format>Matrix</format>
-    <groupingsAcross>
-        <dateGranularity>Day</dateGranularity>
-        <field>Opportunity.Account_Management_Services__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsAcross>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>BucketField_96410854</field>

@@ -255,6 +255,14 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>Sales_Decision__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Sales_Decision_Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>Closed_Lost_Reason__c</field>
             </layoutItems>
             <layoutItems>
@@ -265,14 +273,6 @@
                 <behavior>Edit</behavior>
                 <field>Other_Comments__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Manager_Notes__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Sales_Notes__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -282,6 +282,14 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Executive_Sponsorship_Notes__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Manager_Notes__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Sales_Notes__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -1092,21 +1100,6 @@
         <sortOrder>Desc</sortOrder>
     </relatedLists>
     <relatedLists>
-        <relatedList>RelatedNoteList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>dsfs__Envelope_Status__c</fields>
-        <fields>dsfs__Hrs_Sent_to_Sign__c</fields>
-        <fields>dsfs__Subject__c</fields>
-        <fields>dsfs__Sender__c</fields>
-        <fields>dsfs__Sent_Date_Time__c</fields>
-        <fields>dsfs__Completed_Date_Time__c</fields>
-        <fields>Quote__c</fields>
-        <fields>dsfs__Company__c</fields>
-        <relatedList>dsfs__DocuSign_Status__c.dsfs__Opportunity__c</relatedList>
-    </relatedLists>
-    <relatedLists>
         <fields>TASK.SUBJECT</fields>
         <fields>Comments_short__c</fields>
         <fields>TASK.WHO_NAME</fields>
@@ -1234,6 +1227,21 @@
         <fields>EndTime</fields>
         <fields>Status</fields>
         <relatedList>LiveChatTranscript.Opportunity__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>dsfs__Envelope_Status__c</fields>
+        <fields>dsfs__Hrs_Sent_to_Sign__c</fields>
+        <fields>dsfs__Subject__c</fields>
+        <fields>dsfs__Sender__c</fields>
+        <fields>dsfs__Sent_Date_Time__c</fields>
+        <fields>dsfs__Completed_Date_Time__c</fields>
+        <fields>Quote__c</fields>
+        <fields>dsfs__Company__c</fields>
+        <relatedList>dsfs__DocuSign_Status__c.dsfs__Opportunity__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <relatedList>RelatedNoteList</relatedList>
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedEntityHistoryList</relatedList>

@@ -2669,7 +2669,7 @@
     </fields>
     <fields>
         <help><!-- What was the lead rating providing by the LDR? --></help>
-        <label><!-- LDR Lead Rating --></label>
+        <label><!-- zLDR Lead Rating --></label>
         <name>LDR_Lead_Rating__c</name>
     </fields>
     <fields>
@@ -2719,9 +2719,9 @@
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Launch Team Commando --></label>
+        <label><!-- zLaunch Team Commando --></label>
         <name>Launch_Team_Commando__c</name>
-        <relationshipLabel><!-- Opportunities (Launch Team Commando) --></relationshipLabel>
+        <relationshipLabel><!-- Opportunities (zLaunch Team Commando) --></relationshipLabel>
     </fields>
     <fields>
         <name>LeadSource</name>
@@ -4033,6 +4033,30 @@
             <masterLabel>&lt; $50,000</masterLabel>
             <translation><!-- &lt; $50,000 --></translation>
         </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise: more than $5M revenue</masterLabel>
+            <translation><!-- Enterprise: more than $5M revenue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Established business: $250k–5M revenue</masterLabel>
+            <translation><!-- Established business: $250k–5M revenue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Growing business: $50k–250k revenue</masterLabel>
+            <translation><!-- Growing business: $50k–250k revenue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I haven&apos;t started selling yet: no revenue</masterLabel>
+            <translation><!-- I haven&apos;t started selling yet: no revenue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I’m not sure</masterLabel>
+            <translation><!-- I’m not sure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Just starting out: less than $50k revenue</masterLabel>
+            <translation><!-- Just starting out: less than $50k revenue --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- Projected --></label>
@@ -4296,12 +4320,42 @@
         <name>SalesVue__Time_Zone__c</name>
     </fields>
     <fields>
+        <help><!-- The date that the Sales Qualified Lead (SQL) was either accepted or rejected. --></help>
+        <label><!-- Sales Decision Date --></label>
+        <name>Sales_Decision_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies whether the Sales Qualified Lead (SQL) was either accepted or rejected. --></help>
+        <label><!-- Sales Decision --></label>
+        <name>Sales_Decision__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label><!-- zSales Do Not Call --></label>
         <name>Sales_Do_Not_Call__c</name>
     </fields>
     <fields>
         <label><!-- Sales Notes --></label>
         <name>Sales_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Qualified Date --></label>
+        <name>Sales_Qualified_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Qualifier --></label>
+        <name>Sales_Qualifier__c</name>
     </fields>
     <fields>
         <label><!-- Sample_100 --></label>
@@ -4681,9 +4735,9 @@
         <relationshipLabel><!-- Opportunities --></relationshipLabel>
     </fields>
     <fields>
-        <label><!-- Success Squad Consultant --></label>
+        <label><!-- zSuccess Squad Consultant --></label>
         <name>Success_Squad_Consultant__c</name>
-        <relationshipLabel><!-- Opportunities (Success Squad Consultant) --></relationshipLabel>
+        <relationshipLabel><!-- Opportunities (zSuccess Squad Consultant) --></relationshipLabel>
     </fields>
     <fields>
         <label><!-- Support Pin --></label>
@@ -5441,10 +5495,6 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         <sections>
             <label><!-- Enterprise Contract Details --></label>
             <section>Enterprise Contract Details</section>
-        </sections>
-        <sections>
-            <label><!-- Enterprise Partner Request --></label>
-            <section>Enterprise Partner Request</section>
         </sections>
         <sections>
             <label><!-- MBA --></label>

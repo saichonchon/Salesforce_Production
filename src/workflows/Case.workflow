@@ -2198,7 +2198,7 @@ Set by hierarchy : Contact &gt; Lead &gt; Web Email &gt; Subscription Email</des
     <rules>
         <fullName>CS%3A Send Case Closed Notification with Survey Email 2 Hr Delay</fullName>
         <active>true</active>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND (7 or 8) AND 9 AND 10 AND 11</booleanFilter>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND (7 AND 8) AND 9 AND 10 AND 11</booleanFilter>
         <criteriaItems>
             <field>Case.Status</field>
             <operation>equals</operation>
@@ -2275,6 +2275,89 @@ Set by hierarchy : Contact &gt; Lead &gt; Web Email &gt; Subscription Email</des
             </actions>
             <timeLength>2</timeLength>
             <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>CS%3A Send Web Case Closed Notification with Survey Email 7 Day Delay</fullName>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9 AND 10 AND 11 AND 12</booleanFilter>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Do_Not_Send_Survey__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Survey_Sent__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Owner_Team__c</field>
+            <operation>notEqual</operation>
+            <value>SBD</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Client Success</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>notContain</operation>
+            <value>legal</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Subject</field>
+            <operation>notContain</operation>
+            <value>email loop protection</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.SuppliedEmail</field>
+            <operation>notContain</operation>
+            <value>mailer-daemon,postmaster</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Documentation_Only__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Priority</field>
+            <operation>notEqual</operation>
+            <value>SBD</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>Web</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Issue_Resolved__c</field>
+            <operation>notEqual</operation>
+            <value>Yes</value>
+        </criteriaItems>
+        <description>Sends Client Success Survey Email for Web Cases after 7 Days</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>CS_Status_Closed_Case_Closed_With_Survey</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>Survey_Sent_Date_Now</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <actions>
+                <name>Survey_Sent_True</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <timeLength>7</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
     </rules>
     <rules>

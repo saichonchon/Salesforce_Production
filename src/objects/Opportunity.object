@@ -1590,6 +1590,7 @@ MBASubscriptionID__c,null)</formula>
             <picklistValues>
                 <fullName>Product</fullName>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Timing - Reengage 1-3 Months</fullName>
@@ -1658,6 +1659,7 @@ MBASubscriptionID__c,null)</formula>
             <picklistValues>
                 <fullName>Self-Serve</fullName>
                 <default>false</default>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
@@ -4165,7 +4167,7 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
         <description>What was the lead rating providing by the LDR?</description>
         <externalId>false</externalId>
         <inlineHelpText>What was the lead rating providing by the LDR?</inlineHelpText>
-        <label>LDR Lead Rating</label>
+        <label>zLDR Lead Rating</label>
         <length>55</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -4244,7 +4246,7 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
         <fullName>Launch_Team_Commando__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
-        <label>Launch Team Commando</label>
+        <label>zLaunch Team Commando</label>
         <referenceTo>User</referenceTo>
         <relationshipName>Opportunity</relationshipName>
         <required>false</required>
@@ -6366,6 +6368,30 @@ Account Management</description>
                 <fullName>$50,000,000 +</fullName>
                 <default>false</default>
             </picklistValues>
+            <picklistValues>
+                <fullName>I haven&apos;t started selling yet: no revenue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Just starting out: less than $50k revenue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Growing business: $50k–250k revenue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Established business: $250k–5M revenue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Enterprise: more than $5M revenue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>I’m not sure</fullName>
+                <default>false</default>
+            </picklistValues>
             <sorted>false</sorted>
         </picklist>
         <trackFeedHistory>false</trackFeedHistory>
@@ -6983,6 +7009,42 @@ null) ,NULL
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Sales_Decision_Date__c</fullName>
+        <description>The date that the Sales Qualified Lead (SQL) was either accepted or rejected. (BAP-4181)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date that the Sales Qualified Lead (SQL) was either accepted or rejected.</inlineHelpText>
+        <label>Sales Decision Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Decision__c</fullName>
+        <description>Specifies whether the Sales Qualified Lead (SQL) was either accepted or rejected. (BAP-4181)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies whether the Sales Qualified Lead (SQL) was either accepted or rejected.</inlineHelpText>
+        <label>Sales Decision</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Accepted</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
         <fullName>Sales_Do_Not_Call__c</fullName>
         <defaultValue>false</defaultValue>
         <description>DELETE WHEN DIALER IS GONE</description>
@@ -7001,6 +7063,28 @@ null) ,NULL
         <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Sales_Qualified_Date__c</fullName>
+        <description>The date the Sales Qualified Lead (SQL) was submitted as an SQL. BAP-4181.</description>
+        <externalId>false</externalId>
+        <label>Sales Qualified Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Qualifier__c</fullName>
+        <description>The user that qualified the Sales Qualified Lead (SQL). BAP-4181.</description>
+        <externalId>false</externalId>
+        <label>Sales Qualifier</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Sample_100__c</fullName>
@@ -7714,7 +7798,7 @@ null) ,NULL
         <fullName>Success_Squad_Consultant__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
-        <label>Success Squad Consultant</label>
+        <label>zSuccess Squad Consultant</label>
         <referenceTo>User</referenceTo>
         <relationshipName>Opportuity1</relationshipName>
         <required>false</required>
@@ -9329,57 +9413,6 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         </sharedTo>
     </listViews>
     <listViews>
-        <fullName>Professional_Services_All</fullName>
-        <columns>OPPORTUNITY.NAME</columns>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>Subscription__c</columns>
-        <columns>OPPORTUNITY.AMOUNT</columns>
-        <columns>OPPORTUNITY.CLOSE_DATE</columns>
-        <columns>OPPORTUNITY.STAGE_NAME</columns>
-        <columns>OPPORTUNITY.CREATED_DATE</columns>
-        <columns>OPPORTUNITY.LAST_UPDATE</columns>
-        <columns>CORE.USERS.FULL_NAME</columns>
-        <columns>CREATEDBY_USER.ALIAS</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>OPPORTUNITY.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Opportunity.Professional_Services</value>
-        </filters>
-        <label>Professional Services-All</label>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Professional_Services_Close_Lost</fullName>
-        <columns>OPPORTUNITY.NAME</columns>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>Subscription__c</columns>
-        <columns>OPPORTUNITY.AMOUNT</columns>
-        <columns>OPPORTUNITY.CLOSE_DATE</columns>
-        <columns>OPPORTUNITY.STAGE_NAME</columns>
-        <columns>OPPORTUNITY.CREATED_DATE</columns>
-        <columns>OPPORTUNITY.LAST_UPDATE</columns>
-        <columns>CORE.USERS.FULL_NAME</columns>
-        <columns>CREATEDBY_USER.ALIAS</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>OPPORTUNITY.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Opportunity.Professional_Services</value>
-        </filters>
-        <filters>
-            <field>OPPORTUNITY.STAGE_NAME</field>
-            <operation>equals</operation>
-            <value>Closed Lost</value>
-        </filters>
-        <label>Professional Services-Close/Lost</label>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
         <fullName>Professional_Services_Close_Won</fullName>
         <columns>OPPORTUNITY.NAME</columns>
         <columns>ACCOUNT.NAME</columns>
@@ -9403,34 +9436,6 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             <value>1</value>
         </filters>
         <label>Professional Services-Close/Won</label>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Professional_Services_Lead</fullName>
-        <columns>OPPORTUNITY.NAME</columns>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>OPPORTUNITY.AMOUNT</columns>
-        <columns>OPPORTUNITY.CLOSE_DATE</columns>
-        <columns>OPPORTUNITY.STAGE_NAME</columns>
-        <columns>OPPORTUNITY.CREATED_DATE</columns>
-        <columns>OPPORTUNITY.LAST_ACTIVITY</columns>
-        <columns>OPPORTUNITY.LAST_UPDATE</columns>
-        <columns>CORE.USERS.FULL_NAME</columns>
-        <columns>CREATEDBY_USER.ALIAS</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>OPPORTUNITY.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Opportunity.Professional_Services</value>
-        </filters>
-        <filters>
-            <field>OPPORTUNITY.STAGE_NAME</field>
-            <operation>equals</operation>
-            <value>Lead</value>
-        </filters>
-        <label>Professional Services-Lead</label>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
@@ -9511,59 +9516,6 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         </sharedTo>
     </listViews>
     <listViews>
-        <fullName>Sam_s_Opps</fullName>
-        <booleanFilter>1 AND 2 AND 3</booleanFilter>
-        <columns>OPPORTUNITY.NAME</columns>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>OPPORTUNITY.AMOUNT</columns>
-        <columns>OPPORTUNITY.CLOSE_DATE</columns>
-        <columns>OPPORTUNITY.STAGE_NAME</columns>
-        <columns>OPPORTUNITY.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>OPPORTUNITY.LAST_UPDATE</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>OPPORTUNITY.STAGE_NAME</field>
-            <operation>notEqual</operation>
-            <value>Qualify,Closed Lost,Closed Won,Purchased,Cancelled,Terminated,Suspended</value>
-        </filters>
-        <filters>
-            <field>CORE.USERS.ALIAS</field>
-            <operation>contains</operation>
-            <value>ssp</value>
-        </filters>
-        <filters>
-            <field>OPPORTUNITY.CREATED_DATE</field>
-            <operation>lessOrEqual</operation>
-            <value>5/14/2016 12:00 AM</value>
-        </filters>
-        <label>Sam&apos;s Opps</label>
-    </listViews>
-    <listViews>
-        <fullName>Sam_s_Opps1</fullName>
-        <booleanFilter>1 AND 2</booleanFilter>
-        <columns>OPPORTUNITY.NAME</columns>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>OPPORTUNITY.AMOUNT</columns>
-        <columns>OPPORTUNITY.CLOSE_DATE</columns>
-        <columns>OPPORTUNITY.STAGE_NAME</columns>
-        <columns>OPPORTUNITY.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>OPPORTUNITY.LAST_UPDATE</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>OPPORTUNITY.STAGE_NAME</field>
-            <operation>notEqual</operation>
-            <value>Closed Lost,Closed Won,Purchased,Cancelled,Terminated,Suspended</value>
-        </filters>
-        <filters>
-            <field>CORE.USERS.ALIAS</field>
-            <operation>equals</operation>
-            <value>sspet</value>
-        </filters>
-        <label>Sam&apos;s Opps</label>
-    </listViews>
-    <listViews>
         <fullName>Store_Mechanics_Trials</fullName>
         <columns>OPPORTUNITY.NAME</columns>
         <columns>ACCOUNT.NAME</columns>
@@ -9595,29 +9547,6 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             <role>SystemAdministrator</role>
             <roleAndSubordinatesInternal>VP_of_Sales</roleAndSubordinatesInternal>
         </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Tanner_s_Comeback_Tour_2016</fullName>
-        <columns>OPPORTUNITY.NAME</columns>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>OPPORTUNITY.AMOUNT</columns>
-        <columns>OPPORTUNITY.CLOSE_DATE</columns>
-        <columns>OPPORTUNITY.STAGE_NAME</columns>
-        <columns>Contact__c</columns>
-        <columns>Contact_Phone__c</columns>
-        <columns>Current_Platform__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CORE.USERS.FIRST_NAME</field>
-            <operation>equals</operation>
-            <value>Tanner</value>
-        </filters>
-        <filters>
-            <field>OPPORTUNITY.STAGE_NAME</field>
-            <operation>equals</operation>
-            <value>Discover</value>
-        </filters>
-        <label>Tanner&apos;s Comeback Tour 2016</label>
     </listViews>
     <listViews>
         <fullName>Trial_Opportunities</fullName>
@@ -30459,7 +30388,7 @@ alert(&apos;Could not create record &apos;+result);
         <protected>false</protected>
         <showsLocation>false</showsLocation>
         <showsStatus>false</showsStatus>
-        <url>https://na19.salesforce.com/00O13000008YJFb?pv0={!Opportunity.MBASubscriptionID__c}</url>
+        <url>https://na19.salesforce.com/00O13000008m6cD?pv0={!Opportunity.MBASubscriptionID__c}</url>
     </webLinks>
     <webLinks>
         <fullName>Sync_with_BMP</fullName>

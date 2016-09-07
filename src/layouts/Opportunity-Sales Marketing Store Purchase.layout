@@ -6,7 +6,6 @@
     <customButtons>Sync_with_MBA</customButtons>
     <customButtons>View_BMP_Store</customButtons>
     <customButtons>View_BMP_Account</customButtons>
-    <customButtons>Sync_with_BMP</customButtons>
     <customButtons>Bill_for_Insights</customButtons>
     <customButtons>Bill_for_One_Time_Service</customButtons>
     <customButtons>Create_Upsell_Opportunity</customButtons>
@@ -1053,17 +1052,27 @@
         <sortOrder>Desc</sortOrder>
     </relatedLists>
     <relatedLists>
-        <fields>NAME</fields>
-        <fields>tinderbox__Category__c</fields>
-        <fields>CREATED_DATE</fields>
-        <fields>LAST_UPDATE</fields>
-        <fields>tinderbox__Last_Viewed__c</fields>
-        <fields>tinderbox__Status__c</fields>
-        <fields>tinderbox__Value__c</fields>
-        <fields>tinderbox__Views__c</fields>
-        <relatedList>tinderbox__Document__c.tinderbox__Opportunity__c</relatedList>
-        <sortField>CREATED_DATE</sortField>
-        <sortOrder>Desc</sortOrder>
+        <fields>TASK.SUBJECT</fields>
+        <fields>Comments_short__c</fields>
+        <fields>TASK.WHO_NAME</fields>
+        <fields>ACTIVITY.TASK</fields>
+        <fields>TASK.DUE_DATE</fields>
+        <fields>TASK.STATUS</fields>
+        <fields>TASK.PRIORITY</fields>
+        <fields>CORE.USERS.FULL_NAME</fields>
+        <fields>CORE.USERS.ALIAS</fields>
+        <relatedList>RelatedActivityList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>TASK.SUBJECT</fields>
+        <fields>Comments_short__c</fields>
+        <fields>TASK.WHO_NAME</fields>
+        <fields>CORE.USERS.ALIAS</fields>
+        <fields>ACTIVITY.TASK</fields>
+        <fields>TASK.DUE_DATE</fields>
+        <fields>CORE.USERS.FULL_NAME</fields>
+        <fields>TASK.LAST_UPDATE</fields>
+        <relatedList>RelatedHistoryList</relatedList>
     </relatedLists>
     <relatedLists>
         <customButtons>New_Case</customButtons>
@@ -1100,49 +1109,7 @@
         <relatedList>BI_Data__c.Opportunity__c</relatedList>
     </relatedLists>
     <relatedLists>
-        <fields>NAME</fields>
-        <fields>StoreURL__c</fields>
-        <fields>Status__c</fields>
-        <fields>StartDate__c</fields>
-        <fields>PurchaseDate__c</fields>
-        <fields>Product__c</fields>
-        <fields>MonthlyRecurringRevenue__c</fields>
-        <fields>MBASubscriptionID__c</fields>
-        <fields>MBAPartnerID__c</fields>
-        <fields>MBAAccountID__c</fields>
-        <relatedList>Subscription__c.Opportunity__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <relatedList>RelatedOpportunityBookmarkList</relatedList>
-    </relatedLists>
-    <relatedLists>
         <relatedList>RelatedContactRoleList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>TASK.SUBJECT</fields>
-        <fields>Comments_short__c</fields>
-        <fields>TASK.WHO_NAME</fields>
-        <fields>ACTIVITY.TASK</fields>
-        <fields>TASK.DUE_DATE</fields>
-        <fields>TASK.STATUS</fields>
-        <fields>TASK.PRIORITY</fields>
-        <fields>CORE.USERS.FULL_NAME</fields>
-        <fields>CORE.USERS.ALIAS</fields>
-        <relatedList>RelatedActivityList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>TASK.SUBJECT</fields>
-        <fields>Comments_short__c</fields>
-        <fields>TASK.WHO_NAME</fields>
-        <fields>CORE.USERS.ALIAS</fields>
-        <fields>ACTIVITY.TASK</fields>
-        <fields>TASK.DUE_DATE</fields>
-        <fields>CORE.USERS.FULL_NAME</fields>
-        <fields>TASK.LAST_UPDATE</fields>
-        <relatedList>RelatedHistoryList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <relatedList>RelatedNoteList</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>OPPORTUNITY.NAME</fields>
@@ -1174,6 +1141,7 @@
         <relatedList>RelatedOpportunitySplits</relatedList>
     </relatedLists>
     <relatedLists>
+        <customButtons>New_Case</customButtons>
         <fields>CASES.CASE_NUMBER</fields>
         <fields>CASES.RECORDTYPE</fields>
         <fields>CASES.REASON</fields>
@@ -1192,6 +1160,22 @@
         <fields>Actor</fields>
         <fields>Comments</fields>
         <relatedList>RelatedProcessHistoryList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>tinderbox__Category__c</fields>
+        <fields>CREATED_DATE</fields>
+        <fields>LAST_UPDATE</fields>
+        <fields>tinderbox__Last_Viewed__c</fields>
+        <fields>tinderbox__Status__c</fields>
+        <fields>tinderbox__Value__c</fields>
+        <fields>tinderbox__Views__c</fields>
+        <relatedList>tinderbox__Document__c.tinderbox__Opportunity__c</relatedList>
+        <sortField>CREATED_DATE</sortField>
+        <sortOrder>Desc</sortOrder>
+    </relatedLists>
+    <relatedLists>
+        <relatedList>RelatedNoteList</relatedList>
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedEntityHistoryList</relatedList>

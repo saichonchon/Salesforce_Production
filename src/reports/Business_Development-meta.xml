@@ -2,6 +2,11 @@
 <ReportFolder xmlns="http://soap.sforce.com/2006/04/metadata">
     <folderShares>
         <accessLevel>View</accessLevel>
+        <sharedTo>kevin.mckeand@bigcommerce.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
         <sharedTo>Executive</sharedTo>
         <sharedToType>Role</sharedToType>
     </folderShares>
@@ -14,6 +19,11 @@
         <accessLevel>View</accessLevel>
         <sharedTo>Strategic_Business_Development</sharedTo>
         <sharedToType>Role</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>Strategic_Business_Development_Director</sharedTo>
+        <sharedToType>RoleAndSubordinatesInternal</sharedToType>
     </folderShares>
     <folderShares>
         <accessLevel>View</accessLevel>

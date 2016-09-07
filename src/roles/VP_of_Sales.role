@@ -2,8 +2,9 @@
 <Role xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseAccessLevel>Edit</caseAccessLevel>
     <contactAccessLevel>Edit</contactAccessLevel>
+    <description>SMB Director</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>VP of Sales</name>
+    <name>Small Business Director</name>
     <opportunityAccessLevel>Edit</opportunityAccessLevel>
     <parentRole>Head_of_Sales</parentRole>
 </Role>

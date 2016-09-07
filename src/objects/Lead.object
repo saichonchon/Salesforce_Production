@@ -1367,19 +1367,24 @@ SUBSTITUTE(SUBSTITUTE(FirstName, &quot; &quot;, &quot;+&quot;), &quot;&amp;&quot
     <fields>
         <fullName>Dialer_Eligible_Lead__c</fullName>
         <externalId>false</externalId>
-        <formula>IF(Phone != NULL 
-  &amp;&amp; Owner:Queue.QueueName != NULL 
-  &amp;&amp; ISPICKVAL(Status,&apos;Open&apos;)
-  &amp;&amp; Owner:Queue.QueueName != &apos;Bad Contact Info Lead Queue&apos;
-  &amp;&amp; DoNotCall = FALSE
-  &amp;&amp; IsConverted = FALSE
-  &amp;&amp; NOT (ISPICKVAL(Closed_Lost_Reason__c,&apos;No Longer in Business&apos;)
-    || ISPICKVAL(Closed_Lost_Reason__c,&apos;Risk of Migration Issues&apos;)
-    || ISPICKVAL(Closed_Lost_Reason__c,&apos;Migration Issues&apos;)
-    || ISPICKVAL(Closed_Lost_Reason__c,&apos;zNo Longer In Business&apos;)
-    || ISPICKVAL(Closed_Lost_Reason__c,&apos;Duplicate Record&apos;)
-    || ISPICKVAL(Closed_Lost_Reason__c,&apos;Accidental Trial/No ecomm&apos;)
-    || ISPICKVAL(Closed_Lost_Reason__c,&apos;Duplicate&apos;)) 
+        <formula>IF(
+AND(
+Phone &lt;&gt; NULL,
+Owner:Queue.QueueName &lt;&gt; NULL, 
+ISPICKVAL(Status,&apos;Open&apos;),
+Owner:Queue.QueueName &lt;&gt; &apos;Bad Contact Info Lead Queue&apos;,
+NOT(CONTAINS( Email,&apos;bigcommerce.com&apos;)),
+DoNotCall = FALSE,
+IsConverted = FALSE,
+NOT(OR(
+ISPICKVAL(Closed_Lost_Reason__c,&apos;No Longer in Business&apos;),
+ISPICKVAL(Closed_Lost_Reason__c,&apos;Risk of Migration Issues&apos;),
+ISPICKVAL(Closed_Lost_Reason__c,&apos;Migration Issues&apos;),
+ISPICKVAL(Closed_Lost_Reason__c,&apos;zNo Longer In Business&apos;),
+ISPICKVAL(Closed_Lost_Reason__c,&apos;Duplicate Record&apos;),
+ISPICKVAL(Closed_Lost_Reason__c,&apos;Accidental Trial/No ecomm&apos;),
+ISPICKVAL(Closed_Lost_Reason__c,&apos;Duplicate&apos;)))
+) 
 , TRUE, FALSE)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Dialer Eligible Lead</label>
@@ -8231,26 +8236,6 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
     </searchLayouts>
     <sharingModel>Private</sharingModel>
     <validationRules>
-        <fullName>Acq_take_ownership_of_Meg</fullName>
-        <active>false</active>
-        <errorConditionFormula>ISCHANGED( OwnerId ) &amp;&amp;  $User.Alias &lt;&gt; &apos;api&apos;
-&amp;&amp; $UserRole.Id = &apos;00E30000001LY7C&apos; 
-&amp;&amp;   PRIORVALUE(OwnerId)   &lt;&gt;  &quot;005a000000AsxTo&quot;
-&amp;&amp;  PRIORVALUE(OwnerId)   &lt;&gt;  &quot;00Ga00000044vcl&quot;
-&amp;&amp;  PRIORVALUE(OwnerId)   &lt;&gt;  &quot;00Ga00000044WHq&quot;
-&amp;&amp;  PRIORVALUE(OwnerId)   &lt;&gt; $User.Id</errorConditionFormula>
-        <errorMessage>Please ask the owner of the lead to change ownership.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Acquisition_Request_Ownership_Notes</fullName>
-        <active>false</active>
-        <description>If Request Ownership = True, Ownership Change Notes is required</description>
-        <errorConditionFormula>CONTAINS($UserRole.Name, &quot;Acquisition&quot;) 
-&amp;&amp; Request_Ownership__c = TRUE 
-&amp;&amp; ISBLANK( Ownership_Change_Reason__c )</errorConditionFormula>
-        <errorMessage>Ownership Change Notes are required if requesting an ownership change</errorMessage>
-    </validationRules>
-    <validationRules>
         <fullName>Closed_Lost_Reason_Requirement</fullName>
         <active>false</active>
         <description>If Stage = Closed Lost, require Closed Lost Reason</description>
@@ -8266,35 +8251,6 @@ $User.ProfileId &lt;&gt; &quot;00e13000000jUUU&quot;</errorConditionFormula>
         <errorConditionFormula>ISCHANGED( Design_Account__c ) &amp;&amp;  PRIORVALUE(Design_Account__c) &lt;&gt; null &amp;&amp;  $User.ProfileId &lt;&gt; &quot;00e30000001hS8e&quot;</errorConditionFormula>
         <errorDisplayField>Design_Account__c</errorDisplayField>
         <errorMessage>The Design Account cannot be changed once a referral has been submitted.  Please contact the current design account&apos;s PDE for assistance.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Functionality_Detail_Requirement</fullName>
-        <active>false</active>
-        <description>If the Closed Lost Reason is Functionality, require a Functionality Detail.</description>
-        <errorConditionFormula>AND(
-  OR(
-   ISPICKVAL(Closed_Lost_Reason__c, &quot;1 Lost to Competitor&quot;),
-   ISPICKVAL(Closed_Lost_Reason__c, &quot;2 Not Qualified&quot;),
-   ISPICKVAL(Closed_Lost_Reason__c, &quot;3 Product Feature/Functionality&quot;),
-   ISPICKVAL(Closed_Lost_Reason__c, &quot;4 Test Account&quot;)
-  ),  
-  ISBLANK(TEXT( Functionality_Detail__c ))=TRUE,
-  $User.Id &lt;&gt; &quot;00530000004W020&quot;,
-  $User.ProfileId &lt;&gt; &quot;00e30000001hS8e&quot;,
-  $User.ProfileId &lt;&gt; &quot;00ea00000024JYK&quot;
-)</errorConditionFormula>
-        <errorDisplayField>Functionality_Detail__c</errorDisplayField>
-        <errorMessage>Please add a Closed Lost Reason Detail</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Orion_Consultation_Orion_Seg_equal_HIGH</fullName>
-        <active>true</active>
-        <description>Validate a consultation can only be checked if the Orin Segment is equal to High.  Else display an error.</description>
-        <errorConditionFormula>AND(
-( Orion_Segment__c &lt;&gt; &quot;HIGH&quot;),
-IF(SBD_Orion_Consultation_Requested__c,TRUE,FALSE)
-)</errorConditionFormula>
-        <errorMessage>The Orion Segment must be HIGH to request a Consultation.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Referral_Budget_cannot_be_0_w_out_Notes</fullName>

@@ -2027,11 +2027,10 @@ Grow - Potential for big opp;Partner choosing platform</inlineHelpText>
         <externalId>false</externalId>
         <formula>if(( ISPICKVAL(Dialer_Priority__c,&quot;Priority Support&quot;)),4, 
 if(( ISPICKVAL(Dialer_Priority__c,&quot;Express Routing&quot;)),3, 
-if((Active_Stores_Opp__c &gt;0 &amp;&amp; Client_Age__c &gt;180),2, 
-if((Active_Stores_Opp__c &gt;0 &amp;&amp; Total_Active_Store_GMV__c &gt;100),2, 
+if((Active_Stores_Opp__c &gt;0 &amp;&amp; Client_Age__c &lt;180 &amp;&amp; Total_Active_Store_GMV__c &lt;100),2, 
 if((Active_Stores_Opp__c &gt;0),1, 
 if((Active_Trials_Opp__c &gt;0),1, 
-0))))))</formula>
+0)))))</formula>
         <label>I3 Menu Option</label>
         <precision>18</precision>
         <required>false</required>

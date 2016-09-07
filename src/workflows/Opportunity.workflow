@@ -788,6 +788,7 @@
 For BAP-3811</description>
         <formula>AND(  
 NOT(ISBLANK(Demo_Requested_Date__c)), 
+ISCHANGED(Demo_Requested_Date__c),
 Owner.Id &lt;&gt; &apos;005a000000AsxTo&apos;, /* The BigCommerce Team */ 
 OR(
 Owner.Profile.Id = &apos;00e13000000jUNJ&apos;, /* Lead Development Rep */  
@@ -796,7 +797,7 @@ Owner.Profile.Id = &apos;00e13000000jUyt&apos;, /* Sales Rep - Dial on Opps */
 Owner.Profile.Id = &apos;00e130000024OSX&apos;  /* Sales Leader */ 
 )
 )</formula>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
         <fullName>Enterprise%3A Opportunity Closed Notification</fullName>
@@ -805,15 +806,15 @@ Owner.Profile.Id = &apos;00e130000024OSX&apos;  /* Sales Leader */
             <type>Alert</type>
         </actions>
         <active>true</active>
-        <description>Email Notification that updates Enterprise Sales Management when an Opportunity has closed, whether one or lost.</description>
-        <formula>OR(  
+        <description>Email Notification that updates Enterprise Sales Management when an Opportunity has closed, whether won or lost.</description>
+        <formula>AND(
+OR(  
 Owner.UserRoleId = &apos;00E13000001DGhr&apos;, /* Enterprise Leader */ 
-Owner.UserRoleId = &apos;00E13000001DGi1&apos;  /* Enterprise Sales */ 
-) &amp;&amp;  
-IsClosed = True &amp;&amp; 
+Owner.UserRoleId = &apos;00E13000001DGi1&apos;  /* Enterprise Sales */ ), 
+IsClosed = True,
 OR(  
 IsWon = False &amp;&amp;  Projected__c = True,
-IsWon = True &amp;&amp; Amount &gt; 500
+IsWon = True &amp;&amp; Amount &gt; 500)
 )</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
@@ -1301,6 +1302,7 @@ OR(
 ISPICKVAL(StageName, &apos;Closed Lost&apos;),
 ISPICKVAL(StageName, &apos;Trial Expired&apos;)
 ),
+RecordTypeId = &apos;01213000000AUtyAAG&apos;,
 OwnerId  &lt;&gt; &apos;005a000000AsxTo&apos; /* The BigCommerce Team */
 )</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>

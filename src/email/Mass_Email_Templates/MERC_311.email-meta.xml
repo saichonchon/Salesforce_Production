@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>MERC-311 Email</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BigCommerce_Letterhead_Small</letterhead>
+    <name>MERC-311</name>
+    <style>freeForm</style>
+    <subject>Case Number: {!Case.CaseNumber} Subject: {!Case.Subject}</subject>
+    <textOnly>******************************************************************
+Case Number: {!Case.CaseNumber}
+Issue Reported: {!Case.Description}
+
+Hello,
+
+We wanted to update you on a recent issue you reported regarding log image appearing blurry on storefront.
+
+This issue has been resolved in the current theme version 1.3 of the Cornerstone theme. You can view what version you&apos;re using or update your theme by going to Storefront Design &gt; My Themes.
+
+https://stencil.bigcommerce.com/docs/release-notes-cornerstone-13-theme
+
+If you have any questions or need further assistance, please let us know.
+
+Thank you,
+
+BigCommerce Support
+http://support.bigcommerce.com/contact
+
+You can reply to this email or to view your case&apos;s status you can go here.
+
+Please do not remove: {!Case.E2CP__Case_Thread_Id__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

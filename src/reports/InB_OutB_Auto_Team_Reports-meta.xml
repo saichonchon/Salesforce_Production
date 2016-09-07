@@ -2,6 +2,11 @@
 <ReportFolder xmlns="http://soap.sforce.com/2006/04/metadata">
     <folderShares>
         <accessLevel>View</accessLevel>
+        <sharedTo>kevin.mckeand@bigcommerce.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
         <sharedTo>rachel.garcia@bigcommerce.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>

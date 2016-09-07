@@ -78,9 +78,9 @@
             <value>Case.Client_Success</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Case.Manager_Callback_Requestor__c</column>
-            <operator>greaterThan</operator>
-            <value>0</value>
+            <column>OWNER</column>
+            <operator>contains</operator>
+            <value>manager callback</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>

@@ -79,7 +79,7 @@
         <criteriaItems>
             <column>OWNER</column>
             <operator>notEqual</operator>
-            <value>Quoc Dang,Josh Popperwell,Lucian Villasenor,Timothy Azark,Scott Leroy,Derek Donovan,Cristy Carpenter,Lynn Torbert,Michael Yope</value>
+            <value>Christopher Partanen,Jason Zamora,Brian Miller,Quoc Dang,Josh Popperwell,Lucian Villasenor,Timothy Azark,Scott Leroy,Derek Donovan,Cristy Carpenter,Lynn Torbert,Michael Yope</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>
@@ -88,7 +88,7 @@
         <field>AGE</field>
         <sortOrder>Desc</sortOrder>
     </groupingsDown>
-    <name>Web Case SL Sitewide</name>
+    <name>New Web Case SL Sitewide</name>
     <params>
         <name>units</name>
         <value>h</value>

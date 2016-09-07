@@ -108,7 +108,7 @@
         <criteriaItems>
             <column>Lead.qbdialer__Dials__c</column>
             <operator>lessOrEqual</operator>
-            <value>2</value>
+            <value>5</value>
         </criteriaItems>
         <criteriaItems>
             <column>LEAD_STATUS</column>

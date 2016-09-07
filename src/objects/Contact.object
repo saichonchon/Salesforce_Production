@@ -1312,29 +1312,6 @@ SUBSTITUTE(SUBSTITUTE(FirstName, &quot; &quot;, &quot;+&quot;), &quot;&amp;&quot
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>RVAccountName__c</fullName>
-        <externalId>false</externalId>
-        <label>zRV Account Name</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>RVMemberId__c</fullName>
-        <externalId>true</externalId>
-        <label>RV Member Id</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Number</type>
-        <unique>true</unique>
-    </fields>
-    <fields>
         <fullName>RV_Account__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>

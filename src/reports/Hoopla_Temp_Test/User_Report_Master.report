@@ -23,19 +23,19 @@
     </columns>
     <filter>
         <criteriaItems>
-            <column>DEPARTMENT</column>
-            <operator>equals</operator>
-            <value>Sales Development - Outbound SDR,Sales Development - Inbound SDR,Midmarket Enterprise Sales,Small Business Sales team</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>ROLE</column>
-            <operator>equals</operator>
-            <value>ldr,outbound direct sales,enterprise sales</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>FULL_NAME</column>
             <operator>notEqual</operator>
             <value>Joe Maragoni</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>DEPARTMENT</column>
+            <operator>equals</operator>
+            <value>Midmarket Enterprise Sales,Sales Development - Inbound SDR,Sales Development - Outbound SDR,Small Business Sales Team</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ROLE</column>
+            <operator>notContain</operator>
+            <value>partner,leader</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>

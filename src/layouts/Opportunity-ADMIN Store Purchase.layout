@@ -227,7 +227,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Partner_Stage__c</field>
+                <field>Influencing_RVAccount__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -237,23 +237,19 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>rvpe__DateAssignedToPartner__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>rvpe__PartnerLastModifiedDate__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Deal_Registration_Notes__c</field>
+                <field>rvpe__DateAssignedToPartner__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Channel_Partner__c</field>
+                <field>Influencing_RV_Account_Assigned__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Partner_Owner__c</field>
+                <behavior>Edit</behavior>
+                <field>Influencing_RV_Account_Assigned_By__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>

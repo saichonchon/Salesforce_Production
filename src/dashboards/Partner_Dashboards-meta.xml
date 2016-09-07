@@ -13,12 +13,7 @@
     <folderShares>
         <accessLevel>View</accessLevel>
         <sharedTo>Partner_Leader</sharedTo>
-        <sharedToType>Role</sharedToType>
-    </folderShares>
-    <folderShares>
-        <accessLevel>View</accessLevel>
-        <sharedTo>Partner_Leader</sharedTo>
-        <sharedToType>RoleAndSubordinates</sharedToType>
+        <sharedToType>RoleAndSubordinatesInternal</sharedToType>
     </folderShares>
     <folderShares>
         <accessLevel>View</accessLevel>

@@ -356,14 +356,6 @@
         <name>Primary_MBA_Contact__c</name>
     </fields>
     <fields>
-        <label><!-- zRV Account Name --></label>
-        <name>RVAccountName__c</name>
-    </fields>
-    <fields>
-        <label><!-- RV Member Id --></label>
-        <name>RVMemberId__c</name>
-    </fields>
-    <fields>
         <label><!-- RV Account --></label>
         <name>RV_Account__c</name>
         <relationshipLabel><!-- Contacts --></relationshipLabel>

@@ -125,42 +125,7 @@ public class CampaignContactUpdateTest {
         Test.StopTest();
     }
      
-     public static testmethod void test_batchRetentionCampaign() {
-        
-        String CRON_EXP = '0 0 0 3 9 ? 2022';
-        Test.startTest();
-// Schedule the test job
-        String jobId = System.schedule('testBasicScheduledApex', CRON_EXP, new BatchRetentionCampaign());
-        // Get the information from the CronTrigger API object  
-        CronTrigger ct = [SELECT id, CronExpression, TimesTriggered, 
-        NextFireTime
-        FROM CronTrigger WHERE id = :jobId];
-        
-        // Verify the expressions are the same 
-        System.assertEquals(CRON_EXP, ct.CronExpression);
-        
-        // Verify the job has not run  
-        
-        System.assertEquals(0, ct.TimesTriggered);
-        
-        // Verify the next time the job will run  
-        
-        System.assertEquals('2022-09-03 00:00:00', String.valueOf(ct.NextFireTime));
-        
-        //Test the actual code run
-        RetentionCampaignUpdate opps = new RetentionCampaignUpdate();
- //       String criteria = Label.Query_Criteria;
-       
-        Id storeRecordTypeId  = Opportunity.getSObjectType().getDescribe().getRecordTypeInfosByName().get(Label.Opportunity_RecordType_StorePurchase).getRecordTypeId();
  
-        String query1 = 'Select contact__r.Id, contact__r.Primary_MBA_Contact__c, AccountId, bi_Data__r.Lifetime_GMV__c From Opportunity where RecordTypeId = :storeRecordTypeId ';
- 		query1 = query1 + ' limit 2';
-        
-        opps.query = query1;
-        Database.executeBatch(opps,90);      
-        
-        Test.StopTest();
-    }   
     public static testmethod void test_updateCamStatus() 
     {
     	

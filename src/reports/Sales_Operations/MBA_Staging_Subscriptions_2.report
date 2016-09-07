@@ -6,6 +6,14 @@
     <columns>
         <field>MBA_Staging_Subscription__c.MBASubscriptionID__c</field>
     </columns>
+    <description>DO NOT DELETE: Used for custom link in Opportunity</description>
+    <filter>
+        <criteriaItems>
+            <column>MBA_Staging_Subscription__c.MBASubscriptionID__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
     <format>Tabular</format>
     <name>MBA Staging Subscriptions</name>
     <params>

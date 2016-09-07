@@ -3028,28 +3028,12 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         <name>Partner_Prospect</name>
     </recordTypes>
     <validationRules>
-        <errorMessage><!-- Please ask the owner of the lead to change ownership. --></errorMessage>
-        <name>Acq_take_ownership_of_Meg</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- Ownership Change Notes are required if requesting an ownership change --></errorMessage>
-        <name>Acquisition_Request_Ownership_Notes</name>
-    </validationRules>
-    <validationRules>
         <errorMessage><!-- If the Lead Stage is marked as Closed Lost, a Closed Lost Reason is required. --></errorMessage>
         <name>Closed_Lost_Reason_Requirement</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- The Design Account cannot be changed once a referral has been submitted.  Please contact the current design account&apos;s PDE for assistance. --></errorMessage>
         <name>Design_Account_Lock_after_Population</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- Please add a Closed Lost Reason Detail --></errorMessage>
-        <name>Functionality_Detail_Requirement</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- The Orion Segment must be HIGH to request a Consultation. --></errorMessage>
-        <name>Orion_Consultation_Orion_Seg_equal_HIGH</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- A client&apos;s design budget must be entered in order to submit the lead for referral.  If the lead has been approved by the PDE without a budget, please indicate this along with the reason why in the Referral Notes field --></errorMessage>
