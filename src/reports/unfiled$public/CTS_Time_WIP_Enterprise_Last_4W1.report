@@ -6,7 +6,7 @@
         <developerName>FORMULA1</developerName>
         <isActive>true</isActive>
         <isCrossBlock>true</isCrossBlock>
-        <masterLabel>Average Time Per Migration (in Days)</masterLabel>
+        <masterLabel>Average Time Per CTS (in Days)</masterLabel>
         <scale>2</scale>
     </aggregates>
     <block>
@@ -45,9 +45,9 @@
                 <value></value>
             </criteriaItems>
             <criteriaItems>
-                <column>Case.Bigcommerce_Plan__c</column>
+                <column>PRIORITY</column>
                 <operator>equals</operator>
-                <value>Bigcommerce Enterprise Plan,Bigcommerce Enterprise Plan Plus SLA,Bigcommerce Enterprise Plan Plus Subsidiary,Enterprise Plan,Enterprise Tier 3 Plan,Enterprise Tier 4 Plan</value>
+                <value>Normal,High,Critical,SBD,Enterprise</value>
             </criteriaItems>
             <criteriaItems>
                 <column>STATUS</column>
@@ -66,7 +66,7 @@
             </criteriaItems>
         </filter>
         <format>Summary</format>
-        <name>Total Closed Migrations</name>
+        <name>Total Closed CTS</name>
         <params>
             <name>units</name>
             <value>d</value>
@@ -117,12 +117,12 @@
             <criteriaItems>
                 <column>HSTATUS</column>
                 <operator>equals</operator>
-                <value>Active,Assigned,Awaiting Review,Client Responded,Enterprise UAT,In Progress,Migration in Progress,Received Credentials,Requires Rerun,Review,Review - Escalated,UAT Review,VE Assigned,VE in Progress,VE QA,Valid Credentials,Verification</value>
+                <value>In Progress,Requires Rerun,Enterprise UAT</value>
             </criteriaItems>
             <criteriaItems>
-                <column>Case.Bigcommerce_Plan__c</column>
+                <column>PRIORITY</column>
                 <operator>equals</operator>
-                <value>Bigcommerce Enterprise Plan,Bigcommerce Enterprise Plan Plus SLA,Bigcommerce Enterprise Plan Plus Subsidiary,Enterprise Plan,Enterprise Tier 3 Plan,Enterprise Tier 4 Plan</value>
+                <value>Normal,High,Critical,SBD,Enterprise</value>
             </criteriaItems>
             <criteriaItems>
                 <column>Case.Migration_Platform__c</column>

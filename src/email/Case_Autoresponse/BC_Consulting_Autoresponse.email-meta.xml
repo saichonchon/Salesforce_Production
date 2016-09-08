@@ -6,16 +6,23 @@
     <letterhead>BigCommerce_Letterhead_Small</letterhead>
     <name>BC Consulting Autoresponse</name>
     <style>freeForm</style>
-    <subject>We&apos;ve received your request: Case #{!Case.CaseNumber}</subject>
-    <textOnly>Hello {!Contact.FirstName},
+    <subject>New Premium Services Request: Case {!Case.CaseNumber}</subject>
+    <textOnly>Case number: {!Case.CaseNumber}
 
-Thanks for reaching out to the Premium Account Services team! A member of our team will be in touch within the next business day. If you have a critical issue, please call our 24/7 priority technical support team at 1-888-699-8911.
+Hello {!Contact.FirstName},
 
-For your reference, your case number is {!Case.CaseNumber}.
+Thank you for emailing the Enterprise Premium Account Services team. One of our Account Managers will be in touch within the next business day to follow up on your request.
+
+If you are experiencing an urgent technical issue, please reach out to our 24/7 Priority Tech Support team at 1-888-599-8911.
 
 Thank you,
+
 Premium Account Services
 
-{!Case.E2CP__Case_Thread_Id__c}</textOnly>
+
+
+
+{!Case.E2CP__Case_Thread_Id__c}
+Case Autoresponse&gt;BC Consulting Autoresponse</textOnly>
     <type>html</type>
 </EmailTemplate>

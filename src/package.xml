@@ -1444,7 +1444,17 @@
         <members>MarketoEmailTemplates/MKTO675</members>
         <members>MarketoEmailTemplates/MKTO676</members>
         <members>MarketoEmailTemplates/MKTO677</members>
+        <members>MarketoEmailTemplates/MKTO678</members>
+        <members>MarketoEmailTemplates/MKTO679</members>
         <members>MarketoEmailTemplates/MKTO68</members>
+        <members>MarketoEmailTemplates/MKTO680</members>
+        <members>MarketoEmailTemplates/MKTO681</members>
+        <members>MarketoEmailTemplates/MKTO682</members>
+        <members>MarketoEmailTemplates/MKTO683</members>
+        <members>MarketoEmailTemplates/MKTO684</members>
+        <members>MarketoEmailTemplates/MKTO685</members>
+        <members>MarketoEmailTemplates/MKTO686</members>
+        <members>MarketoEmailTemplates/MKTO687</members>
         <members>MarketoEmailTemplates/MKTO69</members>
         <members>MarketoEmailTemplates/MKTO7</members>
         <members>MarketoEmailTemplates/MKTO70</members>
@@ -2320,6 +2330,7 @@
         <members>Client_Success/MBR_Closed_Manager_Contacts</members>
         <members>Client_Success/MGRCB_Queue_Count</members>
         <members>Client_Success/MGR_Call_Backs_Created_by_Rep</members>
+        <members>Client_Success/Manager_Contact_Age</members>
         <members>Client_Success/Manager_Contact_Dashboard_Active</members>
         <members>Client_Success/Manager_Contact_Dashboard_Closed</members>
         <members>Client_Success/Manager_callbacks1</members>
@@ -3051,7 +3062,6 @@
         <members>Outsource_Remotes/BPO_Remote_Dash_Manager_Callbacks</members>
         <members>Outsource_Remotes/BPO_Remote_Dash_NPS_Chat_SAT</members>
         <members>Outsource_Remotes/BPO_Remote_Dash_Open_Cases_by_Age</members>
-        <members>Outsource_Remotes/BPO_Remote_Dash_Open_Cases_by_Status</members>
         <members>Outsource_Remotes/BPO_Remote_Dash_Open_Enterprise_Cases</members>
         <members>Outsource_Remotes/BPO_Remote_Dash_Pending_Survey</members>
         <members>Outsource_Remotes/BPO_SHQ_10_2015</members>
@@ -3754,6 +3764,7 @@
         <members>Support_Live_Chat/BPO_Remote_Dash_Case_Open_Assigned_Al</members>
         <members>Support_Live_Chat/BPO_Remote_Dash_Cases_SL</members>
         <members>Support_Live_Chat/BPO_Remote_Dash_NPS_Web_SAT</members>
+        <members>Support_Live_Chat/BPO_Remote_Dash_Open_Cases_by_Status</members>
         <members>Support_Live_Chat/BPO_Team_Active_Ninjas1</members>
         <members>Support_Live_Chat/Billing_Transaction_Count_Report</members>
         <members>Support_Live_Chat/CHAT_SAT</members>
@@ -4560,6 +4571,7 @@
         <members>unfiled$public/April_Partner_Team_Revenue</members>
         <members>unfiled$public/April_SQLs_Partner</members>
         <members>unfiled$public/Articles_Needing_Review1</members>
+        <members>unfiled$public/Articles_by_SME2</members>
         <members>unfiled$public/Average_emails_to_resolve_PS_Cases</members>
         <members>unfiled$public/BAP_1603_WHMCS_vs_BMP_New_v2_Detail</members>
         <members>unfiled$public/BAP_2946_Audit</members>
@@ -4596,10 +4608,13 @@
         <members>unfiled$public/CTS_Awaiting_Verification</members>
         <members>unfiled$public/CTS_Blocked</members>
         <members>unfiled$public/CTS_Closed_Last_4W</members>
+        <members>unfiled$public/CTS_Closed_Last_4W1</members>
         <members>unfiled$public/CTS_NPS_Satisfaction_QoQ1</members>
         <members>unfiled$public/CTS_New</members>
         <members>unfiled$public/CTS_Open_WIP</members>
         <members>unfiled$public/CTS_Opened_Last_4W</members>
+        <members>unfiled$public/CTS_Opened_Last_4W1</members>
+        <members>unfiled$public/CTS_Opened_Last_4W2</members>
         <members>unfiled$public/CTS_Other</members>
         <members>unfiled$public/CTS_Platforms_4_Dashboard_Fixed</members>
         <members>unfiled$public/CTS_Pre_Scoping_Opportunities</members>
@@ -4609,8 +4624,11 @@
         <members>unfiled$public/CTS_Review</members>
         <members>unfiled$public/CTS_Statuses_4_Dashboard</members>
         <members>unfiled$public/CTS_Survey_Results_This_Quarter</members>
+        <members>unfiled$public/CTS_Time_UAT_Custom_Last_4W</members>
+        <members>unfiled$public/CTS_Time_UAT_Standard_Last_4W</members>
         <members>unfiled$public/CTS_Time_WIP_Enterprise_Last_4W1</members>
         <members>unfiled$public/CTS_Time_WIP_Standard_Last_4W1</members>
+        <members>unfiled$public/CTS_Time_WIP_Standard_Last_4W2</members>
         <members>unfiled$public/CTS_VE</members>
         <members>unfiled$public/CX_Journey_Interviews_2</members>
         <members>unfiled$public/C_L_Juan_Jacinto</members>
@@ -4855,6 +4873,7 @@
         <members>unfiled$public/Derek_Feb_SQL</members>
         <members>unfiled$public/Design_Closed_Top_T1s</members>
         <members>unfiled$public/Design_Closed_Top_T1s1</members>
+        <members>unfiled$public/Devin_LeJeune</members>
         <members>unfiled$public/Dialer_Calls</members>
         <members>unfiled$public/Dialer_Campaigns_Synced</members>
         <members>unfiled$public/Dialer_Campaigns_Synced_Source</members>
@@ -5497,6 +5516,7 @@
         <members>unfiled$public/Terms_Not_Accepted_RV_Accounts</members>
         <members>unfiled$public/Test_2_1000_30_90</members>
         <members>unfiled$public/The_Bigcommerce_Team_Stores</members>
+        <members>unfiled$public/The_Panda_Opps</members>
         <members>unfiled$public/Theme_Cases</members>
         <members>unfiled$public/This_Month_s_Revenue_DSP</members>
         <members>unfiled$public/Tier_3_Tier_4</members>

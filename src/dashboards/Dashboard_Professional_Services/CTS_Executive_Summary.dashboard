@@ -6,7 +6,7 @@
     <dashboardType>SpecifiedUser</dashboardType>
     <isGridLayout>false</isGridLayout>
     <leftSection>
-        <columnSize>Narrow</columnSize>
+        <columnSize>Medium</columnSize>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
@@ -17,7 +17,7 @@
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
             <legendPosition>Bottom</legendPosition>
-            <report>unfiled$public/Migrations_Opened_Last_4W</report>
+            <report>unfiled$public/CTS_Opened_Last_4W1</report>
             <showPercentage>false</showPercentage>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
@@ -34,7 +34,7 @@
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
             <legendPosition>Bottom</legendPosition>
-            <report>unfiled$public/Migrations_Closed_Last_4W</report>
+            <report>unfiled$public/CTS_Closed_Last_4W1</report>
             <showPercentage>false</showPercentage>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
@@ -43,7 +43,7 @@
         </components>
     </leftSection>
     <middleSection>
-        <columnSize>Narrow</columnSize>
+        <columnSize>Medium</columnSize>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
@@ -54,12 +54,12 @@
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
             <legendPosition>Bottom</legendPosition>
-            <report>unfiled$public/Migration_Time_WIP_Standard_Last_4W</report>
+            <report>unfiled$public/CTS_Time_WIP_Standard_Last_4W2</report>
             <showPercentage>false</showPercentage>
             <showPicturesOnCharts>false</showPicturesOnCharts>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Average Time Per Standard CTS 4W</title>
+            <title>Average In Progress Per Standard CTS 4W</title>
             <useReportChart>true</useReportChart>
         </components>
         <components>
@@ -72,17 +72,53 @@
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
             <legendPosition>Bottom</legendPosition>
-            <report>unfiled$public/Migration_Time_WIP_Enterprise_Last_4W</report>
+            <report>unfiled$public/CTS_Time_WIP_Enterprise_Last_4W1</report>
             <showPercentage>false</showPercentage>
             <showPicturesOnCharts>false</showPicturesOnCharts>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Average Time Per Custom CTS 4W</title>
+            <title>Average In Progress Per Custom CTS 4W</title>
+            <useReportChart>true</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Bar</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <legendPosition>Bottom</legendPosition>
+            <report>unfiled$public/CTS_Time_UAT_Standard_Last_4W</report>
+            <showPercentage>false</showPercentage>
+            <showPicturesOnCharts>false</showPicturesOnCharts>
+            <showValues>true</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Average UAT Time Per Standard CTS</title>
+            <useReportChart>true</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Bar</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <legendPosition>Bottom</legendPosition>
+            <report>unfiled$public/CTS_Time_UAT_Custom_Last_4W</report>
+            <showPercentage>false</showPercentage>
+            <showPicturesOnCharts>false</showPicturesOnCharts>
+            <showValues>true</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Average UAT Time Per Custom CTS</title>
             <useReportChart>true</useReportChart>
         </components>
     </middleSection>
     <rightSection>
-        <columnSize>Medium</columnSize>
+        <columnSize>Wide</columnSize>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
@@ -93,7 +129,7 @@
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <legendPosition>Bottom</legendPosition>
-            <report>unfiled$public/Migration_NPS_Satisfaction_QoQ</report>
+            <report>unfiled$public/CTS_NPS_Satisfaction_QoQ1</report>
             <showPercentage>false</showPercentage>
             <showPicturesOnCharts>false</showPicturesOnCharts>
             <showValues>true</showValues>

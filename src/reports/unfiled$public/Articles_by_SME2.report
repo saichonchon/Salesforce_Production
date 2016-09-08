@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Public__ka.Public__kav$Title</field>
+    </columns>
+    <columns>
+        <field>Public__ka.Public__kav$LastModifiedBy</field>
+    </columns>
+    <columns>
+        <field>Public__ka.Public__kav$Author__c</field>
+    </columns>
+    <columns>
+        <field>Public__ka.Public__kav$LastModifiedDate</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Public__ka.Public__kav$IsLatestVersion</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Public__ka.Public__kav$PublishStatus</column>
+            <operator>equals</operator>
+            <value>1,2</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Articles by SME</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Knowledge_Public__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Public__ka$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

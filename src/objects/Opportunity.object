@@ -6951,6 +6951,15 @@ null) ,NULL
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>SLA__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>SLA?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>SalesVue__Salesvue_Add_To_Plan_Ids__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>

@@ -1357,6 +1357,10 @@
             <translation><!-- Import/Export Products --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Inbound Dead Line</masterLabel>
+            <translation><!-- Inbound Dead Line --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Installation</masterLabel>
             <translation><!-- Installation --></translation>
         </picklistValues>
@@ -1877,6 +1881,10 @@
             <translation><!-- Trash/Spam --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Trial Extension Request</masterLabel>
+            <translation><!-- Trial Extension Request --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Trial Extensions</masterLabel>
             <translation><!-- Trial Extensions --></translation>
         </picklistValues>
@@ -1927,6 +1935,10 @@
         <picklistValues>
             <masterLabel>Users &amp; Permissions</masterLabel>
             <translation><!-- Users &amp; Permissions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>View Orders</masterLabel>
+            <translation><!-- View Orders --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>WWW Redirect</masterLabel>

@@ -360,19 +360,27 @@ IMAGE(&quot;/resource/1405031526000/Blackflag&quot;, &quot;Within SLA&quot;, 20,
         <label>Account Manager Health Score</label>
         <picklist>
             <picklistValues>
-                <fullName>4- Excellent</fullName>
+                <fullName>Excellent</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>3- Good</fullName>
+                <fullName>Good</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>2- Bad</fullName>
+                <fullName>Unresponsive</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>1- Awful</fullName>
+                <fullName>Neutral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bad</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Churn Risk</fullName>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
@@ -2028,8 +2036,8 @@ Grow - Potential for big opp;Partner choosing platform</inlineHelpText>
         <formula>if(( ISPICKVAL(Dialer_Priority__c,&quot;Priority Support&quot;)),4, 
 if(( ISPICKVAL(Dialer_Priority__c,&quot;Express Routing&quot;)),3, 
 if((Active_Stores_Opp__c &gt;0 &amp;&amp; Client_Age__c &lt;180 &amp;&amp; Total_Active_Store_GMV__c &lt;100),2, 
+if((Active_Trials_Opp__c &gt;0),2, 
 if((Active_Stores_Opp__c &gt;0),1, 
-if((Active_Trials_Opp__c &gt;0),1, 
 0)))))</formula>
         <label>I3 Menu Option</label>
         <precision>18</precision>
@@ -8096,19 +8104,27 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <picklistValues>
             <picklist>Account_Manager_Health_Score__c</picklist>
             <values>
-                <fullName>1- Awful</fullName>
+                <fullName>Bad</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>2- Bad</fullName>
+                <fullName>Churn Risk</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>3- Good</fullName>
+                <fullName>Excellent</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>4- Excellent</fullName>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Neutral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unresponsive</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -11043,19 +11059,27 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <picklistValues>
             <picklist>Account_Manager_Health_Score__c</picklist>
             <values>
-                <fullName>1- Awful</fullName>
+                <fullName>Bad</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>2- Bad</fullName>
+                <fullName>Churn Risk</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>3- Good</fullName>
+                <fullName>Excellent</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>4- Excellent</fullName>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Neutral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unresponsive</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -13697,19 +13721,27 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <picklistValues>
             <picklist>Account_Manager_Health_Score__c</picklist>
             <values>
-                <fullName>1- Awful</fullName>
+                <fullName>Bad</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>2- Bad</fullName>
+                <fullName>Churn Risk</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>3- Good</fullName>
+                <fullName>Excellent</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>4- Excellent</fullName>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Neutral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unresponsive</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -16364,19 +16396,27 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <picklistValues>
             <picklist>Account_Manager_Health_Score__c</picklist>
             <values>
-                <fullName>1- Awful</fullName>
+                <fullName>Bad</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>2- Bad</fullName>
+                <fullName>Churn Risk</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>3- Good</fullName>
+                <fullName>Excellent</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>4- Excellent</fullName>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Neutral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unresponsive</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

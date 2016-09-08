@@ -62,6 +62,7 @@
             <showPercentage>true</showPercentage>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
+            <title>Red Rider SOLD - Appears under IRCE Camp</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -181,13 +182,12 @@
                 <axisBinding>y</axisBinding>
                 <column>RowCount</column>
             </chartSummary>
-            <componentType>ColumnGrouped</componentType>
+            <componentType>Column</componentType>
             <displayUnits>Integer</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <groupingColumn>MEMBER_CREATED_DATE</groupingColumn>
             <groupingColumn>CAMPAIGN_NAME</groupingColumn>
             <header>Combined Ad &amp; Watch List Leads Added</header>
             <legendPosition>Bottom</legendPosition>

@@ -20,7 +20,22 @@
     <filter>
         <criteriaItems>
             <column>rvpe__RVAccount__c.Partner_Commission_Balance__c</column>
-            <operator>greaterThan</operator>
+            <operator>greaterOrEqual</operator>
+            <value>100</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>rvpe__RVAccount__c.Engaged__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>rvpe__RVAccount__c.Has_PayPal_Id__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>rvpe__RVAccount__c.rvpe__Inactive__c</column>
+            <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
     </filter>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Practical Ecomm 09/16- 1343.ACQ Email 1</name>
+    <style>none</style>
+    <subject>Reconnecting after Practical Ecommerce Webinar</subject>
+    <textOnly>Thanks for attending the How to Drive Sales from Multi-Device Shoppers webinar.
+Hi {{lead.First Name:default=there}},
+Thanks for attending the &quot;How to Drive Sales from Multi-Device Shoppers&quot; webinar.
+
+We’d love to tell you more about BigCommerce Enterprise &lt;[[http://grow.bigcommerce.com/Event-Demo-Request.html?utm_campaign=Prospects.Marketing%20Events.2015Q4.&amp;utm_source=pec&amp;utm_medium=event&amp;utm_term=BigCommerceEnterprise&amp;utm_content=followup]]&gt;, which can help you increase sales, decrease costs and spend less time managing your technology. Thousands of successful businesses sell more with BigCommerce, including Berkey Water, Dorco, Dunning Sportswear, Martha Stewart Cafe, MetroPCS, Native Union, O’Boticario and Rock Bottom Golf.
+
+According the market research firm Ipsos, same store sales for mid-market merchants on BigCommerce grew about twice as much as the ecommerce industry average.
+
+Are you available for 15 minutes this week to discuss your business goals and how BigCommerce can help you reach them? Feel free to reply to this email or schedule time online. &lt;[[http://grow.bigcommerce.com/Event-Demo-Request.html?utm_campaign=Prospects.Marketing%20Events.2015Q4.&amp;utm_source=pec&amp;utm_medium=event&amp;utm_term=BigCommerceEnterprise&amp;utm_content=followup]]&gt;
+
+Thanks,
+The BigCommerce Team
+ sellmore@bigcommerce.com &lt;[[mailto:sellmore@bigcommerce.com]]&gt;   /   1-855-884-6610  &lt;[[tel:+18558846610 ]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

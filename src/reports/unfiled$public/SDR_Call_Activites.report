@@ -97,7 +97,7 @@
     <reportType>Activities_with_Lookup_Data__c</reportType>
     <roleHierarchyFilter>SystemAdministrator</roleHierarchyFilter>
     <scope>organization</scope>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>Activity$ActivityDate</dateColumn>
         <interval>INTERVAL_LASTMONTH</interval>

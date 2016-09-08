@@ -4292,6 +4292,10 @@
         <relationshipLabel><!-- Renewal Opportunities --></relationshipLabel>
     </fields>
     <fields>
+        <label><!-- SLA? --></label>
+        <name>SLA__c</name>
+    </fields>
+    <fields>
         <label><!-- Salesvue Add To Plan Ids --></label>
         <name>SalesVue__Salesvue_Add_To_Plan_Ids__c</name>
     </fields>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_87757334</developerName>
+        <masterLabel>Time since open</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>AGE</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>24</to>
+            </sourceValues>
+            <value>0-24 hours</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>24</from>
+                <to>72</to>
+            </sourceValues>
+            <value>1-3 days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>72</from>
+                <to>168</to>
+            </sourceValues>
+            <value>3 days - 1 week</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>168</from>
+                <to>336</to>
+            </sourceValues>
+            <value>1-2 weeks</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>336</from>
+            </sourceValues>
+            <value>2+ weeks</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <description>age of contacts upon close / open as edittewd.</description>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Case.Client_Success</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <operator>equals</operator>
+            <value>Support - Manager Callback</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CREATED_DATE</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Week</dateGranularity>
+        <field>CLOSED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_87757334</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Manager Contact - Age</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <endDate>2016-09-03</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-06-05</startDate>
+    </timeFrameFilter>
+</Report>

@@ -213,6 +213,10 @@
                 <behavior>Edit</behavior>
                 <field>Preventable__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>SLA__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

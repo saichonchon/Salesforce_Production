@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CUS - GTM-1291: CP1 Deprecation.CUS: Control Panel Changes (GTM-1291/1321)</name>
+    <style>none</style>
+    <subject>Improvements to your control panel</subject>
+    <textOnly>We’ll be making improvements to your control panel starting the week of September 15.
+
+
+
+Hello {{lead.First Name:default=there}},
+
+
+
+We’ve made improvements to the BigCommerce control panel that you’ll see in the next few weeks. Here are the key changes:
+
+ - The navigation is now on the left-hand side and stays with you as you go down the page, making it accessible without having to scroll back up.
+ - The sub navigation is visible in each subsection, reducing the number of clicks when working on daily tasks.
+ - We’ve added new product features like Channel Manager, which lets you seamlessly integrate your store with Facebook and Pinterest (Amazon and eBay coming soon).
+ - You now have the option to change how quickly you’re logged out due to inactivity: choose from 15 minutes up to 2 hours.
+
+The changes will start to appear the week of September 15th. You won’t have to do anything to upgrade — we’ll send you a message in your control panel when the update is complete.
+
+Best,
+
+
+
+Derrek Pearson
+
+Senior Product Manager
+
+bigcommerce.com &lt;[[http://www.bigcommerce.com]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

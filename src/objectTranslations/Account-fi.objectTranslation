@@ -122,20 +122,28 @@
         <label><!-- Account Manager Health Score --></label>
         <name>Account_Manager_Health_Score__c</name>
         <picklistValues>
-            <masterLabel>1- Awful</masterLabel>
-            <translation><!-- 1- Awful --></translation>
+            <masterLabel>Bad</masterLabel>
+            <translation><!-- Bad --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>2- Bad</masterLabel>
-            <translation><!-- 2- Bad --></translation>
+            <masterLabel>Churn Risk</masterLabel>
+            <translation><!-- Churn Risk --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>3- Good</masterLabel>
-            <translation><!-- 3- Good --></translation>
+            <masterLabel>Excellent</masterLabel>
+            <translation><!-- Excellent --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>4- Excellent</masterLabel>
-            <translation><!-- 4- Excellent --></translation>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neutral</masterLabel>
+            <translation><!-- Neutral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unresponsive</masterLabel>
+            <translation><!-- Unresponsive --></translation>
         </picklistValues>
     </fields>
     <fields>

@@ -33,7 +33,7 @@
         <criteriaItems>
             <column>Account.Account_Manager_Health_Score__c</column>
             <operator>equals</operator>
-            <value>1- Awful</value>
+            <value></value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

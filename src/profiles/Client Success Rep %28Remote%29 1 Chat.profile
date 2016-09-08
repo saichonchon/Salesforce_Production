@@ -11309,6 +11309,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Opportunity.SLA__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Opportunity.SalesVue__Salesvue_Add_To_Plan_Ids__c</field>
         <readable>true</readable>
     </fieldPermissions>
