@@ -207,15 +207,15 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Retrospective__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Preventable__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>SLA__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Welcome_Call__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Welcome_Call_Timestamp__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -249,7 +249,15 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>Preventable__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>Regrettable__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Retrospective__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -831,29 +839,6 @@
         </relatedContentItems>
     </relatedContent>
     <relatedLists>
-        <customButtons>New_Case</customButtons>
-        <customButtons>Cancellation_Case</customButtons>
-        <fields>CASES.CASE_NUMBER</fields>
-        <fields>CASES.SUBJECT</fields>
-        <fields>CASES.PRIORITY</fields>
-        <fields>CASES.CREATED_DATE</fields>
-        <fields>CASES.STATUS</fields>
-        <fields>OWNER_NAME</fields>
-        <relatedList>RelatedCaseList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>CASES.CASE_NUMBER</fields>
-        <fields>CASES.RECORDTYPE</fields>
-        <fields>CASES.REASON</fields>
-        <fields>CASES.STATUS</fields>
-        <fields>CASES.CREATED_DATE</fields>
-        <fields>ACCOUNT.NAME</fields>
-        <fields>Subscription__c</fields>
-        <fields>Bigcommerce_Store_URL__c</fields>
-        <fields>CORE.USERS.ALIAS</fields>
-        <relatedList>Case.Opportunity__c</relatedList>
-    </relatedLists>
-    <relatedLists>
         <excludeButtons>ChoosePricebook</excludeButtons>
         <fields>Product2</fields>
         <fields>Quantity</fields>
@@ -864,86 +849,6 @@
         <fields>ListPrice</fields>
         <fields>TotalPrice</fields>
         <relatedList>RelatedLineItemList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>StartDate__c</fields>
-        <fields>Product__c</fields>
-        <fields>Status__c</fields>
-        <fields>Revenue_Rep__c</fields>
-        <fields>Revenue_Team__c</fields>
-        <fields>RevenueChange__c</fields>
-        <fields>EndDate__c</fields>
-        <fields>CREATED_DATE</fields>
-        <fields>LastVersion__c</fields>
-        <relatedList>Opportunity_Product__c.OpportunityID__c</relatedList>
-        <sortField>CREATED_DATE</sortField>
-        <sortOrder>Desc</sortOrder>
-    </relatedLists>
-    <relatedLists>
-        <fields>QUOTE.QUOTENUMBER</fields>
-        <fields>QUOTE.NAME</fields>
-        <fields>QUOTE.STATUS</fields>
-        <fields>QUOTE.EXPIRATIONDATE</fields>
-        <fields>QUOTE.TAX</fields>
-        <fields>QUOTE.TOTALPRICE</fields>
-        <fields>CreatedBy</fields>
-        <relatedList>RelatedQuoteList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>dsfs__Envelope_Status__c</fields>
-        <fields>dsfs__Hrs_Sent_to_Sign__c</fields>
-        <fields>dsfs__Subject__c</fields>
-        <fields>dsfs__Sender__c</fields>
-        <fields>dsfs__Sent_Date_Time__c</fields>
-        <fields>dsfs__Completed_Date_Time__c</fields>
-        <fields>Quote__c</fields>
-        <fields>dsfs__Company__c</fields>
-        <relatedList>dsfs__DocuSign_Status__c.dsfs__Opportunity__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>CAMPAIGN.NAME</fields>
-        <fields>CONTACT.FULL_NAME</fields>
-        <fields>OCR.ROLE</fields>
-        <fields>CM.RESPONDED</fields>
-        <fields>PRIMARY</fields>
-        <relatedList>RelatedCampaignInfluenceList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>Zuora__MRR__c</fields>
-        <fields>CREATED_DATE</fields>
-        <relatedList>Zuora__Subscription__c.Opportunity__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>LAST_UPDATE</fields>
-        <fields>Lifetime_GMV__c</fields>
-        <fields>Lifetime_Orders__c</fields>
-        <fields>Month_to_date_GMV__c</fields>
-        <fields>Month_To_Date_Orders__c</fields>
-        <fields>Most_Recent_Order_Date__c</fields>
-        <relatedList>BI_Data__c.Opportunity__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>StoreURL__c</fields>
-        <fields>Status__c</fields>
-        <fields>StartDate__c</fields>
-        <fields>PurchaseDate__c</fields>
-        <fields>Product__c</fields>
-        <fields>MonthlyRecurringRevenue__c</fields>
-        <fields>MBASubscriptionID__c</fields>
-        <fields>MBAPartnerID__c</fields>
-        <fields>MBAAccountID__c</fields>
-        <relatedList>Subscription__c.Opportunity__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <relatedList>RelatedOpportunityBookmarkList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <relatedList>RelatedContactRoleList</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>TASK.SUBJECT</fields>
@@ -969,7 +874,32 @@
         <relatedList>RelatedHistoryList</relatedList>
     </relatedLists>
     <relatedLists>
-        <relatedList>RelatedNoteList</relatedList>
+        <fields>CASES.CASE_NUMBER</fields>
+        <fields>CASES.RECORDTYPE</fields>
+        <fields>CASES.REASON</fields>
+        <fields>CASES.STATUS</fields>
+        <fields>CASES.CREATED_DATE</fields>
+        <fields>ACCOUNT.NAME</fields>
+        <fields>Subscription__c</fields>
+        <fields>Bigcommerce_Store_URL__c</fields>
+        <fields>CORE.USERS.ALIAS</fields>
+        <relatedList>Case.Opportunity__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>StoreURL__c</fields>
+        <fields>Status__c</fields>
+        <fields>StartDate__c</fields>
+        <fields>PurchaseDate__c</fields>
+        <fields>Product__c</fields>
+        <fields>MonthlyRecurringRevenue__c</fields>
+        <fields>MBASubscriptionID__c</fields>
+        <fields>MBAPartnerID__c</fields>
+        <fields>MBAAccountID__c</fields>
+        <relatedList>Subscription__c.Opportunity__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <relatedList>RelatedContactRoleList</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>OPPORTUNITY.NAME</fields>
@@ -985,28 +915,18 @@
         <relatedList>Opportunity.ParentOpportunity__c</relatedList>
     </relatedLists>
     <relatedLists>
-        <fields>MemberName</fields>
-        <fields>OppAccessLevel</fields>
-        <fields>TeamMemberRole</fields>
-        <fields>TeamMemberDepartment__c</fields>
-        <fields>Team_Member_Created_Date__c</fields>
-        <relatedList>RelatedOpportunitySalesTeam</relatedList>
+        <fields>OPPORTUNITY.NAME</fields>
+        <fields>ACCOUNT.NAME</fields>
+        <fields>OPPORTUNITY.CLOSE_DATE</fields>
+        <fields>OPPORTUNITY.STAGE_NAME</fields>
+        <fields>OPPORTUNITY.AMOUNT</fields>
+        <fields>OPPORTUNITY.TYPE</fields>
+        <fields>CORE.USERS.ALIAS</fields>
+        <fields>OPPORTUNITY.RECORDTYPE</fields>
+        <relatedList>Opportunity.Store_Opportunity__c</relatedList>
     </relatedLists>
     <relatedLists>
-        <fields>SplitOwner</fields>
-        <fields>SplitType</fields>
-        <fields>SplitPercentage</fields>
-        <fields>SplitAmount</fields>
-        <fields>SplitNote</fields>
-        <relatedList>RelatedOpportunitySplits</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>CreatedDate</fields>
-        <fields>StepStatus</fields>
-        <fields>OriginalActor</fields>
-        <fields>Actor</fields>
-        <fields>Comments</fields>
-        <relatedList>RelatedProcessHistoryList</relatedList>
+        <relatedList>RelatedNoteList</relatedList>
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedEntityHistoryList</relatedList>

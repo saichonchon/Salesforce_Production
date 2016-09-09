@@ -186,10 +186,6 @@
                 <behavior>Edit</behavior>
                 <field>Store_Type__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Welcome_Call__c</field>
-            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>

@@ -7687,7 +7687,7 @@ null) ,NULL
             <isOptional>false</isOptional>
         </lookupFilter>
         <referenceTo>Opportunity</referenceTo>
-        <relationshipLabel>Opportunities (Professional Services)</relationshipLabel>
+        <relationshipLabel>Related Opportunities</relationshipLabel>
         <relationshipName>PSOpportunities</relationshipName>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -8159,6 +8159,26 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
         <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Welcome_Call_Timestamp__c</fullName>
+        <description>Date that welcome call was completed by account manager.</description>
+        <externalId>false</externalId>
+        <label>Welcome Call Timestamp</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Welcome_Call__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicate Welcome Call has been completed by account manager</description>
+        <externalId>false</externalId>
+        <label>Welcome Call</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>Zuora_AutoRenew__c</fullName>

@@ -17,8 +17,8 @@
                 <field>Name</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
-                <field>ParentOpportunity__c</field>
+                <behavior>Edit</behavior>
+                <field>Store_Opportunity__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
@@ -229,17 +229,6 @@
         <relatedList>RelatedLineItemList</relatedList>
     </relatedLists>
     <relatedLists>
-        <fields>CAMPAIGN.NAME</fields>
-        <fields>CONTACT.FULL_NAME</fields>
-        <fields>OCR.ROLE</fields>
-        <fields>CM.RESPONDED</fields>
-        <fields>PRIMARY</fields>
-        <relatedList>RelatedCampaignInfluenceList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <relatedList>RelatedContactRoleList</relatedList>
-    </relatedLists>
-    <relatedLists>
         <fields>TASK.SUBJECT</fields>
         <fields>Comments_short__c</fields>
         <fields>TASK.WHO_NAME</fields>
@@ -261,6 +250,14 @@
         <fields>CORE.USERS.FULL_NAME</fields>
         <fields>TASK.LAST_UPDATE</fields>
         <relatedList>RelatedHistoryList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>CAMPAIGN.NAME</fields>
+        <fields>CONTACT.FULL_NAME</fields>
+        <fields>OCR.ROLE</fields>
+        <fields>CM.RESPONDED</fields>
+        <fields>PRIMARY</fields>
+        <relatedList>RelatedCampaignInfluenceList</relatedList>
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedNoteList</relatedList>

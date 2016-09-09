@@ -580,6 +580,16 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>Welcome_Call_Timestamp</fullName>
+        <description>Add timestamp for first entry in the Welcome Call field.</description>
+        <field>Welcome_Call_Timestamp__c</field>
+        <formula>TODAY()</formula>
+        <name>Welcome Call Timestamp</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>rvee__AssignedToPartnerModified</fullName>
         <field>rvpe__PartnerLastModifiedDate__c</field>
         <name>Assigned to Partner Modified</name>
@@ -1325,6 +1335,25 @@ OwnerId  &lt;&gt; &apos;005a000000AsxTo&apos; /* The BigCommerce Team */
             <value>Closed Won</value>
         </criteriaItems>
         <description>Notify opportunity owner if an upgrade closes</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Welcome Call Timestamp</fullName>
+        <actions>
+            <name>Welcome_Call_Timestamp</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Welcome_Call__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Welcome_Call_Timestamp__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Add timestamp for Welcome Call original field update.</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>

@@ -3548,10 +3548,6 @@ Grow - Potential for big opp;Partner choosing platform --></help>
         <name>Valid_Activity_Date__c</name>
     </fields>
     <fields>
-        <label><!-- Welcome Call --></label>
-        <name>Welcome_Call__c</name>
-    </fields>
-    <fields>
         <help><!-- Why should a client choose this design partner over another? --></help>
         <label><!-- zWhy Use? --></label>
         <name>Why_Use__c</name>

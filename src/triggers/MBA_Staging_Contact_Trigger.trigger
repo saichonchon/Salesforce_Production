@@ -147,7 +147,7 @@ trigger MBA_Staging_Contact_Trigger on MBA_Staging_Contact__c (before insert, be
                 // only create the contact if they are primary.
                 // MBA will never send anything but a primary contact, and BMP will often duplicate the primary and send it as a billing contact.
                 // Since the vast majority of contacts coming from BMP are duplicates, we will mimic the behavior that already existed in MBA and ignore any non-primary contacts
-                if ((mba.Source__c == 'BMP' && mba.Type__c.toUpperCase().StartsWith('PRIMARY')) || mba.Source__c != 'BMP')
+                if (mba.Primary_MBA_Contact__c)
                 {
                     objContact = new Contact();
                     system.debug('***** mpStagingToExisting for New: ' + mba);

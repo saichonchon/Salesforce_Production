@@ -62,6 +62,12 @@
     <columns>
         <field>Opportunity.Contract_End_Date__c</field>
     </columns>
+    <columns>
+        <field>Opportunity.Onboarding_Specialist__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Launch_Status__c</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>Opportunity.Account_Management_Services__c</column>

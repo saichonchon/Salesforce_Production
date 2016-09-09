@@ -1093,22 +1093,6 @@
         <relatedList>RelatedCampaignInfluenceList</relatedList>
     </relatedLists>
     <relatedLists>
-        <fields>NAME</fields>
-        <fields>Zuora__MRR__c</fields>
-        <fields>CREATED_DATE</fields>
-        <relatedList>Zuora__Subscription__c.Opportunity__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>LAST_UPDATE</fields>
-        <fields>Lifetime_GMV__c</fields>
-        <fields>Lifetime_Orders__c</fields>
-        <fields>Month_to_date_GMV__c</fields>
-        <fields>Month_To_Date_Orders__c</fields>
-        <fields>Most_Recent_Order_Date__c</fields>
-        <relatedList>BI_Data__c.Opportunity__c</relatedList>
-    </relatedLists>
-    <relatedLists>
         <relatedList>RelatedContactRoleList</relatedList>
     </relatedLists>
     <relatedLists>
@@ -1123,6 +1107,17 @@
         <fields>Day_of_Trial__c</fields>
         <fields>StoreURL__c</fields>
         <relatedList>Opportunity.ParentOpportunity__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>OPPORTUNITY.NAME</fields>
+        <fields>ACCOUNT.NAME</fields>
+        <fields>OPPORTUNITY.CLOSE_DATE</fields>
+        <fields>OPPORTUNITY.STAGE_NAME</fields>
+        <fields>OPPORTUNITY.AMOUNT</fields>
+        <fields>OPPORTUNITY.TYPE</fields>
+        <fields>CORE.USERS.ALIAS</fields>
+        <fields>OPPORTUNITY.RECORDTYPE</fields>
+        <relatedList>Opportunity.Store_Opportunity__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>MemberName</fields>
@@ -1152,14 +1147,6 @@
         <fields>Bigcommerce_Store_URL__c</fields>
         <fields>CORE.USERS.ALIAS</fields>
         <relatedList>Case.Opportunity__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>CreatedDate</fields>
-        <fields>StepStatus</fields>
-        <fields>OriginalActor</fields>
-        <fields>Actor</fields>
-        <fields>Comments</fields>
-        <relatedList>RelatedProcessHistoryList</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>

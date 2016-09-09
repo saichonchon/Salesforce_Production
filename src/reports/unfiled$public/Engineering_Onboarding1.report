@@ -46,6 +46,9 @@
         <field>lmscons__Transcript_Line__c$lmscons__Progress__c</field>
     </columns>
     <columns>
+        <field>lmscons__Transcript_Line__c$lmscons__Score_int__c</field>
+    </columns>
+    <columns>
         <aggregateTypes>Sum</aggregateTypes>
         <field>lmscons__Transcript_Line__c$lmscons__Learning_Path_Assignment__c.Learning_Path_Assignment_Count__c</field>
     </columns>
@@ -53,7 +56,12 @@
         <criteriaItems>
             <column>lmscons__Transcript_Line__c$lmscons__Learning_Path_Item__c.lmscons__Learning_Path__c</column>
             <operator>contains</operator>
-            <value>Noob</value>
+            <value>engineering</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>lmscons__Transcript_Line__c$lmscons__Training_User_License__c.lmscons__User__c</column>
+            <operator>contains</operator>
+            <value>andriy</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -72,7 +80,7 @@
         <field>lmscons__Transcript_Line__c$lmscons__Training_User_License__c.lmscons__User__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Noob Path Report</name>
+    <name>Engineering Onboarding</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -84,7 +92,6 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>lmscons__Transcript_Line__c$CreatedDate</dateColumn>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2016-05-18</startDate>
+        <interval>INTERVAL_CURFY</interval>
     </timeFrameFilter>
 </Report>

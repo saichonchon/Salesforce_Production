@@ -5895,16 +5895,6 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>Welcome_Call__c</fullName>
-        <defaultValue>false</defaultValue>
-        <description>Account management information field.</description>
-        <externalId>false</externalId>
-        <label>Welcome Call</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>Why_Use__c</fullName>
         <description>design partner field</description>
         <externalId>false</externalId>

@@ -4692,7 +4692,7 @@
             <informationalMessage><!-- Select a Store purchase opportunity --></informationalMessage>
         </lookupFilter>
         <name>Store_Opportunity__c</name>
-        <relationshipLabel><!-- Opportunities (Professional Services) --></relationshipLabel>
+        <relationshipLabel><!-- Related Opportunities --></relationshipLabel>
     </fields>
     <fields>
         <help><!-- Populated in order to allow URL field to display in search results --></help>
@@ -4941,6 +4941,14 @@ Hot: came in from a good source and/or is progressing towards close --></help>
     <fields>
         <label><!-- Web to Lead Message --></label>
         <name>Web_to_Lead_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Welcome Call Timestamp --></label>
+        <name>Welcome_Call_Timestamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Welcome Call --></label>
+        <name>Welcome_Call__c</name>
     </fields>
     <fields>
         <label><!-- Zuora Sub AutoRenew? --></label>

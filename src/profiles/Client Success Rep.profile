@@ -2552,11 +2552,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Welcome_Call__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>Account.Why_Use__c</field>
         <readable>false</readable>
@@ -11564,6 +11559,16 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Web_to_Lead_Message__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Welcome_Call_Timestamp__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Welcome_Call__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

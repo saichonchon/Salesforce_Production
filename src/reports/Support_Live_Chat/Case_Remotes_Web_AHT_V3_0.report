@@ -42,7 +42,7 @@
         <criteriaItems>
             <column>Case.WorkIt2__Timings__r$Owner</column>
             <operator>notEqual</operator>
-            <value>Dante Munoz,Derek Donovan,Dave Enriquez,Timothy Azark,Jose Flores,Bungay Beau,Daphne Apatan,Joey Fulgencio,Leyanne Bertumen</value>
+            <value>Ramil DeGuzman,tristan urrea,Lucian Villasenor,Reiner Leyba,glenn saturno,Dante Munoz,Derek Donovan,Dave Enriquez,Timothy Azark,Jose Flores,Bungay Beau,Daphne Apatan,Joey Fulgencio,Leyanne Bertumen</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>
@@ -66,8 +66,8 @@
     <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>Case.WorkIt2__Timings__r.WorkIt2__Time_Entries__r$WorkIt2__End__c</dateColumn>
-        <endDate>2016-07-02</endDate>
+        <endDate>2016-09-03</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2016-06-26</startDate>
+        <startDate>2016-08-28</startDate>
     </timeFrameFilter>
 </Report>
