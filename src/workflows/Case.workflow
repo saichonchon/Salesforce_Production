@@ -1731,7 +1731,7 @@ Set by hierarchy : Contact &gt; Lead &gt; Web Email &gt; Subscription Email</des
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>notEqual</operation>
-            <value>Pixel Union Themes,support@bigcommerce.com (closed),apisupport@bigcommerce.com,SBD - Escalations,Phone,Sift Science,eigsupport@bigcommerce.com,heartlandsupport@bigcommerce.com</value>
+            <value>Pixel Union Themes,support@bigcommerce.com (closed),apisupport@bigcommerce.com,SBD - Escalations,Phone,Sift Science,eigsupport@bigcommerce.com,heartlandsupport@bigcommerce.com,Chat</value>
         </criteriaItems>
         <criteriaItems>
             <field>Case.Subject</field>
@@ -3373,7 +3373,7 @@ ISCHANGED( Survey_Completion_Date__c )</formula>
             <name>reset_Send_Email_Initial</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Case.Send_Initial_Email__c</field>
             <operation>equals</operation>

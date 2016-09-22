@@ -17,10 +17,6 @@
         <name>Growth_Rate_Adjustment__c</name>
     </fields>
     <fields>
-        <label><!-- MInimum Price --></label>
-        <name>MInimum_Price__c</name>
-    </fields>
-    <fields>
         <label><!-- Max AOV --></label>
         <name>Max_AOV__c</name>
     </fields>
@@ -31,6 +27,10 @@
     <fields>
         <label><!-- Min Order % --></label>
         <name>Min_Order_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Price --></label>
+        <name>Minimum_Price__c</name>
     </fields>
     <fields>
         <label><!-- Percent of Total --></label>
@@ -44,6 +44,10 @@
         <label><!-- Product --></label>
         <name>Product__c</name>
         <relationshipLabel><!-- Target Prices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Target Price --></label>
+        <name>Target_Price__c</name>
     </fields>
     <layouts>
         <layout>Target Price Layout</layout>

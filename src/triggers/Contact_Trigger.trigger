@@ -8,7 +8,6 @@ trigger Contact_Trigger on Contact (before insert, before update, After insert, 
         {
         handler.UpdateTZ(trigger.new);
         }
-        if (trigger.isUpdate) handler.updatePhoneNumbers(Trigger.New, Trigger.Old);
 
     }
 

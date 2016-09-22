@@ -41,6 +41,11 @@
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>rvpe__RVAccount__c.Engaged__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
     </filter>
     <format>Tabular</format>
     <name>Partner Commissions Earned Last Month</name>
@@ -55,6 +60,6 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Partner_Commission_Summary__c.End_Date__c</dateColumn>
-        <interval>INTERVAL_LAST60</interval>
+        <interval>INTERVAL_LASTMONTH</interval>
     </timeFrameFilter>
 </Report>

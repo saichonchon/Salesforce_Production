@@ -60,7 +60,7 @@
         <field>DUE_DATE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>SBD Daily Sales Activity Report</name>
+    <name>*SBD Daily Sales Activity Report</name>
     <params>
         <name>closed</name>
         <value>all</value>
@@ -79,6 +79,6 @@
     <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>DUE_DATE</dateColumn>
-        <interval>INTERVAL_YESTERDAY</interval>
+        <interval>INTERVAL_LAST7</interval>
     </timeFrameFilter>
 </Report>

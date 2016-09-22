@@ -2379,6 +2379,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account.Send_Rev_Share_Email__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.ShippingAddress</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3933,6 +3938,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.Current_User_Title__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Case.Custom_Page_1__c</field>
         <readable>true</readable>
@@ -5088,6 +5098,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Supported_During_Trial__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Case.Supported_as_Trial__c</field>
         <readable>true</readable>
@@ -6218,84 +6233,29 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Contact.mkto2__Acquisition_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contact.mkto2__Acquisition_Program_Id__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contact.mkto2__Acquisition_Program__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contact.mkto2__Inferred_City__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contact.mkto2__Inferred_Company__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contact.mkto2__Inferred_Country__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contact.mkto2__Inferred_Metropolitan_Area__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contact.mkto2__Inferred_Phone_Area_Code__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contact.mkto2__Inferred_Postal_Code__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contact.mkto2__Inferred_State_Region__c</field>
-        <readable>true</readable>
+        <editable>false</editable>
+        <field>Contact.mkto71_Acquisition_Program__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Contact.mkto2__Lead_Score__c</field>
-        <readable>true</readable>
+        <field>Contact.mkto71_Inferred_Company__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Contact.mkto2__Original_Referrer__c</field>
-        <readable>true</readable>
+        <editable>false</editable>
+        <field>Contact.mkto71_Inferred_Country__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Contact.mkto2__Original_Search_Engine__c</field>
-        <readable>true</readable>
+        <editable>false</editable>
+        <field>Contact.mkto71_Lead_Score__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Contact.mkto2__Original_Search_Phrase__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contact.mkto2__Original_Source_Info__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contact.mkto2__Original_Source_Type__c</field>
-        <readable>true</readable>
+        <editable>false</editable>
+        <field>Contact.mkto71_Original_Referrer__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -7453,6 +7413,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Invoice_Transaction__c.Amount_Adjusted__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Invoice_Transaction__c.Amount_Credited__c</field>
         <readable>false</readable>
@@ -7711,6 +7676,11 @@
         <editable>true</editable>
         <field>KB_Global_Search_History__c.Search_String__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.Account__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -8638,84 +8608,29 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.mkto2__Acquisition_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.mkto2__Acquisition_Program_Id__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.mkto2__Acquisition_Program__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.mkto2__Inferred_City__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.mkto2__Inferred_Company__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.mkto2__Inferred_Country__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.mkto2__Inferred_Metropolitan_Area__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.mkto2__Inferred_Phone_Area_Code__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.mkto2__Inferred_Postal_Code__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.mkto2__Inferred_State_Region__c</field>
-        <readable>true</readable>
+        <editable>false</editable>
+        <field>Lead.mkto71_Acquisition_Program__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Lead.mkto2__Lead_Score__c</field>
-        <readable>true</readable>
+        <field>Lead.mkto71_Inferred_Company__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.mkto2__Original_Referrer__c</field>
-        <readable>true</readable>
+        <editable>false</editable>
+        <field>Lead.mkto71_Inferred_Country__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.mkto2__Original_Search_Engine__c</field>
-        <readable>true</readable>
+        <editable>false</editable>
+        <field>Lead.mkto71_Lead_Score__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.mkto2__Original_Search_Phrase__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.mkto2__Original_Source_Info__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Lead.mkto2__Original_Source_Type__c</field>
-        <readable>true</readable>
+        <editable>false</editable>
+        <field>Lead.mkto71_Original_Referrer__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -10840,6 +10755,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Onboarding_Specialist__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.OppSortNumber__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -15144,11 +15064,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Target_Price__c.MInimum_Price__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Target_Price__c.Max_AOV__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -15160,6 +15075,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Target_Price__c.Min_Order_Percent__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Target_Price__c.Minimum_Price__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -15176,6 +15096,11 @@
         <editable>false</editable>
         <field>Target_Price__c.Product__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Target_Price__c.Target_Price__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -16418,12 +16343,12 @@
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
-        <layout>Account-Default</layout>
-        <recordType>Account.Strategic_Partner_Record_Type</recordType>
+        <layout>Account-Partner Account Layout</layout>
+        <recordType>Account.Partner_Record_Type</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account-Partner Account Layout</layout>
-        <recordType>Account.Partner_Record_Type</recordType>
+        <recordType>Account.Strategic_Partner_Record_Type</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account-Sales Marketing Client Account</layout>
@@ -18322,6 +18247,10 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>MassInlineEdit</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>OverrideForecasts</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>

@@ -70,6 +70,17 @@
         <type>Summary</type>
     </fields>
     <fields>
+        <fullName>Amount_Adjusted__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>When a transaction has been recorded in error, this field allows us to adjust the net amount paid without modifying the original data</inlineHelpText>
+        <label>Amount Adjusted</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
         <fullName>Amount_Credited__c</fullName>
         <description>For BAP-3698 - Partner Commissions v2</description>
         <externalId>false</externalId>
@@ -123,9 +134,9 @@
         <fullName>Amount_Paid_net__c</fullName>
         <description>For BAP-3698 - Partner Commissions v2</description>
         <externalId>false</externalId>
-        <formula>Amount_Paid__c - Amount_Refunded__c</formula>
+        <formula>Amount_Paid__c - Amount_Refunded__c +  Amount_Adjusted__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <inlineHelpText>The amount paid minus amount credited</inlineHelpText>
+        <inlineHelpText>The amount paid - amount refunded + amount adjusted</inlineHelpText>
         <label>Amount Paid (net)</label>
         <precision>18</precision>
         <required>false</required>
@@ -149,7 +160,7 @@
         <fullName>CMRR__c</fullName>
         <description>For BAP-3698 - Partner Commissions v2</description>
         <externalId>false</externalId>
-        <formula>Amount_Paid__c / Payment_Term__c</formula>
+        <formula>Amount_Paid_net__c / Payment_Term__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <inlineHelpText>The amount of the transaction divided by the term.  This represents the amount of revenue we may recognize per month based on the payment made.</inlineHelpText>
         <label>CMRR</label>

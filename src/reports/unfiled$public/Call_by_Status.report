@@ -4,7 +4,7 @@
         <calculatedFormula>Activity.CallDurationInSeconds:SUM/60</calculatedFormula>
         <datatype>number</datatype>
         <developerName>FORMULA1</developerName>
-        <isActive>false</isActive>
+        <isActive>true</isActive>
         <isCrossBlock>false</isCrossBlock>
         <masterLabel>Call Duration (Minutes)</masterLabel>
         <scale>2</scale>

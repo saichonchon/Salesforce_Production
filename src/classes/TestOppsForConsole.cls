@@ -87,10 +87,12 @@ static testMethod void testContactConsole()
 		
 		system.assertNotEquals(null, cont.getSelectedOppId());
 		string oppName = cont.getSelectedOppName();
+        cont.CaseSubject = 'test subject';
+        cont.CallerName = 'Test Bob';
 		cont.CreateCase();
 //		list<SelectOption> caseOpts = cont.lstCaseRTs;
 //		list<OppForConsoleController.CaseRTWrapper> lstCaseWrap = cont.lstCaseRTWraps;
-				
+		cont.CreateCase();		
 		
 		Test.stopTest();
     }

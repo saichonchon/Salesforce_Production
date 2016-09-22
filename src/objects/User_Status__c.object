@@ -131,6 +131,18 @@
         <label>Round Robin Queue</label>
         <picklist>
             <picklistValues>
+                <fullName>Small Business Sales Queue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Midmarket Sales Queue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sr. Midmarket Sales Queue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Acq Lead Distro Queue</fullName>
                 <default>false</default>
             </picklistValues>
@@ -172,6 +184,14 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Partner Requests Queue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>APAC Midmarket Sales Queue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>APAC Small Business Sales Queue</fullName>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
@@ -231,21 +251,6 @@
             <value>In the Office</value>
         </filters>
         <label>Accounts Queues</label>
-    </listViews>
-    <listViews>
-        <fullName>Acquisition_Accounts_Queue</fullName>
-        <columns>NAME</columns>
-        <columns>SalesRep__c</columns>
-        <columns>Status__c</columns>
-        <columns>Round_Robin_Number__c</columns>
-        <columns>LAST_UPDATE</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Round_Robin_Queue__c</field>
-            <operation>equals</operation>
-            <value>Acquisition Accounts Queue</value>
-        </filters>
-        <label>Acquisition Accounts Queue</label>
     </listViews>
     <listViews>
         <fullName>All</fullName>
@@ -336,21 +341,22 @@
         <sharedTo/>
     </listViews>
     <listViews>
-        <fullName>Direct_Sales_Accounts</fullName>
+        <fullName>Midmarket_Sales_Queue</fullName>
         <columns>NAME</columns>
         <columns>SalesRep__c</columns>
         <columns>Status__c</columns>
         <columns>Round_Robin_Number__c</columns>
+        <columns>LAST_UPDATE</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>Round_Robin_Queue__c</field>
             <operation>equals</operation>
-            <value>Direct Sales Accounts Queue</value>
+            <value>Midmarket Sales Queue</value>
         </filters>
-        <label>Direct Sales Accounts Queue</label>
+        <label>Midmarket Sales Queue</label>
     </listViews>
     <listViews>
-        <fullName>Enterprise_Accounts_Queue</fullName>
+        <fullName>Small_Business_Sales_Queue</fullName>
         <columns>NAME</columns>
         <columns>SalesRep__c</columns>
         <columns>Status__c</columns>
@@ -359,9 +365,23 @@
         <filters>
             <field>Round_Robin_Queue__c</field>
             <operation>equals</operation>
-            <value>Enterprise Accounts Queue</value>
+            <value>Small Business Sales Queue</value>
         </filters>
-        <label>Enterprise Accounts Queue</label>
+        <label>Small Business Sales Queue</label>
+    </listViews>
+    <listViews>
+        <fullName>Sr_Midmarket_Sales_Queue</fullName>
+        <columns>NAME</columns>
+        <columns>SalesRep__c</columns>
+        <columns>Status__c</columns>
+        <columns>Round_Robin_Number__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Round_Robin_Queue__c</field>
+            <operation>equals</operation>
+            <value>Sr. Midmarket Sales Queue</value>
+        </filters>
+        <label>Sr. Midmarket Sales Queue</label>
     </listViews>
     <nameField>
         <displayFormat>US-{0000}</displayFormat>

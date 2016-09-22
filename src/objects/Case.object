@@ -1243,10 +1243,10 @@
     </fields>
     <fields>
         <fullName>BC_Migration_Assignee__c</fullName>
-        <description>Migrations : Which Bigcommerce migration team member is working this case</description>
+        <description>Catalog Transfer: Which Bigcommerce Catalog Transfer team member is working this case</description>
         <externalId>false</externalId>
-        <inlineHelpText>Which Bigcommerce migration team member is working this case</inlineHelpText>
-        <label>zBC Migration Assignee</label>
+        <inlineHelpText>Which Bigcommerce Catalog Transfer team member is working this case</inlineHelpText>
+        <label>zBC Catalog Transfer Assignee</label>
         <picklist>
             <controllingField>Technician__c</controllingField>
             <picklistValues>
@@ -3944,10 +3944,10 @@ IMAGE(&quot;resource/EnterpriseClient&quot;, &quot;Enterprise Client&quot;,20,11
     </fields>
     <fields>
         <fullName>Completion_Date__c</fullName>
-        <description>Migrations : date BC team has finished the data migration</description>
+        <description>Catalog Transfer: date BC team has finished the data migration</description>
         <externalId>false</externalId>
-        <inlineHelpText>Date the migration completes.</inlineHelpText>
-        <label>Migration Completion Date</label>
+        <inlineHelpText>Date the catalog transfer completes.</inlineHelpText>
+        <label>Catalog Transfer Completion Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
@@ -4160,6 +4160,17 @@ IF(  Opportunity__r.Contact_First_Name__c  &lt;&gt; Null, Opportunity__r.Contact
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Current_User_Title__c</fullName>
+        <externalId>false</externalId>
+        <formula>$User.Title</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Current User Title</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Custom_Page_1__c</fullName>
@@ -4789,13 +4800,13 @@ IF (MID ( Id, 14, 1) &lt;&gt;&quot;0&quot;, RIGHT(Id, 2), &quot;&quot;) ) ) ) ) 
     </fields>
     <fields>
         <fullName>EIG_ID__c</fullName>
-        <description>Migrations : for EIG project; formula pulls EIG ID from associated subscription</description>
+        <description>Catalog Transfer: for EIG project; formula pulls EIG ID from associated subscription</description>
         <externalId>false</externalId>
         <formula>IF( ISBLANK( Opportunity__c ) = FALSE, Opportunity__r.SBD_Store_ID__c, 
 IF( ISBLANK( Subscription__c ) = FALSE, Subscription__r.SBD_Store_ID__c , 
 NULL))</formula>
-        <inlineHelpText>Migrations : for EIG project; formula pulls EIG ID from associated subscription</inlineHelpText>
-        <label>Migration SBD EIG ID</label>
+        <inlineHelpText>Catalog Transfer: for EIG project; formula pulls EIG ID from associated subscription</inlineHelpText>
+        <label>Catalog Transfer SBD EIG ID</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Text</type>
@@ -5146,10 +5157,10 @@ NULL)</formula>
     <fields>
         <fullName>Issues_Reported__c</fullName>
         <defaultValue>false</defaultValue>
-        <description>Migrations : has there been report of a migration issue</description>
+        <description>Catalog transfer: has there been report of a transfer issue</description>
         <externalId>false</externalId>
-        <inlineHelpText>Migrations : has there been report of a migration issue</inlineHelpText>
-        <label>z Migration Issues Reported</label>
+        <inlineHelpText>Catalog transfer: has there been report of a transfer issue</inlineHelpText>
+        <label>z Catalog Transfer Issues Reported</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
@@ -5653,16 +5664,16 @@ IF(
 || ISPICKVAL(Migration_Platform__c, &apos;Other&apos;)  )
 
 ,false,true)</formula>
-        <label>Migration Automated Emails?</label>
+        <label>Catalog Transfer Automated Emails?</label>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>Migration_Delay_Reason__c</fullName>
-        <description>For SalesOps/Admins only: Multi-select picklist for reasons why data migration is delayed/blocked</description>
+        <description>For SalesOps/Admins only: Multi-select picklist for reasons why data transfer is delayed/blocked</description>
         <externalId>false</externalId>
-        <inlineHelpText>Select the reason(s) for why the data migration is unable to start, delayed, or otherwise blocked from progressing. The reasons selected are to provide insight into the length of time to complete data migrations, e.g. Time to Initial Completion</inlineHelpText>
-        <label>zMigration Delay Reason(s)</label>
+        <inlineHelpText>Select the reason(s) for why the data transfer is unable to start, delayed, or otherwise blocked from progressing. The reasons selected are to provide insight into the length of time to complete data transfers, e.g. Time to Initial Completion</inlineHelpText>
+        <label>zCatalog Transfer Delay Reason(s)</label>
         <picklist>
             <picklistValues>
                 <fullName>API / Advanced API not enabled</fullName>
@@ -5721,9 +5732,9 @@ IF(
     </fields>
     <fields>
         <fullName>Migration_Difficulty__c</fullName>
-        <description>Migrations : picklist</description>
+        <description>Catalog transfer: picklist</description>
         <externalId>false</externalId>
-        <label>zMigration Difficulty</label>
+        <label>zCatalog Transfer Difficulty</label>
         <picklist>
             <picklistValues>
                 <fullName>Easy</fullName>
@@ -5770,7 +5781,7 @@ IF(
 &quot;Yahoo&quot;,1, 
 &quot;Zoovy&quot;,1,2)</formula>
         <inlineHelpText>Returns 1 if Admin only or 2 if Admin and FTP</inlineHelpText>
-        <label>Migration Email Type</label>
+        <label>Catalog Transfer Email Type</label>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
@@ -5780,10 +5791,10 @@ IF(
     </fields>
     <fields>
         <fullName>Migration_Escalation_Reason__c</fullName>
-        <description>Provides a reason for migration case escalation, if the case is escalated</description>
+        <description>Provides a reason for catalog transfer case escalation, if the case is escalated</description>
         <externalId>false</externalId>
-        <inlineHelpText>Provides a reason for migration case escalation, if the case is escalated</inlineHelpText>
-        <label>Migration Escalation Reason</label>
+        <inlineHelpText>Provides a reason for catalog transfer case escalation, if the case is escalated</inlineHelpText>
+        <label>Catalog Transfer Escalation Reason</label>
         <picklist>
             <picklistValues>
                 <fullName>Sales Expectation</fullName>
@@ -5821,10 +5832,10 @@ IF(
     </fields>
     <fields>
         <fullName>Migration_Issues__c</fullName>
-        <description>For SalesOps/Admins only: Multi-select picklist for issues experienced or reported during migration process</description>
+        <description>For SalesOps/Admins only: Multi-select picklist for issues experienced or reported during transfer process</description>
         <externalId>false</externalId>
-        <inlineHelpText>Select the issues experienced during the migration process. The reasons selected are to provide context for future platform enhancement requests, client escalation/churn, tool improvement, etc.</inlineHelpText>
-        <label>zMigration Issues</label>
+        <inlineHelpText>Select the issues experienced during the transfer process. The reasons selected are to provide context for future platform enhancement requests, client escalation/churn, tool improvement, etc.</inlineHelpText>
+        <label>zCatalog Transfer Issues</label>
         <picklist>
             <picklistValues>
                 <fullName>BC server/db issues</fullName>
@@ -5887,10 +5898,10 @@ IF(
     </fields>
     <fields>
         <fullName>Migration_Partner__c</fullName>
-        <description>Migrations : The Channel or SBD Partner from whom the Migration Request is sourced.</description>
+        <description>Catalog Transfer: The Channel or SBD Partner from whom the Catalog Transfer Request is sourced.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Who is the Channel or SBD Partner from whom the Migration Request is sourced?</inlineHelpText>
-        <label>Migration Partner</label>
+        <inlineHelpText>Who is the Channel or SBD Partner from whom the Catalog Transfer Request is sourced?</inlineHelpText>
+        <label>Catalog Transfer Partner</label>
         <picklist>
             <picklistValues>
                 <fullName>EIG</fullName>
@@ -5908,9 +5919,9 @@ IF(
     </fields>
     <fields>
         <fullName>Migration_Platform__c</fullName>
-        <description>Migrations : picklist</description>
+        <description>Catalog Transfer: picklist</description>
         <externalId>false</externalId>
-        <label>Migration Platform</label>
+        <label>Catalog Transfer Platform</label>
         <picklist>
             <picklistValues>
                 <fullName>1Shopping</fullName>
@@ -6211,7 +6222,7 @@ IF(
         <description>What team is responsible for supporting this client?</description>
         <externalId>false</externalId>
         <inlineHelpText>What team is responsible for supporting this client?</inlineHelpText>
-        <label>Migration Supporting Department</label>
+        <label>Catalog Transfer Supporting Department</label>
         <picklist>
             <picklistValues>
                 <fullName>Migration</fullName>
@@ -6233,9 +6244,9 @@ IF(
     </fields>
     <fields>
         <fullName>Migration_Type__c</fullName>
-        <description>Migrations : picklist</description>
+        <description>Catalog transfer: picklist</description>
         <externalId>false</externalId>
-        <label>zMigration Type</label>
+        <label>zCatalog Transfer Type</label>
         <picklist>
             <picklistValues>
                 <fullName>API</fullName>
@@ -6270,7 +6281,7 @@ IF(
     <fields>
         <fullName>Migration_Verification__c</fullName>
         <externalId>false</externalId>
-        <label>Migration Verification</label>
+        <label>Catalog Transfer Verification</label>
         <picklist>
             <picklistValues>
                 <fullName>Client Verified</fullName>
@@ -6288,10 +6299,10 @@ IF(
     </fields>
     <fields>
         <fullName>Migration_Verified_Clicktools__c</fullName>
-        <description>Did the client confirm that the migration is verified via clicktools?</description>
+        <description>Did the client confirm that the transfer is verified via clicktools?</description>
         <externalId>false</externalId>
-        <inlineHelpText>Did the client confirm that the migration is verified via clicktools?</inlineHelpText>
-        <label>Migration Verified - Clicktools</label>
+        <inlineHelpText>Did the client confirm that the transfer is verified via clicktools?</inlineHelpText>
+        <label>Catalog Transfer Verified - Clicktools</label>
         <picklist>
             <picklistValues>
                 <fullName>Yes</fullName>
@@ -6311,7 +6322,7 @@ IF(
         <fullName>Migration_Verified__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
-        <label>zMigration Verified</label>
+        <label>zCatalog Transfer Verified</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
@@ -9442,20 +9453,20 @@ Maria: E2CP can&apos;t read the actual record type when setting org wide outboun
     <fields>
         <fullName>Remigration_Needed__c</fullName>
         <defaultValue>false</defaultValue>
-        <description>Migrations : Select if Remigration is needed or requested to resolve open issues</description>
+        <description>Re-transfer: Select if re-transfer is needed or requested to resolve open issues</description>
         <externalId>false</externalId>
-        <inlineHelpText>Select if Remigration is needed or requested to resolve open issues</inlineHelpText>
-        <label>Remigration Needed</label>
+        <inlineHelpText>Select if re-transfer is needed or requested to resolve open issues</inlineHelpText>
+        <label>Re-transfer Needed</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>Remigration_Reason__c</fullName>
-        <description>If a remigration is needed, the reason for the remigration is to be noted here. (SalesOps only)</description>
+        <description>If a re-transfer is needed, the reason for the re-transfer is to be noted here. (SalesOps only)</description>
         <externalId>false</externalId>
-        <inlineHelpText>If Remigration Needed is selected, what is the reason for the remigration? (SalesOps only)</inlineHelpText>
-        <label>zRemigration Reason</label>
+        <inlineHelpText>If Re-transfer Needed is selected, what is the reason for the re-transfer? (SalesOps only)</inlineHelpText>
+        <label>zRe-transfer Reason</label>
         <picklist>
             <controllingField>Remigration_Needed__c</controllingField>
             <picklistValues>
@@ -9637,10 +9648,10 @@ IMAGE(&quot;/resource/1405031526000/Blackflag&quot;, &quot;Within SLA&quot;, 20,
     <fields>
         <fullName>SS_DataMigrationVerified__c</fullName>
         <defaultValue>false</defaultValue>
-        <description>The Data Migration has been verified by the Client. Migration Request Case Status = Completed.</description>
+        <description>The data transfer has been verified by the Client. Catalog Transfer Request Case Status = Completed.</description>
         <externalId>false</externalId>
-        <inlineHelpText>This box is checked when the Client has verified the data migration and the Migration Status = Completed with the appropriate Verification Date.</inlineHelpText>
-        <label>zOLD Data Migration Verified</label>
+        <inlineHelpText>This box is checked when the Client has verified the data transfer and the Catalog Transfer Status = Completed with the appropriate Verification Date.</inlineHelpText>
+        <label>zOLD Data Catalog Transfer Verified</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
@@ -10538,6 +10549,15 @@ NULL))</formula>
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Supported_During_Trial__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Supported During Trial</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Supported_as_Trial__c</fullName>
         <externalId>false</externalId>
         <formula>IF( ISBLANK(Subscription__r.PurchaseDate__c)=TRUE,TRUE,
@@ -10661,10 +10681,10 @@ Satisfaction__c &gt;= 4,TRUE,FALSE)</formula>
     </fields>
     <fields>
         <fullName>Target_Completion_Date__c</fullName>
-        <description>Migration target completion date - Completed by the Migration Team</description>
+        <description>Catalog transfer target completion date - Completed by the Catalog Transfer Team</description>
         <externalId>false</externalId>
-        <inlineHelpText>Migration target completion date - Completed by the Migration Team</inlineHelpText>
-        <label>Migration Target Completion Date</label>
+        <inlineHelpText>Catalog transfer target completion date - Completed by the Catalog Transfer Team</inlineHelpText>
+        <label>Catalog Transfer Target Completion Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
@@ -11117,10 +11137,10 @@ Verification_Date__c -  Completion_Date__c</description>
     </fields>
     <fields>
         <fullName>Verification_Date__c</fullName>
-        <description>Migrations : date the client has reviewed the migrated store and given sign-off; populated by WFR when Status moves to Verification</description>
+        <description>Catalog transfer: date the client has reviewed the transferred store and given sign-off; populated by WFR when Status moves to Verification</description>
         <externalId>false</externalId>
         <inlineHelpText>Date the case Status moved to Verification</inlineHelpText>
-        <label>Migration Verification Date</label>
+        <label>Catalog Transfer Verification Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
@@ -13743,7 +13763,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <queue>Sales_Partners</queue>
         <sharedTo>
             <role>Client_Success_Manager_Use</role>
-            <role>Partner_LDR</role>
             <role>Partner_Leader</role>
         </sharedTo>
     </listViews>
@@ -14115,23 +14134,26 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
     </listViews>
     <listViews>
         <fullName>Support_Escalated_Level_1_Open</fullName>
-        <columns>Premium_Case__c</columns>
+        <columns>Client_Type__c</columns>
         <columns>CASES.CASE_NUMBER</columns>
-        <columns>CASES.ORIGIN</columns>
-        <columns>CASES.SUBJECT</columns>
-        <columns>CASES.REASON</columns>
         <columns>CASES.STATUS</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>Bigcommerce_Store_URL__c</columns>
+        <columns>CASES.REASON</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Product__c</columns>
         <columns>CASES.CREATED_DATE</columns>
         <columns>CASES.LAST_UPDATE</columns>
-        <columns>CASES.PRIORITY</columns>
-        <columns>Bigcommerce_Store_URL__c</columns>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>NAME</columns>
         <filterScope>Queue</filterScope>
         <filters>
             <field>CASES.CLOSED</field>
             <operation>equals</operation>
             <value>0</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>New,Working,Open Unsolved,Active,Reopened</value>
         </filters>
         <label>Support Escalated Level 1: Open</label>
         <queue>Support_Escalated_Level_1</queue>

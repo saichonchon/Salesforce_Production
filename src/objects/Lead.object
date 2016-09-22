@@ -258,6 +258,20 @@
         <label>Mass Assign to Partner</label>
     </fieldSets>
     <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Account associated with the Lead for Prospecting</description>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Associated Leads</relationshipLabel>
+        <relationshipName>Associated_Leads</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Acquisition_Campaign__c</fullName>
         <externalId>false</externalId>
         <label>zAcquisition Campaign</label>
@@ -4240,31 +4254,8 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>mkto2__Acquisition_Date__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Acquisition Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>DateTime</type>
-    </fields>
-    <fields>
-        <fullName>mkto2__Acquisition_Program_Id__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Acquisition Program Id</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>mkto2__Acquisition_Program__c</fullName>
-        <deprecated>false</deprecated>
+        <fullName>mkto71_Acquisition_Program__c</fullName>
+        <description>Used for Marketo: BAP-4184</description>
         <externalId>false</externalId>
         <label>Acquisition Program</label>
         <length>255</length>
@@ -4275,20 +4266,8 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>mkto2__Inferred_City__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Inferred City</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>mkto2__Inferred_Company__c</fullName>
-        <deprecated>false</deprecated>
+        <fullName>mkto71_Inferred_Company__c</fullName>
+        <description>Used for Marketo: BAP-4184</description>
         <externalId>false</externalId>
         <label>Inferred Company</label>
         <length>255</length>
@@ -4299,8 +4278,8 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>mkto2__Inferred_Country__c</fullName>
-        <deprecated>false</deprecated>
+        <fullName>mkto71_Inferred_Country__c</fullName>
+        <description>Used for Marketo: BAP-4184</description>
         <externalId>false</externalId>
         <label>Inferred Country</label>
         <length>255</length>
@@ -4311,59 +4290,11 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>mkto2__Inferred_Metropolitan_Area__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Inferred Metropolitan Area</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>mkto2__Inferred_Phone_Area_Code__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Inferred Phone Area Code</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>mkto2__Inferred_Postal_Code__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Inferred Postal Code</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>mkto2__Inferred_State_Region__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Inferred State Region</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>mkto2__Lead_Score__c</fullName>
-        <deprecated>false</deprecated>
+        <fullName>mkto71_Lead_Score__c</fullName>
+        <description>Used for Marketo: BAP-4184</description>
         <externalId>false</externalId>
         <label>Lead Score</label>
-        <precision>18</precision>
+        <precision>10</precision>
         <required>false</required>
         <scale>0</scale>
         <trackFeedHistory>false</trackFeedHistory>
@@ -4372,59 +4303,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>mkto2__Original_Referrer__c</fullName>
-        <deprecated>false</deprecated>
+        <fullName>mkto71_Original_Referrer__c</fullName>
+        <description>Used for Marketo: BAP-4184</description>
         <externalId>false</externalId>
         <label>Original Referrer</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>mkto2__Original_Search_Engine__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Original Search Engine</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>mkto2__Original_Search_Phrase__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Original Search Phrase</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>mkto2__Original_Source_Info__c</fullName>
-        <defaultValue>&quot;Lead&quot;</defaultValue>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Original Source Info</label>
-        <length>2000</length>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>LongTextArea</type>
-        <visibleLines>3</visibleLines>
-    </fields>
-    <fields>
-        <fullName>mkto2__Original_Source_Type__c</fullName>
-        <defaultValue>&quot;salesforce.com&quot;</defaultValue>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Original Source Type</label>
         <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -5206,7 +5088,6 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <columns>Projected_Annual_Revenue__c</columns>
         <columns>CLEAN_STATUS</columns>
         <columns>LEAD.LEAD_SOURCE</columns>
-        <columns>mkto2__Lead_Score__c</columns>
         <columns>LEAD.ANNUAL_REVENUE</columns>
         <filterScope>Queue</filterScope>
         <label>Enterprise Lead Queue</label>
@@ -5274,8 +5155,7 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <columns>LEAD.EMAIL</columns>
         <columns>LEAD.STATUS</columns>
         <columns>LEAD.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
+        <columns>Account__c</columns>
         <filterScope>Mine</filterScope>
         <label>My Leads</label>
     </listViews>
@@ -5292,13 +5172,34 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <filterScope>Mine</filterScope>
         <label>My Promotional Leads</label>
         <sharedTo>
-            <roleAndSubordinatesInternal>Acquisition_Leader</roleAndSubordinatesInternal>
             <roleAndSubordinatesInternal>Direct_LDR_Inbound</roleAndSubordinatesInternal>
             <roleAndSubordinatesInternal>Enterprise_Leader</roleAndSubordinatesInternal>
             <roleAndSubordinatesInternal>Enterprise_Sales</roleAndSubordinatesInternal>
             <roleAndSubordinatesInternal>Outbound_II_Leader</roleAndSubordinatesInternal>
             <roleAndSubordinatesInternal>Outbound_Sales_I</roleAndSubordinatesInternal>
             <roleAndSubordinatesInternal>Partner_Leader</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Prospect_Leads</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.STATE</columns>
+        <columns>LEAD.EMAIL</columns>
+        <columns>LEAD.INDUSTRY</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <columns>Account__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>LEAD.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Lead.Client_Prospect</value>
+        </filters>
+        <label>My Prospect Leads</label>
+        <sharedTo>
+            <role>Head_of_Sales</role>
+            <roleAndSubordinatesInternal>Enterprise_Director</roleAndSubordinatesInternal>
         </sharedTo>
     </listViews>
     <listViews>
@@ -8216,6 +8117,7 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <listViewButtons>qbdialer__Create_List</listViewButtons>
         <listViewButtons>qbdialer__Manage_Lists</listViewButtons>
         <listViewButtons>qbdialer__Launch_Click_to_Call</listViewButtons>
+        <listViewButtons>SalesVue__Add_Leads_To_Plans</listViewButtons>
         <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>LEAD.COMPANY</lookupDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>

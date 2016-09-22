@@ -41,11 +41,15 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>MInimum_Price__c</field>
+                <field>Minimum_Price__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>ExternalID__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Target_Price__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

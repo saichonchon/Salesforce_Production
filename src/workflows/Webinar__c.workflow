@@ -64,7 +64,7 @@
             <name>Survey_Sent_True</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Webinar__c.Survey_Sent__c</field>
             <operation>equals</operation>

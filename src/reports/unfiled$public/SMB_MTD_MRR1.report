@@ -196,7 +196,7 @@
     <reportType>Opp_with_Prod_Hist_and_Lookup_Data__c</reportType>
     <roleHierarchyFilter>SystemAdministrator</roleHierarchyFilter>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>Opportunity.Oppotunity_Products__r$StartDate__c</dateColumn>
         <interval>INTERVAL_THISMONTH</interval>

@@ -1,62 +1,5 @@
 public class Contact_TriggerHandler {
 
-/*
-    Map<String,Id> emailToContactId = new Map<String,Id>();
-    Map<String,Id> emailToAccountId = new Map<String,Id>();
-    //Map<String,Id> emailToOwnerId = new Map<String, Id>();
-    //List<Id> updatedOwners = new List<Id>();
-    
-    public void getWebinar(List<Contact> contactList){
-
-        for (Contact c : contactList){
-
-            if (!String.isBlank(c.email)) {
-              emailToContactId.put(c.email.toLowerCase(), c.Id);
-              emailToAccountId.put(c.email.toLowerCase(), c.AccountId);
-             // emailToOwnerId.put(c.email.toLowerCase(), c.OwnerId);             
-            }
-        }   
-
-        if (!emailToContactId.keySet().isEmpty()) {
-
-            System.debug('getWebinar : emailToContactId.keySet() ' +  emailToContactId.keySet());
-            
-            List<Webinar__c> dbWebinars = [SELECT Id, Contact__c, Account__c, OwnerId,Registrant_email__c FROM Webinar__c WHERE Contact__c = null AND Registrant_email__c IN : emailToContactId.keySet()];
-            System.debug('getWebinar : dbWebinars ' +  dbWebinars);
-            
-            if (!dbWebinars.isEmpty()) {                
-
-              for (Webinar__c webinar : dbWebinars) {
-
-                    if (webinar.Contact__c == null) {
-                      webinar.Contact__c = emailToContactId.get(webinar.Registrant_email__c.toLowerCase());
-                    }
-                    if (webinar.Account__c == null) {
-                      webinar.Account__c = emailToAccountId.get(webinar.Registrant_email__c.toLowerCase());
-                    }
-                   // webinar.OwnerId = emailToOwnerId.get(webinar.Registrant_email__c.toLowerCase());
-                }
-                update dbWebinars;
-            }
-        }    
-    }   
-
-  //  public void newContactOwner(List<Contact> contactList){
-  //    User webinarOwner = [SELECT Id FROM User WHERE LastName = 'Bedrock'];
-  //    List<Webinar__c> dbWebinars = [SELECT Id, Contact__r.OwnerId, OwnerId FROM Webinar__c WHERE Contact__c IN : contactList];       
-
-     //   if(dbWebinars[0].OwnerId != webinarOwner.Id){
-     //     if (!dbWebinars.isEmpty()) {
-                   
-     //       for(Webinar__c web : dbWebinars){       
-     //         web.OwnerId = web.Contact__r.OwnerId;    
-     //       }           
-     //       update dbWebinars;
-     //     } 
-     //   }         
-    //}
-    */
-    
     public void UpdateSubsContact(Boolean isBefore, Boolean isAfter, Boolean isInsert, Boolean isUpdate,
                                     List<Contact> newList,  List<Contact> oldList, Map<Id, Contact> newMap)
     {    
@@ -132,42 +75,6 @@ public class Contact_TriggerHandler {
 	     AreaCodeUtility areacodes = new AreaCodeUtility();
 	     areacodes.UpdateContacts(consList);
  
-    }
-    
-  public  void updatePhoneNumbers(List<Contact> newList, List<Contact> oldList)
-  {
-  	
-  	  List<Contact> updList = new List<Contact>();
-  	  
-  	  for (integer i =0; i < newList.size(); i++)
-        {
-
-            if (newList[i].Phone <> null 
-                && oldList[i].Phone <> null
-                 && newList[i].Phone.replaceAll('[^0-9]', '') <> oldList[i].Phone.replaceAll('[^0-9]', ''))
- //               || (newList[i].Sales_Phone__c <> oldList[i].Sales_Phone__c && newList[i].Bad_Phone_Number__c == true))
-                {
- 
-                   if (newList[i].MBA_Phone_3__c<> null) newList[i].MBA_Phone_4__c =  oldList[i].MBA_Phone_3__c;
-                   newList[i].Bad_MBA_Phone_4__c = oldList[i].Bad_MBA_Phone_3__c ;
-                   if (newList[i].MBA_Phone_2__c<> null) newList[i].MBA_Phone_3__c =  oldList[i].MBA_Phone_2__c;
-                   newList[i].Bad_MBA_Phone_3__c = oldList[i].Bad_MBA_Phone_2__c ;
-                   if (newList[i].MBA_Phone_1__c<> null) newList[i].MBA_Phone_2__c =  oldList[i].MBA_Phone_1__c;
-                   newList[i].Bad_MBA_Phone_2__c = oldList[i].Bad_MBA_Phone_1__c ;
-                   if (newList[i].Phone <> null) newList[i].MBA_Phone_1__c =  oldList[i].Phone;
-                   newList[i].Bad_MBA_Phone_1__c = newList[i].Bad_Phone_Number__c;
- 
-/*                  if (newList[i].Sales_Phone__c <> oldList[i].Sales_Phone__c && 
-                      newList[i].Bad_Phone_Number__c == true)
-                  {
-                  	newList[i].Phone = newList[i].Sales_Phone__c;
-                  } 
- */                  
-                  newList[i].Bad_Phone_Number__c= false ;
-                   
-                }
-         }
-  
     }
     
     public void updAcctAppContact(List<Contact> contactList)   	

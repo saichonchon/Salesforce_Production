@@ -141,10 +141,6 @@
             <masterLabel>Neutral</masterLabel>
             <translation><!-- Neutral --></translation>
         </picklistValues>
-        <picklistValues>
-            <masterLabel>Unresponsive</masterLabel>
-            <translation><!-- Unresponsive --></translation>
-        </picklistValues>
     </fields>
     <fields>
         <help><!-- For reporting purposes: modifies the Salesforce ID to be a non case sensitive version so there are no duplicates in Excel --></help>
@@ -294,7 +290,7 @@
     </fields>
     <fields>
         <help><!-- Populated by batch apex class; sets off workflow to send app rev share emails. --></help>
-        <label><!-- App: Send Rev Share Email --></label>
+        <label><!-- App: Rev Share Email Send Date --></label>
         <name>App_Send_Rev_Share_Email__c</name>
     </fields>
     <fields>
@@ -303,27 +299,27 @@
     </fields>
     <fields>
         <help><!-- Team to which the LDR would like to round robin the Account --></help>
-        <label><!-- LDR Assign To Team --></label>
+        <label><!-- Assign To Team --></label>
         <name>Assign_To_Team__c</name>
         <picklistValues>
-            <masterLabel>APAC Direct</masterLabel>
-            <translation><!-- APAC Direct --></translation>
+            <masterLabel>APAC Midmarket</masterLabel>
+            <translation><!-- APAC Midmarket --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>APAC Enterprise</masterLabel>
-            <translation><!-- APAC Enterprise --></translation>
+            <masterLabel>APAC Small Business</masterLabel>
+            <translation><!-- APAC Small Business --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Acquisition</masterLabel>
-            <translation><!-- Acquisition --></translation>
+            <masterLabel>Midmarket</masterLabel>
+            <translation><!-- Midmarket --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Direct Sales</masterLabel>
-            <translation><!-- Direct Sales --></translation>
+            <masterLabel>Small Business</masterLabel>
+            <translation><!-- Small Business --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Enterprise</masterLabel>
-            <translation><!-- Enterprise --></translation>
+            <masterLabel>Sr. Midmarket</masterLabel>
+            <translation><!-- Sr. Midmarket --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -581,8 +577,8 @@ Grow - Potential for big opp;Partner choosing platform --></help>
         <name>Client_reference_store_count__c</name>
     </fields>
     <fields>
-        <help><!-- Count of migration cases with status of closed or completed. Used in Marketing Hubspot workflows. --></help>
-        <label><!-- MKT # Closed Migration Cases --></label>
+        <help><!-- Count of catalog transfer cases with status of closed or completed. Used in Marketing Hubspot workflows. --></help>
+        <label><!-- MKT # Closed Catalog Transfer Cases --></label>
         <name>Closed_Migration_Cases__c</name>
     </fields>
     <fields>
@@ -1643,8 +1639,8 @@ Grow - Potential for big opp;Partner choosing platform --></help>
         <name>Onboarding_MRR__c</name>
     </fields>
     <fields>
-        <help><!-- Count of migration cases that are not closed or completed. Used in Marketing Hubspot workflows. --></help>
-        <label><!-- MKT # Open Migration Cases --></label>
+        <help><!-- Count of catalog transfer cases that are not closed or completed. Used in Marketing Hubspot workflows. --></help>
+        <label><!-- MKT # Open Catalog Transfer Cases --></label>
         <name>Open_Migration_Cases__c</name>
     </fields>
     <fields>
@@ -2919,7 +2915,7 @@ Grow - Potential for big opp;Partner choosing platform --></help>
         <name>Rev_Share__c</name>
     </fields>
     <fields>
-        <label><!-- zRevenue Share --></label>
+        <label><!-- Revenue Share --></label>
         <name>Revenue_Share__c</name>
     </fields>
     <fields>
@@ -3148,6 +3144,10 @@ Grow - Potential for big opp;Partner choosing platform --></help>
             <masterLabel>Sales Decision Review</masterLabel>
             <translation><!-- Sales Decision Review --></translation>
         </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Send Rev Share Email --></label>
+        <name>Send_Rev_Share_Email__c</name>
     </fields>
     <fields>
         <label><!-- zSimon&apos;s Google Doc --></label>
@@ -4672,10 +4672,6 @@ Grow - Potential for big opp;Partner choosing platform --></help>
     <validationRules>
         <errorMessage><!-- The Appointment Held field must be populated if PS Status equals &quot;Appointment Held : Launched&quot; or &quot;Appointment Held : Not Launched&quot; --></errorMessage>
         <name>Appointment_Held_Date_Requirement</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- Account type cannot be empty or Client for channel partner accounts --></errorMessage>
-        <name>ChannelPartnerRecordType_Rule</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- Channel Partner  Account cannot be of Type Client. --></errorMessage>

@@ -1901,31 +1901,8 @@ SUBSTITUTE(SUBSTITUTE(FirstName, &quot; &quot;, &quot;+&quot;), &quot;&amp;&quot
         <type>Picklist</type>
     </fields>
     <fields>
-        <fullName>mkto2__Acquisition_Date__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Acquisition Date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>DateTime</type>
-    </fields>
-    <fields>
-        <fullName>mkto2__Acquisition_Program_Id__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Acquisition Program Id</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>mkto2__Acquisition_Program__c</fullName>
-        <deprecated>false</deprecated>
+        <fullName>mkto71_Acquisition_Program__c</fullName>
+        <description>Used for Marketo: BAP-4184</description>
         <externalId>false</externalId>
         <label>Acquisition Program</label>
         <length>255</length>
@@ -1936,20 +1913,8 @@ SUBSTITUTE(SUBSTITUTE(FirstName, &quot; &quot;, &quot;+&quot;), &quot;&amp;&quot
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>mkto2__Inferred_City__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Inferred City</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>mkto2__Inferred_Company__c</fullName>
-        <deprecated>false</deprecated>
+        <fullName>mkto71_Inferred_Company__c</fullName>
+        <description>Used for Marketo: BAP-4184</description>
         <externalId>false</externalId>
         <label>Inferred Company</label>
         <length>255</length>
@@ -1960,8 +1925,8 @@ SUBSTITUTE(SUBSTITUTE(FirstName, &quot; &quot;, &quot;+&quot;), &quot;&amp;&quot
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>mkto2__Inferred_Country__c</fullName>
-        <deprecated>false</deprecated>
+        <fullName>mkto71_Inferred_Country__c</fullName>
+        <description>Used for Marketo: BAP-4184</description>
         <externalId>false</externalId>
         <label>Inferred Country</label>
         <length>255</length>
@@ -1972,59 +1937,11 @@ SUBSTITUTE(SUBSTITUTE(FirstName, &quot; &quot;, &quot;+&quot;), &quot;&amp;&quot
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>mkto2__Inferred_Metropolitan_Area__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Inferred Metropolitan Area</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>mkto2__Inferred_Phone_Area_Code__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Inferred Phone Area Code</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>mkto2__Inferred_Postal_Code__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Inferred Postal Code</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>mkto2__Inferred_State_Region__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Inferred State Region</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>mkto2__Lead_Score__c</fullName>
-        <deprecated>false</deprecated>
+        <fullName>mkto71_Lead_Score__c</fullName>
+        <description>Used for Marketo: BAP-4184</description>
         <externalId>false</externalId>
         <label>Lead Score</label>
-        <precision>18</precision>
+        <precision>10</precision>
         <required>false</required>
         <scale>0</scale>
         <trackFeedHistory>false</trackFeedHistory>
@@ -2033,59 +1950,10 @@ SUBSTITUTE(SUBSTITUTE(FirstName, &quot; &quot;, &quot;+&quot;), &quot;&amp;&quot
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>mkto2__Original_Referrer__c</fullName>
-        <deprecated>false</deprecated>
+        <fullName>mkto71_Original_Referrer__c</fullName>
+        <description>Used for Marketo: BAP-4184</description>
         <externalId>false</externalId>
         <label>Original Referrer</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>mkto2__Original_Search_Engine__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Original Search Engine</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>mkto2__Original_Search_Phrase__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Original Search Phrase</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>mkto2__Original_Source_Info__c</fullName>
-        <defaultValue>&quot;Contact&quot;</defaultValue>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Original Source Info</label>
-        <length>2000</length>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>LongTextArea</type>
-        <visibleLines>3</visibleLines>
-    </fields>
-    <fields>
-        <fullName>mkto2__Original_Source_Type__c</fullName>
-        <defaultValue>&quot;salesforce.com&quot;</defaultValue>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Original Source Type</label>
         <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>

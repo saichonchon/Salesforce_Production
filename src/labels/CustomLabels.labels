@@ -102,6 +102,25 @@
         <value>Yahoo 4/30/14</value>
     </labels>
     <labels>
+        <fullName>CaseAutoComment</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CaseAutoComment</shortDescription>
+        <value>Hello #CLIENTNAME,
+
+Thank you for contacting BigCommerce Support.
+
+For your reference, I&apos;ve documented our support interaction under:
+Case: #CASENUMBER
+Subject: #CASESUBJECT
+
+You can login and view the status of your cases at our Support Portal contact page. If you have any further questions or concerns, please don&apos;t hesitate to let us know right away.
+
+Sincerely,
+#AGENTFIRSTNAME
+#JOBTITLE</value>
+    </labels>
+    <labels>
         <fullName>ClickHere</fullName>
         <language>en_US</language>
         <protected>true</protected>

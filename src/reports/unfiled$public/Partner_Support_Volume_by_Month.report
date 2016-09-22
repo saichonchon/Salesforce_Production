@@ -93,7 +93,7 @@
         <field>ACCOUNT.NAME</field>
     </columns>
     <filter>
-        <booleanFilter>1 OR 2</booleanFilter>
+        <booleanFilter>(1 or 2) AND 3</booleanFilter>
         <criteriaItems>
             <column>OWNER</column>
             <operator>contains</operator>
@@ -103,6 +103,11 @@
             <column>ORIGIN</column>
             <operator>contains</operator>
             <value>partner</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>DESCRIPTION</column>
+            <operator>notContain</operator>
+            <value>commission,pay,paid,$,owe</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>
@@ -116,7 +121,7 @@
         <field>CASE_NUMBER</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Partner Support Volume by Month</name>
+    <name>Non-Commission partner support cases</name>
     <params>
         <name>units</name>
         <value>h</value>
@@ -130,7 +135,6 @@
     <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2015-12-01</startDate>
+        <interval>INTERVAL_LAST90</interval>
     </timeFrameFilter>
 </Report>

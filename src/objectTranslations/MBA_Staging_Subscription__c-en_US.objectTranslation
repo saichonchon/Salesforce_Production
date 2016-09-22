@@ -1409,7 +1409,7 @@
         <name>MarketingSource__c</name>
     </fields>
     <fields>
-        <label><!-- Migration Request Date --></label>
+        <label><!-- Catalog Transfer Request Date --></label>
         <name>Migration_Request_Date__c</name>
     </fields>
     <fields>
@@ -1468,11 +1468,11 @@
         <name>Referral_ID__c</name>
     </fields>
     <fields>
-        <label><!-- Requested Migration At --></label>
+        <label><!-- Requested Catalog Transfer At --></label>
         <name>Requested_Migration_At__c</name>
     </fields>
     <fields>
-        <label><!-- Requested Migration --></label>
+        <label><!-- Requested Catalog Transfer --></label>
         <name>Requested_Migration__c</name>
         <picklistValues>
             <masterLabel>No</masterLabel>

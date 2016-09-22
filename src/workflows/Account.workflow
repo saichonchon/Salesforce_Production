@@ -103,15 +103,6 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>SS_Survey_Rep_Link</fullName>
-        <field>OLD_Survey_Link_Success_Squad__c</field>
-        <formula>SSC__r.Survey_Link__c</formula>
-        <name>SS Survey Rep Link</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Set_Account_Active_Trial_field</fullName>
         <description>Set the Account Active Trial field to equal the Active Trial (opp) field. Used because Hubspot can&apos;t read the account rollup summary and our Bedrock integration can&apos;t integrate to the account nor use the formula field we have on the opportunity</description>
         <field>Active_Trials__c</field>
@@ -362,7 +353,10 @@ NOT( ISNULL( AppDeveloperContact__c ))</formula>
         </actions>
         <active>true</active>
         <description>Sends App Partners their Rev Share reminder email</description>
-        <formula>ISCHANGED(App_Send_Rev_Share_Email__c) &amp;&amp; App_Send_Rev_Share_Email__c &lt;&gt;  PRIORVALUE(App_Send_Rev_Share_Email__c) &amp;&amp; NOT(ISBLANK(App_Send_Rev_Share_Email__c)) &amp;&amp; App_Send_Rev_Share_Email__c = Today()</formula>
+        <formula>ISCHANGED(App_Send_Rev_Share_Email__c) &amp;&amp; 
+App_Send_Rev_Share_Email__c &lt;&gt; PRIORVALUE(App_Send_Rev_Share_Email__c) &amp;&amp; NOT(ISBLANK(App_Send_Rev_Share_Email__c)) &amp;&amp; 
+App_Send_Rev_Share_Email__c = Today() &amp;&amp;
+Send_Rev_Share_Email__c = TRUE</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>

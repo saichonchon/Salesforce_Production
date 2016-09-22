@@ -1135,6 +1135,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>TrailingGMVCount__c</field>
+            <table>Contact.Opportunities__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Partner_Owner__c</field>
             <table>Contact.Opportunities__r</table>
         </columns>

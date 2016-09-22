@@ -35,10 +35,5 @@
         <sharedTo>VP_of_Sales</sharedTo>
         <sharedToType>RoleAndSubordinatesInternal</sharedToType>
     </folderShares>
-    <folderShares>
-        <accessLevel>View</accessLevel>
-        <sharedTo>Acquisition_Leader</sharedTo>
-        <sharedToType>RoleAndSubordinatesInternal</sharedToType>
-    </folderShares>
     <name>Dashboard: SMB</name>
 </DashboardFolder>

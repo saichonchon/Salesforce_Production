@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Activity$Subject</field>
+    </columns>
+    <columns>
+        <field>Activity$Owner.Division</field>
+    </columns>
+    <columns>
+        <field>Activity$Dialer_Campaign__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Activity$Owner.Department</column>
+            <operator>startsWith</operator>
+            <value>Sales Development -</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$CallType</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$Owner.Department</column>
+            <operator>equals</operator>
+            <value>Sales Development - Outbound SDR</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>AO SDR Dials (Hoopla)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activities_with_Lookup_Data__c</reportType>
+    <roleHierarchyFilter>SystemAdministrator</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Activity$ActivityDate</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
+    </timeFrameFilter>
+</Report>

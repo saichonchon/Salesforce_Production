@@ -10,13 +10,13 @@
     <optionsHasInviteAfterAccept>false</optionsHasInviteAfterAccept>
     <optionsHasInviteAfterReject>false</optionsHasInviteAfterReject>
     <optionsHasRerouteDeclinedRequest>false</optionsHasRerouteDeclinedRequest>
-    <optionsIsAutoAccept>false</optionsIsAutoAccept>
+    <optionsIsAutoAccept>true</optionsIsAutoAccept>
     <optionsIsInviteAutoRemove>false</optionsIsInviteAutoRemove>
     <overallQueueLength>80</overallQueueLength>
     <pushTimeOut>30</pushTimeOut>
     <routingType>MostAvailable</routingType>
     <skills>
-        <skill>Dom_test</skill>
+        <skill>Test</skill>
     </skills>
     <type>Standard</type>
     <windowLanguage>en_US</windowLanguage>

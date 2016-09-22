@@ -640,68 +640,24 @@
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Acquisition Date --></label>
-        <name>mkto2__Acquisition_Date__c</name>
-    </fields>
-    <fields>
-        <label><!-- Acquisition Program Id --></label>
-        <name>mkto2__Acquisition_Program_Id__c</name>
-    </fields>
-    <fields>
         <label><!-- Acquisition Program --></label>
-        <name>mkto2__Acquisition_Program__c</name>
-    </fields>
-    <fields>
-        <label><!-- Inferred City --></label>
-        <name>mkto2__Inferred_City__c</name>
+        <name>mkto71_Acquisition_Program__c</name>
     </fields>
     <fields>
         <label><!-- Inferred Company --></label>
-        <name>mkto2__Inferred_Company__c</name>
+        <name>mkto71_Inferred_Company__c</name>
     </fields>
     <fields>
         <label><!-- Inferred Country --></label>
-        <name>mkto2__Inferred_Country__c</name>
-    </fields>
-    <fields>
-        <label><!-- Inferred Metropolitan Area --></label>
-        <name>mkto2__Inferred_Metropolitan_Area__c</name>
-    </fields>
-    <fields>
-        <label><!-- Inferred Phone Area Code --></label>
-        <name>mkto2__Inferred_Phone_Area_Code__c</name>
-    </fields>
-    <fields>
-        <label><!-- Inferred Postal Code --></label>
-        <name>mkto2__Inferred_Postal_Code__c</name>
-    </fields>
-    <fields>
-        <label><!-- Inferred State Region --></label>
-        <name>mkto2__Inferred_State_Region__c</name>
+        <name>mkto71_Inferred_Country__c</name>
     </fields>
     <fields>
         <label><!-- Lead Score --></label>
-        <name>mkto2__Lead_Score__c</name>
+        <name>mkto71_Lead_Score__c</name>
     </fields>
     <fields>
         <label><!-- Original Referrer --></label>
-        <name>mkto2__Original_Referrer__c</name>
-    </fields>
-    <fields>
-        <label><!-- Original Search Engine --></label>
-        <name>mkto2__Original_Search_Engine__c</name>
-    </fields>
-    <fields>
-        <label><!-- Original Search Phrase --></label>
-        <name>mkto2__Original_Search_Phrase__c</name>
-    </fields>
-    <fields>
-        <label><!-- Original Source Info --></label>
-        <name>mkto2__Original_Source_Info__c</name>
-    </fields>
-    <fields>
-        <label><!-- Original Source Type --></label>
-        <name>mkto2__Original_Source_Type__c</name>
+        <name>mkto71_Original_Referrer__c</name>
     </fields>
     <fields>
         <label><!-- Add to Marketo Campaign --></label>
@@ -894,8 +850,8 @@
             <section>MBA Information</section>
         </sections>
         <sections>
-            <label><!-- Marketo --></label>
-            <section>Marketo</section>
+            <label><!-- Marketing --></label>
+            <section>Marketing</section>
         </sections>
         <sections>
             <label><!-- Partner Information --></label>
@@ -1074,25 +1030,6 @@
         <sections>
             <label><!-- System Information --></label>
             <section>System Information</section>
-        </sections>
-    </layouts>
-    <layouts>
-        <layout>zZuora Dialer Contact Layout</layout>
-        <sections>
-            <label><!-- Contact Information --></label>
-            <section>Contact Information</section>
-        </sections>
-        <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label><!-- Email Information --></label>
-            <section>Email Information</section>
-        </sections>
-        <sections>
-            <label><!-- Phone Numbers --></label>
-            <section>Phone Numbers</section>
         </sections>
     </layouts>
     <webLinks>

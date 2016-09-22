@@ -7,9 +7,6 @@
         <field>OWNER_FULL_NAME</field>
     </columns>
     <columns>
-        <field>Contact.mkto2__Lead_Score__c</field>
-    </columns>
-    <columns>
         <field>Contact.mkto_si__Relative_Score__c</field>
     </columns>
     <columns>
@@ -71,8 +68,6 @@
     <reportType>OpportunityContact@Opportunity.Subscription__c</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
-    <sortColumn>Contact.mkto2__Lead_Score__c</sortColumn>
-    <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CLOSE_DATE</dateColumn>
         <interval>INTERVAL_CURRENT</interval>

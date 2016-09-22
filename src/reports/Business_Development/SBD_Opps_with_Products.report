@@ -4,10 +4,19 @@
         <field>Opportunity$Name</field>
     </columns>
     <columns>
+        <field>Opportunity$Campaign</field>
+    </columns>
+    <columns>
         <field>Opportunity$ParentOpportunity__c.TemporaryStoreURL__c</field>
     </columns>
     <columns>
+        <field>Opportunity$CreatedDate</field>
+    </columns>
+    <columns>
         <field>Opportunity$CloseDate</field>
+    </columns>
+    <columns>
+        <field>Opportunity$LastStageChangeDate</field>
     </columns>
     <columns>
         <field>Opportunity$StageName</field>
@@ -19,13 +28,13 @@
         <field>Opportunity$Account.BillingCountry</field>
     </columns>
     <columns>
+        <field>Opportunity$Strategic_Partner__c</field>
+    </columns>
+    <columns>
         <field>Opportunity$Product__c</field>
     </columns>
     <columns>
         <field>Opportunity.OpportunityLineItems$PricebookEntry.Product2.Name</field>
-    </columns>
-    <columns>
-        <field>Opportunity$Strategic_Partner__c</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -33,13 +42,18 @@
             <operator>equals</operator>
             <value>Opportunity.SBD_Upsell</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Owner</column>
+            <operator>equals</operator>
+            <value>victor soares,jeremy gryder</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Name</column>
+            <operator>notContain</operator>
+            <value>consult</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Opportunity$Campaign</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>Opportunity$Owner</field>
@@ -55,7 +69,7 @@
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <timeFrameFilter>
-        <dateColumn>Opportunity$CloseDate</dateColumn>
-        <interval>INTERVAL_CURRENT</interval>
+        <dateColumn>Opportunity$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

@@ -80,17 +80,6 @@
         <type>Currency</type>
     </fields>
     <fields>
-        <fullName>MInimum_Price__c</fullName>
-        <externalId>false</externalId>
-        <label>MInimum Price</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
         <fullName>Max_AOV__c</fullName>
         <externalId>false</externalId>
         <label>Max AOV</label>
@@ -122,6 +111,17 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Minimum_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Minimum Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
     </fields>
     <fields>
         <fullName>Percent_of_Total__c</fullName>
@@ -158,6 +158,17 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Target_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Target Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
     </fields>
     <label>Target Price</label>
     <nameField>

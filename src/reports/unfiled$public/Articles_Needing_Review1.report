@@ -18,11 +18,6 @@
     <description>Articles older than 5 months that require review.</description>
     <filter>
         <criteriaItems>
-            <column>Public__ka.Public__kav$CreatedDate</column>
-            <operator>lessThan</operator>
-            <value>LAST_N_WEEKS:13</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>Public__ka.Public__kav$IsLatestVersion</column>
             <operator>equals</operator>
             <value>1</value>
@@ -31,6 +26,11 @@
             <column>Public__ka.Public__kav$PublishStatus</column>
             <operator>equals</operator>
             <value>2</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Public__ka.Public__kav$LastModifiedDate</column>
+            <operator>lessThan</operator>
+            <value>LAST_N_WEEKS:13</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>

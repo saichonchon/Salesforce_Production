@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ReportFolder xmlns="http://soap.sforce.com/2006/04/metadata">
     <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>adam.ferenzi@bigcommerce.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
         <accessLevel>EditAllContents</accessLevel>
         <sharedTo>brandy.simek@bigcommerce.com</sharedTo>
         <sharedToType>User</sharedToType>
@@ -16,6 +21,11 @@
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>evan.peterson@bigcommerce.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
         <accessLevel>EditAllContents</accessLevel>
         <sharedTo>gabe.rodriguez@bigcommerce.com</sharedTo>
         <sharedToType>User</sharedToType>
@@ -26,13 +36,13 @@
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>
-        <accessLevel>Manage</accessLevel>
-        <sharedTo>kevin.buechler@bigcommerce.com</sharedTo>
+        <accessLevel>View</accessLevel>
+        <sharedTo>john.hebron@bigcommerce.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>
         <accessLevel>Manage</accessLevel>
-        <sharedTo>maria.huemmer@bigcommerce.com</sharedTo>
+        <sharedTo>kevin.buechler@bigcommerce.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>

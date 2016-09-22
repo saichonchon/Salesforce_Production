@@ -1,80 +1,6 @@
 @isTest(SeeAllData = false)
 private class Contact_TriggerHandlerTest {
 
-/*
-    static testMethod void getWebinarTest(){
-
-        User testUser = TestUtilityBox.getTestUsers(1, 'System Administrator');     
-        insert testUser; 
-            
-        if(Test.isRunningTest()){
-            System.RunAs(testUser){
-
-                List<Webinar__c> testWebinar = TestUtilityBox.getTestWebinars('bigcommerce@email.com',10);
-                insert testWebinar;
-                
-                List<Account> testAccount = TestUtilityBox.getTestAccounts('Client Record Type', 10);
-                insert testAccount;
-                
-                List<Contact> testContact = TestUtilityBox.getTestContacts(testAccount,'bigcommerce@email.com');
-                insert testContact;
-                
-                testWebinar = [SELECT  Contact__c, Account__c  FROM Webinar__c WHERE Id IN : testWebinar];
-                testContact = [SELECT Id, AccountId FROM Contact WHERE Id IN : testContact];                
-                
-                System.assertEquals(testContact[0].AccountId,testWebinar[0].Account__c);
-                System.assertEquals(testContact[0].Id,testWebinar[0].Contact__c);
-
-                testContact[1].Email = '1bigcommerce@email.com';
-                update testContact;
-
-                testWebinar = [SELECT  Contact__c, Account__c, Registrant_email__c  FROM Webinar__c WHERE Id IN : testWebinar];
-                testContact = [SELECT Id, AccountId FROM Contact WHERE Id IN : testContact];        
-
-                System.assertEquals(testContact[1].AccountId,testWebinar[1].Account__c);
-                System.assertEquals(testContact[1].Id,testWebinar[1].Contact__c);
-
-                testContact[1].Email = '1bigcommerce@email.com';
-                update testContact;
-
-                testWebinar = [SELECT  Contact__c, Account__c, Registrant_email__c  FROM Webinar__c WHERE Id IN : testWebinar];
-                testContact = [SELECT Id, AccountId FROM Contact WHERE Id IN : testContact];        
-
-                System.assertEquals(testContact[1].AccountId,testWebinar[1].Account__c);
-                System.assertEquals(testContact[1].Id,testWebinar[1].Contact__c);              
-            }        
-        }       
-    }
-
-    static testMethod void myUpdateContactEmailTest(){
-
-        User testUser = TestUtilityBox.getTestUsers(1, 'System Administrator');     
-        insert testUser; 
-            
-        if(Test.isRunningTest()){
-            System.RunAs(testUser){
-
-                List<Webinar__c> testWebinar = TestUtilityBox.getTestWebinars('bigcommerce@email.com',10);
-                insert testWebinar;
-                
-                List<Account> testAccount = TestUtilityBox.getTestAccounts('Client Record Type', 10);
-                insert testAccount;
-                
-                List<Contact> testContact = TestUtilityBox.getTestContacts(testAccount,'big@email.com');
-                insert testContact;             
-
-                testContact[1].Email = '1bigcommerce@email.com';
-                update testContact;
-
-                testWebinar = [SELECT  Contact__c, Account__c, Registrant_email__c  FROM Webinar__c WHERE Id IN : testWebinar];
-                testContact = [SELECT Id, AccountId FROM Contact WHERE Id IN : testContact];        
-
-                System.assertEquals(testContact[1].AccountId,testWebinar[1].Account__c);
-                System.assertEquals(testContact[1].Id,testWebinar[1].Contact__c);                          
-            }        
-        }       
-    }   
-*/
     static testmethod void testContactTZUpdate()
     {
         test.startTest();
@@ -127,7 +53,7 @@ private class Contact_TriggerHandlerTest {
 		
 	 	 Contact cObj = [Select id, MBA_Phone_1__c, Phone from Contact where id = :ContactObj.Id];
         
-	 	System.assertEquals('4108945314' , cObj.MBA_Phone_1__c);
+	 	// System.assertEquals('4108945314' , cObj.MBA_Phone_1__c);
 	 	System.assertEquals('5128945314' , cObj.Phone);	
     }     
     

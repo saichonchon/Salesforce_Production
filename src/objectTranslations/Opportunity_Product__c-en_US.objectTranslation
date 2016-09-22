@@ -95,8 +95,8 @@
         <name>Status__c</name>
     </fields>
     <fields>
-        <help><!-- Indicates if Opportunity Record History record originates from a migration from a sub. Should be used to exclude record from reporting as Created Date is not representative of when revenue was received. --></help>
-        <label><!-- Sub Migration --></label>
+        <help><!-- Indicates if Opportunity Record History record originates from a transfer from a sub. Should be used to exclude record from reporting as Created Date is not representative of when revenue was received. --></help>
+        <label><!-- Sub Catalog Transfer --></label>
         <name>Sub_Migration__c</name>
     </fields>
     <fields>

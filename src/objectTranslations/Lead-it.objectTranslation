@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Associated Leads --></relationshipLabel>
+    </fields>
+    <fields>
         <label><!-- zAcquisition Campaign --></label>
         <name>Acquisition_Campaign__c</name>
         <picklistValues>
@@ -2530,68 +2535,24 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         <name>hoot2sf_TwitterUsername__c</name>
     </fields>
     <fields>
-        <label><!-- Acquisition Date --></label>
-        <name>mkto2__Acquisition_Date__c</name>
-    </fields>
-    <fields>
-        <label><!-- Acquisition Program Id --></label>
-        <name>mkto2__Acquisition_Program_Id__c</name>
-    </fields>
-    <fields>
         <label><!-- Acquisition Program --></label>
-        <name>mkto2__Acquisition_Program__c</name>
-    </fields>
-    <fields>
-        <label><!-- Inferred City --></label>
-        <name>mkto2__Inferred_City__c</name>
+        <name>mkto71_Acquisition_Program__c</name>
     </fields>
     <fields>
         <label><!-- Inferred Company --></label>
-        <name>mkto2__Inferred_Company__c</name>
+        <name>mkto71_Inferred_Company__c</name>
     </fields>
     <fields>
         <label><!-- Inferred Country --></label>
-        <name>mkto2__Inferred_Country__c</name>
-    </fields>
-    <fields>
-        <label><!-- Inferred Metropolitan Area --></label>
-        <name>mkto2__Inferred_Metropolitan_Area__c</name>
-    </fields>
-    <fields>
-        <label><!-- Inferred Phone Area Code --></label>
-        <name>mkto2__Inferred_Phone_Area_Code__c</name>
-    </fields>
-    <fields>
-        <label><!-- Inferred Postal Code --></label>
-        <name>mkto2__Inferred_Postal_Code__c</name>
-    </fields>
-    <fields>
-        <label><!-- Inferred State Region --></label>
-        <name>mkto2__Inferred_State_Region__c</name>
+        <name>mkto71_Inferred_Country__c</name>
     </fields>
     <fields>
         <label><!-- Lead Score --></label>
-        <name>mkto2__Lead_Score__c</name>
+        <name>mkto71_Lead_Score__c</name>
     </fields>
     <fields>
         <label><!-- Original Referrer --></label>
-        <name>mkto2__Original_Referrer__c</name>
-    </fields>
-    <fields>
-        <label><!-- Original Search Engine --></label>
-        <name>mkto2__Original_Search_Engine__c</name>
-    </fields>
-    <fields>
-        <label><!-- Original Search Phrase --></label>
-        <name>mkto2__Original_Search_Phrase__c</name>
-    </fields>
-    <fields>
-        <label><!-- Original Source Info --></label>
-        <name>mkto2__Original_Source_Info__c</name>
-    </fields>
-    <fields>
-        <label><!-- Original Source Type --></label>
-        <name>mkto2__Original_Source_Type__c</name>
+        <name>mkto71_Original_Referrer__c</name>
     </fields>
     <fields>
         <label><!-- Add to Marketo Campaign --></label>
@@ -2865,10 +2826,6 @@ Hot: came in from a good source and/or is progressing towards close --></help>
             <section>Additional Sales Information</section>
         </sections>
         <sections>
-            <label><!-- Biz Apps --></label>
-            <section>Biz Apps</section>
-        </sections>
-        <sections>
             <label><!-- Contact Information --></label>
             <section>Contact Information</section>
         </sections>
@@ -2891,10 +2848,6 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         <sections>
             <label><!-- Marketo --></label>
             <section>Marketo</section>
-        </sections>
-        <sections>
-            <label><!-- Partner Sales --></label>
-            <section>Partner Sales</section>
         </sections>
         <sections>
             <label><!-- Phone --></label>

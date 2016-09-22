@@ -2019,17 +2019,17 @@ Note true historical as it will only contain the plan name prior to the current 
     <fields>
         <fullName>Migration_Case_Created__c</fullName>
         <defaultValue>false</defaultValue>
-        <description>EIG migration field.  Populated during case insert (dataloader) to indicate that the case creation is complete</description>
+        <description>EIG transfer field.  Populated during case insert (dataloader) to indicate that the case creation is complete</description>
         <externalId>false</externalId>
-        <label>zMigration Case Created</label>
+        <label>zCatalog Transfer Case Created</label>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>Migration_Request_Date__c</fullName>
-        <description>Migration Request Date for Orion coming from MBA</description>
+        <description>Catalog Transfer Request Date for Orion coming from MBA</description>
         <externalId>false</externalId>
-        <label>Migration Request Date</label>
+        <label>Catalog Transfer Request Date</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Date</type>
@@ -2039,17 +2039,17 @@ Note true historical as it will only contain the plan name prior to the current 
         <defaultValue>false</defaultValue>
         <description>Populated by Success Squad.  Not sure what criteria are</description>
         <externalId>false</externalId>
-        <label>zMigration Verified</label>
+        <label>zCatalog Transfer Verified</label>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>Migration__c</fullName>
         <defaultValue>false</defaultValue>
-        <description>Populated via workflow if the sub Product name ever contains &quot;Migration&quot;</description>
+        <description>Populated via workflow if the sub Product name ever contains &quot;Catalog Transfer&quot;</description>
         <externalId>false</externalId>
-        <inlineHelpText>Was this store ever a Migration product?</inlineHelpText>
-        <label>zMigration</label>
+        <inlineHelpText>Was this store ever a Catalog Transfer product?</inlineHelpText>
+        <label>zCatalog Transfer</label>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
@@ -2624,20 +2624,20 @@ Populated by MBA</description>
     </fields>
     <fields>
         <fullName>Requested_Migration_At__c</fullName>
-        <description>For Orion. Indicates the Date/Time for which the client indicated whether they would like a migration or not.</description>
+        <description>For Orion. Indicates the Date/Time for which the client indicated whether they would like a transfer or not.</description>
         <externalId>false</externalId>
-        <inlineHelpText>For Orion. Indicates the Date/Time for which the client indicated whether they would like a migration or not.</inlineHelpText>
-        <label>SBD Requested Migration At</label>
+        <inlineHelpText>For Orion. Indicates the Date/Time for which the client indicated whether they would like a transfer or not.</inlineHelpText>
+        <label>SBD Requested Catalog Transfer At</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <type>DateTime</type>
     </fields>
     <fields>
         <fullName>Requested_Migration__c</fullName>
-        <description>Used for Orion. Indicates whether the client requested a migration.</description>
+        <description>Used for Orion. Indicates whether the client requested a transfer.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Used for Orion. Indicates whether the client requested a migration.</inlineHelpText>
-        <label>SBD Requested Migration</label>
+        <inlineHelpText>Used for Orion. Indicates whether the client requested a transfer.</inlineHelpText>
+        <label>SBD Requested Catalog Transfer</label>
         <picklist>
             <picklistValues>
                 <fullName>Yes</fullName>

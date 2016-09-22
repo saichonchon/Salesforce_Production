@@ -50,12 +50,12 @@
                 <field>TrailingGMVCount__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Sample_100__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Demo_Requested_Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>New_Product_Plan__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

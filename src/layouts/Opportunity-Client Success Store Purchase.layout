@@ -874,6 +874,7 @@
         <relatedList>RelatedHistoryList</relatedList>
     </relatedLists>
     <relatedLists>
+        <customButtons>New_Case</customButtons>
         <fields>CASES.CASE_NUMBER</fields>
         <fields>CASES.RECORDTYPE</fields>
         <fields>CASES.REASON</fields>

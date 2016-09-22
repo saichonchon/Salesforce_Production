@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
-    <active>true</active>
+    <active>false</active>
     <allowRecall>true</allowRecall>
     <allowedSubmitters>
         <type>owner</type>
@@ -49,20 +49,12 @@
             <name>Bigcommerce_Approved</name>
             <type>FieldUpdate</type>
         </action>
-        <action>
-            <name>Enterprise_Partner_Request_Approved</name>
-            <type>Alert</type>
-        </action>
     </finalApprovalActions>
     <finalApprovalRecordLock>false</finalApprovalRecordLock>
     <finalRejectionActions>
         <action>
             <name>Bigcommerce_Rejected</name>
             <type>FieldUpdate</type>
-        </action>
-        <action>
-            <name>Enterprise_Partner_Request_Rejected</name>
-            <type>Alert</type>
         </action>
     </finalRejectionActions>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>

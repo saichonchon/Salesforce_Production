@@ -55,7 +55,7 @@
         <criteriaItems>
             <column>OWNER_ROLE</column>
             <operator>contains</operator>
-            <value>outbound</value>
+            <value>small,outbound,direct</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Call_Duration_Minutes__c</column>

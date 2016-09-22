@@ -12,18 +12,6 @@
         <template>Internal_Email_Template/Opp_New_Purchase_Made</template>
     </alerts>
     <alerts>
-        <fullName>Email_Account_Owner</fullName>
-        <ccEmails>maria.huemmer@bigcommerce.com</ccEmails>
-        <description>Email Account Owner</description>
-        <protected>false</protected>
-        <recipients>
-            <type>accountOwner</type>
-        </recipients>
-        <senderAddress>no-reply@bigcommerce.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Internal_Email_Template/New_Trial_Opp_not_owned_by_Account_Owner</template>
-    </alerts>
-    <alerts>
         <fullName>Email_Migraiton_Team_of_new_prescoping_opportunity</fullName>
         <description>Email Migration Team of new prescoping opportunity</description>
         <protected>false</protected>
@@ -61,40 +49,6 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Internal_Email_Template/Migration_prescoping_details</template>
-    </alerts>
-    <alerts>
-        <fullName>Email_opp_owner</fullName>
-        <ccEmails>maria.huemmer@bigcommerce.com</ccEmails>
-        <description>Email opp owner of plan change</description>
-        <protected>false</protected>
-        <recipients>
-            <type>owner</type>
-        </recipients>
-        <senderAddress>no-reply@bigcommerce.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Internal_Email_Template/Opp_Product_Change_Notice</template>
-    </alerts>
-    <alerts>
-        <fullName>Enterprise_Partner_Request_Approved</fullName>
-        <description>Enterprise Partner Request Approved</description>
-        <protected>false</protected>
-        <recipients>
-            <field>Initial_Submitter__c</field>
-            <type>email</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Approval_Process_Templates/Enterprise_Partner_Request_Approved</template>
-    </alerts>
-    <alerts>
-        <fullName>Enterprise_Partner_Request_Rejected</fullName>
-        <description>Enterprise Partner Request Rejected</description>
-        <protected>false</protected>
-        <recipients>
-            <field>Initial_Submitter__c</field>
-            <type>email</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Approval_Process_Templates/Enterprise_Partner_Request_Rejected</template>
     </alerts>
     <alerts>
         <fullName>Enterprise_Sales_Closed_Opp_Notification</fullName>
@@ -137,15 +91,7 @@
         <description>MKT Featured client churned notification</description>
         <protected>false</protected>
         <recipients>
-            <recipient>adelle.archer@bigcommerce.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
             <recipient>andrea.wagner@bigcommerce.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>debbie.maysonave@bigcommerce.com</recipient>
             <type>user</type>
         </recipients>
         <senderAddress>no-reply@bigcommerce.com</senderAddress>
@@ -263,10 +209,6 @@
         <protected>false</protected>
         <recipients>
             <type>owner</type>
-        </recipients>
-        <recipients>
-            <recipient>russell.griffin@bigcommerce.com</recipient>
-            <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Internal_Email_Template/Migration_prescoping_details</template>
@@ -822,6 +764,9 @@ OR(
 Owner.UserRoleId = &apos;00E13000001DGhr&apos;, /* Enterprise Leader */ 
 Owner.UserRoleId = &apos;00E13000001DGi1&apos;  /* Enterprise Sales */ ), 
 IsClosed = True,
+OR( 
+RecordType.Name = &apos;Store Purchase&apos;,
+RecordType.Name = &apos;Trial&apos;),
 OR(  
 IsWon = False &amp;&amp;  Projected__c = True,
 IsWon = True &amp;&amp; Amount &gt; 500)
@@ -838,26 +783,6 @@ IsWon = True &amp;&amp; Amount &gt; 500)
         <description>Checks the Historical Distribution Engine Eligible field if the record was ever eligible, even if it no longer meets eligibility criteria.</description>
         <formula>AND (  Do_Not_Call__c = false,  Contact_Bad_Phone_Number__c = false,  Contact__r.Phone != NULL,  NOT CONTAINS(Contact__r.Email,&apos;@bigcommerce.com&apos;),  NOT ISPICKVAL(Experience__c,&apos;I\&apos;m doing research as a student, app developer or job applicant&apos;)  )</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>KEEP Product Change Notification</fullName>
-        <actions>
-            <name>Notify_Opp_Owner_of_Store_Plan_Change</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <description>Notifies Opp owner that the store plan has changed</description>
-        <formula>((ISCHANGED(New_Product_Plan__c) &amp;&amp;
-NOT(ISPICKVAL(Source__c, &quot;BMP&quot;))) ||
-(ISPICKVAL(Source__c, &quot;BMP&quot;) &amp;&amp;
-ISCHANGED(MonthlyRecurringRevenue__c) &amp;&amp;
-MonthlyRecurringRevenue__c &gt; 0)) &amp;&amp;
-
-(
-   Owner.ProfileId &lt;&gt; $Label.Admin_Profiles &amp;&amp; 
-   OwnerId &lt;&gt; &apos;0051300000BTCyk&apos; /* Marketing Team */ &amp;&amp; 
-   OwnerId &lt;&gt; &apos;005a000000AsxTo&apos; /*The Bigcommerce Team */ )</formula>
-        <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
         <fullName>Migration Prescoping Status Changed to New</fullName>
@@ -1009,37 +934,6 @@ ISPICKVAL(StageName, &apos;Closed Lost&apos;)
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>Opp%3A Owner Team Discrepancy</fullName>
-        <actions>
-            <name>Email_Account_Owner</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <description>Notify the opportunity owner if the store plan changes</description>
-        <formula>(CONTAINS(RecordType.DeveloperName, &quot;Trial&quot;) ||
-CONTAINS(RecordType.DeveloperName, &quot;Purchase&quot;)) &amp;&amp;
-CONTAINS(Account.Owner_Team__c, &quot;partner&quot;) &amp;&amp;
-Owner_Team__c !=  Account.Owner_Team__c &amp;&amp;
-CONTAINS(Owner.Profile.Name, &quot;Sales Rep&quot;) &amp;&amp; 
-DATEVALUE(CreatedDate) = TODAY()</formula>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
-        <fullName>Opp%3A Product Change Notice</fullName>
-        <actions>
-            <name>Email_opp_owner</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <description>Notify the opportunity owner if the store plan changes</description>
-        <formula>CONTAINS(RecordType.DeveloperName, &quot;Store Purchase&quot;) &amp;&amp;
-ISCHANGED(Product__c)&amp;&amp;
-CONTAINS(Owner.Profile.Name, &quot;Sales Rep&quot;) &amp;&amp; 
-NOT(CONTAINS( Owner.Full_Name__c, &quot;Team&quot;)) &amp;&amp; 
-DATEVALUE(CreatedDate) &lt;&gt; TODAY()</formula>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
         <fullName>PS%3A Auto closed won %240 opps</fullName>
         <actions>
             <name>Set_Opportunity_Stage_to_Closed_Won</name>
@@ -1114,6 +1008,27 @@ DATEVALUE(CreatedDate) &lt;&gt; TODAY()</formula>
         </criteriaItems>
         <description>Count of net new Store opportunities won by the SMB team MRR won by the SMB team (no upgrades)</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Product Change Notification</fullName>
+        <actions>
+            <name>Notify_Opp_Owner_of_Store_Plan_Change</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Notifies the Opportunity Owner that the store plan has changed.</description>
+        <formula>AND(
+ISCHANGED(Product__c), 
+OR(
+NOT ISPICKVAL(Source__c, &apos;BMP&apos;),
+AND(
+ISPICKVAL(Source__c, &apos;BMP&apos;), 
+ISCHANGED(MonthlyRecurringRevenue__c),
+MonthlyRecurringRevenue__c &gt; 0)), 
+Owner.ProfileId &lt;&gt; $Label.Admin_Profiles,
+OwnerId &lt;&gt; &apos;0051300000BTCyk&apos;, /* Marketing Team */ 
+OwnerId &lt;&gt; &apos;005a000000AsxTo&apos; /*The Bigcommerce Team */ )</formula>
+        <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
         <fullName>Professional Services Sale Notification</fullName>
@@ -1313,6 +1228,7 @@ ISPICKVAL(StageName, &apos;Closed Lost&apos;),
 ISPICKVAL(StageName, &apos;Trial Expired&apos;)
 ),
 RecordTypeId = &apos;01213000000AUtyAAG&apos;,
+Owner_Team__c = &apos;Small Business Sales Team&apos;,
 OwnerId  &lt;&gt; &apos;005a000000AsxTo&apos; /* The BigCommerce Team */
 )</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
@@ -1333,6 +1249,11 @@ OwnerId  &lt;&gt; &apos;005a000000AsxTo&apos; /* The BigCommerce Team */
             <field>Opportunity.StageName</field>
             <operation>equals</operation>
             <value>Closed Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.OwnerId</field>
+            <operation>notEqual</operation>
+            <value>The BigCommerce Team</value>
         </criteriaItems>
         <description>Notify opportunity owner if an upgrade closes</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>

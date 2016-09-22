@@ -100,9 +100,9 @@
     <fields>
         <fullName>Is_Migration__c</fullName>
         <defaultValue>false</defaultValue>
-        <description>Checked by WF if it is a migration product.</description>
+        <description>Checked by WF if it is a Catalog Transfer product.</description>
         <externalId>false</externalId>
-        <label>Is Migration</label>
+        <label>Is Catalog Transfer</label>
         <type>Checkbox</type>
     </fields>
     <fields>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>New Partner Onboarding.PAR Email 4</name>
+    <style>none</style>
+    <subject>Share content with your clients</subject>
+    <textOnly>We hope by now you&apos;ve had a chance to browse your partner portal and see the exciting new resources at your disposal.
+
+Hi {{lead.First Name:default=there}},
+
+
+Getting one of your clients set up on the BigCommerce platform is just the first step to helping them sell more. The next step is giving them the knowledge they need to succeed.
+
+Your partner portal offers a variety of resources &lt;[[http://partners.bigcommerce.com/English/]]&gt; to help your clients, including:
+
+
+ - Ebooks on creating an online store, selling on multiple channels and scaling a company
+ - Customer success stories from a variety of industries
+ - More information on BigCommerce&apos;s mission, philosophy and competitive difference
+
+
+Become a valued business resource to your customers and extend the life of your commissions!
+
+
+
+
+Browse resources &lt;[[http://partners.bigcommerce.com/English/]]&gt;
+
+
+
+
+
+Looking for more information regarding our resources? Register for an onboarding webinar &lt;[[http://grow.bigcommerce.com/Portal-Webinar-Register.html]]&gt;.
+
+Thank you,
+
+The BigCommerce Partner Team
+partnersupport@bigcommerce.com</textOnly>
+    <type>custom</type>
+</EmailTemplate>

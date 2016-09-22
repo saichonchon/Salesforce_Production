@@ -406,7 +406,7 @@
             <table>Opportunity</table>
         </columns>
         <columns>
-            <checkedByDefault>false</checkedByDefault>
+            <checkedByDefault>true</checkedByDefault>
             <field>Owner</field>
             <table>Opportunity</table>
         </columns>
@@ -818,6 +818,16 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.BillingState</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Strategic_Partner__c.Revenue_Share__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>TrailingGMVCount__c</field>
             <table>Opportunity</table>
         </columns>
         <masterLabel>Opportunities</masterLabel>

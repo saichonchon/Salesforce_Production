@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <alerts>
-        <fullName>Demo_Request_Assigment_Notification</fullName>
-        <description>Demo Request Assignment Notification</description>
-        <protected>false</protected>
-        <recipients>
-            <type>owner</type>
-        </recipients>
-        <senderAddress>no-reply@bigcommerce.com</senderAddress>
-        <senderType>OrgWideEmailAddress</senderType>
-        <template>Internal_Workflow_Communications_Sales/New_Demo_Request_Received</template>
-    </alerts>
     <fieldUpdates>
         <fullName>Change_Type_to_Reminder</fullName>
         <field>Type</field>

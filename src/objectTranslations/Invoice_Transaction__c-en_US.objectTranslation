@@ -14,6 +14,11 @@
         <name>Amount_Accrued_for_Commissions__c</name>
     </fields>
     <fields>
+        <help><!-- When a transaction has been recorded in error, this field allows us to adjust the net amount paid without modifying the original data --></help>
+        <label><!-- Amount Adjusted --></label>
+        <name>Amount_Adjusted__c</name>
+    </fields>
+    <fields>
         <help><!-- The amount of money credited to the invoice --></help>
         <label><!-- Amount Credited --></label>
         <name>Amount_Credited__c</name>
@@ -34,7 +39,7 @@
         <name>Amount_Paid__c</name>
     </fields>
     <fields>
-        <help><!-- The amount paid minus amount credited --></help>
+        <help><!-- The amount paid - amount refunded + amount adjusted --></help>
         <label><!-- Amount Paid (net) --></label>
         <name>Amount_Paid_net__c</name>
     </fields>

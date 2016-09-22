@@ -110,13 +110,10 @@
         <field>Account.Account_Manager_Health_Score__c</field>
     </columns>
     <columns>
-        <field>Account.Design_Partner__c</field>
+        <field>Opportunity.rvpe__RVAccount__c</field>
     </columns>
     <columns>
         <field>ACCOUNT_LAST_ACTIVITY</field>
-    </columns>
-    <columns>
-        <field>LAST_ACTIVITY</field>
     </columns>
     <filter>
         <criteriaItems>

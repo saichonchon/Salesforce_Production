@@ -24,11 +24,6 @@
             <value>100</value>
         </criteriaItems>
         <criteriaItems>
-            <column>rvpe__RVAccount__c.Engaged__c</column>
-            <operator>equals</operator>
-            <value>1</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>rvpe__RVAccount__c.Has_PayPal_Id__c</column>
             <operator>equals</operator>
             <value>1</value>

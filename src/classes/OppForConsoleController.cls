@@ -15,6 +15,9 @@ public class OppForConsoleController
     private string selectedSubName = null;
     public boolean caseCreated {get;set;}
     public string errorMsg {get;set;}
+    public String CaseSubject {get; set;}
+    public String CallerName {get; set;}
+    public string errorMsgCaseSubject {get;set;}
     
     private list<OpportunityWrapper> Opps = new list<OpportunityWrapper>();
  //   private list<SubscriptionWrapper> Subs = new list<SubscriptionWrapper>();
@@ -29,7 +32,15 @@ public class OppForConsoleController
     {
         return objectType;
     }
-    
+    public String getCaseSubject() 
+    { 
+        return CaseSubject; 
+    } 
+    public String getCallerName() 
+    { 
+        return CallerName; 
+    } 
+
     public void setAcctId(String n)
     {
         acctId = n;
@@ -78,7 +89,7 @@ public class OppForConsoleController
             return Account.sObjectType.getDescribe().getKeyPrefix();
         }
     }
- 
+
  /*   
      public String leadPrefix
     {
@@ -202,35 +213,44 @@ public class OppForConsoleController
         	errorMsg= 'Case already created, refresh the page to create another case';
         	return null;
         }
-        If (selectedOppId == null)
-        {
-        	errorMsg= 'Please select an Opportunity!';
-			system.debug('### no selected');
-			newCaseId = null;
-			
-        }
-        else {
-        	string sSubject = 'Bigcommerce Support call at '+System.Now().format();
+        If(CaseSubject == null || CaseSubject == ''){
+            errorMsgCaseSubject = 'Please enter a Subject for the Case';
+        	newCaseId = null;
+        } else{
+            If(CaseSubject.length()>255){
+                errorMsgCaseSubject = 'Please type in 255 characters or less in the Subject';
+            } else {
+                        If (selectedOppId == null)
+                        {
+                            errorMsg= 'Please select an Opportunity!';
+                            system.debug('### no selected');
+                            newCaseId = null;
+                            
+                        }
+                        else {
 
-        	Case newCase = new Case(subject = sSubject,
-                            origin = 'Phone',
-                            accountid= acctId,
-                            Documentation_Only__c = true,
-  //                          RecordTypeId = idCSRecordType,
-                            Opportunity__c = selectedOppId,
-                            ContactId = contactId,
-                            Change_Owner__c = 'Me', 
-                            Subscription__c = selectedSubId
-                            );
-                                                        
- //      &CF00N18000000GSRJ=' + selectedOppName +  selectedSubName + ;
-	         insert newCase;  
-	         newCaseId = newCase.Id;
-	         errorMsg= 'Case created ....';
-	         system.debug('### new case id  '+newCaseId);
-	         caseCreated = true;
-        }
-        return null;
+                            Case newCase = new Case(subject = CaseSubject,
+                                            origin = 'Phone',
+                                            accountid= acctId,
+                                            //Documentation_Only__c = true,//BAP-3412
+                  							//RecordTypeId = idCSRecordType,
+                                            Opportunity__c = selectedOppId,
+                                            ContactId = contactId,
+                                            Change_Owner__c = 'Me', 
+                                            Subscription__c = selectedSubId
+                                            //Description = CaseDesc//BAP-3412
+                                            );
+                                                                        
+                 //      &CF00N18000000GSRJ=' + selectedOppName +  selectedSubName + ;
+                             insert newCase;  
+                             newCaseId = newCase.Id;
+                             errorMsg= 'Case created ....';
+                             system.debug('### new case id  '+newCaseId);
+                             caseCreated = true;
+                            }
+            	}
+            }
+            return null;
     }
     public PageReference LoadOpportunities()
     {
@@ -243,8 +263,7 @@ public class OppForConsoleController
         Id ProfOppRecordTypeId =  Opportunity.getSObjectType().getDescribe().getRecordTypeInfosByName().get('Professional Services').getRecordTypeId();
         Id UpgradeRecordTypeId = Opportunity.getSObjectType().getDescribe().getRecordTypeInfosByName().get(Label.Opportunity_RecordType_Upgrade).getRecordTypeId();
         Id AppRecordTypeId  = Opportunity.getSObjectType().getDescribe().getRecordTypeInfosByName().get(Label.Opportunity_RecordType_App).getRecordTypeId();
-     
-        Set<Id> notStoreRecIds = new Set<Id>();
+   		Set<Id> notStoreRecIds = new Set<Id>();
         notStoreRecIds.add(AppRecordTypeId);
         notStoreRecIds.add(ProfOppRecordTypeId);
         notStoreRecIds.add(UpgradeRecordTypeId);
@@ -255,20 +274,19 @@ public class OppForConsoleController
         if (oppId != null && oppId != '')
         {           
  
-            lstOpps = [SELECT Id, Name, StoreURL__c, New_Product_Plan__c, Product__c, Status__c, AccountId, Subscription__r.Id, Subscription__r.Name, Contact__r.Id
+            lstOpps = [SELECT Id, Name, StoreURL__c, New_Product_Plan__c, Product__c, Status__c, AccountId, Subscription__r.Id, Subscription__r.Name, Contact__r.Id, RecordType.Name, OppSortNumber__c
                        FROM Opportunity
                        WHERE RecordTypeId not in :notStoreRecIds
-                       AND Id = :oppId];
-            
+                       AND Id = :oppId
+                       ORDER BY OppSortNumber__c ASC];
             
             for (Opportunity s : lstOpps)
             {
                 acctId = s.AccountId;
                 contactId = s.Contact__r.Id;
                 passedInOppId = s.Id;
-                
-                wrapOpp = new OpportunityWrapper(s, false);
-                Opps.add(wrapOpp);
+				wrapOpp = new OpportunityWrapper(s, false);
+				Opps.add(wrapOpp);
             }
             
             CaptureOpp();
@@ -278,17 +296,18 @@ public class OppForConsoleController
         if (acctId != null && acctId != '')
         {           
  
-            lstOpps = [SELECT Id, Name, StoreURL__c, New_Product_Plan__c, Product__c, Status__c, AccountId, Subscription__r.Id, Subscription__r.Name
+            lstOpps = [SELECT Id, Name, StoreURL__c, New_Product_Plan__c, Product__c, Status__c, AccountId, Subscription__r.Id, Subscription__r.Name, RecordType.Name, OppSortNumber__c
                        FROM Opportunity
                        WHERE RecordTypeId not in :notStoreRecIds
                        AND AccountId = :acctId
                        AND Status__c <> 'Cancelled'
-                       AND Status__c <> 'Terminated'];
+                       AND Status__c <> 'Terminated'
+                       ORDER BY OppSortNumber__c ASC];
             
             
             for (Opportunity s : lstOpps)
             {
-                wrapOpp = new OpportunityWrapper(s, false);
+				wrapOpp = new OpportunityWrapper(s, false);
                 Opps.add(wrapOpp);
             }
             
@@ -298,7 +317,6 @@ public class OppForConsoleController
             	CaptureOpp();
             }
         }
-        
         return null;
     }
     
@@ -382,11 +400,19 @@ public class OppForConsoleController
     public class OpportunityWrapper
     {
         public boolean isSelected {get; set;} 
+        public boolean isStore {get; set;} //BAP-3412
+        public String OppRecordType {get; set;} 
         public Opportunity objOpp {get; set;}  
         
         public OpportunityWrapper (Opportunity Opp, boolean selected)
         {
             this.isSelected = selected;
+            if(opp.RecordType.Name == label.Opportunity_Recordtype_StorePurchase || opp.RecordType.Name == label.Opportunity_RecordType_Trial){
+                this.isStore = true;
+            } else {
+                this.isStore = false;
+            }
+            this.OppRecordType = opp.RecordType.Name;
             this.objOpp = Opp;
         }
     }

@@ -2,6 +2,10 @@
     <apex:includeScript value="/support/console/28.0/integration.js" />
     <apex:includeScript value="/support/console/29.0/integration.js"/>
      <apex:includeScript value="/support/console/34.0/integration.js"/>
+    
+    <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" />
+<apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js" />
+<apex:styleSheet value="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/themes/smoothness/jquery-ui.css" />
    
     <script type="text/javascript">
         var caseRecordTypeId;
@@ -48,6 +52,7 @@
             }
         }
         
+    
         function GoCase(caseId) 
         {      
             
@@ -111,10 +116,9 @@
         <apex:actionFunction action="{!CaptureOpp}" name="OppPassedIn" id="OppPassedIn" rerender="pblkMain">
             <apex:param name="firstParam" assignTo="{!passedInOppId}" value="" />
         </apex:actionFunction>
-         
         <apex:pageBlock id="pblkMain" title="Opps" mode="detail">
             <apex:pageBlockButtons location="top" rendered="{!Opps.size > 0}">
-                 <apex:commandButton value="Create Case"  action="{!CreateCase}" rerender="pblkMain"
+                 <apex:commandButton value="Create Case"  action="{!createcase}" rerender="pblkMain"
                    oncomplete="javascript:return GoCase('{!newCaseId}');" />
              
                   
@@ -122,7 +126,7 @@
             
             <apex:pageBlockTable value="{!Opps}" var="s" rendered="{!Opps.size > 0}">
                 <apex:column headerValue="CrCase" style="width:10px;">
-                    <apex:inputCheckbox value="{!s.isSelected}">
+                    <apex:inputCheckbox value="{!s.isSelected}" disabled="{!NOT(s.isStore)}" rendered="{!(s.isStore)}">
                         <apex:actionSupport event="onclick" action="{!SelectOpp}" rerender="pblkMain">
                             <apex:param name="selId" value="{!s.objOpp.Id}" />
                         </apex:actionSupport>
@@ -131,17 +135,26 @@
                 <apex:column value="{!s.objOpp.StoreURL__c}" />
                 <apex:column value="{!s.objOpp.New_Product_Plan__c}" />
                 <apex:column value="{!s.objOpp.Status__c}" />
+                <apex:column headerValue="Record Type" value="{!s.objOpp.RecordType.Name}" />
             </apex:pageBlockTable>
-            
             <apex:outputPanel rendered="{!Opps.size == 0}">
                 <br /><br />
                 <apex:outputText value="No Opportunity Exists for This {!objectType}" style="font-weight:bold; font-size:1.2em;" />
             </apex:outputPanel>  
             <apex:outputPanel >
                 <br /><br />
-                <apex:outputText value="{!errorMsg}" style="font-weight:bold; font-size:1.2em;" />
+                <apex:outputText value="{!errorMsg}" style="font-weight:bold; font-size:1.2em;" /><br/><br/>
             </apex:outputPanel>
+            <apex:pageBlockSection >
+            <apex:inputText label="Caller Name" size="35" value="{!CallerName}" id="callernameid"></apex:inputText><br/><br/>
+            <apex:inputTextArea label="Subject" cols="35" value="{!CaseSubject}" id="casesubjectid"/>
+            <apex:outputText rendered="{!LEN(errorMsgCaseSubject)>0}" value="{!errorMsgCaseSubject}" style="color:red; font-size:1.1em;"></apex:outputText>
+
+            </apex:pageBlockSection>
+              
+            
           </apex:pageBlock>
+        
         
         <script type="text/javascript">             
             sforce.console.getEnclosingPrimaryTabId(getPrimaryTabId);            

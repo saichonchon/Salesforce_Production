@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Post Paid.CUS - Email 08 (Day 16)- Domain &amp; SSL</name>
+    <style>none</style>
+    <subject>Setting up your domain name and SSL</subject>
+    <textOnly>Before launching your store,we encourage you to set a custom domain name, register it and add a dedicated SSL certificate.
+Set up a domain and SSL
+
+
+
+
+
+
+
+Log into your store &lt;[[https://login.bigcommerce.com/deep-links/tools/domains?utm_medium=email&amp;utm_source=post-paid&amp;utm_campaign=email8&amp;utm_term=&amp;utm_content=domain-ssl]]&gt;
+Improve conversion with a custom domain and SSL
+To start, all new stores are given a BigCommerce domain. We encourage you to set a custom domain name, register it and add a dedicated SSL certificate. Whether you’re transferring a domain and certificate or need to buy new ones, BigCommerce makes it quick and painless.
+Ready to set up your domain? Refer to our Domain Overview &lt;[[https://support.bigcommerce.com/articles/Public/Domains-DNS-Overview?utm_medium=email&amp;utm_source=post-paid&amp;utm_campaign=email8&amp;utm_term=&amp;utm_content=domain-ssl]]&gt; for more information.
+Add a dedicated SSL
+A dedicated SSL improves conversion by keeping shoppers on your domain at checkout. For more details, read our SSL overview &lt;[[https://support.bigcommerce.com/articles/Public/SSL-Overview?utm_medium=email&amp;utm_source=post-paid&amp;utm_campaign=email8&amp;utm_term=&amp;utm_content=domain-ssl]]&gt;.
+Buy a SSL &lt;[[https://login.bigcommerce.com/deep-links/tools/domains?utm_medium=email&amp;utm_source=post-paid&amp;utm_campaign=email8&amp;utm_term=&amp;utm_content=domain-ssl]]&gt;
+Remember: Based on your specific domain scenario, you will want to adjust your email records accordingly &lt;[[https://support.bigcommerce.com/articles/Public/Email-MX-Records?utm_medium=email&amp;utm_source=post-paid&amp;utm_campaign=email8&amp;utm_term=&amp;utm_content=domain-ssl]]&gt;.
+{{my.Litmus Test 8:default=editme}}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

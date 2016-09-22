@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>LEAD_ID</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_MEMBER_ID</field>
+    </columns>
+    <columns>
+        <field>LEAD_SOURCE</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_PARENT_NAME</field>
+    </columns>
+    <columns>
+        <field>LEAD_OWNER</field>
+    </columns>
+    <columns>
+        <field>LEAD_STATUS</field>
+    </columns>
+    <columns>
+        <field>COMPANY</field>
+    </columns>
+    <columns>
+        <field>Lead.rvpe__RVMember__c</field>
+    </columns>
+    <columns>
+        <field>Lead.Datanyze_Revenue__c</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_NAME</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_ID</field>
+    </columns>
+    <filter>
+        <booleanFilter>((((1 OR 2 OR 5) AND 3) AND 4)) AND 6</booleanFilter>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <operator>contains</operator>
+            <value>Prospects.Display Ads.2015Q4.,Prospects.Email Ads.2016Q1.,Prospects.Print Ads.2016Q1.,Prospects.Native Ads.2016Q2.,Prospects.Social Ads.2015Q4.,Prospects.Affiliate Activity.2015Q4.,Prospects.CPC Ads.2015Q4.</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <operator>contains</operator>
+            <value>Prospects.Partner Activity.2015Q4.,Prospects.General Activities.2015Q4.,Prospects.Organic Social.2015Q4.,Prospects.Marketing Events.2015Q4.,Prospects.Content Campaigns.2015Q4.,Prospects.Email Campaigns.2015Q4.</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead.Projected_Annual_Revenue__c</column>
+            <operator>equals</operator>
+            <value>&quot;&lt; $50,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MEMBER_CREATED_DATE</column>
+            <operator>greaterThan</operator>
+            <value>9/1/2016 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <operator>contains</operator>
+            <value>Prospects.Migration eGuide.Q12015.Competitive Landers,SBD.Square Referrals,SBDPartner.Paypal.Lead Referral,Prospects.Partner Activity.2015Q4.</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>COMPANY</column>
+            <operator>notContain</operator>
+            <value>bigcommerce</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>MEMBER_CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>MEMBER_OWNER_ROLE_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>COUNTRY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Demo Video LEADS A-B Test Results JB</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignLead</reportType>
+    <scope>orgAll</scope>
+    <showDetails>false</showDetails>
+</Report>

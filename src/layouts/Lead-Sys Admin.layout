@@ -236,6 +236,10 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>Rating</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>Temperature__c</field>
             </layoutItems>
             <layoutItems>
@@ -548,7 +552,7 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>mkto2__Lead_Score__c</field>
+                <field>mkto71_Lead_Score__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -789,6 +793,8 @@
         <fields>CM.LAST_UPDATE</fields>
         <fields>CM.FIRST_ASSOCIATED_DATE</fields>
         <relatedList>RelatedCampaignList</relatedList>
+        <sortField>CM.FIRST_ASSOCIATED_DATE</sortField>
+        <sortOrder>Desc</sortOrder>
     </relatedLists>
     <relatedLists>
         <fields>CASES.CASE_NUMBER</fields>

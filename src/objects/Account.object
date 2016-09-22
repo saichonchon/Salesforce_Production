@@ -368,10 +368,6 @@ IMAGE(&quot;/resource/1405031526000/Blackflag&quot;, &quot;Within SLA&quot;, 20,
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Unresponsive</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
                 <fullName>Neutral</fullName>
                 <default>false</default>
             </picklistValues>
@@ -676,7 +672,7 @@ IMAGE(&quot;/resource/1405031526000/Blackflag&quot;, &quot;Within SLA&quot;, 20,
         <description>Populated by batch apex class; sets off workflow to send app rev share emails.</description>
         <externalId>false</externalId>
         <inlineHelpText>Populated by batch apex class; sets off workflow to send app rev share emails.</inlineHelpText>
-        <label>App: Send Rev Share Email</label>
+        <label>App: Rev Share Email Send Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -698,26 +694,26 @@ IMAGE(&quot;/resource/1405031526000/Blackflag&quot;, &quot;Within SLA&quot;, 20,
         <description>Team to which the LDR would like to round robin the Account</description>
         <externalId>false</externalId>
         <inlineHelpText>Team to which the LDR would like to round robin the Account</inlineHelpText>
-        <label>LDR Assign To Team</label>
+        <label>Assign To Team</label>
         <picklist>
             <picklistValues>
-                <fullName>Enterprise</fullName>
+                <fullName>Small Business</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Acquisition</fullName>
+                <fullName>Midmarket</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Direct Sales</fullName>
+                <fullName>Sr. Midmarket</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>APAC Enterprise</fullName>
+                <fullName>APAC Midmarket</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>APAC Direct</fullName>
+                <fullName>APAC Small Business</fullName>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
@@ -1102,10 +1098,10 @@ Grow - Potential for big opp;Partner choosing platform</inlineHelpText>
     <fields>
         <fullName>Closed_Migration_Cases__c</fullName>
         <defaultValue>0</defaultValue>
-        <description>Count of migration cases with status of closed or completed</description>
+        <description>Count of catalog transfer cases with status of closed or completed</description>
         <externalId>false</externalId>
-        <inlineHelpText>Count of migration cases with status of closed or completed. Used in Marketing Hubspot workflows.</inlineHelpText>
-        <label>MKT # Closed Migration Cases</label>
+        <inlineHelpText>Count of catalog transfer cases with status of closed or completed. Used in Marketing Hubspot workflows.</inlineHelpText>
+        <label>MKT # Closed Catalog Transfer Cases</label>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
@@ -3021,10 +3017,10 @@ for success squad surveys</description>
     <fields>
         <fullName>Open_Migration_Cases__c</fullName>
         <defaultValue>0</defaultValue>
-        <description>Count of migration cases that are not closed or completed. Used in Marketing Hubspot workflows.</description>
+        <description>Count of catalog transfer cases that are not closed or completed. Used in Marketing Hubspot workflows.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Count of migration cases that are not closed or completed. Used in Marketing Hubspot workflows.</inlineHelpText>
-        <label>MKT # Open Migration Cases</label>
+        <inlineHelpText>Count of catalog transfer cases that are not closed or completed. Used in Marketing Hubspot workflows.</inlineHelpText>
+        <label>MKT # Open Catalog Transfer Cases</label>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
@@ -4783,12 +4779,12 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
     </fields>
     <fields>
         <fullName>Revenue_Share__c</fullName>
-        <description>for BizDev payouts</description>
+        <description>Partner Revenue Share Percentage</description>
         <externalId>false</externalId>
-        <label>zRevenue Share</label>
+        <label>Revenue Share</label>
         <precision>18</precision>
         <required>false</required>
-        <scale>0</scale>
+        <scale>2</scale>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Percent</type>
@@ -5238,6 +5234,16 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Send_Rev_Share_Email__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Determines whether rev share emails should be sent.</description>
+        <externalId>false</externalId>
+        <label>Send Rev Share Email</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>ShippingAddress</fullName>
@@ -7766,28 +7772,6 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <label>BMP Accounts</label>
     </listViews>
     <listViews>
-        <fullName>Channel_Partner_Record_Type</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>ACCOUNT.CREATED_DATE</columns>
-        <columns>Partner_Level__c</columns>
-        <columns>App_Developer_Status__c</columns>
-        <columns>PAR_Total_Active_MRR__c</columns>
-        <columns>Onboarding_MRR__c</columns>
-        <columns>PAR_Active_Store_Count__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>ACCOUNT.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Account.Partner_Record_Type</value>
-        </filters>
-        <label>Channel Partner Record Type</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
         <fullName>Clients_My_New_Clients_This_Month</fullName>
         <columns>ACCOUNT.NAME</columns>
         <columns>ACCOUNT.CREATED_DATE</columns>
@@ -8113,10 +8097,6 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
                 <fullName>Neutral</fullName>
                 <default>false</default>
             </values>
-            <values>
-                <fullName>Unresponsive</fullName>
-                <default>false</default>
-            </values>
         </picklistValues>
         <picklistValues>
             <picklist>Acquisition_Campaign__c</picklist>
@@ -8215,15 +8195,15 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <picklistValues>
             <picklist>Assign_To_Team__c</picklist>
             <values>
-                <fullName>Acquisition</fullName>
+                <fullName>Midmarket</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Direct Sales</fullName>
+                <fullName>Small Business</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Enterprise</fullName>
+                <fullName>Sr%2E Midmarket</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -11068,10 +11048,6 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
                 <fullName>Neutral</fullName>
                 <default>false</default>
             </values>
-            <values>
-                <fullName>Unresponsive</fullName>
-                <default>false</default>
-            </values>
         </picklistValues>
         <picklistValues>
             <picklist>Acquisition_Campaign__c</picklist>
@@ -11170,15 +11146,15 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <picklistValues>
             <picklist>Assign_To_Team__c</picklist>
             <values>
-                <fullName>Acquisition</fullName>
+                <fullName>Midmarket</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Direct Sales</fullName>
+                <fullName>Small Business</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Enterprise</fullName>
+                <fullName>Sr%2E Midmarket</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -13730,10 +13706,6 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
                 <fullName>Neutral</fullName>
                 <default>false</default>
             </values>
-            <values>
-                <fullName>Unresponsive</fullName>
-                <default>false</default>
-            </values>
         </picklistValues>
         <picklistValues>
             <picklist>Acquisition_Campaign__c</picklist>
@@ -13771,21 +13743,6 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
             <values>
                 <fullName>Standard</fullName>
                 <default>true</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Assign_To_Team__c</picklist>
-            <values>
-                <fullName>Acquisition</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Direct Sales</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Enterprise</fullName>
-                <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
@@ -16405,10 +16362,6 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
                 <fullName>Neutral</fullName>
                 <default>false</default>
             </values>
-            <values>
-                <fullName>Unresponsive</fullName>
-                <default>false</default>
-            </values>
         </picklistValues>
         <picklistValues>
             <picklist>Acquisition_Campaign__c</picklist>
@@ -16445,21 +16398,6 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
             </values>
             <values>
                 <fullName>Standard</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Assign_To_Team__c</picklist>
-            <values>
-                <fullName>Acquisition</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Direct Sales</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Enterprise</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -18937,6 +18875,7 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <searchResultsAdditionalFields>Active_Stores_Opp__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ACCOUNT.TYPE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.RECORDTYPE</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>Read</sharingModel>
     <validationRules>
@@ -18954,14 +18893,6 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
 ( ISPICKVAL( OLD_PS_Status__c, &quot;Appointment Held : Launched&quot;) || ISPICKVAL( OLD_PS_Status__c, &quot;Appointment Held : Not Launched&quot;)) &amp;&amp;
  ISBLANK( First_Consultation_Date__c)</errorConditionFormula>
         <errorMessage>The Appointment Held field must be populated if PS Status equals &quot;Appointment Held : Launched&quot; or &quot;Appointment Held : Not Launched&quot;</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>ChannelPartnerRecordType_Rule</fullName>
-        <active>true</active>
-        <description>AR-6163</description>
-        <errorConditionFormula>NOT(ISNEW())    &amp;&amp;  RecordTypeId =&quot;012a0000001NOe1&quot; &amp;&amp;  $User.ProfileId  &lt;&gt; &quot;00e30000001UsAz&quot;  &amp;&amp;   OR(ISPICKVAL(Type,&quot;&quot;),ISPICKVAL(Type,&quot;Client&quot;))</errorConditionFormula>
-        <errorDisplayField>Type</errorDisplayField>
-        <errorMessage>Account type cannot be empty or Client for channel partner accounts</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Partner_cannot_be_Client_Type</fullName>
@@ -19196,7 +19127,7 @@ window.location.href=&apos;/apex/CreateOpportunity?id=&apos;+accid;</url>
 var rev = &apos;{!Account.Qualifier__c}&apos;; 
 if(rev) 
 { 
-alert(&apos;There is already a Qualifier on this Account!&apos;); 
+alert(&apos;A lead qualifier has already been assigned.&apos;); 
 
 } 
 else { 
@@ -19221,7 +19152,7 @@ var rev = &apos;{!Account.Assign_To_Team__c}&apos;;
 var qual=&quot;{!Account.Qualifier__c}&quot;; 
 if (qual) 
 { 
-alert(&apos; Qualifier already exists &apos;); 
+alert(&apos;A lead qualifier has already been assigned.&apos;); 
 } 
 else { 
 if(rev) 
@@ -19230,7 +19161,7 @@ var accid=&quot;{!Account.Id}&quot;;
 window.location.href=&apos;/apex/RoundRobin?id=&apos;+accid; 
 } 
 else { 
-alert(&apos;Please populate the LDR Assign To Team&apos;); 
+alert(&apos;Select a team to assign this Account to.&apos;); 
 } 
 }</url>
     </webLinks>

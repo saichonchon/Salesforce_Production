@@ -107,47 +107,6 @@ public without sharing class Lead_TriggerHandler {
 			}
 	    }  
   }
-  
-  public static void updatePhoneNumbers(List<Lead> newList, List<Lead> oldList)
-  {
-  	
-  	  List<Lead> updList = new List<Lead>();
-  	  
-  	  for (integer i =0; i < newList.size(); i++)
-        {
-            if (  oldList[i].Phone <> null && 
-                  newList[i].Phone <> null && 
-                  newList[i].Phone.replaceAll('[^0-9]', '') <> oldList[i].Phone.replaceAll('[^0-9]', '')
-  				)
-                {
- 
-                   if (newList[i].MBA_Phone_3__c<> null) 
-                   {
-	                   newList[i].MBA_Phone_4__c =  oldList[i].MBA_Phone_3__c;
-	                   newList[i].Bad_MBA_Phone_4__c = oldList[i].Bad_MBA_Phone_3__c ;
-                   }
-                   if (newList[i].MBA_Phone_2__c<> null) 
-                   {
-	                   newList[i].MBA_Phone_3__c =  oldList[i].MBA_Phone_2__c;
-	                   newList[i].Bad_MBA_Phone_3__c = oldList[i].Bad_MBA_Phone_2__c ;
-                   }
-                   if (newList[i].MBA_Phone_1__c<> null) 
-                   {
-	                   newList[i].MBA_Phone_2__c =  oldList[i].MBA_Phone_1__c;
-	                   newList[i].Bad_MBA_Phone_2__c = oldList[i].Bad_MBA_Phone_1__c ;
-                   }
-                   if (newList[i].Phone <> null) 
-                   {
-	                   newList[i].MBA_Phone_1__c =  oldList[i].Phone;
-	                   newList[i].Bad_MBA_Phone_1__c = newList[i].Bad_Phone_Number__c;
-                   }
-                
-                   newList[i].Bad_Phone_Number__c= false ;
-                   
-                }
-        }
-  
-    }
   	
     public static void changeLeadOwner(List<Lead> newList, List<Lead> oldList)
     {

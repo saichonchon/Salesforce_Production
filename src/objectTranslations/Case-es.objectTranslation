@@ -57,8 +57,8 @@
         </picklistValues>
     </fields>
     <fields>
-        <help><!-- Which Bigcommerce migration team member is working this case --></help>
-        <label><!-- zBC Migration Assignee --></label>
+        <help><!-- Which Bigcommerce Catalog Transfer team member is working this case --></help>
+        <label><!-- zBC Catalog Transfer Assignee --></label>
         <name>BC_Migration_Assignee__c</name>
         <picklistValues>
             <masterLabel>Adam Seabrook</masterLabel>
@@ -2119,8 +2119,8 @@ Set by hierarchy : Contact &gt; Lead &gt; Web Email &gt; Subscription Email --><
         </picklistValues>
     </fields>
     <fields>
-        <help><!-- Date the migration completes. --></help>
-        <label><!-- Migration Completion Date --></label>
+        <help><!-- Date the catalog transfer completes. --></help>
+        <label><!-- Catalog Transfer Completion Date --></label>
         <name>Completion_Date__c</name>
     </fields>
     <fields>
@@ -2226,6 +2226,10 @@ Referral : needs booking --></help>
         <help><!-- This is the client&apos;s current or source store URL, from which data will be migrated. This is NOT the BC Store URL. --></help>
         <label><!-- Current Store URL --></label>
         <name>Current_Store_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current User Title --></label>
+        <name>Current_User_Title__c</name>
     </fields>
     <fields>
         <label><!-- Custom Page 1 --></label>
@@ -2559,8 +2563,8 @@ Referral : needs booking --></help>
         </picklistValues>
     </fields>
     <fields>
-        <help><!-- Migrations : for EIG project; formula pulls EIG ID from associated subscription --></help>
-        <label><!-- Migration SBD EIG ID --></label>
+        <help><!-- Catalog Transfer: for EIG project; formula pulls EIG ID from associated subscription --></help>
+        <label><!-- Catalog Transfer SBD EIG ID --></label>
         <name>EIG_ID__c</name>
     </fields>
     <fields>
@@ -2698,8 +2702,8 @@ Referral : needs booking --></help>
         </picklistValues>
     </fields>
     <fields>
-        <help><!-- Migrations : has there been report of a migration issue --></help>
-        <label><!-- z Migration Issues Reported --></label>
+        <help><!-- Catalog transfer: has there been report of a transfer issue --></help>
+        <label><!-- z Catalog Transfer Issues Reported --></label>
         <name>Issues_Reported__c</name>
     </fields>
     <fields>
@@ -2919,12 +2923,12 @@ Referral : needs booking --></help>
         <name>Merge_Split_TO_Account_Link__c</name>
     </fields>
     <fields>
-        <label><!-- Migration Automated Emails? --></label>
+        <label><!-- Catalog Transfer Automated Emails? --></label>
         <name>Migration_Automated_Emails__c</name>
     </fields>
     <fields>
-        <help><!-- Select the reason(s) for why the data migration is unable to start, delayed, or otherwise blocked from progressing. The reasons selected are to provide insight into the length of time to complete data migrations, e.g. Time to Initial Completion --></help>
-        <label><!-- zMigration Delay Reason(s) --></label>
+        <help><!-- Select the reason(s) for why the data transfer is unable to start, delayed, or otherwise blocked from progressing. The reasons selected are to provide insight into the length of time to complete data transfers, e.g. Time to Initial Completion --></help>
+        <label><!-- zCatalog Transfer Delay Reason(s) --></label>
         <name>Migration_Delay_Reason__c</name>
         <picklistValues>
             <masterLabel>API / Advanced API not enabled</masterLabel>
@@ -2976,7 +2980,7 @@ Referral : needs booking --></help>
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- zMigration Difficulty --></label>
+        <label><!-- zCatalog Transfer Difficulty --></label>
         <name>Migration_Difficulty__c</name>
         <picklistValues>
             <masterLabel>Challenging</masterLabel>
@@ -2993,12 +2997,12 @@ Referral : needs booking --></help>
     </fields>
     <fields>
         <help><!-- Returns 1 if Admin only or 2 if Admin and FTP --></help>
-        <label><!-- Migration Email Type --></label>
+        <label><!-- Catalog Transfer Email Type --></label>
         <name>Migration_Email_Type__c</name>
     </fields>
     <fields>
-        <help><!-- Provides a reason for migration case escalation, if the case is escalated --></help>
-        <label><!-- Migration Escalation Reason --></label>
+        <help><!-- Provides a reason for catalog transfer case escalation, if the case is escalated --></help>
+        <label><!-- Catalog Transfer Escalation Reason --></label>
         <name>Migration_Escalation_Reason__c</name>
         <picklistValues>
             <masterLabel>Bad Data</masterLabel>
@@ -3030,8 +3034,8 @@ Referral : needs booking --></help>
         </picklistValues>
     </fields>
     <fields>
-        <help><!-- Select the issues experienced during the migration process. The reasons selected are to provide context for future platform enhancement requests, client escalation/churn, tool improvement, etc. --></help>
-        <label><!-- zMigration Issues --></label>
+        <help><!-- Select the issues experienced during the transfer process. The reasons selected are to provide context for future platform enhancement requests, client escalation/churn, tool improvement, etc. --></help>
+        <label><!-- zCatalog Transfer Issues --></label>
         <name>Migration_Issues__c</name>
         <picklistValues>
             <masterLabel>301 issues</masterLabel>
@@ -3087,8 +3091,8 @@ Referral : needs booking --></help>
         </picklistValues>
     </fields>
     <fields>
-        <help><!-- Who is the Channel or SBD Partner from whom the Migration Request is sourced? --></help>
-        <label><!-- Migration Partner --></label>
+        <help><!-- Who is the Channel or SBD Partner from whom the Catalog Transfer Request is sourced? --></help>
+        <label><!-- Catalog Transfer Partner --></label>
         <name>Migration_Partner__c</name>
         <picklistValues>
             <masterLabel>EIG</masterLabel>
@@ -3100,7 +3104,7 @@ Referral : needs booking --></help>
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Migration Platform --></label>
+        <label><!-- Catalog Transfer Platform --></label>
         <name>Migration_Platform__c</name>
         <picklistValues>
             <masterLabel>1Shopping</masterLabel>
@@ -3393,7 +3397,7 @@ Referral : needs booking --></help>
     </fields>
     <fields>
         <help><!-- What team is responsible for supporting this client? --></help>
-        <label><!-- Migration Supporting Department --></label>
+        <label><!-- Catalog Transfer Supporting Department --></label>
         <name>Migration_Supporting_Department__c</name>
         <picklistValues>
             <masterLabel>Cancelled</masterLabel>
@@ -3409,7 +3413,7 @@ Referral : needs booking --></help>
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- zMigration Type --></label>
+        <label><!-- zCatalog Transfer Type --></label>
         <name>Migration_Type__c</name>
         <picklistValues>
             <masterLabel>API</masterLabel>
@@ -3437,7 +3441,7 @@ Referral : needs booking --></help>
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Migration Verification --></label>
+        <label><!-- Catalog Transfer Verification --></label>
         <name>Migration_Verification__c</name>
         <picklistValues>
             <masterLabel>Auto Verified</masterLabel>
@@ -3449,8 +3453,8 @@ Referral : needs booking --></help>
         </picklistValues>
     </fields>
     <fields>
-        <help><!-- Did the client confirm that the migration is verified via clicktools? --></help>
-        <label><!-- Migration Verified - Clicktools --></label>
+        <help><!-- Did the client confirm that the transfer is verified via clicktools? --></help>
+        <label><!-- Catalog Transfer Verified - Clicktools --></label>
         <name>Migration_Verified_Clicktools__c</name>
         <picklistValues>
             <masterLabel>No</masterLabel>
@@ -3462,7 +3466,7 @@ Referral : needs booking --></help>
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- zMigration Verified --></label>
+        <label><!-- zCatalog Transfer Verified --></label>
         <name>Migration_Verified__c</name>
     </fields>
     <fields>
@@ -5665,13 +5669,13 @@ Referral : needs booking --></help>
         <relationshipLabel><!-- Cases (Refund/Credit Approver) --></relationshipLabel>
     </fields>
     <fields>
-        <help><!-- Select if Remigration is needed or requested to resolve open issues --></help>
-        <label><!-- Remigration Needed --></label>
+        <help><!-- Select if re-transfer is needed or requested to resolve open issues --></help>
+        <label><!-- Re-transfer Needed --></label>
         <name>Remigration_Needed__c</name>
     </fields>
     <fields>
-        <help><!-- If Remigration Needed is selected, what is the reason for the remigration? (SalesOps only) --></help>
-        <label><!-- zRemigration Reason --></label>
+        <help><!-- If Re-transfer Needed is selected, what is the reason for the re-transfer? (SalesOps only) --></help>
+        <label><!-- zRe-transfer Reason --></label>
         <name>Remigration_Reason__c</name>
         <picklistValues>
             <masterLabel>Data change/Client request</masterLabel>
@@ -5764,8 +5768,8 @@ Referral : needs booking --></help>
         <relationshipLabel><!-- Cases (SS Consultant) --></relationshipLabel>
     </fields>
     <fields>
-        <help><!-- This box is checked when the Client has verified the data migration and the Migration Status = Completed with the appropriate Verification Date. --></help>
-        <label><!-- zOLD Data Migration Verified --></label>
+        <help><!-- This box is checked when the Client has verified the data transfer and the Catalog Transfer Status = Completed with the appropriate Verification Date. --></help>
+        <label><!-- zOLD Data Catalog Transfer Verified --></label>
         <name>SS_DataMigrationVerified__c</name>
     </fields>
     <fields>
@@ -6270,6 +6274,10 @@ NOTE: The Contact Name field MUST be populated on the case in order for them to 
         <name>Support_Pin__c</name>
     </fields>
     <fields>
+        <label><!-- Supported During Trial --></label>
+        <name>Supported_During_Trial__c</name>
+    </fields>
+    <fields>
         <label><!-- Supported as Trial --></label>
         <name>Supported_as_Trial__c</name>
     </fields>
@@ -6333,8 +6341,8 @@ NOTE: The Contact Name field MUST be populated on the case in order for them to 
         <name>TTFR__c</name>
     </fields>
     <fields>
-        <help><!-- Migration target completion date - Completed by the Migration Team --></help>
-        <label><!-- Migration Target Completion Date --></label>
+        <help><!-- Catalog transfer target completion date - Completed by the Catalog Transfer Team --></help>
+        <label><!-- Catalog Transfer Target Completion Date --></label>
         <name>Target_Completion_Date__c</name>
     </fields>
     <fields>
@@ -6522,7 +6530,7 @@ Source_Details_Confirmed__c  -  DATEVALUE(CreatedDate ) --></help>
     </fields>
     <fields>
         <help><!-- Date the case Status moved to Verification --></help>
-        <label><!-- Migration Verification Date --></label>
+        <label><!-- Catalog Transfer Verification Date --></label>
         <name>Verification_Date__c</name>
     </fields>
     <fields>

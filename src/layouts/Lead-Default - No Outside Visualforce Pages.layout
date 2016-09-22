@@ -644,6 +644,8 @@
         <fields>CM.LAST_UPDATE</fields>
         <fields>CM.FIRST_ASSOCIATED_DATE</fields>
         <relatedList>RelatedCampaignList</relatedList>
+        <sortField>CM.FIRST_ASSOCIATED_DATE</sortField>
+        <sortOrder>Desc</sortOrder>
     </relatedLists>
     <relatedLists>
         <fields>CASES.CASE_NUMBER</fields>

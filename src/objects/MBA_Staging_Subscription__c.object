@@ -1693,9 +1693,9 @@
     </fields>
     <fields>
         <fullName>Migration_Request_Date__c</fullName>
-        <description>Date when Migration needs to be performed.</description>
+        <description>Date when transfer needs to be performed.</description>
         <externalId>false</externalId>
-        <label>Migration Request Date</label>
+        <label>Catalog Transfer Request Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -1866,7 +1866,7 @@
     <fields>
         <fullName>Requested_Migration_At__c</fullName>
         <externalId>false</externalId>
-        <label>Requested Migration At</label>
+        <label>Requested Catalog Transfer At</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -1876,7 +1876,7 @@
     <fields>
         <fullName>Requested_Migration__c</fullName>
         <externalId>false</externalId>
-        <label>Requested Migration</label>
+        <label>Requested Catalog Transfer</label>
         <picklist>
             <picklistValues>
                 <fullName>Yes</fullName>

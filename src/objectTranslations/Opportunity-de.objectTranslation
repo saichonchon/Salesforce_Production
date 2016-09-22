@@ -2458,6 +2458,10 @@
             <translation><!-- Computer &amp; Software --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Design</masterLabel>
+            <translation><!-- Design --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Domain Hosting</masterLabel>
             <translation><!-- Domain Hosting --></translation>
         </picklistValues>
@@ -3147,18 +3151,18 @@
     </fields>
     <fields>
         <help><!-- Who is scoping this opportunity pre-sale? --></help>
-        <label><!-- Migration Scoping Consultant --></label>
+        <label><!-- Catalog Transfer Scoping Consultant --></label>
         <name>MigrationScopingConsultant__c</name>
-        <relationshipLabel><!-- Opportunities (Migration Scoping Consultant) --></relationshipLabel>
+        <relationshipLabel><!-- Opportunities (Catalog Transfer Scoping Consultant) --></relationshipLabel>
     </fields>
     <fields>
-        <help><!-- Prospect&apos;s approximate budget for migration services --></help>
-        <label><!-- Migration Budget --></label>
+        <help><!-- Prospect&apos;s approximate budget for catalog transfer services --></help>
+        <label><!-- Catalog Transfer Budget --></label>
         <name>Migration_Budget__c</name>
     </fields>
     <fields>
-        <help><!-- Why did we chose not to migrate this prospect&apos;s store? --></help>
-        <label><!-- Migration Closed Lost Reason --></label>
+        <help><!-- Why did we chose not to transfer this prospect&apos;s store? --></help>
+        <label><!-- Catalog Transfer Closed Lost Reason --></label>
         <name>Migration_Closed_Lost_Reason__c</name>
         <picklistValues>
             <masterLabel>Cannot Meet Scope Required by Client</masterLabel>
@@ -3182,13 +3186,13 @@
         </picklistValues>
     </fields>
     <fields>
-        <help><!-- Migration fee determined during pre-sales migration scoping --></help>
-        <label><!-- Migration Fee --></label>
+        <help><!-- Catalog transfer fee determined during pre-sales transfer scoping --></help>
+        <label><!-- Catalog Transfer Fee --></label>
         <name>Migration_Fee__c</name>
     </fields>
     <fields>
-        <help><!-- For Migration products only, this must be populated. --></help>
-        <label><!-- Migration Platform --></label>
+        <help><!-- For Catalog Transfer products only, this must be populated. --></help>
+        <label><!-- Catalog Transfer Platform --></label>
         <name>Migration_Platform__c</name>
         <picklistValues>
             <masterLabel>1Shopping</masterLabel>
@@ -3364,23 +3368,23 @@
         </picklistValues>
     </fields>
     <fields>
-        <help><!-- Rollup summary of migration products. Used to determine migration count logic to send to Hubspot --></help>
-        <label><!-- BA: Migration Products --></label>
+        <help><!-- Rollup summary of catalog transfer products. Used to determine transfer count logic to send to Hubspot --></help>
+        <label><!-- BA: Catalog Transfer Products --></label>
         <name>Migration_Products__c</name>
     </fields>
     <fields>
-        <help><!-- Migration pre-sales scope of work description --></help>
-        <label><!-- Migration Scope of Work --></label>
+        <help><!-- Catalog Transfer pre-sales scope of work description --></help>
+        <label><!-- Catalog Transfer Scope of Work --></label>
         <name>Migration_Scope_of_Work__c</name>
     </fields>
     <fields>
-        <help><!-- Migration Scoping Notes --></help>
-        <label><!-- Migration Scoping Notes --></label>
+        <help><!-- Catalog Transfer Scoping Notes --></help>
+        <label><!-- Catalog Transfer Scoping Notes --></label>
         <name>Migration_Scoping_Notes__c</name>
     </fields>
     <fields>
-        <help><!-- Migration team pre-sales scoping status - used to indicate whether the migration team will be able to migrate a prospect during the sales cycle --></help>
-        <label><!-- Migration Scoping Status --></label>
+        <help><!-- Catalog Transfer team pre-sales scoping status - used to indicate whether the Catalog Transfer team will be able to transfer a prospect during the sales cycle --></help>
+        <label><!-- Catalog Transfer Scoping Status --></label>
         <name>Migration_Scoping_Status__c</name>
         <picklistValues>
             <masterLabel>Blocked</masterLabel>
@@ -3440,7 +3444,7 @@
     </fields>
     <fields>
         <help><!-- Friendly product plan name (ie not what MBA/BMP is sending) --></help>
-        <label><!-- New Product Plan --></label>
+        <label><!-- zNew Product Plan --></label>
         <name>New_Product_Plan__c</name>
     </fields>
     <fields>
@@ -3504,6 +3508,10 @@
     <fields>
         <label><!-- Onboarding Specialist --></label>
         <name>Onboarding_Specialist__c</name>
+    </fields>
+    <fields>
+        <label><!-- OppSortNumber --></label>
+        <name>OppSortNumber__c</name>
     </fields>
     <fields>
         <label><!-- REPORT Opportunity Count --></label>
@@ -3749,7 +3757,7 @@
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Partner Budget: Migration --></label>
+        <label><!-- Partner Budget: Catalog Transfer --></label>
         <name>Partner_Budget_Migration__c</name>
         <picklistValues>
             <masterLabel>$0- $5,000</masterLabel>
@@ -4135,8 +4143,8 @@
         <name>Random_Sample_Number__c</name>
     </fields>
     <fields>
-        <help><!-- What migration partner was recommending during pre-sales scoping? --></help>
-        <label><!-- Recommended Migration Partner --></label>
+        <help><!-- What catalog transfer partner was recommending during pre-sales scoping? --></help>
+        <label><!-- Recommended CatalogTransfer Partner --></label>
         <name>RecommendedMigrationPartner__c</name>
         <relationshipLabel><!-- Opportunities (Account) --></relationshipLabel>
     </fields>
@@ -4461,10 +4469,6 @@
         <picklistValues>
             <masterLabel>Lead</masterLabel>
             <translation><!-- Lead --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Migration Pre Scoping</masterLabel>
-            <translation><!-- Migration Pre Scoping --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Migration Scoping</masterLabel>
@@ -5040,18 +5044,18 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         <name>Zuora_Version__c</name>
     </fields>
     <fields>
-        <help><!-- What is the estimated number of days to complete this migration? Used in pre-scoping --></help>
-        <label><!-- Migration Days to Complete --></label>
+        <help><!-- What is the estimated number of days to complete this transfer? Used in pre-scoping --></help>
+        <label><!-- Catalog Transfer Days to Complete --></label>
         <name>days_to_complete__c</name>
     </fields>
     <fields>
-        <help><!-- Migration lead time --></help>
-        <label><!-- Migration Lead Time --></label>
+        <help><!-- Catalog transfer lead time --></help>
+        <label><!-- Catalog Transfer Lead Time --></label>
         <name>migration_lead_time__c</name>
     </fields>
     <fields>
-        <help><!-- Please provide a description of Minimum Viable Migration Service --></help>
-        <label><!-- Minimum Viable Migration Service --></label>
+        <help><!-- Please provide a description of Minimum Viable Catalog Transfer Service --></help>
+        <label><!-- Minimum Viable Catalog Transfer Service --></label>
         <name>minimum_viable_migration_service__c</name>
     </fields>
     <fields>
@@ -5858,7 +5862,7 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         <name>Prohibit_opp_record_type_changes</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Please fill out the &apos;Closed Lost Comments&apos; box before adjusting the stage to &apos;Closed Lost&apos; --></errorMessage>
+        <errorMessage><!-- Please fill out the &apos;Closed Lost Comments&apos; box before adjusting the stage to &apos;Closed Lost&apos;. --></errorMessage>
         <name>Require_Closed_Lost_Other_Comments</name>
     </validationRules>
     <validationRules>

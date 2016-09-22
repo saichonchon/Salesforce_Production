@@ -1067,20 +1067,20 @@ Note that this is not a field to report on historical events as it only contains
         <name>May_revenue__c</name>
     </fields>
     <fields>
-        <label><!-- zMigration Case Created --></label>
+        <label><!-- zCatalog Transfer Case Created --></label>
         <name>Migration_Case_Created__c</name>
     </fields>
     <fields>
-        <label><!-- Migration Request Date --></label>
+        <label><!-- Catalog Transfer Request Date --></label>
         <name>Migration_Request_Date__c</name>
     </fields>
     <fields>
-        <label><!-- zMigration Verified --></label>
+        <label><!-- zCatalog Transfer Verified --></label>
         <name>Migration_Verified__c</name>
     </fields>
     <fields>
-        <help><!-- Was this store ever a Migration product? --></help>
-        <label><!-- zMigration --></label>
+        <help><!-- Was this store ever a Catalog Transfer product? --></help>
+        <label><!-- zCatalog Transfer --></label>
         <name>Migration__c</name>
     </fields>
     <fields>
@@ -1302,13 +1302,13 @@ Note that this is not a field to report on historical events as it only contains
         <name>Referral_ID__c</name>
     </fields>
     <fields>
-        <help><!-- For Orion. Indicates the Date/Time for which the client indicated whether they would like a migration or not. --></help>
-        <label><!-- SBD Requested Migration At --></label>
+        <help><!-- For Orion. Indicates the Date/Time for which the client indicated whether they would like a transfer or not. --></help>
+        <label><!-- SBD Requested Catalog Transfer At --></label>
         <name>Requested_Migration_At__c</name>
     </fields>
     <fields>
-        <help><!-- Used for Orion. Indicates whether the client requested a migration. --></help>
-        <label><!-- SBD Requested Migration --></label>
+        <help><!-- Used for Orion. Indicates whether the client requested a transfer. --></help>
+        <label><!-- SBD Requested Catalog Transfer --></label>
         <name>Requested_Migration__c</name>
         <picklistValues>
             <masterLabel>No</masterLabel>

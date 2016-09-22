@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Subscription__c.StoreURL__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Subscription__c.Status__c</field>
+    </columns>
+    <columns>
+        <field>Subscription__c.Product__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Subscription__c.Email__c</column>
+            <operator>contains</operator>
+            <value>Jes2174960</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Fraud Domain Finder</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Subscription__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Subscription__c.Product__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <endDate>2016-08-01</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-06-01</startDate>
+    </timeFrameFilter>
+</Report>

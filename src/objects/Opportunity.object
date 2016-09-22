@@ -3889,6 +3889,10 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Design</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Domain Hosting</fullName>
                 <default>false</default>
             </picklistValues>
@@ -4361,7 +4365,7 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
     <fields>
         <fullName>Lead_Score__c</fullName>
         <externalId>false</externalId>
-        <formula>Contact__r.mkto2__Lead_Score__c</formula>
+        <formula>Contact__r.mkto71_Lead_Score__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <inlineHelpText>Contact Lead Score</inlineHelpText>
         <label>Lead Score</label>
@@ -4917,7 +4921,7 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
         <description>Who is scoping this opportunity pre-sale?</description>
         <externalId>false</externalId>
         <inlineHelpText>Who is scoping this opportunity pre-sale?</inlineHelpText>
-        <label>Migration Scoping Consultant</label>
+        <label>Catalog Transfer Scoping Consultant</label>
         <referenceTo>User</referenceTo>
         <relationshipName>Opportunities2</relationshipName>
         <required>false</required>
@@ -4927,10 +4931,10 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
     </fields>
     <fields>
         <fullName>Migration_Budget__c</fullName>
-        <description>Prospect&apos;s approximate budget for migration services</description>
+        <description>Prospect&apos;s approximate budget for catalog transfer services</description>
         <externalId>false</externalId>
-        <inlineHelpText>Prospect&apos;s approximate budget for migration services</inlineHelpText>
-        <label>Migration Budget</label>
+        <inlineHelpText>Prospect&apos;s approximate budget for catalog transfer services</inlineHelpText>
+        <label>Catalog Transfer Budget</label>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
@@ -4940,10 +4944,10 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
     </fields>
     <fields>
         <fullName>Migration_Closed_Lost_Reason__c</fullName>
-        <description>Why did we chose not to migrate this prospect&apos;s store?</description>
+        <description>Why did we chose not to transfer this prospect&apos;s store?</description>
         <externalId>false</externalId>
-        <inlineHelpText>Why did we chose not to migrate this prospect&apos;s store?</inlineHelpText>
-        <label>Migration Closed Lost Reason</label>
+        <inlineHelpText>Why did we chose not to transfer this prospect&apos;s store?</inlineHelpText>
+        <label>Catalog Transfer Closed Lost Reason</label>
         <picklist>
             <picklistValues>
                 <fullName>Cannot Meet Time Frame Required by Client</fullName>
@@ -4973,10 +4977,10 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
     </fields>
     <fields>
         <fullName>Migration_Fee__c</fullName>
-        <description>Migration fee determined during pre-sales migration scoping</description>
+        <description>Catalog transfer fee determined during pre-sales transfer scoping</description>
         <externalId>false</externalId>
-        <inlineHelpText>Migration fee determined during pre-sales migration scoping</inlineHelpText>
-        <label>Migration Fee</label>
+        <inlineHelpText>Catalog transfer fee determined during pre-sales transfer scoping</inlineHelpText>
+        <label>Catalog Transfer Fee</label>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
@@ -4987,8 +4991,8 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
     <fields>
         <fullName>Migration_Platform__c</fullName>
         <externalId>false</externalId>
-        <inlineHelpText>For Migration products only, this must be populated.</inlineHelpText>
-        <label>Migration Platform</label>
+        <inlineHelpText>For Catalog Transfer products only, this must be populated.</inlineHelpText>
+        <label>Catalog Transfer Platform</label>
         <picklist>
             <picklistValues>
                 <fullName>1Shopping</fullName>
@@ -5170,10 +5174,10 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
     </fields>
     <fields>
         <fullName>Migration_Products__c</fullName>
-        <description>Rollup summary of migration products. Used to determine migration count logic to send to Hubspot</description>
+        <description>Rollup summary of catalog transfer products. Used to determine transfer count logic to send to Hubspot</description>
         <externalId>false</externalId>
-        <inlineHelpText>Rollup summary of migration products. Used to determine migration count logic to send to Hubspot</inlineHelpText>
-        <label>BA: Migration Products</label>
+        <inlineHelpText>Rollup summary of catalog transfer products. Used to determine transfer count logic to send to Hubspot</inlineHelpText>
+        <label>BA: Catalog Transfer Products</label>
         <summaryFilterItems>
             <field>OpportunityLineItem.Is_Migration__c</field>
             <operation>equals</operation>
@@ -5186,10 +5190,10 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
     </fields>
     <fields>
         <fullName>Migration_Scope_of_Work__c</fullName>
-        <description>Migration pre-sales scope of work description</description>
+        <description>Catalog Transfer pre-sales scope of work description</description>
         <externalId>false</externalId>
-        <inlineHelpText>Migration pre-sales scope of work description</inlineHelpText>
-        <label>Migration Scope of Work</label>
+        <inlineHelpText>Catalog Transfer pre-sales scope of work description</inlineHelpText>
+        <label>Catalog Transfer Scope of Work</label>
         <length>32768</length>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -5198,10 +5202,10 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
     </fields>
     <fields>
         <fullName>Migration_Scoping_Notes__c</fullName>
-        <description>Migration Scoping Notes</description>
+        <description>Catalog Transfer Scoping Notes</description>
         <externalId>false</externalId>
-        <inlineHelpText>Migration Scoping Notes</inlineHelpText>
-        <label>Migration Scoping Notes</label>
+        <inlineHelpText>Catalog Transfer Scoping Notes</inlineHelpText>
+        <label>Catalog Transfer Scoping Notes</label>
         <length>32768</length>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -5210,10 +5214,10 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
     </fields>
     <fields>
         <fullName>Migration_Scoping_Status__c</fullName>
-        <description>Migration team pre-sales scoping status - used to indicate whether the migration team will be able to migrate a prospect during the sales cycle</description>
+        <description>Catalog Transfer team pre-sales scoping status - used to indicate whether the Catalog Transfer team will be able to transfer a prospect during the sales cycle</description>
         <externalId>false</externalId>
-        <inlineHelpText>Migration team pre-sales scoping status - used to indicate whether the migration team will be able to migrate a prospect during the sales cycle</inlineHelpText>
-        <label>Migration Scoping Status</label>
+        <inlineHelpText>Catalog Transfer team pre-sales scoping status - used to indicate whether the Catalog Transfer team will be able to transfer a prospect during the sales cycle</inlineHelpText>
+        <label>Catalog Transfer Scoping Status</label>
         <picklist>
             <picklistValues>
                 <fullName>New</fullName>
@@ -5344,7 +5348,7 @@ IF (ProductID__c =&apos;132&apos;, &apos;15 Day Free Trial - $14 Test&apos; ,
 Product__c ) ))))))))))</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <inlineHelpText>Friendly product plan name (ie not what MBA/BMP is sending)</inlineHelpText>
-        <label>New Product Plan</label>
+        <label>zNew Product Plan</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Text</type>
@@ -5447,6 +5451,22 @@ Product__c ) ))))))))))</formula>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OppSortNumber__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(RecordType.Name, 
+&quot;Store Purchase&quot;, 0, 
+&quot;Trial&quot;, 1,
+2)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>OppSortNumber</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
         <unique>false</unique>
     </fields>
     <fields>
@@ -5881,7 +5901,7 @@ Product__c ) ))))))))))</formula>
     <fields>
         <fullName>Partner_Budget_Migration__c</fullName>
         <externalId>false</externalId>
-        <label>Partner Budget: Migration</label>
+        <label>Partner Budget: Catalog Transfer</label>
         <picklist>
             <picklistValues>
                 <fullName>$0- $5,000</fullName>
@@ -6571,10 +6591,10 @@ Account Management</description>
     <fields>
         <fullName>RecommendedMigrationPartner__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
-        <description>What migration partner was recommending during pre-sales scoping?</description>
+        <description>What catalog transfer partner was recommending during pre-sales scoping?</description>
         <externalId>false</externalId>
-        <inlineHelpText>What migration partner was recommending during pre-sales scoping?</inlineHelpText>
-        <label>Recommended Migration Partner</label>
+        <inlineHelpText>What catalog transfer partner was recommending during pre-sales scoping?</inlineHelpText>
+        <label>Recommended CatalogTransfer Partner</label>
         <referenceTo>Account</referenceTo>
         <relationshipLabel>Opportunities (Account)</relationshipLabel>
         <relationshipName>Opportunities</relationshipName>
@@ -7227,14 +7247,6 @@ null) ,NULL
                 <won>false</won>
             </picklistValues>
             <picklistValues>
-                <fullName>Migration Scoping</fullName>
-                <default>false</default>
-                <closed>false</closed>
-                <forecastCategory>Pipeline</forecastCategory>
-                <probability>15</probability>
-                <won>false</won>
-            </picklistValues>
-            <picklistValues>
                 <fullName>Build Value</fullName>
                 <default>false</default>
                 <closed>false</closed>
@@ -7248,6 +7260,14 @@ null) ,NULL
                 <closed>false</closed>
                 <forecastCategory>BestCase</forecastCategory>
                 <probability>50</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Migration Scoping</fullName>
+                <default>false</default>
+                <closed>false</closed>
+                <forecastCategory>BestCase</forecastCategory>
+                <probability>60</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
@@ -7493,15 +7513,6 @@ null) ,NULL
                 <closed>true</closed>
                 <forecastCategory>Omitted</forecastCategory>
                 <probability>0</probability>
-                <won>false</won>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Migration Pre Scoping</fullName>
-                <default>false</default>
-                <description>Indicates that the opportunity is being scoped for migration</description>
-                <closed>false</closed>
-                <forecastCategory>Pipeline</forecastCategory>
-                <probability>15</probability>
                 <won>false</won>
             </picklistValues>
             <picklistValues>
@@ -8401,10 +8412,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
     </fields>
     <fields>
         <fullName>days_to_complete__c</fullName>
-        <description>What is the estimated number of days to complete this migration?</description>
+        <description>What is the estimated number of days to complete this transfer?</description>
         <externalId>false</externalId>
-        <inlineHelpText>What is the estimated number of days to complete this migration? Used in pre-scoping</inlineHelpText>
-        <label>Migration Days to Complete</label>
+        <inlineHelpText>What is the estimated number of days to complete this transfer? Used in pre-scoping</inlineHelpText>
+        <label>Catalog Transfer Days to Complete</label>
         <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -8414,10 +8425,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
     </fields>
     <fields>
         <fullName>migration_lead_time__c</fullName>
-        <description>Migration lead time</description>
+        <description>Catalog transfer lead time</description>
         <externalId>false</externalId>
-        <inlineHelpText>Migration lead time</inlineHelpText>
-        <label>Migration Lead Time</label>
+        <inlineHelpText>Catalog transfer lead time</inlineHelpText>
+        <label>Catalog Transfer Lead Time</label>
         <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -8427,10 +8438,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
     </fields>
     <fields>
         <fullName>minimum_viable_migration_service__c</fullName>
-        <description>Field for Sales reps to provide a description of Minimum Viable Migration Service</description>
+        <description>Field for Sales reps to provide a description of Minimum Viable Catalog Transfer Service</description>
         <externalId>false</externalId>
-        <inlineHelpText>Please provide a description of Minimum Viable Migration Service</inlineHelpText>
-        <label>Minimum Viable Migration Service</label>
+        <inlineHelpText>Please provide a description of Minimum Viable Catalog Transfer Service</inlineHelpText>
+        <label>Minimum Viable Catalog Transfer Service</label>
         <length>32768</length>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -11235,6 +11246,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
+                <fullName>Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Domain Hosting</fullName>
                 <default>false</default>
             </values>
@@ -13406,6 +13421,13 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Industry__c</picklist>
+            <values>
+                <fullName>Design</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>LeadSource</picklist>
             <values>
                 <fullName>Blogs</fullName>
@@ -15103,6 +15125,13 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
             <values>
                 <fullName>Pipeline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry__c</picklist>
+            <values>
+                <fullName>Design</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -17336,6 +17365,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
             <values>
                 <fullName>Computer %26 Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Design</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -20366,6 +20399,13 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Industry__c</picklist>
+            <values>
+                <fullName>Design</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Launch_Status__c</picklist>
             <values>
                 <fullName>At Risk</fullName>
@@ -21199,6 +21239,21 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
             <values>
                 <fullName>iPay</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sales_Decision__c</picklist>
+            <values>
+                <fullName>Accepted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -23244,6 +23299,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
             <values>
                 <fullName>Computer %26 Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Design</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -26046,6 +26105,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <default>false</default>
             </values>
             <values>
+                <fullName>Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Domain Hosting</fullName>
                 <default>false</default>
             </values>
@@ -28678,6 +28741,13 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Industry__c</picklist>
+            <values>
+                <fullName>Design</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>LeadSource</picklist>
             <values>
                 <fullName>Blogs</fullName>
@@ -29387,6 +29457,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <listViewButtons>rvpe__MassAssignToPartner</listViewButtons>
         <listViewButtons>qbdialer__Create_List</listViewButtons>
         <listViewButtons>qbdialer__Manage_Lists</listViewButtons>
+        <listViewButtons>SalesVue__Add_Opportunities_To_Plans</listViewButtons>
         <lookupDialogsAdditionalFields>OPPORTUNITY.NAME</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>ACCOUNT.SITE</lookupDialogsAdditionalFields>
@@ -29577,26 +29648,18 @@ ISBLANK( Migration_Budget__c ) ||
         <fullName>Require_Closed_Lost_Other_Comments</fullName>
         <active>true</active>
         <description>3. If the closed lost reason detail is other, require the other comments box to be filled **exclude sys admin and api user</description>
-        <errorConditionFormula>RecordTypeId  = &quot;01213000000AUty&quot; /*Trial Record Type*/
-&amp;&amp; ISCHANGED( StageName ) 
-&amp;&amp; ISPICKVAL(StageName, &apos;Closed Lost&apos;) 
-&amp;&amp;
-
-((ISPICKVAL(  Closed_Lost_Reason_Detail__c , &apos;Other&apos;)) ||
-(ISPICKVAL( Closed_Lost_Reason__c, &apos;SQL Rejected&apos;))) &amp;&amp; 
-ISBLANK( Other_Comments__c )
-
-/* Closed lost reason/reason detail modified so other comments not needed when sales decision is not blank
-
-||
-(NOT(ISBLANK(TEXT(Account.Sales_Decision__c))) &amp;&amp; ISBLANK(Other_Comments__c))
-
-*/
-
- &amp;&amp;
-$UserRole.Id &lt;&gt; &quot;00E30000001Lqy7&quot; &amp;&amp;  /*Sys Admin*/ 
-$UserRole.Id &lt;&gt; &quot;00E13000001OSnX&quot;  /*API user */</errorConditionFormula>
-        <errorMessage>Please fill out the &apos;Closed Lost Comments&apos; box before adjusting the stage to &apos;Closed Lost&apos;</errorMessage>
+        <errorConditionFormula>AND(
+RecordTypeId  = &quot;01213000000AUty&quot; /*Trial Record Type*/,
+ISPICKVAL(StageName,&apos;Closed Lost&apos;),
+OR(
+ISPICKVAL(Closed_Lost_Reason_Detail__c ,&apos;Other&apos;),
+ISPICKVAL(Closed_Lost_Reason__c,&apos;SQL Rejected&apos;) &amp;&amp; ISBLANK(Other_Comments__c),
+ISPICKVAL(Closed_Lost_Reason__c,&apos;Product&apos;) &amp;&amp; ISBLANK(Other_Comments__c)
+),
+$UserRole.Id &lt;&gt; &quot;00E30000001Lqy7&quot;  /*Sys Admin*/,
+$UserRole.Id &lt;&gt; &quot;00E13000001OSnX&quot;  /*API user */
+)</errorConditionFormula>
+        <errorMessage>Please fill out the &apos;Closed Lost Comments&apos; box before adjusting the stage to &apos;Closed Lost&apos;.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Require_Launch_Date_if_Launch_Status_Set</fullName>

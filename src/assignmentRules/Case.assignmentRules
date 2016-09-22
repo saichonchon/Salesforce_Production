@@ -6,21 +6,10 @@
         <ruleEntry>
             <assignedTo>Support_Trash</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <booleanFilter>1 OR (2 AND 3)</booleanFilter>
             <criteriaItems>
                 <field>Case.Subject</field>
                 <operation>contains</operation>
                 <value>I&apos;d like to add you to my professional network on LinkedIn,Undelivered Mail Returned to Sender,Email Loop Protection</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.Origin</field>
-                <operation>equals</operation>
-                <value>ecommerceconsultant@bigcommerce.com</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Case.Subject</field>
-                <operation>contains</operation>
-                <value>[Auto-Reply]</value>
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
@@ -88,21 +77,21 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>Direct_Sales</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <criteriaItems>
-                <field>Case.Origin</field>
-                <operation>equals</operation>
-                <value>ecommerceconsultant@bigcommerce.com,sales@bigcommerce.com,Sales Dev</value>
-            </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
             <assignedTo>Case_Billing_Queue</assignedTo>
             <assignedToType>Queue</assignedToType>
             <criteriaItems>
                 <field>Case.Origin</field>
                 <operation>equals</operation>
                 <value>EIG Billing,Employee Account</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Direct_Sales</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>sales@bigcommerce.com,Sales Dev</value>
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>

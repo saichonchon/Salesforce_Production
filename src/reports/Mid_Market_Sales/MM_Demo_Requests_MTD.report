@@ -59,7 +59,7 @@
         <criteriaItems>
             <column>OWNER_ROLE</column>
             <operator>equals</operator>
-            <value>Enterprise Sales</value>
+            <value>Enterprise Sales,Enterprise Leader</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

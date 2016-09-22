@@ -21,6 +21,9 @@
     <columns>
         <field>FK_NAME</field>
     </columns>
+    <columns>
+        <field>FK_$rvpe__RVAccount__c.rvpe__StateProvince__c</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>FK_CUSTENT_OWNER_NAME</column>

@@ -13,8 +13,6 @@ trigger LeadTrigger on Lead (before insert, before update)
         	Lead_TriggerHandler.changePRMLeadOwner(trigger.New);
         	DatanyzeLeadHandler.beforeInsertDatanyze(trigger.New);
         	if (trigger.isInsert) Lead_TriggerHandler.checkForDuplicates(Trigger.new);
-			if (trigger.isUpdate) Lead_TriggerHandler.updatePhoneNumbers(Trigger.New, Trigger.Old);
-//		    if (trigger.isUpdate && !system.isFuture()) Lead_TriggerHandler.changeLeadOwner(Trigger.New, Trigger.Old);
 
         }
         if (trigger.isBefore)

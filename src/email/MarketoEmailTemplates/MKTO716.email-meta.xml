@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Apple Pay Announcement - 1357.CUS Email 1</name>
+    <style>none</style>
+    <subject>BigCommerce introduces Apple Pay for Web integration</subject>
+    <textOnly>Checkout with Apple Pay on your website.
+Hi {{lead.First Name:default=there}},
+With the releases of macOS Sierra and iOS 10, BigCommerce’s Apple Pay on the Web integration &lt;[[https://www.bigcommerce.com/apple-pay?utm_medium=email&amp;utm_source=engagement]]&gt; is now ready for you to activate on your store.*
+
+With Apple Pay, BigCommerce merchants can now offer their customers a simplified and secure checkout experience.  Apple Pay on the Web eliminates the need to manually enter payment and shipping details when using Safari on your Mac, iPhone, and iPad.
+
+
+Once activated on your store, customers using Safari to shop on iPhone or iPad with iOS 10 (released on Sept. 13) or on a Mac with macOS Sierra (available on Sept. 20th) can checkout using Apple Pay. Paying happens with just a touch and is quicker, easier, and more secure than ever before.
+
+Feature benefits of the BigCommerce integration with Apple Pay:
+
+
+ - One-click setup with no additional fees
+ - Increased conversion rates
+ - Easier, safer way to pay on mobile and desktop
+ - Decrease guest checkouts (coming soon)
+
+
+
+See step-by-step instructions &lt;[[https://support.bigcommerce.com/articles/Public/Connecting-with-Apple-Pay]]&gt; for connecting Apple Pay in your online store.
+
+
+
+
+
+Activate Now &lt;[[https://login.bigcommerce.com/deep-links/settings/payment]]&gt;
+Best,
+The BigCommerce Team
+
+
+*Apple Pay on the web is available to merchants based in Australia, Canada, France, Hong Kong, Singapore, Switzerland, UK and the USA. Merchants must adhere to the Apple Pay on the Web: Acceptable Use Guidelines &lt;[[https://developer.apple.com/apple-pay/acceptable-use-guidelines-for-websites/]]&gt; and to Apple’s requirements for use of the Apple Pay Mark &lt;[[http://www.apple.com/legal/intellectual-property/guidelinesfor3rdparties.html]]&gt;. Payments on Apple Pay are processed through a compatible credit card payment gateway. BigCommerce supports PayPal powered by Braintree, Authorize.net, and Stripe. Apple Pay for the Web for our First Data Clover and Cybersource customers is coming soon.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

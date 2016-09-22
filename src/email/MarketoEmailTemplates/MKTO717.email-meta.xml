@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>GTM-1311:  Innovation Awards.CUS: Form Submission Autoresponder (GTM-1332)</name>
+    <style>none</style>
+    <subject>Thanks for submitting to the BigCommerce Innovation Awards</subject>
+    <textOnly>Thank you for your submitting your store for the inaugural BigCommerce Innovation Awards
+
+
+Thanks for your submission!
+
+Your store has been submitted for the inaugural BigCommerce Innovation Awards. A copy of your submission can be found below. Winners will be notified by November 5, 2016.
+
+In the meantime, be sure to follow the BigCommerce blog &lt;[[https://www.bigcommerce.com/blog/?utm_medium=email&amp;utm_source=Customer&amp;utm_campaign=Innovation+Awards&amp;utm_term=&amp;utm_content=BigCommerce+Blog]]&gt; for updates.
+
+Learn more » &lt;[[http://www.bigcommerce.com/blog/introducing-2016-innovation-awards/?utm_medium=email&amp;utm_source=Customer&amp;utm_campaign=Innovation+Awards&amp;utm_term=BigCommerce+Blog&amp;utm_content=Introducing+Innovation+Awards]]&gt;
+
+
+Best,
+The BigCommerce Team
+
+
+First Name: {{lead.First Name:default=None}}
+
+Last Name: {{lead.Last Name:default=None}}
+
+Title: {{lead.Job Title:default=None}}
+
+Email Address: {{lead.Email Address:default=None}}
+
+Phone Number: {{lead.Phone Number:default=None}}
+
+Name of business you&apos;re submitting: {{company.Company Name:default=None}}
+
+Store URL: {{company.Website:default=None}}
+
+Are you submitting 
+on behalf of a client? {{lead.Working with BC Partner:default=No}}
+
+Name of Partner organization: {{lead.Name of Partner:default=n/a}}
+
+Describe an ecommerce business challenge your company has overcome through innovation: {{lead.Describe an ecommerce business challenge:default=None}}
+
+How did the BigCommerce platform help you solve this challenge? {{lead.How did the BigCommerce platform help you?:default=None}}
+
+What was the positive business impact of your 
+project? {{lead.Positive business impact of your project?:default=None}}
+
+
+
+By entering your submission, you agree to the terms and conditions &lt;[[http://www.bigcommerce.com/terms/innovation-awards/]]&gt; for the BigCommerce Innovation Awards. We’ll email you a copy of your responses after you submit.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

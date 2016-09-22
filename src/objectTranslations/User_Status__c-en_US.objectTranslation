@@ -57,6 +57,14 @@
             <translation><!-- APAC Enterprise Accounts Queue --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>APAC Midmarket Sales Queue</masterLabel>
+            <translation><!-- APAC Midmarket Sales Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APAC Small Business Sales Queue</masterLabel>
+            <translation><!-- APAC Small Business Sales Queue --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Acq Lead Distro Queue</masterLabel>
             <translation><!-- Acq Lead Distro Queue --></translation>
         </picklistValues>
@@ -89,8 +97,20 @@
             <translation><!-- Enterprise Accounts Queue --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Midmarket Sales Queue</masterLabel>
+            <translation><!-- Midmarket Sales Queue --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Partner Requests Queue</masterLabel>
             <translation><!-- Partner Requests Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Business Sales Queue</masterLabel>
+            <translation><!-- Small Business Sales Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sr. Midmarket Sales Queue</masterLabel>
+            <translation><!-- Sr. Midmarket Sales Queue --></translation>
         </picklistValues>
     </fields>
     <fields>

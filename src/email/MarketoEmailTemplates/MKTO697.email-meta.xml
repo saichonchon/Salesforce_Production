@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>IR Partner Opted In (GTM-1354).ACQ: Email 1 - IR Leads</name>
+    <style>none</style>
+    <subject>BigCommerce Enterprise can grow your business</subject>
+    <textOnly>Increase sales, decrease costs and spend less time managing your technology with BigCommerce Enterprise
+
+
+Hi {{lead.First Name:default=there}},
+
+
+Thanks for being a loyal reader of Internet Retailer. As part of our partnership with them we wanted to reach out to tell you about BigCommerce Enterprise &lt;[[http://grow.bigcommerce.com/Event-Demo-Request.html?utm_campaign=Prospects.Marketing%20Events.2015Q4.&amp;utm_source=irce&amp;utm_medium=event&amp;utm_term=BigCommerceEnterprise&amp;utm_content=followup]]&gt;, which can help 
+you increase sales, decrease costs and spend less time managing your technology. Thousands of successful businesses sell more with BigCommerce, including Gibson and Schwinn.
+
+ According the market research firm Ipsos, same store sales for mid-market merchants on BigCommerce grew about twice as much as the ecommerce industry average. Are you available for 15 minutes this week to discuss your business goals and how BigCommerce can help you reach them? You can reply to this email or request a demo &lt;[[http://grow.bigcommerce.com/Event-Demo-Request.html?utm_campaign=Prospects.Marketing%20Events.2015Q4.&amp;utm_source=irce&amp;utm_medium=event&amp;utm_term=BigCommerceEnterprise&amp;utm_content=followup]]&gt;.
+
+Thanks,
+
+
+The BigCommerce Team
+
+sellmore@bigcommerce.com &lt;[[mailto:ecommerceconsultant@bigcommerce.com]]&gt;   /   1-855-884-6610 &lt;[[tel:+18558846610]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

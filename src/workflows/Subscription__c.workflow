@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <alerts>
-        <fullName>Cancellation_Notice_to_Owner</fullName>
-        <description>Cancellation Notice to Owner</description>
-        <protected>false</protected>
-        <recipients>
-            <type>owner</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>Internal_Email_Template/Store_Cancellation_Email_Alert_to_Owner</template>
-    </alerts>
-    <alerts>
         <fullName>New_Subscription_Owner_Doesn_t_Match</fullName>
         <description>New Subscription : Owner Doesn&apos;t Match</description>
         <protected>false</protected>
@@ -446,7 +436,7 @@
             <name>New_Subscription_Owner_Doesn_t_Match</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Subscription__c.Purchase_Team__c</field>
             <operation>contains</operation>
@@ -504,31 +494,6 @@ CONTAINS(Product__c, &quot;Free&quot;) = FALSE)
 || Direct_Purchase__c = TRUE) 
 )</formula>
         <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
-        <fullName>Owner Notification%3A Cancellation</fullName>
-        <actions>
-            <name>Cancellation_Notice_to_Owner</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Subscription__c.Status__c</field>
-            <operation>equals</operation>
-            <value>Cancelled,Terminated</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Subscription__c.MonthlyRecurringRevenue__c</field>
-            <operation>greaterOrEqual</operation>
-            <value>1</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Subscription__c.Purchase_Team__c</field>
-            <operation>contains</operation>
-            <value>Direct,Acquisition</value>
-        </criteriaItems>
-        <description>Emails Direct or Acq rep if a sub they own cancels or is terminated</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
         <fullName>Plan Change Date Capture</fullName>

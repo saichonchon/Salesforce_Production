@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_COUNTRY</field>
+    </columns>
+    <columns>
+        <field>PHONE1</field>
+    </columns>
+    <columns>
+        <field>OWNER_FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <crossFilters>
+        <criteriaItems>
+            <column>RecordType</column>
+            <operator>equals</operator>
+            <value>Opportunity.Store_Purchase</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.TrailingGMVCount__c</column>
+            <operator>greaterThan</operator>
+            <value>50,0</value>
+        </criteriaItems>
+        <operation>with</operation>
+        <primaryTableColumn>CONTACT_ID</primaryTableColumn>
+        <relatedTable>OCR-Opportunity</relatedTable>
+        <relatedTableJoinColumn>Contact</relatedTableJoinColumn>
+    </crossFilters>
+    <filter>
+        <criteriaItems>
+            <column>ADDRESS2_COUNTRY</column>
+            <operator>contains</operator>
+            <value>US,USA,United States,CA,Canada,GB,Great Britain,UK,AU,AUS,Australia</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.ADDRESS1_COUNTRY</column>
+            <operator>equals</operator>
+            <value>US,USA,United States,CA,Canada,GB,Great Britain,UK,AU,AUS,Australia</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Contact with Opportunities &gt;50K</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

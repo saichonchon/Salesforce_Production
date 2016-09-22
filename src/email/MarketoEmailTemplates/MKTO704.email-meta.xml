@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Marty/Owen PCF.Acc Email 2 - Replatforming</name>
+    <style>none</style>
+    <subject>Should you switch ecommerce platforms?</subject>
+    <textOnly>Changing ecommerce platforms can be stressful, but can boost your store&apos;s performance and save you thousands of dollars — especially if you&apos;re moving from an on-premise model to a cloud-based solution. But how do you know if it&apos;s the right time to move and which platform is best for your business?
+
+Download our free platforming guide &lt;[[http://grow.bigcommerce.com/ecommerce-replatform-guide-pcf.html]]&gt; and get a roadmap for a successful migration. 
+
+Please give us a call &lt;tel:+18446328911&gt; if you&apos;d like to learn more about BigCommerce.
+Download the free Ecommerce Replatforming Guide from BigCommerce to learn how to successfully replatform your store.
+
+
+Learn how to successfully
+ replatform your online store</textOnly>
+    <type>custom</type>
+</EmailTemplate>

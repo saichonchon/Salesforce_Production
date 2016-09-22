@@ -4,9 +4,6 @@
         <field>CAMPAIGN_NAME</field>
     </columns>
     <columns>
-        <field>Contact.mkto2__Lead_Score__c</field>
-    </columns>
-    <columns>
         <field>FIRST_NAME</field>
     </columns>
     <columns>
@@ -44,6 +41,4 @@
     <reportType>CampaignContact</reportType>
     <scope>one</scope>
     <showDetails>true</showDetails>
-    <sortColumn>Contact.mkto2__Lead_Score__c</sortColumn>
-    <sortOrder>Desc</sortOrder>
 </Report>
