@@ -3711,6 +3711,22 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Google_Coupon__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>For BAP-4177
+Getting Google Shopping redemption codes into SF and then sending redemption email</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Google Coupon given to the store</inlineHelpText>
+        <label>Google Coupon</label>
+        <referenceTo>Google_Coupon__c</referenceTo>
+        <relationshipLabel>Opportunities</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Growth_Rate_Adjustment__c</fullName>
         <description>PRICING FIELD - data loaded in, this is NOT DYNAMIC</description>
         <externalId>false</externalId>

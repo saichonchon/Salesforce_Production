@@ -26,6 +26,9 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
+        <field>Case.SL_Flag__c</field>
+    </columns>
+    <columns>
         <field>OWNER</field>
     </columns>
     <columns>
@@ -79,7 +82,7 @@
         <criteriaItems>
             <column>OWNER</column>
             <operator>notEqual</operator>
-            <value>Matt Houck,Dante Munoz,Christopher Partanen,Jason Zamora,Brian Miller,Quoc Dang,Josh Popperwell,Lucian Villasenor,Timothy Azark,Scott Leroy,Derek Donovan,Cristy Carpenter,Lynn Torbert,Michael Yope</value>
+            <value>Halie Adams,Matt Houck,Dante Munoz,Christopher Partanen,Jason Zamora,Brian Miller,Quoc Dang,Josh Popperwell,Lucian Villasenor,Timothy Azark,Scott Leroy,Derek Donovan,Cristy Carpenter,Lynn Torbert,Michael Yope</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>

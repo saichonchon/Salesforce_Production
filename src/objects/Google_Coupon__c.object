@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Coupons that may be distributed to our customers</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>false</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>false</enableSharing>
+    <enableStreamingApi>false</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Amount__c</fullName>
+        <description>BAP-4177
+Getting Google Shopping redemption codes into SF and then sending redemption email</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The value of the coupon</inlineHelpText>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Available__c</fullName>
+        <description>BAP-4177
+Getting Google Shopping redemption codes into SF and then sending redemption email</description>
+        <externalId>false</externalId>
+        <formula>AND(NOT(Expired__c), NOT(Distributed__c))</formula>
+        <inlineHelpText>Is this coupon available for distribution?</inlineHelpText>
+        <label>Available?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Coupon_Code__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>BAP-4177
+Getting Google Shopping redemption codes into SF and then sending redemption email</description>
+        <externalId>true</externalId>
+        <inlineHelpText>The Google redemption code</inlineHelpText>
+        <label>Coupon Code</label>
+        <length>16</length>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Date_Distributed__c</fullName>
+        <description>BAP-4177
+Getting Google Shopping redemption codes into SF and then sending redemption email</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date that the coupon was distributed for the related store</inlineHelpText>
+        <label>Date Distributed</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Distributed__c</fullName>
+        <description>BAP-4177
+Getting Google Shopping redemption codes into SF and then sending redemption email</description>
+        <externalId>false</externalId>
+        <formula>NOT(ISBLANK( Store__c ))</formula>
+        <inlineHelpText>Has this coupon been distributed to a store?</inlineHelpText>
+        <label>Distributed?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Expired__c</fullName>
+        <description>For BAP-4177 Getting Google Shopping redemption codes into SF and then sending redemption email</description>
+        <externalId>false</externalId>
+        <formula>Expires__c &lt; TODAY()</formula>
+        <inlineHelpText>Has this coupon expired?</inlineHelpText>
+        <label>Expired?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Expires__c</fullName>
+        <description>For BAP-4177
+Getting Google Shopping redemption codes into SF and then sending redemption email</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date the coupon expires</inlineHelpText>
+        <label>Expires</label>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Store__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>BAP-4177
+Getting Google Shopping redemption codes into SF and then sending redemption email</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The store opportunity that the coupon was used for</inlineHelpText>
+        <label>Store</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Only purchased stores may be given a Google Shopping Code</errorMessage>
+            <filterItems>
+                <field>Opportunity.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Store Purchase</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipName>Google_Shopping_Codes</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Google Coupon</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>COUPON-{000000000}</displayFormat>
+        <label>Name</label>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Google Coupons</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

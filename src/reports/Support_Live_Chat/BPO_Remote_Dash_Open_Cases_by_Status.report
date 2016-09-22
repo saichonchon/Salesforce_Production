@@ -26,6 +26,12 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
         <field>STATUS</field>
     </columns>
     <columns>

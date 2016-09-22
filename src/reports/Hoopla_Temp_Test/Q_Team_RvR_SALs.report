@@ -39,7 +39,12 @@
             <value>Accepted</value>
         </criteriaItems>
     </filter>
-    <format>Tabular</format>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
     <name>Q-Team RvR SALs</name>
     <params>
         <name>co</name>

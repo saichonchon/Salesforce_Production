@@ -2335,6 +2335,12 @@
         <name>GA_Client_ID__c</name>
     </fields>
     <fields>
+        <help><!-- The Google Coupon given to the store --></help>
+        <label><!-- Google Coupon --></label>
+        <name>Google_Coupon__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
         <help><!-- PRICING FIELD - data loaded in, this is NOT DYNAMIC --></help>
         <label><!-- Growth Rate Adjustment --></label>
         <name>Growth_Rate_Adjustment__c</name>

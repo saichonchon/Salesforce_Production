@@ -7179,6 +7179,31 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Google_Coupon__c.Available__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Google_Coupon__c.Date_Distributed__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Google_Coupon__c.Distributed__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Google_Coupon__c.Expired__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Google_Coupon__c.Store__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Idea.Attachment</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -10410,6 +10435,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.GA_Client_ID__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Google_Coupon__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -16506,6 +16536,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>GoalLink-Goal Link Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Google_Coupon__c-Google Shopping Code Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Idea-Idea Layout</layout>

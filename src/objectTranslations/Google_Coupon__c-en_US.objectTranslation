@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Google Coupon</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Google Coupons</value>
+    </caseValues>
+    <fields>
+        <help><!-- The value of the coupon --></help>
+        <label><!-- Amount --></label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is this coupon available for distribution? --></help>
+        <label><!-- Available? --></label>
+        <name>Available__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Google redemption code --></help>
+        <label><!-- Coupon Code --></label>
+        <name>Coupon_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date that the coupon was distributed for the related store --></help>
+        <label><!-- Date Distributed --></label>
+        <name>Date_Distributed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Has this coupon been distributed to a store? --></help>
+        <label><!-- Distributed? --></label>
+        <name>Distributed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Has this coupon expired? --></help>
+        <label><!-- Expired? --></label>
+        <name>Expired__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date the coupon expires --></help>
+        <label><!-- Expires --></label>
+        <name>Expires__c</name>
+    </fields>
+    <fields>
+        <help><!-- The store opportunity that the coupon was used for --></help>
+        <label><!-- Store --></label>
+        <lookupFilter>
+            <errorMessage><!-- Only purchased stores may be given a Google Shopping Code --></errorMessage>
+        </lookupFilter>
+        <name>Store__c</name>
+        <relationshipLabel><!-- Google Coupons --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Google Shopping Code Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
