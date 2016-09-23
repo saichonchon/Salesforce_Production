@@ -68,7 +68,7 @@
         <criteriaItems>
             <column>OWNER_ROLE</column>
             <operator>contains</operator>
-            <value>ldr</value>
+            <value>Development</value>
         </criteriaItems>
         <criteriaItems>
             <column>Activity.Call_Duration_Minutes__c</column>

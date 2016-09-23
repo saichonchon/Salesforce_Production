@@ -1018,13 +1018,9 @@ ISPICKVAL(StageName, &apos;Closed Lost&apos;)
         <active>true</active>
         <description>Notifies the Opportunity Owner that the store plan has changed.</description>
         <formula>AND(
-ISCHANGED(Product__c), 
-OR(
-NOT ISPICKVAL(Source__c, &apos;BMP&apos;),
-AND(
-ISPICKVAL(Source__c, &apos;BMP&apos;), 
+RecordType.Name = &apos;Store Purchase&apos;,
 ISCHANGED(MonthlyRecurringRevenue__c),
-MonthlyRecurringRevenue__c &gt; 0)), 
+MonthlyRecurringRevenue__c &gt; 0, 
 Owner.ProfileId &lt;&gt; $Label.Admin_Profiles,
 OwnerId &lt;&gt; &apos;0051300000BTCyk&apos;, /* Marketing Team */ 
 OwnerId &lt;&gt; &apos;005a000000AsxTo&apos; /*The Bigcommerce Team */ )</formula>

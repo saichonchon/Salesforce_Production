@@ -100,7 +100,7 @@
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Launch_Date__c</column>
-            <operator>greaterOrEqual</operator>
+            <operator>greaterThan</operator>
             <value>LAST_MONTH</value>
         </criteriaItems>
         <criteriaItems>
@@ -126,7 +126,7 @@
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
     <groupingsDown>
-        <dateGranularity>Month</dateGranularity>
+        <dateGranularity>Week</dateGranularity>
         <field>Opportunity.Launch_Date__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>

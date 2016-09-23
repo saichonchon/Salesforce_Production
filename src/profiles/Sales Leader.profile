@@ -130,10 +130,6 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>AccountTests</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>AccountTriggerHandler</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -163,10 +159,6 @@
     </classAccesses>
     <classAccesses>
         <apexClass>ArticlePageHelper</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>AssignLeadTests</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -894,10 +886,6 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>TestClasses</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>TestComponentController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -1075,10 +1063,6 @@
     </classAccesses>
     <classAccesses>
         <apexClass>UserHelper_Test</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>UserStatusTests</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -8972,7 +8956,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Lead_Retrieved__c.Lead__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -8982,7 +8966,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Lead_Retrieved__c.Opportunity__c</field>
         <readable>true</readable>
     </fieldPermissions>

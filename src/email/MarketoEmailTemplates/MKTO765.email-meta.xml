@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Trial Onboarding Experiment - GTM-1296 / GTM-1274.ACQ - InExperienced - Day 03 -</name>
+    <style>none</style>
+    <subject>Need assistance? Get answers in our Resource Center</subject>
+    <textOnly>Visit our Resource Center to find everything you need to know to build your store. Call 1-844-632-8912 for assistance on selecting a BigCommerce plan today.
+Log in to your control panel &lt;[[https://login.bigcommerce.com/login?utm_medium=email&amp;utm_source=Trial+Onboarding&amp;utm_campaign=InExperienced&amp;utm_term=Day+3+Email+3&amp;utm_content=Control+Panel]]&gt;
+Quickly build your store
+Visit our Resource Center &lt;[[https://www.bigcommerce.com/resource-center/?utm_medium=email&amp;utm_source=Trial+Onboarding&amp;utm_campaign=InExperienced&amp;utm_term=Day+3+Email+3&amp;utm_content=Resource+Center]]&gt;
+&lt;[[https://support.bigcommerce.com/articles/University/Quick-Tour-of-Bigcommerce-Video]]&gt;
+We have many resources available to help you build and optimize your store, run your business more efficiently, enhance your marketing, and more. Our Resource Center &lt;[[https://www.bigcommerce.com/resource-center/?utm_medium=email&amp;utm_source=Trial+Onboarding&amp;utm_campaign=InExperienced&amp;utm_term=Day+3+Email+3&amp;utm_content=Resource+Center]]&gt; includes:
+
+
+
+	- Support Portal: Step-by-step tutorials guide you through setting up and using your BigCommerce store.
+
+
+
+
+	- BigCommerce University: Our popular video series teaches you how to run a successful online business.
+
+
+
+
+	- App Store: Add new functionality to your online store with powerful integrations and apps such as accounting, marketing, shipping and more.
+
+
+
+
+	- Experts: Our extensive network of certified designers and developers help customize your store.
+
+
+
+
+	- Community: Speak directly to BC staff and our friendly partners.
+
+
+
+
+
+Visit our Resource Center » &lt;[[https://www.bigcommerce.com/resource-center/?utm_medium=email&amp;utm_source=Trial+Onboarding&amp;utm_campaign=InExperienced&amp;utm_term=Day+3+Email+3&amp;utm_content=Resource+Center]]&gt;
+
+{{my.Litmus Tracker 14:default=editme}}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

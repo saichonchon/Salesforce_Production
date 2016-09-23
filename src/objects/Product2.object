@@ -2146,6 +2146,89 @@
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Order_Cap_Range__c</picklist>
+            <values>
+                <fullName>0 - 2%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2C001 - 15%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>100%2C001 - 150%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>15%2C001 - 20%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>150%2C001 - 200%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2C001 - 3%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>20%2C001 - 30%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>200%2C001 - 300%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2C001 - 4%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>30%2C001 - 40%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>300%2C001 - 400%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2C001 - 5%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>40%2C001 - 50%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5%2C001 - 6%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>50%2C001 - 75%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6%2C001 - 7%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7%2C001 - 8%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>75%2C001 - 100%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8%2C001 - 9%2C000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2C001 - 10%2C000</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Pricing_Group__c</picklist>
             <values>
                 <fullName>EIG</fullName>

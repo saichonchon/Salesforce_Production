@@ -9,7 +9,7 @@
 			],
 			[
 				"create",
-				"GLOBAL createTestMBAStagingSubscriptionsAccountsContacts(Integer numberOfRecords) 	LIST"
+				"GLOBAL createTestMBAStagingSubscriptionsAccountsContacts(Integer numberOfRecords) \tLIST"
 			],
 			[
 				"MBA",
@@ -21,7 +21,7 @@
 			],
 			[
 				"createMBA",
-				"GLOBAL createTestMBAStagingContacts(LIST mbaAccounts) 	LIST"
+				"GLOBAL createTestMBAStagingContacts(LIST mbaAccounts) \tLIST"
 			],
 			[
 				"MBA_Stag",
@@ -29,7 +29,7 @@
 			],
 			[
 				"accounts",
-				"GLOBAL createTestMBAStagingAccounts(Integer numberOfRecords) 	LIST"
+				"GLOBAL createTestMBAStagingAccounts(Integer numberOfRecords) \tLIST"
 			],
 			[
 				"MBA_",
@@ -37,7 +37,7 @@
 			],
 			[
 				"createTestMBA",
-				"PRIVATE createTestMBAStagingSubscriptions(LIST MBAAccounts) 	LIST"
+				"PRIVATE createTestMBAStagingSubscriptions(LIST MBAAccounts) \tLIST"
 			],
 			[
 				"MBA_Sta",
@@ -53,7 +53,7 @@
 			],
 			[
 				"Rand",
-				"GLOBAL RandomInteger(Integer floor, Integer ceiling) 	Integer"
+				"GLOBAL RandomInteger(Integer floor, Integer ceiling) \tInteger"
 			],
 			[
 				"ran",
@@ -68,6 +68,15 @@
 			"settings":
 			{
 				"buffer_size": 8864,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Package.xml",
+			"settings":
+			{
+				"buffer_size": 374749,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -119,8 +128,6 @@
 	"expanded_folders":
 	[
 		"/C/MavensMate/workspaces/Salesforce_Production",
-		"/C/MavensMate/workspaces/Salesforce_Production/config",
-		"/C/MavensMate/workspaces/Salesforce_Production/lib",
 		"/C/MavensMate/workspaces/Salesforce_Production/src",
 		"/C/MavensMate/workspaces/Salesforce_Production/src/triggers"
 	],
@@ -193,6 +200,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"assignmentrule",
 			"jeff douglas",
 			"jeff",
 			"package.xml.template",
@@ -322,7 +330,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -338,8 +346,8 @@
 						"selection":
 						[
 							[
-								777,
-								777
+								764,
+								761
 							]
 						],
 						"settings":
@@ -350,6 +358,36 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Package.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 374749,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								923,
+								913
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 396.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

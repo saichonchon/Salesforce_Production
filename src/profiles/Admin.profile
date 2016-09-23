@@ -130,10 +130,6 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>AccountTests</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>AccountTriggerHandler</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -163,10 +159,6 @@
     </classAccesses>
     <classAccesses>
         <apexClass>ArticlePageHelper</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>AssignLeadTests</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -894,10 +886,6 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>TestClasses</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>TestComponentController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -1075,10 +1063,6 @@
     </classAccesses>
     <classAccesses>
         <apexClass>UserHelper_Test</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>UserStatusTests</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
