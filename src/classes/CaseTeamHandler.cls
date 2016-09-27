@@ -14,10 +14,7 @@ public class CaseTeamHandler {
        
        for(integer i = 0; i < newList.size(); i++)
        {
-       	   if (isInsert && newList[i].RecordTypeId == idCaseRecordType
- //      	   newList[i].CreatedById != null
- //              && (isInsert || (!isInsert  && newList[i].CreatedById != oldList[i].CreatedById ))
- 			  )
+       	   if (isInsert && newList[i].RecordTypeId == idCaseRecordType)
                  {
                     atrList.add(new CaseTeamRoleWrapper(newList[i].Id, newList[i].CreatedById ,  'Sales Rep'));
                     caseIds.add(newList[i].Id);
@@ -148,30 +145,4 @@ public class CaseTeamHandler {
                CaseId = aId;     
                role = rl;    }
      }      
-
-
- /*    
-     public static List<CaseTeamMember> createCaseTeamMember(String role, Map<Id, Id> mapParentMember)
-     {
-        
-        CaseTeamRole ctr= [Select c.Name, c.Id From CaseTeamRole c where Name = :role];
-        List<CaseTeamMember> ctms = new List<CaseTeamMember>();
-        
-        for (Id caseId :mapParentMember.KeySet() )
-        {
-            CaseTeamMember ctm = new CaseTeamMember(TeamRoleId = ctr.Id, ParentId= caseId, MemberId=mapParentMember.get(caseId) );
-            ctms.add(ctm);
-        }
-        return ctms;
-     }
-
-     public void deleteCaseTeamMember(String role, Set<Id> caseIds)
-     {
-        
-        List<CaseTeamMember> ctms =[Select Id, c.TeamRoleId, c.ParentId, c.MemberId From CaseTeamMember c 
-                                    where TeamRole.Name =:role];
-        delete ctms;
-     
-     }
-*/
 }

@@ -22,8 +22,6 @@ private class SubmitCaseControllerTest {
             StoreURL__c= 'testingStorebigcommerce',
             ProductType__c = 'Store',
             Status__c = 'Active',
-//            Account__c = testAccount.Id,
-//            Contact__c = testContact.Id,
             productId__c ='28',
             Source__c = 'Direct Trial'                  
             );
@@ -326,6 +324,5 @@ private class SubmitCaseControllerTest {
 
         System.debug('mySaveCaseHappyPathTest: caseNum: ' + scc.caseNum); 
 
-  //      System.assertEquals(true, scc.caseNum != null ); 
     }    
 }

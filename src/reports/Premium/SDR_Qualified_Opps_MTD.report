@@ -40,6 +40,9 @@
         <field>Opportunity.OpportunityTeamMembers$TeamMemberRole</field>
     </columns>
     <columns>
+        <field>Opportunity$Channel__c</field>
+    </columns>
+    <columns>
         <field>Opportunity$Name</field>
     </columns>
     <columns>
@@ -47,6 +50,12 @@
     </columns>
     <columns>
         <field>Opportunity$LeadSource</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Lead_Type__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Projected_Annual_Revenue__c</field>
     </columns>
     <columns>
         <field>Opportunity$Primary_Campaign_Name__c</field>
@@ -75,6 +84,9 @@
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
         <field>Opportunity$Amount</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Id</field>
     </columns>
     <columns>
         <field>Opportunity.OpportunityTeamMembers*OpportunityTeamMember$Team_Member_Created_Date__c</field>

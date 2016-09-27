@@ -30,8 +30,6 @@ public without sharing class Lead_TriggerHandler {
             }
         	catch(Exception exc)
             {
-            // ErrorEmailHelper.notifyOnError('Lead Trigger Handler', 'after update', 'Error in Lead Trigger Handler - update ', ': update Subscription Account, Contact' + lstsub[0].Id);
- 
                system.debug('***ERROR: LeadTrigger:update Sub: ' + exc.getStackTraceString());
             }
        		SObjectUtils.ManualLeadConvert = false;

@@ -29,7 +29,6 @@ global class  UpdateLeadOwners implements Database.Batchable<sObject>, Database.
             System.Debug('User1 scope size#'+scope.size());
             Lead obj = (Lead)s;
 
-//                 mapLeadOwner.put(obj.Id, obj.OwnerId); 
 			//if ownerId is not same as Created User
 			if(obj.CreatedById != obj.OwnerId)
 			{
@@ -42,8 +41,6 @@ global class  UpdateLeadOwners implements Database.Batchable<sObject>, Database.
 			} 
             
         }
- //           System.Debug('Map Having Same Owner and Created By:'+mapOwnerSameAsCreatedBy);
- //           System.Debug('Map Having Different Owner and Created By:'+mapOwnerDiffAsCreatedBy);
 
             //Query Lead History Table for Owner Change Date 
             Map<String,DateTime> mapLeads = new Map<String,DateTime>();
@@ -52,7 +49,6 @@ global class  UpdateLeadOwners implements Database.Batchable<sObject>, Database.
             {
                 for(LeadHistory obj:[SELECT CreatedById,CreatedDate,Field,Id,LeadId,NewValue,OldValue FROM LeadHistory WHERE Field = 'Owner' and LeadId IN:mapOwnerDiffAsCreatedBy.keyset() and CreatedDate < LAST_90_DAYS order by CreatedDate DESC])
                 {
- //                   System.Debug('Lead History:'+obj);
  				  if (obj.NewValue == mapOwnerDiffAsCreatedBy.get(obj.LeadId))	
  				  {
                     if(!mapLeadOwnerAssignDate.containsKey(obj.LeadId))
@@ -62,22 +58,12 @@ global class  UpdateLeadOwners implements Database.Batchable<sObject>, Database.
  				  }
                 } 
             }
-   //         System.Debug('Lead Map with Created/Owner change date:'+mapLeadOwnerAssignDate);
 
             //Collect all Lead Ids
             List<String> lstLeadIds = new List<String>();
             lstLeadIds.addAll(mapOwnerDiffAsCreatedBy.keyset());
             lstLeadIds.addAll(mapOwnerSameAsCreatedBy.keyset());
-    //        System.Debug('Lead Ids:'+lstLeadIds+'---'+'Size:'+lstLeadIds.size());
 
-	/*
-            //Collect all Owner Ids
-            List<String> lstLeadOwnerIds = new List<String>();
-            lstLeadOwnerIds.addAll(mapOwnerDiffAsCreatedBy.values());
-            lstLeadOwnerIds.addAll(mapOwnerSameAsCreatedBy.values());
-    //        System.Debug('Lead Ids'+lstLeadOwnerIds+'---'+'Size'+lstLeadOwnerIds.size());
-
-*/
             //Query for Tasks for all the Leads
             Map<String,List<Task>> mapTaskForLeads = new Map<String,List<Task>>();
             Map<String,Boolean> mapInboundEmailForLeads = new Map<String,Boolean>();
@@ -86,7 +72,6 @@ global class  UpdateLeadOwners implements Database.Batchable<sObject>, Database.
             {
                 for(Task obj:[SELECT WhoId,ActivityDate,CallDisposition, CreatedDate,Description,Id,IsClosed,Subject,Type, ToutApp__Tout_Replied__c FROM Task where WhoId IN:lstLeadIds and CreatedDate = LAST_90_DAYS])
                 {
-   //                 System.Debug('Tasks:'+obj);
                     if(obj.Subject!=null && (obj.Subject.startsWith('←') || obj.ToutApp__Tout_Replied__c == true))
                     {
                         mapInboundEmailForLeads.put(obj.WhoId,true);
@@ -109,25 +94,7 @@ global class  UpdateLeadOwners implements Database.Batchable<sObject>, Database.
                     }  
                 }
             }
-  //          System.Debug('InboundEmail for Leads:'+mapInboundEmailForLeads);
-  //          System.Debug('Tasks for Leads:'+mapTaskForLeads);
-/*
-            //Collect all Lead Owner Role Ids for a batch
-            Map<String,String> mapRoleIds = new Map<String,String>();
-            for(User obj:[SELECT Id,UserRoleId FROM User Where Id IN:lstLeadOwnerIds])
-            {
-                mapRoleIds.put(obj.Id,obj.UserRoleId);
-            }
-  
-              
-            //Collect all Lead Owner Role Name for a batch
-            Map<String,String> mapRoleName = new Map<String,String>();
-            for(UserRole obj:[SELECT Id,Name FROM UserRole Where Id IN:mapRoleIds.values()])
-            {
-                mapRoleName.put(obj.Id,obj.Name);
-            }
-  */         
-
+        
             //Retrieve custom settings to roles and there SLA
             Map<String, Lead_Update_Owner__c> ownerRoles = Lead_Update_Owner__c.getAll();
 
@@ -195,11 +162,8 @@ global class  UpdateLeadOwners implements Database.Batchable<sObject>, Database.
     {
         Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
         mail.setToAddresses(new String[] {'maggie.frederick@bigcommerce.com'});
-        //mail.setReplyTo('batch@acme.com');
-        //mail.setSenderDisplayName('Batch Processing');
         mail.setSubject('Batch Process Lead Update Owners Completed');
         mail.setPlainTextBody('Batch Process has completed');
-//        Messaging.sendEmail(new Messaging.SingleEmailMessage[] { mail });
     }
     private void purgeReportTable()
     {
@@ -208,12 +172,7 @@ global class  UpdateLeadOwners implements Database.Batchable<sObject>, Database.
         {   
             // Query the Lead Data From Lead Retrieved Object.
             List<Lead_Retrieved__c> lstRetData = new List<Lead_Retrieved__c>([Select Id from Lead_Retrieved__c Where Processed__c = false and Lead__c <> null LIMIT 10000]);
-/*            for(Lead_Retrieved__c obj:[Select Id from Lead_Retrieved__c Where Processed__c = false LIMIT 50000])
-            {
-  //              obj.Processed__c = true;
-                lstRetData.add(obj);
-            }
- */           
+        
             // Update the Lead List.
             if(!lstRetData.isEmpty() && !Test.isRunningTest())delete lstRetData;
                   

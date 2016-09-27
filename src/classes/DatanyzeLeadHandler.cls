@@ -68,8 +68,6 @@ public  class DatanyzeLeadHandler {
 				
 				if (temp =='M')
 	            	dnrevenue = dnrevenue + strM;
-//	            else if (temp =='K')
-//	             	dnrevenue = dnrevenue + strK;
 				else if (temp =='B')
 	             	dnrevenue = dnrevenue + strB;
 	            system.debug('dnrev ' +dnrevenue);
@@ -111,37 +109,4 @@ public  class DatanyzeLeadHandler {
 		if (!mapLeadIdCampnId.isEmpty())
 			CampaignUtility.AddLeadToCampaign(mapLeadIdCampnId);
 	}
-/*
-
-	public static void insertIntoCampaign(List<Lead> newLeads)
-	{
-		Id datanyzeCampaignId;
-		
-		List<CampaignMember> newMembers = new List<CampaignMember>();
-		List<CampaignMember> currentMembers = [SELECT LeadId, CampaignId
-												FROM CampaignMember 
-												WHERE CampaignId IN :myCampaignIds AND LeadId IN :Trigger.new];
-
-		for (Lead l : newLeads) 
-		{
-			found = false;
-			
-			for (CampaignMember cm : currentMembers) 
-			{
-				if (cm.LeadId == l.Id && cm.CampaignId == datanyzeCampaignId) 
-				{
-					found = true;
-				}
-			}
-
-			if (!found) 
-			{
-				newMembers.add(new CampaignMember(CampaignId = datanyzeCampaignId, LeadId = l.Id));
-			}
-		}
-		
-		insert newMembers;
-		
-	}
-*/
 }

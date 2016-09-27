@@ -26,14 +26,11 @@ private class Lead_TriggerHandlerTest {
 
         lstLead[0].Phone = '0110123456789' ;
         lstLead[0].Bad_Phone_Number__c = true;
-//        lstLead[0].Sales_Phone__c = '1234567890' ;
     	update lstLead[0];
 		lstLead[0].Phone = '1234567890' ;
 		update lstLead[0];
 		
 	 	List<Lead> test = [SELECT Id, Phone, MBA_Phone_1__c FROM Lead WHERE Id = :lstLead[0].Id];	 	
-
-//	 	System.assertEquals('0110123456789' ,test[0].MBA_Phone_1__c);
 	 		
     }     
     

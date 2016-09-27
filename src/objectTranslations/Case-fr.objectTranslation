@@ -143,7 +143,7 @@
         <name>Bigcommerce_Plan__c</name>
     </fields>
     <fields>
-        <help><!-- For use by the Migration team. --></help>
+        <help><!-- For use by the Catalog Transfer team. --></help>
         <label><!-- zBigcommerce Store Password --></label>
         <name>Bigcommerce_Store_Password__c</name>
     </fields>
@@ -153,7 +153,7 @@
         <name>Bigcommerce_Store_URL__c</name>
     </fields>
     <fields>
-        <help><!-- For use by the Migration team. --></help>
+        <help><!-- For use by the Catalog Transfer team. --></help>
         <label><!-- Bigcommerce Store User Name --></label>
         <name>Bigcommerce_Store_User_Name__c</name>
     </fields>
@@ -828,7 +828,7 @@
         </picklistValues>
     </fields>
     <fields>
-        <help><!-- For use by the Migration team. --></help>
+        <help><!-- For use by the Catalog Transfer team. --></help>
         <label><!-- Carousel Images --></label>
         <name>Carousel_Images__c</name>
         <picklistValues>
@@ -2169,7 +2169,7 @@ Referral : needs booking --></help>
         <name>Contact_First_Name__c</name>
     </fields>
     <fields>
-        <help><!-- Which are the customizations or changes the Client has made in their current store/platform that may or may not impact the success of the BC Store migration and launch? Select 1 or more (Ctrl + Click to select multiple values) --></help>
+        <help><!-- Which are the customizations or changes the Client has made in their current store/platform that may or may not impact the success of the BC Store catalog transfer and launch? Select 1 or more (Ctrl + Click to select multiple values) --></help>
         <label><!-- Current Platform Customizations --></label>
         <name>Current_Platform_Customizations__c</name>
         <picklistValues>
@@ -2223,7 +2223,7 @@ Referral : needs booking --></help>
         <name>Current_Store_Admin_Password__c</name>
     </fields>
     <fields>
-        <help><!-- This is the client&apos;s current or source store URL, from which data will be migrated. This is NOT the BC Store URL. --></help>
+        <help><!-- This is the client&apos;s current or source store URL, from which the catalog will be transferred. This is NOT the BC Store URL. --></help>
         <label><!-- Current Store URL --></label>
         <name>Current_Store_URL__c</name>
     </fields>
@@ -2684,7 +2684,7 @@ Referral : needs booking --></help>
         <name>Intersire_Staging_URL__c</name>
     </fields>
     <fields>
-        <help><!-- Include details on what was invalid and what you need to move forward with the migration --></help>
+        <help><!-- Include details on what was invalid and what you need to move forward with the catalog transfer. --></help>
         <label><!-- Invalid Credentials Detail --></label>
         <name>Invalid_Credentials_Detail__c</name>
     </fields>
@@ -2837,17 +2837,17 @@ Referral : needs booking --></help>
         <name>MBA_Subscription_ID__c</name>
     </fields>
     <fields>
-        <help><!-- How many times has the migration team requested credentials from the client? --></help>
+        <help><!-- How many times has the catalog transfer team requested credentials from the client? --></help>
         <label><!-- MIG: Credentials Requests --></label>
         <name>MIG_Credentials_Requests__c</name>
     </fields>
     <fields>
-        <help><!-- List changes made to store migration based on client&apos;s verification survey response --></help>
+        <help><!-- List changes made to store catalog transfer based on client&apos;s verification survey response --></help>
         <label><!-- zMIG UAT Changes Made --></label>
         <name>MIG_UAT_Change_Made__c</name>
     </fields>
     <fields>
-        <help><!-- List changes NOT made to store migration based on client&apos;s verification survey response --></help>
+        <help><!-- List changes NOT made to store catalog transfer based on client&apos;s verification survey response --></help>
         <label><!-- zMIG UAT Changed Not Made --></label>
         <name>MIG_UAT_Changed_Not_Made__c</name>
     </fields>
@@ -3487,7 +3487,7 @@ Referral : needs booking --></help>
         <name>Needed_By_Date__c</name>
     </fields>
     <fields>
-        <help><!-- Indicates if a store setup case will be created when the migration case closes. Populated from opportunity via trigger. --></help>
+        <help><!-- Indicates if a store setup case will be created when the Catalog Transfer case closes. Populated from opportunity via trigger. --></help>
         <label><!-- BA Needs Store Setup --></label>
         <name>Needs_Store_Setup__c</name>
     </fields>
@@ -5773,7 +5773,7 @@ Referral : needs booking --></help>
         <name>SS_DataMigrationVerified__c</name>
     </fields>
     <fields>
-        <help><!-- Check this box if Client has completed all requisite migration steps and has now launched their BC Store. --></help>
+        <help><!-- Check this box if Client has completed all requisite catalog transfer steps and has now launched their BC Store. --></help>
         <label><!-- zOLD Store Launched --></label>
         <name>SS_StoreLaunched__c</name>
     </fields>
@@ -5799,7 +5799,7 @@ Referral : needs booking --></help>
         <name>Sales_Rep__c</name>
     </fields>
     <fields>
-        <help><!-- Team of the person requesting the migration --></help>
+        <help><!-- Team of the person requesting the catalog transfer --></help>
         <label><!-- Sales Team --></label>
         <name>Sales_Team__c</name>
     </fields>
@@ -5860,7 +5860,7 @@ NOTE: The Contact Name field MUST be populated on the case in order for them to 
         <relationshipLabel><!-- Cases (Sold by) --></relationshipLabel>
     </fields>
     <fields>
-        <help><!-- What is date on which source store access (admin, FTP) and other requisite details are confirmed so migration process can commence? --></help>
+        <help><!-- What is date on which source store access (admin, FTP) and other requisite details are confirmed so catalog transfer process can commence? --></help>
         <label><!-- Source Details Confirmed --></label>
         <name>Source_Details_Confirmed__c</name>
     </fields>
@@ -6282,7 +6282,7 @@ NOTE: The Contact Name field MUST be populated on the case in order for them to 
         <name>Supported_as_Trial__c</name>
     </fields>
     <fields>
-        <help><!-- Support : survey field, also used by migration team --></help>
+        <help><!-- Support : survey field, also used by catalog transfer team --></help>
         <label><!-- Survey Completion Date --></label>
         <name>Survey_Completion_Date__c</name>
     </fields>
@@ -6403,7 +6403,7 @@ NOTE: The Contact Name field MUST be populated on the case in order for them to 
         <name>Time_Worked__c</name>
     </fields>
     <fields>
-        <help><!-- Read Only : How long did it take to confirm the required details for the migration?
+        <help><!-- Read Only : How long did it take to confirm the required details for the catalog transfer?
 
 Source_Details_Confirmed__c  -  DATEVALUE(CreatedDate ) --></help>
         <label><!-- Time to Confirm --></label>

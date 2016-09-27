@@ -152,7 +152,6 @@ private class TestOpportunityOperations{
         //checking values of created opportunity
         objOpp=[SELECT Id,MBASubscriptionID__c,Name ,Subscription__c,ProductID__c ,StageName,ExpirationDate__c ,MBA_Account_ID__c,MonthlyRecurringRevenue__c FROM Opportunity WHERE 
                 MBAAccountID__c = :objMBAAcct.MBAAccountID__c];
-        //Contact_Email__c  =:objMBAContact.Email__c];
         
         // Check For MonthlyRecurringRevenue.
         System.assertEquals(objMBASub.MonthlyRecurringRevenue__c,objOpp.MonthlyRecurringRevenue__c );
@@ -189,10 +188,6 @@ private class TestOpportunityOperations{
         // Check For Opportunity Product RevenueChange.
         System.assertEquals(obj.MonthlyRecurringRevenue__c-lstOppProduct[1].MonthlyRecurringRevenue__c,obj.RevenueChange__c );
         
-        // Check For Opportunity Product Name.
- //       System.assertEquals(objOpp.Name,obj.Name );
-   
-   
     } 
      
     public static testMethod void testConvertLeadManualy() {
@@ -201,7 +196,6 @@ private class TestOpportunityOperations{
         MBA_Staging_Account__c objMBAAcct;
         MBA_Staging_Subscription__c objMBASub;
         MBA_Staging_Contact__c objMBAContact;
-//        Lead objlead;
         
         Opportunity objOpp;
         Subscription__c objSub;
@@ -247,25 +241,7 @@ private class TestOpportunityOperations{
         objMBASub.MonthlyRecurringRevenue__c=0.00;
         insert objMBASub;
         System.debug('testclass'+objMBASub);
-        test.stoptest();
-  /*     
-       // query Subscription.
-       objSub=[SELECT Id,Lead__c FROM Subscription__c WHERE MBASubscriptionID__c =: objMBASub.MBASubscriptionID__c ];
-       
-       //quering created lead 
-       objlead=[select Id,Most_Recent_Trial__c From Lead Where Email =: objMBAContact.Email__c];
-       system.debug('objlead'+objlead);
-       // system.assertEquals(objlead.Most_Recent_Trial__c,objSub.Lead__c); 
-       //converting created lead
-       Database.LeadConvert leadsToConvert = new Database.LeadConvert();
-        
-           
-       leadsToConvert.setConvertedStatus('Qualified');
-       leadsToConvert.setLeadId(objlead.Id);
-            
-        Database.LeadConvertResult lcResults = Database.convertLead(leadsToConvert);
-        System.debug('testclass'+lcResults ); 
-  */     
+        test.stoptest();    
          
          //updating MBASubscription 
         objMBASub.isTrial__c=false;
@@ -291,8 +267,6 @@ private class TestOpportunityOperations{
         System.assertEquals(System.Today(),obj.ExpirationDate__c );
         System.assertEquals(objMBASub.ProductID__c,obj.ProductID__c );
         System.assertEquals(objOpp.MonthlyRecurringRevenue__c,obj.MonthlyRecurringRevenue__c );
-        //System.assertEquals(obj.MonthlyRecurringRevenue__c-lstOppProduct[1].MonthlyRecurringRevenue__c,obj.RevenueChange__c );
-//        System.assertEquals(objOpp.Name,obj.Name );
 		
     }
     
@@ -377,10 +351,8 @@ private class TestOpportunityOperations{
         
         
    	    List<Opportunity> opps = [Select Id, MBAAccountID__c from Opportunity where MBAAccountId__c= :objMBAAcct.MBAAccountID__c];
- //		system.assertEquals(opp1.MBAAccountID__c, objMBAAcct.MBAAccountID__c);
 		system.debug(' opp1 '+opps[0].MBAAccountID__c);
 		system.debug(' opp1 '+opps.size());
-//		MergeOpportunity.mergeOpp(opps[0].Id, opps[1].Id);
 		MergeOppController.mergeOpp(opps[0].Id, opps[1].Id);
 
  		test.stopTest();

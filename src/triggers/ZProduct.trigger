@@ -41,9 +41,6 @@ trigger ZProduct on zqu__ZProduct__c (after insert, after update) {
 				{eprd.Family = 'One-time Product';}
 			}
 			else {eprd.Family = 'TEST';}
-//			eprd.Category__c = zqp.zqu__Category__c;
-//			eprd.Zuora_SKU__c = zqp.zqu__SKU__c;
-//			eprd.Zuora_Product_ID__c = zqp.zqu__ZuoraId__c;
 			eprd.Name = zqp.Name;
 			eprd.ProductCode = zqp.zqu__SKU__c;
 			if (zqp.zqu__EffectiveEndDate__c > Date.today())
@@ -89,7 +86,7 @@ trigger ZProduct on zqu__ZProduct__c (after insert, after update) {
 	}
 	
 	if (!updPrds.isEmpty() || newPrds.size()>0) 
-	        /* calling the method of SObjectUtils.SyncObjects to insert data in the databse and map with the opportunity*/
+	        /* calling the method of SObjectUtils.SyncObjects to insert data in the database and map with the opportunity*/
           SObjectUtils.SyncObjects('zqu__ZProduct__c','Product2',mpSourceObjToDestObj,dml);           
 	
 }

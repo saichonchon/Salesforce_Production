@@ -170,21 +170,21 @@ public class SubmitCaseController {
         formURL.value = formURLFormatter(formURL.value);
         System.debug('validatePIN: formatted formURL: ' + formURL.value);
 
-        if(formURL.isEmpty()) {
+        if(formURL.isEmpty()) 
+        {
             System.debug('validatePIN: formURL is empty');
             formURL.error = 'Please enter a Store URL within the field below.';
             formErrorHelper.add(1, formURL.error);
-            // ApexPages.Message msg = new ApexPages.Message(ApexPages.Severity.FATAL, 'Please enter a Store URL within the field below.');
-            // ApexPages.addMessage(msg);
         }
 
-        if(formPIN.isEmpty()) {
+        if(formPIN.isEmpty()) 
+        {
             System.debug('validatePIN: formPIN is empty');
             formPIN.error = 'Please enter a Support Pin within the field below.';
             formErrorHelper.add(2, formPIN.error);
-            // ApexPages.Message msg = new ApexPages.Message(ApexPages.Severity.FATAL, 'Please enter a Support Pin within the field below.');
-            // ApexPages.addMessage(msg);
-        } else {
+        } 
+        else 
+        {
             formPIN.value = formPIN.value.trim();
         }
 
@@ -204,8 +204,6 @@ public class SubmitCaseController {
 	            formURL.error = 'The Store URL and Support Pin provided do not match our records.  Please ensure the information is entered correctly and try again.';
 	            formPIN.error = formURL.error;
 	            formErrorHelper.add(0, formURL.error);
-	            // ApexPages.Message msg = new ApexPages.Message(ApexPages.Severity.FATAL, 'The Store URL and Support Pin provided do not match our records.  Please ensure the information is entered correctly and try again.');
-	            // ApexPages.addMessage(msg);
 	           
 	            formErrorsList = formErrorHelper.allErrors();
 	            System.debug('validatePIN: formErrorsList:' + formErrorsList);
@@ -213,41 +211,9 @@ public class SubmitCaseController {
 	            return null;
         		}
 		   }
- /*
-        List<Subscription__c> subList = new List<Subscription__c>();
-
-        String fullStoreUrl = 'http://' + formUrl.value;
-        try{
-            subList = [SELECT Id, Account__c, Account__r.OwnerId, Contact__c, Lead__c, Support_PIN__c, StoreURL__c, Email__c, ProductID__c FROM Subscription__c
-                    WHERE Support_PIN__c = :formPIN.value AND (StoreURL__c = :formUrl.value OR StoreURL__c = :fullStoreUrl)
-                    AND Status__c = 'Active' LIMIT 1];
-
-            System.debug('subList: ' + subList);
-        } catch (ListException le){
-            formURL.error = 'The Store URL and Support Pin provided do not match our records.  Please ensure the information is entered correctly and try again.';
-            formPIN.error = formURL.error;
-            formErrorHelper.add(0, formURL.error);
-            // ApexPages.Message msg = new ApexPages.Message(ApexPages.Severity.FATAL, 'The Store URL and Support Pin provided do not match our records.  Please ensure the information is entered correctly and try again.');
-            // ApexPages.addMessage(msg);
-        } catch (Exception e){
-            formURL.error = 'The Store URL and Support Pin provided do not match our records.  Please ensure the information is entered correctly and try again.';
-            formPIN.error = formURL.error;
-            formErrorHelper.add(0, formURL.error);
-            // ApexPages.Message msg = new ApexPages.Message(ApexPages.Severity.FATAL, 'The Store URL and Support Pin provided do not match our records.  Please ensure the information is entered correctly and try again.');
-            // ApexPages.addMessage(msg);
-        }
-
-        if(!subList.isEmpty()){
-            webFormOn = True;
-            subId = subList[0].Id;
-            formEmail.value = subList[0].Email__c;
-            AcctId = subList[0].Account__c;
-            AcctOwn = subList[0].Account__r.OwnerId;
-            ContId = subList[0].Contact__c;
-            LeadId = subList[0].Lead__c;
-            ProductId = subList[0].ProductID__c;
-  */          
-            try {
+       
+            try 
+             {
                 // Try to prefill user's name/phone on step 2
                 Contact masterContact = [SELECT FirstName, LastName, Phone FROM Contact WHERE Id = :ContId LIMIT 1];
                 System.debug('validatePIN: masterContact: ' + masterContact);
@@ -286,9 +252,7 @@ public class SubmitCaseController {
             subId = opp.Subscription__c;
             formEmail.value = opp.Contact_Email__c;
             AcctId = opp.AccountId;
- //           AcctOwn = subList[0].Account__r.OwnerId;
             ContId = opp.Contact__c;
- //           LeadId = subList[0].Lead__c;
             ProductId = opp.ProductID__c;
             oppId = opp.Id;
 		}	
@@ -315,15 +279,11 @@ public class SubmitCaseController {
             formURL.error = 'The Store URL and Support Pin provided do not match our records.  Please ensure the information is entered correctly and try again.';
             formPIN.error = formURL.error;
             formErrorHelper.add(0, formURL.error);
-            // ApexPages.Message msg = new ApexPages.Message(ApexPages.Severity.FATAL, 'The Store URL and Support Pin provided do not match our records.  Please ensure the information is entered correctly and try again.');
-            // ApexPages.addMessage(msg);
             errorS = true;
         } catch (Exception e){
             formURL.error = 'The Store URL and Support Pin provided do not match our records.  Please ensure the information is entered correctly and try again.';
             formPIN.error = formURL.error;
             formErrorHelper.add(0, formURL.error);
-            // ApexPages.Message msg = new ApexPages.Message(ApexPages.Severity.FATAL, 'The Store URL and Support Pin provided do not match our records.  Please ensure the information is entered correctly and try again.');
-            // ApexPages.addMessage(msg);
              errorS = true;
         }
 		
@@ -556,7 +516,6 @@ public class SubmitCaseController {
     
             // Insert the case
             System.debug('caseBuilder: case values: ' + c);
-            //System.debug('caseBuilder: caseId: ' + c.Id);
             INSERT c;  
             System.debug('caseBuilder: caseId: ' + c);
             PageReference caseRecord = this.attachToCase(c);
@@ -617,8 +576,6 @@ public class SubmitCaseController {
                         return false;
                     }else{
                         System.debug(' validateFileUpload : Good extesion oversize file');
-                        //fileName = null;
-                        //fileAtt = null;
                         return true;
                     }                                                
                 }else{
@@ -627,8 +584,6 @@ public class SubmitCaseController {
                     } else{
                         formErrorHelper.add(2, 'Please ensure your attachment is one of the following types: "' + allowedFileUploadTypesList + '".');                     
                     } 
-                    //fileName = null;
-                    //fileAtt = null;
                     return true;
                 }
             }

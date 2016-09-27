@@ -171,7 +171,7 @@
     </businessProcesses>
     <businessProcesses>
         <fullName>Migration Case Process</fullName>
-        <description>For internal migration requests made from Sales to the Migrations Team</description>
+        <description>For internal catalog transfer requests made from Sales to the Migrations Team</description>
         <isActive>true</isActive>
         <values>
             <fullName>Assigned</fullName>
@@ -260,7 +260,7 @@
     </businessProcesses>
     <businessProcesses>
         <fullName>Migration Specialist Process</fullName>
-        <description>Migration Specialist case process</description>
+        <description>Case Transfer Specialist case process</description>
         <isActive>true</isActive>
         <values>
             <fullName>Cancelled</fullName>
@@ -1388,9 +1388,9 @@ NULL)))</formula>
     </fields>
     <fields>
         <fullName>Bigcommerce_Store_Password__c</fullName>
-        <description>Migrations : populated by requestor so migrations team can access client&apos;s store</description>
+        <description>Catalog Transfer : populated by requestor so Catalog Transfer team can access client&apos;s store</description>
         <externalId>false</externalId>
-        <inlineHelpText>For use by the Migration team.</inlineHelpText>
+        <inlineHelpText>For use by the Catalog Transfer team.</inlineHelpText>
         <label>zBigcommerce Store Password</label>
         <length>255</length>
         <required>false</required>
@@ -1414,9 +1414,9 @@ IF( ISBLANK(Subscription__r.StoreURL__c ) = FALSE, Subscription__r.StoreURL__c ,
     </fields>
     <fields>
         <fullName>Bigcommerce_Store_User_Name__c</fullName>
-        <description>Migrations : populated by requestor so migrations team can access client&apos;s store</description>
+        <description>Catalog Transfer : populated by requestor so Catalog Transfer team can access client&apos;s store</description>
         <externalId>false</externalId>
-        <inlineHelpText>For use by the Migration team.</inlineHelpText>
+        <inlineHelpText>For use by the Catalog Transfer team.</inlineHelpText>
         <label>Bigcommerce Store User Name</label>
         <length>255</length>
         <required>false</required>
@@ -2163,7 +2163,7 @@ IF( ISBLANK(Subscription__r.StoreURL__c ) = FALSE, Subscription__r.StoreURL__c ,
     <fields>
         <fullName>Carousel_Images__c</fullName>
         <externalId>false</externalId>
-        <inlineHelpText>For use by the Migration team.</inlineHelpText>
+        <inlineHelpText>For use by the Catalog Transfer team.</inlineHelpText>
         <label>Carousel Images</label>
         <picklist>
             <picklistValues>
@@ -3944,7 +3944,7 @@ IMAGE(&quot;resource/EnterpriseClient&quot;, &quot;Enterprise Client&quot;,20,11
     </fields>
     <fields>
         <fullName>Completion_Date__c</fullName>
-        <description>Catalog Transfer: date BC team has finished the data migration</description>
+        <description>Catalog Transfer: date BC team has finished the catalog transfer.</description>
         <externalId>false</externalId>
         <inlineHelpText>Date the catalog transfer completes.</inlineHelpText>
         <label>Catalog Transfer Completion Date</label>
@@ -3975,7 +3975,7 @@ IMAGE(&quot;resource/EnterpriseClient&quot;, &quot;Enterprise Client&quot;,20,11
     </fields>
     <fields>
         <fullName>Consultation_Status__c</fullName>
-        <description>Cancellations : used at time of migration from google doc to SF; may not be needed once cancellation case process is finalized</description>
+        <description>Cancellations : used at time of data transfer from google doc to SF; may not be needed once cancellation case process is finalized</description>
         <externalId>false</externalId>
         <inlineHelpText>Accepted : ??
 Booked : time scheduled with Success Squad
@@ -4051,9 +4051,9 @@ IF(  Opportunity__r.Contact_First_Name__c  &lt;&gt; Null, Opportunity__r.Contact
     </fields>
     <fields>
         <fullName>Current_Platform_Customizations__c</fullName>
-        <description>Migrations : Customizations or changes the Client has made in their current store/platform that may or may not impact the success of the BC Store migration and launch</description>
+        <description>Catalog Transfer: Customizations or changes the Client has made in their current store/platform that may or may not impact the success of the BC Store catalog transfer and launch</description>
         <externalId>false</externalId>
-        <inlineHelpText>Which are the customizations or changes the Client has made in their current store/platform that may or may not impact the success of the BC Store migration and launch? Select 1 or more (Ctrl + Click to select multiple values)</inlineHelpText>
+        <inlineHelpText>Which are the customizations or changes the Client has made in their current store/platform that may or may not impact the success of the BC Store catalog transfer and launch? Select 1 or more (Ctrl + Click to select multiple values)</inlineHelpText>
         <label>Current Platform Customizations</label>
         <picklist>
             <picklistValues>
@@ -4093,7 +4093,7 @@ IF(  Opportunity__r.Contact_First_Name__c  &lt;&gt; Null, Opportunity__r.Contact
     </fields>
     <fields>
         <fullName>Current_Store_API_Key__c</fullName>
-        <description>Migrations : The API or Security Key for the Client&apos;s current store</description>
+        <description>Catalog Transfer: The API or Security Key for the Client&apos;s current store</description>
         <externalId>false</externalId>
         <inlineHelpText>What is the API or Security Key for the Client&apos;s current store?</inlineHelpText>
         <label>Current Store API/Security Key</label>
@@ -4106,7 +4106,7 @@ IF(  Opportunity__r.Contact_First_Name__c  &lt;&gt; Null, Opportunity__r.Contact
     </fields>
     <fields>
         <fullName>Current_Store_API_Password__c</fullName>
-        <description>Migrations : needed for BC team to be able to access client&apos;s non-BC store</description>
+        <description>Catalog Transfer: needed for BC team to be able to access client&apos;s non-BC store</description>
         <externalId>false</externalId>
         <label>Current Store API Password</label>
         <length>255</length>
@@ -4118,7 +4118,7 @@ IF(  Opportunity__r.Contact_First_Name__c  &lt;&gt; Null, Opportunity__r.Contact
     </fields>
     <fields>
         <fullName>Current_Store_Admin_ID__c</fullName>
-        <description>Migrations : needed for BC team to be able to access client&apos;s non-BC store</description>
+        <description>Catalog Tranfer: needed for BC team to be able to access client&apos;s non-BC store</description>
         <externalId>false</externalId>
         <label>Current Store Admin ID</label>
         <length>255</length>
@@ -4130,7 +4130,7 @@ IF(  Opportunity__r.Contact_First_Name__c  &lt;&gt; Null, Opportunity__r.Contact
     </fields>
     <fields>
         <fullName>Current_Store_Admin_Panel_URL__c</fullName>
-        <description>Migrations : needed for BC team to be able to access client&apos;s non-BC store</description>
+        <description>Catalog Transfer: needed for BC team to be able to access client&apos;s non-BC store</description>
         <externalId>false</externalId>
         <label>Current Store Admin Panel URL</label>
         <required>false</required>
@@ -4140,7 +4140,7 @@ IF(  Opportunity__r.Contact_First_Name__c  &lt;&gt; Null, Opportunity__r.Contact
     </fields>
     <fields>
         <fullName>Current_Store_Admin_Password__c</fullName>
-        <description>Migrations : needed for BC team to be able to access client&apos;s non-BC store</description>
+        <description>Catalog Transfer: needed for BC team to be able to access client&apos;s non-BC store</description>
         <externalId>false</externalId>
         <label>Current Store Admin Password</label>
         <length>255</length>
@@ -4152,9 +4152,9 @@ IF(  Opportunity__r.Contact_First_Name__c  &lt;&gt; Null, Opportunity__r.Contact
     </fields>
     <fields>
         <fullName>Current_Store_URL__c</fullName>
-        <description>Migrations : This is the client&apos;s current or source store URL, from which data will be migrated. This is NOT the BC Store URL.</description>
+        <description>Catalog Transfer: This is the client&apos;s current or source store URL, from which the catalog will be transferred. This is NOT the BC Store URL.</description>
         <externalId>false</externalId>
-        <inlineHelpText>This is the client&apos;s current or source store URL, from which data will be migrated. This is NOT the BC Store URL.</inlineHelpText>
+        <inlineHelpText>This is the client&apos;s current or source store URL, from which the catalog will be transferred. This is NOT the BC Store URL.</inlineHelpText>
         <label>Current Store URL</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -4314,7 +4314,7 @@ IF(  Opportunity__r.Contact_First_Name__c  &lt;&gt; Null, Opportunity__r.Contact
     </fields>
     <fields>
         <fullName>Dealbreakers__c</fullName>
-        <description>Migrations : These are possible &quot;dealbreaker&quot; requirements the Client has in order to launch and keep their BC Store. They may be features/functionality/data structure/design/customization requirements the Client has in their current store and wants in BC.</description>
+        <description>Catalog Transfer: These are possible &quot;dealbreaker&quot; requirements the Client has in order to launch and keep their BC Store. They may be features/functionality/data structure/design/customization requirements the Client has in their current store and wants in BC.</description>
         <externalId>false</externalId>
         <inlineHelpText>These are possible &quot;dealbreaker&quot; requirements the Client has in order to launch and keep their BC Store. They may be features/functionality/data structure/design/customization requirements the Client has in their current store and wants in BC.</inlineHelpText>
         <label>zCritical Needs</label>
@@ -4325,7 +4325,7 @@ IF(  Opportunity__r.Contact_First_Name__c  &lt;&gt; Null, Opportunity__r.Contact
     </fields>
     <fields>
         <fullName>Default_Shopping_Cart_Folder__c</fullName>
-        <description>Migrations : Usually the www or public_html folder</description>
+        <description>Catalog Transfer: Usually the www or public_html folder</description>
         <externalId>false</externalId>
         <inlineHelpText>Usually the www or public_html folder</inlineHelpText>
         <label>zDefault Shopping Cart Folder</label>
@@ -4916,7 +4916,7 @@ NULL))</formula>
     </fields>
     <fields>
         <fullName>FTP_Host_Name__c</fullName>
-        <description>Migrations : needed for team to know which CSVs are associated to this store migration</description>
+        <description>Catalog Transfer: needed for team to know which CSVs are associated to this catalog transfer.</description>
         <externalId>false</externalId>
         <label>FTP Host Name</label>
         <length>255</length>
@@ -4928,7 +4928,7 @@ NULL))</formula>
     </fields>
     <fields>
         <fullName>FTP_Password__c</fullName>
-        <description>Migrations : needed for team to know which CSVs are associated to this store migration</description>
+        <description>Catalog Transfer: needed for team to know which CSVs are associated to this catalog transfer.</description>
         <externalId>false</externalId>
         <label>FTP Password</label>
         <length>255</length>
@@ -4940,7 +4940,7 @@ NULL))</formula>
     </fields>
     <fields>
         <fullName>FTP_Port__c</fullName>
-        <description>Migrations : needed for team to know which CSVs are associated to this store migration</description>
+        <description>Catalog Transfer: needed for team to know which CSVs are associated to this catalog transfer.</description>
         <externalId>false</externalId>
         <label>zFTP Port</label>
         <length>255</length>
@@ -4952,7 +4952,7 @@ NULL))</formula>
     </fields>
     <fields>
         <fullName>FTP_User_Name__c</fullName>
-        <description>Migrations : needed for team to know which CSVs are associated to this store migration</description>
+        <description>Catalog Transfer: needed for team to know which CSVs are associated to this catalog transfer.</description>
         <externalId>false</externalId>
         <label>FTP User Name</label>
         <length>255</length>
@@ -5093,7 +5093,7 @@ NULL)</formula>
     </fields>
     <fields>
         <fullName>Intersire_Staging_URL__c</fullName>
-        <description>Migrations : link to migration store while it is being worked on; may change after completed</description>
+        <description>Catalog Transfer: link to catalog transfer store while it is being worked on; may change after completed</description>
         <externalId>false</externalId>
         <label>zIntersire Staging URL</label>
         <required>false</required>
@@ -5103,9 +5103,9 @@ NULL)</formula>
     </fields>
     <fields>
         <fullName>Invalid_Credentials_Detail__c</fullName>
-        <description>Include details on what was invalid and what you need to move forward with the migration</description>
+        <description>Include details on what was invalid and what you need to move forward with the catalog transfer.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Include details on what was invalid and what you need to move forward with the migration</inlineHelpText>
+        <inlineHelpText>Include details on what was invalid and what you need to move forward with the catalog transfer.</inlineHelpText>
         <label>Invalid Credentials Detail</label>
         <length>32768</length>
         <trackFeedHistory>false</trackFeedHistory>
@@ -5227,7 +5227,7 @@ IF(ISBLANK( JIRA_Ticket__c ),NULL,(&apos;https://jira.bigcommerce.com/browse/&ap
     </fields>
     <fields>
         <fullName>JIRA_Ticket__c</fullName>
-        <description>Migrations : Populated with Jira number if the case is synced</description>
+        <description>Catalog Transfer: Populated with Jira number if the case is synced</description>
         <externalId>false</externalId>
         <label>JIRA Ticket</label>
         <required>false</required>
@@ -5260,7 +5260,7 @@ IF(ISBLANK( JIRA_Ticket__c ),NULL,(&apos;https://jira.bigcommerce.com/browse/&ap
     </fields>
     <fields>
         <fullName>Jira_Link__c</fullName>
-        <description>Migrations : Populated with Jira data if the case is synced</description>
+        <description>Catalog Transfer: Populated with Jira data if the case is synced</description>
         <externalId>false</externalId>
         <formula>IF( ISBLANK(Jira_Issue__c),null, 
 IF (ISPICKVAL( Migration_Partner__c, &apos;EIG&apos;), (&apos;https://bigcommerce.atlassian.net/browse/&apos; + Jira_Issue__c),(&apos;https://jira.bigcommerce.com/browse/&apos; + Jira_Issue__c)))</formula>
@@ -5490,9 +5490,9 @@ NULL))</formula>
     </fields>
     <fields>
         <fullName>MIG_Credentials_Requests__c</fullName>
-        <description>How many times has the migration team requested credentials from the client?</description>
+        <description>How many times has the catalog transfer team requested credentials from the client?</description>
         <externalId>false</externalId>
-        <inlineHelpText>How many times has the migration team requested credentials from the client?</inlineHelpText>
+        <inlineHelpText>How many times has the catalog transfer team requested credentials from the client?</inlineHelpText>
         <label>MIG: Credentials Requests</label>
         <precision>18</precision>
         <required>false</required>
@@ -5504,9 +5504,9 @@ NULL))</formula>
     </fields>
     <fields>
         <fullName>MIG_UAT_Change_Made__c</fullName>
-        <description>List changes made to store migration based on client&apos;s verification survey response</description>
+        <description>List changes made to store catalog transfer based on client&apos;s verification survey response</description>
         <externalId>false</externalId>
-        <inlineHelpText>List changes made to store migration based on client&apos;s verification survey response</inlineHelpText>
+        <inlineHelpText>List changes made to store catalog transfer based on client&apos;s verification survey response</inlineHelpText>
         <label>zMIG UAT Changes Made</label>
         <length>32768</length>
         <trackFeedHistory>false</trackFeedHistory>
@@ -5516,9 +5516,9 @@ NULL))</formula>
     </fields>
     <fields>
         <fullName>MIG_UAT_Changed_Not_Made__c</fullName>
-        <description>List changes NOT made to store migration based on client&apos;s verification survey response</description>
+        <description>List changes NOT made to store catalog transfer based on client&apos;s verification survey response</description>
         <externalId>false</externalId>
-        <inlineHelpText>List changes NOT made to store migration based on client&apos;s verification survey response</inlineHelpText>
+        <inlineHelpText>List changes NOT made to store catalog transfer based on client&apos;s verification survey response</inlineHelpText>
         <label>zMIG UAT Changed Not Made</label>
         <length>32768</length>
         <trackFeedHistory>false</trackFeedHistory>
@@ -5648,7 +5648,7 @@ NULL))</formula>
     <fields>
         <fullName>Migration_Automated_Emails__c</fullName>
         <externalId>false</externalId>
-        <formula>/* True makes the case eligible for automatic emails via the Migration process builder process 
+        <formula>/* True makes the case eligible for automatic emails via the Catalog Transfer process builder process 
 IF( 
 
 (Not(Contains(Opportunity__r.Product__c, &apos;Enterprise&apos;)|| Contains(Opportunity__r.Product__c, &apos;Partner Sandbox&apos;))) 
@@ -6388,9 +6388,9 @@ IF(
     <fields>
         <fullName>Needs_Store_Setup__c</fullName>
         <defaultValue>false</defaultValue>
-        <description>When checked on a Migration case on closing of a case will create a store setup case.</description>
+        <description>When checked on a Catalog Transfer case on closing of a case will create a store setup case.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Indicates if a store setup case will be created when the migration case closes. Populated from opportunity via trigger.</inlineHelpText>
+        <inlineHelpText>Indicates if a store setup case will be created when the Catalog Transfer case closes. Populated from opportunity via trigger.</inlineHelpText>
         <label>BA Needs Store Setup</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -9508,7 +9508,7 @@ Maria: E2CP can&apos;t read the actual record type when setting org wide outboun
     </fields>
     <fields>
         <fullName>Requested_Completion_Date__c</fullName>
-        <description>Migrations : to be filled out by sales rep requesting the migration</description>
+        <description>Catalog Transfer: to be filled out by sales rep requesting the migration</description>
         <externalId>false</externalId>
         <label>Requested Completion Date</label>
         <required>false</required>
@@ -9625,7 +9625,7 @@ IMAGE(&quot;/resource/1405031526000/Blackflag&quot;, &quot;Within SLA&quot;, 20,
     <fields>
         <fullName>SS_Consultant__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
-        <description>Migrations : user lookup to assign SSquad rep to a case</description>
+        <description>Catalog Transfer: user lookup to assign SSquad rep to a case</description>
         <externalId>false</externalId>
         <label>SS Consultant</label>
         <lookupFilter>
@@ -9659,9 +9659,9 @@ IMAGE(&quot;/resource/1405031526000/Blackflag&quot;, &quot;Within SLA&quot;, 20,
     <fields>
         <fullName>SS_StoreLaunched__c</fullName>
         <defaultValue>false</defaultValue>
-        <description>Client has verified data migration, unpacked and launched their BC Store.</description>
+        <description>Client has verified catalog transfer, unpacked and launched their BC Store.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Check this box if Client has completed all requisite migration steps and has now launched their BC Store.</inlineHelpText>
+        <inlineHelpText>Check this box if Client has completed all requisite catalog transfer steps and has now launched their BC Store.</inlineHelpText>
         <label>zOLD Store Launched</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -9720,9 +9720,9 @@ IMAGE(&quot;/resource/1405031526000/Blackflag&quot;, &quot;Within SLA&quot;, 20,
     <fields>
         <fullName>Sales_Team__c</fullName>
         <defaultValue>$User.Department</defaultValue>
-        <description>Migrations : defaults to case creator - used for reports</description>
+        <description>Catalog Transfer: defaults to case creator - used for reports</description>
         <externalId>false</externalId>
-        <inlineHelpText>Team of the person requesting the migration</inlineHelpText>
+        <inlineHelpText>Team of the person requesting the catalog transfer</inlineHelpText>
         <label>Sales Team</label>
         <length>255</length>
         <required>false</required>
@@ -9883,9 +9883,9 @@ NULL))</formula>
     </fields>
     <fields>
         <fullName>Source_Details_Confirmed__c</fullName>
-        <description>Migrations : The date on which source store access (admin, FTP) and other requisite details are confirmed so migration process can commence.</description>
+        <description>Catalog Transfer: The date on which source store access (admin, FTP) and other requisite details are confirmed so catalog transfer process can commence.</description>
         <externalId>false</externalId>
-        <inlineHelpText>What is date on which source store access (admin, FTP) and other requisite details are confirmed so migration process can commence?</inlineHelpText>
+        <inlineHelpText>What is date on which source store access (admin, FTP) and other requisite details are confirmed so catalog transfer process can commence?</inlineHelpText>
         <label>Source Details Confirmed</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -10430,7 +10430,7 @@ NULL))</formula>
     </fields>
     <fields>
         <fullName>Subscription_Account__c</fullName>
-        <description>Migrations : needed because the record Sales puts in the case Account field isn&apos;t always the actual account the subscription is on; may not be needed anymore</description>
+        <description>Catalog Transfer: needed because the record Sales puts in the case Account field isn&apos;t always the actual account the subscription is on; may not be needed anymore</description>
         <externalId>false</externalId>
         <formula>Subscription__r.Account__r.Name</formula>
         <label>Subscription Account</label>
@@ -10500,7 +10500,7 @@ NULL))</formula>
     </fields>
     <fields>
         <fullName>Suggested_Template__c</fullName>
-        <description>Migrations for SSquad : Which Bigcommerce template will the client use for their store?</description>
+        <description>Catalog Transfer: Which Bigcommerce template will the client use for their store?</description>
         <externalId>false</externalId>
         <inlineHelpText>Which Bigcommerce template will the client use for their store?</inlineHelpText>
         <label>Suggested Template</label>
@@ -10568,9 +10568,9 @@ IF(DATEVALUE(CreatedDate) &lt; Subscription__r.PurchaseDate__c, TRUE,FALSE))</fo
     </fields>
     <fields>
         <fullName>Survey_Completion_Date__c</fullName>
-        <description>Support : survey field, also used by migration team</description>
+        <description>Support : survey field, also used by catalog transfer team</description>
         <externalId>false</externalId>
-        <inlineHelpText>Support : survey field, also used by migration team</inlineHelpText>
+        <inlineHelpText>Support : survey field, also used by catalog transfer team</inlineHelpText>
         <label>Survey Completion Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -10833,7 +10833,7 @@ VALUE(MID(TEXT( CreatedDate -5/24),12,2)))</formula>
     </fields>
     <fields>
         <fullName>Time_to_Confirm__c</fullName>
-        <description>Migrations : Formula field that calculates number of days from Case Open/Creation to Source Details confirmation</description>
+        <description>Catalog Transfer: Formula field that calculates number of days from Case Open/Creation to Source Details confirmation</description>
         <externalId>false</externalId>
         <formula>CASE(MOD( DATEVALUE(CreatedDate) - DATE(1985,6,24),7), 
 
@@ -10848,7 +10848,7 @@ VALUE(MID(TEXT( CreatedDate -5/24),12,2)))</formula>
 + 
 (FLOOR(( Source_Details_Confirmed__c - DATEVALUE(CreatedDate) )/7)*5)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <inlineHelpText>Read Only : How long did it take to confirm the required details for the migration?
+        <inlineHelpText>Read Only : How long did it take to confirm the required details for the catalog transfer?
 
 Source_Details_Confirmed__c  -  DATEVALUE(CreatedDate )</inlineHelpText>
         <label>Time to Confirm</label>
@@ -10861,7 +10861,7 @@ Source_Details_Confirmed__c  -  DATEVALUE(CreatedDate )</inlineHelpText>
     </fields>
     <fields>
         <fullName>Time_to_Initial_Completion__c</fullName>
-        <description>Migrations formula : Days from date case is opened to completion date
+        <description>Catalog transfer formula : Days from date case is opened to completion date
 
 Completion_Date__c -  DATEVALUE(CreatedDate )</description>
         <externalId>false</externalId>
@@ -10888,7 +10888,7 @@ Completion_Date__c -  DATEVALUE(CreatedDate )</description>
     </fields>
     <fields>
         <fullName>Time_to_Verification__c</fullName>
-        <description>Migrations Formula : Verification_Date__c -  Completion_Date__c
+        <description>Catalog Transfer Formula : Verification_Date__c -  Completion_Date__c
 
 Verification_Date__c -  Completion_Date__c</description>
         <externalId>false</externalId>

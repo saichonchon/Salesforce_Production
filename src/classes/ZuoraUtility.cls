@@ -103,116 +103,6 @@ public class ZuoraUtility {
                             }
       
     } 
- /*   
-    @future
-    public static void createZuoraLineItems (Set<Id> oppids)
-    {
-        List<OpportunityLineItem> lstnewOppLntm = new List<OpportunityLineItem>();  
-        Set<String> productskus = new Set<String>();
-        Map<Id, Zuora__SubscriptionProductCharge__c> mapOppSubProd = new Map<Id, Zuora__SubscriptionProductCharge__c>();
-        
-        List <Zuora__SubscriptionProductCharge__c> zuorasubs = new List<Zuora__SubscriptionProductCharge__c> ([Select Zuora__BillingPeriod__c, Opportunity__c, Zuora__ExtendedAmount__c, Zuora__Type__c, Zuora__Price__c, Zuora__ProductSKU_Product__c, Zuora__Quantity__c, Product_Type__c 
-                                                From Zuora__SubscriptionProductCharge__c
-                                                where Opportunity__c in :oppids]);
-        
-        
-            for (Zuora__SubscriptionProductCharge__c zsc :zuorasubs)
-            {
-                system.debug('*** product type'+zsc.Zuora__Type__c);
-                if (zsc.Zuora__Type__c <> 'Usage')
-                {
-                    mapOppSubProd.put(zsc.Opportunity__c,zsc);
-                    productskus.add(zsc.Zuora__ProductSKU_Product__c);
-                }
-            }
-        
-        
-        Map<string,PricebookEntry> mpProductcodeToPricebook1 = new Map<string,PricebookEntry>();
-        
-        if(productskus.size()>0)
-        {
-            mpProductcodeToPricebook1 = ZuoraUtility.getPricebookEntry(Label.Zuora_Base_Products_Pricebook,productskus);
-      
-        }    
-               
-        Map <SObject,SObject> mpSourceObjToDestObj = new map<SObject, SObject>();
-      	database.Dmloptions dml = new database.Dmloptions();
-      	
-        for (Id oppId :mapOppSubProd.KeySet())
-        {
-                OpportunityLineItem opplnt = new OpportunityLineItem();
-                opplnt.OpportunityId=oppId;
-                Zuora__SubscriptionProductCharge__c zsc= mapOppSubProd.get(oppId);
-                system.debug( ' product sku '+zsc.Zuora__ProductSKU_Product__c);
-                opplnt.PricebookEntryId = mpProductcodeToPricebook1.get(zsc.Zuora__ProductSKU_Product__c).Id;
-                opplnt.Quantity=zsc.Zuora__Quantity__c;
-                opplnt.UnitPrice = zsc.Zuora__Price__c;
-           		mpSourceObjToDestObj.put(zsc, opplnt);
-                lstnewOppLntm.add(opplnt);
-        }
-        //New Opportunity Line Item  Insert.
-        if(!lstnewOppLntm.isEmpty())
-        {
-           
-            SObjectUtils.SyncObjects('Zuora__SubscriptionProductCharge__c','Opportunity_Product__c',mpSourceObjToDestObj,dml);           
- 
-  //          insert lstnewOppLntm;
-        }
-    }
-       
-  @future
-    public static void createZuoraLineItems (Set<Id> oppids)
-    {
-        List<OpportunityLineItem> lstnewOppLntm = new List<OpportunityLineItem>();  
-        Set<String> productskus = new Set<String>();
-        Map<Id, Zuora__SubscriptionProductCharge__c> mapOppSubProd = new Map<Id, Zuora__SubscriptionProductCharge__c>();
-        
-        List <Zuora__Subscription__c> zuorasubs = new List<Zuora__Subscription__c> ([Select z.Opportunity__c, z.Id, z.CrmId__c, 
-                                        (Select Zuora__BillingPeriod__c, Zuora__ExtendedAmount__c, Zuora__Type__c, Zuora__Price__c, Zuora__ProductSKU_Product__c, Zuora__Quantity__c, Product_Type__c 
-                                                From Zuora__Subscription_Product_Charges__r) 
-                                        From Zuora__Subscription__c z
-                                        where crmId__c in :oppids]);
-        
-        for (Zuora__Subscription__c zs :zuorasubs)
-        {
-            
-            for (Zuora__SubscriptionProductCharge__c zsc :zs.Zuora__Subscription_Product_Charges__r)
-            {
-                system.debug('*** product type'+zsc.Zuora__Type__c);
-                if (zsc.Zuora__Type__c <> 'Usage')
-                {
-                    mapOppSubProd.put(zs.crmId__c,zsc);
-                    productskus.add(zsc.Zuora__ProductSKU_Product__c);
-                }
-            }
-        } 
-        
-        Map<string,PricebookEntry> mpProductcodeToPricebook1 = new Map<string,PricebookEntry>();
-        
-        if(productskus.size()>0)
-        {
-            mpProductcodeToPricebook1 = ZuoraUtility.getPricebookEntry(Label.Zuora_Base_Products_Pricebook,productskus);
-      
-        }    
-        for (Id oppId :mapOppSubProd.KeySet())
-        {
-                OpportunityLineItem opplnt = new OpportunityLineItem();
-                opplnt.OpportunityId=oppId;
-                Zuora__SubscriptionProductCharge__c zsc= mapOppSubProd.get(oppId);
-                system.debug( ' product sku '+zsc.Zuora__ProductSKU_Product__c);
-                opplnt.PricebookEntryId = mpProductcodeToPricebook1.get(zsc.Zuora__ProductSKU_Product__c).Id;
-                opplnt.Quantity=zsc.Zuora__Quantity__c;
-                opplnt.UnitPrice = zsc.Zuora__Price__c;
-           
-                lstnewOppLntm.add(opplnt);
-        }
-        //New Opportunity Line Item  Insert.
-        if(!lstnewOppLntm.isEmpty())
-        {
-            insert lstnewOppLntm;
-        }
-    }
- */
    
 // create opp products from zuora subscription charge   
     public static void createLineItems (List <Zuora__SubscriptionProductCharge__c> lstZSubPrdCh)
@@ -251,6 +141,10 @@ public class ZuoraUtility {
                 opplnt.PricebookEntryId = mpProductcodeToPricebook1.get(zsc.Zuora__ProductSKU_Product__c).Id;
                 opplnt.Quantity = zsc.Zuora__Quantity__c;
                 opplnt.UnitPrice = zsc.Zuora__ExtendedAmount__c;
+                if (opplnt.UnitPrice == null)
+                {
+                    opplnt.UnitPrice = 0;
+                }
            		opplnt.Zuora_SubscriptionCharge_Id__c = zsc.Id;
                 lstnewOppLntm.add(opplnt);
                 mapOppPb.put(opplnt.OpportunityId, mpProductcodeToPricebook1.get(zsc.Zuora__ProductSKU_Product__c).Pricebook2Id);

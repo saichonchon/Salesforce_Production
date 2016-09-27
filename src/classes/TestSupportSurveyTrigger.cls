@@ -12,7 +12,6 @@ private class TestSupportSurveyTrigger {
 	  list<Account> lstAcct = td.getAccounts(true);
 	  Case c = td.createCase(lstAcct[0].Id, 'Support', true);
 	  c.AccountId = lstAcct[0].Id;
-//	  c.chat_key__c ='abcdefghji';
 	  update c;
       
       

@@ -96,29 +96,6 @@ public without sharing class DLUtility {
          	con = c;
          }
          return con;
-        
-   /*     if (con <> null)
-         return con;
-         else 
-         {
-         	Contact newcon = new Contact(firstname = fname, 
-         								lastname = lname, 
-         								AccountId =accId,
-         								email = emailaddress );
-         	if (accountOwnerId <> null) newcon.OwnerId = accountOwnerId;
-         	else newcon.OwnerId = Label.BCT_Id;
-         	try {
-         		insert newcon;
-         		return newcon;
-         	}
-         	catch (Exception exp){
-         	
-         	system.debug('failed to create contact '+newcon.email);
-         	return null;
-         	}
-         	
-         }
-*/
     }
 
     public static User getUserbyName( String userName) {
@@ -204,11 +181,7 @@ public without sharing class DLUtility {
         if (articleTypeName.contains('University')) dcsName = getDataCategoryByArtIdUniv(artId);
         else
         if (articleTypeName.contains('Community')) dcsName = getDataCategoryByArtIdComm(artId);
-        
-/*        String query1 = 'Select p.Id, (Select DataCategoryName From DataCategorySelections) From' + articleTypeName + 'WHERE PublishStatus = \'Online\' AND Language = \'en_US\' and KnowledgeArticleId =' + artId;
-        List<sObject> sobjList= Database.query(query1);
-        
-*/        
+               
         return dcsName;
     }
     

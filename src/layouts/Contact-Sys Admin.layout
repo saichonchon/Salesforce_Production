@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customButtons>SalesVue__Add_Contact_To_Plans</customButtons>
     <excludeButtons>DataDotComClean</excludeButtons>
     <excludeButtons>DisableCustomerPortal</excludeButtons>
     <excludeButtons>DisablePartnerPortal</excludeButtons>
@@ -218,6 +219,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>RV_Account__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>MBA_Referral_ID__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

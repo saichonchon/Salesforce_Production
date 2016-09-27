@@ -10,30 +10,11 @@ public with sharing class BCSCasesController {
         selectedtab ='My Open Cases';
         CurrentUser = [Select u.Name,u.profileid, u.Username,u.usertype, u.Phone,  u.LastName, u.Id, u.FirstName, u.Email, u.Contact.AccountID, u.Contact.Id, u.Contact.Phone, u.Contact.Account.Name From User u where Id = :UserInfo.getUserId()];
         
-        //if(currentUser.profileid==label.Community_User_Profile)
         if(CurrentUser.userType == 'Guest')
         pageref = Page.BCSLOGIN;
         else
         pageref = null;
-    }
- /*      
-    public Case[] getMyOpenCases() {
-        return [SELECT Id, Subject, Status FROM Case WHERE OwnerId = :UserInfo.getUserId()
-            AND Status != 'Closed'];
-    }
-    
-    public Case[] getMyClosedCases() {
-        return [SELECT Id, Subject, Status FROM Case WHERE OwnerId = :UserInfo.getUserId()
-            AND Status = 'Closed'];
-    }
-    
- 
-    public PageReference viewCase() {
-        String caseId = ApexPages.currentPage().getParameters().get('caseId');
-        selectedCase = [SELECT Id FROM Case WHERE Id = :caseId];
-        return null;
-    }
-     */  
+    } 
             
     public List<Case> getMyClosedCases()
     {

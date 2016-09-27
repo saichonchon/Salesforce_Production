@@ -15,12 +15,6 @@ public class CampaignContactUpdateTest {
 		CampaignMemberStatus cms3 = new CampaignMemberStatus(CampaignId=camRet.Id, HasResponded=false, Label='Attended', SortOrder=5);
  
 		insert new List<CampaignMemberStatus>{cms1, cms2, cms3};
-////		CampaignMemberStatus  cms2 = [select Id, Label, isDefault from CampaignMemberStatus where  CampaignId = :camRet.Id ];
-//		if (cms2.isDefault ==true)   cms2.isDefault=false;                   
-		
-//		update cms2;
-//		CampaignMemberStatus  cms1 = new CampaignMemberStatus ( SortOrder=2,
-//		                           Label = 'Not Sent', IsDefault = true, CampaignId = camRet.Id );
 	
 //		insert cms1;
         List<CampaignRules__c > rules = new List<CampaignRules__c >();

@@ -1,9 +1,5 @@
 /*
 Name: Account.Trigger
-Author: 
-Created: 
-Purpose: 
-Ticket: 
 
 Updates:
 *********

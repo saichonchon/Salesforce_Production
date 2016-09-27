@@ -44,8 +44,6 @@ private class TestVFButtons
     	TestDataGenerator td = new TestDataGenerator();
     	
     	list<Account> lstAcct = td.getAccounts(true);
-//    	User ao = td.getUsers(null)[0];
-//   	lstAcct[0].OwnerId = ao.Id;
         lstAcct[0].OwnerId = Label.Account_Default_Owner;
     	update lstAcct[0];
     		
@@ -65,7 +63,6 @@ private class TestVFButtons
     	TestDataGenerator td = new TestDataGenerator();
     	
     	list<Lead> lstLead = td.getLeads(true);
-//    	User ao = td.getUsers(null)[0];
 
         lstLead[0].OwnerId = Label.Lead_Default_Owner;
     	update lstLead[0];

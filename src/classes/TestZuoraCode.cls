@@ -34,7 +34,6 @@ private class TestZuoraCode {
              Zuora__MRR__c = 300.00,
              Zuora__Zuora_Id__c='2008uit065',
              Zuora__Status__c='Active',
- //            crmId__c = oppty.Id,
              Zuora__InitialTerm__c='Initial Term'
              );
       insert ZuoraSub;     
@@ -62,17 +61,7 @@ private class TestZuoraCode {
       	delete subprd;
       	
   }
-/*
-	public static Zuora__CustomerAccount__c[] generateBillingAccounts(Account[] fromAccounts)
-	 {
-        Zuora__CustomerAccount__c[] billingAccounts = new List<Zuora__CustomerAccount__c>();
-        for (Account acc : fromAccounts) {
-            billingAccounts.add(new Zuora__CustomerAccount__c(Name = acc.Name,
-                Zuora__Account__c = acc.Id));
-        }
-        return billingAccounts;
-    } 
-*/
+
 @isTest
   private static void setupZquote() {
 	
@@ -105,27 +94,6 @@ private class TestZuoraCode {
 											zqu__Account__c = acct.Id, zqu__BillToContact__c = bill.Id, zqu__SoldToContact__c = p.Id,
 											zqu__Currency__c = 'USD', zqu__StartDate__c = Date.today());
     insert quote;
- /*   
-    zqu__ZProduct__c product = ZuoraTestDataSetup.prepareProductCatalog();
-    Id productId = product.Id;
-    
-//    Zuora__CustomerAccount__c  zcas = generateBillingAccounts(accts);
-    
-    sObject sobj  = (sObject)quote;
-    zqu.PropertyComponentController.ParentController cq = new zqu.PropertyComponentController.ParentController();
- //   PageReference pg = Page.zqu__quoteEnhancement;
- 	PageReference pg = Page.zqu__CreateQuote;
-    Test.setCurrentPage(pg);
-    ApexPages.currentPage().getParameters().put('oppId', opp.Id); 
-     // Set quote id
-    ApexPages.currentPage().getParameters().put('id', quote.Id);
- 	ApexPages.currentPage().getParameters().put('quoteType', 'Subscription'); 
- 	ApexPages.currentPage().getParameters().put('stepNumber', '2'); 
- //	zqu. zcc = new zqu.CreateQuoteController();
-    zqu.CreateQuoteController.PopulateDefaultFieldValuePlugin pp=new zqu.CreateQuoteController.PopulateDefaultFieldValuePlugin();
- //   pp.populateDefaultFieldValue(sobj,cq);
-   //     zDefaultValues.populateDefaultFieldValue(sobj,cq);
- */
  	
   }
  

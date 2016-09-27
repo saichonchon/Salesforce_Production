@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Shop.org 2016 Pre-event Info- 1320.ACQ: Email 2</name>
+    <style>none</style>
+    <subject>Exclusive offer for Shop.org attendees</subject>
+    <textOnly>Stop by booth #4025 for more information.
+Hi {{lead.First Name:default=there}},
+We wanted to let you know about our Big Austin Experience &lt;[[http://www.bigcommerce.com/bigaustin?utm_medium=event&amp;utm_source=shop16]]&gt;, an exclusive offer for Shop.org attendees. Stop by our booth during the show to be eligible to receive:
+
+
+ - Up to 6 months’ complimentary subscription
+ - Up to $2,000 credit for migration and onboarding services
+ - Airfare for 2 and 2-night hotel stay in Austin
+ - Fine dining, live music and (of course) barbecue
+ - Meetings with top executives at BigCommerce HQ
+
+
+
+
+
+
+
+Learn more &lt;[[http://www.bigcommerce.com/bigaustin?utm_medium=event&amp;utm_source=shop16]]&gt;
+
+
+
+
+
+
+Visit BigCommerce at booth #4025 to get more details and requirements for this offer.
+
+Kind regards,
+The BigCommerce Team
+ sellmore@bigcommerce.com &lt;[[mailto:sellmore@bigcommerce.com]]&gt;   /   1-855-884-6610 &lt;[[tel:18558846610]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

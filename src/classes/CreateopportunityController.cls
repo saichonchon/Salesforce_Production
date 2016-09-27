@@ -87,8 +87,6 @@ public without sharing class CreateopportunityController {
     // Method to perform Opportunity Creation Operation.
     public void Createopportunity(List<String> lstSubId)
     {
-    
-//      Id StoreRecordTypeId = Opportunity.getSObjectType().getDescribe().getRecordTypeInfosByName().get(Label.Opportunity_Recordtype_StorePurchase).getRecordTypeId();
     	
    // creating Instance of OpportunityOperations Class.
       OpportunityOperations OppOperation = new OpportunityOperations(); 
@@ -108,7 +106,6 @@ public without sharing class CreateopportunityController {
                 Opportunity Opp = new Opportunity();
                 Opp.Name= obj.Account__r.Name + ' - ' + obj.MBASubscriptionID__c;
                 Opp.StageName = Label.Opportunity_Stage_Purchased;
-//                Opp.RecordTypeId = StoreRecordTypeId;
                 Opp.SubscriptionType__c = 'Store';
 				Opp.pricebook2Id =Label.Sales_Pricebook;
                 Opp.isTrial__c = false;

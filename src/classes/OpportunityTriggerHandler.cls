@@ -101,8 +101,6 @@ public class OpportunityTriggerHandler {
             	If (opp.Current_Store_URL__c == null ||
             	    opp.Migration_Platform__C == null)
             	{
-// throw error     
-//				 ErrorEmailHelper.notifyOnError('Opportunity Trigger Handler', 'Create Case', 'Error in Opportunity Trigger Handler - Migration', 'Error Creating case for: ' + opp.Id);
 				 
                  return;
 		        }
@@ -121,7 +119,6 @@ public class OpportunityTriggerHandler {
                 insert newCases;
             }
             catch(Exception e) {
- //              ErrorEmailHelper.notifyOnError('Opportunity Trigger Handler', 'Create Case', 'Error in Opportunity Trigger Handler - Create Case', 'Error Creating case for: ' + opp.Id);
                 system.debug('Error in Opportunity Trigger Handler - Create Case');
                 }   
         
@@ -129,34 +126,4 @@ public class OpportunityTriggerHandler {
         }
         
     }
-/*
-	public static Id checkOwner(List<Opportunity> opps)
-	{
-		for(OpportunityFieldHistory obj:[SELECT CreatedById,CreatedDate,Field,Id,OpportunityId,NewValue,OldValue FROM OpportunityFieldHistory WHERE Field = 'Owner' and OpportunityId IN:mapOwnerDiffAsCreatedBy.keyset()   order by CreatedDate DESC])
-               {
- 				  if (obj.NewValue == mapOwnerDiffAsCreatedBy.get(obj.OpportunityId))	
- 				  {
-                    if(!mapOwnerAssignDate.containsKey(obj.OpportunityId))
-                    {
-                        mapOwnerAssignDate.put(obj.OpportunityId, obj.CreatedDate);
-                    }
- 				  }
-                } 
-            
-   //Query History Table for Stage Change Date 
-            Map<String,DateTime> mapOppStages = new Map<String,DateTime>();
-  			
-            for(OpportunityFieldHistory obj:[SELECT CreatedById,CreatedDate,Field,Id,OpportunityId,NewValue,OldValue FROM OpportunityFieldHistory WHERE Field = 'StageName' and OpportunityId IN:mapTrialOppOwner.keyset()   order by CreatedDate DESC])
-                {
- 				  if (obj.CreatedById == mapTrialOppOwner.get(obj.OpportunityId))	
- 				  {
-                    if(!mapOppStages.containsKey(obj.OpportunityId))
-                    {
-                        mapOppStages.put(obj.OpportunityId, obj.CreatedDate);
-                    }
- 				  }
-                } 
-            
-	}
-*/
 }

@@ -12,7 +12,7 @@ VERSION AUTHOR   DATE       DETAIL
  
 1.0 Maggie Frederick 4/25/2015  Initial development
 2.0 Maggie Frederick 9/5/2015   Capture who and when it was invoked.
-3.0 Nicole Smith     9/12/2016  Update queue names to curren naming conventions (BAP-4012).
+3.0 Nicole Smith     9/12/2016  Update queue names to current naming conventions (BAP-4012).
 ***********************************************************************/    
 public class InvokeRoundRobin {
 
@@ -115,7 +115,7 @@ public class InvokeRoundRobin {
         List<Opportunity> opps = [Select Id, AccountId, Stagename from Opportunity where AccountId in :accts and isClosed = false];
         for (Opportunity o :opps)
           {
-            OpportunityTeamMember tm = new OpportunityTeamMember(OpportunityId=o.Id,TeamMemberRole ='Qualifier', UserId = UserInfo.getUserId() );
+            OpportunityTeamMember tm = new OpportunityTeamMember(OpportunityId=o.Id,TeamMemberRole ='Lead Qualifier', UserId = UserInfo.getUserId() );
             otms.add(tm);
           }
         

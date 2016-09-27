@@ -15,7 +15,6 @@ VERSION AUTHOR   DATE       DETAIL
 trigger OpportunityProductHistory on Opportunity_Product__c (after insert) {
 	
    // Creating Instance Of A Class which Performs MBA store Logic. 
- //   OpportunityOperations operation= new OpportunityOperations();
 
 	Set<ID> parentOppIds = new Set<Id> ();
 	if(Trigger.isAfter)

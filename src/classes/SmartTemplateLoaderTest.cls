@@ -14,10 +14,7 @@ private class SmartTemplateLoaderTest {
 
         Id result = smt.getDefaultEmailTemplateId(caseId);
         
-   //     System.assertEquals(templateId, result);
-        
     }
-
 
     private static Id insertCase() {
  
@@ -36,7 +33,4 @@ private class SmartTemplateLoaderTest {
        
         return c.Id;    
     }
-    
-
-
 }

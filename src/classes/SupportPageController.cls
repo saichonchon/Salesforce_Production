@@ -24,16 +24,5 @@ public class SupportPageController {
 			
 			 return univArtList;}
 	}
-    
-  	
-/*    
-public void getunivArtList () {
-  		
-  	}
-  	public List <University__kav> getunivArtList() {
-    
-    	return univArtList;
-  } 
-*/  
   	
 }

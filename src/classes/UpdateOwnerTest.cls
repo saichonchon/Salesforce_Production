@@ -52,8 +52,6 @@ private class UpdateOwnerTest {
       
       list<Contact> lstCon = td.getContacts(true);
       
-      // Create a new opportunity for the account
-      
       Opportunity obj = new Opportunity();
         obj.Name = 'Test ';
         obj.CloseDate = Date.today().addDays(1);
@@ -62,7 +60,6 @@ private class UpdateOwnerTest {
         obj.AccountId = lstCon[0].AccountId;
         obj.RecordTypeId = trialRecordTypeId;
         obj.Status__c = 'Active';
-        //o.Pricebook2Id = getPricebook(true).Id;
         insert obj;
   
     Opportunity obj1 = new Opportunity();
@@ -73,7 +70,6 @@ private class UpdateOwnerTest {
         obj1.AccountId = lstCon[1].AccountId;
         obj.RecordTypeId = trialRecordTypeId;
         obj.Status__c = 'Active';
-        //o.Pricebook2Id = getPricebook(true).Id;
         insert obj1;
  
        
@@ -107,8 +103,6 @@ private class UpdateOwnerTest {
    insert tskPresent;
    
    Test.StartTest();
- //  UpdateOwner reassign = new UpdateOwner();
- //  ID batchprocessid = Database.executeBatch(reassign);
  
      string queryTrial ='Select Id, Name, PurchaseDate__c, AccountId, OwnerId, StageName, CreatedDate, CreatedById, RecordTypeId, Owner_Team__c,Status__c from Opportunity Where  RecordTypeId = :trialRecordTypeId  ' ;
  		queryTrial = queryTrial + Label.ROE_Trial_Query;
@@ -144,7 +138,6 @@ public static testMethod void testBatch_Upsell(){
         obj.OwnerId = usr1.Id;
         obj.AccountId = lstCon[0].AccountId;
         obj.RecordTypeId = upgradeRecordTypeId;
-        //o.Pricebook2Id = getPricebook(true).Id;
         insert obj;
   
     Opportunity obj1 = new Opportunity();
@@ -154,7 +147,6 @@ public static testMethod void testBatch_Upsell(){
         obj1.OwnerId = usr2.Id;
         obj1.AccountId = lstCon[1].AccountId;
         obj.RecordTypeId = upgradeRecordTypeId;
-        //o.Pricebook2Id = getPricebook(true).Id;
         insert obj1;
   
    Task tskPast = new Task(WhatId = obj.AccountId, ActivityDate=System.today().addDays(-30),Subject='Test Task', OwnerId = usr1.Id);
@@ -164,7 +156,6 @@ public static testMethod void testBatch_Upsell(){
    
    Test.StartTest();
    string queryUpsell ='Select Id, Name, AccountId, OwnerId, StageName, CreatedDate, CreatedById, RecordTypeId, Owner_Team__c from Opportunity Where  RecordTypeId = :upgradeRecordTypeId  ' ;
- //	queryUpsell = queryUpsell + Label.ROE_Upsell_Query;
    queryUpsell= queryUpsell + ' limit 1';
    
       UpdateOwner b = new UpdateOwner(); 
@@ -184,7 +175,6 @@ public static testMethod void testBatch_Purchase(){
    		User usr2 = [Select Id,Name, Department, UserRoleId,UserRole.Name from User Where IsActive=true and Department =:Label.Outbound_Sales LIMIT 1];
    		System.Debug('#usr1#'+usr1);
    		System.Debug('#usr2#'+usr2);  
- //  System.runAs(usr1){
      TestDataGenerator td = new TestDataGenerator();
       
       list<Contact> lstCon = td.getContacts(true);
@@ -199,7 +189,6 @@ public static testMethod void testBatch_Purchase(){
         obj.PurchaseDate__c = Date.today().addDays(-180);
         obj.AccountId = lstCon[0].AccountId;
         obj.RecordTypeId = storeRecordTypeId;
-        //o.Pricebook2Id = getPricebook(true).Id;
         insert obj;
   
     Opportunity obj1 = new Opportunity();
@@ -210,7 +199,6 @@ public static testMethod void testBatch_Purchase(){
         obj1.AccountId = lstCon[1].AccountId;
         obj.PurchaseDate__c = Date.today().addDays(-180);
         obj.RecordTypeId = storeRecordTypeId;
-        //o.Pricebook2Id = getPricebook(true).Id;
         insert obj1;
   
      Task tskPast = new Task(WhatId = obj.AccountId, ActivityDate=System.today().addDays(-30),Subject='Test Task', OwnerId = usr1.Id);
@@ -220,7 +208,6 @@ public static testMethod void testBatch_Purchase(){
    
    Test.StartTest();
    string queryPurchase ='Select Id, Name, AccountId, OwnerId, StageName, CreatedDate, CreatedById, RecordTypeId, Owner_Team__c from Opportunity Where  RecordTypeId = :upgradeRecordTypeId  ' ;
-// 	queryPurchase = queryPurchase + Label.ROE_Purchase_Query;
     queryPurchase= queryPurchase + ' limit 1';
    
       UpdateOwner b = new UpdateOwner(); 
@@ -231,49 +218,5 @@ public static testMethod void testBatch_Purchase(){
    
  
 }
-
-/*
- public static testMethod void testBatch_TestCase2() {
- 
-   User usr2 = [Select Id,Name,UserRoleId,UserRole.Name from User Where IsActive=true and UserRole.Name =:Label.Outbound_Sales_I LIMIT 1];
-   User usr1 = [Select Id,Name,UserRoleId,UserRole.Name from User Where IsActive=true and UserRole.Name =:Label.Inbound_Sales LIMIT 1];
-
-   System.runAs(usr2){
-   Lead obj = new Lead(FirstName='Test',LastName='Lead',OwnerId=usr2.Id,Company='Test');
-   insert obj;
-   
-   Lead_Retrieved__c objRec = new Lead_Retrieved__c();
-   objRec.Owner_ID__c = usr1.Id;
-   objRec.Lead_ID__c = obj.Id;
-   objRec.Lead_Owner_Assign_Date__c = System.Today();
-   objRec.Processed__c =false;  
-   insert objRec ;
-
-   //Lead obj1 = new Lead(Id=obj.Id,FirstName='Test',LastName='Lead',OwnerId=usr1.Id);
-   //update obj1;
-   
-   Task tskPast = new Task(WhoId=obj.Id,ActivityDate=System.today().addDays(-30),Subject='Test Task');
-   insert tskPast;
-   
-   Task tskPast1 = new Task(WhoId=obj.Id,ActivityDate=System.today().addDays(-45),Subject='Test Task');
-   insert tskPast1;
-   
-   Task tskPast2 = new Task(WhoId=obj.Id,ActivityDate=System.today().addDays(-60),Subject='Test Task');
-   insert tskPast2;
-   
-   
-   Task tskPast3 = new Task(WhoId=obj.Id,ActivityDate=System.today().addDays(-90),Subject='Test Task');
-   insert tskPast3;
-   
-   Task tskPresent = new Task(WhoId=obj.Id,qbdialer__Callback_Date_Time__c=System.today().addDays(30),ActivityDate=System.today(),Subject='Test Task');
-   insert tskPresent;
-   
-   Test.StartTest();
-   UpdateLeadOwners reassign = new UpdateLeadOwners();
-   ID batchprocessid = Database.executeBatch(reassign);
-   Test.StopTest();
- }
-}
-*/
 
 }

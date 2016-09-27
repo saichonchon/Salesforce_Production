@@ -38,22 +38,16 @@
         <field>SUBJECT</field>
     </columns>
     <columns>
+        <field>Case.Primary_Case_Rep__c</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE_BY</field>
+    </columns>
+    <columns>
         <field>Case.Bigcommerce_Store_URL__c</field>
     </columns>
     <columns>
-        <field>ACCOUNT.NAME</field>
-    </columns>
-    <columns>
-        <field>Case.Bigcommerce_Plan__c</field>
-    </columns>
-    <columns>
-        <field>Case.Design_Escalation_Date__c</field>
-    </columns>
-    <columns>
         <field>LAST_UPDATE</field>
-    </columns>
-    <columns>
-        <field>Case.Case_Time_Worked_Records__c</field>
     </columns>
     <filter>
         <criteriaItems>

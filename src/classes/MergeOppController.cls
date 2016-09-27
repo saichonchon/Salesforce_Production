@@ -51,7 +51,6 @@ public without sharing class  MergeOppController {
         fromOpp.MBAAccountID__c = toOpp.MBAAccountID__c;
         fromOpp.Contact__c = toOpp.Contact__c;
         fromOpp.Subscription__c = null;
-//      fromOpp.BI_Data__c = toOpp.BI_Data__r.Id;
         mpMBASubOppIds.put(fromOpp.MBASubscriptionId__c, fromOpp.Id);
         
         // remove the link to mba from the To.
@@ -73,20 +72,11 @@ public without sharing class  MergeOppController {
                                                     WHERE OpportunityID__c =:toOpp.Id
                                                     ])
             {
- //               Opportunity_Product__c cloneOp = obj.clone(false, true,false, false);
-        
                 obj.OpportunityID__c = fromOpp.Id;
                 lstOppProd.add(obj);
             }
         if (!lstOppProd.isEmpty()) update lstOppProd;
-        
-/*      if (toOpp.BI_Data__r.Id <> null)
-        {
-            Bi_Data__c bi = [Select Id, Opportunity__c from BI_Data__c where id = :toOpp.BI_Data__r.Id];
-            bi.Opportunity__c = fromOpp.Id;
-            update bi;
-        }
-*/      
+             
         if (!mpMBASubOppIds.isEmpty()) OpportunityOperations.syncOppwithMBASub(mpMBASubOppIds)  ;   
     }
     

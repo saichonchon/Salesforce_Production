@@ -1,62 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
-    <aggregates>
-        <calculatedFormula>OpportunityLineItem.UnitPrice:SUM</calculatedFormula>
-        <datatype>currency</datatype>
-        <developerName>FORMULA2</developerName>
-        <isActive>true</isActive>
-        <isCrossBlock>false</isCrossBlock>
-        <masterLabel>MRR</masterLabel>
-        <scale>2</scale>
-    </aggregates>
-    <aggregates>
-        <calculatedFormula>(OpportunityLineItem.UnitPrice:SUM/Opportunity.Owner.Hours_Passed__c:MAX)*Opportunity.Owner.Hours_in_the_Month__c:MAX</calculatedFormula>
-        <datatype>currency</datatype>
-        <developerName>FORMULA3</developerName>
-        <isActive>true</isActive>
-        <isCrossBlock>false</isCrossBlock>
-        <masterLabel>MRR Run Rate</masterLabel>
-        <scale>2</scale>
-    </aggregates>
-    <aggregates>
-        <calculatedFormula>IF(OpportunityLineItem.Quantity:SUM =0,NULL,OpportunityLineItem.UnitPrice:SUM/OpportunityLineItem.Quantity:SUM)</calculatedFormula>
-        <datatype>currency</datatype>
-        <developerName>FORMULA4</developerName>
-        <isActive>true</isActive>
-        <isCrossBlock>false</isCrossBlock>
-        <masterLabel>ARPU</masterLabel>
-        <scale>2</scale>
-    </aggregates>
-    <aggregates>
-        <calculatedFormula>OpportunityLineItem.Quantity:SUM</calculatedFormula>
-        <datatype>number</datatype>
-        <developerName>FORMULA5</developerName>
-        <isActive>false</isActive>
-        <isCrossBlock>false</isCrossBlock>
-        <masterLabel>Store Count</masterLabel>
-        <scale>2</scale>
-    </aggregates>
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
         <backgroundColor2>#FFFFFF</backgroundColor2>
         <backgroundFadeDir>Diagonal</backgroundFadeDir>
         <chartSummaries>
             <axisBinding>y</axisBinding>
-            <column>FORMULA2</column>
-        </chartSummaries>
-        <chartSummaries>
-            <axisBinding>y</axisBinding>
-            <column>FORMULA3</column>
-        </chartSummaries>
-        <chartSummaries>
-            <axisBinding>y</axisBinding>
-            <column>FORMULA4</column>
+            <column>RowCount</column>
         </chartSummaries>
         <chartType>VerticalColumn</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
         <groupingColumn>Opportunity$Revenue_Rep__c</groupingColumn>
-        <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
@@ -73,9 +28,6 @@
         <field>Opportunity$Account</field>
     </columns>
     <columns>
-        <field>Opportunity.OpportunityLineItems$PricebookEntry.Product2</field>
-    </columns>
-    <columns>
         <field>Opportunity$Name</field>
     </columns>
     <filter>
@@ -90,19 +42,9 @@
             <value>Opportunity.Store_Purchase</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity.OpportunityLineItems$PricebookEntry.Product2</column>
-            <operator>contains</operator>
-            <value>Ent</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>Opportunity$StageName</column>
             <operator>equals</operator>
             <value>Purchased,Closed Won</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity.OpportunityLineItems$LastModifiedDate</column>
-            <operator>equals</operator>
-            <value>THIS_MONTH</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

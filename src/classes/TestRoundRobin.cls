@@ -107,7 +107,6 @@ private class TestRoundRobin
 	  
 	    InvokeRoundRobin instance = new InvokeRoundRobin();
     
- //       lstAcct[0].Projected_Annual_Revenue__c = 'Less than $100,000';
  		 lstAcct[0].Assign_To_Team__c = 'Enterprise';
         
         update lstAcct;

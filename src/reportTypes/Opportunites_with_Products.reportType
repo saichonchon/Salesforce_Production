@@ -2,13 +2,13 @@
 <ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
     <baseObject>Opportunity</baseObject>
     <category>opportunities</category>
-    <deployed>false</deployed>
-    <description>Opportunites w/wo Products CUSTOM</description>
+    <deployed>true</deployed>
+    <description>A custom report of Opportunities with or without products</description>
     <join>
         <outerJoin>true</outerJoin>
         <relationship>OpportunityLineItems</relationship>
     </join>
-    <label>zOpportunities w/wo Products CUSTOM</label>
+    <label>Opportunities with or without Products</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
@@ -172,36 +172,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>EB_Comments__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>EB_Date__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>EB_Next_Step__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>EBQ_Added__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>EB_Rating__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Expected_Plan__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>ExpectedRevenue</field>
             <table>Opportunity</table>
         </columns>
@@ -268,11 +238,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>LastStageChangeDate</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Launch_Team_Commando__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -392,22 +357,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Partner_Expected_Stores__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Partner_Referral_Date__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Referral_Email__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Referral_Form_URL__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -417,17 +367,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Partner_Referral_Submission_Type__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>PaymentStatus__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>PricingTestGroup__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -507,11 +447,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>SBD_Referral_ID__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>SBD_Store_ID__c</field>
             <table>Opportunity</table>
         </columns>
@@ -562,22 +497,12 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>zStrategic_Partner__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Subscription__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>SubscriptionType__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Success_Squad_Consultant__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -682,112 +607,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>PricebookEntry.Product2</field>
-            <table>Opportunity.OpportunityLineItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <displayNameOverride>Product: Sales Price</displayNameOverride>
-            <field>UnitPrice</field>
-            <table>Opportunity.OpportunityLineItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <displayNameOverride>Product: Consulting Services</displayNameOverride>
-            <field>Consulting_Services__c</field>
-            <table>Opportunity.OpportunityLineItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <displayNameOverride>Product: Created Date</displayNameOverride>
-            <field>CreatedDate</field>
-            <table>Opportunity.OpportunityLineItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <displayNameOverride>Product: Discount</displayNameOverride>
-            <field>Discount</field>
-            <table>Opportunity.OpportunityLineItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <displayNameOverride>Product: Last Modified By</displayNameOverride>
-            <field>LastModifiedBy</field>
-            <table>Opportunity.OpportunityLineItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <displayNameOverride>Product: Is Migration</displayNameOverride>
-            <field>Is_Migration__c</field>
-            <table>Opportunity.OpportunityLineItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <displayNameOverride>Product: Last Modified Date</displayNameOverride>
-            <field>LastModifiedDate</field>
-            <table>Opportunity.OpportunityLineItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <displayNameOverride>Product: Line Item ID</displayNameOverride>
-            <field>Id</field>
-            <table>Opportunity.OpportunityLineItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <displayNameOverride>Product: Price Book Entry</displayNameOverride>
-            <field>PricebookEntry</field>
-            <table>Opportunity.OpportunityLineItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <displayNameOverride>Product: Quantity</displayNameOverride>
-            <field>Quantity</field>
-            <table>Opportunity.OpportunityLineItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <displayNameOverride>Product: Line Description</displayNameOverride>
-            <field>Description</field>
-            <table>Opportunity.OpportunityLineItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <displayNameOverride>Product: Subtotal</displayNameOverride>
-            <field>Subtotal</field>
-            <table>Opportunity.OpportunityLineItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <displayNameOverride>Product: Sort Order</displayNameOverride>
-            <field>SortOrder</field>
-            <table>Opportunity.OpportunityLineItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <displayNameOverride>Product: Total Price</displayNameOverride>
-            <field>TotalPrice</field>
-            <table>Opportunity.OpportunityLineItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <displayNameOverride>Product: Date</displayNameOverride>
-            <field>ServiceDate</field>
-            <table>Opportunity.OpportunityLineItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <displayNameOverride>Product: Created By</displayNameOverride>
-            <field>CreatedBy</field>
-            <table>Opportunity.OpportunityLineItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>PricebookEntry.Product2.Family</field>
-            <table>Opportunity.OpportunityLineItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Promo_Day_of_Trial__c</field>
             <table>Opportunity</table>
         </columns>
@@ -801,6 +620,94 @@
             <field>Subscription__c.StartDate__c</field>
             <table>Opportunity</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Strategic_Partner__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Strategic_Partner__c.Id</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Strategic_Partner__c.Revenue_Share__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>TrailingGMVCount__c</field>
+            <table>Opportunity</table>
+        </columns>
         <masterLabel>Opportunities</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Family__c</field>
+            <table>Opportunity.OpportunityLineItems</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>MRR__c</field>
+            <table>Opportunity.OpportunityLineItems</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>List_Price__c</field>
+            <table>Opportunity.OpportunityLineItems</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>UnitPrice</field>
+            <table>Opportunity.OpportunityLineItems</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>TotalPrice</field>
+            <table>Opportunity.OpportunityLineItems</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>PricebookEntry.Product2.ProductCode</field>
+            <table>Opportunity.OpportunityLineItems</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>PricebookEntry.Product2.Family</field>
+            <table>Opportunity.OpportunityLineItems</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>PricebookEntry.Product2.Name</field>
+            <table>Opportunity.OpportunityLineItems</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>PricebookEntry.Product2.Product_ID__c</field>
+            <table>Opportunity.OpportunityLineItems</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>PricebookEntry.Product2.Description</field>
+            <table>Opportunity.OpportunityLineItems</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>PricebookEntry.Product2.Order_Cap__c</field>
+            <table>Opportunity.OpportunityLineItems</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>PricebookEntry.Product2.Order_Increment__c</field>
+            <table>Opportunity.OpportunityLineItems</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>PricebookEntry.Product2.Growth_Rate_Adjustment__c</field>
+            <table>Opportunity.OpportunityLineItems</table>
+        </columns>
+        <masterLabel>Products</masterLabel>
     </sections>
 </ReportType>

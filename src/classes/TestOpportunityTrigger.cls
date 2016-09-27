@@ -16,7 +16,6 @@ private class TestOpportunityTrigger
         o.StageName = 'Purchased';
        
         o.AccountId = lstCon[0].AccountId;
-        //o.Pricebook2Id = getPricebook(true).Id;
         insert o;
 	
     	Test.startTest();
@@ -32,7 +31,6 @@ private class TestOpportunityTrigger
 		 insert oli;
 		 opp.StageName = 'Closed Won';
 		 opp.Store_Opportunity__c = o.Id;
-//		 opp.Subscription__c = sub.Id;
 		 opp.Migration_Platform__c = 'Test';
 		 opp.Current_Store_URL__c = 'http://test.com';
 		 update opp;

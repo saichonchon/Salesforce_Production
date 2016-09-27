@@ -42,16 +42,13 @@ trigger ZuoraSubscription on Zuora__Subscription__c (before insert, before updat
 		            o.Zuora_Version__c = obj.Zuora__Version__c;
 		            o.MonthlyRecurringRevenue__c = obj.Zuora__MRR__c;
 		            updOpps.add(o);
-//		            mpSourceObjToDestObj.put(obj,o);
-//		            mapZidOpp.put(obj.Id, obj.crmId__c);
 	            }
 	            
 	      }
-        
-        /* calling the method of SObjectUtils.SyncObjects to insert data in the databse and map with the opportunity*/
-//          SObjectUtils.SyncObjects('Zuora__Subscription__c','Opportunity',mpSourceObjToDestObj,dml);           
+                  
 		StaticVariables.ZuoraUpdate=true;
-		Try{			
+		Try
+		{			
 			 update updOpps;
 		}
 		Catch (exception e)

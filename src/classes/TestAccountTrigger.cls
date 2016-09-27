@@ -4,24 +4,7 @@
  */
 @isTest
 private class TestAccountTrigger {
-/*
- 	static testMethod void testAccount() 
-    {
-		TestDataGenerator td = new TestDataGenerator();
-	    	
-	    list<Account> lstAcct = td.getAccounts(true);
-	
-	    Test.startTest();
-		
-		User ssc = td.getUsers(null)[0];
-		lstAcct[0].SSC__c = ssc.Id;
-		User ltc = td.getUsers(null)[0];
-		lstAcct[0].Launch_Team_Commando__c = ltc.Id;
-		update lstAcct[0];
-		
-		Test.stopTest();
-    }
- */   
+  
     static testMethod void testOwnerChange() 
     {
 		Id idPartnerRecordType = Account.getSObjectType().getDescribe().getRecordTypeInfosByName().get('Channel Partner Record Type').getRecordTypeId();

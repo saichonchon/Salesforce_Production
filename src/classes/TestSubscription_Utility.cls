@@ -40,7 +40,6 @@ public class TestSubscription_Utility
 		
 		// Validate that actual subscriptions was created and associated to a lead
 		system.assertNotEquals(objSub, null);
-//		system.assertNotEquals(objSub.Lead__c, null);
 		system.assertNotEquals(objSub.Account__c, null);
 		
 		// Now create a new sub as paid
@@ -50,33 +49,7 @@ public class TestSubscription_Utility
 		objMBASub.IsTrial__c = false;		
 		insert objMBASub;
 		
-		test.stopTest();
-		
-		/*
-		id acctId;
-		
-		// Capture all the Subscriptions, one that should have been created and one that already existed
-		for (Subscription__c sub : [SELECT Id, IsTrial__c, MBAAccountID__c, Lead__c, Account__c, MBASubscriptionID__c 
-									FROM Subscription__c 
-									WHERE MBAAccountID__c = :objSub.MBAAccountID__c])
-		{		
-			// Make sure the subscription is now tied to an account
-			//system.assertNotEquals(sub.Account__c, null);
-			acctId = sub.Account__c;
-		}
-		
-		// Now create another new sub
-		objMBASub = td.lstStagingSubscriptions[2];
-		objMBASub.MBAAccountID__c = objSub.MBAAccountID__c;
-		insert objMBASub;
-		
-		// Query the new subscription and ensure it was attached to the existing account
-		objSub = [SELECT Id, MBAAccountID__c, MBASubscriptionID__c, Account__c
-					FROM Subscription__c
-					WHERE MBASubscriptionID__c = :objSub.MBAAccountID__c];
-					
-		system.assertEquals(objSub.Account__c, acctId);
-		*/        
+		test.stopTest();    
 	}
 	
 	static testMethod void testSubNewLeadByEmail() 
@@ -130,7 +103,6 @@ public class TestSubscription_Utility
 
 		// Validate that actual subscriptions was created and associated to the lead previously created
 		system.assertNotEquals(objSub, null);
-//		system.assertEquals(objSub.Lead__c, objLead.Id);
 		
 		// Now query the Lead to ensure it has been updated with a MBA Account ID
 		Lead oLead = [SELECT Id, Name, MBAAccountID__c
@@ -224,11 +196,6 @@ public class TestSubscription_Utility
 		
 		system.debug('*** New Sub for Ownershipt Check: ' + objSub2_Res);
 		system.debug('*** Expected Account Id: ' + objAcct.Id);
-		
-		// Ensure the original account id exists on the sub
-		//system.assertEquals(objAcct.Id, objSub2_Res.Account__c);
-		
-		// Ensure the owner of the subscription is the new user and not the original account owner
-		//system.assertEquals(objAcctPartner.OwnerId, objSub2_Res.OwnerId);		
+			
 	}
 }

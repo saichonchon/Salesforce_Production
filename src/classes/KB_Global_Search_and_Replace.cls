@@ -190,12 +190,6 @@ public with sharing class KB_Global_Search_and_Replace {
         
         listSearchHistory = Database.query(strQuery);
         
-        /*
-        [SELECT Articles_Searched__c,
-            Articles_Selected__c, Articles_Updated__c, Apex_Replacement_BatchId__c
-            FROM KB_Global_Search_History__c WHERE Apex_BatchId__c LIKE '%:this.strApexBatchId%'];
-        */
-        
         if (listSearchHistory != null && listSearchHistory.size() >0) {
                 
             this.strSearchStatus = 'Search Complete';
@@ -220,8 +214,7 @@ public with sharing class KB_Global_Search_and_Replace {
 	                
 	                if (jobList != null && jobList.size()>0) {
 	                    AsyncApexJob job = jobList[0];
-	                    /*[Select Id, Status, NumberOfErrors, JobItemsProcessed, TotalJobItems 
-	                          from AsyncApexJob where Id =:replacementJobId];     */
+
 	                    if (job.Status.equals('Processing')) {
 	                    	this.strSearchStatus+='-Replacement Pending';
 	                    	this.bProcessing = true;  

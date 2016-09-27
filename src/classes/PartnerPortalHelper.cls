@@ -54,19 +54,6 @@ public without sharing class PartnerPortalHelper
 		                    break;
 		                }
 		            }
-		            /*
-		            //TODO: remove this as it is only for testing
-			        else
-			        {
-		                for (Account a : [SELECT Id, iDev_Partner_ID__c, Name FROM Account WHERE Id = '001a0000019dqjy'])
-		                {
-		                    system.debug('***PartnerPortalHelper:PartnerAccount - Account Found: ' + a);
-		                                
-		                    retAcct = a;
-		                    break;
-		                }
-			        }
-			        */
 		        }		        
 	        }
 	        else

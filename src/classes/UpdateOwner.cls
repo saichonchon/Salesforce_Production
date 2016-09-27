@@ -97,9 +97,6 @@ global class  UpdateOwner implements Database.Batchable<sObject>, Database.State
 				if (!mapOwnerAssignDate.containsKey(idmiss))
 				mapOwnerAssignDate.put(idmiss, olddate);
 			}
-
-//			mapOppOwner.putAll(mapOwnerDiffAsCreatedBy);
-//			mapOppOwner.putAll(mapOwnerSameAsCreatedBy);
 			
             //Collect all  Ids
             List<String> lstOppIds = new List<String>();
@@ -121,7 +118,6 @@ global class  UpdateOwner implements Database.Batchable<sObject>, Database.State
             {
                 for(Task obj:[SELECT AccountId, WhoId,ActivityDate,CallDisposition, ToutApp__Tout_Replied__c, ToutApp__Tout_Replied_At__c, CreatedDate,Description,Id,IsClosed,Subject,Type, OwnerId FROM Task where AccountId IN:lstAcctIds and ( CreatedDate = LAST_90_DAYS OR ToutApp__Tout_Replied_At__c  = LAST_90_DAYS) ])
                 {
-   //                 System.Debug('Tasks:'+obj);
  					Id oppOwner = mapAccOwner.get(obj.AccountId);
                     if(obj.OwnerId == oppOwner && obj.Subject!=null && obj.Type.equalsIgnoreCase('Email') && (obj.Subject.startsWith('←') || obj.ToutApp__Tout_Replied__c == true ))
                     {
@@ -146,7 +142,6 @@ global class  UpdateOwner implements Database.Batchable<sObject>, Database.State
                     }  
                 }
             }
-  //          System.Debug('InboundEmail for Opps:'+mapInboundEmailForOpps);
             System.Debug('Tasks for Opps:'+mapTaskForOpps);
 
             //Retrieve custom settings to roles and there SLA
@@ -226,12 +221,9 @@ global class  UpdateOwner implements Database.Batchable<sObject>, Database.State
     global void finish(Database.BatchableContext BC)
     {
         Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
-        mail.setToAddresses(new String[] {'maggie.frederick@bigcommerce.com'});
-        //mail.setReplyTo('batch@acme.com');
-        //mail.setSenderDisplayName('Batch Processing');
+        mail.setToAddresses(new String[] {'bizapps@bigcommerce.com'});
         mail.setSubject('Batch Process Opp Update Owners Completed');
         mail.setPlainTextBody('Batch Process has completed');
-       // Messaging.sendEmail(new Messaging.SingleEmailMessage[] { mail });
     }
     private void purgeReportTable()
     {
@@ -240,12 +232,7 @@ global class  UpdateOwner implements Database.Batchable<sObject>, Database.State
         {   
             // Query the Lead Data From Lead Retrieved Object.
             List<Lead_Retrieved__c> lstRetData = new List<Lead_Retrieved__c>([Select Id from Lead_Retrieved__c Where Processed__c = false and Opportunity__c <> null LIMIT 50000]);
-/*            for(Lead_Retrieved__c obj:[Select Id from Lead_Retrieved__c Where Processed__c = false LIMIT 50000])
-            {
-  //              obj.Processed__c = true;
-                lstRetData.add(obj);
-            }
- */           
+          
             // Update the Lead List.
             if(!lstRetData.isEmpty() && !Test.isRunningTest())delete lstRetData;
                   

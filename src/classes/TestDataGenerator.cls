@@ -15,11 +15,6 @@ public class TestDataGenerator
 	public list<Terms_Conditions__c> lstTermsConditions;
 	public list<Marketing_Material__c> lstMarketingMaterials;
 	public list<Subscription__c> lstSubscriptions;
-      
-	//public Pricebook2 pricebook;
-	//public list<Product2> products;
-	//public list<PricebookEntry> pricebookEntries;
-	//public list<OpportunityLineItem> opportunityLineItems;
 	
 	      
 	public Integer userNum;
@@ -30,12 +25,8 @@ public class TestDataGenerator
 	public Integer AccountMBANum;
 	public Integer ContactMBANum;      
 	public Integer subscriptionNum;
-	// public Integer opptyLineItemNum;
-	// public Integer productNum;
-	// public Integer pricebookEntryNum;
+	
 
-      
-      
 	public list<StagingToTableMapping__c> StagingToTableMapping2 = new list<StagingToTableMapping__c>();   // StagingToTableMapping Configuration
       
 	public TestDataGenerator()
@@ -48,11 +39,6 @@ public class TestDataGenerator
 		subscriptionNum = 5;
 		AccountMBANum= 5;
 		ContactMBANum= AccountMBANum;  // This Contact MBA should be the same as AccountMBANum 1:1 link for testing
-       //     opptyLineItemNum = opptyNum * 20;
-       //     productNum = 10;
-       //     pricebookEntryNum = productNum;
-            
-            
         
         if(AccountMaxSubRollup__c.getInstance('Fields') == null)
         {
@@ -591,7 +577,6 @@ public class TestDataGenerator
                         a.FirstName__c = 'FirstName ' +i;
                         a.LastName__c = 'LastName ' +i;
                         a.MBAAccountID__c = getAccountMBAs(true, true)[0].MBAAccountID__c;     // Link this up to an existing Account.
-                        //a.MBAAccountID__c ='800011111';     // Link this up to an existing Account.
                         a.MBAClientID__c = '800055555'+string.valueof(i);                        
                         a.Address__c='Main St ' + i;
                         a.City__c='TESTCITY_CHECK';
@@ -750,85 +735,7 @@ public class TestDataGenerator
 
 		return lstSubscriptions;
 	}
-      /*
-      public Pricebook2 getPricebook(Boolean xCommit) {
-            if(pricebook == null) {
-                  pricebook = new Pricebook2();
-                  pricebook.IsActive = true;
-                  pricebook.Name = 'Test Pricebook';
-                  if(xCommit) insert pricebook;
-            }
-            
-            if(xCommit && pricebook.Id == null) insert pricebook;                         
-            
-            return pricebook;
-      }
-      */
-      
-      /*
-      public list<Product2> getProducts(Boolean xCommit) {
-            if(products == null) {
-                  products = new list<Product2>();
-                  for(Integer i = 0; i < productNum; i++) {
-                        Product2 p = new Product2();
-                        p.IsActive = true;
-                        p.Name = 'Test Product ' + i;
-                        p.ProductCode = 'TestPCode ' + i; 
-                        products.add(p);
-                  }
-                  if(xCommit) insert products;
-            }
-            
-            if(xCommit && products.size() > 0 && products[0].Id == null) insert products;              
-            
-            return products;
-      }
-      */
-      
-      /*
-      public list<PricebookEntry> getPricebookEntries(Boolean xCommit) {
-            if(pricebookEntries == null) {
-                  pricebookEntries = new list<PricebookEntry>();
-                  list<PricebookEntry> stdPricebookEntries = new list<PricebookEntry>();
-                  
-                  Pricebook2 standardPB = [SELECT Id FROM Pricebook2 WHERE IsStandard = true LIMIT 1];
-                  for(Integer i = 0; i < pricebookEntryNum; i++) {
-                        PricebookEntry pbeStd = new PricebookEntry();
-                        pbeStd.IsActive = true;
-                        pbeStd.Pricebook2Id = standardPB.Id;
-                        System.assertNotEquals(null, pbeStd.Pricebook2Id,standardPB);
-                        
-                        Integer j = Math.mod(i, getProducts(true).size());
-                        pbeStd.Product2Id = getProducts(true)[j].Id;
-                        System.assertNotEquals(null, pbeStd.Product2Id,getProducts(true)[j]);
-                        
-                        pbeStd.UnitPrice = i;
-                        pbeStd.UseStandardPrice = false;
-                        stdPricebookEntries.add(pbeStd);
-                        
-                        PricebookEntry pbe = new PricebookEntry();
-                        pbe.IsActive = true;
-                        pbe.Pricebook2Id = getPricebook(true).Id;
-                        System.assertNotEquals(null, pbe.Pricebook2Id,getPricebook(true));
-                                                
-                        pbe.Product2Id = pbeStd.Product2Id;
-                        System.assertNotEquals(null, pbe.Product2Id,pbeStd);
-                        
-                        pbe.UnitPrice = i;
-                        pbe.UseStandardPrice = false;
-                        pricebookEntries.add(pbe);
-                  }
-                  insert stdPricebookEntries;
-                  if(xCommit) insert pricebookEntries;
-            }
-            
-            if(xCommit && pricebookEntries.size() > 0 && pricebookEntries[0].Id == null) insert pricebookEntries;          
-            
-            return pricebookEntries;
-      }
-      */
-      
-      
+
 	public list<Opportunity> getOpportunities(Boolean xCommit) 
 	{
 		if(opportunities == null) 
@@ -842,7 +749,6 @@ public class TestDataGenerator
 				o.StageName = '01-New';
 				Integer j = Math.mod(i,getAccounts(true).size());
 				o.Account = getAccounts(true)[i];
-				//o.Pricebook2Id = getPricebook(true).Id;
 				opportunities.add(o);
 			}
 			
@@ -853,36 +759,6 @@ public class TestDataGenerator
 		            
 		return opportunities;
 	}
-      
-        
-      /*
-      public list<OpportunityLineItem> getOpportunityLineItems(Boolean xCommit) {
-            if(opportunityLineItems == null) {
-                  opportunityLineItems = new list<OpportunityLineItem>();
-                  for(Integer i = 0; i < opptyLineItemNum; i++) {
-                        OpportunityLineItem oli = new OpportunityLineItem();
-                        
-                        Integer j = Math.mod(i,getOpportunities(true).size());
-                        oli.OpportunityId = getOpportunities(true)[j].Id;
-                        
-                        Integer k = Math.mod(i,getPricebookEntries(true).size());                     
-                        oli.PricebookEntryId = getPricebookEntries(true)[k].Id;
-                        
-                        oli.Quantity = i + 1;
-                        
-                        oli.UnitPrice = getPricebookEntries(true)[k].UnitPrice;
-                                          
-                        opportunityLineItems.add(oli);                        
-                  }
-                  if(xCommit) insert opportunityLineItems;
-            }
-            
-            if(xCommit && opportunityLineItems.size() > 0 && opportunityLineItems[0].Id == null) insert opportunityLineItems;
-                        
-            return opportunityLineItems;
-      }
-      */
-     
      
 	public list<Lead> getLeads(Boolean xCommit) 
 	{
@@ -898,11 +774,6 @@ public class TestDataGenerator
 				lead.Phone = '555-555-555' + i;
 				lead.Company = 'Test Company' + i;
 				lead.Country = 'US';
-				//lead.Accept_Lead_Date__c=system.today()-34;
-				            
-				//      Integer j = Math.mod(i,getAccounts(true).size());
-				//      Account a = getAccounts(true)[j];                     
-				//lead.Company = a.Name;
 				            
 				leads.add(lead);
 			}
@@ -970,42 +841,17 @@ public class TestDataGenerator
 		getLeads(true);
 		getAccounts(true);
 		getContacts(true);
-		//  getPricebook(true);
-		//  getProducts(true);
 		getOpportunities(true);
-		//  getOpportunityLineItems(true);
-		      
 		getTermsConditions(true);
 		getMarketingMaterials(true);
 		getSubscriptions(true);
 		getCaseQueue('Support');
-		/*
-		try
-		{
-			getAccountMBAs(true, false);
-		}
-		catch(exception e)
-		{
-			system.debug('**** Account MBA errors **** ' + e);
-		}
-		  
-		try
-		{
-			getContactMBAs(true, false);
-		}
-		catch(exception e)
-		{
-			system.debug('**** Contact MBA errors  **** ' + e);
-		}
-		*/
 		                
 	}      
  
 	static testMethod void TestDataGeneratorUnitTest() 
 	{
         TestDataGenerator data = new TestDataGenerator();
-        data.initAllTestData();        
-        //System.assertEquals(data.accountNum, data.getAccounts(true).size(),'Account size not equal to accountNum');
-        //System.assertNotEquals(null,data.getOpportunityLineItems(true)[0].Id);                           
+        data.initAllTestData();                                   
     }
 }

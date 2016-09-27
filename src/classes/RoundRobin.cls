@@ -228,12 +228,10 @@ public without sharing class RoundRobin
 									User_Status__c u = mpQueueToUserStatus.get(strQueue)[0];
 									rcrd.OwnerId = u.OwnerId;
 									rrSetting.Last_Number_Used__c = u.Round_Robin_Number_Num__c;
-									//intQueuePoint = u.Round_Robin_Number_Num__c;
 									
 									system.debug('***RoundRobin - RunRoundRobin; Number Used: ' + u.Round_Robin_Number_Num__c);
 								}
 									
-								//mpQueuePoints.put(strQueue, intQueuePoint);
 								system.debug('@@@ Queue: ' + strQueue + ' Queue Point Setting After Round Robin: ' + rrSetting);
 							}
 							else
@@ -259,7 +257,6 @@ public without sharing class RoundRobin
 							try
 							{
 								// Update the records
-								//database.update(lstSettings, Subscription_Utility.blnAllOrNone);
 								update lstSettings;
 								intTries = 4;
 							}
@@ -364,7 +361,6 @@ public without sharing class RoundRobin
 								
 								for (User_Status__c u : mpQueueToUserStatus.get(strQueue))
 								{
-									//if (u.Round_Robin_Number_Num__c > intQueuePoint)
 									if (u.Round_Robin_Number_Num__c > rrSetting.Last_Number_Used__c)
 									{
 										isOwnerFound = true;
@@ -383,12 +379,10 @@ public without sharing class RoundRobin
 									User_Status__c u = mpQueueToUserStatus.get(strQueue)[0];
 									rcrd.OwnerId = u.SalesRep__c;
 									rrSetting.Last_Number_Used__c = u.Round_Robin_Number_Num__c;
-									//intQueuePoint = u.Round_Robin_Number_Num__c;
 									
 									system.debug('***RoundRobin - RunRoundRobin; Number Used: ' + u.Round_Robin_Number_Num__c);
 								}
 									
-								//mpQueuePoints.put(strQueue, intQueuePoint);
 								system.debug('@@@ Queue: ' + strQueue + ' Queue Point Setting After Round Robin: ' + rrSetting);
 							}
 							else
@@ -442,7 +436,6 @@ public without sharing class RoundRobin
 			try
 			{
 				// Update the records
-				//database.update(lstSettings, Subscription_Utility.blnAllOrNone);
 				update lstSettings;
 				intTries = 4;
 			}

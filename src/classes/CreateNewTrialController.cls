@@ -18,8 +18,6 @@ public without sharing class CreateNewTrialController
 	
 	public List<SelectOption> accounts {get; set;}
 	public String selectedAccountId {get; set;}
-	//public String selectedCountry {get; set;}
-	//public String selectedIndustry {get; set;}
 		
 	public Boolean createNewAccount {get; set;}
 	public Boolean subscriptionSent {get; set;}
@@ -196,13 +194,7 @@ public without sharing class CreateNewTrialController
 		{
 			accounts.add(new SelectOption(s, idToNameMap.get(s)));
 		}
-		/*
-		for(Id i:idToNameMap.keyset())
-		{
-			accounts.add(new SelectOption(i, idToNameMap.get(i)));
-		}
-		*/
-		
+
 		system.debug('@@@CreateNewTrialController:populateAccountList - End');
 	}	
 	
@@ -236,7 +228,6 @@ public without sharing class CreateNewTrialController
 			String objectAPIName = ((Id)selectedAccountId).getSObjectType().getDescribe().getName();
 			if(objectAPIName == 'Account')
 			{				
-				//List<Contact> contacts = [SELECT Id, Email FROM Contact WHERE Email <> Null AND AccountId = :selectedAccountId];
 				List<Contact> contacts = NoSharingUtils.queryObject('SELECT Id, Email FROM Contact WHERE Email <> Null AND AccountId = \'' + selectedAccountId + '\'');
 				for(Contact c:contacts)
 				{
@@ -415,8 +406,6 @@ public without sharing class CreateNewTrialController
 			}
 			//insert subscription;			
 			
-			// send subscription info to REST API
-			//SubscriptionAPIUtils.sendSubscription(subscription.Id);			
 		}
 		catch(Exception e)
 		{

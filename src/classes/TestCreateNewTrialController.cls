@@ -138,13 +138,6 @@ public class TestCreateNewTrialController
 		c.AccountId = c.Account.Id;
 		insert c;
 		
-		/*
-		AccountMaxSubRollup__c amsr = new AccountMaxSubRollup__c();
-		amsr.FieldList1__c = 'product__c,monthlyrecurringrevenue__c,purchasedate__c,istrial__c,status__c,purchase_team__c,startdate__c,expirationdate__c,billingcycle__c,billingamount__c';
-		amsr.Name = 'FieldsTesting123';
-		insert amsr;
-		*/
-		
 		Subscription__c subscription = new Subscription__c();
 		subscription.MBAPartnerID__c = '1';
 		subscription.Account__c = c.AccountId;

@@ -42,9 +42,6 @@ public class TestMBAStagingAccount {
 			 	
 			 	//Initialize the Configuration Object    
 		    	td.getStagingToTableMappingSettings();
-
-		        //Map<String,StagingToTableMapping__c>ExistingStagingToTableMapping = StagingToTableMapping__c.getall().getvalues();
-				//List<StagingToTableMapping__c> ExistingStagingToTableMapping = StagingToTableMapping__c.getall().values();
 		    	
 		    	 //////////////////////////////////////////////////////////////////////////////////////////
 		    	 // Create Staging Account Records - Dummy Records
@@ -110,31 +107,8 @@ public class TestMBAStagingAccount {
                  	system.assertEquals(a.Name, stgAccMap.get(a.MBAAccountID__c).CompanyName__c);             // Name
 
                  }
-		    	
-		    	/* // To see if the custom Settings Are popoulated 
-		    	List<StagingToTableMapping__c> test = [SELECT Id, 
-										    	            Active__c , 
-												            Staging_Object_Name_API__c, 
-												            Staging_Object_Field_Name_API__c,
-												            Object_Name_API__c,  
-												            Object_Field_Name_API__c 
-												         FROM 
-												         	StagingToTableMapping__c]; 
-		
-		         for (StagingToTableMapping__c  l:test){
-		            	system.debug('**** Id **** ' + l.Id);
-		            	system.debug('**** Active__c ****:'+l.Active__c);
-		            	system.debug('**** Staging_Object_Name_API__c ****:'+l.Staging_Object_Name_API__c);
-		            	system.debug('**** Staging_Object_Field_Name_API__c ****:'+l.Staging_Object_Field_Name_API__c);
-		            	system.debug('**** Object_Name_API__c ****:'+ l.Object_Name_API__c);
-		            	system.debug('**** Object_Field_Name_API__c ****:'+ l.Object_Field_Name_API__c);
-		         }
-		         */
-				         	
-				   
 		 
 		        test.stopTest();
-				//System.assertEquals(null,lh.getCurrentConfig(null,null,null));
 	 }
 
 

@@ -74,180 +74,6 @@ public class CaseStopWorkingController
         
     }
     
-/*
-    public pageReference setCaseToQueue()
-    {
-        pageReference pr = null;        
-        boolean updateCase = false;
-        
-        system.debug('***CaseStopWorkingController:setCaseToQueue - objCaseId: ' + objCaseId);
-        
-        // Ensure a case exists
-        if (objCaseId != null)
-        {                   
-        	// Ensure the case is currently owned by a user (not a queue)
-        	Case cs = CaseHandle_Helper.getCaseList(new set<Id>{objCaseId})[0];
-        	system.debug('***CaseStopWorkingController:setCaseToQueue - cs: ' + cs);
-        	
- //       	if (cs.Owner.Type == 'User')
- //       	{
-	            // Check if this case was assigned to a queue before this user owned it
-	            objCTW = CaseHandle_Helper.findLastQueueForCase(objCaseId);
-	            
-	            system.debug('***CaseStopWorkingController:setCaseToQueue - objCTW: ' + objCTW);
-	            system.debug('***CaseStopWorkingController:setCaseToQueue - selectedQueue: ' + selectedQueue);
-	            
-	            // If it was previously assigned to a valid queue and not currently assigned to a queue
-	            if (cs.Owner.Type == 'User')
-	            {
-		            if (objCTW != null && objCTW.Owner_from_ID__c != null && mpQName2Queue.containsKey(objCTW.Owner_from_Name__c))
-		            {
-		            	system.debug('***CaseStopWorkingController:setCaseToQueue - previously assigned to Queue');
-		                objCase.OwnerId = objCTW.Owner_from_ID__c;          
-		                updateCase = true;      
-		            }
-		            // Check if user selected a queue
-		            else if (selectedQueue != null && mpQName2Queue.containsKey(selectedQueue))
-		            {
-		            	system.debug('***CaseStopWorkingController:setCaseToQueue - user selected Queue');
-		                objCase.OwnerId = mpQName2Queue.get(selectedQueue).QueueId;         
-		                updateCase = true;
-		            }
-		            else
-		            {
-		            	system.debug('***CaseStopWorkingController:setCaseToQueue - User not previously with queue and no queue selected');
-		            }
-	            }
-	            else
-	            {
-	            	updateCase = true;
-	            }
-	            
-	            if (updateCase)
-	            {
-	                try
-	                {
-	                	system.debug('***CaseStopWorkingController:setCaseToQueue - Updating Case');	                	
-	                	
-	                	// Make sure to set the DML Options to not send any emails
-	                	database.Dmloptions dml = new database.Dmloptions();
-	                	dml.emailHeader.triggerAutoResponseEmail = false;
-	                	dml.emailHeader.triggerUserEmail = false;
-	                	dml.emailHeader.triggerOtherEmail = false;
-	                	
-	                	list<Case> lstCaseToUpdate = new list<Case>();
-	                	objCase.setOptions(dml);
-	                	
-	                	lstCaseToUpdate.add(objCase);
-	                	
-	                    database.update(lstCaseToUpdate, dml);
-	                    
-	                    CaseHandle_Helper.case_StopWorking(objCase);
-	                    
-	                    pr = controller.cancel();
-	                }
-	                catch(Exception exc)
-	                {
-	                    ApexPages.Message myMsg = new ApexPages.Message(ApexPages.Severity.Error, 'An error occurred returing Case to Queue....Please contact your support department');
-	                    ApexPages.addMessage(myMsg);
-	                    system.debug('***ERROR: CaseStopWorkingController:setCaseToQueue: ' + exc.getStackTraceString());
-	                }
-	            }
-	            else
-	            {
-	                showQueueSelection = true;
-	            }
-        	}
-        	else
-        	{
-        		showError = true;
-        		
-        		ApexPages.Message myMsg = new ApexPages.Message(ApexPages.Severity.Warning, 'Cannot perform the action "Return To Queue" for a Case already owned by a Queue');
-                ApexPages.addMessage(myMsg);
-                system.debug('***WARNING: CaseStopWorkingController:setCaseToQueue: Cannot "Return To Queue" for Case already owned by a Queue: ' + objCaseId);
-        	}
-//        }
-///        else
-        {
-        	// Return the user to the page which they came
- //           pr = controller.cancel();
-        }
-//        pr= new PageReference('/500)');
-// /
-//		pr = controller.cancel();
-        return pr;
-    }
-    
-    public pageReference setCaseToQueue()
-    {
-        pageReference pr = null;        
-        boolean updateCase = false;
-        
-        system.debug('***CaseStopWorkingController:setCaseToQueue - objCaseId: ' + objCaseId);
-        
-        // Ensure a case exists
-        if (objCaseId != null)
-        {                   
-        	// Ensure the case is currently owned by a user (not a queue)
-        	Case cs = CaseHandle_Helper.getCaseList(new set<Id>{objCaseId})[0];
-        	system.debug('***CaseStopWorkingController:setCaseToQueue - cs: ' + cs);
-        	
-        	if (cs.Owner.Type == 'User')
-        	{
-	            // Check if this case was assigned to a queue before this user owned it
-	            
-	            
-	            // If it was previously assigned to a valid queue and not currently assigned to a queue
-	            if (cs.Queue_Name__c <> null && mpQName2Queue.containsKey(cs.Queue_Name__c))
-	            	{
-		            	system.debug('***CaseStopWorkingController:setCaseToQueue - previously assigned to Queue');
-		                cs.OwnerId = mpQName2Queue.get(cs.Queue_Name__c).QueueId ;     
-		                system.debug('***CaseStopWorkingController:setCaseToQueue - assigned to Queue' +cs.OwnerId);     
-		                changeOwner(cs.Queue_Name__c);     
-		                pr = new PageReference('/'+objCaseId);
-		            }
-		            // Check if user selected a queue
-		        else if (selectedQueue != null && mpQName2Queue.containsKey(selectedQueue))
-		            {
-		            	system.debug('***CaseStopWorkingController:setCaseToQueue - user selected Queue');
-		                cs.OwnerId = mpQName2Queue.get(selectedQueue).QueueId;         
-		                changeOwner(selectedQueue);    
-		            }
-		            else
-		            {
-		            	system.debug('***CaseStopWorkingController:setCaseToQueue - User not previously with queue and no queue selected');
-		            }
-	            }
-	            
-	        else
-	        {
-	            showQueueSelection = true;
-	        }
-        }
-      
-       return pr;
-    }
-    
-    public pageReference setCaseToPrevQueue()
-    {
-    	pageReference pr = new PageReference('/'+objCaseId);  
-    	if (objCase.Queue_Name__c <> null && mpQName2Queue.containsKey(objCase.Queue_Name__c))
-    	{
-        	system.debug('***CaseStopWorkingController:setCaseToQueue - previously assigned to Queue');
-            objCase.OwnerId = mpQName2Queue.get(objCase.Queue_Name__c).QueueId ;     
-            system.debug('***CaseStopWorkingController:setCaseToQueue - assigned to Queue' +objCase.OwnerId);     
- 
-            changeOwner(objCase.Queue_Name__c);     
-             
-        }
-    	else
-    	{
-    		changeOwner('Support');
-    	}
-    	
-    	return pr;
-    }
- */   
     public pageReference setCaseToBilling()
     {
 		 pageReference pr = new PageReference('/'+objCaseId);  
@@ -268,7 +94,6 @@ public class CaseStopWorkingController
 			 objCase.Escalated_By__c = UserInfo.getName();
 			 objCase.Escalation_Date__c = System.now();	
 		 }
-//		 objCase.Do_Not_Send_Survey__c = true;
 
 		 changeOwner('Support - API');
 		 
@@ -311,24 +136,7 @@ public class CaseStopWorkingController
     public pageReference setCaseToDesignApproved()
     {
 		 pageReference pr = new PageReference('/'+objCaseId);  
-
-/*		 //Check if the division contains Tier 2 or Escalation
-         if(CURUSER.Division <> null 
-            && (CURUSER.Division.containsIgnoreCase ('Tier 2')
-         		|| CURUSER.Division.containsIgnoreCase ('Escalation'))
-         )
-         {
-         	changeOwner('Support - Design Support Approved');
-         }
-         else
-         {	
-         	showError = true;
-         	ApexPages.Message myMsg = new ApexPages.Message(ApexPages.Severity.ERROR,'Only Tier 2/Escalation Team can perform this action.');
-			ApexPages.addMessage(myMsg);
-			return null;
-         	
-         }
-*/		 
+	 
 		if (thisCase.Design_Approved_By__c == null)
 		 {
 			 objCase.Design_Approved_By__c= UserInfo.getName();
@@ -342,26 +150,7 @@ public class CaseStopWorkingController
     }
     public pageReference setCaseToDesignOOscope()
     {
-		 pageReference pr = new PageReference('/'+objCaseId);  
- /*
- //Check if the division contains Tier 2 or Escalation
-         
-         if(CURUSER.Division <> null 
-            && (CURUSER.Division.containsIgnoreCase ('Tier 2')
-         	|| CURUSER.Division.containsIgnoreCase ('Escalation'))
-         )
-         {
-         	 changeOwner('Support - Design Support Out Of Scope');
-         }
-         else
-         {	
-         	showError = true;
-         	ApexPages.Message myMsg = new ApexPages.Message(ApexPages.Severity.ERROR,'Only Tier 2/Escalation Team can perform this action.');
-			ApexPages.addMessage(myMsg);
-			return null;
-         	
-         }
-*/		 
+		 pageReference pr = new PageReference('/'+objCaseId);  		 
 		if (thisCase.Design_Denied_By__c == null)
 		 {
 			 objCase.Design_Denied_By__c= UserInfo.getName();
@@ -388,13 +177,6 @@ public class CaseStopWorkingController
 	 public pageReference setCaseToCancel()
     {
 		 pageReference pr = new PageReference('/'+objCaseId);    
-/*		 if (thisCase.Escalated_By__c == null)
-		 {
-			 objCase.Escalated_By__c = UserInfo.getName();
-			 objCase.Escalation_Date__c = Date.today();
-		 }
-*/		 
-//		 objCase.Do_Not_Send_Survey__c = true;
 		 objCase.Department__c = 'Cancellations';
 	     objCase.RecordTypeId =  Case.getSObjectType().getDescribe().getRecordTypeInfosByName().get('Cancellations').getRecordTypeId();
  
@@ -407,12 +189,7 @@ public class CaseStopWorkingController
  	 public pageReference setCaseToTrash()
     {
 		 pageReference pr = new PageReference('/'+objCaseId);    
-/*		 if (thisCase.Escalated_By__c == null)
-		 {
-			 objCase.Escalated_By__c = UserInfo.getName();
-			 objCase.Escalation_Date__c = Date.today();
-		 }
-*/		  
+	  
 		 objCase.Do_Not_Send_Survey__c = true;
 		 
 	     objCase.RecordTypeId =  Case.getSObjectType().getDescribe().getRecordTypeInfosByName().get('Trash').getRecordTypeId();
@@ -435,7 +212,6 @@ public class CaseStopWorkingController
 			return null;
          	
          }
-//		 objCase.Do_Not_Send_Survey__c = true;
 		 
 	     objCase.RecordTypeId =  Case.getSObjectType().getDescribe().getRecordTypeInfosByName().get('Migration Specialist').getRecordTypeId();
  		 objCase.Status = 'Open Unsolved';
@@ -467,8 +243,6 @@ public class CaseStopWorkingController
 		 
 		 objCase.RecordTypeId =  Case.getSObjectType().getDescribe().getRecordTypeInfosByName().get('Client Success').getRecordTypeId();
  		 objCase.Department__c = 'Support';
-
-//		 objCase.Do_Not_Send_Survey__c = true;
 		 objCase.Escalated__c = true;
 
 		 changeOwner('Support - Escalated Level 1');
@@ -479,12 +253,6 @@ public class CaseStopWorkingController
      public pageReference setCaseToLegal()
     {
 		 pageReference pr = new PageReference('/'+objCaseId);    
-/*		 if (thisCase.Escalated_By__c == null)
-		 {
-			 objCase.Escalated_By__c = UserInfo.getName();
-			 objCase.Escalation_Date__c = Date.today();
-		 }
-*/
 		 objCase.Do_Not_Send_Survey__c = true;
 		 objCase.Department__c = 'Legal/Abuse';
 
@@ -502,8 +270,6 @@ public class CaseStopWorkingController
 		 	objCase.Manager_Callback__c = true;
 		 	objCase.Manager_Callback_Date__c = System.Now();	
 		 }
-
-//		 objCase.Do_Not_Send_Survey__c = true;
 
 		 changeOwner('Support - Manager Callback');
 		 
@@ -576,14 +342,9 @@ public class CaseStopWorkingController
 	                	
 	                	list<Case> lstCaseToUpdate = new list<Case>();
 	                	objCase.setOptions(dml);
-//	                	system.debug(' *** testing  '+objCase.Escalated_By__c);
 	                	lstCaseToUpdate.add(objCase);
 	                	
-	                    database.update(lstCaseToUpdate, dml);
-	                    
-//	                    CaseHandle_Helper.case_StopWorking(objCase);
-	                    
-	                    
+	                    database.update(lstCaseToUpdate, dml);	                    
 	                }
 	                catch(Exception exc)
 	                {

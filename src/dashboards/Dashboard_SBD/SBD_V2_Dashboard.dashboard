@@ -51,6 +51,30 @@
     </middleSection>
     <rightSection>
         <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardTableColumn>
+                <column>CAMPAIGN_NAME</column>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <calculatePercent>true</calculatePercent>
+                <column>FORMULA1</column>
+                <decimalPlaces>2</decimalPlaces>
+                <showTotal>false</showTotal>
+                <sortBy>RowValueDescending</sortBy>
+            </dashboardTableColumn>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <footer>% of Opps Won vs Total Opps Associated with Campaign</footer>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>Business_Development/Campaign_Conversion</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <title>Campaign Conversion Rate</title>
+        </components>
     </rightSection>
     <runningUser>lauren.mcintyre@bigcommerce.com</runningUser>
     <textColor>#000000</textColor>

@@ -37,7 +37,6 @@ trigger AddToPriceBook on Product2 (after insert, after update) {
 					if(newp.Category__c == 'Base Products' )
 					{ zPB.Pricebook2Id = Label.Zuora_Base_Products_Pricebook;}
 					else {zPB.Pricebook2Id = Label.Zuora_PS;}
-	//				zPB.UnitPrice=objProduct.Advertised_Price__c;
 					zPB.UnitPrice=0.0;
 	    			zPB.UseStandardPrice=true;
 	    			zPB.IsActive=true;

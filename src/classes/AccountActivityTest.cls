@@ -12,10 +12,6 @@ private class AccountActivityTest {
       
       list<Account> lstAcct = td.getAccounts(true);
   
- //     objRec.Owner_ID__c = usr1.Id;
-   
- //    insert objRec;
-  
       
    Task tskPast = new Task(WhatId = lstAcct[0].Id, ActivityDate=System.today().addDays(-30),Subject='Test Task', Type = 'Call');
    insert tskPast;
@@ -34,13 +30,11 @@ private class AccountActivityTest {
    insert tskPresent;
    
    Test.StartTest();
- //  UpdateOwner reassign = new UpdateOwner();
- //  ID batchprocessid = Database.executeBatch(reassign);
  
         string query ='SELECT AccountId, WhoId,ActivityDate, Subject, CallDisposition, Type, OwnerId, ToutApp__Tout_Replied__c  FROM Task where AccountID <> null and (CreatedDate = LAST_90_DAYS)  ' ;
-// 		query = query + Label.ROE_AccountActivity_Query;
+
  		if(Test.isRunningTest()){   query = query + ' limit 20';}
-        //CreatedDate < LAST_N_DAYS:90 and Owner_Team__c = \'Outbound\'  limit 100 ';
+
         system.Debug('#query# '+query); 
       
       

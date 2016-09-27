@@ -11,8 +11,6 @@ public with sharing class ConvertLeadClass {
     list<Product2> pd {get;set;}
     public Task t {get; set;}
     public OpportunityLineItem opp;
-    //public boolean status = true;
-           
 
    	public list<SelectOption> getProductList(){
    		list<SelectOption> options = new list<SelectOption>();
@@ -59,7 +57,6 @@ public with sharing class ConvertLeadClass {
 	        LeadStatus convertStatus = [Select Id, MasterLabel from LeadStatus where IsConverted=true limit 1]; 
 	        leadConv.setConvertedStatus(convertStatus.MasterLabel);
 	        Database.LeadConvertResult leadconvertresult = Database.convertlead(leadConv);
-	        //if(status)
 	        accountId = leadconvertresult.getAccountId();
 	        Account accLeadId = [Select Id from Account where Id =: accountId];
 	        accLeadId.Converted_LeadId__c = customleadId;
@@ -98,7 +95,6 @@ public with sharing class ConvertLeadClass {
      //Test Class to test the controller//
      public static testMethod void myTest() {
 	 	Lead lead = new Lead();
-	 	//lead.OwnerId = '00530000004Vx3h';
 		lead.FirstName = 'Test';
 		lead.LastName = 'Student';
 		lead.Company = 'Student';
@@ -109,7 +105,6 @@ public with sharing class ConvertLeadClass {
 	 	
 	    Database.LeadConvert lc = new database.LeadConvert();
 	    Task t = new Task();
-	    //t.OwnerId = '00530000004Vx3h';
 	    t.Subject ='Call';
 	    t.Status = 'In Progress';
 	    t.WhatId =lc.getAccountId();
@@ -130,7 +125,6 @@ public with sharing class ConvertLeadClass {
 	    opl.TotalPrice = 20.00;
 	    
 	    Database.SaveResult Task = Database.Insert(t);
-	    //Database.SaveResult OpportunityLineItem = Database.Insert(opl);
 	    lc.setLeadId(lead.id);
 	    lc.setOwnerId(t.OwnerId);
 	    Id leadid = lc.getLeadId();	
@@ -150,8 +144,6 @@ public with sharing class ConvertLeadClass {
 		insert acc;
 		lcp1.pb2 = [Select id,UnitPrice from PricebookEntry limit 1];
 		lcp1.acc = string.valueOf(acc.Id);
-		//lcp1.status = false;
-		//lcp1.accountId = string.valueOf(acc.Id);
 		lcp1.getProductList();
 		lcp1.getnewTask();
 		lcp1.convert();
