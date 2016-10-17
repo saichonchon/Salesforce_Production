@@ -39,13 +39,6 @@
         <relatedTable>Activity</relatedTable>
         <relatedTableJoinColumn>Account</relatedTableJoinColumn>
     </crossFilters>
-    <filter>
-        <criteriaItems>
-            <column>Account.Opportunities$Primary_Campaign_Name__c</column>
-            <operator>equals</operator>
-            <value>Move to New Pricing - Clean Contacts to Call</value>
-        </criteriaItems>
-    </filter>
     <format>Tabular</format>
     <name>Pricing Upgrade Opps Called</name>
     <params>

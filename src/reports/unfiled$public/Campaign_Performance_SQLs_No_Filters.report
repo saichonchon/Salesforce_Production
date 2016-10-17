@@ -39,22 +39,12 @@
     </columns>
     <filter>
         <criteriaItems>
-            <column>Opportunity$Primary_Campaign_Name__c</column>
-            <operator>contains</operator>
-            <value>prospects</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>Opportunity.OpportunityTeamMembers$TeamMemberRole</column>
             <operator>contains</operator>
             <value>Qualifier</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Opportunity$Primary_Campaign_Name__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>Opportunity$Owner_Team__c</field>

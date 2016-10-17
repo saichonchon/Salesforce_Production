@@ -40,9 +40,6 @@
         <field>Opportunity.OpportunityTeamMembers*OpportunityTeamMember$Team_Member_Created_Date__c</field>
     </columns>
     <columns>
-        <field>Opportunity$Primary_Campaign_Name__c</field>
-    </columns>
-    <columns>
         <field>Opportunity$Contact__c</field>
     </columns>
     <columns>
@@ -82,16 +79,6 @@
             <column>Opportunity.OpportunityTeamMembers$TeamMemberRole</column>
             <operator>contains</operator>
             <value>Qualifier</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity$Primary_Campaign_Name__c</column>
-            <operator>contains</operator>
-            <value>prospect</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity$Primary_Campaign_Name__c</column>
-            <operator>notContain</operator>
-            <value>mkt,hubspot,shop.org,q,acq,shoporg</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity$StageName</column>

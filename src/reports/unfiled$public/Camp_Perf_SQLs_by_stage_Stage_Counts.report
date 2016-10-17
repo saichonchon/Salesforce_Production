@@ -27,9 +27,6 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>Opportunity$Primary_Campaign_Name__c</field>
-    </columns>
-    <columns>
         <field>Opportunity.OpportunityTeamMembers$TeamMemberRole</field>
     </columns>
     <columns>
@@ -83,11 +80,6 @@
             <value>Qualifier</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity$Primary_Campaign_Name__c</column>
-            <operator>contains</operator>
-            <value>ACQ.prospects</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>Opportunity$Status__c</column>
             <operator>notEqual</operator>
             <value>Cancelled,Expired,Fraud,Suspended,Terminated,Rejected,Removed</value>
@@ -96,11 +88,6 @@
             <column>Opportunity$StageName</column>
             <operator>notEqual</operator>
             <value>Purchased,Cancelled,Closed Won,Closed Lost,Terminated,Removed</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity$Primary_Campaign_Name__c</column>
-            <operator>notContain</operator>
-            <value>gobig,ent-,ent -</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>

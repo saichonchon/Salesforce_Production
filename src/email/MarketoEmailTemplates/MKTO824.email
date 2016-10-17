@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Post Paid</title>
+
+<style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600');  /*Calling our web font*/
+    /* Some resets and issue fixes */
+    #outlook a { padding:0; }
+    body{ background: #D9D9DA; width:100% !important; -webkit-text; size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0; }
+    .ReadMsgBody { width: 100%; }
+    .ExternalClass {width:100%;}
+    .backgroundTable {margin:0 auto; padding:0; width:100% !important; }
+    table { border:  none; }
+    table td {border-collapse: collapse;}
+    .ExternalClass * {line-height: 115%;}
+    /* End reset */
+    /* General Styles */
+    #EyebrowContainer { color: #afb4be; font-family: 'Source Sans Pro', sans-serif; font-size: 12px; font-weight: 600; line-height: 45px; letter-spacing: 2px; }
+    #hero { background: #f7f7f7 !important; }
+    #heroImage img { margin: 0 auto !important; text-align: center !important; }
+    #header * { color: #34313f !important; }
+    h1 { color: #34313f !important; font-family: 'Source Sans Pro', sans-serif; font-size: 35px; font-weight: normal; line-height: 45px; text-align: center; }
+    h2 { color: #34313f; font-family: 'Source Sans Pro', sans-serif; font-size: 22px; font-weight: normal; }
+    h3 { color: #34313f; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; font-weight: normal; line-height: 30px; letter-spacing: 0.1px; text-align: left; }
+    p { color: #34313f; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; font-weight: 300; line-height: 28px; letter-spacing: 0.1px; }
+    strong { font-weight: bold; }
+    li { color: #34313f; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; font-weight: 300; line-height: 24px; letter-spacing: 0.1px; padding: 6px 12px; text-align: left; }
+    a { color: #4B71FC !important; outline: none !important; text-decoration: none !important; }
+    a:hover, a:focus, a:visited { color: #3F5CD6 !important; }
+    img { border: none; outline: none; }
+    .type-small, .type-small li { font-size: 14px; line-height: 24px; }
+    .cta { background:#4b71fc !important;  border-radius:25px;  color:#ffffff !important;  font-size:13px;  text-decoration:none;  text-transform:uppercase !important; }
+    .cta a { color: #ffffff !important; font-size:14px; font-weight:bold; letter-spacing: 1.2px; line-height: 16px; text-decoration: none !important;}
+    .cta a > font { color: #ffffff !important; }
+    .cta:hover, .cta:focus { background: #3F5CD6 !important; }
+    .cta:hover a, .cta:focus a { color: #ffffff !important; text-decoration: none; }
+    #closing p { color: #34313f; font-size: 16px; font-weight: 400; line-height: 30px; letter-spacing: 0.1px; text-align: center; }
+    #footer p { color: #34313f; font-size: 16px; font-weight: 400; line-height: 30px; letter-spacing: 0.1px; text-align: center; }
+    #footer p small, #footer p small a { color: #86848c; font-size: 12px; font-weight: 400; line-height: 24px; }
+    #footer .social-links,
+    #footer .social-links a{ color: #34313f; font-size: 13px; font-weight: normal; font-style: normal; font-stretch: normal; text-align: center; }
+    #footer .social-links ul { margin: 0; padding: 0; }
+    #footer .social-links ul li { display: inline; list-style: none; padding: 0px 15px; }
+    .deviceWidth.twoColumn { width: 48%; }
+
+    /* These are default desktop media queries */
+    @media (min-width: 751px){
+    table td.content { padding:  30px 100px 50px !important; }
+    }
+    /* These are our tablet/medium screen media queries */
+    @media screen and (max-width: 750px){
+    table td.content { padding: 30px !important; }
+    #Logo { padding:  17px 10px 0 30px !important; }
+    #HeadlineColumn { padding: 0 30px !important; }
+    .border { width: 100%; max-width: 100%; }
+    .border td { background: #afb4be !important; border-top: 1px solid #afb4be;}
+    .border td:first-child,
+    .border td:last-child { background: none !important; border: none !important; width: 8%;}
+    /* Hide stuff */
+    *[class="hide"] {display:none !important;}
+    
+    /* This sets elements to 100% width and fixes the height issues too, a god send */
+    *[class="100p"] {width:100% !important; height:auto !important;}
+    
+    /* Centers content on mobile */
+    *[class="center"] {text-align:center !important; width:100% !important; height:auto !important;}
+    }
+    @media (max-width: 479px) {
+      .deviceWidth.twoColumn, 
+      table.content-table { width: 100% !important; }      
+    }
+    @media screen and (max-width: 390px){
+    table td.content { padding: 15px !important; }
+    #hero { background: #f7f7f7 !important; padding-top: 0; }
+    #Logo { padding:  17px 10px 0 15px !important; }
+    #HeadlineColumn { padding: 0 15px !important; }
+    .border { width: 100%; max-width: 100%; }
+    .border td { background: #afb4be !important; border-top: 1px solid #afb4be;}
+    .border td:first-child,
+    .border td:last-child { background: none !important; border: none !important; width: 8%;}
+    .mobile-top-padding { height: 25px !important; }
+    /* Hide stuff */
+    *[class="hide"] {display:none !important;}
+    
+    /* This sets elements to 100% width and fixes the height issues too, a god send */
+    *[class="100p"] {width:100% !important; height:auto !important;}
+    
+    /* Centers content on mobile */
+    *[class="center"] {text-align:center !important; width:100% !important; height:auto !important;}
+    }
+</style>
+</head>
+<body style="padding:0; margin:0; " bgcolor="#D9D9DA" ><!-- Preview text (text which appears right after subject) -->
+<div class="mktEditable" id="preview-text" style="display:none; color:#ffffff; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; " >Get a $100 credit by setting up your Google AdWords account and spending $25 &mdash; it&rsquo;s that easy.</div>
+<table border="0" cellpadding="0" cellspacing="0" style="margin:0; padding:0; border:none !important; " width="100%" class="backgroundTable" ><tr ><td align="center" valign="top" ><table border="0" cellspacing="0" cellpadding="0" class="hide" width="800">
+<tr>
+<td height="20"></td>
+</tr>
+</table>
+<table border="0" width="800" cellspacing="0" cellpadding="0" class="100p" style="border:none !important; " ><tr>
+<td border="0" height="67" class="mobile-top-padding" style="background: #f7f7f7; border: none !important; border-color: #f7f7f7;"></td>
+</tr>
+<tr ><td border="0" id="hero" bgcolor="#F7F7F7" width="800" valign="top" class="100p" style="background:#f7f7f7; border:none !important; border-color:#f7f7f7; " ><!--[if gte mso 9]>
+                  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="padding-top: 0; width:800px;">
+                  <v:fill color="#f7f7f7" />
+                  <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+                <![endif]-->
+<div ><table width="800" border="0" cellspacing="0" cellpadding="0" class="100p" ><tr ><td valign="top" ><table border="0" cellspacing="0" cellpadding="0" width="800" class="100p" ><tr ><td id="Logo" align="left" width="49%" class="100p deviceWidth twoColumn" style="padding: 0 0 0 88px"><img src="http://grow.bigcommerce.com/rs/695-JJT-333/images/BigCommerce-logo-dark-180.png" alt="Logo" border="0" style="display:block; max-width: 98%"></td>
+<td width="49%" id="EyebrowContainer" class="hide deviceWidth twoColumn" align="right" style="color:#afb4be; font-size:12px; font-weight:600; line-height:45px; letter-spacing:2px; padding:0 88px 0 0; text-transform:uppercase; " ><div class="mktEditable" id="eyebrow" mktoname="Eyebrow" ></div>
+</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" width="800" class="100p" ><tr ><td id="HeadlineColumn" align="center" width="100%" class="100p" style="padding:25px 88px; text-align:center !important; vertical-align:top; " ><div class="mktEditable" id="headline" mktoname="Headline" ><h1 style="color: #34313f; font-family: 'Source Sans Pro', Arial, sans-serif; font-size: 35px; font-weight: normal; line-height: 45px; text-align: center;"><span face="'Source Sans Pro', Arial, sans-serif" style="font-family: 'Source Sans Pro', Arial, sans-serif;"><span face="'Source Sans Pro', Arial, sans-serif" style="font-family: 'Source Sans Pro', Arial, sans-serif;">Get your $100 Google Shopping credit </span></span></h1></div>
+<table class="body" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; display:inline-block; width:260px; " ><tbody ><tr ><td id="header-cta" class="cta" valign="middle" align="center" height="40" width="260" style="text-decoration:none; font-size:13px; color:#ffffff !important; background:#4b71fc !important; border-radius:25px; text-transform:uppercase !important; " ><div class="mktEditable" id="primaryCTA" mktoname="Primary CTA" ><a href="https://www.bigcommerce.com/apps/google-shopping/?utm_medium=email&amp;utm_source=engagement" style="color: #ffffff !important; font-family: 'Source Sans Pro', Arial, sans-serif; text-decoration: none; display: block; font-size: 14px;" target="_blank">Install Google Shopping</a></div>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tr>
+<td class="spacer" height="20"></td>
+</tr>
+</table>
+</td>
+<!-- End HeroImage column --></tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!--[if gte mso 9]>
+                </v:textbox>
+                </v:rect>
+                <![endif]--></td>
+</tr>
+</table>
+<table width="800" border="0" cellspacing="0" cellpadding="20" bgcolor="#FFFFFF" class="100p" ><tr ><td align="left" class="content" style="color:#34313f; font-size:16px; font-weight:300; line-height:28px; letter-spacing:0.1px; padding:30px; " ><!--[if gte mso 9]>
+                <div style="padding: 50px 100px">
+                  <![endif]-->
+<div class="mktEditable" id="bodyHeadline" mktoname="Body Headline" ><h3 style="font-family: 'Source Sans Pro', Arial, sans-serif;">Hey {{lead.First Name:default=there}},</h3></div>
+<div class="mktEditable" id="bodyContent" mktoname="Body Content" ><p style="font-family: 'Source Sans Pro', Arial, sans-serif !important;">The shopping season is coming, and we want to help you drive more holiday sales. We&rsquo;ve partnered with Google to improve our Google Shopping integration and provide you with a $100 AdWords credit*. To get the free credit added to your account, simply set up a Google AdWords account and spend $25. <em><strong>Please hurry, this offer is only available for a limited time</strong>.</em></p>
+<h3 style="font-family: 'Source Sans Pro', Arial, sans-serif !important;"><strong>Here's how to redeem your credit:</strong></h3>
+<ol style="font-family: 'Source Sans Pro', Arial, sans-serif !important;">
+<li>Visit <a style="word-break: break-all; text-decoration: none;" href="https://www.bigcommerce.com/apps/google-shopping/?utm_medium=email&amp;utm_source=engagement" target="_blank">https://www.bigcommerce.com/apps/google-shopping/</a> and connect the app to your BigCommerce store</li>
+<li>Follow the in app instructions to setup your BigCommerce products on Google Shopping</li>
+<li>Create a Shopping Campaign in AdWords to advertise your products; or <a href="https://support.google.com/merchants/answer/2660968?hl=en" style="text-decoration: none !important; color: #4b71fc !important;">read this article to learn more</a></li>
+<li>Navigate to the Billing menu of AdWords to input your promotional code:<strong> {{lead.Google Promo Code:default=edit me}}</strong>, or <a style="color: #4b70fc; text-decoration: none;" href="https://support.google.com/adwords/answer/1703648?" target="_blank" id="">follow the directions here</a></li>
+<li>Make sure your AdWords account is linked to the app via the Account Linking menu</li>
+</ol>
+<h3 style="font-family: 'Source Sans Pro', Arial, sans-serif !important;"><strong>Can I participate if I sell items that Google Shopping doesn&rsquo;t support?</strong></h3>
+<p style="font-family: 'Source Sans Pro', Arial, sans-serif !important;">Google Shopping prohibits certain items from being advertised, but does not block merchants entirely. That means you can still use Google Shopping to drive traffic by advertising shirts, hats and other non-prohibited items that you may sell.</p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; display: inline-block; padding-bottom: 15px; padding-top: 5px; width: 250px;">
+<tbody>
+<tr>
+<td class="cta" valign="middle" align="center" height="40" width="250" style="text-decoration: none; font-size: 14px; color: #ffffff !important; background: #4b70fc !important; border-radius: 25px !important; text-transform: uppercase;">
+<div>
+<p style="margin: 0 0; color: #ffffff !important; text-align: center !important;"><a href="https://www.bigcommerce.com/apps/google-shopping/?utm_medium=email&amp;utm_source=engagement" style="color: #ffffff !important; font-size: 14px; font-weight: bold !important; letter-spacing: 1.2px; line-height: 16px; text-decoration: none !important;" target="_blank"> Install Google Shopping </a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<br /></div>
+<div class="mktEditable" id="secondaryCTA" mktoname="Secondary CTA" ><p class="type-small" style="font-family: 'Source Sans Pro', Arial, sans-serif; font-size: 14px;"><strong style="font-weight: bold;">*Terms and conditions for this offer:</strong></p>
+<p class="type-small" style="font-family: 'Source Sans Pro', Arial, sans-serif; font-size: 14px;">In the below terms, &ldquo;AdWords&rdquo; may mean AdWords or AdWords Express, as appropriate.</p>
+<ol class="type-small" style="font-family: 'Source Sans Pro', Arial, sans-serif; font-size: 14px;">
+<li style="font-size: 14px;">Offer available to customers with a billing address in the United States only. One promotional code per advertiser.</li>
+<li style="font-size: 14px;">To activate this offer: <a style="text-decoration: none !important;" href="https://support.google.com/adwords/answer/1703648">Enter the promotional code</a> in your account before . In order to participate in this offer, you must enter the code within 14 days of your first ad impression being served from your first AdWords account.</li>
+<li style="font-size: 14px;">To earn the credit: After entering the code, your advertising campaigns must accrue costs of at least $25.00, excluding any taxes, within 30 days. Making a payment of $25.00 is not sufficient. The tracking of advertising costs towards $25.00 begins after you've entered the code.</li>
+<li style="font-size: 14px;">Once 2 and 3 are completed, the credit will typically be applied within 5 days to the Billing Summary of your account.</li>
+<li style="font-size: 14px;">Credits apply to future advertising costs only. Credits cannot be applied to costs accrued before the code was entered.</li>
+<li style="font-size: 14px;">You won&rsquo;t receive a notification once your credit is used up and any additional advertising costs will be charged to your form of payment. If you don&rsquo;t want to continue advertising, you can pause or delete your campaigns at any time.</li>
+<li style="font-size: 14px;">Your account must be successfully billed by AdWords and remain in good standing in order to qualify for the promotional credit.</li>
+<li style="font-size: 14px;">Full terms and conditions can be found here <a style="text-decoration: none !important;" href="http://www.google.com/adwords/coupons/terms.html">http://www.google.com/adwords/coupons/terms.html</a>.</li>
+</ol></div>
+<!--[if gte mso 9]>
+                </div>
+                <![endif]--></td>
+</tr>
+</table>
+<table width="800" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" height="1" class="border">
+<tr>
+<td width="15%"></td>
+<td align="center" style="background: #afb4be; font-size: 1px; line-height: 0;">&nbsp;</td>
+<td width="15%"></td>
+</tr>
+</table>
+<table id="closing" width="800" border="0" cellspacing="0" cellpadding="20" bgcolor="#FFFFFF" class="100p" style="padding-top:20px; " ><tr ><td align="center" style="font-size:16px; color:#34313f; text-align:center; " ><div class="mktEditable" id="closingCTA" mktoname="Closing CTA" ><p><span face="'Source Sans Pro', Arial, sans-serif" style="font-family: 'Source Sans Pro', Arial, sans-serif;"><a href="http://www.bigcommerce.com?utm_medium=email&amp;utm_source=footer&amp;utm_campaign=trial-onboarding"><img class="logo" src="http://grow.bigcommerce.com/rs/695-JJT-333/images/bigcommerce-icon-dark-29x29.png" alt="BigCommerce Icon" style="margin: 0 auto -7px;" /></a> &nbsp;&nbsp;&nbsp;&nbsp; We're here to help. Call us at 1-844-632-8912.</span></p>
+<br /></div>
+</td>
+</tr>
+</table>
+
+<table id="footer" width="800" border="0" cellspacing="0" bgcolor="#FFFFFF" class="100p" style="padding-bottom: 50px;">
+<tr>
+<td align="center" style="color: #34313f; font-size: 13px; font-weight: normal; font-style: normal; font-stretch: normal; padding-bottom: 15px; text-align: center;">
+<p><font face="'Source Sans Pro', Arial, sans-serif"><a href="https://twitter.com/Bigcommerce" style="color: #34313f !important; font-size: 13px; font-weight: normal; text-decoration: none;">Twitter</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.facebook.com/BigCommerce" style="color: #34313f !important; font-size: 13px; font-weight: normal; text-decoration: 
+none;">Facebook</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.linkedin.com/company/bigcommerce" style="color: #34313f !important; font-size: 13px; font-weight: normal; text-decoration: none;">LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.youtube.com/user/bigcommercedotcom" style="color: #34313f !important; font-size: 13px; font-weight: normal; 
+text-decoration: none;">YouTube</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.bigcommerce.com/pinterest/" style="color: #34313f !important; font-size: 13px; font-weight: normal; text-decoration: none;">Pinterest</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://plus.google.com/+bigcommerce" style="color: #34313f !important; font-size: 13px; font-weight: normal; 
+text-decoration: none;">Google+</a></font></p>
+<p style="color: #86848c; font-size: 12px; font-weight: 400; line-height: 24px; text-align: center"><font face="'Source Sans Pro', Arial, sans-serif"><small>&copy; 2016 BigCommerce 11305 Four Points Dr., Building 2, Floor 3, Austin TX 78726</small></font></p>
+<p style="color: #86848c; font-size: 12px; font-weight: 400; line-height: 24px; text-align: center"><font face="'Source Sans Pro', Arial, sans-serif"><small>You received this email because you are subscribed to Surveys from BigCommerce.</small></font></p>
+<p style="color: #86848c; font-size: 12px; font-weight: 400; line-height: 24px; text-align: center"><font face="'Source Sans Pro', Arial, sans-serif"><small><a style="color: #86848c !important; text-decoration: none !important;" href="http://grow.bigcommerce.com/subscribe-to-bigcommerce-blog.html?utm_source=footer&utm_medium=email">Subscribe to our Blog</a> &nbsp;&nbsp;| &nbsp;&nbsp; <a 
+style="color: #86848c !important; text-decoration: none !important;" href="http://grow.bigcommerce.com/unsubscribe.html?utm_source=footer&utm_medium=email">Unsubscribe</a> &nbsp;&nbsp;| &nbsp;&nbsp; <a style="color: #86848c !important; text-decoration: none !important;" href="{{system.viewAsWebpageLink}}">View as webpage</a></small></font></p>
+</td>
+</tr>
+</table>
+<table width="800" class="100p" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="50"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

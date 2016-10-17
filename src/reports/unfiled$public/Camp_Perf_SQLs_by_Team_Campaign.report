@@ -31,9 +31,6 @@
         <field>Opportunity$StageName</field>
     </columns>
     <columns>
-        <field>Opportunity$Primary_Campaign_Name__c</field>
-    </columns>
-    <columns>
         <field>Opportunity$CreatedDate</field>
     </columns>
     <columns>
@@ -96,11 +93,6 @@
             <value>Qualifier</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity$Primary_Campaign_Name__c</column>
-            <operator>contains</operator>
-            <value>acq.prospects</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>Opportunity$Campaign.Parent</column>
             <operator>notContain</operator>
             <value>gobig,ent-,ent -</value>
@@ -109,6 +101,11 @@
             <column>Opportunity$CreatedDate</column>
             <operator>equals</operator>
             <value>LAST_90_DAYS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Campaign</column>
+            <operator>contains</operator>
+            <value>acq.prospect</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>
@@ -133,8 +130,6 @@
     <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>Opportunity$CreatedDate</dateColumn>
-        <endDate>2016-04-22</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2016-04-22</startDate>
+        <interval>INTERVAL_THISWEEK</interval>
     </timeFrameFilter>
 </Report>

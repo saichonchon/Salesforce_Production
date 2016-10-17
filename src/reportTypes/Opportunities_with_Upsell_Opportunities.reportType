@@ -307,11 +307,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Primary_Campaign_Name__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>CancellationRequestDate__c</field>
             <table>Opportunity</table>
         </columns>
@@ -1171,11 +1166,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>CancellationDate__c</field>
-            <table>Opportunity.Opportunities__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Primary_Campaign_Name__c</field>
             <table>Opportunity.Opportunities__r</table>
         </columns>
         <columns>

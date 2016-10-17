@@ -44,7 +44,7 @@
             <criteriaItems>
                 <column>Support_Survey__c$Name</column>
                 <operator>notEqual</operator>
-                <value>036798,055111</value>
+                <value>036798,055111,088345</value>
             </criteriaItems>
             <criteriaItems>
                 <column>Support_Survey__c$Case__c</column>
@@ -91,7 +91,7 @@
             <criteriaItems>
                 <column>CUST_NAME</column>
                 <operator>notEqual</operator>
-                <value>036798,055111</value>
+                <value>036798,055111,088345</value>
             </criteriaItems>
             <criteriaItems>
                 <column>FK_NAME</column>
@@ -138,7 +138,7 @@
             <criteriaItems>
                 <column>CUST_NAME</column>
                 <operator>notEqual</operator>
-                <value>036798,055111</value>
+                <value>036798,055111,088345</value>
             </criteriaItems>
         </filter>
         <format>Summary</format>

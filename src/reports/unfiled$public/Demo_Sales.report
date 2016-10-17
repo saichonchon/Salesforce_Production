@@ -44,9 +44,6 @@
         <field>Opportunity$Closed_Lost_Reason_Detail__c</field>
     </columns>
     <columns>
-        <field>Opportunity$Primary_Campaign_Name__c</field>
-    </columns>
-    <columns>
         <field>Opportunity$Original_Plan_Purchased__c</field>
     </columns>
     <columns>
@@ -64,11 +61,6 @@
     </columns>
     <filter>
         <booleanFilter>(1) AND 2</booleanFilter>
-        <criteriaItems>
-            <column>Opportunity$Primary_Campaign_Name__c</column>
-            <operator>contains</operator>
-            <value>demo</value>
-        </criteriaItems>
         <criteriaItems>
             <column>Opportunity.OpportunityTeamMembers*OpportunityTeamMember$Team_Member_Created_Date__c</column>
             <operator>greaterThan</operator>

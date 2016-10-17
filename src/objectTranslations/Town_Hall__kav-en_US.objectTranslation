@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Town Hall</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Town Halls</value>
+    </caseValues>
+    <fields>
+        <label><!-- Town Hall --></label>
+        <name>Town_Hall__c</name>
+    </fields>
+    <layouts>
+        <layout>Town Hall Layout</layout>
+        <sections>
+            <label><!-- Town Hall --></label>
+            <section>Town Hall</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

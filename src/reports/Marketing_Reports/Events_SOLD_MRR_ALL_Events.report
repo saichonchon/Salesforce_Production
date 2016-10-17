@@ -40,7 +40,7 @@
         <criteriaItems>
             <column>STAGE_NAME</column>
             <operator>equals</operator>
-            <value>Purchased,Closed Won</value>
+            <value>Purchased,Closed Won,Suspended,Cancelled,Terminated</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>

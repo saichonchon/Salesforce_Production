@@ -163,7 +163,10 @@
                 <field>iDev_Partner_ID__c</field>
             </layoutItems>
             <layoutItems>
-                <height>25</height>
+                <emptySpace>true</emptySpace>
+            </layoutItems>
+            <layoutItems>
+                <height>30</height>
                 <page>ApprovePartnerButton</page>
                 <showLabel>true</showLabel>
                 <showScrollbars>false</showScrollbars>
@@ -183,6 +186,10 @@
                 <behavior>Edit</behavior>
                 <field>Revenue_Share__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Revenue_Share_Flat_Fee__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
@@ -196,12 +203,14 @@
                 <behavior>Edit</behavior>
                 <field>BillingAddress</field>
             </layoutItems>
+        </layoutColumns>
+        <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Description</field>
             </layoutItems>
         </layoutColumns>
-        <style>OneColumn</style>
+        <style>TwoColumnsLeftToRight</style>
     </layoutSections>
     <layoutSections>
         <customLabel>false</customLabel>

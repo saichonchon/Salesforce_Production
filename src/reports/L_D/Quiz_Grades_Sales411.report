@@ -4,6 +4,12 @@
         <field>lmscons__Transcript_Line__c$lmscons__Training_User_License__c.lmscons__User__c</field>
     </columns>
     <columns>
+        <field>lmscons__Transcript_Line__c$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>lmscons__Transcript_Line__c$lmscons__Completion_Date__c</field>
+    </columns>
+    <columns>
         <field>lmscons__Transcript_Line__c$lmscons__Quiz__c</field>
     </columns>
     <columns>
@@ -29,8 +35,8 @@
     <reportType>Assignments_w_Lookup_Data_CUSTOM__c</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
-    <sortColumn>lmscons__Transcript_Line__c$lmscons__Score__c</sortColumn>
-    <sortOrder>Desc</sortOrder>
+    <sortColumn>lmscons__Transcript_Line__c$CreatedDate</sortColumn>
+    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>lmscons__Transcript_Line__c$CreatedDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

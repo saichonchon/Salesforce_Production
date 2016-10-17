@@ -44,9 +44,6 @@
         <field>Opportunity$Closed_Lost_Reason_Detail__c</field>
     </columns>
     <columns>
-        <field>Opportunity$Primary_Campaign_Name__c</field>
-    </columns>
-    <columns>
         <field>Opportunity$Original_Plan_Purchased__c</field>
     </columns>
     <columns>
@@ -77,7 +74,7 @@
         <criteriaItems>
             <column>Opportunity.OpportunityTeamMembers$Name</column>
             <operator>equals</operator>
-            <value>Jeremy Peabody</value>
+            <value>Jeremy Peabody,Pierce Matthews</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>

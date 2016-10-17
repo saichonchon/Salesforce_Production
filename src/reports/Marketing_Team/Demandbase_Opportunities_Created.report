@@ -53,17 +53,7 @@
     <columns>
         <field>ROLLUP_DESCRIPTION</field>
     </columns>
-    <columns>
-        <field>Opportunity.Primary_Campaign_Name__c</field>
-    </columns>
     <description>report showing the # of opportunities created from the Demandbase Watch List with Activity campaign</description>
-    <filter>
-        <criteriaItems>
-            <column>Opportunity.Primary_Campaign_Name__c</column>
-            <operator>equals</operator>
-            <value>ACQ.PrintAds.Demandbase Watchlist w/Activity 2016</value>
-        </criteriaItems>
-    </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>

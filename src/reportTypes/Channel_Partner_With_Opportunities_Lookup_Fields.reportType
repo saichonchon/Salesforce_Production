@@ -1990,11 +1990,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Primary_Campaign_Name__c</field>
-            <table>Account.ClientOpportunities__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Campaign</field>
             <table>Account.ClientOpportunities__r</table>
         </columns>

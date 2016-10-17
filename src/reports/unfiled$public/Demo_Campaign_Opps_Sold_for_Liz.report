@@ -46,11 +46,6 @@
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Opportunity$Primary_Campaign_Name__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
         <field>Opportunity$Owner_Team__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>

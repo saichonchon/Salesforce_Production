@@ -122,11 +122,6 @@
         <field>Opportunity$Campaign.Parent</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Opportunity$Primary_Campaign_Name__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
     <name>Camp Perf All SDR SQLs by Parent Campaig</name>
     <params>
         <name>co</name>

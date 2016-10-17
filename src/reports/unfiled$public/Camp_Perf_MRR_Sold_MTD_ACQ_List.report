@@ -32,9 +32,6 @@
         <field>Opportunity$MonthlyRecurringRevenue__c</field>
     </columns>
     <columns>
-        <field>Opportunity$Primary_Campaign_Name__c</field>
-    </columns>
-    <columns>
         <field>Opportunity$CloseDate</field>
     </columns>
     <columns>
@@ -102,11 +99,6 @@
             <column>Opportunity$Campaign.Parent</column>
             <operator>contains</operator>
             <value>ACQ.Prospects</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity$PurchaseDate__c</column>
-            <operator>equals</operator>
-            <value>THIS_MONTH</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity$RecordType</column>

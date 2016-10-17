@@ -1,14 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
-    <aggregates>
-        <calculatedFormula>Opportunity.TrailingGMVCount__c:SUM*Opportunity.Strategic_Partner__c.Revenue_Share__c:SUM</calculatedFormula>
-        <datatype>currency</datatype>
-        <developerName>FORMULA1</developerName>
-        <isActive>true</isActive>
-        <isCrossBlock>false</isCrossBlock>
-        <masterLabel>Rev Share</masterLabel>
-        <scale>2</scale>
-    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_64771068</developerName>
+        <masterLabel>Campaign Type</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Opportunity$Campaign</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Highrisk: iPayment</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bigpay: HighRisk</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bigpay: Other International</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bigpay: PayPal International</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bigpay: PayPal USA &amp; not using partner gateway</sourceValue>
+            </sourceValues>
+            <value>Payments</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>HighRisk: BlueCheck</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ShipperHQ</sourceValue>
+            </sourceValues>
+            <value>Apps</value>
+        </values>
+        <values>
+            <value>BC Products</value>
+        </values>
+    </buckets>
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
         <backgroundColor2>#FFFFFF</backgroundColor2>
@@ -16,12 +45,12 @@
         <chartSummaries>
             <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>Opportunity$TrailingGMVCount__c</column>
+            <column>Opportunity$Revenue_Share__c</column>
         </chartSummaries>
         <chartType>VerticalColumn</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Opportunity$Strategic_Partner__c</groupingColumn>
+        <groupingColumn>Opportunity$Campaign</groupingColumn>
         <location>CHART_TOP</location>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
@@ -35,15 +64,11 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity$Revenue_Share__c</field>
+    </columns>
+    <columns>
         <field>Opportunity$Name</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Opportunity$TrailingGMVCount__c</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Opportunity$Amount</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -70,12 +95,12 @@
     </groupingsAcross>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Opportunity$Owner</field>
+        <field>BucketField_64771068</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Opportunity$Strategic_Partner__c</field>
+        <field>Opportunity$Campaign</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>SBD Closed Won - YTD</name>

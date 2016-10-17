@@ -28,9 +28,6 @@
         <field>Opportunity$Temperature__c</field>
     </columns>
     <columns>
-        <field>Opportunity$Primary_Campaign_Name__c</field>
-    </columns>
-    <columns>
         <field>Opportunity$Acct_Active_Store_Count__c</field>
     </columns>
     <columns>
@@ -165,11 +162,6 @@
             <operator>equals</operator>
             <value>Opportunity.Upgrade_Store</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity$Primary_Campaign_Name__c</column>
-            <operator>contains</operator>
-            <value>Move to New Pricing</value>
-        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
@@ -191,8 +183,6 @@
     <roleHierarchyFilter>SystemAdministrator</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>true</showDetails>
-    <sortColumn>Opportunity$Primary_Campaign_Name__c</sortColumn>
-    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Opportunity$CreatedDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

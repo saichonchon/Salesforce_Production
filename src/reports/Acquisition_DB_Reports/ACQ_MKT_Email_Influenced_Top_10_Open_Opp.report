@@ -9,13 +9,11 @@
             <axisBinding>y</axisBinding>
             <column>OPP.AMOUNT</column>
         </chartSummaries>
-        <chartType>HorizontalBarGrouped</chartType>
+        <chartType>HorizontalBar</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
         <groupingColumn>OPP.NAME</groupingColumn>
-        <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
-        <secondaryGroupingColumn>Opportunity.Primary_Campaign_Name__c</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -78,11 +76,6 @@
         <sortByName>OPP.AMOUNT</sortByName>
         <sortOrder>Desc</sortOrder>
         <sortType>Aggregate</sortType>
-    </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Opportunity.Primary_Campaign_Name__c</field>
-        <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>ACQ MKT Email Influenced Top 10 Open Opp</name>
     <params>

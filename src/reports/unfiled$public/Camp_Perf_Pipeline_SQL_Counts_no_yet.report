@@ -28,9 +28,6 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>Opportunity$Primary_Campaign_Name__c</field>
-    </columns>
-    <columns>
         <field>Opportunity.OpportunityTeamMembers$TeamMemberRole</field>
     </columns>
     <columns>
@@ -85,11 +82,6 @@
             <column>Opportunity.OpportunityTeamMembers$TeamMemberRole</column>
             <operator>contains</operator>
             <value>Qualifier</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity$Primary_Campaign_Name__c</column>
-            <operator>contains</operator>
-            <value>prospect</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity$Campaign.Parent.Owner</column>

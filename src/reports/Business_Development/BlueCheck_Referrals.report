@@ -23,11 +23,6 @@
             <value>Opportunity.SBD_Upsell</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity.Primary_Campaign_Name__c</column>
-            <operator>contains</operator>
-            <value>bluecheck</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>STAGE_NAME</column>
             <operator>equals</operator>
             <value>Referred,Referred - Started Trial,Closed Won</value>

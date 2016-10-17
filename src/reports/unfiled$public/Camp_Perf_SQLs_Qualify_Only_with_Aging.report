@@ -133,9 +133,6 @@
         <field>OPPORTUNITY_ID</field>
     </columns>
     <columns>
-        <field>Opportunity.Primary_Campaign_Name__c</field>
-    </columns>
-    <columns>
         <field>BucketField_39768857</field>
     </columns>
     <columns>
@@ -167,11 +164,6 @@
             <column>MEMBER_ROLE</column>
             <operator>contains</operator>
             <value>qualifier</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity.Primary_Campaign_Name__c</column>
-            <operator>contains</operator>
-            <value>acq.prospects</value>
         </criteriaItems>
         <criteriaItems>
             <column>STAGE_NAME</column>

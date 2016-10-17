@@ -43,7 +43,7 @@
         <criteriaItems>
             <column>TASK_TYPE</column>
             <operator>equals</operator>
-            <value>Demo,Demo - Onsite,Demo - Remote,Partner Consult,Partner Onboarding,Partner Q&amp;A,Partner Scoping,Partner Training,POC,Post-sale Consult,Prospect Consult,RFP,Technical Qualification</value>
+            <value>Demo - Onsite,Demo - Remote,Integration Scoping,Internal Consult,Partner Consult,Partner Onboarding,Partner Q&amp;A,Partner Scoping,Partner Training,POC,Post-sale Consult,Prospect Consult,RFP,Technical Qualification</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -77,6 +77,6 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>DUE_DATE</dateColumn>
-        <interval>INTERVAL_CURFY</interval>
+        <interval>INTERVAL_PREV1</interval>
     </timeFrameFilter>
 </Report>

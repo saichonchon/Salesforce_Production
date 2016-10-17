@@ -8,13 +8,11 @@
             <axisBinding>y</axisBinding>
             <column>RowCount</column>
         </chartSummaries>
-        <chartType>VerticalColumnGrouped</chartType>
+        <chartType>VerticalColumn</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Opportunity.Primary_Campaign_Name__c</groupingColumn>
-        <legendPosition>Right</legendPosition>
+        <groupingColumn>LAST_STAGE_CHANGE_DATE</groupingColumn>
         <location>CHART_TOP</location>
-        <secondaryGroupingColumn>LAST_STAGE_CHANGE_DATE</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -50,22 +48,12 @@
             <value>Consult</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity.Primary_Campaign_Name__c</column>
-            <operator>notEqual</operator>
-            <value></value>
-        </criteriaItems>
-        <criteriaItems>
             <column>STAGE_NAME</column>
             <operator>equals</operator>
             <value>Referred,Referred - Started Trial</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Opportunity.Primary_Campaign_Name__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
     <groupingsDown>
         <dateGranularity>Month</dateGranularity>
         <field>LAST_STAGE_CHANGE_DATE</field>

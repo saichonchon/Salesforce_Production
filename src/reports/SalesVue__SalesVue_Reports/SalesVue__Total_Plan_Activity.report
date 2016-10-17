@@ -59,10 +59,10 @@
         <value>1</value>
     </params>
     <reportType>CustomEntityCustomEntity$SalesVue__Plan_Task__c$SalesVue__Plan_Task_Result__c@SalesVue__Plan_Task_Result__c.SalesVue__Result__c</reportType>
-    <scope>user</scope>
+    <scope>organization</scope>
     <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>SalesVue__Plan_Task__c.SalesVue__Completion_Date__c</dateColumn>
-        <interval>INTERVAL_CUSTOM</interval>
+        <interval>INTERVAL_THISWEEK</interval>
     </timeFrameFilter>
 </Report>

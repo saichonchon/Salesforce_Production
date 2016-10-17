@@ -9,13 +9,11 @@
             <axisBinding>y</axisBinding>
             <column>Opportunity$Opportunity_Count__c</column>
         </chartSummaries>
-        <chartType>HorizontalBarStacked</chartType>
+        <chartType>HorizontalBar</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Opportunity$Primary_Campaign_Name__c</groupingColumn>
-        <legendPosition>Right</legendPosition>
+        <groupingColumn>Opportunity$CreatedDate</groupingColumn>
         <location>CHART_BOTTOM</location>
-        <secondaryGroupingColumn>Opportunity$CreatedDate</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -93,11 +91,6 @@
             <value>Qualifier</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity$Primary_Campaign_Name__c</column>
-            <operator>contains</operator>
-            <value>acq.prospects</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>Opportunity$Campaign.Parent</column>
             <operator>notContain</operator>
             <value>gobig,ent-,ent -</value>
@@ -107,16 +100,16 @@
             <operator>equals</operator>
             <value>LAST_90_DAYS</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Campaign.Parent</column>
+            <operator>contains</operator>
+            <value>acq.prospect</value>
+        </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsDown>
         <dateGranularity>Week</dateGranularity>
         <field>Opportunity$CreatedDate</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Opportunity$Primary_Campaign_Name__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Camp Perf SQLs by week</name>

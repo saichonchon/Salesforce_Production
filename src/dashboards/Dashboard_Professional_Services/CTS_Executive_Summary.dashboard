@@ -95,7 +95,7 @@
             <showPicturesOnCharts>false</showPicturesOnCharts>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Average UAT Time Per Standard CTS</title>
+            <title>Average UAT Time Per Standard CTS 4W</title>
             <useReportChart>true</useReportChart>
         </components>
         <components>
@@ -113,7 +113,7 @@
             <showPicturesOnCharts>false</showPicturesOnCharts>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Average UAT Time Per Custom CTS</title>
+            <title>Average UAT Time Per Custom CTS 4W</title>
             <useReportChart>true</useReportChart>
         </components>
     </middleSection>
@@ -135,6 +135,63 @@
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
             <title>CTS NPS Quarter over Quarter</title>
+            <useReportChart>true</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Bar</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <header>CTS Standard Opened</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>unfiled$public/CTS_test_for_WoW1</report>
+            <showPercentage>false</showPercentage>
+            <showPicturesOnCharts>false</showPicturesOnCharts>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>CTS Standard Opened</title>
+            <useReportChart>true</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Bar</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <header>CTS Custom Opened</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>unfiled$public/CTS_test_for_WoW_2</report>
+            <showPercentage>false</showPercentage>
+            <showPicturesOnCharts>false</showPicturesOnCharts>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>CTS Custom Opened</title>
+            <useReportChart>true</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Bar</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <header>CTS Total Opened</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>unfiled$public/CTS_test_for_WoW_3</report>
+            <showPercentage>false</showPercentage>
+            <showPicturesOnCharts>false</showPicturesOnCharts>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>CTS Total Opened</title>
             <useReportChart>true</useReportChart>
         </components>
     </rightSection>

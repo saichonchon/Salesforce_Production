@@ -37,7 +37,7 @@
         <label>Discount Approval</label>
         <name>Discount_Approval</name>
     </approvalStep>
-    <emailTemplate>Internal_Email_Template/Steelbrick_Quote_Approval_Needed</emailTemplate>
+    <emailTemplate>Internal_Workflow_Communications_Sales/Steelbrick_Quote_Approval_Needed</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <finalApprovalRecordLock>true</finalApprovalRecordLock>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>

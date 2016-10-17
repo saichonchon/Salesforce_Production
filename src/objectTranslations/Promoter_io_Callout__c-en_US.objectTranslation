@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Promoter.io Callout</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Promoter.io Callouts</value>
+    </caseValues>
+    <fields>
+        <label><!-- API URL --></label>
+        <name>API_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- PageNumber --></label>
+        <name>PageNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session Time --></label>
+        <name>Session_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique ID --></label>
+        <name>Unique_ID__c</name>
+    </fields>
+    <layouts>
+        <layout>Promoter.io Callout Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

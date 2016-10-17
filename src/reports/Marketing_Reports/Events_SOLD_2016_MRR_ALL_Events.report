@@ -8,6 +8,9 @@
         <field>LEAD_SOURCE</field>
     </columns>
     <columns>
+        <field>Opportunity.MonthlyRecurringRevenue__c</field>
+    </columns>
+    <columns>
         <field>RECORDTYPE</field>
     </columns>
     <columns>
@@ -24,9 +27,6 @@
     </columns>
     <columns>
         <field>OPPORTUNITY_NAME</field>
-    </columns>
-    <columns>
-        <field>Opportunity.Status__c</field>
     </columns>
     <columns>
         <field>Opportunity.BillingAmount__c</field>
@@ -48,11 +48,21 @@
             <operator>equals</operator>
             <value>THIS_YEAR</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <operator>equals</operator>
+            <value>New,Sale,Purchased,Suspended,Cancelled,Closed Won,Terminated</value>
+        </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>
         <dateGranularity>Quarter</dateGranularity>
         <field>CLOSE_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.Status__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
     <groupingsDown>
@@ -68,7 +78,7 @@
     <name>Events - SOLD 2016 MRR ALL Events</name>
     <params>
         <name>open</name>
-        <value>closedwon</value>
+        <value>all</value>
     </params>
     <params>
         <name>probability</name>
@@ -80,7 +90,7 @@
     </params>
     <reportType>OpportunityCampaign</reportType>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>CAMPAIGN_STARTDATE</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

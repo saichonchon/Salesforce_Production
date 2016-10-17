@@ -65,7 +65,7 @@
         <criteriaItems>
             <column>LiveAgentSession$CreatedBy</column>
             <operator>contains</operator>
-            <value>Leonard Dingle,Joe Maragoni,Scott Richards,Baldemar Zamora</value>
+            <value>Brian Miller,Leonard Dingle,Joe Maragoni,Scott Richards,Baldemar Zamora</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>
@@ -86,11 +86,9 @@
     </params>
     <reportType>Live_Agent_Sessions__c</reportType>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>LiveAgentSession$CreatedDate</dateColumn>
-        <endDate>2015-08-07</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2015-08-01</startDate>
+        <interval>INTERVAL_LASTMONTH</interval>
     </timeFrameFilter>
 </Report>

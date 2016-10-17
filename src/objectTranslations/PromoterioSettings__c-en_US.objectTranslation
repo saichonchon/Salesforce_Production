@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Promoter.io Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Promoter.io Settings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Case Category --></label>
+        <name>Case_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Origin --></label>
+        <name>Case_Origin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Reason --></label>
+        <name>Case_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Subject Starting --></label>
+        <name>Case_Subject_Starting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debug --></label>
+        <name>Debug__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Point --></label>
+        <name>End_Point__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fetch All --></label>
+        <name>Fetch_All__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Run On --></label>
+        <name>Last_Run_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Run Date --></label>
+        <name>Previous_Run_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Specific Campaign ID --></label>
+        <name>Specific_Campaign_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Token --></label>
+        <name>Token__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

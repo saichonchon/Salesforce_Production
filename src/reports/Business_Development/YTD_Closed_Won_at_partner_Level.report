@@ -29,11 +29,6 @@
             <value>6/1/2016 12:00 AM</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity$Primary_Campaign_Name__c</column>
-            <operator>equals</operator>
-            <value></value>
-        </criteriaItems>
-        <criteriaItems>
             <column>Opportunity$CreatedBy</column>
             <operator>equals</operator>
             <value>victor soares,jeremy gryder</value>

@@ -141,9 +141,6 @@
         <field>AMOUNT</field>
     </columns>
     <columns>
-        <field>Opportunity.Primary_Campaign_Name__c</field>
-    </columns>
-    <columns>
         <field>BucketField_5987375</field>
     </columns>
     <columns>
@@ -201,11 +198,6 @@
             <column>Opportunity.PurchaseDate__c</column>
             <operator>equals</operator>
             <value></value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity.Primary_Campaign_Name__c</column>
-            <operator>notContain</operator>
-            <value>Hubspot,ACQ.prospects,demo,shoporg,shop.org,mkt,content,hubspot,ebook,eguide</value>
         </criteriaItems>
         <criteriaItems>
             <column>STAGE_NAME</column>

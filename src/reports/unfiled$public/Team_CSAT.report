@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
-    <aggregates>
-        <acrossGroupingContext>GRAND_SUMMARY</acrossGroupingContext>
-        <calculatedFormula>(Support_Survey__c.Promoter__c:SUM/RowCount*100)-
-(Support_Survey__c.Detractor__c:SUM/RowCount*100)</calculatedFormula>
-        <datatype>number</datatype>
-        <developerName>FORMULA1</developerName>
-        <downGroupingContext>GRAND_SUMMARY</downGroupingContext>
-        <isActive>true</isActive>
-        <isCrossBlock>false</isCrossBlock>
-        <masterLabel>Satisfaction Score</masterLabel>
-        <scale>2</scale>
-    </aggregates>
     <buckets>
         <bucketType>text</bucketType>
         <developerName>BucketField_89265706</developerName>
@@ -168,6 +156,31 @@
             <value>Promoter</value>
         </values>
     </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>Donut</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>false</expandOthers>
+        <groupingColumn>BucketField_78140429</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>true</showTotal>
+        <showValues>true</showValues>
+        <size>Small</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
     <columns>
         <field>Support_Survey__c$Name</field>
     </columns>
@@ -214,7 +227,7 @@
         <criteriaItems>
             <column>Support_Survey__c$Live_Chat_Transcript__c.Owner</column>
             <operator>equals</operator>
-            <value>Christie Rodriguez,Kristyna DePaz,Jason Pilapil,Mary Hazel Quilaga,Juan Calanoc,Rianne Insigne,Shirley Detera,Jonathan Castro,Rob San Diego,Reiner Leyba,Raymond Macatangay,Jonalyn Fresnido,Faith Esguerra,Racel Arce,Kim Radaza,Anne Ilagan,Marjorie Tamayo,Marielle Morre,Mark Galzote,Julie Due,Lorain Miranda</value>
+            <value>Raymond Macatangay,Anne Ilagan,Juan Calanoc,Marjorie Tamayo,Julie Due,Rob San Diego,Racel Arce,Kim Radaza,Shirley Detera,Eric Ong,Christie Rodriguez,Jason Pilapil,Kristyna DePaz</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>

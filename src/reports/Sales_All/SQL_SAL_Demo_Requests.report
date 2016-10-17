@@ -64,31 +64,15 @@
         <field>Lead.Demo_Requested_Date__c</field>
     </columns>
     <filter>
-        <booleanFilter>1 AND 2 AND ((3 AND 4) OR 5)</booleanFilter>
         <criteriaItems>
             <column>Opportunity.Owner_Team__c</column>
             <operator>contains</operator>
             <value>small business,enterprise,sdr</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity.Primary_Campaign_Name__c</column>
-            <operator>contains</operator>
-            <value>Demo Request</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>CLOSED</column>
+            <column>Lead.Demo_Requested_Date__c</column>
             <operator>notEqual</operator>
-            <value>1</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>WON</column>
-            <operator>equals</operator>
-            <value>1</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>CLOSED</column>
-            <operator>equals</operator>
-            <value>0</value>
+            <value></value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

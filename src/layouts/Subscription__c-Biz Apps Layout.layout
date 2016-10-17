@@ -789,6 +789,17 @@
     <relatedLists>
         <relatedList>RelatedNoteList</relatedList>
     </relatedLists>
+    <relatedLists>
+        <excludeButtons>New</excludeButtons>
+        <fields>NAME</fields>
+        <fields>Score__c</fields>
+        <fields>Score_Type__c</fields>
+        <fields>Posted_Date__c</fields>
+        <fields>Comment__c</fields>
+        <fields>Contact__c</fields>
+        <fields>Account__c</fields>
+        <relatedList>Promoter_io_Feedback__c.Subscription__c</relatedList>
+    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>true</showHighlightsPanel>
     <showInteractionLogPanel>true</showInteractionLogPanel>

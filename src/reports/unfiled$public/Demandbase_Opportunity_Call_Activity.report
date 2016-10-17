@@ -14,7 +14,7 @@
         <groupingColumn>CREATED_DATE</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
-        <secondaryGroupingColumn>Opportunity.Primary_Campaign_Name__c</secondaryGroupingColumn>
+        <secondaryGroupingColumn>Account.qbdialer__Dials__c</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -65,27 +65,10 @@
     <columns>
         <field>ACCOUNT_NAME</field>
     </columns>
-    <filter>
-        <criteriaItems>
-            <column>Opportunity.Primary_Campaign_Name__c</column>
-            <operator>contains</operator>
-            <value>demandbase</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity.Primary_Campaign_Name__c</column>
-            <operator>notContain</operator>
-            <value>upload</value>
-        </criteriaItems>
-    </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Month</dateGranularity>
         <field>CREATED_DATE</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Opportunity.Primary_Campaign_Name__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>

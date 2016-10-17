@@ -63,11 +63,6 @@
             <operator>equals</operator>
             <value>THIS_MONTH</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity$Primary_Campaign_Name__c</column>
-            <operator>contains</operator>
-            <value>mkt.promotion</value>
-        </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>

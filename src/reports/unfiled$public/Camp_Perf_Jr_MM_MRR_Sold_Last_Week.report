@@ -28,9 +28,6 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>Opportunity$Primary_Campaign_Name__c</field>
-    </columns>
-    <columns>
         <field>Opportunity$Owner_Team__c</field>
     </columns>
     <columns>

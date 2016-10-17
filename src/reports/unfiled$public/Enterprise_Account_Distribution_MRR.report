@@ -266,6 +266,11 @@
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.MonthlyRecurringRevenue__c</column>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>

@@ -12,19 +12,9 @@
             <value>victor soares,jeremy gryder</value>
         </criteriaItems>
         <criteriaItems>
-            <column>OPPORTUNITY_NAME</column>
-            <operator>notContain</operator>
-            <value>Consult</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>CAMPAIGN_SOURCE</column>
             <operator>notContain</operator>
             <value>bigpay</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity.Primary_Campaign_Name__c</column>
-            <operator>notEqual</operator>
-            <value></value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>
@@ -40,7 +30,7 @@
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Opportunity.Primary_Campaign_Name__c</field>
+        <field>CAMPAIGN_SOURCE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Daily Campaign:Stage Status</name>

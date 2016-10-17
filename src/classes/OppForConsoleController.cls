@@ -17,17 +17,16 @@ public class OppForConsoleController
     public string errorMsg {get;set;}
     public String CaseSubject {get; set;}
     public String CallerName {get; set;}
+    public List<String> ContactNames {get; set;}
     public string errorMsgCaseSubject {get;set;}
     
     private list<OpportunityWrapper> Opps = new list<OpportunityWrapper>();
- //   private list<SubscriptionWrapper> Subs = new list<SubscriptionWrapper>();
-        
-  //  public static map<String, Schema.RecordTypeInfo> mpCSRTByName = Case.getSObjectType().getDescribe().getRecordTypeInfosByName();
-    
+
     public String passedInOppId {get;set;}
     public String passedInSubId {get;set;}
     public Case newCase {get;set;}
     public Id newCaseId {get;set;}
+    public Id caseRecordTypeId {get;set;}
     public String getObjectType()
     {
         return objectType;
@@ -40,7 +39,10 @@ public class OppForConsoleController
     { 
         return CallerName; 
     } 
-
+	public List<String> getContactNames() 
+    { 
+        return ContactNames; 
+    } 
     public void setAcctId(String n)
     {
         acctId = n;
@@ -89,43 +91,70 @@ public class OppForConsoleController
             return Account.sObjectType.getDescribe().getKeyPrefix();
         }
     }
-
- /*   
-     public String leadPrefix
-    {
-        get
-        {
-            return Lead.sObjectType.getDescribe().getKeyPrefix();
-        }
-    }
- */   
+ 
     public String oppPrefix
     {
         get  { return Opportunity.sObjectType.getDescribe().getKeyPrefix(); }
     }
- /*   // Generate the URL to open the new Opptab in
-    public String caseCreateURLPrefix
+    
+    //Map all Recordtype Id and Name
+    public Map<Id,String> caseRecordTypeName
     {
-        get
-        {
-            if(caseCreateURLPrefix == null)
-            {                
-                // Prefix to create the case (/500/e)
-                PageReference pageRef = new PageReference('/' + Case.sObjectType.getDescribe().getKeyPrefix() + '/e');
-                pageRef.getParameters().put('isdtp','vw');
-                pageRef.getParameters().put('ent', Case.sObjectType.getDescribe().getName());
-                
-                caseCreateURLPrefix = pageRef.getURL();             
+        get{
+            Map<Id, String> CaseRecordTypesMap = new Map<Id,String>();
+        	Schema.DescribeSObjectResult R = Case.SObjectType.getDescribe();
+            List<Schema.RecordTypeInfo> RT = R.getRecordTypeInfos();
+            if(RT.size()>1){
+                for(RecordTypeInfo rec:RT){
+                    CaseRecordTypesMap.put(rec.getRecordTypeId(),rec.getName());                
+                }
             }
-          
-       
-            system.debug('***OppsForConsole_Controller:caseCreateURLPrefix - caseCreateURLPrefix: ' + caseCreateURLPrefix);
-            
-            return caseCreateURLPrefix;
+            return CaseRecordTypesMap;
         }
-        private set;
+        
     }
- */   
+    
+    //Get the Custom Settings that has holds the defenition of what 
+    //Opportunities to show during case creation
+    public Opp_RecordTypes_for_Case_Creation__c getOppstoShow
+    {
+        get { return Opp_RecordTypes_for_Case_Creation__c.getOrgDefaults(); }
+    }
+    
+    //Get the Opportunity Record Types we want to show during case creation
+    //This is defined in a custom setting Opp_RecordTypes_for_Case_Creation 
+    public Set<String> OppRTstoShow
+    {
+        get {
+            Set<String> setString = new Set<String>();
+            if(getOppstoShow.Opp_RecordTypes_to_Show__c!=null){
+                for(String key:getOppstoShow.Opp_RecordTypes_to_Show__c.split(',')){
+                    setString.add(key);
+                }
+            }
+            return setString;
+        }
+    }
+    
+    //Get the Opportunity Statuses we want to show during case creation
+    //This is defined in a custom setting Opp_RecordTypes_for_Case_Creation 
+    public Set<String> OppStatusestoShow
+    {
+        get {
+            Set<String> setString = new Set<String>();
+            if(getOppstoShow.Opp_Statuses_to_show__c!=null){
+                for(String key:getOppstoShow.Opp_Statuses_to_show__c.split(',')){
+                    setString.add(key);
+                }
+            }
+            if(getOppstoShow.Show_Opps_with_Blank_Status__c){
+                setString.add('');
+                setString.add(null);
+            }
+            return setString;
+        }
+    }
+  
     public String getSelectedOppName()
     {
         return selectedOppName;
@@ -154,18 +183,13 @@ public class OppForConsoleController
     
     public OppForConsoleController()
     {
-        system.debug('### new Case id: ' + newCaseId);
-         system.debug('### opp id: ' + passedInOppId);
         string recId = ApexPages.currentPage().getParameters().get('Id');
         acctId = '';
         contactId = '';
         errorMsg ='';
-         
- //     leadId = '';
         oppId = '';
         objectType = '';
- //       caseCreated = false;
-         system.debug(' ### In constructor ' + caseCreated);
+
         // Check which object this page is loading from
         if (recId != null)
         {
@@ -180,13 +204,16 @@ public class OppForConsoleController
                 objectType = 'Contact';
                 
                 acctId = [SELECT AccountId FROM Contact WHERE Id = :contactId].AccountId;
+                
+                List<Contact> cList= new List<contact>([select name from contact where accountid = :acctId]);
+                ContactNames = new List<String>();
+                if(!cList.isEmpty()){
+                    for(contact con:cList){
+                        ContactNames.add(con.Name);    
+                    }
+                }
             }
-/*          else if (recId.startsWith(leadPrefix))
-            {               
-                leadId = recId;
-                leadName = [SELECT Name FROM Lead WHERE Id = :leadId].Name;
-                objectType = 'Lead';
-            } */
+
             else if (recId.startsWith(oppPrefix))
             {               
                 oppId = recId;
@@ -194,20 +221,16 @@ public class OppForConsoleController
                 objectType = 'Opportunity';
             }
         }
-        
-        system.debug('@@@AcctId: ' + acctId);
-        system.debug('@@@ContactId: ' + contactId);
- //     system.debug('@@@LeadId: ' + leadId);
-        system.debug('@@@oppId: ' + oppId);
-        system.debug('@@@case created: ' + caseCreated);
     }
     
     public PageReference CreateCase()
     {
- 		 PageReference currentPage = ApexPages.currentPage();    
- //       Id idCSRecordType =  Case.getSObjectType().getDescribe().getRecordTypeInfosByName().get('Client Success').getRecordTypeId();
-        system.debug('### case created in Case create ' +caseCreated);
- 		
+ 		PageReference currentPage = ApexPages.currentPage();    
+        Map<String,Id> caseQueueMap = new Map<String,Id>();
+        List<CaseQueueRouting__c> csList = CaseQueueRouting__c.getAll().values();
+        for(CaseQueueRouting__c cs:csList){
+            caseQueueMap.put(cs.Queue_Name__c, cs.Queue_ID__c);
+        }
         If (caseCreated == true) 
         {
         	errorMsg= 'Case already created, refresh the page to create another case';
@@ -230,18 +253,21 @@ public class OppForConsoleController
                         else {
 
                             Case newCase = new Case(subject = CaseSubject,
+                                            Caller_name__c = CallerName,
                                             origin = 'Phone',
                                             accountid= acctId,
-                                            //Documentation_Only__c = true,//BAP-3412
-                  							//RecordTypeId = idCSRecordType,
                                             Opportunity__c = selectedOppId,
                                             ContactId = contactId,
-                                            Change_Owner__c = 'Me', 
-                                            Subscription__c = selectedSubId
-                                            //Description = CaseDesc//BAP-3412
+                                            Change_Owner__c = 'Tier 2', 
+                                            Subscription__c = selectedSubId,
+                                            RecordTypeId = caseRecordTypeId
                                             );
-                                                                        
-                 //      &CF00N18000000GSRJ=' + selectedOppName +  selectedSubName + ;
+
+                            if(caseRecordTypeName.get(caseRecordTypeId)=='Billing'||caseRecordTypeName.get(caseRecordTypeId)=='Cancellations'){
+                                newCase.Ownerid = caseQueueMap.get('Billing');
+                            } else {
+                                newCase.Ownerid = caseQueueMap.get('Tier 2 Support Queue');
+                            }
                              insert newCase;  
                              newCaseId = newCase.Id;
                              errorMsg= 'Case created ....';
@@ -254,8 +280,6 @@ public class OppForConsoleController
     }
     public PageReference LoadOpportunities()
     {
-        system.debug('***OppsForConsole_Controller:LoadOpps - Start');       
-        
         list<Opportunity> lstOpps = new list<Opportunity>();
         Opps = new list<OpportunityWrapper>();
         OpportunityWrapper wrapOpp;
@@ -267,18 +291,14 @@ public class OppForConsoleController
         notStoreRecIds.add(AppRecordTypeId);
         notStoreRecIds.add(ProfOppRecordTypeId);
         notStoreRecIds.add(UpgradeRecordTypeId);
-        
-        system.debug('***OppsForConsole_Controller:LoadOpps - acctId: ' + acctId);
-        
-        // If opp Id exists
+
         if (oppId != null && oppId != '')
         {           
- 
             lstOpps = [SELECT Id, Name, StoreURL__c, New_Product_Plan__c, Product__c, Status__c, AccountId, Subscription__r.Id, Subscription__r.Name, Contact__r.Id, RecordType.Name, OppSortNumber__c
                        FROM Opportunity
-                       WHERE RecordTypeId not in :notStoreRecIds
+                       WHERE RecordType.Name in :OppRTstoShow
                        AND Id = :oppId
-                       ORDER BY OppSortNumber__c ASC];
+                       ORDER BY OppSortNumber__c ASC];//Sort the Opportunities listed based on this field
             
             for (Opportunity s : lstOpps)
             {
@@ -292,16 +312,13 @@ public class OppForConsoleController
             CaptureOpp();
         }
         else
-        // If  Account Id exist
         if (acctId != null && acctId != '')
         {           
- 
             lstOpps = [SELECT Id, Name, StoreURL__c, New_Product_Plan__c, Product__c, Status__c, AccountId, Subscription__r.Id, Subscription__r.Name, RecordType.Name, OppSortNumber__c
                        FROM Opportunity
-                       WHERE RecordTypeId not in :notStoreRecIds
+                       WHERE RecordType.Name in :OppRTstoShow
                        AND AccountId = :acctId
-                       AND Status__c <> 'Cancelled'
-                       AND Status__c <> 'Terminated'
+                       AND Status__c in :OppStatusestoShow
                        ORDER BY OppSortNumber__c ASC];
             
             
@@ -317,15 +334,26 @@ public class OppForConsoleController
             	CaptureOpp();
             }
         }
+        
+        Schema.DescribeSObjectResult R = Case.SObjectType.getDescribe();
+		List<Schema.RecordTypeInfo> RT = R.getRecordTypeInfos();
+        if(RT.size()>1){
+            for(RecordTypeInfo rec:RT){
+                //isMaster() method failed with the error :Method does not exist or incorrect signature: [Schema.RecordTypeInfo].isMaster() 
+                //So using the getName() in the condition 
+                if(rec.isAvailable()&&rec.getName()!='Master'&&rec.isDefaultRecordTypeMapping()){
+                    caseRecordTypeId = rec.getRecordTypeId();
+                }
+            }
+        } else {
+            caseRecordTypeId = RT[0].getRecordTypeId();
+        }
+        
         return null;
     }
     
     public void CaptureOpp()
     {
-        //id OppId = ApexPages.currentPage().getParameters().get('passedInId');
-        
-        system.debug('***OppsForConsole_Controller.CaptureOpp - passedInId: ' + passedInOppId);
-        
         if (passedInOppId != null)
         {
             // Set the selected Opp variable
@@ -344,10 +372,9 @@ public class OppForConsoleController
                     selectedOppName = wrap.objOpp.Name;
                     selectedSubId = wrap.objOpp.Subscription__r.Id;
                     selectedSubName = wrap.objOpp.Subscription__r.Name;
-                    system.debug( 'selected sub '+selectedSubId);
                 }
             }
- //           createCase();
+
         } 
         
         
@@ -356,9 +383,7 @@ public class OppForConsoleController
     public void SelectOpp()
     {
         Id  OppId = ApexPages.currentPage().getParameters().get('selId');
-        
-        system.debug('***OppsForConsole_Controller.SelectOpp - OppId: ' + OppId);
-        
+
         if (OppId != null)
         {
             // Set the selected Opp variable
@@ -377,8 +402,6 @@ public class OppForConsoleController
                         selectedOppName = wrap.objOpp.Name;
                         selectedSubId = wrap.objOpp.Subscription__r.Id;
                         selectedSubName = wrap.objOpp.Subscription__r.Name;
-                        system.debug( 'selected sub '+selectedSubId);
- //                       createCase();
                     }
                     else
                     {
@@ -386,8 +409,6 @@ public class OppForConsoleController
                         selectedOppName = null;
                     }
                 }
-                //system.debug('***OppsForConsole_Controller.SelectOpp - wrap Opp: ' + wrap.objOpp);
-                //system.debug('***OppsForConsole_Controller.SelectOpp - wrap Selected: ' + wrap.isSelected);
             }
         }       
     }
@@ -400,23 +421,85 @@ public class OppForConsoleController
     public class OpportunityWrapper
     {
         public boolean isSelected {get; set;} 
-        public boolean isStore {get; set;} //BAP-3412
+        public boolean isSelectable {get; set;} 
         public String OppRecordType {get; set;} 
-        public Opportunity objOpp {get; set;}  
+        public Opportunity objOpp {get; set;} 
+        public Opp_RecordTypes_for_Case_Creation__c getOppstoShow
+    	{
+        	get { return Opp_RecordTypes_for_Case_Creation__c.getOrgDefaults(); }
+    	}
         
+        //Get the Opportunity Record Types that are selectable on the Case Form. 
+        //These are defined in the Custom Setting Opp_RecordTypes_for_Case_Creation__c
+        public Set<String> SelectableOppRTs
+        {
+            get {
+                Set<String> setString = new Set<String>();
+                if(getOppstoShow.Selectable_Opp_RecordTypes__c!=null){
+                    for(String key:getOppstoShow.Selectable_Opp_RecordTypes__c.split(',')){
+                        setString.add(key);
+                    }
+                }
+                return setString;
+            }
+        }
+        
+        //Get the Opportunity Statuses that are selectable on the Case Form. 
+        //These are defined in the Custom Setting Opp_RecordTypes_for_Case_Creation__c
+        public Set<String> SelectableOppStatuses
+        {
+            get {
+                Set<String> setString = new Set<String>();
+                if(getOppstoShow.Selectable_Opp_Statuses__c!=null){
+                    for(String key:getOppstoShow.Selectable_Opp_Statuses__c.split(',')){
+                        setString.add(key);
+                    }
+                }
+                if(getOppstoShow.Select_Opps_with_Blank_Status__c){
+                	setString.add('');
+                    setString.add(null);
+            	}
+                return setString;
+            }
+        }
+        
+        //Based on the Selectable Opportunity Record Types and Statuses 
+        //set the attribute isSelectable which will be used in the OppForConsole VF Page
+        //to decide whether it's a selectable opportunity or not
         public OpportunityWrapper (Opportunity Opp, boolean selected)
         {
             this.isSelected = selected;
-            if(opp.RecordType.Name == label.Opportunity_Recordtype_StorePurchase || opp.RecordType.Name == label.Opportunity_RecordType_Trial){
-                this.isStore = true;
+            if(SelectableOppRTs.contains(opp.RecordType.Name)&&SelectableOppStatuses.contains(opp.Status__c)){
+                this.isSelectable = true;
             } else {
-                this.isStore = false;
+                this.isSelectable = false;
             }
             this.OppRecordType = opp.RecordType.Name;
             this.objOpp = Opp;
         }
     }
    
-   
+    //@author: Bala Rajagopal
+    //@date: 08/11/16
+    //Get all the Case Record Types accessible by the current user for selection during case creation in the service console.
+    public static Map<String, Id> getAvailableCaseRecordTypes(){
+        Schema.DescribeSObjectResult Res = Case.SObjectType.getDescribe();
+		List<Schema.RecordTypeInfo> RT = Res.getRecordTypeInfos();
+        List<String> names = new List<String>();
+        Map<String,id> RTmap = new Map<String,id>();
+        if(RT.size()>1){
+            for(RecordTypeInfo rec:RT){
+                //isMaster() method failed with the error :Method does not exist or incorrect signature: [Schema.RecordTypeInfo].isMaster() 
+                //So using the getName() in the condition 
+                if(rec.isAvailable()&&rec.getName()!='Master'){
+                    names.add(rec.getName());
+                    RTmap.put(rec.getName(),rec.getRecordTypeId());
+                }
+            }
+        } else {
+            RTmap.put(RT[0].getName(),RT[0].getRecordTypeId());
+        }
+        return RTmap;
+    }
 
 }

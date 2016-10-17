@@ -27,9 +27,6 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>Opportunity$Primary_Campaign_Name__c</field>
-    </columns>
-    <columns>
         <field>Opportunity$StageName</field>
     </columns>
     <columns>
@@ -92,16 +89,11 @@
         <field>Opportunity$RecordType</field>
     </columns>
     <filter>
-        <booleanFilter>((1 AND 3 AND 2 )) AND 4</booleanFilter>
+        <booleanFilter>(((1 AND 3 AND 2 ))) AND 4</booleanFilter>
         <criteriaItems>
             <column>Opportunity.OpportunityTeamMembers$TeamMemberRole</column>
             <operator>contains</operator>
             <value>Qualifier</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity$Primary_Campaign_Name__c</column>
-            <operator>contains</operator>
-            <value>ACQ.prospect</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity$Campaign.Owner</column>
@@ -112,6 +104,11 @@
             <column>Opportunity$Campaign.Parent</column>
             <operator>notContain</operator>
             <value>gobig,ent-,ent -</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Campaign.Parent</column>
+            <operator>contains</operator>
+            <value>acq.prospect</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>

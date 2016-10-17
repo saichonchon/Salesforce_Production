@@ -59,6 +59,12 @@
         <field>LiveAgentSession$LogoutTime</field>
     </columns>
     <columns>
+        <field>LiveAgentSession$TimeInOnlineStatus</field>
+    </columns>
+    <columns>
+        <field>LiveAgentSession$TimeInAwayStatus</field>
+    </columns>
+    <columns>
         <field>LiveAgentSession$Name</field>
     </columns>
     <filter>
@@ -89,8 +95,8 @@
     <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>LiveAgentSession$CreatedDate</dateColumn>
-        <endDate>2016-04-05</endDate>
+        <endDate>2016-09-30</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2016-04-05</startDate>
+        <startDate>2016-09-01</startDate>
     </timeFrameFilter>
 </Report>

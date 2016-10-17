@@ -25,16 +25,6 @@
     </columns>
     <filter>
         <criteriaItems>
-            <column>Opportunity$Primary_Campaign_Name__c</column>
-            <operator>contains</operator>
-            <value>prospects</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity$Primary_Campaign_Name__c</column>
-            <operator>notContain</operator>
-            <value>shoporg,q,shop</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>Opportunity$Amount</column>
             <operator>notEqual</operator>
             <value>0</value>
@@ -46,11 +36,6 @@
         <field>Opportunity$CreatedDate</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Opportunity$Primary_Campaign_Name__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
     <name>Camp Perf ARPU by List Campaign</name>
     <params>
         <name>co</name>

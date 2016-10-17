@@ -2293,6 +2293,18 @@ if((Active_Stores_Opp__c &gt;0),1,
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>Last_Promoter_io_NPS__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Promoter.io NPS</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Launch_Team_Commando__c</fullName>
         <externalId>false</externalId>
         <label>zLaunch Team Commando OLD</label>
@@ -4778,10 +4790,21 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Revenue_Share__c</fullName>
-        <description>Partner Revenue Share Percentage</description>
+        <fullName>Revenue_Share_Flat_Fee__c</fullName>
         <externalId>false</externalId>
-        <label>Revenue Share</label>
+        <label>Revenue Share Flat Fee</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Revenue_Share__c</fullName>
+        <description>for BizDev payouts</description>
+        <externalId>false</externalId>
+        <label>Revenue Share %</label>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>

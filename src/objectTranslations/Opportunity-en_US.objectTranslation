@@ -45,7 +45,7 @@
         <name>Admin_Store_Login_URL__c</name>
     </fields>
     <fields>
-        <help><!-- Admin Store Username for migration team prescoping --></help>
+        <help><!-- Admin Store Username for Catalog Transfer team prescoping --></help>
         <label><!-- Admin Store Username --></label>
         <name>Admin_Store_Username__c</name>
     </fields>
@@ -1900,7 +1900,7 @@
         </picklistValues>
     </fields>
     <fields>
-        <help><!-- For Migration Products only, this field must be populated. --></help>
+        <help><!-- For Catalog Transfer Products only, this field must be populated. --></help>
         <label><!-- Current Store URL --></label>
         <name>Current_Store_URL__c</name>
     </fields>
@@ -2181,6 +2181,14 @@
         <relationshipLabel><!-- Opportunities (Executive Sponsorship) --></relationshipLabel>
     </fields>
     <fields>
+        <label><!-- Existing Website URL --></label>
+        <name>Existing_Website_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Existing Website? --></label>
+        <name>Existing_Website__c</name>
+    </fields>
+    <fields>
         <help><!-- Used for pricing 2015 --></help>
         <label><!-- Existing contract? --></label>
         <name>Existing_contract__c</name>
@@ -2286,17 +2294,17 @@
         <name>ExpirationDate__c</name>
     </fields>
     <fields>
-        <help><!-- FTP Notes from Sales Rep to Migration team for pre scoping --></help>
+        <help><!-- FTP Notes from Sales Rep to Catalog Transfer team for pre scoping --></help>
         <label><!-- FTP Notes --></label>
         <name>FTP_Notes__c</name>
     </fields>
     <fields>
-        <help><!-- Enrcypted FTP Password - populated by Sales Rep and used during Migration Pre-sale scoping process --></help>
+        <help><!-- Enrcypted FTP Password - populated by Sales Rep and used during Catalog Transfer Pre-sale scoping process --></help>
         <label><!-- FTP Password --></label>
         <name>FTP_Password__c</name>
     </fields>
     <fields>
-        <help><!-- FTP Port used for migration prescoping --></help>
+        <help><!-- FTP Port used for catalog transfer prescoping --></help>
         <label><!-- FTP Port --></label>
         <name>FTP_Port__c</name>
     </fields>
@@ -2306,7 +2314,7 @@
         <name>FTP_URL__c</name>
     </fields>
     <fields>
-        <help><!-- FTP Username for migration prescoping --></help>
+        <help><!-- FTP Username for catalog transfer prescoping --></help>
         <label><!-- FTP Username --></label>
         <name>FTP_Username__c</name>
     </fields>
@@ -3987,10 +3995,6 @@
         <name>PricingTestGroup__c</name>
     </fields>
     <fields>
-        <label><!-- Primary Campaign Name --></label>
-        <name>Primary_Campaign_Name__c</name>
-    </fields>
-    <fields>
         <label><!-- Primary Gateway --></label>
         <name>Primary_Gateway__c</name>
     </fields>
@@ -4111,6 +4115,10 @@
             <masterLabel>Netsuite Free Mos July 2016</masterLabel>
             <translation><!-- Netsuite Free Mos July 2016 --></translation>
         </picklistValues>
+        <picklistValues>
+            <masterLabel>Zoovy Q42016 Promotion</masterLabel>
+            <translation><!-- Zoovy Q42016 Promotion --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <help><!-- Promotion applied to a purchase. --></help>
@@ -4186,6 +4194,11 @@
         <label><!-- Revenue Rep --></label>
         <name>Revenue_Rep__c</name>
         <relationshipLabel><!-- Opportunities (Revenue Rep) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Potential Revenue Share based on Strategic Partner&apos;s revenue share fee --></help>
+        <label><!-- Potential Revenue Share --></label>
+        <name>Revenue_Share__c</name>
     </fields>
     <fields>
         <label><!-- Revenue Team --></label>
@@ -5325,10 +5338,6 @@ Hot: came in from a good source and/or is progressing towards close --></help>
             <section>Enterprise Contract Details</section>
         </sections>
         <sections>
-            <label><!-- Enterprise Partner Request --></label>
-            <section>Enterprise Partner Request</section>
-        </sections>
-        <sections>
             <label><!-- MBA --></label>
             <section>MBA</section>
         </sections>
@@ -5435,10 +5444,6 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         <sections>
             <label><!-- Enterprise Contract Details --></label>
             <section>Enterprise Contract Details</section>
-        </sections>
-        <sections>
-            <label><!-- Enterprise Partner Request --></label>
-            <section>Enterprise Partner Request</section>
         </sections>
         <sections>
             <label><!-- MBA --></label>
@@ -5580,10 +5585,6 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         <sections>
             <label><!-- Enterprise Contract Details --></label>
             <section>Enterprise Contract Details</section>
-        </sections>
-        <sections>
-            <label><!-- Enterprise Partner Request --></label>
-            <section>Enterprise Partner Request</section>
         </sections>
         <sections>
             <label><!-- MBA --></label>
@@ -5856,11 +5857,11 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         <name>Lock_Close_Date</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- If you are creating a migration request, please make sure that the Store Opportunity,  Migration Platform, and  Current Store URL fields are filled out before you change the stage. --></errorMessage>
+        <errorMessage><!-- If you are creating a catalog transfer request, please make sure that the Store Opportunity,  Migration Platform, and  Current Store URL fields are filled out before you change the stage. --></errorMessage>
         <name>Migration_Product_Check</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Please ensure that the migration MVP, store platform, store URL, migration budget, admin store login url, admin store username, and admin store password fields are not blank! --></errorMessage>
+        <errorMessage><!-- Please ensure that the catalog transfer MVP, store platform, store URL, catalog transfer budget, admin store login url, admin store username, and admin store password fields are not blank! --></errorMessage>
         <name>Migration_Scoping_Submission</name>
     </validationRules>
     <validationRules>

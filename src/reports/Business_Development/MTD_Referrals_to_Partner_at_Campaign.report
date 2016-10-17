@@ -12,16 +12,6 @@
             <value>victor soares,jeremy gryder</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity.Primary_Campaign_Name__c</column>
-            <operator>contains</operator>
-            <value>bigpay,ipayment,bluecheck,shipperhq</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity.Primary_Campaign_Name__c</column>
-            <operator>notEqual</operator>
-            <value></value>
-        </criteriaItems>
-        <criteriaItems>
             <column>STAGE_NAME</column>
             <operator>equals</operator>
             <value>Referred,Referred - Started Trial</value>
@@ -41,11 +31,6 @@
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>FULL_NAME</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Opportunity.Primary_Campaign_Name__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>MTD - Referrals to Partner - at Campaign</name>

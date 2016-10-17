@@ -12,10 +12,10 @@
         <chartType>HorizontalBarStacked</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Opportunity$Primary_Campaign_Name__c</groupingColumn>
+        <groupingColumn>Opportunity$StageName</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
-        <secondaryGroupingColumn>Opportunity$StageName</secondaryGroupingColumn>
+        <secondaryGroupingColumn>Opportunity.OpportunityTeamMembers*OpportunityTeamMember$Team_Member_Created_Date__c</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -88,11 +88,6 @@
             <value>Qualifier</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity$Primary_Campaign_Name__c</column>
-            <operator>contains</operator>
-            <value>prospect</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>Opportunity$Campaign.Parent.Owner</column>
             <operator>contains</operator>
             <value>Julie</value>
@@ -107,11 +102,6 @@
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>Opportunity$StageName</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Opportunity$Primary_Campaign_Name__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Camp Perf Pipeline SQL Counts</name>

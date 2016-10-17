@@ -27,6 +27,11 @@
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Case.Reason_Code__c</column>
+            <operator>notEqual</operator>
+            <value>Promotional</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>

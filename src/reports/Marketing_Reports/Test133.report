@@ -18,13 +18,6 @@
     <columns>
         <field>Contact.Opportunities__r$MonthlyRecurringRevenue__c</field>
     </columns>
-    <filter>
-        <criteriaItems>
-            <column>Contact.Opportunities__r$Primary_Campaign_Name__c</column>
-            <operator>contains</operator>
-            <value>Prospects.CPC Ads.2015Q4.</value>
-        </criteriaItems>
-    </filter>
     <format>Tabular</format>
     <name>Test</name>
     <params>

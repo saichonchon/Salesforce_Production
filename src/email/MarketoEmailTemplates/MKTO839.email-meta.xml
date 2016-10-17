@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>GTM-1311:  Innovation Awards.CUS: Last Chance Email</name>
+    <style>none</style>
+    <subject>Last Chance - Submit By October 13 for the BigCommerce Innovation Awards</subject>
+    <textOnly>BigCommerce is celebrating our customers&apos; creativity to deliver outstanding user experiences with our inaugural Innovation Awards
+
+
+Hi {{lead.First Name:default=there}},
+
+
+Today’s retailers face an overwhelming number of demands, including delivering seamless cross-channel shopping, streamlined purchasing and near-instant fulfillment. Tens of thousands of online merchants use BigCommerce to meet those demands, finding new, creative ways to grow their businesses and offer outstanding customer experiences.
+
+The inaugural BigCommerce Innovation Awards celebrates these visionaries. Our panel of experts will evaluate submissions based on scope, technological achievement, creative implementation of the BigCommerce platform and business impact. Winners will receive up to $5,000 USD in cash prizes and a mention in an Inc. Magazine full-page ad.
+
+If you have an innovation story to share, please submit by October 13.
+
+ENTER NOW &lt;[[https://www.bigcommerce.com/innovation-awards?utm_medium=email&amp;utm_source=Customer&amp;utm_campaign=Innovation+Awards&amp;utm_term=&amp;utm_content=Enter+Now]]&gt;
+
+
+Kind regards,
+
+
+The BigCommerce Team
+ 
+bigcommerce.com &lt;[[bigcommerce.com]]&gt;</textOnly>
+    <type>custom</type>
+</EmailTemplate>

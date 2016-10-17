@@ -35,6 +35,12 @@
         <field>CREATED_DATE</field>
     </columns>
     <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE_BY</field>
+    </columns>
+    <columns>
         <field>CASE_NUMBER</field>
     </columns>
     <columns>
@@ -42,12 +48,6 @@
     </columns>
     <columns>
         <field>Case.Bigcommerce_Store_URL__c</field>
-    </columns>
-    <columns>
-        <field>LAST_UPDATE</field>
-    </columns>
-    <columns>
-        <field>LAST_UPDATE_BY</field>
     </columns>
     <filter>
         <criteriaItems>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Opp_RecordTypes_to_Show__c</fullName>
+        <description>Enter the Opportunity RecordTypes (separated by comma) that needs to be shown when a Case is created through the Service Console.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the Opportunity RecordTypes (separated by comma) that needs to be shown when a Case is created through the Service Console.</inlineHelpText>
+        <label>Opp RecordTypes to Show</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opp_Statuses_to_show__c</fullName>
+        <description>Enter the Opportunity Statuses (Separated by Comma) that needs to be shown when a case is created through the Service Console.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the Opportunity Statuses (Separated by Comma) that needs to be shown when a case is created through the Service Console.</inlineHelpText>
+        <label>Opp Statuses to show</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Select_Opps_with_Blank_Status__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Enable Opportunities with blank Statuses to be selectable when a Case is created through the Service Console.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enable Opportunities with blank Statuses to be selectable when a Case is created through the Service Console.</inlineHelpText>
+        <label>Select Opps with Blank Status</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Selectable_Opp_RecordTypes__c</fullName>
+        <description>Enter the Opportunity RecordTypes (separated by comma) that needs to be selectable when a Case is created through the Service Console.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the Opportunity RecordTypes (separated by comma) that needs to be selectable when a Case is created through the Service Console.</inlineHelpText>
+        <label>Selectable Opp RecordTypes</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Selectable_Opp_Statuses__c</fullName>
+        <description>Enter the Opportunity Statuses (separated by comma) that needs to be selectable when a Case is created through the Service Console.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the Opportunity Statuses (separated by comma) that needs to be selectable when a Case is created through the Service Console.</inlineHelpText>
+        <label>Selectable Opp Statuses</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Show_Opps_with_Blank_Status__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Enable Opportunities with blank Statuses to be shown when a Case is created through the Service Console.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enable Opportunities with blank Statuses to be shown when a Case is created through the Service Console.</inlineHelpText>
+        <label>Show Opps with Blank Status</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Opp RecordTypes for Case Creation</label>
+    <visibility>Protected</visibility>
+</CustomObject>

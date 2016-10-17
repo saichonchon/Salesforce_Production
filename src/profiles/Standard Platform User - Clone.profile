@@ -186,6 +186,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>BatchCreatePromoterIoFeedback</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>BatchCreateTask</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -238,6 +242,18 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>BatchProcessPromoterIoFeedback</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>BatchProcessPromoterIoFwdedCases</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>BatchProcessPromoterIo_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>BatchRetentionCampaign</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -271,6 +287,14 @@
     </classAccesses>
     <classAccesses>
         <apexClass>BatchUpdateOwner</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>BatchUpdatePromoterIoNPSonAccounts</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>BatchUpdatePromoterIoNPSonContacts</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -530,6 +554,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>JSONParserUtil</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>KB_Global_Search_and_Replace</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -587,6 +615,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>MergeOppController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>MockHttpResponseGenerator</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -727,6 +759,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>SalesLiveAgentPreChatControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>SchedulePromoterIoQuery</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -1071,6 +1107,14 @@
     </classAccesses>
     <classAccesses>
         <apexClass>UserUtilityTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Utilities</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Utilities_Test</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -1672,6 +1716,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Last_Promoter_io_NPS__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Account.Launch_Team_Commando__c</field>
         <readable>false</readable>
@@ -2214,6 +2263,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Rev_Share__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Revenue_Share_Flat_Fee__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3718,6 +3772,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Case.Caller_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Case.Cancellation_Persona__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3744,6 +3803,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.Case_Age_in_Days__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.Case_Age_in_Mins__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4755,6 +4819,16 @@
         <editable>false</editable>
         <field>Case.Promoter__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.Promoter_io_Feedback_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.Promoter_io_Feedback__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -5874,6 +5948,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Contact.Job_Function__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Last_Promoter_io_NPS__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -9552,6 +9631,16 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>MBA_Staging_Subscription__c.Existing_Website_URL__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MBA_Staging_Subscription__c.Existing_Website__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>MBA_Staging_Subscription__c.Experience__c</field>
         <readable>true</readable>
@@ -9649,6 +9738,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>MBA_Staging_Subscription__c.Product__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>MBA_Staging_Subscription__c.Projected_Annual_Revenue__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -10343,6 +10437,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.Existing_Website_URL__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Existing_Website__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.Existing_contract__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -11003,11 +11107,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Opportunity.Primary_Campaign_Name__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Opportunity.Primary_Gateway__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -11139,6 +11238,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Revenue_Rep__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Revenue_Share__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -12960,6 +13064,141 @@
         <editable>false</editable>
         <field>Product2.Zuora_SKU__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Promoter_io_Callout_Session__c.Count__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Promoter_io_Callout_Session__c.Errors__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Promoter_io_Callout_Session__c.Number_of_Batches__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Promoter_io_Callout_Session__c.Session_Start_Time__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Promoter_io_Callout__c.API_URL__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Promoter_io_Callout__c.PageNumber__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Promoter_io_Callout__c.Session_Time__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Promoter_io_Callout__c.Unique_ID__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Promoter_io_Feedback__c.Account__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Promoter_io_Feedback__c.Campaign_External_ID__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Promoter_io_Feedback__c.Comment__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Promoter_io_Feedback__c.Contact_External_ID__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Promoter_io_Feedback__c.Contact__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Promoter_io_Feedback__c.Email__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Promoter_io_Feedback__c.Feedback_ID__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Promoter_io_Feedback__c.Feedback_URL__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Promoter_io_Feedback__c.Feedback_Unique_External_ID__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Promoter_io_Feedback__c.FirstName__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Promoter_io_Feedback__c.LastName__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Promoter_io_Feedback__c.Posted_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Promoter_io_Feedback__c.SF_Account_ID__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Promoter_io_Feedback__c.SF_Contact_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Promoter_io_Feedback__c.Score_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Promoter_io_Feedback__c.Score__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Promoter_io_Feedback__c.Session_Time__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Promoter_io_Feedback__c.Store_ID__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Promoter_io_Feedback__c.Subscription__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -15678,6 +15917,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Town_Hall__kav.Town_Hall__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>University__kav.Additional_Resources__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -16735,6 +16979,15 @@
         <layout>ProfileSkillUser-Skill User Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Promoter_io_Callout_Session__c-Promoter%2Eio Callout Session Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Promoter_io_Callout__c-Promoter%2Eio Callout Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Promoter_io_Feedback__c-Promoter%2Eio Feedback Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Public_External_Article__kav-Public Facing Article Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -16837,6 +17090,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Totango_Engagement__c-Totango Engagement Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Town_Hall__kav-Town Hall Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>University__kav-Public BCU Layout</layout>

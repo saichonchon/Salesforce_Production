@@ -78,12 +78,12 @@
         <criteriaItems>
             <column>MEMBER_LAST_UPDATE</column>
             <operator>greaterThan</operator>
-            <value>3/1/2016 12:00 AM</value>
+            <value>8/1/2016 12:00 AM</value>
         </criteriaItems>
         <criteriaItems>
             <column>MEMBER_LAST_UPDATE</column>
             <operator>lessThan</operator>
-            <value>3/31/2016 12:00 AM</value>
+            <value>8/31/2016 12:00 AM</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -103,7 +103,7 @@
     </params>
     <reportType>CampaignWithCampaignMembers</reportType>
     <scope>organization</scope>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <sortColumn>FIRST_NAME</sortColumn>
     <sortOrder>Asc</sortOrder>
 </Report>

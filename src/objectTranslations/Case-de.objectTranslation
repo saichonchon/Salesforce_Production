@@ -250,6 +250,11 @@
         </picklistValues>
     </fields>
     <fields>
+        <help><!-- The person who called support from the client side --></help>
+        <label><!-- Caller Name --></label>
+        <name>Caller_Name__c</name>
+    </fields>
+    <fields>
         <help><!-- Persona, populated by the Cancellation team. --></help>
         <label><!-- Cancellation Persona --></label>
         <name>Cancellation_Persona__c</name>
@@ -846,6 +851,11 @@
         <name>Case_Age_in_Days__c</name>
     </fields>
     <fields>
+        <help><!-- Time in minutes from the last update to the case --></help>
+        <label><!-- Case Age (in Mins) --></label>
+        <name>Case_Age_in_Mins__c</name>
+    </fields>
+    <fields>
         <help><!-- Captures the name of the user that last moved the case of a status of Closed if NOT the API user --></help>
         <label><!-- Case Closed By --></label>
         <name>Case_Closed_By__c</name>
@@ -1131,6 +1141,10 @@
         <picklistValues>
             <masterLabel>Client</masterLabel>
             <translation><!-- Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company NPS</masterLabel>
+            <translation><!-- Company NPS --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Control Panel</masterLabel>
@@ -3636,6 +3650,10 @@ Referral : needs booking --></help>
             <translation><!-- Premium Services Email --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Promoter.io</masterLabel>
+            <translation><!-- Promoter.io --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>SBD - Escalations</masterLabel>
             <translation><!-- SBD - Escalations --></translation>
         </picklistValues>
@@ -4123,6 +4141,15 @@ Referral : needs booking --></help>
         <name>Promoter__c</name>
     </fields>
     <fields>
+        <label><!-- Promoter.io Feedback Date --></label>
+        <name>Promoter_io_Feedback_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promoter.io Feedback --></label>
+        <name>Promoter_io_Feedback__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
         <help><!-- Purchase Date from Subscription --></help>
         <label><!-- Purchase Date --></label>
         <name>Purchase_Date__c</name>
@@ -4560,6 +4587,10 @@ Referral : needs booking --></help>
         <picklistValues>
             <masterLabel>Support Request</masterLabel>
             <translation><!-- Support Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surveys</masterLabel>
+            <translation><!-- Surveys --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Taxes</masterLabel>
@@ -6524,7 +6555,7 @@ Source_Details_Confirmed__c  -  DATEVALUE(CreatedDate ) --></help>
         </picklistValues>
     </fields>
     <fields>
-        <help><!-- Used by the Migration Team - Date at which valid credentials were received --></help>
+        <help><!-- Used by the Catalog Transfer Team - Date at which valid credentials were received --></help>
         <label><!-- Valid Credentials Received --></label>
         <name>Valid_Credentials_Received__c</name>
     </fields>

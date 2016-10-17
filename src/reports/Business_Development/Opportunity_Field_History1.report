@@ -28,9 +28,6 @@
         <field>STAGE_NAME</field>
     </columns>
     <columns>
-        <field>Opportunity.Primary_Campaign_Name__c</field>
-    </columns>
-    <columns>
         <field>OPP_CREATED_DATE</field>
     </columns>
     <columns>
@@ -53,11 +50,6 @@
             <column>OPP_OWNER</column>
             <operator>equals</operator>
             <value>jeremy gryder,victor soares</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity.Primary_Campaign_Name__c</column>
-            <operator>notContain</operator>
-            <value>bigpay</value>
         </criteriaItems>
         <criteriaItems>
             <column>OPPORUNITY.NAME</column>

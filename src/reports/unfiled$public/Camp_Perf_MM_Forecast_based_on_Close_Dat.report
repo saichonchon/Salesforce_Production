@@ -197,11 +197,6 @@
             <operator>equals</operator>
             <value></value>
         </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity.Primary_Campaign_Name__c</column>
-            <operator>notContain</operator>
-            <value>demo,shop.org,shoporg,hubspot</value>
-        </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>
@@ -212,11 +207,6 @@
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>Opportunity.Owner_Team__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Opportunity.Primary_Campaign_Name__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Camp Perf MM Forecast based on Close Dat</name>

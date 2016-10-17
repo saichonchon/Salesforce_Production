@@ -4,9 +4,6 @@
         <field>FULL_NAME</field>
     </columns>
     <columns>
-        <field>Opportunity.Primary_Campaign_Name__c</field>
-    </columns>
-    <columns>
         <field>Opportunity.StoreURL__c</field>
     </columns>
     <columns>

@@ -9,7 +9,7 @@
             <type>opportunityTeam</type>
         </recipients>
         <senderType>CurrentUser</senderType>
-        <template>Internal_Email_Template/Opp_Sales_Engineer_Assigned</template>
+        <template>Internal_Workflow_Communications_Sales/Opp_Sales_Engineer_Assigned</template>
     </alerts>
     <rules>
         <fullName>Send Email to Assigned SE</fullName>

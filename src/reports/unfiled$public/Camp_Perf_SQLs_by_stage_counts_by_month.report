@@ -27,9 +27,6 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>Opportunity$Primary_Campaign_Name__c</field>
-    </columns>
-    <columns>
         <field>Opportunity$CreatedBy</field>
     </columns>
     <columns>
@@ -98,9 +95,9 @@
             <value>Qualifier</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity$Primary_Campaign_Name__c</column>
+            <column>Opportunity$Campaign.Parent</column>
             <operator>contains</operator>
-            <value>ACQ.prospect</value>
+            <value>acq.prospect</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -125,6 +122,6 @@
     <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>Opportunity$CreatedDate</dateColumn>
-        <interval>INTERVAL_CUSTOM</interval>
+        <interval>INTERVAL_CURFY</interval>
     </timeFrameFilter>
 </Report>

@@ -195,6 +195,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Last Promoter.io NPS --></label>
+        <name>Last_Promoter_io_NPS__c</name>
+    </fields>
+    <fields>
         <name>LeadSource</name>
         <picklistValues>
             <masterLabel>ACQ List Upload</masterLabel>

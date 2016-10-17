@@ -43,11 +43,6 @@
             <value>victor soares</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity.Primary_Campaign_Name__c</column>
-            <operator>notContain</operator>
-            <value>Bigpay</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>STAGE_NAME</column>
             <operator>notContain</operator>
             <value>Closed Lost,Closed Won</value>

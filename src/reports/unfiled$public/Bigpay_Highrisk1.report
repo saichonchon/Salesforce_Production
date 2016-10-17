@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
-        <field>Opportunity.Primary_Campaign_Name__c</field>
-    </columns>
-    <columns>
         <field>Opportunity.Strategic_Partner__c</field>
     </columns>
     <columns>
@@ -36,13 +33,6 @@
     <columns>
         <field>Opportunity.Other_Comments__c</field>
     </columns>
-    <filter>
-        <criteriaItems>
-            <column>Opportunity.Primary_Campaign_Name__c</column>
-            <operator>equals</operator>
-            <value>Bigpay: HighRisk</value>
-        </criteriaItems>
-    </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>

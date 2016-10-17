@@ -943,7 +943,30 @@ global without sharing class TestDataFactory {
 
     }
 
+    /**
+     * Creates a Promoter.io Feedback
+     * @author Bala Rajagopal
+     * @date   2016-09-06
+     * @ticket link       https://jira.bigcommerce.com/browse/BAP-3171
+     * @param  cont       The contact to link the case to
+     * @return            A unique Promoter IO Feedback
+     */
+    public static Promoter_io_Feedback__c createPromoterIoFeedback(Contact cont)
+    {
+        Promoter_io_Feedback__c  retVal = new Promoter_io_Feedback__c ();
+        String seed1 = String.valueof(MathUtility.RandomInteger(1000, 9999));
 
+        retVal.Email__c = cont.Email;
+        retVal.Score__c = 25;
+        retVal.Feedback_Unique_External_ID__c  = 'TestID';
+        retVal.Posted_Date__c = date.newInstance(2016, 6, 29);
+        retVal.SF_Account_ID__c = cont.accountid;
+        retVal.Contact__c = cont.id;
+		insert retVal;
+
+        return retVal;
+
+    }
 
     global static void IncreaseCodeCoverage()
     {

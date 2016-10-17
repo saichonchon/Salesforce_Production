@@ -41,6 +41,54 @@
             <value>&gt; 7 Days</value>
         </values>
     </buckets>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_86425268</developerName>
+        <masterLabel>Age in Hours</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>AGE</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>24</to>
+            </sourceValues>
+            <value>24</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>24</from>
+                <to>48</to>
+            </sourceValues>
+            <value>48</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>48</from>
+                <to>72</to>
+            </sourceValues>
+            <value>72</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>72</from>
+                <to>96</to>
+            </sourceValues>
+            <value>96</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>96</from>
+                <to>120</to>
+            </sourceValues>
+            <value>120</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>120</from>
+            </sourceValues>
+            <value>120+</value>
+        </values>
+    </buckets>
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
         <backgroundColor2>#FFFFFF</backgroundColor2>
@@ -49,13 +97,11 @@
             <axisBinding>y</axisBinding>
             <column>RowCount</column>
         </chartSummaries>
-        <chartType>VerticalColumnGrouped</chartType>
+        <chartType>VerticalColumn</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>BucketField_30775879</groupingColumn>
-        <legendPosition>Bottom</legendPosition>
+        <groupingColumn>CLOSED_DATEONLY</groupingColumn>
         <location>CHART_TOP</location>
-        <secondaryGroupingColumn>CLOSED_DATEONLY</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -71,6 +117,12 @@
     </chart>
     <columns>
         <field>Case.Case_Closed_By__c</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>Case.Hours_Open__c</field>
     </columns>
     <columns>
         <field>Case.Case_Age_in_Days__c</field>
@@ -90,6 +142,9 @@
     <columns>
         <field>CLOSED</field>
     </columns>
+    <columns>
+        <field>ESCALATION_STATE</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
@@ -108,8 +163,13 @@
         </criteriaItems>
         <criteriaItems>
             <column>Case.Case_Closed_By__c</column>
-            <operator>equals</operator>
-            <value>Garrett Cluff,Mary Quilaga,Jude Abrigo,Glen Saturno,Paulo Mojica,Aries Leyte,Christie Rodriguez,Faith Esguerra,Jan Saria,John San Diego,John Ferrer,Jonalyn Fresnido,Jonathan Castro,Josiephene Caceres,Jovic Leovis,Juan Calanoc,Jun Tupas,Kim Radaza,Kristel Pura,Marielle Morre,Marjorie Tamayo,Mireille Ferol,Racel Arce,Regie Matibag,Raymond Macatangay,Ryan Juarez,Shirley Detera,Rianne Insigne,Ella Vinalon,Gerald Bobiles,Anne Ilagan,Lorain Miranda,Sid Secjadas,Julie Due,AJ Agustin,Mark Galzote,Eric Ong,Charmaine Repolda,Christine Salvador,Jan Estacio,Jason Pilapil,Kristyna DePaz,Krizzle Panganiban,Nino Mercado,Peabo SanPedro</value>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ESCALATION_STATE</column>
+            <operator>notEqual</operator>
+            <value>1</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>
@@ -120,7 +180,7 @@
     </groupingsAcross>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>BucketField_30775879</field>
+        <field>BucketField_86425268</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Cases Closed Age - Webcase Lifecycle</name>
@@ -134,9 +194,9 @@
     </params>
     <reportType>CaseList</reportType>
     <scope>organization</scope>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>CLOSED_DATEONLY</dateColumn>
-        <interval>INTERVAL_LASTTHISMONTH</interval>
+        <interval>INTERVAL_THISWEEK</interval>
     </timeFrameFilter>
 </Report>

@@ -72,9 +72,6 @@
         <field>CREATED_DATE</field>
     </columns>
     <columns>
-        <field>CLOSED_DATE</field>
-    </columns>
-    <columns>
         <field>Case.Case_Age_in_Days__c</field>
     </columns>
     <columns>
@@ -119,6 +116,11 @@
         </criteriaItems>
     </filter>
     <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Week</dateGranularity>
+        <field>CLOSED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>BucketField_30775879</field>
@@ -138,8 +140,6 @@
     <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>CLOSED_DATEONLY</dateColumn>
-        <endDate>2016-09-03</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2016-08-28</startDate>
+        <interval>INTERVAL_LAST90</interval>
     </timeFrameFilter>
 </Report>

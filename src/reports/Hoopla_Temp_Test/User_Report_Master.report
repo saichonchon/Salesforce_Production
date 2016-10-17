@@ -37,6 +37,11 @@
             <operator>notContain</operator>
             <value>partner,leader</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>USERNAME</column>
+            <operator>notEqual</operator>
+            <value>api@bigcommerce.com,maria.huemmer+marketingteam@bigcommerce.com</value>
+        </criteriaItems>
     </filter>
     <format>Tabular</format>
     <name>User Report - Master</name>

@@ -71,11 +71,6 @@
             <value>small business,enterprise,sdr</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity.Primary_Campaign_Name__c</column>
-            <operator>contains</operator>
-            <value>Demo Request</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>CLOSED</column>
             <operator>notEqual</operator>
             <value>1</value>

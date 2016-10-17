@@ -87,6 +87,9 @@
         <field>CASE_NUMBER</field>
     </columns>
     <columns>
+        <field>ESCALATION_STATE</field>
+    </columns>
+    <columns>
         <field>OWNER</field>
     </columns>
     <columns>
@@ -138,12 +141,17 @@
         <criteriaItems>
             <column>OWNER</column>
             <operator>notContain</operator>
-            <value>Manager,Design,Tier 2,API,Escalated,Garrett Cluff</value>
+            <value>Billing,Cancellation,Manager,Design,Tier 2,API,Escalated,Garrett Cluff</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Satisfaction__c</column>
             <operator>notEqual</operator>
             <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Survey_Status__c</column>
+            <operator>notContain</operator>
+            <value>Waiting</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -168,6 +176,6 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Case.Survey_Completion_Date__c</dateColumn>
-        <interval>INTERVAL_THISWEEK</interval>
+        <interval>INTERVAL_LASTWEEK</interval>
     </timeFrameFilter>
 </Report>

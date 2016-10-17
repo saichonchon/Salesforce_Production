@@ -9,7 +9,7 @@
             <type>opportunityTeam</type>
         </recipients>
         <senderType>CurrentUser</senderType>
-        <template>Internal_Email_Template/Opp_New_Purchase_Made</template>
+        <template>Internal_Workflow_Communications_Sales/Opp_New_Purchase_Made</template>
     </alerts>
     <alerts>
         <fullName>Email_Migraiton_Team_of_new_prescoping_opportunity</fullName>
@@ -34,7 +34,7 @@
             <type>owner</type>
         </recipients>
         <senderType>CurrentUser</senderType>
-        <template>Internal_Email_Template/Upgrade_Opportunity_Close_Won_2</template>
+        <template>Internal_Workflow_Communications_Sales/Upgrade_Opportunity_Close_Won_2</template>
     </alerts>
     <alerts>
         <fullName>Email_Sales_Rep_that_Prescoping_is_complete</fullName>
@@ -83,7 +83,7 @@
             <type>userLookup</type>
         </recipients>
         <senderType>CurrentUser</senderType>
-        <template>Internal_Email_Template/Executive_Sponsorship_Notification</template>
+        <template>Internal_Workflow_Communications_Sales/Executive_Sponsorship_Notification</template>
     </alerts>
     <alerts>
         <fullName>MKT_Featured_client_churned</fullName>
@@ -127,7 +127,7 @@
         </recipients>
         <senderAddress>no-reply@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
-        <template>Internal_Email_Template/Product_Change_Alert_Opp</template>
+        <template>Internal_Workflow_Communications_Sales/Product_Change_Alert_Opp</template>
     </alerts>
     <alerts>
         <fullName>SBD_Intuit_Plus_Plan_Email</fullName>
@@ -177,7 +177,7 @@
         </recipients>
         <senderAddress>no-reply@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
-        <template>Internal_Email_Template/Opp_Cancellation_Email_Alert</template>
+        <template>Internal_Workflow_Communications_Sales/Opp_Cancellation_Email_Alert</template>
     </alerts>
     <alerts>
         <fullName>Send_Client_Reference_Program_Decline_Email</fullName>
@@ -394,6 +394,15 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>Opportunity_SV_SMB_DemoRequest_AddToPlan</fullName>
+        <field>SalesVue__Salesvue_Add_To_Plan_Ids__c</field>
+        <formula>SalesVue__Salesvue_Add_To_Plan_Ids__c + &quot;,a7l13000000CasHAAS&quot;</formula>
+        <name>Opportunity SV SMB DemoRequest AddToPlan</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Owner_The_BigCommerce_Team</fullName>
         <field>OwnerId</field>
         <lookupValue>team@bigcommerce.com</lookupValue>
@@ -401,6 +410,60 @@
         <name>Owner: The BigCommerce Team</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SV_Remove_SMB_PipelineMgmt_AddToPlan</fullName>
+        <field>SalesVue__Salesvue_Remove_From_Plan_Ids__c</field>
+        <formula>SalesVue__Salesvue_Remove_From_Plan_Ids__c + &quot;,a7l13000000CasHAAS&quot; + &quot;,01Q13000000lotlEAA&quot;</formula>
+        <name>SV Remove SMB PipelineMgmt AddToPlan</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SV_Remove_from_SMBNewTrial_Pur_AddToPlan</fullName>
+        <field>SalesVue__Salesvue_Remove_From_Plan_Ids__c</field>
+        <formula>SalesVue__Salesvue_Remove_From_Plan_Ids__c + &quot;,a7l13000000Cb5bAAC&quot; + &quot;,01Q13000000lorLEAQ&quot;</formula>
+        <name>SV Remove from SMBNewTrial Pur AddToPlan</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SV_SMB_Demo_Request_Opp_Add_AddToPlan</fullName>
+        <field>SalesVue__Salesvue_Add_To_Plan_Ids__c</field>
+        <formula>SalesVue__Salesvue_Add_To_Plan_Ids__c + &quot;,a7l13000000GoKgAAK&quot;</formula>
+        <name>SV SMB Demo Request Opp Add AddToPlan</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SV_SMB_Demo_Request_Opp_Remove</fullName>
+        <field>SalesVue__Salesvue_Remove_From_Plan_Ids__c</field>
+        <formula>SalesVue__Salesvue_Remove_From_Plan_Ids__c + &quot;,a7l13000000GoKgAAK&quot;</formula>
+        <name>SV SMB Demo Request Opp Remove</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SV_SMB_New_Trial_Outreach_AddToPlan</fullName>
+        <field>SalesVue__Salesvue_Add_To_Plan_Ids__c</field>
+        <formula>SalesVue__Salesvue_Add_To_Plan_Ids__c + &quot;,a7l13000000Cb5bAAC&quot; + &quot;,01Q13000000lowVEAQ&quot;</formula>
+        <name>SV SMB New Trial Outreach AddToPlan</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SV_SMB_Pipeline_Mgmt_Opp_Add_AddToPlan</fullName>
+        <field>SalesVue__Salesvue_Add_To_Plan_Ids__c</field>
+        <formula>SalesVue__Salesvue_Add_To_Plan_Ids__c + &quot;,a7l13000000CasHAAS&quot; + &quot;,01Q13000000lowQEAQ&quot;</formula>
+        <name>SV SMB Pipeline Manage Opp Add AddToPlan</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
@@ -513,10 +576,10 @@
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Update_Stage_to_Migration_Prescoping</fullName>
-        <description>Update Stage to Migration Prescoping</description>
+        <description>Update Stage to Migration Scoping</description>
         <field>StageName</field>
-        <literalValue>Migration Pre Scoping</literalValue>
-        <name>Update Stage to Migration Prescoping</name>
+        <literalValue>Migration Scoping</literalValue>
+        <name>Update Stage to Migration Scoping</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
@@ -1111,6 +1174,122 @@ ISCHANGED( New_Product_Plan__c )  &amp;&amp;
 New_Product_Plan__c = &quot;Standard Plan&quot; &amp;&amp;
  PurchaseDate__c  = today()</formula>
         <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>SV SMB Demo Request Opp Add</fullName>
+        <actions>
+            <name>SV_SMB_Demo_Request_Opp_Add_AddToPlan</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>SV Add to Opp Plan SMB Demo Request</description>
+        <formula>AND(
+/* Owner_Team__c = &apos;Small Business Sales Team&apos;, */
+OwnerId = &apos;005a0000008Ucq6AAC&apos; /* Nathan Turner */,
+OwnerId = &apos;005a0000008XWqOAAW&apos; /* Chris Talotta */,
+NOT ISNULL(Demo_Requested_Date__c),
+ISPICKVAL(SalesVue__Salesvue_Plan_Status__c,&apos;Active&apos;)
+)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>SV SMB Demo Request Opp Remove</fullName>
+        <actions>
+            <name>SV_SMB_Demo_Request_Opp_Remove</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Purchased</value>
+        </criteriaItems>
+        <description>Remove from SV SMB Demo Request Opp Plan when Stage=purchased</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>SV SMB New Trial Outreach Add</fullName>
+        <actions>
+            <name>SV_SMB_New_Trial_Outreach_AddToPlan</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Qualify</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.CreatedDate</field>
+            <operation>equals</operation>
+            <value>LAST 5 DAYS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Owner_Team__c</field>
+            <operation>equals</operation>
+            <value>Small Business Sales Team</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Demo_Requested_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>SV Add to Opp Plan SMB New Trial Outreach</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>SV SMB New Trial Outreach Remove</fullName>
+        <actions>
+            <name>SV_Remove_from_SMBNewTrial_Pur_AddToPlan</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Purchased</value>
+        </criteriaItems>
+        <description>Stage=Purchased. Remove from SMBNewTrial Plan</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>SV SMB Pipeline Management Opp Add</fullName>
+        <actions>
+            <name>SV_SMB_Pipeline_Mgmt_Opp_Add_AddToPlan</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Demo_Requested_Date__c</field>
+            <operation>equals</operation>
+            <value>LAST 5 DAYS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Owner_Team__c</field>
+            <operation>equals</operation>
+            <value>Small Business Sales Team</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.IsClosed</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>SV Add to Opp Plan SMB Pipeline Management</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>SV SMB Pipeline Management Remove</fullName>
+        <actions>
+            <name>SV_Remove_SMB_PipelineMgmt_AddToPlan</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Purchased</value>
+        </criteriaItems>
+        <description>Remove from SV SMB Pipeline Management Plan Stage=purchase</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
         <fullName>Send Executive Sponsorship Email</fullName>

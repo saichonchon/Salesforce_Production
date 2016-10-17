@@ -168,6 +168,25 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
+            <assignedTo>Tier_2_Tickets</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Subject</field>
+                <operation>startsWith</operation>
+                <value>NPS Survey Response from</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Promoter.io</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Client Success</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
             <assignedTo>Support</assignedTo>
             <assignedToType>Queue</assignedToType>
             <criteriaItems>

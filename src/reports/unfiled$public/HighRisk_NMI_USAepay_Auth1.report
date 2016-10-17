@@ -54,11 +54,6 @@
             <operator>equals</operator>
             <value>Opportunity.SBD_Upsell</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity.Primary_Campaign_Name__c</column>
-            <operator>contains</operator>
-            <value>NMI</value>
-        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>

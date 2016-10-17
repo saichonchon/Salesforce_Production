@@ -66,81 +66,9 @@ public without sharing class CaseHandle_Helper
     		}
     	}	
     }
-/*    
-    public static void lead_LastSurveyDate(set<Id> stLeadIds)
-    {
-    	if (stLeadIds != null && !stLeadIds.isEmpty())
-    	{
-    		list<Lead> lstLeadToUpdate = new list<Lead>();
-    		map<Id, Lead> mpLeadIdtoLead = new map<Id, Lead>();
-    		Lead objL;
-    		Date lastSurvey;
-    		
-    		for (Lead l : [SELECT Id, IsConverted, Last_Case_Survey_Date__c
-    						FROM Lead
-    						WHERE Id IN :stLeadIds])
-    		{
-    			mpLeadIdtoLead.put(l.Id, l);
-    		}
-    		
-    		
-    		for (AggregateResult ar : [SELECT Lead__c, MAX(Survey_Completion_Date__c)lastSurvey
-    									FROM Case 
-    									WHERE Lead__c IN :stLeadIds
-    									GROUP BY Lead__c])
-    		{
-    			lastSurvey = date.valueOf(ar.get('lastSurvey'));    			
-    			objL = mpLeadIdtoLead.get(string.ValueOf(ar.get('Lead__c')));
-    			
-    			if (!objL.IsConverted && objL.Last_Case_Survey_Date__c != lastSurvey)
-    			{
-    				objL.Last_Case_Survey_Date__c = lastSurvey;
-    				    			
-    				lstLeadToUpdate.add(objL);
-    			}
-    		}
-    		
-    		if (!lstLeadToUpdate.isEmpty())
-    		{
-    			update lstLeadToUpdate;
-    		}
-    	}
-    }
-    
-    @future
-    public static void case_StartWorkingNewCase(set<Id> stCaseIds)
-    {
-        list<Case_Time_Worked__c> lstWorked = new list<Case_Time_Worked__c>();
-        Case_Time_Worked__c objCTW;
-        
-        map<String, Case_RecordTypes_for_Time_Worked__c> mpCSRecTypes = Case_RecordTypes_for_Time_Worked__c.getAll();
-        
-        // Loop through all the cases and if necessary create a new Case Time Worked record
-        for (Case c : getCaseList(stCaseIds))
-        {
-            system.debug('***CaseHandle_Helper:case_StartWorkingNewCase - Case isClosed: ' + c.IsClosed);
-            system.debug('***CaseHandle_Helper:case_StartWorkingNewCase - Case Owner Id: ' + c.OwnerId);
-            system.debug('***CaseHandle_Helper:case_StartWorkingNewCase - Case User Type: ' + c.Owner.Type);
-            
-            // Make sure this new case is NOT closed and is owned by a User (not a queue), and is a record type included in the logic
-            if (!c.IsClosed && c.Owner.Type == 'User' && mpCSRecTypes.containsKey(c.RecordType.Name))
-            {
-                objCTW = createTimeWorkedFromCase(c, true);
-                lstWorked.add(objCTW);
-                system.debug('***CaseHandle_Helper:case_StartWorkingNewCase - objCTW: ' + objCTW);
-            }
-        }
-        
-        // Check if any records need to be inserted or updated
-        if (!lstWorked.isEmpty())
-        {
-            insert lstWorked;
-        }
-    }
-  */  
+  
     public static void case_StartWorking(set<Id> stCaseIds)
     {
-        system.debug('***CaseHandle_Helper:case_StartWorking - stCaseIds: ' + stCaseIds);
         
         list<Case> lstCasesToUpdate = new list<Case>();
         list<Case_Time_Worked__c> lstWorked = new list<Case_Time_Worked__c>();
@@ -149,11 +77,6 @@ public without sharing class CaseHandle_Helper
         // Loop through all the cases and create a new Case Time Worked record if necessary
         for (Case c : getCaseList(stCaseIds))
         {
-            //system.debug('***CaseHandle_Helper:case_StartWorking - Case: ' + c);
-            system.debug('***CaseHandle_Helper:case_StartWorking - Case isClosed: ' + c.IsClosed);
-            system.debug('***CaseHandle_Helper:case_StartWorking - Case Owner Id: ' + c.OwnerId);
-            system.debug('***CaseHandle_Helper:case_StartWorking - Running User Id: ' + USERID);
-            system.debug('***CaseHandle_Helper:case_StartWorking - Case User Type: ' + c.Owner.Type);
             
             // Make sure the case is NOT already owned by the current user, is in fact owned by a queue, and is NOT Closed
  //           if (!c.IsClosed && c.OwnerId != USERID && c.Owner.Type == 'Queue')
@@ -161,25 +84,23 @@ public without sharing class CaseHandle_Helper
             {
   //              objCTW = createTimeWorkedFromCase(c, false);
                 lstWorked.add(objCTW);
-                system.debug('***CaseHandle_Helper:case_StartWorking - objCTW: ' + objCTW);
                 if (c.OwnerId <> USERID)
                 {
 	                c.OwnerId = USERID;
 	                lstCasesToUpdate.add(c);
-	                system.debug('***CaseHandle_Helper:case_StartWorking - updated case: ' + c);
  
                 }
             }
             else
             {
-            	system.debug('***CaseHandle_Helper:case_StartWorking - Case did NOT Meet Requirements for creating Time Worked Record');
+
             }
         }
         
         // Check if any records need to be inserted or updated
         if (!lstWorked.isEmpty())
         {
-//            insert lstWorked;
+
         }
         
         if (!lstCasesToUpdate.isEmpty())
@@ -192,87 +113,7 @@ public without sharing class CaseHandle_Helper
             database.update(lstCasesToUpdate, dml);
         }
     }
-  /*  
-    public static void case_StopWorking (Case objC)
-    {
-    	system.debug('***CaseHandle_Helper:case_StopWorking - starting for Case: ' + objC);
-    	
-        list<Case_Time_Worked__c> lstCTW = new list<Case_Time_Worked__c>();
-        
-        for (Case_Time_Worked__c ctw : [SELECT Id, Case__c, Stop_Time__c
-                                        FROM Case_Time_Worked__c
-                                        WHERE Case__c = :objC.Id
-                                            AND Owner_to_ID__c = :USERID
-                                            AND Stop_Time__c = null])
-        {
-        	system.debug('***CaseHandle_Helper:case_StopWorking - stoping CTW: ' + ctw);
-            ctw.Stop_Time__c = system.now();
-            lstCTW.add(ctw);
-        }
-        
-        if (!lstCTW.isEmpty())
-        {
-            update lstCTW;
-        }
-    }
     
-    public static void case_StopWorkingAllOpenTime (set<Id> stCaseId)
-    {
-        list<Case_Time_Worked__c> lstCTW = new list<Case_Time_Worked__c>();
-        
-        for (Case_Time_Worked__c ctw : [SELECT Id, Case__c, Stop_Time__c
-                                        FROM Case_Time_Worked__c
-                                        WHERE Case__c = :stCaseId
-                                            AND Stop_Time__c = null])
-        {
-            ctw.Stop_Time__c = system.now();
-            lstCTW.add(ctw);
-        }
-        
-        if (!lstCTW.isEmpty())
-        {
-            update lstCTW;
-        }
-    }
-  
-    public static Case_Time_Worked__c createTimeWorkedFromCase (Case objC, boolean isInsert)
-    {
-        // Create the Time Worked record
-        Case_Time_Worked__c objCTW = new Case_Time_Worked__c();
-        
-        objCTW.Case__c = objC.Id;
-        objCTW.Case_Category__c = objC.Category__c;
-        objCTW.Case_Department__c = objC.Department__c;
-        objCTW.Case_Origin__c = objC.Origin;
-        objCTW.Case_Reason__c = objC.Reason;
-        objCTW.Case_Status__c = objC.Status;        
-        objCTW.Owner_from_ID__c = isInsert ? null : objC.OwnerId;
-        objCTW.Owner_from_Name__c = isInsert ? null : objC.Owner.Name;
-        objCTW.Owner_Role__c = isInsert ? objC.Owner.UserRole.Name : CURUSER.UserRole.Name;
-        objCTW.Owner_to_ID__c = isInsert ? objC.OwnerId : CURUSER.Id;
-        objCTW.Owner_to_Name__c = isInsert ? objC.Owner.Name : CURUSER.Name;     
-        objCTW.Start_Time__c = system.now();
-                
-        return objCTW;
-    }
-    
-    public static Case_Time_Worked__c findLastQueueForCase (Id caseId)
-    {
-        Case_Time_Worked__c objCTW = null;
-        
-        for (Case_Time_Worked__c ctw : [SELECT Id, Case__c, Owner_from_Name__c, Owner_from_ID__c
-                                        FROM Case_Time_Worked__c
-                                        WHERE Case__c = :caseId
-                                            AND Owner_to_ID__c = :USERID
-                                            AND Stop_Time__c = null])
-        {
-            objCTW = ctw;
-            break;
-        }
-        
-        return objCTW;
-    }
- */     
     public static long getDateDiffInMinutes(datetime earlyDT, datetime lateDT)
     {  
     	//getTime gives us milliseconds, so divide by 1000 for seconds, and again by 60 for minutes
@@ -346,7 +187,6 @@ public without sharing class CaseHandle_Helper
 				stCaseId.add(c.Id);
 			}
 	    	
-// replace	    	map<Id, list<Case_Time_Worked__c>> mpCaseToCTWList = loadCaseToCTWList(stCaseId);
             map<Id, List<WorkIt2__Timing__c>> mpCaseToCWList = loadCaseToCWList(stCaseId);
 	    	map<Id, list<LiveChatTranscript>> mpCaseToLCTList = loadCaseToLCTList(stCaseId);
 	    	map<Id, list<CallTaskWrapper>> mpCaseToCallList = loadCaseToCallList(stCaseId);
@@ -356,16 +196,14 @@ public without sharing class CaseHandle_Helper
 	    	Id primaryRep;
 	    	decimal repTime = 0;
 	    	decimal totHandleTime = 0;
-	    	long overLapTime = 0;
-//	    	Case objC;    	
+	    	long overLapTime = 0;  	
 	    	
 	    	// Loop through all the case Ids passed in
 			for (Case objC :lstCase)
 //	    	for (string csId : stCaseId)
 	    	{
 	    		updateCase = false;
-	    		
-//	    		objC = mpCaseIdToCase.get(csId);
+
 	    		string csId = objC.Id;
 	    		primaryRep = objC.Primary_Case_Rep__c;
 	    		repTime = 0;
@@ -373,12 +211,10 @@ public without sharing class CaseHandle_Helper
 	    		// Figure out the primary rep for the case if records exist
 	    		if (mpCaseToUserTimeList != null && mpCaseToUserTimeList.containsKey(csId))
 	    		{
-//	    			system.debug('@@@ CaseHandle_Helper:rollUpCaseHandleTime - RepTimeMap for Case: ' + mpCaseToUserTimeList.get(csId));
-	    			
+
 	    			// Loop through each rep record to see who has the most time
 	    			for (RepTimeWrapper rep : mpCaseToUserTimeList.get(csId))
 	    			{
-	    				system.debug('@@@ CaseHandle_Helper:rollUpCaseHandleTime - RepTimeMap for Rep: ' + rep);
 	    				
 	    				// If this is a different rep than already on the Case or than the last highest rep time 
 	    				if (rep.RepId != primaryRep && (rep.RepTimeInMinutes > repTime || primaryRep == null))
@@ -434,8 +270,7 @@ public without sharing class CaseHandle_Helper
 	    			}
     			}
 	    			    		
-	    		system.debug('@@@ CaseHandle_Helper:rollUpCaseHandleTime - initial Handle Time: ' + totHandleTime);
-// replace	    		
+	    		
 	    		// Now loop through all the Case Time Worked records for the case and see if anything overlaps
 	    		if (mpCaseToCWList != null && mpCaseToCWList.containsKey(csId))
 	    		{
@@ -462,19 +297,14 @@ public without sharing class CaseHandle_Helper
 				    			{
 					    			for (CallTaskWrapper cCall : mpCaseToCallList.get(csId))
 					    			{
-					    				system.debug('@@@ CaseHandle_Helper:rollUpCaseHandleTime - CTI Call record: ' + cCall);
 					    				overLapTime = getOverlapTimeInMinutes(cTime.WorkIt2__Start__c, cTime.WorkIt2__End__c, cCall.dtStart, cCall.dtEnd);
-					    				system.debug('@@@ CaseHandle_Helper:rollUpCaseHandleTime - CTI Call overLapTime: ' + overLapTime + ' for record: ' + cCall);
 					    				totHandleTime = totHandleTime - overLapTime;
 					    			}
 				    			}
 				    		}
 		    	    }
 	    		}	    		
-	    		
-	    		system.debug('@@@ CaseHandle_Helper:rollUpCaseHandleTime - final Handle Time: ' + totHandleTime);
-	    		system.debug('@@@ CaseHandle_Helper:rollUpCaseHandleTime - Case Handle Time: ' + objC.Total_Case_Handle_Time__c);
-	    		
+	    		    		
 	    		if (objC.Total_Case_Handle_Time__c != totHandleTime)
 	    		{
 	    			objC.Total_Case_Handle_Time__c = totHandleTime;
@@ -499,8 +329,7 @@ public without sharing class CaseHandle_Helper
                                         List<Case> newList,  List<Case> oldList, Map<Id, Case> newMap)
     
     {
-//    	Id idCaseRecordType =  Case.getSObjectType().getDescribe().getRecordTypeInfosByName().get('Migration').getRecordTypeId();
-        
+     
         Set<Id> allaccts     = new Set<Id>();
         if (isDelete)
  		{
@@ -522,103 +351,7 @@ public without sharing class CaseHandle_Helper
     	if(!allaccts.isEmpty()) updateAccountCount(allaccts);
     	  
     }
- 
- /*  
-    public static void createSSCase(Boolean isBefore, Boolean isAfter, Boolean isInsert, Boolean isDelete, Boolean isUpdate,
-                                        List<Case> newList,  List<Case> oldList, Map<Id, Case> newMap)
-    
-    {
-    	if (!TriggerRecursionController.casesCreatedFromPSCase)
-    	{
-	    	Id idPSCaseRecordType = Case.getSObjectType().getDescribe().getRecordTypeInfosByName().get('Professional Services').getRecordTypeId();
-	    	List<Case> clcases = new List<Case>();
-	
-	    	for (integer i = 0; i < newList.size(); i++)
-		    	{
-		    		if ( ((newList[i].RecordTypeId == idMigCaseRecordType  && newList[i].Needs_Store_Setup__c == true)
-//		    		        || (newList[i].RecordTypeId == idPSCaseRecordType  
-//		    		         	&& (newList[i].Outcome__c == 'Platinum Plus Store Setup'  || newList[i].Outcome__c == 'Consultation Complete')
-//				                && (newList[i].Consultation_Hours_Available__c == 'Forever' || newList[i].Product__c == 'Platinum Plus')
-//		    		         	)
-		    		       )
-		    		     && (newList[i].Status == 'Closed' 
-		    		     && ( isInsert || newList[i].Status <> oldList[i].Status))
-	//	    		     && newList[i].Origin == 'Orion Request' 
-	           	    		   )
-		    		{ clcases.add(newList[i]);}
-		 		}
-	        
-	        if (clcases.isEmpty()) return;
-	        
-	        Map<Id, Case> mapCaseAcct = new Map<Id, Case>([select Id, Account.Id, Account.Ltc__c, Needs_Store_Setup__c,  Consultation_Hours_Available__c, RecordTypeId, Account.SBD_Segment__c, Product__c, OwnerId, Subscription__r.Status__c, Outcome__c from Case where Id in :clcases]);
-	        List<Case> sscases = new List<Case>();
-	        
-	        Id caseId;
-	        for (Case c :clcases)
-	        {
-	        	Case clc = mapCaseAcct.get(c.Id);
-	        	if (clc.Subscription__r.Status__c == 'Active')
-	        	{
-			                caseId = c.Id;
-			            	Case newCase = new Case();
-				            newCase.Origin = 'Internal Request';
-				            newCase.Subject = 'Client purchase';
-				            newCase.OwnerId= Label.PS_Queue;
-				            if (clc.Needs_Store_Setup__c == true )
-				            {
-					            newCase.Reason = 'Store Setup';
-					            newCase.Description = 'Store Setup for Client ' ;
-				            }
-				            else  if (clc.RecordTypeId == idPSCaseRecordType 
-				            		&& clc.Subscription__r.Status__c == 'Active'
-				            		&& (clc.Consultation_Hours_Available__c == 'Forever'
-				                       || clc.Product__c == 'Platinum Plus')
-				                    && (clc.Outcome__c == 'Platinum Plus Store Setup'  || clc.Outcome__c == 'Consultation Complete')
-				                       )
-				            {
-					            newCase.Reason = 'Consultation Hours Available';
-					            newCase.Description = 'Additional Consultation Services for Client ' ;
-					            newCase.Consultation_Hours_Available__c = 'Forever';
-					            newCase.OwnerId= clc.OwnerId;
-				            }
 
-				            newCase.Department__c = 'Professional Services';
-				            newCase.AccountId = clc.Account.Id;
-				            newCase.Subscription__c = c.Subscription__c;
-				            newCase.ContactId = c.ContactId ;
-				            newCase.RecordTypeId = idPSCaseRecordType;
-				            newCase.Current_Store_URL__c = c.Current_Store_URL__c;
-				           
-			 /           	if (clc.Account.Ltc__c<> null) 
-			            	{ 
-			            		newCase.OwnerId =clc.Account.Ltc__c;
-			            	}
-			            	else
-			 
-			            	{
-			            		
-			            		newCase.OwnerId= Label.PS_Queue;
-			            	}
-			 /
-			                ssCases.add(newCase);      
-	        	} 
-	         }      
-	              
-	        Try
-	        { 
-	        	insert ssCases; 
-	        	TriggerRecursionController.casesCreatedFromPSCase = true;
-	        }
-	        catch (Exception e)
-	        {
-	           ErrorEmailHelper.notifyOnError('Case Trigger Handler', 'Create SS Case', 'Error in Case Trigger Handler - Create Case', 'Error Creating case for: ' + caseId);
-	           system.debug('Error in CaseTrigger Handler - Create SS Case');
-	                          	
-	        }
-    	}  
-    }
-    
-*/
     
     public static void updateLead(Boolean isBefore, Boolean isAfter, Boolean isInsert, Boolean isDelete, Boolean isUpdate,
                                         List<Case> newList,  List<Case> oldList, Map<Id, Case> newMap)
@@ -732,16 +465,44 @@ public without sharing class CaseHandle_Helper
 			  	 }
 
 	}
-		system.debug(' size '+alist.size());
 		update alist;
     }
     
     public static void updateEIGCase(List<Case> newList)
     {
 		Id idCaseRecordType =  Case.getSObjectType().getDescribe().getRecordTypeInfosByName().get('Billing').getRecordTypeId();
+		Id idCSCaseRecordType =  Case.getSObjectType().getDescribe().getRecordTypeInfosByName().get('Client Success').getRecordTypeId();//@Author Bala - @Date 08/26/16
+        Id idCancelCaseRecordType =  Case.getSObjectType().getDescribe().getRecordTypeInfosByName().get('Cancellations').getRecordTypeId();//@Author Bala - @Date 08/26/16
         string soqlWHERE_SBDStoreIDs = '';
 		Map <Id, String> mpCaseStore = new Map<Id, String>();
- 
+        Map<String,Id> MapEmailtoContact = new Map<String,Id>();
+        Map<Id,String> MapEmailtoCase = new Map<Id,String>();
+        Map<Id,String> MapEmailandPostedDdatetoCase = new Map<Id,String>();
+ 		PromoterioSettings__c pios = PromoterioSettings__c.getOrgDefaults();
+        String caseSubjectStarting;
+        String caseOrigin;
+        String caseReason;
+        string caseCategory;
+        if(pios.Case_Subject_Starting__c != null){
+            caseSubjectStarting = pios.Case_Subject_Starting__c;
+        } else {
+            caseSubjectStarting = 'NPS Survey Response from';
+        }
+        if(pios.Case_Origin__c != null){
+            caseOrigin = pios.Case_Origin__c;
+        } else {
+            caseOrigin = 'Promoter.io';
+        }
+        if(pios.Case_Reason__c != null){
+            caseReason = pios.Case_Reason__c;
+        } else {
+            caseReason = 'Surveys';
+        }
+        if(pios.Case_Category__c != null){
+            caseCategory = pios.Case_Category__c;
+        } else {
+            caseCategory = 'Company NPS';
+        }
  		for (Case c :newList)
 		{
 			if (c.RecordTypeId == idCaseRecordType && c.Origin == 'EIG Billing'
@@ -750,9 +511,7 @@ public without sharing class CaseHandle_Helper
 					String[] emailBody = c.Description.split('\n', 0);
 					for (String s :emailBody)
 					{
-//					  system.debug(' string '+s);
 						if (s <> '' && s.length()> 7 )
-							
 						{  
 							String[] splits = s.split(':',2);
 							if (splits[0].containsIgnoreCase('STORE_ID'))
@@ -768,29 +527,56 @@ public without sharing class CaseHandle_Helper
 					}
 					c.Requesting_Department__c = 'Strategic Partner Sales';
 			}
+            
+            if(c.subject!=null){
+                if(c.RecordTypeId == idCSCaseRecordType && c.Subject.startsWithIgnoreCase(caseSubjectStarting)){
+                    String email;
+                    String postedDateString;
+                    Date postedDate;
+                    email = c.Description.substringBetween('Contact Email: ', 'Date:').trim().replace('<br>','');
+                    postedDateString = c.Description.substringBetween('Date: ', 'Score:').trim().replace('<br>','');
+                    if(!string.isBlank(postedDateString)){
+                        try{
+                            postedDate = utilities.formattedDate(postedDateString);
+                        } catch (exception e) {
+                            system.debug('>><< postedDate error on CaseHandle_Helper at ln 810 = '+e );
+                        }
+                    }
+                    c.Origin = caseOrigin;
+                    c.Reason = caseReason;
+                    c.Category__c = caseCategory;
+               
+                    if(postedDate!=null){
+                        c.Promoter_io_Feedback_Date__c = postedDate;
+                    }
+                    if(email!=null){
+                        MapEmailtoCase.put(c.id,email);
+                    
+                        if(postedDate!=null){
+                            MapEmailandPostedDdatetoCase.put(c.id,email+'-'+string.valueof(postedDate));//@@ separate method
+                        }
+                    }
+                }
+        	}
 		}
 
-/*		
-		if (soqlWHERE_SBDStoreIDs <> '')
-		{
-			map<string, Subscription__c> mpSubByStoreId = LoadSubByStoreId(soqlWHERE_SBDStoreIDs);
-			
-			for (Case updc :newList)
-			{
-				Subscription__c sub = new Subscription__c();
-				if (mpCaseStore.get(updc.Id) <> null)
-					sub = mpSubByStoreId.get(mpCaseStore.get(updc.Id));
-				if (sub <> null)
-				{
-					updc.Subscription__c = sub.Id;
-					updc.AccountId = sub.Account__r.Id;
-					updc.ContactId = sub.Contact__r.Id;
-					
-				}
-		 		
-			}
-		}
-*/
+        List<Contact> conList = new List<Contact>([select id, email from contact where email in :MapEmailtoCase.values()]);
+        for(Contact con:conList){
+            if(con.email!=null){
+            	MapEmailtoContact.put(con.email,con.id);
+            }
+        }
+        for (Case c :newList){
+            if(c.contactid==null&&MapEmailtoCase.get(c.id)!=null){
+                if(MapEmailtoContact.get(MapEmailtoCase.get(c.id))!=null){
+                	c.ContactId = MapEmailtoContact.get(MapEmailtoCase.get(c.id));
+                }
+            }
+        }
+
+        List<Case> newList2 = new List<Case>();
+        newList2.addAll(JSONParserUtil.assignFeedbackToCase(newList));
+
 		if (soqlWHERE_SBDStoreIDs <> '')
 		{
 			map<string, Opportunity> mpOppByStoreId = LoadOppByStoreId(soqlWHERE_SBDStoreIDs);
@@ -814,26 +600,7 @@ public without sharing class CaseHandle_Helper
 		}
 		
     }
- /*  
-    private static map<string, Subscription__c> LoadSubByStoreId(string soqlStoreId)
-    {
-        map<string, Subscription__c> mpSubByStoreId = new map<string, Subscription__c>();
-        
-        if (soqlStoreId.trim().length() > 0)
-        {       
-            string strSOQL = 'Select  Id, Account__r.Id, Contact__r.Id, SBD_Store_id__c From Subscription__C WHERE SBD_Store_ID__c IN (' + soqlStoreId + ')' ;
-            
-            system.debug('**** By Store Id: ' + strSOQL);
-                    
-            // Grab all  that match the account id
-            for (Subscription__c  s: database.query(strSOQL))
-            {
-                mpSubByStoreId.put(s.SBD_Store_ID__c, s);
-            }
-        }
-        return mpSubByStoreId;
-    }
- */  
+
     private static map<string, Opportunity> LoadOppByStoreId(string soqlStoreId)
     {
         map<string, Opportunity> mpOppByStoreId = new map<string, Opportunity>();
@@ -872,48 +639,21 @@ public without sharing class CaseHandle_Helper
                 cBody = cBody.replace('#CLIENTNAME','Sir/Madam');
             }
             cBody = cBody.replace('#CASENUMBER',c.CaseNumber);
-            cBody = cBody.replace('#CASESUBJECT',c.Subject);
+            if(c.Subject != null){
+            	cBody = cBody.replace('#CASESUBJECT',c.Subject);
+            }
             cBody = cBody.replace('#AGENTFIRSTNAME',userinfo.getFirstName());
             if(c.Current_User_Title__c!=null){
                 cBody = cBody.replace('#JOBTITLE',c.Current_User_Title__c);
             } else {
                 cBody = cBody.replace('#JOBTITLE','BigCommerce Team');
             }
-   			CaseComment newCom = new CaseComment(ParentId = c.Id, isPublished= true, commentBody = cBody);
+   			CaseComment newCom = new CaseComment(ParentId = c.Id, isPublished= false, commentBody = cBody);
    			lstComments.add(newCom);
    		}
    		insert lstComments;
    }
-   /* replace 
-    private static map<Id, list<Case_Time_Worked__c>> loadCaseToCTWList (set<Id> stCaseId)
-    {
-    	map<Id, list<Case_Time_Worked__c>> mpCaseToCTWList = new map<Id, list<Case_Time_Worked__c>>(); 
-    	
-    	list<Case_Time_Worked__c> lstCTW = new list<Case_Time_Worked__c>();
-    	
-    	// Get all the Case Time Worked records for each case
-    	for (Case_Time_Worked__c ctw : [SELECT Id, Case__c, Start_Time__c, Stop_Time__c, Time_Worked_in_Minutes__c, Owner_to_ID__c  
-    									FROM Case_Time_Worked__c
-    									WHERE Case__c IN :stCaseId
-    										AND Time_Worked_in_Minutes__c <> null
-    									ORDER BY Case__c, Start_Time__c])
-    	{
-    		if (mpCaseToCTWList.containsKey(ctw.Case__c))
-    		{
-    			lstCTW = mpCaseToCTWList.get(ctw.Case__c);    			
-    		}
-    		else
-    		{
-    			lstCTW = new list<Case_Time_Worked__c>();
-    		}
-    		
-    		lstCTW.add(ctw);
-    		mpCaseToCTWList.put(ctw.Case__c, lstCTW);    		
-    	}
-    	
-    	return mpCaseToCTWList;
-    }
- */   
+
     private static map<Id, List<WorkIt2__Timing__c>> loadCaseToCWList (set<Id> stCaseId)
     {
     	map<Id, List<WorkIt2__Timing__c>> mpCaseToCWList = new map<Id, List<WorkIt2__Timing__c>>(); 
@@ -1009,18 +749,13 @@ public without sharing class CaseHandle_Helper
     	string caseId;
     	string repId;
     	decimal repTime;
- // replace   	
+	
     	// Find the sum of time per user per case from Case Time Worked records
     	
     	for ( WorkIt2__Timing__c ar :[Select w.WorkIt2__Time_In_Minutes__c, w.WorkIt2__Case__c, w.OwnerId 
     	                              From WorkIt2__Timing__c w
     	                              Where WorkIt2__Case__c IN :stCaseId ])
-  /*  	for (AggregateResult ar : [SELECT Case__c, Owner_to_ID__c, sum(Time_Worked_in_Minutes__c)totTime   
-									FROM Case_Time_Worked__c
-									WHERE Case__c IN :stCaseId
-										AND Time_Worked_in_Minutes__c <> null
-			    					GROUP BY Case__c, Owner_to_ID__c])
-*/
+
     	{
     		caseId = ar.WorkIt2__Case__c;
     		repId = ar.OwnerId ;

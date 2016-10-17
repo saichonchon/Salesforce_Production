@@ -1737,11 +1737,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Primary_Campaign_Name__c</field>
-            <table>Campaign.ContactCampaignMembers.OpportunityContactRoles</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>PrimaryPartnerAccount</field>
             <table>Campaign.ContactCampaignMembers.OpportunityContactRoles</table>
         </columns>

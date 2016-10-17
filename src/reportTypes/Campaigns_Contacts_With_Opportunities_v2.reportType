@@ -1117,11 +1117,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Primary_Campaign_Name__c</field>
-            <table>Campaign.ContactCampaignMembers.Opportunities__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>CancellationRequestDate__c</field>
             <table>Campaign.ContactCampaignMembers.Opportunities__r</table>
         </columns>

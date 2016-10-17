@@ -41,6 +41,11 @@
             <operator>notEqual</operator>
             <value>Executive</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <operator>notEqual</operator>
+            <value>Maria Huemmer</value>
+        </criteriaItems>
     </filter>
     <format>Tabular</format>
     <name>Active Users without Recent Logins</name>

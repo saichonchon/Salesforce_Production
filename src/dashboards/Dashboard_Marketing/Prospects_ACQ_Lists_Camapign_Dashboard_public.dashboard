@@ -19,7 +19,7 @@
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <report>unfiled$public/Camp_Perf_SQLs_MTD_ACq_lists</report>
+            <report>unfiled$public/Camp_Perf_MTD_ACQ_List_SQLs</report>
             <showPercentage>true</showPercentage>
             <showTotal>true</showTotal>
             <showValues>false</showValues>
@@ -57,7 +57,7 @@
                 <column>OPP.AMOUNT</column>
             </chartSummary>
             <componentType>ColumnStacked</componentType>
-            <displayUnits>Auto</displayUnits>
+            <displayUnits>Integer</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
@@ -81,11 +81,11 @@
             </chartSummary>
             <componentType>Gauge</componentType>
             <displayUnits>Integer</displayUnits>
-            <gaugeMax>20000.0</gaugeMax>
+            <gaugeMax>30000.0</gaugeMax>
             <gaugeMin>0.0</gaugeMin>
             <header>MRR Closed on List Campaigns</header>
-            <indicatorBreakpoint1>10000.0</indicatorBreakpoint1>
-            <indicatorBreakpoint2>15000.0</indicatorBreakpoint2>
+            <indicatorBreakpoint1>15000.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>20000.0</indicatorBreakpoint2>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -151,7 +151,7 @@
                 <axisBinding>y</axisBinding>
                 <column>Opportunity$Opportunity_Count__c</column>
             </chartSummary>
-            <componentType>BarStacked</componentType>
+            <componentType>ColumnStacked</componentType>
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
@@ -179,7 +179,7 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>false</enableHover>
+            <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>OPP.CREATED_DATE</groupingColumn>
             <groupingColumn>CAMPAIGN.PARENT.NAME</groupingColumn>

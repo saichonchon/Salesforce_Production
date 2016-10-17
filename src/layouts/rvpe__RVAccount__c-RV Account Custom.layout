@@ -530,6 +530,8 @@
         <fields>Payment_Method__c</fields>
         <fields>Status__c</fields>
         <fields>Payment_Amount__c</fields>
+        <fields>Message__c</fields>
+        <fields>Description__c</fields>
         <relatedList>Partner_Commission_Payment__c.Partner_Account__c</relatedList>
         <sortField>Payment_Date__c</sortField>
         <sortOrder>Desc</sortOrder>

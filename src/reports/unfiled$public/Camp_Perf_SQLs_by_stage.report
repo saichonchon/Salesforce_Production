@@ -12,7 +12,7 @@
         <chartType>VerticalColumn</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Opportunity$Primary_Campaign_Name__c</groupingColumn>
+        <groupingColumn>Opportunity$StageName</groupingColumn>
         <location>CHART_BOTTOM</location>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
@@ -84,11 +84,6 @@
             <value>Qualifier</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity$Primary_Campaign_Name__c</column>
-            <operator>contains</operator>
-            <value>ACQ.prospect</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>Opportunity$StageName</column>
             <operator>notEqual</operator>
             <value>Purchased,Closed Won,Closed Lost</value>
@@ -108,11 +103,6 @@
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>Opportunity$StageName</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Opportunity$Primary_Campaign_Name__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>

@@ -56,6 +56,9 @@
         <field>Opportunity.Status__c</field>
     </columns>
     <columns>
+        <field>Account.Last_Promoter_io_NPS__c</field>
+    </columns>
+    <columns>
         <field>Account.Account_Manager_Health_Score__c</field>
     </columns>
     <columns>

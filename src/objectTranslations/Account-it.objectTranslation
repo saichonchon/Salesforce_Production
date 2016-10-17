@@ -1294,6 +1294,10 @@ Grow - Potential for big opp;Partner choosing platform --></help>
         <name>Integration_Requirements__c</name>
     </fields>
     <fields>
+        <label><!-- Last Promoter.io NPS --></label>
+        <name>Last_Promoter_io_NPS__c</name>
+    </fields>
+    <fields>
         <label><!-- zLaunch Team Commando OLD --></label>
         <name>Launch_Team_Commando__c</name>
     </fields>
@@ -2915,7 +2919,11 @@ Grow - Potential for big opp;Partner choosing platform --></help>
         <name>Rev_Share__c</name>
     </fields>
     <fields>
-        <label><!-- Revenue Share --></label>
+        <label><!-- Revenue Share Flat Fee --></label>
+        <name>Revenue_Share_Flat_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue Share % --></label>
         <name>Revenue_Share__c</name>
     </fields>
     <fields>
@@ -4558,14 +4566,6 @@ Grow - Potential for big opp;Partner choosing platform --></help>
     <layouts>
         <layout>Sales Marketing Client Account</layout>
         <sections>
-            <label><!-- Channel Partner --></label>
-            <section>Channel Partner</section>
-        </sections>
-        <sections>
-            <label><!-- Client Experience --></label>
-            <section>Client Experience</section>
-        </sections>
-        <sections>
             <label><!-- Contact Information --></label>
             <section>Contact Information</section>
         </sections>
@@ -4588,10 +4588,6 @@ Grow - Potential for big opp;Partner choosing platform --></help>
         <sections>
             <label><!-- Misc --></label>
             <section>Misc</section>
-        </sections>
-        <sections>
-            <label><!-- Partner Approval --></label>
-            <section>Partner Approval</section>
         </sections>
         <sections>
             <label><!-- Qualifier Details --></label>

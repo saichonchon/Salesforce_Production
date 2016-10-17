@@ -1,4 +1,4 @@
-<apex:page controller="OppForConsoleController" showChat="false" showheader="false" sidebar="false" tabStyle="Opportunity" action="{!LoadOpportunities}">    
+<apex:page controller="OppForConsoleController" showChat="false" showheader="false" sidebar="false" tabStyle="Opportunity" action="{!LoadOpportunities}" docType="HTML-5.0">    
     <apex:includeScript value="/support/console/28.0/integration.js" />
     <apex:includeScript value="/support/console/29.0/integration.js"/>
      <apex:includeScript value="/support/console/34.0/integration.js"/>
@@ -125,10 +125,10 @@
             </apex:pageBlockButtons>
             
             <apex:pageBlockTable value="{!Opps}" var="s" rendered="{!Opps.size > 0}">
-                <apex:column headerValue="CrCase" style="width:10px;">
-                    <apex:inputCheckbox value="{!s.isSelected}" disabled="{!NOT(s.isStore)}" rendered="{!(s.isStore)}">
+                <apex:column style="width:10px;">
+                    <apex:inputCheckbox value="{!s.isSelected}" disabled="{!NOT(s.isSelectable)}" rendered="{!(s.isSelectable)}">
                         <apex:actionSupport event="onclick" action="{!SelectOpp}" rerender="pblkMain">
-                            <apex:param name="selId" value="{!s.objOpp.Id}" />
+                            <apex:param name="selId" value="{!s.objOpp.Id}"/>
                         </apex:actionSupport>
                     </apex:inputCheckbox>
                 </apex:column>
@@ -146,10 +146,14 @@
                 <apex:outputText value="{!errorMsg}" style="font-weight:bold; font-size:1.2em;" /><br/><br/>
             </apex:outputPanel>
             <apex:pageBlockSection >
-            <apex:inputText label="Caller Name" size="35" value="{!CallerName}" id="callernameid"></apex:inputText><br/><br/>
+            <apex:inputText label="Caller Name" size="35" list="{!ContactNames}" value="{!CallerName}" id="callernameid"></apex:inputText><br/><br/>
             <apex:inputTextArea label="Subject" cols="35" value="{!CaseSubject}" id="casesubjectid"/>
             <apex:outputText rendered="{!LEN(errorMsgCaseSubject)>0}" value="{!errorMsgCaseSubject}" style="color:red; font-size:1.1em;"></apex:outputText>
-
+                <br/>
+            <apex:selectList label="Case Type" size="1" id="rtPicklist" value="{!CaseRecordTypeId}">
+                <apex:actionSupport event="onchange" rerender="casesubjectid"/>
+                <apex:selectOptions value="{!AvailableCaseRecordTypes}"/>
+            </apex:selectList>
             </apex:pageBlockSection>
               
             

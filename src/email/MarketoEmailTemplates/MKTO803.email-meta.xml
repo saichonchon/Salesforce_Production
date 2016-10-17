@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Trial Onboarding Experiment GTM-1359.ACQ - InExperienced - Day 05 - Email 4: Add</name>
+    <style>none</style>
+    <subject>Easily add products today</subject>
+    <textOnly>Learn how to quickly to add products to your BigCommerce store. Call 1-844-632-8912 for assistance on selecting a BigCommerce plan today.
+Log in to your control panel  &lt;[[https://login.bigcommerce.com/login?utm_medium=email&amp;utm_source=Trial+Onboarding&amp;utm_campaign=InExperienced&amp;utm_term=Day+5+Email+4&amp;utm_content=Control+Panel]]&gt;
+
+
+Get started now
+Praesent at mauris justo. Phasellus tempus fin
+ADD PRODUCTS NOW &lt;[[https://login.bigcommerce.com/deep-links/index.php?ToDo=addProduct]]&gt;
+It&apos;s easy to add products
+
+BigCommerce makes adding products to your store quick and easy. With just a few clicks, you can add a description, price, category, images, and options like size and color.
+
+You can even import products in bulk or sync inventory from your POS.
+
+Add products now » &lt;[[https://login.bigcommerce.com/deep-links/index.php?ToDo=addProduct]]&gt;
+
+Tips to maximize sales
+
+One of the easiest, most cost-effective ways to maximize conversion is to create great product pages. We have three blog posts that will help get you started:
+
+ - 8 Incredibly Useful Product Photography Tools and Resources &lt;[[https://www.bigcommerce.com/blog/8-incredibly-useful-product-photography-tools-and-resources-for-online-stores/?utm_medium=email&amp;utm_source=Trial+Onboarding&amp;utm_campaign=InExperienced&amp;utm_term=Day+5+Email+4&amp;utm_content=Tools+and+Resources]]&gt;
+
+ - 4 Tips to Taking Better Product Photos &lt;[[https://www.bigcommerce.com/blog/4-tips-to-taking-better-product-photos-from-two-guys-bow-ties-store-owner-adam-teague/?utm_medium=email&amp;utm_source=Trial+Onboarding&amp;utm_campaign=InExperienced&amp;utm_term=Day+5+Email+4&amp;utm_content=Products+Photos+Tips]]&gt;
+
+ - The One Formula You Need to Write Product Descriptions that Sell &lt;[[https://www.bigcommerce.com/blog/perfect-product-description-formula/?utm_medium=email&amp;utm_source=Trial+Onboarding&amp;utm_campaign=InExperienced&amp;utm_term=Day+5+Email+4&amp;utm_content=Product+Descriptions]]&gt;
+
+{{my.Litmus Tracker 15:default=editme}}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

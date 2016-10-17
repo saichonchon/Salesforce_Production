@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Trial Onboarding Experiment - GTM-1296 / GTM-1274 - OLD.ACQ - Experienced - Day</name>
+    <style>none</style>
+    <subject>Beautiful stores, amazing results</subject>
+    <textOnly>BigCommerce themes expresses the power of your brand through your store. Call 1-844-632-8912 for assistance on selecting a BigCommerce plan today.
+Log in to your control panel &lt;[[https://login.bigcommerce.com/login?utm_medium=email&amp;utm_source=TrialOnboarding&amp;utm_campaign=Experienced&amp;utm_term=Day1Email2&amp;utm_content=Control+Panel]]&gt;
+Get started building a beautiful store
+EXPLORE THEMES &lt;[[https://login.bigcommerce.com/deep-links/index.php?ToDo=viewTemplates]]&gt;
+Get amazing results
+
+
+No matter which BigCommerce theme you select, your theme will:
+
+
+
+	- Highlight your products and engage shoppers
+
+	- Perform beautifully on desktops, laptops and mobile devices
+
+	- Yield better search results, faster page load times, and higher conversion rates
+
+	- Customize the look and feel of your brand
+
+
+
+Our platform is the best solution for growing your sales, streamlining your operations and connecting all your sales channels. And it all comes at 1/4 the cost and 1/2 the go-to-market time of on-premise solutions.
+
+
+Explore our themes » &lt;[[https://login.bigcommerce.com/deep-links/index.php?ToDo=viewTemplates]]&gt;
+{{my.Litmus Tracker 1:default=editme}}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

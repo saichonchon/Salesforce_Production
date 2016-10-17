@@ -31,13 +31,6 @@
     <columns>
         <field>FK_NAME</field>
     </columns>
-    <filter>
-        <criteriaItems>
-            <column>Opportunity.Primary_Campaign_Name__c</column>
-            <operator>equals</operator>
-            <value>Prospects.Partner Deal Program.2016Q1.ChannelAdvisor.Deal Registration.SBD-Acq</value>
-        </criteriaItems>
-    </filter>
     <format>Tabular</format>
     <name>Channel Advisor PWS</name>
     <params>

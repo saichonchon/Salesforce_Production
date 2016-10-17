@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Trial Onboarding Experiment - GTM-1296 / GTM-1274 - OLD.ACQ - Experienced - Day</name>
+    <style>none</style>
+    <subject>Your trial ends today</subject>
+    <textOnly>Today is the last day for your free Bigcommerce trial. Upgrade your store by picking a plan today.
+Log in to your control panel &lt;[[https://login.bigcommerce.com/login?utm_medium=email&amp;utm_source=Trial+Onboarding&amp;utm_campaign=Experienced&amp;utm_term=Day+15+Email+9&amp;utm_content=Control+Panel]]&gt;
+Ready to select your BigCommerce plan?
+Select your plan &lt;[[https://manage.bigcommerce.com/account/stores/upgrade]]&gt;
+We offer a range of plans to fit businesses of all sizes.
+
+Select one today to get:
+
+
+
+
+	- Enterprise features for high-volume brands
+
+
+
+
+	- Transparent pricing with unlimited bandwidth and products
+
+
+
+
+	- One platform for all your sales channels; including Amazon Marketplace, POS, social commerce
+
+
+
+
+	- Reliable, secure and scalable
+
+
+
+
+Select your plan today » &lt;[[https://manage.bigcommerce.com/account/stores/upgrade]]&gt;
+
+
+&quot;In two years, we&apos;ve seen a 150% increase in online sales. We had a big vision, and BigCommerce has not only supported us, they&apos;ve grown with us.&quot;
+
+
+
+— Raven + Lily
+
+
+
+
+
+
+
+{{my.Litmus Tracker 8:default=editme}}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

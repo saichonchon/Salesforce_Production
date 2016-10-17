@@ -75,11 +75,6 @@
             <operator>contains</operator>
             <value>Prospects.2015,Prospects:2015</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity.Primary_Campaign_Name__c</column>
-            <operator>notContain</operator>
-            <value>mkt,hubspot,shop.org,q,acq,shoporg</value>
-        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>

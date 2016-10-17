@@ -20,11 +20,6 @@
             <value>bigpay,shipperhq,bluecheck,ipayment</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity.Primary_Campaign_Name__c</column>
-            <operator>notEqual</operator>
-            <value></value>
-        </criteriaItems>
-        <criteriaItems>
             <column>STAGE_NAME</column>
             <operator>equals</operator>
             <value>Referred,Referred - Started Trial</value>
@@ -48,7 +43,7 @@
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Opportunity.Primary_Campaign_Name__c</field>
+        <field>CAMPAIGN_SOURCE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>*yesterday-Stage change referral campaig</name>

@@ -98,6 +98,9 @@
         <field>Opportunity.Target_Launch_Date__c</field>
     </columns>
     <columns>
+        <field>Account.Last_Promoter_io_NPS__c</field>
+    </columns>
+    <columns>
         <field>Opportunity.totango__TotangoEngagement__c</field>
     </columns>
     <columns>
@@ -119,7 +122,7 @@
         <criteriaItems>
             <column>Opportunity.Account_Management_Services__c</column>
             <operator>equals</operator>
-            <value>Enterprise Account Management</value>
+            <value>Enterprise Account Management,Premium Account Services</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Onboarding_Specialist__c</column>

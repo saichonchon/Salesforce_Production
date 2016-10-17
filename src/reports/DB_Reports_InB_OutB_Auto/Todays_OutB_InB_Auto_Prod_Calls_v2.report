@@ -60,14 +60,14 @@
             <value>Small Business Sales Team</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Activity$CallType</column>
-            <operator>notEqual</operator>
-            <value></value>
-        </criteriaItems>
-        <criteriaItems>
             <column>Activity$Task_Type__c</column>
             <operator>equals</operator>
             <value>Call</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$Subject</column>
+            <operator>notContain</operator>
+            <value>Skip</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

@@ -1098,6 +1098,14 @@
         <name>Edit__c</name>
     </fields>
     <fields>
+        <label><!-- Existing Website URL --></label>
+        <name>Existing_Website_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Existing Website? --></label>
+        <name>Existing_Website__c</name>
+    </fields>
+    <fields>
         <label><!-- Experience --></label>
         <name>Experience__c</name>
         <picklistValues>
@@ -1449,6 +1457,34 @@
     <fields>
         <label><!-- Product --></label>
         <name>Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Annual Revenue --></label>
+        <name>Projected_Annual_Revenue__c</name>
+        <picklistValues>
+            <masterLabel>Enterprise: more than $5M revenue</masterLabel>
+            <translation><!-- Enterprise: more than $5M revenue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Established business: $250k–5M revenue</masterLabel>
+            <translation><!-- Established business: $250k–5M revenue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Growing business: $50k–250k revenue</masterLabel>
+            <translation><!-- Growing business: $50k–250k revenue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I haven&apos;t started selling yet: no revenue</masterLabel>
+            <translation><!-- I haven&apos;t started selling yet: no revenue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I’m not sure</masterLabel>
+            <translation><!-- I’m not sure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Just starting out: less than $50k revenue</masterLabel>
+            <translation><!-- Just starting out: less than $50k revenue --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <help><!-- Marketing : promotion given to a prospect to encourage them to upgrade from a free trial to a paid store --></help>

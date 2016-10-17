@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Break up email. SDR Salesvue Email 6/6.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SDR Email 6</name>
+    <style>none</style>
+    <subject>{!Contact.FirstName}, should I stop reaching out?</subject>
+    <type>text</type>
+</EmailTemplate>

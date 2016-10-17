@@ -145,9 +145,6 @@
         <field>EXP_AMOUNT</field>
     </columns>
     <columns>
-        <field>Opportunity.Primary_Campaign_Name__c</field>
-    </columns>
-    <columns>
         <field>OWNER_FULL_NAME</field>
     </columns>
     <columns>
@@ -203,11 +200,6 @@
             <column>Opportunity.PurchaseDate__c</column>
             <operator>equals</operator>
             <value></value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity.Primary_Campaign_Name__c</column>
-            <operator>notContain</operator>
-            <value>Hubspot,lead,ACQ.prospects,demo,shoporg,shop.org</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>

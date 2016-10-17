@@ -1287,6 +1287,28 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Existing_Website_URL__c</fullName>
+        <description>Field populated from trial form input.</description>
+        <externalId>false</externalId>
+        <label>Existing Website URL</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Existing_Website__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Field populated from trial form input.</description>
+        <externalId>false</externalId>
+        <label>Existing Website?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Experience__c</fullName>
         <externalId>false</externalId>
         <label>Experience</label>
@@ -1816,6 +1838,43 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Projected_Annual_Revenue__c</fullName>
+        <description>Field populated from trial form input</description>
+        <externalId>false</externalId>
+        <label>Projected Annual Revenue</label>
+        <picklist>
+            <picklistValues>
+                <fullName>I haven&apos;t started selling yet: no revenue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Just starting out: less than $50k revenue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Growing business: $50k–250k revenue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Established business: $250k–5M revenue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Enterprise: more than $5M revenue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>I’m not sure</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
     </fields>
     <fields>
         <fullName>Promotion__c</fullName>

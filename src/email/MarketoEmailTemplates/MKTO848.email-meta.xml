@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>09-2016 Town Hall- 1339.CUS Email 3</name>
+    <style>none</style>
+    <subject>Hi {{lead.First Name:default=there}}, catch up on the BigCommerce Town Hall updates you missed</subject>
+    <textOnly>Watch the September BigCommerce Town Hall to get a detailed look at the lastest product updates.
+Hi {{lead.First Name:default=there}},
+Last week, we hosted our September BigCommerce Town Hall.
+
+During this month&apos;s conversation, BigCommerce CEO Brent Bellm, CPO Jimmy Duvall, and the Product Team shared important updates about:
+
+
+ - Apple Pay
+ - eBay Integration
+ - Optimized single page checkout updates
+ - Stencil theme platform updates
+ - New functionality for &quot;View Products&quot;
+ - Cart-level discounts updates
+
+
+We&apos;ve posted the video in our Town Hall library in the Community. Simply log-in to the Community to see what you missed.
+
+
+
+
+Visit the Community &lt;[[https://forum.bigcommerce.com/s/article/BigCommerce-Town-Halls]]&gt;
+
+
+
+
+
+We&apos;ll be sending out the invitation to the October Town Hall soon. We hope to see you there!
+Best, 
+The BigCommerce Team
+
+
+PS: Need help logging into the Community? Learn how to create an account or change your password for the Community &lt;[[https://support.bigcommerce.com/articles/Public/Logging-in-to-the-BigCommerce-Community/]]&gt;.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

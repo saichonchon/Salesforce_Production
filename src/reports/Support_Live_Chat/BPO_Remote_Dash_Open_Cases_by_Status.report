@@ -11,7 +11,7 @@
         <chartType>Donut</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>ORIGIN</groupingColumn>
+        <groupingColumn>STATUS</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_TOP</location>
         <showAxisLabels>true</showAxisLabels>
@@ -29,10 +29,13 @@
         <field>CASE_NUMBER</field>
     </columns>
     <columns>
-        <field>SUBJECT</field>
+        <field>OWNER</field>
     </columns>
     <columns>
-        <field>STATUS</field>
+        <field>CREATED</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
     </columns>
     <columns>
         <field>AGE</field>
@@ -60,17 +63,12 @@
     <format>Matrix</format>
     <groupingsAcross>
         <dateGranularity>Day</dateGranularity>
-        <field>OWNER</field>
+        <field>ORIGIN</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>ORIGIN</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>CREATED</field>
+        <field>STATUS</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>BPO Remote Dash - Open Cases by Status</name>
@@ -84,7 +82,7 @@
     </params>
     <reportType>CaseList</reportType>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
         <interval>INTERVAL_PREVCURFY</interval>

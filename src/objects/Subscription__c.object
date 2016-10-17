@@ -3679,7 +3679,7 @@ NULL)
     <fields>
         <fullName>Unpacked__c</fullName>
         <defaultValue>false</defaultValue>
-        <description>Updated by the success squad when a migration is &quot;unpacked&quot;</description>
+        <description>Updated by Catalog Transfer when a migration is &quot;unpacked&quot;</description>
         <externalId>false</externalId>
         <label>zUnpacked</label>
         <trackHistory>false</trackHistory>

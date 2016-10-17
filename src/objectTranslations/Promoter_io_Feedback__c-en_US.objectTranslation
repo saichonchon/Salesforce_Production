@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Promoter.io Feedback</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Promoter.io Feedbacks</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Promoter.io Feedbacks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Campaign External ID --></label>
+        <name>Campaign_External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comment --></label>
+        <name>Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact External ID --></label>
+        <name>Contact_External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Promoter.io Feedbacks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback ID --></label>
+        <name>Feedback_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback URL --></label>
+        <name>Feedback_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback Unique External ID --></label>
+        <name>Feedback_Unique_External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>FirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>LastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Posted Date --></label>
+        <name>Posted_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- SF Account ID --></label>
+        <name>SF_Account_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- SF Contact Id --></label>
+        <name>SF_Contact_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score Type --></label>
+        <name>Score_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score --></label>
+        <name>Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session Time --></label>
+        <name>Session_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store ID --></label>
+        <name>Store_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription --></label>
+        <name>Subscription__c</name>
+        <relationshipLabel><!-- Promoter.io Feedbacks --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Promoter.io Feedback Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

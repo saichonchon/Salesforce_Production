@@ -419,9 +419,9 @@
     </fields>
     <fields>
         <fullName>Admin_Store_Username__c</fullName>
-        <description>Admin Store Username for migration team prescoping</description>
+        <description>Admin Store Username for Catalog Transfer team prescoping</description>
         <externalId>false</externalId>
-        <inlineHelpText>Admin Store Username for migration team prescoping</inlineHelpText>
+        <inlineHelpText>Admin Store Username for Catalog Transfer team prescoping</inlineHelpText>
         <label>Admin Store Username</label>
         <length>255</length>
         <required>false</required>
@@ -2842,7 +2842,7 @@ MBASubscriptionID__c,null)</formula>
     <fields>
         <fullName>Current_Store_URL__c</fullName>
         <externalId>false</externalId>
-        <inlineHelpText>For Migration Products only, this field must be populated.</inlineHelpText>
+        <inlineHelpText>For Catalog Transfer Products only, this field must be populated.</inlineHelpText>
         <label>Current Store URL</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -3444,6 +3444,26 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Existing_Website_URL__c</fullName>
+        <description>BAP-4341: The URL of their existing website if they answered yes to having an exist website.</description>
+        <externalId>false</externalId>
+        <label>Existing Website URL</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Existing_Website__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>BAP-4341: Trial form entry that asks whether or not they have an existing website.</description>
+        <externalId>false</externalId>
+        <label>Existing Website?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Existing_contract__c</fullName>
         <description>Used for pricing 2015</description>
         <externalId>false</externalId>
@@ -3587,9 +3607,9 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
     </fields>
     <fields>
         <fullName>FTP_Notes__c</fullName>
-        <description>FTP Notes from Sales Rep to Migration team for pre scoping</description>
+        <description>FTP Notes from Sales Rep to Catalog Transfer team for pre scoping</description>
         <externalId>false</externalId>
-        <inlineHelpText>FTP Notes from Sales Rep to Migration team for pre scoping</inlineHelpText>
+        <inlineHelpText>FTP Notes from Sales Rep to Catalog Transfer team for pre scoping</inlineHelpText>
         <label>FTP Notes</label>
         <length>255</length>
         <required>false</required>
@@ -3600,9 +3620,9 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
     </fields>
     <fields>
         <fullName>FTP_Password__c</fullName>
-        <description>Enrcypted FTP Password - populated by Sales Rep and used during Migration Pre-sale scoping process</description>
+        <description>Enrcypted FTP Password - populated by Sales Rep and used during Catalog Transfer Pre-sale scoping process</description>
         <externalId>false</externalId>
-        <inlineHelpText>Enrcypted FTP Password - populated by Sales Rep and used during Migration Pre-sale scoping process</inlineHelpText>
+        <inlineHelpText>Enrcypted FTP Password - populated by Sales Rep and used during Catalog Transfer Pre-sale scoping process</inlineHelpText>
         <label>FTP Password</label>
         <length>175</length>
         <maskChar>asterisk</maskChar>
@@ -3613,9 +3633,9 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
     </fields>
     <fields>
         <fullName>FTP_Port__c</fullName>
-        <description>FTP Port used for migration prescoping</description>
+        <description>FTP Port used for catalog transfer prescoping</description>
         <externalId>false</externalId>
-        <inlineHelpText>FTP Port used for migration prescoping</inlineHelpText>
+        <inlineHelpText>FTP Port used for catalog transfer prescoping</inlineHelpText>
         <label>FTP Port</label>
         <length>255</length>
         <required>false</required>
@@ -3639,9 +3659,9 @@ IF( ProductID__c = &apos;166&apos; || (CONTAINS(Product__c,&apos;ENT&apos;) &amp
     </fields>
     <fields>
         <fullName>FTP_Username__c</fullName>
-        <description>FTP Username for migration prescoping</description>
+        <description>FTP Username for catalog transfer prescoping</description>
         <externalId>false</externalId>
-        <inlineHelpText>FTP Username for migration prescoping</inlineHelpText>
+        <inlineHelpText>FTP Username for catalog transfer prescoping</inlineHelpText>
         <label>FTP Username</label>
         <length>255</length>
         <required>false</required>
@@ -6292,16 +6312,6 @@ Account Management</description>
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Primary_Campaign_Name__c</fullName>
-        <externalId>false</externalId>
-        <formula>Campaign.Name</formula>
-        <label>Primary Campaign Name</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Primary_Gateway__c</fullName>
         <description>Field for SBD Upsells.</description>
         <externalId>false</externalId>
@@ -6498,6 +6508,10 @@ Account Management</description>
         <picklist>
             <picklistValues>
                 <fullName>Comp Cart Free Mos Aug 2016</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Zoovy Q42016 Promotion</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -6698,6 +6712,24 @@ Account Management</description>
         <trackHistory>false</trackHistory>
         <trackTrending>true</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Revenue_Share__c</fullName>
+        <description>BAP-4311: Calculated Revenue Share based on the rev share percentage or flat fee in the Strategic Partner Account.</description>
+        <externalId>false</externalId>
+        <formula>IF( 
+Strategic_Partner__r.Revenue_Share__c &gt; 0,
+Strategic_Partner__r.Revenue_Share__c * TrailingGMVCount__c,
+Strategic_Partner__r.Revenue_Share_Flat_Fee__c
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Potential Revenue Share based on Strategic Partner&apos;s revenue share fee</inlineHelpText>
+        <label>Potential Revenue Share</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
     </fields>
     <fields>
         <fullName>Revenue_Team__c</fullName>
@@ -8952,11 +8984,6 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <columns>OPPORTUNITY.TYPE</columns>
         <filterScope>Everything</filterScope>
         <filters>
-            <field>Primary_Campaign_Name__c</field>
-            <operation>equals</operation>
-            <value>ACQ.Prospects.CL 2016.05 List 2</value>
-        </filters>
-        <filters>
             <field>Projected_Annual_Revenue__c</field>
             <operation>notEqual</operation>
         </filters>
@@ -8976,11 +9003,6 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <columns>Contact_Email__c</columns>
         <columns>Projected_Annual_Revenue__c</columns>
         <filterScope>Mine</filterScope>
-        <filters>
-            <field>Primary_Campaign_Name__c</field>
-            <operation>equals</operation>
-            <value>ACQ.Prospects.CL 2016.05 List 1</value>
-        </filters>
         <label>DE Pilot</label>
         <sharedTo>
             <role>Direct_LDR_Inbound</role>
@@ -9222,11 +9244,6 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <columns>Order_Increment__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
-            <field>Primary_Campaign_Name__c</field>
-            <operation>equals</operation>
-            <value>Move to New Pricing - Clean Contacts to Call</value>
-        </filters>
-        <filters>
             <field>CORE.USERS.ALIAS</field>
             <operation>equals</operation>
             <value>wwash</value>
@@ -9327,7 +9344,6 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <columns>Contact__c</columns>
         <columns>Contact_Email__c</columns>
         <columns>Contact_Phone__c</columns>
-        <columns>Primary_Campaign_Name__c</columns>
         <filterScope>Mine</filterScope>
         <filters>
             <field>OPPORTUNITY.WON</field>
@@ -9451,7 +9467,6 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <columns>OPPORTUNITY.CLOSE_DATE</columns>
         <columns>OPPORTUNITY.STAGE_NAME</columns>
         <columns>CORE.USERS.ALIAS</columns>
-        <columns>Primary_Campaign_Name__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>OPPORTUNITY.RECORDTYPE</field>
@@ -11898,6 +11913,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <fullName>Netsuite Free Mos July 2016</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>Zoovy Q42016 Promotion</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>Rising_43__c</picklist>
@@ -13759,6 +13778,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <fullName>Netsuite Free Mos July 2016</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>Zoovy Q42016 Promotion</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>Rising_43__c</picklist>
@@ -15481,6 +15504,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
             </values>
             <values>
                 <fullName>Netsuite Free Mos July 2016</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Zoovy Q42016 Promotion</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -18481,6 +18508,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <fullName>Netsuite Free Mos July 2016</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>Zoovy Q42016 Promotion</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>Rising_43__c</picklist>
@@ -21213,11 +21244,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>Promo__c</picklist>
             <values>
-                <fullName>Comp Cart Free Mos Aug 2016</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Netsuite Free Mos July 2016</fullName>
+                <fullName>Zoovy Q42016 Promotion</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -24174,6 +24201,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <fullName>Netsuite Free Mos July 2016</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>Zoovy Q42016 Promotion</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>Rising_43__c</picklist>
@@ -27084,11 +27115,7 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
         <picklistValues>
             <picklist>Promo__c</picklist>
             <values>
-                <fullName>Comp Cart Free Mos Aug 2016</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Netsuite Free Mos July 2016</fullName>
+                <fullName>Zoovy Q42016 Promotion</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -29242,6 +29269,10 @@ Hot: came in from a good source and/or is progressing towards close</inlineHelpT
                 <fullName>Netsuite Free Mos July 2016</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>Zoovy Q42016 Promotion</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>Rising_43__c</picklist>
@@ -29632,14 +29663,14 @@ $User.Id != &apos;0051300000BSknA&apos;</errorConditionFormula>
     <validationRules>
         <fullName>Migration_Product_Check</fullName>
         <active>true</active>
-        <description>Check fields are populated for migration case.</description>
+        <description>Check fields are populated for catalog transfer case.</description>
         <errorConditionFormula>(ISPICKVAL(StageName, &apos;Sale&apos;) || ISPICKVAL(StageName, &apos;Closed Won&apos;) ) &amp;&amp;  Migration_Products__c &gt;0 &amp;&amp;(  ISBLANK(TEXT(Migration_Platform__c )) ||   ISBLANK(Current_Store_URL__c) ||   ISBLANK( Store_Opportunity__c  ) )</errorConditionFormula>
-        <errorMessage>If you are creating a migration request, please make sure that the Store Opportunity,  Migration Platform, and  Current Store URL fields are filled out before you change the stage.</errorMessage>
+        <errorMessage>If you are creating a catalog transfer request, please make sure that the Store Opportunity,  Migration Platform, and  Current Store URL fields are filled out before you change the stage.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Migration_Scoping_Submission</fullName>
         <active>true</active>
-        <description>Ensures required fields are filled out before allows sales rep to set the migration scoping status to new</description>
+        <description>Ensures required fields are filled out before allows sales rep to set the catalog transfer scoping status to new</description>
         <errorConditionFormula>ISPICKVAL(Migration_Scoping_Status__c, &quot;New&quot;) &amp;&amp;
 
 (ISBLANK(minimum_viable_migration_service__c) ||
@@ -29650,7 +29681,7 @@ ISBLANK( Migration_Budget__c ) ||
  ISBLANK( Admin_Store_Username__c) ||
  LEN(Admin_Store_password_encrypted__c ) = 0
 )</errorConditionFormula>
-        <errorMessage>Please ensure that the migration MVP, store platform, store URL, migration budget, admin store login url, admin store username, and admin store password fields are not blank!</errorMessage>
+        <errorMessage>Please ensure that the catalog transfer MVP, store platform, store URL, catalog transfer budget, admin store login url, admin store username, and admin store password fields are not blank!</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Prohibit_opp_record_type_changes</fullName>

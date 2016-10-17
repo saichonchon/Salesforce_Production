@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Trial Onboarding Experiment GTM-1359.ACQ - Experienced - Day 07 - Email 6: Payme</name>
+    <style>none</style>
+    <subject>It&apos;s time to get paid</subject>
+    <textOnly>Select one of our payment gateways. Call 1-844-632-8912 for assistance on selecting a BigCommerce plan today.
+Log in to your control panel &lt;[[https://login.bigcommerce.com/login?utm_medium=email&amp;utm_source=Trial+Onboarding&amp;utm_campaign=Experienced&amp;utm_term=Day+7+Email+6&amp;utm_content=Control+Panel]]&gt;
+Great credit card rates built in
+VIEW PAYMENT GATEWAYS &lt;[[https://login.bigcommerce.com/deep-links/index.php?ToDo=viewPaymentMethods#]]&gt;
+More payment options, better rates
+
+When it comes to accepting payments, no other platform gives you better options than BigCommerce. Your store seamlessly integrates with all the leading payment solutions, including PayPal powered by Braintree, Square, Stripe, WorldPay, First Data, Cybersource, Authorize.net and many more.
+
+
+
+You’ll get access to the latest payment technology to improve conversion, plus special pre-negotiated card processing rates to reduce costs.
+
+
+
+
+Find a payment gateway today » &lt;[[https://login.bigcommerce.com/deep-links/index.php?ToDo=viewPaymentMethods#]]&gt;
+
+{{my.Litmus Tracker 5:default=editme}}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>email signature</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SB Trial Flow Email 3 CT V</name>
+    <style>none</style>
+    <subject>{!Contact.FirstName}, just wanted to follow up with any questions you may have</subject>
+    <type>text</type>
+</EmailTemplate>

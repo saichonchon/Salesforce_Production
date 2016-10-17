@@ -19,7 +19,7 @@
             <type>owner</type>
         </recipients>
         <senderType>CurrentUser</senderType>
-        <template>Internal_Email_Template/LeadsNewassignmentnotificationSAMPLE</template>
+        <template>Internal_Workflow_Communications_Sales/LeadsNewassignmentnotificationSAMPLE</template>
     </alerts>
     <alerts>
         <fullName>Owner_Lead_Referral_Notification</fullName>
@@ -57,6 +57,15 @@
         <name>Lead Owner to BCT</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_SV_Add_to_Plan_Acquisitio_AddToPlan</fullName>
+        <field>SalesVue__Salesvue_Add_To_Plan_Ids__c</field>
+        <formula>SalesVue__Salesvue_Add_To_Plan_Ids__c + &quot;,a7l13000000Cb9OAAS&quot; + &quot;,01Q13000000lp9UEAQ&quot;</formula>
+        <name>Lead SV Add to Plan Acquisitio AddToPlan</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
@@ -106,6 +115,33 @@
         <name>Rating = Hot</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SV_Add_to_Plan_Acquisition_Lis_AddToPlan</fullName>
+        <field>SalesVue__Salesvue_Add_To_Plan_Ids__c</field>
+        <formula>SalesVue__Salesvue_Add_To_Plan_Ids__c + &quot;,a7l13000000Cb9OAAS&quot; + &quot;,01Q13000000lp9PEAQ&quot;</formula>
+        <name>SV Add to Plan Acquisition Lis AddToPlan</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SV_SMB_Demo_Request_Add_AddToPlan</fullName>
+        <field>SalesVue__Salesvue_Add_To_Plan_Ids__c</field>
+        <formula>SalesVue__Salesvue_Add_To_Plan_Ids__c + &quot;,a7l13000000CamCAAS&quot; + &quot;,01Q13000000lotgEAA&quot;</formula>
+        <name>SV SMB Demo Request Add AddToPlan</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Salesvue_SDR_ACQ_Plan_AddToPlan</fullName>
+        <field>SalesVue__Salesvue_Add_To_Plan_Ids__c</field>
+        <formula>SalesVue__Salesvue_Add_To_Plan_Ids__c + &quot;,a7l13000000Cb9OAAS&quot; + &quot;,01Q13000000lp9ZEAQ&quot;</formula>
+        <name>Salesvue SDR ACQ Plan AddToPlan</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
@@ -466,6 +502,50 @@ CONTAINS(Owner:User.UserRole.Name,&quot;Small Business Sales&quot;) = FALSE
         <description>Captures the owner phone number if the owner ever changes so that Hubspot can use it in email template signatures.  Workflow is required because HS can&apos;t read formula fields.</description>
         <formula>ISCHANGED(OwnerId) || (OwnerId &lt;&gt; &quot;00530000004W020&quot; &amp;&amp; ISBLANK( Owner_Phone__c ) = TRUE)</formula>
         <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>SV Add to Plan Acquisition List Outreach</fullName>
+        <actions>
+            <name>SV_Add_to_Plan_Acquisition_Lis_AddToPlan</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.OwnerId</field>
+            <operation>equals</operation>
+            <value>Aubrie O&apos;connor</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Status</field>
+            <operation>equals</operation>
+            <value>In Flow</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>SV SMB Demo Request Lead Add</fullName>
+        <actions>
+            <name>SV_SMB_Demo_Request_Add_AddToPlan</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.Demo_Requested_Date__c</field>
+            <operation>equals</operation>
+            <value>LAST 5 DAYS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Status</field>
+            <operation>equals</operation>
+            <value>Demo Requested</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Owner_Team__c</field>
+            <operation>equals</operation>
+            <value>Small Business Sales Team</value>
+        </criteriaItems>
+        <description>SV Lead Plan SMB Demo Request</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
         <fullName>Sync with Marketo</fullName>

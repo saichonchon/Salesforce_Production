@@ -100,13 +100,13 @@
         </criteriaItems>
         <criteriaItems>
             <column>OPP.CREATED_DATE</column>
-            <operator>greaterThan</operator>
-            <value>4/1/2016 12:00 AM</value>
+            <operator>greaterOrEqual</operator>
+            <value>LAST_N_MONTHS:3</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>
-        <dateGranularity>Day</dateGranularity>
+        <dateGranularity>Month</dateGranularity>
         <field>OPP.CREATED_DATE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>

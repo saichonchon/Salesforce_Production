@@ -15,11 +15,6 @@
             <value>victor soares,jeremy gryder</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity.Primary_Campaign_Name__c</column>
-            <operator>notEqual</operator>
-            <value></value>
-        </criteriaItems>
-        <criteriaItems>
             <column>STAGE_NAME</column>
             <operator>equals</operator>
             <value>Closed Won</value>
@@ -43,7 +38,7 @@
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Opportunity.Primary_Campaign_Name__c</field>
+        <field>CAMPAIGN_SOURCE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Yesterday - Closed Won by Campaign</name>

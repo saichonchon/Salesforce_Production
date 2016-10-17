@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>AMOUNT:SUM / User.Quota__c:SUM</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Percent of Goal</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_95386859</developerName>
+        <masterLabel>Level</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>FULL_NAME</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Justin Hospie</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nicholas Amelio</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ryan Hamer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lizette Flores</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Juan Jacinto</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Joe Gillen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Robert King</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tanner Moore</sourceValue>
+            </sourceValues>
+            <value>AE1</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Rachel Hess</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shelly Alexander</sourceValue>
+            </sourceValues>
+            <value>AE2</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_99397384</developerName>
+        <masterLabel>MRR Bucket</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>AMOUNT</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>2,000</to>
+            </sourceValues>
+            <value>Under $2,000k</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>2,000</from>
+                <to>4,000</to>
+            </sourceValues>
+            <value>$2,000-$4,000</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>4,000</from>
+            </sourceValues>
+            <value>Over $4,000k</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>AMOUNT</column>
+        </chartSummaries>
+        <chartSummaries>
+            <axisBinding>y2</axisBinding>
+            <column>FORMULA1</column>
+        </chartSummaries>
+        <chartType>VerticalColumnLine</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>FULL_NAME</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>LEAD_SOURCE</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>AMOUNT</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Projected__c</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Executive_Sponsorship__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Manager_Notes__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Sales_Notes__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity.Owner_Team__c</column>
+            <operator>equals</operator>
+            <value>midmarket enterprise sales</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Opportunity.Store_Purchase,Opportunity.Trial,Opportunity.Upgrade_Store</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OPPORTUNITY_NAME</column>
+            <operator>notContain</operator>
+            <value>transferred</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Projected__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FULL_NAME</field>
+        <sortByName>FORMULA1</sortByName>
+        <sortOrder>Desc</sortOrder>
+        <sortType>CustomSummaryFormula</sortType>
+    </groupingsDown>
+    <name>MM Sales + PartnerName</name>
+    <params>
+        <name>open</name>
+        <value>open</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>AMOUNT</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

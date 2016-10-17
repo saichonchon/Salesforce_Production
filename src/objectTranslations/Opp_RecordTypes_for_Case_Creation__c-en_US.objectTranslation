@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Opp RecordTypes for Case Creation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Opp RecordTypes for Case Creation</value>
+    </caseValues>
+    <fields>
+        <help><!-- Enter the Opportunity RecordTypes (separated by comma) that needs to be shown when a Case is created through the Service Console. --></help>
+        <label><!-- Opp RecordTypes to Show --></label>
+        <name>Opp_RecordTypes_to_Show__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the Opportunity Statuses (Separated by Comma) that needs to be shown when a case is created through the Service Console. --></help>
+        <label><!-- Opp Statuses to show --></label>
+        <name>Opp_Statuses_to_show__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable Opportunities with blank Statuses to be selectable when a Case is created through the Service Console. --></help>
+        <label><!-- Select Opps with Blank Status --></label>
+        <name>Select_Opps_with_Blank_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the Opportunity RecordTypes (separated by comma) that needs to be selectable when a Case is created through the Service Console. --></help>
+        <label><!-- Selectable Opp RecordTypes --></label>
+        <name>Selectable_Opp_RecordTypes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the Opportunity Statuses (separated by comma) that needs to be selectable when a Case is created through the Service Console. --></help>
+        <label><!-- Selectable Opp Statuses --></label>
+        <name>Selectable_Opp_Statuses__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable Opportunities with blank Statuses to be shown when a Case is created through the Service Console. --></help>
+        <label><!-- Show Opps with Blank Status --></label>
+        <name>Show_Opps_with_Blank_Status__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -66,6 +66,10 @@
                 <behavior>Edit</behavior>
                 <field>DoNotCall</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Last_Promoter_io_NPS__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -310,6 +314,17 @@
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedEntityHistoryList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <excludeButtons>New</excludeButtons>
+        <fields>NAME</fields>
+        <fields>Score__c</fields>
+        <fields>Score_Type__c</fields>
+        <fields>Posted_Date__c</fields>
+        <fields>Comment__c</fields>
+        <fields>Account__c</fields>
+        <fields>Subscription__c</fields>
+        <relatedList>Promoter_io_Feedback__c.Contact__c</relatedList>
     </relatedLists>
     <relatedObjects>AccountId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>

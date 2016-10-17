@@ -60,6 +60,10 @@
                 <behavior>Edit</behavior>
                 <field>qbdialer__Call_Date_Time__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>SalesVue__Plan_Task__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>

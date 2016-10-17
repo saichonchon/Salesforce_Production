@@ -59,17 +59,7 @@
     <columns>
         <field>ROLLUP_DESCRIPTION</field>
     </columns>
-    <columns>
-        <field>Opportunity.Primary_Campaign_Name__c</field>
-    </columns>
     <description>Opportunities created from the Ad-targeted accounts in Demandbase</description>
-    <filter>
-        <criteriaItems>
-            <column>Opportunity.Primary_Campaign_Name__c</column>
-            <operator>equals</operator>
-            <value>ACQ.PrintAds.Demandbase Ad-Targets w/Activity 2016</value>
-        </criteriaItems>
-    </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Month</dateGranularity>

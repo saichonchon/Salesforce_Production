@@ -22,11 +22,6 @@
             <operator>notContain</operator>
             <value>bigpay</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity.Primary_Campaign_Name__c</column>
-            <operator>notEqual</operator>
-            <value></value>
-        </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>
@@ -42,11 +37,6 @@
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>FULL_NAME</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Opportunity.Primary_Campaign_Name__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Daily Campaign &amp; Sales Pipeline Report</name>

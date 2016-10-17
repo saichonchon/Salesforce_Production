@@ -14,7 +14,7 @@
         </recipients>
         <senderAddress>no-reply@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
-        <template>Internal_Email_Template/Enterprise_Account_Manager_Notification</template>
+        <template>Internal_Workflow_Communications_CS/Enterprise_Account_Manager_Notification</template>
     </alerts>
     <alerts>
         <fullName>Autoresponse_BC_Consulting</fullName>
@@ -459,7 +459,7 @@
             <type>userLookup</type>
         </recipients>
         <senderType>CurrentUser</senderType>
-        <template>Internal_Email_Template/Refund_Approval_Notification</template>
+        <template>Internal_Workflow_Communications_CS/Refund_Approval_Notification</template>
     </alerts>
     <alerts>
         <fullName>Send_Cancellation_Survey</fullName>
@@ -739,6 +739,15 @@
         <operation>Literal</operation>
         <protected>false</protected>
         <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Origin_Promoter_io</fullName>
+        <field>Origin</field>
+        <literalValue>Promoter.io</literalValue>
+        <name>Case Origin = Promoter.io</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Case_Owner_Support_Queue</fullName>
@@ -1717,7 +1726,7 @@ Set by hierarchy : Contact &gt; Lead &gt; Web Email &gt; Subscription Email</des
             <type>Alert</type>
         </actions>
         <active>true</active>
-        <booleanFilter>1 AND 2 AND 3 AND (4 or 5) and 6</booleanFilter>
+        <booleanFilter>1 AND 2 AND 3 AND (4 AND 5) and 6</booleanFilter>
         <criteriaItems>
             <field>Case.RecordTypeId</field>
             <operation>equals</operation>
@@ -1731,12 +1740,12 @@ Set by hierarchy : Contact &gt; Lead &gt; Web Email &gt; Subscription Email</des
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>notEqual</operation>
-            <value>Pixel Union Themes,support@bigcommerce.com (closed),apisupport@bigcommerce.com,SBD - Escalations,Phone,Sift Science,eigsupport@bigcommerce.com,heartlandsupport@bigcommerce.com,Chat</value>
+            <value>Pixel Union Themes,support@bigcommerce.com (closed),apisupport@bigcommerce.com,SBD - Escalations,Phone,Sift Science,eigsupport@bigcommerce.com,heartlandsupport@bigcommerce.com,Chat,Promoter.io</value>
         </criteriaItems>
         <criteriaItems>
             <field>Case.Subject</field>
             <operation>notContain</operation>
-            <value>Bigcommerce |,email loop protection,Undelivered Mail Returned</value>
+            <value>Bigcommerce |,email loop protection,Undelivered Mail Returned,NPS Survey Response from</value>
         </criteriaItems>
         <criteriaItems>
             <field>Case.SuppliedEmail</field>
@@ -1914,6 +1923,11 @@ Set by hierarchy : Contact &gt; Lead &gt; Web Email &gt; Subscription Email</des
             <field>Case.Subject</field>
             <operation>notContain</operation>
             <value>loop protection,Undelivered Mail Return</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Category__c</field>
+            <operation>notEqual</operation>
+            <value>Company NPS</value>
         </criteriaItems>
         <description>If client emails support@, billing@, cancellation@ without case reference, automatically close new case and email client directing them to open case via chat, web, or phone</description>
         <triggerType>onCreateOnly</triggerType>
@@ -2252,7 +2266,7 @@ Set by hierarchy : Contact &gt; Lead &gt; Web Email &gt; Subscription Email</des
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>notEqual</operation>
-            <value>Employee Account,Web</value>
+            <value>Employee Account,Web,Phone,Chat</value>
         </criteriaItems>
         <description>Sends Client Success Survey Email</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
@@ -2280,7 +2294,7 @@ Set by hierarchy : Contact &gt; Lead &gt; Web Email &gt; Subscription Email</des
     <rules>
         <fullName>CS%3A Send Web Case Closed Notification with Survey Email 7 Day Delay</fullName>
         <active>true</active>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9 AND 10 AND 11 AND 12</booleanFilter>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9 AND 10 AND 11 AND 12 AND 13</booleanFilter>
         <criteriaItems>
             <field>Case.Status</field>
             <operation>equals</operation>
@@ -2340,6 +2354,11 @@ Set by hierarchy : Contact &gt; Lead &gt; Web Email &gt; Subscription Email</des
             <field>Case.Issue_Resolved__c</field>
             <operation>notEqual</operation>
             <value>Yes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Manager_Callback__c</field>
+            <operation>notEqual</operation>
+            <value>True</value>
         </criteriaItems>
         <description>Sends Client Success Survey Email for Web Cases after 7 Days</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
@@ -2598,6 +2617,16 @@ NOT(ISNEW())</formula>
             <field>Case.Issue_Resolved__c</field>
             <operation>equals</operation>
             <value>No</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Survey_Name__c</field>
+            <operation>notContain</operation>
+            <value>Support NPS Next</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Manager_Callback__c</field>
+            <operation>notEqual</operation>
+            <value>True</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
@@ -3342,6 +3371,34 @@ ISCHANGED( Survey_Completion_Date__c )</formula>
         </criteriaItems>
         <description>This rule handles cases that are being escalated to the Client Success team from the Pixel Union Support Team</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Promoter%2Eio Case Forwards</fullName>
+        <actions>
+            <name>Case_Origin_Promoter_io</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Do_Not_Send_Survey_True</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Subject</field>
+            <operation>startsWith</operation>
+            <value>NPS Survey Response</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Surveys</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Category__c</field>
+            <operation>equals</operation>
+            <value>Company NPS</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
     </rules>
     <rules>
         <fullName>Sales %3A Notification to Rep of New Sales Case</fullName>

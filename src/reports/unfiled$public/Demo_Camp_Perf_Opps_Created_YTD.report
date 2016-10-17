@@ -57,11 +57,6 @@
             <operator>contains</operator>
             <value>demo</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity$Primary_Campaign_Name__c</column>
-            <operator>contains</operator>
-            <value>MKT.Promotion</value>
-        </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>

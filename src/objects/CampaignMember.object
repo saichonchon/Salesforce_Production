@@ -414,11 +414,19 @@ ISPICKVAL(Status,&apos;Demo Requested&apos;) /* The Status is demo requested */
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Requests Demo</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Responded</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Sent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Started Trial</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>

@@ -29,9 +29,6 @@
         <field>Opportunity$CreatedDate</field>
     </columns>
     <columns>
-        <field>Opportunity$Primary_Campaign_Name__c</field>
-    </columns>
-    <columns>
         <aggregateTypes>Sum</aggregateTypes>
         <field>Opportunity$Opportunity_Count__c</field>
     </columns>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>FB Checkout US Only- 1372.CUS Email 1</name>
+    <style>none</style>
+    <subject>Introducing Facebook Checkout — sell more on the world’s largest social network</subject>
+    <textOnly>BigCommerce is excited to announce a new addition to your Facebook Shop integration.
+Hi {{lead.First Name:default=there}},
+BigCommerce is excited to announce a new addition to your Facebook Shop integration that will enable you to sell more on the world’s largest social network.
+
+Facebook Checkout gives customers the ability to complete their entire purchase on Facebook. If you already have products listed on Facebook through our existing integration, Facebook Checkout is a simple addition to your business.
+
+This integration is ready today in your control panel within the Channel Manager section. Check it out today to sell more with Facebook!
+
+
+
+
+
+Get Started &lt;[[https://login.bigcommerce.com/login]]&gt;
+Happy Selling, 
+Chris Rising 
+Vice President, Marketing</textOnly>
+    <type>custom</type>
+</EmailTemplate>

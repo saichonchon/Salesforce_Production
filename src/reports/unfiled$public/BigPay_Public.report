@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
-        <field>Opportunity.Primary_Campaign_Name__c</field>
-    </columns>
-    <columns>
         <field>Opportunity.Previous_Owner__c</field>
     </columns>
     <columns>
@@ -53,11 +50,6 @@
             <column>RECORDTYPE</column>
             <operator>equals</operator>
             <value>Opportunity.SBD_Upsell</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity.Primary_Campaign_Name__c</column>
-            <operator>startsWith</operator>
-            <value>Bigpay</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

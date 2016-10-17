@@ -349,6 +349,7 @@
         <members> totango__Totango_Images </members>
         <members> zqu__Zuora </members>
         <members>BigCommerce_Logos/BC_Letterhead_TOp.png</members>
+        <members>BigCommerce_Logos/BigCommerce_Logo.png</members>
         <members>BigCommerce_Logos/Community_Email_logo.png</members>
         <members>BigCommerce_Logos/Little_B_Logo.png</members>
         <members>BigCommerce_Logos/Logo_Email_Footer.png</members>
@@ -638,6 +639,7 @@
         <members> E2CP__E2CP_Templates </members>
         <members> Field_Trip__Field_Trip_Postcards </members>
         <members> Internal_Email_Template </members>
+        <members> Internal_Workflow_Communications_CS </members>
         <members> Internal_Workflow_Communications_Sales </members>
         <members> JIRA_Emails </members>
         <members> MarketoEmailTemplates </members>
@@ -748,6 +750,7 @@
         <members>E2CP_Custom_Templates/E2CP_Public_HTML_Template</members>
         <members>E2CP_Custom_Templates/E2CP_Public_Template</members>
         <members>E2CP_Custom_Templates/SBD_Escalation_Template</members>
+        <members>E2CP__E2CP_Templates/E2CP__Case_Feed</members>
         <members>E2CP__E2CP_Templates/E2CP__New_Case_Auto_Response_w_Markers</members>
         <members>E2CP__E2CP_Templates/E2CP__New_Case_Auto_Response_w_Markers_text</members>
         <members>E2CP__E2CP_Templates/E2CP__New_Case_Auto_Response_w_o_Markers</members>
@@ -761,7 +764,6 @@
         <members>E2CP__E2CP_Templates/E2CP__New_Comment_w_o_Markers</members>
         <members>E2CP__E2CP_Templates/E2CP__New_Comment_w_o_Markers_text</members>
         <members>Field_Trip__Field_Trip_Postcards/Field_Trip__Processing_Completed</members>
-        <members>Internal_Email_Template/Account_New_Subscription_Added</members>
         <members>Internal_Email_Template/Account_New_Trial</members>
         <members>Internal_Email_Template/Admin_Request_Updated</members>
         <members>Internal_Email_Template/Biz_Apps_Request_NewContractor_Request</members>
@@ -770,34 +772,35 @@
         <members>Internal_Email_Template/Design_Partner_Lead_Notification</members>
         <members>Internal_Email_Template/Direct_Rep_Notification_for_Pinterest_eBook</members>
         <members>Internal_Email_Template/Direct_Rep_Notification_for_Product_TOur</members>
-        <members>Internal_Email_Template/Enterprise_Account_Manager_Notification</members>
-        <members>Internal_Email_Template/Executive_Sponsorship_Notification</members>
-        <members>Internal_Email_Template/LeadsNewassignmentnotificationSAMPLE</members>
         <members>Internal_Email_Template/Leads_Converted_to_Account</members>
         <members>Internal_Email_Template/Leads_New_Trial_Added_to_Old_Lead</members>
         <members>Internal_Email_Template/Marketing_Public_Client_Cancel</members>
         <members>Internal_Email_Template/Migration_prescoping_details</members>
         <members>Internal_Email_Template/New_Trial_Opp_not_owned_by_Account_Owner</members>
         <members>Internal_Email_Template/Opp_21_day_Unapaid_Email_Alert</members>
-        <members>Internal_Email_Template/Opp_Cancellation_Email_Alert</members>
-        <members>Internal_Email_Template/Opp_New_Purchase_Made</members>
         <members>Internal_Email_Template/Opp_Product_Change_Notice</members>
-        <members>Internal_Email_Template/Opp_Sales_Engineer_Assigned</members>
         <members>Internal_Email_Template/Oppty_New_Professional_Services_Added</members>
         <members>Internal_Email_Template/Owner_Referral_Lead_Notification</members>
-        <members>Internal_Email_Template/Product_Change_Alert</members>
-        <members>Internal_Email_Template/Product_Change_Alert_Opp</members>
-        <members>Internal_Email_Template/Refund_Approval_Notification</members>
         <members>Internal_Email_Template/Sales_Ops_Notification_Start_Purchase_Dates</members>
-        <members>Internal_Email_Template/Steelbrick_Quote_Approval_Needed</members>
-        <members>Internal_Email_Template/Store_Cancellation_EmailOpp</members>
         <members>Internal_Email_Template/Store_Cancellation_Email_Alert_to_Owner</members>
-        <members>Internal_Email_Template/Sub_New_Added_NOT_OWNER</members>
         <members>Internal_Email_Template/TesT123</members>
         <members>Internal_Email_Template/Unpacking_Completed_Email</members>
-        <members>Internal_Email_Template/Upgrade_Opportunity_Close_Won_2</members>
+        <members>Internal_Workflow_Communications_CS/Enterprise_Account_Manager_Notification</members>
+        <members>Internal_Workflow_Communications_CS/Refund_Approval_Notification</members>
+        <members>Internal_Workflow_Communications_Sales/Account_New_Subscription_Added</members>
         <members>Internal_Workflow_Communications_Sales/Closed_Enterprise_Deal</members>
+        <members>Internal_Workflow_Communications_Sales/Executive_Sponsorship_Notification</members>
+        <members>Internal_Workflow_Communications_Sales/LeadsNewassignmentnotificationSAMPLE</members>
         <members>Internal_Workflow_Communications_Sales/New_Demo_Request_Received</members>
+        <members>Internal_Workflow_Communications_Sales/Opp_Cancellation_Email_Alert</members>
+        <members>Internal_Workflow_Communications_Sales/Opp_New_Purchase_Made</members>
+        <members>Internal_Workflow_Communications_Sales/Opp_Sales_Engineer_Assigned</members>
+        <members>Internal_Workflow_Communications_Sales/Product_Change_Alert</members>
+        <members>Internal_Workflow_Communications_Sales/Product_Change_Alert_Opp</members>
+        <members>Internal_Workflow_Communications_Sales/Steelbrick_Quote_Approval_Needed</members>
+        <members>Internal_Workflow_Communications_Sales/Store_Cancellation_EmailOpp</members>
+        <members>Internal_Workflow_Communications_Sales/Sub_New_Added_NOT_OWNER</members>
+        <members>Internal_Workflow_Communications_Sales/Upgrade_Opportunity_Close_Won_2</members>
         <members>JIRA_Emails/BIG_9027</members>
         <members>JIRA_Emails/JIRA_Email_Template</members>
         <members>MarketoEmailTemplates/MKTO1</members>
@@ -1554,15 +1557,87 @@
         <members>MarketoEmailTemplates/MKTO776</members>
         <members>MarketoEmailTemplates/MKTO777</members>
         <members>MarketoEmailTemplates/MKTO778</members>
+        <members>MarketoEmailTemplates/MKTO779</members>
         <members>MarketoEmailTemplates/MKTO78</members>
+        <members>MarketoEmailTemplates/MKTO780</members>
+        <members>MarketoEmailTemplates/MKTO781</members>
+        <members>MarketoEmailTemplates/MKTO782</members>
+        <members>MarketoEmailTemplates/MKTO783</members>
+        <members>MarketoEmailTemplates/MKTO784</members>
+        <members>MarketoEmailTemplates/MKTO785</members>
+        <members>MarketoEmailTemplates/MKTO786</members>
+        <members>MarketoEmailTemplates/MKTO787</members>
+        <members>MarketoEmailTemplates/MKTO788</members>
+        <members>MarketoEmailTemplates/MKTO789</members>
         <members>MarketoEmailTemplates/MKTO79</members>
+        <members>MarketoEmailTemplates/MKTO790</members>
+        <members>MarketoEmailTemplates/MKTO791</members>
+        <members>MarketoEmailTemplates/MKTO792</members>
+        <members>MarketoEmailTemplates/MKTO793</members>
+        <members>MarketoEmailTemplates/MKTO794</members>
+        <members>MarketoEmailTemplates/MKTO795</members>
+        <members>MarketoEmailTemplates/MKTO796</members>
+        <members>MarketoEmailTemplates/MKTO797</members>
+        <members>MarketoEmailTemplates/MKTO798</members>
+        <members>MarketoEmailTemplates/MKTO799</members>
         <members>MarketoEmailTemplates/MKTO8</members>
         <members>MarketoEmailTemplates/MKTO80</members>
+        <members>MarketoEmailTemplates/MKTO800</members>
+        <members>MarketoEmailTemplates/MKTO801</members>
+        <members>MarketoEmailTemplates/MKTO802</members>
+        <members>MarketoEmailTemplates/MKTO803</members>
+        <members>MarketoEmailTemplates/MKTO804</members>
+        <members>MarketoEmailTemplates/MKTO805</members>
+        <members>MarketoEmailTemplates/MKTO806</members>
+        <members>MarketoEmailTemplates/MKTO807</members>
+        <members>MarketoEmailTemplates/MKTO808</members>
+        <members>MarketoEmailTemplates/MKTO809</members>
         <members>MarketoEmailTemplates/MKTO81</members>
+        <members>MarketoEmailTemplates/MKTO810</members>
+        <members>MarketoEmailTemplates/MKTO811</members>
+        <members>MarketoEmailTemplates/MKTO812</members>
+        <members>MarketoEmailTemplates/MKTO813</members>
+        <members>MarketoEmailTemplates/MKTO814</members>
+        <members>MarketoEmailTemplates/MKTO815</members>
+        <members>MarketoEmailTemplates/MKTO816</members>
+        <members>MarketoEmailTemplates/MKTO817</members>
+        <members>MarketoEmailTemplates/MKTO818</members>
+        <members>MarketoEmailTemplates/MKTO819</members>
         <members>MarketoEmailTemplates/MKTO82</members>
+        <members>MarketoEmailTemplates/MKTO820</members>
+        <members>MarketoEmailTemplates/MKTO821</members>
+        <members>MarketoEmailTemplates/MKTO822</members>
+        <members>MarketoEmailTemplates/MKTO823</members>
+        <members>MarketoEmailTemplates/MKTO824</members>
+        <members>MarketoEmailTemplates/MKTO825</members>
+        <members>MarketoEmailTemplates/MKTO826</members>
+        <members>MarketoEmailTemplates/MKTO827</members>
+        <members>MarketoEmailTemplates/MKTO828</members>
+        <members>MarketoEmailTemplates/MKTO829</members>
         <members>MarketoEmailTemplates/MKTO83</members>
+        <members>MarketoEmailTemplates/MKTO830</members>
+        <members>MarketoEmailTemplates/MKTO831</members>
+        <members>MarketoEmailTemplates/MKTO832</members>
+        <members>MarketoEmailTemplates/MKTO833</members>
+        <members>MarketoEmailTemplates/MKTO834</members>
+        <members>MarketoEmailTemplates/MKTO835</members>
+        <members>MarketoEmailTemplates/MKTO836</members>
+        <members>MarketoEmailTemplates/MKTO837</members>
+        <members>MarketoEmailTemplates/MKTO838</members>
+        <members>MarketoEmailTemplates/MKTO839</members>
         <members>MarketoEmailTemplates/MKTO84</members>
+        <members>MarketoEmailTemplates/MKTO840</members>
+        <members>MarketoEmailTemplates/MKTO841</members>
+        <members>MarketoEmailTemplates/MKTO842</members>
+        <members>MarketoEmailTemplates/MKTO843</members>
+        <members>MarketoEmailTemplates/MKTO844</members>
+        <members>MarketoEmailTemplates/MKTO845</members>
+        <members>MarketoEmailTemplates/MKTO846</members>
+        <members>MarketoEmailTemplates/MKTO847</members>
+        <members>MarketoEmailTemplates/MKTO848</members>
+        <members>MarketoEmailTemplates/MKTO849</members>
         <members>MarketoEmailTemplates/MKTO85</members>
+        <members>MarketoEmailTemplates/MKTO850</members>
         <members>MarketoEmailTemplates/MKTO86</members>
         <members>MarketoEmailTemplates/MKTO87</members>
         <members>MarketoEmailTemplates/MKTO88</members>
@@ -1826,6 +1901,8 @@
         <members>Mass_Email_Templates/BIG_27940</members>
         <members>Mass_Email_Templates/BIG_27997</members>
         <members>Mass_Email_Templates/BIG_28157</members>
+        <members>Mass_Email_Templates/BIG_28232</members>
+        <members>Mass_Email_Templates/BIG_28233</members>
         <members>Mass_Email_Templates/BIG_28306</members>
         <members>Mass_Email_Templates/BIG_28354</members>
         <members>Mass_Email_Templates/BIG_28404</members>
@@ -1838,6 +1915,8 @@
         <members>Mass_Email_Templates/BIG_28496</members>
         <members>Mass_Email_Templates/BIG_28547</members>
         <members>Mass_Email_Templates/BIG_28606</members>
+        <members>Mass_Email_Templates/BIG_28628</members>
+        <members>Mass_Email_Templates/BIG_28646</members>
         <members>Mass_Email_Templates/BIG_2935</members>
         <members>Mass_Email_Templates/BIG_3027</members>
         <members>Mass_Email_Templates/BIG_3786_Email</members>
@@ -1863,6 +1942,7 @@
         <members>Mass_Email_Templates/MERC_771</members>
         <members>Mass_Email_Templates/OMNI_1476</members>
         <members>Mass_Email_Templates/OMNI_1569</members>
+        <members>Mass_Email_Templates/OMNI_2228</members>
         <members>Mass_Email_Templates/Retention_Pilot_Mass_Email</members>
         <members>Mass_Email_Templates/TECHOPS_18365_Email</members>
         <members>Mass_Email_Templates/TECHOPS_18524_Email</members>
@@ -1901,6 +1981,7 @@
         <members>Partner_Support_Templates/Acknowledgement</members>
         <members>Partner_Support_Templates/Affiliate_Link</members>
         <members>Partner_Support_Templates/Approved_Deal_Registration_Explain</members>
+        <members>Partner_Support_Templates/Certified_Partner</members>
         <members>Partner_Support_Templates/Client_Sandbox</members>
         <members>Partner_Support_Templates/Commission_Explain</members>
         <members>Partner_Support_Templates/Commission_email_in_September</members>
@@ -1951,10 +2032,20 @@
         <members>SDR/CL_Campaign_Email_1</members>
         <members>SDR/Just_Called</members>
         <members>SalesVue__SalesVue_Templates/SB_Trial_Flow_Email_1</members>
+        <members>SalesVue__SalesVue_Templates/SB_Trial_Flow_Email_1_CT_v1</members>
         <members>SalesVue__SalesVue_Templates/SB_Trial_Flow_Email_2</members>
         <members>SalesVue__SalesVue_Templates/SB_Trial_Flow_Email_3</members>
+        <members>SalesVue__SalesVue_Templates/SB_Trial_Flow_Email_3_CT_V</members>
         <members>SalesVue__SalesVue_Templates/SB_Trial_Flow_Email_4</members>
+        <members>SalesVue__SalesVue_Templates/SB_Trial_Flow_Email_4_CT_v</members>
         <members>SalesVue__SalesVue_Templates/SB_Trial_Flow_Email_5</members>
+        <members>SalesVue__SalesVue_Templates/SB_Trial_Flow_Email_5_CT_v</members>
+        <members>SalesVue__SalesVue_Templates/SDR_Email_4</members>
+        <members>SalesVue__SalesVue_Templates/SDR_Email_5</members>
+        <members>SalesVue__SalesVue_Templates/SDR_Email_6</members>
+        <members>SalesVue__SalesVue_Templates/SDR_Email_Day_1</members>
+        <members>SalesVue__SalesVue_Templates/SDR_Email_Day_2</members>
+        <members>SalesVue__SalesVue_Templates/SDR_Email_Day_3</members>
         <members>Sales_Templates_Acquisition/Acq_Gold_Email</members>
         <members>Sales_Templates_Acquisition/Acq_Opportunity</members>
         <members>Sales_Templates_Acquisition/Acq_Pro_Stores</members>
@@ -2187,6 +2278,7 @@
         <members> Sales_Operations </members>
         <members> Sales_Small_Business </members>
         <members> Sales_Transformation </members>
+        <members> Security </members>
         <members> Subscription_Reports_Rohit </members>
         <members> Support_Daily </members>
         <members> Support_Live_Chat </members>
@@ -2291,13 +2383,20 @@
         <members>BizApps_User_Cleanup/Account_Last_Modified_By</members>
         <members>BizApps_User_Cleanup/Cases_Last_Modified_By</members>
         <members>Business_Development/Active_Trials_W_Referral_ID_Call_Stats</members>
+        <members>Business_Development/All_Campaigns_All_Time</members>
         <members>Business_Development/All_Opps_YTD_Status_Partner_Level</members>
         <members>Business_Development/BlueCheck_Referrals</members>
+        <members>Business_Development/Bluecheck_Campaign</members>
         <members>Business_Development/Call_Activity_Details</members>
         <members>Business_Development/Campaign_Conversion</members>
+        <members>Business_Development/Campaign_Revenue_MTD</members>
+        <members>Business_Development/Campaign_Revenue_YTD</members>
+        <members>Business_Development/Campaign_Revenue_Yesterday</members>
+        <members>Business_Development/Campaign_Revenue_by_Stage</members>
         <members>Business_Development/DB_SBD_Referral_Calls</members>
         <members>Business_Development/DB_SBD_Referral_Store_Counts_This_Year</members>
         <members>Business_Development/Daily_Campaign_Stage_Pipeline_Report</members>
+        <members>Business_Development/EIG_Campaign</members>
         <members>Business_Development/EIG_Referrals</members>
         <members>Business_Development/MTD_Closed_Won_partner_level_w_revenue</members>
         <members>Business_Development/MTD_Referrals_to_Partner_at_Campaign</members>
@@ -2307,23 +2406,30 @@
         <members>Business_Development/Opportunity_Field_History1</members>
         <members>Business_Development/Opps_for_reps</members>
         <members>Business_Development/Payleap_to_Securenet_Credit_Cases</members>
+        <members>Business_Development/SBD_Closed_Won_MTD</members>
         <members>Business_Development/SBD_Closed_Won_YTD</members>
+        <members>Business_Development/SBD_Closed_Won_Yesterday</members>
         <members>Business_Development/SBD_Daily_Sales_Activity_Report_2</members>
         <members>Business_Development/SBD_Domains_by_Partner</members>
         <members>Business_Development/SBD_Opps_with_Products</members>
         <members>Business_Development/SBD_Pipeline</members>
-        <members>Business_Development/SBD_Potential_Revenue</members>
+        <members>Business_Development/SBD_Pipeline2</members>
+        <members>Business_Development/SBD_Pipeline_MTD</members>
         <members>Business_Development/SBD_Referral_Intuit_Clients</members>
         <members>Business_Development/SB_SBD_Referral_MTD_Trials_Stores_v2</members>
+        <members>Business_Development/Shipper_HQ_Campaign</members>
         <members>Business_Development/Trials_W_Referral_ID_No_Calls</members>
         <members>Business_Development/Upsell_Opps_by_Country</members>
         <members>Business_Development/V2_SBD_Potential_Revenue</members>
+        <members>Business_Development/Wholesale_Campaign</members>
+        <members>Business_Development/Wholesale_EIG</members>
         <members>Business_Development/YTD_Campaign_Level_Referrals</members>
         <members>Business_Development/YTD_Closed_Won_at_partner_Level</members>
         <members>Business_Development/YTD_Referrals_to_Partner</members>
         <members>Business_Development/Yesterday_Closed_Won_by_Campaign</members>
         <members>Business_Development/Yesterday_Stage_Change_by_Campaign</members>
         <members>Business_Development/Yesterday_Stage_Changes_by_Partner</members>
+        <members>Business_Development/iPayment_Campaign</members>
         <members>Business_Development/yesterday_Stage_change_referral_campaig</members>
         <members>Calibration_Reports/Sample_Calibration_Report_All_Company</members>
         <members>Calibration_Reports/Sample_Calibration_Report_Dept</members>
@@ -2415,6 +2521,7 @@
         <members>Client_Success/Chat_Cases_by_Category_LW</members>
         <members>Client_Success/Chat_Cases_by_Category_Last_Week</members>
         <members>Client_Success/Chat_Cases_w_No_Category_or_Reason</members>
+        <members>Client_Success/Chat_Email_Support_customer_survey_info</members>
         <members>Client_Success/Chat_NPS</members>
         <members>Client_Success/Client_0_3_month_cases</members>
         <members>Client_Success/Client_3_6_month_cases</members>
@@ -2496,6 +2603,7 @@
         <members>Client_Success/Phone_Cases_by_Category_Last_90_Days</members>
         <members>Client_Success/Phone_Cases_by_Category_Today</members>
         <members>Client_Success/Phone_Cases_by_Category_w_CTI_Info1</members>
+        <members>Client_Success/Pinterest_Re_Auth_Stores1</members>
         <members>Client_Success/Pixel_Union_Support_Cases</members>
         <members>Client_Success/Pixel_Union_Themes_Cases_Auto_Closed</members>
         <members>Client_Success/Plan_Upsells</members>
@@ -2665,6 +2773,7 @@
         <members>DB_Reports_InB_OutB_Auto/MTD_Prof_Sevices_Outbound</members>
         <members>DB_Reports_InB_OutB_Auto/MTD_Total_Owned_Leads_Outbound</members>
         <members>DB_Reports_InB_OutB_Auto/Missed_Calls</members>
+        <members>DB_Reports_InB_OutB_Auto/Owned_Opps_incl_Panda_Eric</members>
         <members>DB_Reports_InB_OutB_Auto/SMB_Attempts</members>
         <members>DB_Reports_InB_OutB_Auto/SMB_Calls_This_Month</members>
         <members>DB_Reports_InB_OutB_Auto/SMB_Correct_Contact_Calls</members>
@@ -2819,6 +2928,7 @@
         <members>Enterprise_Account_Managers/Opps_Above_75</members>
         <members>Enterprise_Account_Managers/PAS_Case_Service_Level_Report_Rough</members>
         <members>Enterprise_Account_Managers/PAS_Service_Level_by_Email_Time</members>
+        <members>Enterprise_Account_Managers/PAS_Welcome_Call</members>
         <members>Enterprise_Account_Managers/Premium_Account_Services_Account_Audit</members>
         <members>Enterprise_Account_Managers/Public_AM_John</members>
         <members>Enterprise_Account_Managers/Public_PAS_900</members>
@@ -2849,33 +2959,23 @@
         <members>Finance_Reports/Accounts_with_AM_No_Enterprise_Store</members>
         <members>Finance_Reports/Accounts_with_Onboarding_All_Stores</members>
         <members>Hoopla_Temp_Test/Hoopla_MM_Committed_This_Month</members>
-        <members>Hoopla_Temp_Test/Hoopla_MM_Milestone_Opps</members>
+        <members>Hoopla_Temp_Test/Hoopla_MM_MRR_MTD</members>
         <members>Hoopla_Temp_Test/Hoopla_MM_Pipeline</members>
-        <members>Hoopla_Temp_Test/Hoopla_MM_Sales_Today</members>
-        <members>Hoopla_Temp_Test/Hoopla_MM_Sales_Today1</members>
-        <members>Hoopla_Temp_Test/Hoopla_MM_Scoping_Opps_MTD</members>
         <members>Hoopla_Temp_Test/Hoopla_Q_team_SQLs_Today</members>
-        <members>Hoopla_Temp_Test/Hoopla_SB_RvR_Sept_Contest</members>
         <members>Hoopla_Temp_Test/Hoopla_SDR_Dials</members>
         <members>Hoopla_Temp_Test/Hoopla_SDR_SALs_MTD</members>
         <members>Hoopla_Temp_Test/Hoopla_SDR_SQLS_Daily</members>
-        <members>Hoopla_Temp_Test/Hoopla_SMB_MTD_MRR</members>
+        <members>Hoopla_Temp_Test/Hoopla_SMB_MRR_MTD</members>
         <members>Hoopla_Temp_Test/Hoopla_SMB_Pipeline_Count</members>
-        <members>Hoopla_Temp_Test/Hoopla_SQLs_by_GMV_MTD</members>
         <members>Hoopla_Temp_Test/Hoopla_Test_Report_SDR_SQLs</members>
         <members>Hoopla_Temp_Test/Mid_Market_Large_Deals_MTD</members>
-        <members>Hoopla_Temp_Test/Q_Team_RvR_SALs</members>
         <members>Hoopla_Temp_Test/Q_Team_SALs_This_Week</members>
-        <members>Hoopla_Temp_Test/Qualifier_Team_Test_Report</members>
-        <members>Hoopla_Temp_Test/SDR_RvR_Sept_Contest</members>
         <members>Hoopla_Temp_Test/SDR_Talk_Time</members>
-        <members>Hoopla_Temp_Test/SMB_MRR_Performance_MTD</members>
         <members>Hoopla_Temp_Test/SMB_MRR_Today</members>
         <members>Hoopla_Temp_Test/SMB_Pro_Plans_Today</members>
         <members>Hoopla_Temp_Test/User_Report_IB_Chat</members>
         <members>Hoopla_Temp_Test/User_Report_MM_Sales</members>
         <members>Hoopla_Temp_Test/User_Report_Master</members>
-        <members>Hoopla_Temp_Test/User_Report_SMB_Team</members>
         <members>Hubspot/BC_Autoresponder_Conversion_Report_Opps</members>
         <members>Hubspot/Converted_by_Lead_Source</members>
         <members>Hubspot/Customer_Autoresponder_Breakdown</members>
@@ -3016,6 +3116,7 @@
         <members>Marketing_Reports/Events_Opportunities_Conferences</members>
         <members>Marketing_Reports/Events_Opportunities_Created_Trade_Sho</members>
         <members>Marketing_Reports/Events_Opportunities_Happy_Hour</members>
+        <members>Marketing_Reports/Events_Pipeline_Value</members>
         <members>Marketing_Reports/Events_SOLD_2016_MRR_ALL_Events</members>
         <members>Marketing_Reports/Events_SOLD_MRR_ALL_Events</members>
         <members>Marketing_Reports/Events_SOLD_MRR_Conferences</members>
@@ -3166,6 +3267,7 @@
         <members>Ninja_Trials/SME_Test_Advanced_Shipping</members>
         <members>Ninja_Trials/SME_Test_Advanced_Tax_Answers</members>
         <members>Ninja_Trials/SME_Test_Advanced_eBay_Answers</members>
+        <members>Ninja_Trials/Training_Teishi1</members>
         <members>Offboard_Requests/Assign_out_Accounts_per_Owner1</members>
         <members>Offboard_Requests/Assign_out_Leads_per_Owner</members>
         <members>Offboard_Requests/Assign_out_Opportunities_per_Owner</members>
@@ -3197,7 +3299,6 @@
         <members>Outsource_Remotes/BPO_QBO_Training_8_2015</members>
         <members>Outsource_Remotes/BPO_Remote_Dash_All_Open_Cases</members>
         <members>Outsource_Remotes/BPO_Remote_Dash_Case_Open_Assigned</members>
-        <members>Outsource_Remotes/BPO_Remote_Dash_Cases_Closed</members>
         <members>Outsource_Remotes/BPO_Remote_Dash_Chats_Today</members>
         <members>Outsource_Remotes/BPO_Remote_Dash_Design_Cases_by_Agent</members>
         <members>Outsource_Remotes/BPO_Remote_Dash_Manager_Callbacks</members>
@@ -3213,7 +3314,6 @@
         <members>Outsource_Remotes/BPO_Web_Surveys_Sent_Ret</members>
         <members>Outsource_Remotes/Case_History</members>
         <members>Outsource_Remotes/Case_History_with_canned_Comments</members>
-        <members>Outsource_Remotes/Cases_Closed_Today_age</members>
         <members>Outsource_Remotes/Cases_Survey_Return_Rates</members>
         <members>Outsource_Remotes/Chat_DSAT_Analysis_Data</members>
         <members>Outsource_Remotes/Email_Case_Entry_Report</members>
@@ -3278,6 +3378,7 @@
         <members>Partner_Team_Reports/Active_Channel_Partners_w_Contact_Info</members>
         <members>Partner_Team_Reports/Channel_Partner_Revenue</members>
         <members>Partner_Team_Reports/DB_This_Month_Approved_Partner_Accts</members>
+        <members>Partner_Team_Reports/MM_Sales_PartnerName</members>
         <members>Partner_Team_Reports/PAR_Shopify</members>
         <members>Partner_Team_Reports/PAR_list_for_Liz</members>
         <members>Partner_Team_Reports/Partner_IB_Calls_Handled_Daily</members>
@@ -3869,6 +3970,8 @@
         <members>Sales_Operations/Test_Lead_Report_For_Inside_Sales</members>
         <members>Sales_Operations/Theme_Opps</members>
         <members>Sales_Operations/This_Month_Purchase_Last_Month_Start</members>
+        <members>Sales_Operations/Unsynced_Purchase_Opps</members>
+        <members>Sales_Operations/Unsynced_Purchased_Opps_2</members>
         <members>Sales_Operations/Update_Purchase_date_is_blank</members>
         <members>Sales_Operations/Update_Stores</members>
         <members>Sales_Operations/User_Login_History</members>
@@ -3883,6 +3986,8 @@
         <members>Sales_Small_Business/SMB_SA_MTD_Sales</members>
         <members>Sales_Small_Business/SMB_SS_MTD_Sales</members>
         <members>Sales_Small_Business/Small_Business_Revenue_MoM</members>
+        <members>Security/Raymond_Macatangay_Live_Chat_Transcripts</members>
+        <members>Security/Raymond_Report</members>
         <members>Support_Daily/Billing_Cancellations_Queue_Cases_by_Age</members>
         <members>Support_Daily/Billing_Cases_Closed_L_Week</members>
         <members>Support_Daily/Billing_Cases_Closed_Per_Rep_L_Week</members>
@@ -3909,6 +4014,7 @@
         <members>Support_Live_Chat/BPO_New_Web_Case_Workflow_5_2016</members>
         <members>Support_Live_Chat/BPO_Pinterest_Buyable_Pins_5_2016</members>
         <members>Support_Live_Chat/BPO_Remote_Dash_Case_Open_Assigned_Al</members>
+        <members>Support_Live_Chat/BPO_Remote_Dash_Cases_Closed</members>
         <members>Support_Live_Chat/BPO_Remote_Dash_Cases_SL</members>
         <members>Support_Live_Chat/BPO_Remote_Dash_NPS_Web_SAT</members>
         <members>Support_Live_Chat/BPO_Remote_Dash_Open_Cases_by_Status</members>
@@ -3921,6 +4027,7 @@
         <members>Support_Live_Chat/Case_Remotes_Web_AHT_V3_0_New</members>
         <members>Support_Live_Chat/Case_Remotes_Web_AHT_V3_0_w_Details</members>
         <members>Support_Live_Chat/Cases_Closed_Age_Webcase_Lifecycle</members>
+        <members>Support_Live_Chat/Cases_Closed_Today_age</members>
         <members>Support_Live_Chat/Cases_Escalated_BPO_Dash</members>
         <members>Support_Live_Chat/Cases_Escalated_Last_Month1</members>
         <members>Support_Live_Chat/Cases_Escalated_by_Origin</members>
@@ -3930,16 +4037,20 @@
         <members>Support_Live_Chat/Chat_Average_Speed_of_Answer_By_Day1</members>
         <members>Support_Live_Chat/Chat_Average_Speed_of_Answer_By_Hour</members>
         <members>Support_Live_Chat/Chat_CSAT_NEW1</members>
+        <members>Support_Live_Chat/Chat_Escalated_by_and_Status</members>
         <members>Support_Live_Chat/Chat_Live_Agent_Sessions</members>
         <members>Support_Live_Chat/Chat_Live_Agent_Sessions_Last_Week</members>
         <members>Support_Live_Chat/Chat_Received_With_Speed_of_Answer</members>
         <members>Support_Live_Chat/Chat_Received_With_Time_to_Abandon</members>
         <members>Support_Live_Chat/Chat_SL_OUT_Service_Level_Count</members>
         <members>Support_Live_Chat/Chat_SL_Service_Level_Count_By_Hour</members>
+        <members>Support_Live_Chat/Chat_Time_Worked</members>
+        <members>Support_Live_Chat/Chat_Transferred_date_and_Owner</members>
         <members>Support_Live_Chat/Chat_count3</members>
         <members>Support_Live_Chat/Email_BIN_Report</members>
         <members>Support_Live_Chat/Email_CSAT_NEW</members>
         <members>Support_Live_Chat/Email_NPS_Overall_Alt1</members>
+        <members>Support_Live_Chat/Esc_Cases_Closed_Webcase_Lifecycle</members>
         <members>Support_Live_Chat/Improper_Design_Escalation</members>
         <members>Support_Live_Chat/Live_Agent_Sessions</members>
         <members>Support_Live_Chat/Live_Chat_by_single_agents_This_Week</members>
@@ -3961,6 +4072,8 @@
         <members>Support_Live_Chat/Remotes_Web_AHT_V3_0_Guill</members>
         <members>Support_Live_Chat/SL_per_Case_Comment</members>
         <members>Support_Live_Chat/Status_vs_Age_Webcase_Lifecycle</members>
+        <members>Support_Live_Chat/Support_NPS_Next_Web_Survey_returns</members>
+        <members>Support_Live_Chat/T2_Escalated_By_broken_into_Case_Reason</members>
         <members>Support_Live_Chat/Transaction_Count_Real_time1</members>
         <members>Support_Live_Chat/Transaction_Count_W_Status</members>
         <members>Support_Live_Chat/Transfered_Date_Owner_Web_Lifecycle</members>
@@ -4021,8 +4134,10 @@
         <members>Support_Tier_2/Chats_Taken_AHT_Per_Rep</members>
         <members>Support_Tier_2/Chats_Taken_AHT_Per_Rep_30_Day_Report</members>
         <members>Support_Tier_2/Design_Cases_Per_Plan</members>
+        <members>Support_Tier_2/ESC_Average_time_to_close</members>
         <members>Support_Tier_2/ESC_Cases_Closed_Weekly</members>
         <members>Support_Tier_2/ESC_Cases_Escalated_Weekly</members>
+        <members>Support_Tier_2/ESC_Cases_Escalated_by_Orgin</members>
         <members>Support_Tier_2/Legal_Queue_Cases</members>
         <members>Support_Tier_2/Live_Chat_Abandons_T2</members>
         <members>Support_Tier_2/Live_Chats_Offered_Handled_Tier_2</members>
@@ -4334,6 +4449,7 @@
         <members>ca_collab_2_0__Communities_Reports/Migrated_Community_Users</members>
         <members>ca_collab_2_0__Communities_Reports/Monthly_Logins</members>
         <members>ca_collab_2_0__Communities_Reports/New_Community_Members</members>
+        <members>ca_collab_2_0__Communities_Reports/Partners_in_Community</members>
         <members>ca_collab_2_0__Communities_Reports/Post_and_Comment_Count</members>
         <members>ca_collab_2_0__Communities_Reports/Question_Resolution</members>
         <members>ca_collab_2_0__Communities_Reports/Sfdc_Test</members>
@@ -4784,6 +4900,10 @@
         <members>unfiled$public/CTS_Time_WIP_Standard_Last_4W1</members>
         <members>unfiled$public/CTS_Time_WIP_Standard_Last_4W2</members>
         <members>unfiled$public/CTS_VE</members>
+        <members>unfiled$public/CTS_test_for_WoW1</members>
+        <members>unfiled$public/CTS_test_for_WoW2</members>
+        <members>unfiled$public/CTS_test_for_WoW_2</members>
+        <members>unfiled$public/CTS_test_for_WoW_3</members>
         <members>unfiled$public/CX_Journey_Interviews_2</members>
         <members>unfiled$public/C_L_Juan_Jacinto</members>
         <members>unfiled$public/C_L_Robby_King</members>
@@ -4827,6 +4947,7 @@
         <members>unfiled$public/Camp_Perf_MRR_For_SDR_Team</members>
         <members>unfiled$public/Camp_Perf_MRR_Sold_Last_Week</members>
         <members>unfiled$public/Camp_Perf_MRR_Sold_MTD_ACQ_List</members>
+        <members>unfiled$public/Camp_Perf_MTD_ACQ_List_SQLs</members>
         <members>unfiled$public/Camp_Perf_MTD_SQLs_by_Parent</members>
         <members>unfiled$public/Camp_Perf_M_Call_Activities_good</members>
         <members>unfiled$public/Camp_Perf_M_Contacts_Made</members>
@@ -4901,6 +5022,7 @@
         <members>unfiled$public/Cancellation_Enterprise_3_4_Last_Week1</members>
         <members>unfiled$public/Cancelled_Accounts_by_Reason_Code</members>
         <members>unfiled$public/Cases_3_3_16</members>
+        <members>unfiled$public/Cases_Closed_Age_Webcase_Lifecycle1</members>
         <members>unfiled$public/Cases_Closed_Top_T1s</members>
         <members>unfiled$public/Cases_by_Channel_Case_Reason_Category1</members>
         <members>unfiled$public/Cases_for_Techops_20667</members>
@@ -5029,6 +5151,7 @@
         <members>unfiled$public/Demos_routed_to_reps</members>
         <members>unfiled$public/Demp_Camp_Perform_Opps_Sold_by_Month_YTD</members>
         <members>unfiled$public/Derek_Feb_SQL</members>
+        <members>unfiled$public/Derek_Pendrey</members>
         <members>unfiled$public/Design_Closed_Top_T1s</members>
         <members>unfiled$public/Design_Closed_Top_T1s1</members>
         <members>unfiled$public/Devin_LeJeune</members>
@@ -5126,7 +5249,10 @@
         <members>unfiled$public/Enterprise_Total_MRR_by_AM_Opp</members>
         <members>unfiled$public/Enterprise_cases_created</members>
         <members>unfiled$public/Enterprise_plans</members>
+        <members>unfiled$public/Eric_Owens_Category_Selling_Leads</members>
+        <members>unfiled$public/Eric_Owens_Closed_Lost_BC_Team_Owned</members>
         <members>unfiled$public/Eric_Owens_Eric_Wills_Andrew_King_Opps</members>
+        <members>unfiled$public/Eric_Owens_Outdoor_Category</members>
         <members>unfiled$public/Expired_Trials_for_Keith_trailing_6_mos</members>
         <members>unfiled$public/Expired_Trials_for_Keith_trailing_6_mos1</members>
         <members>unfiled$public/Facebook_Demo_Request</members>
@@ -5134,10 +5260,13 @@
         <members>unfiled$public/Feb_MRR_for_SDRS</members>
         <members>unfiled$public/February_C_L_Reasons</members>
         <members>unfiled$public/Find_Cases_by_Call_Interaction_ID</members>
+        <members>unfiled$public/For_Karl</members>
         <members>unfiled$public/For_Lovely_Hazel</members>
         <members>unfiled$public/Fraud_Domains</members>
         <members>unfiled$public/Free_with_GMV</members>
         <members>unfiled$public/Free_with_GMV_2</members>
+        <members>unfiled$public/Full_SMB_w_Eric_Panda</members>
+        <members>unfiled$public/Furniture_Store_Active_Clients_jb</members>
         <members>unfiled$public/GB_Trials</members>
         <members>unfiled$public/Gained_Enterprise_Stores_Month</members>
         <members>unfiled$public/Gained_Enterprise_Stores_Week</members>
@@ -5177,6 +5306,7 @@
         <members>unfiled$public/Intuit_Subscription_Report</members>
         <members>unfiled$public/Invalid_Email_Re_opened_Cases</members>
         <members>unfiled$public/Invoice_Transactions_All_Time</members>
+        <members>unfiled$public/Invoice_transactions_for_a_summary</members>
         <members>unfiled$public/Ivy</members>
         <members>unfiled$public/JENS_Leads_to_Convert_to_Opps</members>
         <members>unfiled$public/J_Hoss_Accounts</members>
@@ -5239,6 +5369,7 @@
         <members>unfiled$public/Legacy_Bypass_Partners_w_RV_only_opps</members>
         <members>unfiled$public/Legacy_Client_Pricing_Upgrade_Opp_Report</members>
         <members>unfiled$public/Leonard_Dingle_Opps</members>
+        <members>unfiled$public/Live_Chats_Sales_and_Support_JB</members>
         <members>unfiled$public/Lizette_Pipeline</members>
         <members>unfiled$public/Lizette_s_Open_Opps_Outside_of_Qualify</members>
         <members>unfiled$public/Look_at_Trial_Extension_Impact</members>
@@ -5250,6 +5381,7 @@
         <members>unfiled$public/MDR_MasterDemoRequests_Q42015_clone</members>
         <members>unfiled$public/MJ_Report_APAC</members>
         <members>unfiled$public/MM_August_Final_s</members>
+        <members>unfiled$public/MM_Category_Selling_Leads</members>
         <members>unfiled$public/MM_Op_by_Stage_Detail</members>
         <members>unfiled$public/MM_Pipeline_Alecia_Wall</members>
         <members>unfiled$public/MM_Pipeline_Analysis</members>
@@ -5276,6 +5408,7 @@
         <members>unfiled$public/Magento_CE_Migration_Promoters</members>
         <members>unfiled$public/Magento_Leads_Filter_Report</members>
         <members>unfiled$public/Magento_Leads_in_SFDC</members>
+        <members>unfiled$public/Magento_Migrations_Closed_MoM</members>
         <members>unfiled$public/Magento_Migrations_Marketing_July_15</members>
         <members>unfiled$public/Magento_Migrations_QoQ</members>
         <members>unfiled$public/Magento_Partners</members>
@@ -5384,6 +5517,7 @@
         <members>unfiled$public/Monthly_Paid_Stores_Channel_Sales</members>
         <members>unfiled$public/Monthly_Signed_Partners_Bypass</members>
         <members>unfiled$public/NPS_Chat_Satisfaction_Case_Reason</members>
+        <members>unfiled$public/NPS_ESC_Cases1</members>
         <members>unfiled$public/NPS_Phone_Sat</members>
         <members>unfiled$public/Nell_s_Stencil_Cases</members>
         <members>unfiled$public/Net_New_Active_Partners</members>
@@ -5423,9 +5557,11 @@
         <members>unfiled$public/Open_Enterprise_CTS_New</members>
         <members>unfiled$public/Open_Enterprise_Migrations</members>
         <members>unfiled$public/Open_Enterprise_Migrations_New</members>
+        <members>unfiled$public/Open_Leads_from_Deal_Reg</members>
         <members>unfiled$public/Open_Leads_with_Activities</members>
         <members>unfiled$public/Open_Leads_with_Amazon_Domain</members>
         <members>unfiled$public/Open_Migrations_by_Platform</members>
+        <members>unfiled$public/Open_Opportunities_from_Deal_Reg</members>
         <members>unfiled$public/Open_Opps_owned_by_Mike</members>
         <members>unfiled$public/Open_SQL_Aging_for_Non_Qualified_Opps</members>
         <members>unfiled$public/Open_SQL_Aging_w_Qualifier_by_Team</members>
@@ -5539,6 +5675,7 @@
         <members>unfiled$public/Q3_2015_Partners_Approved</members>
         <members>unfiled$public/Qualifiers_MRR_Sold_SDR_and_MDR</members>
         <members>unfiled$public/Queue_Owned_Lead_In_Dialer</members>
+        <members>unfiled$public/RV_Account_store_count</members>
         <members>unfiled$public/RV_Accounts_GMV_Request</members>
         <members>unfiled$public/RV_Accounts_No_Paypal</members>
         <members>unfiled$public/RV_Accounts_No_iDev_ID</members>
@@ -5577,6 +5714,7 @@
         <members>unfiled$public/SBD_w_RV_Account</members>
         <members>unfiled$public/SB_August_Final_s</members>
         <members>unfiled$public/SB_Migrations_MTD</members>
+        <members>unfiled$public/SB_Missing_Opps1</members>
         <members>unfiled$public/SB_Pipeline</members>
         <members>unfiled$public/SB_Pipeline_Clean_Up</members>
         <members>unfiled$public/SB_Pipeline_Clean_up1</members>
@@ -5606,6 +5744,7 @@
         <members>unfiled$public/SMB_Opp_by_Stage1</members>
         <members>unfiled$public/SMB_Plan_Mix_MTD</members>
         <members>unfiled$public/SMB_Queue</members>
+        <members>unfiled$public/SMB_RvR_Sept</members>
         <members>unfiled$public/SMB_SA_MTD_MRR</members>
         <members>unfiled$public/SMB_SI_MTD_MRR</members>
         <members>unfiled$public/SMB_SS_MTD_MRR</members>
@@ -5680,6 +5819,8 @@
         <members>unfiled$public/Team_Chat_Drivers</members>
         <members>unfiled$public/Team_Mike_ACT_Report</members>
         <members>unfiled$public/Team_POC_Analysis</members>
+        <members>unfiled$public/Team_Rein_AHT</members>
+        <members>unfiled$public/Team_Rein_CSAT</members>
         <members>unfiled$public/Tech_Partner_Applications_MoM</members>
         <members>unfiled$public/Tech_partners_after_april_24</members>
         <members>unfiled$public/Tech_partners_in_Sales_Qualification</members>
@@ -5694,6 +5835,7 @@
         <members>unfiled$public/Theme_Cases</members>
         <members>unfiled$public/This_Month_s_Revenue_DSP</members>
         <members>unfiled$public/Tier_3_Tier_4</members>
+        <members>unfiled$public/Time_in_Motion</members>
         <members>unfiled$public/Timing_Renegage_Future_Report</members>
         <members>unfiled$public/Tl_KG_Team_Case_Creation</members>
         <members>unfiled$public/Today_Call_Count</members>
@@ -5703,6 +5845,7 @@
         <members>unfiled$public/Top_50_Pipeline</members>
         <members>unfiled$public/Top_Clients_1750</members>
         <members>unfiled$public/Total_Active_RV_Partners</members>
+        <members>unfiled$public/Total_Churn_Ent_LM_New</members>
         <members>unfiled$public/Total_Churn_Ent_TM_New</members>
         <members>unfiled$public/Total_Churn_Enterprise1</members>
         <members>unfiled$public/Total_Churn_Enterprise_TM</members>
@@ -5731,6 +5874,7 @@
         <members>unfiled$public/Trials_Expiring_This_Month</members>
         <members>unfiled$public/Trials_by_Week_Current_Year</members>
         <members>unfiled$public/Trials_days_to_close</members>
+        <members>unfiled$public/Trials_w_Paid_Dollar_Amounts</members>
         <members>unfiled$public/UnAssigned_EAM_Accounts</members>
         <members>unfiled$public/Unlaunched_Accounts_Enterprise_3_42</members>
         <members>unfiled$public/Unlaunched_Accounts_Enterprise_3_43</members>
@@ -5738,6 +5882,7 @@
         <members>unfiled$public/Unlaunched_Enterprise_Stores_Month</members>
         <members>unfiled$public/Unlaunched_Enterprise_Stores_Week</members>
         <members>unfiled$public/Unqualified_Due_to_Timing_Leads</members>
+        <members>unfiled$public/Unqualified_Reasons_YTD_Leads</members>
         <members>unfiled$public/Unsolved_Web_Case_SL_Sitewide</members>
         <members>unfiled$public/Upgrades_Report_Channel_June_2014</members>
         <members>unfiled$public/Victor_All_SBD_Opportunities</members>
@@ -5762,6 +5907,9 @@
         <members>unfiled$public/X11_17_Pricing_Upgrade_Opps_EAM_owners</members>
         <members>unfiled$public/X1M_and_up</members>
         <members>unfiled$public/X1_1_15_to_6_24_15_Manager_Contact</members>
+        <members>unfiled$public/X2016_09_Sep_ENT_Churn</members>
+        <members>unfiled$public/X2016_August_ENT_Churn</members>
+        <members>unfiled$public/X2016_July_ENT_Churn</members>
         <members>unfiled$public/X2016_Pending_Tech_Partners</members>
         <members>unfiled$public/X2016_Tech_Apps_Ecosystem</members>
         <members>unfiled$public/X2016_Tech_Partner_Applications</members>

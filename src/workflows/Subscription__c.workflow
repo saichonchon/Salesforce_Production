@@ -8,7 +8,7 @@
             <type>owner</type>
         </recipients>
         <senderType>CurrentUser</senderType>
-        <template>Internal_Email_Template/Sub_New_Added_NOT_OWNER</template>
+        <template>Internal_Workflow_Communications_Sales/Sub_New_Added_NOT_OWNER</template>
     </alerts>
     <alerts>
         <fullName>SUB_Cancelled_sub_with_GMV_1k</fullName>

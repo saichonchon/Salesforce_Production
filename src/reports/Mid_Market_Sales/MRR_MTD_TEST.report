@@ -110,7 +110,7 @@
         <value>1</value>
     </params>
     <reportType>Opp_with_Prod_Hist_and_Lookup_Data__c</reportType>
-    <roleHierarchyFilter>Enterprise_Leader</roleHierarchyFilter>
+    <roleHierarchyFilter>SystemAdministrator</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <timeFrameFilter>

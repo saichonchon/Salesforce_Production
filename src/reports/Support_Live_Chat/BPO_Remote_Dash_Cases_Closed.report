@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>RowCount * 5</calculatedFormula>
+        <datatype>number</datatype>
+        <description>x5</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Weighted Total</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_30775879</developerName>
+        <masterLabel>Age in Days</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>AGE</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>1</to>
+            </sourceValues>
+            <value>&lt;= 1 Day</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>1</from>
+                <to>2</to>
+            </sourceValues>
+            <value>2 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>2</from>
+                <to>3</to>
+            </sourceValues>
+            <value>3 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>3</from>
+                <to>7</to>
+            </sourceValues>
+            <value>4-7 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>7</from>
+            </sourceValues>
+            <value>&gt; 7 Days</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>LAST_UPDATE_BY</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>ORIGIN</field>
+    </columns>
+    <columns>
+        <field>Case.Bigcommerce_Plan__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Case.Client_Success</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <operator>equals</operator>
+            <value>Closed,Auto-Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <operator>equals</operator>
+            <value>Web</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Case_Closed_By__c</column>
+            <operator>notEqual</operator>
+            <value>Derek King,John Fasano,Joseph Alcorn,Karen White,Margaret Penn,Matthew Leach,Mel Martinez,Miguel Soria,Pepe Pulido,Tristan Urrea,API User,Ashley Cooper,Brad Mitchell,Bungay Beau,Casey Trahan,Daniel Boyden,Dan Rathke,Jimmiek Rankin,Jon Karwoski,Jose Flores,Lynn Torbert,Michael Yope,Neha Shah,Phil Guimond,Tyler Pouchot,Zachary Gullett,Kelly Lena,Benjamin Nitti,Jacob Patton,Jay Harrod,Jeremiah Pabilonia,Ryan Monk,Shane Rivette,Tatiana Perry,Ted York,Todd Wallace,Devin LeJeune,Jake Smith,Joshua Seals,Munish Chaturvedi,Nestor Islas,Ray Vaccaro,Roel Cuellar,Sasha Akridge,Scott Leroy,Tanner Johnson</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Case_Closed_By__c</column>
+            <operator>notEqual</operator>
+            <value>,Brian Davenport,Christopher Partanen,Cortni Jamerson,Cristy Carpenter,Derek Donovan,Dustin Shipley,Jason Zamora,Josh Popperwell,Lucian Villasenor,Matt Houck,Steve Bownds,Timothy Azark,Warren Kleinman,Dante Munoz,Fritz Stegmann,Mike Klindworth,Phillip Estrada,Quoc Dang,Rory Regnell,Brian Silvey,Nikita Puzanenko,Dave Enriquez,Foy Howard</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>CLOSED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Case_Closed_By__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>BPO Remote Dash - Cases Closed</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
+    </timeFrameFilter>
+</Report>

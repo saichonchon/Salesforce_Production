@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Google Shopping- 1193.CUS: Google Shopping Credit Email</name>
+    <style>none</style>
+    <subject>Your Google Shopping credit</subject>
+    <textOnly>Get a $100 credit by setting up your Google AdWords account and spending $25 — it’s that easy.
+Get your $100 Google Shopping credit
+Install Google Shopping &lt;[[https://www.bigcommerce.com/apps/google-shopping/?utm_medium=email&amp;utm_source=engagement]]&gt;
+Hey {{lead.First Name:default=there}},
+
+
+The shopping season is coming, and we want to help you drive more holiday sales. We’ve partnered with Google to improve our Google Shopping integration and provide you with a $100 AdWords credit*. To get the free credit added to your account, simply set up a Google AdWords account and spend $25. Please hurry, this offer is only available for a limited time.
+Here&apos;s how to redeem your credit:
+
+
+ - Visit https://www.bigcommerce.com/apps/google-shopping/ &lt;[[https://www.bigcommerce.com/apps/google-shopping/?utm_medium=email&amp;utm_source=engagement]]&gt; and connect the app to your BigCommerce store
+ - Follow the in app instructions to setup your BigCommerce products on Google Shopping
+ - Create a Shopping Campaign in AdWords to advertise your products; or read this article to learn more &lt;[[https://support.google.com/merchants/answer/2660968?hl=en]]&gt;
+ - Navigate to the Billing menu of AdWords to input your promotional code: {{lead.Google Promo Code:default=edit me}}, or follow the directions here &lt;[[https://support.google.com/adwords/answer/1703648?]]&gt;
+ - Make sure your AdWords account is linked to the app via the Account Linking menu
+
+
+Can I participate if I sell items that Google Shopping doesn’t support?
+Google Shopping prohibits certain items from being advertised, but does not block merchants entirely. That means you can still use Google Shopping to drive traffic by advertising shirts, hats and other non-prohibited items that you may sell.
+
+
+
+
+
+ Install Google Shopping  &lt;[[https://www.bigcommerce.com/apps/google-shopping/?utm_medium=email&amp;utm_source=engagement]]&gt;
+*Terms and conditions for this offer:
+In the below terms, 
+“AdWords” may mean AdWords or AdWords Express, as appropriate.
+
+
+
+
+ - 
+Offer available to customers with a billing address in the United States only. One promotional code per advertiser.
+
+
+ - 
+To activate this offer: Enter the 
+promotional code in your account before . In order to participate in this offer, you must enter the code within 14 days of your first ad impression being served from your first AdWords account.
+
+
+ - 
+To earn the credit: After entering the code, your advertising campaigns must accrue costs of at least $25.00, excluding any taxes, within 30 days. Making a payment of $25.00 is not sufficient. The tracking of advertising costs towards $25.00 begins after you&apos;ve entered the code.
+
+
+ - 
+Once 2 and 3 are completed, the credit will typically be applied within 5 days to the Billing Summary of your 
+account.
+
+
+ - 
+Credits apply to future advertising costs only. Credits cannot be applied to costs accrued before the code was entered.
+
+
+ - 
+You won’t receive a notification once your credit is used up and any 
+additional advertising costs will be charged to your form of payment. If you don’t want to continue advertising, you can pause or delete your campaigns at any time.
+
+
+ - 
+Your account must be successfully billed by AdWords and remain in good standing in order to qualify for the promotional credit.
+
+
+ - 
+Full terms 
+and conditions can be found here http://www.google.com/adwords/coupons/terms.html &lt;[[http://www.google.com/adwords/coupons/terms.html]]&gt;.
+&lt;[[http://www.bigcommerce.com?utm_medium=email&amp;utm_source=footer&amp;utm_campaign=trial-onboarding]]&gt;      We&apos;re here to help. Call us at 1-844-632-8912.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

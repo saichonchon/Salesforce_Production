@@ -20,11 +20,6 @@
         <field>Account.Activities$ActivityDate</field>
     </columns>
     <crossFilters>
-        <criteriaItems>
-            <column>Primary_Campaign_Name__c</column>
-            <operator>equals</operator>
-            <value>Move to New Pricing - Clean Contacts to Call</value>
-        </criteriaItems>
         <operation>with</operation>
         <primaryTableColumn>Account$Id</primaryTableColumn>
         <relatedTable>Opportunity</relatedTable>

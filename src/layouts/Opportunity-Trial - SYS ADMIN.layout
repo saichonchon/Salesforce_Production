@@ -8,13 +8,11 @@
     <customButtons>Sync_with_MBA</customButtons>
     <customButtons>View_BMP_Store</customButtons>
     <customButtons>View_BMP_Account</customButtons>
-    <customButtons>Sync_with_BMP</customButtons>
     <customButtons>Take_Ownership</customButtons>
     <customButtons>Add_SE</customButtons>
     <customButtons>Add_LDR</customButtons>
     <customButtons>Add_PAR</customButtons>
     <customButtons>tinderbox__new_tinderbox_document</customButtons>
-    <customButtons>dsfs__Send_with_DocuSign</customButtons>
     <customButtons>SalesVue__Add_Opportunity_To_Plans</customButtons>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -152,6 +150,10 @@
                 <behavior>Edit</behavior>
                 <field>Growth_Rate_Adjustment__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Promo__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -165,6 +167,10 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Master_Agreement_Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Promo_Months_Free__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>

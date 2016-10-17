@@ -197,36 +197,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>EB_Comments__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>EB_Date__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>EB_Next_Step__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>EBQ_Added__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>EB_Rating__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Expected_Plan__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>ExpectedRevenue</field>
             <table>Opportunity</table>
         </columns>
@@ -502,11 +472,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Primary_Campaign_Name__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Campaign</field>
             <table>Opportunity</table>
         </columns>
@@ -602,11 +567,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>SBD_Referral_ID__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>SBD_Store_ID__c</field>
             <table>Opportunity</table>
         </columns>
@@ -657,11 +617,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>zStrategic_Partner__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Subscription__c</field>
             <table>Opportunity</table>
         </columns>
@@ -683,11 +638,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>TemporaryStoreURL__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Account.SBD_Referral_ID__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -767,11 +717,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Subscription__c.Account__c.SBD_Referral_ID__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Subscription__c.Test_Store__c</field>
             <table>Opportunity</table>
         </columns>
@@ -828,6 +773,16 @@
         <columns>
             <checkedByDefault>true</checkedByDefault>
             <field>TrailingGMVCount__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Revenue_Share__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Strategic_Partner__c.Revenue_Share_Flat_Fee__c</field>
             <table>Opportunity</table>
         </columns>
         <masterLabel>Opportunities</masterLabel>

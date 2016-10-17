@@ -5,7 +5,6 @@
     <customButtons>Take_Ownership</customButtons>
     <customButtons>Merge_Accounts</customButtons>
     <customButtons>Add_AT</customButtons>
-    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>DisableCustomerPortalAccount</excludeButtons>
     <excludeButtons>DisablePartnerPortalAccount</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
@@ -488,6 +487,17 @@
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedEntityHistoryList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <excludeButtons>New</excludeButtons>
+        <fields>NAME</fields>
+        <fields>Score__c</fields>
+        <fields>Score_Type__c</fields>
+        <fields>Posted_Date__c</fields>
+        <fields>Comment__c</fields>
+        <fields>Contact__c</fields>
+        <fields>Subscription__c</fields>
+        <relatedList>Promoter_io_Feedback__c.Account__c</relatedList>
     </relatedLists>
     <relatedObjects>ParentId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>

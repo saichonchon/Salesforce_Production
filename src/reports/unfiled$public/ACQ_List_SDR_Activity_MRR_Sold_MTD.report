@@ -116,7 +116,7 @@
         <criteriaItems>
             <column>Opportunity.PurchaseDate__c</column>
             <operator>equals</operator>
-            <value>6/30/2016</value>
+            <value>THIS_YEAR</value>
         </criteriaItems>
         <criteriaItems>
             <column>OPP.RECORDTYPE</column>
@@ -136,7 +136,7 @@
     </filter>
     <format>Matrix</format>
     <groupingsAcross>
-        <dateGranularity>Week</dateGranularity>
+        <dateGranularity>Month</dateGranularity>
         <field>Opportunity.PurchaseDate__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
@@ -161,5 +161,5 @@
     </params>
     <reportType>CampaignInfluence</reportType>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
 </Report>

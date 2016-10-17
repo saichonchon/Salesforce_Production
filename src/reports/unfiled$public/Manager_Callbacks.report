@@ -10,6 +10,9 @@
         <field>OWNER</field>
     </columns>
     <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
         <field>SUBJECT</field>
     </columns>
     <columns>
@@ -45,6 +48,8 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <interval>INTERVAL_LASTMONTH</interval>
+        <endDate>2016-10-11</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-10-06</startDate>
     </timeFrameFilter>
 </Report>

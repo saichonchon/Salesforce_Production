@@ -999,6 +999,18 @@ SUBSTITUTE(SUBSTITUTE(FirstName, &quot; &quot;, &quot;+&quot;), &quot;&amp;&quot
         <inlineHelpText>Native Salesforce field.</inlineHelpText>
     </fields>
     <fields>
+        <fullName>Last_Promoter_io_NPS__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Promoter.io NPS</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>LeadSource</fullName>
         <picklist>
             <picklistValues>

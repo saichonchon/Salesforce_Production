@@ -27,12 +27,6 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>Opportunity$Primary_Campaign_Name__c</field>
-    </columns>
-    <columns>
-        <field>Opportunity$CreatedBy</field>
-    </columns>
-    <columns>
         <field>Opportunity$CreatedDate</field>
     </columns>
     <columns>
@@ -43,6 +37,9 @@
     </columns>
     <columns>
         <field>Opportunity.OpportunityTeamMembers$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityTeamMembers$UserRole</field>
     </columns>
     <columns>
         <field>Opportunity.OpportunityTeamMembers$TeamMemberRole</field>
@@ -101,12 +98,22 @@
             <value>Qualifier</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity$Primary_Campaign_Name__c</column>
+            <column>Opportunity$CreatedBy</column>
             <operator>contains</operator>
-            <value>Acq.prospects</value>
+            <value>pierce,elisabeth,aubrie,mike,omar,derek,halie,leonard</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Campaign.Parent</column>
+            <operator>contains</operator>
+            <value>acq.prospect</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity$CreatedBy</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
     <groupingsDown>
         <dateGranularity>Month</dateGranularity>
         <field>Opportunity.OpportunityTeamMembers*OpportunityTeamMember$Team_Member_Created_Date__c</field>
@@ -125,7 +132,7 @@
     <reportType>Opportunities_with_Team_Member__c</reportType>
     <roleHierarchyFilter>SystemAdministrator</roleHierarchyFilter>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>Opportunity$CreatedDate</dateColumn>
         <interval>INTERVAL_THISMONTH</interval>

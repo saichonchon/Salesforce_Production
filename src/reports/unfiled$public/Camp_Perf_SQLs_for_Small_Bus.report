@@ -46,9 +46,6 @@
         <field>Opportunity$Id</field>
     </columns>
     <columns>
-        <field>Opportunity$Primary_Campaign_Name__c</field>
-    </columns>
-    <columns>
         <field>Opportunity$Contact__c</field>
     </columns>
     <columns>
@@ -88,11 +85,6 @@
             <column>Opportunity.OpportunityTeamMembers$TeamMemberRole</column>
             <operator>contains</operator>
             <value>Qualifier</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity$Primary_Campaign_Name__c</column>
-            <operator>contains</operator>
-            <value>ACQ.Prospects</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity$Owner_Team__c</column>

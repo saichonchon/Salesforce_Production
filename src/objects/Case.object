@@ -171,7 +171,7 @@
     </businessProcesses>
     <businessProcesses>
         <fullName>Migration Case Process</fullName>
-        <description>For internal catalog transfer requests made from Sales to the Migrations Team</description>
+        <description>For internal catalog transfer requests made from Sales to the Catalog Transfer Team</description>
         <isActive>true</isActive>
         <values>
             <fullName>Assigned</fullName>
@@ -260,7 +260,7 @@
     </businessProcesses>
     <businessProcesses>
         <fullName>Migration Specialist Process</fullName>
-        <description>Case Transfer Specialist case process</description>
+        <description>Catalog Transfer Specialist case process</description>
         <isActive>true</isActive>
         <values>
             <fullName>Cancelled</fullName>
@@ -1552,6 +1552,19 @@ IF( ISBLANK(Subscription__r.StoreURL__c ) = FALSE, Subscription__r.StoreURL__c ,
         <visibleLines>10</visibleLines>
     </fields>
     <fields>
+        <fullName>Caller_Name__c</fullName>
+        <description>The person who called support from the client side. BAP-4292</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The person who called support from the client side</inlineHelpText>
+        <label>Caller Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Cancellation_Persona__c</fullName>
         <description>Cancellation person - requested by AR-5168</description>
         <externalId>false</externalId>
@@ -2198,6 +2211,21 @@ IF( ISBLANK(Subscription__r.StoreURL__c ) = FALSE, Subscription__r.StoreURL__c ,
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Case_Age_in_Mins__c</fullName>
+        <description>Time in minutes from the last update to the case</description>
+        <externalId>false</externalId>
+        <formula>ROUND(((NOW()-CreatedDate)*24*60),0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Time in minutes from the last update to the case</inlineHelpText>
+        <label>Case Age (in Mins)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Case_Closed_By__c</fullName>
         <description>Support : populated by WFR to capture the name of the user that last moved the case of a status of Closed if NOT the API user</description>
         <externalId>false</externalId>
@@ -2658,6 +2686,11 @@ IF(FIND(MID(Id,11,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,1,0)
             <picklistValues>
                 <fullName>CNAME Record</fullName>
                 <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Company NPS</fullName>
+                <default>false</default>
+                <controllingFieldValues>Surveys</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Control Panel</fullName>
@@ -6709,6 +6742,10 @@ IF(
                 <fullName>ecommerceconsultant@bigcommerce.com</fullName>
                 <default>false</default>
             </picklistValues>
+            <picklistValues>
+                <fullName>Promoter.io</fullName>
+                <default>false</default>
+            </picklistValues>
             <sorted>false</sorted>
         </picklist>
         <trackFeedHistory>false</trackFeedHistory>
@@ -7413,6 +7450,28 @@ NULL))</formula>
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Promoter_io_Feedback_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Promoter.io Feedback Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Promoter_io_Feedback__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Promoter.io Feedback</label>
+        <referenceTo>Promoter_io_Feedback__c</referenceTo>
+        <relationshipLabel>Cases</relationshipLabel>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Purchase_Date__c</fullName>
         <description>Purchase Date from Subscription - added for Professional Services</description>
         <externalId>false</externalId>
@@ -7977,6 +8036,11 @@ NULL))</formula>
             </picklistValues>
             <picklistValues>
                 <fullName>Support Request</fullName>
+                <default>false</default>
+                <cssExposed>false</cssExposed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Surveys</fullName>
                 <default>false</default>
                 <cssExposed>false</cssExposed>
             </picklistValues>
@@ -11055,7 +11119,7 @@ Verification_Date__c -  Completion_Date__c</description>
     </fields>
     <fields>
         <fullName>Unpacked__c</fullName>
-        <description>Migrations &amp; SSquad : Client and SS have unpacked the new BC Store, e.g. set up Logo, Header/Footer, updated store data, category structure, created Social Networking Icons, About Us, etc.</description>
+        <description>Catalog Transfer &amp; SSquad : Client and SS have unpacked the new BC Store, e.g. set up Logo, Header/Footer, updated store data, category structure, created Social Networking Icons, About Us, etc.</description>
         <externalId>false</externalId>
         <formula>IF(Subscription__r.Unpacked__c = TRUE,TRUE,False)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -11079,7 +11143,7 @@ Verification_Date__c -  Completion_Date__c</description>
     <fields>
         <fullName>Unpacking_Specialist__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
-        <description>SSquad migration unpacker</description>
+        <description>SSquad catalog transfer unpacker</description>
         <externalId>false</externalId>
         <label>zUnpacking Specialist</label>
         <referenceTo>User</referenceTo>
@@ -11101,7 +11165,7 @@ Verification_Date__c -  Completion_Date__c</description>
     </fields>
     <fields>
         <fullName>Use_of_Product_Options__c</fullName>
-        <description>Migrations : The level of product options usage in Client&apos;s current store (e.g. sizes, colors)</description>
+        <description>Catalog Transfer: The level of product options usage in Client&apos;s current store (e.g. sizes, colors)</description>
         <externalId>false</externalId>
         <inlineHelpText>What is the Client&apos;s degree of product option usage in their current store?</inlineHelpText>
         <label>zUse of Product Options</label>
@@ -11126,9 +11190,9 @@ Verification_Date__c -  Completion_Date__c</description>
     </fields>
     <fields>
         <fullName>Valid_Credentials_Received__c</fullName>
-        <description>Used by the Migration Team - Date at which valid credentials were received</description>
+        <description>Used by the Catalog Transfer Team - Date at which valid credentials were received</description>
         <externalId>false</externalId>
-        <inlineHelpText>Used by the Migration Team - Date at which valid credentials were received</inlineHelpText>
+        <inlineHelpText>Used by the Catalog Transfer Team - Date at which valid credentials were received</inlineHelpText>
         <label>Valid Credentials Received</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -11159,7 +11223,7 @@ Verification_Date__c -  Completion_Date__c</description>
     </fields>
     <fields>
         <fullName>Withdrawal_Cancellation_Reason__c</fullName>
-        <description>Repurposed this field from migration to cancellations - Migration : What is the reason why the Migration Request is being Withdrawn (internal reasons) or Cancelled (cancelled by Client)? Must be filled out if  Status = Withdrawn or Cancelled.</description>
+        <description>Repurposed this field from catalog transfer to cancellations - Catalog Transfer: What is the reason why the catalog transfer equest is being Withdrawn (internal reasons) or Cancelled (cancelled by Client)? Must be filled out if  Status = Withdrawn or Cancelled.</description>
         <externalId>false</externalId>
         <label>Cancellation Reason</label>
         <picklist>
@@ -11744,7 +11808,7 @@ IMAGE(&quot;/resource/WorkIt2__Workit2Resources/img/rainbow_04.png&quot;, &quot;
     </fields>
     <fields>
         <fullName>X301_Redirect_Required__c</fullName>
-        <description>Migrations : can delete</description>
+        <description>Catalog Transfer: can delete</description>
         <externalId>false</externalId>
         <label>zOLD 301 Redirect Required?</label>
         <picklist>
@@ -12455,7 +12519,7 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
     </fields>
     <fields>
         <fullName>of_Customers__c</fullName>
-        <description>Migrations : The number of How many customers in the Client&apos;s current store</description>
+        <description>Catalog Transfer: The number of How many customers in the Client&apos;s current store</description>
         <externalId>false</externalId>
         <inlineHelpText>How many customers does the Client have in their current store?</inlineHelpText>
         <label>z# of Customers</label>
@@ -12488,7 +12552,7 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
     </fields>
     <fields>
         <fullName>of_Products__c</fullName>
-        <description>Migrations : The number of products that currently exist in the Client&apos;s current store</description>
+        <description>Catalog Transfer: The number of products that currently exist in the Client&apos;s current store</description>
         <externalId>false</externalId>
         <inlineHelpText>How many products does the Client have in their current store?</inlineHelpText>
         <label>z# of Products</label>
@@ -13273,7 +13337,7 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             <operation>equals</operation>
             <value>0</value>
         </filters>
-        <label>Migration Cases &gt; 30 Days Old</label>
+        <label>Catalog Transfer: Cases &gt; 30 Days Old</label>
         <sharedTo>
             <roleAndSubordinatesInternal>Migration</roleAndSubordinatesInternal>
         </sharedTo>
@@ -13290,7 +13354,7 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             <operation>equals</operation>
             <value>0</value>
         </filters>
-        <label>Migration: New Cases</label>
+        <label>Catalog Transfer: New Cases</label>
         <queue>Migrations_Queue</queue>
         <sharedTo>
             <group>Migration_Specialists</group>
@@ -13339,7 +13403,7 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             <operation>equals</operation>
             <value>New,Assigned,In Progress,Blocked,Verification</value>
         </filters>
-        <label>Migration: Ope</label>
+        <label>Catalog Transfer: Open</label>
         <sharedTo>
             <role>Client_Experience_Leader</role>
         </sharedTo>
@@ -13378,41 +13442,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <sharedTo/>
     </listViews>
     <listViews>
-        <fullName>Migration_Withdrawn_Cancelled_Requests</fullName>
-        <columns>OWNER_NAME</columns>
-        <columns>CASES.SUBJECT</columns>
-        <columns>CASES.CASE_NUMBER</columns>
-        <columns>CASES.STATUS</columns>
-        <columns>Migration_Platform__c</columns>
-        <columns>Bigcommerce_Plan__c</columns>
-        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
-        <columns>Completion_Date__c</columns>
-        <columns>Withdrawal_Cancellation_Reason__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CASES.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Case.Migration</value>
-        </filters>
-        <filters>
-            <field>CASES.CLOSED</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>CASES.STATUS</field>
-            <operation>equals</operation>
-            <value>Withdrawn,Cancelled</value>
-        </filters>
-        <filters>
-            <field>CASES.SUBJECT</field>
-            <operation>notContain</operation>
-            <value>DEV</value>
-        </filters>
-        <label>Migration: Withdrawn/Cancelled Requests</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
         <fullName>Migrations_Escalations_Queue</fullName>
         <columns>CASES.CASE_NUMBER</columns>
         <columns>ACCOUNT.NAME</columns>
@@ -13423,7 +13452,7 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <columns>CASES.LAST_UPDATE</columns>
         <columns>OWNER_NAME</columns>
         <filterScope>Queue</filterScope>
-        <label>Migrations Escalations Queue</label>
+        <label>Catalog Transfer: Escalations Queue</label>
         <queue>Migrations_Escalations</queue>
         <sharedTo>
             <group>Migration_Specialists</group>
@@ -13457,7 +13486,7 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             <operation>notEqual</operation>
             <value>Closed</value>
         </filters>
-        <label>Migrations Specialist Cases</label>
+        <label>Catalog Transfer: Specialist Cases</label>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
             <group>Migration_Specialists</group>
@@ -13569,7 +13598,7 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             <operation>equals</operation>
             <value>Case.Migration</value>
         </filters>
-        <label>My Open Migration Cases</label>
+        <label>My Open Catalog Transfer Cases</label>
         <sharedTo>
             <role>Contractor_Migration</role>
             <role>Migration</role>
@@ -14425,7 +14454,7 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
     </listViews>
     <listViews>
         <fullName>Tier_2_Tickets</fullName>
-        <booleanFilter>1 AND ((2 AND 3) OR 4 OR (5 AND 6) OR 7)</booleanFilter>
+        <booleanFilter>1 AND ((2 AND 3 AND 8) OR 4 OR (5 AND 6) OR 7)</booleanFilter>
         <columns>CASES.CASE_NUMBER</columns>
         <columns>Premium_Case__c</columns>
         <columns>ACCOUNT.NAME</columns>
@@ -14470,6 +14499,11 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             <field>CASES.ORIGIN</field>
             <operation>contains</operation>
             <value>Coaches</value>
+        </filters>
+        <filters>
+            <field>Case_Age_in_Mins__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>60</value>
         </filters>
         <label>Support: Tier 2</label>
         <sharedTo>
@@ -26237,6 +26271,10 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
+                <fullName>Company NPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Control Panel</fullName>
                 <default>false</default>
             </values>
@@ -27730,6 +27768,10 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
+                <fullName>Promoter%2Eio</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>SBD - Escalations</fullName>
                 <default>false</default>
             </values>
@@ -28010,6 +28052,10 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             </values>
             <values>
                 <fullName>Store Down%2FPerformance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surveys</fullName>
                 <default>false</default>
             </values>
             <values>

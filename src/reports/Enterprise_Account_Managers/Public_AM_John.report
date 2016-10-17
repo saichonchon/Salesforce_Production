@@ -30,6 +30,9 @@
         <field>Opportunity.StoreURL__c</field>
     </columns>
     <columns>
+        <field>Account.Last_Promoter_io_NPS__c</field>
+    </columns>
+    <columns>
         <field>Opportunity.Status__c</field>
     </columns>
     <columns>
@@ -51,9 +54,6 @@
         <field>ACCOUNT_LAST_ACTIVITY</field>
     </columns>
     <columns>
-        <field>Opportunity.Industry__c</field>
-    </columns>
-    <columns>
         <field>INDUSTRY</field>
     </columns>
     <columns>
@@ -63,10 +63,7 @@
         <field>Opportunity.Contract_End_Date__c</field>
     </columns>
     <columns>
-        <field>Opportunity.Onboarding_Specialist__c</field>
-    </columns>
-    <columns>
-        <field>Opportunity.Launch_Status__c</field>
+        <field>Opportunity.SLA__c</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -112,6 +109,8 @@
     <reportType>Opportunity</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
+    <sortColumn>Opportunity.MonthlyRecurringRevenue__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Opportunity.PurchaseDate__c</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
